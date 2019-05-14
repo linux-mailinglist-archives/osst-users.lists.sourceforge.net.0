@@ -2,59 +2,80 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 8E7BB1873E
-	for <lists+osst-users@lfdr.de>; Thu,  9 May 2019 10:59:50 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id DF74A1CD98
+	for <lists+osst-users@lfdr.de>; Tue, 14 May 2019 19:11:05 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hOeu5-0008Kh-7r
-	for lists+osst-users@lfdr.de; Thu, 09 May 2019 08:59:49 +0000
+	id 1hQaxE-0007s4-Kv
+	for lists+osst-users@lfdr.de; Tue, 14 May 2019 17:11:04 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <mohamed.bedir@tuvsudme.com>) id 1hOeu4-0008KS-Na
- for osst-users@lists.sourceforge.net; Thu, 09 May 2019 08:59:48 +0000
+ (envelope-from <jkulike@transoltc.com.br>) id 1hQaxD-0007rq-DJ
+ for osst-users@lists.sourceforge.net; Tue, 14 May 2019 17:11:03 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
- To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=From:Content-Transfer-Encoding:Content-type:
+ MIME-Version:To:Subject:Date:Sender:Reply-To:Message-ID:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=7pUYs31tzC1+SiP8n+29+Z6w9RtUjxkkAcZeqBNHAag=; b=ffwEGlvrsdF1L60+Ku6vvHUKsk
- BO5Hk/4gsWtRwQWNrDWLqR3TEOLkKWjTS690dY1pbozaDwwI7MRfLmaTn17Fik8tJER2Odzdlk93R
- dEPxw+Se3HiX0m0o8Wjnoc6fwNKISTijZAktre4/ofA7JUItCuxmU9SWVkNomUhduUzI=;
+ bh=ZOKPdkNG6Dp38+3O1p3HpteYZDigsvTw0SmzLsgIQQ0=; b=RPCdhJhYkcjB3tY6Iu4GlQuhA8
+ R/xltzo9HAlvVHkW9iBgVJ9kS24pgJD3vNzI0ZUw/uYCpDVjffbO5OHfksqqKDGcYKIyrqQ4VYKMV
+ /n3ZKywgVjRTbtXP93w8I9hY3b4ZEpeFNc2QlLT4Ah4t2Nw5Gq9RswlyH464LxRs7/kA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=From:Content-Transfer-Encoding:Content-type:MIME-Version:To:Subject:Date:
+ Sender:Reply-To:Message-ID:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=7pUYs31tzC1+SiP8n+29+Z6w9RtUjxkkAcZeqBNHAag=; b=Y
- 4P7wISYtdzPUml1FeKaTWC2d7CKqucKaaouZdDNim4H3HtHex9Z/506sSJ7MimvD4j6JvLXasbAt1
- Cvov+waNNU17dZE1TItMsOSmGyf5YbPf8wtAmBvlN+w+lMX1epd9nhaS4rye6qvfzkjckWol94PpC
- EZTPP+y7ilUQdciE=;
-Received: from [149.255.35.87] (helo=tuvsudme.com)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
- id 1hOeu3-00Ao2e-En
- for osst-users@lists.sourceforge.net; Thu, 09 May 2019 08:59:48 +0000
-From: "Hamed Saeed" <mohamed.bedir@tuvsudme.com>
+ List-Owner:List-Archive; bh=ZOKPdkNG6Dp38+3O1p3HpteYZDigsvTw0SmzLsgIQQ0=; b=Y
+ FJAshG9NUvcOSwcE9rulD6tn/IRC6okGmRT29/bldgnZRqE7PzyGaoFShLCaIfOt8YAsucF5q1azK
+ 1x/+iSJyzE9T40iVwnApX2ikO0mZhr7bkLk/107LKQlmsITCP8V9/cBX1RNUfIqwhLaHL5UmtUwj2
+ aCquPPNgcg4zf9J4=;
+Received: from hm3562-160.email.locaweb.com.br ([186.202.21.160]
+ helo=shared-hm3562.email.locaweb.com.br)
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1hQaxA-00GK7Q-21
+ for osst-users@lists.sourceforge.net; Tue, 14 May 2019 17:11:03 +0000
+Received: from hm3562.email.locaweb.com.br (hm3562.email.locaweb.com.br
+ [186.202.21.130])
+ by shared-hm3562.email.locaweb.com.br (Postfix) with ESMTP id 1C8B77C1C7A52
+ for <osst-users@lists.sourceforge.net>; Tue, 14 May 2019 13:49:27 -0300 (-03)
+x-locaweb-id: D5VRlPSjTEBvQNOYfwhAbYq1U87MkDLkNjWljSv3ttvOE3EhP1PMXHbjLgI5Kf7nSvvhMH-EhgESA5pHLM9CGBs28mzJ9KhbIM-j2IG-ViUr7yFDxseoZcDpi5sS3veoTeQpOltYOA5u0GyaYkXVo8Js65EQtouVlWrsDPH0QrIDsZsViZiDhU2Sg6Bdp9W42d0QN9F-4C93G7HuUQgX6w==
+ NmE2Yjc1NmM2OTZiNjU0MDc0NzI2MTZlNzM2ZjZjNzQ2MzJlNjM2ZjZkMmU2Mjcy
+Received: from apu0001.locaweb.com.br (apu0001.email.locaweb.com.br
+ [187.45.217.2])
+ by hm3562.email.locaweb.com.br (Postfix) with ESMTP id 3EED67C1C1AFB
+ for <osst-users@lists.sourceforge.net>; Tue, 14 May 2019 13:49:11 -0300 (-03)
+Received: from POLLUX03-0004.locaweb-net.locaweb.com.br (unknown
+ [191.252.19.21])
+ by apu0001.locaweb.com.br (Postfix) with SMTP id 198CA30406F2
+ for <osst-users@lists.sourceforge.net>; Tue, 14 May 2019 13:49:11 -0300 (BRT)
+Date: Tue, 14 May 2019 13:49:11 -0300
 To: osst-users@lists.sourceforge.net
-Date: 09 May 2019 01:59:42 -0700
-Message-ID: <20190509015942.4284DF1C0113FF54@tuvsudme.com>
+X-PHP-Originating-Script: 0:send.php
 MIME-Version: 1.0
-Content-Type: multipart/mixed;
- boundary="----=_NextPart_000_0012_B897757A.41FD6318"
-X-Spam-Score: 5.6 (+++++)
+From: =?UTF-8?B?TmV0RmxpeA==?= <jkulike@transoltc.com.br>
+X-Spam-Score: 5.9 (+++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
- https://senderscore.org/blacklistlookup/
- [149.255.35.87 listed in bl.score.senderscore.com]
+ 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [186.202.21.130 listed in psbl.surriel.com]
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: uploaddeimagens.com.br]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
  1.0 HTML_MESSAGE           BODY: HTML included in message
  2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
-X-Headers-End: 1hOeu3-00Ao2e-En
-Subject: [Osst-users] Purchase Order
+ 1.0 MISSING_MID            Missing Message-Id: header
+ 0.1 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Headers-End: 1hQaxA-00GK7Q-21
+Subject: [Osst-users] =?utf-8?q?Atualiza=C3=A7=C3=A3o_de_dados_necess?=
+ =?utf-8?q?=C3=A1ria=2E_Conta_Netflix_suspensa_14292527?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -66,370 +87,80 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
+Content-Type: multipart/mixed; boundary="===============6077055252700406953=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1hQaxE-0007s4-Kv@sfs-ml-1.v29.lw.sourceforge.com>
 
-This is a multi-part message in MIME format.
-
-------=_NextPart_000_0012_B897757A.41FD6318
-Content-Type: text/html;
-	charset="iso-8859-1"
+--===============6077055252700406953==
+Content-type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
-w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
+ft-com:office:office" style=3D"padding:0;margin:0;background-color:rgb(234,=
+ 234, 234);background-color:rgb(234, 234, 234);margin-top:0;">
+ <head>=20
+  <meta http-equiv=3D"Content-Type" content=3D"text/html charset=3DUTF-8">=
+=20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">=20
+ </head>=20
+ <body bgcolor=3D"#EAEAEA" style=3D"font-family:Helvetica, Arial, sans;colo=
+r:rgb(34, 31, 31);padding:0;margin:0;background-color:rgb(234, 234, 234);ba=
+ckground-color:rgb(234, 234, 234);margin-top:0;">=20
+  <!--/* 100% Size Container -->=20
+  <!-- Preview Text -->=20
+  <div class=3D"hide" style=3D"display:none;width:0;height:0;max-height:0;l=
+ine-height:0;mso-hide:all;overflow:hidden;visibility:hidden;"></div>=20
+  <!-- End Preview Text -->=20
+  <table class=3D"container" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" id=3D"container" style=3D"background-color:rgb(234, 234=
+, 234);margin-top:0;">=20
+   <tbody> <tr> <td align=3D"center">=20
+      <!--/* Hero + Content -->=20
+  <td><div style=3D"display:none;">   </div>
+<td align=3D"center" class=3D"fulldisplay">
+<span style=3D"font-family: 'Arial', sans-serif; display:block; padding:10p=
+x 0px; color:#767676; font-size:11px;">
+ <b></b>Caso n&atilde;o visualize,<a href=3D"http://pwhg.pesquisapsd.com.br=
+/nf?id=3Dxm0x_fnn5i4y3f9psy_mnik99tsv06789jg7kcwqwvd8_be2xhup28ohzo6sj7__te=
+ohh32lrlxpz_rx41gadhhxo_kn2yv69__ha59a0ypyyj6smhw6qgsz7wruzq8iuxtg2laa4bll2=
+6_8ck7ojs5jnn_vb38tphgg_74j_l_k93yo5xm__m35d3agblzpr1k046ac1vx_cp5levl_mu_j=
+27_n4u_xllu04bilwk15be3bgnn8js63jb7jtjbzn35mc78iliqj4qo_bcfwberh1_yimi0h37e=
+8josw9vywk96ouxty7_v_z115snjzugvkrdfw5_94ql9ri_o2qie__yo6gv9vkbqzogd5vqybij=
+_qq36l4t_f4oolx5xlt_eagonr86xxzxuqjohl_e82j_hjcofjqfiat_60cpn_1jnvww2vm7t6t=
+49f3k4_ckpbx9rpo5c9sgm6_rdupjl7munwc6lag2ufiz5gtivq7oen963oej_4_e4khq_nkfwd=
+uhyilakucc2_ws_0iqa_a9nksqr8_3zplhl8_9lxcpy_4437_9qk1yx2imp5r5ag36kb_boi9zu=
+kmicqiwb01g7d3_5jolcn4936a27d4izxx64vfy32c7f7uinedanty5bdb35g3uwr72o9x_w7eq=
+_94x0t9zw8drc9li7y_dlue_ia7gfas1xkazemb_uwsm6alpm3wuetcmb57gficf7cukxtkshgz=
+uio2ddi_s5_kgxi7zcb_jm15px7lfzea27w3k2_u_wxau5z44pt_bc8le1kvyhtojtxynvgkc67=
+nt3nasrd627opt0rh2ffg4v66bn3erykdd_ho0p_pbkgw3ydhgdtk6rlnlx0m5hj4d64njnzw4i=
+tniv8kmz5epshevsicmki7e3t65l56nt4hg4t7szcz_6oxq1oza8tpyflm5fu0jp_xcarm3c2m1=
+yeo_5pmgzpk7z719yp8q_bfqbkvg9jep2dnt4rpbmgd_i_upqz_e44n6isopuwsjfr__o8fcibm=
+8971ac919il1_krndgrqgs54u6q6zagfo0i6jbm93c88wly2zqmsxqkpnj19o_yr_yl7cyo_79l=
+sr4m_n8l_xtlq3h5_42u_gqlpbdbm4ambuz50jriv2f7d489rza6ih9gqmu4qqgag2fqjk8xgjz=
+r71nqz__ypd9vwy9v7_4zvi8j6gr1e6i6wia9z3n2t3m47kiy5adz5cbt9tius89sghfk84cdn_=
+d"class=3D"button-link"  style=3D"font:11px Arial,Helvetica,sans-serif;colo=
+r:#3a6ac3" target=3D"_blank">acesse este link</span>
+<img style=3D"-webkit-user-select: none;" src=3D"https://uploaddeimagens.co=
+m.br/images/002/107/992/full/img.png?1557779997"></td><p></a></tr>=20
+   </tbody>
+  </table></div>  =20
+ </body>
+</html>
 
-<HTML><HEAD>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19326"></HEAD>
-<BODY style=3D"MARGIN: 0.5em">
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
-; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial">Kindly find as attached PO for your ref=
-erence.<BR><BR>
-We request you&nbsp;to give us your best price and send us profoma invoice =
-for our approval.<BR></P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
-; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial">Awaiting your reply .</P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
-; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial">&nbsp;</P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
-; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial"><SPAN>Thanks and Best Regards</SPAN><SP=
-AN></SPAN><SPAN></SPAN><SPAN><SPAN></SPAN><SPAN>
-</SPAN>,</SPAN><SPAN></SPAN></P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
-; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial"><STRONG>Hamed Saeed</STRONG></P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
-; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial">Foreign Purchasing Specialist - Foreign=
- Procurement</P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; uni=
-code-bidi: embed; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: n=
-one; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); DIRECTION: rtl; FONT-STYLE: norma=
-l; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-IN=
-DENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webk=
-it-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-=
-color: initial" align=3Dright><SPAN>
-El Sewedy&nbsp;Industries Egypt</SPAN></P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; uni=
-code-bidi: embed; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: n=
-one; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); DIRECTION: rtl; FONT-STYLE: norma=
-l; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-IN=
-DENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webk=
-it-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-=
-color: initial" align=3Dright><STRONG>
-<SPAN style=3D'FONT-FAMILY: "Century Gothic", sans-serif'>Mobile</SPAN><SPA=
-N></SPAN><SPAN></SPAN><SPAN><SPAN></SPAN><SPAN></SPAN><SPAN>&nbsp;</SPAN>:&=
-nbsp; (+2010)97880555</SPAN></STRONG></P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; uni=
-code-bidi: embed; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: n=
-one; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); DIRECTION: rtl; FONT-STYLE: norma=
-l; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; TEXT-IN=
-DENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webk=
-it-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-=
-color: initial" align=3Dright><STRONG>
-<SPAN style=3D'FONT-FAMILY: "Century Gothic", sans-serif'>Factory</SPAN><SP=
-AN></SPAN><SPAN></SPAN><SPAN><SPAN></SPAN><SPAN></SPAN>:<SPAN>&nbsp;</SPAN>=
-</SPAN><SPAN style=3D"FONT-SIZE: 6pt">&nbsp;</SPAN><SPAN>(+20554) 412320,&n=
-bsp;<SPAN>&nbsp;</SPAN></SPAN><SPAN style=3D'FONT-FAMILY: "Century Gothic",=
- sans-serif'>Ext</SPAN><SPAN></SPAN><SPAN></SPAN><SPAN><SPAN></SPAN><SPAN><=
-/SPAN>.:&nbsp; 506</SPAN></STRONG></P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
-; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial"><STRONG>FAX:&nbsp;&nbsp;&nbsp;&nbsp;&nb=
-sp;&nbsp;&nbsp; (+20554) 411360<SPAN></SPAN></STRONG>
-</P>
-<P class=3Dwordsection1 style=3D"FONT-SIZE: 12px; FONT-FAMILY: Verdana; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400=
-; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial"><STRONG>Office:&nbsp;&nbsp;&nbsp; (+20&=
-nbsp; 2) 27599732 /33 /34</STRONG></P></BODY></HTML>
-------=_NextPart_000_0012_B897757A.41FD6318
-Content-Type: application/octet-stream; name="PO.docx"
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename="PO.docx"
 
-UEsDBBQAAgAIAFC8qE4JJIeCZgEAAI4FAAATABEAW0NvbnRlbnRfVHlwZXNdLnhtbFVUDQAH
-gGfTXIBn01yAZ9NctZRNT8JAEIbvJv6HZq+kXfBgjKFwUDwqiRjPy3ZKN+5Xdoevf++UIjGK
-lAhcmmxn3vd9ZtNOf7gyOllAiMrZnPWyLkvASlcoO8vZ2+QpvWNJRGELoZ2FnK0hsuHg+qo/
-WXuICaltzFmF6O85j7ICI2LmPFiqlC4YgXQMM+6F/BAz4Dfd7i2XziJYTLH2YIP+I5RirjEZ
-reh1QxJAR5Y8NI11Vs6E91pJgVTnC1v8SEm3CRkpNz2xUj52qIHxvQl15e+Are6FriaoApKx
-CPgsDHXxpQsFL5ycG1Jmh232cLqyVBJ2+trNBychRrpzo7NdxQhlO20cEdca4vkpGt8j498V
-VqOyBInHkJiY1trsl7Y9DRAJ7xLjbp1bEZYwfb0YxTfzVpCScidiquH8GDvrVgik/x2aZ+9k
-jo3NoUjqHAfnI+2P8I+xvxZErU5pYA8B1eFvfJdI1ifPB/XuKaDYk80323TwCVBLAwQUAAIA
-CABQvKhOHpEat+kAAABOAgAACwARAF9yZWxzLy5yZWxzVVQNAAeAZ9NcgGfTXIBn01ytksFq
-wzAMQO+D/YPRvVHawRijTi9j0NsY2QcIW0lME9vYatf+/TzY2AJd6WFHy9LTk9B6c5xGdeCU
-XfAallUNir0J1vlew1v7vHgAlYW8pTF41nDiDJvm9mb9yiNJKcqDi1kVis8aBpH4iJjNwBPl
-KkT25acLaSIpz9RjJLOjnnFV1/eYfjOgmTHV1mpIW3sHqj1FvoYdus4ZfgpmP7GXMy2Qj8Le
-sl3EVOqTuDKNain1LBpsMC8lnJFirAoa8LzR6nqjv6fFiYUsCaEJiS/7fGZcElr+54rmGT82
-7yFZtF/hbxucXUHzAVBLAwQUAAIACABQvKhOfZGEgL4NAADk3jEAHAARAHdvcmQvX3JlbHMv
-ZG9jdW1lbnQueG1sLnJlbHNVVA0AB4Bn01yAZ9NcgGfTXO3UPW/TUBgG0LlI/IcoO3FToJEQ
-6USHDggJKjFWjnOdGPwR2bdKy6/HKZSmoY0YsiCdM1jyvfL7PLZsHx0BAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-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
 
-------=_NextPart_000_0012_B897757A.41FD6318
+
+--===============6077055252700406953==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
-------=_NextPart_000_0012_B897757A.41FD6318
+--===============6077055252700406953==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -440,6 +171,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
-------=_NextPart_000_0012_B897757A.41FD6318--
-
-
+--===============6077055252700406953==--
