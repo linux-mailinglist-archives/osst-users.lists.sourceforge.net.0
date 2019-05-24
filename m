@@ -2,63 +2,93 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 829A62655D
-	for <lists+osst-users@lfdr.de>; Wed, 22 May 2019 16:04:17 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id E0DD928F05
+	for <lists+osst-users@lfdr.de>; Fri, 24 May 2019 04:13:51 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hTRqq-0005J4-8x
-	for lists+osst-users@lfdr.de; Wed, 22 May 2019 14:04:16 +0000
+	id 1hTziQ-0008MG-K4
+	for lists+osst-users@lfdr.de; Fri, 24 May 2019 02:13:50 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <contato@akna.site>) id 1hTRqm-0005IV-Tl
- for osst-users@lists.sourceforge.net; Wed, 22 May 2019 14:04:12 +0000
+ (envelope-from <anarjor@ig.com.br>) id 1hTziN-0008M7-Vh
+ for osst-users@lists.sourceforge.net; Fri, 24 May 2019 02:13:47 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Subject:Date:To:From:MIME-Version:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Message-Id:Date:MIME-Version:Content-Type:To:
+ Subject:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=5cmBPvD0zS7JE2SG9Z9SNnYrK7oya1Pabm3OftWtH6g=; b=l/iE26zHY0cuqxztOkUxb+B99O
- 46e5Dsi0WibS1SmTBIklEe0v9ZmFieFr5Ucpfd2TxaEw4qJZRhHyMkPCoi3R/Fjr5Lx83c1mXkMH7
- Rs1HAfHt/MVjzSt+2SlmDTgsYCCWARX62Y1kGC3OLU/oMv/kiGlRpky3VNFQdQBWOO2M=;
+ bh=xUAwYRIupGICAZtdndvqcdkprn/OmwaoV0L4Gs+n/Uc=; b=AMwTxZ2VuAWDT/Y9MUHo9etvsv
+ tiHSeYNabUZOAWQUpSrYrUb+bkMpfEmpBXeOXQnX9+jWh4ZEsadbHtgZ0eYXovo0vXxJMuoQMrqal
+ cqm11uehLOswb/9pA3dsZEBlPz5t2eQdueFAv876DVJrpWJfHJbSyysqJ2tigm7zZY8c=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Subject:Date:To:From:MIME-Version:Message-ID:Sender:Reply-To
+ h=Message-Id:Date:MIME-Version:Content-Type:To:Subject:From:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=5cmBPvD0zS7JE2SG9Z9SNnYrK7oya1Pabm3OftWtH6g=; b=W
- r0sCrP+xupQop3nxEpLp9Hx5FdVgPuJLq82flD4007h2EhuEnndIx/dAh220cQRFNWYDOftxBXLeO
- tw9/gph+y8aaezGTaO/UK+7YWPjD4K/baG3YtI6SK155NNjU31wRqzvlQa2FlL0hqHY5MilIRYhNW
- ySX6wqif1Tw0KYpc=;
-Received: from akna.site ([145.239.90.103])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.90_1)
- id 1hTRqM-006H6i-MB
- for osst-users@lists.sourceforge.net; Wed, 22 May 2019 14:04:12 +0000
-dkim-signature: v=1; a=rsa-sha256; d=akna.site; s=dkim;
- c=relaxed/relaxed; q=dns/txt;
- h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type; 
- bh=5cmBPvD0zS7JE2SG9Z9SNnYrK7oya1Pabm3OftWtH6g=;
- b=B5P6S3mjOwLSIsaoha4tIJMXfgNz+h83DRaX5XZ0cb6VaGtwMHQ0uKpTYTEiGdOT1KKau5/wO2gVcwSzsKlwC817YZzwNtbKvqttUduQ5s8GWx+eCvxwzIACYHQLQQ+IlCGOJTqmAYjD6/URZ94TCDJB1guSSF/kgRagGDyS/u1Rvr/pku8HRBab9IHGcaAsfHmXO8ZmR5OH5BW+wFcMpVLAiQgPw8cgmuZ2D5UIzoLvUaU3Y5TbF35+24
- Gc9LMXSXH+14ALYq8gYqT8blkKd9Rlf+0ufu2ZcBOhjljRyqoVMKAuejf9g2InLCmBk+yR342uhkkdSyVVOr1Dy0WQdg==
-Received: from WIN-D9DG72E09TI (WIN-D9DG72E09TI [127.0.0.1])
- by akna.site with ESMTPA ; Wed, 22 May 2019 10:37:55 -0300
-Message-ID: <75cc1747-b031-4e19-a734-15003dc22729@akna.site>
-MIME-Version: 1.0
-From: "Super Mini Ar Condicionado | Purificador" <contato@akna.site>
+ List-Owner:List-Archive; bh=xUAwYRIupGICAZtdndvqcdkprn/OmwaoV0L4Gs+n/Uc=; b=D
+ Zc/ZrmsqVxvBHHmcUsUZernOlU69QRv33XE6o7IGSbojV4jUgnU4k8MXaq0ipVbPvg07BzMZ9SQw+
+ QJu+YwGADUpFy2rt9+GMuCgdqlviBi7Cbww8pPp0O1hSFDuLlVYz496wJ12FoCVYUEr/SAntaNAF/
+ qaFknayIvihxpYRw=;
+Received: from relay-177.153.28.21.ig.com.br ([177.153.28.21])
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1hTziL-00BNxO-SL
+ for osst-users@lists.sourceforge.net; Fri, 24 May 2019 02:13:47 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=1385155620.ig;
+ d=ig.com.br; 
+ h=From:Subject:To:Content-Type:MIME-Version:Date:Message-Id;
+ bh=0wnxkAz6gCIfsOEWmNFGWwbOweg=;
+ b=SISZMGIJ5QRAT06lL8vqDns6Uh7t33lsnAIpxWguOh9QzvFV2FkbHoyXBMOV90WUqcPWh57h4U/f
+ patRpC+UfJ8nufKEeKo2FollH50WjcUZPTmxfQIVfiL2LvaqCgJQm9elUlPLvOL/xYMUVrVeRv6L
+ f9XG0D5qWk5edcWnup0=
+Received: from saul0001.ig.correio.biz (127.0.0.1) by ig.com.br id
+ hst9li1oqgol for <osst-users@lists.sourceforge.net>;
+ Thu, 23 May 2019 23:13:39 -0300 (envelope-from <anarjor@ig.com.br>)
+Received: from skyler0004.ig.correio.biz (skyler0004.ig.correio.biz
+ [10.30.248.164])
+ by saul0001.ig.correio.biz (Postfix) with ESMTP id 7DEEF3FC46
+ for <osst-users@lists.sourceforge.net>; Thu, 23 May 2019 23:13:39 -0300 (-03)
+x-ig-id: kI__i6x0mfR9-s5OzDshUkD_26oqGX2cIGJLQdgxRR7lHOrYQryKtDtF5JyTO7SSSpFBndbSSIeQWjoT-J4OCzzq_XNJ3_YH34hxNVHoi9S5Dxg18-Ss3HfrGE22sPV4nEhnqbJZs69B0nqfmj9lNVgSNLX0Xzl4810Xq9TedD6NsAxcpLRBVBTLPOWNm1mM
+ NjE2ZTYxNzI2YTZmNzI0MDY5NjcyZTYzNmY2ZDJlNjI3Mg==
+Received: from 2 (unknown [149.28.97.108])
+ (Authenticated sender: anarjor@ig.com.br)
+ by skyler0004.ig.correio.biz (Postfix) with ESMTPA id 298A5E00036
+ for <osst-users@lists.sourceforge.net>; Thu, 23 May 2019 23:13:39 -0300 (-03)
+From: "Fatura Net" <anarjor@ig.com.br>
 To: osst-users@lists.sourceforge.net
-Date: 22 May 2019 10:37:55 -0300
-X-Spam-Score: 0.0 (/)
+MIME-Version: 1.0
+Date: Fri, 24 May 2019 02:13:39 +0000
+Message-Id: <2019052402133846DACD5E8E$70DDB16900@localhost>
+Status: N
+X-Spam-Score: 6.3 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 TIME_LIMIT_EXCEEDED    Exceeded time limit / deadline
-X-Headers-End: 1hTRqM-006H6i-MB
-Subject: [Osst-users] =?utf-8?q?Purificador_e_Mini_Ar_Condicionado_Port?=
- =?utf-8?q?=C3=A1til_Pessoal_com_Luzes_Led!_Refrigera=2C_Umidifica_e_Purif?=
- =?utf-8?q?ica?=
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: net.com.br]
+ 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ (anarjor[at]ig.com.br)
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 1.2 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image area
+ 1.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ background
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 1.0 RDNS_DYNAMIC           Delivered to internal network by host with
+ dynamic-looking rDNS
+ 3.2 HELO_DYNAMIC_IPADDR    Relay HELO'd using suspicious hostname (IP addr
+ 1)
+X-Headers-End: 1hTziL-00BNxO-SL
+Subject: [Osst-users] Sua fatura NET agora digital.
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -70,326 +100,284 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3052470895229728599=="
+Content-Type: multipart/mixed; boundary="===============4448008702410315976=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
+This is a multi-part message in MIME format
 
---===============3052470895229728599==
+--===============4448008702410315976==
 Content-Type: multipart/alternative;
- boundary=--boundary_77772_4e7821cc-2bfa-4648-8ad3-b1ff18fd0402
+	boundary="----=_NextPart_636_6686_87674706.77262710"
+
+This is a multi-part message in MIME format
+
+------=_NextPart_636_6686_87674706.77262710
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Cliente NET
+Para facilitar ainda mais o seu dia a dia, segue neste e-mail o link da =
+sua fatura digital para que voc=EA possa conferir e pagar ela a qualquer=
+ hora e em qualquer lugar.
+Neste m=EAs, a fatura impressa tamb=E9m vai chegar na sua casa. Esta fat=
+ura tem o pre=E7o promocional para todos clientes que efetuarem o pagame=
+nto hoje. Vale lembrar que o valor voltar=E1 normalmente a ser cobrado n=
+a pr=F3xima fatura. Caso j=E1 tenha pago sua fatura recentemente, este b=
+oleto promocional ir=E1 servir como sua fatura do pr=F3ximo m=EAs. 
+
+Confira abaixo o resumo das informa=E7=F5es da sua fatura:
+
+Data de vencimento: 24/05/2019
+Valor: 129,90
+N=FAmero Boleto: 776000 
+
+https://bit.do/eS86K
+
+VISUALIZAR FATURA NET
+
+SOLICITE A FATURA DIGITAL E TENHA MUITO MAIS VANTAGENS NO SEU DIA A DIA:=
 
 
-----boundary_77772_4e7821cc-2bfa-4648-8ad3-b1ff18fd0402
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
+Voc=EA tem mais comodidade para acess=E1-la quando e onde quiser, atrav=E9=
+s do seu notebook, tablet ou celular.
 
-U3VwZXIgTWluaSBBciBDb25kaWNpb25hZG8gfCBQdXJpZmljYWRvciAvLy8vIFB1cmlm
-aWNhZG9yIGUgTWluaSBBciBDb25kaWNpb25hZG8gUG9ydMOhdGlsIFBlc3NvYWwgY29t
-IEx1emVzIExlZCEgUmVmcmlnZXJhLCBVbWlkaWZpY2EgZSBQdXJpZmljYXRkIGltZyB7
-ZGlzcGxheTogYmxvY2s7fWJvZHksdGQsdGggewlmb250LWZhbWlseTogVmVyZGFuYSwg
-QXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjt9LnN0eWxlMSB7CWNvbG9yOiAjRkZG
-RkZGOwlmb250LXNpemU6IDE4cHg7fS5zdHlsZTIgewlmb250LXNpemU6IDMwcHg7CWZv
-bnQtd2VpZ2h0OiBib2xkO30uc3R5bGUzIHsJZm9udC1zaXplOiAxNHB4Owljb2xvcjog
-IzMzMzMzMzt9LnN0eWxlNCB7CWZvbnQtc2l6ZTogMThweDsJZm9udC13ZWlnaHQ6IGJv
-bGQ7fS5zdHlsZTUge2ZvbnQtc2l6ZTogMTRweH08aW1nIG5hbWU9Im1pbmlhcl8wMDFf
-cjFfYzEiIHNyYz0iaHR0cDovL3d3dy5zb2x1Y2FvaW1lZGlhdGEuY29tL21rd2ViL2lt
-YWdlcy9taW5pYXJfMDAxX3IxX2MxYi5qcGciIHdpZHRoPSI1NTAiIGhlaWdodD0iNjMz
-IiBib3JkZXI9IjAiIGlkPSJtaW5pYXJfMDAxX3IxX2MxIiBhbHQ9IkVzdGUgY2xpbWF0
-aXphZG9yIHBlc3NvYWwgY3JpYXImYWFjdXRlOyB1bSBhbWJpZW50ZSBtYWlzIGZyZXNj
-byBlIGdvc3Rvc28gZGUgcmVzcGlyYXIgYW8gc2V1IHJlZG9yISBPIE1pbmkgQXIgY29u
-ZGljaW9uYWRvIGRlIHVzbyBQZXNzb2FsIGNoZWdhIHBhcmEgbGl2cmFyIHZvYyZlY2ly
-YzsgZG9zIGRpYXMgbWFpcyBxdWVudGVzIG91IHNlY29zLCBjcmlhIHVtIGZyZXNjb3Ig
-ZSBiZW0tZXN0YXIuIEV4dHJlbWFtZW50ZSBjb21wYWN0byBlIGxldmUsIGVsZSBjb250
-YSBjb20gdW0gc2lzdGVtYSBkZSByZXNmcmlhbWVudG8gZWNvbiZvY2lyYzttaWNvIGUg
-cGVyZmVpdG8gcGFyYSBxdWVtIHNvZnJlIGNvbSBhbGVyZ2lhcyBlIGRvZW4mY2NlZGls
-O2FzIHJlc3BpcmF0Jm9hY3V0ZTtyaWFzLCBwb2lzIGV2aXRhIG8gcmVzc2VjYW1lbnRv
-IGRvIGFyLiBDb20gJmFhY3V0ZTtndWEgbm8gcmVzZXJ2YXQmb2FjdXRlO3JpbyBlbGUg
-aXImYWFjdXRlOyBldmFwb3JhciBlIGNsaW1hdGl6YXIsIHNlbSAmYWFjdXRlO2d1YSBl
-bGUgaXImYWFjdXRlOyBmdW5jaW9uYXIgY29tbyB1bSB2ZW50aWxhZG9yIGUgdmVudGls
-YXIgbyBsb2NhbCBkaXJlY2lvbmFkby4iIC8+Jm5ic3A7MyBBUEFSRUxIT1MgRU0gMSBQ
-dXJpZmljYWRvcyBkZSBBciwgVW1pZGlmaWNhZG9yIGRlIEFyIGUgUmVmcmlnZXJhZG9y
-IGRlIEFyJm5ic3A7PGltZyBuYW1lPSJtaW5pYXJfMDAxX3IzX2MxIiBzcmM9Imh0dHA6
-Ly93d3cuc29sdWNhb2ltZWRpYXRhLmNvbS9ta3dlYi9pbWFnZXMvbWluaWFyXzAwMV9y
-M19jMS5qcGciIHdpZHRoPSI1NTAiIGhlaWdodD0iMzIwIiBib3JkZXI9IjAiIGlkPSJt
-aW5pYXJfMDAxX3IzX2MxIiBhbHQ9IkVzdGUgY2xpbWF0aXphZG9yIHBlc3NvYWwgY3Jp
-YXImYWFjdXRlOyB1bSBhbWJpZW50ZSBtYWlzIGZyZXNjbyBlIGdvc3Rvc28gZGUgcmVz
-cGlyYXIgYW8gc2V1IHJlZG9yISBPIE1pbmkgQXIgY29uZGljaW9uYWRvIGRlIHVzbyBQ
-ZXNzb2FsIGNoZWdhIHBhcmEgbGl2cmFyIHZvYyZlY2lyYzsgZG9zIGRpYXMgbWFpcyBx
-dWVudGVzIG91IHNlY29zLCBjcmlhIHVtIGZyZXNjb3IgZSBiZW0tZXN0YXIuIEV4dHJl
-bWFtZW50ZSBjb21wYWN0byBlIGxldmUsIGVsZSBjb250YSBjb20gdW0gc2lzdGVtYSBk
-ZSByZXNmcmlhbWVudG8gZWNvbiZvY2lyYzttaWNvIGUgcGVyZmVpdG8gcGFyYSBxdWVt
-IHNvZnJlIGNvbSBhbGVyZ2lhcyBlIGRvZW4mY2NlZGlsO2FzIHJlc3BpcmF0Jm9hY3V0
-ZTtyaWFzLCBwb2lzIGV2aXRhIG8gcmVzc2VjYW1lbnRvIGRvIGFyLiBDb20gJmFhY3V0
-ZTtndWEgbm8gcmVzZXJ2YXQmb2FjdXRlO3JpbyBlbGUgaXImYWFjdXRlOyBldmFwb3Jh
-ciBlIGNsaW1hdGl6YXIsIHNlbSAmYWFjdXRlO2d1YSBlbGUgaXImYWFjdXRlOyBmdW5j
-aW9uYXIgY29tbyB1bSB2ZW50aWxhZG9yIGUgdmVudGlsYXIgbyBsb2NhbCBkaXJlY2lv
-bmFkby4iIC8+Jm5ic3A7Jm5ic3A7Jm5ic3A7RXN0ZSBjbGltYXRpemFkb3IgcGVzc29h
-bCBjcmlhciZhYWN1dGU7IHVtIGFtYmllbnRlIG1haXMgZnJlc2NvIGUgZ29zdG9zbyBk
-ZSByZXNwaXJhciBhbyBzZXUgcmVkb3IhICAgTyBNaW5pIEFyIGNvbmRpY2lvbmFkbyBk
-ZSB1c28gUGVzc29hbCBjaGVnYSBwYXJhIGxpdnJhciB2b2MmZWNpcmM7IGRvcyBkaWFz
-IG1haXMgcXVlbnRlcyBvdSBzZWNvcywgY3JpYSB1bSBmcmVzY29yIGUgYmVtLWVzdGFy
-LiBFeHRyZW1hbWVudGUgY29tcGFjdG8gZSBsZXZlLCBlbGUgY29udGEgY29tIHVtIHNp
-c3RlbWEgZGUgcmVzZnJpYW1lbnRvIGVjb24mb2NpcmM7bWljbyBlIHBlcmZlaXRvIHBh
-cmEgcXVlbSBzb2ZyZSBjb20gYWxlcmdpYXMgZSBkb2VuJmNjZWRpbDthcyByZXNwaXJh
-dCZvYWN1dGU7cmlhcywgcG9pcyBldml0YSBvICByZXNzZWNhbWVudG8gZG8gYXIuICAg
-Q29tICZhYWN1dGU7Z3VhIG5vIHJlc2VydmF0Jm9hY3V0ZTtyaW8gZWxlIGlyJmFhY3V0
-ZTsgZXZhcG9yYXIgZSBjbGltYXRpemFyLCBzZW0gJmFhY3V0ZTtndWEgZWxlIGlyJmFh
-Y3V0ZTsgZnVuY2lvbmFyIGNvbW8gdW0gdmVudGlsYWRvciBlIHZlbnRpbGFyIG8gbG9j
-YWwgZGlyZWNpb25hZG8uJm5ic3A7Jm5ic3A7Jm5ic3A7PGltZyBuYW1lPSJtaW5pYXJf
-MDAxX3I1X2MxIiBzcmM9Imh0dHA6Ly93d3cuc29sdWNhb2ltZWRpYXRhLmNvbS9ta3dl
-Yi9pbWFnZXMvbWluaWFyXzAwMV9yNV9jMS5qcGciIHdpZHRoPSI1NTAiIGhlaWdodD0i
-NTY3IiBib3JkZXI9IjAiIGlkPSJtaW5pYXJfMDAxX3I1X2MxIiBhbHQ9IkVzdGUgY2xp
-bWF0aXphZG9yIHBlc3NvYWwgY3JpYXImYWFjdXRlOyB1bSBhbWJpZW50ZSBtYWlzIGZy
-ZXNjbyBlIGdvc3Rvc28gZGUgcmVzcGlyYXIgYW8gc2V1IHJlZG9yISBPIE1pbmkgQXIg
-Y29uZGljaW9uYWRvIGRlIHVzbyBQZXNzb2FsIGNoZWdhIHBhcmEgbGl2cmFyIHZvYyZl
-Y2lyYzsgZG9zIGRpYXMgbWFpcyBxdWVudGVzIG91IHNlY29zLCBjcmlhIHVtIGZyZXNj
-b3IgZSBiZW0tZXN0YXIuIEV4dHJlbWFtZW50ZSBjb21wYWN0byBlIGxldmUsIGVsZSBj
-b250YSBjb20gdW0gc2lzdGVtYSBkZSByZXNmcmlhbWVudG8gZWNvbiZvY2lyYzttaWNv
-IGUgcGVyZmVpdG8gcGFyYSBxdWVtIHNvZnJlIGNvbSBhbGVyZ2lhcyBlIGRvZW4mY2Nl
-ZGlsO2FzIHJlc3BpcmF0Jm9hY3V0ZTtyaWFzLCBwb2lzIGV2aXRhIG8gcmVzc2VjYW1l
-bnRvIGRvIGFyLiBDb20gJmFhY3V0ZTtndWEgbm8gcmVzZXJ2YXQmb2FjdXRlO3JpbyBl
-bGUgaXImYWFjdXRlOyBldmFwb3JhciBlIGNsaW1hdGl6YXIsIHNlbSAmYWFjdXRlO2d1
-YSBlbGUgaXImYWFjdXRlOyBmdW5jaW9uYXIgY29tbyB1bSB2ZW50aWxhZG9yIGUgdmVu
-dGlsYXIgbyBsb2NhbCBkaXJlY2lvbmFkby4iIC8+Jm5ic3A7Jm5ic3A7Jm5ic3A7QXIg
-Q29uZGljaW9uYWRvIFBvcnQmYWFjdXRlO3RpbCBDbGltYXRpemFkb3IgQWlyIENvb2xl
-ciBVc2IgTHV6IExlZCAtVG9tYWRhIC0gVVNCIHByYSBjYXJyZWdhciBlbGUgLSBBbGlt
-ZW50YSZjY2VkaWw7JmF0aWxkZTtvOiAxMDAtMjQwdiAoYml2b2x0KSAtIDUwLzYwSHog
-LSAwLDJBIE1heCAtIERDNVYsIDEsNUEgLSBQb3QmZWNpcmM7bmNpYTogMzUwIFcgLSBW
-ZWxvY2lkYWRlOiAzIG1vZG9zIChBbHRvL00mZWFjdXRlO2Rpby9CYWl4bykgLSBDYXBh
-Y2lkYWRlIGRvIHRhbnF1ZSBkZSAmYWFjdXRlO2d1YTogMjUwIG1sIG91IG1lbm9zIC0g
-QmFpeG8gY29uc3VtbyBkZSBlbmVyZ2lhIC0gTiZpYWN1dGU7dmVsIGRlIHJ1JmlhY3V0
-ZTtkbzogbWVub3MgZGUgNjhkQiAoQSkgLSBCYXN0YSBBZGljaW9uYXIgJmFhY3V0ZTtn
-dWEgZSBsaWcmYWFjdXRlOy1sbyAtIERlc2xpZ2FtZW50byBhdXRvbSZhYWN1dGU7dGlj
-byBxdWFuZG8gZm9yYSBkYSAmYWFjdXRlO2d1YSAoTiZBdGlsZGU7TyBGT0kgUFJPSkVU
-QURPIFBBUkEgUkVTRlJJQVIgTyBBTUJJRU5URVMgREUgR1JBTkRFIFBPUlRFIFBPUiBJ
-TlRFSVJPKSAtIEEgcmVkdSZjY2VkaWw7JmF0aWxkZTtvIGRlIHRlbXBlcmF0dXJhIHBv
-ZGUgdmFyaWFyIGRlIGFjb3JkbyBjb20gYXMgY2FyYWN0ZXImaWFjdXRlO3N0aWNhcyBj
-bGltJmFhY3V0ZTt0aWNhcyBvbmRlIG8gcHJvZHV0byBmb3IgZGlzcG9zdG8uIC0gTHV6
-IGRvIExlZDogUkdCIChDb3JlcyBBbGVhdCZvYWN1dGU7cmlhcykgLSBEdXJhJmNjZWRp
-bDsmYXRpbGRlO28gZGEgQmF0ZXJpYTogNiBIb3JhcyAtIE0mZWFjdXRlO2RpYSBkZSBE
-aW1pbnVpJmNjZWRpbDsmYXRpbGRlO28gQXByb3hpbWFkYSBkYSBUZW1wZXJhdHVyYTog
-Ni04IEMmZGVnOyAtIEEgJkFhY3V0ZTtHVUEgRklDQSBOQSBQQVJURSBJTlRFUklPUiBE
-TyBQUk9EVVRPJm5ic3A7Jm5ic3A7Jm5ic3A7PGltZyBuYW1lPSJtaW5pYXJfMDAxX3I3
-X2MxIiBzcmM9Imh0dHA6Ly93d3cuc29sdWNhb2ltZWRpYXRhLmNvbS9ta3dlYi9pbWFn
-ZXMvbWluaWFyXzAwMV9yN19jMS5qcGciIHdpZHRoPSI1NTAiIGhlaWdodD0iNTUxIiBi
-b3JkZXI9IjAiIGlkPSJtaW5pYXJfMDAxX3I3X2MxIiBhbHQ9IkVzdGUgY2xpbWF0aXph
-ZG9yIHBlc3NvYWwgY3JpYXImYWFjdXRlOyB1bSBhbWJpZW50ZSBtYWlzIGZyZXNjbyBl
-IGdvc3Rvc28gZGUgcmVzcGlyYXIgYW8gc2V1IHJlZG9yISBPIE1pbmkgQXIgY29uZGlj
-aW9uYWRvIGRlIHVzbyBQZXNzb2FsIGNoZWdhIHBhcmEgbGl2cmFyIHZvYyZlY2lyYzsg
-ZG9zIGRpYXMgbWFpcyBxdWVudGVzIG91IHNlY29zLCBjcmlhIHVtIGZyZXNjb3IgZSBi
-ZW0tZXN0YXIuIEV4dHJlbWFtZW50ZSBjb21wYWN0byBlIGxldmUsIGVsZSBjb250YSBj
-b20gdW0gc2lzdGVtYSBkZSByZXNmcmlhbWVudG8gZWNvbiZvY2lyYzttaWNvIGUgcGVy
-ZmVpdG8gcGFyYSBxdWVtIHNvZnJlIGNvbSBhbGVyZ2lhcyBlIGRvZW4mY2NlZGlsO2Fz
-IHJlc3BpcmF0Jm9hY3V0ZTtyaWFzLCBwb2lzIGV2aXRhIG8gcmVzc2VjYW1lbnRvIGRv
-IGFyLiBDb20gJmFhY3V0ZTtndWEgbm8gcmVzZXJ2YXQmb2FjdXRlO3JpbyBlbGUgaXIm
-YWFjdXRlOyBldmFwb3JhciBlIGNsaW1hdGl6YXIsIHNlbSAmYWFjdXRlO2d1YSBlbGUg
-aXImYWFjdXRlOyBmdW5jaW9uYXIgY29tbyB1bSB2ZW50aWxhZG9yIGUgdmVudGlsYXIg
-byBsb2NhbCBkaXJlY2lvbmFkby4iIC8+RW52aWFkbyBwYXJhOiBJZGVudGlmaWNhw6fD
-o28gZGUgZW52aW86IDAwW0lkXU7Do28gZGVzZWpvIG1haXMgcmVjZWJlcg==
-----boundary_77772_4e7821cc-2bfa-4648-8ad3-b1ff18fd0402
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
+Fica mais f=E1cil organizar as suas contas no mesmo lugar.
 
-PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5TdXBlciBNaW5pIEFyIENvbmRpY2lvbmFkbyB8
-IFB1cmlmaWNhZG9yIC8vLy8gUHVyaWZpY2Fkb3IgZSBNaW5pIEFyIENvbmRpY2lvbmFk
-byBQb3J0w6F0aWwgUGVzc29hbCBjb20gTHV6ZXMgTGVkISBSZWZyaWdlcmEsIFVtaWRp
-ZmljYSBlIFB1cmlmaWNhPC90aXRsZT4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQt
-VHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PWlzby04ODU5LTEiPg0KPHN0
-eWxlIHR5cGU9InRleHQvY3NzIj4NCnRkIGltZyB7ZGlzcGxheTogYmxvY2s7fWJvZHks
-dGQsdGggew0KCWZvbnQtZmFtaWx5OiBWZXJkYW5hLCBBcmlhbCwgSGVsdmV0aWNhLCBz
-YW5zLXNlcmlmOw0KfQ0KLnN0eWxlMSB7DQoJY29sb3I6ICNGRkZGRkY7DQoJZm9udC1z
-aXplOiAxOHB4Ow0KfQ0KLnN0eWxlMiB7DQoJZm9udC1zaXplOiAzMHB4Ow0KCWZvbnQt
-d2VpZ2h0OiBib2xkOw0KfQ0KLnN0eWxlMyB7DQoJZm9udC1zaXplOiAxNHB4Ow0KCWNv
-bG9yOiAjMzMzMzMzOw0KfQ0KLnN0eWxlNCB7DQoJZm9udC1zaXplOiAxOHB4Ow0KCWZv
-bnQtd2VpZ2h0OiBib2xkOw0KfQ0KLnN0eWxlNSB7Zm9udC1zaXplOiAxNHB4fQ0KPC9z
-dHlsZT4NCjwvaGVhZD4NCjxib2R5IGJnY29sb3I9IiNmZmZmZmYiPg0KPHRhYmxlIGJv
-cmRlcj0iMCIgYWxpZ249ImNlbnRlciIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5n
-PSIwIiBzdHlsZT0id2lkdGg6IDU1MHB4OyI+DQo8dGJvZHk+DQo8dHI+DQo8dGQ+PGlt
-ZyBzcmM9Imh0dHA6Ly93d3cuc29sdWNhb2ltZWRpYXRhLmNvbS9ta3dlYi9pbWFnZXMv
-c3BhY2VyLmdpZiIgd2lkdGg9IjU1MCIgaGVpZ2h0PSIxIiBib3JkZXI9IjAiIGFsdD0i
-IiAvPjwvdGQ+DQo8dGQ+PGltZyBzcmM9Imh0dHA6Ly93d3cuc29sdWNhb2ltZWRpYXRh
-LmNvbS9ta3dlYi9pbWFnZXMvc3BhY2VyLmdpZiIgd2lkdGg9IjEiIGhlaWdodD0iMSIg
-Ym9yZGVyPSIwIiBhbHQ9IiIgLz48L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD48YSBocmVm
-PSJodHRwOi8vc21hcnR2cGMub25saW5lL2xpbmsvYy9jd2QyLz9FPW9zc3QtdXNlcnNA
-bGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayI+PGltZyBuYW1lPSJt
-aW5pYXJfMDAxX3IxX2MxIiBzcmM9Imh0dHA6Ly93d3cuc29sdWNhb2ltZWRpYXRhLmNv
-bS9ta3dlYi9pbWFnZXMvbWluaWFyXzAwMV9yMV9jMWIuanBnIiB3aWR0aD0iNTUwIiBo
-ZWlnaHQ9IjYzMyIgYm9yZGVyPSIwIiBpZD0ibWluaWFyXzAwMV9yMV9jMSIgYWx0PSJF
-c3RlIGNsaW1hdGl6YWRvciBwZXNzb2FsIGNyaWFyJmFhY3V0ZTsgdW0gYW1iaWVudGUg
-bWFpcyBmcmVzY28gZSBnb3N0b3NvIGRlIHJlc3BpcmFyIGFvIHNldSByZWRvciEgDQoN
-Ck8gTWluaSBBciBjb25kaWNpb25hZG8gZGUgdXNvIFBlc3NvYWwgY2hlZ2EgcGFyYSBs
-aXZyYXIgdm9jJmVjaXJjOyBkb3MgZGlhcyBtYWlzIHF1ZW50ZXMgb3Ugc2Vjb3MsIGNy
-aWEgdW0gZnJlc2NvciBlIGJlbS1lc3Rhci4gRXh0cmVtYW1lbnRlIGNvbXBhY3RvIGUg
-bGV2ZSwgZWxlIGNvbnRhIGNvbSB1bSBzaXN0ZW1hIGRlIHJlc2ZyaWFtZW50byBlY29u
-Jm9jaXJjO21pY28gZSBwZXJmZWl0byBwYXJhIHF1ZW0gc29mcmUgY29tIGFsZXJnaWFz
-IGUgZG9lbiZjY2VkaWw7YXMgcmVzcGlyYXQmb2FjdXRlO3JpYXMsIHBvaXMgZXZpdGEg
-byANCnJlc3NlY2FtZW50byBkbyBhci4gDQoNCkNvbSAmYWFjdXRlO2d1YSBubyByZXNl
-cnZhdCZvYWN1dGU7cmlvIGVsZSBpciZhYWN1dGU7IGV2YXBvcmFyIGUgY2xpbWF0aXph
-ciwgc2VtICZhYWN1dGU7Z3VhIGVsZSBpciZhYWN1dGU7IGZ1bmNpb25hciBjb21vIHVt
-IHZlbnRpbGFkb3IgZSB2ZW50aWxhciBvIGxvY2FsIGRpcmVjaW9uYWRvLiIgLz48L2E+
-PC90ZD4NCjx0ZD48aW1nIHNyYz0iaHR0cDovL3d3dy5zb2x1Y2FvaW1lZGlhdGEuY29t
-L21rd2ViL2ltYWdlcy9zcGFjZXIuZ2lmIiB3aWR0aD0iMSIgaGVpZ2h0PSI2MzMiIGJv
-cmRlcj0iMCIgYWx0PSIiIC8+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgYmdjb2xvcj0i
-IzJFNzJCRCI+DQo8dGFibGUgYm9yZGVyPSIwIiBjZWxsc3BhY2luZz0iMCIgY2VsbHBh
-ZGRpbmc9IjAiIHN0eWxlPSJ3aWR0aDogMTAwJTsiPg0KPHRib2R5Pg0KPHRyPg0KPHRk
-IHdpZHRoPSIxMCUiPiZuYnNwOzwvdGQ+DQo8dGQgd2lkdGg9IjgwJSI+DQo8ZGl2IGFs
-aWduPSJjZW50ZXIiIGNsYXNzPSJzdHlsZTEiPjxzcGFuIGNsYXNzPSJzdHlsZTIiPjMg
-QVBBUkVMSE9TIEVNIDE8L3NwYW4+PGJyIC8+IFB1cmlmaWNhZG9zIGRlIEFyLCBVbWlk
-aWZpY2Fkb3IgZGUgQXIgZSBSZWZyaWdlcmFkb3IgZGUgQXI8L2Rpdj4NCjwvdGQ+DQo8
-dGQgd2lkdGg9IjEwJSI+Jm5ic3A7PC90ZD4NCjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJs
-ZT4NCjwvdGQ+DQo8dGQ+PGltZyBzcmM9Imh0dHA6Ly93d3cuc29sdWNhb2ltZWRpYXRh
-LmNvbS9ta3dlYi9pbWFnZXMvc3BhY2VyLmdpZiIgd2lkdGg9IjEiIGhlaWdodD0iODEi
-IGJvcmRlcj0iMCIgYWx0PSIiIC8+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+PGEgaHJl
-Zj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL2MvY3dkMi8/RT1vc3N0LXVzZXJz
-QGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgbmFtZT0i
-bWluaWFyXzAwMV9yM19jMSIgc3JjPSJodHRwOi8vd3d3LnNvbHVjYW9pbWVkaWF0YS5j
-b20vbWt3ZWIvaW1hZ2VzL21pbmlhcl8wMDFfcjNfYzEuanBnIiB3aWR0aD0iNTUwIiBo
-ZWlnaHQ9IjMyMCIgYm9yZGVyPSIwIiBpZD0ibWluaWFyXzAwMV9yM19jMSIgYWx0PSJF
-c3RlIGNsaW1hdGl6YWRvciBwZXNzb2FsIGNyaWFyJmFhY3V0ZTsgdW0gYW1iaWVudGUg
-bWFpcyBmcmVzY28gZSBnb3N0b3NvIGRlIHJlc3BpcmFyIGFvIHNldSByZWRvciEgDQoN
-Ck8gTWluaSBBciBjb25kaWNpb25hZG8gZGUgdXNvIFBlc3NvYWwgY2hlZ2EgcGFyYSBs
-aXZyYXIgdm9jJmVjaXJjOyBkb3MgZGlhcyBtYWlzIHF1ZW50ZXMgb3Ugc2Vjb3MsIGNy
-aWEgdW0gZnJlc2NvciBlIGJlbS1lc3Rhci4gRXh0cmVtYW1lbnRlIGNvbXBhY3RvIGUg
-bGV2ZSwgZWxlIGNvbnRhIGNvbSB1bSBzaXN0ZW1hIGRlIHJlc2ZyaWFtZW50byBlY29u
-Jm9jaXJjO21pY28gZSBwZXJmZWl0byBwYXJhIHF1ZW0gc29mcmUgY29tIGFsZXJnaWFz
-IGUgZG9lbiZjY2VkaWw7YXMgcmVzcGlyYXQmb2FjdXRlO3JpYXMsIHBvaXMgZXZpdGEg
-byANCnJlc3NlY2FtZW50byBkbyBhci4gDQoNCkNvbSAmYWFjdXRlO2d1YSBubyByZXNl
-cnZhdCZvYWN1dGU7cmlvIGVsZSBpciZhYWN1dGU7IGV2YXBvcmFyIGUgY2xpbWF0aXph
-ciwgc2VtICZhYWN1dGU7Z3VhIGVsZSBpciZhYWN1dGU7IGZ1bmNpb25hciBjb21vIHVt
-IHZlbnRpbGFkb3IgZSB2ZW50aWxhciBvIGxvY2FsIGRpcmVjaW9uYWRvLiIgLz48L2E+
-PC90ZD4NCjx0ZD48aW1nIHNyYz0iaHR0cDovL3d3dy5zb2x1Y2FvaW1lZGlhdGEuY29t
-L21rd2ViL2ltYWdlcy9zcGFjZXIuZ2lmIiB3aWR0aD0iMSIgaGVpZ2h0PSIzMjAiIGJv
-cmRlcj0iMCIgYWx0PSIiIC8+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgYmdjb2xvcj0i
-I0ZGRkZGRiI+DQo8dGFibGUgYm9yZGVyPSIwIiBjZWxsc3BhY2luZz0iMCIgY2VsbHBh
-ZGRpbmc9IjAiIHN0eWxlPSJ3aWR0aDogMTAwJTsiPg0KPHRib2R5Pg0KPHRyPg0KPHRk
-IHdpZHRoPSIxMCUiPiZuYnNwOzwvdGQ+DQo8dGQgd2lkdGg9IjgwJSI+DQo8ZGl2IGFs
-aWduPSJjZW50ZXIiPjwvZGl2Pg0KPC90ZD4NCjx0ZCB3aWR0aD0iMTAlIj4mbmJzcDs8
-L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD4mbmJzcDs8L3RkPg0KPHRkPg0KPGRpdiBhbGln
-bj0iY2VudGVyIiBjbGFzcz0ic3R5bGUzIj48c3BhbiBjbGFzcz0ic3R5bGU0Ij5Fc3Rl
-IGNsaW1hdGl6YWRvciBwZXNzb2FsIGNyaWFyJmFhY3V0ZTsgdW0gYW1iaWVudGUgbWFp
-cyBmcmVzY28gZSBnb3N0b3NvIGRlIHJlc3BpcmFyIGFvIHNldSByZWRvciEgPGJyIC8+
-IDwvc3Bhbj48YnIgLz4gTyBNaW5pIEFyIGNvbmRpY2lvbmFkbyBkZSB1c28gUGVzc29h
-bCBjaGVnYSBwYXJhIGxpdnJhciB2b2MmZWNpcmM7IGRvcyBkaWFzIG1haXMgcXVlbnRl
-cyBvdSBzZWNvcywgY3JpYSB1bSBmcmVzY29yIGUgYmVtLWVzdGFyLiBFeHRyZW1hbWVu
-dGUgY29tcGFjdG8gZSBsZXZlLCBlbGUgY29udGEgY29tIHVtIHNpc3RlbWEgZGUgcmVz
-ZnJpYW1lbnRvIGVjb24mb2NpcmM7bWljbyBlIHBlcmZlaXRvIHBhcmEgcXVlbSBzb2Zy
-ZSBjb20gYWxlcmdpYXMgZSBkb2VuJmNjZWRpbDthcyByZXNwaXJhdCZvYWN1dGU7cmlh
-cywgcG9pcyBldml0YSBvIDxiciAvPiByZXNzZWNhbWVudG8gZG8gYXIuIDxiciAvPiA8
-YnIgLz4gQ29tICZhYWN1dGU7Z3VhIG5vIHJlc2VydmF0Jm9hY3V0ZTtyaW8gZWxlIGly
-JmFhY3V0ZTsgZXZhcG9yYXIgZSBjbGltYXRpemFyLCBzZW0gJmFhY3V0ZTtndWEgZWxl
-IGlyJmFhY3V0ZTsgZnVuY2lvbmFyIGNvbW8gdW0gdmVudGlsYWRvciBlIHZlbnRpbGFy
-IG8gbG9jYWwgZGlyZWNpb25hZG8uPC9kaXY+DQo8L3RkPg0KPHRkPiZuYnNwOzwvdGQ+
-DQo8L3RyPg0KPHRyPg0KPHRkPiZuYnNwOzwvdGQ+DQo8dGQ+DQo8ZGl2IGFsaWduPSJj
-ZW50ZXIiPjwvZGl2Pg0KPC90ZD4NCjx0ZD4mbmJzcDs8L3RkPg0KPC90cj4NCjwvdGJv
-ZHk+DQo8L3RhYmxlPg0KPC90ZD4NCjx0ZD48aW1nIHNyYz0iaHR0cDovL3d3dy5zb2x1
-Y2FvaW1lZGlhdGEuY29tL21rd2ViL2ltYWdlcy9zcGFjZXIuZ2lmIiB3aWR0aD0iMSIg
-aGVpZ2h0PSIxMiIgYm9yZGVyPSIwIiBhbHQ9IiIgLz48L3RkPg0KPC90cj4NCjx0cj4N
-Cjx0ZD48YSBocmVmPSJodHRwOi8vc21hcnR2cGMub25saW5lL2xpbmsvYy9jd2QyLz9F
-PW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayI+
-PGltZyBuYW1lPSJtaW5pYXJfMDAxX3I1X2MxIiBzcmM9Imh0dHA6Ly93d3cuc29sdWNh
-b2ltZWRpYXRhLmNvbS9ta3dlYi9pbWFnZXMvbWluaWFyXzAwMV9yNV9jMS5qcGciIHdp
-ZHRoPSI1NTAiIGhlaWdodD0iNTY3IiBib3JkZXI9IjAiIGlkPSJtaW5pYXJfMDAxX3I1
-X2MxIiBhbHQ9IkVzdGUgY2xpbWF0aXphZG9yIHBlc3NvYWwgY3JpYXImYWFjdXRlOyB1
-bSBhbWJpZW50ZSBtYWlzIGZyZXNjbyBlIGdvc3Rvc28gZGUgcmVzcGlyYXIgYW8gc2V1
-IHJlZG9yISANCg0KTyBNaW5pIEFyIGNvbmRpY2lvbmFkbyBkZSB1c28gUGVzc29hbCBj
-aGVnYSBwYXJhIGxpdnJhciB2b2MmZWNpcmM7IGRvcyBkaWFzIG1haXMgcXVlbnRlcyBv
-dSBzZWNvcywgY3JpYSB1bSBmcmVzY29yIGUgYmVtLWVzdGFyLiBFeHRyZW1hbWVudGUg
-Y29tcGFjdG8gZSBsZXZlLCBlbGUgY29udGEgY29tIHVtIHNpc3RlbWEgZGUgcmVzZnJp
-YW1lbnRvIGVjb24mb2NpcmM7bWljbyBlIHBlcmZlaXRvIHBhcmEgcXVlbSBzb2ZyZSBj
-b20gYWxlcmdpYXMgZSBkb2VuJmNjZWRpbDthcyByZXNwaXJhdCZvYWN1dGU7cmlhcywg
-cG9pcyBldml0YSBvIA0KcmVzc2VjYW1lbnRvIGRvIGFyLiANCg0KQ29tICZhYWN1dGU7
-Z3VhIG5vIHJlc2VydmF0Jm9hY3V0ZTtyaW8gZWxlIGlyJmFhY3V0ZTsgZXZhcG9yYXIg
-ZSBjbGltYXRpemFyLCBzZW0gJmFhY3V0ZTtndWEgZWxlIGlyJmFhY3V0ZTsgZnVuY2lv
-bmFyIGNvbW8gdW0gdmVudGlsYWRvciBlIHZlbnRpbGFyIG8gbG9jYWwgZGlyZWNpb25h
-ZG8uIiAvPjwvYT48L3RkPg0KPHRkPjxpbWcgc3JjPSJodHRwOi8vd3d3LnNvbHVjYW9p
-bWVkaWF0YS5jb20vbWt3ZWIvaW1hZ2VzL3NwYWNlci5naWYiIHdpZHRoPSIxIiBoZWln
-aHQ9IjU2NyIgYm9yZGVyPSIwIiBhbHQ9IiIgLz48L3RkPg0KPC90cj4NCjx0cj4NCjx0
-ZCBiZ2NvbG9yPSIjRkZGRkZGIj4NCjx0YWJsZSBib3JkZXI9IjAiIGNlbGxzcGFjaW5n
-PSIwIiBjZWxscGFkZGluZz0iMCIgc3R5bGU9IndpZHRoOiAxMDAlOyI+DQo8dGJvZHk+
-DQo8dHI+DQo8dGQgd2lkdGg9IjEwJSI+Jm5ic3A7PC90ZD4NCjx0ZCB3aWR0aD0iODAl
-Ij4NCjxkaXYgYWxpZ249ImNlbnRlciI+PC9kaXY+DQo8L3RkPg0KPHRkIHdpZHRoPSIx
-MCUiPiZuYnNwOzwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPiZuYnNwOzwvdGQ+DQo8dGQ+
-DQo8ZGl2IGFsaWduPSJjZW50ZXIiIGNsYXNzPSJzdHlsZTUiPkFyIENvbmRpY2lvbmFk
-byBQb3J0JmFhY3V0ZTt0aWwgQ2xpbWF0aXphZG9yIEFpciBDb29sZXIgVXNiIEx1eiBM
-ZWQ8YnIgLz4gLVRvbWFkYSAtIFVTQiBwcmEgY2FycmVnYXIgZWxlPGJyIC8+IC0gQWxp
-bWVudGEmY2NlZGlsOyZhdGlsZGU7bzogMTAwLTI0MHYgKGJpdm9sdCkgLSA1MC82MEh6
-IC0gMCwyQSBNYXggLSBEQzVWLCAxLDVBPGJyIC8+IC0gUG90JmVjaXJjO25jaWE6IDM1
-MCBXPGJyIC8+IC0gVmVsb2NpZGFkZTogMyBtb2RvcyAoQWx0by9NJmVhY3V0ZTtkaW8v
-QmFpeG8pPGJyIC8+IC0gQ2FwYWNpZGFkZSBkbyB0YW5xdWUgZGUgJmFhY3V0ZTtndWE6
-IDI1MCBtbCBvdSBtZW5vczxiciAvPiAtIEJhaXhvIGNvbnN1bW8gZGUgZW5lcmdpYTxi
-ciAvPiAtIE4maWFjdXRlO3ZlbCBkZSBydSZpYWN1dGU7ZG86IG1lbm9zIGRlIDY4ZEIg
-KEEpPGJyIC8+IC0gQmFzdGEgQWRpY2lvbmFyICZhYWN1dGU7Z3VhIGUgbGlnJmFhY3V0
-ZTstbG88YnIgLz4gLSBEZXNsaWdhbWVudG8gYXV0b20mYWFjdXRlO3RpY28gcXVhbmRv
-IGZvcmEgZGEgJmFhY3V0ZTtndWE8YnIgLz4gKE4mQXRpbGRlO08gRk9JIFBST0pFVEFE
-TyBQQVJBIFJFU0ZSSUFSIE8gQU1CSUVOVEVTIERFIEdSQU5ERSBQT1JURSBQT1IgSU5U
-RUlSTyk8YnIgLz4gLSBBIHJlZHUmY2NlZGlsOyZhdGlsZGU7byBkZSB0ZW1wZXJhdHVy
-YSBwb2RlIHZhcmlhciBkZSBhY29yZG8gY29tIGFzIGNhcmFjdGVyJmlhY3V0ZTtzdGlj
-YXMgY2xpbSZhYWN1dGU7dGljYXMgb25kZSBvIHByb2R1dG8gZm9yIGRpc3Bvc3RvLjxi
-ciAvPiAtIEx1eiBkbyBMZWQ6IFJHQiAoQ29yZXMgQWxlYXQmb2FjdXRlO3JpYXMpPGJy
-IC8+IC0gRHVyYSZjY2VkaWw7JmF0aWxkZTtvIGRhIEJhdGVyaWE6IDYgSG9yYXM8YnIg
-Lz4gLSBNJmVhY3V0ZTtkaWEgZGUgRGltaW51aSZjY2VkaWw7JmF0aWxkZTtvIEFwcm94
-aW1hZGEgZGEgVGVtcGVyYXR1cmE6IDYtOCBDJmRlZzs8YnIgLz4gLSBBICZBYWN1dGU7
-R1VBIEZJQ0EgTkEgUEFSVEUgSU5URVJJT1IgRE8gUFJPRFVUTzwvZGl2Pg0KPC90ZD4N
-Cjx0ZD4mbmJzcDs8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD4mbmJzcDs8L3RkPg0KPHRk
-Pg0KPGRpdiBhbGlnbj0iY2VudGVyIj48L2Rpdj4NCjwvdGQ+DQo8dGQ+Jm5ic3A7PC90
-ZD4NCjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjwvdGQ+DQo8dGQ+PGltZyBzcmM9
-Imh0dHA6Ly93d3cuc29sdWNhb2ltZWRpYXRhLmNvbS9ta3dlYi9pbWFnZXMvc3BhY2Vy
-LmdpZiIgd2lkdGg9IjEiIGhlaWdodD0iMjciIGJvcmRlcj0iMCIgYWx0PSIiIC8+PC90
-ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGlu
-ZS9saW5rL2MvY3dkMi8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIg
-dGFyZ2V0PSJfYmxhbmsiPjxpbWcgbmFtZT0ibWluaWFyXzAwMV9yN19jMSIgc3JjPSJo
-dHRwOi8vd3d3LnNvbHVjYW9pbWVkaWF0YS5jb20vbWt3ZWIvaW1hZ2VzL21pbmlhcl8w
-MDFfcjdfYzEuanBnIiB3aWR0aD0iNTUwIiBoZWlnaHQ9IjU1MSIgYm9yZGVyPSIwIiBp
-ZD0ibWluaWFyXzAwMV9yN19jMSIgYWx0PSJFc3RlIGNsaW1hdGl6YWRvciBwZXNzb2Fs
-IGNyaWFyJmFhY3V0ZTsgdW0gYW1iaWVudGUgbWFpcyBmcmVzY28gZSBnb3N0b3NvIGRl
-IHJlc3BpcmFyIGFvIHNldSByZWRvciEgDQoNCk8gTWluaSBBciBjb25kaWNpb25hZG8g
-ZGUgdXNvIFBlc3NvYWwgY2hlZ2EgcGFyYSBsaXZyYXIgdm9jJmVjaXJjOyBkb3MgZGlh
-cyBtYWlzIHF1ZW50ZXMgb3Ugc2Vjb3MsIGNyaWEgdW0gZnJlc2NvciBlIGJlbS1lc3Rh
-ci4gRXh0cmVtYW1lbnRlIGNvbXBhY3RvIGUgbGV2ZSwgZWxlIGNvbnRhIGNvbSB1bSBz
-aXN0ZW1hIGRlIHJlc2ZyaWFtZW50byBlY29uJm9jaXJjO21pY28gZSBwZXJmZWl0byBw
-YXJhIHF1ZW0gc29mcmUgY29tIGFsZXJnaWFzIGUgZG9lbiZjY2VkaWw7YXMgcmVzcGly
-YXQmb2FjdXRlO3JpYXMsIHBvaXMgZXZpdGEgbyANCnJlc3NlY2FtZW50byBkbyBhci4g
-DQoNCkNvbSAmYWFjdXRlO2d1YSBubyByZXNlcnZhdCZvYWN1dGU7cmlvIGVsZSBpciZh
-YWN1dGU7IGV2YXBvcmFyIGUgY2xpbWF0aXphciwgc2VtICZhYWN1dGU7Z3VhIGVsZSBp
-ciZhYWN1dGU7IGZ1bmNpb25hciBjb21vIHVtIHZlbnRpbGFkb3IgZSB2ZW50aWxhciBv
-IGxvY2FsIGRpcmVjaW9uYWRvLiIgLz48L2E+PC90ZD4NCjx0ZD48aW1nIHNyYz0iaHR0
-cDovL3d3dy5zb2x1Y2FvaW1lZGlhdGEuY29tL21rd2ViL2ltYWdlcy9zcGFjZXIuZ2lm
-IiB3aWR0aD0iMSIgaGVpZ2h0PSI1NTEiIGJvcmRlcj0iMCIgYWx0PSIiIC8+PC90ZD4N
-CjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCg0KDQo8dGFibGUgYWxpZ249ImNlbnRl
-ciIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiPg0KPHRy
-Pjx0ZCBhbGlnbj0iY2VudGVyIj4NCjxicj48YnI+PGJyPjxzcGFuIHN0eWxlPSJmb250
-LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjoj
-MDAwMDAwOyI+RW52aWFkbyBwYXJhOiBvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdl
-Lm5ldDwvc3Bhbj4NCjxicj48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxz
-YW5zLXNlcmlmOyBmb250LXNpemU6MTRweDsgY29sb3I6IzAwMDAwMDsiPklkZW50aWZp
-Y2HDp8OjbyBkZSBlbnZpbzogMDA3Nzc3Mjwvc3Bhbj4NCjxicj48YnI+PGJyPjxhIGhy
-ZWY9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvbGluay9tL2ltZC8/RT1vc3N0LXVzZXJz
-QGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgYm9yZGVy
-PSIwIiBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvaW1nL2xvZ28uZ2lmIiBhbHQ9
-IklNRCA3Nzc3MiIgc3R5bGU9Im1heC13aWR0aDoyMDBweDsgZGlzcGxheTpibG9jazsi
-PjwvYT4NCjxicj48YnI+PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9yZW1v
-dmVyLz9FPW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9i
-bGFuayIgc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1z
-aXplOjE0cHg7IGNvbG9yOiMwMDAwMDA7Ij48c3Ryb25nPk7Do28gZGVzZWpvIG1haXMg
-cmVjZWJlcjwvc3Ryb25nPjwvYT4NCjxicj48YnI+PGJyPjxicj48aW1nIHNyYz0iaHR0
-cDovL3NtYXJ0dnBjLm9ubGluZS9yZWFkLz9DPWN3ZDImRT1vc3N0LXVzZXJzQGxpc3Rz
-LnNvdXJjZWZvcmdlLm5ldCIgYm9yZGVyPSIwIiB3aWR0aD0iMCIgaGVpZ2h0PSIwIiBh
-bHQ9IklNRCA3Nzc3MiIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij4NCjwvdGQ+PC90cj4N
-CjwvdGFibGU+DQo8L2JvZHk+DQo8L2h0bWw+
-----boundary_77772_4e7821cc-2bfa-4648-8ad3-b1ff18fd0402--
+A vers=E3o digital chega antes da impressa, assim voc=EA ganha tempo e t=
+ranquilidade para organizar seus pagamentos.
+
+E tamb=E9m =E9 muito mais segura, pois s=F3 voc=EA pode acess=E1-la.
+
+A atualiza=E7=E3o do seu cadastro =E9 muito importante para o nosso rela=
+cionamento. Acesse net.com.br/atualize.
+
+N=E3o responda a este e-mail. Esta =E9 uma mensagem gerada automaticamen=
+te. Para enviar seus coment=E1rios, clique aqui e fale conosco.
+
+------=_NextPart_636_6686_87674706.77262710
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> <html><he=
+ad>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-88=
+59-1">
+  <META name=3DGenerator content=3D5.66> <title>Sua fatura NET agora dig=
+ital.</title>
+ </head>
+ <body> <DIV class=3D"CPjPt4gT6nUMdp_U_Rd1h YFtQ2HcVd7qxiOXuKcekC allowT=
+extSelection"> <DIV> <DIV class=3Drps_a3f1> <DIV style=3D"FONT-FAMILY: A=
+rial, Helvetica, sans-serif, serif, EmojiFont"><table class=3D"x_body" s=
+tyle=3D"WIDTH: 100%" width=3D"100%">  <TR>  <TD class=3Dx_center vAlign=3D=
+top align=3Dcenter>  <CENTER> <table  style=3D"BORDER-COLLAPSE: collapse=
+; MARGIN: 0px auto; DISPLAY: inline-block; BACKGROUND-COLOR: #b7b7b9"  c=
+ellSpacing=3D0 cellPadding=3D0 width=3D600 align=3Dcenter>     <TR>   <T=
+D align=3Dcenter><IMG style=3D"DISPLAY: block" border=3D0    src=3D"http=
+://www.netcombo.com.br/static/email/201705/22162501/images/topo.jpg"    =
+width=3D600 height=3D99 data-imageproxyid    data-imageproxyendpoint=3D"=
+/actions/ei" data-connectorsauthtoken=3D"1"    originalsrc=3D"http://www=
+=2Enetcombo.com.br/static/email/201705/22162501/images/topo.jpg"    data-i=
+magetype=3D"External"></TD></TR>   <TR>   <TD align=3Dcenter><IMG style=3D=
+"DISPLAY: block" border=3D0    src=3D"http://www.netcombo.com.br/static/=
+email/201705/22162501/images/bannerPrincipal.jpg"    width=3D599 height=3D=
+316 useMap=3D#x_Map data-imageproxyid    data-imageproxyendpoint=3D"/act=
+ions/ei" data-connectorsauthtoken=3D"1"    originalsrc=3D"http://www.net=
+combo.com.br/static/email/201705/22162501/images/bannerPrincipal.jpg"   =
+ data-imagetype=3D"External"></TD></TR>   <TR>   <TD>&nbsp;</TD></TR>   =
+<TR>   <TD height=3D394 vAlign=3Dtop align=3Dcenter>  <table    style=3D=
+"BORDER-COLLAPSE: collapse; MARGIN: 0px auto" cellSpacing=3D0    cellPad=
+ding=3D0 width=3D520 align=3Dcenter>        <TR>     <TD height=3D40 ali=
+gn=3Dcenter>&nbsp;</TD></TR>    <TR>     <TD vAlign=3Dtop width=3D"100%"=
+ align=3Dleft>     <P     style=3D"FONT-SIZE: 15px; FONT-FAMILY: Arial,H=
+elvetica,sans-serif; COLOR: #3b3b3b; TEXT-ALIGN: justify; MARGIN: 0px; L=
+INE-HEIGHT: 20px"><STRONG><SPAN     lang=3Dpt-br style=3D"FONT-SIZE: 16p=
+x; COLOR: #011e46">Cliente     NET</SPAN></STRONG><BR><BR>Para facilitar=
+ ainda mais o seu dia     a dia, segue neste e-mail o link da sua fatura=
+ digital para     que voc=EA possa conferir e pagar ela a qualquer hora =
+e em     qualquer lugar.<BR><BR><STRONG>Neste m=EAs, a fatura impressa  =
+   tamb=E9m vai chegar na sua casa. Esta fatura tem o pre=E7o     promoc=
+ional para todos clientes que efetuarem o pagamento     hoje. Vale lembr=
+ar que o valor voltar=E1 normalmente a ser     cobrado na pr=F3xima fatu=
+ra.<SPAN lang=3Dpt-br> Caso j=E1 tenha pago     sua fatura recentemente,=
+ este boleto promocional ir=E1 servir     como sua fatura do pr=F3ximo m=
+=EAs. </SPAN></STRONG></P></TD></TR>    <TR>     <TD>&nbsp;</TD></TR>   =
+ <TR>     <TD height=3D30 align=3Dcenter>    <table          style=3D"BO=
+RDER-COLLAPSE: collapse; MARGIN: 0px auto" height=3D195     cellSpacing=3D=
+0 cellPadding=3D0 width=3D547 align=3Dcenter>           <TR>      <TD he=
+ight=3D119>       <P       style=3D"FONT-SIZE: 15px; FONT-FAMILY: Arial,=
+Helvetica,sans-serif; COLOR: #010101; MARGIN: 0px"       align=3Dcenter>=
+<STRONG>Confira abaixo o resumo das       informa=E7=F5es da sua fatura:=
+<BR></STRONG>       <P       style=3D"FONT-SIZE: 15px; FONT-FAMILY: Aria=
+l,Helvetica,sans-serif; COLOR: #010101; MARGIN: 0px">       <P       sty=
+le=3D"FONT-SIZE: 15px; FONT-FAMILY: Arial,Helvetica,sans-serif; COLOR: #=
+010101; MARGIN: 0px"><STRONG>Data       de vencimento:</STRONG>       24=
+/05/2019<BR><STRONG>Valor:</STRONG>       129,90<BR><STRONG>N=FAmero    =
+   Boleto:</STRONG>&nbsp;776000&nbsp;</P></TD></TR>      <TR>      <TD><=
+A style=3D"TEXT-DECORATION: none"       href=3D"https://bit.do/eS86K">  =
+     <DIV       style=3D"CURSOR: pointer; HEIGHT: 48px; WIDTH: 324px; PO=
+SITION: relative; FLOAT: left; COLOR: #fff; MARGIN-LEFT: 110px; BACKGROU=
+ND-COLOR: #01395e; box-shadow: 1px 1px 20px 0px #EEE; border-radius: 5px=
+">       <DIV       style=3D"FONT-SIZE: 20px; FONT-FAMILY: Arial; MARGIN=
+-TOP: 10px; POSITION: relative; TEXT-ALIGN: center">VISUALIZAR       FAT=
+URA NET</DIV></DIV></A></TD></TR>      <TR>      <TD vAlign=3Dmiddle wid=
+th=3D547      align=3Dleft>&nbsp;</TD></TR></TABLE></TD></TR></TABLE></T=
+D></TR>   <TR bgColor=3D#005f97>   <TD>&nbsp;</TD></TR>   <TR bgColor=3D=
+#005f97>   <TD height=3D60 vAlign=3Dmiddle align=3Dcenter>  <table    st=
+yle=3D"BORDER-COLLAPSE: collapse; MARGIN: 0px auto" cellSpacing=3D0    c=
+ellPadding=3D0 width=3D500 align=3Dcenter>        <TR>     <TD vAlign=3D=
+middle width=3D350 align=3Dleft>     <P     style=3D"FONT-SIZE: 12px; FO=
+NT-FAMILY: Arial,Helvetica,sans-serif; COLOR: #fdc300; MARGIN: 0px"><STR=
+ONG>SOLICITE     A FATURA DIGITAL E TENHA MUITO MAIS VANTAGENS NO SEU DI=
+A A     DIA:</STRONG></P></TD></TR></TABLE></TD></TR>   <TR bgColor=3D#0=
+05f97>   <TD height=3D100 vAlign=3Dmiddle align=3Dcenter>  <table    sty=
+le=3D"BORDER-COLLAPSE: collapse; MARGIN: 0px auto" cellSpacing=3D0    ce=
+llPadding=3D0 width=3D500 align=3Dcenter>        <TR>     <TD vAlign=3Dm=
+iddle width=3D"100%" align=3Dcenter>    <table          style=3D"BORDER-=
+COLLAPSE: collapse; MARGIN: 0px auto"     cellSpacing=3D0 cellPadding=3D=
+0 width=3D500 align=3Dcenter>           <TR bgColor=3D#01395e>      <TD =
+height=3D50 vAlign=3Dmiddle width=3D"33%" align=3Dleft>     <table      =
+       style=3D"BORDER-COLLAPSE: collapse; MARGIN: 0px auto"       cellS=
+pacing=3D0 cellPadding=3D0 width=3D450 align=3Dcenter>              <TR>=
+        <TD vAlign=3Dmiddle width=3D10 align=3Dleft><IMG        style=3D=
+"DISPLAY: block" border=3D0         src=3D"http://www.netcombo.com.br/st=
+atic/email/201705/22162501/images/ico1.jpg"        width=3D55 height=3D2=
+5 data-imageproxyid        data-imageproxyendpoint=3D"/actions/ei"      =
+  data-connectorsauthtoken=3D"1"        originalsrc=3D"http://www.netcom=
+bo.com.br/static/email/201705/22162501/images/ico1.jpg"        data-imag=
+etype=3D"External"></TD>        <TD vAlign=3Dmiddle width=3D350 align=3D=
+left>        <P        style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,Helv=
+etica,sans-serif; COLOR: #fff; MARGIN: 0px">Voc=EA        tem mais comod=
+idade para acess=E1-la quando e onde        quiser, atrav=E9s do seu not=
+ebook, tablet ou        celular.</P></TD></TR></TABLE></TD></TR></TABLE>=
+</TD></TR>    <TR>     <TD><IMG style=3D"DISPLAY: block" border=3D0 alt=3D=
+Imagem     src=3D"http://www.netcombo.com.br/static/email/201705/2216250=
+1/images/blank.gif"     height=3D5 data-imageproxyid     data-imageproxy=
+endpoint=3D"/actions/ei"     data-connectorsauthtoken=3D"1" data-imagety=
+pe=3D"External"></TD></TR>    <TR>     <TD vAlign=3Dmiddle width=3D"100%=
+" align=3Dcenter>    <table          style=3D"BORDER-COLLAPSE: collapse;=
+ MARGIN: 0px auto"     cellSpacing=3D0 cellPadding=3D0 width=3D500 align=
+=3Dcenter>           <TR bgColor=3D#01395e>      <TD height=3D50 vAlign=3D=
+middle width=3D"33%" align=3Dleft>     <table             style=3D"BORDE=
+R-COLLAPSE: collapse; MARGIN: 0px auto"       cellSpacing=3D0 cellPaddin=
+g=3D0 width=3D450 align=3Dcenter>              <TR>        <TD vAlign=3D=
+middle width=3D10 align=3Dleft><IMG        style=3D"DISPLAY: block" bord=
+er=3D0         src=3D"http://www.netcombo.com.br/static/email/201705/221=
+62501/images/ico2.jpg"        width=3D55 height=3D35 data-imageproxyid  =
+      data-imageproxyendpoint=3D"/actions/ei"        data-connectorsauth=
+token=3D"1"        data-imagetype=3D"External"></TD>        <TD vAlign=3D=
+middle width=3D350 align=3Dleft>        <P        style=3D"FONT-SIZE: 14=
+px; FONT-FAMILY: Arial,Helvetica,sans-serif; COLOR: #fff; MARGIN: 0px">F=
+ica        mais f=E1cil organizar as suas contas no mesmo        lugar.<=
+/P></TD></TR></TABLE></TD></TR></TABLE></TD></TR>    <TR>     <TD><IMG s=
+tyle=3D"DISPLAY: block" border=3D0 alt=3DImagem     src=3D"http://www.ne=
+tcombo.com.br/static/email/201705/22162501/images/blank.gif"     height=3D=
+5 data-imageproxyid     data-imageproxyendpoint=3D"/actions/ei"     data=
+-connectorsauthtoken=3D"1" data-imagetype=3D"External"></TD></TR>    <TR=
+>     <TD vAlign=3Dmiddle width=3D"100%" align=3Dcenter>    <table      =
+    style=3D"BORDER-COLLAPSE: collapse; MARGIN: 0px auto"     cellSpacin=
+g=3D0 cellPadding=3D0 width=3D500 align=3Dcenter>           <TR bgColor=3D=
+#01395e>      <TD height=3D50 vAlign=3Dmiddle width=3D"33%" align=3Dleft=
+>     <table             style=3D"BORDER-COLLAPSE: collapse; MARGIN: 0px=
+ auto"       cellSpacing=3D0 cellPadding=3D0 width=3D450 align=3Dcenter>=
+              <TR>        <TD vAlign=3Dmiddle width=3D10 align=3Dleft><I=
+MG        style=3D"DISPLAY: block" border=3D0         src=3D"http://www.=
+netcombo.com.br/static/email/201705/22162501/images/ico3.jpg"        wid=
+th=3D55 height=3D33 data-imageproxyid        data-imageproxyendpoint=3D"=
+/actions/ei"        data-connectorsauthtoken=3D"1"        data-imagetype=
+=3D"External"></TD>        <TD vAlign=3Dmiddle width=3D350 align=3Dleft>=
+        <P        style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,Helvetica=
+,sans-serif; COLOR: #fff; MARGIN: 0px">A        vers=E3o digital chega a=
+ntes da impressa, assim voc=EA        ganha tempo e tranquilidade para o=
+rganizar seus        pagamentos.</P></TD></TR></TABLE></TD></TR></TABLE>=
+</TD></TR>    <TR>     <TD><IMG style=3D"DISPLAY: block" border=3D0 alt=3D=
+Imagem     src=3D"http://www.netcombo.com.br/static/email/201705/2216250=
+1/images/blank.gif"     height=3D5 data-imageproxyid     data-imageproxy=
+endpoint=3D"/actions/ei"     data-connectorsauthtoken=3D"1" data-imagety=
+pe=3D"External"></TD></TR>    <TR>     <TD vAlign=3Dmiddle width=3D"100%=
+" align=3Dcenter>    <table          style=3D"BORDER-COLLAPSE: collapse;=
+ MARGIN: 0px auto"     cellSpacing=3D0 cellPadding=3D0 width=3D500 align=
+=3Dcenter>           <TR bgColor=3D#01395e>      <TD height=3D50 vAlign=3D=
+middle width=3D"33%" align=3Dleft>     <table             style=3D"BORDE=
+R-COLLAPSE: collapse; MARGIN: 0px auto"       cellSpacing=3D0 cellPaddin=
+g=3D0 width=3D450 align=3Dcenter>              <TR>        <TD vAlign=3D=
+middle width=3D10 align=3Dleft><IMG        style=3D"DISPLAY: block" bord=
+er=3D0         src=3D"http://www.netcombo.com.br/static/email/201705/221=
+62501/images/ico4.jpg"        width=3D55 height=3D36 data-imageproxyid  =
+      data-imageproxyendpoint=3D"/actions/ei"        data-connectorsauth=
+token=3D"1"        originalsrc=3D"http://www.netcombo.com.br/static/emai=
+l/201705/22162501/images/ico4.jpg"        data-imagetype=3D"External"></=
+TD>        <TD vAlign=3Dmiddle width=3D350 align=3Dleft>        <P      =
+  style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial,Helvetica,sans-serif; COL=
+OR: #fff; MARGIN: 0px">E        tamb=E9m =E9 muito mais segura, pois s=F3=
+ voc=EA pode        acess=E1-la.</P></TD></TR></TABLE></TD></TR></TABLE>=
+</TD></TR></TABLE></TD></TR>   <TR bgColor=3D#005f97>   <TD>&nbsp;</TD><=
+/TR>   <TR>   <TD align=3Dcenter><IMG style=3D"DISPLAY: block" border=3D=
+0    src=3D"http://www.netcombo.com.br/static/email/201705/22162501/imag=
+es/btn-cta.jpg"    width=3D599 height=3D42 useMap=3D#x_Map data-imagepro=
+xyid    data-imageproxyendpoint=3D"/actions/ei" data-connectorsauthtoken=
+=3D"1"    data-imagetype=3D"External"></TD></TR>   <TR>   <TD><IMG style=
+=3D"DISPLAY: block" border=3D0 alt=3DImagem    src=3D"http://www.netcomb=
+o.com.br/static/email/201705/22162501/images/blank.gif"    height=3D20 d=
+ata-imageproxyid data-imageproxyendpoint=3D"/actions/ei"    data-connect=
+orsauthtoken=3D"1" data-imagetype=3D"External"></TD></TR>   <TR>   <TD h=
+eight=3D30 vAlign=3Dmiddle align=3Dcenter>    <P    style=3D"FONT-SIZE: =
+11px; FONT-FAMILY: Arial,Helvetica,sans-serif; COLOR: #545657; MARGIN: 0=
+px">A    atualiza=E7=E3o do seu cadastro =E9 muito importante para o nos=
+so    relacionamento. Acesse   <STRONG>net.com.br/atualize</STRONG>.</P>=
+</TD></TR>   <TR>   <TD><IMG style=3D"DISPLAY: block" border=3D0 alt=3DI=
+magem    src=3D"http://www.netcombo.com.br/static/email/201705/22162501/=
+images/sombraFooter.jpg"    width=3D600 height=3D50 data-imageproxyid   =
+ data-imageproxyendpoint=3D"/actions/ei" data-connectorsauthtoken=3D"1" =
+   originalsrc=3D"http://www.netcombo.com.br/static/email/201705/2216250=
+1/images/blank.gif"    data-imagetype=3D"External"></TD></TR>   <TR bgCo=
+lor=3D#b7b7b9>   <TD height=3D180 align=3Dcenter>  <table    style=3D"BO=
+RDER-COLLAPSE: collapse; MARGIN: 0px auto" cellSpacing=3D0    cellPaddin=
+g=3D0 width=3D500 align=3Dcenter>        <TR>     <TD vAlign=3Dmiddle wi=
+dth=3D100 align=3Dcenter>    <table          style=3D"BORDER-COLLAPSE: c=
+ollapse; MARGIN: 0px auto"     cellSpacing=3D0 cellPadding=3D0 width=3D9=
+5 align=3Dcenter>           <TR>      <TD height=3D25 vAlign=3Dmiddle wi=
+dth=3D"100%" colSpan=3D3      align=3Dcenter><IMG style=3D"DISPLAY: bloc=
+k" border=3D'=3D"0"'             src=3D"http://www.netcombo.com.br/stati=
+c/email/201705/22162501/images/logo-sigaNetoficial.jpg"       width=3D76=
+ height=3D18></TD></TR>      <TR>      <TD vAlign=3Dmiddle align=3Dcente=
+r><IMG       style=3D"DISPLAY: block" border=3D0 alt=3D'=3D"Imagem"'    =
+   src=3D"http://www.netcombo.com.br/static/email/201705/22162501/images=
+/social-1.jpg"       width=3D30 height=3D30></TD>      <TD vAlign=3Dmidd=
+le align=3Dcenter><IMG       style=3D"DISPLAY: block" border=3D0 alt=3DI=
+m=3D       src=3D"http://www.netcombo.com.br/static/email/201705/2216250=
+1/images/social-2.jpg"       width=3D29 height=3D30></TD>      <TD vAlig=
+n=3Dmiddle align=3Dcenter><IMG       style=3D"DISPLAY: block" border=3D0=
+ alt=3D=3D       src=3D"http://www.netcombo.com.br/static/email/201705/2=
+2162501/images/social-3.jpg"       width=3D30 height=3D30 ?Imagem?></TD>=
+</TR></TABLE></TD>     <TD vAlign=3Dmiddle width=3D300 align=3Dcenter>&n=
+bsp;</TD>     <TD vAlign=3Dmiddle width=3D100 align=3Dcenter><IMG     st=
+yle=3D"DISPLAY: block" border=3D0      src=3D"http://www.netcombo.com.br=
+/static/email/201705/22162501/images/logo.jpg"     height=3D109 =3D'widt=
+h=3D"111"'></TD></TR></TABLE></TD></TR>   <TR bgColor=3D#ffffff>   <TD><=
+BR>&nbsp;    <P    style=3D"FONT-SIZE: 11px; FONT-FAMILY: Arial,Helvetic=
+a,sans-serif; COLOR: #333333; TEXT-ALIGN: justify; MARGIN: 0px">N=E3o   =
+ responda a este e-mail. Esta =E9 uma mensagem gerada automaticamente.  =
+  Para enviar seus coment=E1rios, clique aqui e fale   conosco.</P></TD>=
+</TR></TABLE></CENTER></TD></TR></TABLE> <P><IMG border=3D0 src=3D"https=
+://ccm.digitalpost.com.br/confirmacaoleitura/confirmacao.aspx?emailid=3D=
+238531352&amp;token=3D13328DF6716832EB1596DCFA74FBC634" width=3D1 height=
+=3D1 data-imagetype=3D"External"></P></DIV></DIV></DIV></DIV> <DIV id=3D=
+LivePersonaCardRootElement class=3Dlpc_ip_root_class style=3D"DISPLAY: b=
+lock">&nbsp;</DIV></body>
+ </html>
+ 
+
+------=_NextPart_636_6686_87674706.77262710--
 
 
-
-
-
---===============3052470895229728599==
+--===============4448008702410315976==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3052470895229728599==
+--===============4448008702410315976==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -400,8 +388,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3052470895229728599==--
-
-
-
+--===============4448008702410315976==--
 
