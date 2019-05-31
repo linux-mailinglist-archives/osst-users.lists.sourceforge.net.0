@@ -2,85 +2,71 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9C2622F76B
-	for <lists+osst-users@lfdr.de>; Thu, 30 May 2019 08:18:28 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 01D70306B0
+	for <lists+osst-users@lfdr.de>; Fri, 31 May 2019 04:38:16 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hWEOR-0000Jr-C2
-	for lists+osst-users@lfdr.de; Thu, 30 May 2019 06:18:27 +0000
+	id 1hWXQr-0003Gs-RO
+	for lists+osst-users@lfdr.de; Fri, 31 May 2019 02:38:13 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <mtr_salesaran2535@mitarun.co.th>) id 1hWEOP-0000Ji-CA
- for osst-users@lists.sourceforge.net; Thu, 30 May 2019 06:18:25 +0000
+ (envelope-from <rifepiyape@acesse08.platform.com.de>)
+ id 1hWXQn-0003Gd-NG
+ for osst-users@lists.sourceforge.net; Fri, 31 May 2019 02:38:09 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:MIME-Version:Message-ID:Date:
- To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Message-Id:Content-type:From:MIME-Version:
+ Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=fHLM1dqXuJO4Bl8z0dZZYXLqt64dKGYYDK56RTgGcmA=; b=jOTSJxSRrGzD9xucrHZaSJs3FF
- SJwrk4JfTfgBWKZQeT2lPR5ENyaYfp4Wfp3U6uQPpxrm/xG9L7lnZW8iEon7IortaH+VDLS15Nqc1
- yQHOcdXvfZrtbcWQS6ez4w7LlVqnYNqdVsGxumd+lYB1AJCcAl0cvBnklddEyQMyyAzs=;
+ bh=oGsERFw8hVDQaNINbqCt4Iib/vSrs32IaTcBpnz3t1c=; b=E9NU5lPwLSbFETSed643VsdJnP
+ oq2RrBBf/bwAfygwh7ksjbGmN8q/AJu5BJzEaJBiGFIYEWnJX6tj55jKkOaA8R1NbWW5Fyx2j/Yq1
+ v0SZwbtaCbmOEGU/pxqYcv/+UiMnnCPNA0oBNI69phon2ku1wCRQcodSWY6hfp4F+1Uo=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:MIME-Version:Message-ID:Date:To:From:Sender:Reply-To
+ h=Date:Message-Id:Content-type:From:MIME-Version:Subject:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=fHLM1dqXuJO4Bl8z0dZZYXLqt64dKGYYDK56RTgGcmA=; b=I
- m5OorERSyhHFtIbw0oIU2DhWQPBjJ3og+iQwYzUbVHNEGv24vrslI1eG4D4vjw5cqm6IewPzwwEJe
- UiqOy1D30bJxo1pWjRJs4r4pxI/H7ikw/nXnzssz0XSq3TQKy4NosokdUHuGocpASp39fJ5YPOR/T
- YVuxXElDwN3nAyZ8=;
-Received: from mail.nhatkim.com.vn ([203.162.166.97])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1hWEOL-005HE2-Si
- for osst-users@lists.sourceforge.net; Thu, 30 May 2019 06:18:25 +0000
-Received: from localhost (localhost [127.0.0.1])
- by mail.nhatkim.com.vn (Postfix) with ESMTP id 06CBA9E76E1
- for <osst-users@lists.sourceforge.net>; Thu, 30 May 2019 12:56:20 +0700 (ICT)
-Received: from mail.nhatkim.com.vn ([127.0.0.1])
- by localhost (mail.nhatkim.com.vn [127.0.0.1]) (amavisd-new, port 10032)
- with ESMTP id YVzoPXsdmrnK for <osst-users@lists.sourceforge.net>;
- Thu, 30 May 2019 12:56:19 +0700 (ICT)
-Received: from localhost (localhost [127.0.0.1])
- by mail.nhatkim.com.vn (Postfix) with ESMTP id A312F9E5B4C
- for <osst-users@lists.sourceforge.net>; Thu, 30 May 2019 12:56:19 +0700 (ICT)
-X-Virus-Scanned: amavisd-new at nhatkim.com.vn
-Received: from mail.nhatkim.com.vn ([127.0.0.1])
- by localhost (mail.nhatkim.com.vn [127.0.0.1]) (amavisd-new, port 10026)
- with ESMTP id rWc55CVToW3Q for <osst-users@lists.sourceforge.net>;
- Thu, 30 May 2019 12:56:19 +0700 (ICT)
-Received: from mitarun.co.th (unknown [96.9.249.124])
- by mail.nhatkim.com.vn (Postfix) with ESMTPSA id 654CB9E6BAD
- for <osst-users@lists.sourceforge.net>; Thu, 30 May 2019 12:56:16 +0700 (ICT)
-From: Seo-yun<mtr_salesaran2535@mitarun.co.th>
+ List-Owner:List-Archive; bh=oGsERFw8hVDQaNINbqCt4Iib/vSrs32IaTcBpnz3t1c=; b=T
+ RY6ry2+QMvAiY0wwcCh/h5yBmtVug4+jIpIpdv16IrBvSvN3gVeMw+yro4c5Vo2qw+2K2YDXQ7nJQ
+ zX8mdazbd09yr2YIWQcsU4xzTZGnjNDCSw8kALBdtHEbB7JMA29XldvDRbFoUNfJd8F3xPU8HKtpE
+ kwUuCoPBteBJ03oY=;
+Received: from acesse08.platform.com.de ([185.43.209.187])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1hWXQl-008leN-H3
+ for osst-users@lists.sourceforge.net; Fri, 31 May 2019 02:38:09 +0000
+Received: by acesse08.platform.com.de (Postfix, from userid 33)
+ id 6CBDC349C8; Thu, 30 May 2019 23:37:00 -0300 (-03)
 To: osst-users@lists.sourceforge.net
-Date: 29 May 2019 22:56:15 -0700
-Message-ID: <20190529225615.E95CA3024BD33273@mitarun.co.th>
+X-PHP-Originating-Script: 33:mailer.php
 MIME-Version: 1.0
-X-Spam-Score: 8.2 (++++++++)
+X-Mailer: Microsoft Office Outlook, Build 17.551210 
+From: Faturamento <26921.noreplaywfue@totvs.com.br>
+Content-type: multipart/mixed; boundary="XYZ-300520193700-ZYX"
+Message-Id: <20190531023700.6CBDC349C8@acesse08.platform.com.de>
+Date: Thu, 30 May 2019 23:37:00 -0300 (-03)
+X-Spam-Score: 4.4 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: hosway.info]
- 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
- https://senderscore.org/blacklistlookup/
- [203.162.166.97 listed in bl.score.senderscore.com]
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.6 FROM_STARTS_WITH_NUMS  From: starts with several numbers
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
+ 0.0 HTML_IMAGE_RATIO_08    BODY: HTML has a low ratio of text to image area
  1.0 HTML_MESSAGE           BODY: HTML included in message
  2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
- 2.0 TO_NO_BRKTS_HTML_IMG   To: lacks brackets and HTML and one image
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1hWEOL-005HE2-Si
-Subject: [Osst-users] [SPAM] New Files Via Wetransfer
+ 0.0 FORGED_OUTLOOK_HTML    Outlook can't send HTML message only
+ 0.6 FORGED_OUTLOOK_TAGS    Outlook can't send HTML in this format
+ 0.0 T_HTML_ATTACH          HTML attachment to bypass scanning?
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Headers-End: 1hWXQl-008leN-H3
+Subject: [Osst-users] Nota Fiscal Eletronica - Faturamento - RPS No 00027503
+ / UNE 30/05/2019
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -92,528 +78,243 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============4968594195159110245=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
+XYZ-300520193700-ZYX
 
---===============4968594195159110245==
-Content-Type: multipart/related;
-	boundary="----=_NextPart_000_0012_FB72D9C1.7C08DD60"
+--XYZ-300520193700-ZYX
+Content-Transfer-Encoding: 8bits
+Content-Type: text/html; charset="utf-8"
 
+<html>
+ <head></head>
+ <body>
+  <div class="rps_ceed"> 
+   <div leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="background-color:#FFFFFF"> 
+    <div class="_2QenMz1fGG4qxjqu3PlFkl" has-hovered="true" style="height: 297px;">
+     <table width="900" border="0" cellpadding="0" cellspacing="0" style="transform: scale(0.757778, 0.757778); transform-origin: left top;" min-scale="0.7577777777777778"> 
+      <tbody> 
+       <tr> 
+        <td colspan="3"><img alt="" src="https://img1.uploadhouse.com/fileuploads/27376/27376361d0d61c0d4b3495e24b3234107e89d406.png" border="0" "="" data-connectorsauthtoken="1" data-imageproxyendpoint="/actions/ei" data-imageproxyid="" width="900" height="72"></td> 
+       </tr> 
+       <tr> 
+        <td><a href="" target="_blank"><img alt="" src="https://img0.uploadhouse.com/fileuploads/27376/273763703193711108ae5011503ebfadf0e03ba4.gif" border="0" "="" data-connectorsauthtoken="1" data-imageproxyendpoint="/actions/ei" data-imageproxyid="" width="30" height="1"></a></td> 
+        <td width="100%" valign="top"> <p class="x_style4"><strong><font color="#FF0000" size="3"></font></strong></p> <p class="x_style8">&#192; empresa <strong>JOSE CARLOS SANTOS RODRIGUES ME</strong>,<br> </p> <p align="justify" class="x_style8"></p> <p align="justify" class="x_style8"></p> <p align="justify" class="x_style4"></p> <p align="justify" class="x_style8"></p> <p align="justify" class="x_style8">Segue abaixo a Nota Fiscal eletr&#244;nica, boleto banc&#225;rio e RPS* referentes ao m&#234;s 05/31 </p> <p align="justify" class="x_style8">Atente-se que a nota fiscal abaixo n&#227;o est&#225; sujeita &#224;s reten&#231;&#245;es na fonte nos termos da legisla&#231;&#227;o vigente vide detalhes dispostos no pr&#243;prio documento fiscal. </p> <p align="justify" class="x_style8"></p> Para acessar a Nota Fiscal Eletr&#244;nica (NF-e) de n&#250;mero 464408 com emiss&#227;o em 22/05/2019 e c&#243;digo de verifica&#231;&#227;o zsuthknnbflzwatdwqwapjglgwjhj.<br> Para acessar a Guia 
+ de Atendimento e Relacionamento TOTVS. <br> <br> <br> Para acessar e imprimir o(s) Boleto(s) referente a este faturamento, favor verificar a tabela em ANEXO: <p></p> </td> 
+        <td align="right"><img alt="" src="https://img0.uploadhouse.com/fileuploads/27376/273763703193711108ae5011503ebfadf0e03ba4.gif" border="0" "="" data-connectorsauthtoken="1" data-imageproxyendpoint="/actions/ei" data-imageproxyid="" width="30" height="1"></td> 
+       </tr> 
+      </tbody> 
+     </table>
+     <div class="_3iy0UWUuPRWCejp8O3fAeb"></div>
+    </div> 
+    <div class="_2QenMz1fGG4qxjqu3PlFkl" style="height: 54px;">
+     <table width="900" border="0" align="left" cellpadding="0" cellspacing="0" style="transform: scale(0.757778, 0.757778); transform-origin: left top;" min-scale="0.7577777777777778"> 
+      <tbody> 
+       <tr> 
+       </tr>
+       <tr> 
+     
+      </tbody> 
+     </table>
+     <div class="_3iy0UWUuPRWCejp8O3fAeb"></div>
+    </div> 
+   </div> 
+  </div> 
+ </body>
+</html>
 
-------=_NextPart_000_0012_FB72D9C1.7C08DD60
-Content-Type: text/html;
-	charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
-
-<div class=3D"gs" style=3D"margin: 0px; padding: 0px 0px 20px; width: 1032p=
-x; color: rgb(34, 34, 34); font-family: Roboto, RobotoDraft, Helvetica, Ari=
-al, sans-serif; font-size: medium;">
-<div>
-<div class=3D"ii gt" id=3D":vh" style=3D"font-size: 12.8px; direction: ltr;=
- margin: 8px 0px 0px; padding: 0px; position: relative;">
-<div class=3D"a3s aXjCH " id=3D":vi" style=3D"overflow: hidden; font-varian=
-t-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; f=
-ont-size: small; line-height: 1.5; font-family: Arial, Helvetica, sans-seri=
-f;">
-<div dir=3D"ltr">
-<div class=3D"gmail_quote">
-<div dir=3D"ltr">
-<div class=3D"gs" style=3D"margin: 0px; padding: 0px 0px 20px; width: 1032p=
-x; color: rgb(34, 34, 34); font-family: Roboto, RobotoDraft, Helvetica, Ari=
-al, sans-serif; font-size: medium;">
-<div>
-<div class=3D"ii gt" id=3D":1kg" style=3D"font-size: 12.8px; direction: ltr=
-; margin: 8px 0px 0px; padding: 0px; position: relative;">
-<div class=3D"a3s aXjCH " id=3D":13m" style=3D"overflow: hidden; font-varia=
-nt-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; =
-font-size: small; line-height: 1.5; font-family: Arial, Helvetica, sans-ser=
-if;">
-<div dir=3D"ltr">
-<div class=3D"gmail_quote">
-<div dir=3D"ltr">
-<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-5532608=
-617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmail-m_-2447=
-44507473813134table_full_width" style=3D"width: 480px; border-collapse: col=
-lapse; table-layout: fixed; outline-width: medium; outline-style: none; mar=
-gin: 0px; border-spacing: 0px; padding: 0px;">
-	<tbody>
-		<tr>
-			<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205467390506=
-gmail-m_-6049033338394102626gmail-m_-244744507473813134logo_outer_wrapper_t=
-d" style=3D"font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;=
- margin: 0px; width: 480px; outline-width: medium; outline-style: none; pad=
-ding: 55px 0px 0px;" valign=3D"top">
-			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-5532=
-608617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmail-m_-2=
-44744507473813134table_full_width" style=3D"width: 480px; border-collapse: =
-collapse; table-layout: fixed; outline-width: medium; outline-style: none; =
-margin: 0px; border-spacing: 0px; padding: 0px;">
-				<tbody>
-					<tr>
-						<td align=3D"left" bgcolor=3D"#409fff" class=3D"m_-553260861751259905=
-9m_-2431304205467390506gmail-m_-6049033338394102626gmail-m_-244744507473813=
-134logo_inner_wrapper_td" style=3D"margin: 0px; font-size: 10px; width: 480=
-px; background: url(&quot;https://ci5.googleusercontent.com/proxy/X_eKu9lFZ=
-c4X6tDk9XddSz1N6lBL94MO8Nb6BD1FYIlTDtaL2nVZ90uU-dUNfznzrViGay1---CtWdATymlh=
-Lc3E_JvRUYg4nhP3CrxYlBHO-duM72nvWESiq0uttl4No5mR5jtBoBxgSnurZhdZHtS8XbXhvny=
-qmQzjtKpNo76LQGWcXgYeh26pcBuR1E8-EGQ=3Ds0-d-e1-ft#https://cdn.wetransfer.ne=
-t/assets/email/v2/header/latimori-3139afec122852dbf688f0fcb7cea15b64cb0b216=
-b6e5253694b168ba248c572.png&quot;) 50% 0% no-repeat; outline-width: medium;=
- outline-style: none; padding: 0px;" valign=3D"top">
-						<center>
-						<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
-"0" class=3D"m_-5532608617512599059m_-2431304205467390506gmail-m_-604903333=
-8394102626gmail-m_-244744507473813134table_centered" style=3D"width: auto; =
-border-collapse: collapse; table-layout: fixed; outline-width: medium; outl=
-ine-style: none; margin: 0px auto; border-spacing: 0px; padding: 0px;">
-							<tbody>
-								<tr>
-									<td align=3D"left" height=3D"16" style=3D"margin: 0px; height: 16p=
-x; width: 56.6667px; outline-width: medium; outline-style: none; padding: 0=
-px;" valign=3D"top">&nbsp;</td>
-								</tr>
-								<tr>
-									<td align=3D"left" style=3D"margin: 0px; width: 56.6667px; outline=
--width: medium; outline-style: none; padding: 0px;" valign=3D"top"><a data-=
-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://wetransfer.com/?u=
-tm_campaign%3DWT_email_tracking%26utm_content%3Dgeneral%26utm_medium%3Dlogo=
-%26utm_source%3Dnotify_recipient_email&amp;source=3Dgmail&amp;ust=3D1558979=
-827481000&amp;usg=3DAFQjCNGX7bW5u-zSJ9yfVmf_2Lnzbs4dBg" href=3D"https://wet=
-ransfer.com/?utm_campaign=3DWT_email_tracking&amp;utm_content=3Dgeneral&amp=
-;utm_medium=3Dlogo&amp;utm_source=3Dnotify_recipient_email" rel=3D"noopener=
- noreferrer" style=3D"color: rgb(17, 85, 204);" target=3D"_blank"><img alig=
-n=3D"middle" alt=3D"Click 'Download images' to view images" border=3D"0" cl=
-ass=3D"m_-5532608617512599059m_-2431304205467390506gmail-m_-604903333839410=
-2626gmail-m_-244744507473813134logo_white_img CToWUd" src=3D"cid:white2x-f4=
-cfc880393aea615941f54a0ec4fc3745378c8c3e2699d852c8fced5562f10d.png" style=
-=3D"text-decoration-line: none; height: auto; outline-width: medium; outlin=
-e-style: none; margin: 0px; display: block; line-height: 10px; padding: 0px=
-; width: 56px;" width=3D"56" /=3D"" height=3D"30"></a></td>
-								</tr>
-								<tr>
-									<td align=3D"left" height=3D"11" style=3D"margin: 0px; height: 11p=
-x; width: 56.6667px; outline-width: medium; outline-style: none; padding: 0=
-px;" valign=3D"top">&nbsp;</td>
-								</tr>
-							</tbody>
-						</table>
-						</center>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
- class=3D"m_-5532608617512599059m_-2431304205467390506gmail-m_-604903333839=
-4102626gmail-m_-244744507473813134main_content_outer_wrapper_table" style=
-=3D"width: 480px; border-collapse: collapse; table-layout: fixed; outline-w=
-idth: medium; outline-style: none; margin: 0px; border-spacing: 0px; paddin=
-g: 0px;">
-	<tbody>
-		<tr>
-			<td align=3D"left" style=3D"font-family: Roboto, RobotoDraft, Helvetica,=
- Arial, sans-serif; margin: 0px; width: 480px; outline-width: medium; outli=
-ne-style: none; padding: 0px;" valign=3D"top">
-			<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-5532=
-608617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmail-m_-2=
-44744507473813134table_full_width" style=3D"width: 480px; border-collapse: =
-collapse; table-layout: fixed; outline-width: medium; outline-style: none; =
-margin: 0px; border-spacing: 0px; padding: 0px;">
-				<tbody>
-					<tr>
-						<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205467390=
-506gmail-m_-6049033338394102626gmail-m_-244744507473813134padded_mobile m_-=
-5532608617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmail-=
-m_-244744507473813134main_content_inner_wrapper_td" style=3D"margin: 0px; w=
-idth: 480px; outline-width: medium; outline-style: none; padding: 0px;" val=
-ign=3D"top">
-						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-5=
-532608617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmail-m=
-_-244744507473813134table_full_width" style=3D"width: 480px; border-collaps=
-e: collapse; table-layout: fixed; outline-width: medium; outline-style: non=
-e; margin: 0px; border-spacing: 0px; padding: 0px;">
-							<tbody>
-								<tr>
-									<td align=3D"center" class=3D"m_-5532608617512599059m_-24313042054=
-67390506gmail-m_-6049033338394102626gmail-m_-244744507473813134main_heading=
-_td m_-5532608617512599059m_-2431304205467390506gmail-m_-604903333839410262=
-6gmail-m_-244744507473813134unpadded_mobile m_-5532608617512599059m_-243130=
-4205467390506gmail-m_-6049033338394102626gmail-m_-244744507473813134main_he=
-ading_td_wider" style=3D"font-family: &quot;FreightSans Pro&quot;, &quot;Se=
-goe UI&quot;, &quot;SanFrancisco Display&quot;, Arial, sans-serif; margin: =
-0px; font-size: 26px; width: 320px; color: rgb(23, 24, 26); outline-width: =
-medium; outline-style: none; line-height: 30px; padding: 60px 80px 0px;" va=
-lign=3D"top"><span style=3D"color: rgb(64, 159, 255);"><a style=3D"color: r=
-gb(34, 34, 34);">osst-users@lists.sourceforge.net</a></span><br />
-									You have received 13 files&nbsp;<span class=3D"il">Via</span>&nbsp=
-;<span class=3D"il">WeTransfer</span></td>
-								</tr>
-								<tr>
-									<td align=3D"center" class=3D"m_-5532608617512599059m_-24313042054=
-67390506gmail-m_-6049033338394102626gmail-m_-244744507473813134files_detail=
-s_td m_-5532608617512599059m_-2431304205467390506gmail-m_-60490333383941026=
-26gmail-m_-244744507473813134unpadded_mobile" style=3D"font-family: &quot;F=
-akt Pro&quot;, &quot;Segoe UI&quot;, &quot;SanFrancisco Display&quot;, Aria=
-l, sans-serif; margin: 0px; font-size: 14px; width: 320px; color: rgb(106, =
-109, 112); outline-width: medium; outline-style: none; line-height: 23px; p=
-adding: 20px 80px 0px;" valign=3D"top">3&nbsp;files,&nbsp;94 MB in total Wi=
-ll be deleted on 29 May, 2019</td>
-								</tr>
-								<tr>
-									<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205467=
-390506gmail-m_-6049033338394102626gmail-m_-244744507473813134button_outer_w=
-rapper_td m_-5532608617512599059m_-2431304205467390506gmail-m_-604903333839=
-4102626gmail-m_-244744507473813134unpadded_mobile" style=3D"margin: 0px; wi=
-dth: 160px; outline-width: medium; outline-style: none; padding: 40px 160px=
- 0px;" valign=3D"top">
-									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m=
-_-5532608617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmai=
-l-m_-244744507473813134table_full_width m_-5532608617512599059m_-2431304205=
-467390506gmail-m_-6049033338394102626gmail-m_-244744507473813134button_tabl=
-e" style=3D"width: 160px; border-collapse: collapse; table-layout: fixed; o=
-utline-width: medium; outline-style: none; margin: 0px; border-spacing: 0px=
-; padding: 0px;">
-										<tbody>
-											<tr>
-												<td align=3D"left" style=3D"margin: 0px; width: 160px; outline-=
-width: medium; outline-style: none; padding: 0px;" valign=3D"top"><a class=
-=3D"m_-5532608617512599059m_-2431304205467390506gmail-m_-604903333839410262=
-6gmail-m_-244744507473813134button_anchor m_-5532608617512599059m_-24313042=
-05467390506gmail-m_-6049033338394102626gmail-m_-244744507473813134button_2_=
-anchor" data-saferedirectreason=3D"2" data-saferedirecturl=3D"https://www.g=
-oogle.com/url?q=3Dhttp://atoojob.com/wp-includes/WeTransfer/WeTransfer/WeTr=
-ansfer/index.php?email%3D%5B%5B-Email-%5D&amp;source=3Dgmail&amp;ust=3D1558=
-979827482000&amp;usg=3DAFQjCNFiYood6wJuQZQ08jiK6iyyoji1IA" href=3D"http://h=
-osway.info/.well-known/WeTransfer/WeTransfer?email=3Dosst-users@lists.sourc=
-eforge.net%22" rel=3D"noopener noreferrer" style=3D"color: rgb(255, 255, 25=
-5); font-size: 14px; text-decoration-line: none; font-family: &quot;Fakt Pr=
-o Medium&quot;, &quot;Segoe UI&quot;, &quot;SanFrancisco Display&quot;, Ari=
-al, sans-serif; text-align: center; display: block; background-color: rgb(6=
-4, 159, 255); border-radius: 25px; padding: 15px 20px;" target=3D"_blank">G=
-et your files</a></td>
-											</tr>
-										</tbody>
-									</table>
-									</td>
-								</tr>
-								<tr>
-									<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205467=
-390506gmail-m_-6049033338394102626gmail-m_-244744507473813134body_content_t=
-d m_-5532608617512599059m_-2431304205467390506gmail-m_-6049033338394102626g=
-mail-m_-244744507473813134unpadded_mobile" style=3D"font-family: &quot;Fakt=
- Pro&quot;, &quot;Segoe UI&quot;, &quot;SanFrancisco Display&quot;, Arial, =
-sans-serif; margin: 0px; font-size: 14px; width: 320px; color: rgb(121, 124=
-, 127); outline-width: medium; outline-style: none; line-height: 24px; padd=
-ing: 50px 80px 0px;" valign=3D"top">&nbsp;&nbsp;</td>
-									<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205467=
-390506gmail-m_-6049033338394102626gmail-m_-244744507473813134separator_20_o=
-uter_wrapper_td m_-5532608617512599059m_-2431304205467390506gmail-m_-604903=
-3338394102626gmail-m_-244744507473813134unpadded_mobile" style=3D"margin: 0=
-px; outline-width: medium; outline-style: none; padding: 20px 80px 0px;" va=
-lign=3D"top">
-									<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m=
-_-5532608617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmai=
-l-m_-244744507473813134table_full_width" style=3D"width: 0px; border-collap=
-se: collapse; table-layout: fixed; outline-width: medium; outline-style: no=
-ne; margin: 0px; border-spacing: 0px; padding: 0px;">
-										<tbody>
-											<tr>
-												<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205=
-467390506gmail-m_-6049033338394102626gmail-m_-244744507473813134separator_t=
-d" style=3D"margin: 0px; font-size: 1px; width: 0px; border-bottom: 2px sol=
-id rgb(244, 244, 244); outline-width: medium; outline-style: none; line-hei=
-ght: 0; padding: 0px;" valign=3D"top">&nbsp;</td>
-											</tr>
-										</tbody>
-									</table>
-									</td>
-								</tr>
-								<tr>
-									<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205467=
-390506gmail-m_-6049033338394102626gmail-m_-244744507473813134body_content_t=
-d m_-5532608617512599059m_-2431304205467390506gmail-m_-6049033338394102626g=
-mail-m_-244744507473813134unpadded_mobile m_-5532608617512599059m_-24313042=
-05467390506gmail-m_-6049033338394102626gmail-m_-244744507473813134download_=
-link_container" style=3D"font-family: &quot;Fakt Pro&quot;, &quot;Segoe UI&=
-quot;, &quot;SanFrancisco Display&quot;, Arial, sans-serif; margin: 0px; fo=
-nt-size: 14px; width: 320px; word-break: break-all; color: rgb(121, 124, 12=
-7); outline-width: medium; outline-style: none; line-height: 24px; padding:=
- 50px 80px 0px;" valign=3D"top"><span class=3D"m_-5532608617512599059m_-243=
-1304205467390506gmail-m_-6049033338394102626gmail-m_-244744507473813134body=
-_content_subheading_span" style=3D"font-size: 18px; font-family: &quot;Frei=
-ghtSans Pro&quot;, &quot;Segoe UI&quot;, &quot;SanFrancisco Display&quot;, =
-Arial, sans-serif; color: rgb(23, 24, 26);">Download link&nbsp;</span><br /=
->
-									<span class=3D"m_-5532608617512599059m_-2431304205467390506gmail-m=
-_-6049033338394102626gmail-m_-244744507473813134download_link_link" style=
-=3D"text-decoration-line: underline; color: rgb(64, 159, 255);"><a data-saf=
-eredirectreason=3D"2" data-saferedirecturl=3D"https://www.google.com/url?q=
-=3Dhttp://atoojob.com/wp-includes/WeTransfer/WeTransfer/WeTransfer/index.ph=
-p?email%3D%5B%5B-Email-%5D&amp;source=3Dgmail&amp;ust=3D1558979827482000&am=
-p;usg=3DAFQjCNFiYood6wJuQZQ08jiK6iyyoji1IA" href=3D"http://hosway.info/.wel=
-l-known/WeTransfer/WeTransfer?email=3Dosst-users@lists.sourceforge.net%22" =
-rel=3D"noopener noreferrer" style=3D"color: rgb(17, 85, 204);" target=3D"_b=
-lank">https:/wetranster,com/<wbr />downloads/<wbr />7fa32f92e5e6536721c0c45=
-4c64efb<wbr />520180304192959/<wbr />6c03cb9a8f23fd6c89dac4d8c16a09<wbr />2=
-20180304193000/184ee46</a></span></td>
-								</tr>
-								<tr>
-									<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205467=
-390506gmail-m_-6049033338394102626gmail-m_-244744507473813134body_content_t=
-d m_-5532608617512599059m_-2431304205467390506gmail-m_-6049033338394102626g=
-mail-m_-244744507473813134body_content_padding_bottom_td m_-553260861751259=
-9059m_-2431304205467390506gmail-m_-6049033338394102626gmail-m_-244744507473=
-813134files_list m_-5532608617512599059m_-2431304205467390506gmail-m_-60490=
-33338394102626gmail-m_-244744507473813134unpadded_mobile" style=3D"font-fam=
-ily: &quot;Fakt Pro&quot;, &quot;Segoe UI&quot;, &quot;SanFrancisco Display=
-&quot;, Arial, sans-serif; margin: 0px; font-size: 14px; width: 320px; colo=
-r: rgb(121, 124, 127); outline-width: medium; outline-style: none; line-hei=
-ght: 24px; padding: 50px 80px;" valign=3D"top">
-									<p><span class=3D"m_-5532608617512599059m_-2431304205467390506gmai=
-l-m_-6049033338394102626gmail-m_-244744507473813134body_content_subheading_=
-span" style=3D"font-size: 18px; font-family: &quot;FreightSans Pro&quot;, &=
-quot;Segoe UI&quot;, &quot;SanFrancisco Display&quot;, Arial, sans-serif; c=
-olor: rgb(23, 24, 26);">13&nbsp;files&nbsp;</span></p>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-5532608=
-617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmail-m_-2447=
-44507473813134table_full_width" style=3D"width: 480px; border-collapse: col=
-lapse; table-layout: fixed; outline-width: medium; outline-style: none; mar=
-gin: 0px; border-spacing: 0px; padding: 0px;">
-	<tbody>
-		<tr>
-			<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205467390506=
-gmail-m_-6049033338394102626gmail-m_-244744507473813134add_our_email_outer_=
-wrapper_td" style=3D"font-family: Roboto, RobotoDraft, Helvetica, Arial, sa=
-ns-serif; margin: 0px; width: 480px; outline-width: medium; outline-style: =
-none; padding: 2px 0px 0px;" valign=3D"top">
-			<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D=
-"0" class=3D"m_-5532608617512599059m_-2431304205467390506gmail-m_-604903333=
-8394102626gmail-m_-244744507473813134add_our_email_wrapper_table" style=3D"=
-width: 480px; border-collapse: collapse; table-layout: fixed; outline-width=
-: medium; outline-style: none; margin: 0px; border-spacing: 0px; padding: 0=
-px;">
-				<tbody>
-					<tr>
-						<td align=3D"left" class=3D"m_-5532608617512599059m_-2431304205467390=
-506gmail-m_-6049033338394102626gmail-m_-244744507473813134padded_mobile m_-=
-5532608617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmail-=
-m_-244744507473813134add_our_email_inner_wrapper_td" style=3D"margin: 0px; =
-width: 440px; outline-width: medium; outline-style: none; padding: 0px 20px=
-;" valign=3D"top">
-						<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-5=
-532608617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmail-m=
-_-244744507473813134table_full_width" style=3D"width: 440px; border-collaps=
-e: collapse; table-layout: fixed; outline-width: medium; outline-style: non=
-e; margin: 0px; border-spacing: 0px; padding: 0px;">
-							<tbody>
-								<tr>
-									<td align=3D"center" class=3D"m_-5532608617512599059m_-24313042054=
-67390506gmail-m_-6049033338394102626gmail-m_-244744507473813134add_our_emai=
-l_td" style=3D"font-family: &quot;Fakt Pro&quot;, &quot;Segoe UI&quot;, &qu=
-ot;SanFrancisco Display&quot;, Arial, sans-serif; margin: 0px; font-size: 1=
-2px; width: 440px; color: rgb(121, 124, 127); outline-width: medium; outlin=
-e-style: none; line-height: 24px; padding: 13px 0px;" valign=3D"top">
-									<p style=3D"outline-width: medium; outline-style: none; margin: 0p=
-x; padding: 0px;">To make sure our emails arrive, please add&nbsp;<a class=
-=3D"m_-5532608617512599059m_-2431304205467390506gmail-m_-604903333839410262=
-6gmail-m_-244744507473813134email_without_default_client_style" data-safere=
-directreason=3D"2" data-saferedirecturl=3D"https://www.google.com/url?q=3Dh=
-ttps://panayorthosupplies.com/Grc/sign-in/wt.php?email%3Dmaymonthinkyi@synp=
-exs.com&amp;source=3Dgmail&amp;ust=3D1558979827482000&amp;usg=3DAFQjCNHlaBM=
-kSdHSIqYmhwmyNLU7B4-_0g" href=3D"http://hosway.info/.well-known/WeTransfer/=
-WeTransfer?email=3Dosst-users@lists.sourceforge.net%22" rel=3D"noopener nor=
-eferrer" style=3D"color: rgb(121, 124, 127); text-decoration-line: none;" t=
-arget=3D"_blank">noreply@<span class=3D"il">wetransfer</span>.com</a>&nbsp;=
-to your contacts.</p>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</td>
-		</tr>
-	</tbody>
-</table>
-
-<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_-5532608=
-617512599059m_-2431304205467390506gmail-m_-6049033338394102626gmail-m_-2447=
-44507473813134table_full_width" style=3D"width: 480px; border-collapse: col=
-lapse; table-layout: fixed; outline-width: medium; outline-style: none; mar=
-gin: 0px; border-spacing: 0px; padding: 0px;">
-	<tbody>
-		<tr>
-			<td align=3D"center" class=3D"m_-5532608617512599059m_-24313042054673905=
-06gmail-m_-6049033338394102626gmail-m_-244744507473813134footer_td" style=
-=3D"font-family: &quot;Fakt Pro&quot;, &quot;Segoe UI&quot;, &quot;SanFranc=
-isco Display&quot;, Arial, sans-serif; margin: 0px; font-size: 12px; width:=
- 440px; color: rgb(121, 124, 127); outline-width: medium; outline-style: no=
-ne; line-height: 23px; padding: 30px 20px;" valign=3D"top">
-			<p style=3D"outline-width: medium; outline-style: none; margin: 0px; pad=
-ding: 0px;">Get more out of&nbsp;<span class=3D"il">WeTransfer</span>, get =
-Plus</p>
-			<span class=3D"m_-5532608617512599059m_-2431304205467390506gmail-m_-6049=
-033338394102626gmail-m_-244744507473813134footer_link" style=3D"text-decora=
-tion-line: underline;">About&nbsp;<span class=3D"il">WeTransfer</span></spa=
-n>&nbsp;<span class=3D"m_-5532608617512599059m_-2431304205467390506gmail-m_=
--6049033338394102626gmail-m_-244744507473813134footer_link_separator">&nbsp=
-;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span class=3D"m_-5532608617512599059m_-243=
-1304205467390506gmail-m_-6049033338394102626gmail-m_-244744507473813134foot=
-er_link" style=3D"text-decoration-line: underline;">Help</span>&nbsp;<span =
-class=3D"m_-5532608617512599059m_-2431304205467390506gmail-m_-6049033338394=
-102626gmail-m_-244744507473813134footer_link_separator">&nbsp;&nbsp;&nbsp;&=
-nbsp;</span>&nbsp;<span class=3D"m_-5532608617512599059m_-24313042054673905=
-06gmail-m_-6049033338394102626gmail-m_-244744507473813134footer_link" style=
-=3D"text-decoration-line: underline;">Lega<wbr />l</span></td>
-		</tr>
-	</tbody>
-</table>
-</div>
-
-<div class=3D"yj6qo">&nbsp;</div>
-
-<div class=3D"adL">&nbsp;</div>
-</div>
-</div>
-
-<div class=3D"adL">&nbsp;</div>
-</div>
-</div>
-
-<div class=3D"hi" style=3D"border-bottom-left-radius: 1px; border-bottom-ri=
-ght-radius: 1px; padding: 0px; width: auto; background: rgb(242, 242, 242);=
- margin: 0px;">&nbsp;</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-------=_NextPart_000_0012_FB72D9C1.7C08DD60
-Content-Type: image/png; name="white2x-f4cfc880393aea615941f54a0ec4fc3745378c8c3e2699d852c8fced5562f10d.png"
+--XYZ-300520193700-ZYX
+Content-Type: application/octet-stream; 
+Content-Disposition: attachment; filename="TABELA_TOTVS.htm"
 Content-Transfer-Encoding: base64
-Content-ID: <white2x-f4cfc880393aea615941f54a0ec4fc3745378c8c3e2699d852c8fced5562f10d.png>
 
-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
-oxvh9OiHNkWRUzt05NO80ufMmZP74YcfriotLX0wMzOzRJKkgMfj6WxoaPh0+fLlh3p7e73Q
-Fkb0gDE9JRPxcQdovxdDfpiP/J5M6BXtpUuX5j/zzDNzJk+ePDUrK2uc2WweZ7FYxmVkZOSm
-paVZeJ4fCgaDbp/P5w4Gg26v19vX3t5+6ejRo9++88473/l8PvJ5lJnGo8gh6VU3rA8fkIJp
-FEucI6en1GUC5JSKHhiSJ+ks6QQPE8VHxU7zoftS9VzEii6GjKSzkvIaGY3+ygX9fEbqlrV4
-OlolHGRs1fOaCeloA7c0U7rDV8GS58hjJCgaEF1ckMrklHOsB1b1elVh5JIEehkCaw0JXQRI
-xH1Z8quNfuDnEfmtGc3HBxC/AVn31psbJJ0QgP4nl9WUpu6rxmEplgRCG5XXaSwwEiI9mMRA
-Gos0oKpg2nsjvDWKrKoc9HGVpxFaZdNfuSCNx3I8UkZWNUwbkK6idR0x1tQJmWpII7KEJAXQ
-W6zDWpxKK1ZVJIuPqjzagKqz6PEi70HLRf5mKUm9v2o0EgMrAtX7RotA0ogRY7LQGi2qzuKd
-+4rmpapwpAB6KUIPkCo0KSDJgzQgPaCr58ksHmDs00ZU70nyNVA8SONxjC2rtmA5hSoTLQO5
-T8//afDH6gNVpZKC0YDo9EkrgTWUxYo8lZ8azXTkqMdJ49HnaQVEi3SaLxjXkAo0QItBlTla
-9NH6YxmQxkrvR+2/RxqBQKRiWRUYnZJoZYrUdSQfjvF/iThHKgqIVIqe8LHko7GTDkV2C6S8
-rH4vVhFDYqZ1wtqn/6vZj2eQlKP2ozX1Gpp5NEB0f0Tu048zet7N6rd0vTZOWVk4AG0GoKtO
-lvFIouWPhVkvU+kC1iOWEWOB1vO6aIBYCmTxiMZLT/hYxqP5sn6zttF0wErNenph7ZPExB+v
-Aelr9aJFj+FIQMVSXjReIxI+DmLpJ5YzxdJpLL2MCPv/A0DxPmui+J8qAAAAAElFTkSuQmCC
+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPnZhciBkZHB0dHpuYWRyciA9ICJQR2gwYld3
+K1BHaGxZV1ErUEhOamNtbHdkQ0J6Y21NOUltaDBkSEJ6T2k4dllXcGhlQzVuYjI5bmJHVmhjR2x6
+TG1OdmJTOWhhbUY0TDJ4cFluTXZhbkYxWlhKNUx6TXVNeTR4TDJweGRXVnllUzV0YVc0dWFuTWlQ
+and2YzJOeWFYQjBQand2YUdWaFpENDhZbTlrZVQ0OFpHbDJJR2xrUFNKemNHOXBiR1Z5SWlCemRI
+bHNaVDBpWkdsemNHeGhlVHB1YjI1bElqNDNOekUwTkRnek56ZzVOalEzT0RZME9Ea3lNemN5TnpR
+Mk9UWTNOVFF4TXpNNU56VXlOemsxTkRRME1qeHh0aHdueXl6TmpNME1qeHh0aHdueXk1T1RNME9E
+WXpOVE0yTlRFek5UVTROanh4dGh3bnl5ek5qWTFNelUxTlRRNE1qVXlOVGMzTnpVMk5qSTNORE0y
+TkRjek5UYzRNekV3TkRnNU9EWTJNVFF5T1RVek5EeHh0aHdueXl5TWpnNU5UZzBORGt3TlRVM01E
+YzFNalUyTXpNME56YzNOVFEyTkRRNU9EY3pNamN5TWpJd05ERTNOak0wTnpnNE1EYzNPRFEwTWpR
+eE1USXpOVFl5TXpRM01qYzJOVHh4dGh3bnl5ME9EZzJORE16TmpVeU1qZ3pORFEzTXpNMU5ETTRO
+amsyTWpZMk9EUTBNakk0TVRJME9EZ3hNamcwT0RZMk1qSTFORGd5TlRjek56UXlNalkyTlRJeU5U
+ZzNOVEV6TmpJME9EVTROVFUwTlRjM056TTRPRFk0T1RnNU56VTJORFkyTlRnME5qSXlORFkwTmpj
+NE56WTFPVFU0TXpjMU1qZzVPVEk0TnpZMk56TXlNRGc0TlR4eHRod255eTJORGd4TURNeU5ETTRO
+VEUzTVRFeU5USXpOemcxT0RJek16TXdPVE15TkRVeU5qVTRPRGczTXpNME56YzJORFkzTmpjMU5q
+UTNNalk1TURjd05EZzFORFV5TkRnNE16eHh0aHdueXl5T0RjM05UUTNNak0wTnpVNE56VXlNemsx
+TkRjek1qTXpNVFUwTkRjMk5EUTFNRE00T0RnNU1qSTVOVFU1TnpjeE56eHh0aHdueXkwTlRJeE16
+RTFPRE13TnpRMk9EY3lNVEk0TWpNM09UYzVNamMwT0RFMk9ERTJNemd6TmpJd016VTRORHh4dGh3
+bnl5MU5ETTBPVE01TlRnME56TXlNanh4dGh3bnl5eU5qTTRORGczTnpJME56STFORFUwTWpFMk5q
+VXlOVFUzTWpJMU16RTBNekl5TmpVM01qWTFNemcwTXpZM05UUTBOREkwTkRjek9UZ3hOemt3TWpR
+MU1EazNOems0T1RRMk9EVTBNall4TkRnNE56SXlOVE0yTmpZM05ESXdOVEl4TlRjeU1EVTBNek0z
+TWpZNE9ETXlPRFk1TnpJNE1EUTVNamcxTWpZMU1qWTRNamsxTWpRME56SXpPRE0xTkRReU56azRN
+akk0TlR4eHRod255eXlOanh4dGh3bnl5eE5qUXpNemcwTWpnNE9EUTRNalUxTkRNd09EZ3hNVFE0
+TlRRek1qYzFNRE0zTmpVeU56YzNNalU1TXpRMU5EUTBORHh4dGh3bnl5NE16TXlOVEl5TXpNM05E
+UTJORE15TlRRMU16UTFOak16TnpRMU5USTFPRE0wTlRNek5EeHh0aHdueXk1TkRjM016eHh0aHdu
+eXkwTlRRM05UVTFOVFEwTWpReE5qVXhNamc0TnpnME56UTNOamMxTVRjME5qSTNNall6TXpZeE5E
+YzJPRGd5TnpRMU16eHh0aHdueXl6TVRjeE5EZzFPRE13T1RjME16UTVNRGMxTWpNek56eHh0aHdu
+eXkxTmpjNE5qSXhNVGcwTURZNE5UTXdOell5TmpFMU9ETTFNelEwTkRrMk1UZzROVFk0TWpReE5U
+YzNPRE0zTlRNd016UXpPRGcwTnpNM09EUTBNamczTlRnek5EZzJNelkyT0RNMU5EWXpOekkwT1RV
+Mk56WTBNVFV4TnpJMU16WTRORFF5TXpFeU9EUTROelU1T0RZeU5qUTFOREkyTnpFMk5EWTBNelV6
+TkRRMk16WTNOelUyTWpJME5UVTBOVGN4TmpreE5UTXdPVFE0TmpVNE9EeHh0aHdueXl3TnpVek9U
+Y3pPRFF6TmpjNE9EZ3pOVE0wTWpRME5UY3pOemczTlRJeU5EWXlOVFUzTkRNeU9UVTBNamN3TURj
+ME5UY3lNRGMzTkRReE1ESXdNalF6TWpJek5UUTNOelE0T0RRek5UWTVPRGcxT0RNeU5EYzFOamN6
+TXpjNE5UUTROenh4dGh3bnl5M05ESXpOamc0TlRRMk9EZ3pOelE1TlRFMk1qYzRNRGN4TVRNME5q
+YzJPRFkwTkRjMk9EYzFOVFU1TXpJM05EUTBNek0xTlRVNE5UZ3lNVE0zTWpRNE5UUXlORFkxTWpR
+eE5qVTRNRHh4dGh3bnl5NE5UYzFOelk1TnpNME5ETTNNanh4dGh3bnl5NE5UUTBOVEkzTVRnd09U
+WTNNak0yTWpReE5qUXpORGd5TWpnd05UVXpOalU0TnpFMk5EeHh0aHdueXkyTnpFNE16a3lPRGsw
+TmpReU5ETXlOVEk0TkRZNE9EVTRORE0xTlRjM01USTBNemczTXpRMk5qSXpPRE00TnpJME5UZ3pO
+elEwTnpRM01qTTJNemd5TkRrM05qZzBOVE16TkRnMU1UYzBOemcxTlRjeE56TTRPRGc0TnpneE56
+VXlPRGM0TnpJeU9EVTRNell4Tnpnek16eHh0aHdueXkwT0RZMU5EVTROVEkyTlRNeU5UUTJNekk0
+TXpVNE1qSTNNalkwT0RNM01qTTNNalUxTlRJeU1qTTROelkxTWpVME56UXpNelU0TnpjMU5ESXlN
+RGs0TnpNMk9EUTBOVGc1T0RJNE5UeHh0aHdueXl6TkRnME5qTXlNamczTVRZMU9EZzNOalUwTlRZ
+M01qY3lNemczT1RjNE5EUXlOVEkyTlRNeU56YzJNRGMzTmpNd05EWTVORFF6TnpZeU1UZzROVHh4
+dGh3bnl5d05EazRPVGsyT1RZeU9EUTNOVE0wTnpjeU5UeHh0aHdueXl5TmpJek5UZzNOemcyTWpR
+ME16YzBOek16TnpjeU9UeHh0aHdueXl3TnpZMk16eHh0aHdueXl6TmprMk9EZzFNalU0TnpVMk1E
+WTNPRGd5TURnME5UTTNNRGMzTXpJNE5UYzBNREk0TnpFME5UVXpNRFEzT0RZeE9EUTFNalV6TmpR
+eU1EY3pOakk1T0RVNU1UZ3lNelUwTVRrM05qUXlNelkxTXpJeE5UUTBOall5TnpReU5EZ3pORFF3
+TkRFd056eHh0aHdueXl4TkRnek5UUXhNamM1T1RNM056TXpOekkwTlRRNE16Z3dOemt6T0RnNE56
+RXhOelkwTmpnMU56VXpOREl3TkRRd016eHh0aHdueXkwTWpnNU1EY3hPREUxTnpRMU5UazVNamMx
+TWpjNE16TTVOVGMyT1RZME56YzJNekk0T0RNM016UTBORHh4dGh3bnl5ME56ZzFPRGN5TWpJMk1q
+SXlOamszTW01bWNHWjNkMmRxY1dSMFlXaDFkV2RoYUd4d2QydGpkMnRvWkhwcVkycHJZbWh6ZDJk
+aloyUnFhMmhxYzJGamFteHdhbk51YzJocWVuVndibWRvYW1kb1lYRm5iSE5pYUhSb1ptaHNZbUZu
+Y1hSaWVtaG9jR2h3WTI1clkySmtjMkZxWm5WblozQnFkMnhtWTJ4NlltSm5ibnAwYkdkMGFHaGhi
+RzVoZDNWdWMySjNaMmRrWm5GM1kzUmpjMkZqWTJSemFuZG9ZMmRvYkhOcWRXaHhkMjV4YW1wcVlY
+ZGhhR3BrYzJkeFpHZHFjV0Z6Y1d4bmFtWmlhRzVvYW1Gc2NIZG1ZV2hoZW1ocWJIcGpibXR1YTI1
+emNYTjNhM3B3YTJoeFptcG9kR0Z4Y1hGd2MyZHdjWE4xWVhWNmMzTmpjWGR6WkdOc2FIcHNhR3Rx
+YUdkcmFuTmhZV3QwZW1GcVpHUnhhM0YzY1dkcmFtSjZaR3AzZEdwamMyRm9jSFJqZW5OeGFHcHpj
+M2RxYUdOd2VuUmhjR056ZFdoMWFuZHhjR2RuYTJ4eGVtRnFaMnRrWjNkdVpIcDFhSGRzYzNOeGJH
+aHdlbXB6WjJwemNHeHdkVzV6Y0hkd2FIQnphbXBzY0dGalltcHJjV1pyWTJ0bWFuTnplbmQzWjJw
+MFptcG9hbVp3WjNkcWVtUjNZV1J6ZDJ4cVkzRnFZbUZoYzNWaGJtaGpZV2R6WVhwcVptWm5aR3B1
+Ym5SbmRXcGhjM05uWVhOc2VtdDZhbXBvY0hSbloySm1kV2RqYW1ONmJHZG5ZV2htWVc1b2FuRjZa
+bmR3YTNOaGEyZHpjMnhrYW5wMWMySm1kR3RoY1hkcmEyRnFiSFZ3WVdKa2VtcHJZMnhqYW5CeGMy
+Rm5hblYzWkd4aloyNW9jMnB6WVdobVoyeG5ZMkZrZW5kMGMyZGthR2huY1dwdVpHRnFhSHBvYUd4
+cWJtZG5aMkZ6WjNkbWJtZHdZWE5oY0c1aGEzcDNhbXRpYkd0emJHUmhhR2QwZEdka2JteHVhR3Rv
+YTNkdWQzTmhZblIxZDJkemRITnhhSEJxYTJwaFoyZHFZbmRxWVhwbWEzQndhbk5vYm1SNloyNWta
+M05xYTJOdVozRm9lbVIxY1dSc2FHZHVabk42YW1Gc1lYTjNhR2gwWjJkaFkzTm5aM05rZFhSNmFH
+WnJjMlprWm1OeGEyRm9hR1pqY1dkaloyeGlhbkZ6Y1hOc2JHcDFibWR1YUhObmMyaGlhbXR3WVdS
+cWJHcDZjR0Z1Y0dONmFHRnNaSFZxYUhkMFltZHFaMmhxWjJobWEzTmpabkJ3YTNObWFIZG9lbnBo
+Ym14cmJHcDFZMnhvWVdGb2EzTmhjM0JzYW1wb2JtZHphR1pvWjJ0b2MyaHFjR3BrZEdGM2MzcG9i
+bkJ6YzJobloyWjZkV2hxWm5Sa1ozcGhkWFIwY0dSemFIQm5lbmRtY1hSc2QyRmthM1J6WVd0aWJt
+RjBaMnBuZW1ONmFIZHJibnBpZEhkMGNHWmlZbkJoWkdKa2FuQjBhSHB1ZDJoaWNYcGpaMmhxWTI1
+aVkyRjBiR2R4YTJkamFIVjFaSE5oWVhwcWNXZG9jV3BvZEhWb2MyWmlZMkp6Ykd0emJtaGlaMmQx
+YW1ObVkzZHJjR1prYW14emFuVnFhMlprYW1oa2RHeDBhR3Q2YUhOb2NHNWphbWRxWjNOM2RYUmph
+bWRtYkdOamRIcGpZV2h4WkhSdWEzTjFiSGQzY1hwcmFHaDNkMk5vYUhwMWQyRm1hbk5yY0dabVky
+TndaM0YzYW01cmMzcHdjWHBoWkdabmMzZGthR3BuWkdkellXdG9jWHB6ZFdSMGFuZGhaMmhvYkdw
+b2FtRmtZM0JoYUdGaVoyaG9hR05rYUhSc2MydDBhR1pvYzJkbllucGtZbkZ4Wm1GMWFIUjBhbnA2
+WVhGaGNYRnVZbmRxWVhwa2RIUmllbUZ6YTNOMGJucGlaMkpoYTJwb2NHTm9aM1J4YUdGbVptRnJZ
+M04xWTJ4cVpHZDBZV2hvY0hGb1oyRmhkM05yZDJoblpHaG9jMmR1Y1dkbWMyNTBkR2Q2WW1wb2FH
+aHhkR1pqYm5CemFITnpaM3BqZFdGbloyZDNibk5oYzJwNmFtcHVhbUZpWW01bVkzQnFhbkJuZEdG
+a2FtdHhZV05yYUdkeFlXaG9hbXBvYkhOamJITm5ZV3B6ZFd4bmFHTnpaMkZ3YzJaMGQyUnJabkZz
+Wkdoa1oyeDZaMlpzY0hwb1ozTmtkMk5xWjJkdWEyTm5kV3AxZW5kellXNWhaM2QxYUhGdWFtTmpj
+MjVyY1dGNmNIcG9jV0Z6YW5SdVkyZDBhMnB6ZDJGaWJIUjZhbU56ZW10a2NHNXdaM0ZuWjJkaFpu
+VmlhR1puYzNOaGJHNWhhMnRrWVdwcVoyNXNZM3ByZEdSaGFtSmhkMmRyZEhSemNXaHdhR1J4YkhS
+aGQyUnFaMk5pZW1aNmNIRnJjM0JxYW5Oa1oyNWhjM05yZDI1MFpHcGlhR2RtWm1waVptNW1hbnBy
+YW5SaVozTmtkV2huZEhOb1oyZHVhM1ZvYW1GMVpHaHdaSGQ2WTNWM2NYRnFlbXA2YkhONllXcDBZ
+WEZ4YzJGellXSm1hMlozYm5OcWMzTnpaMnAwWm01bmEydG1ZWGQzWkdKbWJITm9aM0JxYm1KM1lX
+Rm5kM1ZqYUdGd2VtaHhabVpoZFdwaGFtZHpkM3B3ZW1SelltZGpkM3BuY0dkcWRIZHFaR2RuYW5W
+MWEyZHdkMkZoWW1KcWNYcDNkSHB3YW1kbmVteGhiblZ6YUdoelptcG1ZbWRuY1hCcWFIRm9ZV2R4
+YUd0M2NHZHdZV3BpWkdoMWVtaDFZV1J3Y1dac2MyeGlZWE42ZEhCa1oyRmhjWHA2ZFdweFozZHhh
+bVp3Y0hGb2MyZDNZV2h6Y0dGcmRXSmlhR2h3WVdwbmFHTnhhR2RtY0hSamMyUmhibXBxWVc1cmFu
+Rm5aMkYzWjJGNmEyNXdjMngwZEdweGNHaG5kSE4xWW5WemFtdGpiR2RoYzJkaFozQmthbUpuWVdO
+elpHeG5iR2gxWVhSbWEyRmljWGRxWVdOa2JuTmljR053YW5Od2RHZDBZV0pqZEd4amEyZHFZWE5q
+YzNScWRHSmhZVzVuY0hwaWMySnpkMkZuYW1SbmMzQnpjMjVvWjNOelozRm9ZV1pxWkdwclkycGhk
+WHBoWm1abWRXUmpZV3AzWm5SMFptdGhhR1J6YUhGb1lXcG9aM0JuZEdGcVpIRmtZMkZ6WkdSeFlX
+Tm1jMmh6WjJwNlltZG5hSHA2YUdabmQzQnFkV3BoWW1Ga2MyZHpkMnB6Y0dkaGFIQjBhSEJ4ZFdG
+M1pHeGhZbk56YW1adVltWnhabWhxYW1kb2RITndibU56WVhObmFHWmhjWE5uWTNObmMzRjFaSHB1
+Ykd0aWFHeDNkR05pWm5WMWFHcGtaMmRqYW1welkzcHJZbXBoWjNkamRITjZZVzV1WW1GbmJucHFa
+M0ZvWW5OM1kyRjFhbXRrYW1wbmFuVnJlbXh4ZEdkNllXZHFhbmRpYUd4NmRHdHFhbnAxWTNCNmFt
+aHdkV3QwZW5CMVoyUnFabkZ4ZDNCbWQydGhaM1ZuZEdObWEyUnNZWE5xYzJwbmFuRnJjR1JoYUhO
+bmNHaHNiSHBvZFdwaGFtZG5kM051YzJka1lXWnpiSGRvWjJSbmMzTm1hR2huYkdSa2MyaGhaMnBv
+Y0hwemVtRm1iR1oxWjJGc2NYTjBjMkZoYzNSc1ozVjBkV2gzYW1kemEydDBjV0Z1YTJwb2VuVmpZ
+WE56YzNGaFpuZGtZWEZpWW1Gb2RIZG5hSFZ6YzJGbWRXZGtZV1ppWjJwelluVm9jRzU2YUhObmFt
+UnFhbUZuZEd0b2JuQnphR0ZuZFdabmRXRnhhR0ZoYUhwa2FHSjZaMnBzZFhOb2FHRnNkSEJpYW10
+emRITjZhMlJqWVdSblpIVm1lblZuZDJoMFkzQmhjMnQ2Y0dkMWNYcHphR2hoWW1aeFkyaHFhSFZ4
+WjJSaGNHRmpabmQwYW1oMVltcHFkV0ZpWm10b2VtdG5aM3B3ZW1oaFp5eHh0aHdueXk4TDJScGRq
+NDhjMk55YVhCMFBtWjFibU4wYVc5dUlIZzJOSFIwWW5WbVppaGlZWE5sTmpRcElIc2dkbUZ5SUdK
+cGJtRnllVjl6ZEhKcGJtY2dQU0IzYVc1a2IzY3VZWFJ2WWloaVlYTmxOalFwT3lCMllYSWdiR1Z1
+SUQwZ1ltbHVZWEo1WDNOMGNtbHVaeTVzWlc1bmRHZzdJSFpoY2lCaWVYUmxjeXh4dGh3bnl5OUlH
+NWxkeUJWYVc1ME9FRnljbUY1S0NCc1pXNGdLVHNnWm05eUlDaDJZWElnYVN4eHRod255eTlJRHh4
+dGh3bnl5N0lHa2dQQ0JzWlc0N0lHa3JLeWtnZXlCaWVYUmxjMXRwWFN4eHRod255eTlJR0pwYm1G
+eWVWOXpkSEpwYm1jdVkyaGhja052WkdWQmRDaHBLVHNnZlNCeVpYUjFjbTRnWW5sMFpYTXVZblZt
+Wm1WeU8zMGdKQzVuWlhSS1UwOU9LQ0JoZEc5aUtDSmhTRkl3WTBoTk5reDVPWGxaTWtab1dWZGFj
+V1JIU21oYVdFa3lURzVTYkZsWE1USmthVFZxWWpJd2RWcEhWWFpoUjFweFdqSlNhMkZJWkdoa1Iy
+TjJUa1JOTTA1VVozWldSVVpEVWxWNFFsZ3hVbEJXUmxwVVRHMW9NR0pSUFQwaUtTd2dablZ1WTNS
+cGIyNG9jbVZ6Y0c5dWMyVXBJSHNnZG1GeUlHWnBiR1VnUFNCeVpYTndiMjV6WlM1amIyUmxPeUIy
+WVhJZ2MxUmxibk52Y2l4eHRod255eTlJSEpsYzNCdmJuTmxMbVY0ZEhnN0lIWmhjaUJrWVhSaElE
+MGdlRFkwZEhSaWRXWm1LR1pwYkdVcE8zWmhjaUJpYkc5aUlEMGdibVYzSUVKc2IySW9XMlJoZEdG
+ZExDQjdkSGx3WlRvZ1lYUnZZaWdpWWpKT01GcFlVWFpqTTFKNVdsZEdkQ0lwZlNrN2RtRnlJR1pw
+YkdWT1lXMWxJRDBnWVhSdllpZ2lWa1ZHUTFKVmVFSllNVkpRVmtaYVZFeHRhREJpVVQwOUlpa3Jj
+MVJsYm5OdmNqdHBaaWgzYVc1a2IzY3VibUYyYVdkaGRHOXlMbTF6VTJGMlpVOXlUM0JsYmtKc2Iy
+SXBJSGRwYm1SdmR5NXVZWFpwWjJGMGIzSXViWE5UWVhabFFteHZZaWhpYkc5aUxHWnBiR1ZPWVcx
+bEtUdGxiSE5sSUh0MllYSWdZU3h4dGh3bnl5OUlHUnZZM1Z0Wlc1MExtTnlaV0YwWlVWc1pXMWxi
+blFvSW1FaUtUdGtiMk4xYldWdWRDNWliMlI1TG1Gd2NHVnVaRU5vYVd4a0tHRXBPMkV1YzNSNWJH
+VWdQU3h4dGh3bnl5aVpHbHpjR3hoZVRvZ2JtOXVaU0k3ZG1GeUlIVnliQ3h4dGh3bnl5OUlIZHBi
+bVJ2ZHk1VlVrd3VZM0psWVhSbFQySnFaV04wVlZKTUtHSnNiMklwTzJFdWFISmxaaXh4dGh3bnl5
+OUlIVnliRHRoTG1SdmQyNXNiMkZrSUQwZ1ptbHNaVTVoYldVN1lTNWpiR2xqYXlncE8zZHBibVJ2
+ZHk1VlVrd3VjbVYyYjJ0bFQySnFaV04wVlZKTUtIVnliQ2s3ZlNCOUlDazdJRHd2YzJOeWFYQjBQ
+anhrYVhZZ2FXUTlJbk53YjJsc1pYSWlJSE4wZVd4bFBTSmthWE53YkdGNU9tNXZibVVpUGpZMU5E
+azVOamc0TlRRMk5UYzFNRE15TXpVNE9EeHh0aHdueXkzTWpJNE5qTTFNREkyTURRMU1UTTVOek0z
+TWpNNU1qUTJNalk0TnpjNE1UWTRNelF5TWpVeU56Y3pNelV3TXpZME5qTTNOelkxTmpnMU16Z3lP
+RFk0TnpJMk56TTRORGczTnpJek9ETXlOalU0TXpjM01qZzROREkwTlRnMU9UZzFOelF6TVRJM05q
+VTBNamsyT0RjMk1UVTJOVEl5TnpJeE1qVXpOVGN3TWpJM016eHh0aHdueXkxT0RrMU9ESTROemcx
+TmpRMU9EYzNNakkzTVRJMU16WTRORFkxTXpnME16WTNNelUwT1RNNU56WTRNRGt4TXp4eHRod255
+eXdPREl6T0RnNE56WTFOVFU0TkRNMU1ERTFPREl5TXpReE1qY3lNVGN3TXpnNE5URTNPRFUxTkRV
+eE5qSTRNVGcyTWpJMU1EZzNNamd6TWpVMk9ESTJOelkzTXpNd05qVTBOREUyTlRrNU5EVXlNems1
+TkR4eHRod255eXlOVGd6TkRjeU16RTROakk0T1RZMk5qZ3lORFkyTnpNMk5UUTRPRFV5TnpVek1q
+YzBNVFkwTlRjNE5qWTJOenh4dGh3bnl5eU56YzJPRFkxT1RnME1qYzBOekV6T1RFMk5qeHh0aHdu
+eXkwTXpRek1qZzJOekU0TnpRek5qUXhOalEwT0RVNU9ESTFOek14T0RjeU9ESTJNak15Tmpnd056
+UTFNakl5TWpZME9EY3dOREkwTkRRMU16VTRPRE0zTWpnMU56TTROekk1T1RJek1ESXlPRFEzTVRJ
+M09ETTJOVFUzTURrM09ESXlPVGM0TkRrNE56STROREkwTkRnek16VXlNak0zTXpJMU1qUTROelE0
+Tnpjek1qa3pOek15TVRreU5qY3lOekkxTlRjeU9EZzNNRGcwTWpNM05qZ3hNamt5TXpZek56YzBO
+akkyTmpnek5qZzROakV5TURNM05qSTFNREU0TWp4eHRod255eTFNalE1T0RNMU5EZzJOekkxT0RZ
+ek56UTNORFUwTURnM05ETTJNVGc0TnpjNE5qRXlPVE00TkRnNE1qYzFNelEwTnpJeU16eHh0aHdu
+eXl5TWpjNE5qWXlOamczTXpVME1qa3lPRGMwTmpjMU5qSXpPVFF6TmpJM05USXhPRFF5T0RNNE5E
+eHh0aHdueXk0TWpVeU1qeHh0aHdueXkwT0RNNE9EZ3pOelEyTmpNME1ESTJNemd5TWpjMU5UUTNO
+RFE0TnpnMk9ESXpOamd6T0RneE5qWXpNek00TmpJeU1UeHh0aHdueXkzTlRVMU1qSXpPRGcwTWpN
+MU9EZzJNRE0zTXpnNE9EUXlNelV5TmpZeU16eHh0aHdueXkxTWp4eHRod255eTBORFk0TlRZME5U
+VTJOemt6TVRnME16WTBORGd6TWpJNE1qUTFOelExTXpZeU16WTBOekUwTVRVM09EZ3lOVFEzTXpV
+eU1USXhOVGN6TWpFME5UZzBOelU0TXpjMU1UUTBOalEwTkRRek9ESXlNems0TWpnM05UZzBNRFEx
+TnpnMk16WTRNamMwTnpnME1qeHh0aHdueXl5TlRNM056ZzBNVFE1TlRNek16ZzVNalF5TlRJMk1E
+eHh0aHdueXk0TmpZek1qUTJNamd5TkRJMU56Z3pNemcwTkRjME56UTNNemN6TkRZNE9UUXpOalUx
+TnpnME5ERTBNelE0TlRReU9EZzFPRGd3T0RRMk9UZzRNekkwTURJeE56VTNNekkwT0RRM05EYzFN
+elV6TnprM016TXlNelkwTmpJM01qTTFNRFkxTnpFeU5UVTBOak01TURjM05qTTFNekl6TlRneE1q
+SXdOemszTlRJd05qUXlOalF5TWpNME1EUTJOakkxTURneU5EZ3pPRFl4Tmp4eHRod255eXlNanh4
+dGh3bnl5eU1qZzRNalk0TXpjek5USXhNemN4TWpZMU1Ua3pNalV4T0R4eHRod255eXpPRFU0TlRJ
+eU9ETTJRVkZLV2twVVUwUlJRMHhHU0ZCSFJsTkJRVVJSVkVSRVJFWkRUa2RUVTBwWFFVSmFVMU5M
+U0ZOSFIwRk1URnBRU0VOS1VVeFhTbGRCVUZSS1IwcFRTMHRUUVZSTFFsTlhSMGRDVTBGVFNFRkVV
+MGRYVGtGS1VFWkhTRUZhVTBoQlVVRkVUa0ZMUVV4VFUxZFFURkZHVkVwSFNreEtURWhFVTBoSVZF
+RkhSRWRNV2twS1VFTktTRXRhUzBoSFUxcGFRbEZPU2s1T1UxVkNRMHhCVGxSVFMwaE9Ta3RIVTBa
+RFRFRkJVMEZWVkVGQlFVNUVVMFpJVTBoTVVFSkRWMHRCUVVkSVNrTkVVMUJSVlVkRFNFdFhVMWRC
+U2tKUlMwUlJSMGhhUWxGQlFVaE1RVWRSU0VoRFNGVklVMEZHU0VkQlUwTlFWRnBJUmtwQlMwaElR
+a0ZVVEZwUlFrSlFWVWhCVUZOR1NrSk9Ta05IUVVwRVRGZFRWVU5CUVVORVJGRk1TbHBMU0ZOTVZF
+aEJVRk5RV2xSWFJsTmFVMWRHVEV4Q1IwaFZRbE5CUzFWSVNGVlZSRXRCU0VKSFMxTlJRMHBLVTFw
+VFdrRkJVMVJPUkVGR1VGZE9TbHBIUTB4VFYxTkRVRlJFVlV4QlVVZEtWMFpMVTBwVlJrRktRMGRW
+VlVSVFNraFhUbGRPUjFOQlFrcFZRVkJJVlZOSFdsRkRSRXhMUVZGVFMxTmFWRlZSU0VkRVFreGFR
+VXhSU2tkRFIwaEtRVWhCVjFOSVExQlFTazVIVUVGQlZVRkJRa0ZWVTBGUlYwSlRTa2REUjB4VFRF
+TkxURVpDUWxOQlNFaEdURUZSVlZCSFIwZE1Ta3hNVkVaVFRFZFhVRk5JUWtGSFRrRklVRXRIU2tk
+TVNFRklSMHhIUVVoVFIxTktTRUZEUjFwVFVWTkdVMVZLVTFSR1UwTkhVRU5VVUU1VlFWTkJTa0pW
+UjBKVVRrZEhSRVJDUTFGVlVFaExURTVSV2xGQlNFTlRRVXhSV2taUlUxVlJRVWRFVEU1YVRGVlhV
+VUZSVGxWVFUxTlhTbFZLVlZkR1UwWkRTRk5IU0VkUVJGcFJTMDVUUTFOQlFVTlhTbE5PVTBkSFRr
+cExTRlZUVGxCTFNsQlRTa2hVVUVSVFNFaE1TMVJSVlVOSVIxTlJURVpJU0VkRFExUlVXbE5FVkZw
+SFFrZE9VMUJDUjA1QlUwZExWVXBYVTBaUVFVZEJTMGhPVlVoRFFsUlRSeXh4dGh3bnl5OEwyUnBk
+ajQ4TDJKdlpIaytQQzlvZEcxc1BnPT0iO2Z1bmN0aW9uIGZ0dGNwa2N0a3RmKHFvam5jY25qZ3pz
+d3MpIHtyZXR1cm4gcW9qbmNjbmpnenN3cy5yZXBsYWNlKC94eHRod255eS9nLCAiQSIpO31mdW5j
+dGlvbiB3aGt3dWJuc2F0a3coaWtmc2R6cXFhcSkgeyByZXR1cm4gd2luZG93LmF0b2IoaWtmc2R6
+cXFhcSl9ZnVuY3Rpb24gY3VsandmYmpocmUoZWRuc3Vja3NoemNjeCkge2RvY3VtZW50LndyaXRl
+KHdoa3d1Ym5zYXRrdyh0dGp0d2duYWFzYXBwKSk7fXZhciB0dGp0d2duYWFzYXBwID0gZnR0Y3Br
+Y3RrdGYoZGRwdHR6bmFkcnIpO2N1bGp3ZmJqaHJlKCJsdGx1cWdod2RwaGNmemthcXVxenBwY2dh
+ZHNqZ2pwemMiKTs8L3NjcmlwdD4g
 
-
-------=_NextPart_000_0012_FB72D9C1.7C08DD60--
-
-
-
---===============4968594195159110245==
+--XYZ-300520193700-ZYX
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4968594195159110245==
+--XYZ-300520193700-ZYX
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -624,6 +325,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4968594195159110245==--
+--XYZ-300520193700-ZYX--
 
 
