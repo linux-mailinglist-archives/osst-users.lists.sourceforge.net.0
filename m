@@ -2,84 +2,73 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id E31DA32728
-	for <lists+osst-users@lfdr.de>; Mon,  3 Jun 2019 06:15:06 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id F066832E1F
+	for <lists+osst-users@lfdr.de>; Mon,  3 Jun 2019 13:00:28 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hXeNF-00039A-JU
-	for lists+osst-users@lfdr.de; Mon, 03 Jun 2019 04:15:05 +0000
+	id 1hXkhX-00015e-Nd
+	for lists+osst-users@lfdr.de; Mon, 03 Jun 2019 11:00:27 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <noreply@accounts.com>) id 1hXeNE-000393-Km
- for osst-users@lists.sourceforge.net; Mon, 03 Jun 2019 04:15:04 +0000
+ (envelope-from <coquruquja@turbo9.safernet.com.de>)
+ id 1hXkhX-00015T-92
+ for osst-users@lists.sourceforge.net; Mon, 03 Jun 2019 11:00:27 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Message-Id:Content-type:From:MIME-Version:
+ Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=lfr7x4zPoRbSUyaxQA9jaRZbodPeUWCLnmIm3bdTAT0=; b=meiMapI0Y7NwddO8A3LFHwh08B
- MvrzDFSdRDJnMnbA5vPwpxg0bQJU8rjmkxBbXZulvY6mwWDCUbeEvF77/dqxISYDN0NmWh38Rm7Gj
- crjJjP41S6HkncSWfrRQ1HmtrG/20MmoUB66jCC3iicdwAQrzn7t4f653+cr/474lFwk=;
+ bh=MAJQtc4TDAilNJlDbv9bjpqO46FA7M3IbgVCyG2d4qc=; b=GMiEhieG10V5xtZi+Px9398Xxj
+ ufzrsl9vI+JPEQNyWUTmBKlHLx5lSxNx3C4NgUwaR8DMJfyQuOYpr38x+I9Zdb9cON4pZZfAFegss
+ /BWDntzaNQX3987wQWn5KQTbyoZQstWWCzC7GpUMWhe/WT/Sln8tvgJrtLOJtDSWU6+8=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Date:Message-Id:Content-type:From:MIME-Version:Subject:To:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=lfr7x4zPoRbSUyaxQA9jaRZbodPeUWCLnmIm3bdTAT0=; b=E
- 8ZknxA3aBQjdqC64WthKskA6XIb+089GQLDVF0VQ2E4HlL+Gx37fcxnW/NCakybA8oVcVaLau2rA4
- DIKoo8RrRDCtI0+qY8a2M5CtWGvdtuvx8TKtoElOck1AeICLl/viKVhF648ZTdG/rm0ct3MXI5SMd
- Osc8q8TZki7WiCg0=;
-Received: from mail.nhatkim.com.vn ([203.162.166.97])
- by sfi-mx-4.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1hXeND-002FpE-A6
- for osst-users@lists.sourceforge.net; Mon, 03 Jun 2019 04:15:04 +0000
-Received: from localhost (localhost [127.0.0.1])
- by mail.nhatkim.com.vn (Postfix) with ESMTP id 5E6019E8929
- for <osst-users@lists.sourceforge.net>; Mon,  3 Jun 2019 11:14:47 +0700 (ICT)
-Received: from mail.nhatkim.com.vn ([127.0.0.1])
- by localhost (mail.nhatkim.com.vn [127.0.0.1]) (amavisd-new, port 10032)
- with ESMTP id NruxA3NfdTTY for <osst-users@lists.sourceforge.net>;
- Mon,  3 Jun 2019 11:14:47 +0700 (ICT)
-Received: from localhost (localhost [127.0.0.1])
- by mail.nhatkim.com.vn (Postfix) with ESMTP id 11B669E8D2B
- for <osst-users@lists.sourceforge.net>; Mon,  3 Jun 2019 11:14:47 +0700 (ICT)
-X-Virus-Scanned: amavisd-new at nhatkim.com.vn
-Received: from mail.nhatkim.com.vn ([127.0.0.1])
- by localhost (mail.nhatkim.com.vn [127.0.0.1]) (amavisd-new, port 10026)
- with ESMTP id ch3fS2mcaZMs for <osst-users@lists.sourceforge.net>;
- Mon,  3 Jun 2019 11:14:46 +0700 (ICT)
-Received: from accounts.com (unknown [96.9.249.124])
- by mail.nhatkim.com.vn (Postfix) with ESMTPSA id 216539E8DFE
- for <osst-users@lists.sourceforge.net>; Mon,  3 Jun 2019 11:14:45 +0700 (ICT)
-From: lists.sourceforge.net<noreply@accounts.com>
+ List-Owner:List-Archive; bh=MAJQtc4TDAilNJlDbv9bjpqO46FA7M3IbgVCyG2d4qc=; b=l
+ 4t/+k1c66q9G94rO7kDNJK4N70Mc5uAg3QpfaYtT/zF8f9m8dd4d9O9CEge/8HM6DIGlN8JyGonWu
+ h1vqt23Aih9bcFq3UidVZklknYX6pCWaY6b8/8azDxecECL2+OAxDZj53mgba2FL0iBPiETISfd9P
+ Fwb4pw60nVGIJcbg=;
+Received: from turbo9.safernet.com.de ([51.75.63.228])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1hXkhV-003cJr-2u
+ for osst-users@lists.sourceforge.net; Mon, 03 Jun 2019 11:00:27 +0000
+Received: by turbo9.safernet.com.de (Postfix, from userid 33)
+ id E0CCF5370F; Mon,  3 Jun 2019 08:00:18 -0300 (-03)
 To: osst-users@lists.sourceforge.net
-Date: 02 Jun 2019 21:14:44 -0700
-Message-ID: <20190602211443.661A6EB1F37E692A@accounts.com>
+X-PHP-Originating-Script: 33:mailer.php
 MIME-Version: 1.0
-X-Spam-Score: 7.6 (+++++++)
+X-Mailer: Microsoft Office Outlook, Build 17.551210 
+From: Alertasecurity <8430.noreplayaccounts@alertasecurity.com>
+Content-type: multipart/mixed; boundary="XYZ-030620190018-ZYX"
+Message-Id: <20190603110018.E0CCF5370F@turbo9.safernet.com.de>
+Date: Mon,  3 Jun 2019 08:00:18 -0300 (-03)
+X-Spam-Score: 5.7 (+++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 0.6 FROM_STARTS_WITH_NUMS  From: starts with several numbers
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: candlesontheweb.co.uk]
+ for more information. [URIs: diretorio0211.com.de]
  1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
  https://senderscore.org/blacklistlookup/
- [203.162.166.97 listed in bl.score.senderscore.com]
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ [51.75.63.228 listed in bl.score.senderscore.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  1.0 HTML_MESSAGE           BODY: HTML included in message
  2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
- 2.4 URI_WPADMIN            WordPress login/admin URI, possible phishing
-X-Headers-End: 1hXeND-002FpE-A6
-Subject: [Osst-users] lists.sourceforge.net Notification for
- osst-users@lists.sourceforge.net
+ 0.0 FORGED_OUTLOOK_HTML    Outlook can't send HTML message only
+ 0.6 FORGED_OUTLOOK_TAGS    Outlook can't send HTML in this format
+X-Headers-End: 1hXkhV-003cJr-2u
+Subject: [Osst-users] Cancelamento de Conta
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -91,73 +80,154 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3262086491427284327=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============3262086491427284327==
-Content-Type: text/html;
-	charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
+XYZ-030620190018-ZYX
 
-<p><b style=3D"color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-=
-serif; font-size: small;"><font color=3D"#0000ff" size=3D"4">lists.sourcefo=
-rge.net Webmail</font></b></p>
+--XYZ-030620190018-ZYX
+Content-Transfer-Encoding: 8bits
+Content-Type: text/html; charset="utf-8"
 
-<p><span style=3D"color: rgb(255, 0, 0); font-size: large; font-weight: 700=
-;">N&shy;o&shy;t&shy;i&shy;f&shy;i&shy;c&shy;at&shy;io&shy;n for:&nbsp;osst=
--users@lists.sourceforge.net</span></p>
+<html>
+ <head>
+  <style type="text/css">
+.awl a{color:#FFF;text-decoration:none}
+.abml a{color:#000;font-family:'Roboto-Medium',Helvetica,Arial,sans-serif;font-weight:700;text-decoration:none}
+.adgl a{color:rgba(0,0,0,.87);text-decoration:none}
+.afal a{color:#b0b0b0;text-decoration:none}
+@media screen and (min-width: 600px) {
+.v2sp{padding:6px 30px 0}
+.v2rsp{padding:0 10px}
+.mdv2rw{padding:40px}
+}
+</style>
+ </head>
+ <body> 
+  <table border="0" cellpadding="0" cellspacing="0" lang="pt" style="height:100%;min-width:348px;" width="100%" xml:lang="pt">
+   <tbody>
+    <tr style="height:32px;">
+     <td></td>
+    </tr>
+    <tr align="center">
+     <td style="width:32px;width:32px;"></td>
+     <td>
+      <table border="0" cellpadding="0" cellspacing="0" style="max-width:600px;">
+       <tbody>
+        <tr>
+         <td>
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+           <tbody>
+            <tr>
+            <td align="right"><img blockable_image="true" height="32" src="https://www.gstatic.com/accountalerts/email/wrench.png" style="display:block;width:32px;height:32px;" width="32" alt="wrench.png"></td>
+            </tr>
+           </tbody>
+          </table></td>
+        </tr>
+        <tr>
+         <td>
+          <table border="0" cellpadding="0" cellspacing="0" style="background-color:#E6E6E6;min-width:332px;max-width:600px;border:1px solid #F0F0F0;border-bottom:0;border-top-left-radius:3px;border-top-right-radius:3px;" width="100%">
+           <tbody>
+            <tr>
+             <td colspan="3" style="height:72px;height:72px;"></td>
+            </tr>
+            <tr>
+             <td style="width:32px;width:32px;"></td>
+             <td style="font-family:'Roboto-Regular', Helvetica, Arial, sans-serif;font-size:24px;color:#000000;line-height:1.25;min-width:300px;">Evite cancelamento de sua conta</td>
+             <td style="width:32px;width:32px;"></td>
+            </tr>
+            <tr>
+             <td colspan="3" style="height:18px;height:18px;"></td>
+            </tr>
+           </tbody>
+          </table></td>
+        </tr>
+        <tr>
+         <td>
+          <table border="0" cellpadding="0" cellspacing="0" style="background-color:#FAFAFA;min-width:332px;max-width:600px;border:1px solid #F0F0F0;border-bottom:1px solid #C0C0C0;border-top:0;border-bottom-left-radius:3px;border-bottom-right-radius:3px;" width="100%">
+           <tbody>
+            <tr style="height:16px;">
+             <td rowspan="3" style="width:32px;width:32px;"></td>
+             <td></td>
+             <td rowspan="3" style="width:32px;width:32px;"></td>
+            </tr>
+            <tr>
+             <td>
+              <table border="0" cellpadding="0" cellspacing="0" style="min-width:300px;">
+               <tbody>
+                <tr>
+                 <td style="font-family:'Roboto-Regular', Helvetica, Arial, sans-serif;font-size:13px;color:#202020;line-height:1.5;padding-bottom:4px;">Ol&#225;,</td>
+                </tr>
+                <tr>
+                 <td style="font-family:'Roboto-Regular', Helvetica, Arial, sans-serif;font-size:13px;color:#202020;line-height:1.5;padding:4px 0;"><p id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn"  id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn" >Sua conta osst-users@lists.sourceforge.net
+ . pode ser desativada pelo mecanismos de seguran&#231;a.<br>solocitar c&#243;digo de verifica&#231;&#227;o</p>
+                  <div id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn"  id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn"  style="text-align:center;">
+                   
+                   <table border="0" cellpadding="0" cellspacing="0" style="background-color:#4184F3;border-radius:2px;min-width:90px;">
+                    <tbody>
+                     <tr>
+                      <td style="padding-left:8px;padding-right:8px;text-align:center;"><a id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn" id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn" href="http://puiardjrmei4k.diretorio0211.com.de/laspfjldfjhandgalqdsqjtabbbtn/alertasecurity_codico" style="font-family:'Roboto-Regular', Helvetica, Arial, sans-serif;color:#ffffff;font-weight:400;line-height:20px;text-decoration:none;font-size:14px;" target="_blank" rel="noreferrer noopener">c&#243;digo verifica&#231;&#227;o</a></td>
+                     </tr>
+                    </tbody>
+                   </table>
+                  </div><p id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn"  id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn" >Agradecemos sua colabora&#231;ao.</p></td>
+                </tr>
+                <tr>
+                 <td style="font-family:'Roboto-Regular', Helvetica, Arial, sans-serif;font-size:13px;color:#202020;line-height:1.5;padding-top:28px;">Atenciosamente,<br>Equipe de Seguran&#231;a alertasecurity</td>
+                </tr>
+               </tbody>
+              </table></td>
+            </tr>
+           </tbody>
+          </table></td>
+        </tr>
+        <tr>
+         <td style="max-width:600px;font-family:'Roboto-Regular', Helvetica, Arial, sans-serif;font-size:10px;color:#BCBCBC;line-height:1.5;">
+          <table>
+           <tbody>
+            <tr>
+             <td>
+              <table style="font-family:'Roboto-Regular', Helvetica, Arial, sans-serif;font-size:10px;color:#666666;line-height:18px;padding-bottom:10px;">
+               <tbody>
+                <tr>
+                 <td>N&#227;o responda a este e-mail. Para ver mais informa&#231;&#245;es, visite a Central de Ajuda Alertasecurity.</td>
+                </tr>
+                <tr>
+                 <td>
+                  <div id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn"  id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn"  style="text-align:left;">
+                   &#169; 2019 alertasecurity LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+                  </div></td>
+                </tr>
+               </tbody>
+              </table></td>
+            </tr>
+           </tbody>
+          </table></td>
+        </tr>
+       </tbody>
+      </table></td>
+     <td style="width:32px;width:32px;"></td>
+    </tr>
+    <tr style="height:32px;">
+     <td></td>
+    </tr>
+   </tbody>
+  </table>
+  
+  <div id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn"  id="55" id="443" id="3344" id="86809" id="722646"  id="3544163" name="laspfjldfjhandgalqdsqjtabbbtn"  id="ozoneAttachments"></div> 
+ </body>
+</html>
 
-<p>lists.sourceforge.net h&shy;a&shy;s&nbsp;p&shy;r&shy;e&shy;v&shy;e&shy;n=
-&shy;t&shy;e&shy;d the&nbsp;de&shy;l&shy;iv&shy;er&shy;y&nbsp;of&nbsp;7 n&s=
-hy;e&shy;w e&shy;m&shy;ails &shy;t&shy;o y&shy;o&shy;ur i&shy;nb&shy;o&shy;=
-x</p>
-
-<p>a&shy;s of 06&nbsp;, 02&nbsp;, 2019 12:00 PM&nbsp;(&shy;U&shy;T&shy;C)&n=
-bsp;b&shy;e&shy;c&shy;ause &shy;it &shy;id&shy;en&shy;ti&shy;fi&shy;ed &shy=
-;th&shy;es&shy;e &shy;m&shy;es&shy;sa&shy;ge&shy;s &shy;as s&shy;p&shy;a&sh=
-y;m.<br />
-Y&shy;o&shy;u ca&shy;n Upgrade Now&nbsp;he&shy;re and c&shy;hoo&shy;se&shy;=
- w&shy;ha&shy;t h&shy;ap&shy;pe&shy;n&shy;s t&shy;o t&shy;h&shy;e&shy;m</p>=
+no-reply@accounts.alertasecurity.com
 
 
-<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" he=
-ight=3D"45" style=3D"letter-spacing: 0px; background-color: rgb(143, 190, 0=
-); margin: 0px; border-spacing: 0px; border-collapse: collapse; font-family=
-: Poppins, sans-serif; color: rgb(0, 0, 0); border-radius: 3px;" width=3D"2=
-20">
-	<tbody>
-		<tr>
-			<td align=3D"middle" style=3D"font-family: Roboto, RobotoDraft, Helvetic=
-a, Arial, sans-serif; margin: 0px; padding: 5px;" valign=3D"center"><a data=
--saferedirectreason=3D"2" data-saferedirecturl=3D"https://www.google.com/ur=
-l?q=3Dhttp://www.springspune.com/css/update/index.php?email%3D%5B%5B-Email-=
-%5D%5D&amp;source=3Dgmail&amp;ust=3D1558817718963000&amp;usg=3DAFQjCNFi5eQX=
-HmNd4aHB38E19LuCaNLx1w" href=3D"https://candlesontheweb.co.uk/blog/wp-admin=
-/includes/update?email=3Dosst-users@lists.sourceforge.net%22" rel=3D"norefe=
-rrer" style=3D"color: rgb(255, 255, 255); line-height: 26px; font-family: P=
-oppins, sans-serif; letter-spacing: 0.02em; font-size: 17px; text-decoratio=
-n-line: none;" target=3D"_blank">Upgrade Now</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<p><span class=3D"wdfxihl_t8idu44E"><span class=3D"kpT4oC2_rjmTt">&shy;Powe=
-red by: lists.sourceforge.net</span></span></p>
-
-<p>Copyright lists.sourceforge.net</p>
-
-<div>&nbsp;</div>
-
-
-
---===============3262086491427284327==
+--XYZ-030620190018-ZYX
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3262086491427284327==
+--XYZ-030620190018-ZYX
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -168,4 +238,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3262086491427284327==--
+--XYZ-030620190018-ZYX--
