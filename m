@@ -2,77 +2,68 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 51D4549E0C
-	for <lists+osst-users@lfdr.de>; Tue, 18 Jun 2019 12:07:41 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 529534A4DC
+	for <lists+osst-users@lfdr.de>; Tue, 18 Jun 2019 17:12:25 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hdB1h-0008Vr-0z
-	for lists+osst-users@lfdr.de; Tue, 18 Jun 2019 10:07:41 +0000
+	id 1hdFmc-0001Yb-Lf
+	for lists+osst-users@lfdr.de; Tue, 18 Jun 2019 15:12:26 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <email@smartyps.com>) id 1hdB1e-0008VT-Ue
- for osst-users@lists.sourceforge.net; Tue, 18 Jun 2019 10:07:38 +0000
+ (envelope-from <marketing@offertegarganovacanze.com>)
+ id 1hdFmb-0001Y9-3j
+ for osst-users@lists.sourceforge.net; Tue, 18 Jun 2019 15:12:25 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Subject:Date:To:From:MIME-Version:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Reply-To:MIME-Version:Content-Type:To:Subject:
+ From:Sender:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=mnZi88FiS/NY23bH//YRk3+UgQgct40Pp2UmSbjhBXY=; b=SMYSgVEZY2wXyZoZUI/nYvEU/6
- BBDr1tFy1XFP/vQ0Q1yQ6vBy2qRFfyfjnLCPx31WwwlhOktqd/gfthKm6dHZTAvNn1LiriEAlz5me
- m1eT6eM+1gsEBXgrPYfjrLNPvNDd6+AUonj5tyBKovZxEGaQ/hAbD8JlkdwzXhn1Qg6U=;
+ bh=rTJhFYpV/cgPvZkEkdce7wtatS9HBMQoJNh/0e6GocU=; b=Nh1AeVYgsfSvWkJRKTX+FJrSDp
+ XLiPdTo321PsETdUD+JxKNx/eOaN0aaRlbUibBWE42j2rCl7B5Zce5Of0WEr6CQcHniq2AEk87EU4
+ 4oqHU//1fsPzj1zyFF+BajnEhRCYIjedxG9YGVdrJrK3nsfWz7fHTu/Bykq0t5n5MwqI=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Subject:Date:To:From:MIME-Version:Message-ID:Sender:Reply-To
+ h=Date:Reply-To:MIME-Version:Content-Type:To:Subject:From:Sender:Message-ID
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=mnZi88FiS/NY23bH//YRk3+UgQgct40Pp2UmSbjhBXY=; b=d
- 5ZbFbJUz8avm8nH+cFUTRm1898Zdb0PN4HvLMV2aDKnx4xi+nWnyglKIPzq7iIG2RIQLCha8BEYWq
- GhwAvyKczRvqJHdyQNXWrQq8RHSrkY9Ngab/r4cePG58obzDdYmRvwRZdheGXEKJbhDuJg2J1cZb3
- h+vMNAk8nHTDdkqI=;
-Received: from smartyps.com ([51.68.143.80])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.90_1)
- id 1hdB1Y-00FBUq-Pm
- for osst-users@lists.sourceforge.net; Tue, 18 Jun 2019 10:07:37 +0000
-dkim-signature: v=1; a=rsa-sha256; d=smartyps.com; s=dkim;
- c=relaxed/relaxed; q=dns/txt;
- h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type; 
- bh=mnZi88FiS/NY23bH//YRk3+UgQgct40Pp2UmSbjhBXY=;
- b=EV5J0oDyXq4OXAfyrDdoWQDDqmUHYcadp43plu0YeyIRAXVklHoy9uSGHC42Z0u6gkqoHnKFnz+u4gAP3D0AYXZdA4hXKnuZsUBmzk1dslkeDndKxNi1pU/S6HO7KuR9ljFw+9d79FEXnBXkYJ/mV7po1Tbii9vPNaqL2UG98naArKVrO+K8hK3NqB7S1CsjjLdwnIgobv6j/r6xkvk4pocMAnUltXh0xzmkoF1VxIG5O0IkIBQUQ6pZuh
- KA0EbrgEuZpdUEkZGxtlxU9d9AhRdvQgFXOCisS0yMvuGrCVqiuHuDBffAUd+gySE6sA/m7zt16bR+tVqN9MSVgynhvA==
-Received: from WIN-40J9ERR4VCI (WIN-40J9ERR4VCI [127.0.0.1])
- by smartyps.com with ESMTPA ; Tue, 18 Jun 2019 06:41:06 -0300
-Message-ID: <ad9a7ab1-7a15-4278-8bce-a83b7cb343d6@smartyps.com>
+ List-Owner:List-Archive; bh=rTJhFYpV/cgPvZkEkdce7wtatS9HBMQoJNh/0e6GocU=; b=a
+ Jx8DW6g6o+myEAY/9VUqssCmzOn9lcg2Pb+sOf/ggvMY9sRZHFhysfTMjGuyl99gsfPUYYO46LUJI
+ YDV+p2EJQZIbJfqsMSKVWv2MoOLzo94yoSLMFiSBY2wA1e5QuaUHq3FSefS6M06bl0t4a2WOrcz0b
+ 8bSBXOvYF7lzcRfE=;
+Received: from smtp-out-2-sh.mgm.tiscali.com ([213.205.37.14]
+ helo=imp.sh.tiscali.it)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1hdFmX-00FdDE-3D
+ for osst-users@lists.sourceforge.net; Tue, 18 Jun 2019 15:12:22 +0000
+Received: from host8-162-static.62-79-b.business.telecomitalia.it
+ ([79.62.162.8]) by smtp-out-2.mgm.tiscali.com with 
+ id SFCD2000B0BAcFB01FCE82; Tue, 18 Jun 2019 17:12:14 +0200
+x-auth-user: marketing@offertegarganovacanze.com
+From: "Camping Village Vieste Marina" <marketing@offertegarganovacanze.com>
+To: "osst-users" <osst-users@lists.sourceforge.net>
 MIME-Version: 1.0
-From: "WORKSHOP" <email@smartyps.com>
-To: osst-users@lists.sourceforge.net
-Date: 18 Jun 2019 06:41:06 -0300
-X-Helo-Check: bad, Forged Random Domain (smartyps.com)
-X-Spam-Score: 2.0 (++)
+Organization: Camping Village Vieste Marina
+Date: Tue, 18 Jun 2019 17:12:17 +0200
+X-Spam-Score: 3.6 (+++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.5 VA_HELO_CHECK          Host Used Invalid or Forged HELO/EHLO
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 1.2 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image area
- 1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: smartvpc.online]
- 0.0 T_REMOTE_IMAGE         Message contains an external image
- -0.6 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1hdB1Y-00FBUq-Pm
-Subject: [Osst-users] =?utf-8?q?O_Pr=C3=B3ximo_Grande_Salto_Digital?=
+ for more information. [URIs: viestecampeggi.com]
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
+ 1.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ background 1.0 MISSING_MID            Missing Message-Id: header
+ 0.0 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1hdFmX-00FdDE-3D
+Subject: [Osst-users] =?iso-8859-1?q?L=27estate_=E8_sempre_piu_vicina?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -84,120 +75,221 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============2305633875513234050=="
+Reply-To: Camping Village Vieste Marina <info@viestemarina.com>
+Content-Type: multipart/mixed; boundary="===============0976895460820266116=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1hdFmc-0001Yb-Lf@sfs-ml-4.v29.lw.sourceforge.com>
 
+This is a multi-part message in MIME format
 
---===============2305633875513234050==
+--===============0976895460820266116==
+Content-Type: multipart/related; boundary="mdh3lXGfE3FdoO8B=_qeXbU5V4UTTMqDca"
+
+This is a multi-part message in MIME format
+
+--mdh3lXGfE3FdoO8B=_qeXbU5V4UTTMqDca
 Content-Type: multipart/alternative;
- boundary=--boundary_2327771_73e4b961-496e-4630-a7ae-9c4085070f1e
+	boundary="84KhcT3a1Mes6dGMTz4lG1iK8zV=_2beBl"
+
+--84KhcT3a1Mes6dGMTz4lG1iK8zV=_2beBl
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
 
 
-----boundary_2327771_73e4b961-496e-4630-a7ae-9c4085070f1e
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
+	 =09
 
-V09SS1NIT1AgLy8vLyBPIFByw7N4aW1vIEdyYW5kZSBTYWx0byBEaWdpdGFsdGFibGUg
-e2JvcmRlci1zcGFjaW5nOjA7IGNvbG9yOiMwMDAwMDA7IGZvbnQtZmFtaWx5OkNhbGli
-cmksc2Fucy1zZXJpZjsgYm9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlICFpbXBvcnRhbnQ7
-fWltZyB7Ym9yZGVyOjA7IGRpc3BsYXk6YmxvY2s7fSAgICAgICAgICAgICAgICAgICAg
-ICAgICAgQUJSSVIgTk8gTkFWRUdBRE9SICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICBFbnZpYWRvIHBhcmE6ICAgICAgICAgSWRl
-bnRpZmljYcOnw6NvIGRlIGVudmlvOiAwMFtJZF0JCSAgICAgICAgTsOjbyBkZXNlam8g
-bWFpcyByZWNlYmVyIGVtYWlscyAgICAgICAgICAgICAgICAgICAgICAgIA==
-----boundary_2327771_73e4b961-496e-4630-a7ae-9c4085070f1e
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
-
-PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5XT1JLU0hPUCAvLy8vIE8gUHLDs3hpbW8gR3Jh
-bmRlIFNhbHRvIERpZ2l0YWw8L3RpdGxlPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVu
-dC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9aXNvLTg4NTktMSI+DQo8
-c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KdGFibGUge2JvcmRlci1zcGFjaW5nOjA7IGNv
-bG9yOiMwMDAwMDA7IGZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgYm9yZGVy
-LWNvbGxhcHNlOmNvbGxhcHNlICFpbXBvcnRhbnQ7fQ0KaW1nIHtib3JkZXI6MDsgZGlz
-cGxheTpibG9jazt9DQo8L3N0eWxlPg0KPC9oZWFkPg0KPGJvZHkgc3R5bGU9Im1hcmdp
-bjowOyBwYWRkaW5nOjA7IHBhZGRpbmctdG9wOjA7IHBhZGRpbmctYm90dG9tOjA7IHBh
-ZGRpbmctcmlnaHQ6MDsgcGFkZGluZy1sZWZ0OjA7IG1pbi13aWR0aDoxMDAlOyBmb250
-LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGJhY2tncm91bmQtY29sb3I6I2ZmZmZm
-ZjsiPg0KPGNlbnRlciBzdHlsZT0id2lkdGg6MTAwJTsgYmFja2dyb3VuZC1jb2xvcjoj
-ZmZmZmZmOyI+DQoNCg0KPHRhYmxlIHdpZHRoPSIxMDAlIiBjZWxscGFkZGluZz0iMCIg
-Y2VsbHNwYWNpbmc9IjAiIGJvcmRlcj0iMCIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6
-I2ZmZmZmZjsiIGJnY29sb3I9IiNmZmZmZmY7Ij4NCjx0cj4NCjx0ZCB3aWR0aD0iMTAw
-JSIgc3R5bGU9InBhZGRpbmc6MTBweCAxMHB4IDEwcHggMTBweDsiPg0KPGRpdiBzdHls
-ZT0ibWF4LXdpZHRoOjcwMHB4OyBtYXJnaW46MCBhdXRvOyI+IA0KPCEtLVtpZiAoZ3Rl
-IG1zbyA5KXwoSUUpXT4NCjx0YWJsZSBhbGlnbj0iY2VudGVyIiB3aWR0aD0iNzAwIiBj
-ZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiIGJvcmRlcj0iMCIgc3R5bGU9ImJv
-cmRlci1zcGFjaW5nOjAiID4NCjx0cj4NCjx0ZCBzdHlsZT0icGFkZGluZzowOyBwYWRk
-aW5nLXRvcDowOyBwYWRkaW5nLWJvdHRvbTowOyBwYWRkaW5nLXJpZ2h0OjA7IHBhZGRp
-bmctbGVmdDowOyI+DQo8IVtlbmRpZl0tLT4gDQo8dGFibGUgYWxpZ249ImNlbnRlciIg
-Y2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBib3JkZXI9IjAiIHN0eWxlPSJi
-b3JkZXItc3BhY2luZzowOyBtYXJnaW46MCBhdXRvOyB3aWR0aDoxMDAlOyBtYXgtd2lk
-dGg6NzAwcHg7Ij4NCjx0cj4NCjx0ZCBzdHlsZT0icGFkZGluZy10b3A6MDsgcGFkZGlu
-Zy1ib3R0b206MDsgcGFkZGluZy1yaWdodDowOyBwYWRkaW5nLWxlZnQ6MDsiPg0KDQoN
-Cg0KDQo8IS0tIElNRyAtLT4NCg0KDQogICAgPHRhYmxlIGJvcmRlcj0iMCIgY2VsbHBh
-ZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiB3aWR0aD0iMTAwJSI+DQogICAgPHRyPg0K
-ICAgIDx0ZCBhbGlnbj0iY2VudGVyIj4NCiAgICANCiAgICAgICAgPGEgaHJlZj0iaHR0
-cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL2MvcmpyLz9MPTEmRT1vc3N0LXVzZXJzQGxp
-c3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LWZh
-bWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAw
-MDAwOyI+QUJSSVIgTk8gTkFWRUdBRE9SPC9hPg0KICAgICAgICANCiAgICAgICAgPGEg
-aHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL2MvcmpyLz9MPTEmRT1vc3N0
-LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPg0KICAg
-ICAgICA8aW1nIHNyYz0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9pbWcvcmpyMS5qcGci
-IGJvcmRlcj0iMCIgd2lkdGg9IjEwMCUiIHN0eWxlPSJtYXgtd2lkdGg6NzAwcHg7IGRp
-c3BsYXk6YmxvY2s7IiBhbHQ9IiI+DQogICAgICAgIDxpbWcgc3JjPSJodHRwOi8vc21h
-cnR2cGMub25saW5lL2ltZy9yanIyLmpwZyIgYm9yZGVyPSIwIiB3aWR0aD0iMTAwJSIg
-c3R5bGU9Im1heC13aWR0aDo3MDBweDsgZGlzcGxheTpibG9jazsiIGFsdD0iIj4NCiAg
-ICAgICAgPGltZyBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvaW1nL3JqcjMuanBn
-IiBib3JkZXI9IjAiIHdpZHRoPSIxMDAlIiBzdHlsZT0ibWF4LXdpZHRoOjcwMHB4OyBk
-aXNwbGF5OmJsb2NrOyIgYWx0PSIiPg0KICAgICAgICA8aW1nIHNyYz0iaHR0cDovL3Nt
-YXJ0dnBjLm9ubGluZS9pbWcvcmpyNC5qcGciIGJvcmRlcj0iMCIgd2lkdGg9IjEwMCUi
-IHN0eWxlPSJtYXgtd2lkdGg6NzAwcHg7IGRpc3BsYXk6YmxvY2s7IiBhbHQ9IiI+DQog
-ICAgICAgIDxpbWcgc3JjPSJodHRwOi8vc21hcnR2cGMub25saW5lL2ltZy9yanI1Lmpw
-ZyIgYm9yZGVyPSIwIiB3aWR0aD0iMTAwJSIgc3R5bGU9Im1heC13aWR0aDo3MDBweDsg
-ZGlzcGxheTpibG9jazsiIGFsdD0iIj4NCiAgICAgICAgPC9hPg0KICAgIA0KICAgIDwv
-dGQ+DQogICAgPC90cj4NCiAgICA8L3RhYmxlPg0KDQoNCjwhLS0gRk9PVCAtLT4NCg0K
-DQogICAgPHRhYmxlIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5n
-PSIwIiB3aWR0aD0iMTAwJSI+DQogICAgPHRyPg0KICAgIDx0ZCBhbGlnbj0iY2VudGVy
-IiBzdHlsZT0icGFkZGluZzoxMDBweCA0MHB4IDQwcHggNDBweDsiPg0KICAgIA0KICAg
-ICAgICA8c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBm
-b250LXNpemU6MTRweDsgY29sb3I6IzAwMDAwMDsiPkVudmlhZG8gcGFyYTogb3NzdC11
-c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ8L3NwYW4+DQogICAgICAgIDxicj48c3Bh
-biBzdHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6
-MTRweDsgY29sb3I6IzAwMDAwMDsiPklkZW50aWZpY2HDp8OjbyBkZSBlbnZpbzogMDAy
-MzI3NzcyPC9zcGFuPg0KCQk8YnI+PGJyPjxicj48YSBocmVmPSJodHRwOi8vc21hcnR2
-cGMub25saW5lL2xpbmsvbS9pbWQvP0U9b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3Jn
-ZS5uZXQiIHRhcmdldD0iX2JsYW5rIj48aW1nIGJvcmRlcj0iMCIgc3JjPSJodHRwOi8v
-c21hcnR2cGMub25saW5lL2ltZy9sb2dvLmdpZiIgYWx0PSJJTUQgMjMyNzc3MiIgc3R5
-bGU9Im1heC13aWR0aDoyMDBweDsgZGlzcGxheTpibG9jazsiPjwvYT4NCiAgICAgICAg
-PGJyPjxicj48YSBocmVmPSJodHRwOi8vc21hcnR2cGMub25saW5lL3JlbW92ZXIvP0U9
-b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQiIHRhcmdldD0iX2JsYW5rIiBz
-dHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6MTRw
-eDsgY29sb3I6IzAwMDAwMDsiPjxzdHJvbmc+TsOjbyBkZXNlam8gbWFpcyByZWNlYmVy
-IGVtYWlsczwvc3Ryb25nPjwvYT4NCiAgICAgICAgPGJyPjxicj48YnI+PGJyPjxpbWcg
-c3JjPSJodHRwOi8vc21hcnR2cGMub25saW5lL3JlYWQvP0M9cmpyJkU9b3NzdC11c2Vy
-c0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQiIGJvcmRlcj0iMCIgd2lkdGg9IjAiIGhlaWdo
-dD0iMCIgYWx0PSJJTUQgMjMyNzc3MiIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij4NCiAg
-ICANCiAgICA8L3RkPg0KICAgIDwvdHI+DQogICAgPC90YWJsZT4NCg0KDQo8IS0tIEVO
-RCAtLT4NCg0KDQo8L3RkPg0KPC90cj4NCjwvdGFibGU+DQo8IS0tW2lmIChndGUgbXNv
-IDkpfChJRSldPg0KPC90ZD4NCjwvdHI+DQo8L3RhYmxlPg0KPCFbZW5kaWZdLS0+DQo8
-L2Rpdj4NCjwvdGQ+DQo8L3RyPg0KPC90YWJsZT4NCg0KPC9jZW50ZXI+DQo8L2JvZHk+
-DQo8L2h0bWw+
-----boundary_2327771_73e4b961-496e-4630-a7ae-9c4085070f1e--
+Se non visualizzi correttamente la newsletter clicca qui
 
 
 
 
 
---===============2305633875513234050==
+
+
+ =20
+
+
+
+
+
+
+ =09
+
+Camping Village V
+
+ =20
+
+=20
+
+ 	 	=20
+
+
+--84KhcT3a1Mes6dGMTz4lG1iK8zV=_2beBl
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<html lang=3D"en"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">    	=20
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">    	=20
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">	=20
+</head>	=20
+<body style=3D'margin: 0px; padding: 0px; width: 100%; height: 100%; c=
+olor: rgb(95, 95, 95); font-family: "Courier New", Courier, "Lucida Sa=
+ns Typewriter", "Lucida Typewriter", monospace; font-size: 14px; backg=
+round-color: rgb(255, 255, 255);'>
+<table width=3D"100%" height=3D"100%" style=3D'margin: 0px; padding: 0=
+px; border: 0px currentColor; border-image: none; width: 100%; color: =
+rgb(95, 95, 95); font-family: "Courier New", Courier, "Lucida Sans Typ=
+ewriter", "Lucida Typewriter", monospace; font-size: 16px; border-coll=
+apse: collapse; border-spacing: 0; background-color: rgb(255, 255, 255=
+);' bgcolor=3D"#ffffff" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
+0">
+  <tbody>
+  <tr>
+    <td width=3D"100%" align=3D"center" style=3D"margin: 0px; padding:=
+ 0px; border: 0px currentColor; border-image: none; width: 100%; borde=
+r-collapse: collapse; border-spacing: 0; background-color: rgb(255, 25=
+5, 255);" bgcolor=3D"#ffffff" cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0">
+      <table width=3D"640" align=3D"center" style=3D"margin: 0px; padd=
+ing: 0px; border: 0px currentColor; border-image: none; width: 640px; =
+border-collapse: collapse; border-spacing: 0; background-color: rgb(25=
+5, 255, 255);" bgcolor=3D"#ffffff" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0">
+        <tbody><!-- top header -->							=20
+        	<!-- top header -->
+        							 <!-- header -->							=20
+        <tr>
+          <td width=3D"640" align=3D"center" style=3D"margin: 0px; pad=
+ding: 0px; border: 0px currentColor; border-image: none; width: 640px;=
+ border-collapse: collapse; border-spacing: 0; background-color: rgb(2=
+55, 255, 255);" bgcolor=3D"#ffffff" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0">
+            <table width=3D"640" height=3D"606" align=3D"center" style=
+=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image:=
+ none; width: 640px; border-collapse: collapse; border-spacing: 0; bac=
+kground-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff" border=3D"0" c=
+ellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+              <tr>
+                <td width=3D"640" height=3D"230" align=3D"center" vali=
+gn=3D"top" style=3D"margin: 0px; padding: 0px; border: 0px currentColo=
+r; border-image: none; width: 640px; height: 230px; border-collapse: c=
+ollapse; border-spacing: 0; background-color: rgb(255, 255, 255);" bgc=
+olor=3D"#ffffff" cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+<p><span style=3D'line-height: 115%; font-family: "Arial","sans-serif"=
+; font-size: 7.5pt;'>
+<font color=3D"#000000" face=3D"Arial" size=3D"1">Se non visualizzi co=
+rrettamente la newsletter <a href=3D"http://www.garganovacanze.it/news=
+letter02-2019">
+																	clicca qui</a></font></span></p>
+<p><a href=3D"http://www.garganovacanze.it">
+				<img width=3D"593" height=3D"300" src=3D"http://www.viestecampeggi=
+=2Ecom/images/spiaggiaviestemarina2019.jpg" border=3D"0"></a></p>
+<p>
+				<a href=3D"http://www.garganovacanze.it">
+				<img width=3D"593" height=3D"522" src=3D"http://www.viestecampeggi=
+=2Ecom/images/primaveraestate2019.png" border=3D"0"></a></p>
+<p>
+				<a href=3D"http://www.garganovacanze.it/offertespeciali">
+				<img width=3D"593" height=3D"58" src=3D"http://www.viestecampeggi.=
+com/images/offertestagionali2019.png" border=3D"0"></a></p>
+<p style=3D"margin-top: 0px; margin-bottom: 0px;">
+<a href=3D"http://www.garganovacanze.it/casevacanze">
+				<img width=3D"300" height=3D"324" src=3D"http://www.viestecampeggi=
+=2Ecom/images/lowcost20192.png" border=3D"0"></a>&nbsp;&nbsp;<a href=3D=
+"http://www.garganovacanze.it/offertespeciali"><img width=3D"275" heig=
+ht=3D"306" src=3D"http://www.viestecampeggi.com/images/speciali2019.pn=
+g" border=3D"0"></a></p>
+<p style=3D"margin-top: 0px; margin-bottom: 0px;">
+				<a href=3D"http://www.garganovacanze.it/contattarci">
+				<img width=3D"593" height=3D"48" src=3D"http://www.viestecampeggi.=
+com/images/haibisognoaiuto2019.png" border=3D"0"></a></p>
+<p style=3D"margin-top: 0px; margin-bottom: 0px;">
+				<img width=3D"200" height=3D"178" src=3D"http://www.viestecampeggi=
+=2Ecom/images/chiamaci.png" border=3D"0"><a href=3D"http://www.gargano=
+vacanze.it/modulo_informazioni"><img width=3D"200" height=3D"178" src=3D=
+"http://www.viestecampeggi.com/images/email2019.png" border=3D"0"></a>=
+<img width=3D"200" height=3D"178" src=3D"http://www.viestecampeggi.com=
+/images/whatsapp2019.png" border=3D"0"></p>
+				</tr></tbody></table></td></tr><!-- header -->
+        							 <!-- text content -->							=20
+        <tr>
+          <td width=3D"640" height=3D"30" align=3D"center" style=3D"ma=
+rgin: 0px; padding: 0px; border: 0px currentColor; border-image: none;=
+ width: 640px; height: 30px; border-collapse: collapse; border-spacing=
+: 0; background-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff" cellpa=
+dding=3D"0" cellspacing=3D"0" border=3D"0">
+            <table width=3D"640" height=3D"30" align=3D"center" style=3D=
+"margin: 0px; padding: 0px; border: 0px currentColor; border-image: no=
+ne; width: 640px; height: 30px; border-collapse: collapse; border-spac=
+ing: 0; background-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+              <tr>
+                <td width=3D"640" height=3D"30" align=3D"center" style=
+=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image:=
+ none; width: 640px; height: 30px; border-collapse: collapse; border-s=
+pacing: 0; background-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+				<p style=3D"margin-top: 0px; margin-bottom: 0px;">
+				<font color=3D"#ffffff" face=3D"Arial" size=3D"1">Camping Village =
+V</font></p></td></tr>
+              <tr>
+                <td width=3D"640" height=3D"30" align=3D"center" style=
+=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image:=
+ none; width: 640px; height: 30px; border-collapse: collapse; border-s=
+pacing: 0; background-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+                  													&nbsp;
+					=09
+																		<a href=3D"http://www.garganovacanze.it/cancellazion=
+e"><img width=3D"630" height=3D"73" src=3D"http://www.viestecampeggi.c=
+om/cancellazione.png" border=3D"0"></a></td></tr>
+              <tr>
+                <td width=3D"640" height=3D"1" align=3D"center" style=3D=
+"margin: 0px; border: 0px currentColor; border-image: none; width: 640=
+px; border-collapse: collapse; border-spacing: 0; background-color: rg=
+b(255, 255, 255);" bgcolor=3D"#ffffff" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0">
+				<img width=3D"640" height=3D"1" style=3D"margin: 0px; padding: 0px=
+; width: 640px; height: 1px; display: block;" src=3D"cid:015522113@180=
+62019-2880" border=3D"0"></td></tr>
+              <tr>
+                <td width=3D"640" height=3D"30" align=3D"center" style=
+=3D"margin: 0px; padding: 0px; border: 0px currentColor; border-image:=
+ none; width: 640px; height: 30px; border-collapse: collapse; border-s=
+pacing: 0; background-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff" =
+cellpadding=3D"0" cellspacing=3D"0" border=3D"0">
+                  													&nbsp;</td></tr></tbody></table></td></=
+tr><!-- text content -->
+        							 <!-- products -->							=20
+        	<!-- products -->
+        							 <!-- footer -->							=20
+        	<!-- footer -->
+        						 </tbody></table></td></tr></tbody></table>
+
+</body></html>
+
+
+--84KhcT3a1Mes6dGMTz4lG1iK8zV=_2beBl--
+
+--mdh3lXGfE3FdoO8B=_qeXbU5V4UTTMqDca--
+
+
+
+--===============0976895460820266116==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============2305633875513234050==
+--===============0976895460820266116==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -208,8 +300,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============2305633875513234050==--
-
-
+--===============0976895460820266116==--
 
 
