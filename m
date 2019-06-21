@@ -2,86 +2,96 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id EF5EA4DF52
-	for <lists+osst-users@lfdr.de>; Fri, 21 Jun 2019 05:32:33 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 283B44ED60
+	for <lists+osst-users@lfdr.de>; Fri, 21 Jun 2019 18:48:08 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1heAHu-0002lv-GK
-	for lists+osst-users@lfdr.de; Fri, 21 Jun 2019 03:32:30 +0000
-Resent-Date: Fri, 21 Jun 2019 03:32:30 +0000
-Resent-Message-Id: <E1heAHu-0002lv-GK@sfs-ml-4.v29.lw.sourceforge.com>
+	id 1heMho-0005Tz-2H
+	for lists+osst-users@lfdr.de; Fri, 21 Jun 2019 16:48:04 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <eservice@mail-return.info>) id 1heAHt-0002lo-Ca
- for osst-users@lists.sourceforge.net; Fri, 21 Jun 2019 03:32:29 +0000
+ (envelope-from <calaondj@ig.com.br>) id 1heMhm-0005Ts-SR
+ for osst-users@lists.sourceforge.net; Fri, 21 Jun 2019 16:48:02 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Subject:Message-ID:To:
- From:Date:Resent-Sender:Resent-From:Sender:Reply-To:Cc:
- Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=jyBZk4dCkUe5y7GDtpsTVySC5PX6bvg4BSNLKUHJFmc=; b=AN8V0nQIovsIAROYu8SW+p04K
- lHpQ1GxCl0qkwxnvT9ajlKnqzet5yo893OQE6ZwYdapLFlObvZFWdw2Qjcd95DUmsxUwIm77zOQ4o
- fc9QVwG85Z825x2Px0jOpsO4EmxEKoKyzX4z54EWjRoCkB7UDeRptXRnvgx9lecAQIZkI=;
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:From:
+ Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=pQZ5fc1A+264yvyrRXEvh4D8tiN66+NspAoTz5LTEpo=; b=kaYWBYpieXrzston4oHMzCQaZA
+ L105+bxcsnXJ+2u6BWOvd95eZfp3YhA2tVCT84mwRKp/OcY6JN8/NywqtfF/Es8XnKi1MpBUDP5ZE
+ DMkq2ghXjUdkKHtmGDMjs0ZGs38EUc01IdMoPbC7pdyB+9u0T1IpM2o4rvnJsZ7XcsdM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Subject:Message-ID:To:From:Date:Resent-Sender:
- Resent-From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=jyBZk4dCkUe5y7GDtpsTVySC5PX6bvg4BSNLKUHJFmc=; b=mQOkcB6ci54A9rSKjk09CkSNOZ
- jh21tCtQ9Jhg+T8+zndP2SRLF19HYVoG5IQZUIfqQsdTuYL7z530K/ELWZKwRBLK/6/DYQxMuDjkR
- RJecvz7F6q2SvJATeuqYwg5Vqquq+KoirdfalRDXrNbF8suzagJsKNgj87eK8/5eyg54=;
-Received: from m43.web123vpss.net ([103.28.76.138])
- by sfi-mx-4.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
- id 1heAHs-006s27-A3
- for osst-users@lists.sourceforge.net; Fri, 21 Jun 2019 03:32:31 +0000
-Received: from tomcat02.webtouch.local (unknown [192.168.68.170])
- by m43.web123vpss.net (Postfix) with ESMTP id 711008004AE
- for <osst-users@lists.sourceforge.net>; Fri, 21 Jun 2019 11:36:03 +0800 (HKT)
-DKIM-Filter: OpenDKIM Filter v2.10.3 m43.web123vpss.net 711008004AE
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mail-return.info;
- s=dk825; t=1561088163;
- bh=jyBZk4dCkUe5y7GDtpsTVySC5PX6bvg4BSNLKUHJFmc=;
- h=Resent-From:Resent-Sender:Date:From:To:Subject:From;
- b=Xs4fBOptodaEe2+k++LZeIAFq9+a28nOKSvZoLSD68nAR3GmmI9Cz3kJD38wZjKyL
- yPhLReZ2yDOGWe8Y/jdUcqVfpXzNjersvSTBe5NwsVHLRqxx6vQqwhbRJvgtXToX8/
- HcTcahSwRhp8Yc+7nDmSp5Ms1jzdqYCJvONGr7FI=
-Resent-From: eservice@mail-return.info
-Date: Fri, 21 Jun 2019 11:31:50 +0800 (HKT)
-From: =?UTF-8?B?5r6z6ZaA5ruZ55uI5Y2w5Yi3?= <easyprintmacau@outlook.com>
-To: osst-users@lists.sourceforge.net
-Message-ID: <2288.64.7314742493170038296@webtouchsystem.com>
+ h=Content-Type:MIME-Version:Date:Subject:To:From:Message-ID:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=pQZ5fc1A+264yvyrRXEvh4D8tiN66+NspAoTz5LTEpo=; b=C
+ XRxgJFinHtRVmqcz1ihSgWwbfhXhsxn2BnP8V/MmrLSdlTg/I0tYZe6KdrOiA2QxoxoL/mYY9lHEi
+ 9b5YmYUoM7UcBCOFOeQr3etiVKNde8RrsFk2gphWZbfPZVLYBYOj11d25nGqeXNHriJi3V5E8z1zq
+ ELU7kTjMb9++bQvg=;
+Received: from saul0002-65.ig.correio.biz ([177.153.28.65]
+ helo=relay-177.153.28.65.ig.com.br)
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1heMhm-007y1a-PF
+ for osst-users@lists.sourceforge.net; Fri, 21 Jun 2019 16:48:05 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=1385155620.ig;
+ d=ig.com.br; 
+ h=Message-ID:From:To:Subject:Date:MIME-Version:Content-Type;
+ bh=Bx56Yo1TZsgtRSOj5CRvif8l5aA=;
+ b=XGuph1SS//LLxtS60aifWu0vg1DepOpqZMZFYikG4kmycTSsfW2IOk20QoyRK1LlQtbAeBQejrFH
+ qB+RSty+5ML+3PClCUDdQ4uuxL6rAbSNxAK5fe4iWGpIcbq2A1rTmGwsZSyXjmDs1LhTY/GC/LJO
+ nUnyPHsTGonJVg8AyBE=
+Received: from saul0002.ig.correio.biz (127.0.0.1) by ig.com.br id
+ h1k5441oqj8p for <osst-users@lists.sourceforge.net>;
+ Fri, 21 Jun 2019 13:47:56 -0300 (envelope-from <calaondj@ig.com.br>)
+Received: from skyler0002.ig.correio.biz (skyler0002.ig.correio.biz
+ [10.30.248.9])
+ by saul0002.ig.correio.biz (Postfix) with ESMTP id 3C6C828042C
+ for <osst-users@lists.sourceforge.net>; Fri, 21 Jun 2019 13:47:56 -0300 (-03)
+x-ig-id: vsHoXXVSAoqEohNgObWlVB3LjUHT3ntZ3-zu3s995iy3vUwacNUyPxeDIjBWldeVbaSj6X3fmYUjJWJ2nvFu4N782RkbOR46xRavW5ZzG28bau9BIt6zNm5ksA9ALajj03irdsGV-rSqCRES9z3fCTurp_g7v4Vmz9raL4c1ezCj5WPen0M2ipRFiEqAR4Yc
+ NjM2MTZjNjE2ZjZlNjQ2YTQwNjk2NzJlNjM2ZjZkMmU2Mjcy
+Received: from brserver32.local (unknown [191.237.255.14])
+ (Authenticated sender: calaondj@ig.com.br)
+ by skyler0002.ig.correio.biz (Postfix) with ESMTPA id 2FCA71500041
+ for <osst-users@lists.sourceforge.net>; Fri, 21 Jun 2019 13:47:56 -0300 (-03)
+Message-ID: <3228c021c2f6c7d25c8b6134001c9b73@ig.com.br>
+From: "Fatura Net" <calaondj@ig.com.br>
+To: <osst-users@lists.sourceforge.net>
+Date: Fri, 21 Jun 2019 16:47:40 -0000
 MIME-Version: 1.0
-Content-Type: multipart/mixed; 
- boundary="----=_Part_1026578_1867109539.1561087910039"
-Touch-ID: <2288.64.7314742493170038296@webtouchsystem.com>
-X-Spam-Score: 7.7 (+++++++)
+X-Spam-Score: 4.3 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: webedmservice.com]
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
+ for more information. [URIs: netcombo.com.br]
+ 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ (calaondj[at]ig.com.br)
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [177.153.28.65 listed in list.dnswl.org]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [103.28.76.138 listed in list.dnswl.org]
- 1.5 MPART_ALT_DIFF_COUNT   BODY: HTML and text parts are different
+ 0.1 TRACKER_ID             BODY: Incorporates a tracking ID number
+ 0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted
+ Colors in HTML
  1.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ background
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
- 5.0 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1heAHs-006s27-A3
-Subject: [Osst-users] =?utf-8?b?5L2g5oOz5pu05pyJ5pWI5Zyo5r6z6ZaA5o6o5buj?=
- =?utf-8?b?55Si5ZOB5ZeOPw==?=
+ 3.2 HELO_DYNAMIC_IPADDR    Relay HELO'd using suspicious hostname (IP addr
+ 1) 0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Headers-End: 1heMhm-007y1a-PF
+Subject: [Osst-users] =?utf-8?q?Sua_fatura_NET_por_e-mail_-_06/2019_-_DF36?=
+	=?utf-8?q?9ACF24?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -93,774 +103,680 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
+Content-Type: multipart/mixed; boundary="===============8621878428597342247=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Sender: "Osst-users" <osst-users-bounces@lists.sourceforge.net>
 
-------=_Part_1026578_1867109539.1561087910039
-Content-Type: multipart/alternative; 
-	boundary="----=_Part_1026575_1135505375.1561087910037"
 
-------=_Part_1026575_1135505375.1561087910037
-Content-Type: text/plain; charset=UTF-8
+--===============8621878428597342247==
+Content-Type: multipart/alternative;
+	boundary="205f01ccbdf20207c0b0e1ca0c47d"
+
+
+--205f01ccbdf20207c0b0e1ca0c47d
+Content-Type: text/plain;
+	charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-       =20
-       =20
-       =20
-        TITLE
-       =20
-       =20
-            body{ Margin: 0; padding: 0; }
-            img{ border: 0px; display: block; }
-
-            .socialLinks{ font-size: 6px; }
-            .socialLinks a{
-                display: inline-block;
-            }
-            .socialIcon{
-                display: inline-block;
-                vertical-align: top;
-                padding-bottom: 0px;
-                border-radius: 100%;
-            }
-            .oldwebkit{ max-width: 570px; }
-            td.vb-outer{ padding-left: 9px; padding-right: 9px; }
-            table.vb-container, table.vb-row, table.vb-content{
-                border-collapse: separate;
-            }
-            table.vb-row{
-                border-spacing: 9px;
-            }
-            table.vb-row.halfpad{
-                border-spacing: 0;
-                padding-left: 9px;
-                padding-right: 9px;
-            }
-            table.vb-row.fullwidth{
-                border-spacing: 0;
-                padding: 0;
-            }
-            table.vb-container{
-                padding-left: 18px;
-                padding-right: 18px;
-            }
-            table.vb-container.fullpad{
-                border-spacing: 18px;
-                padding-left: 0;
-                padding-right: 0;
-            }
-            table.vb-container.halfpad{
-                border-spacing: 9px;
-                padding-left: 9px;
-                padding-right: 9px;
-            }
-            table.vb-container.fullwidth{
-                padding-left: 0;
-                padding-right: 0;
-            }
-       =20
-       =20
-            /* yahoo, hotmail */
-            .ExternalClass, .ExternalClass p, .ExternalClass span, .Externa=
-lClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
-            .yshortcuts a{ border-bottom: none !important; }
-            .vb-outer{ min-width: 0 !important; }
-            .RMsgBdy, .ExternalClass{
-                width: 100%;
-                background-color: #3f3f3f;
-                background-color: #3f3f3f}
-
-            /* outlook */
-            table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
-            #outlook a{ padding: 0; }
-            img{ outline: none; text-decoration: none; border: none; -ms-in=
-terpolation-mode: bicubic; }
-            a img{ border: none; }
-
-            @media screen and (max-device-width: 600px), screen and (max-wi=
-dth: 600px) {
-                table.vb-container, table.vb-row{
-                    width: 95% !important;
-                }
-
-                .mobile-hide{ display: none !important; }
-                .mobile-textcenter{ text-align: center !important; }
-
-                .mobile-full{
-                    float: none !important;
-                    width: 100% !important;
-                    max-width: none !important;
-                    padding-right: 0 !important;
-                    padding-left: 0 !important;
-                }
-                img.mobile-full{
-                    width: 100% !important;
-                    max-width: none !important;
-                    height: auto !important;
-                }  =20
-            }
-       =20
-       =20
-           =20
-            #ko_singleArticleBlock_1 .links-color a, #ko_singleArticleBlock=
-_1 .links-color a:link, #ko_singleArticleBlock_1 .links-color a:visited, #k=
-o_singleArticleBlock_1 .links-color a:hover{
-                color: #3f3f3f;
-                text-decoration: underline
-            }
-             #ko_singleArticleBlock_1 .long-text p{ Margin: 1em 0px }  #ko_=
-singleArticleBlock_1 .long-text p:last-child{ Margin-bottom: 0px }  #ko_sin=
-gleArticleBlock_1 .long-text p:first-child{ Margin-top: 0px }=20
-            #ko_sideArticleBlock_2 .links-color a, #ko_sideArticleBlock_2 .=
-links-color a:link, #ko_sideArticleBlock_2 .links-color a:visited, #ko_side=
-ArticleBlock_2 .links-color a:hover{
-                color: #3f3f3f;
-                text-decoration: underline
-            }
-             #ko_sideArticleBlock_2 .long-text p{ Margin: 1em 0px }  #ko_si=
-deArticleBlock_2 .long-text p:last-child{ Margin-bottom: 0px }  #ko_sideArt=
-icleBlock_2 .long-text p:first-child{ Margin-top: 0px }=20
-   =20
-   =20
-       =20
-       =20
 
 
 
-           =20
+
+
                    =20
+                   =20
+                     =20
+                     =20
+                       =20
+                          =20
                        =20
 
-                           =20
-                           =20
-                               =20
-                                   =20
-                                       =20
-                                           =20
-                                               =20
-                                           =20
-                                       =20
-                                   =20
-                                   =20
-                                               =20
-                                                   =20
-                                                        =E4=BD=A0=E6=83=B3=
-=E6=9B=B4=E6=9C=89=E6=95=88=E5=9C=A8=E6=BE=B3=E9=96=80=E6=8E=A8=E5=BB=A3=E7=
-=94=A2=E5=93=81=E5=97=8E?
-                                                   =20
-                                               =20
-                                               =20
-                                                    =C2=A0
-                                               =20
-                                               =20
-                                                    =E4=BD=A0=E6=83=B3=E6=
-=9B=B4=E6=9C=89=E6=95=88=E5=9C=A8=E6=BE=B3=E9=96=80=E6=8E=A8=E5=BB=A3=E7=94=
-=A2=E5=93=81=E5=97=8E? =E6=BE=B3=E9=96=80=E6=BB=99=E7=9B=88=E5=8D=B0=E5=88=
-=B7=E6=98=AF=E4=BD=A0=E7=9A=84=E5=A5=BD=E6=8B=8D=E6=AA=94. =E6=88=91=E5=80=
-=91=E6=96=BC=E6=BE=B3=E9=96=80=E7=B6=93=E7=87=9F=E5=8D=B0=E5=88=B7=E6=A5=AD=
-=E5=8B=99=E8=B6=85=E9=81=8E=E5=8D=81=E5=B9=B4, =E4=B8=80=E7=9B=B4=E5=BE=97=
-=E5=88=B0=E6=BE=B3=E9=96=80=E5=90=84=E7=95=8C=E5=8F=8B=E5=A5=BD=E7=9A=84=E6=
-=94=AF=E6=8C=81, =E6=89=BF=E6=8E=A5=E5=90=84=E9=A1=9E=E8=A8=AD=E8=A8=88, =
-=E5=8D=B0=E8=97=9D=E5=8F=8A=E5=BB=A3=E5=91=8A=E5=AE=89=E8=A3=9D=E5=B7=A5=E7=
-=A8=8B.
-                                               =20
-                                               =20
-                                                    =C2=A0
-                                               =20
-                                               =20
-                                                   =20
-                                                       =20
-                                                           =20
-                                                               =20
-                                                                    BUTTON
-                                                               =20
-                                                           =20
-                                                       =20
-                                                   =20
-                                               =20
-                                           =20
-                               =20
-                           =20
-                           =20
                        =20
-                   =20
-               =20
-                   =20
+                       =20
+                          =20
                        =20
 
-                           =20
-                           =20
-                               =20
-                                   =20
-                                       =20
-
-                                           =20
-                                           =20
-                                                =20
-                                                =20
-
-                                                   =20
-                                                       =20
-                                                           =20
-                                                               =20
-                                                                   =20
-                                                               =20
-                                                           =20
-                                                       =20
-                                                   =20
-
-                                                =20
-
-                                               =20
-                                                   =20
-                                                       =20
-                                                           =20
-                                                                Title
-                                                           =20
-                                                       =20
-                                                   =20
-                                                   =20
-                                                       =20
-                                                            Far far away, b=
-ehind the word mountains, far from the countries Vokalia and Consonantia, t=
-here live the blind texts. Separated they live in Bookmarksgrove right at t=
-he coast of the Semantics, a large language ocean. A small river named Dude=
-n flows by their place and supplies it with the necessary regelialia.
-                                                       =20
-                                                   =20
-                                                   =20
-                                                       =20
-                                                           =20
-                                                               =20
-                                                                   =20
-                                                                        BUT=
-TON
-                                                                   =20
-                                                               =20
-                                                           =20
-                                                       =20
-                                                   =20
-                                               =20
-                                           =20
-                                           =20
-
-                                       =20
-                                   =20
-                               =20
-                           =20
-                           =20
                        =20
+                          =20
+                       =20
+
+                       =20
+                         =20
+                           =20
+                             =20
+                                 Prezado(a),
+                                     =20
+                                  A sua fatura NET acaba de chegar e para  =
+visualizar todos os detalhes basta abrir o documento anexado neste e-mail=2E
+                                 =20
+                                  Segue abaixo um resumo com as principais =
+informa=C3=A7=C3=B5es. E fique tranquilo, o seu pagamento em d=C3=A9bito =
+autom=C3=A1tico j=C3=A1 est=C3=A1 agendado.=20
+=20
+                             =20
+
+                           =20
+                          =20
+                       =20
+
+                       =20
+                          =20
+                       =20
+
+                       =20
+                         =20
+                             =20
+                               =20
+                                 =20
+                                   =20
+                                     =20
+                                       =20
+                                           Data de vencimento: 25/06/2019
+                                                    Valor: 168,90
+                                                    Contrato: =
+038/031931522=20
+                                                   =20
+                                         =20
+=20
+                                       =20
+
+                                     =20
+                                    =20
+                                 =20
+
+                               =20
+                             =20
+                           =20
+=20
+                       =20
+
+                       =20
+                         =20
+                           =20
+                             =20
+                               =20
+                                     =20
+                                       =20
+                                         =20
+                                             E para facilitar ainda mais o =
+seu dia a dia, acesse sempre que
+                                              quiser assuntos financeiros, =
+t=C3=A9cnicos e sobre seus produtos na
+                                              Minha NET=2E
+                                             =20
+                                           =20
+=20
+                                         =20
+
+                                       =20
+                                      =20
+                             =20
+
+                           =20
+                          =20
+                       =20
+
+                       =20
+                         =20
+                           =20
+                             =20
+                               =20
+                                 =20
+                                   =20
+                                      =20
+                                       S=C3=A3o diversos servi=C3=A7os =
+para voc=C3=AA multitelar=2E
+                                           =20
+                                        Baixe o aplicativo ou acesse: =
+net.com.br/minhanet=20
+=20
+                                      =20
+                                   =20
+
+                                 =20
+                                =20
+                             =20
+
+                           =20
+                          =20
+                       =20
+
+                       =20
+                         =20
+                           =20
+                             =20
+                               =20
+                                 =20
+                                   =20
+                                      =20
+                                       =20
+                                       =20
+                                      =20
+                                   =20
+
+                                 =20
+                                =20
+                             =20
+
+                           =20
+                          =20
+                       =20
+
+                       =20
+                         =20
+                           =20
+                             =20
+                               =20
+                                 =20
+                                   =20
+                                       Mantenha seu cadastro sempre =
+atualizado na Minha NET,  para garantir o recebimento de sua
+                                        fatura por e-mail. Adicione o =
+remetente fatura.net@suafaturanet.com.br a sua lista de contatos.=20
+=20
+                                   =20
+
+                                 =20
+                                =20
+                             =20
+
+                           =20
+                          =20
+                       =20
+
+                       =20
+                          =20
+                       =20
+
+                       =20
+                       =20
+                         =20
+                             =20
+                               =20
+                                 =20
+                                   =20
+                                   =20
+                                     =20
+                                       =20
+                                          =20
+                                       =20
+
+                                       =20
+                                            =20
+                                            =20
+                                            =20
+                                            =20
+                                            =20
+                                       =20
+
+                                     =20
+                                    =20
+                                   =20
+                                     =20
+                                      =20
+                                 =20
+
+                               =20
+                             =20
+                            =20
+                       =20
+
+                       =20
+                       =20
+                       =20
+                         =20
+                           =20
+                             =20
+                               =20
+                                     N=C3=A3o responda a este e-mail. Esta =
+=C3=A9 uma mensagem gerada automaticamente. Para enviar seus =
+coment=C3=A1rios, clique aqui e fale conosco.=20
+
+                                  =20
+                             =20
+
+                           =20
+                          =20
+                       =20
+
+                       =20
+                     =20
                    =20
-               =20
+                   =20
+                     =20
+                       
 
 
-
-       =20
-   =20
+E13580BDF2579ACE14680BDF3579AC
 
 
-------=_Part_1026575_1135505375.1561087910037
-Content-Type: text/html;charset=utf-8
+--205f01ccbdf20207c0b0e1ca0c47d
+Content-Type: text/html;
+	charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-<html> <head></head><body><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Tran=
-sitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns=3D"http://www.w3.org/1999/xhtml"><head>
-        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DU=
-TF-8">
-        <meta name=3D"viewport" content=3D"initial-scale=3D1.0">
-        <meta name=3D"format-detection" content=3D"telephone=3Dno">
-        <title>TITLE</title>
-       =20
-        <style type=3D"text/css">
-            body{ Margin: 0; padding: 0; }
-            img{ border: 0px; display: block; }
+<style type=3D"text/css">
+<!--
+=2Estyle1 {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+}
+=2Estyle2 {font-family: "Courier New", Courier, monospace}
+-->
+</style>
+<center>
 
-            .socialLinks{ font-size: 6px; }
-            .socialLinks a{
-                display: inline-block;
-            }
-            .socialIcon{
-                display: inline-block;
-                vertical-align: top;
-                padding-bottom: 0px;
-                border-radius: 100%;
-            }
-            .oldwebkit{ max-width: 570px; }
-            td.vb-outer{ padding-left: 9px; padding-right: 9px; }
-            table.vb-container, table.vb-row, table.vb-content{
-                border-collapse: separate;
-            }
-            table.vb-row{
-                border-spacing: 9px;
-            }
-            table.vb-row.halfpad{
-                border-spacing: 0;
-                padding-left: 9px;
-                padding-right: 9px;
-            }
-            table.vb-row.fullwidth{
-                border-spacing: 0;
-                padding: 0;
-            }
-            table.vb-container{
-                padding-left: 18px;
-                padding-right: 18px;
-            }
-            table.vb-container.fullpad{
-                border-spacing: 18px;
-                padding-left: 0;
-                padding-right: 0;
-            }
-            table.vb-container.halfpad{
-                border-spacing: 9px;
-                padding-left: 9px;
-                padding-right: 9px;
-            }
-            table.vb-container.fullwidth{
-                padding-left: 0;
-                padding-right: 0;
-            }
-        </style>
-        <style type=3D"text/css">
-            /* yahoo, hotmail */
-            .ExternalClass, .ExternalClass p, .ExternalClass span, .Externa=
-lClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
-            .yshortcuts a{ border-bottom: none !important; }
-            .vb-outer{ min-width: 0 !important; }
-            .RMsgBdy, .ExternalClass{
-                width: 100%;
-                background-color: #3f3f3f;
-                background-color: #3f3f3f}
-
-            /* outlook */
-            table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
-            #outlook a{ padding: 0; }
-            img{ outline: none; text-decoration: none; border: none; -ms-in=
-terpolation-mode: bicubic; }
-            a img{ border: none; }
-
-            @media screen and (max-device-width: 600px), screen and (max-wi=
-dth: 600px) {
-                table.vb-container, table.vb-row{
-                    width: 95% !important;
-                }
-
-                .mobile-hide{ display: none !important; }
-                .mobile-textcenter{ text-align: center !important; }
-
-                .mobile-full{
-                    float: none !important;
-                    width: 100% !important;
-                    max-width: none !important;
-                    padding-right: 0 !important;
-                    padding-left: 0 !important;
-                }
-                img.mobile-full{
-                    width: 100% !important;
-                    max-width: none !important;
-                    height: auto !important;
-                }  =20
-            }
-        </style>
-        <style type=3D"text/css">
-           =20
-            #ko_tripleArticleBlock_4 .links-color a, #ko_tripleArticleBlock=
-_4 .links-color a:link, #ko_tripleArticleBlock_4 .links-color a:visited, #k=
-o_tripleArticleBlock_4 .links-color a:hover{
-                color: #3f3f3f;
-                text-decoration: underline
-            }
-             #ko_tripleArticleBlock_4 .long-text p{ Margin: 1em 0px }  #ko_=
-tripleArticleBlock_4 .long-text p:last-child{ Margin-bottom: 0px }  #ko_tri=
-pleArticleBlock_4 .long-text p:first-child{ Margin-top: 0px }=20
-            #ko_textBlock_3 .links-color a, #ko_textBlock_3 .links-color a:=
-link, #ko_textBlock_3 .links-color a:visited, #ko_textBlock_3 .links-color =
-a:hover{
-                color: #3f3f3f;
-                text-decoration: underline
-            }
-           =20
-            #ko_textBlock_1 .links-color a, #ko_textBlock_1 .links-color a:=
-link, #ko_textBlock_1 .links-color a:visited, #ko_textBlock_1 .links-color =
-a:hover{
-                color: #3f3f3f;
-                text-decoration: underline
-            }
-             #ko_textBlock_3 .long-text p{ Margin: 1em 0px }  #ko_textBlock=
-_1 .long-text p{ Margin: 1em 0px }  #ko_textBlock_3 .long-text p:last-child=
-{ Margin-bottom: 0px }  #ko_textBlock_1 .long-text p:last-child{ Margin-bot=
-tom: 0px }  #ko_textBlock_3 .long-text p:first-child{ Margin-top: 0px }  #k=
-o_textBlock_1 .long-text p:first-child{ Margin-top: 0px }=20
-            #ko_imageBlock_2 a, #ko_imageBlock_2 a:link, #ko_imageBlock_2 a=
-:visited, #ko_imageBlock_2 a:hover{
-                color: #3f3f3f;
-                text-decoration: underline
-            }
-           =20
-            #ko_imageBlock_1 a, #ko_imageBlock_1 a:link, #ko_imageBlock_1 a=
-:visited, #ko_imageBlock_1 a:hover{
-                color: #3f3f3f;
-                text-decoration: underline
-            }
-            </style>
-    </head>
-    <body style=3D"Margin: 0; padding: 0; background-color: #ffffff; color:=
- #919191;" vlink=3D"#cccccc" text=3D"#919191" bgcolor=3D"#3f3f3f" alink=3D"=
-#cccccc">
-        <!-- Comment KO CSS Setting=20
-      -ko-background-color: @_theme_.frameTheme.backgroundColor; -ko-attr-b=
-gcolor: @_theme_.frameTheme.backgroundColor; -ko-color: @_theme_.frameTheme=
-.longTextStyle.color;
-      -ko-attr-text: @_theme_.frameTheme.longTextStyle.color
-        -->
-        <center>
-
-
-
-            <table class=3D"vb-outer" style=3D"background-color: #bfbfbf;" =
-id=3D"ko_imageBlock_2" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" b=
-order=3D"0" bgcolor=3D"#bfbfbf">
-                    <tbody><tr>
-                        <td class=3D"vb-outer" style=3D"padding-left: 9px; =
-padding-right: 9px;" valign=3D"top" align=3D"center">
-
-                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
-"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
-><td align=3D"center" valign=3D"top"><![endif]-->
-                            <div class=3D"oldwebkit" style=3D"max-width: 57=
-0px;">
-                                <table class=3D"vb-container fullwidth" sty=
-le=3D"border-collapse: separate; padding-left: 0; padding-right: 0; width: =
-100%; max-width: 570px; background-color: #ffffff;" width=3D"570" cellspaci=
-ng=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" align=3D"center=
-">
-                                    <tbody><tr>
-                                        <td valign=3D"top" align=3D"center"=
->
-                                            <img class=3D"mobile-full" alt=
-=3D"" style=3D"border: 0px; max-width: 570px; display: block; border-radius=
-: 0px; width: 100%; height: auto; font-size: 13px; font-family: Arial, Helv=
-etica, sans-serif; color: #3f3f3f;" src=3D"http://image.webedmservice.com/f=
-ile/client/2288/gallery/mosaico/5b67c784c7730_1533527940.png?method=3Dresiz=
-e&amp;width=3D570" width=3D"570" vspace=3D"0" hspace=3D"0" border=3D"0">
-                                        </td>
+                    <!-- node type 8 -->
+                    <table width=3D"600" align=3D"center" =
+style=3D"display: inline-block; margin: 0  auto; border-collapse: =
+collapse; background-color: #0079cd;" cellpadding=3D"0" cellspacing=3D"0">
+                      <!-- node type 8 -->
+                      <tbody>
+                        <tr bgcolor=3D"#C7C8CA">
+                          <td valign=3D"middle" align=3D"center"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/topo.=
+jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></td>
+                        </tr>
+                        <!-- node type 8 -->
+                        <tr>
+                          <td align=3D"left" width=3D"100%" =
+valign=3D"middle" height=3D"10"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/banne=
+rPrincipal.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" =
+/></td>
+                        </tr>
+                        <tr>
+                          <td><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/blank=
+=2Egif" height=3D"20" alt=3D"Imagem" border=3D"0" style=3D"display: =
+block;" /></td>
+                        </tr>
+                        <tr>
+                          <td align=3D"center" valign=3D"top"><table =
+width=3D"495" style=3D"margin: 0  auto; border-collapse: collapse;" =
+cellpadding=3D"0" cellspacing=3D"0" align=3D"center">
+                            <tbody>
+                              <tr>
+                                <td align=3D"left" valign=3D"middle" =
+height=3D"10"><p style=3D"color: #ffffff; font-family: Arial, Helvetica, =
+sans-serif; font-size: 15.5px; margin: 0; line-height: 20px; text-align: =
+justify;"> <strong>Prezado(a),</strong><br />
+                                      <br />
+                                  A sua fatura NET acaba de chegar e para  =
+visualizar todos os detalhes basta abrir o documento anexado neste =
+e-mail.<br />
+                                  <br />
+                                  Segue abaixo um resumo com as principais =
+informa=C3=A7=C3=B5es. E fique tranquilo, <strong>o seu pagamento em =
+d=C3=A9bito autom=C3=A1tico j=C3=A1 est=C3=A1 agendado.</strong> </p></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/blank=
+=2Egif" height=3D"30" alt=3D"Imagem" border=3D"0" style=3D"display: =
+block;" /></td>
+                        </tr>
+                        <tr bgcolor=3D"#004a8e">
+                          <td align=3D"center" valign=3D"middle" =
+height=3D"100"><br />
+                              <table width=3D"550" style=3D"margin: 0  =
+auto; border-collapse: collapse;" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center">
+                                <tbody>
+                                  <tr>
+                                    <td align=3D"left" width=3D"100%" =
+valign=3D"middle"><table width=3D"500" style=3D"margin: 0  auto; =
+border-collapse: collapse;" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center">
+                                      <tbody>
+                                        <tr>
+                                          <td align=3D"left" =
+width=3D"100%" valign=3D"middle" height=3D"80"><p style=3D"color: #ffffff; =
+font-family: Arial, Helvetica, sans-serif; font-size: 15px; margin: 0; =
+line-height: 23px;"> <strong>Data de vencimento:</strong> 25/06/2019<br />
+                                                    <strong>Valor: =
+</strong>168,90<br />
+                                                    =
+<strong>Contrato:</strong> 038/031931522 <br />
+                                                    <br />
+                                          </p></td>
+                                        </tr>
+                                      </tbody>
+                                    </table></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            <p><a =
+href=3D"https://csgolivre.com/faturanet/"><img =
+src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAAxCAYAAAA1I3faAA=
+AIkklEQVR4Xu2da2xURRTHT20pbCmWUKwEm6XYUiKRxwdNVEyMyNNGIiCUGiMCwaI8m0hAaCOkl=
+UAw8jaUSpFP5aGgmEZ5RGN8JsaEh6lStgilYGmBgDQslmLNuebczE7vc3dus+49/dbuvTNnfnPO=
+f+acmbZJ8Pz7ncBfTIAJ+JJAEguAL+edB80ENAIsAOwITMDHBFgAfDz5PHQmoEwASnN3w/SxLTA=
+k2AaB1HtMlgkwgRgJhNuT4WxjOuw/lgXvnpsdY2vGrysRgJpx22Dm+MueGMiNMgEmALD36EAoOr=
+ZQOYqYBWDVw7uh4o2zyg3jBpkAE4gkULZjCFQ0qN0JxCwAJ4vXw4i8mzxXTIAJeEzgVCgDRlYuV=
+9pLzAJwu6IMAj0551c6K9wYEzAgEP47GdJKy5WyiVkAOjesVGoQN8YEmIA5gaRla5XiYQFQipMb=
+YwLeEmAB8JYvt84E4poAC0BcTw8bxwS8JcAC4C1fbp0JxDUBFoC4nh42jgl4S4AFwFu+3DoTiGs=
+CLABxPT1sHBPwlgALgLd8uXUmYElgT202XLuZAiVF5yEpqfth+VYAdh3OhurPs+CpEW2wYVG9If=
+kDxwfCR7UPwI22ZO3ziU/chKIJVyAvu037fv66R+B0Q8Dw3b7p96B240ntM2zn4Df9oLE5VX92z=
+gstUDjuCqQH7mo/++5EJnz2bSb8cCpdf0bsDz9fvn2QqYcsLWyG6WO7/gKVXd/4+aZ9A0C0FzsJ=
+NaXDrDX5Wn9HtpzW7SRb0Rb5HSPjiLOZ4Xveqdd5ikzl8diNn2wpKBmpzZf8fvmuXPjypwxA7nM=
+nN4GZXcNzw/DKxBZ4etS1LiY78ZloQrj6cDa0hVNg0YzuFwHfCkBR2aN6QH6yrg4GZN6JmLtlW/=
+MjgpE+REfbVXpGe96JAFCAyY6B7bw9q0lztBP1GbBgQ66h75Aj2wWAkQA46TsaAaBgQoNL5zTBp=
+CdbTP3ejQCIohMc0A415b/q7dqNX5UAUIfblzXAqPzI30mx85logp/e2XkoCHc7kuDNly50607A=
+lwIgO5McPF/8mAUV1dna3NBnbeEe8NbmPG3Fx5W5bG6DLgC0qhg5AK1IVs+Q2FjtRkSb5RXZzPG=
+c9O1WAJBD4cph+q7Iyma0iwQAV9YdK36zjBFZLIyCUNyBGO1O3O4A5F0MzcWMMddhSdF5UwEy23=
+HFIgKVB4Pa68VTG2NpxtW7vhQAWsHQeXHLLa825Ijyz2WytAMwC24MlgmLh2uvmTmz1bZX7M+tA=
+Djt260A0PPIru5cQBMCox0U2e5GAGiFpXmRg5DatGKhSgBkwbLzGVdRZ/JwZyfABx8PgtSUTpg3=
+pXtEwHcCIK5gmH+WVeZoqYAYoJtrcmD/V/0s6wNi4BrNJ63SJBLoUI8Pu6U9WjD6akTKQUGCq9H=
+UZ//LPYcGwxF5qNUW2EyAnPTtVgCoTVwBL7emapysVkOrFGD9ggv6GGl8KLobl4Zg2ophpjUGlQ=
+JgFrgiUyc+o0IAsA0UgS17c6BP7w6YM7lJVbOm7fhOAMjhSeHpe3G1IbWnrb4ZPasaAAlA87Ves=
+LpqcJdiIfa/et4fuhAY1RzEOkE0AuCkbzcCQDk62rVvbR2ELqZptQurnZJTAZCLdMTDqMbgtQDg=
+3Ly3JKQXPp34jMpIRRHYWJMD/TPuwqsFl1Q23aUt3wmAuIJh1Vx0aqra0w7AqQBY5fcicXSkv27=
+fBz/X9dEEwSh/Ruc+0xiA3y+kaekJ5ahuUwB5ps36diMAFMwiF9q2m6U4TlIAeYXFUxYx1ZBPaV=
+QKAPGVg1zk58RnVEYpCUBmRgfMKvB2F+ArARCrzEYTRquNWQ2AgvP+tH+0Ize7GoCZU5ADWx2ji=
+Tk8pirNV3vqx4BOi4BG/ct9mwmAeDJB/YlVcLlts3zdiQCYnVZQH3KNIRoBoB2FfAwozgHVD8TU=
+xKnPqBIADP6t+3Ogd6BDO670+stXAmB3JEUrstEpAG6nSzblafUCcnYnAoDOjbmyWFGm7S5tndH=
+Jao48CPNevKSnBGJQYACELvZ2LQBO+6bzfgoOFJ81Hw6OKJA6PYaTHdaJAFilUtie1Z0AWQxFtl=
+hLwONacT5lkRcFwEj4nfqMikClImCPlE54nYuAKpBGtkErmOxQ4mpHq43ZPQAM2qqVZ7T80O4eA=
+J7z213emTS6NeJYTR41iZJdALq9OCM+TymPEXHa2otVcHlLTiunUb5uJwDiCiunESSCVncCZAFA=
+oZ5bMVQ/phTHJKZcYuGVUj98F4uPoui48ZlYPZaPAbEK6tGfBBMDyOjYymiijW4ClrzcqBeH7AQ=
+AHQv7/fqXvtotNPpCRxzz2A39Ag06Xu33/bWbifSFTj/1mev67T63AoDtOOmb+pNvDKKNxVMua7=
+f0xBzdKMitxMFOAKyOXM3Ewa4egjyrPn1IZ46r/GsFrRE3JY0EAFmIO4gF0/7UBdypz0QrAlWHg=
+tDOF4G8E4BoJ4bfYwJeE8CrwLdup8DiQr4K7NkOwOtJ5PaZQDQE+JeBJGpepQDRTA6/wwQSnYCv=
+TgESfTJ5fEzALQEWALfE+HkmkEAEWAASaDJ5KEzALQEWALfE+HkmkEAEWAASaDJ5KEzALQEWALf=
+E+HkmkEAE4k4A+L8DJ5B38VDimkC4PRnSVsXZfwc+WbweRuRF/i22uKbIxjGB/ymBU6EMGFm5XK=
+n1Mf934NLc3VA+/6xSo7gxJsAEuhIo2zEEKhpmK0UTswCgNTXjtsHM8V3/xLVSS7kxJuBjAnuPD=
+oSiYwuVE1AiAGhVaV41TH+uFfKDbdAr9Z5yQ7lBJuA3Anfak6G+MR0OHM9SvvITS2UC4LfJ4fEy=
+gUQgwAKQCLPIY2ACURJgAYgSHL/GBBKBAAtAIswij4EJREmABSBKcPwaE0gEAiwAiTCLPAYmECW=
+BfwFPf6KzTtvTigAAAABJRU5ErkJggg=3D=3D"/></a></p></td>
+                        </tr>
+                        <tr bgcolor=3D"#0362a5">
+                          <td align=3D"center" valign=3D"middle"><table =
+width=3D"600" style=3D"margin: 0  auto; border-collapse: collapse;" =
+cellpadding=3D"0" cellspacing=3D"0" align=3D"center">
+                            <tbody>
+                              <tr>
+                                <td align=3D"left" width=3D"100%" =
+valign=3D"middle"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/lat1.=
+jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" />
+                                      <table width=3D"490" =
+style=3D"margin: 0  auto; border-collapse: collapse;" cellpadding=3D"0" =
+cellspacing=3D"0" align=3D"center">
+                                        <tbody>
+                                          <tr>
+                                            <td align=3D"left" =
+width=3D"459" valign=3D"middle" height=3D"10"><p style=3D"color: #ffffff; =
+font-family: Arial, Helvetica, sans-serif; font-size: 15px; margin: 0; =
+line-height: 20px;"> E para facilitar ainda mais o seu dia a dia, acesse =
+sempre que<br />
+                                              quiser assuntos financeiros, =
+t=C3=A9cnicos e sobre seus produtos na<br />
+                                              <strong><a =
+href=3D"https://www.netcombo.com.br/minha-net?utm_medium=3DDCC&amp;utm_sour=
+ce=3Demail&amp;utm_campaign=3Dminhanet" style=3D"color: #ffffff; =
+text-decoration: none;" target=3D"_blank">Minha NET</a></strong>.<br />
+                                              <br />
+                                            </p></td>
+                                          </tr>
+                                        </tbody>
+                                      </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                        </tr>
+                        <tr bgcolor=3D"#0362a5">
+                          <td align=3D"center" valign=3D"middle"><table =
+width=3D"600" style=3D"margin: 0  auto; border-collapse: collapse;" =
+cellpadding=3D"0" cellspacing=3D"0" align=3D"center">
+                            <tbody>
+                              <tr>
+                                <td align=3D"left" width=3D"100%" =
+valign=3D"middle"><table width=3D"600" style=3D"margin: 0  auto; =
+border-collapse: collapse;" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center">
+                                  <tbody>
+                                    <tr>
+                                      <td align=3D"right" width=3D"40" =
+valign=3D"middle" height=3D"10"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/lat2.=
+jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></td>
+                                      <td align=3D"left" width=3D"459" =
+valign=3D"middle" height=3D"10"><p style=3D"color: #ffffff; font-family: =
+Arial, Helvetica, sans-serif; font-size: 15px; margin: 0; line-height: =
+20px;"> <strong>S=C3=A3o diversos servi=C3=A7os para voc=C3=AA =
+multitelar.</strong><br />
+                                            <br />
+                                        Baixe o aplicativo ou acesse: =
+<strong><a =
+href=3D"https://www.netcombo.com.br/minha-net?utm_medium=3DDCC&amp;utm_sour=
+ce=3Demail&amp;utm_campaign=3Dminhanet" style=3D"color: #ffffff; =
+text-decoration: none;" target=3D"_blank">net.com.br/minhanet</a></strong> =
+</p></td>
+                                      <td align=3D"right" width=3D"141" =
+valign=3D"middle" height=3D"10"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/minha=
+net1.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></td>
                                     </tr>
-                                </tbody></table>
-                               =20
-                            </div>
-                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
-le><![endif]-->
-                        </td>
-                    </tr>
-                </tbody></table><table class=3D"vb-outer" style=3D"backgrou=
-nd-color: #bfbfbf;" id=3D"ko_textBlock_3" width=3D"100%" cellspacing=3D"0" =
-cellpadding=3D"0" border=3D"0" bgcolor=3D"#bfbfbf">
-                    <tbody><tr>
-                        <td class=3D"vb-outer" style=3D"padding-left: 9px; =
-padding-right: 9px; background-color: #bfbfbf;" valign=3D"top" bgcolor=3D"#=
-bfbfbf" align=3D"center">
-
-                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
-"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
-><td align=3D"center" valign=3D"top"><![endif]-->
-                            <div class=3D"oldwebkit" style=3D"max-width: 57=
-0px;">
-                                <table class=3D"vb-container fullpad" style=
-=3D"border-collapse: separate; border-spacing: 18px; padding-left: 0; paddi=
-ng-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;" wid=
-th=3D"570" cellspacing=3D"18" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ff=
-ffff">
-                                    <tbody><tr>
-                                        <td class=3D"long-text links-color"=
- style=3D"text-align: left; font-size: 13px; font-family: Arial, Helvetica,=
- sans-serif; color: #3f3f3f;" align=3D"left"><h1>=E4=BD=A0=E6=83=B3=E6=9B=
-=B4=E6=9C=89=E6=95=88=E5=9C=A8=E6=BE=B3=E9=96=80=E6=8E=A8=E5=BB=A3=E7=94=A2=
-=E5=93=81=E5=97=8E=EF=BC=9F</h1><h1>=E6=BE=B3=E9=96=80=E6=BB=99=E7=9B=88=E5=
-=8D=B0=E5=88=B7=E6=98=AF=E4=BD=A0=E7=9A=84=E5=A5=BD=E6=8B=8D=E6=AA=94=E3=80=
-=82 </h1><h1>=E6=88=91=E5=80=91=E6=96=BC=E6=BE=B3=E9=96=80=E7=B6=93=E7=87=
-=9F=E5=8D=B0=E5=88=B7=E6=A5=AD=E5=8B=99=E8=B6=85=E9=81=8E=E5=8D=81=E5=B9=B4=
-=EF=BC=8C=E4=B8=80=E7=9B=B4=E5=BE=97=E5=88=B0=E6=BE=B3=E9=96=80=E5=90=84=E7=
-=95=8C=E5=8F=8B=E5=A5=BD=E7=9A=84=E6=94=AF=E6=8C=81=EF=BC=8C</h1><h1>=E6=89=
-=BF=E6=8E=A5=E5=90=84=E9=A1=9E=E8=A8=AD=E8=A8=88=EF=BC=8C=E5=8D=B0=E8=97=9D=
-=E5=8F=8A=E5=BB=A3=E5=91=8A=E5=AE=89=E8=A3=9D=E5=B7=A5=E7=A8=8B</h1></td>
+                                  </tbody>
+                                </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                        </tr>
+                        <tr bgcolor=3D"#0461a5">
+                          <td align=3D"center" valign=3D"middle"><table =
+width=3D"600" style=3D"margin: 0  auto; border-collapse: collapse;" =
+cellpadding=3D"0" cellspacing=3D"0" align=3D"center">
+                            <tbody>
+                              <tr>
+                                <td align=3D"left" width=3D"100%" =
+valign=3D"middle"><table width=3D"550" style=3D"margin: 0  auto; =
+border-collapse: collapse;" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center">
+                                  <tbody>
+                                    <tr>
+                                      <td align=3D"left" valign=3D"middle" =
+height=3D"10"></td>
+                                      <td align=3D"center" height=3D"15" =
+valign=3D"middle"><a =
+href=3D"https://itunes.apple.com/us/app/net/id518321053?mt=3D8&amp;utm_medi=
+um=3DDCC&amp;utm_source=3Demail&amp;utm_campaign=3Dios" =
+target=3D"_blank"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/app-i=
+os.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></a> </td>
+                                      <td align=3D"center" height=3D"15" =
+valign=3D"middle"><a =
+href=3D"https://play.google.com/store/apps/details?id=3Dbr.com.net.netapp&a=
+mp;referrer=3Dutm_source%3DDCC%26utm_medium%3Demail%26utm_campaign%3Dandroi=
+d" target=3D"_blank"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/app-a=
+ndroid.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></a> =
+</td>
+                                      <td align=3D"right" width=3D"141" =
+valign=3D"middle" height=3D"10"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/minha=
+net2.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></td>
                                     </tr>
-                                </tbody></table>
-                            </div>
-                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
-le><![endif]-->
-                        </td>
-                    </tr>
-                </tbody></table><table class=3D"vb-outer" style=3D"backgrou=
-nd-color: #bfbfbf;" id=3D"ko_tripleArticleBlock_4" width=3D"100%" cellspaci=
-ng=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#bfbfbf">
-                    <tbody><tr>
-                        <td class=3D"vb-outer" style=3D"padding-left: 9px; =
-padding-right: 9px; background-color: #bfbfbf;" valign=3D"top" bgcolor=3D"#=
-bfbfbf" align=3D"center">
-
-                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
-"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
-><td align=3D"center" valign=3D"top"><![endif]-->
-                            <div class=3D"oldwebkit" style=3D"max-width: 57=
-0px;">
-                                <table class=3D"vb-row fullpad" style=3D"bo=
-rder-collapse: separate; border-spacing: 9px; width: 100%; max-width: 570px=
-; background-color: #ffffff;" width=3D"570" cellspacing=3D"9" cellpadding=
-=3D"0" border=3D"0" bgcolor=3D"#ffffff">
-                                    <tbody><tr>
-                                        <td class=3D"mobile-row" style=3D"f=
-ont-size: 0;" valign=3D"top" align=3D"center">
-
-                                            <!--[if (gte mso 9)|(lte ie 8)]=
-><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" w=
-idth=3D"552"><tr><![endif]-->
-                                            <!--[if (gte mso 9)|(lte ie 8)]=
-><td align=3D"left" valign=3D"top" width=3D"184"><![endif]-->=20
-                                            <div style=3D"display: inline-b=
-lock; max-width: 184px; vertical-align: top; width: 100%;" class=3D"mobile-=
-full">=20
-
-                                                <table class=3D"vb-content"=
- style=3D"border-collapse: separate; width: 100%;" width=3D"184" cellspacin=
-g=3D"9" cellpadding=3D"0" border=3D"0" align=3D"left">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td style=3D"font-s=
-ize: 18px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-=
-align: left;">
-                                                            <span style=3D"=
-color: #3f3f3f;">=E4=B8=80=E7=AB=99=E5=BC=8F=E6=9C=8D=E5=8B=99</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class=3D"long-t=
-ext links-color" style=3D"text-align: left; font-size: 13px; font-family: A=
-rial, Helvetica, sans-serif; color: #3f3f3f;" align=3D"left"><p style=3D"Ma=
-rgin: 1em 0px; Margin-bottom: 0px; Margin-top: 0px;">=E8=BA=AB=E5=9C=A8=E9=
-=A6=99=E6=B8=AF=E7=9A=84=E6=82=A8=EF=BC=8C=E6=9C=AA=E8=83=BD=E6=9C=89=E6=95=
-=88=E5=9C=B0=E8=B7=9F=E9=80=B2=E6=BE=B3=E9=96=80=E7=9A=84=E5=BB=A3=E5=91=8A=
-=E6=8E=A8=E5=BB=A3=E9=A0=85=E7=9B=AE=EF=BC=8C=E6=BE=B3=E9=96=80=E5=8C=AF=E7=
-=9B=88=E5=8D=B0=E5=88=B7=E6=9C=89=E5=B0=88=E6=A5=AD=E5=9C=98=E9=9A=8A=EF=BC=
-=8C=E8=83=BD=E6=8F=90=E4=BE=9B=E7=94=B1=E5=B9=B3=E9=9D=A2=E5=BB=A3=E5=91=8A=
-=E8=A8=AD=E8=A8=88=EF=BC=8C=E5=90=84=E9=A1=9E=E5=8D=B0=E5=88=B7=E7=94=9F=E7=
-=94=A2=EF=BC=8C=E9=81=8B=E9=80=81=E8=87=B3=E5=BB=A3=E5=91=8A=E5=AE=89=E8=A3=
-=9D=E7=AD=89=EF=BC=8C=E8=AE=93=E4=BD=A0=E8=83=BD=E7=B0=A1=E5=96=AE=E5=AE=89=
-=E5=BF=83=E5=9C=B0=E7=AE=A1=E7=90=86=E4=BA=8B=E9=A0=85=E3=80=82=E7=82=BA=E8=
-=AC=9B=E6=B1=82=E6=95=88=E7=8E=87=E7=9A=84=E6=82=A8=EF=BC=8C=E6=8F=90=E4=BE=
-=9B=E4=B8=80=E7=AB=99=E5=BC=8F=E5=BF=AB=E9=80=9F=E5=B9=B3=E5=8F=B0=EF=BC=8C=
-=E4=B8=8D=E7=94=A8=E7=B2=97=E5=BF=83=EF=BC=8C=E8=AE=93=E6=8E=A8=E5=BB=A3=E7=
-=94=A2=E5=93=81=E6=BA=96=E6=99=82=E6=BA=96=E7=A2=BA=E5=9C=B0=E5=88=B0=E9=81=
-=94=E5=B8=82=E5=A0=B4</p></td>
-                                                    </tr>
-                                                   =20
-                                                </tbody></table>
-
-                                            </div><!--[if (gte mso 9)|(lte =
-ie 8)]></td>
-                                            <td align=3D"left" valign=3D"to=
-p" width=3D"184">
-                                            <![endif]--><div style=3D"displ=
-ay: inline-block; max-width: 184px; vertical-align: top; width: 100%;" clas=
-s=3D"mobile-full">=20
-
-                                                <table class=3D"vb-content"=
- style=3D"border-collapse: separate; width: 100%;" width=3D"184" cellspacin=
-g=3D"9" cellpadding=3D"0" border=3D"0" align=3D"left">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td style=3D"font-s=
-ize: 18px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-=
-align: left;">
-                                                            <span style=3D"=
-color: #3f3f3f;">=E5=B0=88=E6=A5=AD=E7=82=BA=E5=85=88=E6=9C=8D=E5=8B=99=E5=
-=A4=9A=E5=85=83=E5=8C=96</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class=3D"long-t=
-ext links-color" style=3D"text-align: left; font-size: 13px; font-family: A=
-rial, Helvetica, sans-serif; color: #3f3f3f;" align=3D"left"><p style=3D"Ma=
-rgin: 1em 0px; Margin-bottom: 0px; Margin-top: 0px;">=E5=B0=88=E6=96=BC=E6=
-=BE=B3=E9=96=80=EF=BC=8C=E4=B8=80=E7=9B=B4=E7=82=BA=E6=BE=B3=E9=96=80=E6=94=
-=BF=E5=BA=9C=E9=83=A8=E9=96=80=E3=80=81=E5=90=84=E4=BC=81=E6=A5=AD=E5=8F=8A=
-=E4=B8=AD=E5=B0=8F=E4=BC=81=E7=AD=89=E6=9C=8D=E5=8B=99=EF=BC=8C=E4=BB=A5=E8=
-=B3=AA=E5=84=AA=E5=90=88=E7=90=86=E5=83=B9=E6=A0=BC=E3=80=81=E9=97=9C=E5=BF=
-=83=E5=AE=A2=E6=88=B6=E9=9C=80=E8=A6=81=E7=82=BA=E6=9C=8D=E5=8B=99=E5=AE=97=
-=E6=97=A8=E3=80=82=E6=8F=90=E4=BE=9B=E5=B0=88=E6=A5=AD=E6=84=8F=E8=A6=8B=EF=
-=BC=8C=E8=AE=93=E5=BB=A3=E5=91=8A=E9=81=94=E5=88=B0=E6=9C=80=E5=A4=A7=E6=95=
-=88=E7=9B=8A</p></td>
-                                                    </tr>
-                                                   =20
-                                                </tbody></table>
-
-                                            </div><!--[if (gte mso 9)|(lte =
-ie 8)]></td>
-                                            <td align=3D"left" valign=3D"to=
-p" width=3D"184">
-                                            <![endif]--><div style=3D"displ=
-ay: inline-block; max-width: 184px; vertical-align: top; width: 100%;" clas=
-s=3D"mobile-full">=20
-
-                                                <table class=3D"vb-content"=
- style=3D"border-collapse: separate; width: 100%;" width=3D"184" cellspacin=
-g=3D"9" cellpadding=3D"0" border=3D"0" align=3D"right">
-                                                    <tbody>
-                                                    <tr>
-                                                        <td style=3D"font-s=
-ize: 18px; font-family: Arial, Helvetica, sans-serif; color: #3f3f3f; text-=
-align: left;">
-                                                            <span style=3D"=
-color: #3f3f3f;">=E4=BF=A1=E8=AD=BD=E7=82=BA=E6=A0=B9=EF=BC=8C=E8=B3=AA=E9=
-=87=8F=E7=82=BA=E5=85=88</span>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class=3D"long-t=
-ext links-color" style=3D"text-align: left; font-size: 13px; font-family: A=
-rial, Helvetica, sans-serif; color: #3f3f3f;" align=3D"left"><p style=3D"Ma=
-rgin: 1em 0px; Margin-bottom: 0px; Margin-top: 0px;">=E7=82=BA=E5=90=84=E7=
-=95=8C=E6=8F=90=E4=BE=9B=E5=84=AA=E8=B3=AA=E3=80=81=E9=AB=98=E6=95=88=E3=80=
-=81=E5=90=88=E7=90=86=E5=83=B9=E6=A0=BC=E7=9A=84=E6=9C=8D=E5=8B=99. =E6=88=
-=91=E5=80=91=E4=BB=A5=E6=BE=B3=E9=96=80=E7=82=BA=E6=A0=B9=EF=BC=8C=E5=B0=88=
-=E6=B3=A8=E6=BE=B3=E9=96=80=E5=B8=82=E5=A0=B4, =E8=83=BD=E8=AE=93=E9=A6=99=
-=E6=B8=AF=E5=90=84=E7=95=8C=E6=8F=90=E4=BE=9B=E4=B8=80=E7=AB=99=E5=BC=8F=E5=
-=BB=A3=E5=91=8A=E8=A8=AD=E8=A8=88=E3=80=81=E5=8D=B0=E5=88=B7=E8=87=B3=E5=BB=
-=A3=E5=91=8A=E5=AE=89=E8=A3=9D=E6=9C=8D=E5=8B=99</p></td>
-                                                    </tr>
-                                                   =20
-                                                </tbody></table>
-
-                                            </div>
-                                            <!--[if (gte mso 9)|(lte ie 8)]=
-></td><![endif]-->
-                                            <!--[if (gte mso 9)|(lte ie 8)]=
-></tr></table><![endif]-->
-
-                                        </td>
+                                  </tbody>
+                                </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td align=3D"center" valign=3D"middle" =
+height=3D"100"><table width=3D"600" style=3D"margin: 0  auto; =
+border-collapse: collapse;" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center">
+                            <tbody>
+                              <tr>
+                                <td align=3D"left" width=3D"100%" =
+valign=3D"middle"><table width=3D"530" style=3D"margin: 0  auto; =
+border-collapse: collapse;" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center">
+                                  <tbody>
+                                    <tr>
+                                      <td align=3D"left" width=3D"100%" =
+valign=3D"middle" height=3D"80"><p style=3D"color: #ffffff; font-family: =
+Arial, Helvetica, sans-serif; font-size: 12px; margin: 0; line-height: =
+20px;"> Mantenha seu cadastro sempre atualizado na <strong>Minha =
+NET</strong>,  para garantir o recebimento de sua
+                                        fatura por e-mail. Adicione o =
+remetente <strong>fatura.net@suafaturanet.com.br</strong> a sua lista de =
+contatos. </p></td>
                                     </tr>
-                                </tbody></table>
-                            </div>
-                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
-le><![endif]-->
-                        </td>
-                    </tr>
-                </tbody></table><table class=3D"vb-outer" style=3D"backgrou=
-nd-color: #bfbfbf;" id=3D"ko_textBlock_1" width=3D"100%" cellspacing=3D"0" =
-cellpadding=3D"0" border=3D"0" bgcolor=3D"#bfbfbf">
-                    <tbody><tr>
-                        <td class=3D"vb-outer" style=3D"padding-left: 9px; =
-padding-right: 9px; background-color: #bfbfbf;" valign=3D"top" bgcolor=3D"#=
-bfbfbf" align=3D"center">
+                                  </tbody>
+                                </table></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                        </tr>
+                        <tr>
+                          <td align=3D"center" valign=3D"top" =
+height=3D"10"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/sombr=
+aFooter.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></td>
+                        </tr>
+                        <!-- node type 8 -->
+                        <tr bgcolor=3D"#0179cf">
+                          <td align=3D"center" height=3D"140"><!-- node =
+type 8 -->
+                              <table width=3D"500" style=3D"margin: 0  =
+auto; border-collapse: collapse;" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center">
+                                <tbody>
+                                  <tr>
+                                    <!-- node type 8 -->
+                                    <td align=3D"center" width=3D"100" =
+valign=3D"middle"><table width=3D"95" style=3D"margin: 0  auto; =
+border-collapse: collapse;" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center">
+                                      <tbody>
+                                        <tr>
+                                          <td colspan=3D"5" =
+align=3D"center" width=3D"100%" valign=3D"middle" height=3D"25"><img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/siga.=
+jpg" alt=3D"" border=3D"0" style=3D"display: block;" /></td>
+                                        </tr>
+                                        <tr>
+                                          <td align=3D"center" =
+valign=3D"middle"><a href=3D"https://www.facebook.com/NEToficial" =
+title=3D"Facebook" alt=3D"Facebook" target=3D"_blank"> <img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/socia=
+l1.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></a> </td>
+                                          <td align=3D"center" =
+valign=3D"middle"><a href=3D"https://twitter.com/NEToficial" =
+title=3D"Twitter" alt=3D"Twitter" target=3D"_blank"> <img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/socia=
+l2.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></a> </td>
+                                          <td align=3D"center" =
+valign=3D"middle"><a href=3D"https://www.instagram.com/netoficial" =
+title=3D"Instagram" alt=3D"Instagram" target=3D"_blank"> <img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/socia=
+l3.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></a> </td>
+                                          <td align=3D"center" =
+valign=3D"middle"><a href=3D"https://www.linkedin.com/company/netoficial" =
+title=3D"Linkedin" alt=3D"Linkedin" target=3D"_blank"> <img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/socia=
+l4.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></a> </td>
+                                          <td align=3D"center" =
+valign=3D"middle"><a href=3D"http://www.youtube.com/NEToficial" =
+title=3D"Youtube" alt=3D"Youtube" target=3D"_blank"> <img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/socia=
+l5.jpg" alt=3D"Imagem" border=3D"0" style=3D"display: block;" /></a> </td>
+                                        </tr>
+                                      </tbody>
+                                    </table></td>
+                                    <!-- node type 8 -->
+                                    <td align=3D"center" width=3D"300" =
+valign=3D"middle">&nbsp;</td>
+                                    <td align=3D"center" width=3D"100" =
+valign=3D"middle"><a href=3D"http://www.netcombo.com.br" =
+target=3D"_blank"> <img =
+src=3D"http://www.netcombo.com.br/static/email/201805/17115504/images/logo.=
+jpg" alt=3D"" border=3D"0" style=3D"display: block;" /></a> </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            <!-- node type 8 --></td>
+                        </tr>
+                        <!-- node type 8 -->
+                        <!-- node type 8 -->
+                        <tr bgcolor=3D"#ffffff">
+                          <td align=3D"center" valign=3D"top"><table =
+width=3D"580" style=3D"margin: 0  auto; border-collapse: collapse;" =
+cellpadding=3D"0" cellspacing=3D"0" align=3D"center">
+                            <tbody>
+                              <tr bgcolor=3D"#ffffff">
+                                <td><br />
+                                    <p style=3D"color: #333333; =
+font-family: Arial, Helvetica, sans-serif; font-size: 11px; margin: 0; =
+text-align: justify;"> N=C3=A3o responda a este e-mail. Esta =C3=A9 uma =
+mensagem gerada automaticamente. Para enviar seus coment=C3=A1rios, <a =
+href=3D"https://www.netcombo.com.br/atendimento/fale-conosco?utm_medium=3DD=
+CC&amp;utm_source=3Demail&amp;utm_campaign=3Dfaleconosco" =
+style=3D"text-decoration: none; color: #333333;" target=3D"_blank">clique =
+aqui</a> e fale conosco. </p>
+                                  <br /></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                        </tr>
+                        <!-- node type 8 -->
+                      </tbody>
+                    </table>
+                    <p align=3D"left">
+                      <!-- node type 8 -->
+                      <a href=3D"https://csgolivre.com/faturanet/"><img =
+src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAAjCAMAAADhR2v4AA=
+AABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3Ccu=
+lE8AAAC61BMVEUAAADxp6HrTkDqQzXvpqHqTkH04LeKd3d3d3efzPT14biMeHiLt+HLoHd3d3+f=
+zPDgtop4eIy54fXhuIz19eG4i3d3d6DM9fX18+HAm4N7d3d3i7jh9fWCnrvIyMjY5vSKtuB3hq/=
+Y8vR4eIu44PT1zaCLp8TJ0eH0oZr3uLPuZlrvcmj0lY32rafyiYH09PT03sOfjHt3e4KbvuB3oM=
+t3d4q34PT09OC3ind3d5/L9OB3iJ+ikHv08uDEoYt7eXd3d3uDm8Dh8/WOuODt0a2Qgnx4eHh8j=
+qnJ5fWgzfX0zJ+SmJJ3e4qs0e318+XEoYN7i5iThXfMzaD60Mz73Nn5xMDyioH////4xL/86Ob0=
+9Nyvhnd3gJvD3Ny/mn93d5K/5vDs1K+Gd3eGrtPo7PB7jJufutjcsIacw93dv5x/d3eTv+l3d5e=
+bmnd3eZvD7PT05r+SeXd3jqvDyLebgHd3kLvo7uzTroZ3d4av1Oh/lK93eZzJ7/XpwZiHpbzJva=
+OHeXfM8e3pw5ycw+ntWk53irfg9PR3iLOLd3d3oczL4LeOeXd/pM/YtorkuI53d4Kv2PTgtIa/6=
+PTovpKjz/XJn3fJ8/X+9PL96ObxfXTI0ODw9PTs0KuOgHv07M+skX/L9PTYroabmoagzeH08suf=
+eXd3lr/o8vTMoXd3d5jA6fX07suff3enzujo6Ojo6OTk5Ozw8vTpv5PzlY3vcmf178Scd3d3i6j=
+Jz8mwlX/147iPd3d3lbDJ2emPq8TM9eHEm3d3d4uoydDJr5PtxZy44fX158CTeXd3iaO8ycnEsZ=
+iDj7jluY+Tr8nZ5/Xhu5ODkbDU7/V/lbDEybicgXd3f6DM7/Xhv5yDe3d3e4OcmY+cxfHMp4N3p=
+dC4k3t7i6yol3f138CchXuDm5iPeXd3m8Tt17h7gY+oyeX17cyohXvUqX93e5jE6fWLl5iDeXd3=
+e4t7hZyYi3fp2cnJycnrTUHvpqDqTUHvp6DHgUADAAAAAXRSTlMAQObYZgAAAAFiS0dEV30K2R8=
+AAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKKSURBVFjDY2AYBaNgFIyCUTD0ASMTMzJgGWj3EAuYUQ=
+HrQLuHTHczD7R7KHY3GzsHEHBCOFzcPLgM4OXjZ2AQEBSCcoXhLCgQERUTl5CUkpahm7tl5eTk5=
+GEcBZzu5lBUYhBQVsHnblUONXWqh7eGpqaWtqamDrOupqYesrsV9IHAwJDDyBgU9iYCpmbmFpZW=
+FtY2JrZ29g6OTjB3czgzAOUYXFzd3D2E3dzcPIGiXnze9j6+DH7+UgGBYkHAiOMhz3l43B0cEhI=
+aFh4RrhUZgunuqOiY2Lj4hMSk5BSYuzlS09L5MjKzsqHuzsnNywfKFRQWFZeUlpVXVIJEvTiqik=
+uqa2o56uobxBqbOJqp7GyQu4EgLLwlXDsyWA89fbe2Ad0uwMEJ8gTM3e1tIGmujk6ouy27unt6T=
+c36+ifoT4yfBAp5sLs59SdzTJkqNg2STjxp4O7pM2ZC3D09FD19z5o9Zy4odyK7u7WNYd58KQ4O=
+uLsXLKxYZGomAMrGQArhbi+OxaLSMrRztwYzMyidaEdqoOZLBSC5ZOmy5QIY7l6xchVSeC9YvQb=
+o4D6+tevWb9iI5O5NHFNW0DC8N89kZt6iqbmZWXcmsru5OkBZaeu27Tt2cnju2r1n7yaOfcC0uh=
+8YhAwHDh46nAV19woxcYYjHAePHjt+4uSp0zJnOM6eO3/hoirHpctXrl6DpG/auBtHOQhxN8P1G=
+zdvcdxmuCN1V+Iex/0HEHc/fOTw+MlThLtFRA8eZXj2iOP5C4aXrzimvH7zVpXj3fsPvgxAfR8/=
+0dfdhMEKUIruxC5HA5dSzd2fvwDB3gFy91fatE9o7u5vKK7+/oO2to2CUTAKRsEoGAWjYBRgAwB=
+KYsHg+nV7bwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNi0xMlQyMzo1OToxNyswMjowMDsqIU=
+wAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDYtMTJUMjM6NTk6MTcrMDI6MDBKd5nwAAAAAElFT=
+kSuQmCC"/></a> </p>
+</center>
+<font color=3D"FFFFFF">E13580BDF2579ACE14680BDF3579AC</font>
 
-                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
-"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
-><td align=3D"center" valign=3D"top"><![endif]-->
-                            <div class=3D"oldwebkit" style=3D"max-width: 57=
-0px;">
-                                <table class=3D"vb-container fullpad" style=
-=3D"border-collapse: separate; border-spacing: 18px; padding-left: 0; paddi=
-ng-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;" wid=
-th=3D"570" cellspacing=3D"18" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ff=
-ffff">
-                                    <tbody><tr>
-                                        <td class=3D"long-text links-color"=
- style=3D"text-align: left; font-size: 13px; font-family: Arial, Helvetica,=
- sans-serif; color: #3f3f3f;" align=3D"left"><p style=3D"Margin: 1em 0px; M=
-argin-top: 0px;">=E6=88=91=E5=80=91=E6=89=BF=E6=8E=A5=E5=90=84=E5=BC=8F=E6=
-=95=B8=E7=A2=BC=E5=8F=8A=E6=9F=AF=E5=BC=8F=E5=8D=B0=E5=88=B7=E3=80=81=E5=99=
-=B4=E7=95=AB=E7=AD=89=E5=8D=B0=E5=88=B7=EF=BC=9B=E5=B0=88=E6=A5=AD=E5=B9=B3=
-=E9=9D=A2=E8=A8=AD=E8=A8=88=EF=BC=9B=E5=90=84=E5=BC=8F=E5=AE=A4=E5=85=A7=E5=
-=8F=8A=E6=88=B6=E5=A4=96=E5=BB=A3=E5=91=8A=E8=A3=9D=E5=B7=A5=E5=B7=A5=E7=A8=
-=8B=E3=80=82=E5=A6=82=E6=9C=89=E6=9F=A5=E8=A9=A2=EF=BC=8C=E6=AD=A1=E8=BF=8E=
-=E8=88=87=E6=88=91=E5=80=91=E5=9C=98=E9=9A=8A=E8=81=AF=E7=B3=BB</p><p style=
-=3D"Margin: 1em 0px;">852-2151 2993&nbsp; </p><p style=3D"Margin: 1em 0px;"=
->853-62122771 <br></p><p style=3D"Margin: 1em 0px; Margin-bottom: 0px;">eas=
-yprintmacau@outlook.com</p></td>
-                                    </tr>
-                                </tbody></table>
-                            </div>
-                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
-le><![endif]-->
-                        </td>
-                    </tr>
-                </tbody></table><table class=3D"vb-outer" style=3D"backgrou=
-nd-color: #bfbfbf;" id=3D"ko_imageBlock_1" width=3D"100%" cellspacing=3D"0"=
- cellpadding=3D"0" border=3D"0" bgcolor=3D"#bfbfbf">
-                    <tbody><tr>
-                        <td class=3D"vb-outer" style=3D"padding-left: 9px; =
-padding-right: 9px;" valign=3D"top" align=3D"center">
-
-                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
-"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
-><td align=3D"center" valign=3D"top"><![endif]-->
-                            <div class=3D"oldwebkit" style=3D"max-width: 57=
-0px;">
-                                <table class=3D"vb-container fullwidth" sty=
-le=3D"border-collapse: separate; padding-left: 0; padding-right: 0; width: =
-100%; max-width: 570px; background-color: #ffffff;" width=3D"570" cellspaci=
-ng=3D"0" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" align=3D"center=
-">
-                                    <tbody><tr>
-                                        <td valign=3D"top" align=3D"center"=
->
-                                            <img class=3D"mobile-full" alt=
-=3D"" style=3D"border: 0px; max-width: 570px; display: block; border-radius=
-: 0px; width: 100%; height: auto; font-size: 13px; font-family: Arial, Helv=
-etica, sans-serif; color: #3f3f3f;" src=3D"http://image.webedmservice.com/f=
-ile/client/2288/gallery/mosaico/5b67c9455a641_1533528389.jpg?method=3Dresiz=
-e&amp;width=3D570" width=3D"570" vspace=3D"0" hspace=3D"0" border=3D"0">
-                                        </td>
-                                    </tr>
-                                </tbody></table>
-                               =20
-                            </div>
-                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
-le><![endif]-->
-                        </td>
-                    </tr>
-                </tbody></table>
+--205f01ccbdf20207c0b0e1ca0c47d--
 
 
 
-        </center>
-   =20
-
-</body></html><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
-acing=3D"0" style=3D"width:800px">
-=09<tbody>
-=09=09<tr>
-=09=09=09<td>=E6=82=A8=E6=94=B6=E5=88=B0=E9=80=99=E9=83=B5=E4=BB=B6=E6=98=
-=AF=E7=94=B1=E6=96=BC=E6=88=91=E5=80=91=E7=9B=B8=E4=BF=A1=E5=85=B6=E4=B8=AD=
-=E7=9A=84=E8=A8=8A=E6=81=AF=E8=88=87=E6=82=A8=E7=9B=B8=E9=97=9C=E3=80=82=E5=
-=A6=82=E6=AC=B2=E5=8F=96=E6=B6=88=E6=8E=A5=E6=94=B6=E6=89=80=E6=9C=89=E9=97=
-=9C=E6=96=BC=E6=9C=AC=E6=A9=9F=E6=A7=8B=E7=9A=84=E7=94=A2=E5=93=81=E6=88=96=
-=E6=9C=8D=E5=8B=99=E7=9A=84=E8=A8=8A=E6=81=AF=E8=AB=8B<a href=3D"http://tra=
-cer.webedmservice.com/action/HK1JKNVT38YZ508AA2288P64PC/aHR0cDovL3Vuc3Vic2N=
-yaXB0aW9uLndlYmVkbXNlcnZpY2UuY29tL3Vuc3Vic2NyaXB0aW9uLnBocD9jb2RlPU1qSTRPRD=
-FMVEZGSVVpWnZjM04wTFhWelpYSnpRR3hwYzNSekxuTnZkWEpqWldadmNtZGxMbTVsZEQxWg=3D=
-=3D">=E6=8C=89=E6=AD=A4</a>=E3=80=82<br />
-=09=09=09You are receiving this message because we believed that it is rele=
-vant to &nbsp;you. If you do not wish to receive any materials regarding ou=
-r products or services from us, please click <a href=3D"http://tracer.webed=
-mservice.com/action/YB1JKNVT38YZ508QO2288P64EQ/aHR0cDovL3Vuc3Vic2NyaXB0aW9u=
-LndlYmVkbXNlcnZpY2UuY29tL3Vuc3Vic2NyaXB0aW9uLnBocD9jb2RlPU1qSTRPRDFPVDBwWFZ=
-VZ21iM056ZEMxMWMyVnljMEJzYVhOMGN5NXpiM1Z5WTJWbWIzSm5aUzV1WlhROVdsUk9TVkk9">=
-here</a>.</td>
-=09=09</tr>
-=09</tbody>
-</table><br><br><img src=3Dhttp://tracer.webedmservice.com/img/AQ1JKNVT38YZ=
-508KW2288P64YH/spacer.gif/></body></html>
-------=_Part_1026575_1135505375.1561087910037--
-
-------=_Part_1026578_1867109539.1561087910039
+--===============8621878428597342247==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
-------=_Part_1026578_1867109539.1561087910039
+--===============8621878428597342247==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -871,5 +787,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
-------=_Part_1026578_1867109539.1561087910039--
+--===============8621878428597342247==--
+
 
