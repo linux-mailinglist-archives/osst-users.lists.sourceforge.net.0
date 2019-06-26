@@ -2,92 +2,80 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 19193507B0
-	for <lists+osst-users@lfdr.de>; Mon, 24 Jun 2019 12:12:49 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 53F3D5613B
+	for <lists+osst-users@lfdr.de>; Wed, 26 Jun 2019 06:21:05 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hfLxp-000543-NP
-	for lists+osst-users@lfdr.de; Mon, 24 Jun 2019 10:12:41 +0000
+	id 1hfzQZ-0003ku-8e
+	for lists+osst-users@lfdr.de; Wed, 26 Jun 2019 04:20:59 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <offerte@ml.toneritaly.info>) id 1hfLxm-00053p-BJ
- for osst-users@lists.sourceforge.net; Mon, 24 Jun 2019 10:12:38 +0000
+ (envelope-from <email@smartyps.com>) id 1hfzQX-0003kj-KA
+ for osst-users@lists.sourceforge.net; Wed, 26 Jun 2019 04:20:57 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Message-ID:Date:Content-Type:Subject:To:Reply-To:
- From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:Subject:Date:To:From:MIME-Version:
+ Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=DEobEcjO3knD9wVD4uKqRe0x+V0ERlKOg9ZQgtHrPhk=; b=gj4La5tojioVCh0zdsyMhw840Y
- 0NQpVypavOTiywAROvB1l1adpk8uhVuxvOsLwdV9TGcdF4dRTixFwrbtVwXdY9dcAPw4sQcZCaWaO
- NnB4K5MfGt6uqxERjbDTZWQzA5EeHru3SFsGkiySCq5nHJoIjP0fc8cQ9W026jgxKq+g=;
+ bh=33uvEePgtwWjGZwllJhyYDKcZGgqXaFmXDVnBjBWSeY=; b=Nxa5mHzzl1byL+Ae0iO889DjUJ
+ 8Y70kcqF/qnYAa+kg0N89Nlwa7GCGa8Ep+kOM4lo4mJTXd2q5r0fkp9/QygLXzdcNSQ8pZoTKfd6f
+ IGT+Oqm2d75pjjv8c6uYppJNK1t0EM12FZ4mMY/aeQsfaSIJPiAOvvDmB+83MunYJg/w=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Message-ID:Date:Content-Type:Subject:To:Reply-To:From:MIME-Version:Sender
+ h=Content-Type:Subject:Date:To:From:MIME-Version:Message-ID:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=DEobEcjO3knD9wVD4uKqRe0x+V0ERlKOg9ZQgtHrPhk=; b=C
- mCPmQTBn9VjCQt2hfqvrE/HBha8q0x5s5CkAtOA3ESp7RJP5q8rblcLE/HkqnCU00DKiPFnr30wny
- 5T8ckycrB300XOe+E2rlmmggDGXXngi74TvoczPmOwTwuJFJRinT5lwzadF9iwjxuX77hpbFOZYGf
- Wk/CEMVb0X0mjwtc=;
-Received: from ml004.dnshigh.com ([193.70.146.21])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1hfLxq-00Bw2V-J1
- for osst-users@lists.sourceforge.net; Mon, 24 Jun 2019 10:12:43 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=ml.toneritaly.info; s=default; h=Message-ID:Date:Content-Type:Subject:To:
- Reply-To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=DEobEcjO3knD9wVD4uKqRe0x+V0ERlKOg9ZQgtHrPhk=; b=lyIpqpXQzUaI29CFufWjjXUYgP
- C6IfHRD0F7YnAJ2aOW77xuno59aNzSpEYcUwiSY/24m3ttpgg61uevzkMztmsFUaQFztJy5TYpTcb
- 4w+ysPZ67wQi3X/bb69YHjmJQOu3zOFm+Cqehk7IE/WrPGtwNFSlEtfWHmh/3b+gUSLNESvYLeOYo
- mKVMmAVgPTH/3Q9QneprVLiTZtrfuhpurMO7+KiQZ8HBEN+jYAIe+jCGrtSL29wB7OV2pP3TQ69C6
- ZVAHQL9gUF1Se94UEr34y08JW0PSd4UU7onAZpGAxCfR4cOW/3z6bWVj74gAKv5XPIwg8Jtttte+Y
- P+QbbhPQ==;
-Received: from host140-49-dynamic.248-95-r.retail.telecomitalia.it
- ([95.248.49.140]:55036)
- by ml004.dnshigh.com with esmtpsa (TLSv1:DHE-RSA-AES256-SHA:256)
- (Exim 4.92) (envelope-from <offerte@ml.toneritaly.info>)
- id 1hfLxj-000446-Rx
- for osst-users@lists.sourceforge.net; Mon, 24 Jun 2019 12:12:35 +0200
+ List-Owner:List-Archive; bh=33uvEePgtwWjGZwllJhyYDKcZGgqXaFmXDVnBjBWSeY=; b=S
+ LIb6/vz/7os4nQyy2H1+6OumMypJMJg5IXDDR/u2MzGzkGcJyzrH08HTGeXD08Ba96mErRpKgtOVS
+ slt7QPm7R4oYoTgkYfu8wITxdjTDX+ZVrjXz+gsRSP0wsrUwzkEzAZlKKwPxNK11ehUQYvpWNJG4M
+ QNed6jsCLrSZdwaI=;
+Received: from smartyps.com ([51.77.63.173])
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.90_1)
+ id 1hfzQa-00DvIu-1p
+ for osst-users@lists.sourceforge.net; Wed, 26 Jun 2019 04:21:02 +0000
+dkim-signature: v=1; a=rsa-sha256; d=smartyps.com; s=dkim;
+ c=relaxed/relaxed; q=dns/txt;
+ h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type; 
+ bh=33uvEePgtwWjGZwllJhyYDKcZGgqXaFmXDVnBjBWSeY=;
+ b=pUJUVnxqjtZf+PYVJ9rd92cgzZGIuim4Z6YYqS7lSEhqb3c6WI8nk5r4j6v2xheNQOxbgL8K2YyL7gxI4VykAS1Taak4HXZw/Rhag29BioZwXZAe/6iUG/cxRnipWQfVDZeEHkVouwEBJCDxTqNC54Zi/dzAsXwwqADmh6K5rbBky1nY288UPOaGlTgB8OzrjP7+Vr1hcN2t/xpGignNyVYbu6oZMlak3TyC9VmQOYwUlfO2yeu4gnCpAc
+ bDBvANXmGiP4HjCjR5pzpCTZxREz4xIz9MqCCC1omM6iVMdHtb55rxHs1LHC1/1xO7xNGCMCe0EclNKLV9ttp/GWvNFA==
+Received: from WIN-40J9ERR4VCI (WIN-40J9ERR4VCI [127.0.0.1])
+ by smartyps.com with ESMTPA ; Wed, 26 Jun 2019 01:20:46 -0300
+Message-ID: <288f7268-7918-46ca-97ca-ad6d07dabad0@smartyps.com>
 MIME-Version: 1.0
-From: "Toner compatibili di alta qualita'" <offerte@ml.toneritaly.info>
+From: "Ituran - Parceiro" <email@smartyps.com>
 To: osst-users@lists.sourceforge.net
-Date: Mon, 24 Jun 2019 12:12:21 +0200
-Message-ID: <8556264298664163301407@user-PC>
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - ml004.dnshigh.com
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - ml.toneritaly.info
-X-Get-Message-Sender-Via: ml004.dnshigh.com: authenticated_id: fjmllqck/from_h
-X-Authenticated-Sender: ml004.dnshigh.com: offerte@ml.toneritaly.info
-X-Spam-Score: 6.2 (++++++)
+Date: 26 Jun 2019 01:20:46 -0300
+X-Helo-Check: bad, Forged Random Domain (smartyps.com)
+X-Spam-Score: 3.2 (+++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 0.5 VA_HELO_CHECK          Host Used Invalid or Forged HELO/EHLO
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
- 1.3 HTML_IMAGE_ONLY_24     BODY: HTML: images with 2000-2400 bytes of words
+ 1.2 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image area
  1.0 HTML_MESSAGE           BODY: HTML included in message
  -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
  domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 2.4 IMG_ONLY_FM_DOM_INFO   HTML image-only message from .info domain
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: smartvpc.online]
+ 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+ [Blocked - see <https://www.spamcop.net/bl.shtml?51.77.63.173>]
  0.0 T_REMOTE_IMAGE         Message contains an external image
- 0.0 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1hfLxq-00Bw2V-J1
-Subject: [Osst-users] Toner compatibili - Nuovi listini per l'estate e
- prezzi rivisti per molti toner: Chiedici un preventivo
+ -0.6 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1hfzQa-00DvIu-1p
+Subject: [Osst-users] =?utf-8?q?Fique_de_cabe=C3=A7a_leve=2C_seu_bem_prote?=
+ =?utf-8?q?gido!?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -99,114 +87,241 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: offerte@ml.toneritaly.info
-Content-Type: multipart/mixed; boundary="===============3479988870447660732=="
+Content-Type: multipart/mixed; boundary="===============1555494083634262442=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 
---===============3479988870447660732==
+--===============1555494083634262442==
 Content-Type: multipart/alternative;
-	boundary="----=_NextPart_001_059C_06083A9C.1C8C5425"
+ boundary=--boundary_77772_d88a9979-e941-4fb5-8f8d-fd485bd2241e
 
 
-------=_NextPart_001_059C_06083A9C.1C8C5425
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+----boundary_77772_d88a9979-e941-4fb5-8f8d-fd485bd2241e
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
 
-=20
+SXR1cmFuIC0gUGFyY2Vpcm8gLy8vLyBGaXF1ZSBkZSBjYWJlw6dhIGxldmUsIHNldSBi
+ZW0gcHJvdGVnaWRvIUNMSVFVRSBQQVJBIEFCUklSZWNvbm9taXplIFIkMjk5LDAwcHJv
+bW/Dh8ODbyBwb3IgdGVtcG8gbGltaXRhZG9FTlZJQVIgQ09UQcOHw4NPUmFzdHJlYWRv
+ciBjb20gU2VndXJvICtjb2JlcnR1cmEgcGFyYSByb3VibyBlIGZ1cnRvIGEgcGFydGly
+IGRlIFIkNjksOTAgcG9yIG3DqnMrIGluc3RhbGHDp8OjbyBkZSBncsOhdGlzLkNPTkhF
+w4dBIE5PU1NBUyBWQU5UQUdFTlM6Q09CRVJUVVJBUEFSQVRFUkNFSVJPUztDT0JFUlRV
+UkEgUEFSQVBFUkRBIFRPVEFMUE9SIENPTElTw4NPO0lOREVOSVpBw4fDg08gREVBVMOJ
+IDEwMCUqIERBVEFCRUxBIEZJUEUuRU5WSUFSIENPVEHDh8ODT0Vzc2Ugw4kgdW0gRS1N
+QUlMIGRlIHVtIFJlcHJlc2VudGFudGUgQXV0b3JpemFkbyBJdHVyYW7CqSBDb3B5cmln
+aHQgMjAxOCBJdHVyYW4qQ2FzbyBhIEl0dXJhbiBuw6NvIGxvY2FsaXplIHNldSB2ZcOt
+Y3VsbyByZWNlYmEgbyB2YWxvciBkZSBpbmRlbml6YcOnw6NvIGVtIGF0w6kgMTAwJSBk
+YSB0YWJlbGEgRklQRS4gRW52aWFkbyBwYXJhOiBJZGVudGlmaWNhw6fDo28gZGUgZW52
+aW86IDAwW0lkXU7Do28gZGVzZWpvIG1haXMgcmVjZWJlcg==
+----boundary_77772_d88a9979-e941-4fb5-8f8d-fd485bd2241e
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
 
-TONER COMPATIBILI DI ALTA QUALITA'
+PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5JdHVyYW4gLSBQYXJjZWlybyAvLy8vIEZpcXVl
+IGRlIGNhYmXDp2EgbGV2ZSwgc2V1IGJlbSBwcm90ZWdpZG8hPC90aXRsZT4NCjxtZXRh
+IGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFy
+c2V0PWlzby04ODU5LTEiPg0KPC9oZWFkPg0KPGJvZHkgc3R5bGU9InBhZGRpbmc6MDsg
+bWFyZ2luOjA7Ij4NCg0KDQo8dGFibGUgYWxpZ249ImNlbnRlciIgYm9yZGVyPSIwIiBj
+ZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiPg0KPHRyPjx0ZCBhbGlnbj0iY2Vu
+dGVyIj48YnI+PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL2MvbHBf
+aXR1cmFuLz9FPW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9
+Il9ibGFuayIgc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9u
+dC1zaXplOjE0cHg7IGNvbG9yOiMwMDAwMDA7Ij5DTElRVUUgUEFSQSBBQlJJUjwvYT48
+L3RkPjwvdHI+DQo8L3RhYmxlPg0KDQoNCg0KDQoNCjxkaXY+DQo8dGFibGUgd2lkdGg9
+IjEwMCUiIGNlbGxzcGFjaW5nPSIwIiBjZWxscGFkZGluZz0iMCI+DQo8dGJvZHk+DQo8
+dHI+DQo8dGQ+PHRhYmxlIHdpZHRoPSI2MDAiIGJvcmRlcj0iMCIgYWxpZ249ImNlbnRl
+ciIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIj4NCjx0cj4NCjx0ZCBoZWln
+aHQ9IjIwIiBhbGlnbj0icmlnaHQiIHZhbGlnbj0idG9wIiBzdHlsZT0iZm9udC1zaXpl
+OjEwcHg7Y29sb3I6Izk0OTQ5NDtmb250LWZhbWlseTpBcmlhbCxzYW5zLXNlcmlmO3Rl
+eHQtZGVjb3JhdGlvbjpub25lO3RleHQtdHJhbnNmb3JtOnVwcGVyY2FzZTt0ZXh0LWFs
+aWduOnJpZ2h0Ij48L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCBoZWlnaHQ9IjgwIiBhbGln
+bj0iY2VudGVyIiB2YWxpZ249Im1pZGRsZSIgYmdjb2xvcj0iIzAwMzQ2MyIgc3R5bGU9
+ImZvbnQtc2l6ZTowO2xpbmUtaGVpZ2h0OjAiPjxhIGhyZWY9Imh0dHA6Ly9zbWFydHZw
+Yy5vbmxpbmUvbGluay9jL2xwX2l0dXJhbi8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJj
+ZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwczovL3d3dy5s
+ZXRzcGVyZm9ybS5jb20uYnIvZmVsbC9pdHVyYW4vaHRtbDAxL2xvZ28tY2Fycm8uanBn
+IiB3aWR0aD0iMTUyIiBoZWlnaHQ9IjgwIiBhbHQ9IiI+PC9hPjwvdGQ+DQo8L3RyPg0K
+PHRyPg0KPHRkIGhlaWdodD0iMzIxIiBhbGlnbj0iY2VudGVyIiB2YWxpZ249Im1pZGRs
+ZSIgYmdjb2xvcj0iIzcyRTcwMCIgc3R5bGU9ImZvbnQtc2l6ZTowO2xpbmUtaGVpZ2h0
+OjAiPjxhIGhyZWY9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvbGluay9jL2xwX2l0dXJh
+bi8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxh
+bmsiPjxpbWcgc3JjPSJodHRwczovL3d3dy5sZXRzcGVyZm9ybS5jb20uYnIvZmVsbC9p
+dHVyYW4vaHRtbDAxL2Rlc3RhcXVlLmpwZyIgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzMjEi
+IGFsdD0iIj48L2E+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgaGVpZ2h0PSI5ODgiIGFs
+aWduPSJjZW50ZXIiIHZhbGlnbj0idG9wIiBiZ2NvbG9yPSIjNzJFNzAwIiBiYWNrZ3Jv
+dW5kPSJodHRwczovL3d3dy5sZXRzcGVyZm9ybS5jb20uYnIvZmVsbC9pdHVyYW4vaHRt
+bDAxL2JnLmpwZyIgc3R5bGU9ImZvbnQtc2l6ZTowO2xpbmUtaGVpZ2h0OjAiPjx0YWJs
+ZSB3aWR0aD0iNjAwIiBib3JkZXI9IjAiIGNlbGxzcGFjaW5nPSIwIiBjZWxscGFkZGlu
+Zz0iMCI+DQo8dGJvZHk+DQo8dHI+DQo8dGQgaGVpZ2h0PSIxMCIgc3R5bGU9ImZvbnQt
+c2l6ZTowO2xpbmUtaGVpZ2h0OjAiPjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGFsaWdu
+PSJjZW50ZXIiIHZhbGlnbj0ibWlkZGxlIiBzdHlsZT0iY29sb3I6IzAwMjk1NTtmb250
+LWZhbWlseTomIzM5O09wZW4gU2FucyYjMzk7LEFyaWFsLHNhbnMtc2VyaWY7dGV4dC1k
+ZWNvcmF0aW9uOm5vbmU7dGV4dC1hbGlnbjpjZW50ZXI7dGV4dC10cmFuc2Zvcm06dXBw
+ZXJjYXNlIj48c3BhbiBzdHlsZT0iZm9udC1zaXplOjIycHg7bGluZS1oZWlnaHQ6MjRw
+eDtmb250LXdlaWdodDo0MDAiPmVjb25vbWl6ZSA8L3NwYW4+PHNwYW4gc3R5bGU9ImZv
+bnQtc2l6ZTozMHB4O2xpbmUtaGVpZ2h0OjI0cHg7Zm9udC13ZWlnaHQ6NzAwIj5SJDI5
+OSwwMDwvc3Bhbj48YnI+DQo8c3BhbiBzdHlsZT0iZm9udC1zaXplOjE1cHg7bGluZS1o
+ZWlnaHQ6MjhweDtmb250LXdlaWdodDo0MDAiPnByb21vw4fDg28gcG9yIHRlbXBvIGxp
+bWl0YWRvPC9zcGFuPjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGhlaWdodD0iMjAiIGFs
+aWduPSJjZW50ZXIiIHZhbGlnbj0ibWlkZGxlIiBzdHlsZT0iZm9udC1zaXplOjA7bGlu
+ZS1oZWlnaHQ6MCI+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgaGVpZ2h0PSIyMCIgYWxp
+Z249ImNlbnRlciIgdmFsaWduPSJtaWRkbGUiIHN0eWxlPSJmb250LXNpemU6MDtsaW5l
+LWhlaWdodDowIj48dGFibGUgd2lkdGg9IjI1MSIgYm9yZGVyPSIwIiBhbGlnbj0iY2Vu
+dGVyIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiPg0KPHRyPg0KPHRkIGFs
+aWduPSJjZW50ZXIiIHZhbGlnbj0ibWlkZGxlIiBiZ2NvbG9yPSIjMjk2NWQxIiBzdHls
+ZT0iYm9yZGVyLXJhZGl1czoxNXB4Ij48YSBocmVmPSJodHRwOi8vc21hcnR2cGMub25s
+aW5lL2xpbmsvYy9scF9pdHVyYW4vP0U9b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3Jn
+ZS5uZXQiIHN0eWxlPSJmb250LXNpemU6MTZweDtmb250LXdlaWdodDo3MDA7dGV4dC1h
+bGlnbjpjZW50ZXI7Zm9udC1mYW1pbHk6JiMzOTtPcGVuIFNhbnMmIzM5OyxBcmlhbCxz
+YW5zLXNlcmlmO2NvbG9yOiNmZmZmZmY7dGV4dC1kZWNvcmF0aW9uOm5vbmU7Ym9yZGVy
+LXJhZGl1czoxNXB4O3BhZGRpbmc6MjVweCAzMHB4O2JvcmRlcjoxcHggc29saWQgIzI5
+NjVkMTtkaXNwbGF5OmJsb2NrIiB0YXJnZXQ9Il9ibGFuayI+RU5WSUFSIENPVEHDh8OD
+TzwvYT48L3RkPg0KPC90cj4NCjwvdGFibGU+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQg
+aGVpZ2h0PSI0MCIgYWxpZ249ImNlbnRlciIgdmFsaWduPSJtaWRkbGUiIHN0eWxlPSJm
+b250LXNpemU6MDtsaW5lLWhlaWdodDowIj48L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCBh
+bGlnbj0iY2VudGVyIiB2YWxpZ249Im1pZGRsZSIgc3R5bGU9ImNvbG9yOiMwMDI5NTU7
+Zm9udC1mYW1pbHk6JiMzOTtPcGVuIFNhbnMmIzM5OyxBcmlhbCxzYW5zLXNlcmlmO3Rl
+eHQtZGVjb3JhdGlvbjpub25lO3RleHQtYWxpZ246Y2VudGVyIj48c3BhbiBzdHlsZT0i
+Zm9udC1zaXplOjIycHg7bGluZS1oZWlnaHQ6MjZweDtmb250LXdlaWdodDo0MDAiPlJh
+c3RyZWFkb3IgY29tIFNlZ3VybyArPGJyPg0KY29iZXJ0dXJhIHBhcmEgcm91Ym8gZSBm
+dXJ0byA8L3NwYW4+PGJyPg0KPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToyMHB4O2xpbmUt
+aGVpZ2h0OjI4cHg7Zm9udC13ZWlnaHQ6NDAwIj5hIHBhcnRpciBkZSA8L3NwYW4+PHNw
+YW4gc3R5bGU9ImZvbnQtc2l6ZToyOHB4O2xpbmUtaGVpZ2h0OjQ0cHg7Zm9udC13ZWln
+aHQ6NzAwIj5SJDY5LDkwPC9zcGFuPjxzcGFuIHN0eWxlPSJmb250LXNpemU6MjBweDts
+aW5lLWhlaWdodDoyOHB4O2ZvbnQtd2VpZ2h0OjQwMCI+IHBvciBtw6pzPC9zcGFuPjxi
+cj4NCjxzcGFuIHN0eWxlPSJmb250LXNpemU6MjBweDtsaW5lLWhlaWdodDoyNnB4O2Zv
+bnQtd2VpZ2h0OjcwMCI+KyBpbnN0YWxhw6fDo28gZGUgZ3LDoXRpcy48L3NwYW4+DQo8
+L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCBoZWlnaHQ9IjUwIiBhbGlnbj0iY2VudGVyIiB2
+YWxpZ249Im1pZGRsZSIgc3R5bGU9ImZvbnQtc2l6ZTowO2xpbmUtaGVpZ2h0OjAiPjwv
+dGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGhlaWdodD0iMzciIGFsaWduPSJjZW50ZXIiIHZh
+bGlnbj0ibWlkZGxlIj4NCjx0YWJsZSB3aWR0aD0iMzIxIiBib3JkZXI9IjAiIGFsaWdu
+PSJjZW50ZXIiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCI+DQo8dGJvZHk+
+DQo8dHI+DQo8dGQgd2lkdGg9IjMyMSIgaGVpZ2h0PSIzNyIgYWxpZ249ImNlbnRlciIg
+dmFsaWduPSJtaWRkbGUiIGJnY29sb3I9IiMwMDI5NTUiIHN0eWxlPSJjb2xvcjojMDAy
+OTU1O2ZvbnQtZmFtaWx5OiYjMzk7T3BlbiBTYW5zJiMzOTssQXJpYWwsc2Fucy1zZXJp
+Zjt0ZXh0LWRlY29yYXRpb246bm9uZTt0ZXh0LWFsaWduOmNlbnRlcjt0ZXh0LXRyYW5z
+Zm9ybTp1cHBlcmNhc2U7Y29sb3I6I2ZmZmZmZjtmb250LXNpemU6MThweDtmb250LXdl
+aWdodDo3MDAiPkNPTkhFw4dBIE5PU1NBUyBWQU5UQUdFTlM6PC90ZD4NCjwvdHI+DQo8
+L3Rib2R5Pg0KPC90YWJsZT48L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCBoZWlnaHQ9IjMw
+IiBhbGlnbj0iY2VudGVyIiB2YWxpZ249Im1pZGRsZSIgc3R5bGU9ImZvbnQtc2l6ZTow
+O2xpbmUtaGVpZ2h0OjAiPjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGhlaWdodD0iMzAi
+IGFsaWduPSJjZW50ZXIiIHZhbGlnbj0idG9wIiBzdHlsZT0iZm9udC1zaXplOjA7bGlu
+ZS1oZWlnaHQ6MCI+PHRhYmxlIHdpZHRoPSI1NDAiIGJvcmRlcj0iMCIgYWxpZ249ImNl
+bnRlciIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIj4NCjx0Ym9keT4NCjx0
+cj4NCjx0ZCB3aWR0aD0iMTgwIiBoZWlnaHQ9IjM0IiBhbGlnbj0iY2VudGVyIiB2YWxp
+Z249InRvcCIgc3R5bGU9InRleHQtYWxpZ246Y2VudGVyIj48aW1nIHNyYz0iaHR0cHM6
+Ly93d3cubGV0c3BlcmZvcm0uY29tLmJyL2ZlbGwvaXR1cmFuL2h0bWwwMS9jaGVjay5w
+bmciIHdpZHRoPSIzNCIgaGVpZ2h0PSIzNCIgYWx0PSIiPjwvdGQ+DQo8dGQgd2lkdGg9
+IjE4MCIgaGVpZ2h0PSIzNCIgYWxpZ249ImNlbnRlciIgdmFsaWduPSJ0b3AiIHN0eWxl
+PSJ0ZXh0LWFsaWduOmNlbnRlciI+PGltZyBzcmM9Imh0dHBzOi8vd3d3LmxldHNwZXJm
+b3JtLmNvbS5ici9mZWxsL2l0dXJhbi9odG1sMDEvY2hlY2sucG5nIiB3aWR0aD0iMzQi
+IGhlaWdodD0iMzQiIGFsdD0iIj48L3RkPg0KPHRkIHdpZHRoPSIxODAiIGhlaWdodD0i
+MzQiIGFsaWduPSJjZW50ZXIiIHZhbGlnbj0idG9wIiBzdHlsZT0idGV4dC1hbGlnbjpj
+ZW50ZXIiPjxpbWcgc3JjPSJodHRwczovL3d3dy5sZXRzcGVyZm9ybS5jb20uYnIvZmVs
+bC9pdHVyYW4vaHRtbDAxL2NoZWNrLnBuZyIgd2lkdGg9IjM0IiBoZWlnaHQ9IjM0IiBh
+bHQ9IiI+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgaGVpZ2h0PSIxMyIgYWxpZ249ImNl
+bnRlciIgdmFsaWduPSJ0b3AiIHN0eWxlPSJmb250LXNpemU6MDtsaW5lLWhlaWdodDow
+Ij48L3RkPg0KPHRkIGhlaWdodD0iMTMiIGFsaWduPSJjZW50ZXIiIHZhbGlnbj0idG9w
+IiBzdHlsZT0iZm9udC1zaXplOjA7bGluZS1oZWlnaHQ6MCI+PC90ZD4NCjx0ZCBoZWln
+aHQ9IjEzIiBhbGlnbj0iY2VudGVyIiB2YWxpZ249InRvcCIgc3R5bGU9ImZvbnQtc2l6
+ZTowO2xpbmUtaGVpZ2h0OjAiPjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGhlaWdodD0i
+MzQiIGFsaWduPSJjZW50ZXIiIHZhbGlnbj0idG9wIiBzdHlsZT0iY29sb3I6IzAwMjk1
+NTtmb250LWZhbWlseTomIzM5O09wZW4gU2FucyYjMzk7LEFyaWFsLHNhbnMtc2VyaWY7
+dGV4dC1kZWNvcmF0aW9uOm5vbmU7dGV4dC1hbGlnbjpjZW50ZXI7Zm9udC1zaXplOjE4
+cHg7bGluZS1oZWlnaHQ6MjJweDt0ZXh0LXRyYW5zZm9ybTp1cHBlcmNhc2U7Zm9udC13
+ZWlnaHQ6NjAwIj5DT0JFUlRVUkE8YnI+DQpQQVJBPGJyPlRFUkNFSVJPUzs8L3RkPg0K
+PHRkIGhlaWdodD0iMzQiIGFsaWduPSJjZW50ZXIiIHZhbGlnbj0idG9wIiBzdHlsZT0i
+Y29sb3I6IzAwMjk1NTtmb250LWZhbWlseTomIzM5O09wZW4gU2FucyYjMzk7LEFyaWFs
+LHNhbnMtc2VyaWY7dGV4dC1kZWNvcmF0aW9uOm5vbmU7dGV4dC1hbGlnbjpjZW50ZXI7
+Zm9udC1zaXplOjE4cHg7bGluZS1oZWlnaHQ6MjJweDt0ZXh0LXRyYW5zZm9ybTp1cHBl
+cmNhc2U7Zm9udC13ZWlnaHQ6NjAwIj5DT0JFUlRVUkEgUEFSQTxicj4NClBFUkRBIFRP
+VEFMPGJyPlBPUiBDT0xJU8ODTzs8L3RkPg0KPHRkIGhlaWdodD0iMzQiIGFsaWduPSJj
+ZW50ZXIiIHZhbGlnbj0idG9wIiBzdHlsZT0iY29sb3I6IzAwMjk1NTtmb250LWZhbWls
+eTomIzM5O09wZW4gU2FucyYjMzk7LEFyaWFsLHNhbnMtc2VyaWY7dGV4dC1kZWNvcmF0
+aW9uOm5vbmU7dGV4dC1hbGlnbjpjZW50ZXI7Zm9udC1zaXplOjE4cHg7bGluZS1oZWln
+aHQ6MjJweDt0ZXh0LXRyYW5zZm9ybTp1cHBlcmNhc2U7Zm9udC13ZWlnaHQ6NjAwIj5J
+TkRFTklaQcOHw4NPIERFPGJyPg0KQVTDiSAxMDAlKiBEQTxicj5UQUJFTEEgRklQRS48
+L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPjwvdGQ+DQo8L3RyPg0KPHRyPg0K
+PHRkIGhlaWdodD0iNDAiIGFsaWduPSJjZW50ZXIiIHZhbGlnbj0ibWlkZGxlIiBzdHls
+ZT0iZm9udC1zaXplOjA7bGluZS1oZWlnaHQ6MCI+PC90ZD4NCjwvdHI+DQo8dHI+DQo8
+dGQgaGVpZ2h0PSIyMCIgYWxpZ249ImNlbnRlciIgdmFsaWduPSJtaWRkbGUiIHN0eWxl
+PSJmb250LXNpemU6MDtsaW5lLWhlaWdodDowIj48dGFibGUgd2lkdGg9IjI1MSIgYm9y
+ZGVyPSIwIiBhbGlnbj0iY2VudGVyIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9
+IjAiPg0KPHRyPg0KPHRkIGFsaWduPSJjZW50ZXIiIHZhbGlnbj0ibWlkZGxlIiBiZ2Nv
+bG9yPSIjMjk2NWQxIiBzdHlsZT0iYm9yZGVyLXJhZGl1czoxNXB4Ij48YSBocmVmPSJo
+dHRwOi8vc21hcnR2cGMub25saW5lL2xpbmsvYy9scF9pdHVyYW4vP0U9b3NzdC11c2Vy
+c0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQiIHN0eWxlPSJmb250LXNpemU6MTZweDtmb250
+LXdlaWdodDo3MDA7dGV4dC1hbGlnbjpjZW50ZXI7Zm9udC1mYW1pbHk6JiMzOTtPcGVu
+IFNhbnMmIzM5OyxBcmlhbCxzYW5zLXNlcmlmO2NvbG9yOiNmZmZmZmY7dGV4dC1kZWNv
+cmF0aW9uOm5vbmU7Ym9yZGVyLXJhZGl1czoxNXB4O3BhZGRpbmc6MjVweCAzMHB4O2Jv
+cmRlcjoxcHggc29saWQgIzI5NjVkMTtkaXNwbGF5OmJsb2NrIiB0YXJnZXQ9Il9ibGFu
+ayI+RU5WSUFSIENPVEHDh8ODTzwvYT48L3RkPg0KPC90cj4NCjwvdGFibGU+PC90ZD4N
+CjwvdHI+DQo8dHI+DQo8dGQgaGVpZ2h0PSIzMDAiIGFsaWduPSJjZW50ZXIiIHZhbGln
+bj0ibWlkZGxlIiBzdHlsZT0iZm9udC1zaXplOjA7bGluZS1oZWlnaHQ6MCI+PC90ZD4N
+CjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJsZT48L3RkPg0KDQo8L3RyPg0KPHRyPg0KPHRk
+IHdpZHRoPSI2MDAiIGhlaWdodD0iMTQ1IiBhbGlnbj0iY2VudGVyIiB2YWxpZ249Im1p
+ZGRsZSIgYmdjb2xvcj0iIzE2MWU0NSIgc3R5bGU9ImZvbnQtc2l6ZTowO2xpbmUtaGVp
+Z2h0OjA7dGV4dC1hbGlnbjpjZW50ZXIiPjxhIGhyZWY9Imh0dHA6Ly9zbWFydHZwYy5v
+bmxpbmUvbGluay9jL2xwX2l0dXJhbi8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZv
+cmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwczovL3d3dy5sZXRz
+cGVyZm9ybS5jb20uYnIvZmVsbC9pdHVyYW4vaHRtbDAxL2xvZ28taXR1cmFuLnBuZyIg
+d2lkdGg9IjI1NSIgaGVpZ2h0PSIxNDUiIGFsdD0iIj48L2E+PC90ZD4NCjwvdHI+DQo8
+dHI+DQo8dGQgaGVpZ2h0PSI1MCIgYWxpZ249ImNlbnRlciIgdmFsaWduPSJtaWRkbGUi
+IGJnY29sb3I9IiMxNjFlNDUiPjx0YWJsZSB3aWR0aD0iNTU2IiBib3JkZXI9IjAiIGFs
+aWduPSJjZW50ZXIiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCI+DQo8dGJv
+ZHk+DQo8dHI+DQo8dGQgd2lkdGg9IjU1NiIgaGVpZ2h0PSI1MCIgYWxpZ249ImNlbnRl
+ciIgdmFsaWduPSJtaWRkbGUiIGJnY29sb3I9IiMwYjExMmUiIHN0eWxlPSJjb2xvcjoj
+MDAyOTU1O2ZvbnQtZmFtaWx5OiYjMzk7T3BlbiBTYW5zJiMzOTssQXJpYWwsc2Fucy1z
+ZXJpZjt0ZXh0LWRlY29yYXRpb246bm9uZTt0ZXh0LWFsaWduOmNlbnRlcjt0ZXh0LXRy
+YW5zZm9ybTp1cHBlcmNhc2U7Y29sb3I6I2ZmZmZmZjtmb250LXNpemU6MTRweDtmb250
+LXdlaWdodDo0MDAiPkVzc2Ugw4kgdW0gRS1NQUlMIGRlIHVtIFJlcHJlc2VudGFudGUg
+QXV0b3JpemFkbyBJdHVyYW48L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPjwv
+dGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGhlaWdodD0iMzAiIGFsaWduPSJjZW50ZXIiIHZh
+bGlnbj0ibWlkZGxlIiBiZ2NvbG9yPSIjMTYxZTQ1IiBzdHlsZT0iZm9udC1zaXplOjA7
+bGluZS1oZWlnaHQ6MCI+PC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgaGVpZ2h0PSI4MyIg
+YWxpZ249ImNlbnRlciIgdmFsaWduPSJtaWRkbGUiIGJnY29sb3I9IiMwYjExMmUiIHN0
+eWxlPSJjb2xvcjojZDFkMWQxO2ZvbnQtZmFtaWx5OiYjMzk7T3BlbiBTYW5zJiMzOTss
+QXJpYWwsc2Fucy1zZXJpZjt0ZXh0LWRlY29yYXRpb246bm9uZTt0ZXh0LWFsaWduOmNl
+bnRlcjtmb250LXNpemU6MTJweDtmb250LXdlaWdodDo0MDAiPsKpIENvcHlyaWdodCAy
+MDE4IEl0dXJhbjxicj4NCipDYXNvIGEgSXR1cmFuIG7Do28gbG9jYWxpemUgc2V1IHZl
+w61jdWxvIHJlY2ViYSBvIHZhbG9yIGRlIGluZGVuaXphw6fDo28gZW0gYXTDqSAxMDAl
+IGRhIHRhYmVsYSBGSVBFLiA8L3RkPg0KPC90cj4NCjx0Ym9keT4NCjwvdGJvZHk+DQo8
+L3RhYmxlPjwvdGQ+DQo8L3RyPg0KPC90Ym9keT4NCjwvdGFibGU+DQo8L2Rpdj4NCg0K
+DQoNCg0KDQoNCg0KPHRhYmxlIGFsaWduPSJjZW50ZXIiIGJvcmRlcj0iMCIgY2VsbHBh
+ZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIj4NCjx0cj48dGQgYWxpZ249ImNlbnRlciI+
+DQo8YnI+PGJyPjxicj48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5z
+LXNlcmlmOyBmb250LXNpemU6MTRweDsgY29sb3I6IzAwMDAwMDsiPkVudmlhZG8gcGFy
+YTogb3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ8L3NwYW4+DQo8YnI+PHNw
+YW4gc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1zaXpl
+OjE0cHg7IGNvbG9yOiMwMDAwMDA7Ij5JZGVudGlmaWNhw6fDo28gZGUgZW52aW86IDAw
+Nzc3NzI8L3NwYW4+DQo8YnI+PGJyPjxicj48YSBocmVmPSJodHRwOi8vc21hcnR2cGMu
+b25saW5lL2xpbmsvbS9pbWQvP0U9b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5u
+ZXQiIHRhcmdldD0iX2JsYW5rIj48aW1nIGJvcmRlcj0iMCIgc3JjPSJodHRwOi8vc21h
+cnR2cGMub25saW5lL2ltZy9sb2dvLmdpZiIgYWx0PSJJTUQgNzc3NzIiIHN0eWxlPSJt
+YXgtd2lkdGg6MjAwcHg7IGRpc3BsYXk6YmxvY2s7Ij48L2E+DQo8YnI+PGJyPjxhIGhy
+ZWY9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvcmVtb3Zlci8/RT1vc3N0LXVzZXJzQGxp
+c3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LWZh
+bWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAw
+MDAwOyI+PHN0cm9uZz5Ow6NvIGRlc2VqbyBtYWlzIHJlY2ViZXI8L3N0cm9uZz48L2E+
+DQo8YnI+PGJyPjxicj48YnI+PGltZyBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUv
+cmVhZC8/Qz1scF9pdHVyYW4mRT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5l
+dCIgYm9yZGVyPSIwIiB3aWR0aD0iMCIgaGVpZ2h0PSIwIiBhbHQ9IklNRCA3Nzc3MiIg
+c3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij4NCjwvdGQ+PC90cj4NCjwvdGFibGU+DQo8L2Jv
+ZHk+DQo8L2h0bWw+
+----boundary_77772_d88a9979-e941-4fb5-8f8d-fd485bd2241e--
 
-=20
-
-Prezzi molto bassi rispetto ai toner originali ma senza compromettere la qu=
-alita'
-
-=20
-
-Selezioniamo i migliori Toner per offrirti la massima qualita', I nostri to=
-ner hanno qualita' e durata paragonabili agli originali e vengono supervisi=
-onati e testati per assicurarare la massima qualita'
-
-=20
-
-Rispondi a questa email indicando il modello della tua stampante, ti invier=
-emo un preventivo
-
-=20
-
-Se rispondi a questa email ti invieremo anche tutti i nostri contatti azien=
-dali e le nostre recensioni, cosi' potrai valutare la nostra serieta'.
-
-=20
-
-=20
-
-Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
-desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
-premi qui ed invia per cancellarti
-
-=20
 
 
-------=_NextPart_001_059C_06083A9C.1C8C5425
-Content-Type: text/html; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-<HEAD><TITLE></TITLE>
-<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
-<BODY>
-<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
-<TR>
-<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
-<P>&nbsp;</P>
-<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
-n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
-TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
-ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
-<TR>
-<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
- COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
-x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imagizer.=
-imageshack.com/img924/8274/L3kubR.jpg" width=3D550 height=3D207>=20
-<P align=3Dcenter><STRONG>TONER COMPATIBILI DI ALTA QUALITA'</STRONG></P>
-<P>&nbsp;</P>
-<UL>
-<LI><FONT color=3D#ff0000 size=3D5>Prezzi molto bassi rispetto ai toner ori=
-ginali ma senza compromettere la qualita'</FONT>=20
-<P>&nbsp;</P>
-<LI><U>Selezioniamo i migliori&nbsp;Toner</U> per offrirti la massima quali=
-ta', I nostri toner hanno qualita' e durata paragonabili agli originali e v=
-engono supervisionati e testati per assicurarare la massima qualita'=20
-<P>&nbsp;</P>
-<LI><A href=3D"mailto:offerte@ml.toneritaly.info=3Fsubject=3Dpreventivo"><F=
-ONT color=3D#ff0000>Rispondi a questa email indicando il modello della tua =
-stampante, ti invieremo un preventivo</FONT></A>=20
-<P>&nbsp;</P>
-<LI>Se rispondi a questa email ti invieremo anche tutti i nostri contatti a=
-ziendali e le nostre recensioni, cosi' potrai valutare la nostra serieta'. =
-</LI></UL>
-<P>&nbsp;</P><IMG border=3D0 hspace=3D0 src=3D"https://imagizer.imageshack.=
-com/img924/6343/WlKti0.png" width=3D535 height=3D447>=20
-<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
-vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
-ail con "cancellami" </FONT><A href=3D"mailto:offerte@ml.toneritaly.info=3F=
-subject=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancella=
-rti</FONT></A></TD></TR>
-<TR></TR></TABLE></TD></TR></TABLE>
-<P>&nbsp;</P></BODY>
-------=_NextPart_001_059C_06083A9C.1C8C5425--
 
 
---===============3479988870447660732==
+--===============1555494083634262442==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3479988870447660732==
+--===============1555494083634262442==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -217,5 +332,8 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3479988870447660732==--
+--===============1555494083634262442==--
+
+
+
 
