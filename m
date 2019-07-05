@@ -2,82 +2,90 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 01C4E5960A
-	for <lists+osst-users@lfdr.de>; Fri, 28 Jun 2019 10:26:28 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 4F45C60033
+	for <lists+osst-users@lfdr.de>; Fri,  5 Jul 2019 06:31:40 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hgmCx-00021e-JN
-	for lists+osst-users@lfdr.de; Fri, 28 Jun 2019 08:26:11 +0000
+	id 1hjFse-0008Mp-2g
+	for lists+osst-users@lfdr.de; Fri, 05 Jul 2019 04:31:28 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <karina@redebahia.com.br>) id 1hgmCw-00020u-9j
- for osst-users@lists.sourceforge.net; Fri, 28 Jun 2019 08:26:10 +0000
+ (envelope-from <jairnetomarketing@confidor.com.br>)
+ id 1hjFsW-0008MI-PA
+ for osst-users@lists.sourceforge.net; Fri, 05 Jul 2019 04:31:20 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=From:Content-Transfer-Encoding:Content-type:
  MIME-Version:To:Subject:Date:Sender:Reply-To:Message-ID:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=G/eGpUYwoBBSY2nixebEs4kWGt5cnn26S6vEkYn4LWE=; b=CyT8glbYBiGrfn6WbzbOFeeraO
- DorILcbWKsiDdwlqjVkubG7G/EHyHdsJ7Gv+p1/7Atmk++imXYjAMMc6yLPjZnqTLTeNC9yfSlmFS
- +R8GwnJLjFDlj9XoozGkLeme2DKvHY6D0CDCv/AsH7hGwAuuDCDSVFYmiragmniJ3ihM=;
+ bh=1Z5XDmRnZ+7JqiERZWI+rHae+M/iqlH5AGIGdPzY4uY=; b=GQxKQShacnzq+KYHCfedwhvyvj
+ dhr074RwKhqRr/eeDqxfflpe1S/r7a4arIH9B/lgDJSZFy9KvREH9rrv9TbHFVFpjCXjHfv9Ro4zU
+ Lrs36sPIIb8Wq+aDlB7q0sVz00yO3bSmkBYQ2RKIGpRdIn3vg3TW0Ul9kmS4iWZscdjY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=From:Content-Transfer-Encoding:Content-type:MIME-Version:To:Subject:Date:
  Sender:Reply-To:Message-ID:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=G/eGpUYwoBBSY2nixebEs4kWGt5cnn26S6vEkYn4LWE=; b=J
- 5afEVSyqma6BTzjnCh2bEVP+9H8J0MsdnYdGTGyLxdUYdOP40urj46oMpU/RrZNXeRpaRHJ1MrehA
- sqrL2QoZGGqucmSX+9wtWDPDvPYZNwo183UnApjpB6THseVH0eI0tvOPkXbQ0bHSMW1SaCWFf1liN
- mjH53IOLz1rKZ45c=;
-Received: from hm3562-136.email.locaweb.com.br ([186.202.21.136]
- helo=shared-hm3562.email.locaweb.com.br)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
- id 1hgmD6-00Efxb-7u
- for osst-users@lists.sourceforge.net; Fri, 28 Jun 2019 08:26:25 +0000
-Received: from hm3562.email.locaweb.com.br (hm3562.email.locaweb.com.br
- [186.202.21.130])
- by shared-hm3562.email.locaweb.com.br (Postfix) with ESMTP id EEA5CAE861C29
- for <osst-users@lists.sourceforge.net>; Fri, 28 Jun 2019 05:04:53 -0300 (-03)
-x-locaweb-id: z2UYoLdDm7M4sf3Xw94IUt2joM9nX5UOG3TMOmYI40TbDtj0GnlSDgwfEZ94C419P-ipAxjFXVaOuDSN-iLxhjXpakqMfdbDnsgNjAX6Fsep8G36FMPWi8MaAoz_SV3vY9KI0oHFr-2nRBhOJTM8AkqVk-Jl9ba_IKCou4y0UoTPylp5ZT6l7QVSS1TLMpue08e-svDtSAOvM5cz_HI0GQ==
- NmI2MTcyNjk2ZTYxNDA3MjY1NjQ2NTYyNjE2ODY5NjEyZTYzNmY2ZDJlNjI3Mg==
-Received: from apu0002.locaweb.com.br (apu0002.email.locaweb.com.br
- [187.45.217.3])
- by hm3562.email.locaweb.com.br (Postfix) with ESMTP id 00E7FAE815066
- for <osst-users@lists.sourceforge.net>; Fri, 28 Jun 2019 05:02:48 -0300 (-03)
-Received: from POLLUX13-0004.locaweb-net.locaweb.com.br (unknown
- [191.252.19.128])
- by apu0002.locaweb.com.br (Postfix) with SMTP id 45FC514772A
- for <osst-users@lists.sourceforge.net>; Fri, 28 Jun 2019 04:56:04 -0300 (BRT)
-Date: Fri, 28 Jun 2019 04:56:04 -0300
+ List-Owner:List-Archive; bh=1Z5XDmRnZ+7JqiERZWI+rHae+M/iqlH5AGIGdPzY4uY=; b=Q
+ u1IDBp8G2mFSbc34PRoCjajBtsKS5osgPd0oC+IIhVI3X8Qoxd9Ar1A9vXQa2uMOfFiFHmgWX/cZN
+ OdW3DDExvT6sZqXDdpAGVdLiGYXwhAr5VyKHogLvM+s6z0nhXfpSSbWHWYuHGdGV4/OYPb2QDvxBN
+ Nt3GEHq7HSO3J8rY=;
+Received: from hm3563-186.email.locaweb.com.br ([186.202.21.186]
+ helo=shared-hm3563.email.locaweb.com.br)
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1hjFsc-008YLP-Cs
+ for osst-users@lists.sourceforge.net; Fri, 05 Jul 2019 04:31:29 +0000
+Received: from hm3563.email.locaweb.com.br (hm3563.email.locaweb.com.br
+ [186.202.21.180])
+ by shared-hm3563.email.locaweb.com.br (Postfix) with ESMTP id 9B06128210B9A
+ for <osst-users@lists.sourceforge.net>; Fri,  5 Jul 2019 07:01:39 -0300 (-03)
+x-locaweb-id: hYHDafgUTsKi2nWRPGNsMrUAKg8we-zWNWnSG3DuU4hEHZhzPhmN8d9XJT6oTnp3Iyg9XZPZONOUN91Q0v3QrlMFvLktb-EXgzVNF1uyx_ZSH2UYM-0JTEsgyjKu2ZFox8DqawsthjDhwk4U0EfrjbWgmR4ydZqhwpZzgY5apSGeZ1ATwr0tJ5nk46c561_NUOKOn0_cuiM-Htj-InGVlA==
+ NmE2MTY5NzI2ZTY1NzQ2ZjZkNjE3MjZiNjU3NDY5NmU2NzQwNjM2ZjZlNjY2OTY0NmY3MjJlNjM2ZjZkMmU2Mjcy
+Received: from apu0001.locaweb.com.br (apu0001.email.locaweb.com.br
+ [187.45.217.2])
+ by hm3563.email.locaweb.com.br (Postfix) with ESMTP id D1F9528207228
+ for <osst-users@lists.sourceforge.net>; Fri,  5 Jul 2019 07:01:00 -0300 (-03)
+Received: from POLLUX13-0005.locaweb-net.locaweb.com.br (unknown
+ [191.252.19.129])
+ by apu0001.locaweb.com.br (Postfix) with SMTP id 9B9C730405BA
+ for <osst-users@lists.sourceforge.net>; Fri,  5 Jul 2019 01:09:22 -0300 (BRT)
+Date: Fri, 05 Jul 2019 01:09:22 -0300
 To: osst-users@lists.sourceforge.net
 X-PHP-Originating-Script: 0:send.php
 MIME-Version: 1.0
-From: =?UTF-8?B?QmFuY28gZG8gQnJhc2ls?= <karina@redebahia.com.br>
-X-Spam-Score: 5.2 (+++++)
+From: =?UTF-8?B?TmV0ZmxpeA==?= <jairnetomarketing@confidor.com.br>
+X-Spam-Score: 7.4 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+ [URIs: crominianoticia.com.br]
+ 1.9 URIBL_ABUSE_SURBL Contains an URL listed in the ABUSE SURBL blocklist
+ [URIs: crominianoticia.com.br]
+ 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
+ [186.202.21.186 listed in wl.mailspike.net]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: amaralinago.com.br]
+ for more information. [URIs: uploaddeimagens.com.br]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
- [SPF failed: Please see http://www.openspf.net/Why?s=mfrom;
- id=karina%40redebahia.com.br; ip=186.202.21.136;
- r=util-malware-1.v13.lw.sourceforge.com]
- 0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
+ 0.7 HTML_IMAGE_ONLY_20     BODY: HTML: images with 1600-2000 bytes of words
  1.0 HTML_MESSAGE           BODY: HTML included in message
  2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.3 HTML_SHORT_LINK_IMG_3  HTML is very short with a linked image
  1.0 MISSING_MID            Missing Message-Id: header
+ 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
  0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+ 0.1 HDRS_LCASE_IMGONLY Odd capitalization of message headers + image-only
+ HTML
  0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1hgmD6-00Efxb-7u
-Subject: [Osst-users]
- =?UTF-8?B?QXR1YWxpemHDp8OjbyBuZWNlc3PDoXJpYS4gQmFuY28gZG8gQnJhc2lsIFs=?=055106621]
+X-Headers-End: 1hjFsc-008YLP-Cs
+Subject: [Osst-users] =?utf-8?q?Atualiza=C3=A7=C3=A3o_de_dados_necess?=
+ =?utf-8?q?=C3=A1ria=2E_Conta_Netflix_suspensa_9815825?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -89,11 +97,11 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5815931752962689477=="
+Content-Type: multipart/mixed; boundary="===============4737567936951941378=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1hgmCx-00021e-JN@sfs-ml-1.v29.lw.sourceforge.com>
+Message-Id: <E1hjFse-0008Mp-2g@sfs-ml-2.v29.lw.sourceforge.com>
 
---===============5815931752962689477==
+--===============4737567936951941378==
 Content-type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 
@@ -125,28 +133,13 @@ ine-height:0;mso-hide:all;overflow:hidden;visibility:hidden;"></div>=20
 <td align=3D"center" class=3D"fulldisplay">
 <span style=3D"font-family: 'Arial', sans-serif; display:block; padding:10p=
 x 0px; color:#767676; font-size:11px;">
- <b></b>Caso n=C3=A3o visualize,<a href=3D"http://nbrn.amaralinago.com.br/n=
-c?id=3Dnlxca44e_l2ilcg_3hchazje58uho65erkxcz_zfymr2qr2z_g4zg2r50cnwyfzxd445=
-tk08lpn37qiqqf4wf7zpw8lkw_y_z4qhh253cih4_ac2k7iuio3ltz1kxw08xocahqt84ax4fxv=
-y1hwaso81hebbq0ohoxz__epc9yej46ui_b4w_4iysznt9um4r_x7wqa2lsd0u6t6knhystdw5h=
-5_pg6bl9zox4ahou5np8wf4jswgc07flrolh1jpz0akwhlcmvg2_w674_27_tx6ac7mgjellbr3=
-5v_5bl_jj802mqstsrp0crkubqqsp6ghufz_obz27yz_br_z_2_8_l_gb7jut1_kqhjbzzgrlrm=
-_odt4wqz__f541830mnpuecg8_652r_ua2_gc5_c6vp1icpupv4_mbl76_l1nzndb1heqe5toir=
-9tk8cpcy0_qus7wupgxb_r8fpw4of5ksr06zkw1_rupv4ub93skbqw0_bah70i6y_j3qhvvkpp5=
-kq7w6l18k45__a9lfwg_7xij2d0wab_t4vs0r5_ij1w0_kocbn2eft03_pr9_tt9nfru6_peg_k=
-y5yehwmv0hi9kc3_6z83wj4pha_d85yl22_zk_i_11_39jeox4lixa0qs5dni35dpjdm_vt4qlu=
-qkirhw__hdkxhqbt00baf1t_hy1nb_nach2c7i_c993t6_measq480csdgexd_kbg5dqfbxnp4t=
-fdvht7lkc6r7dxgr4djj_s1jh1_aonjrzc3d1gpy2vvmfemxk1_ru023kp30_jz69t3ol_bher2=
-eg2gx8k87s8b0_9ez0ohbuxuie_3jyexo_qcxpqsr_4ez4fvyb27s_ev2ztv16c1yf2h8gpq08s=
-4oc4087gx3rka025xk_9630hw0i0qfy0kmg2o3gia2q6v2_xtdhj1et9anpq2u8x_j_66bqhxjb=
-gt7laebuxjnc9j2fuhwa02zz9v4kg_no0_b1v1_iynv98_dyyg1x81wq6_wfcthhvw2_06e6_ag=
-mo1m4tyg6vp34vxltr_fa4htkiqgnkpcqwuyisfcokvwv7zj210y_bcxexwl1fyunuajgr6sh1l=
-bu2lfkcckceqlhz9ujm0gh_azz2rl56d36gdcoo454pa1bglxor3b_whopljnj41d6_ztkmrhv4=
-e7ui873kqu_v_e3rco6bm7bj_li"class=3D"button-link"  style=3D"font:11px Arial=
-,Helvetica,sans-serif;color:#3a6ac3" target=3D"_blank">acesse este link</sp=
-an>
+ <b></b>Caso n=C3=A3o visualize,<a href=3D"http://serv4.crominianoticia.com=
+.br/nf?id=3D565ycst4fh3iuv_ef_9wb5sh_e2338ssl7hyankfudyv3n_wyxlgr_kpyf1lcya=
+bor5y_38crwa0jjn_3j57qyqleb3gll1bndty_qtuv" class=3D"button-link"  style=3D=
+"font:11px Arial,Helvetica,sans-serif;color:#3a6ac3" target=3D"_blank">aces=
+se este link</span>
 <img style=3D"-webkit-user-select: none;" src=3D"https://uploaddeimagens.co=
-m.br/images/002/161/219/original/img.png?1561679275"></td><p></a></tr>=20
+m.br/images/002/175/129/full/img_promo.png?1562281915"></td><p></a></tr>=20
    </tbody>
   </table></div>  =20
  </body>
@@ -156,14 +149,15 @@ m.br/images/002/161/219/original/img.png?1561679275"></td><p></a></tr>=20
 
 
 
---===============5815931752962689477==
+
+--===============4737567936951941378==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5815931752962689477==
+--===============4737567936951941378==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -174,4 +168,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5815931752962689477==--
+--===============4737567936951941378==--
