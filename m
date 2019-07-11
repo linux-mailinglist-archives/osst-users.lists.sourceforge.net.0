@@ -2,79 +2,95 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 2E64E62FCE
-	for <lists+osst-users@lfdr.de>; Tue,  9 Jul 2019 06:56:05 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 9D7D0651AC
+	for <lists+osst-users@lfdr.de>; Thu, 11 Jul 2019 08:01:54 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hkiAd-0008JD-Tm
-	for lists+osst-users@lfdr.de; Tue, 09 Jul 2019 04:56:03 +0000
+	id 1hlS9Q-0002Il-Ru
+	for lists+osst-users@lfdr.de; Thu, 11 Jul 2019 06:01:52 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <infos@carnuville.top>) id 1hkiAc-0008J5-BY
- for osst-users@lists.sourceforge.net; Tue, 09 Jul 2019 04:56:02 +0000
+ (envelope-from <offerte@ml.toneritaly.info>) id 1hlS9Q-0002Ia-0S
+ for osst-users@lists.sourceforge.net; Thu, 11 Jul 2019 06:01:52 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Message-ID:Date:Content-Type:Subject:To:Reply-To:
+ From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=IjHaZyneiZf4RNK6C0ZHvzygQrpI8vTAWW9ayllDQFI=; b=QyCTA1UXTh8n0V+qRaza9LZpA8
- NXfCUsE0Qfpt7KhYE0j1Hdht/rnkIcL9gz+JKtmOWcubsPMR6TifEU8nqaKDIvsjhGem3kDnlMCAa
- 3IuPDRwkFy7erbEpEL3gx6IxSWcv7Hdg0YsabO6G8MQq49qTSFx1Hsa+J76dd7aMnZy8=;
+ bh=HAh/F//A4CHb6uJMrIeujP+KWvmsbMYxZZeqVXv4Kq8=; b=VKbXIkexto8prieWLnpFlWTd63
+ r2U93DT2Tc2mrmlw1YIsgDkPSo7QL/uD8tJcgELVu7u04IaZHdC4S/uVXyfcmHmBcvjHZ8CW4jc/K
+ Sxk5q/MRfVWwt4QyjN5nv8wQglCsFOOdzgI4ffr9MES4hQ1T1GWmY74w+zTRWU985EnU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
- From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Message-ID:Date:Content-Type:Subject:To:Reply-To:From:MIME-Version:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=IjHaZyneiZf4RNK6C0ZHvzygQrpI8vTAWW9ayllDQFI=; b=k
- cZ6IzTFtJQchRV0ErKHxH9A7rIC2V2QLZX6Q+NOMGmvtfo5m722HiN9A8rYErfnqV/4rfGZgkCoGc
- f/qG2lbW+DNOBJDhu00xfI5fDombQBx3n3DYrVzqgZZpz2tAkU6DgOllge3G+acZHtkhMNm4y6QVy
- 3x6B7djp8E7B3SqI=;
-Received: from smtp06.smtpout.orange.fr ([80.12.242.128]
- helo=smtp.smtpout.orange.fr)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps (TLSv1:DHE-RSA-AES128-SHA:128)
- (Exim 4.90_1) id 1hkiAZ-00BGIh-4Z
- for osst-users@lists.sourceforge.net; Tue, 09 Jul 2019 04:56:02 +0000
-Received: from durker ([10.163.22.124]) by mwinf5d41 with ME
- id aUvr2000e2geDya03UvrAp; Tue, 09 Jul 2019 06:55:52 +0200
-X-ME-Helo: durker
-X-ME-Date: Tue, 09 Jul 2019 06:55:52 +0200
-X-ME-IP: 10.163.22.124
-Date: Tue, 9 Jul 2019 04:55:51 +0000
-To: osst-users@lists.sourceforge.net
-From: with a brand new card terminal <infos@carnuville.top>
-Message-ID: <ef5b4dea18ac73b89b14e10ab9c0b6ba@durker>
-X-Priority: 3
-X-Mailer: poilpotee
+ List-Owner:List-Archive; bh=HAh/F//A4CHb6uJMrIeujP+KWvmsbMYxZZeqVXv4Kq8=; b=b
+ nuUNt6QjJOQgvNL5ydFx9EJQk4acZW5p2Io6GHI4mf4OrJXDiEzxYuAB3n105iHLLmqSVr7WcpUBo
+ Ao3TFMnGprjHU60dKO1rZDYhKXa4OhV2qJ0b4Gzn7G7o2pbgCXxd4pNqrmU586XtJj/pdWoJZ26V+
+ 68r9tt/L+dhvDaNw=;
+Received: from ml004-b.dnshigh.com ([193.70.146.210])
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
+ id 1hlS9O-00FK8p-Im
+ for osst-users@lists.sourceforge.net; Thu, 11 Jul 2019 06:01:51 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=ml.toneritaly.info; s=default; h=Message-ID:Date:Content-Type:Subject:To:
+ Reply-To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=HAh/F//A4CHb6uJMrIeujP+KWvmsbMYxZZeqVXv4Kq8=; b=KXPmIrNTH9+KoGbaVs0BgM429a
+ +QynGwZRKf3WojU5s52ctrhBKGIcQa/G3lQZvXDzEvgmw3OaWEbyjg1kodAm97lXF+hG4QJl9smcG
+ DV7aj4tFbexh2qDRDlvfr11Gm6hcTMn/4SS+9QwaR+U7V3hA/rYjyUOyfcMD8UJTjZqOp0rvE2Wht
+ Bbi7lrbu/ZwOtvfYeXtQb5N9cfIej5ymvcEegIMVBw5SmPJtAh9Kqgsafm6l3D1zXAaV+IKLAP4He
+ f9UI6e05ceZ9OXLnrOkpvXQfjd7P1pCji4svMpCqQkuLru5PjjKZ81eC0jUO9kO3BGk0swqXkv5h9
+ 0SO3ch2g==;
+Received: from host74-49-dynamic.248-95-r.retail.telecomitalia.it
+ ([95.248.49.74]:50136)
+ by ml004.dnshigh.com with esmtpsa (TLSv1:DHE-RSA-AES256-SHA:256)
+ (Exim 4.92) (envelope-from <offerte@ml.toneritaly.info>)
+ id 1hlS9H-0000Vp-SH
+ for osst-users@lists.sourceforge.net; Thu, 11 Jul 2019 08:01:43 +0200
 MIME-Version: 1.0
-X-Spam-Score: 7.2 (+++++++)
+From: "Toner Originali" <offerte@ml.toneritaly.info>
+To: osst-users@lists.sourceforge.net
+Date: Thu, 11 Jul 2019 08:01:41 +0200
+Message-ID: <2552216180960238467784@user-PC>
+X-AntiAbuse: This header was added to track abuse,
+ please include it with any abuse report
+X-AntiAbuse: Primary Hostname - ml004.dnshigh.com
+X-AntiAbuse: Original Domain - lists.sourceforge.net
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - ml.toneritaly.info
+X-Get-Message-Sender-Via: ml004.dnshigh.com: authenticated_id: fjmllqck/from_h
+X-Authenticated-Sender: ml004.dnshigh.com: offerte@ml.toneritaly.info
+X-Spam-Score: 6.2 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: comptapasdesouci.fr]
- 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
- blocklist [URIs: comptapasdesouci.fr]
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [80.12.242.128 listed in list.dnswl.org]
- 0.1 URIBL_SBL_A Contains URL's A record listed in the Spamhaus SBL
- blocklist [URIs: comptapasdesouci.fr]
- 0.6 URIBL_SBL Contains an URL's NS IP listed in the Spamhaus SBL
- blocklist [URIs: comptapasdesouci.fr]
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ for more information. [URIs: imageshack.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 HTML_IMAGE_RATIO_08    BODY: HTML has a low ratio of text to image area
+ 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
+ 1.3 HTML_IMAGE_ONLY_24     BODY: HTML: images with 2000-2400 bytes of words
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
- 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100]
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 2.5 IMG_ONLY_FM_DOM_INFO   HTML image-only message from .info domain
  0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1hkiAZ-00BGIh-4Z
-Subject: [Osst-users] Reach out more customers
+X-Headers-End: 1hlS9O-00FK8p-Im
+Subject: [Osst-users] Toner compatibili - Nuovi listini per l'estate e
+ prezzi rivisti per molti toner: Chiedici un preventivo
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -86,181 +102,114 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============8931698013011964218=="
+Reply-To: offerte@ml.toneritaly.info
+Content-Type: multipart/mixed; boundary="===============5738465076435698689=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============8931698013011964218==
+
+--===============5738465076435698689==
 Content-Type: multipart/alternative;
-	boundary="b1_ef5b4dea18ac73b89b14e10ab9c0b6ba"
-Content-Transfer-Encoding: 8bit
-
---b1_ef5b4dea18ac73b89b14e10ab9c0b6ba
-Content-Type: text/plain; charset=us-ascii
-
-	
-Taking card payments
-has never been so easy!	
-Reach out more customers with a brand new card terminal	
-Compare quotes for free	
-main
-SAVE UP TO 40% on card processing fees with the right payment system for your business !	
-Wireless payments
-Wide range of terminals
-Speed up checkout
-Be better protected 
-against fraud
+	boundary="----=_NextPart_001_37BC_258C1392.1F91440C"
 
 
+------=_NextPart_001_37BC_258C1392.1F91440C
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-Follow this link to stop receiving messages about Card Terminals.
-You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
-You are receiving this message on your email address because you are in our list of managers and professionals.
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL
+=20
 
+TONER COMPATIBILI DI ALTA QUALITA'
 
---b1_ef5b4dea18ac73b89b14e10ab9c0b6ba
-Content-Type: text/html; charset=us-ascii
+=20
 
-<!DOCTYPE html>
-			                   <html>
-				               	<head>
-					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">			
-				                </head>
-				                <body>
-					            	<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">
-<center>
-<!--[if (gte mso 9)|(IE)]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 9]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 8]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 7]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]-->
-<table bgcolor="#FFFFFF" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%" border="0" cellpadding="0" cellspacing="0">
+Prezzi molto bassi rispetto ai toner originali ma senza compromettere la qu=
+alita'
 
-<tbody><tr><td><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%;" border="0" cellpadding="0" cellspacing="0">
+=20
 
-<tbody><tr><td width="20"></td><td height="40"></td><td width="20"></td></tr>
-<tr><td width="20"></td><td align="center"><a href="http://comptapasdesouci.fr/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><span style="font-family:Raleway, Arial, Helvetica, sans-serif; font-size:36px ; font-weight:bold; color:#000000;">
-Taking <font color="#8169E4">card payments</font><br>
-has never been so easy!
-</span></a></td><td width="20"></td></tr>
-<tr><td width="20"></td><td height="15"></td><td width="20"></td></tr>
-<tr><td width="20"></td><td align="center"><span style="font-family:Raleway, Arial, Helvetica, sans-serif; font-size:18px ; font-weight:normal; color:#000000;">Reach out more customers with a brand new card terminal</span></td><td width="20"></td></tr>
-<tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
-<tr><td width="20"></td><td align="center"><a href="http://comptapasdesouci.fr/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://comptapasdesouci.fr/cbuk/cta.png" width="353" border="0" alt="Compare quotes for free" style="width:100%; max-width:353px"></a></td><td width="20"></td></tr>
-<tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
+Selezioniamo i migliori Toner per offrirti la massima qualita', I nostri to=
+ner hanno qualita' e durata paragonabili agli originali e vengono supervisi=
+onati e testati per assicurarare la massima qualita'
 
-</tbody></table></td></tr>
+=20
 
-<tr>
-    <td class="two-column" style="text-align:center;font-size:0; width: 100%; max-width: 600px"><!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" border="0"  cellpadding="0" cellspacing="0" >
-                        <tr>
-                        <td width="300" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table align="left" class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:300px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0">
-        <tbody><tr>
-          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;" border="0" width="300">
-              <tbody><tr>
-                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><a href="http://comptapasdesouci.fr/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://comptapasdesouci.fr/cbuk/main.jpg" width="300" height="287" border="0" alt="main"></a></td>
-              </tr>
-            </tbody></table></td>
-        </tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="300" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table align="right" class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:300px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0">
-        <tbody><tr>
-          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;" border="0" width="300">
-              <tbody><tr><td width="15"></td><td height="20"></td></tr>
-              <tr><td width="15"></td><td bgcolor="#F0F0F0"><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:285px; width:100%;" border="0" cellpadding="0" cellspacing="0">
-              
-              <tbody><tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
-              <tr><td width="20"></td><td align="left"><span style="font-family:Raleway,Arial, Helvetica, sans-serif; font-size:16px ; line-height: 22px; font-weight:bold; color:#000000;"><a href="http://comptapasdesouci.fr/cbuk/card/" style="font-family:Raleway, Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><font color="#8169E4">SAVE UP TO 40%</font></a> on card processing fees with the right payment system for your business !
-</span></td><td width="20"></td></tr>
-              
-              <tr><td width="20"></td><td align="left"><span style="font-family:Raleway, Arial, Helvetica, sans-serif; font-size:14px ; line-height:22px; font-weight:normal; color:#000000;">
-              <ul>
-              <li>Wireless payments</li>
-<li>Wide range of terminals </li>
-<li>Speed up checkout</li>
-<li>Be better protected <br>
-    against fraud</li>
+Rispondi a questa email indicando il modello della tua stampante, ti invier=
+emo un preventivo
+
+=20
+
+Se rispondi a questa email ti invieremo anche tutti i nostri contatti azien=
+dali e le nostre recensioni, cosi' potrai valutare la nostra serieta'.
+
+=20
+
+=20
+
+Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
+desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
+premi qui ed invia per cancellarti
+
+=20
 
 
-              </ul>
-              </span></td><td width="20"></td></tr>
-              <tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
-              
-              
-              </tbody></table></td></tr>
-            </tbody></table></td>
-        </tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-      <![endif]--></td>
-  </tr>
+------=_NextPart_001_37BC_258C1392.1F91440C
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-<tr><td height="20"></td></tr>
-<tr>
-  <td align="center"><a href="http://comptapasdesouci.fr/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://comptapasdesouci.fr/cbuk/operateurs.jpg" width="600" border="0" alt="" style="width:100%; max-width:600px"></a></td></tr>
-
-</tbody></table>
-<!--[if gte mso 7]>
-</td></tr></table>
-<![endif]--> 
-<!--[if gte mso 8]>
-</td></tr></table>
-<![endif]--> 
-<!--[if gte mso 9]>
-</td></tr></table>
-<![endif]--> 
-<!--[if (gte mso 9)|(IE)]>
-</td></tr></table>
-<![endif]-->
-<td colspan="2" align="center" style="background:#f8f8f8;">
-<br>
-<br><span style="font-size:10px;"><a href="http://comptapasdesouci.fr/cbuk/gasp/?email=X8WT9WJX2JUP58rJG7VY5B10W8Hie00QI/iy5Yq0S+AICGyzByiYPis/hggopWaxC9WDclcjnh2dU1tkVJN+65H64gwuvk5OZMsL6QuIxwFjSJMTdHv7fKdiKkan1WpngXEmCeBdvtCemDMQn7imikidNeTO29WEudTSbluRUcw=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving messages about <strong>Card Terminals</strong>.<br>
-                    You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="http://comptapasdesouci.fr/cbuk/bob/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
-You are receiving this message on your email address because you are in our list of managers and professionals.<br>
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL<br>
-</span>
-<br>
-</td>
-</center>
-</body>
-
-				                </body>
-			                   </html>
-
-
-
---b1_ef5b4dea18ac73b89b14e10ab9c0b6ba--
+<HEAD><TITLE></TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TR>
+<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
+<P>&nbsp;</P>
+<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
+n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
+TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
+ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TR>
+<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
+ COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
+x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imagizer.=
+imageshack.com/img924/8274/L3kubR.jpg" width=3D550 height=3D207>=20
+<P align=3Dcenter><STRONG>TONER COMPATIBILI DI ALTA QUALITA'</STRONG></P>
+<P>&nbsp;</P>
+<UL>
+<LI><FONT color=3D#ff0000 size=3D5>Prezzi molto bassi rispetto ai toner ori=
+ginali ma senza compromettere la qualita'</FONT>=20
+<P>&nbsp;</P>
+<LI><U>Selezioniamo i migliori&nbsp;Toner</U> per offrirti la massima quali=
+ta', I nostri toner hanno qualita' e durata paragonabili agli originali e v=
+engono supervisionati e testati per assicurarare la massima qualita'=20
+<P>&nbsp;</P>
+<LI><A href=3D"mailto:offerte@ml.toneritaly.info=3Fsubject=3Dpreventivo"><F=
+ONT color=3D#ff0000>Rispondi a questa email indicando il modello della tua =
+stampante, ti invieremo un preventivo</FONT></A>=20
+<P>&nbsp;</P>
+<LI>Se rispondi a questa email ti invieremo anche tutti i nostri contatti a=
+ziendali e le nostre recensioni, cosi' potrai valutare la nostra serieta'. =
+</LI></UL>
+<P>&nbsp;</P><IMG border=3D0 hspace=3D0 src=3D"https://imagizer.imageshack.=
+com/img924/6343/WlKti0.png" width=3D535 height=3D447>=20
+<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
+vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
+ail con "cancellami" </FONT><A href=3D"mailto:offerte@ml.toneritaly.info=3F=
+subject=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancella=
+rti</FONT></A></TD></TR>
+<TR></TR></TABLE></TD></TR></TABLE>
+<P>&nbsp;</P></BODY>
+------=_NextPart_001_37BC_258C1392.1F91440C--
 
 
-
---===============8931698013011964218==
+--===============5738465076435698689==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8931698013011964218==
+--===============5738465076435698689==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -271,6 +220,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8931698013011964218==--
-
+--===============5738465076435698689==--
 
