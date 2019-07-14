@@ -2,98 +2,94 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9D7D0651AC
-	for <lists+osst-users@lfdr.de>; Thu, 11 Jul 2019 08:01:54 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id DDE1268171
+	for <lists+osst-users@lfdr.de>; Mon, 15 Jul 2019 00:38:30 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hlS9Q-0002Il-Ru
-	for lists+osst-users@lfdr.de; Thu, 11 Jul 2019 06:01:52 +0000
+	id 1hmn8X-0004uc-MS
+	for lists+osst-users@lfdr.de; Sun, 14 Jul 2019 22:38:29 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <offerte@ml.toneritaly.info>) id 1hlS9Q-0002Ia-0S
- for osst-users@lists.sourceforge.net; Thu, 11 Jul 2019 06:01:52 +0000
+ (envelope-from <comsalud@comsalud.es>) id 1hmn8W-0004uU-7P
+ for osst-users@lists.sourceforge.net; Sun, 14 Jul 2019 22:38:28 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Message-ID:Date:Content-Type:Subject:To:Reply-To:
- From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Reply-To:From:Date:Subject:To:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=HAh/F//A4CHb6uJMrIeujP+KWvmsbMYxZZeqVXv4Kq8=; b=VKbXIkexto8prieWLnpFlWTd63
- r2U93DT2Tc2mrmlw1YIsgDkPSo7QL/uD8tJcgELVu7u04IaZHdC4S/uVXyfcmHmBcvjHZ8CW4jc/K
- Sxk5q/MRfVWwt4QyjN5nv8wQglCsFOOdzgI4ffr9MES4hQ1T1GWmY74w+zTRWU985EnU=;
+ bh=VbWZp0sWx8E7t4StbAARcf6eTqi85y5OqFYA+nCELgU=; b=XKgdZsJ1ROJ6U1fJYyj1y4TM64
+ VPfDCarf20z9KjqWcsCnLCBxk0iKQPh7+RHbyVKpYPyMSOFuFss/XM2raLsj1MKXpMJlv3CVYCDTz
+ 91WEpN5wBzuQ+zKCiEMHez6rQA7f5scKeH8EHmO1qKvzjS7uZtnRBJWgaJPWp0w6JxB4=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Message-ID:Date:Content-Type:Subject:To:Reply-To:From:MIME-Version:Sender
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Reply-To:
+ From:Date:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=HAh/F//A4CHb6uJMrIeujP+KWvmsbMYxZZeqVXv4Kq8=; b=b
- nuUNt6QjJOQgvNL5ydFx9EJQk4acZW5p2Io6GHI4mf4OrJXDiEzxYuAB3n105iHLLmqSVr7WcpUBo
- Ao3TFMnGprjHU60dKO1rZDYhKXa4OhV2qJ0b4Gzn7G7o2pbgCXxd4pNqrmU586XtJj/pdWoJZ26V+
- 68r9tt/L+dhvDaNw=;
-Received: from ml004-b.dnshigh.com ([193.70.146.210])
- by sfi-mx-4.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1hlS9O-00FK8p-Im
- for osst-users@lists.sourceforge.net; Thu, 11 Jul 2019 06:01:51 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=ml.toneritaly.info; s=default; h=Message-ID:Date:Content-Type:Subject:To:
- Reply-To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=HAh/F//A4CHb6uJMrIeujP+KWvmsbMYxZZeqVXv4Kq8=; b=KXPmIrNTH9+KoGbaVs0BgM429a
- +QynGwZRKf3WojU5s52ctrhBKGIcQa/G3lQZvXDzEvgmw3OaWEbyjg1kodAm97lXF+hG4QJl9smcG
- DV7aj4tFbexh2qDRDlvfr11Gm6hcTMn/4SS+9QwaR+U7V3hA/rYjyUOyfcMD8UJTjZqOp0rvE2Wht
- Bbi7lrbu/ZwOtvfYeXtQb5N9cfIej5ymvcEegIMVBw5SmPJtAh9Kqgsafm6l3D1zXAaV+IKLAP4He
- f9UI6e05ceZ9OXLnrOkpvXQfjd7P1pCji4svMpCqQkuLru5PjjKZ81eC0jUO9kO3BGk0swqXkv5h9
- 0SO3ch2g==;
-Received: from host74-49-dynamic.248-95-r.retail.telecomitalia.it
- ([95.248.49.74]:50136)
- by ml004.dnshigh.com with esmtpsa (TLSv1:DHE-RSA-AES256-SHA:256)
- (Exim 4.92) (envelope-from <offerte@ml.toneritaly.info>)
- id 1hlS9H-0000Vp-SH
- for osst-users@lists.sourceforge.net; Thu, 11 Jul 2019 08:01:43 +0200
-MIME-Version: 1.0
-From: "Toner Originali" <offerte@ml.toneritaly.info>
+ List-Owner:List-Archive; bh=VbWZp0sWx8E7t4StbAARcf6eTqi85y5OqFYA+nCELgU=; b=f
+ EB9P9H5BfymYuJREFpuIA6Yo7JOycd4c7zWePvuji7dUajZHmNvGnV+FvxpcskyEXNj2qIajYV4w5
+ FGbQFq5HQoGkrQexeD0zO8K/hWfgk16+5fWdpsajeyXn0BYhlRIjaRN5URy5NqUJzGmJWVxAqsMTr
+ rmoJqcfp9eEn6dWE=;
+Received: from mout.kundenserver.de ([212.227.126.187])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.90_1)
+ id 1hmn8T-001gqY-UM
+ for osst-users@lists.sourceforge.net; Sun, 14 Jul 2019 22:38:28 +0000
+Received: from infongwp-eu41.kundenserver.de ([82.165.87.31]) by
+ mrelayeu.kundenserver.de (mreue012 [172.19.35.7]) with ESMTPA (Nemesis) id
+ 1MsaeR-1iaTk30vBz-00tyQP for <osst-users@lists.sourceforge.net>; Mon, 15 Jul
+ 2019 00:25:20 +0200
+Received: from 185.17.149.171 (IP may be forged by CGI script)
+ by infongwp-eu41.kundenserver.de with HTTP
+ id zRWs63-1ibJ5U0QI4-00t5Zq; Mon, 15 Jul 2019 00:25:20 +0200
+X-Sender-Info: <607072397@infongwp-eu41.kundenserver.de>
+Precedence: bulk
 To: osst-users@lists.sourceforge.net
-Date: Thu, 11 Jul 2019 08:01:41 +0200
-Message-ID: <2552216180960238467784@user-PC>
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - ml004.dnshigh.com
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - ml.toneritaly.info
-X-Get-Message-Sender-Via: ml004.dnshigh.com: authenticated_id: fjmllqck/from_h
-X-Authenticated-Sender: ml004.dnshigh.com: offerte@ml.toneritaly.info
-X-Spam-Score: 6.2 (++++++)
+Date: Sun, 14 Jul 2019 22:25:19 +0000
+From: COM SALUD <comsalud@comsalud.es>
+Message-ID: <8c49f470e52fe8eef37b49b44a0f82fd@comsalud.es>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+X-Provags-ID: V03:K1:JAoiwBGB6TbBtSAZfndZ8NwwMKUw6Vlb2JDjyxFo0FZvUBa/WwW
+ e1dSSEE1WcjZ27h3vRtpu6owv6Yfr6WA46P3G+yMTCZs63tok8xKrw2lrLI9L2t/mnOxdwq
+ SNUUatK3wPPXtggc5CjQn9y/DC5dFpcPFCFS4N2mcYRNe9Rk49z4fwCJp/8J1ehMuaVTZ47
+ HKaMLH3s5u0DQq4EG++zxki6WsD2R9XizsXySVnRXY=
+X-Spam-Flag: NO
+X-UI-Out-Filterresults: notjunk:1;V03:K0:7IVPfkRnFnA=:TuGr6RBswgAbZVwGjIzIbx
+ RUkW2vegnu3yxYSSOyhBTuFFJOf21h3PeCTQcaoFYxFVgy9tMBz1VGOwlq87JrYDyugPu2Gmu
+ BHcD52OF8bpitOQ+5tWEiSc7T+jo/FzUMa/uxUVFzTEndGIiW8RB8t2Uj8grNV1gkw2G/6lhH
+ RvoA5K8XehKmjsa5aYs7eS7ub4njYYB8s0Qdc8aJ8aZj2yiQnG7OnpZZUZ6QxC8ZdjeyHkpZo
+ +RIwNtk4UNGFZSbPfgFQIwey9HCQnGd2CI534NGbmjK2Je5vbq4pr6VvKr1BsyIPFdB+2NOcr
+ ZK4/IMYczduty2ywpYBhFsXlyZ75voNjaLN9oToo5jc1iNUCKfGD6lsYfiiR04BA8R4QP/kAR
+ 6N1dkEi06vSr/Dx8sLfV650viD3Gi1sOhxSvtECamzX4ru7zBPkBgcAoGrdRQO2jFOpHeCgp5
+ 6XsAZQQIgROjm5EKG/XlVZDa0xVrQy8bfqIPlJt2adeNZezNINgn3/NO6IEQ30gBx1T6kS3Yj
+ FPFzJgWO/MNJPlf72nPEffNELyZO79W7shN8nniQ+JM22jcAtPIC1rCnPmldKCyRFU6sR4Eoo
+ 0wWfIoSQBUgD5AZFbcuwXB2K4BeWzb/a5btwqvxOI2NsM5kQU2lcW6yqa8R/3Gi0H9P60CSpT
+ S7WspfkrTWGeB3Vly1Nn5tOcD9cc1Y4ypCTB4n5hvlBr8wuctUYfI1fVciQMOnz1JbjbLdEbs
+ cPZ1woO9auFdJSk3nxiWvFilLr7pV1rL0y/YCNwlve7mVyq/GEeo4jdvh7Y=
+X-Spam-Score: 2.6 (++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [212.227.126.187 listed in list.dnswl.org]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: imageshack.com]
+ for more information. [URIs: comsalud.es]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [212.227.126.187 listed in wl.mailspike.net]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
- 1.3 HTML_IMAGE_ONLY_24     BODY: HTML: images with 2000-2400 bytes of words
+ 1.6 HTML_IMAGE_ONLY_12     BODY: HTML: images with 800-1200 bytes of words
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 2.5 IMG_ONLY_FM_DOM_INFO   HTML image-only message from .info domain
- 0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1hlS9O-00FK8p-Im
-Subject: [Osst-users] Toner compatibili - Nuovi listini per l'estate e
- prezzi rivisti per molti toner: Chiedici un preventivo
+X-Headers-End: 1hmn8T-001gqY-UM
+Subject: [Osst-users] Gracias Ismaelcoode por ponerse en contacto con COM
+ SALUD
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
-Precedence: list
 List-Id: <osst-users.lists.sourceforge.net>
 List-Unsubscribe: <https://lists.sourceforge.net/lists/options/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=unsubscribe>
@@ -102,114 +98,71 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: offerte@ml.toneritaly.info
-Content-Type: multipart/mixed; boundary="===============5738465076435698689=="
+Reply-To: comsalud@comsalud.es
+Content-Type: multipart/mixed; boundary="===============2816992906619248395=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
+This is a multi-part message in MIME format.
 
---===============5738465076435698689==
+--===============2816992906619248395==
 Content-Type: multipart/alternative;
-	boundary="----=_NextPart_001_37BC_258C1392.1F91440C"
+	boundary="b1_8c49f470e52fe8eef37b49b44a0f82fd"
+Content-Transfer-Encoding: 8bit
+
+This is a multi-part message in MIME format.
+
+--b1_8c49f470e52fe8eef37b49b44a0f82fd
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Gracias Ismaelcoode por ponerse en contacto con COM SALUD
+Estimado Ismaelcoode por interesarse en los servicios especializados de COM SALUD. Nos pondremos en contacto con usted a la mayor brevedad posible.
+Un saludo.
+El equipo de COM SALUD, especialistas en salud.
+
+Agencia de comunicación especializada en salud
+Dirección: C/ Tren de Arganda, 8 portal I - Bajo A (28032) Madrid
+Email: comsalud@comsalud.es
+Teléfono: +34 91 223 66 78
 
 
-------=_NextPart_001_37BC_258C1392.1F91440C
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+--b1_8c49f470e52fe8eef37b49b44a0f82fd
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
 
-=20
-
-TONER COMPATIBILI DI ALTA QUALITA'
-
-=20
-
-Prezzi molto bassi rispetto ai toner originali ma senza compromettere la qu=
-alita'
-
-=20
-
-Selezioniamo i migliori Toner per offrirti la massima qualita', I nostri to=
-ner hanno qualita' e durata paragonabili agli originali e vengono supervisi=
-onati e testati per assicurarare la massima qualita'
-
-=20
-
-Rispondi a questa email indicando il modello della tua stampante, ti invier=
-emo un preventivo
-
-=20
-
-Se rispondi a questa email ti invieremo anche tutti i nostri contatti azien=
-dali e le nostre recensioni, cosi' potrai valutare la nostra serieta'.
-
-=20
-
-=20
-
-Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
-desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
-premi qui ed invia per cancellarti
-
-=20
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es-ES">
+<head>
+<title>Gracias Ismaelcoode por ponerse en contacto con COM SALUD</title>
+</head>
+<body>
+<p><img src="/wp-content/uploads/2018/03/logo_comsalud.png" alt="COM SALUD"></p>
+<h3>Gracias Ismaelcoode por ponerse en contacto con COM SALUD</h3>
+<p>Estimado <b>Ismaelcoode</b> por interesarse en los servicios especializados de COM SALUD. Nos pondremos en contacto con usted a la mayor brevedad posible.</p>
+<p>Un saludo.</p>
+<p>El equipo de COM SALUD, especialistas en salud.</p>
+<p><img src="/wp-content/uploads/2018/03/logo_comsalud.png" alt="COM SALUD"></p>
+<h4><b>Agencia de comunicación especializada en salud</b></h4>
+<p style="font-size: 16px">Dirección: <a href="/contacto">C/ Tren de Arganda, 8 portal I - Bajo A (28032) Madrid</a><br />
+Email: <a href="mailto:comsalud@comsalud.es">comsalud@comsalud.es</a><br />
+Teléfono: <a href="tel:+34912236678">+34 91 223 66 78</a></p>
+</body>
+</html>
 
 
-------=_NextPart_001_37BC_258C1392.1F91440C
-Content-Type: text/html; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
 
-<HEAD><TITLE></TITLE>
-<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
-<BODY>
-<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
-<TR>
-<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
-<P>&nbsp;</P>
-<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
-n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
-TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
-ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
-<TR>
-<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
- COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
-x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imagizer.=
-imageshack.com/img924/8274/L3kubR.jpg" width=3D550 height=3D207>=20
-<P align=3Dcenter><STRONG>TONER COMPATIBILI DI ALTA QUALITA'</STRONG></P>
-<P>&nbsp;</P>
-<UL>
-<LI><FONT color=3D#ff0000 size=3D5>Prezzi molto bassi rispetto ai toner ori=
-ginali ma senza compromettere la qualita'</FONT>=20
-<P>&nbsp;</P>
-<LI><U>Selezioniamo i migliori&nbsp;Toner</U> per offrirti la massima quali=
-ta', I nostri toner hanno qualita' e durata paragonabili agli originali e v=
-engono supervisionati e testati per assicurarare la massima qualita'=20
-<P>&nbsp;</P>
-<LI><A href=3D"mailto:offerte@ml.toneritaly.info=3Fsubject=3Dpreventivo"><F=
-ONT color=3D#ff0000>Rispondi a questa email indicando il modello della tua =
-stampante, ti invieremo un preventivo</FONT></A>=20
-<P>&nbsp;</P>
-<LI>Se rispondi a questa email ti invieremo anche tutti i nostri contatti a=
-ziendali e le nostre recensioni, cosi' potrai valutare la nostra serieta'. =
-</LI></UL>
-<P>&nbsp;</P><IMG border=3D0 hspace=3D0 src=3D"https://imagizer.imageshack.=
-com/img924/6343/WlKti0.png" width=3D535 height=3D447>=20
-<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
-vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
-ail con "cancellami" </FONT><A href=3D"mailto:offerte@ml.toneritaly.info=3F=
-subject=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancella=
-rti</FONT></A></TD></TR>
-<TR></TR></TABLE></TD></TR></TABLE>
-<P>&nbsp;</P></BODY>
-------=_NextPart_001_37BC_258C1392.1F91440C--
+--b1_8c49f470e52fe8eef37b49b44a0f82fd--
 
 
---===============5738465076435698689==
+
+--===============2816992906619248395==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5738465076435698689==
+--===============2816992906619248395==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -220,5 +173,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5738465076435698689==--
+--===============2816992906619248395==--
+
 
