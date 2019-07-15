@@ -2,94 +2,90 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id DDE1268171
-	for <lists+osst-users@lfdr.de>; Mon, 15 Jul 2019 00:38:30 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 068BA68537
+	for <lists+osst-users@lfdr.de>; Mon, 15 Jul 2019 10:29:53 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=lists.sourceforge.net; s=beta; h=Content-Transfer-Encoding:Content-Type:
+	Reply-To:From:List-Subscribe:List-Help:List-Post:List-Archive:
+	List-Unsubscribe:List-Id:Subject:MIME-Version:To:Date:Message-ID:Sender:Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=JMCn3IUZWhvaGRNr/EjD8BTia9KzbIxyBFscT53pSf0=; b=cV/FYYAy0+NCL7ojH8mIDBhrb0
+	pQxkFhZqt1GJZCpLr7NLLP+9DjKtYoBjcvSrQQUAdB8JSt4C4DkSfi6wTwCE5MTpjHOmTNmVGScZI
+	Si4rpM59Qx4yu/AX8wwrmZ2TfcMQpSz7vked39Eq9iXAij6udxpR970xOQDj47C/LkJw=;
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hmn8X-0004uc-MS
-	for lists+osst-users@lfdr.de; Sun, 14 Jul 2019 22:38:29 +0000
+	id 1hmwMp-0001IY-Ow
+	for lists+osst-users@lfdr.de; Mon, 15 Jul 2019 08:29:51 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <comsalud@comsalud.es>) id 1hmn8W-0004uU-7P
- for osst-users@lists.sourceforge.net; Sun, 14 Jul 2019 22:38:28 +0000
+ (envelope-from <kamil.adamec@e-devs.eu>) id 1hmwMo-0001IP-4K
+ for osst-users@lists.sourceforge.net; Mon, 15 Jul 2019 08:29:50 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Reply-To:From:Date:Subject:To:Sender:Cc:Content-ID:
+ :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=VbWZp0sWx8E7t4StbAARcf6eTqi85y5OqFYA+nCELgU=; b=XKgdZsJ1ROJ6U1fJYyj1y4TM64
- VPfDCarf20z9KjqWcsCnLCBxk0iKQPh7+RHbyVKpYPyMSOFuFss/XM2raLsj1MKXpMJlv3CVYCDTz
- 91WEpN5wBzuQ+zKCiEMHez6rQA7f5scKeH8EHmO1qKvzjS7uZtnRBJWgaJPWp0w6JxB4=;
+ bh=pZHH+xeZC+/weIDlTzQwGqTomOwDmW0lwtviQxz8Ftg=; b=M6eYEbFHXwAZBidnxMN1l/dbne
+ FZVgE6OZyB+y7y4rWRht6Hy1gAIVoNlKGKy7X5cybugzzVNO8qXSEmN/odY+xy8ORrrDgv3r+6+H/
+ Z7lV0xrzTA5hv4+8UjgK4YYZV3P/ld637kTZ9UyR6gaavsDkQNqrFQZugSTEYjE053Ps=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Reply-To:
- From:Date:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=VbWZp0sWx8E7t4StbAARcf6eTqi85y5OqFYA+nCELgU=; b=f
- EB9P9H5BfymYuJREFpuIA6Yo7JOycd4c7zWePvuji7dUajZHmNvGnV+FvxpcskyEXNj2qIajYV4w5
- FGbQFq5HQoGkrQexeD0zO8K/hWfgk16+5fWdpsajeyXn0BYhlRIjaRN5URy5NqUJzGmJWVxAqsMTr
- rmoJqcfp9eEn6dWE=;
-Received: from mout.kundenserver.de ([212.227.126.187])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.90_1)
- id 1hmn8T-001gqY-UM
- for osst-users@lists.sourceforge.net; Sun, 14 Jul 2019 22:38:28 +0000
-Received: from infongwp-eu41.kundenserver.de ([82.165.87.31]) by
- mrelayeu.kundenserver.de (mreue012 [172.19.35.7]) with ESMTPA (Nemesis) id
- 1MsaeR-1iaTk30vBz-00tyQP for <osst-users@lists.sourceforge.net>; Mon, 15 Jul
- 2019 00:25:20 +0200
-Received: from 185.17.149.171 (IP may be forged by CGI script)
- by infongwp-eu41.kundenserver.de with HTTP
- id zRWs63-1ibJ5U0QI4-00t5Zq; Mon, 15 Jul 2019 00:25:20 +0200
-X-Sender-Info: <607072397@infongwp-eu41.kundenserver.de>
-Precedence: bulk
-To: osst-users@lists.sourceforge.net
-Date: Sun, 14 Jul 2019 22:25:19 +0000
-From: COM SALUD <comsalud@comsalud.es>
-Message-ID: <8c49f470e52fe8eef37b49b44a0f82fd@comsalud.es>
-X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+ List-Owner:List-Archive; bh=pZHH+xeZC+/weIDlTzQwGqTomOwDmW0lwtviQxz8Ftg=; b=W
+ 50jS8wcEqUjEFWg6eF4fGS1NMeSavZDe2kz54ZCC4FOVgYBCepNGQ8ro1nWg2xNka/Ebe7bhQyYzn
+ oVQ08prUq2rBzneS0vpkrNO7InHY1HE6HI4DpeQgNcPOn+lrTba48jwOACuxZOcvAlCHMtXLHNqoI
+ GuNaHsVl7wmJz3fg=;
+Received: from [94.177.230.19] (helo=mail.e-devs.eu)
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
+ id 1hmwMm-001jGs-HQ
+ for osst-users@lists.sourceforge.net; Mon, 15 Jul 2019 08:29:49 +0000
+Received: by mail.e-devs.eu (Postfix, from userid 1001)
+ id 8158087C03; Mon, 15 Jul 2019 10:25:52 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=e-devs.eu; s=mail;
+ t=1563179361; bh=pZHH+xeZC+/weIDlTzQwGqTomOwDmW0lwtviQxz8Ftg=;
+ h=Date:From:To:Subject:From;
+ b=AWhB+r56SugEccRugrK9uQAHBihUDC7eUtxtQrA0hCVocFp2w5TUkjvMvvBaaJmlM
+ ZQF9izTc8ARmsk0JA/coNaqAktf6aEFwPOraLb3EcxMmX6Yij3O4jGphxdkYtRCtfX
+ YhKDu58d7BlQIlmDTgRmYyvUId9p8YKjpgEIhIi4=
+Received: by mail.e-devs.eu.e-devs.eu for <osst-users@lists.sourceforge.net>;
+ Mon, 15 Jul 2019 08:25:48 GMT
+Message-ID: <20190715102421-0.1.y.21zu.0.0x142an213@e-devs.eu>
+Date: Mon, 15 Jul 2019 08:25:48 GMT
+To: <osst-users@lists.sourceforge.net>
+X-Mailer: mail.e-devs.eu
 MIME-Version: 1.0
-X-Provags-ID: V03:K1:JAoiwBGB6TbBtSAZfndZ8NwwMKUw6Vlb2JDjyxFo0FZvUBa/WwW
- e1dSSEE1WcjZ27h3vRtpu6owv6Yfr6WA46P3G+yMTCZs63tok8xKrw2lrLI9L2t/mnOxdwq
- SNUUatK3wPPXtggc5CjQn9y/DC5dFpcPFCFS4N2mcYRNe9Rk49z4fwCJp/8J1ehMuaVTZ47
- HKaMLH3s5u0DQq4EG++zxki6WsD2R9XizsXySVnRXY=
-X-Spam-Flag: NO
-X-UI-Out-Filterresults: notjunk:1;V03:K0:7IVPfkRnFnA=:TuGr6RBswgAbZVwGjIzIbx
- RUkW2vegnu3yxYSSOyhBTuFFJOf21h3PeCTQcaoFYxFVgy9tMBz1VGOwlq87JrYDyugPu2Gmu
- BHcD52OF8bpitOQ+5tWEiSc7T+jo/FzUMa/uxUVFzTEndGIiW8RB8t2Uj8grNV1gkw2G/6lhH
- RvoA5K8XehKmjsa5aYs7eS7ub4njYYB8s0Qdc8aJ8aZj2yiQnG7OnpZZUZ6QxC8ZdjeyHkpZo
- +RIwNtk4UNGFZSbPfgFQIwey9HCQnGd2CI534NGbmjK2Je5vbq4pr6VvKr1BsyIPFdB+2NOcr
- ZK4/IMYczduty2ywpYBhFsXlyZ75voNjaLN9oToo5jc1iNUCKfGD6lsYfiiR04BA8R4QP/kAR
- 6N1dkEi06vSr/Dx8sLfV650viD3Gi1sOhxSvtECamzX4ru7zBPkBgcAoGrdRQO2jFOpHeCgp5
- 6XsAZQQIgROjm5EKG/XlVZDa0xVrQy8bfqIPlJt2adeNZezNINgn3/NO6IEQ30gBx1T6kS3Yj
- FPFzJgWO/MNJPlf72nPEffNELyZO79W7shN8nniQ+JM22jcAtPIC1rCnPmldKCyRFU6sR4Eoo
- 0wWfIoSQBUgD5AZFbcuwXB2K4BeWzb/a5btwqvxOI2NsM5kQU2lcW6yqa8R/3Gi0H9P60CSpT
- S7WspfkrTWGeB3Vly1Nn5tOcD9cc1Y4ypCTB4n5hvlBr8wuctUYfI1fVciQMOnz1JbjbLdEbs
- cPZ1woO9auFdJSk3nxiWvFilLr7pV1rL0y/YCNwlve7mVyq/GEeo4jdvh7Y=
-X-Spam-Score: 2.6 (++)
+X-Spam-Score: 7.2 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [212.227.126.187 listed in list.dnswl.org]
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: comsalud.es]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [212.227.126.187 listed in wl.mailspike.net]
+ 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+ blocklist [URIs: e-devs.eu]
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [94.177.230.19 listed in zen.spamhaus.org]
+ 0.1 URIBL_CSS_A Contains URL's A record listed in the Spamhaus CSS
+ blocklist [URIs: www.e-devs.eu]
+ 0.1 URIBL_CSS Contains an URL's NS IP listed in the Spamhaus CSS
+ blocklist [URIs: www.e-devs.eu]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 1.6 HTML_IMAGE_ONLY_12     BODY: HTML: images with 800-1200 bytes of words
- 1.0 HTML_MESSAGE           BODY: HTML included in message
-X-Headers-End: 1hmn8T-001gqY-UM
-Subject: [Osst-users] Gracias Ismaelcoode por ponerse en contacto con COM
- SALUD
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+X-Headers-End: 1hmwMm-001jGs-HQ
+Subject: [Osst-users] =?utf-8?b?RG9kYXRlxI1uw6kgemRyb2pl?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
+Precedence: list
 List-Id: <osst-users.lists.sourceforge.net>
 List-Unsubscribe: <https://lists.sourceforge.net/lists/options/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=unsubscribe>
@@ -98,81 +94,25 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: comsalud@comsalud.es
-Content-Type: multipart/mixed; boundary="===============2816992906619248395=="
+From: Kamil Adamec via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Kamil Adamec <kamil.adamec@e-devs.eu>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
-
---===============2816992906619248395==
-Content-Type: multipart/alternative;
-	boundary="b1_8c49f470e52fe8eef37b49b44a0f82fd"
-Content-Transfer-Encoding: 8bit
-
-This is a multi-part message in MIME format.
-
---b1_8c49f470e52fe8eef37b49b44a0f82fd
-Content-Type: text/plain; charset=UTF-8
-Content-Transfer-Encoding: 8bit
-
-Gracias Ismaelcoode por ponerse en contacto con COM SALUD
-Estimado Ismaelcoode por interesarse en los servicios especializados de COM SALUD. Nos pondremos en contacto con usted a la mayor brevedad posible.
-Un saludo.
-El equipo de COM SALUD, especialistas en salud.
-
-Agencia de comunicación especializada en salud
-Dirección: C/ Tren de Arganda, 8 portal I - Bajo A (28032) Madrid
-Email: comsalud@comsalud.es
-Teléfono: +34 91 223 66 78
-
-
---b1_8c49f470e52fe8eef37b49b44a0f82fd
-Content-Type: text/html; charset=UTF-8
-Content-Transfer-Encoding: 8bit
-
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es-ES">
-<head>
-<title>Gracias Ismaelcoode por ponerse en contacto con COM SALUD</title>
-</head>
-<body>
-<p><img src="/wp-content/uploads/2018/03/logo_comsalud.png" alt="COM SALUD"></p>
-<h3>Gracias Ismaelcoode por ponerse en contacto con COM SALUD</h3>
-<p>Estimado <b>Ismaelcoode</b> por interesarse en los servicios especializados de COM SALUD. Nos pondremos en contacto con usted a la mayor brevedad posible.</p>
-<p>Un saludo.</p>
-<p>El equipo de COM SALUD, especialistas en salud.</p>
-<p><img src="/wp-content/uploads/2018/03/logo_comsalud.png" alt="COM SALUD"></p>
-<h4><b>Agencia de comunicación especializada en salud</b></h4>
-<p style="font-size: 16px">Dirección: <a href="/contacto">C/ Tren de Arganda, 8 portal I - Bajo A (28032) Madrid</a><br />
-Email: <a href="mailto:comsalud@comsalud.es">comsalud@comsalud.es</a><br />
-Teléfono: <a href="tel:+34912236678">+34 91 223 66 78</a></p>
-</body>
-</html>
-
-
-
---b1_8c49f470e52fe8eef37b49b44a0f82fd--
-
-
-
---===============2816992906619248395==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---===============2816992906619248395==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
-
---===============2816992906619248395==--
-
-
+RG9icsO9IGRlbiEKCsW9aXZub3N0bsOta8WvbSDEjWFzdG8gc3RvasOtIHYgY2VzdMSbIGsgZG9z
+YcW+ZW7DrSDDunNwxJtjaHUgbsOtemvDoSDDunJvdmXFiCBwcm92b3puw61jaCB6ZHJvasWvIG5h
+IG7DoWt1cCBtYXRlcmnDoWx1LCB6Ym/FvsOtIG5lYm8gc3Vyb3ZpbiB6IGTFr3ZvZHUgbmFwxZku
+IG5lemFwbGFjZW7DrSBmYWt0dXIgKG5lemFwbGFjZW7DrSBvZCBkb2RhdmF0ZWzFrywgcHJvZGxv
+dcW+ZW7DoSBzcGxhdG5vc3QgYXBvZC4pLiBWIHTDqXRvIG9ibGFzdGkganNtZSBqacW+IHBvbW9o
+bGkgxZlhZMSbIGZpcmVtLCBrdGVyw6kgbW9obHkgZMOta3kgesOtc2vDoW7DrSBuw6F2cmF0bsOp
+aG8gZmluYW5jb3bDoW7DrSByZWFsaXpvdmF0IHN2w6kga2zDrcSNb3bDqSBwbMOhbnkuCgpKc2Vt
+IHBhcnRuZXJlbSBtbm9oYSBzcG9sZcSNbm9zdMOtLCBqZWppY2jFviDEjWlubm9zdCBqZSBzcm92
+bmF0ZWxuw6EgcyB0b3UgVmHFocOtIGEgemEga29vcGVyYWNpIHMgbsOhbWkgesOtc2vDoXRlIGJv
+bnVzIC0gcnljaGzDqSBzcGxhY2Vuw60gdmUgdsO9xaFpIGHFviA0IHNwbMOhdGVrLgoKRG92b2x0
+ZSwgYWJ5Y2hvbSBWw6FzIGtvbnRha3RvdmFsaSB6YSDDusSNZWxlbSBwcm92ZWRlbsOtIGFuYWzD
+vXp5IG1vxb5ub3N0w60gcG9tb2NpIGZpbmFuY292w6Fuw60uIEtkeSBieWNoIG1vaGwgemF2b2xh
+dD8KCgpTIHBvemRyYXZlbQpLYW1pbCBBZGFtZWMKQWNjb3VudCBNYW5hZ2VyCnd3dy5lLWRldnMu
+ZXUKCgpfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fXwpPc3N0
+LXVzZXJzIG1haWxpbmcgbGlzdApPc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldApodHRw
+czovL2xpc3RzLnNvdXJjZWZvcmdlLm5ldC9saXN0cy9saXN0aW5mby9vc3N0LXVzZXJzCg==
