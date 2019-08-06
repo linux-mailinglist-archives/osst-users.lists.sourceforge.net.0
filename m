@@ -2,82 +2,66 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 759347F02D
-	for <lists+osst-users@lfdr.de>; Fri,  2 Aug 2019 11:17:34 +0200 (CEST)
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Transfer-Encoding:Content-Type:
-	Reply-To:From:List-Subscribe:List-Help:List-Post:List-Archive:
-	List-Unsubscribe:List-Id:Subject:MIME-Version:To:Date:Message-ID:Sender:Cc:
-	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=7ag8ovWtjtgg5FQ2ztp4OrBzCEdmS3cWks5oq7s6DSI=; b=cg0zGGamngvMz3abwzmZSAKqTL
-	kkQGDJYeceXRNWX1NZoIon3TYdK0Cd6X4y6iPXUj0/McTH3iNOiCVQvz0u1IT6cdRCWdWQyb9aVZF
-	IEB9f2CgBNv+R3cCXOJJ9njn9LeLMz2hQIbrZauZzmeaTJEB7+yp3yylcMzeFsvH9Oxw=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 0A59F829BE
+	for <lists+osst-users@lfdr.de>; Tue,  6 Aug 2019 04:44:02 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1htTgr-0001ll-5Y
-	for lists+osst-users@lfdr.de; Fri, 02 Aug 2019 09:17:33 +0000
+	id 1hupSC-0003E6-NP
+	for lists+osst-users@lfdr.de; Tue, 06 Aug 2019 02:44:00 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <kamil.adamec@automatics-control.eu>)
- id 1htTgq-0001lc-1x
- for osst-users@lists.sourceforge.net; Fri, 02 Aug 2019 09:17:32 +0000
+ (envelope-from <loan@severnfunding.org>) id 1hupSA-0003Dk-2N
+ for osst-users@lists.sourceforge.net; Tue, 06 Aug 2019 02:43:58 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
+ :Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=NjLcrs3cCMbbo+n0H6fjGJqdIYCaDUtkMzaQjEdJoS8=; b=h0EE5rY8RRB4oiM2KjBV8JfozM
- tF2DG8oFLlxmHKw0Tqtx1BZGzen5N1tes5E4nBCp83bnN0mDJea4l4F9Cj+6/WcLBHoETxFpMI4G2
- Um6RHadU/JOAOZAqO5YQ61x2jGHKVDnCZgkb9+vxBDlQkIJn/8q9k+8+9dkorzxvBBqk=;
+ bh=VRz/o2MwbGHTIUC6fuyJ82zMHsPw84r+9+FQ7lNMo4A=; b=Jj8toyFRlWsfDjHpzZUM89Mg65
+ xhbevOEbixH6Y+f1p9MKGKbfg9g+clSfqHSBGAR1hSAucM4lkn1PAq8Pvyu0MS/BQs8KJJUifpMxd
+ DvJsZsUF0ODGkY946DdedvRgzFnGhzpMTqfqdbUXlRkNm0pwU0I+7vXujn8UKWs9a6Wk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
- Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=NjLcrs3cCMbbo+n0H6fjGJqdIYCaDUtkMzaQjEdJoS8=; b=O
- cyW+DVQY9yeXRAREWLt4K4tFZy2/AteasPEFrJsDp+R+lyUlNRCAhmXVjG6RJwkHdR8ZFw6l6K1tL
- WIkdlhBHjZ0p7TykJEdd9Vq3EVl8oCHnHKo+gubQuBrnQU003e1vt545XRN3FpzOD4ne0MrEMe3a6
- aUSXgglGu5s6dCtE=;
-Received: from mail.automatics-control.eu ([80.211.144.215])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1htTgn-006y1N-Qo
- for osst-users@lists.sourceforge.net; Fri, 02 Aug 2019 09:17:31 +0000
-Received: by mail.automatics-control.eu (Postfix, from userid 1001)
- id 98B53A0C5C; Fri,  2 Aug 2019 11:15:28 +0200 (CEST)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=automatics-control.eu; s=mail; t=1564737413;
- bh=NjLcrs3cCMbbo+n0H6fjGJqdIYCaDUtkMzaQjEdJoS8=;
- h=Date:From:To:Subject:From;
- b=gA6XJBV24KCSiph1mXp85DtSZ9oJaa6GsARMY/lgtRBBPw4a04Qj/fd2wIWfuvXof
- BE6O9xEd3W1tkTupnl/GUAdEbmFtkDosa75S1qahl2xLtaEl9oAG5JKrRzki/fVYdu
- zc5xGZN53T+uK95z7SehqvmyTpItfNTXcdsl4t2k=
-Received: by mail.automatics-control.eu for <osst-users@lists.sourceforge.net>;
- Fri,  2 Aug 2019 09:15:19 GMT
-Message-ID: <20190802111207-0.1.d.yd5.0.1cnfhfzaw5@automatics-control.eu>
-Date: Fri,  2 Aug 2019 09:15:19 GMT
-To: <osst-users@lists.sourceforge.net>
-X-Mailer: mail.automatics-control.eu
+ List-Owner:List-Archive; bh=VRz/o2MwbGHTIUC6fuyJ82zMHsPw84r+9+FQ7lNMo4A=; b=Q
+ YlAPhZJBuKHQkf3Uwr7geC4Bi04kOyev+AdwAzAucC0FycZIJDk5ULgRM6yG27Ca5SoLzCtFwcW90
+ LbnjbFgax/fG+gm/fDwtc7OYL/m39YGWE5n0Gpu7k3A9mXQZtxB/5A/lbrkWXd3E9zyiNlvnD9/DK
+ 9TOcmkwobA2zfsAI=;
+Received: from mta42.bitcoincashinf.me ([185.251.118.42])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1hupS7-00CG7c-T2
+ for osst-users@lists.sourceforge.net; Tue, 06 Aug 2019 02:43:57 +0000
+From: "Financial Loan"<loan@severnfunding.org>
+To: osst-users@lists.sourceforge.net
+Date: 5 Aug 2019 19:43:46 -0700
+Message-ID: <20190805194346.FE73C20D7292F45F@severnfunding.org>
 MIME-Version: 1.0
-X-Spam-Score: 1.1 (+)
+X-Spam-Score: 6.2 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: automatics-control.eu]
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
-X-Headers-End: 1htTgn-006y1N-Qo
-Subject: [Osst-users] =?utf-8?b?RG9kYXRlxI1uw6kgemRyb2pl?=
+ for more information. [URIs: severnfundinginvestment.com]
+ 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+ blocklist [URIs: severnfundinginvestment.com]
+ 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+ [Blocked - see <https://www.spamcop.net/bl.shtml?185.251.118.42>]
+ 0.4 NO_DNS_FOR_FROM        DNS: Envelope sender has no MX or A DNS records
+ 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
+ https://senderscore.org/blacklistlookup/
+ [185.251.118.42 listed in bl.score.senderscore.com]
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in DNS
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+X-Headers-End: 1hupS7-00CG7c-T2
+Subject: [Osst-users] Financial Loan At The Best Rate
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -89,26 +73,47 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Kamil Adamec via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: Kamil Adamec <kamil.adamec@automatics-control.eu>
+Reply-To: morales.gustavo@severnfundinginvestment.com
 Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-RG9icsO9IGRlbiEKCsW9aXZub3N0bsOta8WvbSDEjWFzdG8gc3RvasOtIHYgY2VzdMSbIGsgZG9z
-YcW+ZW7DrSDDunNwxJtjaHUgbsOtemvDoSDDunJvdmXFiCBwcm92b3puw61jaCB6ZHJvasWvIG5h
-IG7DoWt1cCBtYXRlcmnDoWx1LCB6Ym/FvsOtIG5lYm8gc3Vyb3ZpbiB6IGTFr3ZvZHUgbmFwxZku
-IG5lemFwbGFjZW7DrSBmYWt0dXIgKG5lemFwbGFjZW7DrSBvZCBkb2RhdmF0ZWzFrywgcHJvZGxv
-dcW+ZW7DoSBzcGxhdG5vc3QgYXBvZC4pLiBWIHTDqXRvIG9ibGFzdGkganNtZSBqacW+IHBvbW9o
-bGkgxZlhZMSbIGZpcmVtLCBrdGVyw6kgbW9obHkgZMOta3kgesOtc2vDoW7DrSBuw6F2cmF0bsOp
-aG8gZmluYW5jb3bDoW7DrSByZWFsaXpvdmF0IHN2w6kga2zDrcSNb3bDqSBwbMOhbnkuCgpKc2Vt
-IHBhcnRuZXJlbSBtbm9oYSBzcG9sZcSNbm9zdMOtLCBqZWppY2jFviDEjWlubm9zdCBqZSBzcm92
-bmF0ZWxuw6EgcyB0b3UgVmHFocOtIGEgemEga29vcGVyYWNpIHMgbsOhbWkgesOtc2vDoXRlIGJv
-bnVzIC0gcnljaGzDqSBzcGxhY2Vuw60gdmUgdsO9xaFpIGHFviA0IHNwbMOhdGVrLgoKRG92b2x0
-ZSwgYWJ5Y2hvbSBWw6FzIGtvbnRha3RvdmFsaSB6YSDDusSNZWxlbSBwcm92ZWRlbsOtIGFuYWzD
-vXp5IG1vxb5ub3N0w60gcG9tb2NpIGZpbmFuY292w6Fuw60uIEtkeSBieWNoIG1vaGwgemF2b2xh
-dD8KCgpTIHBvemRyYXZlbQpLYW1pbCBBZGFtZWMKQWNjb3VudCBNYW5hZ2VyCnd3dy5hdXRvbWF0
-aWNzLWNvbnRyb2wuZXUKCgpfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
-X19fX19fXwpPc3N0LXVzZXJzIG1haWxpbmcgbGlzdApPc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZv
-cmdlLm5ldApodHRwczovL2xpc3RzLnNvdXJjZWZvcmdlLm5ldC9saXN0cy9saXN0aW5mby9vc3N0
-LXVzZXJzCg==
+RGVhciBSZXNwZWN0ZWQgU2lyLAoKQXJlIHlvdSB0aGlua2luZyBhYm91dCBzdGFydGluZyB5b3Vy
+IG93biBidXNpbmVzcyBhbmQgeW91IG5lZWQgdG8gcmFpc2UgYSBjYXBpdGFsIG9yIGlmIHlvdSBu
+ZWVkIGZ1bmRpbmcgZm9yIGV4cGFuc2lvbiBvciBtb3N0IG90aGVyIHJlYXNvbnMuIFNFRUsgTk8g
+TU9SRSBiZWNhdXNlIFNldmVybiBGdW5kaW5nIGFuZCBJbnZlc3RtZW50IExpbWl0ZWQgaGFzIHlv
+dSBjb3ZlcmVkLiAKClRoZXJlJ3MgMyB0aGluZ3MgdGhhdCB5b3UgbmVlZCB0byBrZWVwIGluIG1p
+bmQ7IAogCjEuIFlvdSBuZWVkIHRvIG1ha2UgYSB3ZWxsIHRob3VnaHQgb3V0IHBsYW4sIHRyeSB0
+byBjb3ZlciBldmVyeXRoaW5nIHlvdSB3YW50IHRvIGFjY29tcGxpc2ggYW5kIHRoaW5rIG9mIHdo
+YXQgY291bGQgZ28gd3JvbmcgYWxvbmcgdGhlIHdheS4gWW91IGNvdWxkIGNyZWF0ZSBhIGJ1c2lu
+ZXNzIHBsYW4gYW5kIG9yIGV4ZWN1dGl2ZSBzdW1tYXJ5IHRvIHVzZSBhcyB5b3VyIGd1aWRlbGlu
+ZS4gQXMgYSBydWxlLCBpdOKAmXMgYmVzdCBOT1QgdG8gYXNrIGZhbWlseSBvciBmcmllbmRzIGZv
+ciBtb25leSBpdHMgYmVzdCB0byB1c2UgKG90aGVyIHBlb3BsZeKAmXMgbW9uZXkpIGEgZnVuZGlu
+ZyBzb3VyY2UgdGhhdCB5b3UgaGF2ZSBubyBwZXJzb25hbCByZWxhdGlvbnNoaXAgd2l0aC4KIAoy
+LiBFeHBlY3QgeW91ciBwbGFuIHRvIGZhaWwgaW4gcGFydCBvciBmdWxsIGluIG1hbnkgY2FzZXMg
+dGhpcyB3aWxsIGhhcHBlbiBubyBtYXR0ZXIgaG93IHdlbGwgeW91IHRob3VnaHQgb3V0IHlvdXIg
+cGxhbi4gVW5mb3Jlc2VlbiBvYnN0YWNsZXMgYW5kIHNwZWVkIGJ1bXBzIG9mdGVuIHdpbGwgY29t
+ZSBpbiB5b3VyIHBhdGggdGhhdCBwcmV2ZW50IHlvdXIgcGxhbnMgZnJvbSBnb2luZyBhcyB5b3Ug
+aGFkIHByb2plY3RlZC4gCiAKMy4gQWx3YXlzIHdpdGhvdXQgZXhjZXB0aW9uIGhhdmUgYSAoUGxh
+biBCKS4gQW5kIHRoYXQncyB3aGVyZSB3ZSBjb21lIGluLiBXZSBhcmUgeW91ciBQbGFuIEIhIEJ1
+dCBkb24ndCB3b3JyeSB3ZSBhcmUgaGVyZSB0byBtYWtlIHlvdXIgZHJlYW0gYSBzdWNjZXNzLgog
+CkZvciBmdW5kaW5nIG9yIHF1ZXN0aW9uczsgRmVlbCBmcmVlIHRvIGdldCBpbiB0b3VjaCB3aXRo
+IG1lLgoKQmVzdCB3aXNoZXMKTW9yYWxlcyBHdXN0YXZvClByb2plY3QgRmluYW5jZSBGYWNpbGl0
+YXRvcgpTZXZlcm4gRnVuZGluZyBhbmQgSW52ZXN0bWVudCBMVEQKMTAzNiBTIE1haW4gU3QsIEFu
+biBBcmJvcgpNSSA0ODEwNCBVU0EuCkUtbWFpbDogbW9yYWxlcy5ndXN0YXZvQHNldmVybmZ1bmRp
+bmdpbnZlc3RtZW50LmNvbQpXZWJzaXRlOiB3d3cuc2V2ZXJuZnVuZGluZ2ludmVzdG1lbnQuY29t
+CgoqKklmIHlvdSBkbyBub3QgbmVlZCBmdW5kaW5nIGF0IHRoaXMgdGltZSwgcGVyaGFwcyB5b3Ug
+a25vdyBzb21lb25lIHdobyBkb2VzLiBXZSBQYXkgUmVmZXJyYWwgRmVlcyEhIQpfX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18KRElTQ0xBSU1FUjogVGhp
+cyBlbWFpbCBhbmQgYW55IGZpbGVzIHRyYW5zbWl0dGVkIHdpdGggaXQgYXJlIGNvbmZpZGVudGlh
+bCBhbmQgaW50ZW5kZWQgc29sZWx5IGZvciB0aGUgdXNlIG9mIHRoZSBpbmRpdmlkdWFsIG9yIGVu
+dGl0eSB0byB3aG9tIHRoZXkgYXJlIGFkZHJlc3NlZC4gSW50ZXJuZXQgY29tbXVuaWNhdGlvbnMg
+YXJlIG5vdCBzZWN1cmVkIGFuZCB0aGVyZWZvcmUgSSBkbyBub3QgYWNjZXB0IGFueSBsZWdhbCBy
+ZXNwb25zaWJpbGl0eSBmb3IgdGhlIGNvbnRlbnRzIG9mIHRoaXMgbWVzc2FnZS4gSWYgeW91IGhh
+dmUgcmVjZWl2ZWQgdGhpcyBlbWFpbCBpbiBlcnJvciBwbGVhc2Ugbm90aWZ5IHVzIGltbWVkaWF0
+ZWx5LiBJZiB5b3UgYXJlIG5vdCB0aGUgbmFtZWQgYWRkcmVzc2VlIHlvdSBzaG91bGQgbm90IGRp
+c3NlbWluYXRlLCBkaXN0cmlidXRlIG9yIGNvcHkgdGhpcyBlLW1haWwuCgoKX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18KT3NzdC11c2VycyBtYWlsaW5nIGxp
+c3QKT3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQKaHR0cHM6Ly9saXN0cy5zb3VyY2Vm
+b3JnZS5uZXQvbGlzdHMvbGlzdGluZm8vb3NzdC11c2Vycwo=
