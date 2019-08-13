@@ -2,67 +2,68 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0B99F8B09C
-	for <lists+osst-users@lfdr.de>; Tue, 13 Aug 2019 09:21:20 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id D55458B609
+	for <lists+osst-users@lfdr.de>; Tue, 13 Aug 2019 12:59:09 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hxR7O-0003gi-Qb
-	for lists+osst-users@lfdr.de; Tue, 13 Aug 2019 07:21:18 +0000
+	id 1hxUWC-0004Bi-KO
+	for lists+osst-users@lfdr.de; Tue, 13 Aug 2019 10:59:08 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <www-data@koyacumu.mara15874.com>) id 1hxR7N-0003ga-Br
- for osst-users@lists.sourceforge.net; Tue, 13 Aug 2019 07:21:17 +0000
+ (envelope-from <www-data@yefalexu.mara15874.com>) id 1hxUWA-0004BH-Vf
+ for osst-users@lists.sourceforge.net; Tue, 13 Aug 2019 10:59:06 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:From:Date:
  Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=QrlF/7ulZvbfR7AtZuGzDfFOI7FyizeUz5Cwj8asu9I=; b=jvaXcGi0mL3S37nXufMpNeqCln
- kkalMkh2afzhtlHI/vuFBlHkBNMBA9Kf25HgxK84v0fOI+yw7cFb0qwDRZeJGB0xZxYSUcFP3LgnV
- cjx71YTffNvH/PZEtnyts6IwLhtUC5cJelDMLeaJARGfCYt6vyQUqxPLpdh1IFWR5PDY=;
+ bh=YKKly1G1zpoGr/naXvexrVMBED0HgrCa64VCww9Myoc=; b=BOCnVlMYhKSpci0aTS2cISjEhc
+ r7Rv0cVHNj7vRlGSUPwMpO2NIbPdPkKOBJ4dzDaog/GRR6pUaq6oWZ98OdDfeBNMi2yn6ZdWCryWk
+ Bi5Yfc52T0QRDnavH6M8TF0t4H53iqV9Y5m/FD8n5NZdIknZHk/p6FcdvNa7JA7laHEE=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=QrlF/7ulZvbfR7AtZuGzDfFOI7FyizeUz5Cwj8asu9I=; b=e
- DoM9bp3fEfGlR3MZA8+Qsh4nronDJOGHdLH3cYg8j/KztGveUCHadITgGcRa1kro/POMK6rvNsK74
- Rkxik93ZXHQlNDH63ckd5H2LkzDCOc6soQM5HZVv5T9RpBds23Qb/pct3vOb+RynheFcmHgBUZSh6
- VNh8yUpr5tfDp/OY=;
-Received: from koyacumu.mara15874.com ([2.58.28.6])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
- id 1hxR7L-0043BS-JO
- for osst-users@lists.sourceforge.net; Tue, 13 Aug 2019 07:21:17 +0000
-Received: by koyacumu.mara15874.com (Postfix, from userid 33)
- id 87CCC26447; Tue, 13 Aug 2019 07:19:46 +0000 (UTC)
+ List-Owner:List-Archive; bh=YKKly1G1zpoGr/naXvexrVMBED0HgrCa64VCww9Myoc=; b=b
+ /0j8TqQpcJmyWQ/yCIwFRdF7e8jnU2dnEgL8c7ZL571CV13ftXZeNXftHMLGslGckdfjCmEx2DbYo
+ KON/MLq9QKG1n3PuZIpsHTGyq2tX3lpAWRPKeCelj44jJ+l2GAqOYWX65KWb4YVJ8bpDNhjG98h21
+ pxmj7JatEhzrhnko=;
+Received: from yefalexu.mara15874.com ([2.58.28.204])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1hxUW9-002aXl-DY
+ for osst-users@lists.sourceforge.net; Tue, 13 Aug 2019 10:59:06 +0000
+Received: by yefalexu.mara15874.com (Postfix, from userid 33)
+ id 00AF3FCEA3; Tue, 13 Aug 2019 05:09:03 +0000 (UTC)
 To: osst-users@lists.sourceforge.net
 X-PHP-Originating-Script: 0:LOCAWEB1.php
-Date: Tue, 13 Aug 2019 07:19:46 +0000
-From: Locaweb <Locaweb_dDdsn@koyacumu.mara15874.com>
-Message-ID: <23a9333806ba1a6f80ab2aeec2dce6c3@koyacumu.mara15874.com>
+Date: Tue, 13 Aug 2019 05:09:03 +0000
+From: Locaweb <Locaweb_qCAcc@yefalexu.mara15874.com>
+Message-ID: <c00163906f06df74bf6ab007fef9157b@yefalexu.mara15874.com>
 X-Priority: 3
 X-Mailer: PHPMailer 5.2.4
  (http://code.google.com/a/apache-extras.org/p/phpmailer/)
 MIME-Version: 1.0
-X-Spam-Score: 4.6 (++++)
+X-Spam-Score: 5.6 (+++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
- [2.58.28.6 listed in zen.spamhaus.org]
+ [2.58.28.204 listed in zen.spamhaus.org]
  -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  -0.0 SPF_PASS               SPF: sender matches SPF record
+ 1.1 DATE_IN_PAST_03_06     Date: is 3 to 6 hours before Received: date
+ 1.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ background
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
  for more information. [URIs: azure.com]
- 1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
- background
-X-Headers-End: 1hxR7L-0043BS-JO
+X-Headers-End: 1hxUW9-002aXl-DY
 Subject: [Osst-users] =?utf-8?b?QXRlbsOnw6NvOiBTZXUgc2VydmnDp28gc2VyYSBz?=
  =?utf-8?q?uspenso=2C_Notamos_que_sua_caixa_de_entrada_estar_Bem_proximo_a?=
  =?utf-8?q?o_limite_de_11_GB=2E?=
@@ -77,14 +78,14 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============0665103905063948522=="
+Content-Type: multipart/mixed; boundary="===============7967322834500911730=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0665103905063948522==
+--===============7967322834500911730==
 Content-Type: multipart/alternative;
-	boundary="b1_23a9333806ba1a6f80ab2aeec2dce6c3"
+	boundary="b1_c00163906f06df74bf6ab007fef9157b"
 
---b1_23a9333806ba1a6f80ab2aeec2dce6c3
+--b1_c00163906f06df74bf6ab007fef9157b
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: base64
 
@@ -103,18 +104,17 @@ dWUgZWxlIHNlamEgcmVhdGl2YWRvIGFwJm9hY3V0ZTtzIGEgY29udHJhdGEmY2NlZGlsO2FvIGRv
 IGxvY2F3ZWINCg0KDQoNCiZuYnNwOw0KDQoNCg0KDQoNCg0KJm5ic3A7DQoNCg0KDQoNCg0KDQom
 bmJzcDsNCg0KDQombmJzcDsNCg0KJm5ic3A7DQoNCiZuYnNwOw0KDQombmJzcDsNCiZuYnNwOw0K
 Jm5ic3A7DQombmJzcDsNCiZuYnNwOw0KDQombmJzcDsNCg0KDQombmJzcDsNCg0KDQoNCg0KDQoN
-Cg0KNzg1NjE0LCA3NDQ2MCwgMTAwMjQsIDE2NjA3ODU2MTQsIDc0NDYwLCAxMDAyNCwgMTY2MDc4
-NTYxNCwgNzQ0NjAsIDEwMDI0LCAxNjYwNzg1NjE0LCA3NDQ2MCwgMTAwMjQsIDE2NjA3ODU2MTQs
-IDc0NDYwLCAxMDAyNCwgMTY2MDc4NTYxNCwgNzQ0NjAsIDEwMDI0LCAxNjYwNzg1NjE0LCA3NDQ2
-MCwgMTAwMjQsIDE2NjA3ODU2MTQsIDc0NDYwLCAxMDAyNCwgMTY2MDc4NTYxNCwgNzQ0NjAsIDEw
-MDI0LCAxNjYwNzg1NjE0LCA3NDQ2MCwgMTAwMjQsIDE2NjA3ODU2MTQsIDc0NDYwLCAxMDAyNCwg
-MTY2MDc4NTYxNCwgNzQ0NjAsIDEwMDI0LCAxNjYwNzg1NjE0LCA3NDQ2MCwgMTAwMjQsIDE2NjA3
-ODU2MTQsIDc0NDYwLCAxMDAyNCwgMTY2MA0KCgpuXzI2NDAxMDM1MDQzMjg0MzgyNDM0NzY5ODgy
-NjM4OTIwNTYxNzc0Mzg4NjA3MDQ1Mzk4NzY0NzUzOTI2NzE5ODc2MDQzNDgxMzQyMDU2NTg2NDYy
-OTM4MjIwOTA=
+Cg0KMjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1MjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1MjgxODE2
+LCAzNjIxMCwgMzEyMCwgMjc1MjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1MjgxODE2LCAzNjIxMCwg
+MzEyMCwgMjc1MjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1MjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1
+MjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1MjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1MjgxODE2LCAz
+NjIxMCwgMzEyMCwgMjc1MjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1MjgxODE2LCAzNjIxMCwgMzEy
+MCwgMjc1MjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1MjgxODE2LCAzNjIxMCwgMzEyMCwgMjc1DQoK
+Cm5fMDc0OTUzMTg2NDgzMzYzMTM4MjcyNTc2NjcyOTM4NjQ1MTQxNTUwMjA5NjQ1MDU4ODg1MTMz
+NzkxMDk1ODY5Mzc0NTMwNTUwNDE1OQ==
 
 
---b1_23a9333806ba1a6f80ab2aeec2dce6c3
+--b1_c00163906f06df74bf6ab007fef9157b
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: base64
 
@@ -186,31 +186,30 @@ Z18wNi5wbmciIGFsdD0iIiBib3JkZXI9IjAiIC8+PC90ZD4NCjx0ZCBhbGlnbj0ibGVmdCIgdmFs
 aWduPSJ0b3AiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzOCI+Jm5ic3A7PC90ZD4NCjwvdHI+DQo8dHI+
 DQo8dGQgY29sc3Bhbj0iMTMiIGhlaWdodD0iMjIiPiZuYnNwOzwvdGQ+DQo8L3RyPg0KPC90Ym9k
 eT4NCjwvdGFibGU+DQo8L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPg0KPHAgc3R5bGU9
-ImNvbG9yOiAjRkZGIj43ODU2MTQsIDc0NDYwLCAxMDAyNCwgMTY2MDc4NTYxNCwgNzQ0NjAsIDEw
-MDI0LCAxNjYwNzg1NjE0LCA3NDQ2MCwgMTAwMjQsIDE2NjA3ODU2MTQsIDc0NDYwLCAxMDAyNCwg
-MTY2MDc4NTYxNCwgNzQ0NjAsIDEwMDI0LCAxNjYwNzg1NjE0LCA3NDQ2MCwgMTAwMjQsIDE2NjA3
-ODU2MTQsIDc0NDYwLCAxMDAyNCwgMTY2MDc4NTYxNCwgNzQ0NjAsIDEwMDI0LCAxNjYwNzg1NjE0
-LCA3NDQ2MCwgMTAwMjQsIDE2NjA3ODU2MTQsIDc0NDYwLCAxMDAyNCwgMTY2MDc4NTYxNCwgNzQ0
-NjAsIDEwMDI0LCAxNjYwNzg1NjE0LCA3NDQ2MCwgMTAwMjQsIDE2NjA3ODU2MTQsIDc0NDYwLCAx
-MDAyNCwgMTY2MDc4NTYxNCwgNzQ0NjAsIDEwMDI0LCAxNjYwPC9wPg0KCjwvYm9keT4KPGJyPjxi
-cj48YnI+PGJyPjxicj48YnI+PGJyPjxmb250IGNvbG9yPSIjRTZFNkU2Ij5uXzI2NDAxMDM1MDQz
-Mjg0MzgyNDM0NzY5ODgyNjM4OTIwNTYxNzc0Mzg4NjA3MDQ1Mzk4NzY0NzUzOTI2NzE5ODc2MDQz
-NDgxMzQyMDU2NTg2NDYyOTM4MjIwOTA8L2ZvbnQ+PC9odG1sPg==
+ImNvbG9yOiAjRkZGIj4yODE4MTYsIDM2MjEwLCAzMTIwLCAyNzUyODE4MTYsIDM2MjEwLCAzMTIw
+LCAyNzUyODE4MTYsIDM2MjEwLCAzMTIwLCAyNzUyODE4MTYsIDM2MjEwLCAzMTIwLCAyNzUyODE4
+MTYsIDM2MjEwLCAzMTIwLCAyNzUyODE4MTYsIDM2MjEwLCAzMTIwLCAyNzUyODE4MTYsIDM2MjEw
+LCAzMTIwLCAyNzUyODE4MTYsIDM2MjEwLCAzMTIwLCAyNzUyODE4MTYsIDM2MjEwLCAzMTIwLCAy
+NzUyODE4MTYsIDM2MjEwLCAzMTIwLCAyNzUyODE4MTYsIDM2MjEwLCAzMTIwLCAyNzUyODE4MTYs
+IDM2MjEwLCAzMTIwLCAyNzUyODE4MTYsIDM2MjEwLCAzMTIwLCAyNzUyODE4MTYsIDM2MjEwLCAz
+MTIwLCAyNzU8L3A+DQoKPC9ib2R5Pgo8YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGZvbnQg
+Y29sb3I9IiNFNkU2RTYiPm5fMDc0OTUzMTg2NDgzMzYzMTM4MjcyNTc2NjcyOTM4NjQ1MTQxNTUw
+MjA5NjQ1MDU4ODg1MTMzNzkxMDk1ODY5Mzc0NTMwNTUwNDE1OTwvZm9udD48L2h0bWw+
 
 
 
---b1_23a9333806ba1a6f80ab2aeec2dce6c3--
+--b1_c00163906f06df74bf6ab007fef9157b--
 
 
 
---===============0665103905063948522==
+--===============7967322834500911730==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0665103905063948522==
+--===============7967322834500911730==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -221,6 +220,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0665103905063948522==--
+--===============7967322834500911730==--
 
 
