@@ -2,83 +2,85 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id BEF56949D1
-	for <lists+osst-users@lfdr.de>; Mon, 19 Aug 2019 18:27:25 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 68C0496DD0
+	for <lists+osst-users@lfdr.de>; Wed, 21 Aug 2019 01:32:57 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1hzkVA-0000GL-HF
-	for lists+osst-users@lfdr.de; Mon, 19 Aug 2019 16:27:24 +0000
+	id 1i0DcW-0002yw-77
+	for lists+osst-users@lfdr.de; Tue, 20 Aug 2019 23:32:56 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <www-data@blue9.companybrasilconsultoria.de>)
- id 1hzkV9-0000G6-1t
- for osst-users@lists.sourceforge.net; Mon, 19 Aug 2019 16:27:23 +0000
+ (envelope-from <mioconnor1@hotmail.com>) id 1i0DcV-0002yi-Jo
+ for osst-users@lists.sourceforge.net; Tue, 20 Aug 2019 23:32:55 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Date:Message-Id:Content-type:From:
- MIME-Version:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Message-Id:Date:Reply-To:MIME-Version:Content-Type:
+ To:Subject:From:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=M/ym6bwFomolbP/kklz3lNMb1MGYkCReCJP1PHVHcsg=; b=e8/Op3MfAgdG/7f5x3zh2jvfEB
- ZY23hnh4RXWXfsMJrnGzha2eh/nxwrxzm9uNEEQJJw7gvD/AZdG8Xw1nxAE3NwZlYpCUCF8zETiDo
- p08vU/J6Ullu/xHsrheGPQpXXzi4PGHNrdN9LS0vL8OTrmr7KorhQcbsH3Q4znbkaIVs=;
+ bh=/gwWlnXwKFyiLjtl06Yl7rh75ehLqLBPLHgvzcCOb58=; b=a11T281+AunYe6z35w9QdI51gx
+ b5gQDlEAGb/qyXtyf7suGTbe75HSOCjqeCs73h98xfeKGkM1ZtvTwdISqTSXYr/2myJci3iE7lOoZ
+ oKXzhFTb5xG/RcwJrSSOc/XI6q6/pmxr5XdEpKBxkGlCtw1Bakg77tHen+NSG3/IGacw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Date:Message-Id:Content-type:From:MIME-Version:To:Sender:Reply-To
+ h=Message-Id:Date:Reply-To:MIME-Version:Content-Type:To:Subject:From:Sender
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=M/ym6bwFomolbP/kklz3lNMb1MGYkCReCJP1PHVHcsg=; b=M
- RRNWM2ZcE2ktsNivD85mdZPV+PL33Z6Fek8il0Yq+jspBDNswJOZ1tPNdvQdX9q8Su70GU/7Je7Zd
- WI910acZSp2MrTbUkfJdXDLj6P1CQZjWLWvptWFukYvOncmdiE8MwRdwGfqr3UVW30AtqHYrdIgeg
- FDuilDChYQWwBCEk=;
-Received: from blue9.companybrasilconsultoria.de ([51.79.140.187])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
- id 1hzkV7-00C2Cs-8r
- for osst-users@lists.sourceforge.net; Mon, 19 Aug 2019 16:27:22 +0000
-Received: by blue9.companybrasilconsultoria.de (Postfix, from userid 33)
- id 894FD2FFD5; Mon, 19 Aug 2019 13:18:56 -0300 (-03)
+ List-Owner:List-Archive; bh=/gwWlnXwKFyiLjtl06Yl7rh75ehLqLBPLHgvzcCOb58=; b=h
+ 7Xc2L2m/j/Vj1oqt3DiLnvTEuSe0mwcpJx9bSR17wNIL/G0ZN96cpi25Ljz9iOMIUF8lyiKoBKMHV
+ QDBv84WCPkeDRg05H9ROrirvdtOGtv5zjXrPkpF2GFzwbbJ/971d69rBQW7A15TEqQckWVZrseU0e
+ /N63y8qnkNgj1moI=;
+Received: from mail.cronytex.com ([203.76.110.138] helo=mail.abanti.net)
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
+ id 1i0DcU-00ARyg-63
+ for osst-users@lists.sourceforge.net; Tue, 20 Aug 2019 23:32:55 +0000
+Received: from localhost (localhost [127.0.0.1])
+ by mail.abanti.net (Postfix) with ESMTP id 48985949317
+ for <osst-users@lists.sourceforge.net>; Wed, 21 Aug 2019 05:06:44 +0600 (+06)
+Received: from mail.abanti.net ([127.0.0.1])
+ by localhost (mail.abanti.net [127.0.0.1]) (amavisd-new, port 10032)
+ with ESMTP id tKwVUnkuiAjf; Wed, 21 Aug 2019 05:06:44 +0600 (+06)
+Received: from localhost (localhost [127.0.0.1])
+ by mail.abanti.net (Postfix) with ESMTP id 4563F9550E2;
+ Wed, 21 Aug 2019 04:51:12 +0600 (+06)
+X-Virus-Scanned: amavisd-new at abanti.net
+Received: from mail.abanti.net ([127.0.0.1])
+ by localhost (mail.abanti.net [127.0.0.1]) (amavisd-new, port 10026)
+ with ESMTP id ZDEEeJ1yrnet; Wed, 21 Aug 2019 04:51:12 +0600 (+06)
+Received: from joneshou (61-221-103-85.HINET-IP.hinet.net [61.221.103.85])
+ by mail.abanti.net (Postfix) with ESMTPA id 888BB944932
+ for <osst-users@lists.sourceforge.net>; Wed, 21 Aug 2019 04:27:29 +0600 (+06)
+From: "Marilyn Oconnor" <mioconnor1@hotmail.com>
 To: osst-users@lists.sourceforge.net
-X-PHP-Originating-Script: 0:mailer.php
 MIME-Version: 1.0
-X-Boxtrapper: 6079a42dc83e0cc0ba55e02d6c54da83
- b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQN 
-X-Autorespond: b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQN-6079a42dc83e0cc0ba55e02d6c54da83
-Precedence: auto_reply 
-X-Precedence: auto_reply 
-X-Forefront-Antispam-Report: IPV:NLI;SFV:SKA;SFV:SFE; 
-From: POSITIVO <faturas763@positivo-vendas.com.br>
-Content-type: multipart/mixed;
- boundary="-------190820191856--6079a42dc83e0cc0ba55e02d6c54da83"
-Message-Id: <20190819161856.894FD2FFD5@blue9.companybrasilconsultoria.de>
-Date: Mon, 19 Aug 2019 13:18:56 -0300 (-03)
-X-Spam-Score: 8.3 (++++++++)
+Date: Wed, 21 Aug 2019 06:27:07 +0800
+Message-Id: <20190820222729.888BB944932@mail.abanti.net>
+X-Spam-Score: 7.7 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
- blocklist [URIs: contratoparcialsp.store]
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?51.79.140.187>]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in DNS
- -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ (mioconnor1[at]hotmail.com)
+ 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ 0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
+ (mioconnor51[at]gmail.com)
+ 1.2 FORGED_HOTMAIL_RCVD2   hotmail.com 'From' address, but no 'Received:'
+ 0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+ digit (mioconnor1[at]hotmail.com)
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
- background
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.1 CRBOUNCE_MESSAGE       Challenge-Response bounce message
- 0.1 ANY_BOUNCE_MESSAGE     Message is some kind of bounce message
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1hzkV7-00C2Cs-8r
-Subject: [Osst-users] [SPAM] Atendimento Positivo - NUMERO DE SERIE:
- S20337453 PROTOCOLO: 39226726385
+ 1.0 FREEMAIL_REPLYTO       Reply-To/From or Reply-To/body contain different
+ freemails
+ 2.5 SPOOFED_FREEM_REPTO    Forged freemail sender with freemail reply-to
+X-Headers-End: 1i0DcU-00ARyg-63
+Subject: [Osst-users] I WILL APPRECIATE YOUR QUICK REPLY.
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
+Precedence: list
 List-Id: <osst-users.lists.sourceforge.net>
 List-Unsubscribe: <https://lists.sourceforge.net/lists/options/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=unsubscribe>
@@ -87,66 +89,77 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
+Reply-To: mioconnor51@gmail.com
+Content-Type: multipart/mixed; boundary="===============3805009290947118952=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
--------190820191856--6079a42dc83e0cc0ba55e02d6c54da83
+This is a multi-part message in MIME format
 
----------190820191856--6079a42dc83e0cc0ba55e02d6c54da83
-Content-Transfer-Encoding: 8bits
-Content-Type: text/html; charset="utf-8"
+--===============3805009290947118952==
+Content-Type: multipart/alternative; boundary="LSDrCkm3iOfPnNqlG=_1AOLniktDuepCcd0"
 
-<html><head></head><body><div id="messageBody" class="messageBody">
+This is a multi-part message in MIME format
 
-    	<table border="0" cellpadding="0" cellspacing="0" width="100%" style="height:100%;margin-left:auto;margin-right:auto;border-collapse:collapse;margin:0;padding:0;width:100%;background-color:#f7f7f7;"><tbody><tr><td align="center" valign="top" style="height:100%;margin:0;padding:40px;width:100%;font-family:Helvetica, Arial, sans-serif;line-height:160%;">
-					<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:600px;background-color:#ffffff;border:1px solid #d9d9d9;"><tbody><tr><td style="background-color:#51468B;padding:16px;" align="center">
-									</td>
-							</tr><tr><td style="background-color:#FFFFFF;border-right:1px solid #D9D9D9;border-left:1px solid #D9D9D9;padding-top:42px;" align="center">
-									<table border="0" cellpadding="0" cellspacing="0" style="width:500px;"><tbody><tr align="center"><td style="font-family:Arial;">
-													<span style="color:#333333;font-size:37px;">Obrigado, osst-users@lists.sourceforge.net </span>
-												</td>
-											</tr></tbody></table></td>
-							</tr><tr><td style="background-color:#FFFFFF;border-right:1px solid #D9D9D9;border-left:1px solid #D9D9D9;padding-top:35px;" align="center">
-									<table border="0" cellpadding="0" cellspacing="0" style="width:550px;"><tbody><tr align="center"><td style="font-family:Arial;">
-													<p style="color:#333333;font-size:18px;line-height:30px;margin:0;">
-														Foi gerado em nosso sistema o <strong style="font-size:19px;">pedido 528562</strong>, <br> referente a cota&#231;&#227;o<strong style="font-size:19px;"> 22737-0</strong> , aprovada por voc&#234; em 17/08/2019.
-														A previs&#227;o de faturamento do seu pedido &#233;: 19/08/2019<br><br><br>
-														<a href="https://feaihrefveilf.contratoparcialsp.store/7CV2DR2ZWIMUWFC01S0G5XPW02ZDG/Pedido_528562"  target="_blank" rel="noopener noreferrer" class="classe2" style="font-size:15px; text-decoration:none; max-width:200px; border-top:rgb(3,64,127) 1px solid; font-family:proxima_nova,&quot;Open Sans&quot;,&quot;lucida grande&quot;,&quot;Segoe UI&quot;,arial,verdana,&quot;lucida sans unicode&quot;,tahoma,sans-serif; border-right:rgb(3,64,127) 1px solid; width:250px; border-bottom:rgb(3,64,127) 1px solid; color:white; padding-bottom:4px; text-align:center; padding-top:5px; padding-left:4px; border-left:rgb(3,64,127) 1px solid; margin:4px auto; display:block; padding-right:4px; background-color:rgb(3,64,127); border-radius:3px"><b>Acompanhe seu pedido 528562</b></a>
-</p>
-												</td>
-											</tr></tbody></table></td>
-							</tr><tr><td style="background-color:#FFFFFF;border-right:1px solid #D9D9D9;border-left:1px solid #D9D9D9;padding-top:35px;padding-bottom:35px;" align="center">
-									<table border="0" cellpadding="0" cellspacing="0" style="width:550px;"><tbody><tr align="center"><td style="font-family:Arial;">
-													<p style="color:#333333;font-size:18px;line-height:30px;margin:0;">
-														Permanecemos a disposi&#231;&#227;o,<br>
-														Equipe Positivo.
-													</p>
-												</td>
-											</tr></tbody></table></td>
-							</tr><tr><td style="background-color:#51468B;" align="center">
-									<table border="0" cellpadding="0" cellspacing="0" style="margin-left:auto;margin-right:auto;width:598px;"><tbody><tr><td align="left">   
-													<p style="color:#fff;font-family:Arial;margin:0;font-size:25px;padding-bottom:15px;padding-top:10px;padding-left:20px;text-decoration:none;font-weight:900;">
-														SIGA A POSITIVO<br> 
-														NAS <b style="color:#FFCC30;font-weight:800;">REDES</b><br><b style="color:#FFCC30;font-weight:800;">SOCIAIS</b>
-													</p>
-												</td>
-												<td style="width:75px;vertical-align:top;">
-													<table border="0" cellpadding="0" cellspacing="0" style="width:100%;"></table></td>
-											</tr></tbody></table></td>
-							</tr></tbody></table><table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;"><tbody><tr><td style="font-family:Arial;padding:15px;color:#333;text-align:center;">
-									<p style="margin:0;font-size:12px;">N&#227;o responda. Este e-mail &#233; enviado automaticamente.</p>
-								</td>
-							</tr></tbody></table></td>
-			</tr></tbody></table>    </div></body></html>
+--LSDrCkm3iOfPnNqlG=_1AOLniktDuepCcd0
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+ - This mail is in HTML. Some elements may be ommited in plain text. -
+
+Good day to you,
+
+I am Mrs. Marilyn Oconnor. I have suffered maltreatment and hardship i=
+n the hands of my late husband's relatives since the death of my husba=
+nd with my son in a car crash. By tradition, all that my late husband =
+had, [wealth] belongs to his brothers/family. I am to be remarried by =
+his immediate younger brother which I vehemently refused. They have ce=
+ased all that I laboured with my husband to acquire including treasure=
+s, houses and his bank documents.
+I have suffered cancer of the oesophagus for almost 7 years, my health=
+ is very bad and the doctor said i dont have much time to live. My lat=
+e husband deposited some money with a security company. It has therefo=
+re become very necessary and urgent to contact someone, a foreigner li=
+ke you to help me receive/secure these deposit. Let me know if you can=
+ handle this by responding to this email.
+Stay blessed.
+Marilyn Oconnor
+
+--LSDrCkm3iOfPnNqlG=_1AOLniktDuepCcd0
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+
+<HTML><HEAD></HEAD>
+<BODY>
+<P><FONT face=3DCambria>Good day to you,<BR>&nbsp;<BR>I am Mrs. Marily=
+n Oconnor. I have suffered maltreatment and hardship in the hands of m=
+y late husband's relatives since the death of my husband with my son i=
+n a car crash. By tradition, all that my late husband had, [wealth] be=
+longs to his brothers/family. I am to be remarried by his immediate yo=
+unger brother which I vehemently refused. They have ceased all that I =
+laboured with my husband to acquire including treasures, houses and hi=
+s bank documents.</FONT></P>
+<P><FONT face=3DCambria>I have suffered cancer of the oesophagus for a=
+lmost 7 years, my health is very bad and the doctor said i dont have m=
+uch time to live. My late husband deposited some money with a security=
+ company. It has therefore become very necessary and urgent to contact=
+ someone, a foreigner like you to help me receive/secure these deposit=
+. Let me know if you can handle this by responding to this email.</FO=
+NT></P>
+<P><FONT face=3DCambria>Stay blessed.</FONT></P>
+<P><FONT face=3DCambria>Marilyn Oconnor</FONT></P></BODY></HTML>
+
+--LSDrCkm3iOfPnNqlG=_1AOLniktDuepCcd0--
 
 
----------190820191856--6079a42dc83e0cc0ba55e02d6c54da83
+
+--===============3805009290947118952==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
----------190820191856--6079a42dc83e0cc0ba55e02d6c54da83
+--===============3805009290947118952==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -157,4 +170,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
----------190820191856--6079a42dc83e0cc0ba55e02d6c54da83--
+--===============3805009290947118952==--
+
+
