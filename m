@@ -2,49 +2,49 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id E75999A570
-	for <lists+osst-users@lfdr.de>; Fri, 23 Aug 2019 04:26:47 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id D1E8E9B0A1
+	for <lists+osst-users@lfdr.de>; Fri, 23 Aug 2019 15:21:52 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1i0zHq-00048r-Ld
-	for lists+osst-users@lfdr.de; Fri, 23 Aug 2019 02:26:46 +0000
+	id 1i19Vn-0006He-Io
+	for lists+osst-users@lfdr.de; Fri, 23 Aug 2019 13:21:51 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <www-data@henhesog.maklimp402587.com>)
- id 1i0zHo-00048a-W7
- for osst-users@lists.sourceforge.net; Fri, 23 Aug 2019 02:26:45 +0000
+ (envelope-from <www-data@nasusunh.maklimp402587.com>)
+ id 1i19Vk-0006HT-4E
+ for osst-users@lists.sourceforge.net; Fri, 23 Aug 2019 13:21:48 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:From:Date:
  Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=U9x0Chj8g3BTW2ocXb8aNPYrmM1+B/nRkiImbiWAJmc=; b=P1iiZfSA/7zRhS2fsqqR7yEYth
- LAQGoyl4eRjZC97BzaGKKf+oRcLCc2v2EPOb5Z2XgkXs79qCPcSzP1Wr4VQkiszWomkMxxzJ7Oaj9
- 0Zj77XM1QT/X69LbGSeTip5fbmZ2cau5WO5mECzyyQk3xH07saFcFwqDwHyoU47vMpoY=;
+ bh=5Punpr2jIYPd37L2jM+uUiYnA9YuMsSuXIuTxABK1WE=; b=KZh/ujatbBtJPxN7fxrkKjezI2
+ BamQX/3Vj0DKTIUkHBcGcNAqYPykMTNe+4VSbXdom6BFNTippSKNitGubTPP6EcM/Le+vK1I4a07a
+ lLF2KU6JFxoxCxfpwu52S0ajIo33lKVbSJdgnpwI4eywoSh4bUvcQKZaoHze9TRzhvTg=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:MIME-Version:Message-ID:From:Date:Subject:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=U9x0Chj8g3BTW2ocXb8aNPYrmM1+B/nRkiImbiWAJmc=; b=i
- qPTVoYON4hzabZxfmsHYneZVmGQ+xr1eJrx2/JdTkVAJ9QTr8xeghrsrfhm3d6qxCk87PA2booly4
- +7Dxmdl7fmEIoUOTh1B3/akonHDgPGaqlPi62aGT2Sc1p8p27zp17WLESlGhhIq05qsvb9nAmxENg
- UK8JHqbMLmd99jK8=;
-Received: from henhesog.maklimp402587.com ([2.58.28.110])
+ List-Owner:List-Archive; bh=5Punpr2jIYPd37L2jM+uUiYnA9YuMsSuXIuTxABK1WE=; b=W
+ ORirf5YLSZ4X8qry5vIRgrMcpf+WJ6Kw1XneP38/fho52EfpmUinMJq+lKroRGGAO54AGKC81qJTh
+ XaUVM1A6dRwtvxJuK3CybAu75Oj1dHcOaxKZLc4gkwGIjCLASpMmdIW2TSen8l1FKd1IZgD1YwUNl
+ YceYPwvkv2t0eO0g=;
+Received: from nasusunh.maklimp402587.com ([2.58.28.98])
  by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
- id 1i0zHn-00CwmA-DC
- for osst-users@lists.sourceforge.net; Fri, 23 Aug 2019 02:26:44 +0000
-Received: by henhesog.maklimp402587.com (Postfix, from userid 33)
- id 27C0B158C4D; Fri, 23 Aug 2019 02:06:49 +0000 (UTC)
+ id 1i19Vh-00DWnp-4b
+ for osst-users@lists.sourceforge.net; Fri, 23 Aug 2019 13:21:46 +0000
+Received: by nasusunh.maklimp402587.com (Postfix, from userid 33)
+ id 12B3C150B06; Fri, 23 Aug 2019 12:55:12 +0000 (UTC)
 To: osst-users@lists.sourceforge.net
-X-PHP-Originating-Script: 0:572wg6tfy21q3v9r242sht.php
-Date: Fri, 23 Aug 2019 02:06:49 +0000
-From: Uber <Uber_KbFdY@henhesog.maklimp402587.com>
-Message-ID: <15351449656f241e7027315d5631b3d3@henhesog.maklimp402587.com>
+X-PHP-Originating-Script: 0:hjudywhvrnjxhibiuczoognvrgsr6yc.php
+Date: Fri, 23 Aug 2019 12:55:12 +0000
+From: Uber <Uber_OlTDp@nasusunh.maklimp402587.com>
+Message-ID: <6c1ae80ae537a0a97a3fd9075acffa3f@nasusunh.maklimp402587.com>
 X-Priority: 3
 X-Mailer: PHPMailer 5.2.4
  (http://code.google.com/a/apache-extras.org/p/phpmailer/)
@@ -52,12 +52,12 @@ MIME-Version: 1.0
 X-Spam-Score: 5.9 (+++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [2.58.28.98 listed in zen.spamhaus.org]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
  for more information. [URIs: azure.com]
- 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
- [2.58.28.110 listed in zen.spamhaus.org]
  -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  -0.0 SPF_PASS               SPF: sender matches SPF record
  1.4 FUZZY_CREDIT           BODY: Attempt to obfuscate words in spam
@@ -66,7 +66,7 @@ X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  1.0 HTML_MESSAGE           BODY: HTML included in message
  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
  background
-X-Headers-End: 1i0zHn-00CwmA-DC
+X-Headers-End: 1i19Vh-00DWnp-4b
 Subject: [Osst-users] =?utf-8?q?PARAB=C3=89NS_voce_Ganhou_100=2C00_R=24_de?=
  =?utf-8?b?IENyw6lkaXRv?=
 X-BeenThere: osst-users@lists.sourceforge.net
@@ -80,14 +80,14 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3737276163843242691=="
+Content-Type: multipart/mixed; boundary="===============7529083619739014814=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============3737276163843242691==
+--===============7529083619739014814==
 Content-Type: multipart/alternative;
-	boundary="b1_15351449656f241e7027315d5631b3d3"
+	boundary="b1_6c1ae80ae537a0a97a3fd9075acffa3f"
 
---b1_15351449656f241e7027315d5631b3d3
+--b1_6c1ae80ae537a0a97a3fd9075acffa3f
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: base64
 
@@ -149,15 +149,16 @@ CQkJCQkJCQkNCgkJCQkJCQkJCQkJCQkJCQkJCQkJCQ0KCQkJCQkJCQkJCQkJCQkJCQkJCQkNCgkJ
 CQkJCQkJCQkJCQkJCQkJCQkNCgkJCQkJCQkJCQkJCQkJCQkJCQ0KCQkJCQkJCQkJCQkJCQkJCQkN
 CgkJCQkJCQkJCQkJCQkJCQkNCgkJCQkJCQkJCQkJCQkJCQ0KCQkJCQkJCQkJCQkJCQkNCgkJCQkJ
 CQkJCQkJCQkNCgkJCQkJCQkJCQkJCQ0KCQkJCQkJCQkJCQkNCgkJCQkJCQkJCQkNCgkJCQkJCQkJ
-CQ0KCQkJCQkJCQkNCgkJCQkJCQkNCgkJCQkJCQ0KCQkJCQkNCgkJCQkNCgkJCQ0KCQkNCgkJMTYx
-NzM5LDI1NzcyLDQ4MTUsMTkzNTEyNiwxOTM1MTI2LDE2MTczOSwyNTc3Miw0ODE1LA0KCQkJDQoJ
-CTE2MTczOSwyNTc3Miw0ODE1LDE5MzUxMjYsMTkzNTEyNiwxNjE3MzksMjU3NzIsNDgxNSwgDQoJ
-CTE2MTczOSwyNTc3Miw0ODE1LDE5MzUxMjYsMTkzNTEyNiwxNjE3MzksMjU3NzIsNDgxNSwgDQoJ
-CTE2MTczOSwyNTc3Miw0ODE1LDE5MzUxMjYsMTkzNTEyNiwxNjE3MzksMjU3NzIsNDgxNSwgDQoJ
-DQpuXzQzMjk0MzQwMzgwMjM0MTA5OTQyMTk1NTkyNQ==
+CQ0KCQkJCQkJCQkNCgkJCQkJCQkNCgkJCQkJCQ0KCQkJCQkNCgkJCQkNCgkJCQ0KCQkNCgkJNTcy
+NDYsNjkxNiwxMDM1LDU1ODg3OCw1NTg4NzgsNTcyNDYsNjkxNiwxMDM1LA0KCQkJDQoJCTU3MjQ2
+LDY5MTYsMTAzNSw1NTg4NzgsNTU4ODc4LDU3MjQ2LDY5MTYsMTAzNSwgDQoJCTU3MjQ2LDY5MTYs
+MTAzNSw1NTg4NzgsNTU4ODc4LDU3MjQ2LDY5MTYsMTAzNSwgDQoJCTU3MjQ2LDY5MTYsMTAzNSw1
+NTg4NzgsNTU4ODc4LDU3MjQ2LDY5MTYsMTAzNSwgDQoJDQpuXzc2ODY3NDg5MDE2NTkwODQyNDgx
+MzU2ODA1NjM2NzM0NDEwMjY5MTYwNzI5NzAzMDUyMjg4ODc4MzMyMDE1NDU3NTc0NTkwNTYzNTQz
+OTU5Mjc3MDU1OTk4MTA5NjU1NDE=
 
 
---b1_15351449656f241e7027315d5631b3d3
+--b1_6c1ae80ae537a0a97a3fd9075acffa3f
 Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: base64
 
@@ -452,30 +453,31 @@ CQkJCQkJCQk8L3RhYmxlPg0KCQkJCQkJCQkJCQkJCQk8L3RkPg0KCQkJCQkJCQkJCQkJCTwvdHI+
 DQoJCQkJCQkJCQkJCQk8L3Rib2R5Pg0KCQkJCQkJCQkJCQk8L3RhYmxlPg0KCQkJCQkJCQkJCTwv
 dGQ+DQoJCQkJCQkJCQk8L3RyPg0KCQkJCQkJCQk8L3Rib2R5Pg0KCQkJCQkJCTwvdGFibGU+DQoJ
 CQkJCQk8L3RkPg0KCQkJCQk8L3RyPg0KCQkJCTwvdGJvZHk+DQoJCQk8L3RhYmxlPg0KCQk8L2Rp
-dj4NCgkJPHAgc3R5bGU9ImNvbG9yOiAjRkZGIj4xNjE3MzksMjU3NzIsNDgxNSwxOTM1MTI2LDE5
-MzUxMjYsMTYxNzM5LDI1NzcyLDQ4MTUsDQoJCQk8L3A+DQoJCTxwIHN0eWxlPSJjb2xvcjogI0ZG
-RiI+MTYxNzM5LDI1NzcyLDQ4MTUsMTkzNTEyNiwxOTM1MTI2LDE2MTczOSwyNTc3Miw0ODE1LCA8
-L3A+DQoJCTxwPjxzcGFuIHN0eWxlPSJjb2xvcjogI0ZGRiI+MTYxNzM5LDI1NzcyLDQ4MTUsMTkz
-NTEyNiwxOTM1MTI2LDE2MTczOSwyNTc3Miw0ODE1LCA8L3NwYW4+PC9wPg0KCQk8cD48c3BhbiBz
-dHlsZT0iY29sb3I6ICNGRkYiPjE2MTczOSwyNTc3Miw0ODE1LDE5MzUxMjYsMTkzNTEyNiwxNjE3
-MzksMjU3NzIsNDgxNSwgPC9zcGFuPjwvcD4NCgk8L2JvZHk+DQo8YnI+PGJyPjxicj48YnI+PGJy
-Pjxicj48YnI+PGZvbnQgY29sb3I9IiNFNkU2RTYiPm5fNDMyOTQzNDAzODAyMzQxMDk5NDIxOTU1
-OTI1PC9mb250PjwvaHRtbD4NCg==
+dj4NCgkJPHAgc3R5bGU9ImNvbG9yOiAjRkZGIj41NzI0Niw2OTE2LDEwMzUsNTU4ODc4LDU1ODg3
+OCw1NzI0Niw2OTE2LDEwMzUsDQoJCQk8L3A+DQoJCTxwIHN0eWxlPSJjb2xvcjogI0ZGRiI+NTcy
+NDYsNjkxNiwxMDM1LDU1ODg3OCw1NTg4NzgsNTcyNDYsNjkxNiwxMDM1LCA8L3A+DQoJCTxwPjxz
+cGFuIHN0eWxlPSJjb2xvcjogI0ZGRiI+NTcyNDYsNjkxNiwxMDM1LDU1ODg3OCw1NTg4NzgsNTcy
+NDYsNjkxNiwxMDM1LCA8L3NwYW4+PC9wPg0KCQk8cD48c3BhbiBzdHlsZT0iY29sb3I6ICNGRkYi
+PjU3MjQ2LDY5MTYsMTAzNSw1NTg4NzgsNTU4ODc4LDU3MjQ2LDY5MTYsMTAzNSwgPC9zcGFuPjwv
+cD4NCgk8L2JvZHk+DQo8YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGZvbnQgY29sb3I9IiNF
+NkU2RTYiPm5fNzY4Njc0ODkwMTY1OTA4NDI0ODEzNTY4MDU2MzY3MzQ0MTAyNjkxNjA3Mjk3MDMw
+NTIyODg4NzgzMzIwMTU0NTc1NzQ1OTA1NjM1NDM5NTkyNzcwNTU5OTgxMDk2NTU0MTwvZm9udD48
+L2h0bWw+DQo=
 
 
 
---b1_15351449656f241e7027315d5631b3d3--
+--b1_6c1ae80ae537a0a97a3fd9075acffa3f--
 
 
 
---===============3737276163843242691==
+--===============7529083619739014814==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3737276163843242691==
+--===============7529083619739014814==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -486,6 +488,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3737276163843242691==--
+--===============7529083619739014814==--
 
 
