@@ -2,69 +2,87 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id BDA8F9BC75
-	for <lists+osst-users@lfdr.de>; Sat, 24 Aug 2019 10:00:39 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 50E289BE53
+	for <lists+osst-users@lfdr.de>; Sat, 24 Aug 2019 16:54:36 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1i1QyU-0001bU-Ag
-	for lists+osst-users@lfdr.de; Sat, 24 Aug 2019 08:00:38 +0000
+	id 1i1XR5-0003KT-2n
+	for lists+osst-users@lfdr.de; Sat, 24 Aug 2019 14:54:35 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <email@onevpc.site>) id 1i1QyT-0001bO-AO
- for osst-users@lists.sourceforge.net; Sat, 24 Aug 2019 08:00:37 +0000
+ (envelope-from <infos@karacterisation.eu>) id 1i1XR3-0003KE-Ce
+ for osst-users@lists.sourceforge.net; Sat, 24 Aug 2019 14:54:33 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Subject:Date:To:From:MIME-Version:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=A4JcUAd7if+e8c85X51QAaNk+Yl/Vy2PLZbbeIB837U=; b=g8KR2F1WGvxgjGziD/sUwkscd8
- BMiZSDupcPayXRC4LhJOmTgEPtD1T4o85TrUU99YP4pV7Ru0ju9Qsh7qnP36BnHfXL/FhO9JKzRPQ
- 1ZLjwHmzIqoU4OA9eK7i75mBU5080VETt2pq8qwAg2YJHj4uWoypcB+9jhqK7f9UTEMA=;
+ bh=9X2dT4OvH11ltTtCfCNyg8zSyESgmHnnJBnbdZRs7gA=; b=WlculuvuXgcAXY0znr+p8Z9cO5
+ 9HtJPRc3PUM30KI6qsC/gOGAwuZSd77Qq2tF6TgjSDqRVwVaDMyL1VfgEeUDrR7t7XLYsJo2xfuLC
+ FVe6UPN13enf1VeS3hSu/esGMM+IsO7gEqWd2RJ/GKUi6hOrY2qklfPzCeowxE8vDG54=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Subject:Date:To:From:MIME-Version:Message-ID:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
+ From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=A4JcUAd7if+e8c85X51QAaNk+Yl/Vy2PLZbbeIB837U=; b=j
- R9zs16vWDl6eKVbrPqXR873jfcV5U3RPWRqfhthhNA4owY/rvmjIPTVJ8YHRVWp8PR5jsEy/J0iwb
- Tv2KIsPz6Na3vGPR6iDrPJgOrsTxYz7Fwif6+3RqcSJpUQP/+VwOGWlx8BNa+sb9vsQl6sgB3MLZ5
- Z+x/mtgXhvTo/PAQ=;
-Received: from onevpc.site ([217.182.72.125])
+ List-Owner:List-Archive; bh=9X2dT4OvH11ltTtCfCNyg8zSyESgmHnnJBnbdZRs7gA=; b=U
+ KmYd3dV6S/GMlYObyugFZPC+NaBJpWsfGcHWdS69VekyKexZrNsuLAzGh+QBFK1L7gnIs0e/XwQXo
+ OhHq0JZjO9ruWs9md6StSUjxTpyZT1B2ciBqVsgf5DZ/qAJYFxyxMO/uJXfS8NEYmMpsX+jO/lzfK
+ tZYb/31wmlyHmYwo=;
+Received: from smtp3-g21.free.fr ([212.27.42.3])
  by sfi-mx-4.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.90_1)
- id 1i1QyR-00Dga2-NI
- for osst-users@lists.sourceforge.net; Sat, 24 Aug 2019 08:00:37 +0000
-dkim-signature: v=1; a=rsa-sha256; d=onevpc.site; s=dkim;
- c=relaxed/relaxed; q=dns/txt;
- h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type; 
- bh=A4JcUAd7if+e8c85X51QAaNk+Yl/Vy2PLZbbeIB837U=;
- b=YJN4dxVrw59J63dKvazRoWe5y5UjJApl/hsOmHGuUVZKXSYG7poKEC24HXD84wsrRhX5eXImmpznL/HkW935goEupjHXboDEfgv8riKQjYprUwsUHXRLRAhZ4Sl2AtDtpeTRSy6IjMA9zCQLzAPjfTcpDB9fOh8Th9wXwJN11aKlARV+NyshnGNzfZLZ95wdufaLI5nDQdHtG1PQ0hKo+Nz5Q6LtquXox9hpvMNCyTr7T7CQ8ZhV0NECzj
- r94xErEdtWPbw0kDBgnefqoXiHGhGR+flcw+k2/SKE2rZ0vNJjDKjhLM5mAcxfXSRtF2igY56JGeobdEheFAnF86ohKA==
-Received: from WIN-BTVVGA6VFN1 (WIN-BTVVGA6VFN1 [127.0.0.1])
- by onevpc.site with ESMTPA ; Sat, 24 Aug 2019 04:57:08 -0300
-Message-ID: <71baa597-46ad-4d55-b225-7783a4b279f7@onevpc.site>
-MIME-Version: 1.0
-From: "iMalaDireta" <email@onevpc.site>
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
+ id 1i1XR1-00DwHX-QS
+ for osst-users@lists.sourceforge.net; Sat, 24 Aug 2019 14:54:33 +0000
+Received: from garpata (unknown [37.170.247.56])
+ by smtp3-g21.free.fr (Postfix) with ESMTP id 110BF13F814
+ for <osst-users@lists.sourceforge.net>; Sat, 24 Aug 2019 16:54:25 +0200 (CEST)
+Date: Sat, 24 Aug 2019 14:54:24 +0000
 To: osst-users@lists.sourceforge.net
-Date: 24 Aug 2019 04:57:08 -0300
-X-Spam-Score: 0.9 (/)
+From: Compare quotes for free <infos@karacterisation.eu>
+Message-ID: <ddbed780a040ae27a1f2958dd5829b35@garpata>
+X-Priority: 3
+X-Mailer: institution
+MIME-Version: 1.0
+DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=9237; s=default;
+ t=1566658464; c=relaxed/simple; h=From:To:Subject;
+ d=karacterisation.eu; i=infos@karacterisation.eu;
+ z=From:=20Compare=20quotes=20for=20free=20<infos@karacterisation.eu>
+ |To:=20osst-users@lists.sourceforge.net
+ |Subject:=20Reach=20out=20more=20customers=20with=20a=20brand=20new=20card=20terminal;
+ bh=wk4LrcTRQZx+420dEYODykeyxHI=;
+ b=M/xoaTddXl4s1iBExRA7BTO6k5r3yFe7dsNWpaE6UTgL21Gyxocq+5VWbqMiVeK+NIeGfXS3rLXZIlKIzuzYV4YU9BkzpKXGUinCReDGpFPxjtQxX92t421k4+A6r8eb7PP5yOp6LOzoFHpFgJiX6NTzxf/sjrXv4zwHrFd8/vA=
+X-Spam-Score: 5.1 (+++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: karacterisation.eu]
+ 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
+ https://senderscore.org/blacklistlookup/
+ [212.27.42.3 listed in bl.score.senderscore.com]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
+ [SPF failed: Please see http://www.openspf.net/Why?s=mfrom;
+ id=infos%40karacterisation.eu; ip=212.27.42.3;
+ r=util-malware-1.v13.lw.sourceforge.com]
+ 0.0 HTML_IMAGE_RATIO_08    BODY: HTML has a low ratio of text to image area
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
+ 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+ 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+ [cf: 100]
+ 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
  0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1i1QyR-00Dga2-NI
-Subject: [Osst-users] Marketing para aumentar suas Vendas
+ -0.3 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1i1XR1-00DwHX-QS
+Subject: [Osst-users] Reach out more customers with a brand new card terminal
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -76,169 +94,181 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============6850432067521897670=="
+Content-Type: multipart/mixed; boundary="===============5313234130424466798=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-
---===============6850432067521897670==
+--===============5313234130424466798==
 Content-Type: multipart/alternative;
- boundary=--boundary_2327771_c6fdbd37-e8cf-4c2d-aa01-bb142c19e0f4
+	boundary="b1_ddbed780a040ae27a1f2958dd5829b35"
+Content-Transfer-Encoding: 8bit
+
+--b1_ddbed780a040ae27a1f2958dd5829b35
+Content-Type: text/plain; charset=us-ascii
 
 
-----boundary_2327771_c6fdbd37-e8cf-4c2d-aa01-bb142c19e0f4
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
-
-aU1hbGFEaXJldGEgLy8vLyBNYXJrZXRpbmcgcGFyYSBhdW1lbnRhciBzdWFzIFZlbmRh
-c3RhYmxlIHtib3JkZXItc3BhY2luZzowOyBjb2xvcjojMDAwMDAwOyBmb250LWZhbWls
-eTpDYWxpYnJpLHNhbnMtc2VyaWY7IGJvcmRlci1jb2xsYXBzZTpjb2xsYXBzZSAhaW1w
-b3J0YW50O31pbWcge2JvcmRlcjowOyBkaXNwbGF5OmJsb2NrO30gICAgICAgICAgICAg
-ICAgICAgICAgICAgIEFCUklSIE5PIE5BVkVHQURPUiAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgIENhbXBhbmhhICBkZSBNYXJrZXRpbmcgQ29t
-cGxldGEgICAgICAgIEF2YWxpYW1vcyBzdWFzIE5lY2Vzc2lkYWRlcyBlIEVzdHJhdMOp
-Z2lhcyBCYXNlYWRhIG5vIHNldSBQw7pibGljby1BbHZvOyAgICAgICAgQ3JpYW1vcyBh
-IEFydGUgZGEgUHJvcGFnYW5kYSBQZXJzb25hbGl6YWRhIGUgQXRyYXRpdmE7ICAgICAg
-ICBFbnZpYW1vcyBwYXJhIE1haWxpbmcgU2VnbWVudGFkbyBlIFF1YWxpZmljYWRvIGRl
-IE5vc3NhIEJhc2UgZGUgRGFkb3M7ICAgICAgICBWb2PDqiByZWNlYmUgbWFpcyBWaXNp
-dGFzIGUgVkVOREUgTUFJUzsJCUdlcmFuZG8gT3BvcnR1bmlkYWRlcyBjb20gQ2xpZW50
-ZXMgUXVhbGlmaWNhZG9zIG5vIE1vbWVudG8gQ2VydG8uICAgICAgICAgICAgICAgIExh
-eW91dCBSZXNwb25zaXZvICAgICAgICBBZGFwdGFuZG8gcGFyYSBRdWFscXVlciBEaXNw
-b3NpdGl2byBlIEludGVncmFkbyBhIFJlZGVzIFNvY2lhaXMgICAgICAgIFBvc3N1w61t
-b3MgbWFpcyBkZSAyMzAgTWlsaMO1ZXMgZGUgQmFzZSBkZSBEYWRvcyBWw6FsaWRvcyBl
-IFNlZ21lbnRhZG9zICAgICAgICAgICAgICAgICAgICAgICAgICAgCSAgICAgICAgQ2Vu
-dHJhbDogKDExKSAzNjcyLjcwNDAgLyBXaGF0c0FwcDogKDExKSA5Ljg1MzcuMTAwNyAv
-IDkuNzc5OS43MjA4ICAgICAJICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgIEVudmlhZG8gcGFyYTogICAgICAgICBJZGVudGlmaWNhw6fDo28gZGUgZW52
-aW86IDAwW0lkXQkJICAgICAgICBOw6NvIGRlc2VqbyBtYWlzIHJlY2ViZXIgZW1haWxz
-ICAgICAgICAJICAgICAgICAgICAg
-----boundary_2327771_c6fdbd37-e8cf-4c2d-aa01-bb142c19e0f4
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
-
-PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5pTWFsYURpcmV0YSAvLy8vIE1hcmtldGluZyBw
-YXJhIGF1bWVudGFyIHN1YXMgVmVuZGFzPC90aXRsZT4NCjxtZXRhIGh0dHAtZXF1aXY9
-IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PWlzby04ODU5
-LTEiPg0KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCnRhYmxlIHtib3JkZXItc3BhY2lu
-ZzowOyBjb2xvcjojMDAwMDAwOyBmb250LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7
-IGJvcmRlci1jb2xsYXBzZTpjb2xsYXBzZSAhaW1wb3J0YW50O30NCmltZyB7Ym9yZGVy
-OjA7IGRpc3BsYXk6YmxvY2s7fQ0KPC9zdHlsZT4NCjwvaGVhZD4NCjxib2R5IHN0eWxl
-PSJtYXJnaW46MDsgcGFkZGluZzowOyBwYWRkaW5nLXRvcDowOyBwYWRkaW5nLWJvdHRv
-bTowOyBwYWRkaW5nLXJpZ2h0OjA7IHBhZGRpbmctbGVmdDowOyBtaW4td2lkdGg6MTAw
-JTsgZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBiYWNrZ3JvdW5kLWNvbG9y
-OiNmZmZmZmY7Ij4NCjxjZW50ZXIgc3R5bGU9IndpZHRoOjEwMCU7IGJhY2tncm91bmQt
-Y29sb3I6I2ZmZmZmZjsiPg0KDQoNCjx0YWJsZSB3aWR0aD0iMTAwJSIgY2VsbHBhZGRp
-bmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBib3JkZXI9IjAiIHN0eWxlPSJiYWNrZ3JvdW5k
-LWNvbG9yOiNmZmZmZmY7IiBiZ2NvbG9yPSIjZmZmZmZmOyI+DQo8dHI+DQo8dGQgd2lk
-dGg9IjEwMCUiIHN0eWxlPSJwYWRkaW5nOjEwcHggMTBweCAxMHB4IDEwcHg7Ij4NCjxk
-aXYgc3R5bGU9Im1heC13aWR0aDo3MDBweDsgbWFyZ2luOjAgYXV0bzsiPiANCjwhLS1b
-aWYgKGd0ZSBtc28gOSl8KElFKV0+DQo8dGFibGUgYWxpZ249ImNlbnRlciIgd2lkdGg9
-IjcwMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBib3JkZXI9IjAiIHN0
-eWxlPSJib3JkZXItc3BhY2luZzowIiA+DQo8dHI+DQo8dGQgc3R5bGU9InBhZGRpbmc6
-MDsgcGFkZGluZy10b3A6MDsgcGFkZGluZy1ib3R0b206MDsgcGFkZGluZy1yaWdodDow
-OyBwYWRkaW5nLWxlZnQ6MDsiPg0KPCFbZW5kaWZdLS0+IA0KPHRhYmxlIGFsaWduPSJj
-ZW50ZXIiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgYm9yZGVyPSIwIiBz
-dHlsZT0iYm9yZGVyLXNwYWNpbmc6MDsgbWFyZ2luOjAgYXV0bzsgd2lkdGg6MTAwJTsg
-bWF4LXdpZHRoOjcwMHB4OyI+DQo8dHI+DQo8dGQgc3R5bGU9InBhZGRpbmctdG9wOjA7
-IHBhZGRpbmctYm90dG9tOjA7IHBhZGRpbmctcmlnaHQ6MDsgcGFkZGluZy1sZWZ0OjA7
-Ij4NCg0KDQoNCg0KPCEtLSBJTUcgLS0+DQoNCg0KICAgIDx0YWJsZSBib3JkZXI9IjAi
-IGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9IjEwMCUiPg0KICAg
-IDx0cj4NCiAgICA8dGQgYWxpZ249ImNlbnRlciI+DQogICAgDQogICAgICAgIDxhIGhy
-ZWY9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvbGluay9tL2ltYS1kaS8/RT1vc3N0LXVz
-ZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJm
-b250LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xv
-cjojMDAwMDAwOyI+QUJSSVIgTk8gTkFWRUdBRE9SPC9hPg0KICAgICAgICANCiAgICAg
-ICAgPGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL20vaW1hLWRpLz9F
-PW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayI+
-DQogICAgICAgIDxpbWcgc3JjPSJodHRwOi8vc21hcnR2cGMub25saW5lL2ltZy9pbWEt
-ZGktNi0xLmpwZyIgYm9yZGVyPSIwIiB3aWR0aD0iMTAwJSIgc3R5bGU9Im1heC13aWR0
-aDo3MDBweDsgZGlzcGxheTpibG9jazsiIGFsdD0iIj4NCiAgICAgICAgPGltZyBzcmM9
-Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvaW1nL2ltYS1kaS02LTIuanBnIiBib3JkZXI9
-IjAiIHdpZHRoPSIxMDAlIiBzdHlsZT0ibWF4LXdpZHRoOjcwMHB4OyBkaXNwbGF5OmJs
-b2NrOyIgYWx0PSIiPg0KICAgICAgICA8aW1nIHNyYz0iaHR0cDovL3NtYXJ0dnBjLm9u
-bGluZS9pbWcvaW1hLWRpLTYtMy5qcGciIGJvcmRlcj0iMCIgd2lkdGg9IjEwMCUiIHN0
-eWxlPSJtYXgtd2lkdGg6NzAwcHg7IGRpc3BsYXk6YmxvY2s7IiBhbHQ9IiI+DQogICAg
-ICAgIDxpbWcgc3JjPSJodHRwOi8vc21hcnR2cGMub25saW5lL2ltZy9pbWEtZGktNi00
-LmpwZyIgYm9yZGVyPSIwIiB3aWR0aD0iMTAwJSIgc3R5bGU9Im1heC13aWR0aDo3MDBw
-eDsgZGlzcGxheTpibG9jazsiIGFsdD0iIj4NCiAgICAgICAgPC9hPg0KICAgIA0KICAg
-IDwvdGQ+DQogICAgPC90cj4NCiAgICA8L3RhYmxlPg0KDQoNCjwhLS0gVEVYVE8gLS0+
-DQoNCg0KICAgIDx0YWJsZSBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3Bh
-Y2luZz0iMCIgd2lkdGg9IjEwMCUiPg0KICAgIDx0cj4NCiAgICA8dGQgc3R5bGU9InBh
-ZGRpbmc6NDBweCA0MHB4IDQwcHggNDBweDsiPg0KICAgIA0KICAgICAgICA8c3BhbiBz
-dHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6MzVw
-eDsgY29sb3I6IzAwMDAwMDsiPjxzdHJvbmc+Q2FtcGFuaGEgIGRlIE1hcmtldGluZyBD
-b21wbGV0YTwvc3Ryb25nPjwvc3Bhbj4NCiAgICAgICAgPGxpPjxzcGFuIHN0eWxlPSJm
-b250LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxOHB4OyBjb2xv
-cjojMDAwMDAwOyI+QXZhbGlhbW9zIHN1YXMgTmVjZXNzaWRhZGVzIGUgRXN0cmF0w6ln
-aWFzIEJhc2VhZGEgbm8gc2V1IFDDumJsaWNvLUFsdm87PC9zcGFuPjwvbGk+DQogICAg
-ICAgIDxsaT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlm
-OyBmb250LXNpemU6MThweDsgY29sb3I6IzAwMDAwMDsiPkNyaWFtb3MgYSBBcnRlIGRh
-IFByb3BhZ2FuZGEgUGVyc29uYWxpemFkYSBlIEF0cmF0aXZhOzwvc3Bhbj48L2xpPg0K
-ICAgICAgICA8bGk+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1z
-ZXJpZjsgZm9udC1zaXplOjE4cHg7IGNvbG9yOiMwMDAwMDA7Ij5FbnZpYW1vcyBwYXJh
-IE1haWxpbmcgU2VnbWVudGFkbyBlIFF1YWxpZmljYWRvIGRlIE5vc3NhIEJhc2UgZGUg
-RGFkb3M7PC9zcGFuPjwvbGk+DQogICAgICAgIDxsaT48c3BhbiBzdHlsZT0iZm9udC1m
-YW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6MThweDsgY29sb3I6IzAw
-MDAwMDsiPlZvY8OqIHJlY2ViZSBtYWlzIFZpc2l0YXMgZSA8c3Ryb25nPlZFTkRFIE1B
-SVM7PC9zdHJvbmc+PC9zcGFuPjwvbGk+DQoJCTxsaT48c3BhbiBzdHlsZT0iZm9udC1m
-YW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6MThweDsgY29sb3I6IzAw
-MDAwMDsiPkdlcmFuZG8gT3BvcnR1bmlkYWRlcyBjb20gQ2xpZW50ZXMgUXVhbGlmaWNh
-ZG9zIG5vIE1vbWVudG8gQ2VydG8uPC9zcGFuPjwvbGk+DQogICAgICAgIA0KICAgICAg
-ICA8YnI+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsg
-Zm9udC1zaXplOjM1cHg7IGNvbG9yOiMxRDg5RTQ7Ij48c3Ryb25nPkxheW91dCBSZXNw
-b25zaXZvPC9zdHJvbmc+PC9zcGFuPg0KICAgICAgICA8bGk+PHNwYW4gc3R5bGU9ImZv
-bnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1zaXplOjE4cHg7IGNvbG9y
-OiMwMDAwMDA7Ij5BZGFwdGFuZG8gcGFyYSBRdWFscXVlciBEaXNwb3NpdGl2byBlIElu
-dGVncmFkbyBhIFJlZGVzIFNvY2lhaXM8L3NwYW4+PC9saT4NCg0KICAgICAgICA8YnI+
-PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1z
-aXplOjE4cHg7IGNvbG9yOiMxRDg5RTQ7Ij48c3Ryb25nPlBvc3N1w61tb3MgbWFpcyBk
-ZSAyMzAgTWlsaMO1ZXMgZGUgQmFzZSBkZSBEYWRvcyBWw6FsaWRvcyBlIFNlZ21lbnRh
-ZG9zIDwvc3Ryb25nPjwvc3Bhbj4NCiAgICAgIA0KICAgICAgICA8YnI+DQogICAgICAg
-IA0KICAgIAk8dWw+DQogICAgICAgIDxsaT48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6
-Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6MThweDsgY29sb3I6IzAwMDAwMDsi
-PjxzdHJvbmc+Q2VudHJhbDo8L3N0cm9uZz4gKDExKSAzNjcyLjcwNDAgLzxzdHJvbmc+
-IFdoYXRzQXBwOiA8L3N0cm9uZz4oMTEpIDkuODUzNy4xMDA3IC8gOS43Nzk5LjcyMDgg
-PC9zcGFuPjwvbGk+DQogICAgCTwvdWw+DQogICAgDQogICAgPC90ZD4NCiAgICA8L3Ry
-Pg0KICAgIDwvdGFibGU+DQoNCg0KPCEtLSBGT09UIC0tPg0KDQoNCiAgICA8dGFibGUg
-Ym9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiIHdpZHRoPSIx
-MDAlIj4NCiAgICA8dHI+DQogICAgPHRkIGFsaWduPSJjZW50ZXIiIHN0eWxlPSJwYWRk
-aW5nOjEwMHB4IDQwcHggNDBweCA0MHB4OyI+DQogICAgDQogICAgICAgIDxzcGFuIHN0
-eWxlPSJmb250LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4
-OyBjb2xvcjojMDAwMDAwOyI+RW52aWFkbyBwYXJhOiBvc3N0LXVzZXJzQGxpc3RzLnNv
-dXJjZWZvcmdlLm5ldDwvc3Bhbj4NCiAgICAgICAgPGJyPjxzcGFuIHN0eWxlPSJmb250
-LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjoj
-MDAwMDAwOyI+SWRlbnRpZmljYcOnw6NvIGRlIGVudmlvOiAwMDIzMjc3NzI8L3NwYW4+
-DQoJCTxicj48YnI+PGJyPjxhIGhyZWY9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvbGlu
-ay9tL2ltZC8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0
-PSJfYmxhbmsiPjxpbWcgYm9yZGVyPSIwIiBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxp
-bmUvaW1nL2xvZ28uZ2lmIiBhbHQ9IklNRCAyMzI3NzcyIiBzdHlsZT0ibWF4LXdpZHRo
-OjIwMHB4OyBkaXNwbGF5OmJsb2NrOyI+PC9hPg0KICAgICAgICA8YnI+PGJyPjxhIGhy
-ZWY9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvcmVtb3Zlci8/RT1vc3N0LXVzZXJzQGxp
-c3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LWZh
-bWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAw
-MDAwOyI+PHN0cm9uZz5Ow6NvIGRlc2VqbyBtYWlzIHJlY2ViZXIgZW1haWxzPC9zdHJv
-bmc+PC9hPg0KICAgICAgICA8YnI+PGJyPjxicj48YnI+PGltZyBzcmM9Imh0dHA6Ly9z
-bWFydHZwYy5vbmxpbmUvcmVhZC8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdl
-Lm5ldCIgYm9yZGVyPSIwIiB3aWR0aD0iMCIgaGVpZ2h0PSIwIiBhbHQ9IklNRCAyMzI3
-NzcyIiBzdHlsZT0iZGlzcGxheTpibG9jazsiPg0KCQ0KICAgIDwvdGQ+DQogICAgPC90
-cj4NCiAgICA8L3RhYmxlPg0KDQoNCjwhLS0gRU5EIC0tPg0KDQoNCjwvdGQ+DQo8L3Ry
-Pg0KPC90YWJsZT4NCjwhLS1baWYgKGd0ZSBtc28gOSl8KElFKV0+DQo8L3RkPg0KPC90
-cj4NCjwvdGFibGU+DQo8IVtlbmRpZl0tLT4NCjwvZGl2Pg0KPC90ZD4NCjwvdHI+DQo8
-L3RhYmxlPg0KDQo8L2NlbnRlcj4NCjwvYm9keT4NCjwvaHRtbD4=
-----boundary_2327771_c6fdbd37-e8cf-4c2d-aa01-bb142c19e0f4--
+Taking card payments
+has never been so easy!	
+Reach out more customers with a brand new card terminal	
+Compare quotes for free	
+main
+SAVE UP TO 40% on card processing fees with the right payment system for your business !	
+Wireless payments
+Wide range of terminals
+Speed up checkout
+Be better protected 
+against fraud
 
 
 
+Follow this link to stop receiving messages about Card Terminals.
+You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
+You are receiving this message on your email address because you are in our list of managers and professionals.
+ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL
 
 
---===============6850432067521897670==
+--b1_ddbed780a040ae27a1f2958dd5829b35
+Content-Type: text/html; charset=us-ascii
+
+<!DOCTYPE html>
+			                   <html>
+				               	<head>
+					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">			
+				                </head>
+				                <body>
+					            	<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">
+<center>
+<!--[if (gte mso 9)|(IE)]>
+<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
+<![endif]--> 
+<!--[if gte mso 9]>
+<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
+<![endif]--> 
+<!--[if gte mso 8]>
+<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
+<![endif]--> 
+<!--[if gte mso 7]>
+<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
+<![endif]-->
+<table bgcolor="#FFFFFF" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%;" border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td width="20"></td><td height="40"></td><td width="20"></td></tr>
+<tr><td width="20"></td><td align="center"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><span style="font-family:Raleway, Arial, Helvetica, sans-serif; font-size:36px ; font-weight:bold; color:#000000;">
+Taking <font color="#8169E4">card payments</font><br>
+has never been so easy!
+</span></a></td><td width="20"></td></tr>
+<tr><td width="20"></td><td height="15"></td><td width="20"></td></tr>
+<tr><td width="20"></td><td align="center"><span style="font-family:Raleway, Arial, Helvetica, sans-serif; font-size:18px ; font-weight:normal; color:#000000;">Reach out more customers with a brand new card terminal</span></td><td width="20"></td></tr>
+<tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
+<tr><td width="20"></td><td align="center"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://karacterisation.eu/cbuk/cta.png" width="353" border="0" alt="Compare quotes for free" style="width:100%; max-width:353px"></a></td><td width="20"></td></tr>
+<tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
+
+</tbody></table></td></tr>
+
+<tr>
+    <td class="two-column" style="text-align:center;font-size:0; width: 100%; max-width: 600px"><!--[if (gte mso 9)|(IE)]>
+                        <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" border="0"  cellpadding="0" cellspacing="0" >
+                        <tr>
+                        <td width="300" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      
+      <table align="left" class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:300px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;" border="0" width="300">
+              <tbody><tr>
+                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://karacterisation.eu/cbuk/main.jpg" width="300" height="287" border="0" alt="main"></a></td>
+              </tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table>
+      
+      <!--[if (gte mso 9)|(IE)]>
+                        </td><td width="300" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      
+      <table align="right" class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:300px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;" border="0" width="300">
+              <tbody><tr><td width="15"></td><td height="20"></td></tr>
+              <tr><td width="15"></td><td bgcolor="#F0F0F0"><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:285px; width:100%;" border="0" cellpadding="0" cellspacing="0">
+              
+              <tbody><tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
+              <tr><td width="20"></td><td align="left"><span style="font-family:Raleway,Arial, Helvetica, sans-serif; font-size:16px ; line-height: 22px; font-weight:bold; color:#000000;"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Raleway, Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><font color="#8169E4">SAVE UP TO 40%</font></a> on card processing fees with the right payment system for your business !
+</span></td><td width="20"></td></tr>
+              
+              <tr><td width="20"></td><td align="left"><span style="font-family:Raleway, Arial, Helvetica, sans-serif; font-size:14px ; line-height:22px; font-weight:normal; color:#000000;">
+              <ul>
+              <li>Wireless payments</li>
+<li>Wide range of terminals </li>
+<li>Speed up checkout</li>
+<li>Be better protected <br>
+    against fraud</li>
+
+
+              </ul>
+              </span></td><td width="20"></td></tr>
+              <tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
+              
+              
+              </tbody></table></td></tr>
+            </tbody></table></td>
+        </tr>
+      </tbody></table>
+      
+      <!--[if (gte mso 9)|(IE)]>
+                        </td>
+                        </tr>
+                        </table>
+      <![endif]--></td>
+  </tr>
+
+<tr><td height="20"></td></tr>
+<tr>
+  <td align="center"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://karacterisation.eu/cbuk/operateurs.jpg" width="600" border="0" alt="" style="width:100%; max-width:600px"></a></td></tr>
+
+</tbody></table>
+<!--[if gte mso 7]>
+</td></tr></table>
+<![endif]--> 
+<!--[if gte mso 8]>
+</td></tr></table>
+<![endif]--> 
+<!--[if gte mso 9]>
+</td></tr></table>
+<![endif]--> 
+<!--[if (gte mso 9)|(IE)]>
+</td></tr></table>
+<![endif]-->
+<td colspan="2" align="center" style="background:#f8f8f8;">
+<br>
+<br><span style="font-size:10px;"><a href="http://karacterisation.eu/cbuk/gasp/?email=dWZF9WOFnRqgMtUmpOqDh2Qa4lkP2CY1vIg72cEL4ffJb0zYpYqlZNImGYm0AsgEPuC3gDleQAvH0k3k67kYP/ClAX82mLcS1jL+Btu4DliGoaxCn2mWx4e1ytn5TuWnhd/2Hb33YcRc+pa0oQ3rX8vJQCXJ9ISxKiy9BRVFcp8=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving messages about <strong>Card Terminals</strong>.<br>
+                    You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="http://karacterisation.eu/cbuk/bob/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
+You are receiving this message on your email address because you are in our list of managers and professionals.<br>
+ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL<br>
+</span>
+<br>
+</td>
+</center>
+</body>
+
+				                </body>
+			                   </html>
+
+
+
+--b1_ddbed780a040ae27a1f2958dd5829b35--
+
+
+
+--===============5313234130424466798==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6850432067521897670==
+--===============5313234130424466798==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -249,8 +279,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6850432067521897670==--
-
-
+--===============5313234130424466798==--
 
 
