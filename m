@@ -2,87 +2,77 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 50E289BE53
-	for <lists+osst-users@lfdr.de>; Sat, 24 Aug 2019 16:54:36 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 5BE429FD24
+	for <lists+osst-users@lfdr.de>; Wed, 28 Aug 2019 10:32:41 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1i1XR5-0003KT-2n
-	for lists+osst-users@lfdr.de; Sat, 24 Aug 2019 14:54:35 +0000
+	id 1i2tNg-0002kF-4Z
+	for lists+osst-users@lfdr.de; Wed, 28 Aug 2019 08:32:40 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <infos@karacterisation.eu>) id 1i1XR3-0003KE-Ce
- for osst-users@lists.sourceforge.net; Sat, 24 Aug 2019 14:54:33 +0000
+ (envelope-from <inquiry@techbuyakksks.ml>) id 1i2tNe-0002k8-R1
+ for osst-users@lists.sourceforge.net; Wed, 28 Aug 2019 08:32:38 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Message-ID:Reply-To:Date:From:To:Subject:
+ MIME-Version:Content-Type:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=9X2dT4OvH11ltTtCfCNyg8zSyESgmHnnJBnbdZRs7gA=; b=WlculuvuXgcAXY0znr+p8Z9cO5
- 9HtJPRc3PUM30KI6qsC/gOGAwuZSd77Qq2tF6TgjSDqRVwVaDMyL1VfgEeUDrR7t7XLYsJo2xfuLC
- FVe6UPN13enf1VeS3hSu/esGMM+IsO7gEqWd2RJ/GKUi6hOrY2qklfPzCeowxE8vDG54=;
+ bh=Gg5fB80Btr4K83G1o5DsZeov5M9DR5E2cPynjY18oPI=; b=kCPdisxOixvH0BXDNYRGBA2LiZ
+ D9As2Hrg3Y4rtai30cJ6zM4d1hRRuW/Nsr2BloAQMD6OuFkPkvBrORNiNz87ovdo+iPZpiwVYm/h2
+ n67RlOExWY6eriIyEeP1/+bpnsgG5VdJ1sh1Bku1yZVUUbqS2flDylP/0hTJMw5Jur3A=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
- From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Message-ID:Reply-To:Date:From:To:Subject:MIME-Version:Content-Type:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=9X2dT4OvH11ltTtCfCNyg8zSyESgmHnnJBnbdZRs7gA=; b=U
- KmYd3dV6S/GMlYObyugFZPC+NaBJpWsfGcHWdS69VekyKexZrNsuLAzGh+QBFK1L7gnIs0e/XwQXo
- OhHq0JZjO9ruWs9md6StSUjxTpyZT1B2ciBqVsgf5DZ/qAJYFxyxMO/uJXfS8NEYmMpsX+jO/lzfK
- tZYb/31wmlyHmYwo=;
-Received: from smtp3-g21.free.fr ([212.27.42.3])
- by sfi-mx-4.v28.lw.sourceforge.com with esmtps
+ List-Owner:List-Archive; bh=Gg5fB80Btr4K83G1o5DsZeov5M9DR5E2cPynjY18oPI=; b=b
+ 0R7/ShPgUJT0TLQxkkYpKzpo5x9feCNSGg2jrfP0OYnUeSBrWs1Y8s/GHLqEUpDD9yCJmn3TtOCQa
+ ld8j13kDjiIsVLuCR9v8ALTxOi/8wGdI4k6lT3ntRqfTnuk4Imt+pq5RJdLrjrqIK0euft6RA8cHQ
+ hmm2zBmY+dHv4Uuo=;
+Received: from [178.156.202.136] (helo=slot0.techbuyakksks.ml)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1i1XR1-00DwHX-QS
- for osst-users@lists.sourceforge.net; Sat, 24 Aug 2019 14:54:33 +0000
-Received: from garpata (unknown [37.170.247.56])
- by smtp3-g21.free.fr (Postfix) with ESMTP id 110BF13F814
- for <osst-users@lists.sourceforge.net>; Sat, 24 Aug 2019 16:54:25 +0200 (CEST)
-Date: Sat, 24 Aug 2019 14:54:24 +0000
-To: osst-users@lists.sourceforge.net
-From: Compare quotes for free <infos@karacterisation.eu>
-Message-ID: <ddbed780a040ae27a1f2958dd5829b35@garpata>
-X-Priority: 3
-X-Mailer: institution
+ id 1i2tNd-006448-KD
+ for osst-users@lists.sourceforge.net; Wed, 28 Aug 2019 08:32:38 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=techbuyakksks.ml;
+ h=Content-Type:MIME-Version:Subject:To:From:Date:Reply-To:Message-ID;
+ i=inquiry@techbuyakksks.ml; bh=fuXNIJGkplLgztv9bYN73xDF1Q4=;
+ b=JkFMX4UxA8YxQ4fhb/K5CHoSnbGbkPiTScjzH7EfRLaXE/AmSqH3QbzDCqEb/6ZsyY0Iw9YBgyJj
+ IY6iigEQE+EI+0n5lJQWUpgRocIFoDEEr2fNl0Gs4yjtX8tNKvlJ13yFhYWRSxo7qg+EymmOcEOl
+ FOylwjjLEWm5eI85cTc1ARtaVUSWoymSsLzGgNZ01wYh5Ed+il/rKerG6GfBZ68gSP4ppUUXT/TN
+ n8r8kBxyUrGDypybAoOtfMcglZmjuOShkzBLYX3zXNNMMPKvyIolhH3Fxe4f0uM/HxS8XO7MLB6O
+ jgMWutBbv52sgbHx587xtqwuLKIH3CO/V0I9Xg==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=techbuyakksks.ml;
+ b=W5u34VnWFU8nrx8+lzN3ciaOz9cQyuhnnaO8Z0r0cyVDQk2TeXD8WOwiYHUdg3qOeEY+y8V1uyZg
+ I3M/uWNsa53BxuiY38aXpJ8q8oID3c9lxArN+wnwq7XY8gjmPZmOgbS2FMlWJwUQqe8sB62FP46l
+ tiMAfzvtypfBIytxvSMGLvhSsjxzcsUfxI8ZHXVtjI/O6efgPpIgzOBBtQCO0LoFlLUkpP+QWeVV
+ x5H+WFTbroAsYYxWks8tUgNIsbmR1IkYmXuLBH6XBfhiBTFhWe1/aCOOdqwXq74lB8VOfpBfIKK8
+ mQ8D1mSCALFQP53hQBDK7+6a2Jj3MQhBHMFkNg==;
 MIME-Version: 1.0
-DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=9237; s=default;
- t=1566658464; c=relaxed/simple; h=From:To:Subject;
- d=karacterisation.eu; i=infos@karacterisation.eu;
- z=From:=20Compare=20quotes=20for=20free=20<infos@karacterisation.eu>
- |To:=20osst-users@lists.sourceforge.net
- |Subject:=20Reach=20out=20more=20customers=20with=20a=20brand=20new=20card=20terminal;
- bh=wk4LrcTRQZx+420dEYODykeyxHI=;
- b=M/xoaTddXl4s1iBExRA7BTO6k5r3yFe7dsNWpaE6UTgL21Gyxocq+5VWbqMiVeK+NIeGfXS3rLXZIlKIzuzYV4YU9BkzpKXGUinCReDGpFPxjtQxX92t421k4+A6r8eb7PP5yOp6LOzoFHpFgJiX6NTzxf/sjrXv4zwHrFd8/vA=
-X-Spam-Score: 5.1 (+++++)
+To: osst-users@lists.sourceforge.net
+From: Demian Gray <inquiry@techbuyakksks.ml>
+Date: Wed, 28 Aug 2019 11:31:18 +0300
+Message-ID: <0.0.3.DE8.1D55D7ABC60B5CE.0@slot0.techbuyakksks.ml>
+X-Spam-Score: 6.1 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: karacterisation.eu]
- 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
- https://senderscore.org/blacklistlookup/
- [212.27.42.3 listed in bl.score.senderscore.com]
+ 1.7 DEAR_SOMETHING         BODY: Contains 'Dear (something)'
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
- [SPF failed: Please see http://www.openspf.net/Why?s=mfrom;
- id=infos%40karacterisation.eu; ip=212.27.42.3;
- r=util-malware-1.v13.lw.sourceforge.com]
- 0.0 HTML_IMAGE_RATIO_08    BODY: HTML has a low ratio of text to image area
  1.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
- 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100]
- 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
- 0.0 T_REMOTE_IMAGE         Message contains an external image
- -0.3 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1i1XR1-00DwHX-QS
-Subject: [Osst-users] Reach out more customers with a brand new card terminal
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+X-Headers-End: 1i2tNd-006448-KD
+Subject: [Osst-users] inquiry/Request for new order
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -94,181 +84,81 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5313234130424466798=="
+Reply-To: demian.generaltrade@aol.com
+Content-Type: multipart/mixed; boundary="===============1094607582636479640=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5313234130424466798==
-Content-Type: multipart/alternative;
-	boundary="b1_ddbed780a040ae27a1f2958dd5829b35"
-Content-Transfer-Encoding: 8bit
+You will not see this in a MIME-aware mail reader.
+--===============1094607582636479640==
+Content-Type: multipart/alternative; boundary="===============0540034690=="
 
---b1_ddbed780a040ae27a1f2958dd5829b35
-Content-Type: text/plain; charset=us-ascii
+You will not see this in a MIME-aware mail reader.
+--===============0540034690==
+Content-Type: text/plain; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
 
+Dear Sir/madam,
+ =
 
-Taking card payments
-has never been so easy!	
-Reach out more customers with a brand new card terminal	
-Compare quotes for free	
-main
-SAVE UP TO 40% on card processing fees with the right payment system for your business !	
-Wireless payments
-Wide range of terminals
-Speed up checkout
-Be better protected 
-against fraud
+I am Demian Gray from Global General Trade LLC.  We are interested in your =
+products.
+Please send me your products list/offer in FOB prices.
+ =
 
+ Currency:  USD or EURO
+ =
 
+I would appreciate it if you can send us your offer as soon as possible.
+ =
 
-Follow this link to stop receiving messages about Card Terminals.
-You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
-You are receiving this message on your email address because you are in our list of managers and professionals.
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL
+Awaiting your reply.
+ =
 
+ =
 
---b1_ddbed780a040ae27a1f2958dd5829b35
-Content-Type: text/html; charset=us-ascii
+Best Regards,
+Demian Gray | Sr. Manager - Marketing.
+Global General Trade LLC
+Dealers, Importers & Distributors.
+Mobile Number: Phone: 1.941.227.2944
+Fax: 1.941.827.3325
+299 Express Lane
+Sarasota, FL 34249 USA
+E-Mail: demian.generaltrade@aol.com
+--===============0540034690==
+Content-Type: text/html; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
 
-<!DOCTYPE html>
-			                   <html>
-				               	<head>
-					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">			
-				                </head>
-				                <body>
-					            	<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">
-<center>
-<!--[if (gte mso 9)|(IE)]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 9]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 8]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 7]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]-->
-<table bgcolor="#FFFFFF" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%" border="0" cellpadding="0" cellspacing="0">
-
-<tbody><tr><td><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%;" border="0" cellpadding="0" cellspacing="0">
-
-<tbody><tr><td width="20"></td><td height="40"></td><td width="20"></td></tr>
-<tr><td width="20"></td><td align="center"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><span style="font-family:Raleway, Arial, Helvetica, sans-serif; font-size:36px ; font-weight:bold; color:#000000;">
-Taking <font color="#8169E4">card payments</font><br>
-has never been so easy!
-</span></a></td><td width="20"></td></tr>
-<tr><td width="20"></td><td height="15"></td><td width="20"></td></tr>
-<tr><td width="20"></td><td align="center"><span style="font-family:Raleway, Arial, Helvetica, sans-serif; font-size:18px ; font-weight:normal; color:#000000;">Reach out more customers with a brand new card terminal</span></td><td width="20"></td></tr>
-<tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
-<tr><td width="20"></td><td align="center"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://karacterisation.eu/cbuk/cta.png" width="353" border="0" alt="Compare quotes for free" style="width:100%; max-width:353px"></a></td><td width="20"></td></tr>
-<tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
-
-</tbody></table></td></tr>
-
-<tr>
-    <td class="two-column" style="text-align:center;font-size:0; width: 100%; max-width: 600px"><!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" border="0"  cellpadding="0" cellspacing="0" >
-                        <tr>
-                        <td width="300" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table align="left" class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:300px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0">
-        <tbody><tr>
-          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;" border="0" width="300">
-              <tbody><tr>
-                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://karacterisation.eu/cbuk/main.jpg" width="300" height="287" border="0" alt="main"></a></td>
-              </tr>
-            </tbody></table></td>
-        </tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="300" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table align="right" class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:300px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0">
-        <tbody><tr>
-          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;" border="0" width="300">
-              <tbody><tr><td width="15"></td><td height="20"></td></tr>
-              <tr><td width="15"></td><td bgcolor="#F0F0F0"><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:285px; width:100%;" border="0" cellpadding="0" cellspacing="0">
-              
-              <tbody><tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
-              <tr><td width="20"></td><td align="left"><span style="font-family:Raleway,Arial, Helvetica, sans-serif; font-size:16px ; line-height: 22px; font-weight:bold; color:#000000;"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Raleway, Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><font color="#8169E4">SAVE UP TO 40%</font></a> on card processing fees with the right payment system for your business !
-</span></td><td width="20"></td></tr>
-              
-              <tr><td width="20"></td><td align="left"><span style="font-family:Raleway, Arial, Helvetica, sans-serif; font-size:14px ; line-height:22px; font-weight:normal; color:#000000;">
-              <ul>
-              <li>Wireless payments</li>
-<li>Wide range of terminals </li>
-<li>Speed up checkout</li>
-<li>Be better protected <br>
-    against fraud</li>
+<HTML><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Diso-8859-1"/></head><BODY><DIV><SPAN style=3D"COLOR: #000080">Dear Sir/m=
+adam,<BR>&nbsp;<BR>I am Demian Gray from Global General Trade LLC. </SPAN><=
+/DIV>
+<DIV><SPAN style=3D"COLOR: #000080">We are interested in your products.<BR>=
+Please send me your products list/offer in FOB prices.<BR>&nbsp;<BR>&nbsp;C=
+urrency:&nbsp; USD or EURO<BR>&nbsp;<BR>I would appreciate it if you can se=
+nd us your offer as soon as possible.<BR>&nbsp;<BR>Awaiting your reply.<BR>=
+&nbsp;<BR></DIV></SPAN>
+<DIV><SPAN style=3D"COLOR: #000080"><BR>Best Regards,<BR>Demian Gray | Sr. =
+Manager - Marketing.<BR>Global General Trade LLC<BR>Dealers, Importers &amp=
+; Distributors.<BR>Mobile Number: Phone: 1.941.227.2944<BR>Fax: 1.941.827.3=
+325<BR>299 Express Lane<BR>Sarasota, FL 34249 USA<BR>E-Mail: <A href=3D"mai=
+lto:demian.generaltrade@aol.com" rel=3D"noopener noreferrer">demian.general=
+trade@aol.com</A></SPAN></DIV></BODY></HTML>
+--===============0540034690==--
 
 
-              </ul>
-              </span></td><td width="20"></td></tr>
-              <tr><td width="20"></td><td height="20"></td><td width="20"></td></tr>
-              
-              
-              </tbody></table></td></tr>
-            </tbody></table></td>
-        </tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-      <![endif]--></td>
-  </tr>
-
-<tr><td height="20"></td></tr>
-<tr>
-  <td align="center"><a href="http://karacterisation.eu/cbuk/card/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://karacterisation.eu/cbuk/operateurs.jpg" width="600" border="0" alt="" style="width:100%; max-width:600px"></a></td></tr>
-
-</tbody></table>
-<!--[if gte mso 7]>
-</td></tr></table>
-<![endif]--> 
-<!--[if gte mso 8]>
-</td></tr></table>
-<![endif]--> 
-<!--[if gte mso 9]>
-</td></tr></table>
-<![endif]--> 
-<!--[if (gte mso 9)|(IE)]>
-</td></tr></table>
-<![endif]-->
-<td colspan="2" align="center" style="background:#f8f8f8;">
-<br>
-<br><span style="font-size:10px;"><a href="http://karacterisation.eu/cbuk/gasp/?email=dWZF9WOFnRqgMtUmpOqDh2Qa4lkP2CY1vIg72cEL4ffJb0zYpYqlZNImGYm0AsgEPuC3gDleQAvH0k3k67kYP/ClAX82mLcS1jL+Btu4DliGoaxCn2mWx4e1ytn5TuWnhd/2Hb33YcRc+pa0oQ3rX8vJQCXJ9ISxKiy9BRVFcp8=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving messages about <strong>Card Terminals</strong>.<br>
-                    You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="http://karacterisation.eu/cbuk/bob/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
-You are receiving this message on your email address because you are in our list of managers and professionals.<br>
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL<br>
-</span>
-<br>
-</td>
-</center>
-</body>
-
-				                </body>
-			                   </html>
-
-
-
---b1_ddbed780a040ae27a1f2958dd5829b35--
-
-
-
---===============5313234130424466798==
+--===============1094607582636479640==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5313234130424466798==
+--===============1094607582636479640==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -279,6 +169,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5313234130424466798==--
-
+--===============1094607582636479640==--
 
