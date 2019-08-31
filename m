@@ -2,81 +2,83 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id A56B6A3F4B
-	for <lists+osst-users@lfdr.de>; Fri, 30 Aug 2019 23:03:08 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 97309A441A
+	for <lists+osst-users@lfdr.de>; Sat, 31 Aug 2019 12:41:54 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1i3o31-0003Tq-Dk
-	for lists+osst-users@lfdr.de; Fri, 30 Aug 2019 21:03:07 +0000
+	id 1i40pN-0002Jz-BH
+	for lists+osst-users@lfdr.de; Sat, 31 Aug 2019 10:41:53 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <email@allinmkt.online>) id 1i3o31-0003Th-32
- for osst-users@lists.sourceforge.net; Fri, 30 Aug 2019 21:03:07 +0000
+ (envelope-from <carchedi@jornalznorte.com.br>) id 1i40pM-0002Ja-5j
+ for osst-users@lists.sourceforge.net; Sat, 31 Aug 2019 10:41:52 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Subject:Date:To:From:MIME-Version:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:From:MIME-Version:To:Subject:Date:
+ Sender:Reply-To:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=tWSTXI1968BPh11mSQAa5Cjy5JFkhhR61UB1EJVZRgw=; b=dOoSCmSxUORcgW2mAOR60dAQPI
- duFjtV5TK8wBCzSyglk1CaXS3Y6ocRqed8oX6PKr1s4qV8fZrXgACAjcUgbV4PNVGV04jFJYxeZlX
- 9ddVsR3OxAEw/lWYmtn/rn4R8GGfSxbXoUHyY5+FmmirrSlHLZ9y5bdTCzy+IAVmbVFc=;
+ bh=JN3JBpMxYTZjJIwuksK38/PISgW6GI5B90T7Qu56Dlo=; b=Snj/twh6fFjFSGDWDQ+qHSML+i
+ fAn4eZjCYGHS+Rlj95lXxFy1vUZ+Y+hkkZfe60ge8l4LcngvDi4XH1PCSdFjaLZ39gNQEetH7nhs4
+ roHXd1a22e5ZzZ9ag3yCoc9vq/vAPIZk4wMJfegazaNKjZvTyo9MdrCfcKg5puWEXcfw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Subject:Date:To:From:MIME-Version:Message-ID:Sender:Reply-To
+ h=Content-Type:From:MIME-Version:To:Subject:Date:Sender:Reply-To:Message-ID
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=tWSTXI1968BPh11mSQAa5Cjy5JFkhhR61UB1EJVZRgw=; b=d
- vhIlwc/c6ENusWzYqTWmFJRRaNEDoWDI96siz/UO6LVNMW4qJmq4Drm+jg5KSh7/qA51S4iVmGpBK
- TpXljT3BYQNDTqgeaZcUtEclfH3A0iu0Aq3A0HIBYWdgWkxARbhEUM++Cu2vT/FtmNx09lf+cBrR4
- KlP4E3JTvbshK+1k=;
-Received: from allinmkt.online ([51.75.37.54])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.90_1)
- id 1i3o2x-009fv3-4O
- for osst-users@lists.sourceforge.net; Fri, 30 Aug 2019 21:03:06 +0000
-dkim-signature: v=1; a=rsa-sha256; d=allinmkt.online; s=dkim;
- c=relaxed/relaxed; q=dns/txt;
- h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type; 
- bh=tWSTXI1968BPh11mSQAa5Cjy5JFkhhR61UB1EJVZRgw=;
- b=eZiw8QRZMxwZE0YGAnDfdvRhD/YoPccaHinN+F8y4lijFBUJUnUrvAXGMLaPEHq4cx82/oe2okyYNwCSCpUG1q6bjkBXSoaM5DBiONiGyckf2BIVhiRMXzBUlH8VPpZH+SQetj31Cc7dzVqMmoeYKNFa5hvN5b/TT8eHJXsLvm/XzhqyfqiEbiKcPqYMyzC7VcKl5Y2xWGyE6i4OY4wdMp5O/vs3jcWuvlVT7q93PuaGH6P8doPFgft+xW
- 8K/jDBq/Mk/kHuePfNaqWJWfATdtFEgRRhyvIF5obGrzalR62uA1L7H4svHf3o85v8wBspoT+MnPV7ugM643T2gGSpIA==
-Received: from WIN-2MKMBLTPC0E (WIN-2MKMBLTPC0E [127.0.0.1])
- by allinmkt.online with ESMTPA ; Fri, 30 Aug 2019 18:01:11 -0300
-Message-ID: <18cd5047-b4db-4ea7-9f43-57ba3d68b420@allinmkt.online>
-MIME-Version: 1.0
-From: "Real Toldos" <email@allinmkt.online>
+ List-Owner:List-Archive; bh=JN3JBpMxYTZjJIwuksK38/PISgW6GI5B90T7Qu56Dlo=; b=V
+ AQYUnRi+MVkYaQ8jUsMzkMXGkiuC4tq9+ZX7GOoDPfxmCH7upjsAYs5Y5pRrXdMT8Phr8d/ViJ/RN
+ L6FJw85Na32lfiev3Erl4H0l654WJL+VynXgEaLs1/MVqy/6jj5csuCnD3ZhyZl2P/0N5A6RfT1Rc
+ 7uSBqLl03ItGOWms=;
+Received: from hm3562-136.email.locaweb.com.br ([186.202.21.136]
+ helo=shared-hm3562.email.locaweb.com.br)
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1i40pJ-004rhh-Fr
+ for osst-users@lists.sourceforge.net; Sat, 31 Aug 2019 10:41:51 +0000
+Received: from hm3562.email.locaweb.com.br (hm3562.email.locaweb.com.br
+ [186.202.21.130])
+ by shared-hm3562.email.locaweb.com.br (Postfix) with ESMTP id 56AD16EDA20B
+ for <osst-users@lists.sourceforge.net>; Sat, 31 Aug 2019 07:20:59 -0300 (-03)
+x-locaweb-id: iFPCAiOmE46ds0sK44pJxitXDxUrXmj8hXM5PjUuuSA4O3rIuS5iIhx4p1gxbxhWIJ4uwbrWB74UrtppU53Dm9DxD8B4yZHRQaQTslnO4ChqwYXc_HlmGZMrvhh3qLSUNmBaHOfPe073zyy2iqstW09cGPuQjgN4Id53o9tbzWbOyteLRTbS9XWYo2gT_sf8HG1ZqoJTir1rDbdOBQNCgQ==
+ NjM2MTcyNjM2ODY1NjQ2OTQwNmE2ZjcyNmU2MTZjN2E2ZTZmNzI3NDY1MmU2MzZmNmQyZTYyNzI=
+Received: from apu0001.locaweb.com.br (apu0001.email.locaweb.com.br
+ [187.45.217.2])
+ by hm3562.email.locaweb.com.br (Postfix) with ESMTP id CEF166ED5BDC
+ for <osst-users@lists.sourceforge.net>; Sat, 31 Aug 2019 07:20:23 -0300 (-03)
+Received: from POLLUX13-0007.locaweb-net.locaweb.com.br (unknown
+ [191.252.19.131])
+ by apu0001.locaweb.com.br (Postfix) with SMTP id BB5953040337
+ for <osst-users@lists.sourceforge.net>; Sat, 31 Aug 2019 07:20:23 -0300 (BRT)
+Date: Sat, 31 Aug 2019 07:20:23 -0300
 To: osst-users@lists.sourceforge.net
-Date: 30 Aug 2019 18:01:11 -0300
-X-Spam-Score: 5.8 (+++++)
+X-PHP-Originating-Script: 0:envia.php
+MIME-Version: 1.0
+From: =?UTF-8?B?TmV0RmxpeA==?= <carchedi@jornalznorte.com.br>
+Content-Type: multipart/mixed;
+ boundary="------=_Part_36053_310820192023.4683191689847"
+X-Spam-Score: 5.9 (+++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
- [51.75.37.54 listed in zen.spamhaus.org]
+ 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [186.202.21.130 listed in psbl.surriel.com]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: smartvpc.online]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ for more information. [URIs: mktpolov.com.br]
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image area
- 0.7 HTML_IMAGE_ONLY_28     BODY: HTML: images with 2400-2800 bytes of words
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 1.4 FUZZY_CREDIT           BODY: Attempt to obfuscate words in spam
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?51.75.37.54>]
+ 1.0 MISSING_MID            Missing Message-Id: header
+ 0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+ 1.0 CTYPE_NULL             Malformed Content-Type header
  0.0 T_REMOTE_IMAGE         Message contains an external image
- -0.6 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1i3o2x-009fv3-4O
-Subject: [Osst-users] =?utf-8?q?Charme=2C_Beleza=2C_Durabilidade_e_Prote?=
- =?utf-8?b?w6fDo28=?=
+X-Headers-End: 1i40pJ-004rhh-Fr
+Subject: [Osst-users]
+ =?UTF-8?B?QXNzaW5hdHVyYSBzdXNwZW5zYSDigJMgYXR1YWxpemUgc3VhIGZvcm1hIGRlIHBhZ2FtZW50byA=?=2776401-11
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -88,92 +90,910 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============8748136075504786840=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1i40pN-0002Jz-BH@sfs-ml-2.v29.lw.sourceforge.com>
+
+------=_Part_36053_310820192023.4683191689847
+
+--------=_Part_36053_310820192023.4683191689847
+Content-Transfer-Encoding: quoted-printable 
+Content-Type: text/html; charset=utf-8 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
+ft-com:office:office" style=3D"padding:0;margin:0;background-color:rgb(234,=
+ 234, 234);background-color:rgb(234, 234, 234);margin-top:0;">
+ <head>=20
+  <meta http-equiv=3D"Content-Type" content=3D"text/html charset=3DUTF-8">=
+=20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">=20
+  <style type=3D"text/css">
+    @media yahoo {
+  table {border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:=
+0pt; table-layout: fixed;}
+  table table { table-layout: auto; }
+  }
+    * [data-term] {border-bottom: none !important;pointer-events: none !imp=
+ortant;}
+    .ii a {color: inherit !important; text-decoration:none !important;}
+    a[x-apple-data-detectors] { color: inherit !important; text-decoration:=
+ none !important; font-size: inherit !important; font-family: inherit !impo=
+rtant; font-weight: inherit !important; line-height: inherit !important; }
+body, .container, html {
+  background-color: #EAEAEA;
+  margin-top: 0;
+}
+.hide, .hide div, .hide table, .hide td, .hide tr, .hide a, .hide img {disp=
+lay:none !important; width:0 !important; height:0 !important; max-height:0 =
+!important; line-height:0 !important; mso-hide:all !important; overflow:hid=
+den !important; visibility:hidden !important;}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: none;
+  outline: none;
+}
+.desktop-hide, .desktop-hide img, .desktop-hide-max, .desktop-hide-max img =
+{
+  display:none;
+  mso-hide: all;
+}
+.gmail-fix-no-inline {
+  display:none;
+  display:none !important;
+}
+@media (max-width: 500px) {
+  .ios-hide, .mobile-hide {
+    display: none;
+  }
+  .desktop-hide, .desktop-hide img {
+    display: initial !important;
+  }
+  table.desktop-hide {
+    display: table !important;
+  }
+}
+a {
+  color: inherit !important;
+}
+a img {
+  border-style: none;
+}
+.iosnonlink a{
+  text-decoration: none !important;
+}
+.copy a {
+  font-family: Helvetica, Arial, sans;
+  text-decoration: underline !important;
+  color: inherit !important;
+}
+.copy a.secondary-cta {
+  color: #e50914 !important;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #EAEAEA;
+}
+/* Content */
+.content-shell {
+  background: url('http://cdn.nflximg.com/us/email/hitch/netflix-crop.png')=
+ no-repeat #ffffff;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+body {
+  font-family: Helvetica, Arial, sans;
+  color: #221F1F;
+}
+.help-center-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+@media (max-width: 599px) {
+  .ios-hide-max {
+    display: none;
+  }
+  .inbox-fix {
+    display: none;
+  }
+  .desktop-hide-max, .desktop-hide-max img {
+    display: initial !important;
+  }
+}
+/* Footer */
+.footer-shell, .footer-table, .footer {
+  background-color: #221F1F;
+}
+.footer {
+ =20
+  font-family: Helvetica, Arial, sans;
+  font-size: 13px;
+  color: #A9A6A6;
+  line-height: 16px;
+}
+.footer-copy {
+  padding: 15px 90px 0 90px;
+}
+.footer-copy-no-padding {
+  padding: 0 90px 0 90px;
+}
+.footer.questions {
+  padding: 34px 90px 0 90px !important;
+}
+.footer.footer-center {
+  padding: 15px 0 0 0;
+  text-align: center !important;
+}
+.footer a, .footer-copy a {
+  color: #A9A6A6 !important;
+  text-decoration: underline;
+}
+@media (max-width: 599px) {
+  .shell, .shell-footer {
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+  }
+  .footer-copy, .footer-copy-no-padding, .footer.questions {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+/* End Footer */
+    /* Device Info */
+.device-info-shell, .device-info-table, .device-info-table td {
+  background-color: #efefef;
+  -wings-align: center;
+}
+.device-info-image {
+  padding: 34px 26px 0 26px;
+}
+.device-info-device {
+  padding: 19px 26px 0 26px;
+  font-family: HelveticaNeue-Bold, HelveticaNeue, Helvetica, Arial, sans;
+  font-weight: bold;
+  font-size: 14px;
+  color: #221F1F;
+}
+.device-info-location {
+  padding: 7px 26px 0 26px;
+  font-family: HelveticaNeue, Helvetica, Arial, sans;
+  font-size: 14px;
+  line-height: 14px;
+  color: #7A7A7A;
+}
+@media (max-width: 599px) {
+  .device-info-table {
+    width: 100% !important;
+  }
+}
+/* Account Info Element */
+.account-info-label.disclaimer {
+  padding: 5px 90px 0 90px !important;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #221f1f !important;
+}
+.account-info {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 500px) {
+  .account-info {
+    padding: 0 8% 0 8% !important;
+  }
+  .account-info-label.disclaimer {
+    padding: 8px 8% 0 8% !important;
+  }
+}
+/* End Account Info Element */
+/* Account Info Element */
+.account-info-label {
+  padding: 10px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #696666;
+}
+.account-info {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 500px) {
+  .account-info {
+    padding: 0 8% 0 8% !important;
+  }
+  .account-info-label {
+    padding: 10px 8% 0 8% !important;
+  }
+}
+/* End Account Info Element */
+.button-shell {
+  padding: 22px 90px 0 90px;
+}
+.button td {
+  padding:10px 16px;
+  max-width:265px;
+  border-radius: 2px;
+}
+.button {
+  border-radius: 2px;
+}
+.button .button-link {
+  font-size:16px;
+  line-height: 24px;
+  font-weight:normal;
+  text-align:center;
+  text-decoration:none;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  letter-spacing: .025em;
+}
+@media (max-width: 500px){
+  .button-shell {
+    padding: 20px 8% 0 8% !important;
+  }
+  .button td {
+    padding: 0 0 !important;
+    width: 100% !important;
+  }
+  .button {
+    width: 100% !important;
+  }
+  .button a.button-link {
+    display: block !important;
+    padding: 16px 30px !important;
+    font-size: 15px !important;
+    line-height: 17px !important;
+  }
+}
+.callout-shell {
+  padding: 22px 90px 0 90px;
+}
+.callout {
+  background-color: #efefef;
+}
+@media (max-width: 500px) {
+  .callout-shell {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* Copy */
+.copy-shell {
+  background-color: #ffffff;
+}
+.copy {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  color: #221F1F;
+}
+.copy a {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .copy {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Copy */
+/* Copy */
+.copy-shell {
+  background-color: #ffffff;
+}
+.copy-no-padding {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  color: #221F1F;
+}
+@media (max-width: 500px) {
+  .copy-no-padding {
+    padding: 0 8% 0 8% !important;
+  }
+}
+/* End Copy */
+/* Copy */
+.copy-shell {
+  background-color: #ffffff;
+}
+.copy-no-padding-center {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #221F1F;
+}
+@media (max-width: 500px) {
+  .copy-no-padding-center {
+    padding: 0 8% 0 8% !important;
+  }
+}
+/* End Copy */
+/* Escape Hatch */
+.escape-hatch-neutral-shell {
+  padding: 30px 90px 0 90px;
+}
+@media (max-width: 500px) {
+  .escape-hatch-neutral-shell {
+    padding: 8px 8% 0 8% !important;
+  }
+}
+.escape-hatch-neutral.bar {
+  height: 3px;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+.escape-hatch-neutral.bar img {
+  width: 100% !important;
+}
+.escape-hatch-neutral.text {
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: bold;
+  padding: 17px 0 0 0;
+  vertical-align: bottom;
+  text-decoration: none !important;
+}
+a.escape-hatch-neutral.link {
+  text-decoration: none !important;
+}
+
+.escape-hatch-neutral.text .arrow {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 17px;
+  vertical-align: top;
+  padding: 1.8px 0 0 6px;
+}
+/* End Escape Hatch */
+/* Headline */
+.headline {
+  font-family: Helvetica, Arial, sans;
+  font-weight: bold;
+  font-size: 32px;
+  color: #221F1F;
+  line-height: 36px;
+  padding: 40px 90px 10px 90px;
+}
+@media (max-width: 500px) {
+  .headline {
+    padding: 25px 8% 10px 8% !important;
+    font-size: 28px !important;
+  }
+}
+/* End Headline */
+.image-custom {
+  padding: 22px 90px 0 90px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .image-custom {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+.image-custom {
+  padding: 22px 90px 0 90px;
+  width: 100%;
+  height: auto;
+  text-align:center;
+}
+.image-custom img {
+  margin:0 auto 0 auto;
+}
+@media (max-width: 500px) {
+  .image-custom {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* Logo */
+.logo {
+  padding: 46px 0 0 0;
+}
+@media (max-width: 500px) {
+  .logo {
+    padding: 42px 8% 0 8% !important;
+  }
+  .logo img {
+    width: 130px !important;
+  }
+}
+/* End Logo */
+/* Payment */
+.card-icon {
+  padding: 5px 6px 0 0;
+}
+.card-icon-rtl {
+  padding: 5px 0 0 6px;
+}
+.card-copy {
+  padding: 5px 0 0 0;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.card-copy-rtl {
+  direction: ltr !important;
+  text-align: right;
+  padding: 5px 0 0 0;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* End Payment */
+.spacer, .spacer td {
+  font-size: 0;
+  line-height: 0;
+  -wings-height: 0;
+}
+
+@media (max-width: 500px) {
+  .mobile-block {
+    display: block !important;
+  }
+}
+/* Subheadline */
+.subheadline {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  -webkit-font-smoothing: antialiased;
+  color: #221F1F;
+}
+@media (max-width: 500px) {
+  .subheadline {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Subheadline */
+/* Title */
+.title-shell {
+  background-color: #ffffff;
+}
+.title {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 500px) {
+  .title {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Title */
+/* Title */
+.title-shell {
+  background-color: #ffffff;
+}
+.title-center {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #221F1F
+}
+@media (max-width: 500px) {
+  .title-center {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Title */
+/* Toaster */
+.toaster-shell {
+  padding: 0 0 0 90px;
+  margin: 0;
+  background-color: #0071EB;
+}
+.toaster-shell-rtl {
+  padding: 0 90px 0 0;
+  margin: 0;
+  background-color: #0071EB;
+}
+.toaster-table, .toaster {
+  background-color: #0071EB;
+  color: #ffffff;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+
+  font-size: 16px;
+}
+.toaster-alert {
+  padding: 0 4px 0 0;
+}
+.toaster-alert-rtl {
+  padding: 0 0 0 4px;
+}
+.toaster {
+  padding: 12px 0 12px 0;
+}
+@media (max-width: 599px){
+  .toaster-table {
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px){
+  .toaster-shell {
+    padding-left: 8% !important;
+  }
+  .toaster {
+    padding: 8px 0 8px 0;
+  }
+  .toaster-shell-rtl {
+    padding-right: 8% !important;
+  }
+}
+/* End Toaster */
+.account-info-shell, .account-info, .account-info-label  {
+  padding-left: 10px !important;
+}
+.content-shell .account-info-table .account-info-label.disclaimer {
+  padding: 10px 90px 0 80px !important;
+}
+
+.account-info-label {
+  color: #2d2b2b !important;
+}
+
+@media (max-width: 500px) {
+  .content-shell .account-info-table .account-info-label.disclaimer {
+    padding: 10px 8% 0 calc(8% - 10px) !important;
+  }=20
+}
+
+.account-info-shell, .account-info, .account-info-label  {
+  padding-left: 10px !important;
+}
+
+   =20
+  </style>=20
+ </head>=20
+ <body bgcolor=3D"#EAEAEA"   style=3D"font-family:Helvetica, Arial, sans;co=
+lor:rgb(34, 31, 31);padding:0;margin:0;background-color:rgb(234, 234, 234);=
+background-color:rgb(234, 234, 234);margin-top:0;">=20
+  <!--/* 100% Size Container -->=20
+  <!-- Preview Text -->=20
+  <div class=3D"hide"  style=3D"display:none;width:0;height:0;max-height:0;=
+line-height:0;mso-hide:all;overflow:hidden;visibility:hidden;">
+   H=C3=A1 um problema com os dados de pagamento atuais. Tentaremos efetuar=
+ a cobran=C3=A7a novamente, recomendamos que voc=C3=AA atualize estas infor=
+ma=C3=A7=C3=B5es..
+   <!-- preview text hack -->=20
+   <div class=3D"hide" style=3D"display: none; max-height: 0px; overflow:hi=
+dden;display:none;width:0;height:0;max-height:0;line-height:0;mso-hide:all;=
+overflow:hidden;visibility:hidden;">
+    &nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&=
+nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;=
+?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbs=
+p;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&n=
+bsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?=
+&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp=
+;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nb=
+sp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&=
+nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;=
+?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbs=
+p;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&n=
+bsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?=
+&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp=
+;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nb=
+sp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&=
+nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;=
+?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbs=
+p;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&n=
+bsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?=
+&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp=
+;?&nbsp;?&nbsp;?=20
+   </div>
+  </div>=20
+  <!-- End Preview Text -->=20
+  <table class=3D"container" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" id=3D"container" style=3D"background-color:rgb(234, 234=
+, 234);margin-top:0;">=20
+   <tbody>
+    <tr>=20
+     <td align=3D"center">=20
+      <!--/* Hero + Content -->=20
+      <table class=3D"shell" width=3D"600" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0">=20
+       <!--/* Content -->=20
+       <tbody>
+        <tr>=20
+         <td class=3D"content-shell" bgcolor=3D"#ffffff" style=3D"backgroun=
+d:url(http://cdn.nflximg.com/us/email/hitch/netflix-crop.png) no-repeat rgb=
+(255, 255, 255);background-repeat:no-repeat;background-color:rgb(255, 255, =
+255);">=20
+          <table class=3D"content" width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0">=20
+           <!-- Logo -->=20
+           <tbody>
+            <tr>=20
+             <td class=3D"logo" align=3D"center" style=3D"padding:46px 0 0 =
+0;"> <a href=3D"https://www.netflix.com/browse?lnktrk=3DEMP&amp;g=3DEBFFCE2=
+B8B4D26EBD643163EAEB3FCB8645796AA&amp;lkid=3DURL_HOME" style=3D"color:inher=
+it;"> <img src=3D"http://cdn.nflximg.com/us/email/logo/newDesign/logo_v2.pn=
+g" alt=3D"Netflix" width=3D"145" align=3D"center" style=3D"-ms-interpolatio=
+n-mode:bicubic;border:none;outline:none;border-style:none;"> </a> </td>=20
+            </tr>=20
+            <!-- End Logo -->=20
+            <!-- Spacer -->=20
+            <tr>=20
+             <td class=3D"spacer-1 spacer" style=3D"padding: 45px 0 0 0;fon=
+t-size:0;line-height:0;" height=3D"0"> &nbsp; </td>=20
+            </tr>=20
+            <!-- End Spacer -->=20
+            <!-- Toaster -->=20
+            <tr>=20
+             <td class=3D"toaster-shell" style=3D"padding:0 0 0 90px;margin=
+:0;background-color:rgb(0, 113, 235);">=20
+              <table class=3D"toaster-table" width=3D"100%" cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0" style=3D"background-color:rgb(0, 113, 235=
+);color:rgb(255, 255, 255);font-family:Helvetica Neue, Helvetica, Roboto, S=
+egoe UI, sans-serif;font-size:16px;">=20
+               <tbody>
+                <tr>=20
+                 <td class=3D"toaster-alert" width=3D"19" style=3D"padding:=
+0 4px 0 0;"> <img src=3D"http://cdn.nflximg.com/us/email/toaster/alert20.pn=
+g" alt=3D"[!!]" width=3D"19" style=3D"border-collapse:collapse;display:bloc=
+k;-ms-interpolation-mode:bicubic;border:none;outline:none;"> </td>=20
+                 <td class=3D"toaster" style=3D"padding:12px 0 12px 0;backg=
+round-color:rgb(0, 113, 235);color:rgb(255, 255, 255);font-family:Helvetica=
+ Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:16px;"> Sua conta =
+est=C3=A1 suspensa. </td>=20
+                </tr>=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <!-- End Toaster -->=20
+            <!-- Headline -->=20
+            <tr>=20
+             <td class=3D"headline headline-important " align=3D"left" styl=
+e=3D"font-family:Helvetica, Arial, sans;font-weight:bold;font-size:32px;col=
+or:rgb(34, 31, 31);line-height:36px;padding:40px 90px 10px 90px;"> Atualize=
+ seus dados de pagamento </td>=20
+            </tr>=20
+            <!-- End Headline -->=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> Ol=C3=A1, tudo bem? </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> H=C3=A1 um problema com os dados de pagamen=
+to atuais. Tentaremos efetuar a cobran=C3=A7a novamente, recomendamos que v=
+oc=C3=AA atualize estas informa=C3=A7=C3=B5es.. </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!--/* Callout -->=20
+            <tr>=20
+             <td class=3D"callout-shell" style=3D"padding:22px 90px 0 90px;=
+">=20
+              <table class=3D"callout" width=3D"100%" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" style=3D"background-color:rgb(239, 239, 239);">=
+=20
+               <!-- Spacer -->=20
+               <tbody>
+                <tr class=3D"mobile-hide">=20
+          =20
+                <tr class=3D"desktop-hide mobile-block" style=3D"display:no=
+ne;mso-hide:all;">=20
+                 <td class=3D"spacer-2 spacer" style=3D"padding: 8px 0 0 0;=
+font-size:0;line-height:0;" height=3D"0"> &nbsp; </td>=20
+                </tr>=20
+                <!-- End Spacer -->=20
+                <!-- Start Account Info Element -->=20
+                <tr>=20
+                 <td class=3D"account-info-shell" style=3D"padding-left:10p=
+x;">=20
+</td>=20
+                </tr>=20
+                <!-- End Account Info Element -->=20
+                <!-- Start Account Info Element -->=20
+                <tr>=20
+                 <td class=3D"account-info-shell" style=3D"padding-left:10p=
+x;">=20
+                =20
+                </tr>=20
+                <!-- End Account Info Element -->=20
+                <!-- Spacer -->=20
+             =20
+                <tr class=3D"desktop-hide mobile-block" style=3D"display:no=
+ne;mso-hide:all;">=20
+                 <td class=3D"spacer-3 spacer" style=3D"padding: 20px 0 0 0=
+;font-size:0;line-height:0;" height=3D"0"> &nbsp; </td>=20
+                </tr>=20
+                <!-- End Spacer -->=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <!-- Start Account Info Element -->=20
+            <tr>=20
+             <td class=3D"account-info-shell" style=3D"padding-left:10px;">=
+=20
+              <table class=3D"account-info-table" width=3D"100%" cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0">=20
+               <tbody>
+                <tr>=20
+                 <td class=3D"account-info-label disclaimer" style=3D"paddi=
+ng-left:10px;padding:10px 90px 0 80px;padding:5px 90px 0 90px;font-family:H=
+elvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:13px;line-=
+height:16px;-webkit-font-smoothing:antialiased;color:rgb(34, 31, 31);paddin=
+g:10px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe UI,=
+ sans-serif;font-size:13px;line-height:16px;-webkit-font-smoothing:antialia=
+sed;color:rgb(45, 43, 43);"> Cart=C3=B5es que aceitam transa=C3=A7=C3=B5es =
+de d=C3=A9bito e de cr=C3=A9dito poder=C3=A3o ser processados de qualquer u=
+ma das formas. </td>=20
+                </tr>=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <!-- End Account Info Element -->=20
+            <style>
+  .button.button-1 {
+    color: #ffffff;
+    background-color: #e50914;
+  }
+  .button-1 .button-link {
+    color: #ffffff !important;
+  }
+</style>=20
+            <!-- Button -->=20
+            <tr>=20
+             <td class=3D"button-shell" style=3D"padding:22px 90px 0 90px;"=
+>=20
+              <table class=3D"button button-1 button-important" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"color:#ffffff;background-col=
+or:#e50914;border-radius:2px;">=20
+               <tbody>
+                <tr>=20
+                 <td style=3D"padding:10px 16px;max-width:265px;border-radi=
+us:2px;"> <a class=3D"button-link" href=3D"http://click-emaila.mktpolov.com=
+.br/co?cliente=3Dosst-users@lists.sourceforge.net
+" style=3D"color:#ffffff;font-family: Helvetica, Arial, sans;font-size:14px=
+;font-weight:bold;text-align:center;text-decoration:none;font-size:16px;lin=
+e-height:24px;font-weight:normal;text-align:center;text-decoration:none;fon=
+t-family:Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;letter-spa=
+cing:0.025em;color:inherit;">ATUALIZE SUA CONTA AGORA </a> </td>=20
+                </tr>=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <style>
+  .button.button-2 {
+    color: #ffffff;
+    background-color: #9B9B9B;
+  }
+  .button-2 .button-link {
+    color: #ffffff !important;
+  }
+</style>=20
+            <!-- Button -->=20
+            <tr>=20
+             <td class=3D"button-shell" style=3D"padding:22px 90px 0 90px;"=
+>=20
+              </td>=20
+            </tr>=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> D=C3=BAvidas? Estamos sempre prontos para a=
+judar. Visite o <a href=3D"https://help.netflix.com/support/2065?lnktrk=3DE=
+MP&amp;g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB8645796AA&amp;lkid=3DURL_HELP" st=
+yle=3D"font-family:Helvetica, Arial, sans;text-decoration:underline;color:i=
+nherit;color:inherit;">Centro de ajuda</a> ou <a href=3D"https://help.netfl=
+ix.com/contactus?lnktrk=3DEMP&amp;g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB864579=
+6AA&amp;lkid=3DURL_CONTACT" style=3D"font-family:Helvetica, Arial, sans;tex=
+t-decoration:underline;color:inherit;color:inherit;">entre em contato</a>. =
+</td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> =E2=80=93Seus amigos da Netflix </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!-- Escape Hatch -->=20
+            <tr>=20
+             <td class=3D"escape-hatch-neutral-shell" style=3D"padding:30px=
+ 90px 0 90px;"> <a class=3D"escape-hatch-neutral link" href=3D"https://www.=
+netflix.com/browse?lnktrk=3DEMP&amp;g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB8645=
+796AA&amp;lkid=3DURL_HOME_2" style=3D"text-decoration:none;color:inherit;">=
+=20
+               <table class=3D"escape-hatch-neutral-table" width=3D"100%" c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0">=20
+                <tbody>
+                 <tr>=20
+                  <td class=3D"escape-hatch-neutral text" style=3D"font-fam=
+ily:Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:15px;=
+line-height:17px;font-weight:bold;padding:17px 0 0 0;vertical-align:bottom;=
+text-decoration:none;"> &nbsp; </td>=20
+                 </tr>=20
+                </tbody>
+               </table> </a> </td>=20
+            </tr>=20
+            <!-- End Escape Hatch -->=20
+           </tbody>
+          </table> </td>=20
+        </tr>=20
+       </tbody>
+      </table>=20
+      <table class=3D"shell-footer" width=3D"600" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0">=20
+       <!--/* Footer -->=20
+       <tbody>
+        <tr>=20
+         <td class=3D"content-shell-footer">=20
+          </td>=20
+        </tr>=20
+       </tbody>
+      </table> </td>=20
+    </tr>=20
+   </tbody>
+  </table>=20
+  <!-- Fix for Google Inbox -->=20
+  <table class=3D"inbox-fix" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"600" height=3D"1" align=3D"center" style=3D"width: 600px !impor=
+tant;">=20
+   <tbody>
+   =20
+   </tbody>
+  </table>=20
+  <!-- Fix for Gmail on iOS -->=20
+  <div class=3D"ios-hide-max gmail-fix-no-inline" style=3D"white-space:nowr=
+ap; font:15px courier; line-height:0;">
+  </div>  =20
+ </body>
+</html>
+--------=_Part_36053_310820192023.4683191689847
+Content-Type: ; name="6992181485634305015685763703618979635759.pdf"
+Content-Transfer-Encoding: base64 
+Content-Disposition: attachment; filename="6992181485634305015685763703618979635759.pdf"
 
 
---===============8748136075504786840==
-Content-Type: multipart/alternative;
- boundary=--boundary_77772_e24fa859-6db3-4e1f-8540-b6d435df48ee
-
-
-----boundary_77772_e24fa859-6db3-4e1f-8540-b6d435df48ee
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
-
-UmVhbCBUb2xkb3MgLy8vLyBDaGFybWUsIEJlbGV6YSwgRHVyYWJpbGlkYWRlIGUgUHJv
-dGXDp8Ojb2ltZyB7ZGlzcGxheTpibG9ja31DTElRVUUgUEFSQSBBQlJJUkVudmlhZG8g
-cGFyYTogSWRlbnRpZmljYcOnw6NvIGRlIGVudmlvOiAwMFtJZF1Ow6NvIGRlc2VqbyBt
-YWlzIHJlY2ViZXI=
-----boundary_77772_e24fa859-6db3-4e1f-8540-b6d435df48ee
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
-
-PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5SZWFsIFRvbGRvcyAvLy8vIENoYXJtZSwgQmVs
-ZXphLCBEdXJhYmlsaWRhZGUgZSBQcm90ZcOnw6NvPC90aXRsZT4NCjxtZXRhIGh0dHAt
-ZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PWlz
-by04ODU5LTEiPg0KPHN0eWxlPmltZyB7ZGlzcGxheTpibG9ja308L3N0eWxlPg0KPC9o
-ZWFkPg0KPGJvZHkgc3R5bGU9InBhZGRpbmc6MDsgbWFyZ2luOjA7Ij4NCg0KDQo8dGFi
-bGUgYWxpZ249ImNlbnRlciIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNw
-YWNpbmc9IjAiPg0KPHRyPjx0ZCBhbGlnbj0iY2VudGVyIj48YnI+PGEgaHJlZj0iaHR0
-cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL2MvcmVhbHRvbGRvcy8/TD0xJkU9b3NzdC11
-c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQiIHRhcmdldD0iX2JsYW5rIiBzdHlsZT0i
-Zm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6MTRweDsgY29s
-b3I6IzAwMDAwMDsiPkNMSVFVRSBQQVJBIEFCUklSPC9hPjwvdGQ+PC90cj4NCjwvdGFi
-bGU+DQoNCg0KPHRhYmxlIGFsaWduPSJjZW50ZXIiIGJvcmRlcj0iMCIgY2VsbHBhZGRp
-bmc9IjAiIGNlbGxzcGFjaW5nPSIwIj4NCjx0cj48dGQ+PGEgaHJlZj0iaHR0cDovL3Nt
-YXJ0dnBjLm9ubGluZS9saW5rL2MvcmVhbHRvbGRvcy8/TD0xJkU9b3NzdC11c2Vyc0Bs
-aXN0cy5zb3VyY2Vmb3JnZS5uZXQiIHRhcmdldD0iX2JsYW5rIj48aW1nIHNyYz0iaHR0
-cDovL3NtYXJ0dnBjLm9ubGluZS9pbWcvcmVhbHRvbGRvczEuanBnIiBib3JkZXI9IjAi
-IGFsdD0iIiBzdHlsZT0iZGlzcGxheTpibG9jazsiPjwvYT48L3RkPjwvdHI+DQo8dHI+
-PHRkPjxhIGhyZWY9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvbGluay9jL3JlYWx0b2xk
-b3MvP0w9MSZFPW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9
-Il9ibGFuayI+PGltZyBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvaW1nL3JlYWx0
-b2xkb3MyLmpwZyIgYm9yZGVyPSIwIiBhbHQ9IiIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7
-Ij48L2E+PC90ZD48L3RyPg0KPHRyPjx0ZD48YSBocmVmPSJodHRwOi8vc21hcnR2cGMu
-b25saW5lL2xpbmsvYy9yZWFsdG9sZG9zLz9MPTEmRT1vc3N0LXVzZXJzQGxpc3RzLnNv
-dXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwOi8vc21h
-cnR2cGMub25saW5lL2ltZy9yZWFsdG9sZG9zMy5qcGciIGJvcmRlcj0iMCIgYWx0PSIi
-IHN0eWxlPSJkaXNwbGF5OmJsb2NrOyI+PC9hPjwvdGQ+PC90cj4NCjx0cj48dGQ+PGEg
-aHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL2MvcmVhbHRvbGRvcy8/TD0x
-JkU9b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQiIHRhcmdldD0iX2JsYW5r
-Ij48aW1nIHNyYz0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9pbWcvcmVhbHRvbGRvczQu
-anBnIiBib3JkZXI9IjAiIGFsdD0iIiBzdHlsZT0iZGlzcGxheTpibG9jazsiPjwvYT48
-L3RkPjwvdHI+DQo8L3RhYmxlPg0KDQoNCjx0YWJsZSBhbGlnbj0iY2VudGVyIiBib3Jk
-ZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCI+DQo8dHI+PHRkIGFs
-aWduPSJjZW50ZXIiPg0KPGJyPjxicj48YnI+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5
-OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1zaXplOjE0cHg7IGNvbG9yOiMwMDAwMDA7
-Ij5FbnZpYWRvIHBhcmE6IG9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0PC9z
-cGFuPg0KPGJyPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpDYWxpYnJpLHNhbnMtc2Vy
-aWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAwMDAwOyI+SWRlbnRpZmljYcOnw6Nv
-IGRlIGVudmlvOiAwMDc3NzcyPC9zcGFuPg0KPGJyPjxicj48YnI+PGEgaHJlZj0iaHR0
-cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL20vaW1kLz9FPW9zc3QtdXNlcnNAbGlzdHMu
-c291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayI+PGltZyBib3JkZXI9IjAiIHNy
-Yz0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9pbWcvbG9nby5naWYiIGFsdD0iSU1EIDc3
-NzcyIiBzdHlsZT0ibWF4LXdpZHRoOjIwMHB4OyBkaXNwbGF5OmJsb2NrOyI+PC9hPg0K
-PGJyPjxicj48YSBocmVmPSJodHRwOi8vc21hcnR2cGMub25saW5lL3JlbW92ZXIvP1M9
-JkU9b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQiIHRhcmdldD0iX2JsYW5r
-IiBzdHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6
-MTRweDsgY29sb3I6IzAwMDAwMDsiPjxzdHJvbmc+TsOjbyBkZXNlam8gbWFpcyByZWNl
-YmVyPC9zdHJvbmc+PC9hPg0KPGJyPjxicj48YnI+PGJyPjxpbWcgc3JjPSJodHRwOi8v
-c21hcnR2cGMub25saW5lL3JlYWQvP0M9cmVhbHRvbGRvcyZFPW9zc3QtdXNlcnNAbGlz
-dHMuc291cmNlZm9yZ2UubmV0IiBib3JkZXI9IjAiIHdpZHRoPSIwIiBoZWlnaHQ9IjAi
-IGFsdD0iSU1EIDc3NzcyIiBzdHlsZT0iZGlzcGxheTpibG9jazsiPg0KPC90ZD48L3Ry
-Pg0KPC90YWJsZT4NCjwvYm9keT4NCjwvaHRtbD4=
-----boundary_77772_e24fa859-6db3-4e1f-8540-b6d435df48ee--
-
-
-
-
-
---===============8748136075504786840==
+--------=_Part_36053_310820192023.4683191689847
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8748136075504786840==
+--------=_Part_36053_310820192023.4683191689847
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -184,8 +1004,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8748136075504786840==--
-
-
+--------=_Part_36053_310820192023.4683191689847--
 
 
