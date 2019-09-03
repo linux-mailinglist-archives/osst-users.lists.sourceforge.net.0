@@ -2,83 +2,75 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 97309A441A
-	for <lists+osst-users@lfdr.de>; Sat, 31 Aug 2019 12:41:54 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 8D574A5F55
+	for <lists+osst-users@lfdr.de>; Tue,  3 Sep 2019 04:36:42 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1i40pN-0002Jz-BH
-	for lists+osst-users@lfdr.de; Sat, 31 Aug 2019 10:41:53 +0000
+	id 1i4ygT-0002m4-42
+	for lists+osst-users@lfdr.de; Tue, 03 Sep 2019 02:36:41 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <carchedi@jornalznorte.com.br>) id 1i40pM-0002Ja-5j
- for osst-users@lists.sourceforge.net; Sat, 31 Aug 2019 10:41:52 +0000
+ (envelope-from
+ <MTc4NzAyODMzOTcxODIzMzY5MDI=_b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ=$may@vip.wmglrj.com>)
+ id 1i4ygR-0002lr-RT
+ for osst-users@lists.sourceforge.net; Tue, 03 Sep 2019 02:36:39 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:From:MIME-Version:To:Subject:Date:
- Sender:Reply-To:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Subject:Message-ID:Reply-To:To:From:Date:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=JN3JBpMxYTZjJIwuksK38/PISgW6GI5B90T7Qu56Dlo=; b=Snj/twh6fFjFSGDWDQ+qHSML+i
- fAn4eZjCYGHS+Rlj95lXxFy1vUZ+Y+hkkZfe60ge8l4LcngvDi4XH1PCSdFjaLZ39gNQEetH7nhs4
- roHXd1a22e5ZzZ9ag3yCoc9vq/vAPIZk4wMJfegazaNKjZvTyo9MdrCfcKg5puWEXcfw=;
+ bh=iQ4vNmtWXPSTPXL4x51a9oRHhACnr44kZwXKonFE7XQ=; b=nLn3uc/Vh+93SOddi1TvO7ldmk
+ KepBcmQTRIoZiV7FSnuQgx0gJPLYx8cNtg167AZaT/hkLKgFULvJuHVXWvyDe1m7XGvE/GrwIbIYN
+ mJHCAaAjwgWPwAc5J8AkC9/ltIcnpHaaAnVINP9n+ZdZ0vnBxAnCGmUZy1n+IprB8zPE=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:From:MIME-Version:To:Subject:Date:Sender:Reply-To:Message-ID
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:Message-ID:
+ Reply-To:To:From:Date:Sender:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=JN3JBpMxYTZjJIwuksK38/PISgW6GI5B90T7Qu56Dlo=; b=V
- AQYUnRi+MVkYaQ8jUsMzkMXGkiuC4tq9+ZX7GOoDPfxmCH7upjsAYs5Y5pRrXdMT8Phr8d/ViJ/RN
- L6FJw85Na32lfiev3Erl4H0l654WJL+VynXgEaLs1/MVqy/6jj5csuCnD3ZhyZl2P/0N5A6RfT1Rc
- 7uSBqLl03ItGOWms=;
-Received: from hm3562-136.email.locaweb.com.br ([186.202.21.136]
- helo=shared-hm3562.email.locaweb.com.br)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
- id 1i40pJ-004rhh-Fr
- for osst-users@lists.sourceforge.net; Sat, 31 Aug 2019 10:41:51 +0000
-Received: from hm3562.email.locaweb.com.br (hm3562.email.locaweb.com.br
- [186.202.21.130])
- by shared-hm3562.email.locaweb.com.br (Postfix) with ESMTP id 56AD16EDA20B
- for <osst-users@lists.sourceforge.net>; Sat, 31 Aug 2019 07:20:59 -0300 (-03)
-x-locaweb-id: iFPCAiOmE46ds0sK44pJxitXDxUrXmj8hXM5PjUuuSA4O3rIuS5iIhx4p1gxbxhWIJ4uwbrWB74UrtppU53Dm9DxD8B4yZHRQaQTslnO4ChqwYXc_HlmGZMrvhh3qLSUNmBaHOfPe073zyy2iqstW09cGPuQjgN4Id53o9tbzWbOyteLRTbS9XWYo2gT_sf8HG1ZqoJTir1rDbdOBQNCgQ==
- NjM2MTcyNjM2ODY1NjQ2OTQwNmE2ZjcyNmU2MTZjN2E2ZTZmNzI3NDY1MmU2MzZmNmQyZTYyNzI=
-Received: from apu0001.locaweb.com.br (apu0001.email.locaweb.com.br
- [187.45.217.2])
- by hm3562.email.locaweb.com.br (Postfix) with ESMTP id CEF166ED5BDC
- for <osst-users@lists.sourceforge.net>; Sat, 31 Aug 2019 07:20:23 -0300 (-03)
-Received: from POLLUX13-0007.locaweb-net.locaweb.com.br (unknown
- [191.252.19.131])
- by apu0001.locaweb.com.br (Postfix) with SMTP id BB5953040337
- for <osst-users@lists.sourceforge.net>; Sat, 31 Aug 2019 07:20:23 -0300 (BRT)
-Date: Sat, 31 Aug 2019 07:20:23 -0300
-To: osst-users@lists.sourceforge.net
-X-PHP-Originating-Script: 0:envia.php
+ List-Owner:List-Archive; bh=iQ4vNmtWXPSTPXL4x51a9oRHhACnr44kZwXKonFE7XQ=; b=e
+ 1KStw7MGaVJGbCL4RkgW4RNugKSqT6AW8HofBa7yVbltfz4XlEn+utXX2s6/OTpLvlBvXeToA/d2h
+ LAR6FMWP9m6+9ICm65Fh8d2kKI3zLZPnDuvCi0543dZvmMaefB6WfUelgJ5Xh9FJUZwdf76WZwags
+ TA5AY8NWTA/YzZ6w=;
+Received: from out208-121.dm.aliyun.com ([140.205.208.121])
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1i4ygP-007KV0-Pe
+ for osst-users@lists.sourceforge.net; Tue, 03 Sep 2019 02:36:39 +0000
+Received: from WS-web
+ (MTc4NzAyODMzOTcxODIzMzY5MDI=_b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ=$may@vip.wmglrj.com[127.0.0.1])
+ by rsbb16355.et2 at Tue, 03 Sep 2019 10:36:31 +0800
+Date: Tue, 03 Sep 2019 10:21:13 +0800
+From: "Andy" <may@vip.wmglrj.com>
+To: <osst-users@lists.sourceforge.net>
+Message-ID: <6257a409-ef9e-45f9-bd45-ebc9f8029243@alibaba.com>
+X-Priority: 3
+X-Mailer: Alimail-Mailagent
 MIME-Version: 1.0
-From: =?UTF-8?B?TmV0RmxpeA==?= <carchedi@jornalznorte.com.br>
-Content-Type: multipart/mixed;
- boundary="------=_Part_36053_310820192023.4683191689847"
-X-Spam-Score: 5.9 (+++++)
+X-EnvId: 17870283397182336902
+X-Alimail-AntiSpam: AC=CONTINUE; BC=0.5776761|-1; FP=0|-1|-1|-1|0|-1|-1|-1;
+ HT=rsif12452; MF=may@vip.wmglrj.com; NM=1; PH=DU; RN=0; RT=0; SR=0;
+ TI=ma_17870283397182336901; 
+X-Mailer: Alimail-Mailagent
+X-Spam-Score: 6.7 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [186.202.21.130 listed in psbl.surriel.com]
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: mktpolov.com.br]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [140.205.208.121 listed in list.dnswl.org]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 1.4 FUZZY_CREDIT           BODY: Attempt to obfuscate words in spam
+ 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
+ (277167827[at]qq.com)
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 1.0 MISSING_MID            Missing Message-Id: header
- 0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
- 1.0 CTYPE_NULL             Malformed Content-Type header
- 0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1i40pJ-004rhh-Fr
-Subject: [Osst-users]
- =?UTF-8?B?QXNzaW5hdHVyYSBzdXNwZW5zYSDigJMgYXR1YWxpemUgc3VhIGZvcm1hIGRlIHBhZ2FtZW50byA=?=2776401-11
+ 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+ 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+ 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+X-Headers-End: 1i4ygP-007KV0-Pe
+Subject: [Osst-users] =?utf-8?b?5aaC5L2V5o+Q5Y2H5aSW6LS45LyB5Lia566h55CG?=
+ =?utf-8?b?5pWI546HLi4u?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -90,910 +82,82 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
+Reply-To: 277167827@qq.com
+Content-Type: multipart/mixed; boundary="===============8689927793941566114=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1i40pN-0002Jz-BH@sfs-ml-2.v29.lw.sourceforge.com>
 
-------=_Part_36053_310820192023.4683191689847
+--===============8689927793941566114==
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
 
---------=_Part_36053_310820192023.4683191689847
-Content-Transfer-Encoding: quoted-printable 
-Content-Type: text/html; charset=utf-8 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
-.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
-ft-com:office:office" style=3D"padding:0;margin:0;background-color:rgb(234,=
- 234, 234);background-color:rgb(234, 234, 234);margin-top:0;">
- <head>=20
-  <meta http-equiv=3D"Content-Type" content=3D"text/html charset=3DUTF-8">=
-=20
-  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
-1">=20
-  <style type=3D"text/css">
-    @media yahoo {
-  table {border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:=
-0pt; table-layout: fixed;}
-  table table { table-layout: auto; }
-  }
-    * [data-term] {border-bottom: none !important;pointer-events: none !imp=
-ortant;}
-    .ii a {color: inherit !important; text-decoration:none !important;}
-    a[x-apple-data-detectors] { color: inherit !important; text-decoration:=
- none !important; font-size: inherit !important; font-family: inherit !impo=
-rtant; font-weight: inherit !important; line-height: inherit !important; }
-body, .container, html {
-  background-color: #EAEAEA;
-  margin-top: 0;
-}
-.hide, .hide div, .hide table, .hide td, .hide tr, .hide a, .hide img {disp=
-lay:none !important; width:0 !important; height:0 !important; max-height:0 =
-!important; line-height:0 !important; mso-hide:all !important; overflow:hid=
-den !important; visibility:hidden !important;}
-img {
-  -ms-interpolation-mode: bicubic;
-  border: none;
-  outline: none;
-}
-.desktop-hide, .desktop-hide img, .desktop-hide-max, .desktop-hide-max img =
-{
-  display:none;
-  mso-hide: all;
-}
-.gmail-fix-no-inline {
-  display:none;
-  display:none !important;
-}
-@media (max-width: 500px) {
-  .ios-hide, .mobile-hide {
-    display: none;
-  }
-  .desktop-hide, .desktop-hide img {
-    display: initial !important;
-  }
-  table.desktop-hide {
-    display: table !important;
-  }
-}
-a {
-  color: inherit !important;
-}
-a img {
-  border-style: none;
-}
-.iosnonlink a{
-  text-decoration: none !important;
-}
-.copy a {
-  font-family: Helvetica, Arial, sans;
-  text-decoration: underline !important;
-  color: inherit !important;
-}
-.copy a.secondary-cta {
-  color: #e50914 !important;
-}
-html, body {
-  padding: 0;
-  margin: 0;
-  background-color: #EAEAEA;
-}
-/* Content */
-.content-shell {
-  background: url('http://cdn.nflximg.com/us/email/hitch/netflix-crop.png')=
- no-repeat #ffffff;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-}
-body {
-  font-family: Helvetica, Arial, sans;
-  color: #221F1F;
-}
-.help-center-link {
-  text-decoration: underline;
-  font-weight: bold;
-}
-@media (max-width: 599px) {
-  .ios-hide-max {
-    display: none;
-  }
-  .inbox-fix {
-    display: none;
-  }
-  .desktop-hide-max, .desktop-hide-max img {
-    display: initial !important;
-  }
-}
-/* Footer */
-.footer-shell, .footer-table, .footer {
-  background-color: #221F1F;
-}
-.footer {
- =20
-  font-family: Helvetica, Arial, sans;
-  font-size: 13px;
-  color: #A9A6A6;
-  line-height: 16px;
-}
-.footer-copy {
-  padding: 15px 90px 0 90px;
-}
-.footer-copy-no-padding {
-  padding: 0 90px 0 90px;
-}
-.footer.questions {
-  padding: 34px 90px 0 90px !important;
-}
-.footer.footer-center {
-  padding: 15px 0 0 0;
-  text-align: center !important;
-}
-.footer a, .footer-copy a {
-  color: #A9A6A6 !important;
-  text-decoration: underline;
-}
-@media (max-width: 599px) {
-  .shell, .shell-footer {
-    width: 100% !important;
-  }
-}
-@media (max-width: 500px) {
-  .footer {
-    padding-left: 8% !important;
-    padding-right: 8% !important;
-  }
-  .footer-copy, .footer-copy-no-padding, .footer.questions {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
-/* End Footer */
-    /* Device Info */
-.device-info-shell, .device-info-table, .device-info-table td {
-  background-color: #efefef;
-  -wings-align: center;
-}
-.device-info-image {
-  padding: 34px 26px 0 26px;
-}
-.device-info-device {
-  padding: 19px 26px 0 26px;
-  font-family: HelveticaNeue-Bold, HelveticaNeue, Helvetica, Arial, sans;
-  font-weight: bold;
-  font-size: 14px;
-  color: #221F1F;
-}
-.device-info-location {
-  padding: 7px 26px 0 26px;
-  font-family: HelveticaNeue, Helvetica, Arial, sans;
-  font-size: 14px;
-  line-height: 14px;
-  color: #7A7A7A;
-}
-@media (max-width: 599px) {
-  .device-info-table {
-    width: 100% !important;
-  }
-}
-/* Account Info Element */
-.account-info-label.disclaimer {
-  padding: 5px 90px 0 90px !important;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 13px;
-  line-height: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: #221f1f !important;
-}
-.account-info {
-  padding: 0 90px 0 90px;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  -webkit-font-smoothing: antialiased;
-}
-@media (max-width: 500px) {
-  .account-info {
-    padding: 0 8% 0 8% !important;
-  }
-  .account-info-label.disclaimer {
-    padding: 8px 8% 0 8% !important;
-  }
-}
-/* End Account Info Element */
-/* Account Info Element */
-.account-info-label {
-  padding: 10px 90px 0 90px;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 13px;
-  line-height: 16px;
-  -webkit-font-smoothing: antialiased;
-  color: #696666;
-}
-.account-info {
-  padding: 0 90px 0 90px;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  -webkit-font-smoothing: antialiased;
-}
-@media (max-width: 500px) {
-  .account-info {
-    padding: 0 8% 0 8% !important;
-  }
-  .account-info-label {
-    padding: 10px 8% 0 8% !important;
-  }
-}
-/* End Account Info Element */
-.button-shell {
-  padding: 22px 90px 0 90px;
-}
-.button td {
-  padding:10px 16px;
-  max-width:265px;
-  border-radius: 2px;
-}
-.button {
-  border-radius: 2px;
-}
-.button .button-link {
-  font-size:16px;
-  line-height: 24px;
-  font-weight:normal;
-  text-align:center;
-  text-decoration:none;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  letter-spacing: .025em;
-}
-@media (max-width: 500px){
-  .button-shell {
-    padding: 20px 8% 0 8% !important;
-  }
-  .button td {
-    padding: 0 0 !important;
-    width: 100% !important;
-  }
-  .button {
-    width: 100% !important;
-  }
-  .button a.button-link {
-    display: block !important;
-    padding: 16px 30px !important;
-    font-size: 15px !important;
-    line-height: 17px !important;
-  }
-}
-.callout-shell {
-  padding: 22px 90px 0 90px;
-}
-.callout {
-  background-color: #efefef;
-}
-@media (max-width: 500px) {
-  .callout-shell {
-    padding: 20px 8% 0 8% !important;
-  }
-}
-/* Copy */
-.copy-shell {
-  background-color: #ffffff;
-}
-.copy {
-  padding: 22px 90px 0 90px;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  -webkit-font-smoothing: antialiased;
-  color: #221F1F;
-}
-.copy a {
-  text-decoration: underline;
-}
-@media (max-width: 500px) {
-  .copy {
-    padding: 20px 8% 0 8% !important;
-  }
-}
-/* End Copy */
-/* Copy */
-.copy-shell {
-  background-color: #ffffff;
-}
-.copy-no-padding {
-  padding: 0 90px 0 90px;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  -webkit-font-smoothing: antialiased;
-  color: #221F1F;
-}
-@media (max-width: 500px) {
-  .copy-no-padding {
-    padding: 0 8% 0 8% !important;
-  }
-}
-/* End Copy */
-/* Copy */
-.copy-shell {
-  background-color: #ffffff;
-}
-.copy-no-padding-center {
-  padding: 0 90px 0 90px;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-  color: #221F1F;
-}
-@media (max-width: 500px) {
-  .copy-no-padding-center {
-    padding: 0 8% 0 8% !important;
-  }
-}
-/* End Copy */
-/* Escape Hatch */
-.escape-hatch-neutral-shell {
-  padding: 30px 90px 0 90px;
-}
-@media (max-width: 500px) {
-  .escape-hatch-neutral-shell {
-    padding: 8px 8% 0 8% !important;
-  }
-}
-.escape-hatch-neutral.bar {
-  height: 3px;
-  font-size: 0 !important;
-  line-height: 0 !important;
-}
-.escape-hatch-neutral.bar img {
-  width: 100% !important;
-}
-.escape-hatch-neutral.text {
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 15px;
-  line-height: 17px;
-  font-weight: bold;
-  padding: 17px 0 0 0;
-  vertical-align: bottom;
-  text-decoration: none !important;
-}
-a.escape-hatch-neutral.link {
-  text-decoration: none !important;
-}
-
-.escape-hatch-neutral.text .arrow {
-  display: inline-block;
-  font-size: 15px;
-  line-height: 17px;
-  vertical-align: top;
-  padding: 1.8px 0 0 6px;
-}
-/* End Escape Hatch */
-/* Headline */
-.headline {
-  font-family: Helvetica, Arial, sans;
-  font-weight: bold;
-  font-size: 32px;
-  color: #221F1F;
-  line-height: 36px;
-  padding: 40px 90px 10px 90px;
-}
-@media (max-width: 500px) {
-  .headline {
-    padding: 25px 8% 10px 8% !important;
-    font-size: 28px !important;
-  }
-}
-/* End Headline */
-.image-custom {
-  padding: 22px 90px 0 90px;
-  width: 100%;
-  height: auto;
-}
-@media (max-width: 500px) {
-  .image-custom {
-    padding: 20px 8% 0 8% !important;
-  }
-}
-.image-custom {
-  padding: 22px 90px 0 90px;
-  width: 100%;
-  height: auto;
-  text-align:center;
-}
-.image-custom img {
-  margin:0 auto 0 auto;
-}
-@media (max-width: 500px) {
-  .image-custom {
-    padding: 20px 8% 0 8% !important;
-  }
-}
-/* Logo */
-.logo {
-  padding: 46px 0 0 0;
-}
-@media (max-width: 500px) {
-  .logo {
-    padding: 42px 8% 0 8% !important;
-  }
-  .logo img {
-    width: 130px !important;
-  }
-}
-/* End Logo */
-/* Payment */
-.card-icon {
-  padding: 5px 6px 0 0;
-}
-.card-icon-rtl {
-  padding: 5px 0 0 6px;
-}
-.card-copy {
-  padding: 5px 0 0 0;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-}
-.card-copy-rtl {
-  direction: ltr !important;
-  text-align: right;
-  padding: 5px 0 0 0;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-}
-/* End Payment */
-.spacer, .spacer td {
-  font-size: 0;
-  line-height: 0;
-  -wings-height: 0;
-}
-
-@media (max-width: 500px) {
-  .mobile-block {
-    display: block !important;
-  }
-}
-/* Subheadline */
-.subheadline {
-  padding: 22px 90px 0 90px;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 16px;
-  line-height: 23px;
-  -webkit-font-smoothing: antialiased;
-  color: #221F1F;
-}
-@media (max-width: 500px) {
-  .subheadline {
-    padding: 20px 8% 0 8% !important;
-  }
-}
-/* End Subheadline */
-/* Title */
-.title-shell {
-  background-color: #ffffff;
-}
-.title {
-  padding: 22px 90px 0 90px;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 19px;
-  line-height: 26px;
-  -webkit-font-smoothing: antialiased;
-}
-@media (max-width: 500px) {
-  .title {
-    padding: 20px 8% 0 8% !important;
-  }
-}
-/* End Title */
-/* Title */
-.title-shell {
-  background-color: #ffffff;
-}
-.title-center {
-  padding: 22px 90px 0 90px;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-  font-size: 19px;
-  line-height: 26px;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-  color: #221F1F
-}
-@media (max-width: 500px) {
-  .title-center {
-    padding: 20px 8% 0 8% !important;
-  }
-}
-/* End Title */
-/* Toaster */
-.toaster-shell {
-  padding: 0 0 0 90px;
-  margin: 0;
-  background-color: #0071EB;
-}
-.toaster-shell-rtl {
-  padding: 0 90px 0 0;
-  margin: 0;
-  background-color: #0071EB;
-}
-.toaster-table, .toaster {
-  background-color: #0071EB;
-  color: #ffffff;
-  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
-
-  font-size: 16px;
-}
-.toaster-alert {
-  padding: 0 4px 0 0;
-}
-.toaster-alert-rtl {
-  padding: 0 0 0 4px;
-}
-.toaster {
-  padding: 12px 0 12px 0;
-}
-@media (max-width: 599px){
-  .toaster-table {
-    width: 100% !important;
-  }
-}
-@media (max-width: 500px){
-  .toaster-shell {
-    padding-left: 8% !important;
-  }
-  .toaster {
-    padding: 8px 0 8px 0;
-  }
-  .toaster-shell-rtl {
-    padding-right: 8% !important;
-  }
-}
-/* End Toaster */
-.account-info-shell, .account-info, .account-info-label  {
-  padding-left: 10px !important;
-}
-.content-shell .account-info-table .account-info-label.disclaimer {
-  padding: 10px 90px 0 80px !important;
-}
-
-.account-info-label {
-  color: #2d2b2b !important;
-}
-
-@media (max-width: 500px) {
-  .content-shell .account-info-table .account-info-label.disclaimer {
-    padding: 10px 8% 0 calc(8% - 10px) !important;
-  }=20
-}
-
-.account-info-shell, .account-info, .account-info-label  {
-  padding-left: 10px !important;
-}
-
-   =20
-  </style>=20
- </head>=20
- <body bgcolor=3D"#EAEAEA"   style=3D"font-family:Helvetica, Arial, sans;co=
-lor:rgb(34, 31, 31);padding:0;margin:0;background-color:rgb(234, 234, 234);=
-background-color:rgb(234, 234, 234);margin-top:0;">=20
-  <!--/* 100% Size Container -->=20
-  <!-- Preview Text -->=20
-  <div class=3D"hide"  style=3D"display:none;width:0;height:0;max-height:0;=
-line-height:0;mso-hide:all;overflow:hidden;visibility:hidden;">
-   H=C3=A1 um problema com os dados de pagamento atuais. Tentaremos efetuar=
- a cobran=C3=A7a novamente, recomendamos que voc=C3=AA atualize estas infor=
-ma=C3=A7=C3=B5es..
-   <!-- preview text hack -->=20
-   <div class=3D"hide" style=3D"display: none; max-height: 0px; overflow:hi=
-dden;display:none;width:0;height:0;max-height:0;line-height:0;mso-hide:all;=
-overflow:hidden;visibility:hidden;">
-    &nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&=
-nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;=
-?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbs=
-p;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&n=
-bsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?=
-&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp=
-;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nb=
-sp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&=
-nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;=
-?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbs=
-p;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&n=
-bsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?=
-&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp=
-;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nb=
-sp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&=
-nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;=
-?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbs=
-p;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&n=
-bsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?=
-&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp=
-;?&nbsp;?&nbsp;?=20
-   </div>
-  </div>=20
-  <!-- End Preview Text -->=20
-  <table class=3D"container" width=3D"100%" cellpadding=3D"0" cellspacing=
-=3D"0" border=3D"0" id=3D"container" style=3D"background-color:rgb(234, 234=
-, 234);margin-top:0;">=20
-   <tbody>
-    <tr>=20
-     <td align=3D"center">=20
-      <!--/* Hero + Content -->=20
-      <table class=3D"shell" width=3D"600" cellpadding=3D"0" cellspacing=3D=
-"0" border=3D"0">=20
-       <!--/* Content -->=20
-       <tbody>
-        <tr>=20
-         <td class=3D"content-shell" bgcolor=3D"#ffffff" style=3D"backgroun=
-d:url(http://cdn.nflximg.com/us/email/hitch/netflix-crop.png) no-repeat rgb=
-(255, 255, 255);background-repeat:no-repeat;background-color:rgb(255, 255, =
-255);">=20
-          <table class=3D"content" width=3D"100%" cellpadding=3D"0" cellspa=
-cing=3D"0" border=3D"0">=20
-           <!-- Logo -->=20
-           <tbody>
-            <tr>=20
-             <td class=3D"logo" align=3D"center" style=3D"padding:46px 0 0 =
-0;"> <a href=3D"https://www.netflix.com/browse?lnktrk=3DEMP&amp;g=3DEBFFCE2=
-B8B4D26EBD643163EAEB3FCB8645796AA&amp;lkid=3DURL_HOME" style=3D"color:inher=
-it;"> <img src=3D"http://cdn.nflximg.com/us/email/logo/newDesign/logo_v2.pn=
-g" alt=3D"Netflix" width=3D"145" align=3D"center" style=3D"-ms-interpolatio=
-n-mode:bicubic;border:none;outline:none;border-style:none;"> </a> </td>=20
-            </tr>=20
-            <!-- End Logo -->=20
-            <!-- Spacer -->=20
-            <tr>=20
-             <td class=3D"spacer-1 spacer" style=3D"padding: 45px 0 0 0;fon=
-t-size:0;line-height:0;" height=3D"0"> &nbsp; </td>=20
-            </tr>=20
-            <!-- End Spacer -->=20
-            <!-- Toaster -->=20
-            <tr>=20
-             <td class=3D"toaster-shell" style=3D"padding:0 0 0 90px;margin=
-:0;background-color:rgb(0, 113, 235);">=20
-              <table class=3D"toaster-table" width=3D"100%" cellpadding=3D"=
-0" cellspacing=3D"0" border=3D"0" style=3D"background-color:rgb(0, 113, 235=
-);color:rgb(255, 255, 255);font-family:Helvetica Neue, Helvetica, Roboto, S=
-egoe UI, sans-serif;font-size:16px;">=20
-               <tbody>
-                <tr>=20
-                 <td class=3D"toaster-alert" width=3D"19" style=3D"padding:=
-0 4px 0 0;"> <img src=3D"http://cdn.nflximg.com/us/email/toaster/alert20.pn=
-g" alt=3D"[!!]" width=3D"19" style=3D"border-collapse:collapse;display:bloc=
-k;-ms-interpolation-mode:bicubic;border:none;outline:none;"> </td>=20
-                 <td class=3D"toaster" style=3D"padding:12px 0 12px 0;backg=
-round-color:rgb(0, 113, 235);color:rgb(255, 255, 255);font-family:Helvetica=
- Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:16px;"> Sua conta =
-est=C3=A1 suspensa. </td>=20
-                </tr>=20
-               </tbody>
-              </table> </td>=20
-            </tr>=20
-            <!-- End Toaster -->=20
-            <!-- Headline -->=20
-            <tr>=20
-             <td class=3D"headline headline-important " align=3D"left" styl=
-e=3D"font-family:Helvetica, Arial, sans;font-weight:bold;font-size:32px;col=
-or:rgb(34, 31, 31);line-height:36px;padding:40px 90px 10px 90px;"> Atualize=
- seus dados de pagamento </td>=20
-            </tr>=20
-            <!-- End Headline -->=20
-            <!-- Copy -->=20
-            <tr>=20
-             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
-ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
-UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
-liased;color:rgb(34, 31, 31);"> Ol=C3=A1, tudo bem? </td>=20
-            </tr>=20
-            <!-- End Copy -->=20
-            <!-- Copy -->=20
-            <tr>=20
-             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
-ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
-UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
-liased;color:rgb(34, 31, 31);"> H=C3=A1 um problema com os dados de pagamen=
-to atuais. Tentaremos efetuar a cobran=C3=A7a novamente, recomendamos que v=
-oc=C3=AA atualize estas informa=C3=A7=C3=B5es.. </td>=20
-            </tr>=20
-            <!-- End Copy -->=20
-            <!--/* Callout -->=20
-            <tr>=20
-             <td class=3D"callout-shell" style=3D"padding:22px 90px 0 90px;=
-">=20
-              <table class=3D"callout" width=3D"100%" cellpadding=3D"0" cel=
-lspacing=3D"0" border=3D"0" style=3D"background-color:rgb(239, 239, 239);">=
-=20
-               <!-- Spacer -->=20
-               <tbody>
-                <tr class=3D"mobile-hide">=20
-          =20
-                <tr class=3D"desktop-hide mobile-block" style=3D"display:no=
-ne;mso-hide:all;">=20
-                 <td class=3D"spacer-2 spacer" style=3D"padding: 8px 0 0 0;=
-font-size:0;line-height:0;" height=3D"0"> &nbsp; </td>=20
-                </tr>=20
-                <!-- End Spacer -->=20
-                <!-- Start Account Info Element -->=20
-                <tr>=20
-                 <td class=3D"account-info-shell" style=3D"padding-left:10p=
-x;">=20
-</td>=20
-                </tr>=20
-                <!-- End Account Info Element -->=20
-                <!-- Start Account Info Element -->=20
-                <tr>=20
-                 <td class=3D"account-info-shell" style=3D"padding-left:10p=
-x;">=20
-                =20
-                </tr>=20
-                <!-- End Account Info Element -->=20
-                <!-- Spacer -->=20
-             =20
-                <tr class=3D"desktop-hide mobile-block" style=3D"display:no=
-ne;mso-hide:all;">=20
-                 <td class=3D"spacer-3 spacer" style=3D"padding: 20px 0 0 0=
-;font-size:0;line-height:0;" height=3D"0"> &nbsp; </td>=20
-                </tr>=20
-                <!-- End Spacer -->=20
-               </tbody>
-              </table> </td>=20
-            </tr>=20
-            <!-- Start Account Info Element -->=20
-            <tr>=20
-             <td class=3D"account-info-shell" style=3D"padding-left:10px;">=
-=20
-              <table class=3D"account-info-table" width=3D"100%" cellpaddin=
-g=3D"0" cellspacing=3D"0" border=3D"0">=20
-               <tbody>
-                <tr>=20
-                 <td class=3D"account-info-label disclaimer" style=3D"paddi=
-ng-left:10px;padding:10px 90px 0 80px;padding:5px 90px 0 90px;font-family:H=
-elvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:13px;line-=
-height:16px;-webkit-font-smoothing:antialiased;color:rgb(34, 31, 31);paddin=
-g:10px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe UI,=
- sans-serif;font-size:13px;line-height:16px;-webkit-font-smoothing:antialia=
-sed;color:rgb(45, 43, 43);"> Cart=C3=B5es que aceitam transa=C3=A7=C3=B5es =
-de d=C3=A9bito e de cr=C3=A9dito poder=C3=A3o ser processados de qualquer u=
-ma das formas. </td>=20
-                </tr>=20
-               </tbody>
-              </table> </td>=20
-            </tr>=20
-            <!-- End Account Info Element -->=20
-            <style>
-  .button.button-1 {
-    color: #ffffff;
-    background-color: #e50914;
-  }
-  .button-1 .button-link {
-    color: #ffffff !important;
-  }
-</style>=20
-            <!-- Button -->=20
-            <tr>=20
-             <td class=3D"button-shell" style=3D"padding:22px 90px 0 90px;"=
->=20
-              <table class=3D"button button-1 button-important" cellpadding=
-=3D"0" cellspacing=3D"0" border=3D"0" style=3D"color:#ffffff;background-col=
-or:#e50914;border-radius:2px;">=20
-               <tbody>
-                <tr>=20
-                 <td style=3D"padding:10px 16px;max-width:265px;border-radi=
-us:2px;"> <a class=3D"button-link" href=3D"http://click-emaila.mktpolov.com=
-.br/co?cliente=3Dosst-users@lists.sourceforge.net
-" style=3D"color:#ffffff;font-family: Helvetica, Arial, sans;font-size:14px=
-;font-weight:bold;text-align:center;text-decoration:none;font-size:16px;lin=
-e-height:24px;font-weight:normal;text-align:center;text-decoration:none;fon=
-t-family:Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;letter-spa=
-cing:0.025em;color:inherit;">ATUALIZE SUA CONTA AGORA </a> </td>=20
-                </tr>=20
-               </tbody>
-              </table> </td>=20
-            </tr>=20
-            <style>
-  .button.button-2 {
-    color: #ffffff;
-    background-color: #9B9B9B;
-  }
-  .button-2 .button-link {
-    color: #ffffff !important;
-  }
-</style>=20
-            <!-- Button -->=20
-            <tr>=20
-             <td class=3D"button-shell" style=3D"padding:22px 90px 0 90px;"=
->=20
-              </td>=20
-            </tr>=20
-            <!-- Copy -->=20
-            <tr>=20
-             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
-ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
-UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
-liased;color:rgb(34, 31, 31);"> D=C3=BAvidas? Estamos sempre prontos para a=
-judar. Visite o <a href=3D"https://help.netflix.com/support/2065?lnktrk=3DE=
-MP&amp;g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB8645796AA&amp;lkid=3DURL_HELP" st=
-yle=3D"font-family:Helvetica, Arial, sans;text-decoration:underline;color:i=
-nherit;color:inherit;">Centro de ajuda</a> ou <a href=3D"https://help.netfl=
-ix.com/contactus?lnktrk=3DEMP&amp;g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB864579=
-6AA&amp;lkid=3DURL_CONTACT" style=3D"font-family:Helvetica, Arial, sans;tex=
-t-decoration:underline;color:inherit;color:inherit;">entre em contato</a>. =
-</td>=20
-            </tr>=20
-            <!-- End Copy -->=20
-            <!-- Copy -->=20
-            <tr>=20
-             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
-ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
-UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
-liased;color:rgb(34, 31, 31);"> =E2=80=93Seus amigos da Netflix </td>=20
-            </tr>=20
-            <!-- End Copy -->=20
-            <!-- Escape Hatch -->=20
-            <tr>=20
-             <td class=3D"escape-hatch-neutral-shell" style=3D"padding:30px=
- 90px 0 90px;"> <a class=3D"escape-hatch-neutral link" href=3D"https://www.=
-netflix.com/browse?lnktrk=3DEMP&amp;g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB8645=
-796AA&amp;lkid=3DURL_HOME_2" style=3D"text-decoration:none;color:inherit;">=
-=20
-               <table class=3D"escape-hatch-neutral-table" width=3D"100%" c=
-ellpadding=3D"0" cellspacing=3D"0" border=3D"0">=20
-                <tbody>
-                 <tr>=20
-                  <td class=3D"escape-hatch-neutral text" style=3D"font-fam=
-ily:Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:15px;=
-line-height:17px;font-weight:bold;padding:17px 0 0 0;vertical-align:bottom;=
-text-decoration:none;"> &nbsp; </td>=20
-                 </tr>=20
-                </tbody>
-               </table> </a> </td>=20
-            </tr>=20
-            <!-- End Escape Hatch -->=20
-           </tbody>
-          </table> </td>=20
-        </tr>=20
-       </tbody>
-      </table>=20
-      <table class=3D"shell-footer" width=3D"600" cellpadding=3D"0" cellspa=
-cing=3D"0" border=3D"0">=20
-       <!--/* Footer -->=20
-       <tbody>
-        <tr>=20
-         <td class=3D"content-shell-footer">=20
-          </td>=20
-        </tr>=20
-       </tbody>
-      </table> </td>=20
-    </tr>=20
-   </tbody>
-  </table>=20
-  <!-- Fix for Google Inbox -->=20
-  <table class=3D"inbox-fix" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
-0" width=3D"600" height=3D"1" align=3D"center" style=3D"width: 600px !impor=
-tant;">=20
-   <tbody>
-   =20
-   </tbody>
-  </table>=20
-  <!-- Fix for Gmail on iOS -->=20
-  <div class=3D"ios-hide-max gmail-fix-no-inline" style=3D"white-space:nowr=
-ap; font:15px courier; line-height:0;">
-  </div>  =20
- </body>
-</html>
---------=_Part_36053_310820192023.4683191689847
-Content-Type: ; name="6992181485634305015685763703618979635759.pdf"
-Content-Transfer-Encoding: base64 
-Content-Disposition: attachment; filename="6992181485634305015685763703618979635759.pdf"
+<p data-spm-anchor-id=3D"5176.2020520150.112.i7.3e757528Bu74ti" style=3D"text-=
+align: center;"></p><p data-spm-anchor-id=3D"5176.2020520150.112.i7.3e757528Bu=
+74ti" style=3D"text-align: center;"><img src=3D"http://q8.moviead.cn/chukou.pn=
+g" _src=3D"http://q8.moviead.cn/chukou.png" data-spm-anchor-id=3D"5176.2020520=
+150.112.i12.3e757528Bu74ti"/></p><p data-spm-anchor-id=3D"5176.2020520150.113.=
+i0.7fe87528m9HoTY"><br/></p><p><span style=3D"widows: 1; white-space: nowrap;"=
+>&nbsp; &nbsp; &nbsp;&nbsp;</span></p><p><span style=3D"font-family: =E5=AE=8B=
+=E4=BD=93, SimSun; white-space: nowrap;">&nbsp; &nbsp; &nbsp; &nbsp;=E9=A1=BA=E7=
+=A5=9D</span></p><p data-spm-anchor-id=3D"5176.2020520150.112.i15.3e757528Bu74=
+ti"><span style=3D"white-space: nowrap;font-family:=E5=AE=8B=E4=BD=93, SimSun"=
+>=E5=95=86=E7=A5=BA=EF=BC=81</span></p><p data-spm-anchor-id=3D"5176.202052015=
+0.112.i13.3e757528Bu74ti"><span style=3D"font-family:=E5=AE=8B=E4=BD=93, SimSu=
+n">__________________________________</span></p><p data-spm-anchor-id=3D"5176.=
+2020520150.112.i13.3e757528Bu74ti"><span style=3D"font-size:12px;line-height: =
+1.5;font-family:=E5=AE=8B=E4=BD=93, SimSun"><span style=3D"color: rgb(51, 51, =
+51); line-height: 23px;"><strong data-spm-anchor-id=3D"5176.2020520150.112.i14=
+.3e757528Bu74ti"></strong></span></span></p><div data-spm-anchor-id=3D"5176.20=
+20520150.112.i15.674875288nCPPG" style=3D"line-height: 21px; color: rgb(0, 0, =
+0); font-family: Verdana; font-size: 14px; font-variant-numeric: normal; font-=
+variant-east-asian: normal; white-space: normal; widows: 1;"><img src=3D"http:=
+//www.anoksoft.com/images/logo.png" _src=3D"http://www.anoksoft.com/images/log=
+o.png" data-spm-anchor-id=3D"5176.2020520150.112.i18.674875288nCPPG"/></div><d=
+iv data-spm-anchor-id=3D"5176.2020520150.112.i19.674875288nCPPG" style=3D"line=
+-height: 16.8px; color: rgb(0, 0, 0); font-family: Verdana; font-variant-numer=
+ic: normal; font-variant-east-asian: normal; white-space: normal; widows: 1;">=
+<span style=3D"font-size: 12px; line-height: 1.5;"><span style=3D"font-family:=
+ =E9=BB=91=E4=BD=93; color: rgb(51, 51, 51); line-height: 23px;"><strong></str=
+ong></span></span><p data-spm-anchor-id=3D"5176.2020520150.112.i33.674875288nC=
+PPG" style=3D"font-size: 14px;">=E8=89=BE=E8=AF=BA=E7=A7=91=E8=BD=AF=E4=BB=B6=EF=
+=BC=88<span data-spm-anchor-id=3D"5176.2020520150.112.i35.674875288nCPPG">=E5=B9=
+=BF=E5=B7=9E=E5=85=AC=E5=8F=B8=EF=BC=89</span></p><p data-spm-anchor-id=3D"517=
+6.2020520150.112.i33.674875288nCPPG" style=3D"font-size: 14px;">=E8=B4=9F=E8=B4=
+=A3=E4=BA=BA=EF=BC=9AAndy&nbsp;</p><p data-spm-anchor-id=3D"5176.2020520150.11=
+2.i36.674875288nCPPG"><span style=3D"font-size: 14px;">=E6=89=8B=E6=9C=BA=EF=BC=
+=9A15323380209</span><span data-spm-anchor-id=3D"5176.2020520150.113.i20.5bd67=
+528JJviyO" style=3D"font-size: 12px; font-family: =E5=AE=8B=E4=BD=93, SimSun; =
+color: rgb(51, 51, 51);">(=E5=BE=AE=E4=BF=A1=E5=90=8C=E5=8F=B7)&nbsp;&nbsp;</s=
+pan><span data-spm-anchor-id=3D"5176.2020520150.113.i12.5bd67528JJviyO" style=3D=
+"font-family: =E5=AE=8B=E4=BD=93, SimSun; color: rgb(255, 0, 0);"><span data-s=
+pm-anchor-id=3D"5176.2020520150.113.i19.5bd67528JJviyO" style=3D"font-size: 12=
+px;">=E5=8A=A0=E5=BE=AE=E4=BF=A1=E9=A2=86=E7=BA=A2=E5=8C=85</span><span style=3D=
+"font-size: 48px;"><strong>5</strong><span data-spm-anchor-id=3D"5176.20205201=
+50.113.i18.5bd67528JJviyO">=E5=85=83&nbsp;</span></span><span data-spm-anchor-=
+id=3D"5176.2020520150.113.i18.5bd67528JJviyO" style=3D"font-size: 12px;">&nbsp=
+;</span></span></p><p data-spm-anchor-id=3D"5176.2020520150.112.i37.674875288n=
+CPPG" style=3D"font-size: 14px;">=E7=94=B5=E8=AF=9D=EF=BC=9A020-85820979</p><p=
+ data-spm-anchor-id=3D"5176.2020520150.112.i31.674875288nCPPG" style=3D"font-s=
+ize: 14px;">=E5=9C=B0=E5=9D=80=EF=BC=9A=E5=B9=BF=E5=B7=9E=E5=B8=82=E7=95=AA=E7=
+=A6=BA=E5=8C=BA=E9=92=9F=E6=9D=91=E8=A1=97=E5=A5=A5=E5=9B=AD=E5=9F=8E=E5=B8=82=
+=E5=A4=A9=E5=9C=B07=E5=8C=BA3=E6=A0=8B1013=E5=AE=A4</p></div><div data-spm-anc=
+hor-id=3D"5176.2020520150.112.i19.674875288nCPPG" style=3D"line-height: 16.8px=
+; color: rgb(0, 0, 0); font-family: Verdana; font-size: 14px; font-variant-num=
+eric: normal; font-variant-east-asian: normal; white-space: normal; widows: 1;=
+"><br/></div><p data-spm-anchor-id=3D"5176.2020520150.113.i0.4aef7528iJevaI" s=
+tyle=3D"line-height: 1.5; font-variant-numeric: normal; font-variant-east-asia=
+n: normal; white-space: normal; widows: 1; color: rgb(102, 102, 102); font-siz=
+e: 12px; text-align: center; margin-top: 0px; margin-bottom: 0px;"><span style=
+=3D"font-family:=E5=AE=8B=E4=BD=93, SimSun"><br/></span></p><p><br/></p>
 
 
---------=_Part_36053_310820192023.4683191689847
+--===============8689927793941566114==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---------=_Part_36053_310820192023.4683191689847
+--===============8689927793941566114==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -1004,6 +168,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---------=_Part_36053_310820192023.4683191689847--
-
-
+--===============8689927793941566114==--
