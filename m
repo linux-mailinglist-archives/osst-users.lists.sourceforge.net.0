@@ -2,88 +2,73 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 08F77B025F
-	for <lists+osst-users@lfdr.de>; Wed, 11 Sep 2019 19:09:20 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id D13D8B1B3A
+	for <lists+osst-users@lfdr.de>; Fri, 13 Sep 2019 11:55:34 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1i867K-0000b6-Px
-	for lists+osst-users@lfdr.de; Wed, 11 Sep 2019 17:09:18 +0000
+	id 1i8iIf-0005yT-KT
+	for lists+osst-users@lfdr.de; Fri, 13 Sep 2019 09:55:33 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <infos@frondaison.site>) id 1i867I-0000ay-Lg
- for osst-users@lists.sourceforge.net; Wed, 11 Sep 2019 17:09:16 +0000
+ (envelope-from <www-data@ns1.google.com>) id 1i8iIe-0005y8-J0
+ for osst-users@lists.sourceforge.net; Fri, 13 Sep 2019 09:55:32 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Date:Message-Id:Content-Type:MIME-Version:
+ From:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=YNCD1noXn/i4lOXSE7WM9+6JmwSvoLVcgpVYq7XqZ6s=; b=joM7oJYFPTsA+KhOGYmGG/MnMJ
- 9kCWGb6gPcIyOMTlGTpYn/WT9/Yn8KKKmDhLyKMriab4R34Xm3Ed7Xfbz/UWuJQoDkxlJftAJxcbP
- cCFD0wOnR87mRLaD3RpOl+vBZ/Nr0LApgHpIAkvqCHT2gmw+TVJwrAE4fl6+3t1bxC2Q=;
+ bh=Z6l5JVANhQqhRnmt5sKgFC9KiUWm9fupyvGsyS6zpJ4=; b=iCSWdr5tOpN3B+GwsuZ+4oZ5nQ
+ 2i7lX623fPS7YrNfth0orQU5JaIWU+j0XFv27fGjrpPjDA6HP2jTyR4mJVdfKnv3bBvy28ddHwyeg
+ 8SGldyCoPmm6MK9D6ldavnO+9ymuE4UexC9H93Zulc40BmAawaGyimKZxT+9E+Af3eX0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
- From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Subject:Date:Message-Id:Content-Type:MIME-Version:From:To:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=YNCD1noXn/i4lOXSE7WM9+6JmwSvoLVcgpVYq7XqZ6s=; b=c
- sxxUPs4kHyc0PmW9Gc8jY14MXsnzl4wfks7GnCPgbpaFpUWjU3zY2hw1LDUmh3n71iulV1gUazSOw
- 4/LzWpnQFg/jrC4Ou17MsW59LJZ+GrZbnK2pZQI/pY5s9UCpzoxtLG/ta0tJrzKwcJLYZbz05KjiX
- HqDRIEgLz0WVJ99M=;
-Received: from smtp5-g21.free.fr ([212.27.42.5])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1i867A-000XJ8-8O
- for osst-users@lists.sourceforge.net; Wed, 11 Sep 2019 17:09:16 +0000
-Received: from gerde (unknown [37.168.11.171])
- by smtp5-g21.free.fr (Postfix) with ESMTP id AC4805FFC5
- for <osst-users@lists.sourceforge.net>; Wed, 11 Sep 2019 19:09:01 +0200 (CEST)
-Date: Wed, 11 Sep 2019 17:09:01 +0000
+ List-Owner:List-Archive; bh=Z6l5JVANhQqhRnmt5sKgFC9KiUWm9fupyvGsyS6zpJ4=; b=g
+ mJi96Lsuw5uNB8w+s3R7s/PDPixgNOiPdrjq0UExqk0P88CLo5ebQiNyTScN7i14mpfjCqIrEDYBq
+ VsscudxdLHJopVfeQE9a/DQH+wHpiYRHpgFviI/FNhUwTj2Sg3/w743ucr9GUDXq63OTRm0PV9tqp
+ CTyKeMuNGh8O18qU=;
+Received: from [40.117.212.21] (helo=ns1.google.com)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
+ id 1i8iIa-00DPmw-Mh
+ for osst-users@lists.sourceforge.net; Fri, 13 Sep 2019 09:55:32 +0000
+Received: by ns1.google.com (Postfix, from userid 33)
+ id AA8BA22470; Fri, 13 Sep 2019 09:37:05 +0000 (UTC)
 To: osst-users@lists.sourceforge.net
-From: more than accountant <infos@frondaison.site>
-Message-ID: <3294f5a5bf0da3c84d553c50c9694b12@gerde>
-X-Priority: 3
-X-Mailer: krematoria
+X-PHP-Originating-Script: 1000:xman.php
+X-Mailer: Microsoft Office Outlook, Build 17.551210
+From: Stela Lima Moreira Peterson <novocredito@pudyassessoria.com>
 MIME-Version: 1.0
-DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=11471; s=default;
- t=1568221741; c=relaxed/simple; h=From:To:Subject;
- d=frondaison.site; i=infos@frondaison.site;
- z=From:=20more=20than=20accountant=20<infos@frondaison.site>
- |To:=20osst-users@lists.sourceforge.net
- |Subject:=20Unlimited=20services;
- bh=GKk9GhixUNXPQ4/0lrFGXsAJx7s=;
- b=J6PDmCn9f3RDIShCKLoc9VgB9m9ArkYGVVTKOcq8gexYID27XRwfRqmdRluBw/Cs2I07lJyONx8yPmy34nA2ZKv66ZSg613kdYawndch03nnFlOHyjzKrYYEHWPESTMioQTi30w7eLfPqIM9ayZRP6ruyGlrwyts+DQu9wDA/fU=
-X-Spam-Score: 6.2 (++++++)
+Content-Type: multipart/mixed; boundary="41f8ec48e3a6852c75a2cae261d12972"
+Message-Id: <20190913093705.AA8BA22470@ns1.google.com>
+Date: Fri, 13 Sep 2019 09:37:05 +0000 (UTC)
+X-Spam-Score: 8.8 (++++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: frondaison.site]
- 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
- blocklist [URIs: frondaison.site]
- 0.1 URIBL_SBL_A Contains URL's A record listed in the Spamhaus SBL
- blocklist [URIs: frondaison.site]
- 0.6 URIBL_SBL Contains an URL's NS IP listed in the Spamhaus SBL
- blocklist [URIs: frondaison.site]
- -0.0 SPF_PASS               SPF: sender matches SPF record
+ for more information. [URIs: pudyassessoria.com]
+ 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
- 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100]
- 0.0 T_REMOTE_IMAGE         Message contains an external image
- 0.0 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1i867A-000XJ8-8O
-Subject: [Osst-users] Unlimited services
+ 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 0.0 FORGED_OUTLOOK_HTML    Outlook can't send HTML message only
+ 0.0 PDS_HP_HELO_NORDNS     High profile HELO with no sender rDNS
+ 2.0 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML only
+ 2.5 TO_NO_BRKTS_MSFT       To: lacks brackets and supposed Microsoft tool
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1i8iIa-00DPmw-Mh
+Subject: [Osst-users] [SPAM] Feirao Limpa Nome Proposta: - 6061320
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -95,248 +80,137 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============6518840920934241618=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============6518840920934241618==
-Content-Type: multipart/alternative;
-	boundary="b1_3294f5a5bf0da3c84d553c50c9694b12"
+Content-Transfer-Encoding: 7bit
+This is a MIME encoded message.
+
+--41f8ec48e3a6852c75a2cae261d12972
+Content-Type: text/html; charset="iso-8859-1"
 Content-Transfer-Encoding: 8bit
 
---b1_3294f5a5bf0da3c84d553c50c9694b12
-Content-Type: text/plain; charset=us-ascii
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 11.00.9600.19431"></HEAD>
+<BODY>
+<DIV style="TEXT-ALIGN: center"><B><SPAN 
+style="COLOR: yellow; BACKGROUND-COLOR: black">LIMPE SEU CPF OU CNPJ 
+</SPAN></B><B><SPAN style="COLOR: yellow; BACKGROUND-COLOR: black">AUMENTE SEU 
+SCORE</SPAN></B></DIV>
+<P><BR><B><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'>Atendimento 
+somente pelo email:&nbsp;<A 
+href="mailto:novocredito@pudyassessoria.com">novocredito@pudyassessoria.com</A></SPAN></B></P>
+<P><B><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><B><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><B><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><B><BR></B></SPAN><B><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><SPAN 
+style="COLOR: yellow; BACKGROUND-COLOR: black">Tire seu nome dos orgao de 
+protecao ao credito sem negociar ou pagar as dividas.</SPAN></SPAN></B><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Obtenha 
+total seguranca na recuperacao do seu credito e Nome limpo em 10 
+Dias.</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Esta 
+com nome limpo porem nao consegue credito Devido o Score Baixo? Temos a 
+solucao.</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Nosso 
+servico consiste em baixa suas dividas sem negociar ou pagar suas 
+dividas.</SPAN><BR><BR 
+style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><B 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; TEXT-ALIGN: justify'><SPAN 
+style="COLOR: yellow; BACKGROUND-COLOR: black">Servico ideal para quem 
+deseja:</SPAN></B><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
+Financiar um Veiculo ou Imovel.</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
+Abrir contas em bancos, obter Cartoes de Credito e Taloes de 
+Cheques.</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
+Participar de concursos e conseguir um novo Emprego.</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
+Comprar no crediario em Lojas diversas.</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
+Adquirir linhas de telefone celular Pos - Pago.</SPAN><BR><BR 
+style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><B 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; TEXT-ALIGN: justify'><SPAN 
+style="COLOR: yellow; BACKGROUND-COLOR: black">Servico disponivel para CPF e 
+CNPJ. Os valores cobrado pelo servico e fixo tanto para CPF e 
+CNPJ.</SPAN></B><BR><B 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>O 
+valor cobrado pode ser parcelado em 2 vezes ou avista.</B><BR><BR><B 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; TEXT-ALIGN: justify'><SPAN 
+style="COLOR: yellow; BACKGROUND-COLOR: black">Baixamos as seguintes 
+dividas.</SPAN></B><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>CHEQUES 
+S/FUNDOS:</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>PROTESTOS:</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>ACOES 
+JUDICIAIS:</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>DIVIDA 
+VENCIDA:</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>ANOTACOES 
+:</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>CADIM:</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>BUSCA 
+APREENSOES:</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>AVALISTA:</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>BACEN:</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><BR></SPAN><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Entre 
+outros:</SPAN><BR><BR 
+style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Para 
+tirar suas dividas responda esse e-mail.</SPAN><BR><BR><SPAN 
+style='FONT-FAMILY: "arial","helvetica",sans-serif; COLOR: rgb(0,0,1)'><SPAN 
+style="FONT-SIZE: 11px"><FONT color=#000000 size=3 
+face="Times New Roman"><STRONG>Stela Lima Moreira 
+Peterson</STRONG></FONT></SPAN></SPAN></P>
+<TABLE 
+style="FONT-SIZE: 11px; FONT-FAMILY: Arial,Helvetica,sans-serif; BORDER-COLLAPSE: collapse; COLOR: rgb(0,0,1); BORDER-SPACING: 0px; LINE-HEIGHT: 1.4" 
+cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
+      style="FONT-WEIGHT: 700">Analista&nbsp;de Credito</SPAN>&nbsp;|&nbsp;Pudy 
+      Recuperacao de Credito e Assessoria Financeira</TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
+      style="COLOR: rgb(85,169,49)">email:&nbsp;<A 
+      href="mailto:novocredito@pudyassessoria.com">novocredito@pudyassessoria.com</A></SPAN></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">Brasil</TD></TR></TBODY></TABLE><BR>
+<DIV class=m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
+style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
+align=center><SPAN 
+style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>Politica&nbsp;</SPAN><SPAN 
+style="BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt">de 
+Privacidade - C Copyright 2010&nbsp;Pudy Recuperacao de Credito e Assessoria 
+Financeira</SPAN></DIV><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'></SPAN><BR>
+<DIV class=m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
+style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
+align=center><SPAN 
+style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>&nbsp;Todos 
+os direitos reservados.</SPAN></DIV></BODY></HTML>
 
-ACCOUNTANCY SERVICES
-
-
-UNLIMITED ACCOUNTANCY
-SERVICES
-ONE MONTHLY FEE
-ACCOUNTANCY SERVICES
-ACCOUNTANCY SERVICES
-We quote online based on company turnover and transactions
-Quote Now
-Quote Online To See How Much
-You Should Be Paying
-Unlimited Accountancy Services Include:
-Unlimited Telephone Support
-Unlimited Email Support (3 Hour Response)
-Dedicated Accountant
-Monthly Bookkeeping/Reconciliation
-Quarterly VAT Returns
-Company Annual Accounts
-Company Tax Return
-Self-Assessment Tax Returns
-Submission of Confirmation Statement
-Xero Software
-Xero Training
-Company Incorporation (if required)
-VAT Registration (if required)
-PAYE Registration (if required)
-CIS Registration (if required)
-Financial Reference (e.g. Mortgage)
-Access to Business Funding
-Monthly Management Information
-
-
-Tired of unexpected accountancy fees?
-
-Get unlimited services and Support for
-
-One Monthly fee.
-
-ACCOUNTANCY SERVICES 
-Never any unexpected fees*
-
-ACCOUNTANCY SERVICES 
-
-
-
-
-ACCOUNTANCY SERVICESACCOUNTANCY SERVICESACCOUNTANCY SERVICES
-
-
-This e-mail is brought to you by an independent e-mail marketing company. 
-Follow this link to stop receiving messages about ACCOUNTANCY SERVICES.
-You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
-You are receiving this message on your email address because you are in our list of managers and professionals.
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL
-
-
---b1_3294f5a5bf0da3c84d553c50c9694b12
-Content-Type: text/html; charset=us-ascii
-
-<!DOCTYPE html>
-			                   <html>
-				               	<head>
-					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">			
-				                </head>
-				                <body>
-					            	<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">    
-    <table style="padding:0px;border-collapse:collapse;border-spacing:5px;max-width:600px;width:100%;  " border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
-      <tbody>
-        <tr>
-          <td align="center" valign="top">
-            <table style="padding:0px;border-collapse:collapse;border-spacing:5px;" border="0" cellspacing="0" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td align="center" style="padding:0px;margin:0px;"><a href="http://frondaison.site/accountb-uk/services/"><img src="http://frondaison.site/accountb-uk/logo.jpg" alt="Complete Accountant" style="display: block;max-width:520px;width:100%;"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="padding:0px;margin:0px;">
-                    <br>
-                    <br>
-                    <h1 style="color:#043e59;font-size:42px;margin:0;padding:0;font-family:&#39;Trebuchet MS&#39;;">UNLIMITED ACCOUNTANCY<br>SERVICES</h1>
-                    <h2 style="color:#ab2861;font-size:36px;border-top:1px solid #ab2861;border-bottom:1px solid #ab2861;display:inline-block;margin:20px;padding:10px;font-family:&#39;Trebuchet MS&#39;;">ONE MONTHLY FEE</h2>
-                    
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="padding:0px;margin:0px;"><a href="http://frondaison.site/accountb-uk/services/"><img src="http://frondaison.site/accountb-uk/visu.jpg" alt="" style="display: block;max-width:600px;width:100%;  "></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="background:#f8f8f8;padding:0px;margin:0px;">
-                    <a href="http://frondaison.site/accountb-uk/services/"><img src="http://frondaison.site/accountb-uk/cta1.jpg" alt="QUOTE ONLINE &gt;&gt;" width="360" height="67" style="display: block;max-width: 360px;width:100%; "></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="background:#f8f8f8;padding:0px;margin:0px;font-family:&#39;Trebuchet MS&#39;;">We quote online based on company turnover and transactions
-           <h4>Quote Now</h4>
-                    <h2 style="color:#13d4ab;">Quote Online To See How Much<br> You Should Be Paying </h2>
-                    
-                    <h2 style="color:#95104a;">Unlimited Accountancy Services Include:</h2>
-                    
-                  </td>
-                </tr>
-          
-          <tr>
-    <td class="two-column" style="text-align:center;font-size:0; width: 100%; max-width: 560px;background:#f8f8f8" align="center"><!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" border="0"  cellpadding="0" cellspacing="0" >
-                        <tr>
-                        <td width="280" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table class="column" style="text-align:left;max-width:280px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;background:#f8f8f8;font-family:sans-serif; ">
-       <tbody><tr>  <td style="font-size:15px;font-family:&#39;raleway&#39;; ">
-                          <ul>
-                            <li style="padding-bottom:10px;">Unlimited Telephone Support</li>
-                            <li style="padding-bottom:10px;">Unlimited Email Support<br>
- (3 Hour Response)</li>
-                            <li style="padding-bottom:10px;">Dedicated Accountant</li>
-                            <li style="padding-bottom:10px;">Monthly Bookkeeping/Reconciliation</li>
-                            <li style="padding-bottom:10px;">Quarterly VAT Returns</li>
-                            <li style="padding-bottom:10px;">Company Annual Accounts</li>
-                            <li style="padding-bottom:10px;">Company Tax Return</li>
-                            <li style="padding-bottom:10px;">Self-Assessment Tax Returns</li>
-                            <li style="padding-bottom:10px;">Submission of Confirmation Statement</li>
-                          </ul>
-                        </td></tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="280" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table class="column" style="text-align:left;max-width:280px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;background:#f8f8f8;font-family:sans-serif">
-       <tbody><tr> <td style="font-size:15px;font-family:&#39;Raleway&#39;; ">
-                          <ul>
-                            <li style="padding-bottom:10px;">Xero Software </li>
-                            <li style="padding-bottom:10px;">Xero Training</li>
-                            <li style="padding-bottom:10px;">Company Incorporation<br>
-(if required)</li>
-                            <li style="padding-bottom:10px;">VAT Registration (if required)</li>
-                            <li style="padding-bottom:10px;">PAYE Registration (if required)</li>
-                            <li style="padding-bottom:10px;">CIS Registration (if required)</li>
-                            <li style="padding-bottom:10px;">Financial Reference (e.g. Mortgage)</li>
-                            <li style="padding-bottom:10px;">Access to Business Funding</li>
-                            <li style="padding-bottom:10px;">Monthly Management Information</li>
-                          </ul>
-                        </td></tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-      <![endif]--></td>
-  </tr>
-          
-                
-              <tr>
-<td background="http://frondaison.site/accountb-uk/background.jpg" bgcolor="#00364B" width="600" height="450" valign="middle" style="background-repeat: no-repeat;" align="center">
-<!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:450px;">
-  <v:fill type="tile" src="http://frondaison.site/accountb-uk/background.jpg" color="#00364B" />
- <v:textbox inset="0,0,0,0">
-<![endif]-->
-<table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%" border="0" cellpadding="0" cellspacing="0">
-<tbody><tr>
-                  <td style="padding:0px;margin:0px;" align="center">
-                    <br>
-                    <br>
-                    <h2 style="color:#ffffff;font-size:26px;font-family:&#39;Trebuchet MS&#39;;font-weight:normal;margin:0;">Tired of unexpected accountancy fees?</h2>
-                    <br>
-                    <h2 style="color:#ffffff;font-size:26px;font-family:Verdana;font-weight:normal;margin:0;">Get unlimited services and Support for </h2>
-                    <br>
-                    <h2 style="color:#27e0b8;font-size:26px;font-family:Verdana;font-weight:normal;margin:0;">One Monthly fee.</h2>
-                    <br><img src="http://frondaison.site/accountb-uk/partner.jpg" alt="" width="250" height="83" style="display: block;">
-                    <br>
-                    <h2 style="color:#f7c70a;font-size:26px;font-family:Verdana;font-weight:normal;margin:0;">Never any unexpected fees*</h2>
-                    <br><a href="http://frondaison.site/accountb-uk/services/"><img src="http://frondaison.site/accountb-uk/cta2.jpg" alt="QUOTE ONLINE &gt;&gt;" width="260" height="69" style="display: block"></a>
-                    <br>
-                    <br>
-                    <br>
-                  </td>
-                </tr>
-   </tbody></table>
-   <!--[if gte mso 9]>
-  </v:textbox>
-</v:rect>
-<![endif]-->
-</td>
-</tr>  
-                
-                <tr>
-                  <td align="center" style="background:#f8f8f8;">
-                  
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr><td colspan="2" align="center" style="background:#f8f8f8;">
-<br>
-<br><span style="font-size:10px;"><a href="http://frondaison.site/accountb-uk/vurk/?email=o8FB8ZbBgmTvB11awdtEai0fqE130LfwMNx4WRcqS96ZzLGoptTAnd9uENu82UQ8AOjbSwIrEEheGCVMQFFL7ZeF8aInfCNBJnRxrX9D36tlDzsSlPKkHkoDn9/lHT2t3wG2nMdrng68BIXG5o133C2m6DMC410HKgDNTcCS9I8=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving messages about <strong>ACCOUNTANCY
-SERVICES</strong>.<br>
-                    You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="http://frondaison.site/accountb-uk/frite/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
-You are receiving this message on your email address because you are in our list of managers and professionals.<br>
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL<br>
-</span>
-<br>
-</td>
-      </tbody>
-    </table>
-</body>
-				                </body>
-			                   </html>
+<br><a scr="id:0,719306349754333">
 
 
 
---b1_3294f5a5bf0da3c84d553c50c9694b12--
-
-
-
---===============6518840920934241618==
+--41f8ec48e3a6852c75a2cae261d12972
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6518840920934241618==
+--41f8ec48e3a6852c75a2cae261d12972
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -347,6 +221,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6518840920934241618==--
-
-
+--41f8ec48e3a6852c75a2cae261d12972--
