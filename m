@@ -2,73 +2,76 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id D13D8B1B3A
-	for <lists+osst-users@lfdr.de>; Fri, 13 Sep 2019 11:55:34 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 67315B9F2C
+	for <lists+osst-users@lfdr.de>; Sat, 21 Sep 2019 19:35:13 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1i8iIf-0005yT-KT
-	for lists+osst-users@lfdr.de; Fri, 13 Sep 2019 09:55:33 +0000
+	id 1iBjHs-0004jN-6B
+	for lists+osst-users@lfdr.de; Sat, 21 Sep 2019 17:35:12 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <www-data@ns1.google.com>) id 1i8iIe-0005y8-J0
- for osst-users@lists.sourceforge.net; Fri, 13 Sep 2019 09:55:32 +0000
+ (envelope-from <contato@sendsmarty.online>) id 1iBjHr-0004jH-Lz
+ for osst-users@lists.sourceforge.net; Sat, 21 Sep 2019 17:35:11 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Date:Message-Id:Content-Type:MIME-Version:
- From:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:Subject:Date:To:From:MIME-Version:
+ Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Z6l5JVANhQqhRnmt5sKgFC9KiUWm9fupyvGsyS6zpJ4=; b=iCSWdr5tOpN3B+GwsuZ+4oZ5nQ
- 2i7lX623fPS7YrNfth0orQU5JaIWU+j0XFv27fGjrpPjDA6HP2jTyR4mJVdfKnv3bBvy28ddHwyeg
- 8SGldyCoPmm6MK9D6ldavnO+9ymuE4UexC9H93Zulc40BmAawaGyimKZxT+9E+Af3eX0=;
+ bh=5qZEHJ3qDdZijo0boz+tE/F6unlX57mS45hVDAxe47I=; b=mlElPkdcekvNbtOc5RYMrREAWN
+ ZLdNqDgEc03ChPgQkoSUv2yKavhcCoxvNT0QPcWT5NaI67cJ1O8yefuy7XOSCOCUBc/iy36pJEpvF
+ vrcQZwjh1d+iWGhRxdvnyMOfWWQzb8qfjN6GbXZNbiHILLDlZMzvZLeiWyErCWOrtVow=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Date:Message-Id:Content-Type:MIME-Version:From:To:Sender:Reply-To
+ h=Content-Type:Subject:Date:To:From:MIME-Version:Message-ID:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Z6l5JVANhQqhRnmt5sKgFC9KiUWm9fupyvGsyS6zpJ4=; b=g
- mJi96Lsuw5uNB8w+s3R7s/PDPixgNOiPdrjq0UExqk0P88CLo5ebQiNyTScN7i14mpfjCqIrEDYBq
- VsscudxdLHJopVfeQE9a/DQH+wHpiYRHpgFviI/FNhUwTj2Sg3/w743ucr9GUDXq63OTRm0PV9tqp
- CTyKeMuNGh8O18qU=;
-Received: from [40.117.212.21] (helo=ns1.google.com)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.90_1)
- id 1i8iIa-00DPmw-Mh
- for osst-users@lists.sourceforge.net; Fri, 13 Sep 2019 09:55:32 +0000
-Received: by ns1.google.com (Postfix, from userid 33)
- id AA8BA22470; Fri, 13 Sep 2019 09:37:05 +0000 (UTC)
-To: osst-users@lists.sourceforge.net
-X-PHP-Originating-Script: 1000:xman.php
-X-Mailer: Microsoft Office Outlook, Build 17.551210
-From: Stela Lima Moreira Peterson <novocredito@pudyassessoria.com>
+ List-Owner:List-Archive; bh=5qZEHJ3qDdZijo0boz+tE/F6unlX57mS45hVDAxe47I=; b=I
+ 3CLHA4QRXCbi1r84YqO6ZTVs3lvJ5LfsIRidVa6N2fP69Iho7r1OdW15zYraG6xLCouObSHuqW9xs
+ qqzOJlBf6zLa0bIDka10zgV9zpQVizR3Hsqv0athiTaQ/vMdwZ1Lnl8Fu2Uo/7LaG/g3/MloTT9pz
+ 9Q/gSWvq0Lgl3RHU=;
+Received: from sendsmarty.online ([51.38.134.151])
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.92.2)
+ id 1iBjHp-002Ts6-UY
+ for osst-users@lists.sourceforge.net; Sat, 21 Sep 2019 17:35:11 +0000
+dkim-signature: v=1; a=rsa-sha256; d=sendsmarty.online; s=dkim;
+ c=relaxed/relaxed; q=dns/txt;
+ h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type; 
+ bh=5qZEHJ3qDdZijo0boz+tE/F6unlX57mS45hVDAxe47I=;
+ b=C2DWjpnvsoNpj6ByWaFQXrtAzbtQE6/Bw0QMARzts6KYUlbkue/MOfC8/nlWmJRFwPDTuIqHCQS/mYax9FIg3f2z5s3GoCijNedBaCHtAcBTn5y7sNKpYF96SaLyUStjWqh+8DBoXPp2nGiUh3asj3n06HyzfIGCalCyPh2j8SQ5zrdA1ipw7BVMzIJvF/5HnEdjVya81RBC+kcfJ13GcnLChY+6pzbggGp+abp0YZx8Otibhm7MGWN//H
+ MNjSla7lSq3vDIeW1cUj4bnsfprozY3mHUegE8WItDPLDKOb31iwyUfMY3jlgXL+4hS8xvqWpjEoi/8CgEP0Ndcmcixw==
+Received: from WIN-A74ILO5AI5B (WIN-A74ILO5AI5B [127.0.0.1])
+ by sendsmarty.online with ESMTPA ; Sat, 21 Sep 2019 14:32:00 -0300
+Message-ID: <92277b2a-b93b-4645-b628-d85bec75c282@sendsmarty.online>
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="41f8ec48e3a6852c75a2cae261d12972"
-Message-Id: <20190913093705.AA8BA22470@ns1.google.com>
-Date: Fri, 13 Sep 2019 09:37:05 +0000 (UTC)
-X-Spam-Score: 8.8 (++++++++)
+From: "Expo Empreendedor" <contato@sendsmarty.online>
+To: osst-users@lists.sourceforge.net
+Date: 21 Sep 2019 14:32:00 -0300
+X-Spam-Score: 2.3 (++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [51.38.134.151 listed in psbl.surriel.com]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: pudyassessoria.com]
- 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ for more information. [URIs: smartvpc.online]
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
- 0.0 FORGED_OUTLOOK_HTML    Outlook can't send HTML message only
- 0.0 PDS_HP_HELO_NORDNS     High profile HELO with no sender rDNS
- 2.0 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML only
- 2.5 TO_NO_BRKTS_MSFT       To: lacks brackets and supposed Microsoft tool
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1i8iIa-00DPmw-Mh
-Subject: [Osst-users] [SPAM] Feirao Limpa Nome Proposta: - 6061320
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+ -0.1 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1iBjHp-002Ts6-UY
+Subject: [Osst-users] 09 e 10 de Novembro - Blue Tree Premium Morumbi
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -80,137 +83,178 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
+Content-Type: multipart/mixed; boundary="===============7393345891878601173=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-Content-Transfer-Encoding: 7bit
-This is a MIME encoded message.
 
---41f8ec48e3a6852c75a2cae261d12972
-Content-Type: text/html; charset="iso-8859-1"
-Content-Transfer-Encoding: 8bit
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD>
-<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
-<META name=GENERATOR content="MSHTML 11.00.9600.19431"></HEAD>
-<BODY>
-<DIV style="TEXT-ALIGN: center"><B><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">LIMPE SEU CPF OU CNPJ 
-</SPAN></B><B><SPAN style="COLOR: yellow; BACKGROUND-COLOR: black">AUMENTE SEU 
-SCORE</SPAN></B></DIV>
-<P><BR><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'>Atendimento 
-somente pelo email:&nbsp;<A 
-href="mailto:novocredito@pudyassessoria.com">novocredito@pudyassessoria.com</A></SPAN></B></P>
-<P><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><B><BR></B></SPAN><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Tire seu nome dos orgao de 
-protecao ao credito sem negociar ou pagar as dividas.</SPAN></SPAN></B><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Obtenha 
-total seguranca na recuperacao do seu credito e Nome limpo em 10 
-Dias.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Esta 
-com nome limpo porem nao consegue credito Devido o Score Baixo? Temos a 
-solucao.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Nosso 
-servico consiste em baixa suas dividas sem negociar ou pagar suas 
-dividas.</SPAN><BR><BR 
-style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><B 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; TEXT-ALIGN: justify'><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Servico ideal para quem 
-deseja:</SPAN></B><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Financiar um Veiculo ou Imovel.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Abrir contas em bancos, obter Cartoes de Credito e Taloes de 
-Cheques.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Participar de concursos e conseguir um novo Emprego.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Comprar no crediario em Lojas diversas.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Adquirir linhas de telefone celular Pos - Pago.</SPAN><BR><BR 
-style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><B 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; TEXT-ALIGN: justify'><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Servico disponivel para CPF e 
-CNPJ. Os valores cobrado pelo servico e fixo tanto para CPF e 
-CNPJ.</SPAN></B><BR><B 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>O 
-valor cobrado pode ser parcelado em 2 vezes ou avista.</B><BR><BR><B 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; TEXT-ALIGN: justify'><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Baixamos as seguintes 
-dividas.</SPAN></B><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>CHEQUES 
-S/FUNDOS:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>PROTESTOS:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>ACOES 
-JUDICIAIS:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>DIVIDA 
-VENCIDA:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>ANOTACOES 
-:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>CADIM:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>BUSCA 
-APREENSOES:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>AVALISTA:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>BACEN:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><BR></SPAN><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Entre 
-outros:</SPAN><BR><BR 
-style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Para 
-tirar suas dividas responda esse e-mail.</SPAN><BR><BR><SPAN 
-style='FONT-FAMILY: "arial","helvetica",sans-serif; COLOR: rgb(0,0,1)'><SPAN 
-style="FONT-SIZE: 11px"><FONT color=#000000 size=3 
-face="Times New Roman"><STRONG>Stela Lima Moreira 
-Peterson</STRONG></FONT></SPAN></SPAN></P>
-<TABLE 
-style="FONT-SIZE: 11px; FONT-FAMILY: Arial,Helvetica,sans-serif; BORDER-COLLAPSE: collapse; COLOR: rgb(0,0,1); BORDER-SPACING: 0px; LINE-HEIGHT: 1.4" 
-cellSpacing=0 cellPadding=0 border=0>
-  <TBODY>
-  <TR>
-    <TD 
-    style="PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
-      style="FONT-WEIGHT: 700">Analista&nbsp;de Credito</SPAN>&nbsp;|&nbsp;Pudy 
-      Recuperacao de Credito e Assessoria Financeira</TD></TR>
-  <TR>
-    <TD 
-    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
-      style="COLOR: rgb(85,169,49)">email:&nbsp;<A 
-      href="mailto:novocredito@pudyassessoria.com">novocredito@pudyassessoria.com</A></SPAN></TD></TR>
-  <TR>
-    <TD 
-    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">Brasil</TD></TR></TBODY></TABLE><BR>
-<DIV class=m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
-style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
-align=center><SPAN 
-style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>Politica&nbsp;</SPAN><SPAN 
-style="BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt">de 
-Privacidade - C Copyright 2010&nbsp;Pudy Recuperacao de Credito e Assessoria 
-Financeira</SPAN></DIV><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'></SPAN><BR>
-<DIV class=m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
-style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
-align=center><SPAN 
-style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>&nbsp;Todos 
-os direitos reservados.</SPAN></DIV></BODY></HTML>
-
-<br><a scr="id:0,719306349754333">
+--===============7393345891878601173==
+Content-Type: multipart/alternative;
+ boundary=--boundary_2327771_4d3b22e0-4204-4fee-8986-9435b5e7ce7a
 
 
+----boundary_2327771_4d3b22e0-4204-4fee-8986-9435b5e7ce7a
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
 
---41f8ec48e3a6852c75a2cae261d12972
+RXhwbyBFbXByZWVuZGVkb3IgLy8vLyAwOSBlIDEwIGRlIE5vdmVtYnJvIC0gQmx1ZSBU
+cmVlIFByZW1pdW0gTW9ydW1iaWltZyB7ZGlzcGxheTpibG9ja31DTElRVUUgUEFSQSBB
+QlJJUlZvY8OqIGNyaWFuZG8gbm92YXMgb3BvcnR1bmlkYWRlcyBlbWVsaG9yYW5kbyBv
+cyByZXN1bHRhZG9zIGRvIHNldSBuZWfDs2Npby4yIGRpYXMgY29tIHBhbGVzdHJhcyBz
+b2JyZSBpbm92YcOnw6NvLCBnZXN0w6NvLCBtYXJrZXRpbmcsIHZlbmRhcywgZS1jb21t
+ZXJjZSwgdmFyZWpvLi4uUMO6YmxpY28gYWx2bzogZW1wcmVzYXMgZGUgcGVxdWVubywg
+bcOpZGlvIGUgZ3JhbmRlIHBvcnRlIGRlIHRvZG9zIG9zIHNldG9yZXMuRmVpcmEgZGUg
+TmVnw7NjaW9zIC0gVml0cmluZSBkZSBvcG9ydHVuaWRhZGVzIGUgbmVnw7NjaW9zIHBh
+cmEgaW52ZXN0aWRvcmVzLCBlbXByZWVuZGVkb3JlcywgZW1wcmVzw6FyaW9zIGUgcGVz
+c29hcyBpbnRlcmVzc2FkYXMgZW0gYWJyaXIgb3UgZXhwYW5kaXIgc2V1IHByw7Nwcmlv
+IG5lZ8OzY2lvLkNvbmdyZXNzbyAtIERvaXMgZGlhcyBpbnRlaXJvcyBkZSBjb250ZcO6
+ZG8gY29tIHBhbGVzdHJhbnRlcyBkZSBFbXByZWVuZGVkb3Jpc21vLCBNYXJrZXRpbmcg
+ZSBWZW5kYXMuIENvbmhlY2ltZW50bywgZmVycmFtZW50YXMgZSBhcyBtZWxob3JlcyBw
+csOhdGljYXMgZGUgbWVyY2FkbyFOZXR3b3JraW5nIC0gTyBldmVudG8gw6kgZGVzZW5o
+YWRvIHBhcmEgZ2VyYXIgY29uZXjDtWVzIGUgbmV0d29ya2luZyBvcmfDom5pY28gZGUg
+aW1wYWN0by5BIEV4cG8gRW1wcmVlbmRlZG9yIMOpIHVtYSB2aXRyaW5lIGRlIG9wb3J0
+dW5pZGFkZXMgZSBuZWfDs2Npb3MgcGFyYSBpbnZlc3RpZG9yZXMsIGVtcHJlZW5kZWRv
+cmVzLCBlbXByZXPDoXJpb3MgZSBwZXNzb2FzIGludGVyZXNzYWRhcyBlbSBhYnJpciBv
+dSBleHBhbmRpciBzZXUgcHLDs3ByaW8gbmVnw7NjaW8uIENvbmhlw6dhIG9ww6fDtWVz
+IGRlIGludmVzdGltZW50b3MgYWx0YW1lbnRlIGx1Y3JhdGl2b3MgZSB2aXZlbmNpZSBl
+eHBlcmnDqm5jaWFzIHF1ZSB2w6NvIG11ZGFyIHN1YSBmb3JtYSBkZSB2ZXIgZSBmYXpl
+ciBuZWfDs2Npb3MuIENvbmhlw6dhIGFzIG5vdmlkYWRlcyBkbyBtZXJjYWRvOyBFbnRy
+ZSBlbSBjb250YXRvIGRpcmV0byBjb20gYXMgZW1wcmVzYXM7IE5lZ29jaWUgc2V1IG9y
+w6dhbWVudG87IEFwcm92ZWl0ZSBhcyBjb25kacOnw7VlcyBleGNsdXNpdmFzIHF1ZSBh
+cyBlbXByZXNhcyBvZmVyZWNlbSBkdXJhbnRlIG8gZXZlbnRvOyBBc3Npc3RhIGUgcGFy
+dGljaXBlIGRhcyBwcm9ncmFtYcOnw7VlcyBlIGF0cmHDp8O1ZXNGcmFucXVpYXMgLSBQ
+YXJ0aWNpcGHDp8OjbyBkZSBncmFuZGVzIHJlZGVzLCBhbMOpbSBkZSBmcmFucXVpYXMg
+Y29tIGludmVzdGltZW50byBpbmljaWFsIG1haXMgYmFpeG8gb3UgZW0gZm9ybWF0b3Mg
+bWFpcyBjb21wYWN0b3MgZSBhbHRlcm5hdGl2b3MuU2VydmnDp29zIC0gRm9ybmVjZWRv
+cmVzIHF1ZSBvZmVyZWNlbSBhcyBtZWxob3JlcyBlIG1haXMgdmFyaWFkYXMgc29sdcOn
+w7VlcyBwYXJhIGVtcHJlZW5kZWRvcmVzLCBlbXByZXNhcyBlIHN0YXJ0dXBzLkVxdWlw
+YW1lbnRvcyAtIFRlY25vbG9naWEsIE3DoXF1aW5hcywgTW9iaWxpw6FyaW8sIEluc3Vt
+b3MgZSBNdWl0byBtYWlzLi4uTWljcm8gRW1wcmVlbmRlZG9yIC0gU8OhdWRlLCBNb2Rh
+LCBCZWxlemEgZSBNdWl0byBtYWlzLi4uRW52aWFkbyBwYXJhOiBJZGVudGlmaWNhw6fD
+o28gZGUgZW52aW86IDAwW0lkXU7Do28gZGVzZWpvIG1haXMgcmVjZWJlcg==
+----boundary_2327771_4d3b22e0-4204-4fee-8986-9435b5e7ce7a
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5FeHBvIEVtcHJlZW5kZWRvciAvLy8vIDA5IGUg
+MTAgZGUgTm92ZW1icm8gLSBCbHVlIFRyZWUgUHJlbWl1bSBNb3J1bWJpPC90aXRsZT4N
+CjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1s
+OyBjaGFyc2V0PWlzby04ODU5LTEiPg0KPHN0eWxlPmltZyB7ZGlzcGxheTpibG9ja308
+L3N0eWxlPg0KPC9oZWFkPg0KPGJvZHkgc3R5bGU9InBhZGRpbmc6MDsgbWFyZ2luOjA7
+Ij4NCg0KDQo8dGFibGUgYWxpZ249ImNlbnRlciIgYm9yZGVyPSIwIiBjZWxscGFkZGlu
+Zz0iMCIgY2VsbHNwYWNpbmc9IjAiPg0KPHRyPjx0ZCBhbGlnbj0iY2VudGVyIj48YnI+
+PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL20vZXhwLWVtLz9FPW9z
+c3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayIgc3R5
+bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1zaXplOjE0cHg7
+IGNvbG9yOiMwMDAwMDA7Ij5DTElRVUUgUEFSQSBBQlJJUjwvYT48L3RkPjwvdHI+DQo8
+L3RhYmxlPg0KDQoNCjx0YWJsZSBhbGlnbj0iY2VudGVyIiBib3JkZXI9IjAiIGNlbGxw
+YWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCI+DQo8dHI+PHRkPjxhIGhyZWY9Imh0dHA6
+Ly9zbWFydHZwYy5vbmxpbmUvbGluay9tL2V4cC1lbS8/RT1vc3N0LXVzZXJzQGxpc3Rz
+LnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwOi8v
+c21hcnR2cGMub25saW5lL2ltZy9leHAtZW0tMS0xLmpwZyIgYm9yZGVyPSIwIiBhbHQ9
+IkV4cG8gRW1wcmVlbmRlZG9yIDIwMTkiIHN0eWxlPSJkaXNwbGF5OmJsb2NrOyI+PC9h
+PjwvdGQ+PC90cj4NCjx0cj48dGQ+PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGlu
+ZS9saW5rL20vZXhwLWVtLz9FPW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0
+IiB0YXJnZXQ9Il9ibGFuayI+PGltZyBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUv
+aW1nL2V4cC1lbS0xLTIuanBnIiBib3JkZXI9IjAiIGFsdD0iMDkgZSAxMCBkZSBOb3Zl
+bWJybyIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij48L2E+PC90ZD48L3RyPg0KPHRyPjx0
+ZD48YSBocmVmPSJodHRwOi8vc21hcnR2cGMub25saW5lL2xpbmsvbS9leHAtZW0vP0U9
+b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQiIHRhcmdldD0iX2JsYW5rIj48
+aW1nIHNyYz0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9pbWcvZXhwLWVtLTEtMy5qcGci
+IGJvcmRlcj0iMCIgYWx0PSJCbHVlIFRyZWUgUHJlbWl1bSBNb3J1bWJpIiBzdHlsZT0i
+ZGlzcGxheTpibG9jazsiPjwvYT48L3RkPjwvdHI+DQo8dHI+PHRkPjxhIGhyZWY9Imh0
+dHA6Ly9zbWFydHZwYy5vbmxpbmUvbGluay9tL2V4cC1lbS8/RT1vc3N0LXVzZXJzQGxp
+c3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRw
+Oi8vc21hcnR2cGMub25saW5lL2ltZy9leHAtZW0tMS00LmpwZyIgYm9yZGVyPSIwIiBh
+bHQ9IkZlaXJhLCBDb25ncmVzc28gZSBOZXR3b3JraW5nIiBzdHlsZT0iZGlzcGxheTpi
+bG9jazsiPjwvYT48L3RkPjwvdHI+DQo8dHI+PHRkPjxhIGhyZWY9Imh0dHA6Ly9zbWFy
+dHZwYy5vbmxpbmUvbGluay9tL2V4cC1lbS8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJj
+ZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwOi8vc21hcnR2
+cGMub25saW5lL2ltZy9leHAtZW0tMS01LmpwZyIgYm9yZGVyPSIwIiBhbHQ9IkVtcHJl
+ZW5kZWRvcmlzbW8sIE1hcmtldGluZyBlIFZlbmRhcyIgc3R5bGU9ImRpc3BsYXk6Ymxv
+Y2s7Ij48L2E+PC90ZD48L3RyPg0KPC90YWJsZT4NCg0KDQo8dGFibGUgd2lkdGg9IjYw
+MCIgYWxpZ249ImNlbnRlciIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMzAiIGNlbGxz
+cGFjaW5nPSIwIiBiZ2NvbG9yPSIjZjVmM2YzIiA+DQo8dHI+PHRkIGFsaWduPSJqdXN0
+aWZ5Ij4NCg0KPHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJp
+ZjsgZm9udC1zaXplOjIycHg7IGNvbG9yOiM1NTU7Ij4NCjxzdHJvbmc+Vm9jw6ogY3Jp
+YW5kbyBub3ZhcyBvcG9ydHVuaWRhZGVzIGU8YnI+bWVsaG9yYW5kbyBvcyByZXN1bHRh
+ZG9zIGRvIHNldSBuZWfDs2Npby48L3N0cm9uZz4NCjwvc3Bhbj4NCg0KPGltZyBzcmM9
+Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvaW1nL2V4cC1lbS02LmpwZyIgYm9yZGVyPSIw
+IiBhbHQ9IiIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij4NCg0KPHNwYW4gc3R5bGU9ImZv
+bnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1zaXplOjE0cHg7IGNvbG9y
+OiM1NTU7Ij4NCjIgZGlhcyBjb20gcGFsZXN0cmFzIHNvYnJlIGlub3Zhw6fDo28sIGdl
+c3TDo28sIG1hcmtldGluZywgdmVuZGFzLCBlLWNvbW1lcmNlLCB2YXJlam8uLi4NCjxi
+cj48c3Ryb25nPlDDumJsaWNvIGFsdm86PC9zdHJvbmc+IGVtcHJlc2FzIGRlIHBlcXVl
+bm8sIG3DqWRpbyBlIGdyYW5kZSBwb3J0ZSBkZSB0b2RvcyBvcyBzZXRvcmVzLg0KPGJy
+Pjxicj48c3Ryb25nPkZlaXJhIGRlIE5lZ8OzY2lvczwvc3Ryb25nPiAtIFZpdHJpbmUg
+ZGUgb3BvcnR1bmlkYWRlcyBlIG5lZ8OzY2lvcyBwYXJhIGludmVzdGlkb3JlcywgZW1w
+cmVlbmRlZG9yZXMsIGVtcHJlc8OhcmlvcyBlIHBlc3NvYXMgaW50ZXJlc3NhZGFzIGVt
+IGFicmlyIG91IGV4cGFuZGlyIHNldSBwcsOzcHJpbyBuZWfDs2Npby4NCjxicj48c3Ry
+b25nPkNvbmdyZXNzbzwvc3Ryb25nPiAtIERvaXMgZGlhcyBpbnRlaXJvcyBkZSBjb250
+ZcO6ZG8gY29tIHBhbGVzdHJhbnRlcyBkZSBFbXByZWVuZGVkb3Jpc21vLCBNYXJrZXRp
+bmcgZSBWZW5kYXMuIENvbmhlY2ltZW50bywgZmVycmFtZW50YXMgZSBhcyBtZWxob3Jl
+cyBwcsOhdGljYXMgZGUgbWVyY2FkbyENCjxicj48c3Ryb25nPk5ldHdvcmtpbmc8L3N0
+cm9uZz4gLSBPIGV2ZW50byDDqSBkZXNlbmhhZG8gcGFyYSBnZXJhciBjb25leMO1ZXMg
+ZSBuZXR3b3JraW5nIG9yZ8OibmljbyBkZSBpbXBhY3RvLg0KPGJyPjxicj5BIEV4cG8g
+RW1wcmVlbmRlZG9yIMOpIHVtYSB2aXRyaW5lIGRlIG9wb3J0dW5pZGFkZXMgZSBuZWfD
+s2Npb3MgcGFyYSBpbnZlc3RpZG9yZXMsIGVtcHJlZW5kZWRvcmVzLCBlbXByZXPDoXJp
+b3MgZSBwZXNzb2FzIGludGVyZXNzYWRhcyBlbSBhYnJpciBvdSBleHBhbmRpciBzZXUg
+cHLDs3ByaW8gbmVnw7NjaW8uIENvbmhlw6dhIG9ww6fDtWVzIGRlIGludmVzdGltZW50
+b3MgYWx0YW1lbnRlIGx1Y3JhdGl2b3MgZSB2aXZlbmNpZSBleHBlcmnDqm5jaWFzIHF1
+ZSB2w6NvIG11ZGFyIHN1YSBmb3JtYSBkZSB2ZXIgZSBmYXplciBuZWfDs2Npb3MuIENv
+bmhlw6dhIGFzIG5vdmlkYWRlcyBkbyBtZXJjYWRvOyBFbnRyZSBlbSBjb250YXRvIGRp
+cmV0byBjb20gYXMgZW1wcmVzYXM7IE5lZ29jaWUgc2V1IG9yw6dhbWVudG87IEFwcm92
+ZWl0ZSBhcyBjb25kacOnw7VlcyBleGNsdXNpdmFzIHF1ZSBhcyBlbXByZXNhcyBvZmVy
+ZWNlbSBkdXJhbnRlIG8gZXZlbnRvOyBBc3Npc3RhIGUgcGFydGljaXBlIGRhcyBwcm9n
+cmFtYcOnw7VlcyBlIGF0cmHDp8O1ZXMNCjwvc3Bhbj4NCjxpbWcgc3JjPSJodHRwOi8v
+c21hcnR2cGMub25saW5lL2ltZy9leHAtZW0tNi5qcGciIGJvcmRlcj0iMCIgYWx0PSIi
+IHN0eWxlPSJkaXNwbGF5OmJsb2NrOyI+DQoNCjxzcGFuIHN0eWxlPSJmb250LWZhbWls
+eTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojNTU1OyI+
+DQo8c3Ryb25nPkZyYW5xdWlhczwvc3Ryb25nPiAtIFBhcnRpY2lwYcOnw6NvIGRlIGdy
+YW5kZXMgcmVkZXMsIGFsw6ltIGRlIGZyYW5xdWlhcyBjb20gaW52ZXN0aW1lbnRvIGlu
+aWNpYWwgbWFpcyBiYWl4byBvdSBlbSBmb3JtYXRvcyBtYWlzIGNvbXBhY3RvcyBlIGFs
+dGVybmF0aXZvcy4NCjxicj48c3Ryb25nPlNlcnZpw6dvczwvc3Ryb25nPiAtIEZvcm5l
+Y2Vkb3JlcyBxdWUgb2ZlcmVjZW0gYXMgbWVsaG9yZXMgZSBtYWlzIHZhcmlhZGFzIHNv
+bHXDp8O1ZXMgcGFyYSBlbXByZWVuZGVkb3JlcywgZW1wcmVzYXMgZSBzdGFydHVwcy4N
+Cjxicj48c3Ryb25nPkVxdWlwYW1lbnRvczwvc3Ryb25nPiAtIFRlY25vbG9naWEsIE3D
+oXF1aW5hcywgTW9iaWxpw6FyaW8sIEluc3Vtb3MgZSBNdWl0byBtYWlzLi4uDQo8YnI+
+PHN0cm9uZz5NaWNybyBFbXByZWVuZGVkb3I8L3N0cm9uZz4gLSBTw6F1ZGUsIE1vZGEs
+IEJlbGV6YSBlIE11aXRvIG1haXMuLi4NCjwvc3Bhbj4NCg0KPGltZyBzcmM9Imh0dHA6
+Ly9zbWFydHZwYy5vbmxpbmUvaW1nL2V4cC1lbS02LmpwZyIgYm9yZGVyPSIwIiBhbHQ9
+IiIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij4NCg0KPC90ZD48L3RyPg0KPC90YWJsZT4N
+Cg0KDQo8dGFibGUgYWxpZ249ImNlbnRlciIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0i
+MCIgY2VsbHNwYWNpbmc9IjAiPg0KPHRyPjx0ZCBhbGlnbj0iY2VudGVyIj4NCjxicj48
+YnI+PGJyPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7
+IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAwMDAwOyI+RW52aWFkbyBwYXJhOiBvc3N0
+LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldDwvc3Bhbj4NCjxicj48c3BhbiBzdHls
+ZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6MTRweDsg
+Y29sb3I6IzAwMDAwMDsiPklkZW50aWZpY2HDp8OjbyBkZSBlbnZpbzogMDAyMzI3Nzcy
+PC9zcGFuPg0KPGJyPjxicj48YnI+PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGlu
+ZS9saW5rL20vaW1kLz9FPW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0
+YXJnZXQ9Il9ibGFuayI+PGltZyBib3JkZXI9IjAiIHNyYz0iaHR0cDovL3NtYXJ0dnBj
+Lm9ubGluZS9pbWcvbG9nby5naWYiIGFsdD0iSU1EIDIzMjc3NzIiIHN0eWxlPSJtYXgt
+d2lkdGg6MjAwcHg7IGRpc3BsYXk6YmxvY2s7Ij48L2E+DQo8YnI+PGJyPjxhIGhyZWY9
+Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvcmVtb3Zlci8/RT1vc3N0LXVzZXJzQGxpc3Rz
+LnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LWZhbWls
+eTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAwMDAw
+OyI+PHN0cm9uZz5Ow6NvIGRlc2VqbyBtYWlzIHJlY2ViZXI8L3N0cm9uZz48L2E+DQo8
+YnI+PGJyPjxicj48YnI+PGltZyBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvcmVh
+ZC8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIgYm9yZGVyPSIwIiB3
+aWR0aD0iMCIgaGVpZ2h0PSIwIiBhbHQ9IklNRCAyMzI3NzcyIiBzdHlsZT0iZGlzcGxh
+eTpibG9jazsiPg0KPC90ZD48L3RyPg0KPC90YWJsZT4NCjwvYm9keT4NCjwvaHRtbD4=
+----boundary_2327771_4d3b22e0-4204-4fee-8986-9435b5e7ce7a--
+
+
+
+
+
+--===============7393345891878601173==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---41f8ec48e3a6852c75a2cae261d12972
+--===============7393345891878601173==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -221,4 +265,8 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---41f8ec48e3a6852c75a2cae261d12972--
+--===============7393345891878601173==--
+
+
+
+
