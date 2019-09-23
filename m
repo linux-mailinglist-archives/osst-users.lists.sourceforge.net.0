@@ -2,76 +2,79 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 67315B9F2C
-	for <lists+osst-users@lfdr.de>; Sat, 21 Sep 2019 19:35:13 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 31BE6BB399
+	for <lists+osst-users@lfdr.de>; Mon, 23 Sep 2019 14:22:24 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1iBjHs-0004jN-6B
-	for lists+osst-users@lfdr.de; Sat, 21 Sep 2019 17:35:12 +0000
+	id 1iCNMF-00072T-1T
+	for lists+osst-users@lfdr.de; Mon, 23 Sep 2019 12:22:23 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <contato@sendsmarty.online>) id 1iBjHr-0004jH-Lz
- for osst-users@lists.sourceforge.net; Sat, 21 Sep 2019 17:35:11 +0000
+ (envelope-from <casapaulo@unifoz.com.br>) id 1iCNMD-00072M-Am
+ for osst-users@lists.sourceforge.net; Mon, 23 Sep 2019 12:22:21 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Subject:Date:To:From:MIME-Version:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:From:MIME-Version:To:Subject:Date:
+ Sender:Reply-To:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=5qZEHJ3qDdZijo0boz+tE/F6unlX57mS45hVDAxe47I=; b=mlElPkdcekvNbtOc5RYMrREAWN
- ZLdNqDgEc03ChPgQkoSUv2yKavhcCoxvNT0QPcWT5NaI67cJ1O8yefuy7XOSCOCUBc/iy36pJEpvF
- vrcQZwjh1d+iWGhRxdvnyMOfWWQzb8qfjN6GbXZNbiHILLDlZMzvZLeiWyErCWOrtVow=;
+ bh=m08BKVRHKNpZ7dTat7aOzwCCJxEOuu+8a6jPhlmPB+4=; b=ELietwe7Ms2BCTRe1Ssl/wQlc4
+ io3m8OL24NAsf/gpggsybx1h+eG7do5Ypqa9xKAhj/DkDa7FGHsqtND8x8xYJ28jA7RmYuKmpMhwH
+ tPfwjpB0T/nqSz7HqrDFlnNzV0ylrjTCVMrMz5Nf5fOerAFmS/FTnErTqfSsy62GBlAo=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Subject:Date:To:From:MIME-Version:Message-ID:Sender:Reply-To
+ h=Content-Type:From:MIME-Version:To:Subject:Date:Sender:Reply-To:Message-ID
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=5qZEHJ3qDdZijo0boz+tE/F6unlX57mS45hVDAxe47I=; b=I
- 3CLHA4QRXCbi1r84YqO6ZTVs3lvJ5LfsIRidVa6N2fP69Iho7r1OdW15zYraG6xLCouObSHuqW9xs
- qqzOJlBf6zLa0bIDka10zgV9zpQVizR3Hsqv0athiTaQ/vMdwZ1Lnl8Fu2Uo/7LaG/g3/MloTT9pz
- 9Q/gSWvq0Lgl3RHU=;
-Received: from sendsmarty.online ([51.38.134.151])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.92.2)
- id 1iBjHp-002Ts6-UY
- for osst-users@lists.sourceforge.net; Sat, 21 Sep 2019 17:35:11 +0000
-dkim-signature: v=1; a=rsa-sha256; d=sendsmarty.online; s=dkim;
- c=relaxed/relaxed; q=dns/txt;
- h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type; 
- bh=5qZEHJ3qDdZijo0boz+tE/F6unlX57mS45hVDAxe47I=;
- b=C2DWjpnvsoNpj6ByWaFQXrtAzbtQE6/Bw0QMARzts6KYUlbkue/MOfC8/nlWmJRFwPDTuIqHCQS/mYax9FIg3f2z5s3GoCijNedBaCHtAcBTn5y7sNKpYF96SaLyUStjWqh+8DBoXPp2nGiUh3asj3n06HyzfIGCalCyPh2j8SQ5zrdA1ipw7BVMzIJvF/5HnEdjVya81RBC+kcfJ13GcnLChY+6pzbggGp+abp0YZx8Otibhm7MGWN//H
- MNjSla7lSq3vDIeW1cUj4bnsfprozY3mHUegE8WItDPLDKOb31iwyUfMY3jlgXL+4hS8xvqWpjEoi/8CgEP0Ndcmcixw==
-Received: from WIN-A74ILO5AI5B (WIN-A74ILO5AI5B [127.0.0.1])
- by sendsmarty.online with ESMTPA ; Sat, 21 Sep 2019 14:32:00 -0300
-Message-ID: <92277b2a-b93b-4645-b628-d85bec75c282@sendsmarty.online>
-MIME-Version: 1.0
-From: "Expo Empreendedor" <contato@sendsmarty.online>
+ List-Owner:List-Archive; bh=m08BKVRHKNpZ7dTat7aOzwCCJxEOuu+8a6jPhlmPB+4=; b=c
+ jUaur2paXAsiurQECiyLwCb0QaL+tW6jPuOTFlqXSrgMU2EGSCxHsMEpNfegJx3qbJ8+vGfIW2/UB
+ +Ht/BdLlOvl5ki3DQKZnTmrjmmS5imZ9177l2BXgmerIcE1D7xpd0kJz2PKzCpc0L9SpbHAjuvovA
+ z3pYZKD6agD8US38=;
+Received: from hm3563-186.email.locaweb.com.br ([186.202.21.186]
+ helo=shared-hm3563.email.locaweb.com.br)
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1iCNM9-004357-1A
+ for osst-users@lists.sourceforge.net; Mon, 23 Sep 2019 12:22:21 +0000
+Received: from hm3563.email.locaweb.com.br (hm3563.email.locaweb.com.br
+ [186.202.21.180])
+ by shared-hm3563.email.locaweb.com.br (Postfix) with ESMTP id E54F7803B21AF
+ for <osst-users@lists.sourceforge.net>; Mon, 23 Sep 2019 17:44:35 -0300 (-03)
+x-locaweb-id: Spvb9M1XlE_ipRXNvQF4ymzg3ZjxZ2AIzK1_U8mdQr8HnRe9v2ySZ5VO5d-DazoZwNxWhZNi-8L-UH7kZEh5uFMChBaBRIDuQUvdfRJ8ODfn2s79nmppcLcpfpYy-TvRrnSjyMJq6VzIP3GBiZMW1S46lI0fgt3aFM3CtBS5URWwXQ__Cu9CgSkB0wripQmyV6sUgDwpBof3nhdBuYOY4g==
+ NjM2MTczNjE3MDYxNzU2YzZmNDA3NTZlNjk2NjZmN2EyZTYzNmY2ZDJlNjI3Mg==
+Received: from apu0002.locaweb.com.br (apu0002.email.locaweb.com.br
+ [187.45.217.3])
+ by hm3563.email.locaweb.com.br (Postfix) with ESMTP id B7C63803AA904
+ for <osst-users@lists.sourceforge.net>; Mon, 23 Sep 2019 17:43:58 -0300 (-03)
+Received: from POLLUX11-0007.locaweb-net.locaweb.com.br (unknown
+ [191.252.19.108])
+ by apu0002.locaweb.com.br (Postfix) with SMTP id A9D5014079D
+ for <osst-users@lists.sourceforge.net>; Mon, 23 Sep 2019 09:00:10 -0300 (BRT)
+Date: Mon, 23 Sep 2019 09:00:10 -0300
 To: osst-users@lists.sourceforge.net
-Date: 21 Sep 2019 14:32:00 -0300
-X-Spam-Score: 2.3 (++)
+X-PHP-Originating-Script: 0:envia.php
+MIME-Version: 1.0
+From: =?UTF-8?B?TmV0RmxpeA==?= <casapaulo@unifoz.com.br>
+Content-Type: multipart/mixed;
+ boundary="------=_Part_82551_230920190010.3319886761405"
+X-Spam-Score: 5.9 (+++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
  1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [51.38.134.151 listed in psbl.surriel.com]
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: smartvpc.online]
+ [186.202.21.180 listed in psbl.surriel.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 1.4 FUZZY_CREDIT           BODY: Attempt to obfuscate words in spam
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
+ 1.0 MISSING_MID            Missing Message-Id: header
+ 0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+ 1.0 CTYPE_NULL             Malformed Content-Type header
  0.0 T_REMOTE_IMAGE         Message contains an external image
- -0.1 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1iBjHp-002Ts6-UY
-Subject: [Osst-users] 09 e 10 de Novembro - Blue Tree Premium Morumbi
+X-Headers-End: 1iCNM9-004357-1A
+Subject: [Osst-users]
+ =?UTF-8?B?QXNzaW5hdHVyYSBzdXNwZW5zYSDigJMgYXR1YWxpemUgc3VhIGZvcm1hIGRlIHBhZ2FtZW50byA=?=1331987-10
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -83,178 +86,910 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============7393345891878601173=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1iCNMF-00072T-1T@sfs-ml-2.v29.lw.sourceforge.com>
+
+------=_Part_82551_230920190010.3319886761405
+
+--------=_Part_82551_230920190010.3319886761405
+Content-Transfer-Encoding: quoted-printable 
+Content-Type: text/html; charset=utf-8 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
+ft-com:office:office" style=3D"padding:0;margin:0;background-color:rgb(234,=
+ 234, 234);background-color:rgb(234, 234, 234);margin-top:0;">
+ <head>=20
+  <meta http-equiv=3D"Content-Type" content=3D"text/html charset=3DUTF-8">=
+=20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1">=20
+  <style type=3D"text/css">
+    @media yahoo {
+  table {border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:=
+0pt; table-layout: fixed;}
+  table table { table-layout: auto; }
+  }
+    * [data-term] {border-bottom: none !important;pointer-events: none !imp=
+ortant;}
+    .ii a {color: inherit !important; text-decoration:none !important;}
+    a[x-apple-data-detectors] { color: inherit !important; text-decoration:=
+ none !important; font-size: inherit !important; font-family: inherit !impo=
+rtant; font-weight: inherit !important; line-height: inherit !important; }
+body, .container, html {
+  background-color: #EAEAEA;
+  margin-top: 0;
+}
+.hide, .hide div, .hide table, .hide td, .hide tr, .hide a, .hide img {disp=
+lay:none !important; width:0 !important; height:0 !important; max-height:0 =
+!important; line-height:0 !important; mso-hide:all !important; overflow:hid=
+den !important; visibility:hidden !important;}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: none;
+  outline: none;
+}
+.desktop-hide, .desktop-hide img, .desktop-hide-max, .desktop-hide-max img =
+{
+  display:none;
+  mso-hide: all;
+}
+.gmail-fix-no-inline {
+  display:none;
+  display:none !important;
+}
+@media (max-width: 500px) {
+  .ios-hide, .mobile-hide {
+    display: none;
+  }
+  .desktop-hide, .desktop-hide img {
+    display: initial !important;
+  }
+  table.desktop-hide {
+    display: table !important;
+  }
+}
+a {
+  color: inherit !important;
+}
+a img {
+  border-style: none;
+}
+.iosnonlink a{
+  text-decoration: none !important;
+}
+.copy a {
+  font-family: Helvetica, Arial, sans;
+  text-decoration: underline !important;
+  color: inherit !important;
+}
+.copy a.secondary-cta {
+  color: #e50914 !important;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #EAEAEA;
+}
+/* Content */
+.content-shell {
+  background: url('http://cdn.nflximg.com/us/email/hitch/netflix-crop.png')=
+ no-repeat #ffffff;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+body {
+  font-family: Helvetica, Arial, sans;
+  color: #221F1F;
+}
+.help-center-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+@media (max-width: 599px) {
+  .ios-hide-max {
+    display: none;
+  }
+  .inbox-fix {
+    display: none;
+  }
+  .desktop-hide-max, .desktop-hide-max img {
+    display: initial !important;
+  }
+}
+/* Footer */
+.footer-shell, .footer-table, .footer {
+  background-color: #221F1F;
+}
+.footer {
+ =20
+  font-family: Helvetica, Arial, sans;
+  font-size: 13px;
+  color: #A9A6A6;
+  line-height: 16px;
+}
+.footer-copy {
+  padding: 15px 90px 0 90px;
+}
+.footer-copy-no-padding {
+  padding: 0 90px 0 90px;
+}
+.footer.questions {
+  padding: 34px 90px 0 90px !important;
+}
+.footer.footer-center {
+  padding: 15px 0 0 0;
+  text-align: center !important;
+}
+.footer a, .footer-copy a {
+  color: #A9A6A6 !important;
+  text-decoration: underline;
+}
+@media (max-width: 599px) {
+  .shell, .shell-footer {
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+  }
+  .footer-copy, .footer-copy-no-padding, .footer.questions {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+/* End Footer */
+    /* Device Info */
+.device-info-shell, .device-info-table, .device-info-table td {
+  background-color: #efefef;
+  -wings-align: center;
+}
+.device-info-image {
+  padding: 34px 26px 0 26px;
+}
+.device-info-device {
+  padding: 19px 26px 0 26px;
+  font-family: HelveticaNeue-Bold, HelveticaNeue, Helvetica, Arial, sans;
+  font-weight: bold;
+  font-size: 14px;
+  color: #221F1F;
+}
+.device-info-location {
+  padding: 7px 26px 0 26px;
+  font-family: HelveticaNeue, Helvetica, Arial, sans;
+  font-size: 14px;
+  line-height: 14px;
+  color: #7A7A7A;
+}
+@media (max-width: 599px) {
+  .device-info-table {
+    width: 100% !important;
+  }
+}
+/* Account Info Element */
+.account-info-label.disclaimer {
+  padding: 5px 90px 0 90px !important;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #221f1f !important;
+}
+.account-info {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 500px) {
+  .account-info {
+    padding: 0 8% 0 8% !important;
+  }
+  .account-info-label.disclaimer {
+    padding: 8px 8% 0 8% !important;
+  }
+}
+/* End Account Info Element */
+/* Account Info Element */
+.account-info-label {
+  padding: 10px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #696666;
+}
+.account-info {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 500px) {
+  .account-info {
+    padding: 0 8% 0 8% !important;
+  }
+  .account-info-label {
+    padding: 10px 8% 0 8% !important;
+  }
+}
+/* End Account Info Element */
+.button-shell {
+  padding: 22px 90px 0 90px;
+}
+.button td {
+  padding:10px 16px;
+  max-width:265px;
+  border-radius: 2px;
+}
+.button {
+  border-radius: 2px;
+}
+.button .button-link {
+  font-size:16px;
+  line-height: 24px;
+  font-weight:normal;
+  text-align:center;
+  text-decoration:none;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  letter-spacing: .025em;
+}
+@media (max-width: 500px){
+  .button-shell {
+    padding: 20px 8% 0 8% !important;
+  }
+  .button td {
+    padding: 0 0 !important;
+    width: 100% !important;
+  }
+  .button {
+    width: 100% !important;
+  }
+  .button a.button-link {
+    display: block !important;
+    padding: 16px 30px !important;
+    font-size: 15px !important;
+    line-height: 17px !important;
+  }
+}
+.callout-shell {
+  padding: 22px 90px 0 90px;
+}
+.callout {
+  background-color: #efefef;
+}
+@media (max-width: 500px) {
+  .callout-shell {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* Copy */
+.copy-shell {
+  background-color: #ffffff;
+}
+.copy {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  color: #221F1F;
+}
+.copy a {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .copy {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Copy */
+/* Copy */
+.copy-shell {
+  background-color: #ffffff;
+}
+.copy-no-padding {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  color: #221F1F;
+}
+@media (max-width: 500px) {
+  .copy-no-padding {
+    padding: 0 8% 0 8% !important;
+  }
+}
+/* End Copy */
+/* Copy */
+.copy-shell {
+  background-color: #ffffff;
+}
+.copy-no-padding-center {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #221F1F;
+}
+@media (max-width: 500px) {
+  .copy-no-padding-center {
+    padding: 0 8% 0 8% !important;
+  }
+}
+/* End Copy */
+/* Escape Hatch */
+.escape-hatch-neutral-shell {
+  padding: 30px 90px 0 90px;
+}
+@media (max-width: 500px) {
+  .escape-hatch-neutral-shell {
+    padding: 8px 8% 0 8% !important;
+  }
+}
+.escape-hatch-neutral.bar {
+  height: 3px;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+.escape-hatch-neutral.bar img {
+  width: 100% !important;
+}
+.escape-hatch-neutral.text {
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: bold;
+  padding: 17px 0 0 0;
+  vertical-align: bottom;
+  text-decoration: none !important;
+}
+a.escape-hatch-neutral.link {
+  text-decoration: none !important;
+}
+
+.escape-hatch-neutral.text .arrow {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 17px;
+  vertical-align: top;
+  padding: 1.8px 0 0 6px;
+}
+/* End Escape Hatch */
+/* Headline */
+.headline {
+  font-family: Helvetica, Arial, sans;
+  font-weight: bold;
+  font-size: 32px;
+  color: #221F1F;
+  line-height: 36px;
+  padding: 40px 90px 10px 90px;
+}
+@media (max-width: 500px) {
+  .headline {
+    padding: 25px 8% 10px 8% !important;
+    font-size: 28px !important;
+  }
+}
+/* End Headline */
+.image-custom {
+  padding: 22px 90px 0 90px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .image-custom {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+.image-custom {
+  padding: 22px 90px 0 90px;
+  width: 100%;
+  height: auto;
+  text-align:center;
+}
+.image-custom img {
+  margin:0 auto 0 auto;
+}
+@media (max-width: 500px) {
+  .image-custom {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* Logo */
+.logo {
+  padding: 46px 0 0 0;
+}
+@media (max-width: 500px) {
+  .logo {
+    padding: 42px 8% 0 8% !important;
+  }
+  .logo img {
+    width: 130px !important;
+  }
+}
+/* End Logo */
+/* Payment */
+.card-icon {
+  padding: 5px 6px 0 0;
+}
+.card-icon-rtl {
+  padding: 5px 0 0 6px;
+}
+.card-copy {
+  padding: 5px 0 0 0;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.card-copy-rtl {
+  direction: ltr !important;
+  text-align: right;
+  padding: 5px 0 0 0;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* End Payment */
+.spacer, .spacer td {
+  font-size: 0;
+  line-height: 0;
+  -wings-height: 0;
+}
+
+@media (max-width: 500px) {
+  .mobile-block {
+    display: block !important;
+  }
+}
+/* Subheadline */
+.subheadline {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  -webkit-font-smoothing: antialiased;
+  color: #221F1F;
+}
+@media (max-width: 500px) {
+  .subheadline {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Subheadline */
+/* Title */
+.title-shell {
+  background-color: #ffffff;
+}
+.title {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 500px) {
+  .title {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Title */
+/* Title */
+.title-shell {
+  background-color: #ffffff;
+}
+.title-center {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #221F1F
+}
+@media (max-width: 500px) {
+  .title-center {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Title */
+/* Toaster */
+.toaster-shell {
+  padding: 0 0 0 90px;
+  margin: 0;
+  background-color: #0071EB;
+}
+.toaster-shell-rtl {
+  padding: 0 90px 0 0;
+  margin: 0;
+  background-color: #0071EB;
+}
+.toaster-table, .toaster {
+  background-color: #0071EB;
+  color: #ffffff;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+
+  font-size: 16px;
+}
+.toaster-alert {
+  padding: 0 4px 0 0;
+}
+.toaster-alert-rtl {
+  padding: 0 0 0 4px;
+}
+.toaster {
+  padding: 12px 0 12px 0;
+}
+@media (max-width: 599px){
+  .toaster-table {
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px){
+  .toaster-shell {
+    padding-left: 8% !important;
+  }
+  .toaster {
+    padding: 8px 0 8px 0;
+  }
+  .toaster-shell-rtl {
+    padding-right: 8% !important;
+  }
+}
+/* End Toaster */
+.account-info-shell, .account-info, .account-info-label  {
+  padding-left: 10px !important;
+}
+.content-shell .account-info-table .account-info-label.disclaimer {
+  padding: 10px 90px 0 80px !important;
+}
+
+.account-info-label {
+  color: #2d2b2b !important;
+}
+
+@media (max-width: 500px) {
+  .content-shell .account-info-table .account-info-label.disclaimer {
+    padding: 10px 8% 0 calc(8% - 10px) !important;
+  }=20
+}
+
+.account-info-shell, .account-info, .account-info-label  {
+  padding-left: 10px !important;
+}
+
+   =20
+  </style>=20
+ </head>=20
+ <body bgcolor=3D"#EAEAEA"   style=3D"font-family:Helvetica, Arial, sans;co=
+lor:rgb(34, 31, 31);padding:0;margin:0;background-color:rgb(234, 234, 234);=
+background-color:rgb(234, 234, 234);margin-top:0;">=20
+  <!--/* 100% Size Container -->=20
+  <!-- Preview Text -->=20
+  <div class=3D"hide"  style=3D"display:none;width:0;height:0;max-height:0;=
+line-height:0;mso-hide:all;overflow:hidden;visibility:hidden;">
+   H=C3=A1 um problema com os dados de pagamento atuais. Tentaremos efetuar=
+ a cobran=C3=A7a novamente, recomendamos que voc=C3=AA atualize estas infor=
+ma=C3=A7=C3=B5es..
+   <!-- preview text hack -->=20
+   <div class=3D"hide" style=3D"display: none; max-height: 0px; overflow:hi=
+dden;display:none;width:0;height:0;max-height:0;line-height:0;mso-hide:all;=
+overflow:hidden;visibility:hidden;">
+    &nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&=
+nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;=
+?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbs=
+p;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&n=
+bsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?=
+&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp=
+;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nb=
+sp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&=
+nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;=
+?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbs=
+p;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&n=
+bsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?=
+&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp=
+;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nb=
+sp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&=
+nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;=
+?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbs=
+p;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&n=
+bsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?=
+&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp;?&nbsp=
+;?&nbsp;?&nbsp;?=20
+   </div>
+  </div>=20
+  <!-- End Preview Text -->=20
+  <table class=3D"container" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" id=3D"container" style=3D"background-color:rgb(234, 234=
+, 234);margin-top:0;">=20
+   <tbody>
+    <tr>=20
+     <td align=3D"center">=20
+      <!--/* Hero + Content -->=20
+      <table class=3D"shell" width=3D"600" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0">=20
+       <!--/* Content -->=20
+       <tbody>
+        <tr>=20
+         <td class=3D"content-shell" bgcolor=3D"#ffffff" style=3D"backgroun=
+d:url(http://cdn.nflximg.com/us/email/hitch/netflix-crop.png) no-repeat rgb=
+(255, 255, 255);background-repeat:no-repeat;background-color:rgb(255, 255, =
+255);">=20
+          <table class=3D"content" width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0">=20
+           <!-- Logo -->=20
+           <tbody>
+            <tr>=20
+             <td class=3D"logo" align=3D"center" style=3D"padding:46px 0 0 =
+0;"> <a href=3D"https://www.netflix.com/browse?lnktrk=3DEMP&amp;g=3DEBFFCE2=
+B8B4D26EBD643163EAEB3FCB8645796AA&amp;lkid=3DURL_HOME" style=3D"color:inher=
+it;"> <img src=3D"http://cdn.nflximg.com/us/email/logo/newDesign/logo_v2.pn=
+g" alt=3D"Netflix" width=3D"145" align=3D"center" style=3D"-ms-interpolatio=
+n-mode:bicubic;border:none;outline:none;border-style:none;"> </a> </td>=20
+            </tr>=20
+            <!-- End Logo -->=20
+            <!-- Spacer -->=20
+            <tr>=20
+             <td class=3D"spacer-1 spacer" style=3D"padding: 45px 0 0 0;fon=
+t-size:0;line-height:0;" height=3D"0"> &nbsp; </td>=20
+            </tr>=20
+            <!-- End Spacer -->=20
+            <!-- Toaster -->=20
+            <tr>=20
+             <td class=3D"toaster-shell" style=3D"padding:0 0 0 90px;margin=
+:0;background-color:rgb(0, 113, 235);">=20
+              <table class=3D"toaster-table" width=3D"100%" cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0" style=3D"background-color:rgb(0, 113, 235=
+);color:rgb(255, 255, 255);font-family:Helvetica Neue, Helvetica, Roboto, S=
+egoe UI, sans-serif;font-size:16px;">=20
+               <tbody>
+                <tr>=20
+                 <td class=3D"toaster-alert" width=3D"19" style=3D"padding:=
+0 4px 0 0;"> <img src=3D"http://cdn.nflximg.com/us/email/toaster/alert20.pn=
+g" alt=3D"[!!]" width=3D"19" style=3D"border-collapse:collapse;display:bloc=
+k;-ms-interpolation-mode:bicubic;border:none;outline:none;"> </td>=20
+                 <td class=3D"toaster" style=3D"padding:12px 0 12px 0;backg=
+round-color:rgb(0, 113, 235);color:rgb(255, 255, 255);font-family:Helvetica=
+ Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:16px;"> Sua conta =
+est=C3=A1 suspensa. </td>=20
+                </tr>=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <!-- End Toaster -->=20
+            <!-- Headline -->=20
+            <tr>=20
+             <td class=3D"headline headline-important " align=3D"left" styl=
+e=3D"font-family:Helvetica, Arial, sans;font-weight:bold;font-size:32px;col=
+or:rgb(34, 31, 31);line-height:36px;padding:40px 90px 10px 90px;"> Atualize=
+ seus dados de pagamento </td>=20
+            </tr>=20
+            <!-- End Headline -->=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> Ol=C3=A1, tudo bem? </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> H=C3=A1 um problema com os dados de pagamen=
+to atuais. Tentaremos efetuar a cobran=C3=A7a novamente, recomendamos que v=
+oc=C3=AA atualize estas informa=C3=A7=C3=B5es.. </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!--/* Callout -->=20
+            <tr>=20
+             <td class=3D"callout-shell" style=3D"padding:22px 90px 0 90px;=
+">=20
+              <table class=3D"callout" width=3D"100%" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" style=3D"background-color:rgb(239, 239, 239);">=
+=20
+               <!-- Spacer -->=20
+               <tbody>
+                <tr class=3D"mobile-hide">=20
+          =20
+                <tr class=3D"desktop-hide mobile-block" style=3D"display:no=
+ne;mso-hide:all;">=20
+                 <td class=3D"spacer-2 spacer" style=3D"padding: 8px 0 0 0;=
+font-size:0;line-height:0;" height=3D"0"> &nbsp; </td>=20
+                </tr>=20
+                <!-- End Spacer -->=20
+                <!-- Start Account Info Element -->=20
+                <tr>=20
+                 <td class=3D"account-info-shell" style=3D"padding-left:10p=
+x;">=20
+</td>=20
+                </tr>=20
+                <!-- End Account Info Element -->=20
+                <!-- Start Account Info Element -->=20
+                <tr>=20
+                 <td class=3D"account-info-shell" style=3D"padding-left:10p=
+x;">=20
+                =20
+                </tr>=20
+                <!-- End Account Info Element -->=20
+                <!-- Spacer -->=20
+             =20
+                <tr class=3D"desktop-hide mobile-block" style=3D"display:no=
+ne;mso-hide:all;">=20
+                 <td class=3D"spacer-3 spacer" style=3D"padding: 20px 0 0 0=
+;font-size:0;line-height:0;" height=3D"0"> &nbsp; </td>=20
+                </tr>=20
+                <!-- End Spacer -->=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <!-- Start Account Info Element -->=20
+            <tr>=20
+             <td class=3D"account-info-shell" style=3D"padding-left:10px;">=
+=20
+              <table class=3D"account-info-table" width=3D"100%" cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0">=20
+               <tbody>
+                <tr>=20
+                 <td class=3D"account-info-label disclaimer" style=3D"paddi=
+ng-left:10px;padding:10px 90px 0 80px;padding:5px 90px 0 90px;font-family:H=
+elvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:13px;line-=
+height:16px;-webkit-font-smoothing:antialiased;color:rgb(34, 31, 31);paddin=
+g:10px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe UI,=
+ sans-serif;font-size:13px;line-height:16px;-webkit-font-smoothing:antialia=
+sed;color:rgb(45, 43, 43);"> Cart=C3=B5es que aceitam transa=C3=A7=C3=B5es =
+de d=C3=A9bito e de cr=C3=A9dito poder=C3=A3o ser processados de qualquer u=
+ma das formas. </td>=20
+                </tr>=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <!-- End Account Info Element -->=20
+            <style>
+  .button.button-1 {
+    color: #ffffff;
+    background-color: #e50914;
+  }
+  .button-1 .button-link {
+    color: #ffffff !important;
+  }
+</style>=20
+            <!-- Button -->=20
+            <tr>=20
+             <td class=3D"button-shell" style=3D"padding:22px 90px 0 90px;"=
+>=20
+              <table class=3D"button button-1 button-important" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"color:#ffffff;background-col=
+or:#e50914;border-radius:2px;">=20
+               <tbody>
+                <tr>=20
+                 <td style=3D"padding:10px 16px;max-width:265px;border-radi=
+us:2px;"> <a class=3D"button-link" href=3D"http://click-emaild.mktrnta.com.=
+br/cc?cliente=3Dosst-users@lists.sourceforge.net
+" style=3D"color:#ffffff;font-family: Helvetica, Arial, sans;font-size:14px=
+;font-weight:bold;text-align:center;text-decoration:none;font-size:16px;lin=
+e-height:24px;font-weight:normal;text-align:center;text-decoration:none;fon=
+t-family:Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;letter-spa=
+cing:0.025em;color:inherit;">ATUALIZE SUA CONTA AGORA </a> </td>=20
+                </tr>=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <style>
+  .button.button-2 {
+    color: #ffffff;
+    background-color: #9B9B9B;
+  }
+  .button-2 .button-link {
+    color: #ffffff !important;
+  }
+</style>=20
+            <!-- Button -->=20
+            <tr>=20
+             <td class=3D"button-shell" style=3D"padding:22px 90px 0 90px;"=
+>=20
+              </td>=20
+            </tr>=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> D=C3=BAvidas? Estamos sempre prontos para a=
+judar. Visite o <a href=3D"https://help.netflix.com/support/2065?lnktrk=3DE=
+MP&amp;g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB8645796AA&amp;lkid=3DURL_HELP" st=
+yle=3D"font-family:Helvetica, Arial, sans;text-decoration:underline;color:i=
+nherit;color:inherit;">Centro de ajuda</a> ou <a href=3D"https://help.netfl=
+ix.com/contactus?lnktrk=3DEMP&amp;g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB864579=
+6AA&amp;lkid=3DURL_CONTACT" style=3D"font-family:Helvetica, Arial, sans;tex=
+t-decoration:underline;color:inherit;color:inherit;">entre em contato</a>. =
+</td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> =E2=80=93Seus amigos da Netflix </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!-- Escape Hatch -->=20
+            <tr>=20
+             <td class=3D"escape-hatch-neutral-shell" style=3D"padding:30px=
+ 90px 0 90px;"> <a class=3D"escape-hatch-neutral link" href=3D"https://www.=
+netflix.com/browse?lnktrk=3DEMP&amp;g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB8645=
+796AA&amp;lkid=3DURL_HOME_2" style=3D"text-decoration:none;color:inherit;">=
+=20
+               <table class=3D"escape-hatch-neutral-table" width=3D"100%" c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0">=20
+                <tbody>
+                 <tr>=20
+                  <td class=3D"escape-hatch-neutral text" style=3D"font-fam=
+ily:Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:15px;=
+line-height:17px;font-weight:bold;padding:17px 0 0 0;vertical-align:bottom;=
+text-decoration:none;"> &nbsp; </td>=20
+                 </tr>=20
+                </tbody>
+               </table> </a> </td>=20
+            </tr>=20
+            <!-- End Escape Hatch -->=20
+           </tbody>
+          </table> </td>=20
+        </tr>=20
+       </tbody>
+      </table>=20
+      <table class=3D"shell-footer" width=3D"600" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0">=20
+       <!--/* Footer -->=20
+       <tbody>
+        <tr>=20
+         <td class=3D"content-shell-footer">=20
+          </td>=20
+        </tr>=20
+       </tbody>
+      </table> </td>=20
+    </tr>=20
+   </tbody>
+  </table>=20
+  <!-- Fix for Google Inbox -->=20
+  <table class=3D"inbox-fix" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"600" height=3D"1" align=3D"center" style=3D"width: 600px !impor=
+tant;">=20
+   <tbody>
+   =20
+   </tbody>
+  </table>=20
+  <!-- Fix for Gmail on iOS -->=20
+  <div class=3D"ios-hide-max gmail-fix-no-inline" style=3D"white-space:nowr=
+ap; font:15px courier; line-height:0;">
+  </div>  =20
+ </body>
+</html>
+--------=_Part_82551_230920190010.3319886761405
+Content-Type: ; name="9536534790619178395613982913346005173098.pdf"
+Content-Transfer-Encoding: base64 
+Content-Disposition: attachment; filename="9536534790619178395613982913346005173098.pdf"
 
 
---===============7393345891878601173==
-Content-Type: multipart/alternative;
- boundary=--boundary_2327771_4d3b22e0-4204-4fee-8986-9435b5e7ce7a
-
-
-----boundary_2327771_4d3b22e0-4204-4fee-8986-9435b5e7ce7a
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
-
-RXhwbyBFbXByZWVuZGVkb3IgLy8vLyAwOSBlIDEwIGRlIE5vdmVtYnJvIC0gQmx1ZSBU
-cmVlIFByZW1pdW0gTW9ydW1iaWltZyB7ZGlzcGxheTpibG9ja31DTElRVUUgUEFSQSBB
-QlJJUlZvY8OqIGNyaWFuZG8gbm92YXMgb3BvcnR1bmlkYWRlcyBlbWVsaG9yYW5kbyBv
-cyByZXN1bHRhZG9zIGRvIHNldSBuZWfDs2Npby4yIGRpYXMgY29tIHBhbGVzdHJhcyBz
-b2JyZSBpbm92YcOnw6NvLCBnZXN0w6NvLCBtYXJrZXRpbmcsIHZlbmRhcywgZS1jb21t
-ZXJjZSwgdmFyZWpvLi4uUMO6YmxpY28gYWx2bzogZW1wcmVzYXMgZGUgcGVxdWVubywg
-bcOpZGlvIGUgZ3JhbmRlIHBvcnRlIGRlIHRvZG9zIG9zIHNldG9yZXMuRmVpcmEgZGUg
-TmVnw7NjaW9zIC0gVml0cmluZSBkZSBvcG9ydHVuaWRhZGVzIGUgbmVnw7NjaW9zIHBh
-cmEgaW52ZXN0aWRvcmVzLCBlbXByZWVuZGVkb3JlcywgZW1wcmVzw6FyaW9zIGUgcGVz
-c29hcyBpbnRlcmVzc2FkYXMgZW0gYWJyaXIgb3UgZXhwYW5kaXIgc2V1IHByw7Nwcmlv
-IG5lZ8OzY2lvLkNvbmdyZXNzbyAtIERvaXMgZGlhcyBpbnRlaXJvcyBkZSBjb250ZcO6
-ZG8gY29tIHBhbGVzdHJhbnRlcyBkZSBFbXByZWVuZGVkb3Jpc21vLCBNYXJrZXRpbmcg
-ZSBWZW5kYXMuIENvbmhlY2ltZW50bywgZmVycmFtZW50YXMgZSBhcyBtZWxob3JlcyBw
-csOhdGljYXMgZGUgbWVyY2FkbyFOZXR3b3JraW5nIC0gTyBldmVudG8gw6kgZGVzZW5o
-YWRvIHBhcmEgZ2VyYXIgY29uZXjDtWVzIGUgbmV0d29ya2luZyBvcmfDom5pY28gZGUg
-aW1wYWN0by5BIEV4cG8gRW1wcmVlbmRlZG9yIMOpIHVtYSB2aXRyaW5lIGRlIG9wb3J0
-dW5pZGFkZXMgZSBuZWfDs2Npb3MgcGFyYSBpbnZlc3RpZG9yZXMsIGVtcHJlZW5kZWRv
-cmVzLCBlbXByZXPDoXJpb3MgZSBwZXNzb2FzIGludGVyZXNzYWRhcyBlbSBhYnJpciBv
-dSBleHBhbmRpciBzZXUgcHLDs3ByaW8gbmVnw7NjaW8uIENvbmhlw6dhIG9ww6fDtWVz
-IGRlIGludmVzdGltZW50b3MgYWx0YW1lbnRlIGx1Y3JhdGl2b3MgZSB2aXZlbmNpZSBl
-eHBlcmnDqm5jaWFzIHF1ZSB2w6NvIG11ZGFyIHN1YSBmb3JtYSBkZSB2ZXIgZSBmYXpl
-ciBuZWfDs2Npb3MuIENvbmhlw6dhIGFzIG5vdmlkYWRlcyBkbyBtZXJjYWRvOyBFbnRy
-ZSBlbSBjb250YXRvIGRpcmV0byBjb20gYXMgZW1wcmVzYXM7IE5lZ29jaWUgc2V1IG9y
-w6dhbWVudG87IEFwcm92ZWl0ZSBhcyBjb25kacOnw7VlcyBleGNsdXNpdmFzIHF1ZSBh
-cyBlbXByZXNhcyBvZmVyZWNlbSBkdXJhbnRlIG8gZXZlbnRvOyBBc3Npc3RhIGUgcGFy
-dGljaXBlIGRhcyBwcm9ncmFtYcOnw7VlcyBlIGF0cmHDp8O1ZXNGcmFucXVpYXMgLSBQ
-YXJ0aWNpcGHDp8OjbyBkZSBncmFuZGVzIHJlZGVzLCBhbMOpbSBkZSBmcmFucXVpYXMg
-Y29tIGludmVzdGltZW50byBpbmljaWFsIG1haXMgYmFpeG8gb3UgZW0gZm9ybWF0b3Mg
-bWFpcyBjb21wYWN0b3MgZSBhbHRlcm5hdGl2b3MuU2VydmnDp29zIC0gRm9ybmVjZWRv
-cmVzIHF1ZSBvZmVyZWNlbSBhcyBtZWxob3JlcyBlIG1haXMgdmFyaWFkYXMgc29sdcOn
-w7VlcyBwYXJhIGVtcHJlZW5kZWRvcmVzLCBlbXByZXNhcyBlIHN0YXJ0dXBzLkVxdWlw
-YW1lbnRvcyAtIFRlY25vbG9naWEsIE3DoXF1aW5hcywgTW9iaWxpw6FyaW8sIEluc3Vt
-b3MgZSBNdWl0byBtYWlzLi4uTWljcm8gRW1wcmVlbmRlZG9yIC0gU8OhdWRlLCBNb2Rh
-LCBCZWxlemEgZSBNdWl0byBtYWlzLi4uRW52aWFkbyBwYXJhOiBJZGVudGlmaWNhw6fD
-o28gZGUgZW52aW86IDAwW0lkXU7Do28gZGVzZWpvIG1haXMgcmVjZWJlcg==
-----boundary_2327771_4d3b22e0-4204-4fee-8986-9435b5e7ce7a
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
-
-PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5FeHBvIEVtcHJlZW5kZWRvciAvLy8vIDA5IGUg
-MTAgZGUgTm92ZW1icm8gLSBCbHVlIFRyZWUgUHJlbWl1bSBNb3J1bWJpPC90aXRsZT4N
-CjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0idGV4dC9odG1s
-OyBjaGFyc2V0PWlzby04ODU5LTEiPg0KPHN0eWxlPmltZyB7ZGlzcGxheTpibG9ja308
-L3N0eWxlPg0KPC9oZWFkPg0KPGJvZHkgc3R5bGU9InBhZGRpbmc6MDsgbWFyZ2luOjA7
-Ij4NCg0KDQo8dGFibGUgYWxpZ249ImNlbnRlciIgYm9yZGVyPSIwIiBjZWxscGFkZGlu
-Zz0iMCIgY2VsbHNwYWNpbmc9IjAiPg0KPHRyPjx0ZCBhbGlnbj0iY2VudGVyIj48YnI+
-PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL20vZXhwLWVtLz9FPW9z
-c3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayIgc3R5
-bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1zaXplOjE0cHg7
-IGNvbG9yOiMwMDAwMDA7Ij5DTElRVUUgUEFSQSBBQlJJUjwvYT48L3RkPjwvdHI+DQo8
-L3RhYmxlPg0KDQoNCjx0YWJsZSBhbGlnbj0iY2VudGVyIiBib3JkZXI9IjAiIGNlbGxw
-YWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCI+DQo8dHI+PHRkPjxhIGhyZWY9Imh0dHA6
-Ly9zbWFydHZwYy5vbmxpbmUvbGluay9tL2V4cC1lbS8/RT1vc3N0LXVzZXJzQGxpc3Rz
-LnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwOi8v
-c21hcnR2cGMub25saW5lL2ltZy9leHAtZW0tMS0xLmpwZyIgYm9yZGVyPSIwIiBhbHQ9
-IkV4cG8gRW1wcmVlbmRlZG9yIDIwMTkiIHN0eWxlPSJkaXNwbGF5OmJsb2NrOyI+PC9h
-PjwvdGQ+PC90cj4NCjx0cj48dGQ+PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGlu
-ZS9saW5rL20vZXhwLWVtLz9FPW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0
-IiB0YXJnZXQ9Il9ibGFuayI+PGltZyBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUv
-aW1nL2V4cC1lbS0xLTIuanBnIiBib3JkZXI9IjAiIGFsdD0iMDkgZSAxMCBkZSBOb3Zl
-bWJybyIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij48L2E+PC90ZD48L3RyPg0KPHRyPjx0
-ZD48YSBocmVmPSJodHRwOi8vc21hcnR2cGMub25saW5lL2xpbmsvbS9leHAtZW0vP0U9
-b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQiIHRhcmdldD0iX2JsYW5rIj48
-aW1nIHNyYz0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9pbWcvZXhwLWVtLTEtMy5qcGci
-IGJvcmRlcj0iMCIgYWx0PSJCbHVlIFRyZWUgUHJlbWl1bSBNb3J1bWJpIiBzdHlsZT0i
-ZGlzcGxheTpibG9jazsiPjwvYT48L3RkPjwvdHI+DQo8dHI+PHRkPjxhIGhyZWY9Imh0
-dHA6Ly9zbWFydHZwYy5vbmxpbmUvbGluay9tL2V4cC1lbS8/RT1vc3N0LXVzZXJzQGxp
-c3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRw
-Oi8vc21hcnR2cGMub25saW5lL2ltZy9leHAtZW0tMS00LmpwZyIgYm9yZGVyPSIwIiBh
-bHQ9IkZlaXJhLCBDb25ncmVzc28gZSBOZXR3b3JraW5nIiBzdHlsZT0iZGlzcGxheTpi
-bG9jazsiPjwvYT48L3RkPjwvdHI+DQo8dHI+PHRkPjxhIGhyZWY9Imh0dHA6Ly9zbWFy
-dHZwYy5vbmxpbmUvbGluay9tL2V4cC1lbS8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJj
-ZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwOi8vc21hcnR2
-cGMub25saW5lL2ltZy9leHAtZW0tMS01LmpwZyIgYm9yZGVyPSIwIiBhbHQ9IkVtcHJl
-ZW5kZWRvcmlzbW8sIE1hcmtldGluZyBlIFZlbmRhcyIgc3R5bGU9ImRpc3BsYXk6Ymxv
-Y2s7Ij48L2E+PC90ZD48L3RyPg0KPC90YWJsZT4NCg0KDQo8dGFibGUgd2lkdGg9IjYw
-MCIgYWxpZ249ImNlbnRlciIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMzAiIGNlbGxz
-cGFjaW5nPSIwIiBiZ2NvbG9yPSIjZjVmM2YzIiA+DQo8dHI+PHRkIGFsaWduPSJqdXN0
-aWZ5Ij4NCg0KPHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJp
-ZjsgZm9udC1zaXplOjIycHg7IGNvbG9yOiM1NTU7Ij4NCjxzdHJvbmc+Vm9jw6ogY3Jp
-YW5kbyBub3ZhcyBvcG9ydHVuaWRhZGVzIGU8YnI+bWVsaG9yYW5kbyBvcyByZXN1bHRh
-ZG9zIGRvIHNldSBuZWfDs2Npby48L3N0cm9uZz4NCjwvc3Bhbj4NCg0KPGltZyBzcmM9
-Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvaW1nL2V4cC1lbS02LmpwZyIgYm9yZGVyPSIw
-IiBhbHQ9IiIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij4NCg0KPHNwYW4gc3R5bGU9ImZv
-bnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1zaXplOjE0cHg7IGNvbG9y
-OiM1NTU7Ij4NCjIgZGlhcyBjb20gcGFsZXN0cmFzIHNvYnJlIGlub3Zhw6fDo28sIGdl
-c3TDo28sIG1hcmtldGluZywgdmVuZGFzLCBlLWNvbW1lcmNlLCB2YXJlam8uLi4NCjxi
-cj48c3Ryb25nPlDDumJsaWNvIGFsdm86PC9zdHJvbmc+IGVtcHJlc2FzIGRlIHBlcXVl
-bm8sIG3DqWRpbyBlIGdyYW5kZSBwb3J0ZSBkZSB0b2RvcyBvcyBzZXRvcmVzLg0KPGJy
-Pjxicj48c3Ryb25nPkZlaXJhIGRlIE5lZ8OzY2lvczwvc3Ryb25nPiAtIFZpdHJpbmUg
-ZGUgb3BvcnR1bmlkYWRlcyBlIG5lZ8OzY2lvcyBwYXJhIGludmVzdGlkb3JlcywgZW1w
-cmVlbmRlZG9yZXMsIGVtcHJlc8OhcmlvcyBlIHBlc3NvYXMgaW50ZXJlc3NhZGFzIGVt
-IGFicmlyIG91IGV4cGFuZGlyIHNldSBwcsOzcHJpbyBuZWfDs2Npby4NCjxicj48c3Ry
-b25nPkNvbmdyZXNzbzwvc3Ryb25nPiAtIERvaXMgZGlhcyBpbnRlaXJvcyBkZSBjb250
-ZcO6ZG8gY29tIHBhbGVzdHJhbnRlcyBkZSBFbXByZWVuZGVkb3Jpc21vLCBNYXJrZXRp
-bmcgZSBWZW5kYXMuIENvbmhlY2ltZW50bywgZmVycmFtZW50YXMgZSBhcyBtZWxob3Jl
-cyBwcsOhdGljYXMgZGUgbWVyY2FkbyENCjxicj48c3Ryb25nPk5ldHdvcmtpbmc8L3N0
-cm9uZz4gLSBPIGV2ZW50byDDqSBkZXNlbmhhZG8gcGFyYSBnZXJhciBjb25leMO1ZXMg
-ZSBuZXR3b3JraW5nIG9yZ8OibmljbyBkZSBpbXBhY3RvLg0KPGJyPjxicj5BIEV4cG8g
-RW1wcmVlbmRlZG9yIMOpIHVtYSB2aXRyaW5lIGRlIG9wb3J0dW5pZGFkZXMgZSBuZWfD
-s2Npb3MgcGFyYSBpbnZlc3RpZG9yZXMsIGVtcHJlZW5kZWRvcmVzLCBlbXByZXPDoXJp
-b3MgZSBwZXNzb2FzIGludGVyZXNzYWRhcyBlbSBhYnJpciBvdSBleHBhbmRpciBzZXUg
-cHLDs3ByaW8gbmVnw7NjaW8uIENvbmhlw6dhIG9ww6fDtWVzIGRlIGludmVzdGltZW50
-b3MgYWx0YW1lbnRlIGx1Y3JhdGl2b3MgZSB2aXZlbmNpZSBleHBlcmnDqm5jaWFzIHF1
-ZSB2w6NvIG11ZGFyIHN1YSBmb3JtYSBkZSB2ZXIgZSBmYXplciBuZWfDs2Npb3MuIENv
-bmhlw6dhIGFzIG5vdmlkYWRlcyBkbyBtZXJjYWRvOyBFbnRyZSBlbSBjb250YXRvIGRp
-cmV0byBjb20gYXMgZW1wcmVzYXM7IE5lZ29jaWUgc2V1IG9yw6dhbWVudG87IEFwcm92
-ZWl0ZSBhcyBjb25kacOnw7VlcyBleGNsdXNpdmFzIHF1ZSBhcyBlbXByZXNhcyBvZmVy
-ZWNlbSBkdXJhbnRlIG8gZXZlbnRvOyBBc3Npc3RhIGUgcGFydGljaXBlIGRhcyBwcm9n
-cmFtYcOnw7VlcyBlIGF0cmHDp8O1ZXMNCjwvc3Bhbj4NCjxpbWcgc3JjPSJodHRwOi8v
-c21hcnR2cGMub25saW5lL2ltZy9leHAtZW0tNi5qcGciIGJvcmRlcj0iMCIgYWx0PSIi
-IHN0eWxlPSJkaXNwbGF5OmJsb2NrOyI+DQoNCjxzcGFuIHN0eWxlPSJmb250LWZhbWls
-eTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojNTU1OyI+
-DQo8c3Ryb25nPkZyYW5xdWlhczwvc3Ryb25nPiAtIFBhcnRpY2lwYcOnw6NvIGRlIGdy
-YW5kZXMgcmVkZXMsIGFsw6ltIGRlIGZyYW5xdWlhcyBjb20gaW52ZXN0aW1lbnRvIGlu
-aWNpYWwgbWFpcyBiYWl4byBvdSBlbSBmb3JtYXRvcyBtYWlzIGNvbXBhY3RvcyBlIGFs
-dGVybmF0aXZvcy4NCjxicj48c3Ryb25nPlNlcnZpw6dvczwvc3Ryb25nPiAtIEZvcm5l
-Y2Vkb3JlcyBxdWUgb2ZlcmVjZW0gYXMgbWVsaG9yZXMgZSBtYWlzIHZhcmlhZGFzIHNv
-bHXDp8O1ZXMgcGFyYSBlbXByZWVuZGVkb3JlcywgZW1wcmVzYXMgZSBzdGFydHVwcy4N
-Cjxicj48c3Ryb25nPkVxdWlwYW1lbnRvczwvc3Ryb25nPiAtIFRlY25vbG9naWEsIE3D
-oXF1aW5hcywgTW9iaWxpw6FyaW8sIEluc3Vtb3MgZSBNdWl0byBtYWlzLi4uDQo8YnI+
-PHN0cm9uZz5NaWNybyBFbXByZWVuZGVkb3I8L3N0cm9uZz4gLSBTw6F1ZGUsIE1vZGEs
-IEJlbGV6YSBlIE11aXRvIG1haXMuLi4NCjwvc3Bhbj4NCg0KPGltZyBzcmM9Imh0dHA6
-Ly9zbWFydHZwYy5vbmxpbmUvaW1nL2V4cC1lbS02LmpwZyIgYm9yZGVyPSIwIiBhbHQ9
-IiIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij4NCg0KPC90ZD48L3RyPg0KPC90YWJsZT4N
-Cg0KDQo8dGFibGUgYWxpZ249ImNlbnRlciIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0i
-MCIgY2VsbHNwYWNpbmc9IjAiPg0KPHRyPjx0ZCBhbGlnbj0iY2VudGVyIj4NCjxicj48
-YnI+PGJyPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7
-IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAwMDAwOyI+RW52aWFkbyBwYXJhOiBvc3N0
-LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldDwvc3Bhbj4NCjxicj48c3BhbiBzdHls
-ZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6MTRweDsg
-Y29sb3I6IzAwMDAwMDsiPklkZW50aWZpY2HDp8OjbyBkZSBlbnZpbzogMDAyMzI3Nzcy
-PC9zcGFuPg0KPGJyPjxicj48YnI+PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGlu
-ZS9saW5rL20vaW1kLz9FPW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0
-YXJnZXQ9Il9ibGFuayI+PGltZyBib3JkZXI9IjAiIHNyYz0iaHR0cDovL3NtYXJ0dnBj
-Lm9ubGluZS9pbWcvbG9nby5naWYiIGFsdD0iSU1EIDIzMjc3NzIiIHN0eWxlPSJtYXgt
-d2lkdGg6MjAwcHg7IGRpc3BsYXk6YmxvY2s7Ij48L2E+DQo8YnI+PGJyPjxhIGhyZWY9
-Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvcmVtb3Zlci8/RT1vc3N0LXVzZXJzQGxpc3Rz
-LnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LWZhbWls
-eTpDYWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAwMDAw
-OyI+PHN0cm9uZz5Ow6NvIGRlc2VqbyBtYWlzIHJlY2ViZXI8L3N0cm9uZz48L2E+DQo8
-YnI+PGJyPjxicj48YnI+PGltZyBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvcmVh
-ZC8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIgYm9yZGVyPSIwIiB3
-aWR0aD0iMCIgaGVpZ2h0PSIwIiBhbHQ9IklNRCAyMzI3NzcyIiBzdHlsZT0iZGlzcGxh
-eTpibG9jazsiPg0KPC90ZD48L3RyPg0KPC90YWJsZT4NCjwvYm9keT4NCjwvaHRtbD4=
-----boundary_2327771_4d3b22e0-4204-4fee-8986-9435b5e7ce7a--
-
-
-
-
-
---===============7393345891878601173==
+--------=_Part_82551_230920190010.3319886761405
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7393345891878601173==
+--------=_Part_82551_230920190010.3319886761405
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -265,8 +1000,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7393345891878601173==--
-
-
+--------=_Part_82551_230920190010.3319886761405--
 
 
