@@ -2,99 +2,96 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id A4C3ED383F
-	for <lists+osst-users@lfdr.de>; Fri, 11 Oct 2019 06:13:17 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 81C73D6D47
+	for <lists+osst-users@lfdr.de>; Tue, 15 Oct 2019 04:42:44 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1iImIm-0007lL-Fh
-	for lists+osst-users@lfdr.de; Fri, 11 Oct 2019 04:13:16 +0000
+	id 1iKCnL-00070I-Bm
+	for lists+osst-users@lfdr.de; Tue, 15 Oct 2019 02:42:43 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <infos@avosordres.space>) id 1iImIl-0007lE-FS
- for osst-users@lists.sourceforge.net; Fri, 11 Oct 2019 04:13:15 +0000
+ (envelope-from
+ <bounces+3850474-0d75-osst-users=lists.sourceforge.net@sendgrid.net>)
+ id 1iKCnK-000705-BA
+ for osst-users@lists.sourceforge.net; Tue, 15 Oct 2019 02:42:42 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:From:To:Date:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=To:Message-ID:Date:Content-Type:Subject:Reply-To:
+ From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=9mKvXobaD+2cVQaVk4jyxvKOSAdFaTgvZcDVUbdnPwk=; b=Al9nJU8ti2JujOylRqnp0xByJa
- T6aI++siUpwi8dKYcjOo7FV09ekfYA/gE40DCnevldD63uwgDDj9H4MWdpdY0QnarN25lb7w9foJi
- 9Q7xpVgAP6WQd9tAB+VHWEabScmajDp9pcgqJwAP0qyNYDS5KsLsWT3Ymn1I0aUgD+1k=;
+ bh=cUmV25IsMVtnryEJK/nX5/5ZlC4zWvptdPZrk2OklWU=; b=VFN6VmYydiuWJF7JXsb8k44WMV
+ 8/7cs+0VH+piV3xnDr5nX034kwKUnnfbgnNrw9NSyVC0gDjWHUzrr+wZjiRTbFwTRxNypLrPsKjmt
+ pt8HNqmvPenOoIPeCiBCTvfp88c6ZmiUQr3EkQ+KKgqV5riaejlbFuVVZj1MgThEq3Y0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
- From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=To:Message-ID:Date:Content-Type:Subject:Reply-To:From:MIME-Version:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=9mKvXobaD+2cVQaVk4jyxvKOSAdFaTgvZcDVUbdnPwk=; b=b
- gN850fbUgja4uowTQxrvbt2WWQfhWASp0xv/7AEFHdyWwmcDwN1YGAB/V3UwtPx8xzrJd7hLIO3Fr
- lg4rOPWE1fvFZsqpHXRt5XfxWPs2+7kAWHdmdUZEMZSwJvffbqt0XmD0tqWyP+jsRfiVWj1clrtym
- VAuhgVOVjHZiYvNc=;
-Received: from smtp01.smtpout.orange.fr ([80.12.242.123]
- helo=smtp.smtpout.orange.fr)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps (TLSv1:DHE-RSA-AES128-SHA:128)
- (Exim 4.92.2) id 1iImIi-005ave-SX
- for osst-users@lists.sourceforge.net; Fri, 11 Oct 2019 04:13:15 +0000
-Received: from jallonsvoirlamarie ([10.162.67.116]) by mwinf5d24 with ME
- id C4D5210102WWWQA034D543; Fri, 11 Oct 2019 06:13:06 +0200
-X-ME-Helo: jallonsvoirlamarie
-X-ME-Date: Fri, 11 Oct 2019 06:13:06 +0200
-X-ME-IP: 10.162.67.116
-Date: Fri, 11 Oct 2019 04:13:05 +0000
-To: osst-users@lists.sourceforge.net
-From: Card Terminal <infos@avosordres.space>
-Message-ID: <55bf355f58e0d60dda7209140ca6f39d@jallonsvoirlamarie>
-X-Priority: 3
-X-Mailer: youtanba
+ List-Owner:List-Archive; bh=cUmV25IsMVtnryEJK/nX5/5ZlC4zWvptdPZrk2OklWU=; b=O
+ rhgfYTXA2QHfXoPw/OocecvngKxJDwfABXmIm0pP3PYRvQm9V8tpZWWt5HteTEqszTViJ+lqoVBYs
+ v5xvllzL/pmXLUsLpbBr3/4VIS5DkOn/kNcrtypu/Z0O+DcVptDM334Tsl7gZTavd34HMslALl551
+ sgk1yJvLfdeIA95w=;
+Received: from o2.smtps-ip-a1.ispeed.it ([167.89.106.149])
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
+ id 1iKCnI-001FsQ-N3
+ for osst-users@lists.sourceforge.net; Tue, 15 Oct 2019 02:42:42 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+ h=mime-version:from:reply-to:subject:content-type:to;
+ s=smtpapi; bh=cUmV25IsMVtnryEJK/nX5/5ZlC4zWvptdPZrk2OklWU=;
+ b=wiXeMDjUzBO9WDMcDwBWScoJ6Gxh29NucDLu8MJDa9oFb8aA6tn0cVlOREDTh5UxiIOk
+ M2Gbvm6DKZRlKR0qgt9I/dh272vHvbyncE0Df0v8zwSbMRhfL+nbIXVqQp6trTIlYKqv0S
+ 7pkOhf3ugl9KOs2aDTddfPOUXuwOkFSFU=
+Received: by filter0138p3las1.sendgrid.net with SMTP id
+ filter0138p3las1-24133-5DA5321A-B
+ 2019-10-15 02:42:34.251477661 +0000 UTC m=+444252.179530614
+Received: from host239-136-dynamic.252-95-r.retail.telecomitalia.it (unknown
+ [95.252.136.239])
+ by ismtpd0007p1lon1.sendgrid.net (SG) with ESMTP id V_OuG5MUQBWttTeXZH-cAg
+ for <osst-users@lists.sourceforge.net>;
+ Tue, 15 Oct 2019 02:42:33.962 +0000 (UTC)
 MIME-Version: 1.0
-DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=11112; s=default;
- t=1570767185; c=relaxed/simple; h=From:To:Subject;
- d=avosordres.space; i=infos@avosordres.space;
- z=From:=20Card=20Terminal=20<infos@avosordres.space>
- |To:=20osst-users@lists.sourceforge.net
- |Subject:=20Taking=20card=20payments=20has=20never=20been=20so=20easy;
- bh=LVhdHGu2k4TKOFNuDsyrkVBOaDg=;
- b=dDQZxDPI9e45zohRGH+YFu6NlewmmILoXJJEm0ipyjlo8M1UrW3ZOhhZ51AoMIRpszsDe58DqDl/nhfbTWMK8B/st44mLw7o9Lcf8TqmVDz0wH2M/g2MgreFBqjiMiXendDu8QpDjuZx95a+PMSP5DoJt2o4KEFQTraxsCM2Xd0=
-X-Spam-Score: 8.1 (++++++++)
+From: Toner Compatibili di alta qualita' <tonertoplevel@gmail.com>
+Date: Tue, 15 Oct 2019 02:42:34 +0000 (UTC)
+Message-ID: <24323929695682191011171@user-PC>
+X-SG-EID: =?us-ascii?Q?sC0L0DychgvtYjQuYUedIuCa8YLbQFrJ=2Fw1dBZPcBDPlzZusLlct4DZ2daPxf+?=
+ =?us-ascii?Q?Zy8roLFYtks=2F+AlC44fw+ndJvEMVZ3wp0cNPuUs?=
+ =?us-ascii?Q?QgC1bQyh2DnUObmoN3mGsvyW6tDMEeN8Dm9LTqj?=
+ =?us-ascii?Q?1mMgLfPjtslND1JcS1U8PwOjukzas9sxQRHpXXV?=
+ =?us-ascii?Q?x63RY+1FBacKIaCkPmg1J1bHplleSa7ZRFQAA3q?=
+ =?us-ascii?Q?PdUK0=2FNp1Yp5z0vCmcQ5kgWqU+Lc6rldEg19qIq?=
+ =?us-ascii?Q?GW2KLPPdKMwGiRc5P4+76VHT7lBTcp2HeH4g6xY?= =?us-ascii?Q?ygg=3D?=
+To: osst-users@lists.sourceforge.net
+X-Spam-Score: 4.0 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: avosordres.space]
- 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
- blocklist [URIs: avosordres.space]
  -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [80.12.242.123 listed in list.dnswl.org]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [80.12.242.123 listed in wl.mailspike.net]
- 0.1 URIBL_SBL_A Contains URL's A record listed in the Spamhaus SBL
- blocklist [URIs: avosordres.space]
- 0.6 URIBL_SBL Contains an URL's NS IP listed in the Spamhaus SBL
- blocklist [URIs: avosordres.space]
+ trust [167.89.106.149 listed in list.dnswl.org]
+ 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ (tonertoplevel[at]gmail.com)
+ 0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+ CUSTOM_MED
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
+ 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
- background
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
- 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100]
- 1.9 URIBL_ABUSE_SURBL Contains an URL listed in the ABUSE SURBL blocklist
- [URIs: avosordres.space]
- 0.0 T_REMOTE_IMAGE         Message contains an external image
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1iImIi-005ave-SX
-Subject: [Osst-users] [SPAM] Taking card payments has never been so easy
+ 0.0 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and EnvelopeFrom
+ freemail headers are different
+ 1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Headers-End: 1iKCnI-001FsQ-N3
+Subject: [Osst-users] =?utf-8?q?Toner_compatibili_-_pagamento_anche_alla_c?=
+ =?utf-8?q?onsegna_e_spedizione_gratuita_per_ordini_di_almeno_50=2C00?=
+ =?utf-8?q?=E2=82=AC_-_Chiedici_un_preventivo?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -106,213 +103,123 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============0411349156279961843=="
+Reply-To: tonertoplevel@gmail.com
+Content-Type: multipart/mixed; boundary="===============4326999317520038119=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0411349156279961843==
+
+--===============4326999317520038119==
 Content-Type: multipart/alternative;
-	boundary="b1_55bf355f58e0d60dda7209140ca6f39d"
-Content-Transfer-Encoding: 8bit
+	boundary="----=_NextPart_001_1EA0_0D4211F5.23C41995"
 
---b1_55bf355f58e0d60dda7209140ca6f39d
+
+------=_NextPart_001_1EA0_0D4211F5.23C41995
 Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
 
-Taking card payments
-has never been so easy!	
-Reach out more customers with a brand new card terminal	
-Compare quotes for free	
-main
-SAVE UP TO 40% on card processing fees with the right payment system for your business !	
-Wireless payments
-Wide range of terminals
-Speed up checkout
-Be better protected
-against fraud
+=20
+
+TONER COMPATIBILI DI ALTA QUALITA'
+
+=20
+
+Prezzi bassi e toner di alto livello con durata e qualita' paragonabili ai =
+toner originali
+
+=20
+
+I nostri toner sono coperti da garanzia soddisfatti o rimborsati ed offriam=
+o anche possibilita' di pagamento alla consegna=20
+
+=20
+
+Rispondi a questa email indicando il modello della tua stampante, ti invier=
+emo un preventivo
+
+=20
+
+Se rispondi a questa email ti invieremo anche tutti i nostri contatti azien=
+dali e le nostre recensioni. Se hai problemi a rispondere a questa email, c=
+rea un nuovo messaggio inserendo il nostro indirizzo come destinatario
+
+=20
+
+=20
+
+Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
+desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
+premi qui ed invia per cancellarti
+
+=20
 
 
-
-Follow this link to stop receiving messages about Card Terminals.
-You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
-You are receiving this message on your email address because you are in our list of managers and professionals.
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL
-
-
---b1_55bf355f58e0d60dda7209140ca6f39d
+------=_NextPart_001_1EA0_0D4211F5.23C41995
 Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
 
-<!DOCTYPE html>
-			                   <html>
-				               	<head>
-					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">			
-				                </head>
-				                <body>
-					            	<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0"><center>
-<!--[if (gte mso 9)|(IE)]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 9]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 8]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]--> 
-<!--[if gte mso 7]>
-<table id="tableForOutlook" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="600">
-<![endif]-->
-	<table align="center" border="0" cellpadding="0" cellspacing="0">
-  <tbody><tr>
-    <td height="30" style="text-align:center">
-<font style="font-family:Arial, Helvetica, sans-serif; font-size:12px">
-Find an EPOS at the best price. <a href="http://avosordres.space/newukcb/cartum/" target="_blank" style="color:#0194ce">See the offers.</a></font></td>
-  </tr>
-</tbody></table>
-<table bgcolor="#ffffff" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width: 100%;" border="0" cellpadding="0" cellspacing="0">
-<tbody><tr>
-<td background="http://avosordres.space/newukcb/backrgound-1.jpg" bgcolor="#0B090A" width="600" height="135" valign="bottom" style="background-repeat: no-repeat;background-size: cover">
-<!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:135px;">
-  <v:fill type="tile" src="images/backrgound-1.jpg" color="#0B090A" />
- <v:textbox inset="0,0,0,0">
-<![endif]-->
-<table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%" border="0" cellpadding="0" cellspacing="0">
-	    <tbody><tr>
-      <td><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px;width:100%" border="0" cellpadding="0" cellspacing="0">
-          <tbody><tr>
-            <td width="15"></td>
-            <td><table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:570px;width:100%" border="0" cellpadding="0" cellspacing="0">
-				<tbody><tr><td height="20"></td></tr>
-                <tr><td style="text-align: center"><a href="http://avosordres.space/newukcb/cartum/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><span style="font-family:Arial, Helvetica, sans-serif; font-size:36px ; font-weight:bold; color:#FFFFFF;"><em>Contactless payment is growing!</em></span></a></td></tr>
-				<tr><td style="line-height: 15px; font-size: 15px; height: 15px" height="15"></td></tr>
-				<tr><td style="text-align: center"><a href="http://avosordres.space/newukcb/cartum/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><span style="font-family:Arial, Helvetica, sans-serif; font-size:22px ; font-weight:normal; color:#ff571b;">Find your ideal EPOS at the best price</span></a></td></tr>
-				<tr><td height="30"></td></tr>
-              </tbody></table></td>
-            <td width="15"></td>
-          </tr>
-        </tbody></table></td>
-    </tr>
-
-	
-   </tbody></table>
-   <!--[if gte mso 9]>
-  </v:textbox>
-</v:rect>
-<![endif]-->
-</td>
-</tr>
-<tr>
-<td background="http://avosordres.space/newukcb/backrgound-2.jpg" bgcolor="#ffffff" width="600" height="385" valign="middle" style="background-repeat: no-repeat;">
-<!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:385px;">
-  <v:fill type="tile" src="images/backrgound-2.jpg" color="#ffffff" />
- <v:textbox inset="0,0,0,0">
-<![endif]-->
-<table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%" border="0" cellpadding="0" cellspacing="0">
-<tbody><tr>
-    <td class="two-column" style="text-align:center;font-size:0; width: 100%; max-width: 600px"><!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" border="0"  cellpadding="0" cellspacing="0" >
-                        <tr>
-                        <td width="336" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:336px;width:100%display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0" align="left">
-        <tbody><tr>
-          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;max-width:336px;width:100%" border="0">
-              <tbody><tr>
-                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><a href="http://avosordres.space/newukcb/cartum/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://avosordres.space/newukcb/main.gif" border="0" style="display:inline-block;max-width:336px;width:100%"></a></td>
-              </tr>
-            </tbody></table></td>
-        </tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="264" valign="bottom" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table class="column" style="border-spacing:0;font-family:sans-serif;color:#333333;text-align:center;max-width:264px;display:inline-block;vertical-align:bottom;margin-top:0;margin-bottom:0;" border="0" cellpadding="0" cellspacing="0">
-		  <tbody><tr><td height="40"></td></tr>
-		  	<tr><td>
-	<table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:264px;width:100%" border="0" cellpadding="0" cellspacing="0">
-		<tbody><tr><td width="15"></td>
-          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" valign="bottom"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;" border="0" width="234">
-              <tbody><tr><td style="text-align: center"><span style="font-family:Arial, Helvetica, sans-serif; font-size:15px ; font-weight:normal; color:#000000;">Customers are moving away from cash payment. So don&#039;t risk losing them and equip your business with a <strong><a href="http://avosordres.space/newukcb/cartum/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;color: #000000" target="_blank">payment terminal</a></strong>.</span></td></tr>
-			  <tr><td height="30"></td></tr>
-			  <tr><td style="text-align: left"><span style="font-family:Arial, Helvetica, sans-serif; font-size:15px ; font-weight:normal; color:#000000;line-height:29px "><li>Easy, quick and secure</li>
-				  <li>Instant transactions</li>
-				  <li>Helps reduce checkout errors</li>
-
-</span></td></tr>
-			  <tr><td height="30"></td></tr>
-            </tbody></table></td>
-			<td width="15"></td>
-        </tr>
-	</tbody></table></td></tr>
-        <tr>
-          <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" valign="bottom"><table cellpadding="0" cellspacing="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;font-size:14px;text-align:center;" border="0" width="264">
-              <tbody><tr>
-                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;"><a href="http://avosordres.space/newukcb/cartum/" style="font-family:Arial, Helvetica, sans-serif; text-decoration:none ;" target="_blank"><img src="http://avosordres.space/newukcb/cta.png" width="264" height="89" border="0" style="display:inline-block" alt="COMPARE SUPPLIERS &gt;&gt;"></a></td>
-              </tr>
-			  <tr><td height="40"></td></tr>
-            </tbody></table></td>
-			
-        </tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-      <![endif]--></td>
-  </tr>
-   </tbody></table>
-   <!--[if gte mso 9]>
-  </v:textbox>
-</v:rect>
-<![endif]-->
-</td>
-</tr>	
-	
-	
-	
-</tbody></table>
-<!--[if gte mso 7]>
-</td></tr></table>
-<![endif]--> 
-<!--[if gte mso 8]>
-</td></tr></table>
-<![endif]--> 
-<!--[if gte mso 9]>
-</td></tr></table>
-<![endif]--> 
-<!--[if (gte mso 9)|(IE)]>
-</td></tr></table>
-<![endif]-->
-<td colspan="2" align="center" style="background:#f8f8f8;">
-<br>
-<br><span style="font-size:10px;"><a href="http://avosordres.space/newukcb/durite/?email=h6u2kBH6dJ1oFakTR+RC9IKHvUYm+JeFQ6J/mbVoogQgwdP0C21ye/JKbYiX+HJqbquQXCAKMcJSgTSYPUv1rF8KO0n051o2maoLiuWIlJ5HH8p/EDZTaEc28F5yPsRmD5tdBbGO490BpHOUkYWReXBR5qEK/GfS5cMvb8hbIN4=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving messages about <strong>Card Terminals</strong>.<br>
-                    You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="http://avosordres.space/newukcb/lite/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
-You are receiving this message on your email address because you are in our list of managers and professionals.<br>
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL<br>
-</span>
-<br>
-</td>
-</center></body>
-				                </body>
-			                   </html>
+<HEAD><TITLE></TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TR>
+<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
+<P>&nbsp;</P>
+<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
+n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
+TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
+ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TR>
+<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
+ COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
+x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imagizer.=
+imageshack.com/img921/1402/gXVd3E.jpg" width=3D550 height=3D350>=20
+<P align=3Dcenter><STRONG>TONER COMPATIBILI DI ALTA QUALITA'</STRONG></P>
+<P>&nbsp;</P>
+<UL>
+<LI><FONT color=3D#ff0000 size=3D5>Prezzi bassi e toner di alto&nbsp;livell=
+o con durata e qualita' paragonabili ai toner originali</FONT>=20
+<P>&nbsp;</P>
+<LI>I nostri toner sono&nbsp;coperti da garanzia soddisfatti o rimborsati e=
+d offriamo anche possibilita' di pagamento alla consegna&nbsp;=20
+<P>&nbsp;</P>
+<LI><A href=3D"mailto:tonertoplevel@gmail.com?subject=3Dpreventivo"><FONT c=
+olor=3D#ff0000 size=3D5><STRONG>Rispondi a questa email indicando il modell=
+o della tua stampante, ti invieremo un preventivo</STRONG></FONT></A>=20
+<P>&nbsp;</P>
+<LI>Se rispondi a questa email ti invieremo anche tutti i nostri contatti a=
+ziendali e le nostre recensioni. Se hai problemi a rispondere a questa emai=
+l, crea un nuovo messaggio inserendo il nostro indirizzo come destinatario =
+</LI></UL>
+<P>&nbsp;</P><IMG border=3D0 hspace=3D0 src=3D"https://imagizer.imageshack.=
+com/img924/9483/Er9xuI.jpg" width=3D535 height=3D340>=20
+<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
+vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
+ail con "cancellami" </FONT><A href=3D"mailto:tonertoplevel@gmail.com?subje=
+ct=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancellarti</=
+FONT></A></TD></TR>
+<TR></TR></TABLE></TD></TR></TABLE>
+<P>&nbsp;</P><img src=3D"https://u3850474.ct.sendgrid.net/wf/open?upn=3D2Cw=
+Dr9hAd3sCOBy671QeTaQ-2FYCBCp2N3yugmQOBELsbnGwV3qsXN-2Bwzux1wKAxVD9FEdDzt4d-=
+2FN0o4KfSJ1eNxjci0Cdh19WR-2FY0Bc93mKq10pMDr5BBRTRRFBsC-2Born2x7dTZrlFbiZFeg=
+JTPgxiDgiOSpGB3Oi16QD1tk2Kh7-2BXKbjfUs-2FOFCrqny4UtUONadTCipv5-2BQ83gjOPFmF=
+PCVJJOoHm1n35Wt0XTqOO-2BC1pe0b1MAnGSpuVxzS3wDO" alt=3D"" width=3D"1" height=
+=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !important;bor=
+der-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;m=
+argin-right:0 !important;margin-left:0 !important;padding-top:0 !important;=
+padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !impo=
+rtant;"/></BODY>
+------=_NextPart_001_1EA0_0D4211F5.23C41995--
 
 
-
---b1_55bf355f58e0d60dda7209140ca6f39d--
-
-
-
---===============0411349156279961843==
+--===============4326999317520038119==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0411349156279961843==
+--===============4326999317520038119==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -323,6 +230,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0411349156279961843==--
-
+--===============4326999317520038119==--
 
