@@ -2,67 +2,73 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id D912A12EE37
-	for <lists+osst-users@lfdr.de>; Thu,  2 Jan 2020 23:36:23 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 37AD5130D37
+	for <lists+osst-users@lfdr.de>; Mon,  6 Jan 2020 06:35:18 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1in94o-0003Jr-K7
-	for lists+osst-users@lfdr.de; Thu, 02 Jan 2020 22:36:22 +0000
+	id 1ioL2r-0006pu-0o
+	for lists+osst-users@lfdr.de; Mon, 06 Jan 2020 05:35:17 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <carlospinto@bzamp.com.br>) id 1in94n-0003Jk-0Y
- for osst-users@lists.sourceforge.net; Thu, 02 Jan 2020 22:36:21 +0000
+ (envelope-from <ccmadv@mutualseguros.com.br>) id 1ioL2p-0006pi-5x
+ for osst-users@lists.sourceforge.net; Mon, 06 Jan 2020 05:35:15 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:From:MIME-Version:To:Subject:Date:
  Sender:Reply-To:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=B6PFsepsgQBHpR8JzfRgrosN6a9mQCMX2tUuB1JWczo=; b=JqHYBEsX9VSCbbf5Xya515Nxti
- ENri7wu4NlSIRGf4oVVOG6sLv17nVMMgNL1K77odeDLi4+XJ9CyDPwZu/mn0cAUSuwsV2UXzI2m2B
- 8LrsRHTzgAQ+Y7j3nRxaeaK4cg4hqJN16HtVEPFIZMnsrENvGJKopGnwUHAAJYtRA9jo=;
+ bh=28pEqnihR2uhcpuTa+meZ/CP4fwu/OudrDnwIX01ZcI=; b=kJ4xGo629oudUU2gsKC15kVwkk
+ KcrZ0Lx0EEaiiPByV9t36USX8i35brPODwsnbTdhqQYor4+QtEZQBBsIlnlWgANa2uu/Hi0FqWJTt
+ RtZbh/qZKQ5TmbwuBrbU76nBd5ovWI3zzq2vy+qjyeD0CORhdkkXZulQvDc5hhTlePRc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:From:MIME-Version:To:Subject:Date:Sender:Reply-To:Message-ID
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=B6PFsepsgQBHpR8JzfRgrosN6a9mQCMX2tUuB1JWczo=; b=d
- RwTpgdXF/WxBkwnkrNMHVZGnuXNlqopQ1RymsH3t3aXVzN/yFvPfDsE5zrMJZlTq485/rhm+OfUR7
- ACIHvoaRdyIrlmnhqnKt3H7PLN6ODdbyG7BjDS/gIPVGiER51EBEDZVFn0H5FLNfeXFpzxRIq5lBJ
- GPkr2Zds0xA4RdxY=;
-Received: from hm3562-136.email.locaweb.com.br ([186.202.21.136]
+ List-Owner:List-Archive; bh=28pEqnihR2uhcpuTa+meZ/CP4fwu/OudrDnwIX01ZcI=; b=i
+ 2c0u6DYIm7EaJ/hBq7D6Sj3VYwO3yFJFnEbpxE8bA7Ou9KWMHZwxZ+jjN6CFEi8OWcgEbNlNl7Rgv
+ PYt+3mug5JMHusCp64t7Tq2NPQJ8SVP9l3mK/O447F0TIK9dgJYdRzFpIQzO3MdX3nbLxDOGyeO0R
+ 34v9uo0bn0IremBI=;
+Received: from hm3562-134.email.locaweb.com.br ([186.202.21.134]
  helo=shared-hm3562.email.locaweb.com.br)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1in94f-007K65-FT
- for osst-users@lists.sourceforge.net; Thu, 02 Jan 2020 22:36:20 +0000
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1ioL2X-00BTU8-7L
+ for osst-users@lists.sourceforge.net; Mon, 06 Jan 2020 05:35:15 +0000
 Received: from hm3562.email.locaweb.com.br (hm3562.email.locaweb.com.br
  [186.202.21.130])
- by shared-hm3562.email.locaweb.com.br (Postfix) with ESMTP id EC9FB2E3B0324
- for <osst-users@lists.sourceforge.net>; Thu,  2 Jan 2020 19:14:48 -0300 (-03)
-x-locaweb-id: 1AUocBHGGTvCytNK0ZmWOmvCLfAXWWSG09B3aRTahMW8OEDVq8GYCCQFbFkxU0D49Fo2U_my4UGXAr5fw46gUJmqSXC3sp_7lKE157K4e9oliAD0gTmHe_4TcwCSsel4ZKGYS5nRaEtlgzvNE_TMvyvoDXYwIo26GtWzzawRH5Ua12WnqVK-KmWHdy458tEy5uAEBPrqSlFOWCuDEgqacg==
- NjM2MTcyNmM2ZjczNzA2OTZlNzQ2ZjQwNjI3YTYxNmQ3MDJlNjM2ZjZkMmU2Mjcy
-Received: from apu0002.locaweb.com.br (apu0002.email.locaweb.com.br
- [187.45.217.3])
- by hm3562.email.locaweb.com.br (Postfix) with ESMTP id 4ACF02E3AE1D7
- for <osst-users@lists.sourceforge.net>; Thu,  2 Jan 2020 19:14:39 -0300 (-03)
-Received: from POLLUX11-0003.locaweb-net.locaweb.com.br (unknown
- [191.252.19.104])
- by apu0002.locaweb.com.br (Postfix) with SMTP id 4051F140479
- for <osst-users@lists.sourceforge.net>; Thu,  2 Jan 2020 19:14:38 -0300 (BRT)
-Date: Thu, 02 Jan 2020 19:14:38 -0300
+ by shared-hm3562.email.locaweb.com.br (Postfix) with ESMTP id 0A88D33DBD4DA
+ for <osst-users@lists.sourceforge.net>; Mon,  6 Jan 2020 02:13:32 -0300 (-03)
+x-locaweb-id: IbvMb69xS-dPtDo3z20A8S11aZi5gxFTbTiY6B2SdNpSfryWtFLQvwhmJsjBfiPg6r20hxk_XOSQF0UXzGjnt5CiPEKb3sXImGs2dFBbLLJeqO-Pkmkc8DJFLFo99BZGsaQSpmpLTk1G7eIqXQ38ztB3VfaRJieuRlbiUfK4-Dd6sHJe9E_72XuYpIbDPJNAB53R8qyOu5Q2XxDZufJnYQ==
+ NjM2MzZkNjE2NDc2NDA2ZDc1NzQ3NTYxNmM3MzY1Njc3NTcyNmY3MzJlNjM2ZjZkMmU2Mjcy
+Received: from apu0001.locaweb.com.br (apu0001.email.locaweb.com.br
+ [187.45.217.2])
+ by hm3562.email.locaweb.com.br (Postfix) with ESMTP id E0A1D33DBB5F1
+ for <osst-users@lists.sourceforge.net>; Mon,  6 Jan 2020 02:13:23 -0300 (-03)
+Received: from POLLUX11-0002.locaweb-net.locaweb.com.br (unknown
+ [179.188.15.205])
+ by apu0001.locaweb.com.br (Postfix) with SMTP id CCC803040132
+ for <osst-users@lists.sourceforge.net>; Mon,  6 Jan 2020 02:13:23 -0300 (BRT)
+Date: Mon, 06 Jan 2020 02:13:23 -0300
 To: osst-users@lists.sourceforge.net
 X-PHP-Originating-Script: 0:send.php
 MIME-Version: 1.0
-From: =?UTF-8?B?TmV0RmxpeA==?= <carlospinto@bzamp.com.br>
-Content-Type: multipart/mixed; boundary="---=_mimepart_020120201438--"
-X-Spam-Score: 5.4 (+++++)
+From: =?UTF-8?B?TmV0RmxpeA==?= <ccmadv@mutualseguros.com.br>
+Content-Type: multipart/mixed; boundary="---=_mimepart_060120201323--"
+X-Spam-Score: 6.9 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [186.202.21.136 listed in wl.mailspike.net]
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: nflximg.com]
+ 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [186.202.21.130 listed in psbl.surriel.com]
+ 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
+ [186.202.21.134 listed in wl.mailspike.net]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  1.4 FUZZY_CREDIT           BODY: Attempt to obfuscate words in spam
@@ -71,11 +77,12 @@ X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  greater than 79 characters
  0.0 MISSING_MIME_HB_SEP    BODY: Missing blank line between MIME header and
  body 1.0 MISSING_MID            Missing Message-Id: header
+ 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
  0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
  0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1in94f-007K65-FT
+X-Headers-End: 1ioL2X-00BTU8-7L
 Subject: [Osst-users]
- =?UTF-8?B?QXNzaW5hdHVyYSBzdXNwZW5zYSDigJMgYXR1YWxpemUgc3VhIGZvcm1hIGRlIHBhZ2FtZW50byA=?=5417139-12
+ =?UTF-8?B?QXNzaW5hdHVyYSBzdXNwZW5zYSDigJMgYXR1YWxpemUgc3VhIGZvcm1hIGRlIHBhZ2FtZW50byA=?=1373941-11
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -88,11 +95,11 @@ List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1in94o-0003Jr-K7@sfs-ml-4.v29.lw.sourceforge.com>
+Message-Id: <E1ioL2r-0006pu-0o@sfs-ml-4.v29.lw.sourceforge.com>
 
----=_mimepart_020120201438--
+---=_mimepart_060120201323--
 
------=_mimepart_020120201438--
+-----=_mimepart_060120201323--
 Content-Transfer-Encoding: quoted-printable 
 Content-Type: text/html; charset='utf-8'
 
@@ -976,20 +983,20 @@ ap; font:15px courier; line-height:0;">
   </div>  =20
  </body>
 </html>
------=_mimepart_020120201438--
+-----=_mimepart_060120201323--
 Content-Type: text/plain; name="Fatura.pdf"
 Content-Transfer-Encoding: base64 
 Content-Disposition: attachment; filename="Fatura.pdf"
 
 RXJybzogTyBhcnF1aXZvICdDT05UUkFUT182MF9NVU5JQ0lQSU8uUERGJywgbsOjbyBmb2kgZW5jb250cmF0byBvdSBuw6NvIGVzdMOhIG1haXMgZGlzcG9uw612ZWwu
------=_mimepart_020120201438--
+-----=_mimepart_060120201323--
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
------=_mimepart_020120201438--
+-----=_mimepart_060120201323--
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -1000,6 +1007,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
------=_mimepart_020120201438----
+-----=_mimepart_060120201323----
 
 
