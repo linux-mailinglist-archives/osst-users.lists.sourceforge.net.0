@@ -2,73 +2,111 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9F36A14C8A6
-	for <lists+osst-users@lfdr.de>; Wed, 29 Jan 2020 11:17:07 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id F3BED14CFF9
+	for <lists+osst-users@lfdr.de>; Wed, 29 Jan 2020 18:58:42 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1iwkPC-0006SL-EM
-	for lists+osst-users@lfdr.de; Wed, 29 Jan 2020 10:17:06 +0000
+	id 1iwrbt-0000hb-Qo
+	for lists+osst-users@lfdr.de; Wed, 29 Jan 2020 17:58:41 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <www-data@star-mini.c10r.facebook.com>)
- id 1iwkPB-0006SB-4d
- for osst-users@lists.sourceforge.net; Wed, 29 Jan 2020 10:17:05 +0000
+ (envelope-from <larissa@rcmimoveis.com.br>) id 1iwrbr-0000hR-Bg
+ for osst-users@lists.sourceforge.net; Wed, 29 Jan 2020 17:58:39 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:Content-Type:MIME-Version:From:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Reply-To:Content-Type:To:Subject:From:Sender:
+ Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=i0ELG2zYmIVMWYoKVL9MpfBunlVkM7TEgUeMG/bjtyU=; b=QpVc16/nka6XgeimHLRCIkHJGr
- V03l4OVGTtXE8TnP1CFuSWUtT5C7p5YaCIhaIXW2RvETScdSZILSk/XZaUrm1xgmu+v56uX4qM2+V
- z29sD/eypQ85gjtUN1aUadugO/i9BsR2S+7Ju1eCJSU5OE9U6ilPOHEJZsK79bXU9XgY=;
+ bh=xKMj43ZndrHV4MRRUdntlHTaYVkxe+JMI0lXjjGZrX8=; b=RkTMU/3KE5nvZfwjtivP3sfCLZ
+ EC4/nWymCV2VB7pQ/sMk8mzABuG93EvP3L2Za90VM5wWByFIMoqvbSS6fA9RuIQWkO+Pq+DXdpz1p
+ RlzNMUH7OFgup4ZfRbih0t6rdTPsFVGau1Xw8NlVy9nmeej0CLT3UdFaKh4kTgHgQoMs=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:Content-Type:MIME-Version:From:Subject:To:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=i0ELG2zYmIVMWYoKVL9MpfBunlVkM7TEgUeMG/bjtyU=; b=j
- AWOU5YZKsOaXm/IKFlQvb+CwQZwOEEc8OD1M/jTGc1l8g8hVWk2q8SAzU979BBHQK2Sc8RhQKsdHl
- dew5MHDvJRWkIZJJkD/zlz/1oS7EfQCtw8vtjCJkYz0eQ3px3AZ8Sg3JIxnWvWOl0hl+9JXrVG4C+
- KOXeULaHcYiEikMw=;
-Received: from [40.117.33.244] (helo=star-mini.c10r.facebook.com)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1iwkP9-003rg8-NG
- for osst-users@lists.sourceforge.net; Wed, 29 Jan 2020 10:17:05 +0000
-Received: by star-mini.c10r.facebook.com (Postfix, from userid 33)
- id 355A82FF40; Wed, 29 Jan 2020 09:58:14 +0000 (UTC)
+ h=Date:Reply-To:Content-Type:To:Subject:From:Sender:Message-ID:Cc:
+ MIME-Version:Content-Transfer-Encoding:Content-ID:Content-Description:
+ Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=xKMj43ZndrHV4MRRUdntlHTaYVkxe+JMI0lXjjGZrX8=; b=N9UCvZPqEMo0NvmrqVOHG0mz9u
+ 3rT/RC+WnHbY+IwCW6TINgWD35XMvos5HbA6UL0UG8TrxnK310gNTxj2eO07zexxDwjHUZjhrsdWc
+ aOqcre6i5okkSpAFTaufJYzzDrVn7jyI9a9ZNmWB3Ev3VrYnEwC3FnktEVPUSKUioI4E=;
+Received: from gateway31.websitewelcome.com ([192.185.144.29])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
+ id 1iwrbn-004Cx8-8z
+ for osst-users@lists.sourceforge.net; Wed, 29 Jan 2020 17:58:39 +0000
+Received: from cm13.websitewelcome.com (cm13.websitewelcome.com [100.42.49.6])
+ by gateway31.websitewelcome.com (Postfix) with ESMTP id 233EAE780
+ for <osst-users@lists.sourceforge.net>; Wed, 29 Jan 2020 11:34:09 -0600 (CST)
+Received: from srv260.prodns.com.br ([162.241.203.112]) by cmsmtp with SMTP
+ id wrE9idZLAERZgwrE9iU97f; Wed, 29 Jan 2020 11:34:09 -0600
+X-Authority-Reason: nr=8
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=rcmimoveis.com.br; s=default; h=Date:Reply-To:Content-Type:To:Subject:From:
+ Sender:Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=xKMj43ZndrHV4MRRUdntlHTaYVkxe+JMI0lXjjGZrX8=; b=o5Is239E4JiN8U2TqEPIRwge8I
+ x8OQtDyR9TS8tVBVytEMjMVap/Z3NU6cJ+0DOfgS4wBQ40jMV+pt4vqbfqA1uNIyGaMBMsAwMlvxZ
+ raaJDaJwz20wULj1NJz0b2wQXjGubEfZlhndxa3pgjuGs3WNPRvr47b+Etm0MNALfN/jX8Zxtd9Ju
+ SaKCtSu5mpuBP9jmkNheL6GEvnG1MQZorLk4JcVWgiJOfds82PuoNuKIBvn6YfWPzkHU+BByz1lTr
+ YRdwCYrKJehF24wZBuEvcU6f5tJbeZj7/JctujBWEZ5bdtCIVA/BbEyvlcKuMpGVtwc5H/JV8ZDaB
+ UVmhTkCw==;
+Received: from [189.41.15.43] (port=3851 helo=DESKTOP-PP3A8MN)
+ by srv260.prodns.com.br with esmtpsa (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+ (Exim 4.92) (envelope-from <larissa@rcmimoveis.com.br>)
+ id 1iwrE8-003Ew1-MX
+ for osst-users@lists.sourceforge.net; Wed, 29 Jan 2020 14:34:09 -0300
+From: "Larissa G. Oliveira" <larissa@rcmimoveis.com.br>
 To: osst-users@lists.sourceforge.net
-X-PHP-Originating-Script: 1001:xman.php
-X-Mailer: Microsoft Office Outlook, Build 17.551210
-From: Joyce Santos Souza Kimura <atendimento@integraassessoria.com>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="8ca3c8e87472ae9c556a7a88ec0e535d"
-Message-Id: <20200129095814.355A82FF40@star-mini.c10r.facebook.com>
-Date: Wed, 29 Jan 2020 09:58:14 +0000 (UTC)
-X-Spam-Score: 7.8 (+++++++)
+Date: Wed, 29 Jan 2020 14:34:08 -0300
+X-AntiAbuse: This header was added to track abuse,
+ please include it with any abuse report
+X-AntiAbuse: Primary Hostname - srv260.prodns.com.br
+X-AntiAbuse: Original Domain - lists.sourceforge.net
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - rcmimoveis.com.br
+X-BWhitelist: no
+X-Source-IP: 189.41.15.43
+X-Source-L: No
+X-Exim-ID: 1iwrE8-003Ew1-MX
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Source-Sender: (DESKTOP-PP3A8MN) [189.41.15.43]:3851
+X-Source-Auth: larissa@rcmimoveis.com.br
+X-Email-Count: 105
+X-Source-Cap: ZTU0bGFyaXNzYTtjb250NzU3NTtzcnYyNjAucHJvZG5zLmNvbS5icg==
+X-Local-Domain: yes
+X-Spam-Score: 7.5 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [192.185.144.29 listed in list.dnswl.org]
+ 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [162.241.203.112 listed in psbl.surriel.com]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: integraassessoria.com]
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 1.9 URIBL_ABUSE_SURBL Contains an URL listed in the ABUSE SURBL blocklist
- [URIs: integraassessoria.com]
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ for more information. [URIs: fazenda.gov.br]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ 0.7 SPF_NEUTRAL            SPF: sender does not match SPF record (neutral)
+ 0.1 TRACKER_ID             BODY: Incorporates a tracking ID number
  1.0 HTML_MESSAGE           BODY: HTML included in message
  2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
- 0.0 FORGED_OUTLOOK_HTML    Outlook can't send HTML message only
- 1.3 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML only
- 0.0 TO_NO_BRKTS_MSFT       To: lacks brackets and supposed Microsoft tool
-X-Headers-End: 1iwkP9-003rg8-NG
-Subject: [Osst-users] Campanha Feirao Limpa Nome Proposta: - 9256356
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 1.0 MISSING_MID            Missing Message-Id: header
+ 0.1 MIME_HEADER_CTYPE_ONLY 'Content-Type' found without required MIME
+ headers
+ 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+ 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+X-Headers-End: 1iwrbn-004Cx8-8z
+Subject: [Osst-users] FW: Nota gerada 801689002443240
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -80,143 +118,41 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
+Reply-To: larissa@rcmimoveis.com.br
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============1088595370009792736=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1iwrbt-0000hb-Qo@sfs-ml-2.v29.lw.sourceforge.com>
 
-Content-Transfer-Encoding: 7bit
-This is a MIME encoded message.
+--===============1088595370009792736==
+Content-Type: text/html; charset=us-ascii
 
---8ca3c8e87472ae9c556a7a88ec0e535d
-Content-Type: text/html; charset="iso-8859-1"
-Content-Transfer-Encoding: 8bit
+<span style="display: none;">http://www.nfe.fazenda.gov.br/portal/801689/NotaF/244324</span> 
+<p>&nbsp;</p>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD>
-<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
-<META name=GENERATOR content="MSHTML 11.00.9600.19597"></HEAD>
-<BODY>
-<DIV style="TEXT-ALIGN: center"><B><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">LIMPE SEU CPF OU CNPJ E 
-</SPAN></B><B><SPAN style="COLOR: yellow; BACKGROUND-COLOR: black">AUMENTE SEU 
-SCORE</SPAN></B></DIV>
-<P><BR><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'>Atendimento 
-somente pelo email: <A 
-href="mailto:atendimento@integraassessoria.com">atendimento@integraassessoria.com</A></SPAN></B></P>
-<P><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'></SPAN></B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><B><BR></B></SPAN><B><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Tire seu nome dos orgao de 
-protecao ao credito sem negociar ou pagar as dividas.</SPAN></SPAN></B><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Obtenha 
-total seguranca na recuperacao do seu credito e Nome limpo em 10 
-Dias.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Esta 
-com nome limpo porem nao consegue credito Devido o Score Baixo? Temos a 
-solucao.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Nosso 
-servico consiste em baixa suas dividas sem negociar ou pagar suas 
-dividas.</SPAN><BR><BR 
-style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><B 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; TEXT-ALIGN: justify'><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Servico ideal para quem 
-deseja:</SPAN></B><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Financiar um Veiculo ou Imovel.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Abrir contas em bancos, obter Cartoes de Credito e Taloes de 
-Cheques.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Participar de concursos e conseguir um novo Emprego.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Comprar no crediario em Lojas diversas.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>==&gt; 
-Adquirir linhas de telefone celular Pos - Pago.</SPAN><BR><BR 
-style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><B 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; TEXT-ALIGN: justify'><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Servico disponivel para CPF e 
-CNPJ. Os valores cobrado pelo servico e fixo tanto para CPF e 
-CNPJ.</SPAN></B><BR><B 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>O 
-valor cobrado pode ser parcelado em 2 vezes ou avista.</B><BR><BR><B 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; TEXT-ALIGN: justify'><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Baixamos as seguintes 
-dividas.</SPAN></B><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>CHEQUES 
-S/FUNDOS:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>PROTESTOS:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>ACOES 
-JUDICIAIS:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>DIVIDA 
-VENCIDA:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>ANOTACOES 
-:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>CADIM:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>BUSCA 
-APREENSOES:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>AVALISTA:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>BACEN:</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><BR></SPAN><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Entre 
-outros:</SPAN><BR><BR 
-style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Para 
-tirar suas dividas responda esse e-mail.</SPAN><BR><BR><SPAN 
-style='FONT-FAMILY: "arial","helvetica",sans-serif; COLOR: rgb(0,0,1)'><SPAN 
-style="FONT-SIZE: 11px"><FONT color=#000000 size=3 
-face="Times New Roman"><STRONG>Joyce Santos Souza 
-Kimura</STRONG></FONT></SPAN></SPAN></P>
-<TABLE 
-style="FONT-SIZE: 11px; FONT-FAMILY: Arial,Helvetica,sans-serif; BORDER-COLLAPSE: collapse; COLOR: rgb(0,0,1); BORDER-SPACING: 0px; LINE-HEIGHT: 1.4" 
-cellSpacing=0 cellPadding=0 border=0>
-  <TBODY>
-  <TR>
-    <TD 
-    style="PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
-      style="FONT-WEIGHT: 700">Analista&nbsp;de 
-      Credito</SPAN>&nbsp;|&nbsp;Integra Recuperacao de Credito e Assessoria 
-      Financeira</TD></TR>
-  <TR>
-    <TD 
-    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
-      style="COLOR: rgb(85,169,49)">email: <A 
-      href="mailto:atendimento@integraassessoria.com">atendimento@integraassessoria.com</A></SPAN></TD></TR>
-  <TR>
-    <TD 
-    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">Brasil</TD></TR></TBODY></TABLE><BR>
-<DIV 
-class=m_5562963666117124119gmail-m_1945028416462246051m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
-style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
-align=center><SPAN 
-style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>Politica&nbsp;</SPAN><SPAN 
-style="BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt">de 
-Privacidade -&nbsp;Copyright 2010&nbsp;Integra Recuperacao de Credito e 
-Assessoria Financeira</SPAN></DIV><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'></SPAN><BR>
-<DIV 
-class=m_5562963666117124119gmail-m_1945028416462246051m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
-style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
-align=center><SPAN 
-style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>&nbsp;Todos 
-os direitos reservados.</SPAN></DIV></BODY></HTML>
-
-<br><a scr="id:0,684986412525177">
+<span style="display: none;">KADU8G8H58YRSHSAJ6G8I1GOL</span> 
+<p>NF emitida pelo prestador de servi&ccedil;os a baixo</p>
+<p>
+  <span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">N&uacute;mero da NFe : 801689244324</span> 
+<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br>Raz&atilde;o Social : Oliveira & Barbosa Eletro Eireli</span> <span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br> CCM : 1523</span> 
+<p>
+<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">Segue a baixo:<br /><br /></span> 
+<span style="display: none;">KADU8G8H58YRSHSAJ6G8I1GOL</span> 
+<span style="display: none;">KADU8G8H58YRSHSAJ6G8I1GOL</span> 
+<span style="font-size: 10pt;"><strong><a style="padding: 10px; width: 200px; text-decoration: none; border-radius: 5px; color: #ffffff; background: #000080;" href="https://is.gd/LPZB6K?801689KADU8G8H58YRSHSAJ6G8I1GOL244324" target="_blank" rel="noopener">Doc_NF : 8016890010024432400</a></strong></span></p>
+<p><span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">&nbsp;</span></p>
+<span style="display: none;">KADU8G8H58YRSHSAJ6G8I1GOL</span> 
 
 
 
---8ca3c8e87472ae9c556a7a88ec0e535d
+--===============1088595370009792736==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---8ca3c8e87472ae9c556a7a88ec0e535d
+--===============1088595370009792736==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -227,4 +163,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---8ca3c8e87472ae9c556a7a88ec0e535d--
+--===============1088595370009792736==--
