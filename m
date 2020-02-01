@@ -2,111 +2,102 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id F3BED14CFF9
-	for <lists+osst-users@lfdr.de>; Wed, 29 Jan 2020 18:58:42 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 8138714F650
+	for <lists+osst-users@lfdr.de>; Sat,  1 Feb 2020 04:42:22 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1iwrbt-0000hb-Qo
-	for lists+osst-users@lfdr.de; Wed, 29 Jan 2020 17:58:41 +0000
+	id 1ixjfp-0001zE-BX
+	for lists+osst-users@lfdr.de; Sat, 01 Feb 2020 03:42:21 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <larissa@rcmimoveis.com.br>) id 1iwrbr-0000hR-Bg
- for osst-users@lists.sourceforge.net; Wed, 29 Jan 2020 17:58:39 +0000
+ (envelope-from
+ <bounces+3850474-0d75-osst-users=lists.sourceforge.net@sendgrid.net>)
+ id 1ixjfl-0001yi-7F
+ for osst-users@lists.sourceforge.net; Sat, 01 Feb 2020 03:42:17 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Reply-To:Content-Type:To:Subject:From:Sender:
- Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=To:Message-ID:Date:Content-Type:Subject:Reply-To:
+ From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=xKMj43ZndrHV4MRRUdntlHTaYVkxe+JMI0lXjjGZrX8=; b=RkTMU/3KE5nvZfwjtivP3sfCLZ
- EC4/nWymCV2VB7pQ/sMk8mzABuG93EvP3L2Za90VM5wWByFIMoqvbSS6fA9RuIQWkO+Pq+DXdpz1p
- RlzNMUH7OFgup4ZfRbih0t6rdTPsFVGau1Xw8NlVy9nmeej0CLT3UdFaKh4kTgHgQoMs=;
+ bh=0BFzVNH11gkvZdEAWf7VFIMlRNoBuMMq5k39gWAjaqU=; b=HS+HVeiHdoYaPcSrm7hmIILKEu
+ 6BKD08G+x1hdab2duD7tlf+Zi024UHd9f7hGkcmlpn2zqDxcBrsKNnDcPpm7uUkFGOIu4GBPto9UZ
+ f7Y9fhjGweW7THZevuNEnUoLmnSz2/cqRbFdUpuZfGTI0hztthKfK3mFG7gOCuc8PpUA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Reply-To:Content-Type:To:Subject:From:Sender:Message-ID:Cc:
- MIME-Version:Content-Transfer-Encoding:Content-ID:Content-Description:
- Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=xKMj43ZndrHV4MRRUdntlHTaYVkxe+JMI0lXjjGZrX8=; b=N9UCvZPqEMo0NvmrqVOHG0mz9u
- 3rT/RC+WnHbY+IwCW6TINgWD35XMvos5HbA6UL0UG8TrxnK310gNTxj2eO07zexxDwjHUZjhrsdWc
- aOqcre6i5okkSpAFTaufJYzzDrVn7jyI9a9ZNmWB3Ev3VrYnEwC3FnktEVPUSKUioI4E=;
-Received: from gateway31.websitewelcome.com ([192.185.144.29])
+ h=To:Message-ID:Date:Content-Type:Subject:Reply-To:From:MIME-Version:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=0BFzVNH11gkvZdEAWf7VFIMlRNoBuMMq5k39gWAjaqU=; b=a
+ /TQ9Z7ro4hQPQCEToqFneN9jLUV7h+7GJG5ZuXl7sKQpRbu4/iFTM0mfEcBfWUabz1qkA3B1onZkt
+ XsPeAp/B0EaTTrJFgZz0VsMaDoNXCt/lROwDvwa+U9RrYjxL7xh8F2lbtDxNG55GSUv2lXKGFer84
+ vr7nIZ5BMa7GCp6A=;
+Received: from o2.smtps-ip-a1.ispeed.it ([167.89.106.149])
  by sfi-mx-3.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1iwrbn-004Cx8-8z
- for osst-users@lists.sourceforge.net; Wed, 29 Jan 2020 17:58:39 +0000
-Received: from cm13.websitewelcome.com (cm13.websitewelcome.com [100.42.49.6])
- by gateway31.websitewelcome.com (Postfix) with ESMTP id 233EAE780
- for <osst-users@lists.sourceforge.net>; Wed, 29 Jan 2020 11:34:09 -0600 (CST)
-Received: from srv260.prodns.com.br ([162.241.203.112]) by cmsmtp with SMTP
- id wrE9idZLAERZgwrE9iU97f; Wed, 29 Jan 2020 11:34:09 -0600
-X-Authority-Reason: nr=8
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=rcmimoveis.com.br; s=default; h=Date:Reply-To:Content-Type:To:Subject:From:
- Sender:Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=xKMj43ZndrHV4MRRUdntlHTaYVkxe+JMI0lXjjGZrX8=; b=o5Is239E4JiN8U2TqEPIRwge8I
- x8OQtDyR9TS8tVBVytEMjMVap/Z3NU6cJ+0DOfgS4wBQ40jMV+pt4vqbfqA1uNIyGaMBMsAwMlvxZ
- raaJDaJwz20wULj1NJz0b2wQXjGubEfZlhndxa3pgjuGs3WNPRvr47b+Etm0MNALfN/jX8Zxtd9Ju
- SaKCtSu5mpuBP9jmkNheL6GEvnG1MQZorLk4JcVWgiJOfds82PuoNuKIBvn6YfWPzkHU+BByz1lTr
- YRdwCYrKJehF24wZBuEvcU6f5tJbeZj7/JctujBWEZ5bdtCIVA/BbEyvlcKuMpGVtwc5H/JV8ZDaB
- UVmhTkCw==;
-Received: from [189.41.15.43] (port=3851 helo=DESKTOP-PP3A8MN)
- by srv260.prodns.com.br with esmtpsa (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
- (Exim 4.92) (envelope-from <larissa@rcmimoveis.com.br>)
- id 1iwrE8-003Ew1-MX
- for osst-users@lists.sourceforge.net; Wed, 29 Jan 2020 14:34:09 -0300
-From: "Larissa G. Oliveira" <larissa@rcmimoveis.com.br>
+ id 1ixjfj-006re4-Ss
+ for osst-users@lists.sourceforge.net; Sat, 01 Feb 2020 03:42:17 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+ h=mime-version:from:reply-to:subject:content-type:to;
+ s=smtpapi; bh=0BFzVNH11gkvZdEAWf7VFIMlRNoBuMMq5k39gWAjaqU=;
+ b=ED3/g647jUlPCbqZCCmLqC2zpnNtaVqkW1Y//kDvkoqLYSIdJlCzuQEM71l9pbrsTHqL
+ 0iliVGHPt8TtAP9l1EmFjr6vfBObnICj4TQe+DtiQbuzMF121qYbTedVBglprLxYqkSn2T
+ tYxOrYDy4+IX7N0dRlO2h43mUNYy/hg7U=
+Received: by filterdrecv-p3iad2-78d48cf7b6-wghl6 with SMTP id
+ filterdrecv-p3iad2-78d48cf7b6-wghl6-18-5E34F391-3A
+ 2020-02-01 03:42:09.826456273 +0000 UTC m=+19214.778800328
+Received: from host98-215-dynamic.181-80-r.retail.telecomitalia.it (unknown
+ [80.181.215.98])
+ by ismtpd0001p1lon1.sendgrid.net (SG) with ESMTP id WZCoM8jgRg20plFTFbBeMQ
+ for <osst-users@lists.sourceforge.net>;
+ Sat, 01 Feb 2020 03:42:09.432 +0000 (UTC)
+MIME-Version: 1.0
+From: Toner Compatibili a basso prezzo <tonertoplevel@gmail.com>
+Date: Sat, 01 Feb 2020 03:42:09 +0000 (UTC)
+Message-ID: <12416391535848226868256@user-PC>
+X-SG-EID: =?us-ascii?Q?sC0L0DychgvtYjQuYUedIqrMHF22QjjWF7fOlfsJmRK8=2FT160ukPqyPjMA7xY2?=
+ =?us-ascii?Q?YZr+M9vEI51GaqoQXu0+G7=2FE43XgGYWfcFjDz9a?=
+ =?us-ascii?Q?N8f98bklKyAbTCA6a6GKsAGfyiaAcKSgiFmHTnk?=
+ =?us-ascii?Q?OriEkGcgImwyBZp2+9aJug74qajwG36j49+vtfD?=
+ =?us-ascii?Q?tgG8KuE7WFB9R8IKCZsuQ986JbM1jG2JEM8JTSl?=
+ =?us-ascii?Q?RoO=2FiQoJfwWuUFiD8uMlNRhN7GagUkJe7OG3RcP?=
+ =?us-ascii?Q?S9UeNzJxzpoUhY+gueioi58TRV5mE7W2=2FfzCcIt?=
+ =?us-ascii?Q?uEKB5hkSAAmHzmP8mQ6A6hH5?=
 To: osst-users@lists.sourceforge.net
-Date: Wed, 29 Jan 2020 14:34:08 -0300
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - srv260.prodns.com.br
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - rcmimoveis.com.br
-X-BWhitelist: no
-X-Source-IP: 189.41.15.43
-X-Source-L: No
-X-Exim-ID: 1iwrE8-003Ew1-MX
-X-Source: 
-X-Source-Args: 
-X-Source-Dir: 
-X-Source-Sender: (DESKTOP-PP3A8MN) [189.41.15.43]:3851
-X-Source-Auth: larissa@rcmimoveis.com.br
-X-Email-Count: 105
-X-Source-Cap: ZTU0bGFyaXNzYTtjb250NzU3NTtzcnYyNjAucHJvZG5zLmNvbS5icg==
-X-Local-Domain: yes
-X-Spam-Score: 7.5 (+++++++)
+X-Spam-Score: 4.3 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [192.185.144.29 listed in list.dnswl.org]
- 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [162.241.203.112 listed in psbl.surriel.com]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: fazenda.gov.br]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- 0.7 SPF_NEUTRAL            SPF: sender does not match SPF record (neutral)
- 0.1 TRACKER_ID             BODY: Incorporates a tracking ID number
+ for more information. [URIs: imageshack.com]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [167.89.106.149 listed in list.dnswl.org]
+ 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ (tonertoplevel[at]gmail.com)
+ 0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+ CUSTOM_MED
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [167.89.106.149 listed in wl.mailspike.net]
+ 0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
+ 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 1.0 MISSING_MID            Missing Message-Id: header
- 0.1 MIME_HEADER_CTYPE_ONLY 'Content-Type' found without required MIME
- headers
- 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
- 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
-X-Headers-End: 1iwrbn-004Cx8-8z
-Subject: [Osst-users] FW: Nota gerada 801689002443240
+ 0.2 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and EnvelopeFrom
+ freemail headers are different
+ 1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Headers-End: 1ixjfj-006re4-Ss
+Subject: [Osst-users] Toner compatibili - pagamento anche alla consegna -
+ Nuovi listini 2020 , chiedici un preventivo
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -118,41 +109,123 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: larissa@rcmimoveis.com.br
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============1088595370009792736=="
+Reply-To: tonertoplevel@gmail.com
+Content-Type: multipart/mixed; boundary="===============7860082084603407707=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1iwrbt-0000hb-Qo@sfs-ml-2.v29.lw.sourceforge.com>
 
---===============1088595370009792736==
+
+--===============7860082084603407707==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_53F7_20A86FF6.69D86CFD"
+
+
+------=_NextPart_001_53F7_20A86FF6.69D86CFD
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+=20
+
+=20
+
+Vendita toner compatibili. Direttamente dal produttore al consumatore con o=
+ttimo rapporto prezzo/qualita'
+
+=20
+
+Garanzia soddisfatti o rimborsati ed offriamo anche possibilita' di pagamen=
+to alla consegna al corriere oppure bonifico anticipato. Trattiamo anche to=
+ner originali=20
+
+=20
+
+Rispondi a questa email indicando il modello della tua stampante, ti invier=
+emo un preventivo
+
+=20
+
+Se rispondi a questa email ti invieremo anche tutti i nostri contatti azien=
+dali e le nostre recensioni. Se hai problemi a rispondere a questa email, c=
+rea un nuovo messaggio inserendo il nostro indirizzo come destinatario
+
+=20
+
+=20
+
+Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
+desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
+premi qui ed invia per cancellarti
+
+=20
+
+
+------=_NextPart_001_53F7_20A86FF6.69D86CFD
 Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
 
-<span style="display: none;">http://www.nfe.fazenda.gov.br/portal/801689/NotaF/244324</span> 
-<p>&nbsp;</p>
+<HEAD><TITLE></TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TR>
+<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
+<P>&nbsp;</P>
+<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
+n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
+TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
+ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TR>
+<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
+ COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
+x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"http://imageshack=
+.com/img923/4973/ppSR3M.jpg" width=3D650 height=3D270>=20
+<P>&nbsp;</P>
+<UL>
+<LI><FONT color=3D#ff0000 size=3D5>Vendita toner compatibili. Direttamente =
+dal produttore al consumatore con ottimo rapporto prezzo/qualita'</FONT>=20
+<P>&nbsp;</P>
+<LI>Garanzia soddisfatti o rimborsati ed offriamo anche possibilita' di pag=
+amento alla consegna al corriere oppure bonifico anticipato. Trattiamo anch=
+e toner originali&nbsp;=20
+<P>&nbsp;</P>
+<LI><A href=3D"mailto:tonertoplevel@gmail.com?subject=3Dpreventivo"><FONT c=
+olor=3D#ff0000 size=3D5><STRONG>Rispondi a questa email indicando il modell=
+o della tua stampante, ti invieremo un preventivo</STRONG></FONT></A>=20
+<P>&nbsp;</P>
+<LI>Se rispondi a questa email ti invieremo anche tutti i nostri contatti a=
+ziendali e le nostre recensioni. Se hai problemi a rispondere a questa emai=
+l, crea un nuovo messaggio inserendo il nostro indirizzo come destinatario =
+</LI></UL>
+<P>&nbsp;</P><IMG style=3D"HEIGHT: 350px; WIDTH: 650px" border=3D2 hspace=
+=3D0 alt=3D"" src=3D"http://imageshack.com/img921/548/j6yJq3.jpg" width=3D6=
+50 height=3D350>=20
+<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
+vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
+ail con "cancellami" </FONT><A href=3D"mailto:tonertoplevel@gmail.com?subje=
+ct=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancellarti</=
+FONT></A></TD></TR>
+<TR></TR></TABLE></TD></TR></TABLE>
+<P>&nbsp;</P><img src=3D"https://u3850474.ct.sendgrid.net/wf/open?upn=3D2Cw=
+Dr9hAd3sCOBy671QeTaQ-2FYCBCp2N3yugmQOBELsbnGwV3qsXN-2Bwzux1wKAxVDaFyT1cZ558=
+-2Fd15AUFolKnC-2BxXlhbArkREFsOJhHzA-2Bfsby68iOYjpa2TIb3YIrNaQiPa0ufqSFzybWB=
+R6lEGG3o-2Bg2Jsda4-2F59dg-2FYzykqAvE4mDAwpLAeX1ITf5-2BmMbEStTd6aBXN-2BbBoGj=
+wnJ9twI50Wca0tEAqnwJg8jFrJrW4WeGE8pnZTSMJoJWkzqKyUI6kOeIYF1NuoRH-2FlFJlQ-3D=
+-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !im=
+portant;width:1px !important;border-width:0 !important;margin-top:0 !import=
+ant;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !imp=
+ortant;padding-top:0 !important;padding-bottom:0 !important;padding-right:0=
+ !important;padding-left:0 !important;"/></BODY>
+------=_NextPart_001_53F7_20A86FF6.69D86CFD--
 
-<span style="display: none;">KADU8G8H58YRSHSAJ6G8I1GOL</span> 
-<p>NF emitida pelo prestador de servi&ccedil;os a baixo</p>
-<p>
-  <span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">N&uacute;mero da NFe : 801689244324</span> 
-<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br>Raz&atilde;o Social : Oliveira & Barbosa Eletro Eireli</span> <span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br> CCM : 1523</span> 
-<p>
-<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">Segue a baixo:<br /><br /></span> 
-<span style="display: none;">KADU8G8H58YRSHSAJ6G8I1GOL</span> 
-<span style="display: none;">KADU8G8H58YRSHSAJ6G8I1GOL</span> 
-<span style="font-size: 10pt;"><strong><a style="padding: 10px; width: 200px; text-decoration: none; border-radius: 5px; color: #ffffff; background: #000080;" href="https://is.gd/LPZB6K?801689KADU8G8H58YRSHSAJ6G8I1GOL244324" target="_blank" rel="noopener">Doc_NF : 8016890010024432400</a></strong></span></p>
-<p><span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">&nbsp;</span></p>
-<span style="display: none;">KADU8G8H58YRSHSAJ6G8I1GOL</span> 
 
-
-
---===============1088595370009792736==
+--===============7860082084603407707==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1088595370009792736==
+--===============7860082084603407707==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -163,4 +236,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1088595370009792736==--
+--===============7860082084603407707==--
+
