@@ -2,110 +2,73 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 36CB515392F
-	for <lists+osst-users@lfdr.de>; Wed,  5 Feb 2020 20:38:46 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id D312B154FEE
+	for <lists+osst-users@lfdr.de>; Fri,  7 Feb 2020 02:14:06 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1izQVZ-0006nV-1a
-	for lists+osst-users@lfdr.de; Wed, 05 Feb 2020 19:38:45 +0000
+	id 1izsDd-0001FV-Kv
+	for lists+osst-users@lfdr.de; Fri, 07 Feb 2020 01:14:05 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <ofelia@vagasfloripa.com.br>) id 1izQVX-0006nN-IG
- for osst-users@lists.sourceforge.net; Wed, 05 Feb 2020 19:38:43 +0000
+ (envelope-from <info@myjcb.co.jp>) id 1izsDc-0001FJ-78
+ for osst-users@lists.sourceforge.net; Fri, 07 Feb 2020 01:14:04 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Reply-To:Content-Type:To:Subject:From:Sender:
- Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:From:
+ Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=vBk0TYA+ETNADEc/CadIvhSK4NVgXbD2yTSViTCNBPc=; b=OnzUSUEiea3EW1IZkahMT+KoaC
- U7GOHRhWRtVaJTNcmEfNpsKa4Ja7F4oVGr6s30VsKxNoez6GyYjYd1udMZ4qD7ZSD30yIqnxiJX8Z
- n2aic6NpKFgW7C3fyZr1ik3Bq3Rus60TCp3SpaVE0KIyEmDdTP9giwFxphkfHj/wJ4Tw=;
+ bh=TDigD4Vt+Rkz6Vx/IWnIXjZjlQ11kwSMLaVZPBQwU4o=; b=OuKg+J48pB6hZgMkX1kBf0nRk7
+ GQh2QrmSk/W8NL1Co+nIHxbszDeQVu7+PONK0Fxct09OGiQhQ5OR4bMfW+TT+dp/3iaE74nJKxiT7
+ Prgu7z4a1+Ymx/eg1udk/eqp9RTdoyb3E6mKItE8pcfBjKU3EBsobwHQUSDSs+A7mXYY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Reply-To:Content-Type:To:Subject:From:Sender:Message-ID:Cc:
- MIME-Version:Content-Transfer-Encoding:Content-ID:Content-Description:
- Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=vBk0TYA+ETNADEc/CadIvhSK4NVgXbD2yTSViTCNBPc=; b=OwfGTOqJhiwrhYK6DWp1zv1B/4
- mtcic5usIZSYonq6nEEEzimq+uT1kX/gYP2ZYB8sPxGiN97nv88kbM5xji8npdBRLWvtnHeY9c5gw
- 2ggfEsJN6Svy2016STbVZ8v71T0kPGf0IdrvBbJX6Cn5mFCIr2kXHMTcWHLi3VOKfauE=;
-Received: from gateway24.websitewelcome.com ([192.185.51.253])
+ h=Content-Type:MIME-Version:Date:Subject:To:From:Message-ID:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=TDigD4Vt+Rkz6Vx/IWnIXjZjlQ11kwSMLaVZPBQwU4o=; b=K
+ C/elh1rIaR3pardKwi4CaL8q/94q+8WfOUBJDGGbclXVzjPid1pKaT5gzZhEM+czl4CKqcjKwmFoB
+ cTJ/jV/W4GO/ItGoe05K4mQ2vHEqh6ORkQgIe9rw6A5yT0iZmnRwQ1cZQX75kPfElVSm+qBNGXlux
+ SC9fXC33oFdW242s=;
+Received: from [23.247.111.223] (helo=mx222.jcb.co.jp)
  by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1izQVU-000W61-9A
- for osst-users@lists.sourceforge.net; Wed, 05 Feb 2020 19:38:43 +0000
-Received: from cm13.websitewelcome.com (cm13.websitewelcome.com [100.42.49.6])
- by gateway24.websitewelcome.com (Postfix) with ESMTP id 9792A455D9
- for <osst-users@lists.sourceforge.net>; Wed,  5 Feb 2020 13:13:59 -0600 (CST)
-Received: from srv254.prodns.com.br ([162.241.203.17]) by cmsmtp with SMTP
- id zQ7bifGA4vhEgzQ7biDgvN; Wed, 05 Feb 2020 13:13:59 -0600
-X-Authority-Reason: nr=8
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=vagasfloripa.com.br; s=default; h=Date:Reply-To:Content-Type:To:Subject:
- From:Sender:Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=vBk0TYA+ETNADEc/CadIvhSK4NVgXbD2yTSViTCNBPc=; b=ZiHf5PA7vbY8MRW2y8glbbveXf
- +67228C6IJs1bFeYdeUJqjVrc/yXIRDw16W2Pf9SeWi192PnqZeWIdGs7f4jDX5lLw/REq3j/Xm/f
- BTg/bC33hFF3schMrpLoyUwAuRqSztR+4DlS4dPdHNQByHOQezCGmMiy2I5ZVjjtm+Lu8dOrf8MW5
- jDdprOEjX5AGA3UqtOdWeLkShHHeGID/NF2B2ORW2zzMcubmRF3G/Ou7bpKjq8Z0OqnjtiCu7wE4I
- kCesPFTZAcvkNutWZavoE+uSFPUpGGmS3/R4hwTiqXUcLxExExUtx1DgkN0/LhoDTXUbsRVffJ+oX
- L+YB7Drg==;
-Received: from [189.15.203.0] (port=1621 helo=DESKTOP-PP3A8MN)
- by srv254.prodns.com.br with esmtpsa (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
- (Exim 4.92) (envelope-from <ofelia@vagasfloripa.com.br>)
- id 1izQ7b-000lRi-4l
- for osst-users@lists.sourceforge.net; Wed, 05 Feb 2020 16:13:59 -0300
-From: "Ofelia L. Barbosa" <ofelia@vagasfloripa.com.br>
-To: osst-users@lists.sourceforge.net
-Date: Wed, 5 Feb 2020 16:13:51 -0300
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - srv254.prodns.com.br
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - vagasfloripa.com.br
-X-BWhitelist: no
-X-Source-IP: 189.15.203.0
-X-Source-L: No
-X-Exim-ID: 1izQ7b-000lRi-4l
-X-Source: 
-X-Source-Args: 
-X-Source-Dir: 
-X-Source-Sender: (DESKTOP-PP3A8MN) [189.15.203.0]:1621
-X-Source-Auth: ofelia@vagasfloripa.com.br
-X-Email-Count: 1
-X-Source-Cap: bTM3M29mZWxpYTtjYXJsbzcxMztzcnYyNTQucHJvZG5zLmNvbS5icg==
-X-Local-Domain: yes
-X-Spam-Score: 7.1 (+++++++)
+ (TLSv1:ECDHE-RSA-AES256-SHA:256) (Exim 4.92.2) id 1izsDa-001zfx-Rs
+ for osst-users@lists.sourceforge.net; Fri, 07 Feb 2020 01:14:04 +0000
+Received: by mx222.jcb.co.jp id h7mdbm0e97cs for
+ <osst-users@lists.sourceforge.net>;
+ Fri, 7 Feb 2020 09:13:26 -0800 (envelope-from <info@myjcb.co.jp>)
+Message-ID: <20200207091400238204@myjcb.co.jp>
+From: "JCB" <info@myjcb.co.jp>
+To: <osst-users@lists.sourceforge.net>
+Date: Fri, 7 Feb 2020 09:13:55 +0800
+MIME-Version: 1.0
+X-mailer: Fhpzbmsr 7
+X-Spam-Score: 6.8 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: is.gd]
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [192.185.51.253 listed in list.dnswl.org]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.1 TRACKER_ID             BODY: Incorporates a tracking ID number
+ for more information. [URIs: peaceeft.com]
+ 0.4 NO_DNS_FOR_FROM        DNS: Envelope sender has no MX or A DNS records
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in DNS
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.1 HTML_TAG_BALANCE_BODY  BODY: HTML has unbalanced "body" tags
+ 1.5 MPART_ALT_DIFF_COUNT   BODY: HTML and text parts are different
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 1.0 MISSING_MID            Missing Message-Id: header
- 0.1 MIME_HEADER_CTYPE_ONLY 'Content-Type' found without required MIME
- headers
- 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
- 0.8 UPPERCASE_50_75        message body is 50-75% uppercase
- 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
-X-Headers-End: 1izQVU-000W61-9A
-Subject: [Osst-users] Nota gerada 434862209563434862
+ 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+ 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+ [cf: 100]
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
+ 0.0 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1izsDa-001zfx-Rs
+Subject: [Osst-users]
+	=?gb2312?B?pKq/zZiUpM5KQ0KloqWrpaal86XIpKyl7aXDpa+ktaTspMakpA==?=	=?gb2312?B?pOsgt6y6xaO6obg0NjUxNzI4OKG5?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -117,50 +80,93 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: ofelia@vagasfloripa.com.br
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============1723790689562949025=="
+Content-Type: multipart/mixed; boundary="===============6082176402573653200=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1izQVZ-0006nV-1a@sfs-ml-2.v29.lw.sourceforge.com>
 
---===============1723790689562949025==
-Content-Type: text/html; charset=us-ascii
+This is a multi-part message in MIME format.
 
-<span style="display: none;">http://www.nfe.fazenda.gov.br/Portal2/DX86G624F0N3GCDFUR5X161IBCU3NF/434862209563</span> 
-<p>&nbsp;</p>
+--===============6082176402573653200==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0E0E_011144AB.139D6E80"
 
-<span style="display: none;">DX86G624F0N3GCDFUR5X161IBCU3NF</span> 
-<span style="display: none;">O95JXXN ZBYYAHGEC01Z</span> 
-<span style="display: none;">S P9ZWKVHHJZVYPAUX BRKVUSIW2LWI5YKDR7UAN</span> 
-<span style="display: none;">DX86G624F0N3GCDFUR5X161IBCU3NF</span> 
-<span style="display: none;">O95JXXN ZBYYAHGEC01Z</span> 
-<span style="display: none;">S P9ZWKVHHJZVYPAUX BRKVUSIW2LWI5YKDR7UAN</span> 
+This is a multi-part message in MIME format.
 
-<p>Nota gerada pelo sistema de servi&ccedil;os </p>
-<p>
-  <span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">N&uacute;mero da NFe : 434862209563</span> 
-<span style="display: none;">S P9ZWKVHHJZVYPAUX BRKVUSIW2LWI5YKDR7UAN</span> 
-<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br>Raz&atilde;o Social : Barbosa & Bernardes Transportes MEI</span> 
-<span style="display: none;">O95JXXN ZBYYAHGEC01Z</span> 
-<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br> CCM : 4183</span> 
-<span style="display: none;">DX86G624F0N3GCDFUR5X161IBCU3NF</span> 
-<p>
-<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">Segue a baixo:<br /><br /></span> 
-<span style="display: none;">O95JXXN ZBYYAHGEC01Z</span> 
-<span style="font-size: 10pt;"><strong><a style="padding: 10px; width: 200px; text-decoration: none; border-radius: 5px; color: #ffffff; background: #000080;" href="https://is.gd/2a32l6?DX86G624F0N3GCDFUR5X161IBCU3NF/209563/" target="_blank" rel="noopener">NFestadual : 0434862002095630</a></strong></span></p>
-<p><span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">&nbsp;</span></p>
-<span style="display: none;">DX86G624F0N3GCDFUR5X161IBCU3NF</span> 
+------=_NextPart_000_0E0E_011144AB.139D6E80
+Content-Type: text/plain;
+	charset="gb2312"
+Content-Transfer-Encoding: base64
+
+DQqxvqXhqWCl66TPpcml4aWkpfOkzt9c08OjqKXhqWCl68vNytzQxaTkpdupYKXgpdqpYKW4pM6x
+7cq+o6mky+l2pO+k6w0KoaHW2NKqpMrNqNaqpMikyqTqpN6kuaGjDQqh9qGhqaWppamlqaWppaml
+qaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaUN
+CqGhoeCoRaHfqEWh4KhFod+oRaHgqEWh4KhFod+oRaHgqEWh36hFoeCoRaHgqEWh36hFoeCoRaHf
+qEWh4KhFoeCoRaHfqEWh4A0KIA0KpKKkyqS/pM6lr6Xspbilw6XIpaupYKXJv9rX+aSstdrI/dXf
+pMuk6KTDpMbKudPDpLWk7KTGpKSk66SzpMik8pfK1qqkt6S/pM6kx6GipKKkyqS/pM6/2tf5pKzZ
+Wb3wpM6wssirpM6kv6ThpMuD9r1ZpLWk7KS/pM6kx6S5pKyhoqS5pLCky1dFQqW1qWCl06W5SUSk
+yKXRpbml76lgpcmk8tTZtcflaKS3pMahotbGz96k8r3is/2kt6TKpLGk7KTQpMqk6qTepLuk8w0K
+IA0KieS4/KTypLQgV0VCpbWpYKXTpbmk6KTqpKrJ6t56pN+kr6TApLWkpKGjDQogDQogDQqh9iCJ
+5Lj8pPKktCC3vbeoDQqoi015SkNCpe2lsKWkpfOkz6SzpMGk6Q0KaHR0cDovL3BlYWNlZWZ0LmNv
+bS8/amNiL2FjY291bnQvbG9naW4vbG9naW4uanNwP3VpZD1pdmgzMGV0emd4IA0KIA0KIA0KIA0K
+o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72j
+vaO9o72jvaO9o70NCqGh1urKvbvhyeeluKWnqWClt6lgpdOpYCANCqGhlny+qba8uNvH+MTPx+DJ
+vTUtMS0yMqGhx+DJvaXppaSluqW5pa+lqKWioaGokzEwNy04Njg2DQqhoaH5sb6l4algpeukz8vN
+0MWMn9PDpMekuaGjDQqhoSAgpKqGlqSkus+k76S7pM/Jz6TOVVJMpM6hooyf08Ol1aWpqWCl4KTo
+pOqkqu6KpKSkt6TepLmhow0Ko72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72j
+vaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o70NCqGhobhNeUpDQiBFeHByZXNzIE5ld3OhuaTL
+kvfdZKS1pOykxqSkpOukuaTZpMakztObysKhog0KoaHOxNXCtcikzp9vts/cnt1kpPK9+9a5pLek
+3qS5oaMNCqGh1vjX95jYpM+kuaTZpMahotbqyr274cnnpbilp6lgpbepYKXTqWCky46iyvSkt6Te
+pLmhow0KoaFDb3B5cmlnaHQgSkNCIENvLiwgTHRkLiAyMDE5DQqjvaO9o72jvaO9o72jvaO9o72j
+vaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvQ0KoaGhoaGh
+oaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoSBFMTkx
+MDEwMjQy
+
+------=_NextPart_000_0E0E_011144AB.139D6E80
+Content-Type: text/html;
+	charset="gb2312"
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PWdi
+MjMxMiIgaHR0cC1lcXVpdj1Db250ZW50LVR5cGU+DQo8TUVUQSBuYW1lPUdFTkVSQVRPUiBjb250
+ZW50PSJNU0hUTUwgMTEuMDAuMTA1NzAuMTAwMSI+PC9IRUFEPg0KPEJPRFk+DQo8UD4mbmJzcDs8
+L1A+DQo8UD6xvqXhqWCl66TPpcml4aWkpfOkzt9c08OjqKXhqWCl68vNytzQxaTkpdupYKXgpdqp
+YKW4pM6x7cq+o6mky+l2pO+k6zxCUj6hodbY0qqkys2o1qqkyKTKpOqk3qS5oaM8QlI+ofahoaml
+qaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWp
+pamlqaWppamlPEJSPqGhoeCoRaHfqEWh4KhFod+oRaHgqEWh4KhFod+oRaHgqEWh36hFoeCoRaHg
+qEWh36hFoeCoRaHfqEWh4KhFoeCoRaHfqEWh4DxCUj4mbmJzcDs8QlI+pKKkyqS/pM6lr6Xspbil
+w6XIpaupYKXJv9rX+aSstdrI/dXfpMuk6KTDpMbKudPDpLWk7KTGpKSk66SzpMik8pfK1qqkt6S/
+pM6kx6GipKKkyqS/pM6/2tf5pKzZWb3wpM6wssirpM6kv6ThpMuD9r1ZpLWk7KS/pM6kx6S5pKyh
+oqS5pLCky1dFQqW1qWCl06W5SUSkyKXRpbml76lgpcmk8tTZtcflaKS3pMahotbGz96k8r3is/2k
+t6TKpLGk7KTQpMqk6qTepLuk8zxCUj4mbmJzcDs8QlI+ieS4/KTypLQgDQpXRUKltalgpdOluaTo
+pOqkqsnq3nqk36SvpMCktaSkoaM8QlI+Jm5ic3A7PEJSPiZuYnNwOzxCUj6h9iCJ5Lj8pPKktCC3
+vbeoPEJSPqiLTXlKQ0Kl7aWwpaSl86TPpLOkwaTpPEJSPjxBIA0KaHJlZj0iaHR0cDovL3BlYWNl
+ZWZ0LmNvbS8/amNiL2FjY291bnQvbG9naW4vbG9naW4uanNwP3VpZD0mbmJzcDs8QlI+Jm5ic3A7
+PEJSPiZuYnNwOzxCUj4mbmJzcDs8QlI+o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72j
+vaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o708QlI+oaHW6sq9u+HJ56W4paepYKW3
+qWCl06lgIA0KPEJSPqGhlny+qba8uNvH+MTPx+DJvTUtMS0yMqGhx+DJvaXppaSluqW5pa+lqKWi
+oaGokzEwNy04Njg2PEJSPqGhofmxvqXhqWCl66TPy83QxYyf08Okx6S5oaM8QlI+oaEmbmJzcDsg
+DQqkqoaWpKS6z6TvpLukz8nPpM5VUkykzqGijJ/Tw6XVpampYKXgpOik6qSq7oqkpKS3pN6kuaGj
+PEJSPqO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72j
+vaO9o72jvaO9o72jvaO9PEJSPqGhobhNeUpDQiANCkV4cHJlc3MgDQpOZXdzobmky5L33WSktaTs
+pMakpKTrpLmk2aTGpM7Tm8rCoaI8QlI+oaHOxNXCtcikzp9vts/cnt1kpPK9+9a5pLek3qS5oaM8
+QlI+oaHW+Nf3mNikz6S5pNmkxqGi1urKvbvhyeeluKWnqWClt6lgpdOpYKTLjqLK9KS3pN6kuaGj
+PEJSPqGhQ29weXJpZ2h0IA0KSkNCIENvLiwgTHRkLiANCjIwMTk8QlI+o72jvaO9o72jvaO9o72j
+vaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o708QlI+
+oaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGh
+oSANCkUxOTEwMTAyNDI8L1A+PC9CT0RZPjwvSFRNTD4NCg==
+
+------=_NextPart_000_0E0E_011144AB.139D6E80--
 
 
 
---===============1723790689562949025==
+--===============6082176402573653200==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1723790689562949025==
+--===============6082176402573653200==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -171,4 +177,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1723790689562949025==--
+--===============6082176402573653200==--
+
+
