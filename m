@@ -2,78 +2,80 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9380B1550B8
-	for <lists+osst-users@lfdr.de>; Fri,  7 Feb 2020 03:36:22 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id DF936156D45
+	for <lists+osst-users@lfdr.de>; Mon, 10 Feb 2020 01:48:44 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1iztVF-0000X5-D7
-	for lists+osst-users@lfdr.de; Fri, 07 Feb 2020 02:36:21 +0000
+	id 1j0xFj-0007eM-NB
+	for lists+osst-users@lfdr.de; Mon, 10 Feb 2020 00:48:43 +0000
+Resent-Date: Mon, 10 Feb 2020 00:48:43 +0000
+Resent-Message-Id: <E1j0xFj-0007eM-NB@sfs-ml-2.v29.lw.sourceforge.com>
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <email@moblee.online>) id 1iztVE-0000Ws-8h
- for osst-users@lists.sourceforge.net; Fri, 07 Feb 2020 02:36:20 +0000
+ (envelope-from <eservice@mail-return.info>) id 1j0xFi-0007dw-R8
+ for osst-users@lists.sourceforge.net; Mon, 10 Feb 2020 00:48:42 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Subject:Date:To:From:MIME-Version:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=HgNPpKjjeeY9lY6chcJBVhN9b/riul2+BNoVx5i+wVg=; b=JHKiR3VDj5HHtpWbkaNU4E+ZEU
- i+yrQh7fP2CE571NPyPWx32FWVE72jr63g4NWFk357bie+AAqlvc8bghL9+Fm/+7ocukoEmG19nMn
- Q188E7pAavZTt3WRMYSNjTTo6M5U7AOTR8Ou1kCsSwF6pNCYUtA29/UDcUqUrWFSBK5k=;
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Subject:Message-ID:To:
+ From:Date:Resent-Sender:Resent-From:Sender:Reply-To:Cc:
+ Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=Z9Na1kCvMRxDhrSk/1jus7JM6PbM7uvnR28aC9L3gNM=; b=JpFABnnT04tWygwWL5cWYwnCg
+ NfHXMzsGMKu5gvSuWg9laBDQ3Km8nJYgekc1WRdpO4Pqap6WXdcWledfa3xyZq35XF2JkZQIFNwGF
+ O0A8suNXvGYHOYx56uIY6mwzOOrvzE9L/ruiFTS58R+Yj2Plq3FB0tICdeO3g1rx5JaXw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Subject:Date:To:From:MIME-Version:Message-ID:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=HgNPpKjjeeY9lY6chcJBVhN9b/riul2+BNoVx5i+wVg=; b=d
- 2xIstRcV/0QJm4kEsvC+zKtK8A2lbfRq2W1zC7X/hlxzAJh7P3Zew8zRfYxrOovR0ECvxWUDsOTZG
- VmeRBvT2sn9pmvV6GzCC1eCdphag4B3zIXhYpmfv82JGVUNkKuZr+PampulTO0I0z/GPZWQh/qS9/
- 5M808ViGcA9WPi+0=;
-Received: from moblee.online ([51.83.205.40])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.92.2)
- id 1iztVB-00CXEE-8z
- for osst-users@lists.sourceforge.net; Fri, 07 Feb 2020 02:36:20 +0000
-dkim-signature: v=1; a=rsa-sha256; d=moblee.online; s=dkim;
- c=relaxed/relaxed; q=dns/txt;
- h=From:Subject:Date:Message-ID:To:MIME-Version:Content-Type; 
- bh=HgNPpKjjeeY9lY6chcJBVhN9b/riul2+BNoVx5i+wVg=;
- b=e5uJLSuwc64mUcE9FV1Gs/FZNDZ9C1rF9NmXdhq4w1qTjL88WVyJmehDxLLvxRDNi4d3f+eNyi4dR+CU3HHUEV3kz1RZM0GvH1Xh3cJw2mahbhWzOlB1uG4l73o7J7jKrwjonSIm5Oahq+d5MgKZwmDBANZTBJ32kL1eVVHEGut4yJKsCl0jRzSbsqwn22zcNWzPzpMZWeyx83AiGejyBfr7zvyQY+2erRIdnhVkizoiiaQuJdpxEiyRIF
- Gn3xhvk+K5X2ZfgsOrG+CY8e6GYFlFjwWI/HvqnOArR/cA2XGL4SIo/R2tSvrWOd4VOLiHmhoPGifrY9x5F4XTEwYFsg==
-Received: from WIN-JB7FJGJ8BQQ (WIN-JB7FJGJ8BQQ [127.0.0.1])
- by moblee.online with ESMTPA ; Thu, 6 Feb 2020 23:35:54 -0300
-Message-ID: <112c7d96-2331-4ab3-90fe-4c5cb4d12521@moblee.online>
-MIME-Version: 1.0
-From: =?utf-8?Q?Espa=C3=A7o_Fabiana_Malheiros?= <email@moblee.online>
+ h=Content-Type:MIME-Version:Subject:Message-ID:To:From:Date:Resent-Sender:
+ Resent-From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=Z9Na1kCvMRxDhrSk/1jus7JM6PbM7uvnR28aC9L3gNM=; b=S+o+6BJqYayUwszRiKarfIuAdA
+ Cd9dnSqdZbbe5aVS26lVx7LL97sKZQiooLSUl4aH5bc2qoqO/Vd1Sfvo4JjGWAB0xGdIupMjCQX4/
+ VEVY+ilWbGBXzUbfsXZmGhl2ZB+Yzg4T5mACry2l+FJneFl/W+O+c8e+CFH87XDLc0CM=;
+Received: from m38.web123vpss.net ([103.28.76.133])
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1j0xFe-00GcYx-Ua
+ for osst-users@lists.sourceforge.net; Mon, 10 Feb 2020 00:48:42 +0000
+Received: from tomcat02.webtouch.local (unknown [192.168.68.170])
+ by m38.web123vpss.net (Postfix) with ESMTP id 1E1157E08CB
+ for <osst-users@lists.sourceforge.net>; Mon, 10 Feb 2020 07:28:49 +0800 (HKT)
+DKIM-Filter: OpenDKIM Filter v2.10.3 m38.web123vpss.net 1E1157E08CB
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mail-return.info;
+ s=dk825; t=1581290929;
+ bh=Z9Na1kCvMRxDhrSk/1jus7JM6PbM7uvnR28aC9L3gNM=;
+ h=Resent-From:Resent-Sender:Date:From:To:Subject:From;
+ b=S5b+rf8p9WtiN5MxqUAtlqLfiH9FMAgWdmidBU5NLrQfvil02smKqAqbSmdBbDZP+
+ 2PK08uo6P6T3QCI77yDaN6qbeCDf6i8boSDP3HZfj9JusafT2hXRu4N0Ly0lZBGNlB
+ qpFQDLargZrt0ZLx665jycDFYP/KQsorivbPwM6c=
+Resent-From: eservice@mail-return.info
+Date: Mon, 10 Feb 2020 07:15:13 +0800 (HKT)
+From: "AJOBHK.COM" <sales@ajobhk.com>
 To: osst-users@lists.sourceforge.net
-Date: 6 Feb 2020 23:35:54 -0300
-X-Spam-Score: 3.6 (+++)
+Message-ID: <2288.73.5205523793720250969@webtouchsystem.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+ boundary="----=_Part_2724431_1497477660.1581290113744"
+Touch-ID: <2288.73.5205523793720250969@webtouchsystem.com>
+X-Spam-Score: 2.8 (++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: smartvpc.online]
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?51.83.205.40>]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [103.28.76.133 listed in list.dnswl.org]
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 1.5 MPART_ALT_DIFF_COUNT   BODY: HTML and text parts are different
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 0.0 T_REMOTE_IMAGE         Message contains an external image
- -0.1 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1iztVB-00CXEE-8z
-Subject: [Osst-users] =?utf-8?q?Dia_da_Noiva_no_mais_sofisticado_Espa?=
- =?utf-8?b?w6dvIGRhIFpvbmEgTm9ydGUgKEpkIEZyYW7Dp2Ep?=
+ 0.1 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1j0xFe-00GcYx-Ua
+Subject: [Osst-users] AJob Recruitment Services 2020
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -85,187 +87,611 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============7746853287936158469=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Sender: "Osst-users" <osst-users-bounces@lists.sourceforge.net>
 
+------=_Part_2724431_1497477660.1581290113744
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2724430_1425766362.1581290113742"
 
---===============7746853287936158469==
-Content-Type: multipart/alternative;
- boundary=--boundary_77772_56c1d4a3-63fd-4ead-8968-0db57c6cc5a5
+------=_Part_2724430_1425766362.1581290113742
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
 
+        
+        
+        
+        TITLE
+        
+        
+            body{ Margin: 0; padding: 0; }
+            img{ border: 0px; display: block; }
 
-----boundary_77772_56c1d4a3-63fd-4ead-8968-0db57c6cc5a5
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
+            .socialLinks{ font-size: 6px; }
+            .socialLinks a{
+                display: inline-block;
+            }
+            .socialIcon{
+                display: inline-block;
+                vertical-align: top;
+                padding-bottom: 0px;
+                border-radius: 100%;
+            }
+            .oldwebkit{ max-width: 570px; }
+            td.vb-outer{ padding-left: 9px; padding-right: 9px; }
+            table.vb-container, table.vb-row, table.vb-content{
+                border-collapse: separate;
+            }
+            table.vb-row{
+                border-spacing: 9px;
+            }
+            table.vb-row.halfpad{
+                border-spacing: 0;
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+            table.vb-row.fullwidth{
+                border-spacing: 0;
+                padding: 0;
+            }
+            table.vb-container{
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+            table.vb-container.fullpad{
+                border-spacing: 18px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            table.vb-container.halfpad{
+                border-spacing: 9px;
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+            table.vb-container.fullwidth{
+                padding-left: 0;
+                padding-right: 0;
+            }
+        
+        
+            /* yahoo, hotmail */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+            .yshortcuts a{ border-bottom: none !important; }
+            .vb-outer{ min-width: 0 !important; }
+            .RMsgBdy, .ExternalClass{
+                width: 100%;
+                background-color: #3f3f3f;
+                background-color: #3f3f3f}
 
-RXNwYcOnbyBGYWJpYW5hIE1hbGhlaXJvcyAvLy8vIERpYSBkYSBOb2l2YSBubyBtYWlz
-IHNvZmlzdGljYWRvIEVzcGHDp28gZGEgWm9uYSBOb3J0ZSAoSmQgRnJhbsOnYSlpbWcg
-e2Rpc3BsYXk6YmxvY2t9Q0xJUVVFIFBBUkEgQUJSSVIgIAkgICAgIAkgCQkJCSAgIAkJ
-CSAgCQkJCSAmbmJzcDsJCQkJIAkJCQkJCQkJCSAJCQkJICZuYnNwOwkJCSAgCQkJICAJ
-CQkJICZuYnNwOwkJCQkgCQkJCQlVbSBkaWEgY29tcGxldG8gZGUgY3VpZGFkb3MgZXNw
-ZWNpYWlzLCBvbmRlIGEgYXJ0ZSBlIGEgZXhwZXJpw6puY2lhIGRvcyBub3Nzb3MgcHJv
-Zmlzc2lvbmFpcyBlbGV2YW0gc3VhIGJlbGV6YSwgdG9ybmFuZG8gc2V1IGRpYSBpbmVz
-cXVlY8OtdmVsLgkJCQkJICAgCQkJCQkgICBBIE1BSU9SIEUgTUVMSE9SIFNBTEEgREUg
-Tk9JVkFTIERBIAkJCQkJICAgWk9OQSBOT1JURQkJCQkJCQkJCSAJCQkJICZuYnNwOwkJ
-CSAgCQkJICAJCQkJICZuYnNwOwkJCQkgCQkJCQkJCQkJIAkJCQkgJm5ic3A7CQkJICAJ
-CSAgIAkJCSAgICAgCSA8aW1nIG5hbWU9ImZhYmlhbmFtYWxoZWlyb3NfMDIxX3IzX2Mx
-IiBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvaW1nL2N3ZC1mYWJpYW5hbWFsaGVp
-cm9zXzAyMV9yM19jMS5qcGciIHdpZHRoPSI1NTAiIGhlaWdodD0iNTI2IiBib3JkZXI9
-IjAiIGlkPSJmYWJpYW5hbWFsaGVpcm9zXzAyMV9yM19jMSIgYWx0PSJPIGFtYmllbnRl
-IHNlZ3VlIHVtYSBjb21wb3Npw6fDo28gbW9kZXJuYSBlIGZ1bmNpb25hbCwgZWxlZ8Oi
-bmNpYSBhZ3JlZ2FkYSDDoCBsb2fDrXN0aWNhIG5lY2Vzc8OhcmlhIHBhcmEgdW0gZXNw
-YcOnbyBkZSBzZXJ2acOnby4gU8OjbyBtYWlzIGRlIDI1MG3CsiBkZSBjb25mb3J0byBl
-IHNvZmlzdGljYcOnw6NvLgkJTyBTYWzDo28gZGlzcMO1ZSBkZSBkaXZlcnNvcyBlc3Bh
-w6dvcywgdG9kb3MgZGVzdGluYWRvcyDDoCBiZWxlemE6IGVzcGHDp28gbWFzc2FnZW0s
-IGVzcGHDp28gbm9pdmFzLCAgZXNwYcOnbyBtYWtlLCBlc3Bhw6dvIGVtYmVsZXphbWVu
-dG8gZG8gb2xoYXIgZSB1bSBzYWzDo28gc3VwZXIgY2hhcm1vc28gZSBtb2Rlcm5vLiBB
-bMOpbSBkaXNzbywgY29udGFtb3MgY29tIHVtYSByZWNlcMOnw6NvIHN1cGVyIGFjb25j
-aGVnYW50ZSBlIHBvc3N1w61tb3Mgc2VydmnDp28gZGUgbWFub2JyaXN0YSBhbyBlc3Rh
-Y2lvbmFyLgkJTm9zc29zIHByb2Zpc3Npb25haXMgcG9zc3VlbSBmb3JtYcOnw6NvIG5v
-cyBtZWxob3JlcyBJbnN0aXR1dG9zIGRlIEJlbGV6YSBkbyBwYcOtcyBlIHZhc3RhIGV4
-cGVyacOqbmNpYSBub3Mgc2Fsw7VlcyBtYWlzIHJlbm9tYWRvcyBkZSBTw6NvIFBhdWxv
-LgkJRXhjbHVzaXZpZGFkZSBlIHNvZmlzdGljYcOnw6NvIGVtIHVtIGFtYmllbnRlIGN1
-aWRhZG9zYW1lbnRlIHByZXBhcmFkbyBwYXJhIHZvY8OqIj4JICAgICAJIDxpbWcgbmFt
-ZT0iZmFiaWFuYW1hbGhlaXJvc18wMjFfcjRfYzEiIHNyYz0iaHR0cDovL3NtYXJ0dnBj
-Lm9ubGluZS9pbWcvY3dkLWZhYmlhbmFtYWxoZWlyb3NfMDIxX3I0X2MxLmpwZyIgd2lk
-dGg9IjU1MCIgaGVpZ2h0PSI5MTQiIGJvcmRlcj0iMCIgaWQ9ImZhYmlhbmFtYWxoZWly
-b3NfMDIxX3I0X2MxIiBhbHQ9Ik8gYW1iaWVudGUgc2VndWUgdW1hIGNvbXBvc2nDp8Oj
-byBtb2Rlcm5hIGUgZnVuY2lvbmFsLCBlbGVnw6JuY2lhIGFncmVnYWRhIMOgIGxvZ8Ot
-c3RpY2EgbmVjZXNzw6FyaWEgcGFyYSB1bSBlc3Bhw6dvIGRlIHNlcnZpw6dvLiBTw6Nv
-IG1haXMgZGUgMjUwbcKyIGRlIGNvbmZvcnRvIGUgc29maXN0aWNhw6fDo28uCQlPIFNh
-bMOjbyBkaXNww7VlIGRlIGRpdmVyc29zIGVzcGHDp29zLCB0b2RvcyBkZXN0aW5hZG9z
-IMOgIGJlbGV6YTogZXNwYcOnbyBtYXNzYWdlbSwgZXNwYcOnbyBub2l2YXMsICBlc3Bh
-w6dvIG1ha2UsIGVzcGHDp28gZW1iZWxlemFtZW50byBkbyBvbGhhciBlIHVtIHNhbMOj
-byBzdXBlciBjaGFybW9zbyBlIG1vZGVybm8uIEFsw6ltIGRpc3NvLCBjb250YW1vcyBj
-b20gdW1hIHJlY2Vww6fDo28gc3VwZXIgYWNvbmNoZWdhbnRlIGUgcG9zc3XDrW1vcyBz
-ZXJ2acOnbyBkZSBtYW5vYnJpc3RhIGFvIGVzdGFjaW9uYXIuCQlOb3Nzb3MgcHJvZmlz
-c2lvbmFpcyBwb3NzdWVtIGZvcm1hw6fDo28gbm9zIG1lbGhvcmVzIEluc3RpdHV0b3Mg
-ZGUgQmVsZXphIGRvIHBhw61zIGUgdmFzdGEgZXhwZXJpw6puY2lhIG5vcyBzYWzDtWVz
-IG1haXMgcmVub21hZG9zIGRlIFPDo28gUGF1bG8uCQlFeGNsdXNpdmlkYWRlIGUgc29m
-aXN0aWNhw6fDo28gZW0gdW0gYW1iaWVudGUgY3VpZGFkb3NhbWVudGUgcHJlcGFyYWRv
-IHBhcmEgdm9jw6oiPgkgICBFbnZpYWRvIHBhcmE6IElkZW50aWZpY2HDp8OjbyBkZSBl
-bnZpbzogMDBbSWRdTsOjbyBkZXNlam8gbWFpcyByZWNlYmVy
-----boundary_77772_56c1d4a3-63fd-4ead-8968-0db57c6cc5a5
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
+            /* outlook */
+            table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
+            #outlook a{ padding: 0; }
+            img{ outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; }
+            a img{ border: none; }
 
-PGh0bWw+DQo8aGVhZD4NCjx0aXRsZT5Fc3Bhw6dvIEZhYmlhbmEgTWFsaGVpcm9zIC8v
-Ly8gRGlhIGRhIE5vaXZhIG5vIG1haXMgc29maXN0aWNhZG8gRXNwYcOnbyBkYSBab25h
-IE5vcnRlIChKZCBGcmFuw6dhKTwvdGl0bGU+DQo8bWV0YSBodHRwLWVxdWl2PSJDb250
-ZW50LVR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD1pc28tODg1OS0xIj4N
-CjxzdHlsZT4NCmltZyB7ZGlzcGxheTpibG9ja30NCg0KPC9zdHlsZT4NCjwvaGVhZD4N
-Cjxib2R5IHN0eWxlPSJwYWRkaW5nOjA7IG1hcmdpbjowOyI+DQoNCg0KDQo8dGFibGUg
-YWxpZ249ImNlbnRlciIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNp
-bmc9IjAiPg0KPHRyPjx0ZCBhbGlnbj0iY2VudGVyIj48YnI+PGEgaHJlZj0iaHR0cDov
-L3NtYXJ0dnBjLm9ubGluZS9saW5rL2MvY3dkOS8/RT1vc3N0LXVzZXJzQGxpc3RzLnNv
-dXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlPSJmb250LWZhbWlseTpD
-YWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAwMDAwOyI+
-Q0xJUVVFIFBBUkEgQUJSSVI8L2E+PC90ZD48L3RyPg0KPC90YWJsZT4NCg0KDQo8dGFi
-bGUgd2lkdGg9IjU1MCIgYm9yZGVyPSIwIiBhbGlnbj0iY2VudGVyIiBjZWxscGFkZGlu
-Zz0iMCIgY2VsbHNwYWNpbmc9IjAiPg0KPHRib2R5Pg0KICA8dHI+DQoJIDx0ZD48YSBo
-cmVmPSJodHRwOi8vc21hcnR2cGMub25saW5lL2xpbmsvYy9jd2Q5Lz9FPW9zc3QtdXNl
-cnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayI+PGltZyBuYW1l
-PSJmYWJpYW5hbWFsaGVpcm9zXzAyMV9yMV9jMSIgc3JjPSJodHRwOi8vc21hcnR2cGMu
-b25saW5lL2ltZy9jd2QtZmFiaWFuYW1hbGhlaXJvc18wMjFfcjFfYzEuanBnIiB3aWR0
-aD0iNTUwIiBoZWlnaHQ9IjYwOSIgYm9yZGVyPSIwIiBpZD0iZmFiaWFuYW1hbGhlaXJv
-c18wMjFfcjFfYzEiIGFsdD0iRElBIERBIE5PSVZBIE5PIEVTUEFDTyBGQUJJQU5BIE1B
-TEhFSVJPUyAtIE8gU0VVIERJQSBQRVJGRUlUTyI+PC9hPjwvdGQ+DQogIDwvdHI+DQog
-IDx0cj4NCgkgPHRkIGJnY29sb3I9IiNDQjNEMzEiPg0KCQk8dGFibGUgd2lkdGg9IjEw
-MCUiIGJvcmRlcj0iMCIgY2VsbHNwYWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIwIj4NCgkJ
-ICAgPHRib2R5Pg0KCQkJICA8dHI+DQoJCQkJIDx0ZD4mbmJzcDs8L3RkPg0KCQkJCSA8
-dGQ+DQoJCQkJCTxkaXYgYWxpZ249ImNlbnRlciI+PC9kaXY+DQoJCQkJIDwvdGQ+DQoJ
-CQkJIDx0ZD4mbmJzcDs8L3RkPg0KCQkJICA8L3RyPg0KCQkJICA8dHI+DQoJCQkJIDx0
-ZD4mbmJzcDs8L3RkPg0KCQkJCSA8dGQ+DQoJCQkJCTxkaXYgYWxpZ249ImNlbnRlciIg
-Y2xhc3M9InN0eWxlNCI+VW0gZGlhIGNvbXBsZXRvIGRlIGN1aWRhZG9zIGVzcGVjaWFp
-cywgb25kZSBhIGFydGUgZSBhIGV4cGVyacOqbmNpYSBkb3Mgbm9zc29zIHByb2Zpc3Np
-b25haXMgZWxldmFtIHN1YSBiZWxlemEsIHRvcm5hbmRvIHNldSBkaWEgaW5lc3F1ZWPD
-rXZlbC48YnI+DQoJCQkJCSAgIDxicj4NCgkJCQkJICAgPHNwYW4gY2xhc3M9InN0eWxl
-MyI+QSBNQUlPUiBFIE1FTEhPUiBTQUxBIERFIE5PSVZBUyBEQTxicj4gDQoJCQkJCSAg
-IFpPTkEgTk9SVEU8L3NwYW4+DQoJCQkJCTwvZGl2Pg0KCQkJCSA8L3RkPg0KCQkJCSA8
-dGQ+Jm5ic3A7PC90ZD4NCgkJCSAgPC90cj4NCgkJCSAgPHRyPg0KCQkJCSA8dGQgd2lk
-dGg9IjglIj4mbmJzcDs8L3RkPg0KCQkJCSA8dGQgd2lkdGg9Ijg0JSI+DQoJCQkJCTxk
-aXYgYWxpZ249ImNlbnRlciI+PC9kaXY+DQoJCQkJIDwvdGQ+DQoJCQkJIDx0ZCB3aWR0
-aD0iOCUiPiZuYnNwOzwvdGQ+DQoJCQkgIDwvdHI+DQoJCSAgIDwvdGJvZHk+DQoJCTwv
-dGFibGU+DQoJIDwvdGQ+DQogIDwvdHI+DQogIDx0cj4NCgkgPHRkPjxhIGhyZWY9Imh0
-dHA6Ly9zbWFydHZwYy5vbmxpbmUvbGluay9jL2N3ZDkvP0U9b3NzdC11c2Vyc0BsaXN0
-cy5zb3VyY2Vmb3JnZS5uZXQiIHRhcmdldD0iX2JsYW5rIj48aW1nIG5hbWU9ImZhYmlh
-bmFtYWxoZWlyb3NfMDIxX3IzX2MxIiBzcmM9Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUv
-aW1nL2N3ZC1mYWJpYW5hbWFsaGVpcm9zXzAyMV9yM19jMS5qcGciIHdpZHRoPSI1NTAi
-IGhlaWdodD0iNTI2IiBib3JkZXI9IjAiIGlkPSJmYWJpYW5hbWFsaGVpcm9zXzAyMV9y
-M19jMSIgYWx0PSJPIGFtYmllbnRlIHNlZ3VlIHVtYSBjb21wb3Npw6fDo28gbW9kZXJu
-YSBlIGZ1bmNpb25hbCwgZWxlZ8OibmNpYSBhZ3JlZ2FkYSDDoCBsb2fDrXN0aWNhIG5l
-Y2Vzc8OhcmlhIHBhcmEgdW0gZXNwYcOnbyBkZSBzZXJ2acOnby4gU8OjbyBtYWlzIGRl
-IDI1MG3CsiBkZSBjb25mb3J0byBlIHNvZmlzdGljYcOnw6NvLg0KCQlPIFNhbMOjbyBk
-aXNww7VlIGRlIGRpdmVyc29zIGVzcGHDp29zLCB0b2RvcyBkZXN0aW5hZG9zIMOgIGJl
-bGV6YTogZXNwYcOnbyBtYXNzYWdlbSwgZXNwYcOnbyBub2l2YXMsICBlc3Bhw6dvIG1h
-a2UsIGVzcGHDp28gZW1iZWxlemFtZW50byBkbyBvbGhhciBlIHVtIHNhbMOjbyBzdXBl
-ciBjaGFybW9zbyBlIG1vZGVybm8uIEFsw6ltIGRpc3NvLCBjb250YW1vcyBjb20gdW1h
-IHJlY2Vww6fDo28gc3VwZXIgYWNvbmNoZWdhbnRlIGUgcG9zc3XDrW1vcyBzZXJ2acOn
-byBkZSBtYW5vYnJpc3RhIGFvIGVzdGFjaW9uYXIuDQoJCU5vc3NvcyBwcm9maXNzaW9u
-YWlzIHBvc3N1ZW0gZm9ybWHDp8OjbyBub3MgbWVsaG9yZXMgSW5zdGl0dXRvcyBkZSBC
-ZWxlemEgZG8gcGHDrXMgZSB2YXN0YSBleHBlcmnDqm5jaWEgbm9zIHNhbMO1ZXMgbWFp
-cyByZW5vbWFkb3MgZGUgU8OjbyBQYXVsby4NCgkJRXhjbHVzaXZpZGFkZSBlIHNvZmlz
-dGljYcOnw6NvIGVtIHVtIGFtYmllbnRlIGN1aWRhZG9zYW1lbnRlIHByZXBhcmFkbyBw
-YXJhIHZvY8OqIj48L2E+PC90ZD4NCgkgPHRkPjxpbWcgc3JjPSJodHRwOi8vc21hcnR2
-cGMub25saW5lL2ltZy9jd2Qtc3BhY2VyLmdpZiIgd2lkdGg9IjEiIGhlaWdodD0iNTI2
-IiBib3JkZXI9IjAiIGFsdD0iIj48L3RkPg0KICA8L3RyPg0KICA8dHI+DQoJIDx0ZD48
-YSBocmVmPSJodHRwOi8vc21hcnR2cGMub25saW5lL2xpbmsvYy9jd2Q5Lz9FPW9zc3Qt
-dXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayI+PGltZyBu
-YW1lPSJmYWJpYW5hbWFsaGVpcm9zXzAyMV9yNF9jMSIgc3JjPSJodHRwOi8vc21hcnR2
-cGMub25saW5lL2ltZy9jd2QtZmFiaWFuYW1hbGhlaXJvc18wMjFfcjRfYzEuanBnIiB3
-aWR0aD0iNTUwIiBoZWlnaHQ9IjkxNCIgYm9yZGVyPSIwIiBpZD0iZmFiaWFuYW1hbGhl
-aXJvc18wMjFfcjRfYzEiIGFsdD0iTyBhbWJpZW50ZSBzZWd1ZSB1bWEgY29tcG9zacOn
-w6NvIG1vZGVybmEgZSBmdW5jaW9uYWwsIGVsZWfDom5jaWEgYWdyZWdhZGEgw6AgbG9n
-w61zdGljYSBuZWNlc3PDoXJpYSBwYXJhIHVtIGVzcGHDp28gZGUgc2VydmnDp28uIFPD
-o28gbWFpcyBkZSAyNTBtwrIgZGUgY29uZm9ydG8gZSBzb2Zpc3RpY2HDp8Ojby4NCgkJ
-TyBTYWzDo28gZGlzcMO1ZSBkZSBkaXZlcnNvcyBlc3Bhw6dvcywgdG9kb3MgZGVzdGlu
-YWRvcyDDoCBiZWxlemE6IGVzcGHDp28gbWFzc2FnZW0sIGVzcGHDp28gbm9pdmFzLCAg
-ZXNwYcOnbyBtYWtlLCBlc3Bhw6dvIGVtYmVsZXphbWVudG8gZG8gb2xoYXIgZSB1bSBz
-YWzDo28gc3VwZXIgY2hhcm1vc28gZSBtb2Rlcm5vLiBBbMOpbSBkaXNzbywgY29udGFt
-b3MgY29tIHVtYSByZWNlcMOnw6NvIHN1cGVyIGFjb25jaGVnYW50ZSBlIHBvc3N1w61t
-b3Mgc2VydmnDp28gZGUgbWFub2JyaXN0YSBhbyBlc3RhY2lvbmFyLg0KCQlOb3Nzb3Mg
-cHJvZmlzc2lvbmFpcyBwb3NzdWVtIGZvcm1hw6fDo28gbm9zIG1lbGhvcmVzIEluc3Rp
-dHV0b3MgZGUgQmVsZXphIGRvIHBhw61zIGUgdmFzdGEgZXhwZXJpw6puY2lhIG5vcyBz
-YWzDtWVzIG1haXMgcmVub21hZG9zIGRlIFPDo28gUGF1bG8uDQoJCUV4Y2x1c2l2aWRh
-ZGUgZSBzb2Zpc3RpY2HDp8OjbyBlbSB1bSBhbWJpZW50ZSBjdWlkYWRvc2FtZW50ZSBw
-cmVwYXJhZG8gcGFyYSB2b2PDqiI+PC9hPjwvdGQ+DQoJIDx0ZD48aW1nIHNyYz0iaHR0
-cDovL3NtYXJ0dnBjLm9ubGluZS9pbWcvY3dkLXNwYWNlci5naWYiIHdpZHRoPSIxIiBo
-ZWlnaHQ9IjkxNCIgYm9yZGVyPSIwIiBhbHQ9IiI+PC90ZD4NCiAgPC90cj4NCjwvdGJv
-ZHk+DQo8L3RhYmxlPg0KDQoNCg0KDQo8dGFibGUgYWxpZ249ImNlbnRlciIgYm9yZGVy
-PSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiPg0KPHRyPjx0ZCBhbGln
-bj0iY2VudGVyIj4NCjxicj48YnI+PGJyPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseTpD
-YWxpYnJpLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNHB4OyBjb2xvcjojMDAwMDAwOyI+
-RW52aWFkbyBwYXJhOiBvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldDwvc3Bh
-bj4NCjxicj48c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6Q2FsaWJyaSxzYW5zLXNlcmlm
-OyBmb250LXNpemU6MTRweDsgY29sb3I6IzAwMDAwMDsiPklkZW50aWZpY2HDp8OjbyBk
-ZSBlbnZpbzogMDA3Nzc3Mjwvc3Bhbj4NCjxicj48YnI+PGJyPjxhIGhyZWY9Imh0dHA6
-Ly9zbWFydHZwYy5vbmxpbmUvbGluay9tL2ltZC8/RT1vc3N0LXVzZXJzQGxpc3RzLnNv
-dXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgYm9yZGVyPSIwIiBzcmM9
-Imh0dHA6Ly9zbWFydHZwYy5vbmxpbmUvaW1nL2xvZ28uZ2lmIiBhbHQ9IklNRCA3Nzc3
-MiIgc3R5bGU9Im1heC13aWR0aDoyMDBweDsgZGlzcGxheTpibG9jazsiPjwvYT4NCjxi
-cj48YnI+PGEgaHJlZj0iaHR0cDovL3NtYXJ0dnBjLm9ubGluZS9yZW1vdmVyLz9FPW9z
-c3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9Il9ibGFuayIgc3R5
-bGU9ImZvbnQtZmFtaWx5OkNhbGlicmksc2Fucy1zZXJpZjsgZm9udC1zaXplOjE0cHg7
-IGNvbG9yOiMwMDAwMDA7Ij48c3Ryb25nPk7Do28gZGVzZWpvIG1haXMgcmVjZWJlcjwv
-c3Ryb25nPjwvYT4NCjxicj48YnI+PGJyPjxicj48aW1nIHNyYz0iaHR0cDovL3NtYXJ0
-dnBjLm9ubGluZS9yZWFkLz9DPWN3ZDkmRT1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZv
-cmdlLm5ldCIgYm9yZGVyPSIwIiB3aWR0aD0iMCIgaGVpZ2h0PSIwIiBhbHQ9IklNRCA3
-Nzc3MiIgc3R5bGU9ImRpc3BsYXk6YmxvY2s7Ij4NCjwvdGQ+PC90cj4NCjwvdGFibGU+
-DQo8L2JvZHk+DQo8L2h0bWw+
-----boundary_77772_56c1d4a3-63fd-4ead-8968-0db57c6cc5a5--
+            @media screen and (max-device-width: 600px), screen and (max-width: 600px) {
+                table.vb-container, table.vb-row{
+                    width: 95% !important;
+                }
+
+                .mobile-hide{ display: none !important; }
+                .mobile-textcenter{ text-align: center !important; }
+
+                .mobile-full{
+                    float: none !important;
+                    width: 100% !important;
+                    max-width: none !important;
+                    padding-right: 0 !important;
+                    padding-left: 0 !important;
+                }
+                img.mobile-full{
+                    width: 100% !important;
+                    max-width: none !important;
+                    height: auto !important;
+                }   
+            }
+        
+        
+            
+            #ko_imageBlock_4 a, #ko_imageBlock_4 a:link, #ko_imageBlock_4 a:visited, #ko_imageBlock_4 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+            
+            #ko_imageBlock_5 a, #ko_imageBlock_5 a:link, #ko_imageBlock_5 a:visited, #ko_imageBlock_5 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+            
+            #ko_imageBlock_6 a, #ko_imageBlock_6 a:link, #ko_imageBlock_6 a:visited, #ko_imageBlock_6 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+            
+            #ko_imageBlock_7 a, #ko_imageBlock_7 a:link, #ko_imageBlock_7 a:visited, #ko_imageBlock_7 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+            
+            #ko_imageBlock_8 a, #ko_imageBlock_8 a:link, #ko_imageBlock_8 a:visited, #ko_imageBlock_8 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+            
+    
+    
+        
+        
 
 
 
+            
+                    
+                        
+
+                            
+                            
+                                
+                                    
+                                        
+                                            
+                                        
+                                    
+                                
+                                
+                            
+                            
+                        
+                    
+                
+                    
+                        
+
+                            
+                            
+                                
+                                    
+                                        
+                                            
+                                        
+                                    
+                                
+                                
+                            
+                            
+                        
+                    
+                
+                    
+                        
+
+                            
+                            
+                                
+                                    
+                                        
+                                            
+                                        
+                                    
+                                
+                                
+                            
+                            
+                        
+                    
+                
+                    
+                        
+
+                            
+                            
+                                
+                                    
+                                        
+                                            
+                                        
+                                    
+                                
+                                
+                            
+                            
+                        
+                    
+                
+                    
+                        
+
+                            
+                            
+                                
+                                    
+                                        
+                                            
+                                        
+                                    
+                                
+                                
+                            
+                            
+                        
+                    
+                
 
 
---===============7746853287936158469==
+
+        
+    
+
+
+------=_Part_2724430_1425766362.1581290113742
+Content-Type: text/html;charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html> <head></head><body><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Tran=
+sitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DU=
+TF-8">
+        <meta name=3D"viewport" content=3D"initial-scale=3D1.0">
+        <meta name=3D"format-detection" content=3D"telephone=3Dno">
+        <title>TITLE</title>
+       =20
+        <style type=3D"text/css">
+            body{ Margin: 0; padding: 0; }
+            img{ border: 0px; display: block; }
+
+            .socialLinks{ font-size: 6px; }
+            .socialLinks a{
+                display: inline-block;
+            }
+            .socialIcon{
+                display: inline-block;
+                vertical-align: top;
+                padding-bottom: 0px;
+                border-radius: 100%;
+            }
+            .oldwebkit{ max-width: 570px; }
+            td.vb-outer{ padding-left: 9px; padding-right: 9px; }
+            table.vb-container, table.vb-row, table.vb-content{
+                border-collapse: separate;
+            }
+            table.vb-row{
+                border-spacing: 9px;
+            }
+            table.vb-row.halfpad{
+                border-spacing: 0;
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+            table.vb-row.fullwidth{
+                border-spacing: 0;
+                padding: 0;
+            }
+            table.vb-container{
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+            table.vb-container.fullpad{
+                border-spacing: 18px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            table.vb-container.halfpad{
+                border-spacing: 9px;
+                padding-left: 9px;
+                padding-right: 9px;
+            }
+            table.vb-container.fullwidth{
+                padding-left: 0;
+                padding-right: 0;
+            }
+        </style>
+        <style type=3D"text/css">
+            /* yahoo, hotmail */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .Externa=
+lClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+            .yshortcuts a{ border-bottom: none !important; }
+            .vb-outer{ min-width: 0 !important; }
+            .RMsgBdy, .ExternalClass{
+                width: 100%;
+                background-color: #3f3f3f;
+                background-color: #3f3f3f}
+
+            /* outlook */
+            table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
+            #outlook a{ padding: 0; }
+            img{ outline: none; text-decoration: none; border: none; -ms-in=
+terpolation-mode: bicubic; }
+            a img{ border: none; }
+
+            @media screen and (max-device-width: 600px), screen and (max-wi=
+dth: 600px) {
+                table.vb-container, table.vb-row{
+                    width: 95% !important;
+                }
+
+                .mobile-hide{ display: none !important; }
+                .mobile-textcenter{ text-align: center !important; }
+
+                .mobile-full{
+                    float: none !important;
+                    width: 100% !important;
+                    max-width: none !important;
+                    padding-right: 0 !important;
+                    padding-left: 0 !important;
+                }
+                img.mobile-full{
+                    width: 100% !important;
+                    max-width: none !important;
+                    height: auto !important;
+                }  =20
+            }
+        </style>
+        <style type=3D"text/css">
+           =20
+            #ko_imageBlock_4 a, #ko_imageBlock_4 a:link, #ko_imageBlock_4 a=
+:visited, #ko_imageBlock_4 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+           =20
+            #ko_imageBlock_5 a, #ko_imageBlock_5 a:link, #ko_imageBlock_5 a=
+:visited, #ko_imageBlock_5 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+           =20
+            #ko_imageBlock_6 a, #ko_imageBlock_6 a:link, #ko_imageBlock_6 a=
+:visited, #ko_imageBlock_6 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+           =20
+            #ko_imageBlock_7 a, #ko_imageBlock_7 a:link, #ko_imageBlock_7 a=
+:visited, #ko_imageBlock_7 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+           =20
+            #ko_imageBlock_8 a, #ko_imageBlock_8 a:link, #ko_imageBlock_8 a=
+:visited, #ko_imageBlock_8 a:hover{
+                color: #3f3f3f;
+                text-decoration: underline
+            }
+            </style>
+    </head>
+    <body bgcolor=3D"#3f3f3f" text=3D"#919191" alink=3D"#cccccc" vlink=3D"#=
+cccccc" style=3D"Margin: 0; padding: 0; background-color: #ffffff; color: #=
+919191;">
+        <!-- Comment KO CSS Setting=20
+      -ko-background-color: @_theme_.frameTheme.backgroundColor; -ko-attr-b=
+gcolor: @_theme_.frameTheme.backgroundColor; -ko-color: @_theme_.frameTheme=
+.longTextStyle.color;
+      -ko-attr-text: @_theme_.frameTheme.longTextStyle.color
+        -->
+        <center>
+
+
+
+            <table class=3D"vb-outer" width=3D"100%" cellpadding=3D"0" bord=
+er=3D"0" cellspacing=3D"0" bgcolor=3D"#bfbfbf" style=3D"background-color: #=
+bfbfbf;" id=3D"ko_imageBlock_4">
+                    <tbody><tr>
+                        <td class=3D"vb-outer" valign=3D"top" align=3D"cent=
+er" style=3D"padding-left: 9px; padding-right: 9px;">
+
+                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
+><td align=3D"center" valign=3D"top"><![endif]-->
+                            <div class=3D"oldwebkit" style=3D"max-width: 57=
+0px;">
+                                <table width=3D"570" class=3D"vb-container =
+fullwidth" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" align=3D"cent=
+er" cellspacing=3D"0" style=3D"border-collapse: separate; padding-left: 0; =
+padding-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;=
+">
+                                    <tbody><tr>
+                                        <td valign=3D"top" align=3D"center"=
+>
+                                            <img hspace=3D"0" border=3D"0" =
+vspace=3D"0" width=3D"570" class=3D"mobile-full" alt=3D"" style=3D"border: =
+0px; max-width: 570px; display: block; border-radius: 0px; width: 100%; hei=
+ght: auto; font-size: 13px; font-family: Arial, Helvetica, sans-serif; colo=
+r: #3f3f3f;" src=3D"https://www.webtouchsystem.com/file/client/2288/gallery=
+/mosaico/5e3a74a6d1a1b_1580889254.gif?method=3Dresize&amp;width=3D570">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                               =20
+                            </div>
+                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
+le><![endif]-->
+                        </td>
+                    </tr>
+                </tbody></table><table class=3D"vb-outer" width=3D"100%" ce=
+llpadding=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#bfbfbf" style=3D=
+"background-color: #bfbfbf;" id=3D"ko_imageBlock_5">
+                    <tbody><tr>
+                        <td class=3D"vb-outer" valign=3D"top" align=3D"cent=
+er" style=3D"padding-left: 9px; padding-right: 9px;">
+
+                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
+><td align=3D"center" valign=3D"top"><![endif]-->
+                            <div class=3D"oldwebkit" style=3D"max-width: 57=
+0px;">
+                                <table width=3D"570" class=3D"vb-container =
+fullwidth" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" align=3D"cent=
+er" cellspacing=3D"0" style=3D"border-collapse: separate; padding-left: 0; =
+padding-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;=
+">
+                                    <tbody><tr>
+                                        <td valign=3D"top" align=3D"center"=
+>
+                                            <img hspace=3D"0" border=3D"0" =
+vspace=3D"0" width=3D"570" class=3D"mobile-full" alt=3D"" style=3D"border: =
+0px; max-width: 570px; display: block; border-radius: 0px; width: 100%; hei=
+ght: auto; font-size: 13px; font-family: Arial, Helvetica, sans-serif; colo=
+r: #3f3f3f;" src=3D"https://www.webtouchsystem.com/file/client/2288/gallery=
+/mosaico/5e3a771a8fcb8_1580889882.gif?method=3Dresize&amp;width=3D570">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                               =20
+                            </div>
+                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
+le><![endif]-->
+                        </td>
+                    </tr>
+                </tbody></table><table class=3D"vb-outer" width=3D"100%" ce=
+llpadding=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#bfbfbf" style=3D=
+"background-color: #bfbfbf;" id=3D"ko_imageBlock_6">
+                    <tbody><tr>
+                        <td class=3D"vb-outer" valign=3D"top" align=3D"cent=
+er" style=3D"padding-left: 9px; padding-right: 9px;">
+
+                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
+><td align=3D"center" valign=3D"top"><![endif]-->
+                            <div class=3D"oldwebkit" style=3D"max-width: 57=
+0px;">
+                                <table width=3D"570" class=3D"vb-container =
+fullwidth" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" align=3D"cent=
+er" cellspacing=3D"0" style=3D"border-collapse: separate; padding-left: 0; =
+padding-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;=
+">
+                                    <tbody><tr>
+                                        <td valign=3D"top" align=3D"center"=
+>
+                                            <img hspace=3D"0" border=3D"0" =
+vspace=3D"0" width=3D"570" class=3D"mobile-full" alt=3D"" style=3D"border: =
+0px; max-width: 570px; display: block; border-radius: 0px; width: 100%; hei=
+ght: auto; font-size: 13px; font-family: Arial, Helvetica, sans-serif; colo=
+r: #3f3f3f;" src=3D"https://www.webtouchsystem.com/file/client/2288/gallery=
+/mosaico/5e3a772248362_1580889890.gif?method=3Dresize&amp;width=3D570">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                               =20
+                            </div>
+                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
+le><![endif]-->
+                        </td>
+                    </tr>
+                </tbody></table><table class=3D"vb-outer" width=3D"100%" ce=
+llpadding=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#bfbfbf" style=3D=
+"background-color: #bfbfbf;" id=3D"ko_imageBlock_7">
+                    <tbody><tr>
+                        <td class=3D"vb-outer" valign=3D"top" align=3D"cent=
+er" style=3D"padding-left: 9px; padding-right: 9px;">
+
+                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
+><td align=3D"center" valign=3D"top"><![endif]-->
+                            <div class=3D"oldwebkit" style=3D"max-width: 57=
+0px;">
+                                <table width=3D"570" class=3D"vb-container =
+fullwidth" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" align=3D"cent=
+er" cellspacing=3D"0" style=3D"border-collapse: separate; padding-left: 0; =
+padding-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;=
+">
+                                    <tbody><tr>
+                                        <td valign=3D"top" align=3D"center"=
+>
+                                            <img hspace=3D"0" border=3D"0" =
+vspace=3D"0" width=3D"570" class=3D"mobile-full" alt=3D"" style=3D"border: =
+0px; max-width: 570px; display: block; border-radius: 0px; width: 100%; hei=
+ght: auto; font-size: 13px; font-family: Arial, Helvetica, sans-serif; colo=
+r: #3f3f3f;" src=3D"https://www.webtouchsystem.com/file/client/2288/gallery=
+/mosaico/5e3a7738a424c_1580889912.gif?method=3Dresize&amp;width=3D570">
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                               =20
+                            </div>
+                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
+le><![endif]-->
+                        </td>
+                    </tr>
+                </tbody></table><table class=3D"vb-outer" width=3D"100%" ce=
+llpadding=3D"0" border=3D"0" cellspacing=3D"0" bgcolor=3D"#bfbfbf" style=3D=
+"background-color: #bfbfbf;" id=3D"ko_imageBlock_8">
+                    <tbody><tr>
+                        <td class=3D"vb-outer" valign=3D"top" align=3D"cent=
+er" style=3D"padding-left: 9px; padding-right: 9px;">
+
+                            <!--[if (gte mso 9)|(lte ie 8)]><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"570"><tr=
+><td align=3D"center" valign=3D"top"><![endif]-->
+                            <div class=3D"oldwebkit" style=3D"max-width: 57=
+0px;">
+                                <table width=3D"570" class=3D"vb-container =
+fullwidth" cellpadding=3D"0" border=3D"0" bgcolor=3D"#ffffff" align=3D"cent=
+er" cellspacing=3D"0" style=3D"border-collapse: separate; padding-left: 0; =
+padding-right: 0; width: 100%; max-width: 570px; background-color: #ffffff;=
+">
+                                    <tbody><tr>
+                                        <td valign=3D"top" align=3D"center"=
+>
+                                            <a target=3D"_new" href=3D"sale=
+s@ajobhk.com" style=3D"color: #3f3f3f; text-decoration: none;"><img hspace=
+=3D"0" border=3D"0" vspace=3D"0" width=3D"570" class=3D"mobile-full" alt=3D=
+"" style=3D"border: 0px; max-width: 570px; display: block; border-radius: 0=
+px; width: 100%; height: auto; font-size: 13px; font-family: Arial, Helveti=
+ca, sans-serif; color: #3f3f3f;" src=3D"https://www.webtouchsystem.com/file=
+/client/2288/gallery/mosaico/5e3a773f970f9_1580889919.jpg?method=3Dresize&a=
+mp;width=3D570"></a>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                               =20
+                            </div>
+                            <!--[if (gte mso 9)|(lte ie 8)]></td></tr></tab=
+le><![endif]-->
+                        </td>
+                    </tr>
+                </tbody></table>
+
+
+
+        </center>
+   =20
+
+</body></html><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" style=3D"width:800px">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td>=E6=82=A8=E6=94=B6=E5=88=B0=E9=80=99=E9=83=B5=E4=BB=B6=E6=98=
+=AF=E7=94=B1=E6=96=BC=E6=88=91=E5=80=91=E7=9B=B8=E4=BF=A1=E5=85=B6=E4=B8=AD=
+=E7=9A=84=E8=A8=8A=E6=81=AF=E8=88=87=E6=82=A8=E7=9B=B8=E9=97=9C=E3=80=82=E5=
+=A6=82=E6=AC=B2=E5=8F=96=E6=B6=88=E6=8E=A5=E6=94=B6=E6=89=80=E6=9C=89=E9=97=
+=9C=E6=96=BC=E6=9C=AC=E6=A9=9F=E6=A7=8B=E7=9A=84=E7=94=A2=E5=93=81=E6=88=96=
+=E6=9C=8D=E5=8B=99=E7=9A=84=E8=A8=8A=E6=81=AF=E8=AB=8B<a href=3D"http://tra=
+cer.webedmservice.com/action/VQ13JRO6HE3KL09OW2288V73KC/aHR0cDovL3Vuc3Vic2N=
+yaXB0aW9uLndlYmVkbXNlcnZpY2UuY29tL3Vuc3Vic2NyaXB0aW9uLnBocD9jb2RlPU1qSTRPRD=
+FGUXladmMzTjBMWFZ6WlhKelFHeHBjM1J6TG5OdmRYSmpaV1p2Y21kbExtNWxkRDFUUVVwVFZrb=
+E8=3D">=E6=8C=89=E6=AD=A4</a>=E3=80=82<br />
+=09=09=09You are receiving this message because we believed that it is rele=
+vant to &nbsp;you. If you do not wish to receive any materials regarding ou=
+r products or services from us, please click <a href=3D"http://tracer.webed=
+mservice.com/action/PQ13JRO6HE3KL09GE2288R73JI/aHR0cDovL3Vuc3Vic2NyaXB0aW9u=
+LndlYmVkbXNlcnZpY2UuY29tL3Vuc3Vic2NyaXB0aW9uLnBocD9jb2RlPU1qSTRPRDFIU1VoUFN=
+VcEpKbTl6YzNRdGRYTmxjbk5BYkdsemRITXVjMjkxY21ObFptOXlaMlV1Ym1WMFBVWlVVVWhEVE=
+E9PQ=3D=3D">here</a>.</td>
+=09=09</tr>
+=09</tbody>
+</table><br><br><img src=3Dhttp://tracer.webedmservice.com/img/OF13JRO6HE3K=
+L09HY2288Z73LT/spacer.gif/></body></html>
+------=_Part_2724430_1425766362.1581290113742--
+
+------=_Part_2724431_1497477660.1581290113744
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7746853287936158469==
+------=_Part_2724431_1497477660.1581290113744
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -276,8 +702,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7746853287936158469==--
-
-
-
+------=_Part_2724431_1497477660.1581290113744--
 
