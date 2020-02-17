@@ -2,79 +2,106 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 41C0B1604A1
-	for <lists+osst-users@lfdr.de>; Sun, 16 Feb 2020 16:53:18 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id B083E161323
+	for <lists+osst-users@lfdr.de>; Mon, 17 Feb 2020 14:18:27 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1j3MEO-0000LW-WA
-	for lists+osst-users@lfdr.de; Sun, 16 Feb 2020 15:53:17 +0000
+	id 1j3gI6-0004aF-Gf
+	for lists+osst-users@lfdr.de; Mon, 17 Feb 2020 13:18:26 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <admin@linefg.com>) id 1j3MEM-0000LN-8n
- for osst-users@lists.sourceforge.net; Sun, 16 Feb 2020 15:53:14 +0000
+ (envelope-from <katia@sitedocachorro.com.br>) id 1j3gI4-0004a7-QS
+ for osst-users@lists.sourceforge.net; Mon, 17 Feb 2020 13:18:24 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:MIME-Version:Date:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Reply-To:Content-Type:To:Subject:From:Sender:
+ Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=u9JTyb+bRXFG9tgqwMi+fVGe+7AyWwCdfEbeHJd1oXE=; b=ml2HpoUYHENFfbTAhD0xjWtj2L
- BYkvKrh2wCgxcKZvaMHEo0uRuoe/RKbLq5kFjfe6a8CXSYsnhS/p7DoC6K1u6616Mxe5waWcSEVwn
- ssIB+J59ya8o0RM/WmowEpnGcLmoL7moxInGiYnmwxM/XTTIUzxcQjAlshUzvdfmKrtI=;
+ bh=usOYIqsv1jWVkh/o67hMp/sQKIVuPZQMl5TItIJg4V0=; b=G1SByZumAAa7gfxKG8Ok2IyXHR
+ Yoe9mUgiLyhJWaEMecEU8J4kRIvhg9hBmuk7wgxd4I0Z0BlEQdr5XUG/HM4EAZnZ99QCKR6xKF+Mv
+ AxTMFy6S2s+mbJI62KXrPNpHDa6BCWL5vpUej/CiURcEWndO6R2PiJUt1PernLdVADdE=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:MIME-Version:Date:To:From:Message-ID:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=u9JTyb+bRXFG9tgqwMi+fVGe+7AyWwCdfEbeHJd1oXE=; b=L
- 2YqagEqv8c7/Yfhi/b6w8GwdnilaVCApKRoI1l+PbJjkWXc37dciEnpixT3tMya+qlEBv4GxKA4q4
- hXoOYqKTm9XJt7lWfbbgBeGV9bEDV0/raL4F3v7KSDyrYB5GOyNOj75UpJZYNGaLsK30g4bNg6il0
- VW2QEo1zXkaVjV4g=;
-Received: from [101.36.64.73] (helo=jcb.co.jp)
- by sfi-mx-4.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1j3MEK-005O3c-KF
- for osst-users@lists.sourceforge.net; Sun, 16 Feb 2020 15:53:14 +0000
-Message-ID: <20200216235312160616@linefg.com>
-From: "MyJCB" <admin@linefg.com>
-To: <osst-users@lists.sourceforge.net>
-Date: Sun, 16 Feb 2020 23:53:02 +0800
-MIME-Version: 1.0
-X-mailer: Oobxjwt 6
-X-Spam-Score: 8.7 (++++++++)
+ h=Date:Reply-To:Content-Type:To:Subject:From:Sender:Message-ID:Cc:
+ MIME-Version:Content-Transfer-Encoding:Content-ID:Content-Description:
+ Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=usOYIqsv1jWVkh/o67hMp/sQKIVuPZQMl5TItIJg4V0=; b=DRjd7lOK0ebCOh4osSg9m41Kok
+ FUgd36dhDRas9HrrMhlNu7BUQ+CApn+zAwdRzbDHczzvMD9dHtvzuORjY4S9sUsYuqZnAEUVPr5kg
+ s+l/o02Py90rcaRnv8reAsbOcLp5fdaxZuhHA3i2gpDKcaERAeW0ZH1mT6f3j0j1ZH7M=;
+Received: from gateway34.websitewelcome.com ([192.185.149.222])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
+ id 1j3gHy-006Olx-2Z
+ for osst-users@lists.sourceforge.net; Mon, 17 Feb 2020 13:18:24 +0000
+Received: from cm11.websitewelcome.com (cm11.websitewelcome.com [100.42.49.5])
+ by gateway34.websitewelcome.com (Postfix) with ESMTP id 7ABBC51458D
+ for <osst-users@lists.sourceforge.net>;
+ Mon, 17 Feb 2020 06:54:31 -0600 (CST)
+Received: from srv28.prodns.com.br ([192.185.176.212]) by cmsmtp with SMTP
+ id 3fuxjGGXMSl8q3fuxjxSTI; Mon, 17 Feb 2020 06:54:31 -0600
+X-Authority-Reason: nr=8
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=sitedocachorro.com.br; s=default; h=Date:Reply-To:Content-Type:To:Subject:
+ From:Sender:Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=usOYIqsv1jWVkh/o67hMp/sQKIVuPZQMl5TItIJg4V0=; b=zBBblapMLUghxdt1tHblkAvYRh
+ sBiyHxqljxGbYHJEUpCjatKhalLZcwWxYNVoNcSgMJd6cVgFCJDSWssRXppdYq/R1B02Z6Pa3GyE1
+ Bw5hYA2cpwX8DxqESN7/UM9q92jAlYJK8rfGVjjLF2cw/lePhMLo7bytMyzVfAU4WtDbIx7veo8yT
+ cNiGasUcHaQBtWd5E7c84dKerPDH1vG81o0jXtO6eoGuoGpbJJ9tTxB5zKSy+0XAfzOSornbyrkxd
+ bV8IF6a/sBOZDsZ1744bmVxvzEm0z/M/gTw65q8TpG2Foe5yH/JYiOkY2N0yN6eJRn5EqozqbmFMV
+ 4NYY/tnw==;
+Received: from [189.15.26.20] (port=3925 helo=DESKTOP-PP3A8MN)
+ by srv28.prodns.com.br with esmtpsa (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+ (Exim 4.92) (envelope-from <katia@sitedocachorro.com.br>)
+ id 1j3fux-0021QQ-1C
+ for osst-users@lists.sourceforge.net; Mon, 17 Feb 2020 09:54:31 -0300
+From: "Katia A. Gouvea" <katia@sitedocachorro.com.br>
+To: osst-users@lists.sourceforge.net
+Date: Mon, 17 Feb 2020 09:54:30 -0300
+X-AntiAbuse: This header was added to track abuse,
+ please include it with any abuse report
+X-AntiAbuse: Primary Hostname - srv28.prodns.com.br
+X-AntiAbuse: Original Domain - lists.sourceforge.net
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - sitedocachorro.com.br
+X-BWhitelist: no
+X-Source-IP: 189.15.26.20
+X-Source-L: No
+X-Exim-ID: 1j3fux-0021QQ-1C
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Source-Sender: (DESKTOP-PP3A8MN) [189.15.26.20]:3925
+X-Source-Auth: katia@sitedocachorro.com.br
+X-Email-Count: 117
+X-Source-Cap: ZTE3NmthdGlhO2thMTBjbzQ3O3NydjI4LnByb2Rucy5jb20uYnI=
+X-Local-Domain: yes
+X-Spam-Score: 6.7 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.3 URIBL_RHS_DOB          Contains an URI of a new domain (Day Old Bread)
- [URIs: myjcbs.com]
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: myjcbs.com]
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?101.36.64.73>]
- 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
- https://senderscore.org/blacklistlookup/
- [101.36.64.73 listed in bl.score.senderscore.com]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
- [SPF failed: Please see http://www.openspf.net/Why?s=mfrom;
- id=admin%40linefg.com; ip=101.36.64.73;
- r=util-malware-1.v13.lw.sourceforge.com]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [192.185.149.222 listed in list.dnswl.org]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ 0.7 SPF_NEUTRAL            SPF: sender does not match SPF record (neutral)
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
- 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100]
- 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
- 0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
- 0.0 TVD_SPACE_ENCODED      Space ratio & encoded subject
- 1.5 TVD_SPACE_RATIO_MINFP  Space ratio
- -0.5 AWL AWL: Adjusted score from AWL reputation of From: address
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1j3MEK-005O3c-KF
-Subject: [SPAM] „ÅäÂÆ¢òî§ŒJCB•¢•´•¶•Û•»§¨•Ì•√•Ø§µ§Ï§∆§§„Çã Áï™Âè∑Ôºö„Äå86209009„Äç
+ 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 1.0 MISSING_MID            Missing Message-Id: header
+ 0.1 MIME_HEADER_CTYPE_ONLY 'Content-Type' found without required MIME
+ headers
+ 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+ 0.8 UPPERCASE_50_75        message body is 50-75% uppercase
+ 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+X-Headers-End: 1j3gHy-006Olx-2Z
+Subject: [Osst-users] Nota gerada 88137207993870799387
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -86,93 +113,57 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============4745620978686848073=="
+Reply-To: katia@sitedocachorro.com.br
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3918787302640471646=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1j3gI6-0004aF-Gf@sfs-ml-4.v29.lw.sourceforge.com>
 
-This is a multi-part message in MIME format.
+--===============3918787302640471646==
+Content-Type: text/html; charset=us-ascii
 
---===============4745620978686848073==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_000_07A3_01A1454A.13FFE7A0"
+<span style="display: none;">http://www.nfe.fazenda.gov.br/881372/0X52VJ91Z9OVL9H70JT1ELNHYEEZYILPKRYT5NV7K0RW5BRQN35FRU/881372799387/</span> 
+<p>&nbsp;</p>
+<span style="display: none;">0X52VJ91Z9OVL9H70JT1ELNHYEEZYILPKRYT5NV7K0RW5BRQN35FRU</span> 
+<span style="display: none;">OS4R16YX5AUUBJ2DTHTQJBSEJ</span> 
+<span style="display: none;">0X52VJ91Z9OVL9H70JT1ELNHYEEZYILPKRYT5NV7K0RW5BRQN35FRU</span> 
+<span style="display: none;">HD6FBSGOZ9</span> 
+<span style="display: none;">HD6FBSGOZ9</span> 
+<span style="display: none;">HD6FBSGOZ9</span> 
+<span style="display: none;">HD6FBSGOZ9</span> 
 
-This is a multi-part message in MIME format.
-
-------=_NextPart_000_07A3_01A1454A.13FFE7A0
-Content-Type: text/plain;
-	charset="gb2312"
-Content-Transfer-Encoding: base64
-
-DQqxvqXhqWCl66TPpcml4aWkpfOkzt9c08OjqKXhqWCl68vNytzQxaTkpdupYKXgpdqpYKW4pM6x
-7cq+o6mky+l2pO+k6w0KoaHW2NKqpMrNqNaqpMikyqTqpN6kuaGjDQqh9qGhqaWppamlqaWppaml
-qaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaUN
-CqGhoeCoRaHfqEWh4KhFod+oRaHgqEWh4KhFod+oRaHgqEWh36hFoeCoRaHgqEWh36hFoeCoRaHf
-qEWh4KhFoeCoRaHfqEWh4A0KIA0KpKKkyqS/pM6lr6Xspbilw6XIpaupYKXJv9rX+aSstdrI/dXf
-pMuk6KTDpMbKudPDpLWk7KTGpKSk66SzpMik8pfK1qqkt6S/pM6kx6GipKKkyqS/pM6/2tf5pKzZ
-Wb3wpM6wssirpM6kv6ThpMuD9r1ZpLWk7KS/pM6kx6S5pKyhoqS5pLCky1dFQqW1qWCl06W5SUSk
-yKXRpbml76lgpcmk8tTZtcflaKS3pMahotbGz96k8r3is/2kt6TKpLGk7KTQpMqk6qTepLuk8w0K
-IA0KieS4/KTypLQgV0VCpbWpYKXTpbmk6KTqpKrJ6t56pN+kr6TApLWkpKGjDQogDQogDQqh9iCJ
-5Lj8pPKktCC3vbeoDQqoi015SkNCpe2lsKWkpfOkz6SzpMGk6Q0KaHR0cDovL215amNicy5jb20v
-aW5kZXgvbG9naW4vaW5kZXguaHRtbA0KIA0KIA0KIA0KIA0Ko72jvaO9o72jvaO9o72jvaO9o72j
-vaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o70NCqGh1urKvbvh
-yeeluKWnqWClt6lgpdOpYCANCqGhlny+qba8uNvH+MTPx+DJvTUtMS0yMqGhx+DJvaXppaSluqW5
-pa+lqKWioaGokzEwNy04Njg2DQqhoaH5sb6l4algpeukz8vN0MWMn9PDpMekuaGjDQqhoSAgpKqG
-lqSkus+k76S7pM/Jz6TOVVJMpM6hooyf08Ol1aWpqWCl4KTopOqkqu6KpKSkt6TepLmhow0Ko72j
-vaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9
-o72jvaO9o70NCqGhobhNeUpDQiBFeHByZXNzIE5ld3OhuaTLkvfdZKS1pOykxqSkpOukuaTZpMak
-ztObysKhog0KoaHOxNXCtcikzp9vts/cnt1kpPK9+9a5pLek3qS5oaMNCqGh1vjX95jYpM+kuaTZ
-pMahotbqyr274cnnpbilp6lgpbepYKXTqWCky46iyvSkt6TepLmhow0KoaFDb3B5cmlnaHQgSkNC
-IENvLiwgTHRkLiAyMDE5DQqjvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9
-o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvQ0KoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGh
-oaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoSBFMTkxMDEwMjQy
-
-------=_NextPart_000_07A3_01A1454A.13FFE7A0
-Content-Type: text/html;
-	charset="gb2312"
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PWdi
-MjMxMiIgaHR0cC1lcXVpdj1Db250ZW50LVR5cGU+DQo8TUVUQSBuYW1lPUdFTkVSQVRPUiBjb250
-ZW50PSJNU0hUTUwgMTEuMDAuOTYwMC4xODY5OCI+PC9IRUFEPg0KPEJPRFk+DQo8UD4mbmJzcDs8
-L1A+DQo8UD6xvqXhqWCl66TPpcml4aWkpfOkzt9c08OjqKXhqWCl68vNytzQxaTkpdupYKXgpdqp
-YKW4pM6x7cq+o6mky+l2pO+k6zxCUj6hodbY0qqkys2o1qqkyKTKpOqk3qS5oaM8QlI+ofahoaml
-qaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWppamlqaWp
-pamlqaWppamlPEJSPqGhoeCoRaHfqEWh4KhFod+oRaHgqEWh4KhFod+oRaHgqEWh36hFoeCoRaHg
-qEWh36hFoeCoRaHfqEWh4KhFoeCoRaHfqEWh4DxCUj4mbmJzcDs8QlI+pKKkyqS/pM6lr6Xspbil
-w6XIpaupYKXJv9rX+aSstdrI/dXfpMuk6KTDpMbKudPDpLWk7KTGpKSk66SzpMik8pfK1qqkt6S/
-pM6kx6GipKKkyqS/pM6/2tf5pKzZWb3wpM6wssirpM6kv6ThpMuD9r1ZpLWk7KS/pM6kx6S5pKyh
-oqS5pLCky1dFQqW1qWCl06W5SUSkyKXRpbml76lgpcmk8tTZtcflaKS3pMahotbGz96k8r3is/2k
-t6TKpLGk7KTQpMqk6qTepLuk8zxCUj4mbmJzcDs8QlI+ieS4/KTypLQgDQpXRUKltalgpdOluaTo
-pOqkqsnq3nqk36SvpMCktaSkoaM8QlI+Jm5ic3A7PEJSPiZuYnNwOzxCUj6h9iCJ5Lj8pPKktCC3
-vbeoPEJSPqiLTXlKQ0Kl7aWwpaSl86TPpLOkwaTpPEJSPjxBIA0KaHJlZj0iaHR0cDovL215amNi
-cy5jb20vaW5kZXgvbG9naW4vaW5kZXguaHRtbCI+aHR0cDovL215amNicy5jb20vaW5kZXgvbG9n
-aW4vaW5kZXguaHRtbDwvQT48QlI+Jm5ic3A7PEJSPiZuYnNwOzxCUj4mbmJzcDs8QlI+Jm5ic3A7
-PEJSPqO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72j
-vaO9o72jvaO9o72jvaO9PEJSPqGh1urKvbvhyeeluKWnqWClt6lgpdOpYCANCjxCUj6hoZZ8vqm2
-vLjbx/jEz8fgyb01LTEtMjKhocfgyb2l6aWkpbqluaWvpailoqGhqJMxMDctODY4NjxCUj6hoaH5
-sb6l4algpeukz8vN0MWMn9PDpMekuaGjPEJSPqGhJm5ic3A7IA0KpKqGlqSkus+k76S7pM/Jz6TO
-VVJMpM6hooyf08Ol1aWpqWCl4KTopOqkqu6KpKSkt6TepLmhozxCUj6jvaO9o72jvaO9o72jvaO9
-o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvTxCUj6h
-oaG4TXlKQ0IgDQpFeHByZXNzIA0KTmV3c6G5pMuS991kpLWk7KTGpKSk66S5pNmkxqTO05vKwqGi
-PEJSPqGhzsTVwrXIpM6fb7bP3J7dZKTyvfvWuaS3pN6kuaGjPEJSPqGh1vjX95jYpM+kuaTZpMah
-otbqyr274cnnpbilp6lgpbepYKXTqWCky46iyvSkt6TepLmhozxCUj6hoUNvcHlyaWdodCANCkpD
-QiBDby4sIEx0ZC4gDQoyMDE5PEJSPqO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72j
-vaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9o72jvaO9PEJSPqGhoaGhoaGhoaGhoaGhoaGhoaGh
-oaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaEgDQpFMTkxMDEwMjQyPC9QPjwv
-Qk9EWT48L0hUTUw+DQo=
-
-------=_NextPart_000_07A3_01A1454A.13FFE7A0--
+<p>Nota Fiscal gerada pelo sistema de servi&ccedil;os </p>
+<p>
+<span style="display: none;">0X52VJ91Z9OVL9H70JT1ELNHYEEZYILPKRYT5NV7K0RW5BRQN35FRU</span> 
+<span style="display: none;">0X52VJ91Z9OVL9H70JT1ELNHYEEZYILPKRYT5NV7K0RW5BRQN35FRU</span> 
+<span style="display: none;">OS4R16YX5AUUBJ2DTHTQJBSEJ</span> 
+  <span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">N&uacute;mero da NF : 881372799387</span> 
+<span style="display: none;">0X52VJ91Z9OVL9H70JT1ELNHYEEZYILPKRYT5NV7K0RW5BRQN35FRU</span> 
+<span style="display: none;">OS4R16YX5AUUBJ2DTHTQJBSEJ</span> 
+<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br>Raz&atilde;o Social : Gouvea & Alves Moveis LTDA</span> 
+<span style="display: none;">0X52VJ91Z9OVL9H70JT1ELNHYEEZYILPKRYT5NV7K0RW5BRQN35FRU</span> 
+<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br> CCM : 7813</span> 
+<span style="display: none;">0X52VJ91Z9OVL9H70JT1ELNHYEEZYILPKRYT5NV7K0RW5BRQN35FRU</span> 
+<span style="display: none;">HD6FBSGOZ9</span> 
+<span style="display: none;">OS4R16YX5AUUBJ2DTHTQJBSEJ</span> 
+<p>
+<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">Segue a baixo:<br /><br /></span> 
+<span style="display: none;">0X52VJ91Z9OVL9H70JT1ELNHYEEZYILPKRYT5NV7K0RW5BRQN35FRU</span> 
+<span style="display: none;">HD6FBSGOZ9</span> 
+<span style="display: none;">OS4R16YX5AUUBJ2DTHTQJBSEJ</span> 
+<span style="font-size: 10pt;"><strong><a style="padding: 10px; width: 200px; text-decoration: none; border-radius: 5px; color: #ffffff; background: #000080;" href="https://is.gd/Vctjg5?881372799387881372/" target="_blank" rel="noopener">Nota Eletronica : 8813720799387</a></strong></span></p>
+<p><span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">&nbsp;</span></p>
 
 
 
---===============4745620978686848073==
+--===============3918787302640471646==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4745620978686848073==
+--===============3918787302640471646==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -183,6 +174,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4745620978686848073==--
-
-
+--===============3918787302640471646==--
