@@ -2,76 +2,87 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 562DE1933EA
-	for <lists+osst-users@lfdr.de>; Wed, 25 Mar 2020 23:56:31 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
-	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jHEwo-0001Fk-5u
-	for lists+osst-users@lfdr.de; Wed, 25 Mar 2020 22:56:30 +0000
-Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <infos@avantages-gagnants.space>) id 1jHEwn-0001Fe-Ck
- for osst-users@lists.sourceforge.net; Wed, 25 Mar 2020 22:56:29 +0000
+	by mail.lfdr.de (Postfix) with ESMTPS id 0648C194587
+	for <lists+osst-users@lfdr.de>; Thu, 26 Mar 2020 18:36:45 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=m+nFaXe+D2onqsd8ttbJ/Y6OrXWHoQMjVoUvp6kh+mM=; b=av32h0giUgBEeAbZr0VRbCK/QI
- 5Gx17glAOpmTS9MAPT0TspsMY0orOqdOiJt61hOuV3ZlXN0q82oGuM4OjmjnWtV8HW7Pa1rD10eaw
- iQa7bBRcfYJZXg9YClpVJC23fBaqBsks8EKtZh4FwbZIz1Iuq50KdBNORskKl1JquMKU=;
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Cc:Reply-To:From:
+	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
+	Subject:MIME-Version:Date:Message-ID:To:Sender:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=18SeesTpfjmPuSbFHXWjs1pALjDfq4mRvi81UDbroVc=; b=JL8hP3LBpoNiiWrpFrOS+C1e4k
+	tgRlEzNkkqi5Xxk7UAQgjPr7VNc/kGN3ZRWt3cdsaT+ulkcDuwPcqctZmDR8IKVuk6u0g++obQYfu
+	OcXmwaStu9U4m1r/xAuEOC1CdgW/jPQ5xKEncBEigLCv1zIeT3dicTROx+Ve2ziaFkkg=;
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
+	id 1jHWQt-0005Tm-Qb
+	for lists+osst-users@lfdr.de; Thu, 26 Mar 2020 17:36:43 +0000
+Received: from [172.30.20.202] (helo=mx.sourceforge.net)
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
+ (envelope-from <bounce@ewsrv1.com.br>) id 1jHWQs-0005TN-1g
+ for osst-users@lists.sourceforge.net; Thu, 26 Mar 2020 17:36:42 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:
+ List-Unsubscribe:MIME-Version:Reply-To:From:Date:Message-ID:Subject:To:Sender
+ :Cc:Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=bqG24+a3YU5+7A4xpgm2k1XXlOmNMO3hkQ6F7u75RFE=; b=ObLMVcr7AWx2Ss8ArCLDRso7Jl
+ Hss6MeGudDoQ9YJMxvhkUJodNPXlE5DvZ9Xu+gWnNv2A/pvXOkqEAGLge2zO1bpntd7jKwb1zVUr6
+ ul3eU6Qfqo3qjMoGq8vkymVmZkvwQ9hHJRKbl+oq6cuSvUAx7dnYQEKexAA0uWijN5AY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
- From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=m+nFaXe+D2onqsd8ttbJ/Y6OrXWHoQMjVoUvp6kh+mM=; b=a
- GOE+wy57rDXnpBIUSP2z6T+Gt/QFlynqpRTIPzxZlHQfmr3U062rYJ3z4k0RcU9MLZi8r3SlLuVUy
- 90fZ8+CTu+L2Qu1kVakC0zap5TzHikOevbzFZ4LEu2e/ijhSlNBuJEgiEpV5+Z4Au1yE2htzsEpDi
- mu6fAGiFeX0vHctk=;
-Received: from smtp6-g21.free.fr ([212.27.42.6])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1jHEwh-003tRp-QM
- for osst-users@lists.sourceforge.net; Wed, 25 Mar 2020 22:56:29 +0000
-Received: from gantiyesse (unknown [37.173.85.213])
- by smtp6-g21.free.fr (Postfix) with ESMTP id 499EB780326
- for <osst-users@lists.sourceforge.net>; Wed, 25 Mar 2020 23:56:17 +0100 (CET)
-Date: Wed, 25 Mar 2020 22:56:17 +0000
+ h=Content-Transfer-Encoding:Content-Type:List-Unsubscribe:MIME-Version:
+ Reply-To:From:Date:Message-ID:Subject:To:Sender:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=bqG24+a3YU5+7A4xpgm2k1XXlOmNMO3hkQ6F7u75RFE=; b=VwyRuFSusNHdbm2yO0hrhO/95j
+ K94IljV1piJf4VG4jiaInz/Un+norTE6Kzu/3yOLzZsIVV0aHIyknhLXLEzuK8mGBhORslOqzyol3
+ vspQkR8jY00fpGyUd/Q2+7njquzLQ05OFpzhOt8gQDwYPxHXDLMAFBUPmnMvCUYVGOMA=;
+Received: from ewsrv1.com.br ([46.228.205.178] helo=news0.ewsrv1.com.br)
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1jHWQg-008Mez-CV
+ for osst-users@lists.sourceforge.net; Thu, 26 Mar 2020 17:36:41 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=ewsrv1.com.br;
+ h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
+ i=envio@ewsrv1.com.br; bh=kP8r8ftCtw/WCJO9T2CyGFxwWDE=;
+ b=pdq/EfhhcEMbnQnyUHidk4T1YYxmQvUebubBKxepm3tsYLhpgA4iNuDOXs+nx4Fe+68P9eUwkmb7
+ t+KvwtgYYo12xL+oX4WweIlXxK9nYUn2ktcrEHCfCf3FQojfT9HUOyiqNgwQHUT6JEmaMnglBeWY
+ d+3RXC02YpVUi2EQW/c=
 To: osst-users@lists.sourceforge.net
-From: ONE MONTHLY FEE <infos@avantages-gagnants.space>
-Message-ID: 1585176977-d44a378a4a8ddf4c4b5d20362fed1a6a@avantages-gagnants.space
-X-Priority: 3
-X-Mailer: startfire
+Message-ID: <001451e112e68c8e625051cea82262e1@ewsrv1.com.br>
+Date: Thu, 26 Mar 2020 14:36:17 -0300
 MIME-Version: 1.0
-X-Spam-Score: 7.6 (+++++++)
+X-Mailer-LID: 8,13
+X-Mailer-RecptId: 4189584
+X-Mailer-SID: 17
+X-Mailer-Sent-By: 2
+X-Spam-Score: 6.8 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+ blocklist [URIs: ewsrv1.com.br]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: avantages-gagnants.space]
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [212.27.42.6 listed in list.dnswl.org]
- 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
- blocklist [URIs: avantages-gagnants.space]
- 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
- [212.27.42.6 listed in wl.mailspike.net]
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ for more information. [URIs: ewsrv1.com.br]
+ 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [46.228.205.178 listed in psbl.surriel.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
- 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100] 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
- 1.2 INVALID_MSGID          Message-Id is not valid, according to RFC 2822
- 0.0 T_REMOTE_IMAGE         Message contains an external image
- -0.0 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1jHEwh-003tRp-QM
-Subject: [Osst-users] Unlimited Accountancy Services
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 0.3 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1jHWQg-008Mez-CV
+Subject: [Osst-users] Gustavo Salvador
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -83,250 +94,183 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============1334573987972635605=="
+From: Gustavo Salvador  via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: vendas@cadeiraparaescritorio.ind.br
+Cc: Gustavo Salvador  <envio@ewsrv1.com.br>
+Content-Type: multipart/mixed; boundary="===============7814792724100115641=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============1334573987972635605==
-Content-Type: multipart/alternative;
-	boundary="b1_0f70a05abe52c338cf38bffd03ba3b45"
+--===============7814792724100115641==
+Content-Type: multipart/alternative; charset="UTF-8"; boundary="b1_0e88df89adc1ee8f4d30c58a3b5986c6"
 Content-Transfer-Encoding: 8bit
 
---b1_0f70a05abe52c338cf38bffd03ba3b45
-Content-Type: text/plain; charset=us-ascii
+--b1_0e88df89adc1ee8f4d30c58a3b5986c6
+Content-Type: text/plain; format=flowed; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+Seu cliente de e-mail não pode ler este e-mail.
+Para visualizá-lo on-line, por favor, clique aqui:
+http://ewsrv1.com.br/mkt/display.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&S=17&L=8&N=1
 
 
-Complete Accountant
+Para parar de receber nossos
+Emails:http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17
+
+--b1_0e88df89adc1ee8f4d30c58a3b5986c6
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<html>
+<head>
+</head>
+<body>
+<strong><font face="andale mono, times">Bom dia.<br /><strong><br />Meu
+nome &eacute; Gustavo Salvador, gostaria de
+te&nbsp;</strong></font><strong><font face="andale mono, times">fornecer<br
+/>m&oacute;veis para escrit&oacute;rio.</font><br /></strong></strong><br
+/><span>Segue abaixo uma Promo&ccedil;&atilde;o&nbsp;e tamb&eacute;m meus
+dados.</span><br /><br /><span>&nbsp; Gustavo Salvador</span><br /><font
+size="1">&nbsp; &nbsp; &nbsp; &nbsp;Gerente Comercial</font><br /><br
+/><span>&nbsp;&nbsp;</span><img
+src="https://www.i9flex.com.br/arquivo/index/399932/fone.jpg" width="20"
+height="20" /><span>11 2238 6677</span><br /><span>&nbsp;&nbsp;</span><img
+src="https://www.i9flex.com.br/arquivo/index/399928/whattsapp.jpg"
+width="20" height="20" /><span>11 95584-9865 whatsapp</span><br /><br
+/><span>&nbsp;</span><img
+src="https://www.i9flex.com.br/arquivo/index/399929/email(2).jpg"
+width="20" height="15" /><span>&nbsp;&nbsp;</span><a
+href="mailto:vendas@cadeiraparaescritorio.ind.br">vendas@cadeiraparaescritorio.ind.br</a><br
+/><span>acesse &nbsp;</span><a
+href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H">www.cadeiraparaescritorio.ind.br&nbsp;&nbsp;</a><br
+/><br /><span><font size="2">Venha nos visitar na Av. Engenheiro Caetano
+&Aacute;lvares, 3860 - Imirim.<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp;<a title="Compre Cadeiras Direto da F&aacute;brica "
+href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
+height="372" width="700"
+src="https://www.i9flex.com.br/arquivo/index/413795/promo_1(2).jpg/promo_1(2).jpg"
+/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
+title="Cadeiras Direto da F&aacute;brica vem pra i9flex fa&ccedil;a parte
+dessa time i9 voc&ecirc; tambem"
+href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
+height="281" width="700"
+src="https://www.i9flex.com.br/arquivo/index/413796/promo_2(2).jpg/promo_2(2).jpg"
+/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
+title="Cadeiras ergon&ocirc;micas mais produtividade e menos desgaste com
+laudo ergon&ocirc;mico gr&aacute;tis "
+href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
+height="269" width="700"
+src="https://www.i9flex.com.br/arquivo/index/413797/promo_3(2).jpg/promo_3(2).jpg"
+/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
+title="linha completa para seu escrit&oacute;rio Direto da F&aacute;brica "
+href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
+height="281" width="700"
+src="https://www.i9flex.com.br/arquivo/index/413798/promo_4(2).jpg/promo_4(2).jpg"
+/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
+title="Roupeiros com pintura ep&oacute;xi qualidade e pre&ccedil;o &eacute;
+na i9flex i9 voc&ecirc; tamb&eacute;m "
+href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
+height="281" width="700"
+src="https://www.i9flex.com.br/arquivo/index/413799/promo_5(2).jpg/promo_5(2).jpg"
+/></a><br /><br /></font></span><span>&nbsp; &nbsp;</span><a
+title="F&aacute;brica De Baias para telemarketing ve pra i9flex a loja que
+mais cresce no brasil "
+href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
+src="https://www.i9flex.com.br/arquivo/index/400816/baia.jpg" width="783"
+height="285" /></a><span>&nbsp;&nbsp;</span><br /><span>&nbsp; &nbsp;
+&nbsp; &nbsp;</span><img height="287" width="756"
+src="https://www.i9flex.com.br/arquivo/index/413800/promo_6(2).jpg/promo_6(2).jpg"
+/><br /><span>&nbsp;&nbsp;</span><br /><span>&nbsp; &nbsp; &nbsp;
+&nbsp;</span><br /><a
+href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H" title="A
+maior ind&uacute;stria de cadeiras para escrit&oacute;rio do Brasil "><br
+/></a><span>Frete Gratis para compra acima de R$ 300,00 Para S&atilde;o
+Paulo Capital *&nbsp;</span><br /><span>Demais Regi&otilde;es sob Consulta.
+Cobrimos or&ccedil;amentos,</span><br /><br /><font size="1">desde que seja
+o&nbsp;mesmo material ***PROMO&Ccedil;AO V&Aacute;LIDA AT&Eacute;
+30/09/2019 OU AT&Eacute; O FINAL DO ESTOQUE, O QUE OCORRER PRIMEIRO<br
+/>***Condi&ccedil;&atilde;o de pagamento em 12X atrav&eacute;s do pague
+seguro uol.</font><span></span>
+<p><font face="andale mono, times" size="1"><br />&nbsp; &nbsp; &nbsp;
+Atenciosamente.</font><br /><span><font size="2">&nbsp; Gustavo Salvador<br
+/><font size="1">&nbsp; &nbsp; &nbsp; &nbsp;Gerente Comercial</font><br
+/><br />&nbsp;&nbsp;<img height="20" width="20"
+src="https://www.i9flex.com.br/arquivo/index/399932/fone.jpg" />11 2238
+6677<br />&nbsp;&nbsp;<img height="20" width="20"
+src="https://www.i9flex.com.br/arquivo/index/399928/whattsapp.jpg" />11
+95584-9865<br /><br />&nbsp;<img height="15" width="20"
+src="https://www.i9flex.com.br/arquivo/index/399929/email(2).jpg"
+/>&nbsp;<a
+href="mailto:vendas@cadeiraparaescritorio.ind.br">vendas@cadeiraparaescritorio.ind.br<br
+/><br /></a></font></span><img
+src="https://www.i9flex.com.br/arquivo/index/399933/site(2).jpg" width="20"
+height="19" /><span>&nbsp;&nbsp;</span><span>&nbsp;</span><a
+href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H">www.cadeiraparaescritorio.ind.br&nbsp;&nbsp;</a></p>
+<p><span><font size="2">&nbsp;<img
+src="https://www.i9flex.com.br/arquivo/index/399927/alfinete.jpg"
+width="20" height="24" />&nbsp; Av. Engenheiro Caetano &Aacute;lvares, 3860
+- Imirim.</font></span></p>
+<div><br /><br /></div>
+<br/><br><br><center>
+
+<div align="justify" style="font-family:'arial'">
 
 
-UNLIMITED ACCOUNTANCY
-SERVICES
-ONE MONTHLY FEE
+<table align="center">
 
-QUOTE ONLINE &gt;&gt;
-We quote online based on company turnover and transactions
-Quote Now
-Quote Online To See How Much
-You Should Be Paying
-Unlimited Accountancy Services Include:
-Unlimited Telephone Support
-Unlimited Email Support
-(3 Hour Response)
-Dedicated Accountant
-Monthly Bookkeeping/Reconciliation
-Quarterly VAT Returns
-Company Annual Accounts
-Company Tax Return
-Self-Assessment Tax Returns
-Submission of Confirmation Statement
- 
-Xero Software
-Xero Training
-Company Incorporation
-(if required)
-VAT Registration (if required)
-PAYE Registration (if required)
-CIS Registration (if required)
-Financial Reference (e.g. Mortgage)
-Access to Business Funding
-Monthly Management Information
+<tr width="70px">
+
+<div align="justify" style="font-family:'arial'"><p style="font-size:
+10px"><span><br
+/>___________________________________________________<br
+/><br /><span><br/>Esta mensagem é enviada de acordo com a nova
+legislação sobre correio eletrônico,
+seção 301, parágrafo (a) (2) (c) decreto S. 1618,
+título terceiro, este e-mail não poderá ser
+considerado SPAM, quando inclua uma forma de ser removido.<br /><br/><a
+href="http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17">http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17</a><br>
+
+___________________________________________________<br/><br/>
 
 
-Tired of unexpected accountancy fees?
-
-Get unlimited services and Support for
-
-One Monthly fee.
-
-
-Never any unexpected fees*
-
-QUOTE ONLINE &gt;&gt;
+This message is in full compliance with U.S. Federal requirements for
+commercial email under bill S.1618 Title lll, Section 301, Paragraph
+(a)(2)(C) passed by the 105th U.S. Congress and is not considered SPAM
+since it includes a remove mechanism, remetent, CC.<br/>
+<br/>
+<a
+href="http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17">http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17</a></p></div></div>
 
 
+<meta name="description" content="Email Marketing Ilimitado é uma
+ferramenta para envio de e-mails marketing segmentado ou massivo, seja as
+newsletters, boletins e outras peças com baixo custo e alto controle sobre
+o retorno de suas ações." />
+<meta name="keywords" content="email marketing profissional, email
+marketing, seo marketing, mail marketer, email, marketing, profissional,
+seo, pesquisas, servidores smtp, server smtp, hospedagem">
+<link rel="prerender" href="https://inovacaoweb.com.br">
+</tr><tr>
 
+<tr width="170px"></p></p></p>
+</table>
+</center><img
+src="http://ewsrv1.com.br/mkt/open.php?M=4189584&L=8&N=17&F=H&image=.jpg"
+height="1" width="10"></body>
+</html>
 
-Follow this link to stop receiving messages about ACCOUNTANCY SERVICES.
-You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
-You are receiving this message on your email address because you are in our list of managers and professionals.
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL
-
-
-
---b1_0f70a05abe52c338cf38bffd03ba3b45
-Content-Type: text/html; charset=us-ascii
-
-<!DOCTYPE html>
-			                   <html>
-				               	<head>
-					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">			
-				                </head>
-				                <body>
-					            	<html>
-<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0">    
-    <table style="padding:0px;border-collapse:collapse;border-spacing:5px;max-width:600px;width:100%;  " border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
-      <tbody>
-        <tr>
-          <td align="center" valign="top">
-            <table style="padding:0px;border-collapse:collapse;border-spacing:5px;" border="0" cellspacing="0" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td align="center" style="padding:0px;margin:0px;"><a href="http://avantages-gagnants.space/accountb-uk/services/"><img src="http://avantages-gagnants.space/accountb-uk/logo.jpg" alt="Complete Accountant" style="display: block;max-width:520px;width:100%;"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="padding:0px;margin:0px;">
-                    <br>
-                    <br>
-                    <h1 style="color:#043e59;font-size:42px;margin:0;padding:0;font-family:&#39;Trebuchet MS&#39;;">UNLIMITED ACCOUNTANCY<br>SERVICES</h1>
-                    <h2 style="color:#ab2861;font-size:36px;border-top:1px solid #ab2861;border-bottom:1px solid #ab2861;display:inline-block;margin:20px;padding:10px;font-family:&#39;Trebuchet MS&#39;;">ONE MONTHLY FEE</h2>
-                    
-                    
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="padding:0px;margin:0px;"><a href="http://avantages-gagnants.space/accountb-uk/services/"><img src="http://avantages-gagnants.space/accountb-uk/visu.jpg" alt="" style="display: block;max-width:600px;width:100%;  "></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="background:#f8f8f8;padding:0px;margin:0px;">
-                    <a href="http://avantages-gagnants.space/accountb-uk/services/"><img src="http://avantages-gagnants.space/accountb-uk/cta1.jpg" alt="QUOTE ONLINE &gt;&gt;" width="360" height="67" style="display: block;max-width: 360px;width:100%; "></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="background:#f8f8f8;padding:0px;margin:0px;font-family:&#39;Trebuchet MS&#39;;">We quote online based on company turnover and transactions
-           <h4>Quote Now</h4>
-                    <h2 style="color:#13d4ab;">Quote Online To See How Much<br> You Should Be Paying </h2>
-                    
-                    <h2 style="color:#95104a;">Unlimited Accountancy Services Include:</h2>
-                    
-                  </td>
-                </tr>
-          
-          <tr>
-    <td class="two-column" style="text-align:center;font-size:0; width: 100%; max-width: 560px;background:#f8f8f8" align="center"><!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;" border="0"  cellpadding="0" cellspacing="0" >
-                        <tr>
-                        <td width="280" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table class="column" style="text-align:left;max-width:280px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;background:#f8f8f8;font-family:sans-serif; ">
-       <tbody><tr>  <td style="font-size:15px;font-family:&#39;raleway&#39;; ">
-                          <ul>
-                            <li style="padding-bottom:10px;">Unlimited Telephone Support</li>
-                            <li style="padding-bottom:10px;">Unlimited Email Support<br>
- (3 Hour Response)</li>
-                            <li style="padding-bottom:10px;">Dedicated Accountant</li>
-                            <li style="padding-bottom:10px;">Monthly Bookkeeping/Reconciliation</li>
-                            <li style="padding-bottom:10px;">Quarterly VAT Returns</li>
-                            <li style="padding-bottom:10px;">Company Annual Accounts</li>
-                            <li style="padding-bottom:10px;">Company Tax Return</li>
-                            <li style="padding-bottom:10px;">Self-Assessment Tax Returns</li>
-                            <li style="padding-bottom:10px;">Submission of Confirmation Statement</li>
-                          </ul>
-                        </td></tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="280" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-      <![endif]-->
-      
-      <table class="column" style="text-align:left;max-width:280px;display:inline-block;vertical-align:top;margin-top:0;margin-bottom:0;background:#f8f8f8;font-family:sans-serif">
-       <tbody><tr> <td style="font-size:15px;font-family:&#39;Raleway&#39;; ">
-                          <ul>
-                            <li style="padding-bottom:10px;">Xero Software </li>
-                            <li style="padding-bottom:10px;">Xero Training</li>
-                            <li style="padding-bottom:10px;">Company Incorporation<br>
-(if required)</li>
-                            <li style="padding-bottom:10px;">VAT Registration (if required)</li>
-                            <li style="padding-bottom:10px;">PAYE Registration (if required)</li>
-                            <li style="padding-bottom:10px;">CIS Registration (if required)</li>
-                            <li style="padding-bottom:10px;">Financial Reference (e.g. Mortgage)</li>
-                            <li style="padding-bottom:10px;">Access to Business Funding</li>
-                            <li style="padding-bottom:10px;">Monthly Management Information</li>
-                          </ul>
-                        </td></tr>
-      </tbody></table>
-      
-      <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-      <![endif]--></td>
-  </tr>
-          
-                
-              <tr>
-<td background="http://avantages-gagnants.space/accountb-uk/background.jpg" bgcolor="#00364B" width="600" height="450" valign="middle" style="background-repeat: no-repeat;" align="center">
-<!--[if gte mso 9]>
-<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:450px;">
-  <v:fill type="tile" src="http://avantages-gagnants.space/accountb-uk/background.jpg" color="#00364B" />
- <v:textbox inset="0,0,0,0">
-<![endif]-->
-<table align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;max-width:600px; width:100%" border="0" cellpadding="0" cellspacing="0">
-<tbody><tr>
-                  <td style="padding:0px;margin:0px;" align="center">
-                    <br>
-                    <br>
-                    <h2 style="color:#ffffff;font-size:26px;font-family:&#39;Trebuchet MS&#39;;font-weight:normal;margin:0;">Tired of unexpected accountancy fees?</h2>
-                    <br>
-                    <h2 style="color:#ffffff;font-size:26px;font-family:Verdana;font-weight:normal;margin:0;">Get unlimited services and Support for </h2>
-                    <br>
-                    <h2 style="color:#27e0b8;font-size:26px;font-family:Verdana;font-weight:normal;margin:0;">One Monthly fee.</h2>
-                    <br><img src="http://avantages-gagnants.space/accountb-uk/partner.jpg" alt="" width="250" height="83" style="display: block;">
-                    <br>
-                    <h2 style="color:#f7c70a;font-size:26px;font-family:Verdana;font-weight:normal;margin:0;">Never any unexpected fees*</h2>
-                    <br><a href="http://avantages-gagnants.space/accountb-uk/services/"><img src="http://avantages-gagnants.space/accountb-uk/cta2.jpg" alt="QUOTE ONLINE &gt;&gt;" width="260" height="69" style="display: block"></a>
-                    <br>
-                    <br>
-                    <br>
-                  </td>
-                </tr>
-   </tbody></table>
-   <!--[if gte mso 9]>
-  </v:textbox>
-</v:rect>
-<![endif]-->
-</td>
-</tr>  
-                
-                <tr>
-                  <td align="center" style="background:#f8f8f8;">
-                  
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr><td colspan="2" align="center" style="background:#f8f8f8;">
-<br>
-<br><span style="font-size:10px;"><a href="http://avantages-gagnants.space/accountb-uk/duste/?email=VCzsfozJTQP1YDg3pgWUjgO+gykHywNiTGsO5WWES1wWymcIjjrUwNH/I5su+gJSoARYWaZ1D2AGIGHhMLT3zmj5Ep8hC0eymdo/PdwkGeqYFY75r5P4vpbWT06+6MsoezZXG3YoPY0UqhS1U0+dMit9fL3SAGmSmW7LZhNIekU=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving messages about <strong>ACCOUNTANCY
-SERVICES</strong>.<br>
-                    You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="http://avantages-gagnants.space/accountb-uk/dimi/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
-You are receiving this message on your email address because you are in our list of managers and professionals.<br>
-ASCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL<br>
-</span>
-<br>
-</td>
-      </tbody>
-    </table>
-</body></html>
-				                </body>
-			                   </html>
+--b1_0e88df89adc1ee8f4d30c58a3b5986c6--
 
 
 
---b1_0f70a05abe52c338cf38bffd03ba3b45--
 
-
-
---===============1334573987972635605==
+--===============7814792724100115641==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1334573987972635605==
+--===============7814792724100115641==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -337,6 +281,7 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1334573987972635605==--
+--===============7814792724100115641==--
+
 
 
