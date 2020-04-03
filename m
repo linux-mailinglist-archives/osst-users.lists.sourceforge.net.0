@@ -2,87 +2,83 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0648C194587
-	for <lists+osst-users@lfdr.de>; Thu, 26 Mar 2020 18:36:45 +0100 (CET)
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Cc:Reply-To:From:
-	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
-	Subject:MIME-Version:Date:Message-ID:To:Sender:Content-Transfer-Encoding:
-	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=18SeesTpfjmPuSbFHXWjs1pALjDfq4mRvi81UDbroVc=; b=JL8hP3LBpoNiiWrpFrOS+C1e4k
-	tgRlEzNkkqi5Xxk7UAQgjPr7VNc/kGN3ZRWt3cdsaT+ulkcDuwPcqctZmDR8IKVuk6u0g++obQYfu
-	OcXmwaStu9U4m1r/xAuEOC1CdgW/jPQ5xKEncBEigLCv1zIeT3dicTROx+Ve2ziaFkkg=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 1D59D19D009
+	for <lists+osst-users@lfdr.de>; Fri,  3 Apr 2020 08:11:23 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jHWQt-0005Tm-Qb
-	for lists+osst-users@lfdr.de; Thu, 26 Mar 2020 17:36:43 +0000
+	id 1jKFY1-0000Hj-Iz
+	for lists+osst-users@lfdr.de; Fri, 03 Apr 2020 06:11:21 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <bounce@ewsrv1.com.br>) id 1jHWQs-0005TN-1g
- for osst-users@lists.sourceforge.net; Thu, 26 Mar 2020 17:36:42 +0000
+ (envelope-from <carlitos@duboni.com.br>) id 1jKFXz-0000HS-5z
+ for osst-users@lists.sourceforge.net; Fri, 03 Apr 2020 06:11:19 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:
- List-Unsubscribe:MIME-Version:Reply-To:From:Date:Message-ID:Subject:To:Sender
- :Cc:Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=bqG24+a3YU5+7A4xpgm2k1XXlOmNMO3hkQ6F7u75RFE=; b=ObLMVcr7AWx2Ss8ArCLDRso7Jl
- Hss6MeGudDoQ9YJMxvhkUJodNPXlE5DvZ9Xu+gWnNv2A/pvXOkqEAGLge2zO1bpntd7jKwb1zVUr6
- ul3eU6Qfqo3qjMoGq8vkymVmZkvwQ9hHJRKbl+oq6cuSvUAx7dnYQEKexAA0uWijN5AY=;
+ d=sourceforge.net; s=x; h=Content-Type:From:MIME-Version:To:Subject:Date:
+ Sender:Reply-To:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=XRWCE2n4EB2qvdqbbUsrMu01MUKZ9cAB8/Qr8eC2DpU=; b=TDustHf9FvqfE4nfX367R4Z7Lk
+ MMvnbvZn78hyNK3UabEaC/wr4H16+gjZDWP4zlZq3lfh4IFFS1HaWE122WhSyG5Cvyw07VE78Ly4I
+ p8dOIkmTfxDgL1dWSE/ZUt2Uhd4OVMr98cKSkZaANaMAdMB//Wtzs9mejOzCOxqxUM8U=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:List-Unsubscribe:MIME-Version:
- Reply-To:From:Date:Message-ID:Subject:To:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=bqG24+a3YU5+7A4xpgm2k1XXlOmNMO3hkQ6F7u75RFE=; b=VwyRuFSusNHdbm2yO0hrhO/95j
- K94IljV1piJf4VG4jiaInz/Un+norTE6Kzu/3yOLzZsIVV0aHIyknhLXLEzuK8mGBhORslOqzyol3
- vspQkR8jY00fpGyUd/Q2+7njquzLQ05OFpzhOt8gQDwYPxHXDLMAFBUPmnMvCUYVGOMA=;
-Received: from ewsrv1.com.br ([46.228.205.178] helo=news0.ewsrv1.com.br)
- by sfi-mx-4.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1jHWQg-008Mez-CV
- for osst-users@lists.sourceforge.net; Thu, 26 Mar 2020 17:36:41 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=ewsrv1.com.br;
- h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- i=envio@ewsrv1.com.br; bh=kP8r8ftCtw/WCJO9T2CyGFxwWDE=;
- b=pdq/EfhhcEMbnQnyUHidk4T1YYxmQvUebubBKxepm3tsYLhpgA4iNuDOXs+nx4Fe+68P9eUwkmb7
- t+KvwtgYYo12xL+oX4WweIlXxK9nYUn2ktcrEHCfCf3FQojfT9HUOyiqNgwQHUT6JEmaMnglBeWY
- d+3RXC02YpVUi2EQW/c=
+ h=Content-Type:From:MIME-Version:To:Subject:Date:Sender:Reply-To:Message-ID
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=XRWCE2n4EB2qvdqbbUsrMu01MUKZ9cAB8/Qr8eC2DpU=; b=W
+ xVNHbz0fDZVW4zX1xX17zNwl/9peTnDlDQZ3cVEfuBgYpn2IDCfYDPJfl+rNYsCqY7OzCsThXJWLM
+ CtF4sL0xG2rKoZbEDcgeM1+M9T/FzSiPuYPIccQKDjSSOgsjagrGtEJ1cCGmzX1TIZErHQsbdS7hA
+ /4h+mPl5l9vfKrHM=;
+Received: from hm3563-215.email.locaweb.com.br ([186.202.21.215]
+ helo=shared-hm3563.email.locaweb.com.br)
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1jKFXq-0020NE-Q7
+ for osst-users@lists.sourceforge.net; Fri, 03 Apr 2020 06:11:19 +0000
+Received: from hm3563.email.locaweb.com.br (hm3563.email.locaweb.com.br
+ [186.202.21.180])
+ by shared-hm3563.email.locaweb.com.br (Postfix) with ESMTP id 55D2C7E441B64
+ for <osst-users@lists.sourceforge.net>; Fri,  3 Apr 2020 02:50:24 -0300 (-03)
+x-locaweb-id: Rk5MB8oLHrtMq5mWFKhMl0R7i2JGuH0R2DRqlUWTfyMDUbbioLMKdxJttJIj3S5CU0C2ihyDRpvmvNEfB9FPGDYKA4tVvbr6hLARsQeIZPY2xo1_xNXrJVhgqO2v1XUHBrflZU6NF6xomGvxdh9gchUSIH7vLVQJ4qntsjBLFmsXl-7jYDKecXbS32OgTK37YwC6dJNCu2Fy1IjoYICORw==
+ NjM2MTcyNmM2OTc0NmY3MzQwNjQ3NTYyNmY2ZTY5MmU2MzZmNmQyZTYyNzI=
+Received: from apu0001.locaweb.com.br (apu0001.email.locaweb.com.br
+ [187.45.217.2])
+ by hm3563.email.locaweb.com.br (Postfix) with ESMTP id 4B5B47E43FCA8
+ for <osst-users@lists.sourceforge.net>; Fri,  3 Apr 2020 02:50:04 -0300 (-03)
+Received: from POLLUX11-0001.locaweb-net.locaweb.com.br (unknown
+ [179.188.15.205])
+ by apu0001.locaweb.com.br (Postfix) with SMTP id 593423040261
+ for <osst-users@lists.sourceforge.net>; Fri,  3 Apr 2020 02:50:03 -0300 (BRT)
+Date: Fri, 03 Apr 2020 02:50:03 -0300
 To: osst-users@lists.sourceforge.net
-Message-ID: <001451e112e68c8e625051cea82262e1@ewsrv1.com.br>
-Date: Thu, 26 Mar 2020 14:36:17 -0300
+X-PHP-Originating-Script: 0:envia.php
 MIME-Version: 1.0
-X-Mailer-LID: 8,13
-X-Mailer-RecptId: 4189584
-X-Mailer-SID: 17
-X-Mailer-Sent-By: 2
-X-Spam-Score: 6.8 (++++++)
+From: =?UTF-8?B?TmV0RmxpeA==?= <carlitos@duboni.com.br>
+Content-Type: multipart/mixed; boundary="---=_mimepart_030420205003--"
+X-Spam-Score: 6.9 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
- blocklist [URIs: ewsrv1.com.br]
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: ewsrv1.com.br]
  1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [46.228.205.178 listed in psbl.surriel.com]
+ [186.202.21.180 listed in psbl.surriel.com]
+ 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
+ [186.202.21.215 listed in wl.mailspike.net]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
+ 1.4 FUZZY_CREDIT           BODY: Attempt to obfuscate words in spam
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 0.3 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1jHWQg-008Mez-CV
-Subject: [Osst-users] Gustavo Salvador
+ 2.0 BASE64_LENGTH_79_INF   BODY: base64 encoded email part uses line length
+ greater than 79 characters
+ 0.0 MISSING_MIME_HB_SEP    BODY: Missing blank line between MIME header and
+ body 1.0 MISSING_MID            Missing Message-Id: header
+ 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
+ 0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Headers-End: 1jKFXq-0020NE-Q7
+Subject: [Osst-users]
+ =?UTF-8?B?QXNzaW5hdHVyYSBzdXNwZW5zYSDigJMgYXR1YWxpemUgc3VhIGZvcm1hIGRlIHBhZ2FtZW50byA=?=3269127-13
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -94,183 +90,909 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Gustavo Salvador  via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: vendas@cadeiraparaescritorio.ind.br
-Cc: Gustavo Salvador  <envio@ewsrv1.com.br>
-Content-Type: multipart/mixed; boundary="===============7814792724100115641=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1jKFY1-0000Hj-Iz@sfs-ml-2.v29.lw.sourceforge.com>
 
---===============7814792724100115641==
-Content-Type: multipart/alternative; charset="UTF-8"; boundary="b1_0e88df89adc1ee8f4d30c58a3b5986c6"
-Content-Transfer-Encoding: 8bit
+---=_mimepart_030420205003--
 
---b1_0e88df89adc1ee8f4d30c58a3b5986c6
-Content-Type: text/plain; format=flowed; charset="UTF-8"
-Content-Transfer-Encoding: 8bit
+-----=_mimepart_030420205003--
+Content-Transfer-Encoding: quoted-printable 
+Content-Type: text/html; charset="utf-8"
 
-Seu cliente de e-mail não pode ler este e-mail.
-Para visualizá-lo on-line, por favor, clique aqui:
-http://ewsrv1.com.br/mkt/display.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&S=17&L=8&N=1
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
+ft-com:office:office" style=3D"padding:0;margin:0;background-color:rgb(234,=
+ 234, 234);background-color:rgb(234, 234, 234);margin-top:0;">
+ <head>=20
+  <meta http-equiv=3D"Content-Type" content=3D"text/html charset=3DUTF-8">=
+=20
+  <meta name=3D" 8668551viewport" content=3D"width=3Ddevice-width, initial-=
+scale=3D1">=20
+  <style type=3D"text/css">
+    @media yahoo {
+  table {border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:=
+0pt; table-layout: fixed;}
+  table table { table-layout: auto; }
+  }
+    * [data-term] {border-bottom: none !important;pointer-events: none !imp=
+ortant;}
+    .ii a {color: inherit !important; text-decoration:none !important;}
+    a[x-apple-data-detectors] { color: inherit !important; text-decoration:=
+ none !important; font-size: inherit !important; font-family: inherit !impo=
+rtant; font-weight: inherit !important; line-height: inherit !important; }
+body, .container, html {
+  background-color: #EAEAEA;
+  margin-top: 0;
+}
+.hide, .hide div, .hide table, .hide td, .hide tr, .hide a, .hide img {disp=
+lay:none !important; width:0 !important; height:0 !important; max-height:0 =
+!important; line-height:0 !important; mso-hide:all !important; overflow:hid=
+den !important; visibility:hidden !important;}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: none;
+  outline: none;
+}
+.desktop-hide, .desktop-hide img, .desktop-hide-max, .desktop-hide-max img =
+{
+  display:none;
+  mso-hide: all;
+}
+.gmail-fix-no-inline {
+  display:none;
+  display:none !important;
+}
+@media (max-width: 500px) {
+  .ios-hide, .mobile-hide {
+    display: none;
+  }
+  .desktop-hide, .desktop-hide img {
+    display: initial !important;
+  }
+  table.desktop-hide {
+    display: table !important;
+  }
+}
+a {
+  color: inherit !important;
+}
+a img {
+  border-style: none;
+}
+.iosnonlink a{
+  text-decoration: none !important;
+}
+.copy a {
+  font-family: Helvetica, Arial, sans;
+  text-decoration: underline !important;
+  color: inherit !important;
+}
+.copy a.secondary-cta {
+  color: #e50914 !important;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #EAEAEA;
+}
+/* Content */
+.content-shell {
+  background: url('http://cdn.nflximg.com/us/email/hitch/netflix-crop.png')=
+ no-repeat #ffffff;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+body {
+  font-family: Helvetica, Arial, sans;
+  color: #221F1F;
+}
+.help-center-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+@media (max-width: 599px) {
+  .ios-hide-max {
+    display: none;
+  }
+  .inbox-fix {
+    display: none;
+  }
+  .desktop-hide-max, .desktop-hide-max img {
+    display: initial !important;
+  }
+}
+/* Footer */
+.footer-shell, .footer-table, .footer {
+  background-color: #221F1F;
+}
+.footer {
+ =20
+  font-family: Helvetica, Arial, sans;
+  font-size: 13px;
+  color: #A9A6A6;
+  line-height: 16px;
+}
+.footer-copy {
+  padding: 15px 90px 0 90px;
+}
+.footer-copy-no-padding {
+  padding: 0 90px 0 90px;
+}
+.footer.questions {
+  padding: 34px 90px 0 90px !important;
+}
+.footer.footer-center {
+  padding: 15px 0 0 0;
+  text-align: center !important;
+}
+.footer a, .footer-copy a {
+  color: #A9A6A6 !important;
+  text-decoration: underline;
+}
+@media (max-width: 599px) {
+  .shell, .shell-footer {
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+  }
+  .footer-copy, .footer-copy-no-padding, .footer.questions {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+/* End Footer */
+    /* Device Info */
+.device-info-shell, .device-info-table, .device-info-table td {
+  background-color: #efefef;
+  -wings-align: center;
+}
+.device-info-image {
+  padding: 34px 26px 0 26px;
+}
+.device-info-device {
+  padding: 19px 26px 0 26px;
+  font-family: HelveticaNeue-Bold, HelveticaNeue, Helvetica, Arial, sans;
+  font-weight: bold;
+  font-size: 14px;
+  color: #221F1F;
+}
+.device-info-location {
+  padding: 7px 26px 0 26px;
+  font-family: HelveticaNeue, Helvetica, Arial, sans;
+  font-size: 14px;
+  line-height: 14px;
+  color: #7A7A7A;
+}
+@media (max-width: 599px) {
+  .device-info-table {
+    width: 100% !important;
+  }
+}
+/* Account Info Element */
+.account-info-label.disclaimer {
+  padding: 5px 90px 0 90px !important;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #221f1f !important;
+}
+.account-info {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 500px) {
+  .account-info {
+    padding: 0 8% 0 8% !important;
+  }
+  .account-info-label.disclaimer {
+    padding: 8px 8% 0 8% !important;
+  }
+}
+/* End Account Info Element */
+/* Account Info Element */
+.account-info-label {
+  padding: 10px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  -webkit-font-smoothing: antialiased;
+  color: #696666;
+}
+.account-info {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 500px) {
+  .account-info {
+    padding: 0 8% 0 8% !important;
+  }
+  .account-info-label {
+    padding: 10px 8% 0 8% !important;
+  }
+}
+/* End Account Info Element */
+.button-shell {
+  padding: 22px 90px 0 90px;
+}
+.button td {
+  padding:10px 16px;
+  max-width:265px;
+  border-radius: 2px;
+}
+.button {
+  border-radius: 2px;
+}
+.button .button-link {
+  font-size:16px;
+  line-height: 24px;
+  font-weight:normal;
+  text-align:center;
+  text-decoration:none;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  letter-spacing: .025em;
+}
+@media (max-width: 500px){
+  .button-shell {
+    padding: 20px 8% 0 8% !important;
+  }
+  .button td {
+    padding: 0 0 !important;
+    width: 100% !important;
+  }
+  .button {
+    width: 100% !important;
+  }
+  .button a.button-link {
+    display: block !important;
+    padding: 16px 30px !important;
+    font-size: 15px !important;
+    line-height: 17px !important;
+  }
+}
+.callout-shell {
+  padding: 22px 90px 0 90px;
+}
+.callout {
+  background-color: #efefef;
+}
+@media (max-width: 500px) {
+  .callout-shell {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* Copy */
+.copy-shell {
+  background-color: #ffffff;
+}
+.copy {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  color: #221F1F;
+}
+.copy a {
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .copy {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Copy */
+/* Copy */
+.copy-shell {
+  background-color: #ffffff;
+}
+.copy-no-padding {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  color: #221F1F;
+}
+@media (max-width: 500px) {
+  .copy-no-padding {
+    padding: 0 8% 0 8% !important;
+  }
+}
+/* End Copy */
+/* Copy */
+.copy-shell {
+  background-color: #ffffff;
+}
+.copy-no-padding-center {
+  padding: 0 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #221F1F;
+}
+@media (max-width: 500px) {
+  .copy-no-padding-center {
+    padding: 0 8% 0 8% !important;
+  }
+}
+/* End Copy */
+/* Escape Hatch */
+.escape-hatch-neutral-shell {
+  padding: 30px 90px 0 90px;
+}
+@media (max-width: 500px) {
+  .escape-hatch-neutral-shell {
+    padding: 8px 8% 0 8% !important;
+  }
+}
+.escape-hatch-neutral.bar {
+  height: 3px;
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+.escape-hatch-neutral.bar img {
+  width: 100% !important;
+}
+.escape-hatch-neutral.text {
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: bold;
+  padding: 17px 0 0 0;
+  vertical-align: bottom;
+  text-decoration: none !important;
+}
+a.escape-hatch-neutral.link {
+  text-decoration: none !important;
+}
 
+.escape-hatch-neutral.text .arrow {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 17px;
+  vertical-align: top;
+  padding: 1.8px 0 0 6px;
+}
+/* End Escape Hatch */
+/* Headline */
+.headline {
+  font-family: Helvetica, Arial, sans;
+  font-weight: bold;
+  font-size: 32px;
+  color: #221F1F;
+  line-height: 36px;
+  padding: 40px 90px 10px 90px;
+}
+@media (max-width: 500px) {
+  .headline {
+    padding: 25px 8% 10px 8% !important;
+    font-size: 28px !important;
+  }
+}
+/* End Headline */
+.image-custom {
+  padding: 22px 90px 0 90px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .image-custom {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+.image-custom {
+  padding: 22px 90px 0 90px;
+  width: 100%;
+  height: auto;
+  text-align:center;
+}
+.image-custom img {
+  margin:0 auto 0 auto;
+}
+@media (max-width: 500px) {
+  .image-custom {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* Logo */
+.logo {
+  padding: 46px 0 0 0;
+}
+@media (max-width: 500px) {
+  .logo {
+    padding: 42px 8% 0 8% !important;
+  }
+  .logo img {
+    width: 130px !important;
+  }
+}
+/* End Logo */
+/* Payment */
+.card-icon {
+  padding: 5px 6px 0 0;
+}
+.card-icon-rtl {
+  padding: 5px 0 0 6px;
+}
+.card-copy {
+  padding: 5px 0 0 0;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.card-copy-rtl {
+  direction: ltr !important;
+  text-align: right;
+  padding: 5px 0 0 0;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* End Payment */
+.spacer, .spacer td {
+  font-size: 0;
+  line-height: 0;
+  -wings-height: 0;
+}
 
-Para parar de receber nossos
-Emails:http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17
+@media (max-width: 500px) {
+  .mobile-block {
+    display: block !important;
+  }
+}
+/* Subheadline */
+.subheadline {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  -webkit-font-smoothing: antialiased;
+  color: #221F1F;
+}
+@media (max-width: 500px) {
+  .subheadline {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Subheadline */
+/* Title */
+.title-shell {
+  background-color: #ffffff;
+}
+.title {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 500px) {
+  .title {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Title */
+/* Title */
+.title-shell {
+  background-color: #ffffff;
+}
+.title-center {
+  padding: 22px 90px 0 90px;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #221F1F
+}
+@media (max-width: 500px) {
+  .title-center {
+    padding: 20px 8% 0 8% !important;
+  }
+}
+/* End Title */
+/* Toaster */
+.toaster-shell {
+  padding: 0 0 0 90px;
+  margin: 0;
+  background-color: #0071EB;
+}
+.toaster-shell-rtl {
+  padding: 0 90px 0 0;
+  margin: 0;
+  background-color: #0071EB;
+}
+.toaster-table, .toaster {
+  background-color: #0071EB;
+  color: #ffffff;
+  font-family: Helvetica Neue,Helvetica,Roboto,Segoe UI,sans-serif;
 
---b1_0e88df89adc1ee8f4d30c58a3b5986c6
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: 8bit
+  font-size: 16px;
+}
+.toaster-alert {
+  padding: 0 4px 0 0;
+}
+.toaster-alert-rtl {
+  padding: 0 0 0 4px;
+}
+.toaster {
+  padding: 12px 0 12px 0;
+}
+@media (max-width: 599px){
+  .toaster-table {
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px){
+  .toaster-shell {
+    padding-left: 8% !important;
+  }
+  .toaster {
+    padding: 8px 0 8px 0;
+  }
+  .toaster-shell-rtl {
+    padding-right: 8% !important;
+  }
+}
+/* End Toaster */
+.account-info-shell, .account-info, .account-info-label  {
+  padding-left: 10px !important;
+}
+.content-shell .account-info-table .account-info-label.disclaimer {
+  padding: 10px 90px 0 80px !important;
+}
 
-<html>
-<head>
-</head>
-<body>
-<strong><font face="andale mono, times">Bom dia.<br /><strong><br />Meu
-nome &eacute; Gustavo Salvador, gostaria de
-te&nbsp;</strong></font><strong><font face="andale mono, times">fornecer<br
-/>m&oacute;veis para escrit&oacute;rio.</font><br /></strong></strong><br
-/><span>Segue abaixo uma Promo&ccedil;&atilde;o&nbsp;e tamb&eacute;m meus
-dados.</span><br /><br /><span>&nbsp; Gustavo Salvador</span><br /><font
-size="1">&nbsp; &nbsp; &nbsp; &nbsp;Gerente Comercial</font><br /><br
-/><span>&nbsp;&nbsp;</span><img
-src="https://www.i9flex.com.br/arquivo/index/399932/fone.jpg" width="20"
-height="20" /><span>11 2238 6677</span><br /><span>&nbsp;&nbsp;</span><img
-src="https://www.i9flex.com.br/arquivo/index/399928/whattsapp.jpg"
-width="20" height="20" /><span>11 95584-9865 whatsapp</span><br /><br
-/><span>&nbsp;</span><img
-src="https://www.i9flex.com.br/arquivo/index/399929/email(2).jpg"
-width="20" height="15" /><span>&nbsp;&nbsp;</span><a
-href="mailto:vendas@cadeiraparaescritorio.ind.br">vendas@cadeiraparaescritorio.ind.br</a><br
-/><span>acesse &nbsp;</span><a
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H">www.cadeiraparaescritorio.ind.br&nbsp;&nbsp;</a><br
-/><br /><span><font size="2">Venha nos visitar na Av. Engenheiro Caetano
-&Aacute;lvares, 3860 - Imirim.<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp;<a title="Compre Cadeiras Direto da F&aacute;brica "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
-height="372" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413795/promo_1(2).jpg/promo_1(2).jpg"
-/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
-title="Cadeiras Direto da F&aacute;brica vem pra i9flex fa&ccedil;a parte
-dessa time i9 voc&ecirc; tambem"
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
-height="281" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413796/promo_2(2).jpg/promo_2(2).jpg"
-/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
-title="Cadeiras ergon&ocirc;micas mais produtividade e menos desgaste com
-laudo ergon&ocirc;mico gr&aacute;tis "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
-height="269" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413797/promo_3(2).jpg/promo_3(2).jpg"
-/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
-title="linha completa para seu escrit&oacute;rio Direto da F&aacute;brica "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
-height="281" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413798/promo_4(2).jpg/promo_4(2).jpg"
-/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
-title="Roupeiros com pintura ep&oacute;xi qualidade e pre&ccedil;o &eacute;
-na i9flex i9 voc&ecirc; tamb&eacute;m "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
-height="281" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413799/promo_5(2).jpg/promo_5(2).jpg"
-/></a><br /><br /></font></span><span>&nbsp; &nbsp;</span><a
-title="F&aacute;brica De Baias para telemarketing ve pra i9flex a loja que
-mais cresce no brasil "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H"><img
-src="https://www.i9flex.com.br/arquivo/index/400816/baia.jpg" width="783"
-height="285" /></a><span>&nbsp;&nbsp;</span><br /><span>&nbsp; &nbsp;
-&nbsp; &nbsp;</span><img height="287" width="756"
-src="https://www.i9flex.com.br/arquivo/index/413800/promo_6(2).jpg/promo_6(2).jpg"
-/><br /><span>&nbsp;&nbsp;</span><br /><span>&nbsp; &nbsp; &nbsp;
-&nbsp;</span><br /><a
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H" title="A
-maior ind&uacute;stria de cadeiras para escrit&oacute;rio do Brasil "><br
-/></a><span>Frete Gratis para compra acima de R$ 300,00 Para S&atilde;o
-Paulo Capital *&nbsp;</span><br /><span>Demais Regi&otilde;es sob Consulta.
-Cobrimos or&ccedil;amentos,</span><br /><br /><font size="1">desde que seja
-o&nbsp;mesmo material ***PROMO&Ccedil;AO V&Aacute;LIDA AT&Eacute;
-30/09/2019 OU AT&Eacute; O FINAL DO ESTOQUE, O QUE OCORRER PRIMEIRO<br
-/>***Condi&ccedil;&atilde;o de pagamento em 12X atrav&eacute;s do pague
-seguro uol.</font><span></span>
-<p><font face="andale mono, times" size="1"><br />&nbsp; &nbsp; &nbsp;
-Atenciosamente.</font><br /><span><font size="2">&nbsp; Gustavo Salvador<br
-/><font size="1">&nbsp; &nbsp; &nbsp; &nbsp;Gerente Comercial</font><br
-/><br />&nbsp;&nbsp;<img height="20" width="20"
-src="https://www.i9flex.com.br/arquivo/index/399932/fone.jpg" />11 2238
-6677<br />&nbsp;&nbsp;<img height="20" width="20"
-src="https://www.i9flex.com.br/arquivo/index/399928/whattsapp.jpg" />11
-95584-9865<br /><br />&nbsp;<img height="15" width="20"
-src="https://www.i9flex.com.br/arquivo/index/399929/email(2).jpg"
-/>&nbsp;<a
-href="mailto:vendas@cadeiraparaescritorio.ind.br">vendas@cadeiraparaescritorio.ind.br<br
-/><br /></a></font></span><img
-src="https://www.i9flex.com.br/arquivo/index/399933/site(2).jpg" width="20"
-height="19" /><span>&nbsp;&nbsp;</span><span>&nbsp;</span><a
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=17&L=1&F=H">www.cadeiraparaescritorio.ind.br&nbsp;&nbsp;</a></p>
-<p><span><font size="2">&nbsp;<img
-src="https://www.i9flex.com.br/arquivo/index/399927/alfinete.jpg"
-width="20" height="24" />&nbsp; Av. Engenheiro Caetano &Aacute;lvares, 3860
-- Imirim.</font></span></p>
-<div><br /><br /></div>
-<br/><br><br><center>
+.account-info-label {
+  color: #2d2b2b !important;
+}
 
-<div align="justify" style="font-family:'arial'">
+@media (max-width: 500px) {
+  .content-shell .account-info-table .account-info-label.disclaimer {
+    padding: 10px 8% 0 calc(8% - 10px) !important;
+  }=20
+}
 
+.account-info-shell, .account-info, .account-info-label  {
+  padding-left: 10px !important;
+}
 
-<table align="center">
-
-<tr width="70px">
-
-<div align="justify" style="font-family:'arial'"><p style="font-size:
-10px"><span><br
-/>___________________________________________________<br
-/><br /><span><br/>Esta mensagem é enviada de acordo com a nova
-legislação sobre correio eletrônico,
-seção 301, parágrafo (a) (2) (c) decreto S. 1618,
-título terceiro, este e-mail não poderá ser
-considerado SPAM, quando inclua uma forma de ser removido.<br /><br/><a
-href="http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17">http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17</a><br>
-
-___________________________________________________<br/><br/>
-
-
-This message is in full compliance with U.S. Federal requirements for
-commercial email under bill S.1618 Title lll, Section 301, Paragraph
-(a)(2)(C) passed by the 105th U.S. Congress and is not considered SPAM
-since it includes a remove mechanism, remetent, CC.<br/>
-<br/>
-<a
-href="http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17">http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=17</a></p></div></div>
-
-
-<meta name="description" content="Email Marketing Ilimitado é uma
-ferramenta para envio de e-mails marketing segmentado ou massivo, seja as
-newsletters, boletins e outras peças com baixo custo e alto controle sobre
-o retorno de suas ações." />
-<meta name="keywords" content="email marketing profissional, email
-marketing, seo marketing, mail marketer, email, marketing, profissional,
-seo, pesquisas, servidores smtp, server smtp, hospedagem">
-<link rel="prerender" href="https://inovacaoweb.com.br">
-</tr><tr>
-
-<tr width="170px"></p></p></p>
-</table>
-</center><img
-src="http://ewsrv1.com.br/mkt/open.php?M=4189584&L=8&N=17&F=H&image=.jpg"
-height="1" width="10"></body>
+   =20
+  </style>=20
+ </head>=20
+ <body bgcolor=3D"#EAEAEA"   style=3D"font-family:Helvetica, Arial, sans;co=
+lor:rgb(34, 31, 31);padding:0;margin:0;background-color:rgb(234, 234, 234);=
+background-color:rgb(234, 234, 234);margin-top:0;">=20
+  <!--/* 100% Size Container -->=20
+  <!-- Preview Text -->=20
+  <div class=3D"hide"  style=3D"display:none;width:0;height:0;max-height:0;=
+line-height:0;mso-hide:all;overflow:hidden;visibility:hidden;">
+   H=C3=A1 um problema com os dados de pagamento atuais. Tentaremos efetuar=
+ a cobran=C3=A7a novamente, recomendamos que voc=C3=AA atualize estas infor=
+ma=C3=A7=C3=B5es..
+   <!-- preview text hack -->=20
+   <div class=3D"hide" style=3D"display: none; max-height: 0px; overflow:hi=
+dden;display:none;width:0;height:0;max-height:0;line-height:0;mso-hide:all;=
+overflow:hidden;visibility:hidden;">
+    =C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?&nbsp;?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?&nbsp;?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?&nbsp;?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0;?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?&nbsp;?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?&nbsp;?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?&nbsp;?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?&nbsp;?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0;?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?&nbsp;?=
+=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?&nbsp=
+;?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=
+=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?&nbsp=
+;?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?&nb=
+sp;?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=A0?=C2=
+=A0?=C2=A0;?=C2=A0?=C2=A0?=20
+   </div>
+  </div>=20
+  <!-- End Preview Text -->=20
+  <table class=3D"container" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" id=3D"container" style=3D"background-color:rgb(234, 234=
+, 234);margin-top:0;">=20
+   <tbody>
+    <tr>=20
+     <td align=3D"center">=20
+      <!--/* Hero + Content -->=20
+      <table class=3D"shell" width=3D"600" cellpadding=3D"0" cellspacing=3D=
+"0" border=3D"0">=20
+       <!--/* Content -->=20
+       <tbody>
+        <tr>=20
+         <td class=3D"content-shell" bgcolor=3D"#ffffff" style=3D"backgroun=
+d:url(http://cdn.nflximg.com/us/email/hitch/netflix-crop.png) no-repeat rgb=
+(255, 255, 255);background-repeat:no-repeat;background-color:rgb(255, 255, =
+255);">=20
+          <table class=3D"content" width=3D"100%" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0">=20
+           <!-- Logo -->=20
+           <tbody>
+            <tr>=20
+             <td class=3D"logo" align=3D"center" style=3D"padding:46px 0 0 =
+0;"> <a href=3D"https://www.netflix.com/browse?lnktrk=3DEMP&g=3DEBFFCE2B8B4=
+D26EBD643163EAEB3FCB8645796AA&lkid=3DURL_HOME" style=3D"color:inherit;"> <i=
+mg src=3D"http://cdn.nflximg.com/us/email/logo/newDesign/logo_v2.png" alt=
+=3D"Netflix" width=3D"145" align=3D"center" style=3D"-ms-interpolation-mode=
+:bicubic;border:none;outline:none;border-style:none;"> </a> </td>=20
+            </tr>=20
+            <!-- End Logo -->=20
+            <!-- Spacer -->=20
+            <tr>=20
+             <td class=3D"spacer-1 spacer" style=3D"padding: 45px 0 0 0;fon=
+t-size:0;line-height:0;" height=3D"0"> =C2=A0 </td>=20
+            </tr>=20
+            <!-- End Spacer -->=20
+            <!-- Toaster -->=20
+            <tr>=20
+             <td class=3D"toaster-shell" style=3D"padding:0 0 0 90px;margin=
+:0;background-color:rgb(0, 113, 235);">=20
+              <table class=3D"toaster-table" width=3D"100%" cellpadding=3D"=
+0" cellspacing=3D"0" border=3D"0" style=3D"background-color:rgb(0, 113, 235=
+);color:rgb(255, 255, 255);font-family:Helvetica Neue, Helvetica, Roboto, S=
+egoe UI, sans-serif;font-size:16px;">=20
+               <tbody>
+                <tr>=20
+                 <td class=3D"toaster-alert" width=3D"19" style=3D"padding:=
+0 4px 0 0;"> <img src=3D"http://cdn.nflximg.com/us/email/toaster/alert20.pn=
+g" alt=3D"[!!]" width=3D"19" style=3D"border-collapse:collapse;display:bloc=
+k;-ms-interpolation-mode:bicubic;border:none;outline:none;"> </td>=20
+                 <td class=3D"toaster" style=3D"padding:12px 0 12px 0;backg=
+round-color:rgb(0, 113, 235);color:rgb(255, 255, 255);font-family:Helvetica=
+ Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:16px;"> Sua conta =
+est=C3=A1 suspensa. </td>=20
+                </tr>=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <!-- End Toaster -->=20
+            <!-- Headline -->=20
+            <tr>=20
+             <td class=3D"headline headline-important " align=3D"left" styl=
+e=3D"font-family:Helvetica, Arial, sans;font-weight:bold;font-size:32px;col=
+or:rgb(34, 31, 31);line-height:36px;padding:40px 90px 10px 90px;"> Atualize=
+ seus dados de pagamento </td>=20
+            </tr>=20
+            <!-- End Headline -->=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> Ol=C3=A1, tudo bem? </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> H=C3=A1 um problema com os dados de pagamen=
+to atuais. Tentaremos efetuar a cobran=C3=A7a novamente, recomendamos que v=
+oc=C3=AA atualize estas informa=C3=A7=C3=B5es.. </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!--/* Callout -->=20
+            <tr>=20
+             <td class=3D"callout-shell" style=3D"padding:22px 90px 0 90px;=
+">=20
+              <table class=3D"callout" width=3D"100%" cellpadding=3D"0" cel=
+lspacing=3D"0" border=3D"0" style=3D"background-color:rgb(239, 239, 239);">=
+=20
+               <!-- Spacer -->=20
+               <tbody>
+                <tr class=3D"mobile-hide">=20
+          =20
+                <tr class=3D"desktop-hide mobile-block" style=3D"display:no=
+ne;mso-hide:all;">=20
+                 <td class=3D"spacer-2 spacer" style=3D"padding: 8px 0 0 0;=
+font-size:0;line-height:0;" height=3D"0"> =C2=A0 </td>=20
+                </tr>=20
+                <!-- End Spacer -->=20
+                <!-- Start Account Info Element -->=20
+                <tr>=20
+                 <td class=3D"account-info-shell" style=3D"padding-left:10p=
+x;">=20
+</td>=20
+                </tr>=20
+                <!-- End Account Info Element -->=20
+                <!-- Start Account Info Element -->=20
+                <tr>=20
+                 <td class=3D"account-info-shell" style=3D"padding-left:10p=
+x;">=20
+                =20
+                </tr>=20
+                <!-- End Account Info Element -->=20
+                <!-- Spacer -->=20
+             =20
+                <tr class=3D"desktop-hide mobile-block" style=3D"display:no=
+ne;mso-hide:all;">=20
+                 <td class=3D"spacer-3 spacer" style=3D"padding: 20px 0 0 0=
+;font-size:0;line-height:0;" height=3D"0"> =C2=A0 </td>=20
+                </tr>=20
+                <!-- End Spacer -->=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <!-- Start Account Info Element -->=20
+            <tr>=20
+             <td class=3D"account-info-shell" style=3D"padding-left:10px;">=
+=20
+              <table class=3D"account-info-table" width=3D"100%" cellpaddin=
+g=3D"0" cellspacing=3D"0" border=3D"0">=20
+               <tbody>
+                <tr>=20
+                 <td class=3D"account-info-label disclaimer" style=3D"paddi=
+ng-left:10px;padding:10px 90px 0 80px;padding:5px 90px 0 90px;font-family:H=
+elvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:13px;line-=
+height:16px;-webkit-font-smoothing:antialiased;color:rgb(34, 31, 31);paddin=
+g:10px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe UI,=
+ sans-serif;font-size:13px;line-height:16px;-webkit-font-smoothing:antialia=
+sed;color:rgb(45, 43, 43);"> Cart=C3=B5es que aceitam transa=C3=A7=C3=B5es =
+de d=C3=A9bito e de cr=C3=A9dito poder=C3=A3o ser processados de qualquer u=
+ma das formas. </td>=20
+                </tr>=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <!-- End Account Info Element -->=20
+            <style>
+  .button.button-1 {
+    color: #ffffff;
+    background-color: #e50914;
+  }
+  .button-1 .button-link {
+    color: #ffffff !important;
+  }
+</style>=20
+            <!-- Button -->=20
+            <tr>=20
+             <td class=3D"button-shell" style=3D"padding:22px 90px 0 90px;"=
+>=20
+              <table class=3D"button button-1 button-important" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"color:#ffffff;background-col=
+or:#e50914;border-radius:2px;">=20
+               <tbody>
+                <tr>=20
+                 <td style=3D"padding:10px 16px;max-width:265px;border-radi=
+us:2px;"> <a class=3D"button-link" href=3D"http://click-maili.secansca.com.=
+br/pub?cliente=3Dosst-users@lists.sourceforge.net
+" style=3D"color:#ffffff;font-family: Helvetica, Arial, sans;font-size:14px=
+;font-weight:bold;text-align:center;text-decoration:none;font-size:16px;lin=
+e-height:24px;font-weight:normal;text-align:center;text-decoration:none;fon=
+t-family:Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;letter-spa=
+cing:0.025em;color:inherit;">ATUALIZE SUA CONTA AGORA </a> </td>=20
+                </tr>=20
+               </tbody>
+              </table> </td>=20
+            </tr>=20
+            <style>
+  .button.button-2 {
+    color: #ffffff;
+    background-color: #9B9B9B;
+  }
+  .button-2 .button-link {
+    color: #ffffff !important;
+  }
+</style>=20
+            <!-- Button -->=20
+            <tr>=20
+             <td class=3D"button-shell" style=3D"padding:22px 90px 0 90px;"=
+>=20
+              </td>=20
+            </tr>=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> D=C3=BAvidas? Estamos sempre prontos para a=
+judar. Visite o <a href=3D"https://help.netflix.com/support/2065?lnktrk=3DE=
+MP&g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB8645796AA&lkid=3DURL_HELP" style=3D"f=
+ont-family:Helvetica, Arial, sans;text-decoration:underline;color:inherit;c=
+olor:inherit;">Centro de ajuda</a> ou <a href=3D"https://help.netflix.com/c=
+ontactus?lnktrk=3DEMP&g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB8645796AA&lkid=3DU=
+RL_CONTACT" style=3D"font-family:Helvetica, Arial, sans;text-decoration:und=
+erline;color:inherit;color:inherit;">entre em contato</a>. </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!-- Copy -->=20
+            <tr>=20
+             <td class=3D"copy copy-important " align=3D"left" style=3D"pad=
+ding:22px 90px 0 90px;font-family:Helvetica Neue, Helvetica, Roboto, Segoe =
+UI, sans-serif;font-size:18px;line-height:24px;-webkit-font-smoothing:antia=
+liased;color:rgb(34, 31, 31);"> =E2=80=93Seus amigos da Netflix </td>=20
+            </tr>=20
+            <!-- End Copy -->=20
+            <!-- Escape Hatch -->=20
+            <tr>=20
+             <td class=3D"escape-hatch-neutral-shell" style=3D"padding:30px=
+ 90px 0 90px;"> <a class=3D"escape-hatch-neutral link" href=3D"https://www.=
+netflix.com/browse?lnktrk=3DEMP&g=3DEBFFCE2B8B4D26EBD643163EAEB3FCB8645796A=
+A&lkid=3DURL_HOME_2" style=3D"text-decoration:none;color:inherit;">=20
+               <table class=3D"escape-hatch-neutral-table" width=3D"100%" c=
+ellpadding=3D"0" cellspacing=3D"0" border=3D"0">=20
+                <tbody>
+                 <tr>=20
+                  <td class=3D"escape-hatch-neutral text" style=3D"font-fam=
+ily:Helvetica Neue, Helvetica, Roboto, Segoe UI, sans-serif;font-size:15px;=
+line-height:17px;font-weight:bold;padding:17px 0 0 0;vertical-align:bottom;=
+text-decoration:none;"> =C2=A0 </td>=20
+                 </tr>=20
+                </tbody>
+               </table> </a> </td>=20
+            </tr>=20
+            <!-- End Escape Hatch -->=20
+           </tbody>
+          </table> </td>=20
+        </tr>=20
+       </tbody>
+      </table>=20
+      <table class=3D"shell-footer" width=3D"600" cellpadding=3D"0" cellspa=
+cing=3D"0" border=3D"0">=20
+       <!--/* Footer -->=20
+       <tbody>
+        <tr>=20
+         <td class=3D"content-shell-footer">=20
+          </td>=20
+        </tr>=20
+       </tbody>
+      </table> </td>=20
+    </tr>=20
+   </tbody>
+  </table>=20
+  <!-- Fix for Google Inbox -->=20
+  <table class=3D"inbox-fix" cellpadding=3D"0" cellspacing=3D"0" border=3D"=
+0" width=3D"600" height=3D"1" align=3D"center" style=3D"width: 600px !impor=
+tant;">=20
+   <tbody>
+   =20
+   </tbody>
+  </table>=20
+  <!-- Fix for Gmail on iOS -->=20
+  <div class=3D"ios-hide-max gmail-fix-no-inline" style=3D"white-space:nowr=
+ap; font:15px courier; line-height:0;">
+  </div>  =20
+ </body>
 </html>
+-----=_mimepart_030420205003--
+Content-Type: text/plain; name="boleto.pdf"
+Content-Transfer-Encoding: base64 
+Content-Disposition: attachment; filename="boleto.pdf"
 
---b1_0e88df89adc1ee8f4d30c58a3b5986c6--
-
-
-
-
---===============7814792724100115641==
+RXJybzogTyBhcnF1aXZvICdDT05UUkFUT182MF9NVU5JQ0lQSU8uUERGJywgbsOjbyBmb2kgZW5jb250cmF0byBvdSBuw6NvIGVzdMOhIG1haXMgZGlzcG9uw612ZWwu
+-----=_mimepart_030420205003--
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7814792724100115641==
+-----=_mimepart_030420205003--
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -281,7 +1003,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7814792724100115641==--
-
+-----=_mimepart_030420205003----
 
 
