@@ -2,94 +2,103 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 810541A8F38
-	for <lists+osst-users@lfdr.de>; Wed, 15 Apr 2020 01:43:13 +0200 (CEST)
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Cc:Reply-To:From:
-	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
-	Subject:MIME-Version:Date:Message-ID:To:Sender:Content-Transfer-Encoding:
-	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=i7P88tVYe4NHKG4RrQ7mRwrkHALOEiyGbh9y2AmP0Qo=; b=PMgsC2xr9MFpEaUOL52zyyFPvf
-	7n7jH5rLi7X2d03wMnRskcKZSM73/iPs4UQfls61V40jGVH8lM6M4dgPfi2h6dGZGycpQrWDwdY4r
-	+wG6lXtyJy7ozSqG3ezROa2MiIpJ4c8/aLhfg27glozbXBw3VdnMKcrjP+442woQLC+s=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id EF4231A90CD
+	for <lists+osst-users@lfdr.de>; Wed, 15 Apr 2020 04:15:24 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jOVCy-0002rU-8s
-	for lists+osst-users@lfdr.de; Tue, 14 Apr 2020 23:43:12 +0000
+	id 1jOXaF-0001Ta-Oz
+	for lists+osst-users@lfdr.de; Wed, 15 Apr 2020 02:15:23 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <bounce@ewsrv1.com.br>) id 1jOVCw-0002rN-Q8
- for osst-users@lists.sourceforge.net; Tue, 14 Apr 2020 23:43:10 +0000
+ (envelope-from
+ <bounces+5502527-c63a-osst-users=lists.sourceforge.net@sendgrid.net>)
+ id 1jOXaF-0001TS-Ab
+ for osst-users@lists.sourceforge.net; Wed, 15 Apr 2020 02:15:23 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- List-Unsubscribe:MIME-Version:Reply-To:From:Date:Message-ID:To:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=EzFezin3vDo0teC55AvL7XgBX6YP+DopIfpJj4mjbRw=; b=FBISgC0o3gudac+s7p1cAfmqCT
- hj9rppwUqLnHpu7pgRiXX2ImxTWWGTo3cQnDiKTYLDmj2Ff11+bs6NyEw7AZ1fjPf2OKo/SkKXEo9
- aNG3AA+dAhLsIk3FvSARgOlZJo8E1ahk4meL6ncmdmU1HjC4d6hvm7H0sNy91AghG3HI=;
+ d=sourceforge.net; s=x; h=To:Message-ID:Date:Content-Type:Subject:Reply-To:
+ From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=TRt2rhQTHuSBn0Qhvj+acSNCw2NUUMtSBYWL0o58TEQ=; b=Wmu+UQ1s9dfvSBvA8b6pK8zyeB
+ bfOb5Z/VOlx3Ua20mUKJ3UykpRr8T+Df2SZOOeR4nujaiD84VcO9bq8LY0xQiXTXDW2I1MrDU9kUo
+ HD70PEH6ZrlSakMjQq5N7jPxDLnr81ychRT8LTOQmUMvWCpySzKefiPVtSTjf9NLFCEo=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:List-Unsubscribe:
- MIME-Version:Reply-To:From:Date:Message-ID:To:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=EzFezin3vDo0teC55AvL7XgBX6YP+DopIfpJj4mjbRw=; b=i4rGYXeALe9edf6oydzvzoej3v
- wqXzDopEfifMOsWGMYvxqHIeysfiMMtBwl79ItKnLxnHE3INlIQVeLF+DiXqMfMUYoqWk1fO4kQ+s
- YENB36wil+QQh4wgtfzXO68a6PQk7WX9mDXTYwo7CifzCCLYiNz+MKeq5yNrNLwz8ePQ=;
-Received: from ewsrv1.com.br ([46.228.205.178] helo=news0.ewsrv1.com.br)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1jOVCr-00Gbjm-KY
- for osst-users@lists.sourceforge.net; Tue, 14 Apr 2020 23:43:10 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=ewsrv1.com.br;
- h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:List-Unsubscribe:Content-Type:Content-Transfer-Encoding;
- i=envio@ewsrv1.com.br; bh=aeRTsPxvnTI89LDgWFcQ74JQXRU=;
- b=qd3X3ZViRNwkLXOQiq7ZhW3dn7kpD+NPP8I3Vj3YscbLPSiv7aHv90FV+rb0nsDeQXKUjc24rnNl
- DFX0rZrUrEKnuaNSnRW8GA+VypqG3swb37sk6VrEe8GhWM6HxBjlgdYN6+o+5fDjLI2uRiml4oTq
- Y9z+f1mJG3Jod0pAY9E=
-To: osst-users@lists.sourceforge.net
-Message-ID: <f08e1f815484ec955347c3b2a3d6baa8@ewsrv1.com.br>
-Date: Tue, 14 Apr 2020 20:42:52 -0300
+ h=To:Message-ID:Date:Content-Type:Subject:Reply-To:From:MIME-Version:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=TRt2rhQTHuSBn0Qhvj+acSNCw2NUUMtSBYWL0o58TEQ=; b=U
+ UgjkbwHG4j0iyQpTJhIN3p8LzZk36TMNHne/g3sIZcV/i6Ig8pdZOdUDUb1UBl7vCGEDdPLXzabYL
+ D6GTwy9L9U1QY+IaFIhv+4swSoplVItfLZoy/ibheUOx6m/kTktta+L/XmmSrWUau4KrAtrlulErf
+ Fp4oPVxiYLSZielE=;
+Received: from o2.smtps-ip-a1.ispeed.it ([167.89.106.149])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
+ id 1jOXaD-00FS1m-RU
+ for osst-users@lists.sourceforge.net; Wed, 15 Apr 2020 02:15:23 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
+ h=mime-version:from:reply-to:subject:content-type:to;
+ s=smtpapi; bh=TRt2rhQTHuSBn0Qhvj+acSNCw2NUUMtSBYWL0o58TEQ=;
+ b=mltZgmmKeHs7MPPqPqMPbrXWs375BYwZ/rNxV288iC17X+hJApFezUsISxCmoLrMGqB4
+ d6BNHD/K3ZybFJeu0MUSUcaKukKrUmQsRPk1TlJxjdEkZJWzxtTASeTduCg3zd4u/BMLzh
+ ZtBPrcFptQZSe/2XyMvajQg01zl/II0As=
+Received: by filterdrecv-p3iad2-8ddf98858-z54vx with SMTP id
+ filterdrecv-p3iad2-8ddf98858-z54vx-21-5E966E32-60
+ 2020-04-15 02:15:14.503435766 +0000 UTC m=+1732064.986075609
+Received: from host67-186-dynamic.26-79-r.retail.telecomitalia.it (unknown)
+ by ismtpd0002p1lon1.sendgrid.net (SG) with ESMTP id lOskNCDWRy-g2wvE25nLUg
+ for <osst-users@lists.sourceforge.net>;
+ Wed, 15 Apr 2020 02:15:14.241 +0000 (UTC)
 MIME-Version: 1.0
-X-Mailer-LID: 7,8,13
-X-Mailer-RecptId: 4189584
-X-Mailer-SID: 21
-X-Mailer-Sent-By: 2
-X-Spam-Score: 9.0 (+++++++++)
+From: Toner compatibili a basso costo <tonertoplevel@gmail.com>
+Date: Wed, 15 Apr 2020 02:15:14 +0000 (UTC)
+Message-ID: <212243915236402441824480@user-PC>
+X-SG-EID: =?us-ascii?Q?sC0L0DychgvtYjQuYUedIntUM01ebtbdYrUc+CfcQYAwCS7iN0Oudio3huY3Bt?=
+ =?us-ascii?Q?dqpWeKJh7fbMNI+zzal1oqlceXgTo8dtykN6hOg?=
+ =?us-ascii?Q?czPkkzHy4AMMndS5fP=2FpygjsVcMLDVw1hhbj9TN?=
+ =?us-ascii?Q?XU=2F9+=2FwvnW6lYa5qLlbB3w4+Y0XxdFRQ5RalIYC?=
+ =?us-ascii?Q?n=2FbEIHVcmaaJFL7N=2Fg699ywIzI7ShSiG2XNxvcK?=
+ =?us-ascii?Q?oQFQjN2+0Ni2KWiDk6wd9TL5v2QQgMhIpi6GKtd?=
+ =?us-ascii?Q?xe9nm7rK=2FTF+dzIAccQmtCaGb6dbHjKZXWZWJYK?=
+ =?us-ascii?Q?7kAY9Oy7=2FDQ8yCDfMYIcqowK?=
+To: osst-users@lists.sourceforge.net
+X-Spam-Score: 3.4 (+++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
- blocklist [URIs: i9flex.com.br]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: inovacaoweb.com.br]
- 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
- https://senderscore.org/blacklistlookup/
- [46.228.205.178 listed in bl.score.senderscore.com]
- 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [46.228.205.178 listed in psbl.surriel.com]
+ for more information. [URIs: imageshack.com]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [167.89.106.149 listed in list.dnswl.org]
+ 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ (tonertoplevel[at]gmail.com)
+ 0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+ CUSTOM_MED
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
  1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
+ -0.8 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [167.89.106.149 listed in wl.mailspike.net]
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 1.9 URIBL_ABUSE_SURBL Contains an URL listed in the ABUSE SURBL blocklist
- [URIs: ewsrv1.com.br]
- -0.6 AWL AWL: Adjusted score from AWL reputation of From: address
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1jOVCr-00Gbjm-KY
-Subject: [Osst-users] [SPAM] Gustavo Salvador
+ 0.2 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and EnvelopeFrom
+ freemail headers are different
+ 0.0 UNPARSEABLE_RELAY Informational: message has unparseable relay lines
+ 1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+X-Headers-End: 1jOXaD-00FS1m-RU
+Subject: [Osst-users] Toner compatibili - pagamento anche alla consegna -
+ Spedizioni operative anche in questo periodo di Covid19 - chiedici un
+ preventivo
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -101,183 +110,123 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Gustavo Salvador  via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: vendas@cadeiraparaescritorio.ind.br
-Cc: Gustavo Salvador  <envio@ewsrv1.com.br>
-Content-Type: multipart/mixed; boundary="===============3995299499186352462=="
+Reply-To: tonertoplevel@gmail.com
+Content-Type: multipart/mixed; boundary="===============2623010843370596357=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============3995299499186352462==
-Content-Type: multipart/alternative; charset="UTF-8"; boundary="b1_016ce596d146c5d8d6ad5f1516f933d9"
-Content-Transfer-Encoding: 8bit
 
---b1_016ce596d146c5d8d6ad5f1516f933d9
-Content-Type: text/plain; format=flowed; charset="UTF-8"
-Content-Transfer-Encoding: 8bit
-
-Seu cliente de e-mail não pode ler este e-mail.
-Para visualizá-lo on-line, por favor, clique aqui:
-http://ewsrv1.com.br/mkt/display.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&S=21&L=8&N=1
+--===============2623010843370596357==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_4DC0_42F17201.2198626A"
 
 
-Para parar de receber nossos
-Emails:http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=21
+------=_NextPart_001_4DC0_42F17201.2198626A
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
 
---b1_016ce596d146c5d8d6ad5f1516f933d9
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: 8bit
+=20
 
-<html>
-<head>
-</head>
-<body>
-<strong><font face="andale mono, times">Bom dia.<br /><strong><br />Meu
-nome &eacute; Gustavo Salvador, gostaria de
-te&nbsp;</strong></font><strong><font face="andale mono, times">fornecer<br
-/>m&oacute;veis para escrit&oacute;rio.</font><br /></strong></strong><br
-/><span>Segue abaixo uma Promo&ccedil;&atilde;o&nbsp;e tamb&eacute;m meus
-dados.</span><br /><br /><span>&nbsp; Gustavo Salvador</span><br /><font
-size="1">&nbsp; &nbsp; &nbsp; &nbsp;Gerente Comercial</font><br /><br
-/><span>&nbsp;&nbsp;</span><img
-src="https://www.i9flex.com.br/arquivo/index/399932/fone.jpg" width="20"
-height="20" /><span>11 2238 6677</span><br /><span>&nbsp;&nbsp;</span><img
-src="https://www.i9flex.com.br/arquivo/index/399928/whattsapp.jpg"
-width="20" height="20" /><span>11 95584-9865 whatsapp</span><br /><br
-/><span>&nbsp;</span><img
-src="https://www.i9flex.com.br/arquivo/index/399929/email(2).jpg"
-width="20" height="15" /><span>&nbsp;&nbsp;</span><a
-href="mailto:vendas@cadeiraparaescritorio.ind.br">vendas@cadeiraparaescritorio.ind.br</a><br
-/><span>acesse &nbsp;</span><a
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=21&L=1&F=H">www.cadeiraparaescritorio.ind.br&nbsp;&nbsp;</a><br
-/><br /><span><font size="2">Venha nos visitar na Av. Engenheiro Caetano
-&Aacute;lvares, 3860 - Imirim.<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-&nbsp; &nbsp; &nbsp;<a title="Compre Cadeiras Direto da F&aacute;brica "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=21&L=1&F=H"><img
-height="372" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413795/promo_1(2).jpg/promo_1(2).jpg"
-/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
-title="Cadeiras Direto da F&aacute;brica vem pra i9flex fa&ccedil;a parte
-dessa time i9 voc&ecirc; tambem"
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=21&L=1&F=H"><img
-height="281" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413796/promo_2(2).jpg/promo_2(2).jpg"
-/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
-title="Cadeiras ergon&ocirc;micas mais produtividade e menos desgaste com
-laudo ergon&ocirc;mico gr&aacute;tis "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=21&L=1&F=H"><img
-height="269" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413797/promo_3(2).jpg/promo_3(2).jpg"
-/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
-title="linha completa para seu escrit&oacute;rio Direto da F&aacute;brica "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=21&L=1&F=H"><img
-height="281" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413798/promo_4(2).jpg/promo_4(2).jpg"
-/></a><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a
-title="Roupeiros com pintura ep&oacute;xi qualidade e pre&ccedil;o &eacute;
-na i9flex i9 voc&ecirc; tamb&eacute;m "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=21&L=1&F=H"><img
-height="281" width="700"
-src="https://www.i9flex.com.br/arquivo/index/413799/promo_5(2).jpg/promo_5(2).jpg"
-/></a><br /><br /></font></span><span>&nbsp; &nbsp;</span><a
-title="F&aacute;brica De Baias para telemarketing ve pra i9flex a loja que
-mais cresce no brasil "
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=21&L=1&F=H"><img
-src="https://www.i9flex.com.br/arquivo/index/400816/baia.jpg" width="783"
-height="285" /></a><span>&nbsp;&nbsp;</span><br /><span>&nbsp; &nbsp;
-&nbsp; &nbsp;</span><img height="287" width="756"
-src="https://www.i9flex.com.br/arquivo/index/413800/promo_6(2).jpg/promo_6(2).jpg"
-/><br /><span>&nbsp;&nbsp;</span><br /><span>&nbsp; &nbsp; &nbsp;
-&nbsp;</span><br /><a
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=21&L=1&F=H" title="A
-maior ind&uacute;stria de cadeiras para escrit&oacute;rio do Brasil "><br
-/></a><span>Frete Gratis para compra acima de R$ 300,00 Para S&atilde;o
-Paulo Capital *&nbsp;</span><br /><span>Demais Regi&otilde;es sob Consulta.
-Cobrimos or&ccedil;amentos,</span><br /><br /><font size="1">desde que seja
-o&nbsp;mesmo material ***PROMO&Ccedil;AO V&Aacute;LIDA AT&Eacute;
-30/09/2019 OU AT&Eacute; O FINAL DO ESTOQUE, O QUE OCORRER PRIMEIRO<br
-/>***Condi&ccedil;&atilde;o de pagamento em 12X atrav&eacute;s do pague
-seguro uol.</font><span></span>
-<p><font face="andale mono, times" size="1"><br />&nbsp; &nbsp; &nbsp;
-Atenciosamente.</font><br /><span><font size="2">&nbsp; Gustavo Salvador<br
-/><font size="1">&nbsp; &nbsp; &nbsp; &nbsp;Gerente Comercial</font><br
-/><br />&nbsp;&nbsp;<img height="20" width="20"
-src="https://www.i9flex.com.br/arquivo/index/399932/fone.jpg" />11 2238
-6677<br />&nbsp;&nbsp;<img height="20" width="20"
-src="https://www.i9flex.com.br/arquivo/index/399928/whattsapp.jpg" />11
-95584-9865<br /><br />&nbsp;<img height="15" width="20"
-src="https://www.i9flex.com.br/arquivo/index/399929/email(2).jpg"
-/>&nbsp;<a
-href="mailto:vendas@cadeiraparaescritorio.ind.br">vendas@cadeiraparaescritorio.ind.br<br
-/><br /></a></font></span><img
-src="https://www.i9flex.com.br/arquivo/index/399933/site(2).jpg" width="20"
-height="19" /><span>&nbsp;&nbsp;</span><span>&nbsp;</span><a
-href="http://ewsrv1.com.br/mkt/link.php?M=4189584&N=21&L=1&F=H">www.cadeiraparaescritorio.ind.br&nbsp;&nbsp;</a></p>
-<p><span><font size="2">&nbsp;<img
-src="https://www.i9flex.com.br/arquivo/index/399927/alfinete.jpg"
-width="20" height="24" />&nbsp; Av. Engenheiro Caetano &Aacute;lvares, 3860
-- Imirim.</font></span></p>
-<div><br /><br /></div>
-<br/><br><br><center>
+=20
 
-<div align="justify" style="font-family:'arial'">
+Vendita toner compatibili. Direttamente dal produttore al consumatore con o=
+ttimo rapporto prezzo/qualita'
+
+=20
+
+Garanzia soddisfatti o rimborsati ed offriamo anche possibilita' di pagamen=
+to alla consegna al corriere oppure bonifico anticipato. Trattiamo anche to=
+ner originali=20
+
+=20
+
+Rispondi a questa email indicando il modello della tua stampante, ti invier=
+emo un preventivo
+
+=20
+
+Se rispondi a questa email ti invieremo anche tutti i nostri contatti azien=
+dali e le nostre recensioni. Se hai problemi a rispondere a questa email, c=
+rea un nuovo messaggio inserendo il nostro indirizzo come destinatario
+
+=20
+
+=20
+
+Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
+desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
+premi qui ed invia per cancellarti
+
+=20
 
 
-<table align="center">
+------=_NextPart_001_4DC0_42F17201.2198626A
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
 
-<tr width="70px">
+<HEAD><TITLE></TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TR>
+<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
+<P>&nbsp;</P>
+<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
+n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
+TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
+ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TR>
+<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
+ COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
+x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imageshac=
+k.com/img921/6308/Vrz2CY.jpg" width=3D650 height=3D270>=20
+<P>&nbsp;</P>
+<UL>
+<LI><FONT color=3D#ff0000 size=3D5>Vendita toner compatibili. Direttamente =
+dal produttore al consumatore con ottimo rapporto prezzo/qualita'</FONT>=20
+<P>&nbsp;</P>
+<LI>Garanzia soddisfatti o rimborsati ed offriamo anche possibilita' di pag=
+amento alla consegna al corriere oppure bonifico anticipato. Trattiamo anch=
+e toner originali&nbsp;=20
+<P>&nbsp;</P>
+<LI><A href=3D"mailto:tonertoplevel@gmail.com?subject=3Dpreventivo"><FONT c=
+olor=3D#ff0000 size=3D5><STRONG>Rispondi a questa email indicando il modell=
+o della tua stampante, ti invieremo un preventivo</STRONG></FONT></A>=20
+<P>&nbsp;</P>
+<LI>Se rispondi a questa email ti invieremo anche tutti i nostri contatti a=
+ziendali e le nostre recensioni. Se hai problemi a rispondere a questa emai=
+l, crea un nuovo messaggio inserendo il nostro indirizzo come destinatario =
+</LI></UL>
+<P>&nbsp;</P><IMG style=3D"HEIGHT: 350px; WIDTH: 650px" border=3D2 hspace=
+=3D0 alt=3D"" src=3D"https://imageshack.com/img921/548/j6yJq3.jpg" width=3D=
+650 height=3D350>=20
+<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
+vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
+ail con "cancellami" </FONT><A href=3D"mailto:tonertoplevel@gmail.com?subje=
+ct=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancellarti</=
+FONT></A></TD></TR>
+<TR></TR></TABLE></TD></TR></TABLE>
+<P>&nbsp;</P><img src=3D"https://u5502527.ct.sendgrid.net/wf/open?upn=3D2Cw=
+Dr9hAd3sCOBy671QeTaQ-2FYCBCp2N3yugmQOBELsbnGwV3qsXN-2Bwzux1wKAxVDxr8SUgoLJj=
+unqH7fvj1oC1r5XFok9uTNqziwivH6R94x0gsvLbCJw-2F02lRZC1f1RJp9V-2BkJWPQq4HNjd-=
+2FVKNJpp-2BK7H2EduaWIZDMVIjBmKq7Ov2NcD2nl-2BWT14J63VxQ3BzDEWcCt6O5flicnaa2p=
+GOuS1-2FxhST3BFho-2F4APh4LGgJU3bxcnYzWLqbsGFROf08VNDIGxTnzBo5CDzfeIw-3D-3D"=
+ alt=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px !import=
+ant;width:1px !important;border-width:0 !important;margin-top:0 !important;=
+margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !importa=
+nt;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !im=
+portant;padding-left:0 !important;"/></BODY>
+------=_NextPart_001_4DC0_42F17201.2198626A--
 
-<div align="justify" style="font-family:'arial'"><p style="font-size:
-10px"><span><br
-/>___________________________________________________<br
-/><br /><span><br/>Esta mensagem é enviada de acordo com a nova
-legislação sobre correio eletrônico,
-seção 301, parágrafo (a) (2) (c) decreto S. 1618,
-título terceiro, este e-mail não poderá ser
-considerado SPAM, quando inclua uma forma de ser removido.<br /><br/><a
-href="http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=21">http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=21</a><br>
 
-___________________________________________________<br/><br/>
-
-
-This message is in full compliance with U.S. Federal requirements for
-commercial email under bill S.1618 Title lll, Section 301, Paragraph
-(a)(2)(C) passed by the 105th U.S. Congress and is not considered SPAM
-since it includes a remove mechanism, remetent, CC.<br/>
-<br/>
-<a
-href="http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=21">http://ewsrv1.com.br/mkt/unsubscribe.php?M=4189584&C=a7c355bb67d956ceaee8a721092491c5&L=8&N=21</a></p></div></div>
-
-
-<meta name="description" content="Email Marketing Ilimitado é uma
-ferramenta para envio de e-mails marketing segmentado ou massivo, seja as
-newsletters, boletins e outras peças com baixo custo e alto controle sobre
-o retorno de suas ações." />
-<meta name="keywords" content="email marketing profissional, email
-marketing, seo marketing, mail marketer, email, marketing, profissional,
-seo, pesquisas, servidores smtp, server smtp, hospedagem">
-<link rel="prerender" href="https://inovacaoweb.com.br">
-</tr><tr>
-
-<tr width="170px"></p></p></p>
-</table>
-</center><img
-src="http://ewsrv1.com.br/mkt/open.php?M=4189584&L=8&N=21&F=H&image=.jpg"
-height="1" width="10"></body>
-</html>
-
---b1_016ce596d146c5d8d6ad5f1516f933d9--
-
-
-
-
---===============3995299499186352462==
+--===============2623010843370596357==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3995299499186352462==
+--===============2623010843370596357==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -288,7 +237,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3995299499186352462==--
-
-
+--===============2623010843370596357==--
 
