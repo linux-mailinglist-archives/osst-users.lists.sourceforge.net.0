@@ -2,66 +2,59 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 5B4DC1B98BA
-	for <lists+osst-users@lfdr.de>; Mon, 27 Apr 2020 09:35:08 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id E29621BAE0E
+	for <lists+osst-users@lfdr.de>; Mon, 27 Apr 2020 21:34:33 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jSyIF-0002ti-68
-	for lists+osst-users@lfdr.de; Mon, 27 Apr 2020 07:35:07 +0000
+	id 1jT9WS-0003ep-OQ
+	for lists+osst-users@lfdr.de; Mon, 27 Apr 2020 19:34:32 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <masud.m@ttx-group.com>) id 1jSyIC-0002tY-AJ
- for osst-users@lists.sourceforge.net; Mon, 27 Apr 2020 07:35:04 +0000
+ (envelope-from <kyle.smith@afggroups.com>) id 1jT9WS-0003eh-0N
+ for osst-users@lists.sourceforge.net; Mon, 27 Apr 2020 19:34:32 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Reply-To:Date:From:To:Subject:Content-Description:
- Content-Transfer-Encoding:MIME-Version:Content-Type:Sender:Message-ID:Cc:
- Content-ID:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:
- Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ d=sourceforge.net; s=x; h=Reply-To:Date:From:To:Subject:MIME-Version:
+ Content-Type:Sender:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=pdkKnXKpODu5KSLBUytxsncgrtr37kakgTEOJ+IzAwA=; b=hWshFfqkqMaoT1uxuzXAsG5ApE
- ii3KLIer+F9AJ1Ix37ipV6smzz3Qur5Mv2vtfXB7JX+c+mHh/wnCr7nH08bqlbIVzHYp+OwuqLw0I
- JgMwnq27lvouUlQ6502RiNOsHjQuvUZ2r4h7AzI3Hc1mcn+SEktSf82m5o0B1bAfNeZg=;
+ bh=pvG8CDPfSO3lqawqn41ZG0ncFawwxCMhtfMYKkrEURw=; b=Gm+t26u2T/xNj28Ux2NmpNNyMV
+ zzwr6zGSzEp6awpVd+QpsC4ZI4ac5as6nTN2nzXL83kMwtahNS8cl7cP0HUQf9zUtvnR/054w87zG
+ qaZzN8Cxm/iwsICy06BPGsTUJjq3iB8m4AN2Q7oSH/B0Y2OFjfhKFQaa+WLajOcCu4Cg=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
- ; h=Reply-To:Date:From:To:Subject:Content-Description:
- Content-Transfer-Encoding:MIME-Version:Content-Type:Sender:Message-ID:Cc:
- Content-ID:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:
- Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=pdkKnXKpODu5KSLBUytxsncgrtr37kakgTEOJ+IzAwA=; b=MvqI5WJJmY1wls8ekvQRQ6hVZ3
- Antb0L2q2z8J5zO/5sVbsSxj7eLcUmM04OG39O45YXj//4tUy30esJdK+AcQcqVtVld+5BHBcyCzG
- y+mttbGlNVSZWAHq7iugFfU33M1Hd6eQV7O+yL4R2ubwnCoYsuMnd2qgcxlmufPdSf2Q=;
-Received: from mail.ttx-group.com ([182.160.106.194] helo=ttx-group.com)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ ;
+ h=Reply-To:Date:From:To:Subject:MIME-Version:Content-Type:Sender:Message-ID
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=pvG8CDPfSO3lqawqn41ZG0ncFawwxCMhtfMYKkrEURw=; b=b
+ jHNaz5KNV/bZDiLpItD8KzS4hBimckjAQBabt9f3bSoncOlICqc+fe3t2JMZsokqElr5M5ApdBZ1P
+ wDgY5OHsA85HxcjmAxVYxFE6boHI2zN6rvmxM1yTIYekVyFnNPCg7JO8Zq/HLga/unodpHis5SIYM
+ KgzeNU6qwCyI2/Kg=;
+Received: from [139.59.47.202] (helo=mail0.53.zamailnx.club)
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1jSyIA-00HBNh-Vv
- for osst-users@lists.sourceforge.net; Mon, 27 Apr 2020 07:35:04 +0000
-Received: (qmail 29853 invoked by uid 1008); 27 Apr 2020 05:25:19 +0600
-Received: from unknown (HELO ?204.10.162.134?)
- (masud.m@ttx-group.com@204.10.162.134)
- by ttx-group.com with SMTP; 27 Apr 2020 05:25:19 +0600
+ id 1jT9WQ-00GmzL-Ox
+ for osst-users@lists.sourceforge.net; Mon, 27 Apr 2020 19:34:31 +0000
 MIME-Version: 1.0
-Content-Description: Mail message body
 To: osst-users@lists.sourceforge.net
-From: "Mr. Okrapah Adjei" <masud.m@ttx-group.com>
-Date: Sun, 26 Apr 2020 16:23:07 -0700
-X-Spam-Score: 6.8 (++++++)
+From: "Kyle Smith" <kyle.smith@afggroups.com>
+Date: Mon, 27 Apr 2020 12:11:09 -0700
+X-Spam-Score: 7.5 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
- https://senderscore.org/blacklistlookup/
- [182.160.106.194 listed in bl.score.senderscore.com]
- 1.7 DEAR_SOMETHING         BODY: Contains 'Dear (something)'
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
- (okrapahadjei233[at]gmail.com)
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [139.59.47.202 listed in zen.spamhaus.org]
+ 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 1.0 HTML_MESSAGE           BODY: HTML included in message
  1.0 MISSING_MID            Missing Message-Id: header
- 0.0 HK_NAME_MR_MRS         No description available.
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
-X-Headers-End: 1jSyIA-00HBNh-Vv
-Subject: [Osst-users] Product Inquiry
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+ -0.0 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1jT9WQ-00GmzL-Ox
+Subject: Re: [Osst-users] Investment Projects
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -73,28 +66,70 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: okrapahadjei233@gmail.com
-Content-Type: text/plain; charset="us-ascii"
-Content-Transfer-Encoding: 7bit
+Reply-To: kyle.smith@afggroups.com
+Content-Type: multipart/mixed; boundary="===============5711816505757507081=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1jSyIF-0002ti-68@sfs-ml-4.v29.lw.sourceforge.com>
+Message-Id: <E1jT9WS-0003ep-OQ@sfs-ml-4.v29.lw.sourceforge.com>
 
-Dear Sir,
+You will not see this in a MIME-aware mail reader.
+--===============5711816505757507081==
+Content-Type: multipart/alternative; boundary="===============0759772334=="
 
-We got your company information through an exhaustive search.
+You will not see this in a MIME-aware mail reader.
+--===============0759772334==
+Content-Type: text/plain; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
 
-Our scope is basically to search for foreign companies to bid for contract supply on commission basis.
+Attn:
+ I have an investor looking to invest in entrepreneurial terms with big ide=
+as and a need for Seed Capital to turn their business or ideas into great C=
+ompanies.
+ He has funds available for Investment and want them invested under your Co=
+mpany products strict guidance.
+For more details, please reply so we can discuss further.
+ Yours faithfully.
+ Kyle Smith
+ Tel: +32 460 213469
 
-We are interested in buying your products in a larger quantity if only you can supply and open for business.
+--===============0759772334==
+Content-Type: text/html; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
 
-Best Regard,
-Mr. Okrapah Adjei
-CEO
-OK-Adjei Sourcing Ltd
-Accra,Ghana
+<HTML><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Diso-8859-1"/></head><BODY><P>Attn:</P>
+<P>I have an investor looking to invest in entrepreneurial terms with big i=
+deas and a need for Seed Capital to turn their business or ideas into great=
+ Companies.</P>
+<P>He has funds available for Investment and want them invested under your =
+Company products strict guidance.<BR>For more details, please reply so we c=
+an discuss further.</P>
+<P>Yours faithfully.</P>
+<P>Kyle Smith</P>
+<P>Tel: +32 460 213469</P></BODY></HTML>
+--===============0759772334==--
 
+
+--===============5711816505757507081==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+
+--===============5711816505757507081==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
 
 _______________________________________________
 Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
+
+--===============5711816505757507081==--
+
