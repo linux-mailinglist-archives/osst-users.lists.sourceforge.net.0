@@ -2,49 +2,49 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 463681D7FDA
-	for <lists+osst-users@lfdr.de>; Mon, 18 May 2020 19:16:38 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 921891D7FD7
+	for <lists+osst-users@lfdr.de>; Mon, 18 May 2020 19:16:24 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jajNV-0000aU-31
-	for lists+osst-users@lfdr.de; Mon, 18 May 2020 17:16:37 +0000
+	id 1jajNH-0001T5-Dq
+	for lists+osst-users@lfdr.de; Mon, 18 May 2020 17:16:23 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1jajMm-0000Qp-1Z
- for osst-users@lists.sourceforge.net; Mon, 18 May 2020 17:15:52 +0000
+ id 1jajMj-00014I-3q
+ for osst-users@lists.sourceforge.net; Mon, 18 May 2020 17:15:49 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Message-Id:Content-Transfer-Encoding:Content-Type:
  MIME-Version:To:Subject:From:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Qxtv/YKffO9jb4j1n+bAr6EKJZV6HXQrzouLRiM4RLI=; b=fOrDg0LTqu6iRs62hGIxGdNMSb
- +5CrvH+ydSQE+wqTwx34LT935Vq63z6m/c0KQNc2EnlGIbjophmhtvoiIde0CJZ8Ygo3rvtlre59a
- TFkH4bTOa/mzmoVKLc6d1hu7bqsVPE2sVhO3682E2l+v/TbIFlWuZyIXN+dRDrxsiaC8=;
+ bh=7B54KFaCIYC405iw+fTiCxURKoyokBxb2hpJyfbf0/g=; b=GnIqaJzAbkfBUFGxYwmp2Rfuso
+ KkNM3z5pnbEciBCGeF/a2f5kuOJr6CLm4uyAcFovfRSED3/Oddzg3gdRMExazqUWQXELKxiT3s211
+ +XgCqS7Pea5VgYvZN4bSd4QfJFB1sfhzaHM2yav5caDQ8+7xR8QsFd8cvNK9sxlDrqmg=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Message-Id:Content-Transfer-Encoding:Content-Type:MIME-Version:To:Subject
  :From:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Qxtv/YKffO9jb4j1n+bAr6EKJZV6HXQrzouLRiM4RLI=; b=X
- dgezMJj6Lzbg4XVLw2F4DmNxLqQwvh/JgEc3TeXzMyHrqRLkrD3oDZ0lV1te/SIaTdl4Syov+NuOt
- fUa1ON6kXyCsRmYyuKa1oWfOXUYyfKHx+R3OGVw0iNyej0Bvm32KEUw/DUy304gZvb4dd3UzG0Da1
- gqR0Adw6eckVLtTE=;
+ List-Owner:List-Archive; bh=7B54KFaCIYC405iw+fTiCxURKoyokBxb2hpJyfbf0/g=; b=V
+ /n443n100TBjje4BVHHUvqF8TP2F1PnA5I6Lf+uj3E7Zz+VbS9Ec4eTshV57JOp6Zbt4j2tYjn53+
+ fG95hK8PfvNyV0/10wSG2n/kH7pG6NdbqCa8JaTs5fl5ps7MhgGAS6llzQZ2GULfz//Wk9qZklOzo
+ GVgx0r2pXvq6Nrx4=;
 Received: from [139.129.209.233] (helo=iZ28upq55k1Z)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1jajMj-0064XM-S9
- for osst-users@lists.sourceforge.net; Mon, 18 May 2020 17:15:51 +0000
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1jajMh-00EBdT-QU
+ for osst-users@lists.sourceforge.net; Mon, 18 May 2020 17:15:49 +0000
 Received: by iZ28upq55k1Z (Postfix)
- id 6640D267F76; Tue, 19 May 2020 01:15:33 +0800 (CST)
-Date: Tue, 19 May 2020 01:15:33 +0800 (CST)
+ id B1248267FAC; Tue, 19 May 2020 01:15:43 +0800 (CST)
+Date: Tue, 19 May 2020 01:15:43 +0800 (CST)
 From: MAILER-DAEMON@thinkunion.com.cn (Mail Delivery System)
 To: osst-users@lists.sourceforge.net
 Auto-Submitted: auto-replied
 MIME-Version: 1.0
-Message-Id: <20200518171533.6640D267F76@iZ28upq55k1Z>
+Message-Id: <20200518171543.B1248267FAC@iZ28upq55k1Z>
 X-Helo-Check: bad, Not FQDN (iZ28upq55k1Z)
 X-Spam-Score: 6.3 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
@@ -62,7 +62,7 @@ X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
  0.0 HELO_NO_DOMAIN         Relay reports its domain incorrectly
  -0.5 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1jajMj-0064XM-S9
+X-Headers-End: 1jajMh-00EBdT-QU
 Subject: [Osst-users] Undelivered Mail Returned to Sender
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -75,19 +75,19 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5171506463407294445=="
+Content-Type: multipart/mixed; boundary="===============8172894395803603095=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a MIME-encapsulated message.
 
---===============5171506463407294445==
+--===============8172894395803603095==
 Content-Type: multipart/report; report-type=delivery-status;
-	boundary="199BA26C734.1589822133/iZ28upq55k1Z"
+	boundary="A842326C72D.1589822143/iZ28upq55k1Z"
 Content-Transfer-Encoding: 8bit
 
 This is a MIME-encapsulated message.
 
---199BA26C734.1589822133/iZ28upq55k1Z
+--A842326C72D.1589822143/iZ28upq55k1Z
 Content-Description: Notification
 Content-Type: text/plain; charset=utf-8
 Content-Transfer-Encoding: 8bit
@@ -104,78 +104,78 @@ delete your own text from the attached returned message.
 
                    The mail system
 
-<389722917@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 Domain may not
+<1599150285@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 Domain may not
     exist or DNS check failed
-    [MNjsS3EUOcEmasD+xY39V1R6ZmRwEOVpHqQqkyRIm0KF2FkWQxvmMNlIIIvet28uew== IP:
+    [MJ39yEb/Pk+bu2iw2eu7PzrhRxhKohHTptVF7t2stLY9LE+Fdq0foFJmNler1XVQaA== IP:
     139.129.209.233]. (in reply to end of DATA command)
 
---199BA26C734.1589822133/iZ28upq55k1Z
+--A842326C72D.1589822143/iZ28upq55k1Z
 Content-Description: Delivery report
 Content-Type: message/delivery-status
 Content-Transfer-Encoding: 8bit
 
 Reporting-MTA: dns; iZ28upq55k1Z
-X-Postfix-Queue-ID: 199BA26C734
+X-Postfix-Queue-ID: A842326C72D
 X-Postfix-Sender: rfc822; osst-users@lists.sourceforge.net
-Arrival-Date: Tue, 19 May 2020 01:15:27 +0800 (CST)
+Arrival-Date: Tue, 19 May 2020 01:15:39 +0800 (CST)
 
-Final-Recipient: rfc822; 389722917@qq.com
-Original-Recipient: rfc822;389722917@qq.com
+Final-Recipient: rfc822; 1599150285@qq.com
+Original-Recipient: rfc822;1599150285@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 Domain may not exist or DNS check failed
-    [MNjsS3EUOcEmasD+xY39V1R6ZmRwEOVpHqQqkyRIm0KF2FkWQxvmMNlIIIvet28uew== IP:
+    [MJ39yEb/Pk+bu2iw2eu7PzrhRxhKohHTptVF7t2stLY9LE+Fdq0foFJmNler1XVQaA== IP:
     139.129.209.233].
 
---199BA26C734.1589822133/iZ28upq55k1Z
+--A842326C72D.1589822143/iZ28upq55k1Z
 Content-Description: Undelivered Message
 Content-Type: message/rfc822
 Content-Transfer-Encoding: 8bit
 
 Return-Path: <osst-users@lists.sourceforge.net>
 Received: from SKY-20150219JSJ (unknown [115.213.223.119])
-	by iZ28upq55k1Z (Postfix) with ESMTP id 199BA26C734
-	for <389722917@qq.com>; Tue, 19 May 2020 01:15:27 +0800 (CST)
-X-GUID: 90E3F1A0-80B9-451F-A5C8-3FF806A64E59
+	by iZ28upq55k1Z (Postfix) with ESMTP id A842326C72D
+	for <1599150285@qq.com>; Tue, 19 May 2020 01:15:39 +0800 (CST)
+X-GUID: 6653243B-7150-4CCA-AF26-690D565C3A6B
 X-Has-Attach: no
 From: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-Subject: FSCfezRf
-To: "389722917" <389722917@qq.com>
-Content-Type: multipart/alternative; charset=GB2312; boundary="----=_535_NextPart326062937543_=----"
+Subject: AYyrWH
+To: "1599150285" <1599150285@qq.com>
+Content-Type: multipart/alternative; charset=GB2312; boundary="----=_567_NextPart186067617160_=----"
 MIME-Version: 1.0
-Date: Tue, 19 May 2020 01:15:24 +0800
-Message-Id: <202005190115242257224@lists.sourceforge.net>
+Date: Tue, 19 May 2020 01:15:37 +0800
+Message-Id: <202005190115363593979@lists.sourceforge.net>
 X-Mailer: Foxmail 7, 2, 5, 140[cn]
 
 This is a multi-part message in MIME format
 
-------=_535_NextPart326062937543_=----
+------=_567_NextPart186067617160_=----
 Content-Type: text/plain; charset="GB2312"
 Content-Transfer-Encoding: base64
 
-PGRpdj5Nb09ZbXlRUDwvZGl2Pg0K
+PGRpdj52eE1ySXN5WDwvZGl2Pg0K
 
-------=_535_NextPart326062937543_=----
+------=_567_NextPart186067617160_=----
 Content-Type: text/html; charset="GB2312"
 Content-Transfer-Encoding: base64
 
-PGRpdj5Nb09ZbXlRUDwvZGl2Pg0K
+PGRpdj52eE1ySXN5WDwvZGl2Pg0K
 
-------=_535_NextPart326062937543_=------
-
-
---199BA26C734.1589822133/iZ28upq55k1Z--
+------=_567_NextPart186067617160_=------
 
 
---===============5171506463407294445==
+--A842326C72D.1589822143/iZ28upq55k1Z--
+
+
+--===============8172894395803603095==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5171506463407294445==
+--===============8172894395803603095==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -186,5 +186,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5171506463407294445==--
+--===============8172894395803603095==--
 
