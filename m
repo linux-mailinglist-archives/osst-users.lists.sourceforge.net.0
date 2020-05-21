@@ -2,46 +2,46 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id AE6621D9C31
-	for <lists+osst-users@lfdr.de>; Tue, 19 May 2020 18:15:54 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 67B7F1DD558
+	for <lists+osst-users@lfdr.de>; Thu, 21 May 2020 19:57:34 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jb4uH-0004EI-HY
-	for lists+osst-users@lfdr.de; Tue, 19 May 2020 16:15:53 +0000
+	id 1jbpRl-0002Ad-7T
+	for lists+osst-users@lfdr.de; Thu, 21 May 2020 17:57:33 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <noreply@EU.com>) id 1jb4uF-0004E7-Bn
- for osst-users@lists.sourceforge.net; Tue, 19 May 2020 16:15:51 +0000
+ (envelope-from <noreply@EU.com>) id 1jbpRj-0002AU-6Z
+ for osst-users@lists.sourceforge.net; Thu, 21 May 2020 17:57:31 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
  :Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=3Xxjg5y3xUd5oKWPlvc1k06KmMw9Gll9NFzLEPd4Cvk=; b=HV+a4EYgn56AvO8HDJ28NtMNrB
- UB9xdtoqQItRxlEl8ISWpQCRePCWkpDGFeHjxpthq6/D8nsWSBeTa4l5PbJVlGbqQQtCq1tuiozK1
- Ns07Se8HYqZasElBfDQIpp0yBMyx1+mL5BP1viixd8rq15xGnmtZhkNxarHQbxOkuT9g=;
+ bh=3Xxjg5y3xUd5oKWPlvc1k06KmMw9Gll9NFzLEPd4Cvk=; b=VEAv0Q04/Vu62/XXCV4HezPAIs
+ rH04gk8C7hTf3o4PxeZhBlmCWCiB/8aM/cF5lpI+pWJYx9cEcpsednmn5wywb9lY5pu1LIuEQORAT
+ Xf75UPPu1jcQ8LKpCWcLwoJl6svaN5jb3iIyfC4MIwtCWz5UArvPC0mZ4c2m3Kh1+Yno=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
  Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date
  :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=3Xxjg5y3xUd5oKWPlvc1k06KmMw9Gll9NFzLEPd4Cvk=; b=V
- tIaLNOQdDzbsUM8vvYWelIDbgDB8tdggw4vaeYZh9gn8P7XlDFpzKl6H7DEp1GT8mGnLDbROJmezc
- KBtu94CthdHemb95z87lGnLDn0lvjoT+qVN0RVrQGrik4F1Mkberwfsn5lrsBgoUvhm14k1xUhXNi
- 9r8jD2vyN57ysZSk=;
+ List-Owner:List-Archive; bh=3Xxjg5y3xUd5oKWPlvc1k06KmMw9Gll9NFzLEPd4Cvk=; b=j
+ 2iHmHAcEnb5LXI7dh+Jezrvl1bEMGlZUO0dTFJPFtMqWVjxAbX+7Vwnr25SgPymYtL6a+L9WCbFYO
+ hkpjHgiTJgIi5edXpFjYpTjT4spLZA6QjOJDyIiYXQpyucTQs0x8lDJ2mRc815/1rn9RxbisQZ/Ml
+ Hzw9t6chR2wR+wOs=;
 Received: from [103.141.137.241] by sfi-mx-1.v28.lw.sourceforge.com with esmtp 
- (Exim 4.92.2) id 1jb4uC-007acj-ER
- for osst-users@lists.sourceforge.net; Tue, 19 May 2020 16:15:51 +0000
+ (Exim 4.92.2) id 1jbpRg-00BSIa-Ns
+ for osst-users@lists.sourceforge.net; Thu, 21 May 2020 17:57:31 +0000
 From: "John Gray" <noreply@EU.com>
 To: osst-users@lists.sourceforge.net
-Date: 19 May 2020 09:15:42 -0700
-Message-ID: <20200519091542.AC415C0E0EE520B4@EU.com>
+Date: 21 May 2020 10:57:15 -0700
+Message-ID: <20200521105715.65C1A295438C940B@EU.com>
 MIME-Version: 1.0
-X-Spam-Score: 6.2 (++++++)
+X-Spam-Score: 7.2 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
@@ -50,11 +50,17 @@ X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  [103.141.137.241 listed in psbl.surriel.com]
  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
  [103.141.137.241 listed in zen.spamhaus.org]
+ 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
+ https://senderscore.org/blacklistlookup/
+ [103.141.137.241 listed in bl.score.senderscore.com]
+ 0.0 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
+ [103.141.137.241 listed in bl.mailspike.net]
+ 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
  0.0 LOTS_OF_MONEY          Huge... sums of money
  0.0 T_FILL_THIS_FORM_SHORT Fill in a short form with personal information
  0.0 MONEY_FORM_SHORT       Lots of money if you fill out a short form
- -0.1 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1jb4uC-007acj-ER
+ -0.4 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1jbpRg-00BSIa-Ns
 Subject: Re: [Osst-users] UN COVID-19 Stimulus
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
