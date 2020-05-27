@@ -2,93 +2,85 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 23FA01E33DD
-	for <lists+osst-users@lfdr.de>; Wed, 27 May 2020 01:48:06 +0200 (CEST)
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:MIME-Version:Reply-To:From:
-	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
-	Subject:Message-Id:Date:To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
-	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
-	:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=TnO5vIruoX4KeGH1Y1+OLeKotu1vh9qeWojv8t5eAOs=; b=FvjAwr7LiprBQrI0lDtt8il01a
-	Hnm/JB9p4UMsgO2fY7Y86+g3aGyiRk+fwjwoOQ4+1mhoRH13qpID3GJl5+HHjAIRb3aOcqqUyvpdR
-	/ChzcbxLhOjdYDEMzOXXo560Src+VHu9jYXEHEFN4qEXdC3Zk6exqOgSpnC3xO32vAGU=;
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id DB4551E51E0
+	for <lists+osst-users@lfdr.de>; Thu, 28 May 2020 01:34:15 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jdjIi-0007Tw-Ua
-	for lists+osst-users@lfdr.de; Tue, 26 May 2020 23:48:04 +0000
+	id 1je5Ys-0007Jj-NR
+	for lists+osst-users@lfdr.de; Wed, 27 May 2020 23:34:14 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <info@delivers-solutions.com>) id 1jdjIh-0007Tp-RZ
- for osst-users@lists.sourceforge.net; Tue, 26 May 2020 23:48:03 +0000
+ (envelope-from
+ <OTQ4MDAzNzA4NDA=_b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ=$amy@vip.yinxiaohong.cn>)
+ id 1je5Yr-0007JW-Bg
+ for osst-users@lists.sourceforge.net; Wed, 27 May 2020 23:34:13 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Message-Id:Date:Content-Type:To:Subject:From:Sender
- :Reply-To:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Subject:Message-ID:Reply-To:To:From:Date:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=pZCNqe6UJV7uWht64WzwQM9cpU94p8zvB6SB2x+d0U8=; b=kiy0/fZIs2i+7fi8ToLZsUpHVX
- iQDLmCQVKJAVftmhN0Wvbjan/Swp0yXOlQA9xdvwlDiTrb/Q4ctHgysb/y/eUfNcTk1cFcZVVhzTJ
- cF3Du6Z4nTiafdEVPQSgo5o2gOvY5N1MvlmQqlfH0vY0jwE5NI7J1X0asJN7R4cj5l0o=;
+ bh=MzxQy7J50syeJQ4vFtnXyZBeLGm+5hmiGxWfsXAOaIY=; b=ZQCria35nGB/YTiLPHPBYN6PNv
+ nblN/cQDRZ1FP7ag1l8LywsuLViV4EDRdXA891RxIf7TraGKYit4ptyXGg7DHyXGwzF/DS9rpfr4G
+ nWXwJKZWw2ym4Y+RCkEDnvN4JoQBopkWL0OuzCg0+QBj07TLcHurcaCGZgXpm/5iO2HI=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Message-Id:Date:Content-Type:To:Subject:From:Sender:Reply-To:Cc:
- MIME-Version:Content-Transfer-Encoding:Content-ID:Content-Description:
- Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=pZCNqe6UJV7uWht64WzwQM9cpU94p8zvB6SB2x+d0U8=; b=U3C2bVMLBQg0PtO8xjdo7GW+Zl
- tZZl0qDMN6DYaXh1tWey4BT+DM291ajULbidYjWsqJTxTY6INUglQmwTfa+FxVBSqnaCXh7gNMDP+
- FRpWiNUat/cG3XUq9CXjkUZKV3hy57qMb8qH1YFWVk+sikFEDV4jdkMGxpbBOKtLftFM=;
-Received: from rdns3.delivers-solutions.com ([147.135.99.23])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1jdjIg-008QPP-5q
- for osst-users@lists.sourceforge.net; Tue, 26 May 2020 23:48:03 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default;
- d=delivers-solutions.com; 
- h=From:Subject:To:Content-Type:Date:Message-Id; i=info@delivers-solutions.com; 
- bh=YVKPjnYeBvkMeQSV3rGr5/fuIpI=;
- b=BElQXHsnAAsm5RpLyvB+GqjJ41wjz7D6K49xjjsC5+49k+iEGcavXIXrHjtKeUFexgzocrSerAjg
- HFpcdONccTu6E4DNxQ6K8OiEda5F5lCeZJINz8enz4K64MIHqAqST2gtnf7Kwvk0NFoQM+Hxsg7K
- uuPs6gg6Vn8pckW2wQ4=
-DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default;
- d=delivers-solutions.com; 
- b=gmcn67WmN2mzlxRoyBE+mGUVctydHqVRVzbhBRORpOEZ1z86T6keQXNxDJ65enKh8te9E40Vi7JW
- LHZMHNVaAmlNdvd7LFKpDn1W7lJOQ/yvnPMwslwwN9BXefmm6hjLvh1ct1Z84VxBzjiEVLUGQ8C+
- EekWuiPOCZHIzMiifck=;
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:Message-ID:
+ Reply-To:To:From:Date:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=MzxQy7J50syeJQ4vFtnXyZBeLGm+5hmiGxWfsXAOaIY=; b=N
+ 57moGkyJZ4m2ebgtJKZZGd8xv5zOX5vXmWrwyeXc8wpl72cVrIgR8bk+ogBmnzb3eKHV1yWWjzYTN
+ UVSjP35to2FrznOapAm0euc6e+6XeYullwODEESGuni18Rb02Z1G77ni5U9DE2vQJ95Wk4L6+Icyp
+ sAsrQLfixleyp3Jo=;
+Received: from out21-122.dm.aliyun.com ([115.124.21.122])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1je5Yp-00FQFp-8q
+ for osst-users@lists.sourceforge.net; Wed, 27 May 2020 23:34:13 +0000
+Received: from WS-web
+ (OTQ4MDAzNzA4NDA=_b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ=$amy@vip.yinxiaohong.cn[127.0.0.1])
+ by e01e01539.eu6 at Thu, 28 May 2020 07:33:50 +0800
+Date: Thu, 28 May 2020 07:33:47 +0800
+From: "Andy" <amy@vip.yinxiaohong.cn>
 To: <osst-users@lists.sourceforge.net>
-Date: Wed, 27 May 2020 01:47:55 +0200
-Priority: urgent
-X-Priority: 1
-Importance: high
-Alibaba: [sales1_dgscsy_gmail_com]
-feedback: Alibaba Inquiry Notication
-Message-Id: <2754202005470178242B6A8B$072F7598E2@OVODRKWE>
-X-Spam-Score: 4.3 (++++)
+Message-ID: <373cea94-9b9e-4627-a15e-49b37746b4da@alibaba.com>
+X-Priority: 3
+X-Mailer: Alimail-Mailagent
+MIME-Version: 1.0
+X-EnvId: 94800370840
+X-Alimail-AntiSpam: AC=SUSPECT; BC=0.5889657|-1; BR=01201311R871b1;
+ FP=0|-1|-1|-1|0|-1|-1|-1; HT=e01e04483; MF=amy@vip.yinxiaohong.cn; NM=1; PH=DU;
+ RN=0; RT=0; SR=0; TI=ma_94800370839; 
+X-Mailer: Alimail-Mailagent
+X-Spam-Score: 7.6 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: oxintrade.com]
+ for more information. [URIs: anoksoft.com]
+ 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+ [Blocked - see <https://www.spamcop.net/bl.shtml?115.124.21.122>]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [115.124.21.122 listed in wl.mailspike.net]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [115.124.21.122 listed in list.dnswl.org]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
+ (1935751927[at]qq.com)
  1.0 HTML_MESSAGE           BODY: HTML included in message
  2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 0.1 MIME_HEADER_CTYPE_ONLY 'Content-Type' found without required MIME
- headers
- 1.0 ALIBABA_IMG_NOT_RCVD_ALI Alibaba hosted image but message not from
- Alibaba
-X-Headers-End: 1jdjIg-008QPP-5q
-Subject: [Osst-users] (Alibaba Inquiry Notification,
- ) Isaac Sarwari has sent you an inquiry
+ 0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+ 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+ 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+ -0.3 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1je5Yp-00FQFp-8q
+Subject: [Osst-users] =?utf-8?b?55yf5q2j5ruh6Laz5aSW6LS45LyB5Lia5Liq5oCn?=
+ =?utf-8?b?5YyW55qERVJQ57O757uf?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -100,229 +92,113 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: feedback--- via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: "feedback@service.alibab.com" <info@delivers-solutions.com>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============3305119096044403045=="
+Reply-To: 1935751927@qq.com
+Content-Type: multipart/mixed; boundary="===============7672945397246913645=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============3305119096044403045==
-Content-Type: text/html; charset=iso-8859-1
+--===============7672945397246913645==
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
 
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <META name=Generator content=10.81> <title>(Alibaba Inquiry 
-Notification,) Isaac Sarwari has sent you an inquiry</title>
- </head>
- <body> <DIV style="FONT-SIZE: 14px; FONT-FAMILY: Arial; COLOR: #000000; 
-LINE-HEIGHT: 1.7"> <DIV><table cellSpacing=0 cellPadding=0 width="100%" 
-bgColor=#f6f8fb border=0> <tr><td style="PADDING-BOTTOM: 30px; 
-PADDING-TOP: 10px; PADDING-LEFT: 16px; PADDING-RIGHT: 16px" align=center>
-&nbsp;<table style="WIDTH: 602px" cellSpacing=0 cellPadding=0 width=602 
-align=center border=0> <tr><td><table cellSpacing=0 cellPadding=0 
-bgColor=#f6f8fb border=0> <tr><td style="HEIGHT: 60px; LINE-HEIGHT: 60px" 
-height=60><IMG class=proton-embedded style="WIDTH: 160px; FLOAT: left; 
-DISPLAY: block" border=0 alt=www.Alibaba.com 
-src="https://img.alicdn.com/tps/TB1ZIEhIVXXXXbOaXXXXXXXXXXX-519-114.png" 
-width=160 referrerpolicy="no-referrer"> </td><td height=60 width=21 
-align=center><table cellSpacing=0 cellPadding=0 width=1> <tr><td 
-style="FONT-SIZE: 1px; WIDTH: 1px; BORDER-LEFT: #d9d9d9 1px solid; 
-LINE-HEIGHT: 24px" height=24 width=1>&nbsp;</TD></TR></TABLE></td><td 
-style="FONT-SIZE: 18px; FONT-FAMILY: arial; COLOR: #333333; LINE-HEIGHT: 
-60px" height=60>Trade Center </td><td style="FONT-SIZE: 12px; 
-FONT-FAMILY: arial; WIDTH: 314px; COLOR: #666; TEXT-ALIGN: right" 
-height=60>IP:86.***.**.251 </TD></TR></TABLE></TD></tr><tr><td><table 
-cellSpacing=0 cellPadding=0 width=642 border=0> <tr><td 
-style="BORDER-TOP: #dcdee3 1px solid; BORDER-RIGHT: #dcdee3 1px solid; 
-WIDTH: 600px; BORDER-BOTTOM: #dcdee3 1px solid; PADDING-BOTTOM: 20px; 
-PADDING-TOP: 20px; PADDING-LEFT: 20px; BORDER-LEFT: #dcdee3 1px solid; 
-PADDING-RIGHT: 20px; BACKGROUND-COLOR: #fff" bgColor=#ffffff width=600 
-align=center><table cellSpacing=0 cellPadding=0 width="100%" border=0> 
-<tr><td style="FONT-SIZE: 24px; FONT-FAMILY: Arial, Helvetica, sans-serif; 
-COLOR: #333; PADDING-BOTTOM: 20px; LINE-HEIGHT: 28px" align=left>
-&#12304;&#38463;&#37324;&#24052;&#24052;&#25552;&#37266;&#24744;&#12305;&#21450;&#26102;&#12289;&#19987;&#19994;&#30340;&#22238;&#22797;&#26377;&#21161;&#20110;&#20080;&#23478;&#20877;&#27425;&#19982;&#24744;&#27807;&#36890;&#65292;&#25552;&#21319;&#20132;&#26131;&#26426;&#20250; 
-</TD></TR></TABLE><table cellSpacing=0 cellPadding=0 width="100%" 
-border=0> <tr><td style="WIDTH: 40px; PADDING-BOTTOM: 12px; PADDING-TOP: 
-20px; PADDING-LEFT: 0px; LINE-HEIGHT: 0; PADDING-RIGHT: 0px"><IMG 
-class=proton-embedded style="HEIGHT: 32px; WIDTH: 32px; border-radius: 
-50%" border=0 alt="Jacky Lui" 
-src="http://img.alibaba.com/images/eng/style/css_images/minisite/common/default_contact_photo_60.gif" 
-width=32 height=32 referrerpolicy="no-referrer"> </td><td 
-style="FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: 
-#666; PADDING-BOTTOM: 12px; PADDING-TOP: 20px; PADDING-LEFT: 0px; 
-LINE-HEIGHT: 16px; PADDING-RIGHT: 0px">
-osst-users@lists.sourceforge.net</td><td style="FONT-SIZE: 12px; 
-FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #666; PADDING-BOTTOM: 
-12px; PADDING-TOP: 20px; PADDING-LEFT: 0px; LINE-HEIGHT: 16px; 
-PADDING-RIGHT: 0px"></TD></TR></TABLE><table style="BORDER-TOP: #c8d2e0 
-1px solid; BORDER-RIGHT: #c8d2e0 1px solid; BORDER-BOTTOM: #c8d2e0 1px 
-solid; BORDER-LEFT: #c8d2e0 1px solid" cellSpacing=0 cellPadding=0 
-width="100%" border=0> <tr><td style="FONT-FAMILY: Arial, Helvetica, 
-sans-serif; WIDTH: 80px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; 
-PADDING-LEFT: 10px; LINE-HEIGHT: 0; PADDING-RIGHT: 10px" align=left 
-alt="Fabricants de Goupilles De revers Bas MOQ Personnalisé Émail Dur 
-Épinglette Pour Souvenir"><IMG class=proton-embedded style="HEIGHT: 80px; 
-WIDTH: 80px" border=0 
-src="https://sc02.alicdn.com/kf/HTB1unBfXODxK1RjSsphq6zHrpXaz.jpg" 
-width=32 height=32 referrerpolicy="no-referrer"> </td><td 
-style="FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: 
-#666; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; 
-PADDING-RIGHT: 10px" align=left> <P style="FONT-SIZE: 14px; FONT-FAMILY: 
-Arial, Helvetica, sans-serif; COLOR: #333; MARGIN: 0px 0px 10px; 
-LINE-HEIGHT: 18px">Fabricants de Goupilles De revers Bas MOQ Personnalisé 
-Émail Dur Épinglette Pour Souvenir </p><p style="FONT-SIZE: 12px; 
-FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #666; MARGIN: 0px; 
-LINE-HEIGHT: 16px">20 Pièces &nbsp;&nbsp;&nbsp;&nbsp; </P></td><td 
-style="FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif; WIDTH: 
-70px; COLOR: #ff751a; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; 
-PADDING-LEFT: 10px; LINE-HEIGHT: 18px; PADDING-RIGHT: 10px" align=left>
-</td><td style="FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, 
-sans-serif; WIDTH: 130px; COLOR: #333; PADDING-BOTTOM: 10px; PADDING-TOP: 
-10px; PADDING-LEFT: 10px; LINE-HEIGHT: 16px; PADDING-RIGHT: 10px" 
-align=left></TD></TR></TABLE><table style="BACKGROUND-COLOR: #fff" 
-cellSpacing=0 cellPadding=0 width="100%" bgColor=#fff border=0> <tr><td 
-style="WIDTH: 600px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 
-20px; LINE-HEIGHT: 12px; PADDING-RIGHT: 20px">&nbsp;</TD></TR></TABLE>
-<table style="BACKGROUND-COLOR: #f5f7fa" cellSpacing=0 cellPadding=0 
-width="100%" bgColor=#f5f7fa border=0> <tr><td style="FONT-SIZE: 14px; 
-FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #333; PADDING-BOTTOM: 
-10px; PADDING-TOP: 10px; PADDING-LEFT: 20px; LINE-HEIGHT: 18px; 
-PADDING-RIGHT: 20px" align=left>Hi osst-users@lists.sourceforge.net</TD>
-</TR></TABLE><table style="BACKGROUND-COLOR: #f5f7fa" cellSpacing=0 
-cellPadding=0 width="100%" bgColor=#f5f7fa border=0> <tr><td 
-style="WORD-WRAP: break-word; FONT-SIZE: 14px; FONT-FAMILY: Arial, 
-Helvetica, sans-serif; COLOR: #333; PADDING-BOTTOM: 10px; PADDING-TOP: 
-10px; PADDING-LEFT: 20px; LINE-HEIGHT: 18px; PADDING-RIGHT: 20px" 
-align=left>Hi ! I'm interested by a cotation, we would like to product a 
-new brand of pins in France. It's for a pins hard enamel of 65 x 40 mm, 
-for 20 pieces, 2 colors. We will need also a custom backing card and 
-polybag. What is the cost for a logo (1 color) on the back of the pin ? 
-For the clutches, we like a black or gold color. What is the price for a 
-shipping door to door in France (train/air) Thank you, Daniel. </TD></TR>
-</TABLE><table style="BACKGROUND-COLOR: #f5f7fa" cellSpacing=0 
-cellPadding=0 width="100%" bgColor=#f5f7fa border=0> <tr><td 
-style="FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: 
-#333; PADDING-BOTTOM: 0px; PADDING-TOP: 10px; PADDING-LEFT: 20px; 
-LINE-HEIGHT: 18px; PADDING-RIGHT: 0px" align=left><IMG 
-class=proton-embedded border=0 
-src="http://style.alibaba.com/simg/sprites/env/gangesweb/onepage/list/attach.png" 
-referrerpolicy="no-referrer"> </td><td style="FONT-SIZE: 14px; 
-FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #333; PADDING-BOTTOM: 
-10px; PADDING-TOP: 10px; PADDING-LEFT: 0px; LINE-HEIGHT: 18px; 
-PADDING-RIGHT: 20px" align=left>It contains an attachment. Please sign 
-into <A style="FONT-SIZE: 14px; TEXT-DECORATION: none; FONT-FAMILY: 
-Arial, Helvetica, sans-serif; COLOR: #1686cc; LINE-HEIGHT: 18px" 
-href="https://$@@@oxintrade.com/Alibaba_1/?login=osst-users@lists.sourceforge.net" 
-rel="noreferrer nofollow noopener" target=_blank>Trade Center </A>to 
-check it. </TD></TR></TABLE><table style="BACKGROUND-COLOR: #fff" 
-cellSpacing=0 cellPadding=0 width="100%" bgColor=#fff border=0> <tr><td 
-style="WIDTH: 600px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 
-20px; LINE-HEIGHT: 12px; PADDING-RIGHT: 20px">&nbsp;</TD></TR></TABLE>
-<table cellSpacing=0 cellPadding=0 width="100%" border=0> <TR 
-width="100%"> <TD style="HEIGHT: 44px; WIDTH: 120px">&nbsp; </td><td 
-style="BORDER-TOP: #ff751a 1px solid; HEIGHT: 42px; BORDER-RIGHT: #ff751a 
-1px solid; WIDTH: 290px; BORDER-BOTTOM: #ff751a 1px solid; TEXT-ALIGN: 
-center; BORDER-LEFT: #ff751a 1px solid; BACKGROUND-COLOR: #ff751a; 
-border-radius: 3px"><A style="FONT-SIZE: 18px; TEXT-DECORATION: none; 
-FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #fff; PADDING-BOTTOM: 
-0px; PADDING-TOP: 0px; PADDING-LEFT: 30px; LINE-HEIGHT: 40px; 
-PADDING-RIGHT: 30px; border-radius: 3px" 
-href="https://$@@@oxintrade.com/Alibaba_1/?login=osst-users@lists.sourceforge.net" 
-rel="noreferrer nofollow noopener" target=_blank>
-&#31435;&#21363;&#22238;&#22797; </A></td><td style="HEIGHT: 44px; WIDTH: 
-120px">&nbsp; </TD></TR></TABLE><table cellSpacing=0 cellPadding=0 
-width="100%" border=0> <TR width="100%"> <TD style="HEIGHT: 44px">&nbsp; 
-</td><td style="HEIGHT: 42px; WIDTH: 500px; TEXT-ALIGN: center"><A 
-style="FONT-SIZE: 12px; TEXT-DECORATION: none; FONT-FAMILY: Arial, 
-Helvetica, sans-serif; COLOR: #1686cc; LINE-HEIGHT: 40px" 
-href="https://$@@@oxintrade.com/Alibaba_1/?login=osst-users@lists.sourceforge.net" 
-rel="noreferrer nofollow noopener" target=_blank>
-&#23433;&#35013;&#38463;&#37324;&#21334;&#23478;APP </A><SPAN 
-style="FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: 
-#333; LINE-HEIGHT: 40px">
-&#65292;&#38543;&#26102;&#38543;&#22320;&#22238;&#22797;&#20080;&#23478;&#65292;&#25552;&#21319;&#21450;&#26102;&#22238;&#22797;&#29575;&#65281;</SPAN>
- </td><td style="HEIGHT: 44px">&nbsp; </TD></TR></TABLE><table 
-cellSpacing=0 cellPadding=0 width="100%" border=0> <tr><td 
-style="FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: 
-#333; PADDING-BOTTOM: 8px; PADDING-TOP: 20px; PADDING-LEFT: 0px; 
-LINE-HEIGHT: 18px; PADDING-RIGHT: 0px" align=left>FAQ: </TD></TR></TABLE>
-<table cellSpacing=0 cellPadding=0 width="100%" border=0> <tr><td 
-style="FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: 
-#333; PADDING-BOTTOM: 8px; LINE-HEIGHT: 18px" align=left>1. 
-&#21450;&#26102;&#22238;&#22797;&#29575;&#25552;&#21319;&#21450;&#26597;&#35810;&#25915;&#30053; 
-</TD></TR></TABLE><table cellSpacing=0 cellPadding=0 width="100%" 
-border=0> <tr><td style="FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, 
-sans-serif; COLOR: #333; PADDING-BOTTOM: 8px; LINE-HEIGHT: 18px" 
-align=left>2. 
-&#21450;&#26102;&#22238;&#22797;&#29575;&#25552;&#21319;&#21450;&#26597;&#35810;&#25915;&#30053; 
-</TD></TR></TABLE></TD></tr><tr><td style="WIDTH: 600px; PADDING-BOTTOM: 
-4px; PADDING-TOP: 4px; PADDING-LEFT: 20px; LINE-HEIGHT: 12px; 
-PADDING-RIGHT: 20px">&nbsp;</TD></TR></TABLE></TD></tr><tr><td><table 
-cellSpacing=0 cellPadding=0 width="100%" bgColor=#f6f8fb border=0> <tr>
-<td><table style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 
-0px; PADDING-RIGHT: 0px" cellSpacing=0 cellPadding=0 width="100%" 
-align=center border=0> <tr><td style="FONT-SIZE: 12px; FONT-FAMILY: 
-Arial, 'Microsoft YaHei',Helvetica, sans-serif; COLOR: #9a9a9a; 
-PADDING-BOTTOM: 7px; TEXT-ALIGN: left; PADDING-TOP: 16px; PADDING-LEFT: 
-0px; PADDING-RIGHT: 0px" align=left><table cellSpacing=0 cellPadding=0 
-align=left border=0> <tr><td style="FONT-SIZE: 14px; COLOR: #666666; 
-LINE-HEIGHT: 20px"><U>Email Setting</U> <SPAN style="PADDING-BOTTOM: 0px; 
-PADDING-TOP: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px">|</SPAN> <U>
-Customer Services</U> <SPAN style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; 
-PADDING-LEFT: 6px; PADDING-RIGHT: 6px">|</SPAN> </TD></TR></TABLE><table 
-cellSpacing=0 cellPadding=0 align=left border=0> <tr><td 
-style="FONT-SIZE: 14px; COLOR: #666666; LINE-HEIGHT: 20px"><U>Help 
-center</U> <SPAN style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; 
-PADDING-LEFT: 6px; PADDING-RIGHT: 6px">|</SPAN> <A style="FONT-SIZE: 
-14px; TEXT-DECORATION: underline; FONT-WEIGHT: 700; COLOR: #666666; 
-LINE-HEIGHT: 20px" 
-href="https://$@@@oxintrade.com/Alibaba_1/?login=osst-users@lists.sourceforge.net" 
-rel="noreferrer nofollow noopener" target=_blank>My Alibaba</A> </TD></TR>
-</TABLE></TD></tr><tr><td style="FONT-SIZE: 12px; FONT-FAMILY: Arial, 
-'Microsoft YaHei',Helvetica, sans-serif; COLOR: #9a9a9a; PADDING-BOTTOM: 
-7px; TEXT-ALIGN: left; PADDING-TOP: 16px; PADDING-LEFT: 0px; 
-PADDING-RIGHT: 0px" align=left> <P style="PADDING-BOTTOM: 0px; 
-PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 18px; 
-PADDING-RIGHT: 0px">You received this email because you are registered on 
-Alibaba.com</P></TD></tr><tr><td style="FONT-SIZE: 12px; FONT-FAMILY: 
-Arial, 'Microsoft YaHei',Helvetica, sans-serif; COLOR: #9a9a9a; 
-PADDING-BOTTOM: 7px; TEXT-ALIGN: left; PADDING-TOP: 16px; PADDING-LEFT: 
-0px; PADDING-RIGHT: 0px" align=left> <P style="PADDING-BOTTOM: 0px; 
-PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 18px; 
-PADDING-RIGHT: 0px">Read our <U>Privacy Policy</U> and <U>Terms of Use</U>
- </p><p style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; 
-MARGIN: 0px; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px">Alibaba.com Hong Kong 
-Limited.</p><p style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; 
-PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px">
-26/F Tower One, Times Square, 1 Matheson Street, Causeway Bay, Hong Kong 
-</p><p style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; 
-MARGIN: 0px; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px">Tel: (+852) 
-2215-5100</P></TD></tr><tr><td style="FONT-SIZE: 12px; FONT-FAMILY: 
-Arial, 'Microsoft YaHei',Helvetica, sans-serif; COLOR: #9a9a9a; 
-PADDING-BOTTOM: 16px; TEXT-ALIGN: left; PADDING-TOP: 16px; PADDING-LEFT: 
-0px; PADDING-RIGHT: 0px" align=left> <P style="PADDING-BOTTOM: 0px; 
-PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 18px; 
-PADDING-RIGHT: 0px">
-&#38463;&#37324;&#24052;&#24052;&#39321;&#28207;&#26377;&#38480;&#20844;&#21496;</p>
-<p style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; 
-MARGIN: 0px; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px">
-&#39321;&#28207;&#37509;&#38012;&#28771;&#21247;&#22320;&#33251;&#34903;1&#34399;&#26178;&#20195;&#24291;&#22580;1&#24231;26&#27155;</p>
-<p style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; 
-MARGIN: 0px; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px">
-&#38651;&#35441;&#65306;(+852) 2215-5100</P></TD></TR></TABLE></TD></TR>
-</TABLE></TD></TR></TABLE></TD></TR></TABLE></DIV></DIV></body>
- </html>
+<p style=3D"text-align: center;" data-spm-anchor-id=3D"5176.2020520150.113.i0.=
+2aca7528rNRlQJ"><a href=3D"http://dmtrace.vip.yinxiaohong.cn/trace/v1/report?b=
+id=3D748756&env=3D94800370840&mac=3D45794&mf=3Damy%40vip.yinxiaohong.cn&sac=3D=
+0&tag=3Danoksoft&tid=3D748756&to=3Dosst-users%40lists.sourceforge.net&tpl=3D&t=
+s=3D1590622427&type=3D0&url=3Dhttp%3A%2F%2Fwww.anokerp.com&v=3D1.0&sign=3D7ccf=
+d80d5162bf2684b8076990e16d9b" target=3D"_blank"><img src=3D"http://www.anoksof=
+t.com/upload/expor_a1.png" _src=3D"http://www.anoksoft.com/upload/expor_a1.png=
+" data-spm-anchor-id=3D"5176.2020520150.112.i7.1dcb7528EYgZUp"/></a></p><p sty=
+le=3D"text-align: center;"><img src=3D"http://www.anoksoft.com/upload/expor_a2=
+.png" _src=3D"http://www.anoksoft.com/upload/expor_a2.png" data-spm-anchor-id=3D=
+"5176.2020520150.112.i9.1dcb7528EYgZUp"/></p><p style=3D"text-align: center;">=
+<img src=3D"http://www.anoksoft.com/upload/expor_a3.png" _src=3D"http://www.an=
+oksoft.com/upload/expor_a3.png" data-spm-anchor-id=3D"5176.2020520150.112.i12.=
+1dcb7528EYgZUp" style=3D"width: 704px; height: 331px;"/></p><p style=3D"text-a=
+lign: center;"><img src=3D"http://www.anoksoft.com/upload/expor_a4.png" _src=3D=
+"http://www.anoksoft.com/upload/expor_a4.png" data-spm-anchor-id=3D"5176.20205=
+20150.112.i18.1dcb7528EYgZUp" style=3D"width: 762px; height: 384px;"/></p><p s=
+tyle=3D"color: rgb(0, 0, 0); font-family: Verdana; font-size: 14px; font-varia=
+nt-numeric: normal; font-variant-east-asian: normal; line-height: normal; whit=
+e-space: normal; widows: 1;"><br/></p><p data-spm-anchor-id=3D"5176.2020520150=
+.113.i4.64367528AGHWTp"><br/></p><p data-spm-anchor-id=3D"5176.2020520150.113.=
+i4.64367528AGHWTp">&nbsp; &nbsp; &nbsp;=E9=A1=BA=E7=A5=9D<br/></p><p data-spm-=
+anchor-id=3D"5176.2020520150.113.i6.64367528AGHWTp">=E5=95=86=E7=A5=BA=EF=BC=81=
+</p><p data-spm-anchor-id=3D"5176.2020520150.113.i6.64367528AGHWTp"><br/></p><=
+div style=3D"font-variant-numeric: normal; font-variant-east-asian: normal; li=
+ne-height: 19.04px; white-space: normal; widows: 1;"><div style=3D"font-family=
+: &quot;Arial Narrow&quot;; font-size: 14px; color: rgb(144, 144, 144);" data-=
+spm-anchor-id=3D"5176.2020520150.113.i10.64367528AGHWTp"><span style=3D"font-s=
+ize: small;" data-spm-anchor-id=3D"5176.2020520150.113.i9.64367528AGHWTp"><a h=
+ref=3D"http://dmtrace.vip.yinxiaohong.cn/trace/v1/report?bid=3D748756&env=3D94=
+800370840&mac=3D45794&mf=3Damy%40vip.yinxiaohong.cn&sac=3D0&tag=3Danoksoft&tid=
+=3D748756&to=3Dosst-users%40lists.sourceforge.net&tpl=3D&ts=3D1590622427&type=3D=
+0&url=3Dhttp%3A%2F%2Fwww.anokerp.cn&v=3D1.0&sign=3Da7cc5ecdb38c76287d0ba790342=
+bd0a1" target=3D"_blank" data-spm-anchor-id=3D"5176.2020520150.113.1">-------=E6=
+=9C=8D=E8=A3=85=E5=A4=96=E8=B4=B8=E8=BD=AF=E4=BB=B6=E8=AF=B7=E7=82=B9=E5=87=BB=
+=E8=BF=99=E9=87=8C-----------</a></span></div><div style=3D"" data-spm-anchor-=
+id=3D"5176.2020520150.113.i16.64367528AGHWTp"><span style=3D"font-family: Verd=
+ana; font-size: 12px; color: rgb(0, 0, 0); line-height: 22.1px;"><span style=3D=
+"font-family:=E9=BB=91=E4=BD=93;line-height: 23px;color:#333333;line-height: 2=
+3px;"><strong data-spm-anchor-id=3D"5176.2020520150.113.i7.4c527528rBAAGl">=E8=
+=89=BE=E8=AF=BA=E7=A7=91=E5=A4=96=E8=B4=B8=E8=A1=8C=E4=B8=9A=E4=BF=A1=E6=81=AF=
+=E5=8C=96=E4=B8=93=E5=AE=B6=EF=BC=9A</strong></span><span style=3D"line-height=
+: 23px;"></span><strong style=3D"color: rgb(51, 51, 51); font-family: =E9=BB=91=
+=E4=BD=93; line-height: 23px;" data-spm-anchor-id=3D"5176.2020520150.113.i1.1d=
+cb7528EYgZUp">Andy</strong></span><div align=3D"left" style=3D"line-height: 23=
+px;" data-spm-anchor-id=3D"5176.2020520150.113.i34.5bd67528JJviyO"><span style=
+=3D"line-height: 23px;"><span style=3D"font-weight: bold; font-family: =E9=BB=91=
+=E4=BD=93; color: rgb(51, 51, 51); font-size: small;">=E6=89=8B=E6=9C=BA=EF=BC=
+=9A</span><span t=3D"7" data=3D"13439816349" style=3D"border-bottom: 1px dashe=
+d rgb(204, 204, 204); z-index: 1;"><span t=3D"7" data=3D"13801086094" style=3D=
+"border-bottom: 1px dashed rgb(204, 204, 204); z-index: 1;"><span t=3D"7" data=
+=3D"18612877376" isout=3D"1" style=3D"border-bottom: 1px dashed rgb(204, 204, =
+204); z-index: 1; position: static;"><span t=3D"7" data=3D"15323380209" style=3D=
+"border-bottom: 1px dashed rgb(204, 204, 204); z-index: 1;" data-spm-anchor-id=
+=3D"5176.2020520150.113.i35.5bd67528JJviyO"><span style=3D"" data-spm-anchor-i=
+d=3D"5176.2020520150.113.i42.5bd67528JJviyO"><span style=3D"" data-spm-anchor-=
+id=3D"5176.2020520150.113.i0.7f117528LjYcpZ"><strong style=3D"font-family: =E9=
+=BB=91=E4=BD=93; font-size: small;" data-spm-anchor-id=3D"5176.2020520150.113.=
+i8.7f117528LjYcpZ"><span style=3D"color:#333333">15323380209=EF=BC=88=E5=BE=AE=
+=E4=BF=A1=E5=90=8C=E5=8F=B7=EF=BC=89</span></strong></span></span></span></spa=
+n></span></span></span></div><div align=3D"left" style=3D"font-family: Verdana=
+; font-size: 14px; color: rgb(0, 0, 0); line-height: 21px;" data-spm-anchor-id=
+=3D"5176.2020520150.113.i37.5bd67528JJviyO"><span style=3D"font-size:12px;line=
+-height: 22.1px;">=E7=94=B5=E8=AF=9D=EF=BC=9A<span t=3D"7" data=3D"020-8582097=
+9" style=3D"border-bottom-width: 1px; border-bottom-style: dashed; border-bott=
+om-color: rgb(204, 204, 204); z-index: 1;">020-85820979</span></span></div><di=
+v align=3D"left" style=3D"font-family: Verdana; font-size: 14px; color: rgb(0,=
+ 0, 0);" data-spm-anchor-id=3D"5176.2020520150.113.i22.4b287528l3ltx3"><p styl=
+e=3D"line-height: 16.8px;" data-spm-anchor-id=3D"5176.2020520150.113.i19.4b287=
+528l3ltx3"><span style=3D"line-height: 21px;font-size:12px;line-height: 22.1px=
+;">=E5=B9=BF=E5=B7=9E=E5=88=86=E5=85=AC=E5=8F=B8=E5=9C=B0=E5=9D=80=EF=BC=9A<sp=
+an class=3D"readmail_locationTip" over=3D"1" style=3D"position: relative; bord=
+er-bottom-width: 1px; border-bottom-style: dashed; border-bottom-color: rgb(17=
+1, 171, 171); z-index: 3;">=E5=B9=BF=E5=B7=9E=E5=B8=82=E7=95=AA=E7=A6=BA=E5=8C=
+=BA=E9=92=9F=E6=9D=91=E8=A1=97=E5=A5=A5=E5=9B=AD=E5=9F=8E=E5=B8=82=E5=A4=A9=E5=
+=9C=B07=E5=8C=BA3=E6=A0=8B1013=E5=AE=A4</span></span></p><p style=3D"line-heig=
+ht: 16.8px;"><span style=3D"line-height: 21px;font-size:12px;line-height: 22.1=
+px;"><span class=3D"readmail_locationTip" over=3D"1" style=3D"position: relati=
+ve; border-bottom-width: 1px; border-bottom-style: dashed; border-bottom-color=
+: rgb(171, 171, 171); z-index: 3;"><br/></span></span></p><p style=3D"line-hei=
+ght: 16.8px;" data-spm-anchor-id=3D"5176.2020520150.113.i8.4b287528l3ltx3"><br=
+/></p></div></div></div><p style=3D"color: rgb(0, 0, 0); font-family: Verdana;=
+ font-size: 14px; font-variant-numeric: normal; font-variant-east-asian: norma=
+l; line-height: normal; white-space: normal; widows: 1;"><br/></p><img src=3D"=
+http://dmtrace.vip.yinxiaohong.cn/trace/v1/report?bid=3D748756&env=3D948003708=
+40&mac=3D45794&mf=3Damy%40vip.yinxiaohong.cn&sac=3D0&tag=3Danoksoft&tid=3D7487=
+56&to=3Dosst-users%40lists.sourceforge.net&tpl=3D&ts=3D1590622427&type=3D1&url=
+=3D&v=3D1.0&sign=3D93e52604f667d9dbbc79cef0d241bc62" heigth=3D"0" width=3D"0" =
+border=3D"0" />
 
 
-
---===============3305119096044403045==
+--===============7672945397246913645==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3305119096044403045==
+--===============7672945397246913645==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -333,4 +209,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3305119096044403045==--
+--===============7672945397246913645==--
