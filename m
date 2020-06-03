@@ -2,83 +2,68 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id ACD2C1EA072
-	for <lists+osst-users@lfdr.de>; Mon,  1 Jun 2020 11:00:36 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id DF9661ED222
+	for <lists+osst-users@lfdr.de>; Wed,  3 Jun 2020 16:34:20 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jfgJ9-0007YU-Fz
-	for lists+osst-users@lfdr.de; Mon, 01 Jun 2020 09:00:35 +0000
+	id 1jgUTD-0002ZX-Mh
+	for lists+osst-users@lfdr.de; Wed, 03 Jun 2020 14:34:19 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <secure@2020admin.ga>) id 1jfgJ7-0007YL-BK
- for osst-users@lists.sourceforge.net; Mon, 01 Jun 2020 09:00:33 +0000
+ (envelope-from <yauevxsff@7white.xyz>) id 1jgUTC-0002ZE-Jy
+ for osst-users@lists.sourceforge.net; Wed, 03 Jun 2020 14:34:18 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:From:
+ Message-ID:Reply-To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=75MCt2GRbpXQnbApL2IJzJW29i+4LoakKqTnl3bDNEw=; b=Wwp8S1QGJgy0Mwz7nUFc8+Y2Wb
- DLsy6n5FMvUEO7y5/YG2tZEKMpWF7PRPNh8dbI/zD8gIGdpumYwplVxQ44yZYLBwfIBqlpk0oqU/D
- Xt6u4Jz8WNpGQira8y9vUlDBU/u5VqedJKPrVzJEpMKcOO87aIuuMAZHEwCMODfHMFmE=;
+ bh=jQK2g+xXLtMpFqwvxKFbPDOZQF0tINhRG7KuTTH/+n4=; b=Btn7ZXwa+/Pn8wN5QFkn3SX/Uo
+ /Tmta5pfvkkKUU6RpbChdy8GdQgdXKx7Xegc6oHGDBmrkmB+yuwRpB1FT69G4AX9R7YlzQqegG1iO
+ pCWb4JNDQVA9xrJMPxZIZJn9EtxmgzvP0vdl3kFQRhYK+mOHV7Bfx+TQCW+lIXHn5T5g=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Type:MIME-Version:Date:Subject:To:From:Message-ID:Reply-To:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=75MCt2GRbpXQnbApL2IJzJW29i+4LoakKqTnl3bDNEw=; b=H
- 7EbxN9DWESoeL28o+ohsAF6lIyLnwZ6JWbL/frfWav/IM+9uxnLjqsCPqmhRXYTHosiSszvgyedNd
- qcdzijX8q1F7TUmXUAJjTWL/F6tFLbSVbZYPZq4ZchsLdDzdHNcQmhrbMcxdiJOHfBHSEAWiyqQVA
- do6OSPtsXl5SXZ38=;
-Received: from slot0.2020admin.ga ([89.32.41.136])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps
+ List-Owner:List-Archive; bh=jQK2g+xXLtMpFqwvxKFbPDOZQF0tINhRG7KuTTH/+n4=; b=W
+ blcflrUAS0x5gJTcXI4dvyqWqkEaGXDW981SJI7WsyBdiACX67z2WYqv4fVJogvbdDE0L2szkoMzQ
+ LVXmYnutSWZM1FIekVk3yM52OE+vq3PzTbb05XOG710mU7D/EhZAzjZwXeD/pTS5wchANlUEIgwld
+ C47Ay9gXYxdEjU98=;
+Received: from 7white.xyz ([113.31.104.185])
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1jfgJ5-003MnY-Lk
- for osst-users@lists.sourceforge.net; Mon, 01 Jun 2020 09:00:33 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=2020admin.ga;
- h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding;
- i=secure@2020admin.ga; bh=91UcH+hkCOnl14M55fY020gZpSY=;
- b=DLV/F0w5C7UFX/dHitWWotzNqlcn8nNtACwWaQtjZh0CUPk0nEXk7qy7QL9vGHThhEj2tdkLF9Ef
- S8GXjB0NV+6EXpqMAqzLAWhZrvDUov/zvMbK+GcO4AgE+2HWXrMzyWZ5YzhAKgC6ESM/wY3bExKI
- yrkQa+FUep5wC2knF9frZvxoz9VTkmTbGubLyhA7vcOGDSQgr/i6k52LdPpKZwnxmAjwZWO+qh6E
- JqnZ5fxQWfoUfG5eccUJKllgpN3CiUpOdGl57vFyZk8DcBH4zZ2cTLadQVLOWl6LZ8l/ZeLWPf2R
- QUeNHZFFHQ6XQzEYq9LP0G4C0fu881zcRztJSA==
-DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=2020admin.ga;
- b=GfpuuLlI8jA/F2v+4a1Lp47rg5TccN2XLFgs6hb/NJpa10JV0rOLvvh86/UuaTosDnCCyl+AyHYr
- SpK9wLoBq5mfzPBNOmSpO9FkQdHQkht0YlrZYd9azbq/a0DIgyRYy/0ETIhJiSLUXc7OSXmddscF
- YXvy9TGs/3LIRXrrO2XSvjtUXdCCcFilGhmVvyjlcsqlRD1Xw/ATncpNw8dphbnsWVvsNAWFcRax
- Rkc66+BU6AYnK4IJCsohST8Owv3JY9/AkNNHfn0GmuoYYW/Ntqk0AdL3Bq98qbqIIZEPXcylmNBo
- Tvr7JneDBE3JgeejyWBYODCwYLJ+kAjnsPsOQQ==;
-From: Email security Update <secure@2020admin.ga>
-To: osst-users@lists.sourceforge.net
-Date: 01 Jun 2020 08:57:35 -0700
-Message-ID: <20200601085735.D533B2325CB649D1@2020admin.ga>
+ id 1jgUT9-00AXTo-T0
+ for osst-users@lists.sourceforge.net; Wed, 03 Jun 2020 14:34:18 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=7white.xyz;
+ h=Reply-To:Message-ID:From:To:Subject:Date:MIME-Version:Content-Type;
+ i=yauevxsff@7white.xyz; bh=V0EiDvbrNpB3Puw0RZMgVJsPcLg=;
+ b=aFkdwPg3L89s8UaI/niLXxLuoQWceE54nx8bOTZBr1ZzL/2Zy9tNEOApDG/wdwleFj2yaXgDJhVT
+ iZmCHRTvs1KFN2HMW6W8+aJEuc2nEOv2R0bRzH3v8wJpYxz8EC08LLpfor1C59gtLc0XzDAaidTK
+ 7T1V4jCPFil7qLs4LME=
+Message-ID: <20200603223358643523@7white.xyz>
+From: "Email-tool" <yauevxsff@7white.xyz>
+To: <osst-users@lists.sourceforge.net>
+Date: Wed, 3 Jun 2020 22:33:48 +0800
 MIME-Version: 1.0
-X-Spam-Score: 6.7 (++++++)
+X-Spam-Score: 3.4 (+++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: bravocomercial.com.br]
- 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
- [89.32.41.136 listed in zen.spamhaus.org]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 DATE_IN_FUTURE_06_12   Date: is 6 to 12 hours after Received: date
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_FONT_SIZE_LARGE   BODY: HTML font size is large
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
- -0.4 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1jfgJ5-003MnY-Lk
-Subject: [Osst-users] Incoming Messages Blocked / Quota exceeded (mailbox
- for osst-users@lists.sourceforge.net is full)
+ 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+X-Headers-End: 1jgUT9-00AXTo-T0
+Subject: [Osst-users] =?utf-8?q?Impossible=EF=BC=81EDM_tools=2Clike_unlimi?=
+	=?utf-8?b?dGVkIHNtdHAsYnVpbGQgdXAgb25saW5l77yB77yB?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -90,232 +75,162 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5645561604935181821=="
+Reply-To: vinssanji@qq.com
+Content-Type: multipart/mixed; boundary="===============0343661540453527680=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5645561604935181821==
+This is a multi-part message in MIME format.
+
+--===============0343661540453527680==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_01F1_01D49DCB.125999C0"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_01F1_01D49DCB.125999C0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+UGxlYXNlIHNheSBoZWxsbyB0byB5b3VyIGZhbWlseS5XaGF0cyB5b3VyIGJ1c2luZXNzIGdvaW5n
+IHdpdGggaW52YWxpZCBsZWFkc++8n1Byb2JsZW1zIHdpbGwgYmUgc29sdmVkIG9uZSBieSBvbmUg
+cmlnaHQgbm93Lg0KV2UgYXJlIHByb2Zlc3Npb25hbCB0b29sIHNlbGxlcu+8jHByb3ZpZGluZyB1
+bmxpbWl0ZWQgc3RtcOOAgVJEUOOAgTIwMjAgdmVyaWZpZWQgbGVhZHMgYW5kIG1vcmUgb3RoZXJz
+LkJpZyBwcm9tb3Rpb24gaXMgd2FpdGluZyBmb3IgbmV3IGN1c3RvbWVycy5JZiBpbnRlcmVzdGVk
+IGluIHRvb2xz77yMYWRkIFNreXBl77yIaWTvvJpsaXZlOjk5Njk3NzcyMO+8iWZvciBpbnF1aXJ5
+LlBsZWFzZSBrZWVwIGluIGNvbnRhY3Qgd2l0aCB1cy4NCkhhdmUgYSBoYXBweSBhbmQgcHJvc3Bl
+cm91cyB5ZWFyLg0KTWF5IHlvdSBjb21lIGludG8gYSBnb29kIGZvcnR1bmXvvIENCkkgcmVhbGx5
+IGxpa2UgZm9sbG93aW5nIGVuY291cmFnaW5nIHdvcmRzLiBHaXZlIGl0IHRvIHlvdS4NCiJJZiBl
+cXVhbCBhZmZlY3Rpb24gY2Fubm90IGJlLCBsZXQgdGhlIG1vcmUgbG92aW5nIGJlIG1lLg==
+
+------=_NextPart_000_01F1_01D49DCB.125999C0
 Content-Type: text/html;
-	charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
+	charset="utf-8"
+Content-Transfer-Encoding: base64
 
-<HTML><HEAD>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19204"></HEAD>
-<body>
-<P>
-<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
-<TBODY>
-<TR>
-<td valign=3D"top">
-<H1 id=3Dm_2752851056708853792gmail-m_-2451197754376546279m_-90909520821438=
-16658m_-725108359242451794m_-2870385365450794094gmail-m_-733917391500957742=
-6m_-7264808057848182900m_-2024238855462689680m_7405957455976510322m_8041038=
-374046207604m_-7791442550259278534m_-7123614067219882618m_-6131214689485456=
-016m_732752849736153065m_-5652977899455894756m_-4932011407483018932gmail-m_=
-7722718121302340530m_6857982125344168303gmail-m_6779105359895299096page_tit=
-le style=3D"FONT-SIZE: 1.6em; FONT-FAMILY:=20
-verdana,arial,sans-serif; COLOR: rgb(50,76,97); PADDING-BOTTOM: 0px; PADDIN=
-G-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><FONT size=3D6 face=3Dar=
-ial><SPAN style=3D"VERTICAL-ALIGN: inherit">Incoming Messages&nbsp;<SPAN st=
-yle=3D"VERTICAL-ALIGN: inherit">Blocked</SPAN></SPAN></FONT></H1></TD></TR>=
-</TBODY></TABLE></P>
-<P style=3D"FONT-SIZE: 10pt; FONT-FAMILY: arial; PADDING-BOTTOM: 0px; PADDI=
-NG-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Dear&nbsp;=
- osst-users&nbsp;,<BR><BR></P>
-<DIV style=3D"MIN-HEIGHT: 1em"><FONT size=3D2 face=3Darial><SPAN style=3D"V=
-ERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"><FONT color=
-=3D#222222>We are&nbsp;upgrading our Email server and this might affect som=
-e&nbsp;email accounts, You are advised to verify and re-confirm your email =
-account in other to show that you are a human and also continue using our e=
-mail services to&nbsp;upgrade to our 25G Extra Storage Quota for free.</FON=
-T>&nbsp;</SPAN></SPAN><BR><BR>
-<SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inhe=
-rit">You have been&nbsp;10 new messages in your email quarantine.<BR><BR><B=
->User Account:</B>&nbsp;osst-users@lists.sourceforge.net&nbsp;</SPAN><BR><B=
-R><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: in=
-herit"><B><A title=3D"This external link will open in a new window" href=3D=
-"https://bravocomercial.com.br/secure/update/home.php?email=3Dosst-users@li=
-sts.sourceforge.net">Click here to Verify and&nbsp;Deliver Message(s)</A></=
-B>
- &nbsp;to your inbox folder:</SPAN></SPAN>&nbsp;</SPAN><BR>&nbsp;</FONT></D=
-IV>
-<DIV style=3D"MIN-HEIGHT: 1em">
-<table style=3D"FONT-SIZE: 11px; FONT-FAMILY: verdana,arial,sans-serif; WID=
-TH: 1044px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGI=
-N: 0px; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
-">
-<TBODY>
-<TR>
-<TH style=3D"COLOR: rgb(255,255,255); PADDING-BOTTOM: 4px; TEXT-ALIGN: left=
-; PADDING-TOP: 4px; PADDING-LEFT: 4px; MARGIN: 0px; PADDING-RIGHT: 4px; BAC=
-KGROUND-COLOR: rgb(69,90,115)" colSpan=3D4><FONT size=3D2 face=3Darial><SPA=
-N style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"=
->Quarantined email</SPAN></SPAN></FONT></TH></TR>
-<TR>
-<TH style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 113px; VERTICAL=
--ALIGN: bottom; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; TEXT-ALIGN: left;=
- PADDING-TOP: 4px; PADDING-LEFT: 6px; MARGIN: 0px; BORDER-LEFT: rgb(170,170=
-,170) 1px solid; PADDING-RIGHT: 6px; BACKGROUND-COLOR: rgb(251,251,251)"><F=
-ONT size=3D2 face=3Darial><STRONG>&nbsp;</STRONG></FONT></TH>
-<TH style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 301px; VERTICAL=
--ALIGN: bottom; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; TEXT-ALIGN: left;=
- PADDING-TOP: 4px; PADDING-LEFT: 6px; MARGIN: 0px; BORDER-LEFT: rgb(170,170=
-,170) 1px solid; PADDING-RIGHT: 6px; BACKGROUND-COLOR: rgb(251,251,251)"><F=
-ONT size=3D2 face=3Darial><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN sty=
-le=3D"VERTICAL-ALIGN: inherit"><STRONG>Recipient:</STRONG></SPAN></SPAN></F=
-ONT></TH>
-<TH style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 456px; VERTICAL=
--ALIGN: bottom; FONT-WEIGHT: normal; PADDING-BOTTOM: 4px; TEXT-ALIGN: left;=
- PADDING-TOP: 4px; PADDING-LEFT: 6px; MARGIN: 0px; BORDER-LEFT: rgb(170,170=
-,170) 1px solid; PADDING-RIGHT: 6px; BACKGROUND-COLOR: rgb(251,251,251)"><F=
-ONT size=3D2 face=3Darial><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN sty=
-le=3D"VERTICAL-ALIGN: inherit"><STRONG>Subject:</STRONG></SPAN></SPAN></FON=
-T></TH>
-<TH style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
-170,170) 1px solid; WIDTH: 121px; VERTICAL-ALIGN: bottom; FONT-WEIGHT: norm=
-al; PADDING-BOTTOM: 4px; TEXT-ALIGN: left; PADDING-TOP: 4px; PADDING-LEFT: =
-6px; MARGIN: 0px; BORDER-LEFT: rgb(170,170,170) 1px solid; PADDING-RIGHT: 6=
-px; BACKGROUND-COLOR: rgb(251,251,251)"><FONT size=3D2 face=3Darial><SPAN s=
-tyle=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"><S=
-TRONG>date:</STRONG></SPAN></SPAN></FONT></TH></TR>
-<TR vAlign=3Dtop>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 119px; WHITE-SP=
-ACE: nowrap; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORD=
-ER-LEFT: rgb(170,170,170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 fac=
-e=3Darial><A title=3D"This external link will open in a new window" href=3D=
-"https://bravocomercial.com.br/secure/update/home.php?email=3Dosst-users@li=
-sts.sourceforge.net"><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D=
-"VERTICAL-ALIGN: inherit"><STRONG>Release</STRONG></SPAN></SPAN></A></FONT>=
-</TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 307px; PADDING-=
-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
-170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><STRONG>oss=
-t-users@lists.sourceforge.net</STRONG></FONT></TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 462px; PADDING-=
-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
-170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><STRONG>Pay=
-ment </STRONG><A><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VER=
-TICAL-ALIGN: inherit"><STRONG>Transfer MT103 from Accounts@.... [HSBC]</STR=
-ONG></SPAN></SPAN></A></FONT></TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
-170,170) 1px solid; WIDTH: 127px; WHITE-SPACE: nowrap; PADDING-BOTTOM: 3px;=
- PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,170) 1px sol=
-id; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><SPAN style=3D"VERTICAL=
--ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"><STRONG>01/6/2020<=
-/STRONG></SPAN></SPAN></FONT></TD></TR>
-<TR vAlign=3Dtop>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 119px; WHITE-SP=
-ACE: nowrap; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORD=
-ER-LEFT: rgb(170,170,170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 fac=
-e=3Darial><A title=3D"This external link will open in a new window" href=3D=
-"https://bravocomercial.com.br/secure/update/home.php?email=3Dosst-users@li=
-sts.sourceforge.net"><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D=
-"VERTICAL-ALIGN: inherit"><STRONG>Release</STRONG></SPAN></SPAN></A></FONT>=
-</TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 307px; PADDING-=
-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
-170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><STRONG>oss=
-t-users@lists.sourceforge.net</STRONG></FONT></TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 462px; PADDING-=
-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
-170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><A><SPAN st=
-yle=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"><ST=
-RONG>Re: Re: Contract | INVOICE COPY</STRONG></SPAN></SPAN></A><STRONG>&nbs=
-p;|&nbsp; osst-users@lists.sourceforge.net</STRONG></FONT></TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
-170,170) 1px solid; WIDTH: 127px; WHITE-SPACE: nowrap; PADDING-BOTTOM: 3px;=
- PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,170) 1px sol=
-id; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><SPAN style=3D"VERTICAL=
--ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"><STRONG>29/5/2020<=
-/STRONG></SPAN></SPAN></FONT></TD></TR>
-<TR vAlign=3Dtop>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 119px; WHITE-SP=
-ACE: nowrap; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORD=
-ER-LEFT: rgb(170,170,170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 fac=
-e=3Darial><A title=3D"This external link will open in a new window" href=3D=
-"https://bravocomercial.com.br/secure/update/home.php?email=3Dosst-users@li=
-sts.sourceforge.net"><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D=
-"VERTICAL-ALIGN: inherit"><STRONG>Release</STRONG></SPAN></SPAN></A></FONT>=
-</TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 307px; PADDING-=
-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
-170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><STRONG>oss=
-t-users@lists.sourceforge.net</STRONG></FONT></TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 462px; PADDING-=
-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
-170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><A><SPAN st=
-yle=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"><ST=
-RONG>Re: SALES ORDER CONFIRMATION CN: 0057528</STRONG></SPAN></SPAN></A></F=
-ONT></TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
-170,170) 1px solid; WIDTH: 127px; WHITE-SPACE: nowrap; PADDING-BOTTOM: 3px;=
- PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,170) 1px sol=
-id; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><SPAN style=3D"VERTICAL=
--ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"><STRONG>24/5/2020<=
-/STRONG></SPAN></SPAN></FONT></TD></TR>
-<TR vAlign=3Dtop>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 119px; WHITE-SP=
-ACE: nowrap; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORD=
-ER-LEFT: rgb(170,170,170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 fac=
-e=3Darial><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-A=
-LIGN: inherit"><A title=3D"This external link will open in a new window" hr=
-ef=3D"https://bravocomercial.com.br/secure/update/home.php?email=3Dosst-use=
-rs@lists.sourceforge.net"><STRONG>Release</STRONG></A></SPAN></SPAN></FONT>=
-</TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 307px; PADDING-=
-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
-170) 1px solid; PADDING-RIGHT: 3px"><STRONG><FONT size=3D2 face=3DArial>oss=
-t-users@lists.sourceforge.net</FONT></STRONG></TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; WIDTH: 462px; PADDING-=
-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,=
-170) 1px solid; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><A><SPAN st=
-yle=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"><ST=
-RONG>DHL Shipment BL/PL #50361 Notification</STRONG></SPAN></SPAN></A></FON=
-T></TD>
-<td style=3D"BORDER-TOP: rgb(170,170,170) 1px solid; BORDER-RIGHT: rgb(170,=
-170,170) 1px solid; WIDTH: 127px; WHITE-SPACE: nowrap; PADDING-BOTTOM: 3px;=
- PADDING-TOP: 3px; PADDING-LEFT: 3px; BORDER-LEFT: rgb(170,170,170) 1px sol=
-id; PADDING-RIGHT: 3px"><FONT size=3D2 face=3Darial><SPAN style=3D"VERTICAL=
--ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit"><STRONG>28/5/2020<=
-/STRONG></SPAN></SPAN></FONT></TD></TR>
-<TR>
-<td style=3D"BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOT=
-TOM: medium none; PADDING-BOTTOM: 4px; TEXT-ALIGN: right; PADDING-TOP: 4px;=
- PADDING-LEFT: 6px; BORDER-LEFT: medium none; PADDING-RIGHT: 6px; BACKGROUN=
-D-COLOR: rgb(192,192,192)" colspan=3D"4"><FONT size=3D2 face=3Darial><A tit=
-le=3D"This external link will open in a new window" href=3D"https://bravoco=
-mercial.com.br/secure/update/home.php?email=3Dosst-users@lists.sourceforge.=
-net"><SPAN style=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN:=
- inherit">
-<STRONG>Deliver all messages (10)</STRONG></SPAN></SPAN></A></FONT></TD></T=
-R></TBODY></TABLE></DIV>
-<DIV style=3D"MIN-HEIGHT: 1em"><BR><FONT size=3D2 face=3Darial><SPAN style=
-=3D"COLOR: rgb(85,85,85); FONT-STYLE: italic"><SPAN style=3D"VERTICAL-ALIGN=
-: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit">Note: This message was s=
-ent by the system for notification only.&nbsp;</SPAN><SPAN style=3D"VERTICA=
-L-ALIGN: inherit">Please do not reply&nbsp;</SPAN></SPAN><BR><BR><SPAN styl=
-e=3D"VERTICAL-ALIGN: inherit"><SPAN style=3D"VERTICAL-ALIGN: inherit">
-If this message lands in your spam folder, please move it to your inbox fol=
-der for proper interagtion:&nbsp;<SPAN style=3D"VERTICAL-ALIGN: inherit"><S=
-PAN style=3D"VERTICAL-ALIGN: inherit"> <A title=3D"This external link will =
-open in a new window" href=3D"https://bravocomercial.com.br/secure/update/h=
-ome.php?email=3Dosst-users@lists.sourceforge.net">Click Here</A><BR><BR><B>=
-<FONT color=3D#f63409>Note: Failure to verify your e-mail account,will&nbsp=
-;result to&nbsp;suspension of incoming emails and data lost.</FONT></B><BR>=
-</SPAN>
-</SPAN></SPAN></SPAN></SPAN></FONT></DIV><FONT size=3D2 face=3Darial>
-<P align=3Dcenter>Thank you for using our service.</P>
-<P align=3Dcenter>lists.sourceforge.net Administrator Security Team.</P></F=
-ONT></BODY></HTML>
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MIHhtbG5zOm8gPSAidXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6
+b2ZmaWNlIj48SEVBRD4NCjxNRVRBIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD11dGYtOCIg
+aHR0cC1lcXVpdj1Db250ZW50LVR5cGU+DQo8TUVUQSBuYW1lPUdFTkVSQVRPUiBjb250ZW50PSJN
+U0hUTUwgMTEuMDAuOTYwMC4xOTUwNyI+PC9IRUFEPg0KPEJPRFk+PFNQQU4gbGFuZz1FTi1VUyAN
+CnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNl
+cmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAw
+cHQiPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgRk9OVC1GQU1J
+TFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L
+5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJG
+T05ULVNJWkU6IDlwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28t
+ZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFO
+IA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgRk9OVC1GQU1JTFk6ICdUaW1l
+cyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28t
+Zm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6
+IDlwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1m
+b250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1F
+Ti1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgRk9OVC1GQU1JTFk6IOWui+S9kzsgbXNvLWZv
+bnQta2VybmluZzogMHB0OyBtc28tYmlkaS1mb250LWZhbWlseTog5a6L5L2TIj48U1BBTiANCmxh
+bmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5l
+dyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250
+LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJw
+dDsgRk9OVC1GQU1JTFk6IOWui+S9kzsgbXNvLWZvbnQta2VybmluZzogMHB0OyBtc28tYmlkaS1m
+b250LWZhbWlseTog5a6L5L2TIj48bzpwPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05U
+LVNJWkU6IDEycHQ7IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJvbWFuJyxzZXJpZjsgbXNvLWZh
+cmVhc3QtZm9udC1mYW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2VybmluZzogMHB0Ij48U1BBTiAN
+Cmxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVz
+IE5ldyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1m
+b250LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTog
+MTJwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1m
+b250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1F
+Ti1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDEycHQ7IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJv
+bWFuJyxzZXJpZjsgbXNvLWZhcmVhc3QtZm9udC1mYW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2Vy
+bmluZzogMHB0Ij48U1BBTiANCmxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBG
+T05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0LWZvbnQtZmFt
+aWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpzdHlsZT0ibXNvLWJv
+b2ttYXJrOiBfSGxrMzI2OTcyNDIiPjxTUEFOIGxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpF
+OiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0
+LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpzdHls
+ZT0ibXNvLWJvb2ttYXJrOiBfSGxrMzI2OTcyNDIiPjxTUEFOIGxhbmc9RU4tVVMgDQpzdHlsZT0i
+Rk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7IG1z
+by1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+PFNQ
+QU4gDQpsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJwdDsgRk9OVC1GQU1JTFk6ICdU
+aW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBt
+c28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJ
+WkU6IDEycHQ7IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJvbWFuJyxzZXJpZjsgbXNvLWZhcmVh
+c3QtZm9udC1mYW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2VybmluZzogMHB0Ij48U1BBTiANCmxh
+bmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5l
+dyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250
+LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJw
+dDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250
+LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1FTi1V
+UyANCnN0eWxlPSJGT05ULVNJWkU6IDEycHQ7IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJvbWFu
+JyxzZXJpZjsgbXNvLWZhcmVhc3QtZm9udC1mYW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2Vybmlu
+ZzogMHB0Ij4NCjxQIGNsYXNzPU1zb05vcm1hbCANCnN0eWxlPSJURVhULUFMSUdOOiBsZWZ0OyBN
+QVJHSU46IDBjbSAwY20gMHB0OyBURVhULUlOREVOVDogMjRwdDsgbXNvLXBhZ2luYXRpb246IHdp
+ZG93LW9ycGhhbjsgbXNvLWNoYXItaW5kZW50LWNvdW50OiAyLjAiIA0KYWxpZ249bGVmdD48U1BB
+TiBsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJwdDsgRk9OVC1GQU1JTFk6ICdUaW1l
+cyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28t
+Zm9udC1rZXJuaW5nOiAwcHQiPlBsZWFzZSBzYXkgaGVsbG8gdG8geW91ciBmYW1pbHkuV2hhdHMg
+eW91ciBidXNpbmVzcyBnb2luZyB3aXRoIGludmFsaWQgbGVhZHPvvJ9Qcm9ibGVtcyB3aWxsIGJl
+IHNvbHZlZCBvbmUgYnkgb25lIHJpZ2h0IG5vdy48bzpwPjwvbzpwPjwvU1BBTj48L1A+DQo8UCBj
+bGFzcz1Nc29Ob3JtYWwgDQpzdHlsZT0iVEVYVC1BTElHTjogbGVmdDsgTUFSR0lOOiAwY20gMGNt
+IDBwdDsgVEVYVC1JTkRFTlQ6IDI0cHQ7IG1zby1wYWdpbmF0aW9uOiB3aWRvdy1vcnBoYW47IG1z
+by1jaGFyLWluZGVudC1jb3VudDogMi4wIiANCmFsaWduPWxlZnQ+PFNQQU4gbGFuZz1FTi1VUyAN
+CnN0eWxlPSJGT05ULVNJWkU6IDEycHQ7IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJvbWFuJyxz
+ZXJpZjsgbXNvLWZhcmVhc3QtZm9udC1mYW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2VybmluZzog
+MHB0Ij5XZSBhcmUgcHJvZmVzc2lvbmFsIHRvb2wgc2VsbGVy77yMcHJvdmlkaW5nIHVubGltaXRl
+ZCBzdG1w44CBUkRQ44CBMjAyMCB2ZXJpZmllZCBsZWFkcyBhbmQgbW9yZSBvdGhlcnMuQmlnIHBy
+b21vdGlvbiBpcyB3YWl0aW5nIGZvciBuZXcgY3VzdG9tZXJzLklmIGludGVyZXN0ZWQgaW4gdG9v
+bHPvvIxhZGQgU2t5cGXvvIhpZO+8mmxpdmU6OTk2OTc3NzIw77yJZm9yIGlucXVpcnkuUGxlYXNl
+IGtlZXAgaW4gY29udGFjdCB3aXRoIHVzLjwvU1BBTj48U1BBTiANCmxhbmc9RU4tVVMgDQpzdHls
+ZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5n
+OiAwcHQ7IG1zby1iaWRpLWZvbnQtZmFtaWx5OiDlrovkvZMiPjxvOnA+PC9vOnA+PC9TUEFOPjwv
+UD4NCjxQIGNsYXNzPU1zb05vcm1hbCANCnN0eWxlPSJURVhULUFMSUdOOiBsZWZ0OyBNQVJHSU46
+IDBjbSAwY20gMHB0OyBURVhULUlOREVOVDogMjRwdDsgbXNvLXBhZ2luYXRpb246IHdpZG93LW9y
+cGhhbjsgbXNvLWNoYXItaW5kZW50LWNvdW50OiAyLjAiIA0KYWxpZ249bGVmdD48U1BBTiBsYW5n
+PUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcg
+Um9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1r
+ZXJuaW5nOiAwcHQiPkhhdmUgYSBoYXBweSBhbmQgcHJvc3Blcm91cyB5ZWFyLjwvU1BBTj48U1BB
+TiANCmxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTog5a6L
+5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQ7IG1zby1iaWRpLWZvbnQtZmFtaWx5OiDlrovkvZMi
+PjxvOnA+PC9vOnA+PC9TUEFOPjwvUD4NCjxQIGNsYXNzPU1zb05vcm1hbCANCnN0eWxlPSJURVhU
+LUFMSUdOOiBsZWZ0OyBNQVJHSU46IDBjbSAwY20gMHB0OyBURVhULUlOREVOVDogMjRwdDsgbXNv
+LXBhZ2luYXRpb246IHdpZG93LW9ycGhhbjsgbXNvLWNoYXItaW5kZW50LWNvdW50OiAyLjAiIA0K
+YWxpZ249bGVmdD48U1BBTiBsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJwdDsgRk9O
+VC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWls
+eTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPk1heSB5b3UgY29tZSBpbnRvIGEgZ29v
+ZCBmb3J0dW5l77yBPC9TUEFOPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6
+IDEycHQ7IEZPTlQtRkFNSUxZOiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdDsgbXNvLWJp
+ZGktZm9udC1mYW1pbHk6IOWui+S9kyI+PG86cD48L286cD48L1NQQU4+PC9QPg0KPFAgY2xhc3M9
+TXNvTm9ybWFsIA0Kc3R5bGU9IlRFWFQtQUxJR046IGxlZnQ7IE1BUkdJTjogMGNtIDBjbSAwcHQ7
+IFRFWFQtSU5ERU5UOiAyNHB0OyBtc28tcGFnaW5hdGlvbjogd2lkb3ctb3JwaGFuOyBtc28tY2hh
+ci1pbmRlbnQtY291bnQ6IDIuMCIgDQphbGlnbj1sZWZ0PjxTUEFOIGxhbmc9RU4tVVMgDQpzdHls
+ZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7
+IG1zby1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+
+SSByZWFsbHkgbGlrZSBmb2xsb3dpbmcgZW5jb3VyYWdpbmcgd29yZHMuIEdpdmUgaXQgdG8geW91
+LjwvU1BBTj48U1BBTiANCmxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05U
+LUZBTUlMWTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQ7IG1zby1iaWRpLWZvbnQtZmFt
+aWx5OiDlrovkvZMiPjxvOnA+PC9vOnA+PC9TUEFOPjwvUD4NCjxQIGNsYXNzPU1zb05vcm1hbCAN
+CnN0eWxlPSJURVhULUFMSUdOOiBsZWZ0OyBNQVJHSU46IDBjbSAwY20gMHB0OyBURVhULUlOREVO
+VDogMjRwdDsgbXNvLXBhZ2luYXRpb246IHdpZG93LW9ycGhhbjsgbXNvLWNoYXItaW5kZW50LWNv
+dW50OiAyLjAiIA0KYWxpZ249bGVmdD48U1BBTiBsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0la
+RTogMTJwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFz
+dC1mb250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPiJJZiBlcXVhbCBh
+ZmZlY3Rpb24gY2Fubm90IGJlLCBsZXQgdGhlIG1vcmUgbG92aW5nIGJlIG1lLjwvU1BBTj48L1NQ
+QU4+PC9TUEFOPjwvU1BBTj48L1NQQU4+PC9TUEFOPjwvU1BBTj48L1NQQU4+PC9QPjwvU1BBTj48
+L1NQQU4+PC9TUEFOPjwvU1BBTj48L1NQQU4+PC9TUEFOPjwvU1BBTj48L286cD48L1NQQU4+PC9T
+UEFOPjwvU1BBTj48L1NQQU4+PC9TUEFOPjwvU1BBTj48L1NQQU4+PC9TUEFOPjwvQk9EWT48L0hU
+TUw+DQo=
+
+------=_NextPart_000_01F1_01D49DCB.125999C0--
 
 
---===============5645561604935181821==
+
+--===============0343661540453527680==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5645561604935181821==
+--===============0343661540453527680==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -326,4 +241,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5645561604935181821==--
+--===============0343661540453527680==--
+
+
