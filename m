@@ -2,89 +2,74 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id BF5241FAFF5
-	for <lists+osst-users@lfdr.de>; Tue, 16 Jun 2020 14:14:39 +0200 (CEST)
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
-	MIME-Version:Message-ID:Date:To:Sender:Cc:Content-Transfer-Encoding:
-	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=MZ/vdza18Y8Kc6r20KBTvxzihRRjKy1iEQWDc+o7mWk=; b=U7spbPzw9QvoX32TutSCvTETdf
-	xNGJsyvLh0ASL+w6ijrn9HV23E0u5KuLhEh1HHk5mgQgXXMYmlDJwn4t+F3UsE0P6Fqy7q8Dbipxe
-	LOs2co9b9PA9tHK1Q4caLoY5kafYA/PzBMq8zTNsErPybXTPq7ycXu/Z4K176vwt4cq8=;
+	by mail.lfdr.de (Postfix) with ESMTPS id E165E1FC4FE
+	for <lists+osst-users@lfdr.de>; Wed, 17 Jun 2020 06:11:37 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jlAUA-0002qt-JM
-	for lists+osst-users@lfdr.de; Tue, 16 Jun 2020 12:14:38 +0000
+	id 1jlPQG-0003Ne-NV
+	for lists+osst-users@lfdr.de; Wed, 17 Jun 2020 04:11:36 +0000
+Resent-Date: Wed, 17 Jun 2020 04:11:36 +0000
+Resent-Message-Id: <E1jlPQG-0003Ne-NV@sfs-ml-2.v29.lw.sourceforge.com>
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <info@delivers-solutions.com>) id 1jlAU2-0002qU-LZ
- for osst-users@lists.sourceforge.net; Tue, 16 Jun 2020 12:14:30 +0000
+ (envelope-from <cfnwfl@rp.cloud.wishtohelp1.com>) id 1jlPQE-0003NV-LM
+ for osst-users@lists.sourceforge.net; Wed, 17 Jun 2020 04:11:34 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
- To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Message-ID:Subject:
+ To:From:Resent-Sender:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID
+ :Content-Description:Resent-Date:Resent-From:Resent-To:Resent-Cc:
+ Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Hhy7DeXV50QubcrrIXFHbgqMWYDWAz49ZrNQy1tpXfw=; b=h3BiNwcnsPP9cFh4cfysKDZ+Ws
- +DV/fBKj78gD0bsnFgUeS/cP2nPFubTEjWjUCr9sQJkkyqvkpxxod5zUe8GEdNZDoPfz+HSE17nDn
- 51zylsTVRHb3kb2wyvB1jbAxnzq7WBdLIvz10M15sR6n4BPZUh0T/yDThp2x9AUZ64sw=;
+ bh=X8m5SJ2DO0hObH4Xqo9I+SiSDlG1RbY3y0V0AkGswNQ=; b=duLWfWgcQO56AciHT4WrH78hjg
+ /oxMH2NKOtrcZOYbunxmAr9bFjShMm+QGXlGzJNUWIl5Ql05npwnj5Buflo+Dd/0Ln9pdzS26dSPO
+ KWcQFbJwjqwXlPHCzTHtvc4tNeS+rHR0CKvX9xf7zFtkOzfo/uy03O/Y/reJrS69+UzA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Type:MIME-Version:Date:Message-ID:Subject:To:From:Resent-Sender:
+ Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+ Resent-Date:Resent-From:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Hhy7DeXV50QubcrrIXFHbgqMWYDWAz49ZrNQy1tpXfw=; b=n
- I22oAoruGMQ35Aggb1Tf61zSAsAAztmOnwNawlh9NVjlmu5hW+Hs7fNx5SiZJw19is5ksJ4M9dr3v
- v7H9dweV441agYwvPdczh3eFwZgjglgC96ZTlLURIUn0DC0H/jvJ8jkOaUxeAJD35N724qvBXWn28
- lNJUvmjvxt2BymVc=;
-Received: from rdns0.delivers-solutions.com ([147.135.99.10])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1jlATy-0052i6-JL
- for osst-users@lists.sourceforge.net; Tue, 16 Jun 2020 12:14:30 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default;
- d=delivers-solutions.com; 
- h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
- i=info@delivers-solutions.com; 
- bh=2JMXmCGOpDgFD+WuObwLxOuiqtQ=;
- b=fO3kgDGDOLvBA9JgjPruvMQli+zQxpWr9/2+EOYKrWZHEY8Fa94ag5rTaaUqgiJ6MHA1ZOKoO1Nt
- AR+FQsxD6ZdIzskxyzOaEa4H8M1Mx++R4DiqcyyWlVVzjsh6W4Ha2FxjHlgeShjjWHOLTIWCllYT
- lFwTeBgtBozrWIbz+BY=
-DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default;
- d=delivers-solutions.com; 
- b=M86+fd0ZWa/fvhdwJWZqvm+AevRvuBkc9DEFLgnyBQlLIm0+hJF4CPu6Khn2zFgBUIMeL1ZEhlXs
- LU8zBpyonSkwI+1AzWrFQnQXMD/UwAsEGKszU2XKaMsO6ghrmT/VsR2yOPoAxtDynsuB3+VyJNrT
- lL8HmGfsoGzS1WlGJes=;
+ List-Owner:List-Archive; bh=X8m5SJ2DO0hObH4Xqo9I+SiSDlG1RbY3y0V0AkGswNQ=; b=h
+ +p2eluLfvJkdNuBqjAdIlF9c4VqoWLPvbo5tMrk16p2bE/6hJfQNttMLR+wdtRD79+WTQeHAeLHAE
+ FrDSVAa1eQd1aNnfJo/JfoHHYoW/xZhx9PsAKiaSxvscTl1zJW2yHGZUdgGGvpzicP67SCbProqyS
+ xzqropZxulDDNfYo=;
+Received: from cloud7.wishtohelp1.com ([5.135.49.166])
+ by sfi-mx-4.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
+ id 1jlPQ8-008tKK-TT
+ for osst-users@lists.sourceforge.net; Wed, 17 Jun 2020 04:11:34 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=wishtohelp1.com;
+ s=cloud-buhARt; t=1592367082; bh=X8m5SJ2DO0hObH4Xqo9I+SiSDlG1RbY3y0V0AkGswNQ=;
+ h=from:to:subject:message-id:date;
+ b=WT8ST2ZSLzv8kCcXlXexlWN1jEz5+ewPK8kS5z+c+Opt7IruzvLdkTvilzpiMM452yM6lwxzy59e2ocCLiaZAgv0mg/NYzdfwcsK85FB/HLp0Ln94NA3F01rhO8k0Yx+yeHl3FdedZ1e4EpRf4MiErYoKXrCCBHkvkmo7fL8kRg=
+X-Postal-MsgID: h98Ncpn89SaS
+Received: from [192.168.0.102] (::ffff:103.102.28.105 [::ffff:103.102.28.105])
+ by cloud.wishtohelp1.com with SMTP; Wed, 17 Jun 2020 04:11:21 -0000
+From: "jay@wishtohelp1.com" <jay@wishtohelp1.com>
 To: osst-users@lists.sourceforge.net
-Date: 16 Jun 2020 14:14:20 +0200
-Message-ID: <20200616141420.35581754EDE9DCDC@delivers-solutions.com>
+Message-ID: <279b5ec9-4c5f-73a6-fe2a-d8d44161f427@wishtohelp1.com>
+Date: Wed, 17 Jun 2020 09:41:19 +0530
+User-Agent: Mozilla/5.0 (Windows NT 6.1; rv:68.0) Gecko/20100101
+ Thunderbird/68.8.1
 MIME-Version: 1.0
-X-Spam-Score: 5.2 (+++++)
+Content-Language: en-US
+X-Spam-Score: 1.7 (+)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: 000webhostapp.com]
+ 0.6 HK_RANDOM_ENVFROM      Envelope sender username looks random
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
  -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
  domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
- 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100]
- 0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
-X-Headers-End: 1jlATy-0052i6-JL
-Subject: [Osst-users] Receipt For Invoice
+ 0.1 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1jlPQ8-008tKK-TT
+Subject: [Osst-users] Nitrile gloves landed proposal
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -96,324 +81,630 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: info--- via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: info@delivers-solutions.com
-Content-Type: multipart/mixed; boundary="===============4729712888160276887=="
+Content-Type: multipart/mixed; boundary="===============2207577973348731035=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Sender: "Osst-users" <osst-users-bounces@lists.sourceforge.net>
+Resent-From: osst-users-bounces@lists.sourceforge.net
 
+This is a multi-part message in MIME format.
+--===============2207577973348731035==
+Content-Type: multipart/alternative;
+ boundary="------------4D7CC96DA33CAAD5036BD579"
+Content-Language: en-US
 
---===============4729712888160276887==
-Content-Type: multipart/related;
-	boundary="----=_NextPart_000_0012_E3CCF698.3B05278C"
+This is a multi-part message in MIME format.
+--------------4D7CC96DA33CAAD5036BD579
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
 
+Good Day
 
-------=_NextPart_000_0012_E3CCF698.3B05278C
-Content-Type: text/html;
-	charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
+Hi My name if Jay Patel and I am from PPEHELP1 Ltd.
 
-<HTML><HEAD>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19699"></HEAD>
-<body>
-<DIV>Hi,<BR><BR></DIV>
-<DIV class=3Ddefault-style>
-<DIV class=3Ddefault-style>
-<DIV class=3Ddefault-style>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'>
-We apologize for the delay in making balance payment, please be advised tha=
-t we have already transferred the full amount to your account for the previ=
-ous invoice.<BR>kindly see the attached slip for your confirmation of paid =
-orders.<BR><BR>You can send to me a final copy and inform ETD asap. I will =
-send the other information with my official email when I report to my offic=
-e tomorrow morning or you can report to our sales department directly.</P>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'><BR></P>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'>
-Please see attached below</P>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'>
-<A href=3D"https://file-docs.000webhostapp.com/invoice-pdf.zip"><img border=
-=3D"0" hspace=3D"0" alt=3D"" src=3D"cid:paidinvoice1.jpg" align=3D"baseline=
-" width=3D"60" height=3D"76"></A><BR><A style=3D"TEXT-DECORATION: underline=
-; COLOR: rgb(60,97,170)" href=3D"https://file-docs.000webhostapp.com/invoic=
-e-pdf.zip" rel=3Dnoopener target=3D_blank><SPAN style=3D"TEXT-DECORATION: u=
-nderline">Download</SPAN></A></P>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'><BR><BR>
-Warmest Regards,</P>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'>
-Angela Wilpert</P>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'>
-Sales Executives Dept</P>
-<DIV class=3D"col-xs-12 col-sm-4 col-md-4 col-lg-4" style=3D"BOX-SIZING: bo=
-rder-box; FONT-SIZE: 14px; FONT-FAMILY: COMFORTAA; WIDTH: 390px; WHITE-SPAC=
-E: normal; WORD-SPACING: 0px; POSITION: relative; TEXT-TRANSFORM: none; FLO=
-AT: left; FONT-WEIGHT: 400; COLOR: rgb(211,211,211); PADDING-BOTTOM: 0px; F=
-ONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 15px; MARGIN: 0px; MIN-H=
-EIGHT: 1px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; PADDING-RIGHT: 1=
-5px; BACKGROUND-COLOR: rgb(41,41,41); TEXT-INDENT:=20
-0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-tex=
-t-stroke-width: 0px; text-decoration-style: initial; text-decoration-color:=
- initial">
-<DIV class=3D"dexp-animate animated flipInY" style=3D"BOX-SIZING: border-bo=
-x; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; P=
-ADDING-RIGHT: 0px; VISIBILITY: visible !important; animation-fill-mode: bot=
-h; animation-duration: 1s; animation-name: flipInY; backface-visibility: vi=
-sible">
-<DIV class=3D"dexp-shortcodes-box box-background  box-hexagon box-center" s=
-tyle=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADD=
-ING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
-<P style=3D'FONT-FAMILY: -apple-system, BlinkMacSystemFont, "Helvetica Neue=
-", "Segoe UI", Arial, sans-serif; MARGIN: 0px 0px 1em'>HDT Sales &amp; Merk=
-ating<BR>vasileos konstantinou 89 Paphos, Paphos, Cyprus<BR>Phone: +357 26 =
-040001</P></DIV></DIV></DIV>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'><BR></P>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'><BR></P>
-<P style=3D'FONT-SIZE: 13px; FONT-FAMILY: -apple-system, BlinkMacSystemFont=
-, "Helvetica Neue", "Segoe UI", Arial, sans-serif; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); =
-FONT-STYLE: normal; MARGIN: 0px 0px 1em; ORPHANS: 2; WIDOWS: 2; LETTER-SPAC=
-ING: normal; TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant=
--caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
-al; text-decoration-color: initial'><BR></P>
-<BR class=3DApple-interchange-newline></DIV></DIV></DIV></BODY></HTML>
-------=_NextPart_000_0012_E3CCF698.3B05278C
-Content-Type: image/jpeg; name="paidinvoice1.jpg"
-Content-Transfer-Encoding: base64
-Content-ID: <paidinvoice1.jpg>
+We are involved with helping hospitals, medical 
+professionals, government bodies’ and wholesalers source and precure 
+Personal Protection Equipment world wide.
 
-/9j/4AAQSkZJRgABAQEAYABgAAD/4RDcRXhpZgAATU0AKgAAAAgABAE7AAIAAAAGAAAISodp
-AAQAAAABAAAIUJydAAEAAAAMAAAQyOocAAcAAAgMAAAAPgAAAAAc6gAAAAgAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEpFU0tZAAAF
-kAMAAgAAABQAABCekAQAAgAAABQAABCykpEAAgAAAAMwMQAAkpIAAgAAAAMwMQAA6hwABwAA
-CAwAAAiSAAAAABzqAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAMjAyMDowNjoxNiAwNToyMjozMgAyMDIwOjA2OjE2IDA1OjIy
-OjMyAAAASgBFAFMASwBZAAAA/+ELGGh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94
-cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4NCjx4
-OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iPjxyZGY6UkRGIHhtbG5zOnJkZj0i
-aHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+PHJkZjpEZXNj
-cmlwdGlvbiByZGY6YWJvdXQ9InV1aWQ6ZmFmNWJkZDUtYmEzZC0xMWRhLWFkMzEtZDMzZDc1
-MTgyZjFiIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iLz48
-cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQz
-MS1kMzNkNzUxODJmMWIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4w
-LyI+PHhtcDpDcmVhdGVEYXRlPjIwMjAtMDYtMTZUMDU6MjI6MzIuMDEyPC94bXA6Q3JlYXRl
-RGF0ZT48L3JkZjpEZXNjcmlwdGlvbj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVp
-ZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOmRjPSJodHRw
-Oi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+PGRjOmNyZWF0b3I+PHJkZjpTZXEgeG1s
-bnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48
-cmRmOmxpPkpFU0tZPC9yZGY6bGk+PC9yZGY6U2VxPg0KCQkJPC9kYzpjcmVhdG9yPjwvcmRm
-OkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCiAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-IAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAK
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
-ICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgPD94cGFja2V0IGVuZD0ndyc/Pv/b
-AEMABwUFBgUEBwYFBggHBwgKEQsKCQkKFQ8QDBEYFRoZGBUYFxseJyEbHSUdFxgiLiIlKCkr
-LCsaIC8zLyoyJyorKv/bAEMBBwgICgkKFAsLFCocGBwqKioqKioqKioqKioqKioqKioqKioq
-KioqKioqKioqKioqKioqKioqKioqKioqKioqKv/AABEIAEwAPAMBIgACEQEDEQH/xAAfAAAB
-BQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEF
-EiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVG
-R0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmq
-srO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQAD
-AQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQF
-ITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RF
-RkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeo
-qaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEA
-AhEDEQA/APfZJdTe9lig8sIvKl4zjH16Gq91fajFclAkfAHR/b6VJcpE13KGEud3OBLj8Mcf
-lUU8kHm/u1fGB9/IP681UNxlBbYzzu72URkbL58wnLeuBiia32PiewgQuPmDEjI/Or9vIgkJ
-RfmAyMn3FSwPa3c+y5iiyfuneSc0SWoX8jHhtmk3JDZJJg5IWbJrVdGh0JTLKbZl+RQHOF57
-+vepre1hVXZSisN3IbHQ98VFrS3Mul+Xbwh0LFnffjbg8cd80mr6MOfl1KMTFVPk6xGWxtyE
-JOPTP9a39PjEVhEq4Py5JHcmuNsYtSgSZ2hRWJwIwzEN754xXZ2LzvZRm6hEMmMFA27H40uV
-KzQ23qihdwj7TIVg3FjnOyQ5/I4qpqc0seobRGCCq5PlOf1FSz3kUWqSPuYGNuRt6/r/AEql
-qJivb4XClVGBw0eTx7g1pTaUtSHe2hchIy2VA+U84PtT4LhIuJIzKCerKuarQ3MKMwLMAVIy
-owRn8acWVYfM8662Zxu46/nSnZy0BXtqX7a6QpIuZFIztGBz9KZcsCiMDK2SflTggZ6nmqox
-0E1yfy/xqWe4ilCgmaMKMYDAf1pR31Bj71ZXSMx30gUY+RIwSeeua0rYsYctL5pz97bismW4
-SeKNd0pCdCpA5+oNa1o262U7i31GDTla39f5AjmL68iiv51aAEh2y2EO7n3Oas29/prxIWtY
-Q54wWGT+VZepj/iaXJ6/vG4wfX2BpbC2SRRIznKNwOx/MCtIwTRLbLsrwZfbDs+bIwoO0c+o
-/nT38mK2aVodyjnbgDnJGf8APFVZcYbp36fjU1wQNLf/AHf6n0pSilYabEg1OBJB50DSDHO4
-oMe/FW7i4tZIAY7YLk5Dqc/lxXPhHYhAeWxtJ3D/ANl4rUaPy7VEyCVGOo9KrkiK7JkeKSfY
-EkXPOBjA9+mc/pWxpXFs4UtgScbjz0FYFvj7WPp/U1vaV/x7yf7/AP7KKymknoUnc5PVmQat
-dZAyJD8xxx+tOs0tp5MShWk42oev14NLqUhTVrnlseYwwu719qS0uUhdhKsjlsBdqk/zreOy
-IZZmyA/Hr1z71LdAnSpO3yf+zGoZSMMR7/1qec401yOML/U1M+g0YwZFdNrKpB5OBwfXrWqb
-iOaLEUolK/eIzWUHcjaS4JPBO/8AnWlEyGzUKsgwesg5PHuKskfbk/bRx2Pf61v6V/x7P/v/
-APsorn7cj7cB7Gug0n/j2f8A3/8A2UVhU3LicdrHmNrF2Y5bXAkYAOy7gfxFVd16rbo57MMD
-kMGXP8q6y78K2F1ey3EjzB5WLHaw4J9OKi/4Q7Ttu3zLjHpuX/ChVLKwcpzhm1Jjzc2xB6/M
-DQZ9TKlZbmDYR0LDGPTpXR/8Idp56TXS49HUf0o/4RCw27TcXZHoZB/hVc+lw5Tl912D/rrM
-g9Pu8fpVwTXWzD6raYxwuOB7dK2R4J04f8vN7/39H+FQ3fw+0i/jSOee+AjORsn2n8eKiVVp
-XSLhBSklJ2K1rcQpbsbm8t5J93yvG235cdDXRaHJHNYu0MgkXzCNwOeQBXPD4X6D5Bhaa/dC
-wYhrjPP5V0ehaJaeH9MFjYeZ5Icv+8bccnrzXNGpUnP3kkvX/gHRUpUYU7xk279kl+bP/9k=
+We are offering huge quantities on Nitrile gloves. Some at $9.50 
+delivered state side within 7 to 10 days by air once agreement signed. 
+With buyers’ monies only released once good clear USA customs and are 
+SGS certified as acceptable at that point.
 
+Typically, 4mm Blue FDA / EUA approved and FDA 510k Certified.
 
-------=_NextPart_000_0012_E3CCF698.3B05278C--
+• 100% nitrile,
+
+• FDA cleared per guidelines and testing for use in medical applications.
+
+• Micro-textured tips for a sure grip.
+
+• 9.5" Ambidextrous. Fits either hand.
+
+• Powder Free Nitrile Exam Gloves are easy to put on.
+
+• Latex-Free . . . No Allergic Reactions.
+
+• Non-Sterile. Good chemical resistance.
+
+• 100/box. 10 boxes/case.
+
+WE ARE CURRENTLY SUPPLYING THESE GLOVES FOR $9.50 CIF. DELIVERIES OF 10 
+MILLION BOXES COMPLETED ( VIA AIR FREIGHT) WITHIN 7 TO 10 DAYS OF LOC OR 
+FUNDS IN ECROW CONFIRMATION. ALL MONIES ONLY BEING RELEASED BY THE BUYER 
+TO THE SELLER FROM THE ACCOUNT ONCE THE GLOVES ARRIVE STATE SIDE, CLEAR 
+CUSTOMS & THERE IS SGS CONFIRMATION THAT AT THIS POINT THE GLOVES 
+CONFORM TO THE QUALITY AND SPECIFICATION LAID OUT IN THE CONTRACT. AT 
+THIS POINT THE PAYMENT IS TRANSFERRED AND THE BUYER TAKES THE GLOVES. 
+CONTACT ASAP IF THIS IS OF INTEREST TO YOU AS THIS IS A UNIQUE BESPOKE 
+PACKAGE THAT ONLY NOT AVAILABLE FOR A LIMITED TIME.
+
+In addition we can offer a full range of personal protection equipment 
+for clinicians and hospital use.
+
+If we may be of service please do not hesitate to contact us on the 
+numbers below or via email to this email address.
+
+Stay safe...
 
 
 
---===============4729712888160276887==
+Jay Shree Krishna
+
+CEO PPEHELP1 Ltd
+
+UK  Landline : (+44) (0) 203-632 0827
+
+UK Mobiles: (+44) 7535-520325 or (+44) 750-8014648
+
+USA : 1 917-628-2089
+
+<mailto:jay@ppehelp1.com?subject=UNSUBSCRIBE>Click here to UNSUBSCRIBE 
+<mailto:jay@ppehelp1.com?subject=UNSUBSCRIBE>
+
+
+--------------4D7CC96DA33CAAD5036BD579
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <p><!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-IN</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--> </p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
+        EN-GB" lang="EN-GB">Good Day</span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB">Hi My name if Jay Patel
+        and I am from PPEHELP1 Ltd.<br>
+        <br>
+        We are involved with helping hospitals, medical
+        professionals, government bodies’ and wholesalers source and
+        precure Personal Protection Equipment world wide.<br>
+        <br>
+        We are offering huge quantities on Nitrile gloves. Some at $9.50
+        delivered state side within 7 to 10 days by air once agreement
+        signed. With buyers’ monies only released once good clear USA
+        customs and are SGS certified as acceptable at that point. </span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB">Typically, 4mm Blue FDA /
+        EUA approved and FDA 510k Certified.<br>
+        <br>
+        • 100% nitrile,<br>
+        <br>
+        • FDA cleared per guidelines and testing for use in medical
+        applications.<br>
+        <br>
+        • Micro-textured tips for a sure grip.<br>
+        <br>
+        • 9.5" Ambidextrous. Fits either hand.<br>
+        <br>
+        • Powder Free Nitrile Exam Gloves are easy to put on.<br>
+        <br>
+        • Latex-Free . . . No Allergic Reactions.<br>
+        <br>
+        • Non-Sterile. Good chemical resistance.<br>
+        <br>
+        • 100/box. 10 boxes/case. </span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB">WE ARE CURRENTLY SUPPLYING
+        THESE GLOVES FOR $9.50 CIF. DELIVERIES OF 10 MILLION BOXES
+        COMPLETED ( VIA AIR FREIGHT) WITHIN 7 TO 10 DAYS OF LOC OR FUNDS
+        IN ECROW CONFIRMATION. ALL MONIES ONLY BEING RELEASED BY THE
+        BUYER TO THE SELLER FROM THE ACCOUNT ONCE THE GLOVES ARRIVE
+        STATE SIDE, CLEAR CUSTOMS &amp; THERE IS SGS CONFIRMATION THAT
+        AT THIS POINT THE GLOVES CONFORM TO THE QUALITY AND
+        SPECIFICATION LAID OUT IN THE CONTRACT. AT THIS POINT THE
+        PAYMENT IS TRANSFERRED AND THE BUYER TAKES THE GLOVES. CONTACT
+        ASAP IF THIS IS OF INTEREST TO YOU AS THIS IS A UNIQUE BESPOKE
+        PACKAGE THAT ONLY NOT AVAILABLE FOR A LIMITED TIME.</span><span
+        style="font-size:12.0pt;mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+        minor-latin;mso-ansi-language:EN-GB" lang="EN-GB"></span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB">In addition we can offer a
+        full range of personal protection equipment for clinicians and
+        hospital use. </span><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
+        EN-GB" lang="EN-GB"></span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB">If we may be of service
+        please do not hesitate to contact us on the numbers below or via
+        email to this email address.</span><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
+        EN-GB" lang="EN-GB"></span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB">Stay safe...</span><span
+        style="font-size:
+12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;
+mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:
+        Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-GB"
+        lang="EN-GB"></span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB"> </span><span
+        style="font-size:12.0pt;
+mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;
+        mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-GB"
+        lang="EN-GB"></span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB"> </span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB"><br>
+        <br>
+        Jay Shree Krishna<br>
+        <br>
+        CEO PPEHELP1 Ltd<br>
+        <br>
+        UK  Landline : (+44) (0) 203-632 0827<br>
+        <br>
+        UK Mobiles: (+44) 7535-520325 or (+44) 750-8014648<br>
+        <br>
+        USA : 1 917-628-2089</span><span
+        style="font-size:12.0pt;mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+        minor-latin;mso-ansi-language:EN-GB" lang="EN-GB"></span></p>
+    <p class="MsoNormal"
+      style="mso-margin-top-alt:auto;mso-margin-bottom-alt:auto"><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;color:#222222;
+        mso-ansi-language:EN-GB" lang="EN-GB"> </span><span
+        style="font-size:12.0pt;
+mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;
+        mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-GB"
+        lang="EN-GB"></span></p>
+    <p class="MsoNormal"><span
+        style="font-size:12.0pt;mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+        minor-latin;mso-ansi-language:EN-GB" lang="EN-GB"> </span></p>
+    <p class="MsoNormal"><span
+        style="font-size:12.0pt;mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+        minor-latin;mso-ansi-language:EN-GB;mso-fareast-language:EN-GB"
+        lang="EN-GB"> </span></p>
+    <p class="MsoNormal"><a
+        href="mailto:jay@ppehelp1.com?subject=UNSUBSCRIBE"
+        target="_blank"><span
+          style="font-size:12.0pt;mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
+          background:#F8F8F8;text-decoration:none;text-underline:none"></span></a><a
+        href="mailto:jay@ppehelp1.com?subject=UNSUBSCRIBE"
+        target="_blank" moz-do-not-send="true"><span
+          style="font-size:12.0pt;mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;
+          background:#F8F8F8;text-decoration:none;text-underline:none">Click
+          here to UNSUBSCRIBE</span></a><span class="MsoHyperlink"><span
+          style="font-size:12.0pt;
+mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;background:#F8F8F8;text-decoration:none;
+          text-underline:none"><span style="mso-spacerun:yes">  </span><span
+            style="mso-tab-count:1">  </span></span></span><br>
+      <span class="MsoHyperlink"><span style="font-size:12.0pt;
+mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:
+Calibri;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;
+mso-bidi-theme-font:minor-latin;background:#F8F8F8;text-decoration:none;
+          text-underline:none"><span style="mso-tab-count:1"></span></span></span><span
+style="font-size:12.0pt;mso-ascii-font-family:Calibri;mso-ascii-theme-font:
+minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin;mso-ansi-language:
+        EN-GB" lang="EN-GB"></span></p>
+    <p class="MsoNormal"><span
+        style="font-size:12.0pt;mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+        minor-latin;mso-ansi-language:EN-GB" lang="EN-GB"> </span></p>
+    <p class="MsoNormal"><span
+        style="font-size:12.0pt;mso-ascii-font-family:
+Calibri;mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+        minor-latin;mso-ansi-language:EN-GB" lang="EN-GB"> </span></p>
+    <p class="MsoNormal"><span
+        style="font-size:12.0pt;mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin"> </span></p>
+    <p class="MsoNormal"><span
+        style="font-size:12.0pt;mso-ascii-font-family:Calibri;
+mso-ascii-theme-font:minor-latin;mso-hansi-font-family:Calibri;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin"> </span></p>
+  </body>
+</html>
+
+--------------4D7CC96DA33CAAD5036BD579--
+
+
+--===============2207577973348731035==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4729712888160276887==
+--===============2207577973348731035==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -424,6 +715,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4729712888160276887==--
-
+--===============2207577973348731035==--
 
