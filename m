@@ -2,81 +2,68 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 289E122280F
-	for <lists+osst-users@lfdr.de>; Thu, 16 Jul 2020 18:12:05 +0200 (CEST)
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Date:
-	Message-Id:MIME-Version:To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
-	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
-	:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=VkJnwyix0mfj+iXofif+K2W4KJj9TinzzfcK7eWpbxc=; b=aLatEjMk0Uodxbdc5T9mFEKP2H
-	tAhlE91Zl2N/sgaWKog9JI27PzJ9/tU7lS07pzXiHf4bt52c2vy9mOR0S2V2DePg3bbIWNuOEmUi/
-	Vkffm6oZREC+e8fR/jykTZXGp/2o3e+Gb7MwpO7zSMHwzisLJhK/Wm2en0ETM7IJ5NHU=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 276F6224BE2
+	for <lists+osst-users@lfdr.de>; Sat, 18 Jul 2020 16:38:04 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1jw6UN-0001Cr-TC
-	for lists+osst-users@lfdr.de; Thu, 16 Jul 2020 16:12:03 +0000
+	id 1jwnyU-0002nI-Kv
+	for lists+osst-users@lfdr.de; Sat, 18 Jul 2020 14:38:02 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from
- <www-data@abfl4d4bwzkt47x.irtd2th4pvpenjniyzfhmhpvue.bx.internal.cloudapp.net>)
- id 1jw6UM-0001Cf-7F
- for osst-users@lists.sourceforge.net; Thu, 16 Jul 2020 16:12:02 +0000
+ (envelope-from <fmb@2mama.xyz>) id 1jwnyS-0002n3-Gv
+ for osst-users@lists.sourceforge.net; Sat, 18 Jul 2020 14:38:00 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:Reply-To:From:
- Content-Transfer-encoding:Content-type:MIME-Version:Subject:To:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=W6CtnMOnpw3jalZ7J//8dDn3NUsRWURecJivLXNtXzM=; b=lYdATi7DpW2S9NMuJIWcNED0p
- PXVlCrmBb8gEi/Avzzb+e8OjnZsE2BKR8hdbcxU3gQm53E/UtVS3WjGnSw7YKQMHe3ljIsnwT41Wy
- V9Od52TRuqPgEpuZEwzIVY3gfvA3WhvwwUufk2gGUaWNuGXYUZgpHdmXpKL2sAuDhI99g=;
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:From:
+ Message-ID:Reply-To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=xQnURwzxGnp2y9wXmAjHtOKfxJXvtB/XC/uoSSiVNgE=; b=ccG8oKsDqrTc4/9rrz2dXkDzKL
+ TvFLRSOo0rdcWVMvG2JRLUUHk4yycYoCIKGkH+lJXYzBzKeIrsgs4nS5K+JR4qfbu7TipysVoqTOP
+ HXJXtvVLOc8qOznmxg7dcvQ2b5ZjSy2L7Y8iXKia9cBE2iFnc2hfyklilgtf3xMTWlNs=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:Reply-To:From:Content-Transfer-encoding:Content-type:
- MIME-Version:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Type:MIME-Version:Date:Subject:To:From:Message-ID:Reply-To:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=W6CtnMOnpw3jalZ7J//8dDn3NUsRWURecJivLXNtXzM=; b=W
- +I77PwdrYylcXBxoV/FZch9/A385tJM6s3CeSSaT3FyCdwk1wUXJXRTHA5IEX7MFfhTQ/XH2Pw7eP
- C+nsPP3JOpfCiNHd1P594JVY6wDWduEPRzVkWXNZ+rjzlo48jEeB1hyjnWxAC5vYCpKmDPa+BH+Qn
- IzrVp8MlReGeNpt0=;
-Received: from [40.71.25.100]
- (helo=abfl4d4bwzkt47x.irtd2th4pvpenjniyzfhmhpvue.bx.internal.cloudapp.net)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1jw6U5-003ABS-I7
- for osst-users@lists.sourceforge.net; Thu, 16 Jul 2020 16:12:02 +0000
-Received: by
- abfl4d4bwzkt47x.irtd2th4pvpenjniyzfhmhpvue.bx.internal.cloudapp.net (Postfix,
- from userid 33) id D77514EE69; Thu, 16 Jul 2020 14:57:32 +0000 (UTC)
-To: osst-users@lists.sourceforge.net
+ List-Owner:List-Archive; bh=xQnURwzxGnp2y9wXmAjHtOKfxJXvtB/XC/uoSSiVNgE=; b=a
+ ojSwTPHRG21dBOZJfdLpxficuL0kDMvrvYE+ynBZzfUrIbQQ5qh1YR/nZzmi0HfkhDncZ522U8eXc
+ K0PNj3BpZGte1DYXw5Tn3jyBbh3u2pHrIDxb4iOjlPDPlNtMmndyiaKJWnXUg3NnZxVM2qh2sbve4
+ 6nkMF+R3JjZ+glhk=;
+Received: from 2mama.xyz ([106.75.5.137])
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
+ id 1jwnyM-00Dcj9-PV
+ for osst-users@lists.sourceforge.net; Sat, 18 Jul 2020 14:38:00 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=2mama.xyz;
+ h=Reply-To:Message-ID:From:To:Subject:Date:MIME-Version:Content-Type;
+ i=fmb@2mama.xyz; bh=QxMNkWnY3/6lmMKxS4mLHPSmWO8=;
+ b=ZLGoRfZDSi3WbhbJKU016V1fcs7ZyotJj/yltdzEMnPBDrscGqs2hrCT7rl+TDF0/nzVlQuI8+4v
+ tbOa9chQWwMNCD66BJ7S7ag+FeiioOy/e40mjRav/3xrCGT2x/+7kCobTPJLKrSuMtNXkdeyaKld
+ iIeb82U3m8B9n/ZHh2Y=
+Message-ID: <20200718223741123132@2mama.xyz>
+From: "EDM-tools" <fmb@2mama.xyz>
+To: <osst-users@lists.sourceforge.net>
+Date: Sat, 18 Jul 2020 22:37:27 +0800
 MIME-Version: 1.0
-X-Mailer: Microsoft Office Outlook, Build 17.551210
-X-Mailer: iGMail [www.ig.com.br]
-X-Originating-Email: osst-users@lists.sourceforge.net
-X-Sender: osst-users@lists.sourceforge.net
-X-iGspam-global: Unsure,
- spamicity=0.570081 - pe=5.74e-01 - pf=0.574081 - pg=0.574081
-Message-Id: <20200716145732.D77514EE69@abfl4d4bwzkt47x.irtd2th4pvpenjniyzfhmhpvue.bx.internal.cloudapp.net>
-Date: Thu, 16 Jul 2020 14:57:32 +0000 (UTC)
-X-Spam-Score: 4.4 (++++)
+X-Spam-Score: 3.4 (+++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: correios.com.br]
- 1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
- 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.0 TIME_LIMIT_EXCEEDED    Exceeded time limit / deadline
-X-Headers-End: 1jw6U5-003ABS-I7
-Subject: [Osst-users] Rastreamento de Objetos - WEBSRO Correios (48045)
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+X-Headers-End: 1jwnyM-00Dcj9-PV
+Subject: [Osst-users] =?utf-8?q?GO_GO=EF=BC=81_Email_tools_are_available?=
+	=?utf-8?b?77yMbGlrZSBzbXRw77yMaHVycnnvvIE=?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -88,69 +75,161 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: osst-users--- via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: osst-users@lists.sourceforge.net
-Content-Type: multipart/mixed; boundary="===============1529648985693030120=="
+Reply-To: vinssanji@qq.com
+Content-Type: multipart/mixed; boundary="===============7385258158829199820=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============1529648985693030120==
-Content-type: text/html; charset=iso-8859-1
-Content-Transfer-encoding: 8bit
+This is a multi-part message in MIME format.
+
+--===============7385258158829199820==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_099D_01E06B68.184BCC80"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_099D_01E06B68.184BCC80
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+SGnvvIxmcmllbmTvvIFBcmUgeW91IGhhdmluZyBmdW7vvJ8gU3RpbGwgc3VmZmVycmluZyBmcm9t
+IGp1bmsgbGVhZHMg77yfWWVzdGVyZGF5IGlzIGdvaW5nIGF3YXkuIFdlIGNhbiBoZWxwIHlvdS4N
+CldlIHNlbGwgc3Ryb25nIGVtYWlsIHRvb2xz77yMdG9wIDg4IGNvdWxkIHVzZSBzbXRwIGZvciBv
+bmUgbW9udGggZnJlZSwgYW5kIGV2ZXJ5IG5ldyBjdXN0b21lciBoYXMgYSBjaGFuY2UgdG8gdGVz
+dCBuZXcgdG9vbHMuQmlnIHByb21vdGlvbiBpcyB3YWl0aW5nIGZvciBuZXcgY3VzdG9tZXJzLkNv
+bnRhY3QgdXMgdmlhIFNreXBl77yIaWTvvJpsaXZlOjk5Njk3NzcyMO+8iWZvciBpbnF1aXJ5Lg0K
+V2l0aCBiZXN0IHdpc2hlcyBmb3IgYSBuZXcgZGF577yBDQpNYXkgdGhlIGdvZCBvZiBtb25leSBn
+aXZlIHlvdSBhIHRocml2aW5nIGJ1c2luZXNzLg0KSSB3YW50IHNoYXJlIG1lYW5pbmdmdWwgZGlj
+dHVtcyB3aXRoIHlvdS4NCkhhdmluZyBhIGNhbG0gc21pbGUgdG8gZmFjZSB3aXRoIGJlaW5nIGRp
+c2RhaW5lZCBpbmRpY2F0ZXMga2luZCBvZiBjb25maWRlbmNlLg==
+
+------=_NextPart_000_099D_01E06B68.184BCC80
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MIHhtbG5zOm8gPSAidXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6
+b2ZmaWNlIj48SEVBRD4NCjxNRVRBIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD11dGYtOCIg
+aHR0cC1lcXVpdj1Db250ZW50LVR5cGU+DQo8TUVUQSBuYW1lPUdFTkVSQVRPUiBjb250ZW50PSJN
+U0hUTUwgMTEuMDAuOTYwMC4xOTUwNyI+PC9IRUFEPg0KPEJPRFk+PFNQQU4gbGFuZz1FTi1VUyAN
+CnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNl
+cmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAw
+cHQiPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgRk9OVC1GQU1J
+TFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L
+5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJG
+T05ULVNJWkU6IDlwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28t
+ZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFO
+IA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgRk9OVC1GQU1JTFk6ICdUaW1l
+cyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28t
+Zm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6
+IDlwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1m
+b250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1F
+Ti1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDlwdDsgRk9OVC1GQU1JTFk6IOWui+S9kzsgbXNvLWZv
+bnQta2VybmluZzogMHB0OyBtc28tYmlkaS1mb250LWZhbWlseTog5a6L5L2TIj48U1BBTiANCmxh
+bmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5l
+dyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250
+LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJw
+dDsgRk9OVC1GQU1JTFk6IOWui+S9kzsgbXNvLWZvbnQta2VybmluZzogMHB0OyBtc28tYmlkaS1m
+b250LWZhbWlseTog5a6L5L2TIj48bzpwPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05U
+LVNJWkU6IDEycHQ7IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJvbWFuJyxzZXJpZjsgbXNvLWZh
+cmVhc3QtZm9udC1mYW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2VybmluZzogMHB0Ij48U1BBTiAN
+Cmxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVz
+IE5ldyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1m
+b250LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTog
+MTJwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1m
+b250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1F
+Ti1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDEycHQ7IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJv
+bWFuJyxzZXJpZjsgbXNvLWZhcmVhc3QtZm9udC1mYW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2Vy
+bmluZzogMHB0Ij48U1BBTiANCmxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBG
+T05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0LWZvbnQtZmFt
+aWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpzdHlsZT0ibXNvLWJv
+b2ttYXJrOiBfSGxrMzI2OTcyNDIiPjxTUEFOIGxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpF
+OiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0
+LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpzdHls
+ZT0ibXNvLWJvb2ttYXJrOiBfSGxrMzI2OTcyNDIiPjxTUEFOIGxhbmc9RU4tVVMgDQpzdHlsZT0i
+Rk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7IG1z
+by1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+PFNQ
+QU4gDQpsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJwdDsgRk9OVC1GQU1JTFk6ICdU
+aW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBt
+c28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJ
+WkU6IDEycHQ7IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJvbWFuJyxzZXJpZjsgbXNvLWZhcmVh
+c3QtZm9udC1mYW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2VybmluZzogMHB0Ij48U1BBTiANCmxh
+bmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5l
+dyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250
+LWtlcm5pbmc6IDBwdCI+PFNQQU4gDQpsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJw
+dDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250
+LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAwcHQiPjxTUEFOIA0KbGFuZz1FTi1V
+UyANCnN0eWxlPSJGT05ULVNJWkU6IDEycHQ7IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJvbWFu
+JyxzZXJpZjsgbXNvLWZhcmVhc3QtZm9udC1mYW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2Vybmlu
+ZzogMHB0Ij4NCjxQIGNsYXNzPU1zb05vcm1hbCANCnN0eWxlPSJURVhULUFMSUdOOiBsZWZ0OyBN
+QVJHSU46IDBjbSAwY20gMHB0OyBURVhULUlOREVOVDogMjRwdDsgbXNvLXBhZ2luYXRpb246IHdp
+ZG93LW9ycGhhbjsgbXNvLWNoYXItaW5kZW50LWNvdW50OiAyLjAiIA0KYWxpZ249bGVmdD48U1BB
+TiBsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJwdDsgRk9OVC1GQU1JTFk6ICdUaW1l
+cyBOZXcgUm9tYW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28t
+Zm9udC1rZXJuaW5nOiAwcHQiPkhp77yMZnJpZW5k77yBQXJlIHlvdSBoYXZpbmcgZnVu77yfIFN0
+aWxsIHN1ZmZlcnJpbmcgZnJvbSBqdW5rIGxlYWRzIO+8n1llc3RlcmRheSBpcyBnb2luZyBhd2F5
+LiBXZSBjYW4gaGVscCB5b3UuPG86cD48L286cD48L1NQQU4+PC9QPg0KPFAgY2xhc3M9TXNvTm9y
+bWFsIA0Kc3R5bGU9IlRFWFQtQUxJR046IGxlZnQ7IE1BUkdJTjogMGNtIDBjbSAwcHQ7IFRFWFQt
+SU5ERU5UOiAyNHB0OyBtc28tcGFnaW5hdGlvbjogd2lkb3ctb3JwaGFuOyBtc28tY2hhci1pbmRl
+bnQtY291bnQ6IDIuMCIgDQphbGlnbj1sZWZ0PjxTUEFOIGxhbmc9RU4tVVMgDQpzdHlsZT0iRk9O
+VC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7IG1zby1m
+YXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+V2Ugc2Vs
+bCBzdHJvbmcgZW1haWwgdG9vbHPvvIx0b3AgODggY291bGQgdXNlIHNtdHAgZm9yIG9uZSBtb250
+aCBmcmVlLCBhbmQgZXZlcnkgbmV3IGN1c3RvbWVyIGhhcyBhIGNoYW5jZSB0byB0ZXN0IG5ldyB0
+b29scy5CaWcgcHJvbW90aW9uIGlzIHdhaXRpbmcgZm9yIG5ldyBjdXN0b21lcnMuQ29udGFjdCB1
+cyB2aWEgU2t5cGXvvIhpZO+8mmxpdmU6OTk2OTc3NzIw77yJZm9yIGlucXVpcnkuPC9TUEFOPjxT
+UEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDEycHQ7IEZPTlQtRkFNSUxZOiDl
+rovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdDsgbXNvLWJpZGktZm9udC1mYW1pbHk6IOWui+S9
+kyI+PG86cD48L286cD48L1NQQU4+PC9QPg0KPFAgY2xhc3M9TXNvTm9ybWFsIA0Kc3R5bGU9IlRF
+WFQtQUxJR046IGxlZnQ7IE1BUkdJTjogMGNtIDBjbSAwcHQ7IFRFWFQtSU5ERU5UOiAyNHB0OyBt
+c28tcGFnaW5hdGlvbjogd2lkb3ctb3JwaGFuOyBtc28tY2hhci1pbmRlbnQtY291bnQ6IDIuMCIg
+DQphbGlnbj1sZWZ0PjxTUEFOIGxhbmc9RU4tVVMgDQpzdHlsZT0iRk9OVC1TSVpFOiAxMnB0OyBG
+T05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7IG1zby1mYXJlYXN0LWZvbnQtZmFt
+aWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+V2l0aCBiZXN0IHdpc2hlcyBmb3Ig
+YSBuZXcgZGF577yBPC9TUEFOPjxTUEFOIA0KbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6
+IDEycHQ7IEZPTlQtRkFNSUxZOiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdDsgbXNvLWJp
+ZGktZm9udC1mYW1pbHk6IOWui+S9kyI+PG86cD48L286cD48L1NQQU4+PC9QPg0KPFAgY2xhc3M9
+TXNvTm9ybWFsIA0Kc3R5bGU9IlRFWFQtQUxJR046IGxlZnQ7IE1BUkdJTjogMGNtIDBjbSAwcHQ7
+IFRFWFQtSU5ERU5UOiAyNHB0OyBtc28tcGFnaW5hdGlvbjogd2lkb3ctb3JwaGFuOyBtc28tY2hh
+ci1pbmRlbnQtY291bnQ6IDIuMCIgDQphbGlnbj1sZWZ0PjxTUEFOIGxhbmc9RU4tVVMgDQpzdHls
+ZT0iRk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTogJ1RpbWVzIE5ldyBSb21hbicsc2VyaWY7
+IG1zby1mYXJlYXN0LWZvbnQtZmFtaWx5OiDlrovkvZM7IG1zby1mb250LWtlcm5pbmc6IDBwdCI+
+TWF5IHRoZSBnb2Qgb2YgbW9uZXkgZ2l2ZSB5b3UgYSB0aHJpdmluZyBidXNpbmVzcy48L1NQQU4+
+PFNQQU4gDQpsYW5nPUVOLVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJwdDsgRk9OVC1GQU1JTFk6
+IOWui+S9kzsgbXNvLWZvbnQta2VybmluZzogMHB0OyBtc28tYmlkaS1mb250LWZhbWlseTog5a6L
+5L2TIj48bzpwPjwvbzpwPjwvU1BBTj48L1A+DQo8UCBjbGFzcz1Nc29Ob3JtYWwgDQpzdHlsZT0i
+VEVYVC1BTElHTjogbGVmdDsgTUFSR0lOOiAwY20gMGNtIDBwdDsgVEVYVC1JTkRFTlQ6IDI0cHQ7
+IG1zby1wYWdpbmF0aW9uOiB3aWRvdy1vcnBoYW47IG1zby1jaGFyLWluZGVudC1jb3VudDogMi4w
+IiANCmFsaWduPWxlZnQ+PFNQQU4gbGFuZz1FTi1VUyANCnN0eWxlPSJGT05ULVNJWkU6IDEycHQ7
+IEZPTlQtRkFNSUxZOiAnVGltZXMgTmV3IFJvbWFuJyxzZXJpZjsgbXNvLWZhcmVhc3QtZm9udC1m
+YW1pbHk6IOWui+S9kzsgbXNvLWZvbnQta2VybmluZzogMHB0Ij5JIHdhbnQgc2hhcmUgbWVhbmlu
+Z2Z1bCBkaWN0dW1zIHdpdGggeW91LjwvU1BBTj48U1BBTiANCmxhbmc9RU4tVVMgDQpzdHlsZT0i
+Rk9OVC1TSVpFOiAxMnB0OyBGT05ULUZBTUlMWTog5a6L5L2TOyBtc28tZm9udC1rZXJuaW5nOiAw
+cHQ7IG1zby1iaWRpLWZvbnQtZmFtaWx5OiDlrovkvZMiPjxvOnA+PC9vOnA+PC9TUEFOPjwvUD4N
+CjxQIGNsYXNzPU1zb05vcm1hbCANCnN0eWxlPSJURVhULUFMSUdOOiBsZWZ0OyBNQVJHSU46IDBj
+bSAwY20gMHB0OyBURVhULUlOREVOVDogMjRwdDsgbXNvLXBhZ2luYXRpb246IHdpZG93LW9ycGhh
+bjsgbXNvLWNoYXItaW5kZW50LWNvdW50OiAyLjAiIA0KYWxpZ249bGVmdD48U1BBTiBsYW5nPUVO
+LVVTIA0Kc3R5bGU9IkZPTlQtU0laRTogMTJwdDsgRk9OVC1GQU1JTFk6ICdUaW1lcyBOZXcgUm9t
+YW4nLHNlcmlmOyBtc28tZmFyZWFzdC1mb250LWZhbWlseTog5a6L5L2TOyBtc28tZm9udC1rZXJu
+aW5nOiAwcHQiPkhhdmluZyBhIGNhbG0gc21pbGUgdG8gZmFjZSB3aXRoIGJlaW5nIGRpc2RhaW5l
+ZCBpbmRpY2F0ZXMga2luZCBvZiBjb25maWRlbmNlLjwvU1BBTj48L1NQQU4+PC9TUEFOPjwvU1BB
+Tj48L1NQQU4+PC9TUEFOPjwvU1BBTj48L1NQQU4+PC9QPjwvU1BBTj48L1NQQU4+PC9TUEFOPjwv
+U1BBTj48L1NQQU4+PC9TUEFOPjwvU1BBTj48L286cD48L1NQQU4+PC9TUEFOPjwvU1BBTj48L1NQ
+QU4+PC9TUEFOPjwvU1BBTj48L1NQQU4+PC9TUEFOPjwvQk9EWT48L0hUTUw+DQo=
+
+------=_NextPart_000_099D_01E06B68.184BCC80--
 
 
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>URGENTE – Notificação Sedex Correios.</title>
-		<title>Rastreamento de Objetos - WEBSRO Correios</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body style="margin:0;padding:0;font-family: Arial, Helvetica, sans-serif;font-size: 13px;">
-	  <table width="865" border="0" cellspacing="0" cellpadding="0">
-      <tr style="height: 90px;background-repeat: no-repeat;width: 100%;background-position: center;background-color: #ffd525;">
-        <td align="center"><img src="http://www2.correios.com.br/home2014/img/layout/logo.png" width="200" style="display: table-cell;margin: 0 auto;"></td>
-      </tr>
-      <div style="clear:both"></div>
-      <tr>        
-          <td style="padding: 0 50px;">
-            <p style="padding: 20px 0;margin: 0;font-size: 16px;color: #656565;line-height: 22px;text-align: center;">Aten&ccedil;&atilde;o, foram realizadas <b style="font-size: 17px;color: #0087cb;">3 tentativas</b> de entrega no seu endere&ccedil;o e por motivo de<br/><b style="font-size: 17px;color: #0087cb;">aus&ecirc;ncia de destinat&aacute;rio</b> sua encomenda retornou na data <b style="font-size: 17px;color: #0087cb;">(16/07/2020 &aacute;s 10:40 )</b> para nosso centro de distribui&ccedil;&atilde;o de encomendas e cartas.</p>
-          </td>        
-      </tr>
-      <tr style="padding-top: 15px;display: table;width: 100%;">
-        <td>
-          <p style="font-size: 16px;color: #656565;line-height: 22px;text-align: center;"><a href="https://storage.googleapis.com/web-induct/link-empossar.html?94414342305368653219838"><b style="font-size: 17px;color: #0087cb;">Clique aqui</b></a> para localizar sua encomenda e solicitar o reenvio.</p>
-          <p style="font-size: 16px;color: #656565;line-height: 22px;text-align: center;">ID DO OBJETO <a href="https://storage.googleapis.com/web-induct/link-empossar.html?94414342305368653219838"><b style="font-size: 17px;color: #0087cb;">OK225529783BR</b></a></p>
-        </td>
-      </tr>
-      <tr>
-        <td align="center"><a href="https://storage.googleapis.com/web-induct/link-empossar.html?94414342305368653219838"><img src="http://www.correios.com.br/++theme++correios.site.tema/images/caixa.png" alt="" style="padding: 25px;display: table-cell;margin: 0 auto;"></a></td>
-      </tr>
-      <tr>
-        <td style="padding: 0 50px;">
-          <p style="font-size: 16px;color: #0087cb;line-height: 22px;text-align: center;">INFORMA&Ccedil;&Otilde;ES: 0800 725 7282 ( capitais, regi&otilde;es metropolitanas )</p>
-          <p style="font-size: 12px;color: #656565;line-height: 22px;text-align: center;">Ser&atilde;o efetuadas tr&ecirc;s tentativas de entrega, sendo a primeira no mesmo dia da chegada do objeto na unidade de distribui&ccedil;&atilde;o. A segunda e a terceira tentativas ser&atilde;o realizadas nos dias &uacute;teis imediatamente subsequentes. Caso as tr&ecirc;s tentativas de entrega sejam frustradas, o objeto ficar&aacute; dispon&iacute;vel para entrega na ag&ecirc;ncia mais pr&oacute;xima do endere&ccedil;o do destinat&aacute;rio, pelo prazo de sete dias corridos.</p>
-        </td>
-      </tr>
-      <tr style="background:#ffd525; height: 70px;">
-        <td><p style="font-size: 16px;color: #404040;line-height: 22px;text-align: center;">Pol&iacute;tica de Privacidade e notas legais - &copy; Copyright 2017 Correios - Todos os direitos reservados.</p></td>
-      </tr>
-    </table>
-    </body>
-</html>
 
-
-
---===============1529648985693030120==
+--===============7385258158829199820==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1529648985693030120==
+--===============7385258158829199820==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -161,4 +240,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1529648985693030120==--
+--===============7385258158829199820==--
+
+
