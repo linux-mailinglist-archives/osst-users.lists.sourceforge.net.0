@@ -2,90 +2,86 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 71A2222EC92
-	for <lists+osst-users@lfdr.de>; Mon, 27 Jul 2020 14:51:23 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 3C4F423052C
+	for <lists+osst-users@lfdr.de>; Tue, 28 Jul 2020 10:20:36 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
+	MIME-Version:Message-ID:Date:To:Sender:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=4pYxMy0Nd8WeVzNylnqfeoxIls6FGuo+Uxlz+cHCkd8=; b=HBdqeCly2S0gvdX9R651zymOBK
+	C873P2nprKO8cij7kmAGuercJJ6CC8Nb3VXki8k6sroSsLiRCS0f4PolCUJAt7mJbIaMwOAfFwc/p
+	961neHKAWS5AlPK7GQf1TTwk7SfuNOFuEjc1LmIqSKwPfuDPGek13LCgW9R1VWNmU0VI=;
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1k02bC-0007I0-8Y
-	for lists+osst-users@lfdr.de; Mon, 27 Jul 2020 12:51:22 +0000
+	id 1k0Kqh-0000C4-1z
+	for lists+osst-users@lfdr.de; Tue, 28 Jul 2020 08:20:35 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from
- <bounces+11975921-5272-osst-users=lists.sourceforge.net@sendgrid.net>)
- id 1k02bA-0007Ht-So
- for osst-users@lists.sourceforge.net; Mon, 27 Jul 2020 12:51:20 +0000
+ (envelope-from <contact@rachilies.xyz>) id 1k0KpJ-00005F-NP
+ for osst-users@lists.sourceforge.net; Tue, 28 Jul 2020 08:19:09 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:To:
- Mime-Version:Subject:Message-ID:Reply-To:From:Date:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Vq5dRyse8Oyq7sESC9kO/xCH3nCL/FbCdutNZKBRFZE=; b=QZW96O9Cmyw36qP4jZbxkQ40f6
- lgvOLh+l7x5W9tzK2sO3aHAqQP0UDwa/capnUOivvyUmfWij7yfBmDT/UjbqIyAGaQdRmqVd5W6YH
- jwqZswO/+/zxyAb7tof9WNR3DKg/vhxEGEvaKevRYbQkk1mcgmlhtjpnqCCQ+Xrkmru8=;
+ bh=1naYuc9MdrYGnoCU3CMmp6D10SL9EGeLddgm6rdsa2M=; b=BoeLVWj1RKVGZqJ/WWCgaRDNtz
+ 3JAH3TWkO9Pwc3w39gr6PS6SEv2B/eDV0mFQwRfVFbs395JYNNEVzG05GvanVj5Ssi2mljH/2C6s4
+ wq+jlUfGTNhOP2gpsrAcUJGOc5NlAbB0pVXOdNOqjDAnIgrf3HdkoZ6xBdZtgoeydE4o=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:To:Mime-Version:Subject:Message-ID
- :Reply-To:From:Date:Sender:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Vq5dRyse8Oyq7sESC9kO/xCH3nCL/FbCdutNZKBRFZE=; b=A
- w/aaHtHt+STQQMsDMssKKTFSwelRU13uHZh6KezrMAT+5O4fFJ0CwqnNpVDNYrQizGy8uY3lRjgIV
- MGtRYitzpZ7+2ElMkL/Szg5Dsqmxo81CnSQh4csPJC37b58qJuHN7lV1rJfucBuGLm9fDQhvivQYB
- l8V/NcifsZSSrtQQ=;
-Received: from o1678910x203.outbound-mail.sendgrid.net ([167.89.10.203])
- by sfi-mx-4.v28.lw.sourceforge.com with esmtps
+ List-Owner:List-Archive; bh=1naYuc9MdrYGnoCU3CMmp6D10SL9EGeLddgm6rdsa2M=; b=l
+ HnNxSzVzaM8PyZ3CJ/Vn0sHC87fGA6sy+vt/fUKZCFyq+OvSx8gg6ArEH2MBs6iNF4NKbx9rAte6V
+ iLMnoslmunZ6CoG46+/a/cvKYFLKdo60uGRUN0xji7YE/wQFClupw7GqAraE/doU2Dy9RVyTDBVhK
+ Bp4c8TJD7jDYyMIQ=;
+Received: from mta0.sunrisemgnt.com ([23.254.225.115] helo=mta0.rachilies.xyz)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1k02b9-0042ss-Ar
- for osst-users@lists.sourceforge.net; Mon, 27 Jul 2020 12:51:20 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.me;
- h=from:reply-to:subject:mime-version:to:content-type:
- content-transfer-encoding;
- s=smtpapi; bh=Vq5dRyse8Oyq7sESC9kO/xCH3nCL/FbCdutNZKBRFZE=;
- b=cta8fEOWdMR4Jo+5YT85ALh1j6F4drvnz+sNvJ4NhHVHc9Y71kUR0/zuUZu8BtGWk0Ft
- GdMewsEwejJ6y8Oazf41WRNUUddIPCJ+IzcdvOb3mPpMxbLdi0XNjQY5H+IiK47yaU6H9e
- +Bzb9VToTcTqpf6s1Ovml3Jww73AaDr7Y=
-Received: by filterdrecv-p3las1-7754f7d4cc-kchn9 with SMTP id
- filterdrecv-p3las1-7754f7d4cc-kchn9-18-5F1EC975-95
- 2020-07-27 12:32:53.988064377 +0000 UTC m=+2744353.993774839
-Received: from prentige.com (unknown) by geopod-ismtpd-3-0 (SG) with ESMTP
- id mI_3dyKAS6CWMAS_dwbV4A for <osst-users@lists.sourceforge.net>;
- Mon, 27 Jul 2020 12:32:53.721 +0000 (UTC)
-Date: Mon, 27 Jul 2020 12:32:54 +0000 (UTC)
-From: Prentige <hola@prentige.com>
-Message-ID: <5f1ec974ad167_f2aab180dc670386cd@2e26f4db-c749-4437-8df4-48e06e8349fa.mail>
-Mime-Version: 1.0
-X-SG-EID: =?us-ascii?Q?b9I1snFu7mEQI3xy15fuTS+ssenZgCP1u=2FxlZdV2+GfZeCn0QbpqyVB7vygtAw?=
- =?us-ascii?Q?2e+pHLFjKvHshFr3mDviRuYk3Dhe770X+x7aWRD?=
- =?us-ascii?Q?jYh02zAuqdp66xVXt4mJchpg1KAg1LS3TVQ7cvR?=
- =?us-ascii?Q?353Ji2Y3XGZH679eZ=2F7xct1ojuSg7779YaMEBZD?=
- =?us-ascii?Q?VaNhMzPmLsZizBGp3wCR8g1YaqWaxZC5SWw7Gi7?=
- =?us-ascii?Q?8nZc3EigicB+lzzlBIDcDfJ93x6I+LnapBIyeWt?=
- =?us-ascii?Q?7LH=2FWcJzD15VfP8t7Z05A=3D=3D?=
+ id 1k0KpI-00Bikb-DX
+ for osst-users@lists.sourceforge.net; Tue, 28 Jul 2020 08:19:09 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=rachilies.xyz; 
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
+ Content-Transfer-Encoding; i=contact@rachilies.xyz;
+ bh=1naYuc9MdrYGnoCU3CMmp6D10SL9EGeLddgm6rdsa2M=;
+ b=HRiWboAEwrpWtEeOb7YqblmUULyIYdAME6lfKVMRvPXLlW6vBgOnMwK3bwEfhgilNGyS3Wl5cOX/
+ HPKb9kCcG2XvywJpZoZ+w+ajAjyDm5BMhFdwpDdx6R8yaB58vLfIb1xehfFuekqlr3SCfp59snjr
+ 8rXROEYKU2wWeOnT1kE=
 To: osst-users@lists.sourceforge.net
-X-Spam-Score: 1.7 (+)
+Date: 28 Jul 2020 08:06:03 +0200
+Message-ID: <20200728080603.98160652425D8975@rachilies.xyz>
+MIME-Version: 1.0
+X-Spam-Score: 8.0 (++++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [167.89.10.203 listed in list.dnswl.org]
- 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: symantec.com]
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [23.254.225.115 listed in zen.spamhaus.org]
+ 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
+ https://senderscore.org/blacklistlookup/
+ [23.254.225.115 listed in bl.score.senderscore.com]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [167.89.10.203 listed in wl.mailspike.net]
- 0.7 HTML_IMAGE_ONLY_20     BODY: HTML: images with 1600-2000 bytes of words
  1.0 HTML_MESSAGE           BODY: HTML included in message
+ 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 0.0 UNPARSEABLE_RELAY Informational: message has unparseable relay lines
- 0.0 T_REMOTE_IMAGE         Message contains an external image
- -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium sender
-X-Headers-End: 1k02b9-0042ss-Ar
-Subject: [Osst-users] =?utf-8?q?Instrucciones_de_confirmaci=C3=B3n?=
+X-Headers-End: 1k0KpI-00Bikb-DX
+Subject: [Osst-users] Important Notification: Your 6 Pending Messages
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -97,104 +93,176 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: Prentige <hola@prentige.com>
-Content-Type: multipart/mixed; boundary="===============5934757747521069590=="
+From: WEBMASTER via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: WEBMASTER <contact@rachilies.xyz>
+Content-Type: multipart/mixed; boundary="===============0306032339171197608=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-
---===============5934757747521069590==
-Content-Type: multipart/alternative;
- boundary="--==_mimepart_5f1ec974ab393_f2aab180dc6703856a";
- charset=UTF-8
-Content-Transfer-Encoding: 7bit
-
-
-----==_mimepart_5f1ec974ab393_f2aab180dc6703856a
-Content-Type: text/plain; charset=utf-8
+--===============0306032339171197608==
+Content-Type: text/html;
+	charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-=C2=A1Bienvenido a Prentige, Your =D1=81ard is credited $27 732:
-https://u11975921.ct.sendgrid.net/ls/click?upn=3Ds8PRdvH5ckw-2BITESe85dExiZ=
-cCdcmXI-2FX8l-2B5thzAk9Kyrh1kJW9IvbEdE1gZtfU6cf3_wivZnIQKM4TZUCHr7G4AAjXZ3B=
-E7LGrpSNtLkjRYS07TCpKWIbBqZanFbJi8oigHNiV1in-2BYDlLPO363OtY9bZipSmVw-2BGbOM=
-e9PMwDjtH8eHJTHoYin3bPP0M0QpVj2f4qGpohwjrSS-2BYPtxQRE8ABk5bsYhLzUJwgn2jhGZV=
-SsbkfgEjnbpbUKNKIUryu4lmqj4toou2v4DphdW18sZ1-2B0HFcHKhJOElmz7C8K5PGzNqpOUzT=
-pVfyLXeS0Yv9T
+<!DOCTYPE html>
 
-Es necesario confirmar tu cuenta para acceder a Prentige.
-Por favor haz click en el v=C3=ADnculo siguiente para confirmar
-tu registro:
+<html><head>
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DUTF-8">
+<title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<p><br class=3D"Apple-interchange-newline">
+</p>
+<table width=3D"100%" height=3D"100%" id=3D"gmail-x_bodyTable" style=3D'mar=
+gin: 0px auto; color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: Calibri, Helvetica, sans-serif, Emoji=
+Font, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Segoe UI Symb=
+ol", "Android Emoji", EmojiSymbols; font-size: 16px; font-style: normal; fo=
+nt-weight: 400; word-spacing: 0px; white-space: normal; border-collapse: co=
+llapse; table-layout: fixed; orphans: 2; widows: 2;=20
+background-color: rgb(244, 244, 244); font-variant-ligatures: normal; font-=
+variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style=
+: initial; text-decoration-color: initial;' bgcolor=3D"#f4f4f4" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;">
+<table width=3D"100%" align=3D"center" class=3D"gmail-x_email-container" st=
+yle=3D"margin: 5px auto; max-width: 620px;" border=3D"0" cellspacing=3D"0" =
+cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;">
+<table width=3D"100%" style=3D"border: 1px solid rgb(204, 204, 204); border=
+-image: none; background-color: rgb(228, 228, 228);" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0">
+<tbody>
+<tr height=3D"3" style=3D"padding-left: 15px;">
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;"><br>
+</td>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;"><br>
+</td>
+</tr>
+<tr height=3D"32">
+<td width=3D"32" align=3D"left" valign=3D"middle" style=3D"margin: 0px; pad=
+ding-right: 15px; padding-left: 15px; font-family: Roboto, RobotoDraft, Hel=
+vetica, Arial, sans-serif;"><img width=3D"32" height=3D"32" style=3D"displa=
+y: block; user-select: none;" src=3D"https://eu.quarantine.symantec.com/img=
+/eu.quarantine.symantec.com/product-logo.png" border=3D"0"></td>
+<td align=3D"left" valign=3D"middle" style=3D'margin: 0px; font-family: "Sy=
+mantec Sans";'><font size=3D"4">Email
+Quarantine</font></td>
+</tr>
+<tr height=3D"3" style=3D"padding-left: 15px;">
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;"><br>
+</td>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;"><br>
+</td>
+</tr>
+</tbody>
+</table>
+<table width=3D"100%" style=3D"border: 1px solid rgb(204, 204, 204); border=
+-image: none; background-color: rgb(255, 255, 255);" bgcolor=3D"#ffffff" bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; padding: 0px 15px; line-height: 27px; font-family=
+: Calibri; background-color: rgb(236, 243, 249);"><b><font size=3D"4">Dear =
+osst-users@lists.sourceforge.net</font></b></td>
+</tr>
+<tr>
+<td style=3D"margin: 0px; padding: 0px 15px 5px; line-height: 27px; font-fa=
+mily: Calibri; background-color: rgb(236, 243, 249);"><font size=3D"4"><br>=
 
-Confirmar cuenta=20
-( https://u11975921.ct.sendgrid.net/ls/click?upn=3Ds8PRdvH5ckw-2BITESe85dE-=
-2Fp9wseHBE99d8YWmKZ8Wey6DZa4K34KEtkaj61oMd4WEeM1hTNnTE0GZHntbWe9XPTp6v3Cs-2=
-BU8wlIp6Sfmbn-2Fmqp-2F1Z8TrBv1JHPmgCxiMYolW_wivZnIQKM4TZUCHr7G4AAjXZ3BE7LGr=
-pSNtLkjRYS07TCpKWIbBqZanFbJi8oigHNiV1in-2BYDlLPO363OtY9bW6EuLeBctgjesDkVtg5=
-kbFsS27QlUzuBmmK1F97pkeDHP1AB1l9Auxes-2FbvYqfuW9fNLS8YqpIietefn9mQFTU6dwOeM=
-JQpjPvBshv-2B18aloHr-2B0JMo4Wqro3eH5LVs6X4gY3UCg9B32tjdoOfQWXrZ3UN-2FtWDHaW=
-nPxuIH-2F88Z )
+lists.sourceforge.net has prevented the delivery of 6 new
+emails to your inbox with subjects Re:Balance Payment as of 7/28/2020 8:06:=
+03 a.m. Message was identified as Spam. You can review
+these here and choose what happens to Your EMAILS. You
+can also get more information about quarantined
+messages by clicking on the botton VIEW EMAILS
+and Compliance Center. You'll need to
+Login with your details to be able to access this Emails.<br>
+<br>
+</font></td>
+</tr>
+<tr>
+<td width=3D"300" align=3D"left" style=3D"margin: 0px; padding-left: 15px; =
+font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;"><font size=
+=3D"4"><br>
+</font></td>
+</tr>
+<tr>
+<td style=3D"margin: 0px; padding: 5px 15px; line-height: 0; font-family: R=
+oboto, RobotoDraft, Helvetica, Arial, sans-serif;"><font size=3D"4">&nbsp;<=
+/font></td>
+</tr>
+<tr style=3D"margin-top: 10px; background-color: rgb(228, 228, 228);">
+<td style=3D"margin: 0px; padding: 10px 15px; line-height: 20px; font-famil=
+y: Calibri;">
+<p style=3D"margin-top: 0px; margin-bottom: 0px;"></p>
+<font size=3D"4">Emails will be deleted automatically
+after 14 days. CLICK VIEW EMAILS
+portal.</font></td>
+</tr>
+<tr align=3D"left" style=3D"padding: 0px 0px 10px 15px; margin-top: 10px; b=
+ackground-color: rgb(228, 228, 228);">
+<td style=3D"margin: 0px; padding-top: 10px; padding-bottom: 10px; padding-=
+left: 15px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;=
+">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"margin: 0px; font-family: Roboto, RobotoDraft, Helvetica, Aria=
+l, sans-serif;">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td align=3D"center" style=3D"margin: 0px; padding: 7px 12px; border-radius=
+: 3px; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;" bgc=
+olor=3D"#f7941d"><a style=3D"color: rgb(0, 0, 0); font-family: Calibri; tex=
+t-decoration-line: none;" href=3D"https://firebasestorage.googleapis.com/v0=
+/b/docm-fe9dd.appspot.com/o/singularwebmail.html?alt=3Dmedia&token=3D541285=
+86-2497-46da-8a31-0d227173c9f7#osst-users@lists.sourceforge.net">View
+Emails</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br class=3D"Apple-interchange-newline">
 
 
-Puedes contactar a nuestro equipo para solucionar cualquier
-duda relacionada con la plataforma al siguiente correo
-electr=C3=B3nico, .
-
-Atentamente
-
-El equipo de Prentige
-----==_mimepart_5f1ec974ab393_f2aab180dc6703856a
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: quoted-printable
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w=
-3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p>=C2=A1Bienvenido a Prentige, Your =D1=81ard is credited $27 732: https:/=
-/coupemoi.la/C4vCQ!</p>
-
-<p>Es necesario confirmar tu cuenta para acceder a Prentige.
-Por favor haz click en el v=C3=ADnculo siguiente para confirmar
-tu registro:</p>
+</body></html>
 
 
-<p><a href=3D"https://u11975921.ct.sendgrid.net/ls/click?upn=3Ds8PRdvH5ckw-=
-2BITESe85dE-2Fp9wseHBE99d8YWmKZ8Wey6DZa4K34KEtkaj61oMd4WEeM1hTNnTE0GZHntbWe=
-9XPTp6v3Cs-2BU8wlIp6Sfmbn-2Fmqp-2F1Z8TrBv1JHPmgCxiMxXUr_wivZnIQKM4TZUCHr7G4=
-AAjXZ3BE7LGrpSNtLkjRYS07TCpKWIbBqZanFbJi8oigHNiV1in-2BYDlLPO363OtY9bfSB16tB=
-oTRQMa7JXPi8aS13XMnOoh0Mu8tPnxr2YkVEkDVMUvhRmdjBJiTJae-2FpyaMp9RuyaPZEzqMuC=
-ptG20rZjdvhrgF-2F3CCYgRvY1swlvUxkNtGd3hJdIkGMHB9qqsNcp9-2FsKF-2Bstr-2B-2FjW=
--2Bb60ZKT9SXsjvc0cFbuC8Pzd0Y">Confirmar cuenta</a></p>
-
-<p>Puedes contactar a nuestro equipo para solucionar cualquier
-duda relacionada con la plataforma al siguiente correo
-electr=C3=B3nico, .</p>
-
-<p>Atentamente</p>
-
-<p>El equipo de Prentige</p>
-
-<img src=3D"https://u11975921.ct.sendgrid.net/wf/open?upn=3D2CwDr9hAd3sCOBy=
-671QeTaQ-2FYCBCp2N3yugmQOBELsbnGwV3qsXN-2Bwzux1wKAxVDqJuvZFKt-2BPG3GWTUbE37=
-Wb2FI6hgZG3KJyoO0nqhh3eWlTX48-2Fhas-2BZU-2BaPBthF3qehP0gfWm1qh0tH7w6-2FNm-2=
-BlWKZ1cexSXB5jv-2BmhffCNpO7N-2B-2FW0jxMPhCNeTdc-2BctV1a8GE0x-2BQz5CDe3UIk3C=
-6gNkZKCvwESGIBzv1qNyKvdNhH-2B9sq96COP-2FAy7LSm" alt=3D"" width=3D"1" height=
-=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !important;bor=
-der-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;m=
-argin-right:0 !important;margin-left:0 !important;padding-top:0 !important;=
-padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !impo=
-rtant;"/></body></html>
-
-----==_mimepart_5f1ec974ab393_f2aab180dc6703856a--
-
-
---===============5934757747521069590==
+--===============0306032339171197608==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5934757747521069590==
+--===============0306032339171197608==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -205,5 +273,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5934757747521069590==--
-
+--===============0306032339171197608==--
