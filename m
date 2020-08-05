@@ -2,70 +2,87 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 91D5623A6AE
-	for <lists+osst-users@lfdr.de>; Mon,  3 Aug 2020 14:53:15 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
-	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1k2Zxq-0007e1-DP
-	for lists+osst-users@lfdr.de; Mon, 03 Aug 2020 12:53:14 +0000
-Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <root@westwing.com.br>) id 1k2Zxo-0007dt-P7
- for osst-users@lists.sourceforge.net; Mon, 03 Aug 2020 12:53:12 +0000
+	by mail.lfdr.de (Postfix) with ESMTPS id 2B08E23D303
+	for <lists+osst-users@lfdr.de>; Wed,  5 Aug 2020 22:30:03 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:content-type:Sender
- :Reply-To:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=h8BLXduLyILRFa6JoFNQvDhF0JldzG3QbodmKa/9DZc=; b=gr/AK70+r4AqhW+GWzXhXJ9SmZ
- J/Y+XLMasr1NUSiCf1+0dDaebgernIqs21mub7ETLZCA27WdD2FC3cNbyZQr9/T255N2/bEaLh/ka
- xHiwhl7qLV/eksm2BQ/mV0CosThVsZA8XUNwXN/+EoPuel7hVHwon7ZuIQMfXUsQe878=;
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Date:
+	Message-Id:To:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=lLGmNXYvwPvXqw2fCn1GVUNAA/IddQoYzDPkiMpH0Ag=; b=OSGAfQqNUCq+dkiBjs5pm2cVtg
+	h5+7YM5eYIchGQna2PQt7WHCswO9ZQyX96pRQ7GRDHpXpErykbPKp5LQHdhc0VvnFTaFesBZq7PYV
+	FLgBEAHSV6YyEuQDe6M7CVw5uyBin2ui1lO0wCMW58blEdj99ancA9ZI0Wt2I0w8iMu8=;
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
+	id 1k3Q2z-0005JZ-Ub
+	for lists+osst-users@lfdr.de; Wed, 05 Aug 2020 20:30:01 +0000
+Received: from [172.30.20.202] (helo=mx.sourceforge.net)
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
+ (envelope-from <root@cipavinil.com.br>) id 1k3Q2y-0005J8-BD
+ for osst-users@lists.sourceforge.net; Wed, 05 Aug 2020 20:30:00 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:
+ Content-Transfer-Encoding:Content-type:MIME-Version:Sender:Reply-To:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=WuyPYA3s7t6dzcJg6bCMXQygRD1rk4ovH2OS9IzRAg0=; b=HYU5XeMSET8XxNKEq3PDz3ung
+ fkW6y55BkINei76Qw5v8UIWg08560qM1H2YUi/4xVI87pQ74ndZuTzfONcpVTMWHBafLLi1KCNo6X
+ 9NAd2/RxkfypLD64lEHfgTU6TXXjTtwm2WRLhP8pgJvkjCCGa+M3msLAGcdjamzdRPQwQ=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:To:From:Subject:content-type:Sender:Reply-To:Cc:
- MIME-Version:Content-Transfer-Encoding:Content-ID:Content-Description:
- Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=h8BLXduLyILRFa6JoFNQvDhF0JldzG3QbodmKa/9DZc=; b=Z5bGtaejXSXx2cFp6km39JR13W
- jPdUWHBftze/A/T30Ka8pFOoY+4EPfHqmFVkNqzne2TQfuU/f30DXAw33H/oNeKbQl4TQef/O5755
- gF3QSgwE19pxEiveQOVEOh/p9hf3UorNgZBgcHaFwgq/8qCn2qnzlZZpMXCAdK13XJgg=;
-Received: from ip-107-180-239-180.nodes.dream.io ([107.180.239.180]
- helo=ingo-4.openstacklocal)
- by sfi-mx-4.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1k2Zxm-00AgG5-Qc
- for osst-users@lists.sourceforge.net; Mon, 03 Aug 2020 12:53:12 +0000
-Received: by ingo-4.openstacklocal (Postfix, from userid 0)
- id 7149F40005; Mon,  3 Aug 2020 12:37:17 +0000 (UTC)
-From: ofertas@amercanas.com.br
+ h=Date:Message-Id:To:From:Subject:Content-Transfer-Encoding:Content-type:
+ MIME-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=WuyPYA3s7t6dzcJg6bCMXQygRD1rk4ovH2OS9IzRAg0=; b=D
+ IAVuOhTWP/7c2Jlznpulv8uYQvjmfD0acXmfw0Y0wCJLh2M93+12XYzR2b0h5KgFcucV0zUEB1iOj
+ +H8mMbtrmLmfu7mAHF2cMYmWT2H2WhE3cS5HvokAeKm7J7OC5BztAifMp7E68mdikWWtlXy9vYUpk
+ qzwb4YW6hrs0HciQ=;
+Received: from ip-107-180-239-120.nodes.dream.io ([107.180.239.120]
+ helo=lomunopu-7.openstacklocal)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1k3Q2w-007Oe8-MY
+ for osst-users@lists.sourceforge.net; Wed, 05 Aug 2020 20:30:00 +0000
+Received: by lomunopu-7.openstacklocal (Postfix, from userid 0)
+ id 449F944DB4; Wed,  5 Aug 2020 20:22:04 +0000 (UTC)
+MIME-Version: 1.0
 To: osst-users@lists.sourceforge.net
-Message-Id: <20200803123717.7149F40005@ingo-4.openstacklocal>
-Date: Mon,  3 Aug 2020 12:37:17 +0000 (UTC)
-X-Spam-Score: 6.1 (++++++)
+Message-Id: <20200805202204.449F944DB4@lomunopu-7.openstacklocal>
+Date: Wed,  5 Aug 2020 20:22:04 +0000 (UTC)
+X-Spam-Score: 7.2 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: imgur.com]
+ 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+ [Blocked - see <https://www.spamcop.net/bl.shtml?107.180.239.120>]
+ 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
+ https://senderscore.org/blacklistlookup/
+ [107.180.239.120 listed in bl.score.senderscore.com]
+ 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [107.180.239.120 listed in psbl.surriel.com]
+ 0.0 RCVD_IN_MSPIKE_L3      RBL: Low reputation (-3)
+ [107.180.239.120 listed in bl.mailspike.net]
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
- [SPF failed: Please see http://www.openspf.net/Why?s=mfrom;
- id=root%40westwing.com.br; ip=107.180.239.180;
- r=util-malware-2.v13.lw.sourceforge.com]
- 0.5 URI_NOVOWEL            URI: URI hostname has long non-vowel sequence
- 0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image area
- 0.1 HTML_TAG_BALANCE_BODY  BODY: HTML has unbalanced "body" tags
+ 0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
  1.0 HTML_MESSAGE           BODY: HTML included in message
  2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.1 MIME_HEADER_CTYPE_ONLY 'Content-Type' found without required MIME
- headers
  1.0 RDNS_DYNAMIC           Delivered to internal network by host with
  dynamic-looking rDNS
- 0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
- -0.2 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1k2Zxm-00AgG5-Qc
-Subject: [Osst-users] Smart TV LED 32 32lk615bpsb HD com Conversor Digital
- Apenas R$ 549, 00
+ 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
+ 0.0 LOTS_OF_MONEY          Huge... sums of money
+ 0.0 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+ -1.2 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1k3Q2w-007Oe8-MY
+Subject: [Osst-users] Smart TV LED 50 Samsung 50RU7100 Ultra HD 4K Apenas R$
+ 1.023, 99 ebaaaaaa 2765
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -77,307 +94,82 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="===============1472745201486356540=="
+From: ofertaaniversario--- via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: ofertaaniversario@americanas.com.br
+Content-Type: multipart/mixed; boundary="===============2175959559884036072=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============1472745201486356540==
-content-type: text/html
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-
-<link rel="shortcut icon" href="https://statics-americanas.b2w.io/zion/manifest/0.1.7/icons/favicon.ico"/>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<title>Ofertas Americanas.com</title>
-
-<style type="text/css">
-
-body,td,th {
-
-	font-family: Tahoma, Geneva, sans-serif;
-
-	font-size: 15px;
-
-	color: #797979;
-
-}
-
-body {
-
-	background-color: #e8e8e8;
-
-}
-
-a:link {
-
-	color: #797979;
-
-}
-
-a:visited {
-
-	color: #797979;
-
-}
-
-a:hover {
-
-	color: #797979;
-
-}
-
-a:active {
-
-	color: #797979;
-
-}
-
-</style>
-
-</head>
-
-
-
-<body>
-
-
-
-
-
-<p> </p>
-
-
-
-<table align="center" cellpadding="0" cellspacing="0" border="0" width="660">
-
-      <tbody>
-
-       <tr>
-
-        <td width="289" height="70" align="left" valign="middle" style="font-family:Verdana, Geneva, sans-serif; font-size:9px; color:#797979;"><b>Queima tudo produtos com até 80%.</b></td>
-
-        						
-
-        <td width="72" height="70" align="center" valign="middle" style="font-family:Verdana, Geneva, sans-serif; font-size:9px; color:#797979;">|</td>
-
-        <td width="299" height="70" align="center" valign="middle" style="font-family:Verdana, Geneva, sans-serif; font-size:9px; color:#797979;">Caso não consiga visualizar, <a target="_blank" href="#" >acesse este link</a></td>
-
- 
-
-       </tr>
-
-       
-
-      </tbody>
-
-     </table>
-
-
-
-<table width="700" border="0" align="center" cellpadding="10" cellspacing="0">
-
- 
-
-   <tr>
-
-     <td colspan="3" align="center" valign="top" bgcolor="#FFFFFF">
-
-	 <img src="http://image.prntscr.com/image/ae230490223b4c47a0ce089e96cd01a9.png" width="660" height="115" />
-
-	 <img src="https://www.descontosja.com/wp-content/uploads/2016/09/descontaco-americanas-ofertas-promocoes.jpg" width="660" height="180" /></td>
-
-   </tr> 
-
-   <tr>
-
-     <td colspan="3" align="center" valign="top" bgcolor="#FFFFFF">    </td>
-
-   </tr>
-
-     <td colspan="3" align="center" valign="top" bgcolor="#FFFFFF">
-
-
-
-	 
-
-	 	 
-
-	 
-
-	 <!-- Produtos BY JairoBrr -->
-
-        <table style="border-bottom:#CCC 2px solid; padding-bottom:10px;" width="631" border="0">
-
-          <tr>
-
-            <td width="384" valign="top"><a target="_blank" href="http://bit.do/gtermiceer" style="text-decoration:none;">
-
-              <p style="color:#808080; font-weight:bold; font-size:19px;">Smart TV LED 32" 32lk615bpsb HD com Conversor Digital 2 HDMI 2 USB Wi-Fi Webos 4.0 Time Machine Ready 60Hz - Preta </p>
-
-              <div style="text-align:left;">
-
-                <div style="text-decoration:line-through; margin-bottom:6px;"></div>
-
-                Por apenas<br />
-
-                <span style="color:#FF0000; font-size:18px;">R$ <span style="font-size:26px; font-weight:bold;">549,00</span></span> à vista<br />
-
-                <div style="margin-bottom:30px;">apenas no boleto bancário</div>
-
-              <img src="https://i.imgur.com/fUR5SM8.png" width="185" height="39" /></div>
-
-            </a></td>
-
-            <td width="237" align="center"><a target="_blank" href="http://bit.do/gtermiceer" style="text-decoration:none;"><img style="text-align:right; margin-top:-10px;" src="https://images-americanas.b2w.io/produtos/01/00/offers/01/00/item/133720/7/133720706SZ.jpg" border="0" width="260" height="270" /></a></td>
-
-          </tr>
-
-        </table>
-
-					
-
-        </td>
-
-  </tr>
-
-  <tr>
-
-    <td align="center" valign="top" bgcolor="#FFFFFF">
-
-
-
-    </td>
-
-    <td width="209" align="center" valign="top" bgcolor="#FFFFFF">
-
-    
-
-     
-
-    
-
-    </td>
-
-    <td width="229" align="center" valign="top" bgcolor="#FFFFFF">
-
-    
-
-    
-
-    </td>
-
-  </tr>
-
-  <tr>
-
-    <td colspan="3" valign="top" bgcolor="#FFFFFF">
-
-    
-
-    
-
-    	<!-- Redes Sociais -->
-
-     <table width="660" align="center" cellpadding="0" cellspacing="0" border="0">
-
-      	
-
-      <tbody>
-
-       <tr>
-
-        	
-
-        <td></td>
-
-        	
-
-        <td></td>
-
-        	
-
-        <td></td>
-
-        	
-
-        <td></td>
-
-        	
-
-        <td></td>
-
-       </tr>
-
-       <tr>
-
-        	
-
-        <td colspan="5"></td>
-
-       </tr>
-
-      </tbody>
-
-     </table>
-
-    
-
-     <table wdth="660" align="center" cellpadding="20" cellspacing="0" border="0" bgcolor="#d4d4d4">
-
-      	
-
-      <tbody>
-
-       <tr>
-
-        	
-
-        <td width="620" align="left">	
-
-        <p style="font-family:Verdana, Geneva, sans-serif; font-size:10px; color:#666666;">Preços válidos até o dia 06/08/2020 às 23h59 (horário de Brasília) ou enquanto durarem nossos estoques, prevalecendo o que ocorrer primeiro.                           <br />
-
-                                       As compras devem ser efetuadas somente pela Internet ou pelo nosso Televendas: 3003-6080 (mencionar o código "solteiroF20200814").<br />                             Os preços e condições anunciados estão sujeitos a alterações sem aviso prévio.                             <br /><br /><br /> O site Americanas.com.br respeita a sua privacidade e é contra o spam na rede. Consulte nossa <a style="font:11px Arial,Helvetica,sans-serif;color:#3a6ac3" href="#" target="_blank">política de privacidade</a> para mais informações. Esperamos que você tenha apreciado esta mensagem. Ela foi enviada para o seu email porque este está inscrito para receber nossos comunicados e promoções. Caso você não deseje mais receber nossas comunicações, clique neste link.                             <br /><br /><br />                             <b>B2W - Companhia Digital</b><br />                             Rua Sacadura Cabral, 102<br />                  
-            Alphaville, Rio de Janeiro/RJ - CEP 20081-902<br />                             Inscrita no CNPJ/MF sob o nº 14.314.050/0001-58<br />                             Inscrição Estadual nº 00.776.574/0006-60<br />                             Atendimento: 3003-6000 capitais e regiões metropolitanas. E 0800 014 6000 para demais localidades.<br />                             De segunda a sábado das 8:00 às 20:00 e aos domingos das 9:00 às 18:00.<br />                             Televendas: 3003-6080 - De segunda a sábado das 9:00 às 21:00 e aos domingos das 9:00 às 18:00.<br />                             E-mail: <a target="_blank" href="mailto:atendimento@americanas.com.br" style="font:11px Arial,Helvetica,sans-serif;color:#3a6ac3">atendimento.acom@americanas.com</a></p>
-
-        </td>
-
-       </tr>
-
-      </tbody>
-
-     </table>
-
-     </td>
-
-    </tr>
-
-
-
-   </tbody>
-
-  </table>
-
- 
-
-</html>
-
-
-
---===============1472745201486356540==
+--===============2175959559884036072==
+Content-type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBYSFRNTCAxLjAgVHJhbnNpdGlvbmFs
+Ly9FTiIgImh0dHA6Ly93d3cudzMub3JnL1RSL3hodG1sMS9EVEQveGh0bWwxLXRyYW5zaXRpb25h
+bC5kdGQiPg0KCjxodG1sIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj4NCgo8
+aGVhZD4NCgo8bWV0YSBodHRwLWVxdWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRleHQvaHRt
+bDsgY2hhcnNldD1pc28tODg1OS0xIiAvPg0KCjx0aXRsZT5Bbml2ZXJzYXJpbzwvdGl0bGU+DQoK
+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgpib2R5IHsNCgoJYmFja2dyb3VuZDogI2Y2ZjZmNjsN
+CgoJZm9udC1mYW1pbHk6IFRhaG9tYSwgR2VuZXZhLCBzYW5zLXNlcmlmOw0KCgliYWNrZ3JvdW5k
+LWNvbG9yOiAjRjRGNEY0Ow0KCn0NCgpib2R5LHRkLHRoIHsNCgoJZm9udC1zaXplOiAxM3B4Ow0K
+Cn0NCgo8L3N0eWxlPg0KCjwvaGVhZD4NCgoNCgo8Ym9keT4NCgo8dGFibGUgd2lkdGg9IjYyOSIg
+Ym9yZGVyPSIwIiBhbGlnbj0iY2VudGVyIiBjZWxsc3BhY2luZz0iMCIgPg0KCiAgPHRyID4NCgog
+ICAgPHRkIHdpZHRoPSI2MTkiIGFsaWduPSJjZW50ZXIiIGJnY29sb3I9IiNGRkZGRkYiIHN0eWxl
+PSJib3JkZXItYm90dG9tOiNGNEY0RjQgMXB4IHNvbGlkOyI+PGltZyBzcmM9Imh0dHBzOi8vaS5p
+bWd1ci5jb20vclJKTGV6Qi5wbmciIHdpZHRoPSI2NTAiIHN0eWxlPSJwYWRkaW5nOjEwcHg7Ym9y
+ZGVyOjBweDsiICAvPjwvYT48YnIgLz48YnIgLz48YnIgLz48L3RkPg0KCiAgPC90cj4NCgogDQoK
+ICA8dHI+DQoKICAgIDx0ZCBhbGlnbj0iY2VudGVyIiBiZ2NvbG9yPSIjRkZGRkZGIiBzdHlsZT0i
+Ym9yZGVyLWJvdHRvbTojRjRGNEY0IDFweCBzb2xpZDsiPg0KCiAgICANCgogICAgPGJyIC8+DQoK
+ICAgICA8dGFibGUgYm9yZGVyPSIwIiBzdHlsZT0iYm9yZGVyLWJvdHRvbToycHggc29saWQgcmdi
+KDIwNCwgMjA0LCAyMDQpOyBjb2xvcjpyZ2IoMTIxLCAxMjEsIDEyMSk7IGZvbnQtZmFtaWx5OnRh
+aG9tYSxnZW5ldmEsc2Fucy1zZXJpZjsgZm9udC1zaXplOjE1cHg7IHBhZGRpbmctYm90dG9tOjEw
+cHg7IHdpZHRoOjYzMXB4Ij4NCgoJPHRib2R5Pg0KCgkJPHRyPg0KCgkJCTx0ZD4NCgoJCQkJPGRp
+diBzdHlsZT0iY29sb3I6IHJnYigxMDIsIDEwMiwgMTAyKTsgZm9udC1mYW1pbHk6IFRhaG9tYSwg
+R2VuZXZhLCBzYW5zLXNlcmlmOyB0ZXh0LWFsaWduOiAtd2Via2l0OyBmb250LXNpemU6IDE0cHg7
+Ij48c3Ryb25nPiZuYnNwO09sJmFhY3V0ZTsgQ2xpZW50ZSBvc3N0LXVzZXJzQGxpc3RzLnNvdXJj
+ZWZvcmdlLm5ldA0KLjwvc3Ryb25nPiw8L2Rpdj4gPGJyPiANCgoJCQkJPGRpdiBzdHlsZT0iY29s
+b3I6IHJnYigxMDIsIDEwMiwgMTAyKTsgZm9udC1mYW1pbHk6IFRhaG9tYSwgR2VuZXZhLCBzYW5z
+LXNlcmlmOyB0ZXh0LWFsaWduOiAtd2Via2l0OyBmb250LXNpemU6IDE0cHg7Ij48c3Ryb25nPiZu
+YnNwO0Mmb2FjdXRlO2RpZ28gZGEgUHJvbW8mY2NlZGlsOyZhdGlsZGU7bzoyNDE5MDM8L3N0cm9u
+Zz4sPC9kaXY+DQoKCQkJPHA+PGEgaHJlZj0iaHR0cDovL2JpdC5kby9iY2VmZW14eHJlZWdsYmki
+IHN0eWxlPSJjb2xvcjogcmdiKDEyMSwgMTIxLCAxMjEpOyB0ZXh0LWRlY29yYXRpb24tbGluZTog
+bm9uZTsiIHRhcmdldD0iX2JsYW5rIj48c3Ryb25nPlNtYXJ0IFRWIExFRCA1MCIgU2Ftc3VuZyA1
+MFJVNzEwMCBVbHRyYSBIRCA0SyBjb20gQ29udmVyc29yIERpZ2l0YWwgMyBIRE1JIDIgVVNCIFdp
+LUZpIFZpc3VhbCBMaXZyZSBkZSBDYWJvcyBDb250cm9sZSBSZW1vdG8gw5puaWNvIGUgQmx1ZXRv
+b3RoPC9hPjwvcD4NCgoNCgoJCQk8ZGl2Pg0KCgkJCTxkaXYgc3R5bGU9InRleHQtZGVjb3JhdGlv
+bi1saW5lOiBsaW5lLXRocm91Z2g7IG1hcmdpbi1ib3R0b206IDZweDsiPiZuYnNwOzwvZGl2Pg0K
+CgkJCTxhIGhyZWY9Imh0dHA6Ly9iaXQuZG8vYmNlZmVteHhyZWVnbGJpIiBzdHlsZT0iY29sb3I6
+IHJnYigxMjEsIDEyMSwgMTIxKTsgdGV4dC1kZWNvcmF0aW9uLWxpbmU6IG5vbmU7IiB0YXJnZXQ9
+Il9ibGFuayI+UG9yIGFwZW5hczxiciAvPg0KCgkJCTxzcGFuIHN0eWxlPSJjb2xvcjpyZ2IoMjU1
+LCAwLCAwKTsgZm9udC1zaXplOjE4cHgiPlIkJm5ic3A7PHN0cm9uZz4xLjAyMyw5OTwvc3Ryb25n
+Pjwvc3Bhbj4mbmJzcDsmYWdyYXZlOyB2aXN0YTwvYT4NCgoNCgoJCQk8ZGl2IHN0eWxlPSJtYXJn
+aW4tYm90dG9tOiAzMHB4OyI+PGEgaHJlZj0iaHR0cDovL2JpdC5kby9iY2VmZW14eHJlZWdsYmki
+IHN0eWxlPSJjb2xvcjogcmdiKDEyMSwgMTIxLCAxMjEpOyB0ZXh0LWRlY29yYXRpb24tbGluZTog
+bm9uZTsiIHRhcmdldD0iX2JsYW5rIj5hcGVuYXMgbm8gYm9sZXRvIGJhbmMmYWFjdXRlO3Jpbzwv
+YT48L2Rpdj4NCgoJCQk8YSBocmVmPSJodHRwOi8vYml0LmRvL2JjZWZlbXh4cmVlZ2xiaSIgc3R5
+bGU9ImNvbG9yOiByZ2IoMTIxLCAxMjEsIDEyMSk7IHRleHQtZGVjb3JhdGlvbi1saW5lOiBub25l
+OyIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tLzhPMnk0eWcu
+cG5nIiBzdHlsZT0iaGVpZ2h0OjUwcHg7IHdpZHRoOjI1MHB4IiAvPjwvYT48L2Rpdj4NCgoJCQk8
+L3RkPg0KCgkJCTx0ZD48YSBocmVmPSJodHRwOi8vYml0LmRvL2JjZWZlbXh4cmVlZ2xiaSIgc3R5
+bGU9ImNvbG9yOiByZ2IoMTIxLCAxMjEsIDEyMSk7IHRleHQtZGVjb3JhdGlvbi1saW5lOiBub25l
+OyIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJodHRwczovL2kuaW1ndXIuY29tL3BGRHFuMlku
+cG5nIiBzdHlsZT0iaGVpZ2h0OjI1MHB4OyBtYXJnaW4tdG9wOi0xMHB4OyB0ZXh0LWFsaWduOnJp
+Z2h0OyB3aWR0aDoyNDBweCIgLz48L2E+PC90ZD4NCgoJCTwvdHI+DQoKCTwvdGJvZHk+DQoKPC90
+YWJsZT4NCgogPC90cj4NCgogIDx0cj4NCgogICAgPHRkIGFsaWduPSJjZW50ZXIiPiZuYnNwOzwv
+dGQ+DQoKICA8L3RyPg0KCiAgPHRyPg0KCiAgICA8dGQgYWxpZ249ImNlbnRlciIgc3R5bGU9ImZv
+bnQtc2l6ZToxNHB4OyBjb2xvcjojOTk5OyI+IEFNRVJJQ0FOQVM8L3RkPg0KCiAgPC90cj4NCgo8
+L3RhYmxlPg0KCjwvYm9keT4NCgo8L2h0bWw+DQoKDQo=
+
+
+
+
+--===============2175959559884036072==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1472745201486356540==
+--===============2175959559884036072==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -388,4 +180,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1472745201486356540==--
+--===============2175959559884036072==--
