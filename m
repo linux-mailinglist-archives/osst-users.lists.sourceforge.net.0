@@ -2,73 +2,78 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 578442412C9
-	for <lists+osst-users@lfdr.de>; Tue, 11 Aug 2020 00:03:09 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id CE2F2241F96
+	for <lists+osst-users@lfdr.de>; Tue, 11 Aug 2020 20:19:24 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1k5Fsq-0008Ft-55
-	for lists+osst-users@lfdr.de; Mon, 10 Aug 2020 22:03:08 +0000
+	id 1k5Yrr-0003WC-Ks
+	for lists+osst-users@lfdr.de; Tue, 11 Aug 2020 18:19:23 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
  (envelope-from
- <bounces+16650384-fada-osst-users=lists.sourceforge.net@sendgrid.net>)
- id 1k5Fso-0008Fl-LJ
- for osst-users@lists.sourceforge.net; Mon, 10 Aug 2020 22:03:06 +0000
+ <bounces+2503710-6f56-osst-users=lists.sourceforge.net@en.shieldpremiumpaintgh.com>)
+ id 1k5Yrq-0003Vx-HV
+ for osst-users@lists.sourceforge.net; Tue, 11 Aug 2020 18:19:22 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
  To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=OWr3Pi66N2dmhKqudgOS18INyTlqYhIIyWwVCozgt/g=; b=TrAgFNLJUHPCBGnc/UfJQu7y23
- 0XT02FyIJo37K2E9H3E6LozoUZe8yk47jhF5hWyOTv75cy/BoQf4YSx3HI5XYN3spUgXJSSWbdP1l
- uMxYiyrwZGmBQWDRZ2CzyYFPGV2Y1w85QTDMaz8bQNFivSytiv/l172KkMzoTBL2IBjk=;
+ bh=z2Z+HBdgYbVxL3L7CjnxWmrRtlA/tETKiLf8cLSK4Ls=; b=jdPcNd1YzFak/xWy8n3ybO56s3
+ rWUe0IbF4fFrLJJGswIcKccQI4bnDM/lVctMdQxnDjw5c07jVBysUaFK0oWcI2E0rofXGU9ZpOOOv
+ IckviJp8cWos6RQvZTxTPDw/XVQAcm9kk7wIu4JNovv8GhV2J+KvRi6N0S1wKYgVLizU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=OWr3Pi66N2dmhKqudgOS18INyTlqYhIIyWwVCozgt/g=; b=Y
- ZLqgeH7KO7CqYwZLQXHhK7CaFrc6aak+KrJ019Pt2i/zttTZ2Up014557/vga/kAfj/2OSxvY4Wnq
- lxmTiqcxvL+zHjuqOK1dUMLujYVIJxPfal7nLVW+l7KL26t6BD3+ZvEDIF326d6RuKru95KTnycVc
- F2N7Rc/rxAXtjGB0=;
-Received: from wrqvxqhb.outbound-mail.sendgrid.net ([149.72.164.11])
+ List-Owner:List-Archive; bh=z2Z+HBdgYbVxL3L7CjnxWmrRtlA/tETKiLf8cLSK4Ls=; b=D
+ gBNVimj6dfzp6R0lCvJ9Jj7BuRmpmnanJgY2HLcjMKH23MdVxS02x7kwBfS3mpiGFbSQTXDXuTbcg
+ GUBYsIXCvcRGO8sDj1a8SXPmOezesOAkXVTtrIXLGG96MG4MVVSW0ko5HFqxDFzr5X/iQbwwxVSdf
+ 9U4NG3+3/fiaIqfY=;
+Received: from wrqvqqcr.outbound-mail.sendgrid.net ([149.72.68.197])
  by sfi-mx-3.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1k5Fsn-003Pi7-3p
- for osst-users@lists.sourceforge.net; Mon, 10 Aug 2020 22:03:06 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net; 
- h=from:to:subject:mime-version:content-type; s=smtpapi; 
- bh=OWr3Pi66N2dmhKqudgOS18INyTlqYhIIyWwVCozgt/g=; b=xdfDWTBWchAYR
- DV1iYdn3LQg3S+GeGe9LUqSMMr0lsd8GNBEqHq7xQDUB1liyzjerGL88npx7FoJo
- hbKLVzoB6B+wx9kX1vLsxwxrYVv6wL3FZN4JNmIfIUAOXdfYdqcFMM5Iyq8BRvjy
- DZAv/M/9PLLRRhmeRrDhPdGq0i9Wn0=
-Received: by filter1641p1mdw1.sendgrid.net with SMTP id
- filter1641p1mdw1-3375-5F31C413-A
- 2020-08-10 22:02:59.283803839 +0000 UTC m=+520939.180618450
+ id 1k5Yrp-006kTv-9Y
+ for osst-users@lists.sourceforge.net; Tue, 11 Aug 2020 18:19:22 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; 
+ d=shieldpremiumpaintgh.com; 
+ h=from:to:subject:mime-version:content-type; s=s1; 
+ bh=z2Z+HBdgYbVxL3L7CjnxWmrRtlA/tETKiLf8cLSK4Ls=; b=IZ9cS6vUEBp6B
+ hV/hsjI5Q7Z3S4bc0l4K9WKc79m7OYH4qP8XQ3nuEq8OD++p4oF5tEB+pxR6pgwI
+ mR8++InnsEfJ6DkTEMJCX+lqb8/z42CiRkKiOnjvKajX26+Bt91H1LgqkQDV6BfZ
+ CTGkwMDCJutkvyC0JXNWZcE+mCpBGs=
+Received: by filter0698p1las1.sendgrid.net with SMTP id
+ filter0698p1las1-21642-5F32E123-28
+ 2020-08-11 18:19:15.96808253 +0000 UTC m=+588315.152828823
 Received: from congoactuel.com (unknown)
- by ismtpd0004p1iad1.sendgrid.net (SG) with ESMTP id cBVmyarYRISfm-NqGqfYww
+ by geopod-ismtpd-2-0 (SG) with ESMTP id lDK7V5AvR-iVwOHozeo6mw
  for <osst-users@lists.sourceforge.net>;
- Mon, 10 Aug 2020 22:02:59.233 +0000 (UTC)
+ Tue, 11 Aug 2020 18:19:15.783 +0000 (UTC)
 From: Ivan Lo | Wiloggroup <contact@congoactuel.com>
 To: osst-users@lists.sourceforge.net
-Date: Mon, 10 Aug 2020 22:02:59 +0000 (UTC)
-Message-ID: <20200811070739.EE0191D74F2105B3@congoactuel.com>
+Date: Tue, 11 Aug 2020 18:19:15 +0000 (UTC)
+Message-ID: <20200812032355.55FBD1BEAE7E907B@congoactuel.com>
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
- boundary="----=_NextPart_000_0012_A349D9D2.BC441E6D"
-X-SG-EID: eW8rSwMjjBXtCl3xFlVc+Xl7UQghq3v1sA9r3ym192Wkdtl6/ESjjLQR4kNrtoZ/1pXGJW6BCFuQTg
- iI2vuRDtc+jli8cNJnrGTxG7G6iZUeVbYIs66eSZNIHuOMmvO4DdiPQuHRZ7z5xn3mp0u1F8fNOda7
- uMI7jluUr4jlL0U1FoHrpUGqtWJSY4xIdDAeIoYKdmoDYr+nLoF+D7SuR7p3ckTzWoL1N4FXI4/AYy
- aoB8I8ZhBbTYZ1wbmX5RQy
+ boundary="----=_NextPart_000_0012_F78835F6.E23772C8"
+X-SG-EID: eW8rSwMjjBXtCl3xFlVc+Xl7UQghq3v1sA9r3ym192Wkdtl6/ESjjLQR4kNrtoZ/pXxnnD4Pk79AK8
+ xTi6QIXB60n78URnjGytWlrE/HXhPaakqPoTUU9FDjcPJ48irEf6Evvgvl799JKNIOFkuwLKa5Lj4J
+ g8VEUorJia2Fdx3gHFXtVNw+3rENOd7KoZhgG7bsOz7ypZB5IITX+zUFcntRdvjRGCDi0AsI49Cfcv
+ qhrd/SaoGqwjdkVTVzaUPt
 X-Spam-Score: 4.6 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: ntkomanda.lt]
  1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?149.72.164.11>]
+ [Blocked - see <https://www.spamcop.net/bl.shtml?149.72.68.197>]
  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
  domains are different
  -0.0 SPF_PASS               SPF: sender matches SPF record
@@ -80,13 +85,10 @@ X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [149.72.164.11 listed in wl.mailspike.net]
  0.0 UNPARSEABLE_RELAY Informational: message has unparseable relay lines
  0.0 T_HTML_ATTACH          HTML attachment to bypass scanning?
- -0.0 DKIMWL_WL_MED          DKIMwl.org - Medium sender
- 0.0 AWL AWL: Adjusted score from AWL reputation of From: address
-X-Headers-End: 1k5Fsn-003Pi7-3p
+ 0.1 AWL AWL: Adjusted score from AWL reputation of From: address
+X-Headers-End: 1k5Yrp-006kTv-9Y
 Subject: [Osst-users] Quotation sheet for EFB-CS 20200609
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -102,7 +104,7 @@ List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
-------=_NextPart_000_0012_A349D9D2.BC441E6D
+------=_NextPart_000_0012_F78835F6.E23772C8
 Content-Type: text/html;
 	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
@@ -374,18 +376,18 @@ RDER-LEFT: 0px; PADDING-RIGHT: 0px; -webkit-font-smoothing: antialiased">
 IGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TO=
 P: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-RIGHT: 0p=
 x; -webkit-font-smoothing: antialiased"></SPAN></SPAN>&nbsp;</P></DIV></DIV>
-<img src=3D"https://u16650384.ct.sendgrid.net/wf/open?upn=3D2CwDr9hAd3sCOBy=
-671QeTaQ-2FYCBCp2N3yugmQOBELsbnGwV3qsXN-2Bwzux1wKAxVDxOX5F99secgCUzZm2x9JJH=
-bM5YwubBI-2FP1CwkOY9ym-2B-2F35-2F1QVBC9nkviHJ6fqeXxETEp6p5r-2FBIWfOeMoMr59y=
-V0VrR7hLSGjLOySmTmn6Py7SmLpk90ViEU9tk425NGOn01Owx9SSapmgV3dKjFwXt9JqpemH0da=
-y0bibpx8MxfqxKneS2NTpkW5bZ-2Fh13" alt=3D"" width=3D"1" height=3D"1" border=
-=3D"0" style=3D"height:1px !important;width:1px !important;border-width:0 !=
-important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0=
- !important;margin-left:0 !important;padding-top:0 !important;padding-botto=
-m:0 !important;padding-right:0 !important;padding-left:0 !important;"/>
+<img src=3D"https://u2503710.ct.sendgrid.net/wf/open?upn=3D2CwDr9hAd3sCOBy6=
+71QeTaQ-2FYCBCp2N3yugmQOBELsbnGwV3qsXN-2Bwzux1wKAxVDgf1ue9pF-2Fj37OYpsS2hB3=
+E1A1CJDzCW9dlIDIBQodmtFWxg7NxSGJgYUuQMCQ8x31iFmpq41le1l7zCnxci7chRh8JxexHwG=
+-2B2B1vcZjba615ADH3mC3nE-2FASFcVRG200lGnvLkbs1c6nD4C12bIkQ-2FWTJP3B7ESQQmwV=
+PgmLw3dOoOO00c9fMEuhhWvVOp7" alt=3D"" width=3D"1" height=3D"1" border=3D"0"=
+ style=3D"height:1px !important;width:1px !important;border-width:0 !import=
+ant;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !impo=
+rtant;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !i=
+mportant;padding-right:0 !important;padding-left:0 !important;"/>
 </BODY></HTML>
 
-------=_NextPart_000_0012_A349D9D2.BC441E6D
+------=_NextPart_000_0012_F78835F6.E23772C8
 Content-Type: text/html; name="Quotation sheet for EFB-CS 20200609.html"
 Content-Transfer-Encoding: base64
 Content-Disposition: attachment; filename="Quotation sheet for EFB-CS 20200609.html"
@@ -522,14 +524,14 @@ LWJ0biI+WDwvYnV0dG9uPg0KICA8L2Rpdj4NCiAgPGg1PjxzcGFuPkZvcmdvdCBQYXNzd29yZD88
 L3NwYW4+PC9oNT4NCiAgPC9mb3JtPg0KPC9kaXY+ICAgIA0KPC9zZWN0aW9uPg0KPC9ib2R5Pg0K
 PC9odG1sPg0K
 
-------=_NextPart_000_0012_A349D9D2.BC441E6D
+------=_NextPart_000_0012_F78835F6.E23772C8
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
-------=_NextPart_000_0012_A349D9D2.BC441E6D
+------=_NextPart_000_0012_F78835F6.E23772C8
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -540,6 +542,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
-------=_NextPart_000_0012_A349D9D2.BC441E6D--
+------=_NextPart_000_0012_F78835F6.E23772C8--
 
 
