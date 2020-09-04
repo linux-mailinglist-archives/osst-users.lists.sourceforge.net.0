@@ -2,64 +2,69 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0D79A25B977
-	for <lists+osst-users@lfdr.de>; Thu,  3 Sep 2020 05:58:56 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id B524425D978
+	for <lists+osst-users@lfdr.de>; Fri,  4 Sep 2020 15:18:52 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1kDgOk-0004YD-RK
-	for lists+osst-users@lfdr.de; Thu, 03 Sep 2020 03:58:54 +0000
+	id 1kEBcB-0001Rt-Hc
+	for lists+osst-users@lfdr.de; Fri, 04 Sep 2020 13:18:51 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <www-data@diastofilli483928.pserver.ru>)
- id 1kDgOj-0004Y2-Lg
- for osst-users@lists.sourceforge.net; Thu, 03 Sep 2020 03:58:53 +0000
+ (envelope-from <iozd@amazon.co.jp>) id 1kEBbx-0001Qn-Az
+ for osst-users@lists.sourceforge.net; Fri, 04 Sep 2020 13:18:37 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
+ To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=pQ9DzlIsK7NjGkDW5avs2lC6j9EowIAS4YzwlxpwxPM=; b=IkTTAI6UGMMmf5mKj+sOlJMhU7
- HM8iTbiAij5BCTO0AJEeE21st9OJctvjh4dWTdpSnvSTnfd8RfOfUaF7QBUN6ApPGt4ST/FFzvm5j
- 4BWizMhnFnae5Az6CkvrZuQ6cPELmai1onUBd88mB+BEh/yGXoMSQQCZ04BB84QhNypY=;
+ bh=SVgbq4SXvZHZj1eE1BJaiQNvgGQu6IU86o0E4MmECCo=; b=IMx7zf0yYL0LBV8sLx4q0pO4JE
+ sxzqKLI10E716GXCg/azFnWohIpYKuQuneFe3W1Yhi3QUfyqujRB+ZBjEzfTGP64adM0CU0N+ZU8c
+ JsySMjV5++dEEq3FOD1nyZ/r4yU2MSPuxRQ0CRDli9Zw23AUnC0eBUJf3KHRrZzBnhHA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
+ h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=pQ9DzlIsK7NjGkDW5avs2lC6j9EowIAS4YzwlxpwxPM=; b=d
- LOwDdc8WTydrHFPGm2XEGaolI9gtyL8Xb4GLpZRb1ygJ7MurZoywbRJs2OYrbN/CMwHpO6HdqOPBZ
- KfMAG67JUnXXJ1pKyxHDw+oywubywVwOAtQ3QCFh5QAkLYY//g1fgigxrb6ecBVjpazUG/mlTQX6R
- WP1pkk0QeYzgRttc=;
-Received: from diastofilli483928.pserver.ru ([217.12.209.238])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1kDgOg-00Avpg-7p
- for osst-users@lists.sourceforge.net; Thu, 03 Sep 2020 03:58:53 +0000
-Received: by diastofilli483928.pserver.ru (Postfix, from userid 33)
- id 39E1347021; Thu,  3 Sep 2020 05:40:49 +0200 (CEST)
-To: osst-users@lists.sourceforge.net
+ List-Owner:List-Archive; bh=SVgbq4SXvZHZj1eE1BJaiQNvgGQu6IU86o0E4MmECCo=; b=c
+ J4FhRlRJxqBPCjSa55wImbyK9YNhvRyqtAu3bzbVgisvHW4PPeE170lCp+L7QDIaFTxowqSB+k8pv
+ 0RWKJB7538in5KC7F0wb1a/3xPyEMRh9ETFCuaRTtnWNpoiSs2b/cS7UtTpjdBXVGyYW2CUwRdSYe
+ FoAe5MJAsv6Meato=;
+Received: from ip-107-6-246-49.kryptcolo.net ([107.6.246.49] helo=amazon.co.jp)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1kEBbf-00Bzue-Kt
+ for osst-users@lists.sourceforge.net; Fri, 04 Sep 2020 13:18:37 +0000
+From: Amazon.co.jp <Amazon>
+To: osst-users <osst-users@lists.sourceforge.net>
+Date: Fri, 4 Sep 2020 06:18:12 -0800
+Message-ID: <0067fa69f696$63adae58$c4adfcbb$@amazon.co.jp>
 MIME-Version: 1.0
-From: Administracion Tributaria <impuestos@hacienda.gob.es>
-Message-Id: <20200903034049.39E1347021@diastofilli483928.pserver.ru>
-Date: Thu,  3 Sep 2020 05:40:49 +0200 (CEST)
-X-Spam-Score: 3.3 (+++)
+X-Mailer: Microsoft Outlook 16.0
+X-Spam-Score: 6.4 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: azure.com]
- 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
+ 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [107.6.246.49 listed in psbl.surriel.com]
  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 NUMERIC_HTTP_ADDR      URI: Uses a numeric IP address in URL
+ 0.0 NORMAL_HTTP_TO_IP      URI: URI host has a public dotted-decimal IPv4
+ address
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-X-Headers-End: 1kDgOg-00Avpg-7p
-Subject: [Osst-users] Pendencia Legal y Financiera. - [ id 877134400  ]
+ 0.0 SENDGRID_REDIR         Redirect URI via Sendgrid
+ 1.0 RDNS_DYNAMIC           Delivered to internal network by host with
+ dynamic-looking rDNS
+ 0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+ 1.0 HOSTED_IMG_DIRECT_MX   Image hosted at large ecomm site, message
+ direct-to-mx
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+ 1.4 DOS_OUTLOOK_TO_MX      Delivered direct to MX with Outlook headers
+ 0.0 NO_FM_NAME_IP_HOSTN    No From name + hostname using IP address
+ 0.0 TIME_LIMIT_EXCEEDED    Exceeded time limit / deadline
+X-Headers-End: 1kEBbf-00Bzue-Kt
+Subject: [Osst-users] (no subject)
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -71,150 +76,208 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============0867379105493492779=="
+Content-Type: multipart/mixed; boundary="===============5698153172080070851=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0867379105493492779==
-Content-type: text/html; charset=iso-8859-1
+This is a multi-part message in MIME format.
 
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-    <title>Comprobante</title>
+--===============5698153172080070851==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0E08_01854EAB.1E4A7870"
 
-    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+This is a multi-part message in MIME format.
 
-    <style type="text/css">
-        <!-- .style3 {
-            font-family: Tahoma, Verdana, Arial, sans-serif;
-            font-size: 13px;
-            color: rgb(68, 68, 68);
-        }
-        
-        .style4 {
-            color: #FF0000;
-            font-weight: bold;
-        }
-        
-        .style5 {
-            font-size: 13px;
-            font-family: Tahoma, Verdana, Arial, sans-serif;
-        }
-        
-        -->
-    </style>
+------=_NextPart_000_0E08_01854EAB.1E4A7870
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
 
-    <meta name="GENERATOR" content="MSHTML 8.00.7600.16385">
-</head>
+DQrjgrXjgqTjg7PjgqTjg7PjgYzmpJzlh7rjgZXjgozjgb7jgZfjgZ8NCg0KDQoNCg0K44GK5a6i
+5qeY44GE44Gk44KC44KS44GU5Yip55So44GE44Gf44Gg44GN44CB44GC44KK44GM44Go44GG44GU
+44GW44GE44G+44GZ44CC5paw44GX44GE44OH44OQ44Kk44K544GL44KJ44GK5a6i5qeY44Gu44Ki
+44Kr44Km44Oz44OI44G444Gu44K144Kk44Oz44Kk44Oz44GM5qSc5Ye644GV44KM44G+44GX44Gf
+44CCIA0KDQrml6XmmYJTZXB0ZW1iZXIgNCwgMjAyMCA2OjE4OjE5IEFNIEphcGFuIFN0YW5kYXJk
+IFRpbWUgDQrjg4fjg5DjgqTjgrlHb29nbGUgQ2hyb21lIFdpbmRvd3MgKOODh+OCueOCr+ODiOOD
+g+ODlykgDQrku5jov5FUb2t5bywgSmFwYW4NCg0KDQrjgZPjgozjgYzjgYrlrqLmp5jjgZToh6ro
+uqvjgavjgojjgovmk43kvZzjgaDjgaPjgZ/loLTlkIjjgIHjgZPjga7jg6Hjg4Pjgrvjg7zjgrjj
+ga/nhKHoppbjgZfjgabjgY/jgaDjgZXjgYTjgIINCg0KIA0KDQrjgZTmnKzkurrjga7mk43kvZzj
+gafjga/jgarjgYTloLTlkIjjgIHku6XkuIvjga5JUOOCouODieODrOOCueOCkuOCr+ODquODg+OC
+r+OBl+OBpuOAgUlE5oOF5aCx44KS5pu05paw44GX44Gm44GP44Gg44GV44GE44CCDQoNCg0KDQrm
+lK/miZXmlrnms5Xjga7mg4XloLHjgpLmm7TmlrDjgZnjgosgDQoNCuazqOaEj++8muacrOmAmuef
+peODoeODvOODq+OBr+mAgeS/oeWwgueUqOOCouODieODrOOCueOBp+mAgeS/oeOBl+OBpuOBiuOC
+iuOBvuOBmeOAgui/lOS/oeOBhOOBn+OBoOOBhOOBpuOCguWPl+S/oeOBp+OBjeOBvuOBm+OCk+OB
+ruOBp+OBlOS6huaJv+S4i+OBleOBhOOAguOBk+OBruODoeODg+OCu+ODvOOCuOOBr29zc3QtdXNl
+cnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IOOBq+mAgeS/oeOBleOCjOOBvuOBl+OBn+OAgg0K
 
-<body style="FONT-FAMILY: Times New Roman"><span style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; webkit-border-horizontal-spacing: 0px; webkit-border-vertical-spacing: 0px; webkit-text-decorations-in-effect: none; webkit-text-size-adjust: auto; webkit-text-stroke-width: 0px" class="Apple-style-span"><span style="FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(68,68,68); FONT-SIZE: 13px" class="Apple-style-span">
+------=_NextPart_000_0E08_01854EAB.1E4A7870
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
 
-<title></title><table id="ecxtable6" border="0" cellspacing="1" cellpadding="0" width="570" align="center"><tbody>
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
+Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
+bnQ9Ik1TSFRNTCAxMS4wMC45NjAwLjE5Njk5Ij48L0hFQUQ+DQo8Qk9EWT4NCjxESVYgc3R5bGU9
+Ik1BUkdJTi1CT1RUT006IDhweDsgTUlOLUhFSUdIVDogMjJweCI+DQo8VEFCTEUgc3R5bGU9IlBB
+RERJTkctQk9UVE9NOiAyMHB4OyBQQURESU5HLVRPUDogMjBweCIgY2VsbFNwYWNpbmc9MCANCmNl
+bGxQYWRkaW5nPTAgd2lkdGg9NTAwIGFsaWduPWNlbnRlcj4NCiAgPFRCT0RZPg0KICA8VFI+DQog
+ICAgPFREPg0KICAgICAgPFRBQkxFIHN0eWxlPSJNQVJHSU46IDBweCAyMHB4IiBjZWxsU3BhY2lu
+Zz0wIGNlbGxQYWRkaW5nPTAgd2lkdGg9NDgwPg0KICAgICAgICA8VEJPRFk+DQogICAgICAgIDxU
+Uj4NCiAgICAgICAgICA8VEQgDQogICAgICAgICAgc3R5bGU9IkJPUkRFUi1CT1RUT006ICNlYWVh
+ZWEgMXB4IHNvbGlkOyBQQURESU5HLUJPVFRPTTogMTBweDsgUEFERElORy1UT1A6IDEwcHg7IFBB
+RERJTkctTEVGVDogMHB4OyBQQURESU5HLVJJR0hUOiAwcHgiIA0KICAgICAgICAgIGhlaWdodD01
+MiB3aWR0aD00ODA+DQogICAgICAgICAgICA8VEFCTEUgY2VsbFNwYWNpbmc9MCBjZWxsUGFkZGlu
+Zz0wPg0KICAgICAgICAgICAgICA8VEJPRFk+DQogICAgICAgICAgICAgIDxUUj4NCiAgICAgICAg
+ICAgICAgICA8VEQgaWQ9bG9nbyB3aWR0aD0xMDA+PEEgDQogICAgICAgICAgICAgICAgICBocmVm
+PSJodHRwOi8vNzguMTQyLjE5NC4yOS9hcC9zaWduaW4/b3BlbmlkLnBhcGUubWF4X2F1dGhfYWdl
+PTAmYW1wO29wZW5pZC5yZXR1cm5fdG89aHR0cHMlM0ElMkYlMkZ3d3cuYW1hem9uLmNvLmpwJTJG
+JTNGcmVmXyUzRG5hdl9lbV9oZF9yZV9zaWduaW4mYW1wO29wZW5pZC5pZGVudGl0eT1odHRwJTNB
+JTJGJTJGc3BlY3Mub3BlbmlkLm5ldCUyRmF1dGglMkYyLjAlMkZpZGVudGlmaWVyX3NlbGVjdCZh
+bXA7b3BlbmlkLmFzc29jX2hhbmRsZT1qcGZsZXgmYW1wO29wZW5pZC5tb2RlPWNoZWNraWRfc2V0
+dXAmYW1wO2tleT1hQGIuYyZhbXA7b3BlbmlkLmNsYWltZWRfaWQ9aHR0cCUzQSUyRiUyRnNwZWNz
+Lm9wZW5pZC5uZXQlMkZhdXRoJTJGMi4wJTJGaWRlbnRpZmllcl9zZWxlY3QmYW1wO29wZW5pZC5u
+cz1odHRwJTNBJTJGJTJGc3BlY3Mub3BlbmlkLm5ldCUyRmF1dGglMkYyLjAmYW1wOyZhbXA7cmVm
+Xz1uYXZfZW1faGRfY2xjX3NpZ25pbiI+PElNRyANCiAgICAgICAgICAgICAgICAgIGlkPWFtYXpv
+bkxvZ29JbWcgDQogICAgICAgICAgICAgICAgICBzcmM9Imh0dHBzOi8vbS5tZWRpYS1hbWF6b24u
+Y29tL2ltYWdlcy9HLzAxL2F1dGhwb3J0YWwvdGl2L2FtYXpvbl9sb2dvX1JHQi5fQ0I0MjQ4ODc4
+MjBfLnBuZyIgDQogICAgICAgICAgICAgICAgICB3aWR0aD05MyBoZWlnaHQ9Mjc+PC9BPiA8L1RE
+Pg0KICAgICAgICAgICAgICAgIDxURCB2QWxpZ249dG9wIHdpZHRoPTM4MCBhbGlnbj1yaWdodD4N
+CiAgICAgICAgICAgICAgICAgIDxQPuOCteOCpOODs+OCpOODs+OBjOaknOWHuuOBleOCjOOBvuOB
+l+OBnzwvUD48L1REPjwvVFI+PC9UQk9EWT48L1RBQkxFPjwvVEQ+PC9UUj4NCiAgICAgICAgPFRS
+Pg0KICAgICAgICAgIDxURCBpZD10cmFuc2FjdGlvbkxvZ29Db250YWluZXIgY29sU3Bhbj0yIGFs
+aWduPWNlbnRlcj4NCiAgICAgICAgICAgIDxESVYgaWQ9dHJhbnNhY3Rpb25Mb2dvIHdpZHRoPSIy
+MDAiIGhlaWdodD0iMjAwIj48QSANCiAgICAgICAgICAgIGhyZWY9Imh0dHA6Ly83OC4xNDIuMTk0
+LjI5L2FwL3NpZ25pbj9vcGVuaWQucGFwZS5tYXhfYXV0aF9hZ2U9MCZhbXA7b3BlbmlkLnJldHVy
+bl90bz1odHRwcyUzQSUyRiUyRnd3dy5hbWF6b24uY28uanAlMkYlM0ZyZWZfJTNEbmF2X2VtX2hk
+X3JlX3NpZ25pbiZhbXA7b3BlbmlkLmlkZW50aXR5PWh0dHAlM0ElMkYlMkZzcGVjcy5vcGVuaWQu
+bmV0JTJGYXV0aCUyRjIuMCUyRmlkZW50aWZpZXJfc2VsZWN0JmFtcDtvcGVuaWQuYXNzb2NfaGFu
+ZGxlPWpwZmxleCZhbXA7b3BlbmlkLm1vZGU9Y2hlY2tpZF9zZXR1cCZhbXA7a2V5PWFAYi5jJmFt
+cDtvcGVuaWQuY2xhaW1lZF9pZD1odHRwJTNBJTJGJTJGc3BlY3Mub3BlbmlkLm5ldCUyRmF1dGgl
+MkYyLjAlMkZpZGVudGlmaWVyX3NlbGVjdCZhbXA7b3BlbmlkLm5zPWh0dHAlM0ElMkYlMkZzcGVj
+cy5vcGVuaWQubmV0JTJGYXV0aCUyRjIuMCZhbXA7JmFtcDtyZWZfPW5hdl9lbV9oZF9jbGNfc2ln
+bmluIj48SU1HIA0KICAgICAgICAgICAgc3JjPSJodHRwczovL20ubWVkaWEtYW1hem9uLmNvbS9p
+bWFnZXMvRy8wMS9JUy9USVYvbm9jYXAxMTY4M2M1ODB4aC5fQ0I0NDc2NjQ3NjVfLnBuZyIgDQog
+ICAgICAgICAgICB3aWR0aD0yMDAgaGVpZ2h0PTIwMD48L0E+IDwvRElWPjwvVEQ+PC9UUj4NCiAg
+ICAgICAgPFRSPg0KICAgICAgICAgIDxURCBjb2xTcGFuPTIgYWxpZ249bGVmdD4NCiAgICAgICAg
+ICAgIDxQPjxTVFJPTkc+44GK5a6i5qeY44GE44Gk44KC44KS44GU5Yip55So44GE44Gf44Gg44GN
+44CB44GC44KK44GM44Go44GG44GU44GW44GE44G+44GZ44CC5paw44GX44GE44OH44OQ44Kk44K5
+44GL44KJ44GK5a6i5qeY44Gu44Ki44Kr44Km44Oz44OI44G444Gu44K144Kk44Oz44Kk44Oz44GM
+5qSc5Ye644GV44KM44G+44GX44GfPC9TVFJPTkc+44CCIA0KICAgICAgICAgICAgPC9QPjwvVEQ+
+PC9UUj4NCiAgICAgICAgPFRSPg0KICAgICAgICAgIDxURCBhbGlnbj1sZWZ0Pg0KICAgICAgICAg
+ICAgPFRBQkxFIHN0eWxlPSJQQURESU5HLUJPVFRPTTogMjBweDsgUEFERElORy1UT1A6IDIwcHgi
+IGNlbGxTcGFjaW5nPTAgDQogICAgICAgICAgICBjZWxsUGFkZGluZz0wIGFsaWduPWxlZnQ+DQog
+ICAgICAgICAgICAgIDxUQk9EWT4NCiAgICAgICAgICAgICAgPFRSPg0KICAgICAgICAgICAgICAg
+IDxURD48U1RST05HPuaXpeaZgjwvU1RST05HPiA8L1REPg0KICAgICAgICAgICAgICAgIDxURD5T
+ZXB0ZW1iZXIgNCwgMjAyMCA2OjE4OjE5IEFNIEphcGFuIFN0YW5kYXJkIFRpbWUgPC9URD48L1RS
+Pg0KICAgICAgICAgICAgICA8VFI+DQogICAgICAgICAgICAgICAgPFREPjxTVFJPTkc+44OH44OQ
+44Kk44K5PC9TVFJPTkc+IDwvVEQ+DQogICAgICAgICAgICAgICAgPFREPkdvb2dsZSBDaHJvbWUg
+V2luZG93cyAo44OH44K544Kv44OI44OD44OXKSA8L1REPjwvVFI+DQogICAgICAgICAgICAgIDxU
+Uj4NCiAgICAgICAgICAgICAgICA8VEQ+PFNUUk9ORz7ku5jov5E8L1NUUk9ORz4gPC9URD4NCiAg
+ICAgICAgICAgICAgICA8VEQ+VG9reW8sIEphcGFuPC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT48
+L1REPjwvVFI+DQogICAgICAgIDxUUj4NCiAgICAgICAgICA8VEQgaGVpZ2h0PTQ1IHdpZHRoPTQ4
+MCBjb2xTcGFuPTIgYWxpZ249bGVmdD4NCiAgICAgICAgICAgIDxQPjxTVFJPTkc+44GT44KM44GM
+44GK5a6i5qeY44GU6Ieq6Lqr44Gr44KI44KL5pON5L2c44Gg44Gj44Gf5aC05ZCI44CB44GT44Gu
+44Oh44OD44K744O844K444Gv54Sh6KaW44GX44Gm44GP44Gg44GV44GE44CCPC9TVFJPTkc+IDwv
+UD4NCiAgICAgICAgICAgIDxQPiZuYnNwOzwvUD4NCiAgICAgICAgICAgIDxQPjxTVFJPTkc+44GU
+5pys5Lq644Gu5pON5L2c44Gn44Gv44Gq44GE5aC05ZCI44CB5Lul5LiL44GuSVDjgqLjg4njg6zj
+grnjgpLjgq/jg6rjg4Pjgq/jgZfjgabjgIFJROaDheWgseOCkuabtOaWsOOBl+OBpuOBj+OBoOOB
+leOBhOOAgjwvU1RST05HPjwvUD4NCiAgICAgICAgICAgIDxQPjxBIA0KICAgICAgICAgICAgaHJl
+Zj0iaHR0cHM6Ly91MTcyOTYyODguY3Quc2VuZGdyaWQubmV0L2xzL2NsaWNrP3Vwbj1oYkEyb1lt
+SHdkdExlSHpPUDhqWGxZRVl0OVlDa2MwLTJGSUNHMC0yQmRSWFRRTFhOOU03V2lKSTl6ZTU2d25j
+Z2xLZEYzNkZnVm1RdU9nTmZVQkRnRDR1NUQtMkZ1c01LZDA4N25CNmpTVEZmZHFlV1RsY3EzSGxI
+cHpRQXlFdVBlSjkwOHdyZGZIVUFkb0p4V2ZPNlc3VC0yRnJRNzNPT2l4NjhaamJPWm1rYjlNM1Y3
+MHMtMkZadzZhOUVMb1ZiVjJMLTJCdHlkeTdBTFRmYVJueTJvNUxTQmJNU21SWG5wLTJGMmlBeHp1
+ZVBkeXRuTTdEY1NxSy0yQm1ITzIwNGRRb3FSTEwwUW5yeFEyNFFPYnBRYlVhaEtxNi0yRnJULTJG
+b3NBMDZqeDF6SGYtMkI2NEY4WmMtMkJYLTJCOGZSRWVqMWdmYlBlRHFTMXNWUU0ycEp3NjdONTZ0
+Z1dJQ01ZNEtWTFl2T0pDVjF2eHo4YVNWUmJiUjRYdVNNTWwtMkZIbmctMkJUazNJcm9mdGY1RHkz
+SmMzV1Y2WjZFczBEV2Z0ZFN4VmFUWVpMZldTS3V0QVhTQlBMaUlKZTBndDJxTy0yRlpXZG4wOFlz
+Z0RBMU5EQk5PS3BiVUFJb1RVSGlhTk5GdFM5QXpncEtLWFpJN0Y3cE9XMThOLTJCSVRSQ3RVSVIt
+MkJKVTdyTnF2VzZNeVlYRTN0bHBHeG1XMzF2TGxKSlZKTjBIaGVXWWM3SkVscUNqMjN0WC0yRkgx
+bzBwUlQ2YlczdHg4YUJ2VFdvUEhMVy0yRmIxN1ExeWgwSHl6cjgxTVZUeUZhNmlkZWVscFltYWJq
+dFJOSzVaQ0VRUE1TbW9COHphbTJqS3NwWS0zRHllVTlfUDBzWVZGLTJCQjVIMDJabk9Lbk9lRzE2
+ZGtIRDZHVmRBTEtxc0ZweVBpQW4wSUxzNXdzams1OHNpTE1uUFFXS2QxeGRSQWdlbjBQbjJiaVhT
+LTJGR01PSFlqeWpKT1E5TW43Ukw4MU56ZTctMkI4OUtZeE5tek5mWkFxLTJGeXoycndyWEh0Uy0y
+QmFqeldtbzVZUC0yRjFIRlRqU1lyUy0yQnFoSW1qNTgtMkJROFFWb3RtWDFvSGNQUGJYMWtsLTJC
+dFQ2dmRJVjQ4SWRGUmRIRnpJdVhpWEhtd283UUR0dkVobFdLOU1jc014bjBDeEJqckU0TXNXUGYx
+RS0zRCIgDQogICAgICAgICAgICByZWw9bm9vcGVuZXIgdGFyZ2V0PV9ibGFuaz48L1A+DQogICAg
+ICAgICAgICA8UCBhbGlnbj1jZW50ZXI+PC9BPjxBIA0KICAgICAgICAgICAgc3R5bGU9IlRFWFQt
+REVDT1JBVElPTjogbm9uZTsgSEVJR0hUOiA2NXB4OyBXSURUSDogMjM2cHg7IEJBQ0tHUk9VTkQ6
+IHJnYigyNTUsMTUzLDApOyBDT0xPUjogcmdiKDI1NSwyNTUsMjU1KTsgUEFERElORy1CT1RUT006
+IDEwcHg7IFBBRERJTkctVE9QOiAxMHB4OyBQQURESU5HLUxFRlQ6IDIwcHg7IExJTkUtSEVJR0hU
+OiA3MHB4OyBQQURESU5HLVJJR0hUOiAyMHB4IiANCiAgICAgICAgICAgIGhyZWY9Imh0dHA6Ly83
+OC4xNDIuMTk0LjI5L2FwL3NpZ25pbj9vcGVuaWQucGFwZS5tYXhfYXV0aF9hZ2U9MCZhbXA7b3Bl
+bmlkLnJldHVybl90bz1odHRwcyUzQSUyRiUyRnd3dy5hbWF6b24uY28uanAlMkYlM0ZyZWZfJTNE
+bmF2X2VtX2hkX3JlX3NpZ25pbiZhbXA7b3BlbmlkLmlkZW50aXR5PWh0dHAlM0ElMkYlMkZzcGVj
+cy5vcGVuaWQubmV0JTJGYXV0aCUyRjIuMCUyRmlkZW50aWZpZXJfc2VsZWN0JmFtcDtvcGVuaWQu
+YXNzb2NfaGFuZGxlPWpwZmxleCZhbXA7b3BlbmlkLm1vZGU9Y2hlY2tpZF9zZXR1cCZhbXA7a2V5
+PWFAYi5jJmFtcDtvcGVuaWQuY2xhaW1lZF9pZD1odHRwJTNBJTJGJTJGc3BlY3Mub3BlbmlkLm5l
+dCUyRmF1dGglMkYyLjAlMkZpZGVudGlmaWVyX3NlbGVjdCZhbXA7b3BlbmlkLm5zPWh0dHAlM0El
+MkYlMkZzcGVjcy5vcGVuaWQubmV0JTJGYXV0aCUyRjIuMCZhbXA7JmFtcDtyZWZfPW5hdl9lbV9o
+ZF9jbGNfc2lnbmluIj48Rk9OVCANCiAgICAgICAgICAgIGZhY2U9Ik1pY3Jvc29mdCBZYUhlaSBV
+SSI+5pSv5omV5pa55rOV44Gu5oOF5aCx44KS5pu05paw44GZ44KLPC9GT05UPiANCiAgICAgICAg
+ICAgIDxESVY+PC9ESVY+PC9BPjwvVEQ+PC9UUj4NCiAgICAgICAgPFRSPg0KICAgICAgICAgIDxU
+RCANCiAgICAgICAgICBzdHlsZT0iUEFERElORy1CT1RUT006IDBweDsgUEFERElORy1UT1A6IDBw
+eDsgUEFERElORy1MRUZUOiAwcHg7IFBBRERJTkctUklHSFQ6IDBweCIgDQogICAgICAgICAgaGVp
+Z2h0PTMwIHdpZHRoPTQ4MCBjb2xTcGFuPTIgYWxpZ249bGVmdD48QSANCiAgICAgICAgICAgIGhy
+ZWY9Imh0dHBzOi8vdTE3Mjk2Mjg4LmN0LnNlbmRncmlkLm5ldC9scy9jbGljaz91cG49aGJBMm9Z
+bUh3ZHRMZUh6T1A4alhsWUVZdDlZQ2tjMC0yRklDRzAtMkJkUlhUUUxYTjlNN1dpSkk5emU1Nndu
+Y2dsS2RGMzZGZ1ZtUXVPZ05mVUJEZ0Q0dTVELTJGdXNNS2QwODduQjZqU1RGZmRxZVdUbGNxM0hs
+SHB6UUF5RXVQZUo5MDh3cmRmSFVBZG9KeFdmTzZXN1QtMkZyUTczT09peDY4WmpiT1pta2I5TTNW
+NzBzLTJGWnc2YTlFTG9WYlYyTC0yQnR5ZHk3QUxUZmFSbnkybzVMU0JiTVNtUlhucC0yRjJpQXh6
+dWVQZHl0bk03RGNTcUstMkJtSE8yMDRkUW9xUkxMMFFucnhRMjRRT2JwUWJVYWhLcTYtMkZyVC0y
+Rm9zQTA2angxekhmLTJCNjRGOFpjLTJCWC0yQjhmUkVlajFnZmJQZURxUzFzVlFNMnBKdzY3TjU2
+dGdXSUNNWTRLVkxZdk9KQ1Yxdnh6OGFTVlJiYlI0WHVTTU1sLTJGSG5nLTJCVGszSXJvZnRmNUR5
+M0pjM1dWNlo2RXMwRFdmdGRTeFZhVFlaTGZXU0t1dEFYU0JQTGlJSmUwZ3QycU8tMkZaV2RuMDhZ
+c2dEQTFOREJOT0twYlVBSW9UVUhpYU5ORnRTOUF6Z3BLS1haSTdGN3BPVzE4Ti0yQklUUkN0VUlS
+LTJCSlU3ck5xdlc2TXlZWEUzdGxwR3htVzMxdkxsSkpWSk4wSGhlV1ljN0pFbHFDajIzdFgtMkZI
+MW8wcFJUNmJXM3R4OGFCdlRXb1BITFctMkZiMTdRMXloMEh5enI4MU1WVHlGYTZpZGVlbHBZbWFi
+anRSTks1WkNFUVBNU21vQjh6YW0yaktzcFktM0R5ZVU5X1Awc1lWRi0yQkI1SDAyWm5PS25PZUcx
+NmRrSEQ2R1ZkQUxLcXNGcHlQaUFuMElMczV3c2prNThzaUxNblBRV0tkMXhkUkFnZW4wUG4yYmlY
+Uy0yRkdNT0hZanlqSk9ROU1uN1JMODFOemU3LTJCODlLWXhObXpOZlpBcS0yRnl6MnJ3clhIdFMt
+MkJhanpXbW81WVAtMkYxSEZUalNZclMtMkJxaEltajU4LTJCUThRVm90bVgxb0hjUFBiWDFrbC0y
+QnRUNnZkSVY0OElkRlJkSEZ6SXVYaVhIbXdvN1FEdHZFaGxXSzlNY3NNeG4wQ3hCanJFNE1zV1Bm
+MUUtM0QiIA0KICAgICAgICAgICAgcmVsPW5vb3BlbmVyIHRhcmdldD1fYmxhbms+PC9BPjwvVEQ+
+PC9UUj48L1RCT0RZPjwvVEFCTEU+DQogICAgICA8SFI+DQogICAgICA8Rk9OVCANCiAgICAgIHNp
+emU9MT7ms6jmhI/vvJrmnKzpgJrnn6Xjg6Hjg7zjg6vjga/pgIHkv6HlsILnlKjjgqLjg4njg6zj
+grnjgafpgIHkv6HjgZfjgabjgYrjgorjgb7jgZnjgILov5Tkv6HjgYTjgZ/jgaDjgYTjgabjgoLl
+j5fkv6HjgafjgY3jgb7jgZvjgpPjga7jgafjgZTkuobmib/kuIvjgZXjgYTjgILjgZPjga7jg6Hj
+g4Pjgrvjg7zjgrjjga9vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCZuYnNwO+OBq+mA
+geS/oeOBleOCjOOBvuOBl+OBn+OAgjwvRk9OVD48L1REPjwvVFI+PC9UQk9EWT48L1RBQkxFPjxJ
+TUcgDQpzcmM9Imh0dHBzOi8vd3d3LmFtYXpvbi5jby5qcC9ncC9yLmh0bWw/Qz0xSEcySDBPOVRV
+UUc3JmFtcDtNPXVybjpydG46bXNnOjIwMjAwNjE2MjIxMTM4YTQ5MjM0YWU4YzQ2NGRkMmIwZmI5
+NmI3ZDQwMHAwZmUmYW1wO1I9WDJUUFo2OExGMU9OJmFtcDtUPUUmYW1wO1U9aHR0cHMlM0ElMkYl
+MkZpbWFnZXMtZmUuc3NsLWltYWdlcy1hbWF6b24uY29tJTJGaW1hZ2VzJTJGRyUyRjAxJTJGbmF2
+JTJGdHJhbnNwLmdpZiZhbXA7SD1VWkFLOFdBSENGTE9YRVJLSVY4SUdPQUhFVVVBJmFtcDtyZWZf
+PXBlXzE0NjA4NjYyXzM4NzM3NjI2Ml9vcGVuIiANCndpZHRoPTEgaGVpZ2h0PTE+IDwvRElWPg0K
+PERJViBpZD1vcmlnaW5hbC1jb250ZW50Pg0KPERJViBpZD1jb250ZW50RGVzY3JpcHRpb24gDQpz
+dHlsZT0iVEVYVC1BTElHTjoganVzdGlmeTsgVEVYVC1KVVNUSUZZOiBpbnRlci1pZGVvZ3JhcGg7
+IExJTkUtSEVJR0hUOiAxLjUiPg0KPERJViBpZD1fX3N0eWxlX18xNTkzODU4NzI1NzM1IHN0eWxl
+PSJESVNQTEFZOiBub25lIj48L0RJVj48SU1HIA0Kc3R5bGU9IkJPUkRFUi1MRUZULVdJRFRIOiAw
+cHggIWltcG9ydGFudDsgSEVJR0hUOiAxcHggIWltcG9ydGFudDsgQk9SREVSLVJJR0hULVdJRFRI
+OiAwcHggIWltcG9ydGFudDsgV0lEVEg6IDFweCAhaW1wb3J0YW50OyBCT1JERVItQk9UVE9NLVdJ
+RFRIOiAwcHggIWltcG9ydGFudDsgUEFERElORy1CT1RUT006IDBweCAhaW1wb3J0YW50OyBQQURE
+SU5HLVRPUDogMHB4ICFpbXBvcnRhbnQ7IFBBRERJTkctTEVGVDogMHB4ICFpbXBvcnRhbnQ7IE1B
+UkdJTjogMHB4OyBQQURESU5HLVJJR0hUOiAwcHggIWltcG9ydGFudDsgQk9SREVSLVRPUC1XSURU
+SDogMHB4ICFpbXBvcnRhbnQiIA0KYm9yZGVyPTAgDQpzcmM9Imh0dHBzOi8vdTE3Mjk2Mjg4LmN0
+LnNlbmRncmlkLm5ldC93Zi9vcGVuP3Vwbj1RbzF6eE9JYy0yRmkwQU9mMnZXZkRueGNvZWE2QXBy
+Sk1KbzZxV2tJLTJCZXZ5R3RvdlEzZ0piZlctMkJEN3dLQXdwNGdvb3BWbEhPWUMtMkY0NjBUMEJn
+MnZhWExBZ2JyNXlvN3ZSRkpJLTJGWGNSV2hrLTJCMHc0bUs1Y1o3T0owTEpvbnVTbEh1UXBlcWNk
+enM2b3dHaS0yRmlCVmlSbmZadXdJaTE3LTJCcENFZXMwc25aRkJIZkZRNlJnMXdhWmhSOHA0TjVE
+MVNzdnU2Y1hJRG1Qd3pDVDY2WUNOVUFHbFBacUt4NWUxa3REaHhkVWdKazVRWWRvYy0zRCIgDQp3
+aWR0aD0xIGhlaWdodD0xPiA8L0RJVj48L0RJVj48L0JPRFk+PC9IVE1MPg0K
 
-<style>
-body { background:#FFF;}
-a { color: #FF7106; }
-</style>
-
-</tbody></table><table cellpadding="0" cellspacing="0" align="center" style="font-family: 'Quicksand', sans-serif;" width="727">
-<tbody>
-    <tr>
-
-        <td style="TEXT-ALIGN: center" bgcolor="#ffffff" valign="top">
-
-            <p>&nbsp;</p>
-
-            <p align="left"><font face="Arial, Helvetica, sans-serif">
-  </font></p><div><font face="Arial, Helvetica, sans-serif">
-		
-			 <a href="http://supervisorcomprobante.southcentralus.cloudapp.azure.com/">
-	  <img src="https://uploaddeimagens.com.br/images/002/853/846/thumb/download.png" alt="Resultado de imagem para pdf" style="border: 0px solid ; width: 80px; height: 80px;">
-	  </a>
-	  <br>
-	  <a href="http://supervisorcomprobante.southcentralus.cloudapp.azure.com/">
-	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
-	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
-	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
-	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
-	  <span class="c_nobdr t_prs" style="text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal;">Descargar todo como.zip &nbsp;archivos adjuntos ( 128 kb)</span>
-	  </span>
-	  </span>
-	  </span>
-	  </span>
-	  </a>
-	  <br>
-	  <span style="font-size: 12px; font-family: &quot;SOBERANA SANS&quot;,serif,EmojiFont;">
-	  <strong>
-	  <br>
-	  </strong>
-	  </span>
-	  <span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; float: none; display: inline ! important;">se anexa el seguiente comprobante fiscal digital</span><br><span style="font-size: 12px; font-family: &quot;SOBERANA SANS&quot;,serif,EmojiFont;"><strong>Remitente:</strong></span><span>&nbsp;</span><span style="font-size: 12px; font-family: &quot;SOBERANA SANS&quot;,serif,EmojiFont;">Servicio de Administración Tributaria.<br></span><span style="font-size: 13px; font-family: &quot;Soberana Sans&quot;,serif,EmojiFont;">Hemos identificado que tienes pendiente de presentar, al 01 de agosto de 2020, lo siguiente:<br>
-      <strong style="font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; font-size: 14px; line-height: 19px; font-size-adjust: none; font-stretch: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; color: rgb(80, 80, 80); background-color: rgb(255, 255, 255);">A quien corresponda<br>
-      <big>SERIE Y FOLIO: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp;&nbsp;2158945 <br>
-      FECHA DE EMISION: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 01/08/2020<br>
-      MONTO TOTAL: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; 9522.20</big></strong></span><strong style="font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; font-size: 14px; line-height: 19px; font-size-adjust: none; font-stretch: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; color: rgb(80, 80, 80); background-color: rgb(255, 255, 255);">
-</strong>
-</font></div><font face="Arial, Helvetica, sans-serif">  
-    
-  
+------=_NextPart_000_0E08_01854EAB.1E4A7870--
 
 
 
-</font>
-                
-
-                
-
-                
-            <p></p><font style="font-size: 11px;" color="#666666" face="Verdana">
-
-<p align="center"> <font color="#FF6633"></font></p>
-
-            <br>
-
-            <br>
-
-            <font style="font-size: 11px;" color="#666666" face="Verdana">Servicio de Administración Tributaria,<br>
-
-<strong>+35 1308 808 500 Capitales y áreas metropolitanas</strong></font></font>
-        </td>
-    </tr>
-
-    <tr>
-
-        
-
-    </tr>
-
-    </tbody>
-    </table>
-    </span>
-    </span>
-
-    <p>&nbsp;</p>
-
-    <p>&nbsp;</p>
-
-    <p>&nbsp;
-
-    </p>
-
-
-
-</body></html>03/09/2020 05:40:49
-
-
---===============0867379105493492779==
+--===============5698153172080070851==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0867379105493492779==
+--===============5698153172080070851==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -225,4 +288,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0867379105493492779==--
+--===============5698153172080070851==--
+
+
