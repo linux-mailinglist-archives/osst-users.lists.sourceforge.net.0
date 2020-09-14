@@ -2,100 +2,74 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 4F821267DFA
-	for <lists+osst-users@lfdr.de>; Sun, 13 Sep 2020 06:50:45 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 046A82695A3
+	for <lists+osst-users@lfdr.de>; Mon, 14 Sep 2020 21:27:29 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1kHJyM-0004GF-5N
-	for lists+osst-users@lfdr.de; Sun, 13 Sep 2020 04:50:42 +0000
+	id 1kHu8N-0002Do-RR
+	for lists+osst-users@lfdr.de; Mon, 14 Sep 2020 19:27:27 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
  (envelope-from
- <bounces+3850474-0d75-osst-users=lists.sourceforge.net@sendgrid.net>)
- id 1kHJyK-0004G8-VJ
- for osst-users@lists.sourceforge.net; Sun, 13 Sep 2020 04:50:40 +0000
+ <www-data@M4QU1N4.peqfpwkraequvhfq14jyf2mzjc.dx.internal.cloudapp.net>)
+ id 1kHu8M-0002Dg-50
+ for osst-users@lists.sourceforge.net; Mon, 14 Sep 2020 19:27:26 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=To:Reply-To:Message-ID:Date:Content-Type:Subject:
- From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Date:Message-Id:Content-Type:MIME-Version:
+ From:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=86dpDkjBqiw2k0anemzCNUTC+zlMGDONdB/ia35hs+s=; b=QvCOWciTCyc7w3sEj4NM9Ay34B
- okEnl0NVMkunR+8Izuk2RqQ/KsB1ln7BcOKkdPTOAmRK/zgHD68Td/wyXGsZqp9jCdme3m9K/PmCD
- rzqWwV0bwG9srtbUJ4oakkSBMDzLQIEsSj2Z5SbRbM//tOX7aLbETrfe7g9WSU0Qzj9U=;
+ bh=X01D2LQ1PpgC2jkm8E97ruofpUnCNWv6a0boguawqCA=; b=Qcpn9qTX/TztniRpa5xSvGpjvV
+ jQS8aRGiNGLZ21YQMWd/IZcwW1pZA/cdQmkqGNAsujcv6xoPnJ1A7IKQxs98d2UWbd9Y6D03I5dg/
+ 5n0LQ92idqhXzmHLgWoPlCJ0GlGlX9me5pdBeqstTmrpPECAToFPm3gpLJWFdpjh8E8c=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=To:Reply-To:Message-ID:Date:Content-Type:Subject:From:MIME-Version:Sender
+ h=Subject:Date:Message-Id:Content-Type:MIME-Version:From:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=86dpDkjBqiw2k0anemzCNUTC+zlMGDONdB/ia35hs+s=; b=a
- ox6FiPsPb2kVqwbUWWk+PQtNh3pO5ql9jsVDjIlPyHnsnSQY+WzppI+8shkvxiQyfoL74LOubrCnY
- LajQCoNVYylAdBB/Vk2M92YPtmDdwqsF9FcsZEW7asPJf2rLhe1aJ2mvwKJa5gAe44fZsc1H/lMbq
- bi0LxAj/1LHJYq94=;
-Received: from o2.smtps-ip-a1.ispeed.it ([167.89.106.149])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1kHJyI-007BNA-M1
- for osst-users@lists.sourceforge.net; Sun, 13 Sep 2020 04:50:40 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
- h=mime-version:from:subject:content-type:reply-to:to;
- s=smtpapi; bh=86dpDkjBqiw2k0anemzCNUTC+zlMGDONdB/ia35hs+s=;
- b=Nw4e4yx+ZHLOTAkow2H/4T53bvXa5BIbZj1QPEmCfRqsdO2pCJcXDiLiODS2fPKXKuL1
- IxeUjxKRiQ5BUg8CnjwuTidOPTU+6JH4bHHxdejVUhKeAJbkU9QC0kW56uPwcuiMwBBGF0
- CQLz7lx4gxBaSvpLi22JglONEt6Ajf4ew=
-Received: by filterdrecv-p3mdw1-canary-8f499c66f-g4lxk with SMTP id
- filterdrecv-p3mdw1-canary-8f499c66f-g4lxk-19-5F5DA518-10
- 2020-09-13 04:50:32.660067577 +0000 UTC m=+208334.044224217
-Received: from host-79-37-1-144.retail.telecomitalia.it (unknown)
- by ismtpd0006p1lon1.sendgrid.net (SG) with ESMTP id 0y1V2_riQzOhlAXpe9i60g
- for <osst-users@lists.sourceforge.net>;
- Sun, 13 Sep 2020 04:50:32.445 +0000 (UTC)
-MIME-Version: 1.0
-From: Toner Compatibili a basso prezzo <tonertoplevel@gmail.com>
-Date: Sun, 13 Sep 2020 04:50:32 +0000 (UTC)
-Message-ID: <17404392385080758819512@user-PC>
-X-SG-EID: =?us-ascii?Q?sC0L0DychgvtYjQuYUedIqrMHF22QjjWF7fOlfsJmRK8=2FT160ukPqyPjMA7xY2?=
- =?us-ascii?Q?YZr+M9vEI51GaqoQXu0+G7=2FE43XgGYWfcFjDz9a?=
- =?us-ascii?Q?N8f98bOfeVuqTvgrZo2pyDb8WQn6M63rcNVQJ+w?=
- =?us-ascii?Q?oi7clEuP62ZBYboxxWNB490bX026i7bTkkfiqsT?=
- =?us-ascii?Q?qkUQiik78LEQtlp9YqrAqsleX3mZThiE+=2FGp3wy?=
- =?us-ascii?Q?=2FZBm=2FuboKYUpyzg0VXAtMask=2F7S1voiNQECX5BV?=
- =?us-ascii?Q?6g=2F6rTKxR45Wl6zou+X60FraaEZW=2FANojUY0iW7?=
- =?us-ascii?Q?6wy79NsrYT7qD3iccZ2xJrsa?=
+ List-Owner:List-Archive; bh=X01D2LQ1PpgC2jkm8E97ruofpUnCNWv6a0boguawqCA=; b=E
+ g7xoj2g36cwZbVbr2bGqmn5SE+Oin0pVYfoWJ/x7fPWSD6+U5nc/MMgh9P+W4MwN8gyT1fxPuU9Be
+ MVpVSrumaKaCoG0tRqkprgAKbT8VKgp3ZxaoiM9akzJ0kwurKchcrzfX8XSo1GIOXK80QsfV9lKZp
+ r8cF4JiDk1pZ/2SU=;
+Received: from [137.135.12.24]
+ (helo=M4QU1N4.peqfpwkraequvhfq14jyf2mzjc.dx.internal.cloudapp.net)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1kHu88-009cRc-2V
+ for osst-users@lists.sourceforge.net; Mon, 14 Sep 2020 19:27:26 +0000
+Received: by M4QU1N4.peqfpwkraequvhfq14jyf2mzjc.dx.internal.cloudapp.net
+ (Postfix, from userid 33)
+ id 6ED6D3724B; Mon, 14 Sep 2020 19:12:26 +0000 (UTC)
 To: osst-users@lists.sourceforge.net
-X-Spam-Score: 4.3 (++++)
+X-PHP-Originating-Script: 1000:xman.php
+X-Mailer: Microsoft Office Outlook, Build 17.551210
+From: Elisabeth Peron Perini Viotto <sac@creditadvicebr.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="755d721864585ffab290abdb0ca61ad6"
+Message-Id: <20200914191243.6ED6D3724B@M4QU1N4.peqfpwkraequvhfq14jyf2mzjc.dx.internal.cloudapp.net>
+Date: Mon, 14 Sep 2020 19:12:26 +0000 (UTC)
+X-Spam-Score: 8.2 (++++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: imageshack.com]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [167.89.106.149 listed in wl.mailspike.net]
- 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
- (tonertoplevel[at]gmail.com)
- 0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
- CUSTOM_MED
+ for more information. [URIs: creditadvicebr.com]
  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
  domains are different
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
- 1.6 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
  1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 0.2 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and EnvelopeFrom
- freemail headers are different
- 0.0 UNPARSEABLE_RELAY Informational: message has unparseable relay lines
- 1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
-X-Headers-End: 1kHJyI-007BNA-M1
-Subject: [Osst-users] Toner compatibili a basso costo - Chiedi un preventivo
- per i Toner della tua stampante rispondendo a questa email
+ 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 0.0 FORGED_OUTLOOK_HTML    Outlook can't send HTML message only
+ 2.0 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML only
+ 1.6 TO_NO_BRKTS_MSFT       To: lacks brackets and supposed Microsoft tool
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1kHu88-009cRc-2V
+Subject: [Osst-users] [SPAM] Campanha Feirao Limpa Nome Online - 7503489
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -107,123 +81,102 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: tonertoplevel@gmail.com
-Content-Type: multipart/mixed; boundary="===============5577313285658964653=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
+Content-Transfer-Encoding: 7bit
+This is a MIME encoded message.
 
---===============5577313285658964653==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_001_4044_0CA12BAF.010C6C8F"
+--755d721864585ffab290abdb0ca61ad6
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: 8bit
 
-
-------=_NextPart_001_4044_0CA12BAF.010C6C8F
-Content-Type: text/plain; charset=us-ascii
-Content-Transfer-Encoding: quoted-printable
-
-=20
-
-=20
-
-Direttamente dal produttore al consumatore. Prezzi molto convenienti e qual=
-ita' e durata certificate
-
-=20
-
-Garanzia soddisfatti o rimborsati ed offriamo anche possibilita' di pagamen=
-to alla consegna al corriere oppure bonifico anticipato. Trattiamo anche to=
-ner originali=20
-
-=20
-
-Rispondi a questa email indicando il modello della tua stampante, ti invier=
-emo un preventivo
-
-=20
-
-Se rispondi a questa email ti invieremo anche tutti i nostri contatti e le =
-nostre recensioni. Siamo attivi da ormai 15 anni nella vendita di toner e c=
-artucce
-
-=20
-
-=20
-
-Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
-desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
-premi qui ed invia per cancellarti
-
-=20
-
-
-------=_NextPart_001_4044_0CA12BAF.010C6C8F
-Content-Type: text/html; charset=us-ascii
-Content-Transfer-Encoding: quoted-printable
-
-<HEAD><TITLE></TITLE>
-<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META name=GENERATOR content="MSHTML 11.00.9600.19597"></HEAD>
 <BODY>
-<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
-<TR>
-<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
-<P>&nbsp;</P>
-<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
-n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
-TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
-ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
-<TR>
-<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
- COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
-x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imageshac=
-k.com/img922/1102/6Ltp4h.png" width=3D650 height=3D350>=20
-<P>&nbsp;</P>
-<UL>
-<LI><FONT color=3D#000000 size=3D5><STRONG>Direttamente dal produttore al c=
-onsumatore. Prezzi molto convenienti e qualita' e durata certificate</STRON=
-G></FONT>=20
-<P>&nbsp;</P>
-<LI><FONT color=3D#000000>Garanzia soddisfatti o rimborsati ed offriamo anc=
-he possibilita' di pagamento alla consegna al corriere oppure bonifico anti=
-cipato. Trattiamo anche toner originali</FONT>&nbsp;=20
-<P>&nbsp;</P>
-<LI><A href=3D"mailto:tonertoplevel@gmail.com?subject=3Dpreventivo"><FONT c=
-olor=3D#ff0000 size=3D5><STRONG>Rispondi a questa email indicando il modell=
-o della tua stampante, ti invieremo un preventivo</STRONG></FONT></A>=20
-<P>&nbsp;</P>
-<LI><FONT color=3D#000000>Se rispondi a questa email ti invieremo anche tut=
-ti i nostri contatti e le nostre recensioni. Siamo attivi da ormai 15 anni =
-nella vendita di toner e cartucce</FONT> </LI></UL>
-<P>&nbsp;</P><IMG style=3D"HEIGHT: 350px; WIDTH: 650px" border=3D2 hspace=
-=3D0 alt=3D"" src=3D"https://imageshack.com/img921/548/j6yJq3.jpg" width=3D=
-650 height=3D350>=20
-<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
-vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
-ail con "cancellami" </FONT><A href=3D"mailto:tonertoplevel@gmail.com?subje=
-ct=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancellarti</=
-FONT></A></TD></TR>
-<TR></TR></TABLE></TD></TR></TABLE>
-<P>&nbsp;</P><img src=3D"https://u3850474.ct.sendgrid.net/wf/open?upn=3D2Cw=
-Dr9hAd3sCOBy671QeTaQ-2FYCBCp2N3yugmQOBELsbnGwV3qsXN-2Bwzux1wKAxVD-2F0QQB1ej=
-9vzMCyn3tKxmqa-2FQexRhLKD3tIGEiYiAhQlsSxUiiOUGM0oBdYObqgKVZh-2BEisJ8B94BAcv=
-vv0orn2AU3U77ahmECX946k5XsI86PTd0Ip0hNqRsDYHeh7ELFpgKtbl7Wwz9SZ-2FFM92UdMgV=
-S3hMFn9aBHGACW5fIw3HheugWq-2FbX6-2BTqgkpSYDI" alt=3D"" width=3D"1" height=
-=3D"1" border=3D"0" style=3D"height:1px !important;width:1px !important;bor=
-der-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;m=
-argin-right:0 !important;margin-left:0 !important;padding-top:0 !important;=
-padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !impo=
-rtant;"/></BODY>
-------=_NextPart_001_4044_0CA12BAF.010C6C8F--
+<DIV style="TEXT-ALIGN: center"><B><SPAN 
+style="COLOR: yellow; BACKGROUND-COLOR: black">Limpe seu CPF/ CNPJ Sem Pagar as 
+dividas abusivas.</SPAN></B></DIV>
+<DIV style="TEXT-ALIGN: center"><B><SPAN 
+style="COLOR: yellow; BACKGROUND-COLOR: black"></SPAN></B>&nbsp;</DIV>
+<DIV style="TEXT-ALIGN: center" align=left>&nbsp;</DIV><SPAN><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><SPAN 
+style="COLOR: yellow; BACKGROUND-COLOR: black">
+<P><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><STRONG>Atendimento 
+somente pelo email: <A 
+href="mailto:sac@creditadvicebr.com">sac@creditadvicebr.com</A></STRONG></SPAN></SPAN></P>
+<P><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><STRONG></STRONG></SPAN></SPAN><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
+style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><STRONG></STRONG></SPAN></SPAN><BR><SPAN><SPAN 
+style="COLOR: yellow; BACKGROUND-COLOR: black">Limpe seu CPF/ CNPJ Sem Pagar as 
+dividas abusivas.<BR>Aumente seu Score de credito.</SPAN></SPAN><BR></P>
+<P></SPAN></SPAN></SPAN><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Obtenha 
+total seguranca na recuperacao do seu credito e Nome limpo em 10 
+Dias.</SPAN><BR><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Objetivo: 
+Aprovacao Imediata de Credito Bancario com Limites interessantes.<BR>Exemplos: 
+Financiamento de veiculos, Imoveis, abertura de Conta Corrente, Emprestimo 
+Pessoal e Cartao de Credito tanto para Pessoa Fisica ou Juridica.</SPAN><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>.</SPAN><BR><BR 
+style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><BR 
+style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Para 
+tirar suas dividas responda esse e-mail.</SPAN><BR><BR><SPAN 
+style='FONT-FAMILY: "arial","helvetica",sans-serif; COLOR: rgb(0,0,1)'><SPAN 
+style="FONT-SIZE: 11px"><FONT color=#000000 size=3 
+face="Times New Roman"><STRONG>Elisabeth Peron Perini 
+Viotto</STRONG></FONT></SPAN></SPAN></P>
+<TABLE 
+style="FONT-SIZE: 11px; FONT-FAMILY: Arial,Helvetica,sans-serif; BORDER-COLLAPSE: collapse; COLOR: rgb(0,0,1); BORDER-SPACING: 0px; LINE-HEIGHT: 1.4" 
+cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
+      style="FONT-WEIGHT: 700">Analista&nbsp;de 
+      Credito</SPAN>&nbsp;|&nbsp;Credit Advice - Consultoria de Credito</TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
+      style="COLOR: rgb(85,169,49)">email: <A 
+      href="mailto:sac@creditadvicebr.com">sac@creditadvicebr.com</A></SPAN></TD></TR>
+  <TR>
+    <TD 
+    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">Brasil</TD></TR></TBODY></TABLE><BR>
+<DIV 
+class=m_5562963666117124119gmail-m_1945028416462246051m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
+style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
+align=center><SPAN 
+style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>Politica&nbsp;</SPAN><SPAN 
+style="BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt">de 
+Privacidade -&nbsp;Copyright 2010 Credit Advice - Consultoria de 
+Credito</SPAN></DIV><SPAN 
+style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'></SPAN><BR>
+<DIV 
+class=m_5562963666117124119gmail-m_1945028416462246051m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
+style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
+align=center><SPAN 
+style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>&nbsp;Todos 
+os direitos reservados.</SPAN></DIV></BODY></HTML>
+
+<br><a scr="id:0,264844864606857">
 
 
---===============5577313285658964653==
+
+--755d721864585ffab290abdb0ca61ad6
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5577313285658964653==
+--755d721864585ffab290abdb0ca61ad6
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -234,5 +187,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5577313285658964653==--
-
+--755d721864585ffab290abdb0ca61ad6--
