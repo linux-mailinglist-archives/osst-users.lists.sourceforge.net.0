@@ -2,74 +2,71 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 046A82695A3
-	for <lists+osst-users@lfdr.de>; Mon, 14 Sep 2020 21:27:29 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id EC62126B985
+	for <lists+osst-users@lfdr.de>; Wed, 16 Sep 2020 03:52:06 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1kHu8N-0002Do-RR
-	for lists+osst-users@lfdr.de; Mon, 14 Sep 2020 19:27:27 +0000
+	id 1kIMc9-00022o-Nx
+	for lists+osst-users@lfdr.de; Wed, 16 Sep 2020 01:52:05 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from
- <www-data@M4QU1N4.peqfpwkraequvhfq14jyf2mzjc.dx.internal.cloudapp.net>)
- id 1kHu8M-0002Dg-50
- for osst-users@lists.sourceforge.net; Mon, 14 Sep 2020 19:27:26 +0000
+ (envelope-from <www-data@194-67-78-239.ovz.vps.regruhosting.ru>)
+ id 1kIMc8-00022h-RP
+ for osst-users@lists.sourceforge.net; Wed, 16 Sep 2020 01:52:04 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Date:Message-Id:Content-Type:MIME-Version:
- From:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Date:Message-Id:From:Content-type:
+ MIME-Version:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=X01D2LQ1PpgC2jkm8E97ruofpUnCNWv6a0boguawqCA=; b=Qcpn9qTX/TztniRpa5xSvGpjvV
- jQS8aRGiNGLZ21YQMWd/IZcwW1pZA/cdQmkqGNAsujcv6xoPnJ1A7IKQxs98d2UWbd9Y6D03I5dg/
- 5n0LQ92idqhXzmHLgWoPlCJ0GlGlX9me5pdBeqstTmrpPECAToFPm3gpLJWFdpjh8E8c=;
+ bh=5bWdwJfuxfjpbvYhUN7FH0/GbQKybFHfOaP92KLj9DA=; b=gAua3JycrChvmUroI5ksSi741C
+ we6vMlzIe8xRqlH62ONXsIERLqWiYrziFzKQ4IU0C6XPiK23tGvj1uX/YZTkFA5NXE9qhVscP8HOQ
+ hNV72HYLd7jfJeeY/UzBzw2KkaOPGNltCLznelx89rP8EGbZ7Vz22T05fVMYO9UQibr0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Date:Message-Id:Content-Type:MIME-Version:From:To:Sender:Reply-To
+ h=Subject:Date:Message-Id:From:Content-type:MIME-Version:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=X01D2LQ1PpgC2jkm8E97ruofpUnCNWv6a0boguawqCA=; b=E
- g7xoj2g36cwZbVbr2bGqmn5SE+Oin0pVYfoWJ/x7fPWSD6+U5nc/MMgh9P+W4MwN8gyT1fxPuU9Be
- MVpVSrumaKaCoG0tRqkprgAKbT8VKgp3ZxaoiM9akzJ0kwurKchcrzfX8XSo1GIOXK80QsfV9lKZp
- r8cF4JiDk1pZ/2SU=;
-Received: from [137.135.12.24]
- (helo=M4QU1N4.peqfpwkraequvhfq14jyf2mzjc.dx.internal.cloudapp.net)
+ List-Owner:List-Archive; bh=5bWdwJfuxfjpbvYhUN7FH0/GbQKybFHfOaP92KLj9DA=; b=h
+ ztlgz1O+xURzmBNaPB8mpQ36pmGiuW3r1edkhxaHlDhG6vdxkVdKCGdChYvTjkR3kQk8j54tz1N6E
+ jEcUteyYwthX2AOMAjg6uRVjeqjlBuhMZ38vpKrMq0b/xbwo67a4gML+QK1fUUPoSXm5ldBlHoPqs
+ LnfHSDVQZ1QqT0Ms=;
+Received: from 194-67-78-239.ovz.vps.regruhosting.ru ([194.67.78.239])
  by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1kHu88-009cRc-2V
- for osst-users@lists.sourceforge.net; Mon, 14 Sep 2020 19:27:26 +0000
-Received: by M4QU1N4.peqfpwkraequvhfq14jyf2mzjc.dx.internal.cloudapp.net
- (Postfix, from userid 33)
- id 6ED6D3724B; Mon, 14 Sep 2020 19:12:26 +0000 (UTC)
+ id 1kIMc5-00BgA6-Fd
+ for osst-users@lists.sourceforge.net; Wed, 16 Sep 2020 01:52:04 +0000
+Received: by 194-67-78-239.ovz.vps.regruhosting.ru (Postfix, from userid 33)
+ id 8B0EE414868B; Wed, 16 Sep 2020 01:51:48 +0000 (UTC)
 To: osst-users@lists.sourceforge.net
-X-PHP-Originating-Script: 1000:xman.php
-X-Mailer: Microsoft Office Outlook, Build 17.551210
-From: Elisabeth Peron Perini Viotto <sac@creditadvicebr.com>
+X-PHP-Originating-Script: 0:espanha.php
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="755d721864585ffab290abdb0ca61ad6"
-Message-Id: <20200914191243.6ED6D3724B@M4QU1N4.peqfpwkraequvhfq14jyf2mzjc.dx.internal.cloudapp.net>
-Date: Mon, 14 Sep 2020 19:12:26 +0000 (UTC)
-X-Spam-Score: 8.2 (++++++++)
+From: Administracion Tributaria <impuestos@hacienda.gob.es>
+Message-Id: <20200916015148.8B0EE414868B@194-67-78-239.ovz.vps.regruhosting.ru>
+Date: Wed, 16 Sep 2020 01:51:48 +0000 (UTC)
+X-Spam-Score: 8.4 (++++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: creditadvicebr.com]
+ 0.0 CK_HELO_DYNAMIC_SPLIT_IP Relay HELO'd using suspicious hostname
+ (Split IP)
+ 0.0 TVD_RCVD_IP            Message was received from an IP address
  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
  domains are different
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  1.0 HTML_MESSAGE           BODY: HTML included in message
  2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
- 0.0 FORGED_OUTLOOK_HTML    Outlook can't send HTML message only
- 2.0 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML only
- 1.6 TO_NO_BRKTS_MSFT       To: lacks brackets and supposed Microsoft tool
+ 3.9 HELO_DYNAMIC_IPADDR2   Relay HELO'd using suspicious hostname (IP addr
+ 2)
+ 1.0 RDNS_DYNAMIC           Delivered to internal network by host with
+ dynamic-looking rDNS
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1kHu88-009cRc-2V
-Subject: [Osst-users] [SPAM] Campanha Feirao Limpa Nome Online - 7503489
+X-Headers-End: 1kIMc5-00BgA6-Fd
+Subject: [Osst-users] [SPAM] BLOQUEO JUDICIAL - cuenta bancaria suspendida -
+ [ id 564735323 ]
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -81,102 +78,150 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
+Content-Type: multipart/mixed; boundary="===============2770667272862825911=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-Content-Transfer-Encoding: 7bit
-This is a MIME encoded message.
+--===============2770667272862825911==
+Content-type: text/html; charset=iso-8859-1
 
---755d721864585ffab290abdb0ca61ad6
-Content-Type: text/html; charset="iso-8859-1"
-Content-Transfer-Encoding: 8bit
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>Comprobante</title>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML><HEAD>
-<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
-<META name=GENERATOR content="MSHTML 11.00.9600.19597"></HEAD>
-<BODY>
-<DIV style="TEXT-ALIGN: center"><B><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Limpe seu CPF/ CNPJ Sem Pagar as 
-dividas abusivas.</SPAN></B></DIV>
-<DIV style="TEXT-ALIGN: center"><B><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black"></SPAN></B>&nbsp;</DIV>
-<DIV style="TEXT-ALIGN: center" align=left>&nbsp;</DIV><SPAN><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">
-<P><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><STRONG>Atendimento 
-somente pelo email: <A 
-href="mailto:sac@creditadvicebr.com">sac@creditadvicebr.com</A></STRONG></SPAN></SPAN></P>
-<P><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><STRONG></STRONG></SPAN></SPAN><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
-style='FONT-SIZE: x-small; FONT-FAMILY: "arial"; COLOR: rgb(85,85,85)'><STRONG></STRONG></SPAN></SPAN><BR><SPAN><SPAN 
-style="COLOR: yellow; BACKGROUND-COLOR: black">Limpe seu CPF/ CNPJ Sem Pagar as 
-dividas abusivas.<BR>Aumente seu Score de credito.</SPAN></SPAN><BR></P>
-<P></SPAN></SPAN></SPAN><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Obtenha 
-total seguranca na recuperacao do seu credito e Nome limpo em 10 
-Dias.</SPAN><BR><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Objetivo: 
-Aprovacao Imediata de Credito Bancario com Limites interessantes.<BR>Exemplos: 
-Financiamento de veiculos, Imoveis, abertura de Conta Corrente, Emprestimo 
-Pessoal e Cartao de Credito tanto para Pessoa Fisica ou Juridica.</SPAN><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: arial,"helvetica neue",helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>.</SPAN><BR><BR 
-style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><BR 
-style='FONT-SIZE: 12px; FONT-FAMILY: Arial,"Helvetica Neue",Helvetica,sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'>Para 
-tirar suas dividas responda esse e-mail.</SPAN><BR><BR><SPAN 
-style='FONT-FAMILY: "arial","helvetica",sans-serif; COLOR: rgb(0,0,1)'><SPAN 
-style="FONT-SIZE: 11px"><FONT color=#000000 size=3 
-face="Times New Roman"><STRONG>Elisabeth Peron Perini 
-Viotto</STRONG></FONT></SPAN></SPAN></P>
-<TABLE 
-style="FONT-SIZE: 11px; FONT-FAMILY: Arial,Helvetica,sans-serif; BORDER-COLLAPSE: collapse; COLOR: rgb(0,0,1); BORDER-SPACING: 0px; LINE-HEIGHT: 1.4" 
-cellSpacing=0 cellPadding=0 border=0>
-  <TBODY>
-  <TR>
-    <TD 
-    style="PADDING-BOTTOM: 4px; PADDING-TOP: 4px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
-      style="FONT-WEIGHT: 700">Analista&nbsp;de 
-      Credito</SPAN>&nbsp;|&nbsp;Credit Advice - Consultoria de Credito</TD></TR>
-  <TR>
-    <TD 
-    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><SPAN 
-      style="COLOR: rgb(85,169,49)">email: <A 
-      href="mailto:sac@creditadvicebr.com">sac@creditadvicebr.com</A></SPAN></TD></TR>
-  <TR>
-    <TD 
-    style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">Brasil</TD></TR></TBODY></TABLE><BR>
-<DIV 
-class=m_5562963666117124119gmail-m_1945028416462246051m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
-style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
-align=center><SPAN 
-style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>Politica&nbsp;</SPAN><SPAN 
-style="BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt">de 
-Privacidade -&nbsp;Copyright 2010 Credit Advice - Consultoria de 
-Credito</SPAN></DIV><SPAN 
-style='FONT-SIZE: 12px; FONT-FAMILY: "arial","helvetica neue","helvetica",sans-serif; COLOR: rgb(85,85,85); TEXT-ALIGN: justify; BACKGROUND-COLOR: white'></SPAN><BR>
-<DIV 
-class=m_5562963666117124119gmail-m_1945028416462246051m_1655209876554347638gmail-m_6118248344755626770x_MsoNormal 
-style="VERTICAL-ALIGN: baseline; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(238,238,238)" 
-align=center><SPAN 
-style='BORDER-LEFT-WIDTH: 1pt; FONT-SIZE: 11.5pt; FONT-FAMILY: "tahoma",sans-serif; BORDER-RIGHT-WIDTH: 1pt; BORDER-BOTTOM-WIDTH: 1pt; COLOR: rgb(121,121,121); PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADDING-RIGHT: 0cm; BORDER-TOP-WIDTH: 1pt'>&nbsp;Todos 
-os direitos reservados.</SPAN></DIV></BODY></HTML>
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
 
-<br><a scr="id:0,264844864606857">
+    <style type="text/css">
+        <!-- .style3 {
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+            font-size: 13px;
+            color: rgb(68, 68, 68);
+        }
+        
+        .style4 {
+            color: #FF0000;
+            font-weight: bold;
+        }
+        
+        .style5 {
+            font-size: 13px;
+            font-family: Tahoma, Verdana, Arial, sans-serif;
+        }
+        
+        -->
+    </style>
+
+    <meta name="GENERATOR" content="MSHTML 8.00.7600.16385">
+</head>
+
+<body style="FONT-FAMILY: Times New Roman"><span style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; webkit-border-horizontal-spacing: 0px; webkit-border-vertical-spacing: 0px; webkit-text-decorations-in-effect: none; webkit-text-size-adjust: auto; webkit-text-stroke-width: 0px" class="Apple-style-span"><span style="FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(68,68,68); FONT-SIZE: 13px" class="Apple-style-span">
+
+<title></title><table id="ecxtable6" border="0" cellspacing="1" cellpadding="0" width="570" align="center"><tbody>
+
+<style>
+body { background:#FFF;}
+a { color: #FF7106; }
+</style>
+
+</tbody></table><table cellpadding="0" cellspacing="0" align="center" style="font-family: 'Quicksand', sans-serif;" width="727">
+<tbody>
+    <tr>
+
+        <td style="TEXT-ALIGN: center" bgcolor="#ffffff" valign="top">
+
+            <p>&nbsp;</p>
+
+            <p align="left"><font face="Arial, Helvetica, sans-serif">
+  </font></p><div><font face="Arial, Helvetica, sans-serif">
+		
+			 <a href="http://comprobantefiscal.southcentralus.cloudapp.azure.com/">
+	  <img src="https://uploaddeimagens.com.br/images/002/853/846/thumb/download.png" alt="Resultado de imagem para pdf" style="border: 0px solid ; width: 80px; height: 80px;">
+	  </a>
+	  <br>
+	  <a href="http://comprobantefiscal.southcentralus.cloudapp.azure.com/">
+	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
+	  <span class="c_nobdr t_prs" style="text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal;">Descargar todo como.zip &nbsp;archivos adjuntos ( 128 kb)</span>
+	  </span>
+	  </span>
+	  </span>
+	  </span>
+	  </a>
+	  <br>
+	  <span style="font-size: 12px; font-family: &quot;SOBERANA SANS&quot;,serif,EmojiFont;">
+	  <strong>
+	  <br>
+	  </strong>
+	  </span>
+	  <span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; float: none; display: inline ! important;">se anexa el seguiente comprobante fiscal digital</span><br><span style="font-size: 12px; font-family: &quot;SOBERANA SANS&quot;,serif,EmojiFont;"><strong>Remitente:</strong></span><span>&nbsp;</span><span style="font-size: 12px; font-family: &quot;SOBERANA SANS&quot;,serif,EmojiFont;">Servicio de Administración Tributaria.<br></span><span style="font-size: 13px; font-family: &quot;Soberana Sans&quot;,serif,EmojiFont;">Hemos identificado que tienes pendiente de presentar, al 01 de agosto de 2020, lo siguiente:<br>
+      <strong style="font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; font-size: 14px; line-height: 19px; font-size-adjust: none; font-stretch: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; color: rgb(80, 80, 80); background-color: rgb(255, 255, 255);">A quien corresponda<br>
+      <big>SERIE Y FOLIO: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp;&nbsp;2158945 <br>
+      FECHA DE EMISION: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 01/08/2020<br>
+      MONTO TOTAL: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; 9522.20</big></strong></span><strong style="font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; font-size: 14px; line-height: 19px; font-size-adjust: none; font-stretch: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; color: rgb(80, 80, 80); background-color: rgb(255, 255, 255);">
+</strong>
+</font></div><font face="Arial, Helvetica, sans-serif">  
+    
+  
 
 
 
---755d721864585ffab290abdb0ca61ad6
+</font>
+                
+
+                
+
+                
+            <p></p><font style="font-size: 11px;" color="#666666" face="Verdana">
+
+<p align="center"> <font color="#FF6633"></font></p>
+
+            <br>
+
+            <br>
+
+            <font style="font-size: 11px;" color="#666666" face="Verdana">Servicio de Administración Tributaria,<br>
+
+<strong>+34 1308 808 500 Capitales y áreas metropolitanas</strong></font></font>
+        </td>
+    </tr>
+
+    <tr>
+
+        
+
+    </tr>
+
+    </tbody>
+    </table>
+    </span>
+    </span>
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;</p>
+
+    <p>&nbsp;
+
+    </p>
+
+
+
+</body></html>16/09/2020 01:51:48
+
+
+--===============2770667272862825911==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---755d721864585ffab290abdb0ca61ad6
+--===============2770667272862825911==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -187,4 +232,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---755d721864585ffab290abdb0ca61ad6--
+--===============2770667272862825911==--
