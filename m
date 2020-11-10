@@ -2,101 +2,70 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 7C1EA2AD01F
-	for <lists+osst-users@lfdr.de>; Tue, 10 Nov 2020 07:58:46 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id E5A952AD711
+	for <lists+osst-users@lfdr.de>; Tue, 10 Nov 2020 14:05:10 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1kcNc5-0007SI-AP
-	for lists+osst-users@lfdr.de; Tue, 10 Nov 2020 06:58:45 +0000
+	id 1kcTKf-0000XI-N0
+	for lists+osst-users@lfdr.de; Tue, 10 Nov 2020 13:05:09 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from
- <35jmqXxkJAActhyps5u.v10nyv30o.GA9EB9Enthps.jvt@trix.bounces.google.com>)
- id 1kcNbI-0007Q7-3n
- for osst-users@lists.sourceforge.net; Tue, 10 Nov 2020 06:57:56 +0000
+ id 1kcTKb-0000X4-LE
+ for osst-users@lists.sourceforge.net; Tue, 10 Nov 2020 13:05:05 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:To:From:Subject:Date:Message-ID:
- Reply-To:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Message-Id:Content-Transfer-Encoding:Content-Type:
+ MIME-Version:To:Subject:From:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=wEPhCttTKy7V1EVZ4L5u3Ku94RCezsHWOgwB27xhius=; b=QTqDwKApzIv4uPTWMTtqAcJ/IZ
- cOxpuTTSev7DaX9CM1xX67YrRi7UAZnUHonIxHP4AC19mYGxfWUR0hascF8yaFdM0lObNP+3bAXvg
- RFDamN0CL19etSd0/fd8ctIJIeawSe/m2Z8QtqqtTfrMaDxogJDoxcgN4tWJv3w28rzQ=;
+ bh=2uGgfjrcr/4k/U3SmKZVG6xDbBRTCvWjEOP7La8bpA4=; b=mw4twQVYpVqzCO0hEzZtLQARVX
+ MC7/0mOV3akNAOPQCe5H5SY724tTULzw50KkiJ9B5eh9y6sA9g6Wpe9i5SOlF1NF5BJRysUlSrZI3
+ J4oJkvfEyg8aTW87mDRCigUMO5WehlSPPuKwRdPSlwFF9MifWocdcHja7IsZxIsfkCos=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:To:From:Subject:Date:Message-ID:Reply-To:MIME-Version:Sender
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Message-Id:Content-Transfer-Encoding:Content-Type:MIME-Version:To:Subject
+ :From:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=wEPhCttTKy7V1EVZ4L5u3Ku94RCezsHWOgwB27xhius=; b=N
- 3aXzqf+KVoa8GcKD/Ybx3fIM/dBnSdHr7gBcyJdg6nhrR44COkkzRft5g8bX9QhcnjyLOz/D0Xnbv
- Fya8bLq0ovNM726K78lpTVaEfjjBdkpyS9oXmqRWBiuhFvLV0TEhYO3/8K6Q+2ycjbcmEp/WVzNnM
- mo6bW25KmyKwXvfg=;
-Received: from mail-io1-f69.google.com ([209.85.166.69])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.92.2)
- id 1kcNbC-006Q8J-3t
- for osst-users@lists.sourceforge.net; Tue, 10 Nov 2020 06:57:56 +0000
-Received: by mail-io1-f69.google.com with SMTP id c17so7581388iom.20
- for <osst-users@lists.sourceforge.net>; Mon, 09 Nov 2020 22:57:50 -0800 (PST)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
- h=mime-version:reply-to:message-id:date:subject:from:to;
- bh=wEPhCttTKy7V1EVZ4L5u3Ku94RCezsHWOgwB27xhius=;
- b=kh/Nj1sahQOKir3ST9xIW8wJfE3gjYXA4Haz2IK23qo5cVMB2awn3+6eoAht2S2AKE
- bEKK1+sPbQVXx9G+5Wd+WK9TYxYILLstLrp8cXtNzxKuyBhofh0naalTxcmoZxa6Vjj5
- rL/s6WVOVMrdaUQvGesPLxPWv3Dm2HUAjh4abLG7mvRqKL8FQF6VXeuSFOtHtHHbGvuH
- 36TOrrvv29pU961N1Txt+kN3fInCd2Q5xm9LNjLJlUayVcjj3I8OgZ4/t5A/3JOv/IKD
- qXmUOy0/3E4dDy2R70gmRIuo4/PzY/rRUdcRjk5TywdrgjKBkpEZ7/JLPYHpwm1YPAmb
- 0VTA==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
- d=1e100.net; s=20161025;
- h=x-gm-message-state:mime-version:reply-to:message-id:date:subject
- :from:to;
- bh=wEPhCttTKy7V1EVZ4L5u3Ku94RCezsHWOgwB27xhius=;
- b=T4MEYmOfC8mYSR3+lwQcNnxhoJaXUIDLJctRP6/172QW3MdWfKfRRVLSYkFpmDr14x
- advU+cF+sAKU9lYRPdRlbUpM9035xs7mvNfz8WZd9UQWGSa0pyd/KYkHA8NjrbLMZb6B
- cdXsaK51KdMgt9dmuvdMWdiNtrqUW71gIuwWpqS1M74qk6nCDIBa1tQ8fwQI3BTSPBli
- 0kAJNvWPPFJQWDZvEUVq7jfI/myfB5xo5dI+rKv6kqg8nlo6Rk7rxx2GLVu1hy2w8Cs5
- ZTyU/PJj8xPVvwSV3AsKQybsXAmxecR6lejXkvghEIVFRq2fdVZFMBNDC+GZ7lv1GXYJ
- lkpg==
-X-Gm-Message-State: AOAM530SgNhizWHB8aBdVfbqqczzQxjFB1nnrp6/GJE6MxNBa4ChvcUW
- O6gy6BjtjuK7WHSsHKn3CiPUnFUIUOheJEGRkbT7
-MIME-Version: 1.0
-X-Received: by 2002:a92:690f:: with SMTP id e15mt13187691ilc.269.1604991462801; 
- Mon, 09 Nov 2020 22:57:42 -0800 (PST)
-X-No-Auto-Attachment: 1
-Message-ID: <0000000000000229fb05b3bb3272@google.com>
-Date: Tue, 10 Nov 2020 06:57:44 +0000
-From: marilyn.outgrowth.9327427@gmail.com
+ List-Owner:List-Archive; bh=2uGgfjrcr/4k/U3SmKZVG6xDbBRTCvWjEOP7La8bpA4=; b=H
+ fvCti7Kh4edY7L9pnYSBbHH+eORishEWdBdHfj7I8ZFw4zogQFCBVMkoDGbWz/SHx4MFexW04FAKe
+ xpylxN5VyX1DNxFjPBC+hkZyeAmgjTgborHMkbbzkc38wNPf0R+PdqWCrPOSJss/rDUlLCH78Lrce
+ HR62T7ukrKt54hto=;
+Received: from [139.129.209.233] (helo=iZ28upq55k1Z)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1kcTKW-00FTdc-A4
+ for osst-users@lists.sourceforge.net; Tue, 10 Nov 2020 13:05:04 +0000
+Received: by iZ28upq55k1Z (Postfix)
+ id 0EE771275FD; Tue, 10 Nov 2020 20:34:35 +0800 (CST)
+Date: Tue, 10 Nov 2020 20:34:35 +0800 (CST)
+From: MAILER-DAEMON@thinkunion.com.cn (Mail Delivery System)
 To: osst-users@lists.sourceforge.net
-X-Spam-Score: 1.6 (+)
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Message-Id: <20201110123435.0EE771275FD@iZ28upq55k1Z>
+X-Helo-Check: bad, Not FQDN (iZ28upq55k1Z)
+X-Spam-Score: 6.4 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
- (marilyn.outgrowth.9327427[at]gmail.com)
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
- trust [209.85.166.69 listed in list.dnswl.org]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [209.85.166.69 listed in wl.mailspike.net]
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
- (marilyn.outgrowth.9327427[at]gmail.com)
- 1.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 0.2 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and EnvelopeFrom
- freemail headers are different
-X-Headers-End: 1kcNbC-006Q8J-3t
-Subject: [Osst-users] =?utf-8?q?TO=EF=BC=9AOrder?=
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: qq.com]
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [139.129.209.233 listed in zen.spamhaus.org]
+ 0.0 RCVD_IN_MSPIKE_L3      RBL: Low reputation (-3)
+ [139.129.209.233 listed in bl.mailspike.net]
+ 0.0 FSL_HELO_NON_FQDN_1    No description available.
+ 0.5 VA_HELO_CHECK          Host Used Invalid or Forged HELO/EHLO
+ 0.1 FUZZY_XPILL            BODY: Attempt to obfuscate words in spam
+ 0.0 WEIRD_QUOTING          BODY: Weird repeated double-quotation marks
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 1.2 HELO_NO_DOMAIN         Relay reports its domain incorrectly
+ 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
+X-Headers-End: 1kcTKW-00FTdc-A4
+Subject: [Osst-users] Undelivered Mail Returned to Sender
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -108,98 +77,185 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: marilyn.outgrowth.9327427@gmail.com
-Content-Type: multipart/mixed; boundary="===============5566970572345835474=="
+Content-Type: multipart/mixed; boundary="===============0423664669114167891=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5566970572345835474==
-Content-Type: multipart/alternative; boundary="0000000000001bd96c05b3bb329a"
+This is a MIME-encapsulated message.
 
---0000000000001bd96c05b3bb329a
-Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
-Content-Transfer-Encoding: base64
+--===============0423664669114167891==
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="0CEA21274F5.1605011675/iZ28upq55k1Z"
+Content-Transfer-Encoding: 8bit
 
-SSd2ZSBpbnZpdGVkIHlvdSB0byBmaWxsIGluIHRoZSBmb2xsb3dpbmcgZm9ybToNClRP77yaT3Jk
-ZXINCg0KVG8gZmlsbCBpdCBpbiwgdmlzaXQ6DQpodHRwczovL2RvY3MuZ29vZ2xlLmNvbS9mb3Jt
-cy9kL2UvMUZBSXBRTFNjM01ubDREUVMxOUJkLVVZNjVrN3hwWEZ4YlBPX1d6UVROU3JYdW1Mc1VC
-YlB0T1Evdmlld2Zvcm0/dmM9MCZhbXA7Yz0wJmFtcDt3PTEmYW1wO2Zscj0wJmFtcDt1c3A9bWFp
-bF9mb3JtX2xpbmsNCg0KSSYjMzk7dmUgaW52aXRlZCB5b3UgdG8gZmlsbCBpbiBhIGZvcm06DQoN
-Ckdvb2dsZSBGb3JtczogQ3JlYXRlIGFuZCBhbmFseXNlIHN1cnZleXMuDQo=
---0000000000001bd96c05b3bb329a
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: quoted-printable
+This is a MIME-encapsulated message.
 
-<html><body style=3D"font-family: Roboto,Helvetica,Arial,sans-serif; margin=
-: 0; padding: 0; height: 100%; width: 100%;"><table border=3D"0" cellpaddin=
-g=3D"0" cellspacing=3D"0" style=3D"background-color:rgb(103,58,183);" width=
-=3D"100%" role=3D"presentation"><tbody><tr height=3D"64px"><td style=3D"pad=
-ding: 0 24px;"><img alt=3D"Google Forms" height=3D"26px" style=3D"display: =
-inline-block; margin: 0; vertical-align: middle;" width=3D"143px" src=3D"ht=
-tps://www.gstatic.com/docs/forms/google_forms_logo_lockup_white_2x.png"></t=
-d></tr></tbody></table><div style=3D"padding: 24px; background-color:rgb(23=
-7,231,246)"><div align=3D"center" style=3D"background-color: #fff; border-b=
-ottom: 1px solid #e0e0e0;margin: 0 auto; max-width: 624px; min-width: 154px=
-;padding: 0 24px;"><table align=3D"center" cellpadding=3D"0" cellspacing=3D=
-"0" style=3D"background-color: #fff;" width=3D"100%" role=3D"presentation">=
-<tbody><tr height=3D"24px"><td></td></tr><tr><td><span style=3D"display: ta=
-ble-cell; vertical-align: top; font-size: 13px; line-height: 18px; color: #=
-424242;" dir=3D"auto">I&#39;ve invited you to fill in a form:</span></td></=
-tr><tr height=3D"20px"><td></tr><tr style=3D"font-size: 20px; line-height: =
-24px;"><td dir=3D"auto"><a href=3D"https://docs.google.com/forms/d/e/1FAIpQ=
-LSc3Mnl4DQS19Bd-UY65k7xpXFxbPO_WzQTNSrXumLsUBbPtOQ/viewform?vc=3D0&amp;c=3D=
-0&amp;w=3D1&amp;flr=3D0&amp;usp=3Dmail_form_link" style=3D"color: rgb(103,5=
-8,183); text-decoration: none; vertical-align: middle; font-weight: 500">TO=
-=EF=BC=9AOrder</a><div itemprop=3D"action" itemscope itemtype=3D"http://sch=
-ema.org/ViewAction"><meta itemprop=3D"url" content=3D"https://docs.google.c=
-om/forms/d/e/1FAIpQLSc3Mnl4DQS19Bd-UY65k7xpXFxbPO_WzQTNSrXumLsUBbPtOQ/viewf=
-orm?vc=3D0&amp;c=3D0&amp;w=3D1&amp;flr=3D0&amp;usp=3Dmail_goto_form"><meta =
-itemprop=3D"name" content=3D"Fill out form"></div></td></tr><tr height=3D"1=
-6px"></tr><tr><td style=3D"display: table-cell; vertical-align: top; font-s=
-ize: 13px; line-height: 18px; color: #424242;" dir=3D"auto">Dear <br>=E5=B8=
-=AE=E5=8A=A9=E6=82=A8=E4=B8=BB=E5=8A=A8=E5=BC=80=E5=8F=91=E5=9B=BD=E5=A4=96=
-=E5=AE=A2=E6=88=B7=E3=80=82=E6=89=BE=E5=88=B0=E5=85=A8=E7=90=83=E7=B2=BE=E5=
-=87=86=E7=9B=AE=E6=A0=87=E5=AE=A2=E6=88=B7 <br>AI=E6=B7=B1=E5=BA=A6=E6=8C=
-=96=E6=8E=98=E9=82=AE=E7=AE=B1=E4=BB=A5=E5=8F=8A=E8=AF=86=E5=88=AB=E8=BA=AB=
-=E4=BB=BD=E8=81=8C=E4=BD=8D<br>=E4=B8=BB=E5=8A=A8=E8=BF=BD=E8=B8=AA=E9=82=
-=AE=E7=AE=B1=E6=83=85=E5=86=B5=EF=BC=8C=E8=AE=A9=E6=82=A8=E6=8E=8C=E6=8F=A1=
-=E5=AE=A2=E6=88=B7=E6=84=8F=E5=90=91<br>=E8=83=BD=E4=B8=80=E9=94=AE=E5=BB=
-=BA=E6=A1=A3=E5=AE=A2=E6=88=B7=E7=AE=A1=E7=90=86=E8=90=A5=E9=94=80=EF=BC=8C=
-<br>=E4=B8=BB=E5=8A=A8=E5=87=BA=E5=87=BB=EF=BC=8C=E6=8A=8A=E6=97=B6=E9=97=
-=B4=E5=92=8C=E7=B2=BE=E5=8A=9B=E9=83=BD=E6=94=BE=E5=9C=A8=E8=B0=88=E5=8D=95=
-=E4=B8=8A=E3=80=82<br>=E5=B8=AE=E6=82=A8=E4=BB=8E=E8=8E=B7=E5=AE=A2=E5=88=
-=B0=E5=BC=80=E5=8F=91=E5=88=B0=E7=AE=A1=E7=90=86=E8=90=A5=E9=94=80=E5=85=A8=
-=E6=B5=81=E7=A8=8B=E8=A7=A3=E5=86=B3<br>=E8=AF=A6=E8=AF=A2=E6=8A=A0---28182=
-79818 =E5=85=8D=E8=B4=B9=E6=8F=90=E4=BE=9B=E5=9C=A8=E7=BA=BF=E8=AF=B4=E6=98=
-=8E=E6=BC=94=E7=A4=BA=EF=BC=8C=E9=9A=8F=E6=97=B6=E4=BA=86=E8=A7=A3=E3=80=82=
-<br>Wechat=E5=BE=AE =E4=BF=A1=E3=80=80=EF=BC=9A=E3=80=80cywsxs<br>=E7=94=B5=
-=E8=AF=9D=EF=BC=9A18998393010<br>=E5=8D=81=E5=88=86=E6=AC=A2=E8=BF=8E=E6=82=
-=A8=E4=BA=86=E8=A7=A32020-11-10 11:16:08</td></tr><tr height=3D"24px"></tr>=
-<tr><td><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
-0%"><tbody><tr><td><a href=3D"https://docs.google.com/forms/d/e/1FAIpQLSc3M=
-nl4DQS19Bd-UY65k7xpXFxbPO_WzQTNSrXumLsUBbPtOQ/viewform?vc=3D0&amp;c=3D0&amp=
-;w=3D1&amp;flr=3D0&amp;usp=3Dmail_form_link" style=3D"border-radius: 3px; b=
-ox-sizing: border-box; display: inline-block; font-size: 13px; font-weight:=
- 700; height: 40px; line-height: 40px; padding: 0 24px; text-align: center;=
- text-decoration: none; text-transform: uppercase; vertical-align: middle; =
-color: #fff; background-color: rgb(103,58,183);" target=3D"_blank" rel=3D"n=
-oopener">Fill out form</a></td></tr></tbody></table></td></tr><tr height=3D=
-"24px"></tr></tbody></table></div><table align=3D"center" cellpadding=3D"0"=
- cellspacing=3D"0" style=3D"max-width: 672px; min-width: 154px;" width=3D"1=
-00%" role=3D"presentation"><tbody><tr height=3D"24px"><td></td></tr><tr><td=
-><a href=3D"https://docs.google.com/forms?usp=3Dmail_form_link" style=3D"co=
-lor: #424242; font-size: 13px;">Create your own Google Form</a></td></tr></=
-tbody></table></div></body></html>
---0000000000001bd96c05b3bb329a--
+--0CEA21274F5.1605011675/iZ28upq55k1Z
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host iz28upq55k1z.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<1932763007@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MB+x1EZDgdZ6JshP0ojK1bL2Z+e5y/7mETHX719EICKYSqy5asn+JAwXy7oPW9JsEw==  IP:
+    139.129.209.233].
+    http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
+    (in reply to end of DATA command)
+
+--0CEA21274F5.1605011675/iZ28upq55k1Z
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+Content-Transfer-Encoding: 8bit
+
+Reporting-MTA: dns; iZ28upq55k1Z
+X-Postfix-Queue-ID: 0CEA21274F5
+X-Postfix-Sender: rfc822; osst-users@lists.sourceforge.net
+Arrival-Date: Tue, 10 Nov 2020 19:38:48 +0800 (CST)
+
+Final-Recipient: rfc822; 1932763007@qq.com
+Original-Recipient: rfc822;1932763007@qq.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx3.qq.com
+Diagnostic-Code: smtp; 550 SPF check failed
+    [MB+x1EZDgdZ6JshP0ojK1bL2Z+e5y/7mETHX719EICKYSqy5asn+JAwXy7oPW9JsEw==  IP:
+    139.129.209.233].
+    http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
+
+--0CEA21274F5.1605011675/iZ28upq55k1Z
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <osst-users@lists.sourceforge.net>
+Received: from s72HfDhE8 (unknown [220.186.166.117])
+	by iZ28upq55k1Z (Postfix) with ESMTP id 0CEA21274F5
+	for <1932763007@qq.com>; Tue, 10 Nov 2020 19:38:48 +0800 (CST)
+Date: Tue,10 Nov 2020 19:38:49 +0800
+From: "osst-users" <osst-users@lists.sourceforge.net>
+To: 1932763007@qq.com
+Subject: osst-users@lists.sourceforge.netBi
+X-mailer: Foxmail 6, 15, 201, 23 [en]
+Mime-Version: 1.0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+<no8ZT>                                                     
+                      
+                                                                   
+                                                                               
+                                                                         
+                                                      
+                                                              
+&#x7531; &#x4E8E; &#x60A8; &#x4FE1; &#x8A89; &#x826F; &#x597D; &#x003A; 
+&#x9080; &#x8BF7; &#x60A8; &#x6765; &#x6211; &#x4EEC; &#x6DD8; &#x5B9D; &#x5E97; 
+&#x517C; &#x804C; &#x5199; &#x597D; &#x8BC4; &#x002C; &#x6BCF; &#x8BC4; &#x7ED9; &#x4F60; &#x0032; &#x0035; 
+&#x5230; &#x0033; &#x0035; &#x5143; &#x002C; &#x4E00; &#x8BC4; &#x4E00; &#x7ED3; &#x002C; &#x65E0; &#x4EFB; &#x4F55; 
+&#x8D39; &#x7528; &#x002E; &#x8054; &#x7CFB; &#x0051; &#x0051; &#xFF1A; &#x0032; &#x0031; &#x0038; &#x0030; &#x0039; &#x0039; &#x0033; &#x0036; 
+                                                             
+                                                  
+                                                                  
+                                                                                
+                                                   
+                                                                            
+                                             
+                                                                           
+                                                                 
+                                                            
+                                                                
+                                                                      
+                   
+        
+          
+                                                                        
+       
+                                                                 
+                                                                              
+                                                    
+                                                                                 
+       
+                                        
+                                                                             
+  
+    
+                                                                       
+                                                                          
+                                                                    
+          
+                                                                    
+                                                                                
+                                                   
+                                                                            
+                                             
+                                                                           
+                                                                 
+                                                            
+                                                                
+                                                                      
+                   
+        
+          
+                                                                        
+      上海合作组织成员国元首理事会第二十次会议将以视频方式举行。上海合作组织秘书长弗拉基米尔·诺罗夫在接受本报记者采访时表示，期待各方充分交换意见，达成更多共识，继续弘扬“上海精神”，携手应对风险挑战，共同维护地区国家安全和发展利益。
+                                                    
+                                                                                 
+       
+                                        
+                                                                             
+  
+    
+                                                                       
+                                                                          
+诺罗夫说，面对突如其来的新冠肺炎疫情，上合组织成员国同舟共济、守望相助，相互支持彼此抗击疫情，积极推动国际抗疫合作，有力维护了本地区人民生命健康安全，为全球抗疫合作注入了正能量，为构建人类卫生健康共同体作出了重要贡献。“当前，疫情仍在全球蔓延，只有团结一致、共同协作，人类才能最终战胜疫情。上合组织成员国可以充分发挥各自优势，深化医疗保健和防疫合作，携手打造上合组织卫生健康共同体。”
+                                                                 
+                                                            
+                                                                
+                                                                      
+                   
+        
+          
+“上合组织开创了区域合作新模式，为地区和平发展作出了重大贡献，其吸引力、影响力正在不断增强。”诺罗夫说，在“上海精神”指引下，上合组织成功探索出一条新型区域组织的合作与发展道路。特别是共建“一带一路”，正在成为促进地区国家发展繁荣的重要合作平台。他认为，上合组织在经贸合作、科技交流等方面还有巨大潜力，上海合作组织成员国元首理事会第二十次会议是探讨拓宽各方合作新领域、推动区域合作迈上新台阶的重要契机。
+                                                                 
+                                                            
+                                                                
+                                                                      
+                   
+        
+          
+“今年前三季度，中国经济增长由负转正，充分证明中国经济的强大韧性。中国超大规模市场优势和巨大内需潜力，将为全球经济企稳复苏提供更加持久、可持续的推动力。”诺罗夫表示，他对中国发展前景充满信心。中国加快构建以国内大循环为主体、国内国际双循环相互促进的新发展格局，将推动中国更高质量发展，也为各国共同发展提供更多机遇。
+                     
+                                                                      
+                   
+        
+          
+诺罗夫在上海参加了第三届中国国际进口博览会开幕式。他强调，当今世界，和平与发展的时代主题没有变，各国人民和平发展合作共赢的期待更加强烈。“面对国际环境深刻变化，各国需要共同努力，推动构建以合作共赢为核心的新型国际关系，推动构建人类命运共同体。”
+                                                                 
+
+</qyUOi>
 
 
---===============5566970572345835474==
+--0CEA21274F5.1605011675/iZ28upq55k1Z--
+
+
+--===============0423664669114167891==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5566970572345835474==
+--===============0423664669114167891==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -210,5 +266,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5566970572345835474==--
+--===============0423664669114167891==--
 
