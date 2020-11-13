@@ -2,64 +2,59 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id EE1852B14AB
-	for <lists+osst-users@lfdr.de>; Fri, 13 Nov 2020 04:25:24 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 2193C2B211A
+	for <lists+osst-users@lfdr.de>; Fri, 13 Nov 2020 17:55:37 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1kdPiF-0005g8-P9
-	for lists+osst-users@lfdr.de; Fri, 13 Nov 2020 03:25:23 +0000
+	id 1kdcMJ-0003hq-Tq
+	for lists+osst-users@lfdr.de; Fri, 13 Nov 2020 16:55:35 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <www-data@cesaraugusto3284812.pserver.ru>)
- id 1kdPi4-0005fh-UF
- for osst-users@lists.sourceforge.net; Fri, 13 Nov 2020 03:25:12 +0000
+ id 1kdbyM-0005WN-ST
+ for osst-users@lists.sourceforge.net; Fri, 13 Nov 2020 16:30:51 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Subject:From:To:Date:
+ Message-Id:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=bNpij3DljDPfb0IJgQgstM60zUzS+bYHBjPwLQu7Kms=; b=dTC+CkEwfN/FFvzdIRip4pdClz
- cM8ZJsrARWjFEnJb3N2wuwuungLXnlQSGrSFiYB9itKe1MK2Hke4dvYDGXynoVeuZOmM3A3Mmd/CC
- uE2rAnZhkciX9zbaXpz6SxNaTZ/YD+T+mTuHveANLG141rYOC77uGS3R6/VX5lH3hZGI=;
+ bh=bxSgpL+GRDwoc8tWjIdBO14vq9tpfVvDERutD23pRZQ=; b=VFI96z1a+tdHdznVX0cyCrgb5B
+ hamhpsDRho0NGmjtWDiyPvsZwi89wv3f/DVneYCWBQa6Qkp2G5ziH5yfL6TuBdhTeeV17d7Mc16WZ
+ mWVrzA4S22hyWdNjy/RhHw3ZyamP2WRMGGOxdW4ce6egKrIHLJmS7NRmpaQL9okzRSYo=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
+ h=Content-Type:MIME-Version:Subject:From:To:Date:Message-Id:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=bNpij3DljDPfb0IJgQgstM60zUzS+bYHBjPwLQu7Kms=; b=c
- wd4IW/o7aRhrn92+FJotdWCxrH/eZT+tkaSQdmiLTmXo+N50ZYXahqx4klQAEfF/JbyrZHtQw4wRx
- OUED94KOgre1Q0nZ2Cfape/A+eGEIdB3bce+SknxkMFyZ0g9qmZ5gf19yJDxN10bireaEjg0PXVck
- kZ31zbdYqfgg8jw0=;
-Received: from cesaraugusto3284812.pserver.ru ([185.82.217.166])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1kdPhx-00A17N-6q
- for osst-users@lists.sourceforge.net; Fri, 13 Nov 2020 03:25:12 +0000
-Received: by cesaraugusto3284812.pserver.ru (Postfix, from userid 33)
- id BF62A27CF7; Fri, 13 Nov 2020 04:50:20 +0200 (EET)
+ List-Owner:List-Archive; bh=bxSgpL+GRDwoc8tWjIdBO14vq9tpfVvDERutD23pRZQ=; b=G
+ u4VxDfGyoEQ4uzJymCZ3//Q2/cUZE1/qPgYh+HZOT2B703yKqNXa2Uz6Efn52d1lFQzXgoal7vxq2
+ hPo89944+C3PYDY/mQOtb/XouI/9vFI3m7lQBS+T9EDOeecNYWzCNn5ny+nzgT1dyBnDSJn5ZDCKe
+ 8x0MTG8zOlzx6zwo=;
+Received: from ip.sgp.pillogistics.com ([203.116.38.243])
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps (TLSv1.2:AES256-SHA:256)
+ (Exim 4.92.2) id 1kdbyH-002AO4-Pt
+ for osst-users@lists.sourceforge.net; Fri, 13 Nov 2020 16:30:50 +0000
+Received: from localhost by ip.sgp.pillogistics.com; 14 Nov 2020 00:29:32 +0800
+Message-Id: <8eb11c$ttuos@ip.sgp.pillogistics.com>
+Date: 14 Nov 2020 00:29:32 +0800
 To: osst-users@lists.sourceforge.net
+From: "Mail Delivery System" <MAILER-DAEMON@ip.sgp.pillogistics.com>
 MIME-Version: 1.0
-From: Ministerio del Interior <notificacion@interior.gob.es>
-Message-Id: <20201113025020.BF62A27CF7@cesaraugusto3284812.pserver.ru>
-Date: Fri, 13 Nov 2020 04:50:20 +0200 (EET)
-X-Spam-Score: 3.6 (+++)
+X-Spam-Score: 2.5 (++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: azure.com]
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ for more information. [URIs: qq.com]
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-X-Headers-End: 1kdPhx-00A17N-6q
-Subject: [Osst-users] Multa no pagada - bloque de vehiculos - [ id 90717526 ]
+ 0.0 TVD_SPACE_RATIO        No description available.
+ 2.5 TVD_SPACE_RATIO_MINFP  Space ratio (vertical text obfuscation?)
+X-Headers-End: 1kdbyH-002AO4-Pt
+Subject: [Osst-users] Delivery Status Notification (Failure)
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -71,150 +66,143 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============9169212491195945559=="
+Content-Type: multipart/mixed; boundary="===============3930944851218433398=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============9169212491195945559==
-Content-type: text/html; charset=iso-8859-1
+--===============3930944851218433398==
+Content-Type: multipart/report; report-type=delivery-status; boundary="1tlZr.5i/+8YZTo.10oEKtTYtwW.D8Dr5ok"
 
-<html lang="es"><head><style>body{margin:0;padding:0;overflow-x:auto !important;overflow-y:hidden !important}.mail-detail-content{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif;font-size:13px;font-weight:normal;font-feature-settings:"liga" 0;width:100%;position:relative;padding:0}.ios.smartphone .mail-detail-content{-webkit-overflow-scrolling:touch;overflow-x:auto}.smartphone .mail-detail-content{font-size:15px}.mail-detail-content>div>[class$="-content"]{padding:0}.mail-detail-content.plain-text{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif;white-space:pre-wrap}.mail-detail-content.plain-text blockquote{white-space:normal}.mail-detail-content.fixed-width-font,.mail-detail-content.fixed-width-font.plain-text,.mail-detail-content.fixed-width-font blockquote,.mail-detail-content.fixed-width-font.plain-text blockquote,.mail-detail-content.fixed-width-font blockquote p,.mail-detai
- l-content.fixed-width-font.plain-text blockquote p{font-family:monospace;-webkit-font-feature-settings:normal;font-feature-settings:normal}.mail-detail-content.simple-mail{max-width:700px}.mail-detail-content.simple-mail.big-screen{max-width:100%}.mail-detail-content.simple-mail img{max-width:100%;height:auto!important}.mail-detail-content img[src=""]{background-color:rgba(0,0,0,0.1);background-image:repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.5) 20px, rgba(255,255,255,0.5) 40px)}.mail-detail-content p{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif;margin:0 0 1em 0}.mail-detail-content h1{font-size:28px}.mail-detail-content h2{font-size:21px}.mail-detail-content h3{font-size:16.38px}.mail-detail-content h4{font-size:14px}.mail-detail-content h5{font-size:11.62px}.mail-detail-content h6{font-size:9.38px}.mail-detail-content a{word-break:break-word;text-decoration:none;color:inherit}.mail-detail-content 
- a:hover{color:inherit}.mail-detail-content a[href]{color:#3c61aa;text-decoration:underline}.mail-detail-content th{padding:8px;text-align:center}.mail-detail-content th[align="left"]{text-align:left}.mail-detail-content .calendar-detail .label{display:block;text-shadow:none;font-weight:normal;background-color:transparent}.mail-detail-content img.emoji-softbank{margin:0 2px}.mail-detail-content pre{word-break:keep-all;word-break:initial;white-space:pre-wrap;background-color:transparent;border:0 none;border-radius:0}.mail-detail-content table{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif;font-size:13px;font-weight:normal;font-feature-settings:"liga" 0;line-height:normal;border-collapse:collapse}.mail-detail-content ul,.mail-detail-content ol{padding:0;padding-left:16px;margin:1em 0 1em 24px}.mail-detail-content ul{list-style-type:disc}.mail-detail-content ul ul{list-style-type:circle}.mail-detail-content ul ul ul{list-style-type:square}.mail
- -detail-content li{line-height:normal;margin-bottom:0.5em}.mail-detail-content blockquote{color:#555;font-size:13px;border-left:2px solid #ddd;padding:0 0 0 16px;margin:16px 0 16px 0}.mail-detail-content blockquote p{font-size:13px}.mail-detail-content blockquote blockquote{border-color:#283f73;margin:8px 0}.mail-detail-content.colorQuoted blockquote blockquote{color:#283f73 !important;border-left:2px solid #283f73}.mail-detail-content.colorQuoted blockquote blockquote a[href]:not(.deep-link){color:#283f73}.mail-detail-content.colorQuoted blockquote blockquote a[href]:not(.deep-link):hover{color:#1b2a4d}.mail-detail-content.colorQuoted blockquote blockquote blockquote{color:#dd0880 !important;border-left:2px solid #dd0880}.mail-detail-content.colorQuoted blockquote blockquote blockquote a[href]:not(.deep-link){color:#dd0880}.mail-detail-content.colorQuoted blockquote blockquote blockquote a[href]:not(.deep-link):hover{color:#ac0663}.mail-detail-content.colorQuoted blockquote blockqu
- ote blockquote blockquote{color:#8f09c7 !important;border-left:2px solid #8f09c7}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote a[href]:not(.deep-link){color:#8f09c7}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote a[href]:not(.deep-link):hover{color:#6c0796}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote blockquote{color:#767676 !important;border-left:2px solid #767676}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote blockquote a[href]:not(.deep-link){color:#767676}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote blockquote a[href]:not(.deep-link):hover{color:#5d5d5d}.mail-detail-content.disable-links a[href]{color:#aaa !important;text-decoration:line-through !important;cursor:default !important;pointer-events:none !important}.mail-detail-content .blockquote-toggle{color:#767676;font-size:13px;padding-left:56px;margin:16px 0;min-height:16px;
- word-break:break-word}.mail-detail-content .blockquote-toggle button.bqt{color:#696969;background-color:#eee;padding:1px 10px;display:inline-block;font-size:14px;line-height:16px;cursor:pointer;outline:0;position:absolute;left:0;border:0}.mail-detail-content .blockquote-toggle button.bqt:hover,.mail-detail-content .blockquote-toggle button.bqt:focus{color:#fff;background-color:#3c61aa;text-decoration:none}.mail-detail-content .max-size-warning{color:#767676;padding:16px 16px 0 16px;border-top:1px solid #ddd}.mail-detail-content a.deep-link{color:white;background-color:#3c61aa;text-decoration:none;font-size:90%;font-weight:bold;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif !important;padding:0.10em 8px;border-radius:3px}.mail-detail-content a.deep-link:hover,.mail-detail-content a.deep-link:focus,.mail-detail-content a.deep-link:active{color:white;background-color:#2f4b84}@media print{.mail-detail-content .collapsed-blockquote{display:block
-  !important}.mail-detail-content .blockquote-toggle{display:none !important}}.mail-detail-content>div[id*="ox-"]>h1,.mail-detail-content>div[id*="ox-"]>h2,.mail-detail-content>div[id*="ox-"]>h3,.mail-detail-content>div[id*="ox-"]>h4,.mail-detail-content>div[id*="ox-"]>h5{margin-top:0}</style></head><body class="mail-detail-content noI18n colorQuoted">
+--1tlZr.5i/+8YZTo.10oEKtTYtwW.D8Dr5ok
+content-type: text/plain;
+    charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-  
-   
-   
-   
-   
-  
-  
- 
-  
-  <div class="es-wrapper-color">
-    
-   <table width="100%" cellspacing="0" cellpadding="0" class="es-wrapper"> 
-    <tbody> 
-     <tr> 
-      <td valign="top" class="esd-email-paddings"> 
-       <div style="text-align: center;"> 
-       </div> 
-       <table cellspacing="0" cellpadding="0" align="center" class="esd-header-popover es-content"> 
-        <tbody> 
-         <tr> 
-          <td align="center" class="esd-stripe"> 
-           <div style="text-align: center;"> 
-           </div> 
-           <table width="600" cellspacing="0" cellpadding="0" align="center" class="es-content-body" style="background-color: transparent;"> 
-            <tbody> 
-             <tr> 
-              <td align="left" class="esd-structure es-p5b es-p10r es-p10l"> <br>
-               <div class="flotar-izq" id="area-identidad" style="text-align: center;">
-                <span style="color: red; font-weight: bold;"></span>
-                <img alt="_" src="http://www.dgt.es/Galerias/_config_/2018_logo_ministerio_interior_60.png" class="logo" id="logo1" style="width: 209px; height: 60px;">
-                <img alt="_" height="60" width="119" src="http://www.dgt.es/Galerias/_config_/2018_logo_dgt_60_COPIA_SEG.png">
-               </div> 
-               <div class="flotar-izq" id="area-identidad" style="text-align: center;"> 
-               </div> 
-               <table cellspacing="0" cellpadding="0" align="right" style="color: rgb(53, 104, 164); font-family: Arial;"> 
-                <tbody> 
-                 <tr> 
-                  <td width="280" align="left" class="esd-container-frame"> 
-                   <table width="100%" cellspacing="0" cellpadding="0"> 
-                    <tbody> 
-                     <tr> 
-                      <td align="right" class="esd-block-text es-infoblock">&nbsp;</td> 
-                     </tr> 
-                    </tbody> 
-                   </table> </td> 
-                 </tr> 
-                </tbody> 
-               </table> </td> 
-             </tr> 
-            </tbody> 
-           </table> </td> 
-         </tr> 
-        </tbody> 
-       </table> 
-       <table cellspacing="0" cellpadding="0" align="center" class="es-content"> 
-        <tbody> 
-         <tr> 
-          <td align="center" class="esd-stripe"> 
-           <table width="600" cellspacing="0" cellpadding="0" align="center" class="es-content-body"> 
-            <tbody> 
-             <tr> 
-              <td bgcolor="#fff2cc" align="left" style="background-color: rgb(255, 242, 204);" class="esd-structure es-p20t es-p20b es-p20r es-p20l"> 
-               <table width="100%" cellspacing="0" cellpadding="0"> 
-                <tbody> 
-                 <tr> 
-                  <td width="560" valign="top" align="center" class="esd-container-frame"> 
-                   <table width="100%" cellspacing="0" cellpadding="0"> 
-                    <tbody> 
-                     <tr> 
-                      <td align="center" class="esd-block-text es-p10l" style="background-color: white;"> <span style="margin: 0px 0px 0px 24px; padding: 0px; color: rgb(0, 68, 136); font-size: 1.2em; font-weight: 700; text-transform: uppercase; font-family: OpenSans-Regular,sans-serif; font-style: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);" class="dgt-announcements-title">Saludos Cordiales</span><span style="color: rgb(76, 83, 93); font-family: OpenSans-Regular,sans-serif; font-size: 12.6px; font-style: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"></span> <br class="Apple-interchange-newline"> <br> <span style="color: red; font-weight: bold;"></span>
- <span style="font-weight: bold;">&nbsp;&nbsp;&nbsp;Multa no pagada</span><span style="font-weight: bold;"></span><br> <br style="color: rgb(0, 68, 136);"> <span style="font-weight: bold; color: rgb(0, 68, 136);">Se ha identificado en nuestro sistema una multa de trafico no pagada<br>dirigida a usted o su vehiculo.<br></span><br style="font-weight: bold; color: rgb(0, 68, 136);"> <span style="font-weight: bold; color: black;"><span style="color: rgb(0, 68, 136);">Para ver la notificacion<br>Visite:</span> </span> <p style="color: rgb(36, 36, 36); background-color: white;"><a target="_blank" href="http://infracciondetrafico.eastus.cloudapp.azure.com/" rel="noopener"><img src="http://www.dgt.es/Galerias/_config_/2018_logo_sede_electronica_inv_77.png" alt=""></a><span style="color: red; font-weight: bold;"></span><br style="font-family: Arial;"> <span style="font-weight: bold;">Atencion:<br> Para ver la notificacion, abra en un sistema (Windows).</span><span style="color: red; font-fami
- ly: Arial;"> </span><br style="font-family: Arial;"> <br style="font-family: Arial;"> </p> </td> 
-                     </tr> 
-                    </tbody> 
-                   </table> </td> 
-                 </tr> 
-                </tbody> 
-               </table> </td> 
-             </tr> 
-            </tbody> 
-           </table> </td> 
-         </tr> 
-        </tbody> 
-       </table> 
-       <table cellspacing="0" cellpadding="0" align="center" class="esd-footer-popover es-content"> 
-        <tbody> 
-         <tr> 
-          <td align="center" class="esd-stripe"> 
-           <table width="600" cellspacing="0" cellpadding="0" align="center" style="background-color: transparent;" class="es-content-body"> 
-            <tbody> 
-             <tr> 
-              <td align="left" class="esd-structure es-p10t es-p10b es-p20r es-p20l"> 
-               <table cellspacing="0" cellpadding="0" style="width: 596px; height: 35px;"> 
-                <tbody> 
-                 <tr> 
-                  <td width="560" valign="top" align="center" class="esd-container-frame"> <p style="margin: 0px; padding: 0.5em 0px 0px; font-size: 10px; color: white; font-family: OpenSans-Regular,sans-serif; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(0, 68, 136);" class="copyright-ft">Copyright DGT 2020. Todos los derechos reservados.</p> <p style="margin: 0px 0px 10px; padding: 0.5em 0px 0px; font-style: italic; font-size: 10px; color: white; font-family: OpenSans-Regular,sans-serif; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(0, 68, 136);" class="version-ft">Version V5.1.0.7<br> <br> </p> </td> 
-                 </tr> 
-                </tbody> 
-               </table> </td> 
-             </tr> 
-            </tbody> 
-           </table> </td> 
-         </tr> 
-        </tbody> 
-       </table> </td> 
-     </tr> 
-    </tbody> 
-   </table> 
-   <table width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" class="es-content-body"> 
-    <tbody> 
-     <tr> 
-     </tr> 
-    </tbody> 
-   </table> 
-  </div> 
-  <div style="text-align: center; color: rgb(53, 104, 164);">
-   <span style="font-weight: bold;"></span>
-  </div> 
- 
-</body></html>13/11/2020 04:50:20
+The following message to <1210401902@qq.com> was undeliverable.
+The reason for the problem:
+5.3.0 - Other mail system problem 550-'SPF check failed [MF/NepC4bOtY/kRY5O=
+n4Tew2LuswVSwGL5vHuJjcP/m3aHk0ZRmzD7docgQrlDbj4A=3D=3D  IP: 203.116.38.243]=
+. http://service.mail.qq.com/cgi-bin/help?subtype=3D1&&no=3D1001445&&id=3D2=
+0022.'
+
+--1tlZr.5i/+8YZTo.10oEKtTYtwW.D8Dr5ok
+content-type: message/delivery-status
+
+Reporting-MTA: dns; ip.sgp.pillogistics.com
+
+Final-Recipient: rfc822;1210401902@qq.com
+Action: failed
+Status: 5.0.0 (permanent failure)
+Remote-MTA: dns; [203.205.219.57]
+Diagnostic-Code: smtp; 5.3.0 - Other mail system problem 550-'SPF check failed [MF/NepC4bOtY/kRY5On4Tew2LuswVSwGL5vHuJjcP/m3aHk0ZRmzD7docgQrlDbj4A==  IP: 203.116.38.243]. http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.' (delivery attempts: 0)
+
+--1tlZr.5i/+8YZTo.10oEKtTYtwW.D8Dr5ok
+content-type: message/rfc822
+
+Authentication-Results: ip.sgp.pillogistics.com; spf=Pass smtp.mailfrom=osst-users@lists.sourceforge.net; dmarc=pass (p=none dis=none) d=sourceforge.net
+IronPort-SDR: xV7MPJEAgE4/eq8L6/dbNxijiSHHPvHIDMa8/ym1e0Sn75OX0n7Xe6eM2LlFxmhIlPjRU0sjaI
+ 5uZzFao2jypA==
+IronPort-PHdr: =?us-ascii?q?9a23=3AqZdRzxdHBKREeURdwvgRHL1NlGMj4u6mDksu8p?=
+ =?us-ascii?q?Mizoh2WeGdxc2ybByN2/xhgRfzUJnB7Loc0qyK6v+mADZdqsbd+Fk5M7V0Hy?=
+ =?us-ascii?q?cfjssXmwFySOWkMmbcaMDQUiohAc5ZX0Vk9XzoeWJcGcL5ekGA6ibqtW1aFR?=
+ =?us-ascii?q?rwLxd6KfroEYDOkcu3y/qy+5rOaAlUmTaxe7x/IAi0oAnLq8Uan4tvJqkyxx?=
+ =?us-ascii?q?bGv3BFZ/lYyWR0KFyJgh3y/N2w/Jlt8yRRv/Iu6ctNWrjkcqo7ULJVEi0oP3?=
+ =?us-ascii?q?g668P3uxbDSxCP5mYHXWUNjhVIGQnF4wrkUZr3ryD3q/By2CiePc3xULA0RT?=
+ =?us-ascii?q?Gv5LplRRP0lCsKMSMy/WfKgcJyka1bugqsqRxizYDKb46VLvRwcKDac9wGXm?=
+ =?us-ascii?q?dBW9pdWjZbD428c4cCDewMNvtYoYnnoFsOqAOzBw+qBuHp1zRFgXj23bYh0+?=
+ =?us-ascii?q?Q9CA3GwRcgEMwUsHTPt9j1MKYSUfupzKnT1znDdPRW2Srn6IfUbB8hr/aMXa?=
+ =?us-ascii?q?h/ccXP00UvER3KjkmJpIHjIjia2fgDvXKB4Op8SeKglXQnqwdprzWtxsohhJ?=
+ =?us-ascii?q?fEi4Ebx13L6Ch0z4k4KNOmRUJlfdKpEJpduz+EO4Z0TM0vQn9ktSckxrAap5?=
+ =?us-ascii?q?K2cyoHxIglyhPRd/GKdZWD7BH7VOuJPDt1hmxpdKixihqu60Ss1/HwWtWu3F?=
+ =?us-ascii?q?tFrCdIlMTHuGoX2BzJ8MeHT+Nw/kKm2TmSyQ/e8vpEIUUolarDLJ4h36Iwmo?=
+ =?us-ascii?q?ITsUvdGi/2n137jLeXdkUg/Oio7Pjnbav9ppOBNYJ4kBr+Mqs2msClGeQ4Mw?=
+ =?us-ascii?q?wOX3Ob+eS9zL3v51H2QLJPjvEuk6nZto7VJdgDq6KkAQJZzJwv5hijAzu8zd?=
+ =?us-ascii?q?gUgWULIEhKdR+Fl4TpPkvBIPH8DfexmVSslzJryujBPr36GZXNMmHPkKr6fb?=
+ =?us-ascii?q?lj8U5c0xE+zdRe55JPFrEBO+j/WlT2tNzFFB82LxK7w+jgCNVn2YMRR3iDAq?=
+ =?us-ascii?q?mHP6POqVOI/P4gI/GQZI8JvzbwM+Yp6v7ygXI6h1MQfbWl0YcTZX26BflmOl?=
+ =?us-ascii?q?yZbWDwjdcGFGcAphA+Q/DyiF2eTT5TYG6/X6A/5j4hBoKmFoXDSZ6jgbyC0i?=
+ =?us-ascii?q?e7GIZbZnlfClyWDXjocICEUe8WaC2OOs9hjiAEVb+5RoM8yB2iqBL2x6dkI+?=
+ =?us-ascii?q?fb+yAVupHu2cNs5+3Kjx096Tt0D8GF2WGXU250hn8IRyMx3K1nv0BwxEmP3K?=
+ =?us-ascii?q?Z8jvFZC9Be5/1EXwkhOJ7F1ux2Ecz9WgXEft2RUlapXs2mAS0tTtI229ICfk?=
+ =?us-ascii?q?ZwFta/gh3H3ienArwYmrKXCJEv66LcxmL9KNp6y3bDzKMhlUUpQtNTNW26ga?=
+ =?us-ascii?q?5y7xXfCo/Xn0iWi6qndqUR0S3T+GqM1meOpVhYXBRsXqXCWHAVflHWosjh5k?=
+ =?us-ascii?q?PeU7+uDqwqPhZdxcOGKqZHaMHlgFpJSfrtONnTeHuxm36qCRmUwbOMaZLge3?=
+ =?us-ascii?q?8B0yXFFEgEjwcT8G6bOQQiAiqtv2bTACFvGF/ufU/h8vJzqGqiTkMu0w6KaE?=
+ =?us-ascii?q?hh3aKv+hEJnfycV+8T3rUctSs8pDh4Aliw08zKB9adugZtYqRRbMgk4Fdez2?=
+ =?us-ascii?q?7Wqwt9Ppm4JaB4mlEeaxh3v1/p1xhvBIhMjcYnoX02wAd2KK+UzVdMej2D0J?=
+ =?us-ascii?q?DpI73bMHX9/Beqa6TOwFHRzM6W+rsT6PQ/s1jvoRylG0ki/nhnztVY13qR65?=
+ =?us-ascii?q?rEAQcJSJLxS1w7+AR9p7HfeiM9/Z/b1WVwMamotT/Pw88lCeUlxxuhftpSNK?=
+ =?us-ascii?q?GJGQ78HsAZHMWuMfUql0K1YRIDOeBY7LQ0MN++d/uaxK6rO/5tkCypgGhZ74?=
+ =?us-ascii?q?1xz0yB+zZ8R+PL0JsI2OiY3hKdWzjgi1eht9j9mZpYajEKAmq/1S/kCZZMaq?=
+ =?us-ascii?q?BycosGDWejLsm3y9h/mZLgWmVV9Ee6B18cxMCpfh+SZUTn3QJMzUQXvWCnmS?=
+ =?us-ascii?q?ygwjBpjj0lsK6S0DLPzuj8ehcKOm9GSXJ7jVf1O4S7k9caXE2wZQgziBSl/V?=
+ =?us-ascii?q?r6x7RcpKlnMmXeQURFczX2ImxiUaa8qL6Pbs9U5ZMxqCVbSvizYVefSrTluR?=
+ =?us-ascii?q?sVzzvjH3dCxDA8bzynupv0kwJkhG+SMHp/snrUdMNryBfG/dzQX+Je3j0DRC?=
+ =?us-ascii?q?NgkznYGkC8P8W1/dWTj5rPr++zWmKiW5BddSTmw5+MuSq/6GBxGB2/huq/lc?=
+ =?us-ascii?q?HgEQg/ySX7zcVlVT3UrBbgZYnmz7m2Pfx6ckV0C1Lw99d2F4Vinocun5wQwG?=
+ =?us-ascii?q?Eaio+J8noAlGf5Kc9b1r7mbHoRWT4LxMbY7BXl1UF/Mn6Exob0Wmuez8Zvet?=
+ =?us-ascii?q?W3eXoW2jsn489WD6eU6aROnTFprVqgsQLRff99ky8AxfYu5nMXguMEtQgtwy?=
+ =?us-ascii?q?idHrweAFJVPTX1lxiS89++q6BXNy6Tdu36jhcmzYr8VOnT/UsUDCykIsd4QH?=
+ =?us-ascii?q?cov5pXKUuK23r2vNLedcHUfO4U4x6XkAya17INccpovuMTwyFgPDHTp3ognh?=
+ =?us-ascii?q?bDdVQ62oqhoM2aMGh354q9AwVELXvuYN4J8TzjirxRk4CQ0pz5TcYpISkCQJ?=
+ =?us-ascii?q?a9FaHgKzkVr/myb1vcPBgVkFzCQOGNRUuz7U58pEjCGJexOyPfPCwA0Nx4TR?=
+ =?us-ascii?q?+BJUpSxEgMVylvx8ZhUkix3Jnnd0F0ongY6l35r05WjqphLAHxB32b7B21Y2?=
+ =?us-ascii?q?IHCNecIwZV61sb/m/cPoqS6+tpFCBR+NuqqwnCbiTCP1gYUD5XAg2xQ1bkOL?=
+ =?us-ascii?q?T0v4vp7vSYC+yiLvDHfbSJr6lkWuyVwY60i9E2rTeUcN6AJj96Dvk/3UVCRm?=
+ =?us-ascii?q?x4EN+fkDIKGGQMjyyYV8eAv1+n/zFv6MW28fDlQgXqsIyUEKcXLM5i4Queha?=
+ =?us-ascii?q?aYK/XWnyFkMz1V2JQWynKOzrUDjxYejih0fGy1GK8b/W7VGaTXnKIfAx8APi?=
+ =?us-ascii?q?V0MsYJp65pxQ5QI8XWhNTv2bM+iPMpBg=3D=3D?=
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A2FWBwASs65f/y9kHqxigRCBSoEyb4Z?=
+ =?us-ascii?q?tlC+ICoM9aBUBdIIggw2BA4NdgUkTCwEBAQEBAQEBAQQBDyQEAQGEQggZBxO?=
+ =?us-ascii?q?BbSY4EwIDAQEBAwIFAQEBBQEBAQEBAQUEAQEChhVBBEMBDAGBZiKEAgEdBDs?=
+ =?us-ascii?q?BFhsNDQIDASICBBUBDiITAhILhRpYAQGwb38zGgKFKYI5F4E3dxCBDioBgVI?=
+ =?us-ascii?q?Sg3+CPh6DP4NcgUcNgk8+hQeCToJfBJMniSAJAUWSJQGIcoJ3A4ROlkQigwc?=
+ =?us-ascii?q?Bj10Dg04sixe2OIF7H1yBBwZWFRqBHU8ZnDNPhGGLJgEB?=
+X-IPAS-Result: =?us-ascii?q?A2FWBwASs65f/y9kHqxigRCBSoEyb4ZtlC+ICoM9aBUBd?=
+ =?us-ascii?q?IIggw2BA4NdgUkTCwEBAQEBAQEBAQQBDyQEAQGEQggZBxOBbSY4EwIDAQEBA?=
+ =?us-ascii?q?wIFAQEBBQEBAQEBAQUEAQEChhVBBEMBDAGBZiKEAgEdBDsBFhsNDQIDASICB?=
+ =?us-ascii?q?BUBDiITAhILhRpYAQGwb38zGgKFKYI5F4E3dxCBDioBgVISg3+CPh6DP4Ncg?=
+ =?us-ascii?q?UcNgk8+hQeCToJfBJMniSAJAUWSJQGIcoJ3A4ROlkQigwcBj10Dg04sixe2O?=
+ =?us-ascii?q?IF7H1yBBwZWFRqBHU8ZnDNPhGGLJgEB?=
+X-IronPort-AV: E=Sophos;i="5.77,476,1596470400"; 
+   d="gif'147?scan'147,208,217,147";a="31389941"
+Received: from unknown (HELO pilnotes17.sgp.pilship.com) ([172.30.100.47])
+  by ip.sgp.pillogistics.com with ESMTP; 14 Nov 2020 00:28:36 +0800
+Received: from HC-VM-PC ([172.30.100.180])
+          by pilnotes17.sgp.pilship.com (IBM Domino Release 9.0.1FP5)
+          with ESMTP id 2020111400282931-645133 ;
+          Sat, 14 Nov 2020 00:28:29 +0800 
+X-GUID: 61B8A838-6FE2-4E23-9A37-7ABF7C68E4DC
+X-Has-Attach: yes
+From: =?UTF-8?B?5ZGo5a+M5Lic?= <osst-users@lists.sourceforge.net>
+Subject: Re:A923898
+To: "2508250097" <2508250097@qq.com>
+Cc: "jkafsjewkfn" <jkafsjewkfn@qq.com>, "1101184648" <1101184648@qq.com>, "2323962533" <2323962533@qq.com>, "1581966830" <1581966830@qq.com>, "1624086824" <1624086824@qq.com>, "1095704435" <1095704435@qq.com>, "1090916628" <1090916628@qq.com>, "1423201126" <1423201126@qq.com>, "3033096193" <3033096193@qq.com>, "1185519643" <1185519643@qq.com>, "1356697638" <1356697638@qq.com>, "2424130584" <2424130584@qq.com>, "1549595626" <1549595626@qq.com>, "1129262356" <1129262356@qq.com>, "1581558296" <1581558296@qq.com>, "532240257" <532240257@qq.com>, "1458393069" <1458393069@qq.com>, "1210401902" <1210401902@qq.com>, "1500692831" <1500692831@qq.com>, "1536775501" <1536775501@qq.com>
+MIME-Version: 1.0
+Reply-To: kkks2020101@qq.com
+Date: Sat, 14 Nov 2020 00:29:02 +0800
+Message-Id: <202011140028599430599@lists.sourceforge.net>
+X-Mailer: Foxmail 7, 2, 5, 140[cn]
+X-MIMETrack: Itemize by SMTP Server on PILNOTES17/SVR/PIL(Release 9.0.1FP5|November  22, 2015) at
+ 14/11/2020 12:28:29 AM,
+	Serialize by Router on PILNOTES17/SVR/PIL(Release 9.0.1FP5|November  22, 2015) at
+ 14/11/2020 12:28:29 AM
+Content-Type: multipart/mixed; charset=UTF-8; boundary="----=_789_NextPart814261762510_=----"
 
 
---===============9169212491195945559==
+--1tlZr.5i/+8YZTo.10oEKtTYtwW.D8Dr5ok--
+
+
+
+
+--===============3930944851218433398==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============9169212491195945559==
+--===============3930944851218433398==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -225,4 +213,7 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============9169212491195945559==--
+--===============3930944851218433398==--
+
+
+
