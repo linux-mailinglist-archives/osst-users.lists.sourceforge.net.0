@@ -2,59 +2,52 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id B11F42B2F2F
-	for <lists+osst-users@lfdr.de>; Sat, 14 Nov 2020 18:46:04 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 608A12B2F60
+	for <lists+osst-users@lfdr.de>; Sat, 14 Nov 2020 19:00:44 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1kdzch-0000tm-GJ
-	for lists+osst-users@lfdr.de; Sat, 14 Nov 2020 17:46:03 +0000
+	id 1kdzqt-0001Vp-5g
+	for lists+osst-users@lfdr.de; Sat, 14 Nov 2020 18:00:43 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1kdyJc-0004QR-8Q
- for osst-users@lists.sourceforge.net; Sat, 14 Nov 2020 16:22:16 +0000
+ id 1kdyKQ-0008Ua-Q9
+ for osst-users@lists.sourceforge.net; Sat, 14 Nov 2020 16:23:06 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Subject:From:To:Date:
  Message-Id:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=6mWokvkrn5+BmWrmfSHzA3hkQ1XYe/5f3kYB5jlF0XM=; b=OWeEn5wHIDfxS3vDT4BdMj27rs
- wwONPB0T+40QTvd9xbS0LBBAgUU3Us0HsegR730I0L5rfvYkFBVl/uhQQuOHwH9R95thIGgIHqjK1
- 5+Dv95lWtAYoNf3KJC1Is88SagzxVel79A2waRvBIDzIz3VHvwiolHaUG616n47nzQqc=;
+ bh=7BUNdg7b1vSmBszv9qffKTdBlntvRJrFU4h7omvfPQM=; b=L1p1MVRS11WVx7tZ+qJYyufkN3
+ +UfFNA6q/O7RlhqTf2ZiDDLB93wbZrrBUQmXy/j/ul5TYO92vkcNbNOmyLBlONMGPmNiq+7J+4f8s
+ 5UyUEW0B3ucBVQbCl7BajifcnFVIdB9mWM8ZM+J7XrC7nLfY+nxKNqSXjFhh7Npxsdt8=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:MIME-Version:Subject:From:To:Date:Message-Id:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=6mWokvkrn5+BmWrmfSHzA3hkQ1XYe/5f3kYB5jlF0XM=; b=Z
- bOGgpIi62aiRCXs4Uu0W1wC2Rcm5rbstHItQZosqZfpUkpYUO5FErecf6P6ecQeUDQtOq8uPCRcwl
- aispRU1gvwZN80Gbk3v7Sr9FtvbpKfxxHm1OL2lqwevW2j/E/OloTYN5nb9064tDaMgH3q8i1r3Uw
- gUTXBDMVksGn8e6U=;
+ List-Owner:List-Archive; bh=7BUNdg7b1vSmBszv9qffKTdBlntvRJrFU4h7omvfPQM=; b=M
+ M/zIie0YNvATbvdFVNOzhOArXAuCMSBzCnAbzbiD925GXZc/GKiBA9T8GG5hmYuCT+zImrICWAAfR
+ Za68yHSLtJ6IOZWlsYH6/vpoBqZrQ481PPVpC5keGWFkkFvcg8k3TVi1qH3NR3YCTgYXWllU8mLBW
+ iBt9Ux0hI3aa0Bog=;
 Received: from ip.sgp.pillogistics.com ([203.116.38.243])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtps (TLSv1.2:AES256-SHA:256)
- (Exim 4.92.2) id 1kdyJH-00Bbv7-2W
- for osst-users@lists.sourceforge.net; Sat, 14 Nov 2020 16:22:16 +0000
-Received: from localhost by ip.sgp.pillogistics.com; 15 Nov 2020 00:17:33 +0800
-Message-Id: <8eb11c$tutno@ip.sgp.pillogistics.com>
-Date: 15 Nov 2020 00:17:33 +0800
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps (TLSv1.2:AES256-SHA:256)
+ (Exim 4.92.2) id 1kdyKB-003Ixh-50
+ for osst-users@lists.sourceforge.net; Sat, 14 Nov 2020 16:23:06 +0000
+Received: from localhost by ip.sgp.pillogistics.com; 15 Nov 2020 00:18:12 +0800
+Message-Id: <8eb11c$tuu61@ip.sgp.pillogistics.com>
+Date: 15 Nov 2020 00:18:12 +0800
 To: osst-users@lists.sourceforge.net
 From: "Mail Delivery System" <MAILER-DAEMON@ip.sgp.pillogistics.com>
 MIME-Version: 1.0
-X-Spam-Score: 2.5 (++)
+X-Spam-Score: 0.0 (/)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: qq.com]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 TVD_SPACE_RATIO        No description available.
- 2.5 TVD_SPACE_RATIO_MINFP  Space ratio (vertical text obfuscation?)
  0.0 TIME_LIMIT_EXCEEDED    Exceeded time limit / deadline
-X-Headers-End: 1kdyJH-00Bbv7-2W
+X-Headers-End: 1kdyKB-003Ixh-50
 Subject: [Osst-users] Delivery Status Notification (Failure)
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -67,144 +60,144 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============1352459314618338199=="
+Content-Type: multipart/mixed; boundary="===============0645516754134075885=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============1352459314618338199==
-Content-Type: multipart/report; report-type=delivery-status; boundary="1ttIg.5j1DxWS6a.1j6nGWwVFzj.35qRnSq"
+--===============0645516754134075885==
+Content-Type: multipart/report; report-type=delivery-status; boundary="1ttU0.5j1Dzrseg.2rOEHSEzUgO.5J9Qx2Y"
 
---1ttIg.5j1DxWS6a.1j6nGWwVFzj.35qRnSq
+--1ttU0.5j1Dzrseg.2rOEHSEzUgO.5J9Qx2Y
 content-type: text/plain;
     charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-The following message to <1229130334@qq.com> was undeliverable.
+The following message to <1564949399@qq.com> was undeliverable.
 The reason for the problem:
-5.3.0 - Other mail system problem 550-'SPF check failed [MNMd/iBQy6N9sE7LEm=
-i7VAKgGC3YLwFPsQrAWTLjDYsP8Dy0TBTlRvP7Ub8FThOZdA=3D=3D  IP: 203.116.38.243]=
+5.3.0 - Other mail system problem 550-'SPF check failed [MPf7Mks9mtErD1Fu/P=
+4qoIWB2oENQYRXd7ck5DGHnIEv7lBA2dHNwure4qfqsW/HkA=3D=3D  IP: 203.116.38.243]=
 . http://service.mail.qq.com/cgi-bin/help?subtype=3D1&&no=3D1001445&&id=3D2=
 0022.'
 
---1ttIg.5j1DxWS6a.1j6nGWwVFzj.35qRnSq
+--1ttU0.5j1Dzrseg.2rOEHSEzUgO.5J9Qx2Y
 content-type: message/delivery-status
 
 Reporting-MTA: dns; ip.sgp.pillogistics.com
 
-Final-Recipient: rfc822;1229130334@qq.com
+Final-Recipient: rfc822;1564949399@qq.com
 Action: failed
 Status: 5.0.0 (permanent failure)
 Remote-MTA: dns; [203.205.219.57]
-Diagnostic-Code: smtp; 5.3.0 - Other mail system problem 550-'SPF check failed [MNMd/iBQy6N9sE7LEmi7VAKgGC3YLwFPsQrAWTLjDYsP8Dy0TBTlRvP7Ub8FThOZdA==  IP: 203.116.38.243]. http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.' (delivery attempts: 0)
+Diagnostic-Code: smtp; 5.3.0 - Other mail system problem 550-'SPF check failed [MPf7Mks9mtErD1Fu/P4qoIWB2oENQYRXd7ck5DGHnIEv7lBA2dHNwure4qfqsW/HkA==  IP: 203.116.38.243]. http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.' (delivery attempts: 0)
 
---1ttIg.5j1DxWS6a.1j6nGWwVFzj.35qRnSq
+--1ttU0.5j1Dzrseg.2rOEHSEzUgO.5J9Qx2Y
 content-type: message/rfc822
 
 Authentication-Results: ip.sgp.pillogistics.com; spf=Pass smtp.mailfrom=osst-users@lists.sourceforge.net; dmarc=pass (p=none dis=none) d=sourceforge.net
-IronPort-SDR: VpBlYOlABHFEQIIhdzy4BzqlQcmC5b1u9KP+7oKjmZZvvqLcPZ2YJYWHl4djyv9JkT/5KKC5sz
- 6e3VLxP/Tueg==
-IronPort-PHdr: =?us-ascii?q?9a23=3A8fkdwBNErV+SJIT6zwQl6mtUPXoX/o7sNwtQ0K?=
- =?us-ascii?q?IMzox0K/X4psbcNUDSrc9gkEXOFd2Cra4d1KyP6f+rCTJIyK3CmUhKSIZLWR?=
- =?us-ascii?q?4BhJdetC0bK+nBN3fGKuX3ZTcxBsVIWQwt1Xi6NU9IBJS2PAWK8TW94jEIBx?=
- =?us-ascii?q?rwKxd+KPjrFY7OlcS30P2594HObwlSizexfLF/IA+roQnPtMQajohvJ6cswR?=
- =?us-ascii?q?bVv3VEfPhby3l1LlyJhRb84cmw/J9n8ytOvv8q6tBNX6bncakmVLJUFDspPX?=
- =?us-ascii?q?w7683trhnDUBCA5mAAXWUMkxpHGBbK4RfnVZrsqCT6t+592C6HPc3qSL0/RD?=
- =?us-ascii?q?qv47t3RBLulSwLNz038GfJisxxl6JboQmupxhhzIXJboCVM+B+cb7GfdgHQW?=
- =?us-ascii?q?ZMUNpdWylHD4ihbYUAEvABMP5YoYfguVUBogG+CwevCu3o1jBFnXr20bEg3u?=
- =?us-ascii?q?k7EQ/KwA4tEtQTu3rUttX1M6ISXPizzqvOyzfIcvRb2TDm6IjTbhAtuOyMXa?=
- =?us-ascii?q?lufsrL0kkiDAfFjlSLqYz5JDOZzP8Ns2+G7+p6Se2glWAnqwZrojig2MggkI?=
- =?us-ascii?q?/JiZwJyl3d8yhy3Yk6K8GiRkFhfd6kDIVftzucN4ZuQM4vQ29ltTg5x7AItp?=
- =?us-ascii?q?O2YScHxZspyhPBdfCLb4iF7xP9WOqPIzp2inNodKy+ihqs7UWs1OLxW8uo3F?=
- =?us-ascii?q?tIoCdIjt/BvW0O2RzL8sWLV/lw8lm71TuBywzf8PxILVwomabBJJMswLg9nY?=
- =?us-ascii?q?cJv0vZBC/5gkD2gbeTdkUj5+en9fzqYq7jpp+AL490jRz+Mrg2lsy/H+s4Ng?=
- =?us-ascii?q?8OUnCD+eS90L3j+0r5QKlUgf0tj6XUsorWJd8Upq6hGQNVyocj6xKkDzem0d?=
- =?us-ascii?q?QYhWMLI05CeBKCl4TpOlfOL+7kDfqnnlihkilny+rIM7H9GJnBM2TPnKv7cb?=
- =?us-ascii?q?ty6UNQ0A8zwspe55JQBLEBOvXzWkrpudzfFR85KBC0z//6CNVmyIweQ3mPD7?=
- =?us-ascii?q?SdMKPTql+I+vkvL/OXZI8SpTb9MeQq6ODgjX8+g18dcrem0YERaH+mAvRqO1?=
- =?us-ascii?q?+Zbmb0gtcdDWcKuRIzQPH0hFGcUjNeY2u+UqAh6jw6CY+rFp7DRpm3jLOd2y?=
- =?us-ascii?q?e7G4VcZnpaBVCUDXfoa4KEVu8OaCKROMBhnCcEVbq/RI4v1hGuugn6xqF+Lu?=
- =?us-ascii?q?rN4CEXqZXj1N1t7e3JiR4y7SB0D9ia02yVUm14gn4ESj4o0K17vEBwyFiO3K?=
- =?us-ascii?q?ljjvxBDNxf/e9GUgA/NZTE1ex1F8jyWh7dfteOUFuqX8uqDS8yQ981w9IDbV?=
- =?us-ascii?q?hxFtemgx3YxiqqGqUZmKCMBJwx6qjcxWT+J95hy3ba06ksl0QqTtZPOGCkmq?=
- =?us-ascii?q?Jy9AfeCo3LnkiZjKuqbL0c0DTR+2eEyGqEpFtYXxJoUaXZQXAfYVPbocrn6k?=
- =?us-ascii?q?/fUrOjCrUqPw9fxcOCKKZHccTpjUxcSPj/P9TeZnq7m32sChaQ2rOMcI3qdn?=
- =?us-ascii?q?0A0CjTBkUJkwEe8WubOQU9GiusonnTDCV3FV71f0zs9ux+omuhTkAo1wGKc1?=
- =?us-ascii?q?Fh172t9xMWhPGRT/we07IKtSojqjh5E02w38vPC9aauwVhe6Bca8sn4FhbzW?=
- =?us-ascii?q?LZqxB9Ppu4Iqx/mFISbQB6s1/h2hlqDohNntQmoWgzzAprM66XzFRBdzaA15?=
- =?us-ascii?q?DqJrLXMnXy/Ayoa6POx13Szdab9rkT5PgltlnvoA+kG0Q5/nV+ytlZyWeT5p?=
- =?us-ascii?q?LPDAAKS5L+Tl439wRmp7HdeiQx+oPZ2WFsPKSwsDLP2NwkCPY7xhu7ZtdfKb?=
- =?us-ascii?q?mIGxP1E80fH8KuMvAlm0C1bhIYO+Bf7LM4M924e/aCxaKmMvpskTyogGlI+4?=
- =?us-ascii?q?19y1uM+zBgRe7P2pYP2+uY0RefVzfgkFehtdj6lZ1YaTwcAmayySfpCJJQa6?=
- =?us-ascii?q?ByY4oGEn6uI9StytpigJ7tXmZS9ES/CFMexM+pZR2SYkTg0QBQ20kao3iqlC?=
- =?us-ascii?q?m5wjF6nTwkrLGS3DXXw+j4aBUHPWtLTnF4jVjwOYi0k8waXE+wYgQ0kBao60?=
- =?us-ascii?q?n3yqpZqal7MWXeT0lFcjPvL2F7SKe/qr2CY8tX4pMyrSpXSPi8YUydSrPlrR?=
- =?us-ascii?q?YX3SPuEmtAyD0/eDynu5b0khNhhWKENXZ/tmbWecZ1xR3H/tzTWeZR3iYaRC?=
- =?us-ascii?q?l/kTTbGFmxMteo8NiXmJrOvOCzWmO9WpBIaCnr1JmMuze85W1vGRe/hey8ms?=
- =?us-ascii?q?X7EQgm1i/2z8dmWCbMoRrifIXm17m2Pfxkc0RrH1L88tN6FptinYs3gZEawW?=
- =?us-ascii?q?IaiYmN/XobjWfzNs1W1b/gYHYTQTMH3dHY7Qfh1UF/L3+E3Jv5VmyHzsR9YN?=
- =?us-ascii?q?m6Z3sc2jgh4MBSFKeU8LtEkDNorle7sQ7df+ZxkzUcxPcz9HIXg/oEuBM0zi?=
- =?us-ascii?q?mHHr8SGkxYNzT2lxuU99C+sLlXZGG3fLStykZyg9SsAb6Crw1AV3v0dYkuED?=
- =?us-ascii?q?Rp7sVmKl7DzHrz6oS3MOXXOJhK7EfEwk6f1rYLYtplz6BQ1Xs+Zjuj41U80q?=
- =?us-ascii?q?gwihk4jqu3pIyWF2I4/6G6GUQAbGWsP5o74yirhqFbzeiM2IX65m2ZUmEMR4?=
- =?us-ascii?q?D0CO+zHSgJnfDmLBqVViY7t22QFLTYBwCSrkFrsyScQNiQK3iLKSxBnp1ZTx?=
- =?us-ascii?q?6HKRkE2F1GcBATpLVgT1v4nIjNdU5j7Qoc7VnipkkE0rdxKhDlW2HDpQGlLn?=
- =?us-ascii?q?8sQ4TKdUIOqklZ/xLTNsqTqqp6EyJZ+8i76ESEMXSVMh4MRXsUUxm3Rx/gMa?=
- =?us-ascii?q?Wt4IOZ6sCRCayyKvLUarSHr6pVUPLHgdr2itc2omnSboS6en9lCfBhgBhqQG?=
- =?us-ascii?q?x5FsLFmj4GVy0QkWf3YtWGoAuno3cn/MGntu/kQET35I+LDLRTKslu8Avwiq?=
- =?us-ascii?q?CGZKaLnCgsET9DzdsXwGPQjr0W3VockSZrIj62CqhFqDXAVrn4nq5MEwVdcC?=
- =?us-ascii?q?RuLsBF4aUm0QQLP8PH2Zv507dihastAkxeHRz5z8euY8FCL2CmYVXAAkvKfL?=
- =?us-ascii?q?jTPjrW2cr6b6SmRrAWiuhIug=3D=3D?=
+IronPort-SDR: RWeaixBPvCYGmN5ioXu0NkffzMEyH2rwX1Lva3SyW7x8GXL8zND0yC8n0r4vpjiAvKb040QegB
+ U1pNVTDx3nWQ==
+IronPort-PHdr: =?us-ascii?q?9a23=3Aez1EcRZ4VShMzvHO0WUq773/LSx+4OfEezUN45?=
+ =?us-ascii?q?9isYplN5qZpsW4YR7h7PlgxGXEQZ/co6odzbaP7Oa5AzNLscjJmUtBWaQEbw?=
+ =?us-ascii?q?UCh8QSkl5oK+++Imq/EsTXaTcnFt9JTl5v8iLzG0FUHMHjew+a+SXqvnYdFR?=
+ =?us-ascii?q?rlKAV6OPn+FJLMgMSrzeCy/IDYbxlViDanbr5+MRe7oR/MusUIg4ZuJaU8xx?=
+ =?us-ascii?q?rUqXZUZupawn9lK0iOlBjm/Mew+5Bj8yVUu/0/8sNLTLv3caclQ7FGFToqK2?=
+ =?us-ascii?q?866tHluhnFVguP+2ATUn4KnRpSAgjK9w/1U5HsuSbnrOV92S2aPcrrTbAoXD?=
+ =?us-ascii?q?mp8qlmRAP0hCoBKjU18GLZispujKJauxKhpgdww4rKb4qIOvt+ebndcs4BRW?=
+ =?us-ascii?q?FcWspcWTBNDoa6YoASDeQOIPxYopH9qVUTsxWxChOsCu3sxDFPmnD7xqg63/?=
+ =?us-ascii?q?g7HAzc3AIsA9ADvXLJp9v1LqcSVuW1wbHOzzfFafFdxDDw6I/TchA6vfGARK?=
+ =?us-ascii?q?9wcdHPxkk1DAPIlVGQqY3+PzOJzeQBqXOb7+19VeK1l2EotQ9xoj+1xscjlI?=
+ =?us-ascii?q?bFnIQVxU7Y9Shgxos+ONK3RlJhb9G+DJtQqz+VN5FwQs46QWxluCg3x6MFtJ?=
+ =?us-ascii?q?O1cyUH1ZsqyhHRZvGZbYSE/hLuWeePLTtmhn9rdrOyiwiz/ES+1uDwSMa53V?=
+ =?us-ascii?q?RWoidHnNTBqnYA3AHQ5MifUvZx40Ws1SiV2w3d9u1IO104mbbHJ5I7zbM9lJ?=
+ =?us-ascii?q?weulnZECDsgkX5lqqWe10h+uiv9uvofK3rpoSZN49okgH+NbkumtCnDeQ4LA?=
+ =?us-ascii?q?cOW2+b9Pyk1L3i+U35RrJKjuEonanCrZzXJ94XprW2Aw9NyIoj8xe/DzO90N?=
+ =?us-ascii?q?QYnHkHNEhJdw6Aj4jsI13OIfb4Aumjg1m0jTtmxe7KMqfvD5nRNHTPjavtca?=
+ =?us-ascii?q?pn50NTygc/1dVf6IhVCrEFLvLzQEjxtNnAAx8+KAy02PrnBMxg1oMFR22PGL?=
+ =?us-ascii?q?SZPbjWsV+J/eIvP/KMaJUOuDb6Nvgl/eLhgmE3mV8aZ6mp0oUYZGq+Hvt4P0?=
+ =?us-ascii?q?WVeWDsjcsZEWcWogo+S/TnhVmNXDNRZHu/XK0x6zU1BY+iForDX5mtjKad0y?=
+ =?us-ascii?q?e8G51cfnpGBUyUEXf0a4WEXO8BaCCRIsB7nDwETrqhRJEv1BGtug/6zaFqLv?=
+ =?us-ascii?q?PN+iECqZ3j09117fXJlR4u7Tx0E9id02aVQm1pnm4FRjA70aRwrEF5xFqO1a?=
+ =?us-ascii?q?x1judBFdxK/f9GTgA6NZvExexgF9/yQh7BfsuOSFu+X9mqHzE8Q90/ztMSYE?=
+ =?us-ascii?q?twGNevgx/Y0iqzGr8ZjaCEBJsx8qjExXj+O959y2ra1Kkml1QqX9VDOG2pi6?=
+ =?us-ascii?q?Nx9AXfGY7EnkSHm6uxbKQcxTTB+3uEzWqLpEtYShJ/Ub3ZXXADYUvbtcn160?=
+ =?us-ascii?q?3fQ7KuDbkqMApMxM2CJ6ZLcdDplExGSO3/N9TZZmK7g32wCgqQxrOQcIrqfH?=
+ =?us-ascii?q?0Q0DjDBEUEnA0e8niLORQwCyqhom/TFyVuFUv1b0zw9ul+rWuxTlUowAGSc0?=
+ =?us-ascii?q?1hy7219wYViPGTVf8e0a4ItSQupjloHFuwxMvWC8OaqwV9e6VcZMs34E1b2m?=
+ =?us-ascii?q?LBqwx9IpugIrh8ilMdfAl6sF7i2hd0B4len8Unr2gnzBNrKa6CzFxBcDaY14?=
+ =?us-ascii?q?jqOrLLMmny4Ayva6nO113Dztqb+qgC5fQ2pljisgykFksv/m5+09lMyXeT+p?=
+ =?us-ascii?q?LKDA8KW5LrTkk37wR6p63dYiQl+o/YyX5hPKe7vzLGxt4lGOUoxgi7ctdGKa?=
+ =?us-ascii?q?OIDhP9E8ofB8K2Muwlh0Cpbg4YPOBV7KM4IcOrevSY1KK2Pettny6qgXlb7I?=
+ =?us-ascii?q?1my0KM7jBwRfLP35YA2/uYxBeIVy/gjFe9tcD6gZ1IaDASE2exxyXpB41car?=
+ =?us-ascii?q?NzcIoXEmquOtS3ys9iiJ7qXn5S7ESjCE8e2M+1ZRqSaETw0RBS2EkZv3CqmS?=
+ =?us-ascii?q?+1wyF0njwrsqaSxzXOw/34eBUbPW5LQXFojU3wLoisk9AaQE+oYhA0mBe75U?=
+ =?us-ascii?q?v3yKxWqLp/ImTQRUpFcDP7L3h7UqeqqrWCZMtP4osysSpLSOS8fUyaSrnlrh?=
+ =?us-ascii?q?cE3S7uH2pTyT87ej22pJn0kBh3hXmELHZqtnbWZcZwxRLH7tzGWfFRxiYGRD?=
+ =?us-ascii?q?V/iTTPG1SxPtmk8cmKm5rHrOyzVmasW59IfCny1IOMrje05WpvARenhfC8hs?=
+ =?us-ascii?q?XnERQm0S/8z9RnVyTFoRLhboTpyqi3Ne1qc01zCV/l8sp2AJ1xkow1hJsIw3?=
+ =?us-ascii?q?gVmo2V/WYbkWf0KdhXxLzyYXoCSDMPwNPY4Ajo1U59In+S3oL5T2+RzddmZ9?=
+ =?us-ascii?q?m/emkWwD4y79hWCKeI67xJhTV5r168oA7MbvVwkCkRxPUu5XMYmOwJoRMtwj?=
+ =?us-ascii?q?+BDbAVGElSJTbsmAiQ79CisKVXY36ifaWu2Ed+nd2tEL6PrwNeVXv3eZovBj?=
+ =?us-ascii?q?Zw7txlPF3Q133z79KsRN6FJ4NP6U3Ez0ab3qIdfMNtyapa2Xs8aErkpDsuzO?=
+ =?us-ascii?q?tt3iZjxZWrgI/SKGZu5/jhWEYBbmTdftpV8Tbo3ohEmcPDJ3hXVsFmAS4XGY?=
+ =?us-ascii?q?bzQOizODYTruj8cR2JDSc3p3mcA7XSWwmS9BE1/Dr0D5m3OiTPdzEixtJ4SU?=
+ =?us-ascii?q?zGfBENrCU9Zh5jx8VrTkSGwcX7e3107TcL6gywsk5V1+tyPh/jU2HS4E+wYS?=
+ =?us-ascii?q?thEcDHaFJN9lRE4EHYdYSX4uFyGnRCutWotxSDf3bfLx5VBDQ6GgOHCEzgO+?=
+ =?us-ascii?q?P3/PHJ/K6UA+OkJPrHZ/OFrukRE7/Rnc7/j9Q4p3e5csOIOHQ4Va8Sx1ZDUH?=
+ =?us-ascii?q?ZlGs/QhzQITWktmjnQa9KA/U3sqCxv6Nuw6LLzWQbr4oSOEKdTOs4p8Bez0u?=
+ =?us-ascii?q?+YL+DFvC9iMn5D048Ug3rBybwRxlkX3iZ1bCXoDK8NrzXlSKPLhrQRFBkGcS?=
+ =?us-ascii?q?h+OsxS4K962ARRaobXj9rv3etgh+UuQxddAFrmnMzhac0Rdme6Ml6GTEreL7?=
+ =?us-ascii?q?ObPzbGzcbtbq76T7BMgQ=3D=3D?=
 X-IronPort-Anti-Spam-Filtered: true
-X-IronPort-Anti-Spam-Result: =?us-ascii?q?A2EWDQCVArBf/y9kHqxigRCBSoEyb4I?=
- =?us-ascii?q?VAYRXlC+ICoM9aBUBdAKFK4EDg12BXAsBAQEBAQEBAQEEAQ8gBAQBAYRKGQc?=
- =?us-ascii?q?TgW0mOQUNAgMBAQEDAgUBAQEFAQEBAQEBBQQBAQKGFUWCNwwZg38BHVYZDw0?=
- =?us-ascii?q?CAwEiAgQVAQ4iBA8CEguFGlgBAZEanAaBMhoChSmCLxeBN3cQgQ4qgVMSg3+?=
- =?us-ascii?q?CPh5Sgm2CSYETgUcNh2EBMoJOgl8EkyeJIAkBRZIlA4hwgncDhE6WRCKDBwG?=
- =?us-ascii?q?PXQODTiyLF4RfsVqBeh9cgQcGVhUagR1PGY59jTZPgSEGCg6ORwEB?=
-X-IPAS-Result: =?us-ascii?q?A2EWDQCVArBf/y9kHqxigRCBSoEyb4IVAYRXlC+ICoM9a?=
- =?us-ascii?q?BUBdAKFK4EDg12BXAsBAQEBAQEBAQEEAQ8gBAQBAYRKGQcTgW0mOQUNAgMBA?=
- =?us-ascii?q?QEDAgUBAQEFAQEBAQEBBQQBAQKGFUWCNwwZg38BHVYZDw0CAwEiAgQVAQ4iB?=
- =?us-ascii?q?A8CEguFGlgBAZEanAaBMhoChSmCLxeBN3cQgQ4qgVMSg3+CPh5Sgm2CSYETg?=
- =?us-ascii?q?UcNh2EBMoJOgl8EkyeJIAkBRZIlA4hwgncDhE6WRCKDBwGPXQODTiyLF4Rfs?=
- =?us-ascii?q?VqBeh9cgQcGVhUagR1PGY59jTZPgSEGCg6ORwEB?=
+X-IronPort-Anti-Spam-Result: =?us-ascii?q?A2EODQCVArBf/y9kHqxigRCBSoEyb4I?=
+ =?us-ascii?q?VAYRXlC+ICoM9aBUBdAKFK4EDg12BXAsBAQEBAQEBAQEEAQ8kBAEBhEoZBxO?=
+ =?us-ascii?q?BbSY5BQ0CAwEBAQMCBQEBAQUBAQEBAQEFBAEBAoYVRYI3DBmDfwEdVhkPDQI?=
+ =?us-ascii?q?DASICBBUBDiYREguFGlgBAZEanAaBMhoChSmCLxeBN3cQgQ4qgVMSg3+CPh5?=
+ =?us-ascii?q?Sgm2CSYETgUcNh2EBMoJOgl8EkyeJIAkBRZsYgncDhE6WRCKDBwGPXQODTiy?=
+ =?us-ascii?q?LF4RfsVqBeh9cgQcGVhUagR1PGY59jgWBIQYKDo5HAQE?=
+X-IPAS-Result: =?us-ascii?q?A2EODQCVArBf/y9kHqxigRCBSoEyb4IVAYRXlC+ICoM9a?=
+ =?us-ascii?q?BUBdAKFK4EDg12BXAsBAQEBAQEBAQEEAQ8kBAEBhEoZBxOBbSY5BQ0CAwEBA?=
+ =?us-ascii?q?QMCBQEBAQUBAQEBAQEFBAEBAoYVRYI3DBmDfwEdVhkPDQIDASICBBUBDiYRE?=
+ =?us-ascii?q?guFGlgBAZEanAaBMhoChSmCLxeBN3cQgQ4qgVMSg3+CPh5Sgm2CSYETgUcNh?=
+ =?us-ascii?q?2EBMoJOgl8EkyeJIAkBRZsYgncDhE6WRCKDBwGPXQODTiyLF4RfsVqBeh9cg?=
+ =?us-ascii?q?QcGVhUagR1PGY59jgWBIQYKDo5HAQE?=
 X-IronPort-AV: E=Sophos;i="5.77,478,1596470400"; 
-   d="jpeg'145?scan'145,208,217,145";a="31421610"
+   d="png'150?scan'150,208,217,150";a="31422336"
 Received: from unknown (HELO pilnotes17.sgp.pilship.com) ([172.30.100.47])
-  by ip.sgp.pillogistics.com with ESMTP; 15 Nov 2020 00:16:41 +0800
+  by ip.sgp.pillogistics.com with ESMTP; 15 Nov 2020 00:17:44 +0800
 Received: from HC-VM-PC ([172.30.100.180])
           by pilnotes17.sgp.pilship.com (IBM Domino Release 9.0.1FP5)
-          with ESMTP id 2020111500163080-651794 ;
-          Sun, 15 Nov 2020 00:16:30 +0800 
-X-GUID: D4E831CE-2917-464F-B16E-7C3592A8304F
+          with ESMTP id 2020111500173477-651820 ;
+          Sun, 15 Nov 2020 00:17:34 +0800 
+X-GUID: EC67B5BC-6E27-463B-AE59-F753F561A226
 X-Has-Attach: yes
-From: =?UTF-8?B?6auY5qGl54ix?= <osst-users@lists.sourceforge.net>
-Subject: =?UTF-8?B?6auY5qGl54ix?=
-To: "1228917166" <1228917166@qq.com>
-Cc: "jkafsjewkfn" <jkafsjewkfn@qq.com>, "1016291746" <1016291746@qq.com>, "1228953279" <1228953279@qq.com>, "1157084875" <1157084875@qq.com>, "2211869257" <2211869257@qq.com>, "1335611806" <1335611806@qq.com>, "869453764" <869453764@qq.com>, "1229041940" <1229041940@qq.com>, "1152011033" <1152011033@qq.com>, "1505978312" <1505978312@qq.com>, "1229130334" <1229130334@qq.com>, "1030540652" <1030540652@qq.com>, "1537976337" <1537976337@qq.com>, "1934779233" <1934779233@qq.com>, "3355294684" <3355294684@qq.com>, "2636843560" <2636843560@qq.com>, "2892251288" <2892251288@qq.com>, "1229244906" <1229244906@qq.com>, "1802276105" <1802276105@qq.com>, "1229450442" <1229450442@qq.com>
+From: =?UTF-8?B?6buE6L+Q6Imz?= <osst-users@lists.sourceforge.net>
+Subject: =?UTF-8?B?6buE6L+Q6Imz?=
+To: "947884939" <947884939@qq.com>
+Cc: "jkafsjewkfn" <jkafsjewkfn@qq.com>, "1564949399" <1564949399@qq.com>, "1254308874" <1254308874@qq.com>, "1254382562" <1254382562@qq.com>, "1315976856" <1315976856@qq.com>, "1254430356" <1254430356@qq.com>, "542408405" <542408405@qq.com>, "2844178238" <2844178238@qq.com>, "1254536356" <1254536356@qq.com>, "1083491032" <1083491032@qq.com>, "2542168010" <2542168010@qq.com>, "1653388260" <1653388260@qq.com>, "1732591570" <1732591570@qq.com>, "1254925894" <1254925894@qq.com>, "2356450249" <2356450249@qq.com>, "1650292697" <1650292697@qq.com>, "769171949" <769171949@qq.com>, "1254985582" <1254985582@qq.com>, "2991432357" <2991432357@qq.com>, "1255047738" <1255047738@qq.com>
 MIME-Version: 1.0
 Reply-To: kkks2020101@qq.com
-Date: Sun, 15 Nov 2020 00:16:38 +0800
-Message-Id: <202011150016340653335@lists.sourceforge.net>
+Date: Sun, 15 Nov 2020 00:17:42 +0800
+Message-Id: <202011150017386009825@lists.sourceforge.net>
 X-Mailer: Foxmail 7, 2, 5, 140[cn]
 X-MIMETrack: Itemize by SMTP Server on PILNOTES17/SVR/PIL(Release 9.0.1FP5|November  22, 2015) at
- 15/11/2020 12:16:32 AM,
+ 15/11/2020 12:17:35 AM,
 	Serialize by Router on PILNOTES17/SVR/PIL(Release 9.0.1FP5|November  22, 2015) at
- 15/11/2020 12:16:32 AM
-Content-Type: multipart/mixed; charset=UTF-8; boundary="----=_899_NextPart322655057500_=----"
+ 15/11/2020 12:17:35 AM
+Content-Type: multipart/mixed; charset=UTF-8; boundary="----=_715_NextPart075542950224_=----"
 
 
---1ttIg.5j1DxWS6a.1j6nGWwVFzj.35qRnSq--
+--1ttU0.5j1Dzrseg.2rOEHSEzUgO.5J9Qx2Y--
 
 
 
 
---===============1352459314618338199==
+--===============0645516754134075885==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1352459314618338199==
+--===============0645516754134075885==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -215,7 +208,7 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1352459314618338199==--
+--===============0645516754134075885==--
 
 
 
