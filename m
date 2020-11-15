@@ -2,43 +2,43 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 42F012B3878
-	for <lists+osst-users@lfdr.de>; Sun, 15 Nov 2020 20:23:03 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id C077A2B3870
+	for <lists+osst-users@lfdr.de>; Sun, 15 Nov 2020 20:19:29 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1keNc6-0001Dp-24
-	for lists+osst-users@lfdr.de; Sun, 15 Nov 2020 19:23:02 +0000
+	id 1keNYe-0000fE-JJ
+	for lists+osst-users@lfdr.de; Sun, 15 Nov 2020 19:19:28 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1keKx5-0003Y4-TH
- for osst-users@lists.sourceforge.net; Sun, 15 Nov 2020 16:32:31 +0000
+ id 1keKx1-0003Vz-1F
+ for osst-users@lists.sourceforge.net; Sun, 15 Nov 2020 16:32:27 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Subject:From:To:Date:
  Message-Id:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=lsUaJ/mpECnGdvU9jBnOszPfsx1mVH/i0kcUGSStmCI=; b=LH3Ckf8dn2AQTpBKuufR5BQzAF
- olcqH0RlV82cdVULsBQEAjnO2ejZ3PYTQm189qRh96znmjpdZSVvfUfbP3TZ6Iwri7CsK+T/IfdSf
- P1Yd3R1qktJROX5Yj0DVy/mNHeb9sQQl6yh06XqkKY/Y9RwG7UwyHJyfnW9E3RqTKFVI=;
+ bh=RfOeIYTaJYepV14h4YOKq+t1j7Fjqz8J2Wg4v2C5iSk=; b=KTdijv179JTzages7jqkwl67qG
+ J5+AKb9W/8fESz3CTSongh0Xje8okQRxNEp2c/UCOSV+YTXoSCg9p829lWGM/8zljrRCGFWCT0rNe
+ sjwIdj111ifY+f2JINTqfUe82q1MDttaorWSS67jCWuULjilPFcpe02Uq5X5HjRxbu0c=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:MIME-Version:Subject:From:To:Date:Message-Id:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=lsUaJ/mpECnGdvU9jBnOszPfsx1mVH/i0kcUGSStmCI=; b=n
- AsAdv5KlwL3am4c5ZXOe5HB6bMDw3Gw1sKgZ9ittQhIo+JPUa7evR+N4QjhfGIMdjolaeN7nqoi3u
- SwYU5AlAEeBEUh78hjwYjoF4uiFUmZP2mZrLFAbqpA7kxRtdFtIPBrgtkSUsgHOBSrzgKnRvRj1pU
- gB+w2dOE6GfbddxY=;
+ List-Owner:List-Archive; bh=RfOeIYTaJYepV14h4YOKq+t1j7Fjqz8J2Wg4v2C5iSk=; b=N
+ wAOmasL5ghrBXPequ+dFDAKEL4JokE2k4SXXHprEguxXKmzM1PB9chD7MOXc2ia9986jB0X8SSXlK
+ /IAna6BHmoz0gdikfL1dydyvhxKKaPaCDLWq5P3N0pNSa8COqOT+Zvp9CWIMy9npC6v331NOg85+1
+ Jln658pWAAeO5WiI=;
 Received: from ip.sgp.pillogistics.com ([203.116.38.243])
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1keKwe-00Cpm8-Ba
- for osst-users@lists.sourceforge.net; Sun, 15 Nov 2020 16:32:31 +0000
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps (TLSv1.2:AES256-SHA:256)
+ (Exim 4.92.2) id 1keKwe-004eeX-CK
+ for osst-users@lists.sourceforge.net; Sun, 15 Nov 2020 16:32:26 +0000
 Received: from localhost by ip.sgp.pillogistics.com; 16 Nov 2020 00:29:33 +0800
-Message-Id: <8eb11c$tvovu@ip.sgp.pillogistics.com>
+Message-Id: <8eb11c$tvovv@ip.sgp.pillogistics.com>
 Date: 16 Nov 2020 00:29:33 +0800
 To: osst-users@lists.sourceforge.net
 From: "Mail Delivery System" <MAILER-DAEMON@ip.sgp.pillogistics.com>
@@ -47,7 +47,7 @@ X-Spam-Score: 0.0 (/)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 TIME_LIMIT_EXCEEDED    Exceeded time limit / deadline
-X-Headers-End: 1keKwe-00Cpm8-Ba
+X-Headers-End: 1keKwe-004eeX-CK
 Subject: [Osst-users] Delivery Status Notification (Failure)
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -60,36 +60,36 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============0246212176025192979=="
+Content-Type: multipart/mixed; boundary="===============0493100275962850753=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0246212176025192979==
-Content-Type: multipart/report; report-type=delivery-status; boundary="1t+3E.5j2V4JHsb.6zD22AH+ma2.2BgUKaQ"
+--===============0493100275962850753==
+Content-Type: multipart/report; report-type=delivery-status; boundary="1t+3E.5j2V4JIRH.3otg15aSda0.9htM0/"
 
---1t+3E.5j2V4JHsb.6zD22AH+ma2.2BgUKaQ
+--1t+3E.5j2V4JIRH.3otg15aSda0.9htM0/
 content-type: text/plain;
     charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-The following message to <1597977764@qq.com> was undeliverable.
+The following message to <2788173596@qq.com> was undeliverable.
 The reason for the problem:
 5.3.0 - Other mail system problem 550-'SPF check failed [MIJe39XvWnWSZJmsQ3=
 Lnd02WLVVQ+JOwS3Ius9a8cAl322kpM5C12bm06IbzKWaT7Q=3D=3D  IP: 203.116.38.243]=
 . http://service.mail.qq.com/cgi-bin/help?subtype=3D1&&no=3D1001445&&id=3D2=
 0022.'
 
---1t+3E.5j2V4JHsb.6zD22AH+ma2.2BgUKaQ
+--1t+3E.5j2V4JIRH.3otg15aSda0.9htM0/
 content-type: message/delivery-status
 
 Reporting-MTA: dns; ip.sgp.pillogistics.com
 
-Final-Recipient: rfc822;1597977764@qq.com
+Final-Recipient: rfc822;2788173596@qq.com
 Action: failed
 Status: 5.0.0 (permanent failure)
 Remote-MTA: dns; [203.205.219.57]
 Diagnostic-Code: smtp; 5.3.0 - Other mail system problem 550-'SPF check failed [MIJe39XvWnWSZJmsQ3Lnd02WLVVQ+JOwS3Ius9a8cAl322kpM5C12bm06IbzKWaT7Q==  IP: 203.116.38.243]. http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.' (delivery attempts: 0)
 
---1t+3E.5j2V4JHsb.6zD22AH+ma2.2BgUKaQ
+--1t+3E.5j2V4JIRH.3otg15aSda0.9htM0/
 content-type: message/rfc822
 
 Authentication-Results: ip.sgp.pillogistics.com; spf=Pass smtp.mailfrom=osst-users@lists.sourceforge.net; dmarc=pass (p=none dis=none) d=sourceforge.net
@@ -186,19 +186,19 @@ X-MIMETrack: Itemize by SMTP Server on PILNOTES17/SVR/PIL(Release 9.0.1FP5|Novem
 Content-Type: multipart/mixed; charset=UTF-8; boundary="----=_692_NextPart866988958714_=----"
 
 
---1t+3E.5j2V4JHsb.6zD22AH+ma2.2BgUKaQ--
+--1t+3E.5j2V4JIRH.3otg15aSda0.9htM0/--
 
 
 
 
---===============0246212176025192979==
+--===============0493100275962850753==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0246212176025192979==
+--===============0493100275962850753==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -209,7 +209,7 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0246212176025192979==--
+--===============0493100275962850753==--
 
 
 
