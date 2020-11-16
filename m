@@ -2,63 +2,59 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id C996A2B4D9E
-	for <lists+osst-users@lfdr.de>; Mon, 16 Nov 2020 18:40:54 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id BD5692B4DCC
+	for <lists+osst-users@lfdr.de>; Mon, 16 Nov 2020 18:42:32 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1keiUn-0008G7-Ii
-	for lists+osst-users@lfdr.de; Mon, 16 Nov 2020 17:40:53 +0000
+	id 1keiWN-00056S-IR
+	for lists+osst-users@lfdr.de; Mon, 16 Nov 2020 17:42:31 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1keiTc-0007zc-5a
- for osst-users@lists.sourceforge.net; Mon, 16 Nov 2020 17:39:40 +0000
+ id 1keiUN-0004wi-3t
+ for osst-users@lists.sourceforge.net; Mon, 16 Nov 2020 17:40:27 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Message-Id:Content-Transfer-Encoding:Content-Type:
  MIME-Version:To:Subject:From:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=lNMvWsj7jgsW+9O9fmGQRmi7hpjwCmAV/s/j1T8gJO8=; b=OGi1syCalKxsrGDXZ7zGE0otIS
- FlDW+zSWn11ueBrv987sizhfYpPQRKD9VRHjbdgps+jBUWSJbi7WYSxE9UklZ4jRlhq4CW8w5Gt5p
- 2+GmZ3nxJpYizrScfgEyQEZYSVQYMJXfX5pgIM6D2TfMyq9YQD1MnQAzYWJEjIdbD2WQ=;
+ bh=LbcaU8H6pK+FhpgrTNsSLPBuHOOQ23djyDcNqGm/k+8=; b=Xv3fYywJ84vgAcZXxFDNGqaZST
+ 7ZIxyowoKAlDZS+NPk9uDfDxnic9fE5cHv/d5cZIoeQa4kt9iGEpvmCW/NrnSoZ8ijKCtsZVPLGtZ
+ LI1VNZsXy6pwwhoMwNKSsY7cqt2o+H6dYiEF3iiknDsoB0JNMNUgBtZt8Nzyfr+caq4E=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Message-Id:Content-Transfer-Encoding:Content-Type:MIME-Version:To:Subject
  :From:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=lNMvWsj7jgsW+9O9fmGQRmi7hpjwCmAV/s/j1T8gJO8=; b=A
- eueuRL9xAOtvRqyKeF6ASB9CQ+2kTOoGQp+OYOru+CX+xWLsj2piZtkYjQWrejyth3H/8dOHQy99B
- gMMBSfEqooGgdCFUdtXh1ZAW9nwPwIfwIwjX8fJ+WgYLRVQ6iGbduP1kqsARoo7MXL50V3BO54db+
- XD3Z+WSYBrGVCX2I=;
+ List-Owner:List-Archive; bh=LbcaU8H6pK+FhpgrTNsSLPBuHOOQ23djyDcNqGm/k+8=; b=i
+ 0OSevV9UeAcuWwVcPwqKUpfPBVxy1deo16GKu+A38Gay73X5Nk9F9YnR6YOjxiDP8dz2ivEhKugzS
+ hs+Kr8klyS3H1FtQ50KhH5rOBnc71/fE7B94w27veNE6Hyo4Ft+HAVVQjApOvHo3wqyykK9SyTgYm
+ eYBxEgZ33CqJ9A3k=;
 Received: from [139.129.209.233] (helo=iZ28upq55k1Z)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1keiTQ-00FMvj-Nz
- for osst-users@lists.sourceforge.net; Mon, 16 Nov 2020 17:39:39 +0000
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1keiU6-007KGx-5R
+ for osst-users@lists.sourceforge.net; Mon, 16 Nov 2020 17:40:26 +0000
 Received: by iZ28upq55k1Z (Postfix)
- id 9E7BE12B15A; Tue, 17 Nov 2020 01:38:53 +0800 (CST)
-Date: Tue, 17 Nov 2020 01:38:53 +0800 (CST)
+ id 58B2112265E; Tue, 17 Nov 2020 01:39:34 +0800 (CST)
+Date: Tue, 17 Nov 2020 01:39:34 +0800 (CST)
 From: MAILER-DAEMON@thinkunion.com.cn (Mail Delivery System)
 To: osst-users@lists.sourceforge.net
 Auto-Submitted: auto-replied
 MIME-Version: 1.0
-Message-Id: <20201116173853.9E7BE12B15A@iZ28upq55k1Z>
+Message-Id: <20201116173934.58B2112265E@iZ28upq55k1Z>
 X-Helo-Check: bad, Not FQDN (iZ28upq55k1Z)
-X-Spam-Score: 5.1 (+++++)
+X-Spam-Score: 4.1 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 FSL_HELO_NON_FQDN_1    No description available.
- 0.5 VA_HELO_CHECK          Host Used Invalid or Forged HELO/EHLO
- 0.0 RCVD_IN_MSPIKE_L3      RBL: Low reputation (-3)
- [139.129.209.233 listed in bl.mailspike.net]
  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
  [139.129.209.233 listed in zen.spamhaus.org]
- 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
- 0.0 HELO_NO_DOMAIN         Relay reports its domain incorrectly
- 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
-X-Headers-End: 1keiTQ-00FMvj-Nz
+ 0.0 FSL_HELO_NON_FQDN_1    No description available.
+ 0.5 VA_HELO_CHECK          Host Used Invalid or Forged HELO/EHLO
+ 0.0 TIME_LIMIT_EXCEEDED    Exceeded time limit / deadline
+X-Headers-End: 1keiU6-007KGx-5R
 Subject: [Osst-users] Undelivered Mail Returned to Sender
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -71,19 +67,19 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============1146483735001584842=="
+Content-Type: multipart/mixed; boundary="===============7878312113750300999=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a MIME-encapsulated message.
 
---===============1146483735001584842==
+--===============7878312113750300999==
 Content-Type: multipart/report; report-type=delivery-status;
-	boundary="E62521239BC.1605548333/iZ28upq55k1Z"
+	boundary="B307412D106.1605548374/iZ28upq55k1Z"
 Content-Transfer-Encoding: 8bit
 
 This is a MIME-encapsulated message.
 
---E62521239BC.1605548333/iZ28upq55k1Z
+--B307412D106.1605548374/iZ28upq55k1Z
 Content-Description: Notification
 Content-Type: text/plain; charset=utf-8
 Content-Transfer-Encoding: 8bit
@@ -102,138 +98,138 @@ delete your own text from the attached returned message.
 
 <jkafsjewkfn@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 Mailbox
     unavailable or access denied
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ== IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA== IP:
     139.129.209.233] (in reply to RCPT TO command)
 
-<1162122603@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1020540859@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<1242972126@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1030640849@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<2042444197@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1050049889@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<2325589249@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1647172176@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<2518223415@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1656023833@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<3139427200@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<2171800895@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<3264125231@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<2871866513@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<3389970177@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<2935258927@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<985113373@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<937842289@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<1048140677@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1090144899@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<1178555343@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1365244616@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<1415944439@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1514024226@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<1540236214@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1665891381@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<1615670638@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1695291351@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<2332392594@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<1740267093@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<2378344756@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<2690813922@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<2452401659@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<2697491267@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<2711054237@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<2899800782@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<2873951480@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<2905658967@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
-<3351368565@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+<3355371239@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
---E62521239BC.1605548333/iZ28upq55k1Z
+--B307412D106.1605548374/iZ28upq55k1Z
 Content-Description: Delivery report
 Content-Type: message/delivery-status
 Content-Transfer-Encoding: 8bit
 
 Reporting-MTA: dns; iZ28upq55k1Z
-X-Postfix-Queue-ID: E62521239BC
+X-Postfix-Queue-ID: B307412D106
 X-Postfix-Sender: rfc822; osst-users@lists.sourceforge.net
-Arrival-Date: Tue, 17 Nov 2020 01:38:37 +0800 (CST)
+Arrival-Date: Tue, 17 Nov 2020 01:39:17 +0800 (CST)
 
 Final-Recipient: rfc822; jkafsjewkfn@qq.com
 Original-Recipient: rfc822;jkafsjewkfn@qq.com
@@ -241,244 +237,244 @@ Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 Mailbox unavailable or access denied
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ== IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA== IP:
     139.129.209.233]
 
-Final-Recipient: rfc822; 1162122603@qq.com
-Original-Recipient: rfc822;1162122603@qq.com
+Final-Recipient: rfc822; 1020540859@qq.com
+Original-Recipient: rfc822;1020540859@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 1242972126@qq.com
-Original-Recipient: rfc822;1242972126@qq.com
+Final-Recipient: rfc822; 1030640849@qq.com
+Original-Recipient: rfc822;1030640849@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 2042444197@qq.com
-Original-Recipient: rfc822;2042444197@qq.com
+Final-Recipient: rfc822; 1050049889@qq.com
+Original-Recipient: rfc822;1050049889@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 2325589249@qq.com
-Original-Recipient: rfc822;2325589249@qq.com
+Final-Recipient: rfc822; 1647172176@qq.com
+Original-Recipient: rfc822;1647172176@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 2518223415@qq.com
-Original-Recipient: rfc822;2518223415@qq.com
+Final-Recipient: rfc822; 1656023833@qq.com
+Original-Recipient: rfc822;1656023833@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 3139427200@qq.com
-Original-Recipient: rfc822;3139427200@qq.com
+Final-Recipient: rfc822; 2171800895@qq.com
+Original-Recipient: rfc822;2171800895@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 3264125231@qq.com
-Original-Recipient: rfc822;3264125231@qq.com
+Final-Recipient: rfc822; 2871866513@qq.com
+Original-Recipient: rfc822;2871866513@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 3389970177@qq.com
-Original-Recipient: rfc822;3389970177@qq.com
+Final-Recipient: rfc822; 2935258927@qq.com
+Original-Recipient: rfc822;2935258927@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 985113373@qq.com
-Original-Recipient: rfc822;985113373@qq.com
+Final-Recipient: rfc822; 937842289@qq.com
+Original-Recipient: rfc822;937842289@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 1048140677@qq.com
-Original-Recipient: rfc822;1048140677@qq.com
+Final-Recipient: rfc822; 1090144899@qq.com
+Original-Recipient: rfc822;1090144899@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 1178555343@qq.com
-Original-Recipient: rfc822;1178555343@qq.com
+Final-Recipient: rfc822; 1365244616@qq.com
+Original-Recipient: rfc822;1365244616@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 1415944439@qq.com
-Original-Recipient: rfc822;1415944439@qq.com
+Final-Recipient: rfc822; 1514024226@qq.com
+Original-Recipient: rfc822;1514024226@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 1540236214@qq.com
-Original-Recipient: rfc822;1540236214@qq.com
+Final-Recipient: rfc822; 1665891381@qq.com
+Original-Recipient: rfc822;1665891381@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 1615670638@qq.com
-Original-Recipient: rfc822;1615670638@qq.com
+Final-Recipient: rfc822; 1695291351@qq.com
+Original-Recipient: rfc822;1695291351@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 2332392594@qq.com
-Original-Recipient: rfc822;2332392594@qq.com
+Final-Recipient: rfc822; 1740267093@qq.com
+Original-Recipient: rfc822;1740267093@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 2378344756@qq.com
-Original-Recipient: rfc822;2378344756@qq.com
+Final-Recipient: rfc822; 2690813922@qq.com
+Original-Recipient: rfc822;2690813922@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 2452401659@qq.com
-Original-Recipient: rfc822;2452401659@qq.com
+Final-Recipient: rfc822; 2697491267@qq.com
+Original-Recipient: rfc822;2697491267@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 2711054237@qq.com
-Original-Recipient: rfc822;2711054237@qq.com
+Final-Recipient: rfc822; 2899800782@qq.com
+Original-Recipient: rfc822;2899800782@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 2873951480@qq.com
-Original-Recipient: rfc822;2873951480@qq.com
+Final-Recipient: rfc822; 2905658967@qq.com
+Original-Recipient: rfc822;2905658967@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
-Final-Recipient: rfc822; 3351368565@qq.com
-Original-Recipient: rfc822;3351368565@qq.com
+Final-Recipient: rfc822; 3355371239@qq.com
+Original-Recipient: rfc822;3355371239@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MCRbyc8Gio8dUZ8e2i9ZjGZAS4IUxbZXQIb+U/BOPmJ/GQWQ+DYb0gua216J7p0ddQ==  IP:
+    [MLxRkUvayv60iwoaaH4VBU79LrZv2aTStbpb5CxA51vOz+qqddCsJWgZK3stPujrbA==  IP:
     139.129.209.233].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
---E62521239BC.1605548333/iZ28upq55k1Z
+--B307412D106.1605548374/iZ28upq55k1Z
 Content-Description: Undelivered Message Headers
 Content-Type: text/rfc822-headers
 Content-Transfer-Encoding: 8bit
 
 Return-Path: <osst-users@lists.sourceforge.net>
-Received: from HC-VM-PC (unknown [112.194.92.185])
-	by iZ28upq55k1Z (Postfix) with ESMTP id E62521239BC;
-	Tue, 17 Nov 2020 01:38:37 +0800 (CST)
-X-GUID: E91E7ECC-E094-429B-999C-63043FAAA548
+Received: from HC-VM-PC (unknown [112.194.89.16])
+	by iZ28upq55k1Z (Postfix) with ESMTP id B307412D106;
+	Tue, 17 Nov 2020 01:39:17 +0800 (CST)
+X-GUID: 8E936D59-7E89-4CF1-98B5-970A152EA8EE
 X-Has-Attach: yes
-From: =?UTF-8?B?6LCI5rO96I2j?= <osst-users@lists.sourceforge.net>
+From: =?UTF-8?B?6K645pmT5LqR?= <osst-users@lists.sourceforge.net>
 Subject:
- =?UTF-8?B?5b+r6YCS5bey6YCB6L6+5a6J5ZKM5a+66Lev5YiG6YOoIOiwiOazveiNo+eo?=
- =?UTF-8?B?jeWQjuS4uuaCqOa0vuS7tktyd0VXaTg3NzM=?=
-To: "2042444197" <2042444197@qq.com>
-Cc: "jkafsjewkfn" <jkafsjewkfn@qq.com>, "2325589249" <2325589249@qq.com>, "1162122603" <1162122603@qq.com>, "3139427200" <3139427200@qq.com>, "985113373" <985113373@qq.com>, "2518223415" <2518223415@qq.com>, "3264125231" <3264125231@qq.com>, "3389970177" <3389970177@qq.com>, "1242972126" <1242972126@qq.com>, "2452401659" <2452401659@qq.com>, "1615670638" <1615670638@qq.com>, "3351368565" <3351368565@qq.com>, "1048140677" <1048140677@qq.com>, "1178555343" <1178555343@qq.com>, "2873951480" <2873951480@qq.com>, "1540236214" <1540236214@qq.com>, "2378344756" <2378344756@qq.com>, "1415944439" <1415944439@qq.com>, "2332392594" <2332392594@qq.com>, "2711054237" <2711054237@qq.com>
-Content-Type: multipart/mixed; charset=UTF-8; boundary="----=_354_NextPart293863298983_=----"
+ =?UTF-8?B?6K645pmT5LqR5piO5pel5Li65oKo5rS+5Lu277yM5b+r5Lu25bey5oq16L6+?=
+ =?UTF-8?B?6buE5b+g6Lev5YiG6YOoSmF1ZzE2MDg=?=
+To: "1020540859" <1020540859@qq.com>
+Cc: "jkafsjewkfn" <jkafsjewkfn@qq.com>, "1656023833" <1656023833@qq.com>, "2935258927" <2935258927@qq.com>, "2171800895" <2171800895@qq.com>, "1050049889" <1050049889@qq.com>, "2871866513" <2871866513@qq.com>, "937842289" <937842289@qq.com>, "1647172176" <1647172176@qq.com>, "1030640849" <1030640849@qq.com>, "1365244616" <1365244616@qq.com>, "1665891381" <1665891381@qq.com>, "1514024226" <1514024226@qq.com>, "1740267093" <1740267093@qq.com>, "3355371239" <3355371239@qq.com>, "2697491267" <2697491267@qq.com>, "2905658967" <2905658967@qq.com>, "1695291351" <1695291351@qq.com>, "2899800782" <2899800782@qq.com>, "2690813922" <2690813922@qq.com>, "1090144899" <1090144899@qq.com>
+Content-Type: multipart/mixed; charset=UTF-8; boundary="----=_403_NextPart134300115916_=----"
 MIME-Version: 1.0
 Reply-To: kkks2020101@qq.com
-Date: Tue, 17 Nov 2020 01:38:35 +0800
-Message-Id: <202011170138340183951@lists.sourceforge.net>
+Date: Tue, 17 Nov 2020 01:39:15 +0800
+Message-Id: <202011170139144348131@lists.sourceforge.net>
 X-Mailer: Foxmail 7, 2, 5, 140[cn]
 
---E62521239BC.1605548333/iZ28upq55k1Z--
+--B307412D106.1605548374/iZ28upq55k1Z--
 
 
---===============1146483735001584842==
+--===============7878312113750300999==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1146483735001584842==
+--===============7878312113750300999==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -489,5 +485,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1146483735001584842==--
+--===============7878312113750300999==--
 
