@@ -2,65 +2,84 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 2105E2C4C41
-	for <lists+osst-users@lfdr.de>; Thu, 26 Nov 2020 01:43:52 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
-	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1ki5O2-000616-7X
-	for lists+osst-users@lfdr.de; Thu, 26 Nov 2020 00:43:50 +0000
-Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <www-data@roniemiranda3249382.pserver.ru>)
- id 1ki5Nh-000609-1i
- for osst-users@lists.sourceforge.net; Thu, 26 Nov 2020 00:43:29 +0000
+	by mail.lfdr.de (Postfix) with ESMTPS id CF1DF2C4DC5
+	for <lists+osst-users@lfdr.de>; Thu, 26 Nov 2020 04:24:32 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	d=lists.sourceforge.net; s=beta; h=Message-Id:Content-Transfer-Encoding:
+	Content-Type:Cc:Reply-To:From:List-Subscribe:List-Help:List-Post:List-Archive
+	:List-Unsubscribe:List-Id:Subject:Date:To:Content-Description:MIME-Version:
+	Sender:Content-ID:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:
+	Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=Ynh8xf7irNoSUJZXR3jVLp/hPg0iE3DgjBOkygYz2fA=; b=PlPTSVN84j97/zuH798PQsYL6I
+	VO4Vg7WmXHwrLKYEWfpKUY6EaKmOr7AIr1jzbueDVnab9cS/cosS6HIFP3F22ay3O0Fq9xLMoFdbt
+	JMt9h+pM9P6j0II2ob0xqQwqhzXiYJAenN8+xK1vKrT5H2lMy5j6kZiAIWF3MQiJHh4A=;
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
+	id 1ki7tX-0004ab-LM
+	for lists+osst-users@lfdr.de; Thu, 26 Nov 2020 03:24:31 +0000
+Received: from [172.30.20.202] (helo=mx.sourceforge.net)
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
+ (envelope-from <sales@getmailgoesbulk.life>) id 1ki7tW-0004aU-B2
+ for osst-users@lists.sourceforge.net; Thu, 26 Nov 2020 03:24:30 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=sourceforge.net; s=x; h=Reply-To:Date:From:To:Subject:Content-Description:
+ Content-Transfer-Encoding:MIME-Version:Content-Type:Sender:Message-ID:Cc:
+ Content-ID:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:
+ Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=B7+KNEkJ+Yw831GfcPo+HNV3PlF1xFXamSILDMUsQIg=; b=cfZumWZL5Nf8oe2XFxdY1dBzCU
- Z+UVomQoWVqV8ger3Gr58CponPfW9VWVLm32ReanaB2kvcXiSS1RI4K8R+ln4y2+4E7GoP6baahR2
- vqbtKcXKXIC/4DouSp2Q51m5sqxWfAKEtSyJYTm9tY8Ui7GpUTjsO7+9hdkKWyCeICi0=;
+ bh=4ogooD6J18spkrwYlsVcLBz0qISNAConOQYOtzkd21Y=; b=RKCQGmtzGFr4Fy5VgudYYlb+4J
+ YG5GR2xNMPS5jRJkicpXZLOSWotdabHD5I5JwqUy6SoiSGV41Rubi3J7wfEPUWxo0185/m8/FY4BE
+ KziINUt9BlZ6L+qAaXjVgCNuky72m/TDMPubnDB5SU8SUilG2vp/l8aR268bsum5NxJY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
- ;
- h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=B7+KNEkJ+Yw831GfcPo+HNV3PlF1xFXamSILDMUsQIg=; b=Y
- FD8dRMuLRnI4BCJvVbMlIzQn4Szw5LfVxGijZHDqmYYf7RY9AzVYzzBJz3wj4Pi47I8hWn4jiyJIJ
- sVuBILYj4RpsTkvEEHGqSnGHZQbqcdwJ2vwZPGtfmv2+ZZU585pN3b0D01uyDm2sFzE41HxH8NcUh
- F1tSfykufkfthqM0=;
-Received: from roniemiranda3249382.pserver.ru ([185.82.219.19])
+ ; h=Reply-To:Date:From:To:Subject:Content-Description:
+ Content-Transfer-Encoding:MIME-Version:Content-Type:Sender:Message-ID:Cc:
+ Content-ID:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:
+ Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=4ogooD6J18spkrwYlsVcLBz0qISNAConOQYOtzkd21Y=; b=NuyvFDyMAPwXwZ7KKe2Z78FHRw
+ 5ylzznR+pzagX+u/irJiKYzgEXsGm0AucUWYIUGf6ujZRV7U9u8lyl21wVEb6gUT1RG16dk4+PlbL
+ tpSlPsL2p0bfJE2TWCsFUiSQ/hNlwMXiUpElc7PdwY51umu0HbkiRleqXXZ0lgBe+ujk=;
+Received: from getmailgoesbulk.life ([106.75.129.202])
  by sfi-mx-1.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1ki5NX-00GFHE-HN
- for osst-users@lists.sourceforge.net; Thu, 26 Nov 2020 00:43:28 +0000
-Received: by roniemiranda3249382.pserver.ru (Postfix, from userid 33)
- id D79C464239; Thu, 26 Nov 2020 02:43:05 +0200 (EET)
-To: osst-users@lists.sourceforge.net
+ id 1ki7tP-00GUEK-49
+ for osst-users@lists.sourceforge.net; Thu, 26 Nov 2020 03:24:30 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default;
+ d=getmailgoesbulk.life; 
+ h=Content-Type:MIME-Version:Content-Transfer-Encoding:Content-Description:Subject:To:From:Date:Reply-To;
+ i=sales@getmailgoesbulk.life; bh=NVQQjQ/r7MlCYpm18XasehD7GPU=;
+ b=NotcsQSJMsjdzwJC0xW5FTOe9utByXUJSL398LyP003Dt45UbfIglyO7C9XkF82oOXd+oApMM44e
+ oau44onWzmMDBms/kv0AAULbZWXaEGIw9KmUIoruSfcqd7/muU9+5Bfc46iK8FJVF6ouczH1a6w2
+ k6KTE6RHCzKxqN9Diag=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=default;
+ d=getmailgoesbulk.life; 
+ b=vad/PseUtRDyFFzyum7le1fUp9sSz3/wMVuZ8ZYEK6Z37xXjjalSfmbAc12wgOabQt7pVCLhZH7S
+ nyZ/F+4MYkjKjc0J3j71UvFEcpN0IF5LpvAjDSST3rq5ski6j5bUYN66ZXGlkP9kgclW44ZVxBFi
+ 4NOEWTI50+TgZkyetKo=;
 MIME-Version: 1.0
-From: Ministerio del Interior <notificacion@interior.gob.es>
-Message-Id: <20201126004305.D79C464239@roniemiranda3249382.pserver.ru>
-Date: Thu, 26 Nov 2020 02:43:05 +0200 (EET)
-X-Spam-Score: 3.6 (+++)
+Content-Description: Mail message body
+To: osst-users@lists.sourceforge.net
+Date: Thu, 26 Nov 2020 11:24:12 +0800
+X-Spam-Score: 6.1 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: azure.com]
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-X-Headers-End: 1ki5NX-00GFHE-HN
-Subject: [Osst-users] Multa no pagada - [ id 306911926  ]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
+ (charleswjacksonjr662[at]outlook.com)
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 1.0 MISSING_MID            Missing Message-Id: header
+ 0.0 LOTS_OF_MONEY          Huge... sums of money
+ 2.4 MONEY_FREEMAIL_REPTO   Lots of money from someone using free email?
+ 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+X-Headers-End: 1ki7tP-00GUEK-49
+Subject: [Osst-users] Mr.Charles
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -72,158 +91,25 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============7430244954952614952=="
+From: sales--- via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: charleswjacksonjr662@outlook.com
+Cc: sales@getmailgoesbulk.life
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1ki7tX-0004ab-LM@sfs-ml-2.v29.lw.sourceforge.com>
 
---===============7430244954952614952==
-Content-type: text/html; charset=iso-8859-1
-
-<html lang="es"><head><style>body{margin:0;padding:0;overflow-x:auto !important;overflow-y:hidden !important}.mail-detail-content{box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif;font-size:13px;font-weight:normal;font-feature-settings:"liga" 0;width:100%;position:relative;padding:0}.ios.smartphone .mail-detail-content{-webkit-overflow-scrolling:touch;overflow-x:auto}.smartphone .mail-detail-content{font-size:15px}.mail-detail-content>div>[class$="-content"]{padding:0}.mail-detail-content.plain-text{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif;white-space:pre-wrap}.mail-detail-content.plain-text blockquote{white-space:normal}.mail-detail-content.fixed-width-font,.mail-detail-content.fixed-width-font.plain-text,.mail-detail-content.fixed-width-font blockquote,.mail-detail-content.fixed-width-font.plain-text blockquote,.mail-detail-content.fixed-width-font blockquote p,.mail-detai
- l-content.fixed-width-font.plain-text blockquote p{font-family:monospace;-webkit-font-feature-settings:normal;font-feature-settings:normal}.mail-detail-content.simple-mail{max-width:700px}.mail-detail-content.simple-mail.big-screen{max-width:100%}.mail-detail-content.simple-mail img{max-width:100%;height:auto!important}.mail-detail-content img[src=""]{background-color:rgba(0,0,0,0.1);background-image:repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.5) 20px, rgba(255,255,255,0.5) 40px)}.mail-detail-content p{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif;margin:0 0 1em 0}.mail-detail-content h1{font-size:28px}.mail-detail-content h2{font-size:21px}.mail-detail-content h3{font-size:16.38px}.mail-detail-content h4{font-size:14px}.mail-detail-content h5{font-size:11.62px}.mail-detail-content h6{font-size:9.38px}.mail-detail-content a{word-break:break-word;text-decoration:none;color:inherit}.mail-detail-content 
- a:hover{color:inherit}.mail-detail-content a[href]{color:#3c61aa;text-decoration:underline}.mail-detail-content th{padding:8px;text-align:center}.mail-detail-content th[align="left"]{text-align:left}.mail-detail-content .calendar-detail .label{display:block;text-shadow:none;font-weight:normal;background-color:transparent}.mail-detail-content img.emoji-softbank{margin:0 2px}.mail-detail-content pre{word-break:keep-all;word-break:initial;white-space:pre-wrap;background-color:transparent;border:0 none;border-radius:0}.mail-detail-content table{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif;font-size:13px;font-weight:normal;font-feature-settings:"liga" 0;line-height:normal;border-collapse:collapse}.mail-detail-content ul,.mail-detail-content ol{padding:0;padding-left:16px;margin:1em 0 1em 24px}.mail-detail-content ul{list-style-type:disc}.mail-detail-content ul ul{list-style-type:circle}.mail-detail-content ul ul ul{list-style-type:square}.mail
- -detail-content li{line-height:normal;margin-bottom:0.5em}.mail-detail-content blockquote{color:#555;font-size:13px;border-left:2px solid #ddd;padding:0 0 0 16px;margin:16px 0 16px 0}.mail-detail-content blockquote p{font-size:13px}.mail-detail-content blockquote blockquote{border-color:#283f73;margin:8px 0}.mail-detail-content.colorQuoted blockquote blockquote{color:#283f73 !important;border-left:2px solid #283f73}.mail-detail-content.colorQuoted blockquote blockquote a[href]:not(.deep-link){color:#283f73}.mail-detail-content.colorQuoted blockquote blockquote a[href]:not(.deep-link):hover{color:#1b2a4d}.mail-detail-content.colorQuoted blockquote blockquote blockquote{color:#dd0880 !important;border-left:2px solid #dd0880}.mail-detail-content.colorQuoted blockquote blockquote blockquote a[href]:not(.deep-link){color:#dd0880}.mail-detail-content.colorQuoted blockquote blockquote blockquote a[href]:not(.deep-link):hover{color:#ac0663}.mail-detail-content.colorQuoted blockquote blockqu
- ote blockquote blockquote{color:#8f09c7 !important;border-left:2px solid #8f09c7}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote a[href]:not(.deep-link){color:#8f09c7}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote a[href]:not(.deep-link):hover{color:#6c0796}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote blockquote{color:#767676 !important;border-left:2px solid #767676}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote blockquote a[href]:not(.deep-link){color:#767676}.mail-detail-content.colorQuoted blockquote blockquote blockquote blockquote blockquote a[href]:not(.deep-link):hover{color:#5d5d5d}.mail-detail-content.disable-links a[href]{color:#aaa !important;text-decoration:line-through !important;cursor:default !important;pointer-events:none !important}.mail-detail-content .blockquote-toggle{color:#767676;font-size:13px;padding-left:56px;margin:16px 0;min-height:16px;
- word-break:break-word}.mail-detail-content .blockquote-toggle button.bqt{color:#696969;background-color:#eee;padding:1px 10px;display:inline-block;font-size:14px;line-height:16px;cursor:pointer;outline:0;position:absolute;left:0;border:0}.mail-detail-content .blockquote-toggle button.bqt:hover,.mail-detail-content .blockquote-toggle button.bqt:focus{color:#fff;background-color:#3c61aa;text-decoration:none}.mail-detail-content .max-size-warning{color:#767676;padding:16px 16px 0 16px;border-top:1px solid #ddd}.mail-detail-content a.deep-link{color:white;background-color:#3c61aa;text-decoration:none;font-size:90%;font-weight:bold;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif !important;padding:0.10em 8px;border-radius:3px}.mail-detail-content a.deep-link:hover,.mail-detail-content a.deep-link:focus,.mail-detail-content a.deep-link:active{color:white;background-color:#2f4b84}@media print{.mail-detail-content .collapsed-blockquote{display:block
-  !important}.mail-detail-content .blockquote-toggle{display:none !important}}.mail-detail-content>div[id*="ox-"]>h1,.mail-detail-content>div[id*="ox-"]>h2,.mail-detail-content>div[id*="ox-"]>h3,.mail-detail-content>div[id*="ox-"]>h4,.mail-detail-content>div[id*="ox-"]>h5{margin-top:0}</style></head><body class="mail-detail-content noI18n colorQuoted">
-
-  
-   
-   
-   
-   
-  
-  
- 
-  
-  <div class="es-wrapper-color">
-    
-   <table width="100%" cellspacing="0" cellpadding="0" class="es-wrapper"> 
-    <tbody> 
-     <tr> 
-      <td valign="top" class="esd-email-paddings"> 
-       <div style="text-align: center;"> 
-       </div> 
-       <table cellspacing="0" cellpadding="0" align="center" class="esd-header-popover es-content"> 
-        <tbody> 
-         <tr> 
-          <td align="center" class="esd-stripe"> 
-           <div style="text-align: center;"> 
-           </div> 
-           <table width="600" cellspacing="0" cellpadding="0" align="center" class="es-content-body" style="background-color: transparent;"> 
-            <tbody> 
-             <tr> 
-              <td align="left" class="esd-structure es-p5b es-p10r es-p10l"> <br>
-               <div class="flotar-izq" id="area-identidad" style="text-align: center;">
-                <span style="color: red; font-weight: bold;"></span>
-                <img alt="_" src="http://www.dgt.es/Galerias/_config_/2018_logo_ministerio_interior_60.png" class="logo" id="logo1" style="width: 209px; height: 60px;">
-                <img alt="_" height="60" width="119" src="http://www.dgt.es/Galerias/_config_/2018_logo_dgt_60_COPIA_SEG.png">
-               </div> 
-               <div class="flotar-izq" id="area-identidad" style="text-align: center;"> 
-               </div> 
-               <table cellspacing="0" cellpadding="0" align="right" style="color: rgb(53, 104, 164); font-family: Arial;"> 
-                <tbody> 
-                 <tr> 
-                  <td width="280" align="left" class="esd-container-frame"> 
-                   <table width="100%" cellspacing="0" cellpadding="0"> 
-                    <tbody> 
-                     <tr> 
-                      <td align="right" class="esd-block-text es-infoblock">&nbsp;</td> 
-                     </tr> 
-                    </tbody> 
-                   </table> </td> 
-                 </tr> 
-                </tbody> 
-               </table> </td> 
-             </tr> 
-            </tbody> 
-           </table> </td> 
-         </tr> 
-        </tbody> 
-       </table> 
-       <table cellspacing="0" cellpadding="0" align="center" class="es-content"> 
-        <tbody> 
-         <tr> 
-          <td align="center" class="esd-stripe"> 
-           <table width="600" cellspacing="0" cellpadding="0" align="center" class="es-content-body"> 
-            <tbody> 
-             <tr> 
-              <td bgcolor="#fff2cc" align="left" style="background-color: rgb(255, 242, 204);" class="esd-structure es-p20t es-p20b es-p20r es-p20l"> 
-               <table width="100%" cellspacing="0" cellpadding="0"> 
-                <tbody> 
-                 <tr> 
-                  <td width="560" valign="top" align="center" class="esd-container-frame"> 
-                   <table width="100%" cellspacing="0" cellpadding="0"> 
-                    <tbody> 
-                     <tr> 
-                      <td align="center" class="esd-block-text es-p10l" style="background-color: white;"> <span style="margin: 0px 0px 0px 24px; padding: 0px; color: rgb(0, 68, 136); font-size: 1.2em; font-weight: 700; text-transform: uppercase; font-family: OpenSans-Regular,sans-serif; font-style: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);" class="dgt-announcements-title">Saludos Cordiales</span><span style="color: rgb(76, 83, 93); font-family: OpenSans-Regular,sans-serif; font-size: 12.6px; font-style: normal; font-weight: 700; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); display: inline ! important; float: none;"></span> <br class="Apple-interchange-newline"> <br> <span style="color: red; font-weight: bold;"></span>
- <span style="font-weight: bold;">&nbsp;&nbsp;&nbsp;Multa no pagada</span><span style="font-weight: bold;"></span><br> <br style="color: rgb(0, 68, 136);"> <span style="font-weight: bold; color: rgb(0, 68, 136);">Se ha identificado en nuestro sistema una multa de trafico no pagada<br>dirigida a usted o su vehiculo.<br></span><br style="font-weight: bold; color: rgb(0, 68, 136);"> <span style="font-weight: bold; color: black;"><span style="color: rgb(0, 68, 136);">Para ver la notificacion<br>Visite:</span> </span> <p style="color: rgb(36, 36, 36); background-color: white;"><a target="_blank" href="http://billetedecalle.northeurope.cloudapp.azure.com/" rel="noopener"><img src="http://www.dgt.es/Galerias/_config_/2018_logo_sede_electronica_inv_77.png" alt=""></a><span style="color: red; font-weight: bold;"></span><br style="font-family: Arial;"> <span style="font-weight: bold;">Atencion:<br> Para ver la notificacion, abra en un sistema (Windows).</span><span style="color: red; font-fami
- ly: Arial;"> </span><br style="font-family: Arial;"> <br style="font-family: Arial;"> </p> </td> 
-                     </tr> 
-                    </tbody> 
-                   </table> </td> 
-                 </tr> 
-                </tbody> 
-               </table> </td> 
-             </tr> 
-            </tbody> 
-           </table> </td> 
-         </tr> 
-        </tbody> 
-       </table> 
-       <table cellspacing="0" cellpadding="0" align="center" class="esd-footer-popover es-content"> 
-        <tbody> 
-         <tr> 
-          <td align="center" class="esd-stripe"> 
-           <table width="600" cellspacing="0" cellpadding="0" align="center" style="background-color: transparent;" class="es-content-body"> 
-            <tbody> 
-             <tr> 
-              <td align="left" class="esd-structure es-p10t es-p10b es-p20r es-p20l"> 
-               <table cellspacing="0" cellpadding="0" style="width: 596px; height: 35px;"> 
-                <tbody> 
-                 <tr> 
-                  <td width="560" valign="top" align="center" class="esd-container-frame"> <p style="margin: 0px; padding: 0.5em 0px 0px; font-size: 10px; color: white; font-family: OpenSans-Regular,sans-serif; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(0, 68, 136);" class="copyright-ft">Copyright DGT 2020. Todos los derechos reservados.</p> <p style="margin: 0px 0px 10px; padding: 0.5em 0px 0px; font-style: italic; font-size: 10px; color: white; font-family: OpenSans-Regular,sans-serif; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(0, 68, 136);" class="version-ft">Version V5.1.0.7<br> <br> </p> </td> 
-                 </tr> 
-                </tbody> 
-               </table> </td> 
-             </tr> 
-            </tbody> 
-           </table> </td> 
-         </tr> 
-        </tbody> 
-       </table> </td> 
-     </tr> 
-    </tbody> 
-   </table> 
-   <table width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" class="es-content-body"> 
-    <tbody> 
-     <tr> 
-     </tr> 
-    </tbody> 
-   </table> 
-  </div> 
-  <div style="text-align: center; color: rgb(53, 104, 164);">
-   <span style="font-weight: bold;"></span>
-  </div> 
- 
-</body></html>26/11/2020 02:43:05
+Mein Name ist Charles W. Jackson Jr. Ich gewann eine Spende von 343 Milioni=
+s US-Dollar Gewinner Jackpot. Ich leide derzeit an Hirntumor und wei=DF nic=
+ht, ob ich ihn =FCberlebe. Aus diesem Grund habe ich beschlossen, 1.500.000=
+Millionen Euro zu spenden, jede 6 Menschen auf der ganzen Welt f=FCr Sie un=
+d die Armen in Ihrer Gemeinschaft und Sie sind einer der gl=FCcklichen Mens=
+chen Bitte mailen Sie mir: f=FCr weitere Informationen, um meine Spende auf=
+richtig zu erhalten, =
 
 
---===============7430244954952614952==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---===============7430244954952614952==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
 
 _______________________________________________
 Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
-
---===============7430244954952614952==--
