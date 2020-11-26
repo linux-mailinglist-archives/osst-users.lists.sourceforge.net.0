@@ -2,62 +2,62 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id D79132C5C05
-	for <lists+osst-users@lfdr.de>; Thu, 26 Nov 2020 19:30:10 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 12F602C5BDD
+	for <lists+osst-users@lfdr.de>; Thu, 26 Nov 2020 19:22:17 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1kiM1x-0003JE-LS
-	for lists+osst-users@lfdr.de; Thu, 26 Nov 2020 18:30:09 +0000
+	id 1kiLuJ-0002qx-Sm
+	for lists+osst-users@lfdr.de; Thu, 26 Nov 2020 18:22:15 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1kiLs4-0002jv-5N
- for osst-users@lists.sourceforge.net; Thu, 26 Nov 2020 18:19:56 +0000
+ id 1kiLqf-0002dO-Iw
+ for osst-users@lists.sourceforge.net; Thu, 26 Nov 2020 18:18:29 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Message-Id:Content-Transfer-Encoding:Content-Type:
  MIME-Version:To:Subject:From:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=r+UNwFp31wy33Ms4Vc/bWWJxt32f7ESpKF8lzqKSJPU=; b=cC5jLB9Cy2TCmEW04O8q9O0qvE
- WEb1FHQNK3NFOLeEwZ0KFGDmTLqHbA3/Bg/9WaprKGbBprHvdcW3aiAh+Rm1WTNWn2w2AOrDw7mb7
- QFFCBvBGGRggya+PFtWG6p5sBUH6Qbom1CK4i/xBxhlNj1UzaImLCfBrPzVI6+UDMWNY=;
+ bh=/oErmFgbVY9WxSPwpcp0UkBkTG2dSmrK7X4Gze9P3II=; b=R7YZggI9AU5RCFbu6xMQU+g3+x
+ 8W5VWFKNgVxH04ZcOetKT1aVb7Dg34KDXITHhPu7i1lEeEiUJb5sQTkJ1oqTUr53jpFRfoNK95cTk
+ IixfV5Oo9fDY2ejpgVea8ULCJy5X0l0ozKu+5oc7fOy78808v8LiRohUJu1OZsOPUl/w=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Message-Id:Content-Transfer-Encoding:Content-Type:MIME-Version:To:Subject
  :From:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=r+UNwFp31wy33Ms4Vc/bWWJxt32f7ESpKF8lzqKSJPU=; b=k
- oSDHBmJlCoaer2+6tmXJX2NybnHGbTaQWXAD4RxK9xNf/9yXmw9jyFP7RJvcDD0+oCcwjlGMLVIru
- 2aQnlB3z+52vS3ygSlQZU5htwUOjbgFDRRwb//8zw9mTY7gwvXeEmgG4T41rTDhlQmpiUgqqKaiwt
- cCpefpE2mdnu3Cr4=;
+ List-Owner:List-Archive; bh=/oErmFgbVY9WxSPwpcp0UkBkTG2dSmrK7X4Gze9P3II=; b=h
+ 3D24Vh2y1pbz+qjkeyKlDKSgNL+XtfOnlwGiDQEwpv2tk7ih0PVfOCkxb2jjym3GKAE3ZgIMa59+h
+ uoeU9YO0W1Zzp5YMipRQWdL1lHyE/QzNb0H6kQAiar5rEr6TQ5CoyqfjpapYd3c6smAH9qKa4Ffzx
+ YdZs7QN5udtLEwAw=;
 Received: from [218.94.69.222] (helo=zt3000mail.com)
  by sfi-mx-3.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1kiLs2-005rYH-7q
- for osst-users@lists.sourceforge.net; Thu, 26 Nov 2020 18:19:56 +0000
+ id 1kiLqW-005rPd-Ao
+ for osst-users@lists.sourceforge.net; Thu, 26 Nov 2020 18:18:29 +0000
 Received: by zt3000mail.com (Postfix)
- id 4Chljg5rkcz6NC9Fl; Fri, 27 Nov 2020 01:53:27 +0800 (CST)
-Date: Fri, 27 Nov 2020 01:53:27 +0800 (CST)
+ id 4Chljq2Fxvz6NC9sb; Fri, 27 Nov 2020 01:53:35 +0800 (CST)
+Date: Fri, 27 Nov 2020 01:53:35 +0800 (CST)
 From: MAILER-DAEMON@zt3000mail.com (Mail Delivery System)
 To: osst-users@lists.sourceforge.net
 Auto-Submitted: auto-replied
 MIME-Version: 1.0
-Message-Id: <4Chljg5rkcz6NC9Fl@zt3000mail.com>
+Message-Id: <4Chljq2Fxvz6NC9sb@zt3000mail.com>
 X-Spam-Score: 4.6 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: qq.com]
+ for more information. [URIs: zt3000mail.com]
  3.6 RCVD_IN_PBL            RBL: Received via a relay in Spamhaus PBL
  [218.94.69.222 listed in zen.spamhaus.org]
  -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
-X-Headers-End: 1kiLs2-005rYH-7q
+X-Headers-End: 1kiLqW-005rPd-Ao
 Subject: [Osst-users] Undelivered Mail Returned to Sender
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -70,19 +70,19 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3143534771420336262=="
+Content-Type: multipart/mixed; boundary="===============8693855927625802624=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a MIME-encapsulated message.
 
---===============3143534771420336262==
+--===============8693855927625802624==
 Content-Type: multipart/report; report-type=delivery-status;
-	boundary="4ChlGR1kHpz6NC8sR.1606413207/zt3000mail.com"
+	boundary="4ChlGR2G3Wz6NC8sS.1606413215/zt3000mail.com"
 Content-Transfer-Encoding: 7bit
 
 This is a MIME-encapsulated message.
 
---4ChlGR1kHpz6NC8sR.1606413207/zt3000mail.com
+--4ChlGR2G3Wz6NC8sS.1606413215/zt3000mail.com
 Content-Description: Notification
 Content-Type: text/plain; charset=us-ascii
 
@@ -98,40 +98,40 @@ delete your own text from the attached returned message.
 
                    The mail system
 
-<2425010399@qq.com>: host mx3.qq.com[113.96.208.206] said: 550 SPF check failed
-    [MB+x1EZDgdZ6JshP0ojK1bKHeyhbD8/oxaXG281K/RTq0hq0YZNuhrjUJ8ykN72rPg==  IP:
+<2655636271@qq.com>: host mx3.qq.com[113.96.208.206] said: 550 SPF check failed
+    [MM9QIczPl1uZFDA8kIYKaZzHFTw2DmlKjhW3duz2P4CcexGlbJin5AANnywXLFBswA==  IP:
     218.94.69.222].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
---4ChlGR1kHpz6NC8sR.1606413207/zt3000mail.com
+--4ChlGR2G3Wz6NC8sS.1606413215/zt3000mail.com
 Content-Description: Delivery report
 Content-Type: message/delivery-status
 
 Reporting-MTA: dns; zt3000mail.com
-X-Postfix-Queue-ID: 4ChlGR1kHpz6NC8sR
+X-Postfix-Queue-ID: 4ChlGR2G3Wz6NC8sS
 X-Postfix-Sender: rfc822; osst-users@lists.sourceforge.net
 Arrival-Date: Fri, 27 Nov 2020 01:33:19 +0800 (CST)
 
-Final-Recipient: rfc822; 2425010399@qq.com
-Original-Recipient: rfc822;2425010399@qq.com
+Final-Recipient: rfc822; 2655636271@qq.com
+Original-Recipient: rfc822;2655636271@qq.com
 Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MB+x1EZDgdZ6JshP0ojK1bKHeyhbD8/oxaXG281K/RTq0hq0YZNuhrjUJ8ykN72rPg==  IP:
+    [MM9QIczPl1uZFDA8kIYKaZzHFTw2DmlKjhW3duz2P4CcexGlbJin5AANnywXLFBswA==  IP:
     218.94.69.222].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
---4ChlGR1kHpz6NC8sR.1606413207/zt3000mail.com
+--4ChlGR2G3Wz6NC8sS.1606413215/zt3000mail.com
 Content-Description: Undelivered Message Headers
 Content-Type: text/rfc822-headers
 Content-Transfer-Encoding: 7bit
 
 Return-Path: <osst-users@lists.sourceforge.net>
 Received: from mx.zt3000mail.com (localhost [127.0.0.1])
-	by zt3000mail.com (Postfix) with ESMTP id 4ChlGR1kHpz6NC8sR
-	for <2425010399@qq.com>; Fri, 27 Nov 2020 01:33:19 +0800 (CST)
+	by zt3000mail.com (Postfix) with ESMTP id 4ChlGR2G3Wz6NC8sS
+	for <2655636271@qq.com>; Fri, 27 Nov 2020 01:33:19 +0800 (CST)
 X-Virus-Scanned: amavisd-new at mx.zt3000mail.com
 X-Spam-Flag: YES
 X-Spam-Score: 8.009
@@ -145,7 +145,7 @@ X-Spam-Status: Yes, score=8.009 tagged_above=2 required=6.2
 	autolearn=no autolearn_force=no
 Received: from zt3000mail.com ([127.0.0.1])
 	by mx.zt3000mail.com (mx.zt3000mail.com [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id uQh4LUqT34jA for <2425010399@qq.com>;
+	with ESMTP id s4k4sAnjBAvz for <2655636271@qq.com>;
 	Fri, 27 Nov 2020 01:33:04 +0800 (CST)
 Received: from HC-VM-PC (unknown [112.194.81.177])
 	by zt3000mail.com (Postfix) with ESMTP id 4ChlFW2lT7z6NC8vw;
@@ -166,17 +166,17 @@ Date: Fri, 27 Nov 2020 01:32:47 +0800
 Message-Id: <202011270132303314165@lists.sourceforge.net>
 X-Mailer: Foxmail 7, 2, 5, 140[cn]
 
---4ChlGR1kHpz6NC8sR.1606413207/zt3000mail.com--
+--4ChlGR2G3Wz6NC8sS.1606413215/zt3000mail.com--
 
 
---===============3143534771420336262==
+--===============8693855927625802624==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3143534771420336262==
+--===============8693855927625802624==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -187,5 +187,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3143534771420336262==--
+--===============8693855927625802624==--
 
