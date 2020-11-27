@@ -2,74 +2,61 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id CA95F2C5ED7
-	for <lists+osst-users@lfdr.de>; Fri, 27 Nov 2020 04:03:43 +0100 (CET)
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Date:
-	Message-Id:MIME-Version:To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
-	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
-	:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=2usiAB5gjl1WrKyjfEv8oCLSnD1ZQiIjWDbA+9LkstE=; b=E6AaIxRtzBLj867ONjn+3eDncp
-	z9d2oQjmgeU1VqfdKXAol0yV3cMC5IaYUMx8TeV9H0KkZmToENVh939NihBh/lDAqp1GUibnIXRJr
-	25bG3N4lKQBW1ySx+6aQCiGqFSNj81B7fv1cZwTMr/STeHha5vaA1zHZ2nRhP0RIFYTk=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 3F0532C5F5E
+	for <lists+osst-users@lfdr.de>; Fri, 27 Nov 2020 05:59:37 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1kiU2w-0001jr-JN
-	for lists+osst-users@lfdr.de; Fri, 27 Nov 2020 03:03:42 +0000
+	id 1kiVr6-0007u1-1C
+	for lists+osst-users@lfdr.de; Fri, 27 Nov 2020 04:59:36 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <www-data@roniemiranda324938.pserver.ru>)
- id 1kiU2r-0001jW-VS
- for osst-users@lists.sourceforge.net; Fri, 27 Nov 2020 03:03:37 +0000
+ id 1kiVr4-0007ta-Li
+ for osst-users@lists.sourceforge.net; Fri, 27 Nov 2020 04:59:34 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Message-Id:Content-Transfer-Encoding:Content-Type:
+ MIME-Version:To:Subject:From:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=zbV7jtmYJfUIaasR8ThWX6nOQtUd72qU/r1+2LbAOcI=; b=E+g8g/XzeOC4Tz6nxtppNGFhhf
- kw0ftkaoVdQJM3ZNym6X8gaf7eRG7YZ3m94wIIUDKVyy6FmZX2L/izCA9sPtpg+crzUDUHoVj+iGl
- CDbTOrEffgFu8JiT4vbTj7S8czbJ3V3s7QTbDK8y9L0G7z+MBXJZBXwYqekxolJ1Feuw=;
+ bh=VlfO97EK99AmIZp9nvgCHex7LhhY+7mmIAhf2io+6VA=; b=JZLCVebKgnv3dVbff7uIGtfWls
+ IC+uKrOjfapW/4F8dcwJRSx39MSosTXtukecugoBusXJNrvaHM8bz/0JathEcjor3cYPJOWE3FehE
+ anDChtootpG4sB+C/ZsrMB9ugKriD6lxFB8d2CiHGoR4WnCEU0M717yr/uCtcwu3/XBk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Message-Id:Content-Transfer-Encoding:Content-Type:MIME-Version:To:Subject
+ :From:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=zbV7jtmYJfUIaasR8ThWX6nOQtUd72qU/r1+2LbAOcI=; b=d
- c4qGitwWt1fR6MtsE/B6YFbB4ck380H6Y2dcGZaOhVTjN/Wp5IVn3pWL3E4BhPGq8dKYCxhzJaQk6
- WKzhiNDfYAjUHXWgjAYo/Q8iSV2Eh+wKowJJJ39VgNTFJx27s86TTCs5GfuVxDcKWeShKsx9ndb2L
- I3IKiR6kAKFXm8LU=;
-Received: from roniemiranda324938.pserver.ru ([185.14.31.21])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1kiU2l-000N3H-PA
- for osst-users@lists.sourceforge.net; Fri, 27 Nov 2020 03:03:36 +0000
-Received: by roniemiranda324938.pserver.ru (Postfix, from userid 33)
- id 25C3728AA7; Fri, 27 Nov 2020 04:03:26 +0100 (CET)
+ List-Owner:List-Archive; bh=VlfO97EK99AmIZp9nvgCHex7LhhY+7mmIAhf2io+6VA=; b=C
+ 7F/08Dq5nIcbk60EnvawuXZYaqXhL08Fii72ZWTEcKs19Re0qGm4rLTswHVQ4Xk7Jpq/TsEUd9r0z
+ dVmF1XXpHCoG5PXPfrLpFPEIamm8ND6wEa9CQ7D3/NIX910vDL2Vk76ckmjg75UdYL1qfQsfqevRY
+ zr66e2uPiPFO6J0s=;
+Received: from [222.211.163.27] (helo=mail.ipfs-nexus.com)
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
+ id 1kiVqr-006VZS-In
+ for osst-users@lists.sourceforge.net; Fri, 27 Nov 2020 04:59:34 +0000
+Received: by mail.ipfs-nexus.com (Postfix)
+ id 9E51620D25CD; Fri, 27 Nov 2020 12:59:13 +0800 (CST)
+Date: Fri, 27 Nov 2020 12:59:13 +0800 (CST)
+From: MAILER-DAEMON@mail.ipfs-nexus.com (Mail Delivery System)
 To: osst-users@lists.sourceforge.net
+Auto-Submitted: auto-replied
 MIME-Version: 1.0
-Message-Id: <20201127030326.25C3728AA7@roniemiranda324938.pserver.ru>
-Date: Fri, 27 Nov 2020 04:03:26 +0100 (CET)
-X-Spam-Score: 5.6 (+++++)
+Message-Id: <20201127045913.9E51620D25CD@mail.ipfs-nexus.com>
+X-Spam-Score: 4.6 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: postimg.cc]
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 3.6 RCVD_IN_PBL            RBL: Received via a relay in Spamhaus PBL
+ [222.211.163.27 listed in zen.spamhaus.org]
+ 0.0 RCVD_IN_SORBS_DUL      RBL: SORBS: sent directly from dynamic IP address
+ [222.211.163.27 listed in dnsbl.sorbs.net]
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 2.0 URI_TRY_3LD            URI: "Try it" URI, suspicious hostname
- 1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-X-Headers-End: 1kiU2l-000N3H-PA
-Subject: [Osst-users] Pendencia Legal y Financiera (ultima advertencia) - [
- id 436090000 ]
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+X-Headers-End: 1kiVqr-006VZS-In
+Subject: [Osst-users] Undelivered Mail Returned to Sender
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -81,153 +68,102 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Administracion Tributaria via Osst-users
- <osst-users@lists.sourceforge.net>
-Reply-To: Administracion Tributaria <impuestos@hacienda.gob.es>
-Content-Type: multipart/mixed; boundary="===============3220126660033563989=="
+Content-Type: multipart/mixed; boundary="===============3204023536439065497=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============3220126660033563989==
-Content-type: text/html; charset=iso-8859-1
+This is a MIME-encapsulated message.
 
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-    <title>Comprobante</title>
+--===============3204023536439065497==
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="8420020D25CB.1606453153/mail.ipfs-nexus.com"
+Content-Transfer-Encoding: 7bit
 
-    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+This is a MIME-encapsulated message.
 
-    <style type="text/css">
-        <!-- .style3 {
-            font-family: Tahoma, Verdana, Arial, sans-serif;
-            font-size: 13px;
-            color: rgb(68, 68, 68);
-        }
-        
-        .style4 {
-            color: #FF0000;
-            font-weight: bold;
-        }
-        
-        .style5 {
-            font-size: 13px;
-            font-family: Tahoma, Verdana, Arial, sans-serif;
-        }
-        
-        -->
-    </style>
+--8420020D25CB.1606453153/mail.ipfs-nexus.com
+Content-Description: Notification
+Content-Type: text/plain; charset=us-ascii
 
-    <meta name="GENERATOR" content="MSHTML 8.00.7600.16385">
-</head>
+This is the mail system at host mail.ipfs-nexus.com.
 
-<body style="FONT-FAMILY: Times New Roman"><span style="WIDOWS: 2; TEXT-TRANSFORM: none; TEXT-INDENT: 0px; BORDER-COLLAPSE: separate; FONT: medium 'Times New Roman'; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: normal; COLOR: rgb(0,0,0); WORD-SPACING: 0px; webkit-border-horizontal-spacing: 0px; webkit-border-vertical-spacing: 0px; webkit-text-decorations-in-effect: none; webkit-text-size-adjust: auto; webkit-text-stroke-width: 0px" class="Apple-style-span"><span style="FONT-FAMILY: Tahoma, Verdana, Arial, sans-serif; COLOR: rgb(68,68,68); FONT-SIZE: 13px" class="Apple-style-span">
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
 
-<title></title><table id="ecxtable6" border="0" cellspacing="1" cellpadding="0" width="570" align="center"><tbody>
+For further assistance, please send mail to postmaster.
 
-<style>
-body { background:#FFF;}
-a { color: #FF7106; }
-</style>
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
 
-</tbody></table><table cellpadding="0" cellspacing="0" align="center" style="font-family: 'Quicksand', sans-serif;" width="727">
-<tbody>
-    <tr>
+                   The mail system
 
-        <td style="TEXT-ALIGN: center" bgcolor="#ffffff" valign="top">
+<3160929228@qq.com>: host mx3.qq.com[113.96.208.206] said: 550 SPF check failed
+    [MKOHYLGvhlD/q+ci/PM1DUcbrs57D5nXxV5SGIDQ++xNBUtosXMC+GwdP0FVsMmhPQ==  IP:
+    222.211.163.27].
+    http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
+    (in reply to end of DATA command)
 
-            <p>&nbsp;</p>
+--8420020D25CB.1606453153/mail.ipfs-nexus.com
+Content-Description: Delivery report
+Content-Type: message/delivery-status
 
-            <p align="left"><font face="Arial, Helvetica, sans-serif">
-  </font></p><div><font face="Arial, Helvetica, sans-serif">
-		
-			 <a href="http://actualcomprobante.eastus.cloudapp.azure.com/">
-	  <img src="https://i.postimg.cc/SsXNxs2d/download.png" alt="Resultado de imagem para pdf" style="border: 0px solid ; width: 80px; height: 80px;">
-	  </a>
-	  <br>
-	  <a href="http://actualcomprobante.eastus.cloudapp.azure.com/">
-	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
-	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
-	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
-	  <span style="font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;">
-	  <span class="c_nobdr t_prs" style="text-transform: none; text-indent: 0px; letter-spacing: normal; word-spacing: 0px; white-space: normal;">Descargar todo como.zip &nbsp;archivos adjuntos ( 128 kb)</span>
-	  </span>
-	  </span>
-	  </span>
-	  </span>
-	  </a>
-	  <br>
-	  <span style="font-size: 12px; font-family: &quot;SOBERANA SANS&quot;,serif,EmojiFont;">
-	  <strong>
-	  <br>
-	  </strong>
-	  </span>
-	  <span style="color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; float: none; display: inline ! important;">se anexa el seguiente comprobante fiscal digital</span><br><span style="font-size: 12px; font-family: &quot;SOBERANA SANS&quot;,serif,EmojiFont;"><strong>Remitente:</strong></span><span>&nbsp;</span><span style="font-size: 12px; font-family: &quot;SOBERANA SANS&quot;,serif,EmojiFont;">Servicio de Administracion Tributaria.<br></span><span style="font-size: 13px; font-family: &quot;Soberana Sans&quot;,serif,EmojiFont;">Hemos identificado que tienes pendiente de presentar, al 01 de noviembre de 2020, lo siguiente:<br>
-      <strong style="font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; font-size: 14px; line-height: 19px; font-size-adjust: none; font-stretch: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; color: rgb(80, 80, 80); background-color: rgb(255, 255, 255);">A quien corresponda<br>
-      <big>SERIE Y FOLIO: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp;&nbsp;2158945 <br>
-      FECHA DE EMISION: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 26/11/2020<br>
-      MONTO TOTAL: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; 7987.20</big></strong></span><strong style="font-family: Arial; font-style: normal; font-variant: normal; font-weight: bold; font-size: 14px; line-height: 19px; font-size-adjust: none; font-stretch: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; text-align: left; color: rgb(80, 80, 80); background-color: rgb(255, 255, 255);">
-</strong>
-</font></div><font face="Arial, Helvetica, sans-serif">  
-    
-  
+Reporting-MTA: dns; mail.ipfs-nexus.com
+X-Postfix-Queue-ID: 8420020D25CB
+X-Postfix-Sender: rfc822; osst-users@lists.sourceforge.net
+Arrival-Date: Fri, 27 Nov 2020 12:59:12 +0800 (CST)
+
+Final-Recipient: rfc822; 3160929228@qq.com
+Original-Recipient: rfc822;3160929228@qq.com
+Action: failed
+Status: 5.0.0
+Remote-MTA: dns; mx3.qq.com
+Diagnostic-Code: smtp; 550 SPF check failed
+    [MKOHYLGvhlD/q+ci/PM1DUcbrs57D5nXxV5SGIDQ++xNBUtosXMC+GwdP0FVsMmhPQ==  IP:
+    222.211.163.27].
+    http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
+
+--8420020D25CB.1606453153/mail.ipfs-nexus.com
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 7bit
+
+Return-Path: <osst-users@lists.sourceforge.net>
+Received: from localhost (unknown [127.0.0.1])
+	by mail.ipfs-nexus.com (Postfix) with ESMTP id 8420020D25CB
+	for <3160929228@qq.com>; Fri, 27 Nov 2020 04:59:12 +0000 (UTC)
+X-Virus-Scanned: amavisd-new at ipfs-nexus.com
+Received: from mail.ipfs-nexus.com ([127.0.0.1])
+	by localhost (mail.ipfs-nexus.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 14jl-boDLluE for <3160929228@qq.com>;
+	Fri, 27 Nov 2020 12:59:10 +0800 (CST)
+Received: from VwKar6v25 (localhost [127.0.0.1])
+	by mail.ipfs-nexus.com (Postfix) with ESMTP id A876220D23EF
+	for <3160929228@qq.com>; Fri, 27 Nov 2020 12:58:01 +0800 (CST)
+Date: Fri,27 Nov 2020 12:58:01 +0800
+From: "osst-users" <osst-users@lists.sourceforge.net>
+To: 3160929228@qq.com
+Subject: Re:test
+X-mailer: Foxmail 6, 15, 201, 23 [en]
+Mime-Version: 1.0
+Content-Type: text/plain;
+	charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Message-Id: <20201127045801.A876220D23EF@mail.ipfs-nexus.com>
+
+test is osst-users@lists.sourceforge.net
 
 
 
-</font>
-                
-
-                
-
-                
-            <p></p><font style="font-size: 11px;" color="#666666" face="Verdana">
-
-<p align="center"> <font color="#FF6633"></font></p>
-
-            <br>
-
-            <br>
-
-            <font style="font-size: 11px;" color="#666666" face="Verdana">Servicio de Administracion Tributaria,<br>
-
-<strong>+34 1308 808 500 Capitales y areas metropolitanas</strong></font></font>
-        </td>
-    </tr>
-
-    <tr>
-
-        
-
-    </tr>
-
-    </tbody>
-    </table>
-    </span>
-    </span>
-
-    <p>&nbsp;</p>
-
-    <p>&nbsp;</p>
-
-    <p>&nbsp;
-
-    </p>
+--8420020D25CB.1606453153/mail.ipfs-nexus.com--
 
 
-
-</body></html>27/11/2020 04:03:26
-
-
---===============3220126660033563989==
+--===============3204023536439065497==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3220126660033563989==
+--===============3204023536439065497==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -238,4 +174,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3220126660033563989==--
+--===============3204023536439065497==--
+
