@@ -2,60 +2,63 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 3F0532C5F5E
-	for <lists+osst-users@lfdr.de>; Fri, 27 Nov 2020 05:59:37 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 6957D2C60A2
+	for <lists+osst-users@lfdr.de>; Fri, 27 Nov 2020 08:49:55 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1kiVr6-0007u1-1C
-	for lists+osst-users@lfdr.de; Fri, 27 Nov 2020 04:59:36 +0000
+	id 1kiYVu-00066t-6l
+	for lists+osst-users@lfdr.de; Fri, 27 Nov 2020 07:49:54 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- id 1kiVr4-0007ta-Li
- for osst-users@lists.sourceforge.net; Fri, 27 Nov 2020 04:59:34 +0000
+ id 1kiYVs-00066f-JK
+ for osst-users@lists.sourceforge.net; Fri, 27 Nov 2020 07:49:52 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Message-Id:Content-Transfer-Encoding:Content-Type:
  MIME-Version:To:Subject:From:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=VlfO97EK99AmIZp9nvgCHex7LhhY+7mmIAhf2io+6VA=; b=JZLCVebKgnv3dVbff7uIGtfWls
- IC+uKrOjfapW/4F8dcwJRSx39MSosTXtukecugoBusXJNrvaHM8bz/0JathEcjor3cYPJOWE3FehE
- anDChtootpG4sB+C/ZsrMB9ugKriD6lxFB8d2CiHGoR4WnCEU0M717yr/uCtcwu3/XBk=;
+ bh=2b4cqt+BByanzMQCgRldaR4qmx33/nTVMc8TqSm15Sw=; b=IbqzWMRC8uWEdBX8Pdy68kynfm
+ Wb+ShPOS5vLUtBW4kbc4eW0GvEUWiicFU94+CmVpGjfsXFjB/cVxI06P7M6CJlcbl4D22jbkzLQyo
+ JgjvTJxYHLZm6rgtKul9yN4z7aiEtyoSjpuaBihI9Q8Foyv+n80Nf04fzIiUYqgGiAoY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Message-Id:Content-Transfer-Encoding:Content-Type:MIME-Version:To:Subject
  :From:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=VlfO97EK99AmIZp9nvgCHex7LhhY+7mmIAhf2io+6VA=; b=C
- 7F/08Dq5nIcbk60EnvawuXZYaqXhL08Fii72ZWTEcKs19Re0qGm4rLTswHVQ4Xk7Jpq/TsEUd9r0z
- dVmF1XXpHCoG5PXPfrLpFPEIamm8ND6wEa9CQ7D3/NIX910vDL2Vk76ckmjg75UdYL1qfQsfqevRY
- zr66e2uPiPFO6J0s=;
-Received: from [222.211.163.27] (helo=mail.ipfs-nexus.com)
+ List-Owner:List-Archive; bh=2b4cqt+BByanzMQCgRldaR4qmx33/nTVMc8TqSm15Sw=; b=U
+ EMoosv2MKhL0+S8OlKx3Zbn0bx3bsPfKCyyrpIwScl0Cjom8nqWyUb1p3bAPCBRUPVTUX3TCI2XKh
+ faXkY60oNi4TqQnbyA0W15CcXE9VVFJIeC5XgCpK8C0VIAQ+0aeoi9AaH1JtvMJP+ML32z0ACWfSV
+ jy5DKpsDaOLJKQeI=;
+Received: from [218.59.180.190] (helo=haoduoip.com)
  by sfi-mx-3.v28.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1kiVqr-006VZS-In
- for osst-users@lists.sourceforge.net; Fri, 27 Nov 2020 04:59:34 +0000
-Received: by mail.ipfs-nexus.com (Postfix)
- id 9E51620D25CD; Fri, 27 Nov 2020 12:59:13 +0800 (CST)
-Date: Fri, 27 Nov 2020 12:59:13 +0800 (CST)
-From: MAILER-DAEMON@mail.ipfs-nexus.com (Mail Delivery System)
+ id 1kiYVk-006wrI-Vi
+ for osst-users@lists.sourceforge.net; Fri, 27 Nov 2020 07:49:52 +0000
+Received: by haoduoip.com (Postfix)
+ id 80595100D0B65; Fri, 27 Nov 2020 14:11:04 +0800 (CST)
+Date: Fri, 27 Nov 2020 14:11:04 +0800 (CST)
+From: MAILER-DAEMON@haoduoip.com (Mail Delivery System)
 To: osst-users@lists.sourceforge.net
 Auto-Submitted: auto-replied
 MIME-Version: 1.0
-Message-Id: <20201127045913.9E51620D25CD@mail.ipfs-nexus.com>
-X-Spam-Score: 4.6 (++++)
+Message-Id: <20201127061104.80595100D0B65@haoduoip.com>
+X-Spam-Score: 2.3 (++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 3.6 RCVD_IN_PBL            RBL: Received via a relay in Spamhaus PBL
- [222.211.163.27 listed in zen.spamhaus.org]
- 0.0 RCVD_IN_SORBS_DUL      RBL: SORBS: sent directly from dynamic IP address
- [222.211.163.27 listed in dnsbl.sorbs.net]
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: qq.com]
+ 1.3 RCVD_IN_RP_RNBL        RBL: Relay in RNBL,
+ https://senderscore.org/blacklistlookup/
+ [218.59.180.190 listed in bl.score.senderscore.com]
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
-X-Headers-End: 1kiVqr-006VZS-In
+X-Headers-End: 1kiYVk-006wrI-Vi
 Subject: [Osst-users] Undelivered Mail Returned to Sender
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -68,23 +71,24 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3204023536439065497=="
+Content-Type: multipart/mixed; boundary="===============4569271509662565349=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a MIME-encapsulated message.
 
---===============3204023536439065497==
+--===============4569271509662565349==
 Content-Type: multipart/report; report-type=delivery-status;
-	boundary="8420020D25CB.1606453153/mail.ipfs-nexus.com"
-Content-Transfer-Encoding: 7bit
+	boundary="8222B100D1024.1606457464/haoduoip.com"
+Content-Transfer-Encoding: 8bit
 
 This is a MIME-encapsulated message.
 
---8420020D25CB.1606453153/mail.ipfs-nexus.com
+--8222B100D1024.1606457464/haoduoip.com
 Content-Description: Notification
-Content-Type: text/plain; charset=us-ascii
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
 
-This is the mail system at host mail.ipfs-nexus.com.
+This is the mail system at host haoduoip.com.
 
 I'm sorry to have to inform you that your message could not
 be delivered to one or more recipients. It's attached below.
@@ -96,20 +100,20 @@ delete your own text from the attached returned message.
 
                    The mail system
 
-<3160929228@qq.com>: host mx3.qq.com[113.96.208.206] said: 550 SPF check failed
-    [MKOHYLGvhlD/q+ci/PM1DUcbrs57D5nXxV5SGIDQ++xNBUtosXMC+GwdP0FVsMmhPQ==  IP:
-    222.211.163.27].
+<3160929228@qq.com>: host mx3.qq.com[58.251.110.111] said: 550 SPF check failed
+    [MA4eyPL04vTkaJH/7sA3k2hSGHNkj3FFQLSTSzhtD1fPqUIDM5urRIcnNFZ5iHLSYw==  IP:
+    218.59.180.190].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
     (in reply to end of DATA command)
 
---8420020D25CB.1606453153/mail.ipfs-nexus.com
+--8222B100D1024.1606457464/haoduoip.com
 Content-Description: Delivery report
 Content-Type: message/delivery-status
 
-Reporting-MTA: dns; mail.ipfs-nexus.com
-X-Postfix-Queue-ID: 8420020D25CB
+Reporting-MTA: dns; haoduoip.com
+X-Postfix-Queue-ID: 8222B100D1024
 X-Postfix-Sender: rfc822; osst-users@lists.sourceforge.net
-Arrival-Date: Fri, 27 Nov 2020 12:59:12 +0800 (CST)
+Arrival-Date: Fri, 27 Nov 2020 12:58:39 +0800 (CST)
 
 Final-Recipient: rfc822; 3160929228@qq.com
 Original-Recipient: rfc822;3160929228@qq.com
@@ -117,28 +121,20 @@ Action: failed
 Status: 5.0.0
 Remote-MTA: dns; mx3.qq.com
 Diagnostic-Code: smtp; 550 SPF check failed
-    [MKOHYLGvhlD/q+ci/PM1DUcbrs57D5nXxV5SGIDQ++xNBUtosXMC+GwdP0FVsMmhPQ==  IP:
-    222.211.163.27].
+    [MA4eyPL04vTkaJH/7sA3k2hSGHNkj3FFQLSTSzhtD1fPqUIDM5urRIcnNFZ5iHLSYw==  IP:
+    218.59.180.190].
     http://service.mail.qq.com/cgi-bin/help?subtype=1&&no=1001445&&id=20022.
 
---8420020D25CB.1606453153/mail.ipfs-nexus.com
+--8222B100D1024.1606457464/haoduoip.com
 Content-Description: Undelivered Message
 Content-Type: message/rfc822
-Content-Transfer-Encoding: 7bit
+Content-Transfer-Encoding: 8bit
 
 Return-Path: <osst-users@lists.sourceforge.net>
-Received: from localhost (unknown [127.0.0.1])
-	by mail.ipfs-nexus.com (Postfix) with ESMTP id 8420020D25CB
-	for <3160929228@qq.com>; Fri, 27 Nov 2020 04:59:12 +0000 (UTC)
-X-Virus-Scanned: amavisd-new at ipfs-nexus.com
-Received: from mail.ipfs-nexus.com ([127.0.0.1])
-	by localhost (mail.ipfs-nexus.com [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id 14jl-boDLluE for <3160929228@qq.com>;
-	Fri, 27 Nov 2020 12:59:10 +0800 (CST)
-Received: from VwKar6v25 (localhost [127.0.0.1])
-	by mail.ipfs-nexus.com (Postfix) with ESMTP id A876220D23EF
-	for <3160929228@qq.com>; Fri, 27 Nov 2020 12:58:01 +0800 (CST)
-Date: Fri,27 Nov 2020 12:58:01 +0800
+Received: from RSJNl2hhO (unknown [192.168.230.1])
+	by haoduoip.com (Postfix) with ESMTP id 8222B100D1024
+	for <3160929228@qq.com>; Fri, 27 Nov 2020 12:58:39 +0800 (CST)
+Date: Fri,27 Nov 2020 12:59:33 +0800
 From: "osst-users" <osst-users@lists.sourceforge.net>
 To: 3160929228@qq.com
 Subject: Re:test
@@ -147,23 +143,22 @@ Mime-Version: 1.0
 Content-Type: text/plain;
 	charset="us-ascii"
 Content-Transfer-Encoding: 7bit
-Message-Id: <20201127045801.A876220D23EF@mail.ipfs-nexus.com>
 
 test is osst-users@lists.sourceforge.net
 
 
 
---8420020D25CB.1606453153/mail.ipfs-nexus.com--
+--8222B100D1024.1606457464/haoduoip.com--
 
 
---===============3204023536439065497==
+--===============4569271509662565349==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3204023536439065497==
+--===============4569271509662565349==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -174,5 +169,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3204023536439065497==--
+--===============4569271509662565349==--
 
