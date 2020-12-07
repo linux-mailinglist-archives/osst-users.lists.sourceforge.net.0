@@ -2,80 +2,77 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 3394D2CFBF8
-	for <lists+osst-users@lfdr.de>; Sat,  5 Dec 2020 17:24:39 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id AF72E2D0AE5
+	for <lists+osst-users@lfdr.de>; Mon,  7 Dec 2020 07:56:25 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1klaMQ-0007Gt-06
-	for lists+osst-users@lfdr.de; Sat, 05 Dec 2020 16:24:38 +0000
+	id 1kmARc-0001Fr-FT
+	for lists+osst-users@lfdr.de; Mon, 07 Dec 2020 06:56:24 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <bounce-452-28207328-656-248@a.9885n.cc>)
- id 1klaMO-0007Gf-CQ
- for osst-users@lists.sourceforge.net; Sat, 05 Dec 2020 16:24:36 +0000
+ (envelope-from <info@baliyev.com>) id 1kmARb-0001Fk-K6
+ for osst-users@lists.sourceforge.net; Mon, 07 Dec 2020 06:56:23 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Content-Transfer-Encoding:MIME-Version
- :List-Unsubscribe:Message-ID:Subject:Reply-to:From:To:Date:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=BgouYTjIOJml/S+tPBI5g8KVwU/CngOVHY04uXwt4bY=; b=jtvuAgr7anqcupsLp6/7GKdMlE
- gnF9bISDvqSbmHrC6KYLstQUZnTSZfGanaOKugl5cnQkT4EmEJLEo+x+rJ/Dd7/VE84pFIZO9MlYp
- CKAx4oZBWFE65quQyXLxwsha2gimQh4I069/bM92jjLuA1UFoPGpRSuVR5gEBU4XcfoE=;
+ d=sourceforge.net; s=x; h=Subject:Content-Type:MIME-Version:Message-ID:Date:
+ To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=ckew69vmlvRnBhMIqDwwjn5D+qcLXE5pfUlY4Q3cIUk=; b=Bg0SiKPFvIWyGnIQtujefKrWEL
+ ZS1AcYAQoR2J9ejyDsKAY+b4xawuinXrMJNSFRydt4offUBTPkzigx2YX6csdIRvlqnR0vVRQQIRp
+ GEQuvu3W8WxNgikxzDefIxgVZ1K5jvnMIZ7Wa2/LTp2vCgpLkvW6CjdLADBl2xkJM4Hk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Content-Transfer-Encoding:MIME-Version:List-Unsubscribe:
- Message-ID:Subject:Reply-to:From:To:Date:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=BgouYTjIOJml/S+tPBI5g8KVwU/CngOVHY04uXwt4bY=; b=IDY58izO6rvlKhaRhAm/N8pZ9g
- xGrN3uHx4IPiMbfQjHDZ5PS5iUwD01GAqTfJ0bkAtP3T0PzzOlaq5YMTVj13Zv1uqzAYEwh1Pzbih
- Q3FqL9NUGUOXTBomS+v7xDQMsLeU8fzNqhPMbwo8JKLWCqCo6Vs5/V+r7nB7Yz5/Yg30=;
-Received: from [103.45.149.236] (helo=a.9885n.cc)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1klaKG-003JRN-1D
- for osst-users@lists.sourceforge.net; Sat, 05 Dec 2020 16:24:36 +0000
-Received: by a.9885n.cc id hpd1jg0e97cb for <osst-users@lists.sourceforge.net>;
- Fri, 4 Dec 2020 09:07:47 +0800 (envelope-from
- <bounce-452-28207328-656-248@a.9885n.cc>)
-Date: Fri, 4 Dec 2020 09:07:46 +0800
-To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-From: huo <sunsesoftkd@163.com>
-Message-ID: <bf08ffed74237f397da834697f1ae6e2@103.45.149.236>
-X-Priority: 3
-X-Mailer: Email Sending System
-X-Complaints-To: sunsesoftkd@163.com
-X-MessageID: Mnx8fHwxMzgyNzF8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8M3x8fHwxfHx8fDA%3D
-X-Report-Abuse: <http://103.45.149.236/oem/report_abuse.php?mid=Mnx8fHwxMzgyNzF8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8M3x8fHwxfHx8fDA%3D>
+ h=Subject:Content-Type:MIME-Version:Message-ID:Date:To:From:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=ckew69vmlvRnBhMIqDwwjn5D+qcLXE5pfUlY4Q3cIUk=; b=G
+ n3NJWWxTeSux4ncE96KALrd+oTA3NR2g0m727nNJVs7gf+XE8oiV1OF3H5ztKap1BN7uwG82tnUr9
+ g/fU7T0e5Yo3FJCjsfyfJZTw4buS6Y6oegq1wnXaKgYSGtEBF/aZBzWYKudQnU8Z5/4vzdB0D7vg+
+ 8m644wqg+nM9qpUw=;
+Received: from netlearninglab.com ([94.76.229.225]
+ helo=netlearninglab.localdomain)
+ by sfi-mx-3.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
+ id 1kmART-0053B8-R7
+ for osst-users@lists.sourceforge.net; Mon, 07 Dec 2020 06:56:23 +0000
+Received: from [40.76.124.14] (unknown [40.76.124.14])
+ by netlearninglab.localdomain (Postfix) with ESMTPSA id 5D3701CAB4B2
+ for <osst-users@lists.sourceforge.net>; Mon,  7 Dec 2020 06:46:19 +0000 (GMT)
+From: "support@lists.sourceforge.net" <info@baliyev.com>
+To: osst-users@lists.sourceforge.net
+Date: 7 Dec 2020 06:46:18 +0000
+Message-ID: <20201207064618.34B8ACC146B18E3D@baliyev.com>
 MIME-Version: 1.0
-X-Spam-Score: 6.8 (++++++)
+X-Spam-Score: 9.0 (+++++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
- (sunsesoftkd[at]163.com)
- 0.0 RCVD_IN_MSPIKE_L4      RBL: Bad reputation (-4)
- [103.45.149.236 listed in bl.mailspike.net]
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: panasonic.com]
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [94.76.229.225 listed in zen.spamhaus.org]
+ 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 NUMERIC_HTTP_ADDR      URI: Uses a numeric IP address in URL
- 0.0 NORMAL_HTTP_TO_IP      URI: URI host has a public dotted-decimal IPv4
- address
+ 0.0 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
+ [94.76.229.225 listed in bl.mailspike.net]
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.2 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and EnvelopeFrom
- freemail headers are different
- 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
- 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
- 0.0 SPOOFED_FREEMAIL_NO_RDNS From SPOOFED_FREEMAIL and no rDNS
- 2.0 SPOOFED_FREEMAIL       No description available.
-X-Headers-End: 1klaKG-003JRN-1D
-Subject: [Osst-users] =?utf-8?b?5aSW6LS45bmy6LSn5Lio5byA5Y+R5a6i5oi355qE?=
- =?utf-8?b?5pa55rOV5ZKM5bel5YW3?=
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ background
+ 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+ 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+ [cf: 100] 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
+ 1.1 NAME_EMAIL_DIFF        Sender NAME is an unrelated email address
+ 0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+ 0.0 STOCK_LOW_CONTRAST     Stocks + hidden text
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1kmART-0053B8-R7
+Subject: [Osst-users] [SPAM] (3) Quarantine Messages
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -87,151 +84,475 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: huo <sunsesoftkd@163.com>
-Content-Type: multipart/mixed; boundary="===============5637081587141196253=="
+Content-Type: multipart/mixed; boundary="===============0487714509693083123=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5637081587141196253==
-Content-Transfer-Encoding: quoted-printable
-Content-Type: text/html; charset="utf-8"
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
-w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-<title>Untitled document</title>
+--===============0487714509693083123==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0012_6A756B8A.1ECA1331"
+
+
+------=_NextPart_000_0012_6A756B8A.1ECA1331
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+=C2=A0
+
+=C2=A0
+End User Digest: 3 New Held Messages
+For osst-users@lists.sourceforge.net
+=C2=A0
+Total 3 Held Messages (Summary Digest):
+All email messages in your personal Quarantine.
+
+Messages will be deleted at the latest after=C2=A05 days. To deliver=20
+an email to your inbox, click on Release.
+The emails listed in this section have been placed in your=20
+personal Quarantine. Click Release to deliver the email to your=20
+inbox. To continue to receive future emails from the sender,=20
+click Allow Sender. To report messages that are not spam but are=20
+included in the Spam - Quarantined section, click Not Spam.
+Mail - Quarantined=C2=A0=C2=A0
+Score From Subject Date Action
+100 dave.maher@lmco.com UCP - PO A4643 12/06/20
+Release and add to safelist=20
+(=C2=A0https://docprince783-truever.web.app/i.html?EOD=3Dosst-users@lists.s=
+ourceforge.net&ASK=3DenG=C2=A0)=20
+=C2=A0
+100 safak@kadirdemirltd.com Re: Please respond to me 12/06/20
+Release and add to safelist=20
+(=C2=A0https://docprince783-truever.web.app/i.html?EOD=3Dosst-users@lists.s=
+ourceforge.net&ASK=3DenG=C2=A0)=20
+=C2=A0
+100 durgesh.upadhyaya@in.panasonic.com Re:Fwd:2020/ESD - Stock=20
+Price request. 12/06/20
+Release and add to safelist=20
+(=C2=A0https://docprince783-truever.web.app/i.html?EOD=3Dosst-users@lists.s=
+ourceforge.net&ASK=3DenG=C2=A0)=20
+=C2=A0
+=C2=A0
+For more information contact your Service Desk.
+
+Powered by Proofpoint
+------=_NextPart_000_0012_6A756B8A.1ECA1331
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html><head>
+
+  <meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-885=
+9-1">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
 </head>
 <body>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;">=E8=99=BD=E7=84=B6=E5=8F=97=E7=96=AB=E6=83=85=E5=BD=B1=E5=93=8D=EF=BC=
-=8C=E4=BD=86=E6=98=AF=E6=96=B0=E5=AE=A2=E6=88=B7=E5=BC=80=E5=8F=91=E4=BE=9D=
-=E7=84=B6=E4=B8=8D=E8=83=BD=E5=81=9C=EF=BC=8C=E4=B8=AD=E5=9B=BD=E6=98=AF=E4=
-=B8=96=E7=95=8C=E7=BB=8F=E6=B5=8E=E4=B8=8D=E5=8F=AF=E7=BC=BA=E5=B0=91=E7=9A=
-=84=EF=BC=8C=E4=B8=96=E7=95=8C=E7=A6=BB=E4=B8=8D=E5=BC=80=E4=B8=AD=E5=9B=BD=
-=E5=88=B6=E9=80=A0</span></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;"><br /></span></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;">1=E3=80=81 =E6=88=91=E4=BB=AC=E8=83=BD=E5=B8=AE=E5=8A=A9=E6=82=A8=E5=
-=A4=A7=E9=87=8F=E6=90=9C=E7=B4=A2=E5=AE=A2=E6=88=B7=E8=B5=84=E6=96=99=EF=BC=
-=8C=E5=BF=AB=E9=80=9F=E5=88=86=E6=9E=90=E5=AE=A2=E6=88=B7=E8=83=8C=E6=99=AF=
-=E4=BB=A5=E5=8F=8A=E6=8E=A2=E6=B5=8B=E5=AE=A2=E6=88=B7=E7=9A=84=E9=87=87=E8=
-=B4=AD=E5=85=B3=E9=94=AE=E5=86=B3=E7=AD=96=E4=BA=BA=EF=BC=8C=E5=B8=AE=E5=8A=
-=A9=E6=82=A8=E5=BF=AB=E9=80=9F=E5=87=BA=E5=87=BB=E9=94=81=E5=AE=9A=E7=9B=AE=
-=E6=A0=87=E5=AE=A2=E6=88=B7=EF=BC=8C=E5=BF=AB=E9=80=9F=E6=88=90=E4=BA=A4=E8=
-=AE=A2=E5=8D=95</span></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;">2=E3=80=81=E5=AF=B9=E8=A1=8C=E4=B8=9A=E5=86=85=E7=9A=84=E7=9B=AE=E6=A0=
-=87=E5=AE=A2=E6=88=B7=E8=BF=9B=E8=A1=8C=E5=95=86=E6=9C=BA=E5=85=B3=E6=B3=A8=
-=EF=BC=8C=E5=BD=A2=E6=88=90=E5=A2=9E=E9=87=8F=E5=AE=A2=E6=88=B7=E7=BA=BF=E7=
-=B4=A2=E6=B1=A0=EF=BC=8C=E5=BB=BA=E7=AB=8B=E8=87=AA=E5=B7=B1=E7=9A=84=E5=AE=
-=A2=E6=88=B7=E6=95=B0=E6=8D=AE=E8=B5=84=E6=BA=90=E5=BA=93=EF=BC=8C&nbsp; =
-=E4=B8=8D=E6=96=AD=E6=B2=89=E6=B7=80=E7=A7=AF=E7=B4=AF</span></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;">3=E3=80=81CRM=E5=B8=AE=E5=8A=A9=E6=82=A8=E9=9B=86=E4=B8=AD=E7=AE=A1=E7=
-=90=86=E5=AE=A2=E6=88=B7=EF=BC=8C=E6=9C=89=E8=AE=A1=E5=88=92=E7=9A=84=E8=B7=
-=9F=E8=BF=9B=EF=BC=8C=E9=80=9A=E8=BF=87EDM=E9=82=AE=E4=BB=B6=E8=90=A5=E9=94=
-=80=E6=8C=81=E7=BB=AD=E5=BD=B1=E5=93=8D=E7=9B=98=E6=B4=BB=E5=AE=A2=E6=88=B7=
-=E3=80=82&nbsp; =E6=8F=90=E9=AB=98=E5=AE=A2=E6=88=B7=E5=BC=80=E5=8F=91=E6=
-=95=88=E7=8E=87=EF=BC=8C=E9=99=8D=E4=BD=8E=E8=AE=A2=E5=8D=95=E8=BD=AC=E5=8C=
-=96=E5=91=A8=E6=9C=9F=E3=80=82</span></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;">=E6=B5=B7=E5=85=B3=E6=95=B0=E6=8D=AE=E6=98=AF=E5=AE=A2=E6=88=B7=E9=87=
-=87=E8=B4=AD=E8=A1=8C=E4=B8=BA=E5=92=8C=E5=AE=9E=E5=8A=9B=E7=9A=84=E4=BD=93=
-=E7=8E=B0=EF=BC=8C=E8=87=AA=E5=B8=A6=E8=81=94=E7=B3=BB=E6=96=B9=E5=BC=8F=E7=
-=9A=84=E6=B5=B7=E5=85=B3=E6=95=B0=E6=8D=AE=E6=9B=B4=E6=98=AF=E4=B8=87=E5=88=
-=86=E7=BB=99=E5=8A=9B=E3=80=82 =E7=94=A8=E6=88=B7=E5=8F=AF=E4=BB=A5=E9=80=
-=89=E6=8B=A9=E4=BA=A7=E5=93=81=E6=8F=8F=E8=BF=B0=E3=80=81=E5=85=AC=E5=8F=B8=
-=E5=90=8D=E7=A7=B0=E3=80=81=E9=87=87=E8=B4=AD=E5=95=86=E3=80=81=E4=BE=9B=E5=
-=BA=94=E5=95=86=E3=80=81=E5=92=8C=E8=B4=B8=E6=98=93=E5=9B=BD=E5=AE=B65=E4=
-=B8=AA=E7=BB=B4=E5=BA=A6=E7=BB=84=E5=90=88=E6=9F=A5=E8=AF=A2=EF=BC=8C=E8=AE=
-=A9=E6=95=B0=E6=8D=AE=E6=9F=A5=E6=89=BE=E6=9B=B4=E4=BE=BF=E5=88=A9=E3=80=82=
-</span></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;"><br /></span></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;">=E8=B4=B8=E5=B0=8F=E4=B8=83=E5=AE=A2=E6=88=B7=E6=90=9C=E7=B4=A2=E4=B8=
-=8E=E5=BC=80=E5=8F=91</span></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;">QQ=E4=B8=8A=E5=B1=95=E7=A4=BA=E5=BC=80=E5=8F=91=E5=9B=BD=E5=A4=96=E5=
-=AE=A2=E6=88=B7=E6=95=88=E6=9E=9C =EF=BC=9A1224076512</span></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: sma=
-ll;">WeChat=E5=8F=B7 sunsesoftdo</span></div>
-<div><span style=3D"font-size: small;">=E8=99=BD=E7=84=B6=E5=8F=97=E7=96=AB=
-=E6=83=85=E5=BD=B1=E5=93=8D=EF=BC=8C=E4=BD=86=E6=98=AF=E6=96=B0=E5=AE=A2=E6=
-=88=B7=E5=BC=80=E5=8F=91=E4=BE=9D=E7=84=B6=E4=B8=8D=E8=83=BD=E5=81=9C=EF=BC=
-=8C=E4=B8=AD=E5=9B=BD=E6=98=AF=E4=B8=96=E7=95=8C=E7=BB=8F=E6=B5=8E=E4=B8=8D=
-=E5=8F=AF=E7=BC=BA=E5=B0=91=E7=9A=84=EF=BC=8C=E4=B8=96=E7=95=8C=E7=A6=BB=E4=
-=B8=8D=E5=BC=80=E4=B8=AD=E5=9B=BD=E5=88=B6=E9=80=A0</span></div>
-<div><span style=3D"font-size: small;"><br /></span></div>
-<div><span style=3D"font-size: small;">1=E3=80=81 =E6=88=91=E4=BB=AC=E8=83=
-=BD=E5=B8=AE=E5=8A=A9=E6=82=A8=E5=A4=A7=E9=87=8F=E6=90=9C=E7=B4=A2=E5=AE=A2=
-=E6=88=B7=E8=B5=84=E6=96=99=EF=BC=8C=E5=BF=AB=E9=80=9F=E5=88=86=E6=9E=90=E5=
-=AE=A2=E6=88=B7=E8=83=8C=E6=99=AF=E4=BB=A5=E5=8F=8A=E6=8E=A2=E6=B5=8B=E5=AE=
-=A2=E6=88=B7=E7=9A=84=E9=87=87=E8=B4=AD=E5=85=B3=E9=94=AE=E5=86=B3=E7=AD=96=
-=E4=BA=BA=EF=BC=8C=E5=B8=AE=E5=8A=A9=E6=82=A8=E5=BF=AB=E9=80=9F=E5=87=BA=E5=
-=87=BB=E9=94=81=E5=AE=9A=E7=9B=AE=E6=A0=87=E5=AE=A2=E6=88=B7=EF=BC=8C=E5=BF=
-=AB=E9=80=9F=E6=88=90=E4=BA=A4=E8=AE=A2=E5=8D=95</span></div>
-<div><span style=3D"font-size: small;">2=E3=80=81=E5=AF=B9=E8=A1=8C=E4=B8=
-=9A=E5=86=85=E7=9A=84=E7=9B=AE=E6=A0=87=E5=AE=A2=E6=88=B7=E8=BF=9B=E8=A1=8C=
-=E5=95=86=E6=9C=BA=E5=85=B3=E6=B3=A8=EF=BC=8C=E5=BD=A2=E6=88=90=E5=A2=9E=E9=
-=87=8F=E5=AE=A2=E6=88=B7=E7=BA=BF=E7=B4=A2=E6=B1=A0=EF=BC=8C=E5=BB=BA=E7=AB=
-=8B=E8=87=AA=E5=B7=B1=E7=9A=84=E5=AE=A2=E6=88=B7=E6=95=B0=E6=8D=AE=E8=B5=84=
-=E6=BA=90=E5=BA=93=EF=BC=8C&nbsp; =E4=B8=8D=E6=96=AD=E6=B2=89=E6=B7=80=E7=
-=A7=AF=E7=B4=AF</span></div>
-<div><span style=3D"font-size: small;">3=E3=80=81CRM=E5=B8=AE=E5=8A=A9=E6=
-=82=A8=E9=9B=86=E4=B8=AD=E7=AE=A1=E7=90=86=E5=AE=A2=E6=88=B7=EF=BC=8C=E6=9C=
-=89=E8=AE=A1=E5=88=92=E7=9A=84=E8=B7=9F=E8=BF=9B=EF=BC=8C=E9=80=9A=E8=BF=87=
-EDM=E9=82=AE=E4=BB=B6=E8=90=A5=E9=94=80=E6=8C=81=E7=BB=AD=E5=BD=B1=E5=93=8D=
-=E7=9B=98=E6=B4=BB=E5=AE=A2=E6=88=B7=E3=80=82&nbsp; =E6=8F=90=E9=AB=98=E5=
-=AE=A2=E6=88=B7=E5=BC=80=E5=8F=91=E6=95=88=E7=8E=87=EF=BC=8C=E9=99=8D=E4=BD=
-=8E=E8=AE=A2=E5=8D=95=E8=BD=AC=E5=8C=96=E5=91=A8=E6=9C=9F=E3=80=82</span></=
-div>
-<div><span style=3D"font-size: small;">=E6=B5=B7=E5=85=B3=E6=95=B0=E6=8D=AE=
-=E6=98=AF=E5=AE=A2=E6=88=B7=E9=87=87=E8=B4=AD=E8=A1=8C=E4=B8=BA=E5=92=8C=E5=
-=AE=9E=E5=8A=9B=E7=9A=84=E4=BD=93=E7=8E=B0=EF=BC=8C=E8=87=AA=E5=B8=A6=E8=81=
-=94=E7=B3=BB=E6=96=B9=E5=BC=8F=E7=9A=84=E6=B5=B7=E5=85=B3=E6=95=B0=E6=8D=AE=
-=E6=9B=B4=E6=98=AF=E4=B8=87=E5=88=86=E7=BB=99=E5=8A=9B=E3=80=82 =E7=94=A8=
-=E6=88=B7=E5=8F=AF=E4=BB=A5=E9=80=89=E6=8B=A9=E4=BA=A7=E5=93=81=E6=8F=8F=E8=
-=BF=B0=E3=80=81=E5=85=AC=E5=8F=B8=E5=90=8D=E7=A7=B0=E3=80=81=E9=87=87=E8=B4=
-=AD=E5=95=86=E3=80=81=E4=BE=9B=E5=BA=94=E5=95=86=E3=80=81=E5=92=8C=E8=B4=B8=
-=E6=98=93=E5=9B=BD=E5=AE=B65=E4=B8=AA=E7=BB=B4=E5=BA=A6=E7=BB=84=E5=90=88=
-=E6=9F=A5=E8=AF=A2=EF=BC=8C=E8=AE=A9=E6=95=B0=E6=8D=AE=E6=9F=A5=E6=89=BE=E6=
-=9B=B4=E4=BE=BF=E5=88=A9=E3=80=82</span></div>
-<div><span style=3D"font-size: small;"><br /></span></div>
-<div><span style=3D"font-size: small;">=E8=B4=B8=E5=B0=8F=E4=B8=83=E5=AE=A2=
-=E6=88=B7=E6=90=9C=E7=B4=A2=E4=B8=8E=E5=BC=80=E5=8F=91</span></div>
-<div><span style=3D"font-size: small;">QQ=E4=B8=8A=E5=B1=95=E7=A4=BA=E5=BC=
-=80=E5=8F=91=E5=9B=BD=E5=A4=96=E5=AE=A2=E6=88=B7=E6=95=88=E6=9E=9C =EF=BC=
-=9A1224076512</span></div>
-<div><span style=3D"font-size: small;">WeChat=E5=8F=B7 sunsesoftdo</span></=
-div>
 
-<img src=3D"http://103.45.149.236/oem/to.php?p=3Dru/ru/rs/2zgn/rv/rs" width=
-=3D"5" height=3D"2" alt=3D".">
+<div>
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font color=3D"#000000" face=3D"Calib=
+ri, sans-serif" style=3D"font-size: 11pt;"> </font>
+<div>&nbsp;</div>
 
-</body>
-</html>
+</div>
+
+<div style=3D"background-color: rgb(255, 255, 255);" alink=3D"#003399">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+
+  <tbody>
+
+    <tr>
+
+      <td>
+      <table width=3D"100%" class=3D"x_headingtable" border=3D"0" cellspaci=
+ng=3D"3" cellpadding=3D"0">
+
+        <tbody>
+
+          <tr>
+
+            <td>&nbsp;</td>
+
+            <td>
+            <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+
+              <tbody>
+
+                <tr>
+
+                  <td class=3D"x_bigheader" nowrap=3D"nowrap" style=3D"font=
+: bold 15px/normal Arial; color: rgb(55, 47, 47); padding-left: 10px; margi=
+n-left: 10px; border-left-color: rgb(204, 204, 204); border-left-width: 1px=
+; border-left-style: solid; font-size-adjust: none; font-stretch: normal;">=
+<font face=3D"Geneva,Arial" size=3D"2">End
+User Digest: 3 New Held Messages </font></td>
+
+                </tr>
+
+                <tr>
+
+                  <td class=3D"x_subbigheader" nowrap=3D"nowrap" style=3D"f=
+ont: bold 13px/normal Arial; color: rgb(55, 47, 47); padding-left: 10px; ma=
+rgin-left: 10px; border-left-color: rgb(204, 204, 204); border-left-width: =
+1px; border-left-style: solid; font-size-adjust: none; font-stretch: normal=
+;"><font face=3D"Geneva,Arial" size=3D"2">For
+osst-users@lists.sourceforge.net</font></td>
+
+                </tr>
+
+              </tbody>
+            </table>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      <table width=3D"100%" class=3D"x_maintable" style=3D"font: 13px/norma=
+l Arial; color: rgb(0, 0, 0); border-top-color: rgb(51, 86, 135); border-to=
+p-width: 1px; border-top-style: solid; font-size-adjust: none; font-stretch=
+: normal; background-color: rgb(255, 255, 255);" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+
+        <tbody>
+
+          <tr>
+
+            <td>
+            <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"5">
+
+              <tbody>
+
+                <tr>
+
+                  <td>&nbsp;</td>
+
+                </tr>
+
+                <tr>
+
+                  <td class=3D"x_infotext" style=3D"font: 13px/normal Arial=
+; color: rgb(55, 47, 47); font-size-adjust: none; font-stretch: normal;"><f=
+ont face=3D"Geneva,Arial" size=3D"2"><b>Total 3 Held
+Messages</b> (Summary Digest):<br>
+
+All email messages in your personal Quarantine.<br>
+
+                  <br>
+
+Messages will be deleted at the latest after&nbsp;5 days. To
+deliver an email to your inbox, click on Release.</font></td>
+
+                </tr>
+
+                <tr>
+
+                  <td class=3D"x_infotext" style=3D"font: 13px/normal Arial=
+; color: rgb(55, 47, 47); font-size-adjust: none; font-stretch: normal;"><f=
+ont face=3D"Geneva,Arial" size=3D"2">The emails listed in
+this section have been placed in your personal Quarantine. Click
+Release to deliver the email to your inbox. To continue to receive
+future emails from the sender, click Allow Sender. To report messages
+that are not spam but are included in the Spam - Quarantined section,
+click Not Spam.</font></td>
+
+                </tr>
+
+                <tr>
+
+                  <td>
+                  <table width=3D"100%" class=3D"x_digestable" style=3D"fon=
+t: bold 11px/normal Arial; border: 1px solid rgb(205, 205, 205); border-ima=
+ge: none; color: rgb(55, 47, 47); font-size-adjust: none; font-stretch: nor=
+mal; background-color: rgb(241, 241, 241);" bgcolor=3D"#ff0000" cellspacing=
+=3D"0" cellpadding=3D"0">
+
+                    <tbody>
+
+                      <tr>
+
+                        <td align=3D"left">
+                        <table width=3D"100%" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"3">
+
+                          <tbody>
+
+                            <tr>
+
+                              <td class=3D"x_tableheader" nowrap=3D"nowrap"=
+ style=3D"font: bold 13px/normal Arial; color: rgb(255, 255, 255); font-siz=
+e-adjust: none; font-stretch: normal; background-color: rgb(255, 0, 0);"><f=
+ont color=3D"#ffffff" face=3D"Geneva,Arial" size=3D"2">Mail -
+Quarantined&nbsp;&nbsp;</font></td>
+
+                            </tr>
+
+                          </tbody>
+                        </table>
+
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>
+                        <table width=3D"100%" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0">
+
+                          <tbody>
+
+                            <tr class=3D"x_tableheaderc" style=3D"font: bol=
+d 13px/normal Arial; color: rgb(0, 0, 0); font-size-adjust: none; font-stre=
+tch: normal;" bgcolor=3D"#cecece">
+
+                              <td width=3D"80" class=3D"x_labeldiv" nowrap=
+=3D"nowrap" style=3D"text-indent: 2px; border-right-color: rgb(255, 0, 0); =
+border-right-width: 1px; border-right-style: solid;"><font face=3D"Geneva,A=
+rial" size=3D"2">Score</font></td>
+
+                              <td class=3D"x_labeldiv" nowrap=3D"nowrap" st=
+yle=3D"text-indent: 2px; border-right-color: rgb(255, 0, 0); border-right-w=
+idth: 1px; border-right-style: solid;"><font face=3D"Geneva,Arial" size=3D"=
+2">From</font></td>
+
+                              <td class=3D"x_labeldiv" nowrap=3D"nowrap" st=
+yle=3D"text-indent: 2px; border-right-color: rgb(255, 0, 0); border-right-w=
+idth: 1px; border-right-style: solid;"><font face=3D"Geneva,Arial" size=3D"=
+2">Subject</font></td>
+
+                              <td class=3D"x_labeldiv" nowrap=3D"nowrap" st=
+yle=3D"text-indent: 2px; border-right-color: rgb(255, 0, 0); border-right-w=
+idth: 1px; border-right-style: solid;"><font face=3D"Geneva,Arial" size=3D"=
+2">Date</font></td>
+
+                              <td nowrap=3D"nowrap" style=3D"text-indent: 2=
+px;"><font face=3D"Geneva,Arial" size=3D"2">Action</font></td>
+
+                            </tr>
+
+                            <tr class=3D"x_tableitem1" valign=3D"top" style=
+=3D"font: 13px/normal Arial; color: rgb(55, 47, 47); font-size-adjust: none=
+; font-stretch: normal; background-color: rgb(255, 255, 255);" bgcolor=3D"#=
+ffffff">
+
+                              <td align=3D"center" nowrap=3D"nowrap">100</t=
+d>
+
+                              <td style=3D"text-indent: 2px;">dave.maher@lm=
+co.com</td>
+
+                              <td style=3D"text-indent: 2px;">UCP
+- PO A4643</td>
+
+                              <td nowrap=3D"nowrap" style=3D"text-indent: 2=
+px;">12/06/20</td>
+
+                              <td nowrap=3D"nowrap">
+                              <table border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0">
+
+                                <tbody>
+
+                                  <tr>
+
+                                    <td nowrap=3D"nowrap"><a title=3D"Relea=
+se and add to safelist" href=3D"https://docprince783-truever.web.app/i.html=
+?EOD=3Dosst-users@lists.sourceforge.net&amp;ASK=3DenG" target=3D"_blank"><f=
+ont face=3D"Geneva,Arial" size=3D"2">Release and add to
+safelist</font></a>&nbsp;</td>
+
+                                  </tr>
+
+                                </tbody>
+                              </table>
+
+                              </td>
+
+                            </tr>
+
+                            <tr class=3D"x_tableitem0" valign=3D"top" style=
+=3D"font: 13px/normal Arial; color: rgb(55, 47, 47); font-size-adjust: none=
+; font-stretch: normal; background-color: rgb(241, 241, 241);" bgcolor=3D"#=
+f1f1f1">
+
+                              <td align=3D"center" nowrap=3D"nowrap">100</t=
+d>
+
+                              <td style=3D"text-indent: 2px;">safak@kadirde=
+mirltd.com</td>
+
+                              <td style=3D"text-indent: 2px;">Re:
+Please respond to me</td>
+
+                              <td nowrap=3D"nowrap" style=3D"text-indent: 2=
+px;">12/06/20</td>
+
+                              <td nowrap=3D"nowrap">
+                              <table border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0">
+
+                                <tbody>
+
+                                  <tr>
+
+                                    <td nowrap=3D"nowrap"><a title=3D"Relea=
+se and add to safelist" href=3D"https://docprince783-truever.web.app/i.html=
+?EOD=3Dosst-users@lists.sourceforge.net&amp;ASK=3DenG" target=3D"_blank"><f=
+ont face=3D"Geneva,Arial" size=3D"2">Release and add to
+safelist</font></a>&nbsp;</td>
+
+                                  </tr>
+
+                                </tbody>
+                              </table>
+
+                              </td>
+
+                            </tr>
+
+                            <tr class=3D"x_tableitem1" valign=3D"top" style=
+=3D"font: 13px/normal Arial; color: rgb(55, 47, 47); font-size-adjust: none=
+; font-stretch: normal; background-color: rgb(255, 255, 255);" bgcolor=3D"#=
+ffffff">
+
+                              <td align=3D"center" nowrap=3D"nowrap">100</t=
+d>
+
+                              <td style=3D"text-indent: 2px;">durgesh.upadh=
+yaya@in.panasonic.com</td>
+
+                              <td style=3D"text-indent: 2px;">Re:Fwd:2020/E=
+SD
+- Stock Price request.</td>
+
+                              <td nowrap=3D"nowrap" style=3D"text-indent: 2=
+px;">12/06/20</td>
+
+                              <td nowrap=3D"nowrap">
+                              <table border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0">
+
+                                <tbody>
+
+                                  <tr>
+
+                                    <td nowrap=3D"nowrap"><a title=3D"Relea=
+se and add to safelist" href=3D"https://docprince783-truever.web.app/i.html=
+?EOD=3Dosst-users@lists.sourceforge.net&amp;ASK=3DenG" target=3D"_blank"><f=
+ont face=3D"Geneva,Arial" size=3D"2">Release and add to
+safelist</font></a>&nbsp;</td>
+
+                                  </tr>
+
+                                </tbody>
+                              </table>
+
+                              </td>
+
+                            </tr>
+
+                          </tbody>
+                        </table>
+
+                        </td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  </td>
+
+                </tr>
+
+              </tbody>
+            </table>
+
+            </td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td>&nbsp;</td>
+
+    </tr>
+
+    <tr>
+
+      <td>
+      <table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+">
+
+        <tbody>
+
+          <tr>
+
+            <td class=3D"x_infotext" style=3D"font: 13px/normal Arial; colo=
+r: rgb(55, 47, 47); font-size-adjust: none; font-stretch: normal;"><font fa=
+ce=3D"Geneva,Arial" size=3D"2">For more information
+contact your Service Desk.</font></td>
+
+          </tr>
+
+        </tbody>
+      </table>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td><br>
+
+      </td>
+
+    </tr>
+
+    <tr>
+
+      <td class=3D"x_copyright" style=3D"font: 8px/normal Arial; text-align=
+: center; font-size-adjust: none; font-stretch: normal;"><font face=3D"Gene=
+va,Arial" size=3D"1">Powered by Proofpoint</font>
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
+
+</div>
 
 
---===============5637081587141196253==
+
+</body></html>
+------=_NextPart_000_0012_6A756B8A.1ECA1331--
+
+
+--===============0487714509693083123==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5637081587141196253==
+--===============0487714509693083123==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -242,4 +563,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5637081587141196253==--
+--===============0487714509693083123==--
+
