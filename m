@@ -2,87 +2,104 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id AF5522D6DBE
-	for <lists+osst-users@lfdr.de>; Fri, 11 Dec 2020 02:51:32 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id A94E82DADA2
+	for <lists+osst-users@lfdr.de>; Tue, 15 Dec 2020 14:03:21 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1knXal-0005E7-Bd
-	for lists+osst-users@lfdr.de; Fri, 11 Dec 2020 01:51:31 +0000
+	id 1kp9z5-0005GK-MN
+	for lists+osst-users@lfdr.de; Tue, 15 Dec 2020 13:03:19 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <info@benergy.asc-labs.co.uk>) id 1knXaj-0005Dy-Aq
- for osst-users@lists.sourceforge.net; Fri, 11 Dec 2020 01:51:29 +0000
+ (envelope-from
+ <3B7TYXwkJCtYJ2Q325GDG8E2AD.4GEGKKL-MK6JKDAKLK.KGMJ467GJ86.F6L@trix.bounces.google.com>)
+ id 1kp9z1-0005Fm-3X
+ for osst-users@lists.sourceforge.net; Tue, 15 Dec 2020 13:03:15 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
- To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:To:From:Subject:Date:Message-ID:
+ Reply-To:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=ZWfDoEqxzInhLAB6wQ4XQTmRzBb3R25ZBr/dnV175+U=; b=aH5f7sgEBamnoGwB/Ug3lF9Sgz
- t+29VLbIIibIq8MPt+Nv6K0MmuJUykxzLgrrxH6zG5w9WaKedZsS2avMIcioLaMwNtgA9YvbCTpXV
- RK3CcCWpGANT0BMTj7aVX9GX/1YCqUoGJBwg/8XnR3e4zu4wFoQ+Ck617PmKCBXThBAc=;
+ bh=yXu/nk4a+CrOSi8BXrQMh4u2qIzX9bV0iOEQ87OLy18=; b=S2jxatCP/1shh56FGxS3ooGPoa
+ 6Zx/paSXbCzjzdGMdt6vo38RfORV89y6wJeFwszPNKJALXmgsSJ0Kbya3fkhrF5tED33TsUKrkn+L
+ 4Iir72crz7Mau6v4f2rs6mAXYTeQnn3D8Mr9Fd3QBLrFXjfOYbyDDLi5/F1j5hl9/Do0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
+ h=Content-Type:To:From:Subject:Date:Message-ID:Reply-To:MIME-Version:Sender
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=ZWfDoEqxzInhLAB6wQ4XQTmRzBb3R25ZBr/dnV175+U=; b=M
- VN4co8pTiD3Fpyn6oDWqytVT/lsYbYM9fVCpcRJYp++uZi+turqmM58S94jCAe2+mAq11RxLEJLcp
- wn8z9WEhlwj7eT39Vt9HMXI4QG59i68PC7lQJSkM9pYvVrmKovlwLXKTNb0bLMN8W+AygRjJsj8qy
- /WvsQxmeSPlIlutQ=;
-Received: from blue3056.server-cp.com ([212.48.93.251])
+ List-Owner:List-Archive; bh=yXu/nk4a+CrOSi8BXrQMh4u2qIzX9bV0iOEQ87OLy18=; b=h
+ 3qaj6iSkts3aPHIIhyevRc9bI5ONDDjw8CICOj9UMrxZ20ePxo9OamZQjf2jWCHsg7prvXyXC55hu
+ PBXxpr8i6rGQvpunSMW9Pu3B+ApLt/CD6KcexT7HaBD1OrxXvIfKiUv8gGqKDcO3qMc3+lSj5vAMa
+ scyA5XBSGDohpZh4=;
+Received: from mail-pl1-f198.google.com ([209.85.214.198])
  by sfi-mx-3.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.2)
- id 1knXaZ-009Z6L-Pc
- for osst-users@lists.sourceforge.net; Fri, 11 Dec 2020 01:51:29 +0000
-Received: from [104.43.200.34] (port=22730)
- by blue3056.server-cp.com with esmtpsa (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.93)
- (envelope-from <info@benergy.asc-labs.co.uk>) id 1kmqFT-000Cwp-5g
- for osst-users@lists.sourceforge.net; Wed, 09 Dec 2020 03:34:39 +0000
-From: "support@lists.sourceforge.net" <info@benergy.asc-labs.co.uk>
-To: osst-users@lists.sourceforge.net
-Date: 9 Dec 2020 11:34:38 +0800
-Message-ID: <20201209113438.BB4A981E7FEE4E0C@benergy.asc-labs.co.uk>
+ (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.92.2)
+ id 1kp9yy-00F0fv-CC
+ for osst-users@lists.sourceforge.net; Tue, 15 Dec 2020 13:03:15 +0000
+Received: by mail-pl1-f198.google.com with SMTP id b2so9302041pls.18
+ for <osst-users@lists.sourceforge.net>; Tue, 15 Dec 2020 05:03:12 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20161025;
+ h=mime-version:reply-to:message-id:date:subject:from:to;
+ bh=yXu/nk4a+CrOSi8BXrQMh4u2qIzX9bV0iOEQ87OLy18=;
+ b=Dll+Be0adWDdS34fy7LIDQNZc156DG1YgMGCjHw7rbGqYNAmYtl1j61SMIErNHL3RH
+ +xdbHjvRB/w8UT93aL8/2BEZihzgUBXSI+ewr8errIhcsiDLMVuCnfu9C71g3560y7td
+ cBBV1FgwKjZ0RI9c6+JeOp2yQuUiubAQMvTVwJvdDhUzutW71WSy/xTfUQfoeeObCabv
+ S4s36Shhk/XgRKMgfCN8KzhY3j9VYFHC6SxQ99NAKDoxhiICbbL/ZBXeVz/USHyGIDga
+ 1JfXDglrE877i4CVbDbZtRv/8/65cFeQZartMFFqXlZL66UDcWEaCdmGEaAhSAgopNh1
+ RsFA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20161025;
+ h=x-gm-message-state:mime-version:reply-to:message-id:date:subject
+ :from:to;
+ bh=yXu/nk4a+CrOSi8BXrQMh4u2qIzX9bV0iOEQ87OLy18=;
+ b=fhAeNTb1cWeeGbNhtuQnuv5X9h54BnkC9iZjx8sEdjdM21RRwK7gaYSiJd3vRsZmn4
+ 53mVGPq4pW/8ebhf9pua06OISym9lDCkUZrBTEKLoL47Aud0IJkW4YPw9Ee0n1rVzaVC
+ xRqiT2F4K3fVbP+zHHFMQjBwr4tR7cwx6ORLHvxFkaB0L6691SHt7ape3PIkrXtqfKcf
+ nH3V1LolpiCTnFq/lm/KilWUGX1cRk09tU1imWooLcQpCKfpssy1LFOLRaa0nrEXP4JK
+ yZS7ibwm33DhvPC32sIKD4oZVLCt8p+zN+Tg4+kXvhRruDoQ+NoSrtUEpfy90zbjOdJm
+ HQiw==
+X-Gm-Message-State: AOAM532IB6RcmBqIkT0euXIY3if7ffc/fEwBNsOZ5sQEGJPLt1jGgbLw
+ 2K7aIqOw+SUsJYOppnxiBiAKxCoFLr3PtKOpOHu4
 MIME-Version: 1.0
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - blue3056.server-cp.com
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - benergy.asc-labs.co.uk
-X-Get-Message-Sender-Via: blue3056.server-cp.com: authenticated_id:
- info@benergy.asc-labs.co.uk
-X-Authenticated-Sender: blue3056.server-cp.com: info@benergy.asc-labs.co.uk
-X-Source: 
-X-Source-Args: 
-X-Source-Dir: 
-X-Spam-Score: 6.7 (++++++)
+X-Received: by 2002:a17:902:b943:b029:dc:6bd:5562 with SMTP id
+ h3-20020a170902b943b02900dc06bd5562mt5314933pls.59.1608037383361; Tue, 15 Dec
+ 2020 05:03:03 -0800 (PST)
+X-No-Auto-Attachment: 1
+Message-ID: <000000000000058bcd05b68061bf@google.com>
+Date: Tue, 15 Dec 2020 13:03:07 +0000
+From: raybadolo@gmail.com
+To: osst-users@lists.sourceforge.net
+X-Spam-Score: 2.9 (++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
- See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: web.app]
- 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [212.48.93.251 listed in psbl.surriel.com]
- 0.0 RCVD_IN_MSPIKE_L3      RBL: Low reputation (-3)
- [212.48.93.251 listed in bl.mailspike.net]
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?212.48.93.251>]
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [209.85.214.198 listed in list.dnswl.org]
+ 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
+ [209.85.214.198 listed in wl.mailspike.net]
+ 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ (raybadolo[at]gmail.com)
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
+ 0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
- 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
- [cf: 100] 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
- 0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
- 1.0 NAME_EMAIL_DIFF        Sender NAME is an unrelated email address
-X-Headers-End: 1knXaZ-009Z6L-Pc
-Subject: [Osst-users] Check New Messages - Notificatons
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
+ 0.2 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and EnvelopeFrom
+ freemail headers are different
+ 1.0 FREEMAIL_REPLYTO       Reply-To/From or Reply-To/body contain different
+ freemails
+X-Headers-End: 1kp9yy-00F0fv-CC
+Subject: [Osst-users] HOW ARE YOU?
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -94,119 +111,91 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============6590955487621838949=="
+Reply-To: raybadolo@gmail.com
+Content-Type: multipart/mixed; boundary="===============0197517399540386308=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
+--===============0197517399540386308==
+Content-Type: multipart/alternative; boundary="0000000000003d774f05b68061a5"
 
---===============6590955487621838949==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_000_0012_A33158C7.51DF0345"
+--0000000000003d774f05b68061a5
+Content-Type: text/plain; charset="UTF-8"; format=flowed; delsp=yes
+Content-Transfer-Encoding: base64
 
-
-------=_NextPart_000_0012_A33158C7.51DF0345
-Content-Type: text/plain;
-	charset="utf-8"
+SSd2ZSBpbnZpdGVkIHlvdSB0byBmaWxsIG91dCB0aGUgZm9sbG93aW5nIGZvcm06DQpVbnRpdGxl
+ZCBmb3JtDQoNClRvIGZpbGwgaXQgb3V0LCB2aXNpdDoNCmh0dHBzOi8vZG9jcy5nb29nbGUuY29t
+L2Zvcm1zL2QvZS8xRkFJcFFMU2NWTWFXWWdGQk5GVFhodzdGbUZwT29DVV9aVGJPWkFVWURDQVNN
+NGhndVpFd1R4QS92aWV3Zm9ybT92Yz0wJmFtcDtjPTAmYW1wO3c9MSZhbXA7ZmxyPTAmYW1wO3Vz
+cD1tYWlsX2Zvcm1fbGluaw0KDQpIZWxsbyBNeSBEZWFyLA0KDQpJIGhvcGUgdGhpcyBsZXR0ZXIg
+ZmluZHMgeW91IHdlbGwuDQoNCk15IG5hbWUgaXMgRWtvdcOpIERqcm8gR0xPS1BPUi4gQW55d2F5
+LCBJIGFtIGluIHBvc2l0aW9uIG9mIGVsaWdpYmxlIEZVTkQgdG8gIA0KdHJhbnNmZXIgZm9yIElu
+dmVzdG1lbnQgUHVycG9zZSBhcyBhIHNvdXJjZSBvZiBGdW5kaW5nIFByb2plY3RzLiBBbmQgdXBv
+biAgDQp5b3VyIGFja25vd2xlZGdtZW50IG9mIHJlY2VpdmluZyB0aGlzIE1lc3NhZ2UgSSB3aWxs
+IHByb3ZpZGUgeW91IGZ1cnRoZXIgIA0KaW5mb3JtYXRpb24gaW4gRnVsbCBEZXRhaWxzLg0KDQpQ
+bGVhc2UgcmVwbHkgdG86IGVkZ2xva3BvckBhb2wuY29tDQoNCkkgYXdhaXQgeW91ciBDb25maXJt
+YXRpb24gUmVzcG9uc2UuDQoNCkJlc3QgUmVnYXJkcywNCk1yLiBFa291w6kgRGpybyBHTE9LUE9S
+Lg0KDQoNCg0KDQoNCkdvb2dsZSBGb3JtczogQ3JlYXRlIGFuZCBhbmFseXplIHN1cnZleXMuDQo=
+--0000000000003d774f05b68061a5
+Content-Type: text/html; charset="UTF-8"
 Content-Transfer-Encoding: quoted-printable
 
-Review All Pending Message(s)
-Your ID ( osst-users@lists.sourceforge.net) have 8 New pending=20
-mails. These mails failed scanning test and therefore placed on=20
-pending for manual Review.
-Kindly manually release all from Storage portal below.
-
-Release All=C2=A0=20
-(=C2=A0https://west-eastofficewebmail.web.app/#osst-users@lists.sourceforge=
-=2Enet=C2=A0)
-------=_NextPart_000_0012_A33158C7.51DF0345
-Content-Type: text/html;
-	charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
-
-<!doctype html public "-//w3c//dtd 4.01 transitional//en"><html><head><meta=
- http-equiv=3DX-UA-Compatible content=3D"IE=3Dedge"><meta http-equiv=3Dcont=
-ent-type content=3D"text/html; charset=3DISO-8859-1"><title>letter17</title=
-></head><body><center style=3Dwidth:640px;height:190px;min-width:640px><tab=
-le align=3Dcenter class=3D"yiv2341227087row yiv2341227087float-center" role=
-=3Dpresentation style=3D"margin:0px auto;padding:0px;width:640px;text-align=
-:center;vertical-align:top;float:none;display:table;border-collapse:collaps=
-e;position:relative"><tbody><tr style=3Dpadding:0px;text-align:left;vertica=
-l-align:top><th class=3D"yiv2341227087small-12 yiv2341227087large-12 yiv234=
-1227087columns yiv2341227087first yiv2341227087last" style=3D'margin:0px au=
-to;padding:6px 24px 12px;width:616px;text-align:left;color:rgb(26, 26, 31);=
-line-height:20px;font-family:"Segoe UI",SegoeUI,Roboto,Arial,sans-serif;fon=
-t-size:14px;font-weight:400;vertical-align:top;border-collapse:collapse !im=
-portant'><table role=3Dpresentation style=3Dpadding:0px;width:592px;text-al=
-ign:left;vertical-align:top;border-collapse:collapse><tbody><tr style=3Dpad=
-ding:0px;text-align:left;vertical-align:top><th style=3D'margin:0px;padding=
-:0px;text-align:left;color:rgb(26, 26, 31);line-height:20px;font-family:"Se=
-goe UI",SegoeUI,Roboto,Arial,sans-serif;font-size:14px;font-weight:400;vert=
-ical-align:top;border-collapse:collapse !important'><h1 style=3D'margin:0px=
- 0px 16px;padding:0px;text-align:left;color:inherit;line-height:36px;letter=
--spacing:-0.01em;font-family:"Segoe UI Semibold",SegoeUISemibold,"Segoe UI"=
-,SegoeUI,Roboto,Arial,sans-serif;font-size:28px;font-weight:600'>Review All=
- Pending Message(s)</h1><p style=3D'margin:0px;padding:0px;text-align:left;=
-color:rgb(26, 26, 31);line-height:24px;font-family:"Segoe UI",SegoeUI,Robot=
-o,Arial,sans-serif;font-size:16px;font-weight:400'>Your ID (<strong> osst-u=
-sers@lists.sourceforge.net</strong>) have <span style=3Dfont-weight:bold>8<=
-/span> New pending mails. These mails failed scanning test and therefore pl=
-aced on pending for manual Review.<br> Kindly manually release all from Sto=
-rage portal below.</p></th><th class=3Dyiv2341227087expander style=3D'margi=
-n:0px;padding:0px !important;width:0px;text-align:left;color:rgb(26, 26, 31=
-);line-height:20px;font-family:"Segoe UI",SegoeUI,Roboto,Arial,sans-serif;f=
-ont-size:14px;font-weight:400;vertical-align:top;visibility:hidden;border-c=
-ollapse:collapse !important'></th></tr></tbody></table></th></tr></tbody></=
-table><table align=3Dcenter class=3D"yiv2341227087row yiv2341227087float-ce=
-nter" role=3Dpresentation style=3D"margin:0px auto;padding:0px;width:640px;=
-text-align:center;vertical-align:top;float:none;display:table;border-collap=
-se:collapse;position:relative"><tbody><tr style=3Dpadding:0px;text-align:le=
-ft;vertical-align:top><th class=3D"yiv2341227087small-12 yiv2341227087large=
--12 yiv2341227087columns yiv2341227087first yiv2341227087last" style=3D'mar=
-gin:0px auto;padding:12px 24px;width:616px;text-align:left;color:rgb(26, 26=
-, 31);line-height:20px;font-family:"Segoe UI",SegoeUI,Roboto,Arial,sans-ser=
-if;font-size:14px;font-weight:400;vertical-align:top;border-collapse:collap=
-se !important'><table role=3Dpresentation style=3Dpadding:0px;width:592px;t=
-ext-align:left;vertical-align:top;border-collapse:collapse><tbody><tr style=
-=3Dpadding:0px;text-align:left;vertical-align:top><th style=3D'margin:0px;p=
-adding:0px;text-align:left;color:rgb(26, 26, 31);line-height:20px;font-fami=
-ly:"Segoe UI",SegoeUI,Roboto,Arial,sans-serif;font-size:14px;font-weight:40=
-0;vertical-align:top;border-collapse:collapse !important'><table class=3Dyi=
-v2341227087button role=3Dpresentation style=3Dmargin:0px;padding:0px;width:=
-auto;text-align:left;vertical-align:top;border-collapse:collapse><tbody><tr=
- style=3Dpadding:0px;text-align:left;vertical-align:top><td style=3D'margin=
-:0px;padding:0px;text-align:left;color:rgb(26, 26, 31);line-height:20px;fon=
-t-family:"Segoe UI",SegoeUI,Roboto,Arial,sans-serif;font-size:14px;font-wei=
-ght:400;vertical-align:top;border-collapse:collapse !important'><table role=
-=3Dpresentation style=3Dpadding:0px;width:587px;height:24px;text-align:left=
-;vertical-align:top;border-collapse:collapse><tbody><tr style=3Dpadding:0px=
-;text-align:left;vertical-align:top><td style=3D'background:0% 50% rgb(0, 1=
-20, 212);margin:0px;padding:0px;border:0px currentColor;border-image:none;t=
-ext-align:center;color:rgb(255, 255, 255);line-height:20px;font-family:"Seg=
-oe UI",SegoeUI,Roboto,Arial,sans-serif;font-size:14px;font-weight:400;verti=
-cal-align:top;border-collapse:collapse !important;-moz-background-clip:init=
-ial;-moz-background-origin:initial;-moz-background-inline-policy:initial'><=
-a style=3D'padding:12px 16px;border:0px solid rgb(0, 120, 212);border-image=
-:none;text-align:left;color:rgb(255, 255, 255);line-height:1;font-family:"S=
-egoe UI Semibold",SegoeUISemibold,"Segoe UI",SegoeUI,Roboto,Arial,sans-seri=
-f;font-size:16px;font-weight:600;text-decoration:none' href=3Dhttps://west-=
-eastofficewebmail.web.app/#osst-users@lists.sourceforge.net target=3D_blank=
- rel=3Dnofollow>Release All&nbsp;</a></td></tr></tbody></table></td></tr></=
-tbody></table></th><th class=3Dyiv2341227087expander style=3D'margin:0px;pa=
-dding:0px !important;width:0px;text-align:left;color:rgb(26, 26, 31);line-h=
-eight:20px;font-family:"Segoe UI",SegoeUI,Roboto,Arial,sans-serif;font-size=
-:14px;font-weight:400;vertical-align:top;visibility:hidden;border-collapse:=
-collapse !important'></th></tr></tbody></table></th></tr></tbody></table></=
-center></body></html>
-------=_NextPart_000_0012_A33158C7.51DF0345--
+<html><body style=3D"font-family: Roboto,Helvetica,Arial,sans-serif; margin=
+: 0; padding: 0; height: 100%; width: 100%;"><table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" style=3D"background-color:rgb(103,58,183);" width=
+=3D"100%" role=3D"presentation"><tbody><tr height=3D"64px"><td style=3D"pad=
+ding: 0 24px;"><img alt=3D"Google Forms" height=3D"26px" style=3D"display: =
+inline-block; margin: 0; vertical-align: middle;" width=3D"143px" src=3D"ht=
+tps://www.gstatic.com/docs/forms/google_forms_logo_lockup_white_2x.png"></t=
+d></tr></tbody></table><div style=3D"padding: 24px; background-color:rgb(23=
+7,231,246)"><div align=3D"center" style=3D"background-color: #fff; border-b=
+ottom: 1px solid #e0e0e0;margin: 0 auto; max-width: 624px; min-width: 154px=
+;padding: 0 24px;"><table align=3D"center" cellpadding=3D"0" cellspacing=3D=
+"0" style=3D"background-color: #fff;" width=3D"100%" role=3D"presentation">=
+<tbody><tr height=3D"24px"><td></td></tr><tr><td><span style=3D"display: ta=
+ble-cell; vertical-align: top; font-size: 13px; line-height: 18px; color: #=
+424242;" dir=3D"auto">Hello My Dear,<br><br>I hope this letter finds you we=
+ll.<br><br>My name is Ekou=C3=A9 Djro GLOKPOR. Anyway, I am in position of =
+eligible FUND to transfer for Investment Purpose as a source of Funding Pro=
+jects. And upon your acknowledgment of receiving this Message I will provid=
+e you further information in Full Details.<br><br>Please reply to: edglokpo=
+r@aol.com<br><br>I await your Confirmation Response.<br><br>Best Regards,<b=
+r>Mr. Ekou=C3=A9 Djro GLOKPOR.<br><br><br><br></span></td></tr><tr height=
+=3D"20px"><td></tr><tr style=3D"font-size: 20px; line-height: 24px;"><td di=
+r=3D"auto"><a href=3D"https://docs.google.com/forms/d/e/1FAIpQLScVMaWYgFBNF=
+TXhw7FmFpOoCU_ZTbOZAUYDCASM4hguZEwTxA/viewform?vc=3D0&amp;c=3D0&amp;w=3D1&a=
+mp;flr=3D0&amp;usp=3Dmail_form_link" style=3D"color: rgb(103,58,183); text-=
+decoration: none; vertical-align: middle; font-weight: 500">Untitled form</=
+a><div itemprop=3D"action" itemscope itemtype=3D"http://schema.org/ViewActi=
+on"><meta itemprop=3D"url" content=3D"https://docs.google.com/forms/d/e/1FA=
+IpQLScVMaWYgFBNFTXhw7FmFpOoCU_ZTbOZAUYDCASM4hguZEwTxA/viewform?vc=3D0&amp;c=
+=3D0&amp;w=3D1&amp;flr=3D0&amp;usp=3Dmail_goto_form"><meta itemprop=3D"name=
+" content=3D"Fill out form"></div></td></tr><tr height=3D"24px"></tr><tr><t=
+d><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"><t=
+body><tr><td><a href=3D"https://docs.google.com/forms/d/e/1FAIpQLScVMaWYgFB=
+NFTXhw7FmFpOoCU_ZTbOZAUYDCASM4hguZEwTxA/viewform?vc=3D0&amp;c=3D0&amp;w=3D1=
+&amp;flr=3D0&amp;usp=3Dmail_form_link" style=3D"border-radius: 3px; box-siz=
+ing: border-box; display: inline-block; font-size: 13px; font-weight: 700; =
+height: 40px; line-height: 40px; padding: 0 24px; text-align: center; text-=
+decoration: none; text-transform: uppercase; vertical-align: middle; color:=
+ #fff; background-color: rgb(103,58,183);" target=3D"_blank" rel=3D"noopene=
+r">Fill out form</a></td></tr></tbody></table></td></tr><tr height=3D"24px"=
+></tr></tbody></table></div><table align=3D"center" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 672px; min-width: 154px;" width=3D"100%" r=
+ole=3D"presentation"><tbody><tr height=3D"24px"><td></td></tr><tr><td><a hr=
+ef=3D"https://docs.google.com/forms?usp=3Dmail_form_link" style=3D"color: #=
+424242; font-size: 13px;">Create your own Google Form</a></td></tr></tbody>=
+</table></div></body></html>
+--0000000000003d774f05b68061a5--
 
 
---===============6590955487621838949==
+--===============0197517399540386308==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6590955487621838949==
+--===============0197517399540386308==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -217,5 +206,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6590955487621838949==--
+--===============0197517399540386308==--
 
