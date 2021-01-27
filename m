@@ -2,55 +2,57 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id D2CD830534C
-	for <lists+osst-users@lfdr.de>; Wed, 27 Jan 2021 07:37:40 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 156CB305454
+	for <lists+osst-users@lfdr.de>; Wed, 27 Jan 2021 08:21:29 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1l4eSR-0000Rb-Ir
-	for lists+osst-users@lfdr.de; Wed, 27 Jan 2021 06:37:39 +0000
+	id 1l4f8p-0007kx-Sd
+	for lists+osst-users@lfdr.de; Wed, 27 Jan 2021 07:21:27 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <osst-users@mirarnikati.com>) id 1l4eSP-0000RS-Mn
- for osst-users@lists.sourceforge.net; Wed, 27 Jan 2021 06:37:37 +0000
+ (envelope-from <osst-users@mirarnikati.com>) id 1l4f8n-0007kd-Nt
+ for osst-users@lists.sourceforge.net; Wed, 27 Jan 2021 07:21:25 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
  :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=3PGuH6LB+GyR9HYHR/eyvQsYHO77pAu+yBKJO17Bt+I=; b=HRknc29jqwICDDNqH4jRQ0h1u0
- /0TATJuZpgErCpQrdASQwPnXPsOCNw726s0I6l3pMn47EWAj2mPxDuDuUtgEpnB9DM6lHX7bz5Y9R
- Dr35P+uOatbyPWJUTsz6YMnA9CIIy2sqsmLBU5BEq+NjO4RwtMDom2Iyl2I5Za5WSvmM=;
+ bh=YeHO9MvrO1MTnLa0yDmle/TgzmNgEOjORXmhr5ZNT6I=; b=ZYgrtSWK87bBDFG7ZdCTCyULXi
+ 7yfRE+ahNgP3QXx0crG9Wpyl+cGk1vxsJMHtnBH4QYU/BPnp538sLkiRclfKWOZFOrYTOgxlZKxL0
+ v+WVr4RkYDA8s3f3jUhyv0bsIJSrdbKHs6RofJpr81SDnObQKLu3DhYv1apIIqZSE6E0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
  Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
  :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=3PGuH6LB+GyR9HYHR/eyvQsYHO77pAu+yBKJO17Bt+I=; b=g
- kn9xJXp/O7PLLNexjaOzSRanV+NHYfRdfoJhMchGN1O8POm4mDNwV1CWsVT3bLIiu/Szpzkd6t/Qf
- b7WX6A6ZfKgqVdnt+cmPjv/tfDlSox9R72EhQDSAbgn0Ckze1fKZ90e9riWw2nO63MHYHk7ZiAz7/
- q5rKLGOLYYQn+LC4=;
+ List-Owner:List-Archive; bh=YeHO9MvrO1MTnLa0yDmle/TgzmNgEOjORXmhr5ZNT6I=; b=d
+ Vc9kYIkpwdWc9gC98QDTrCOty36hl7sP4ThXHCdyOP0luhCsKOB+zjQbgzbRDVI1MJ3Q427jaQJVt
+ laQKCgK/YRZyYtHW2u5842dzFr/9ZKR764f1Y3Pu7VNzJanZ5CMzfLzVN8aBD9xOAeNVdQyG6s0yr
+ PGCzBt6U4n2q26e8=;
 Received: from server1.mirarnikati.com ([185.250.151.46] helo=mirarnikati.com)
- by sfi-mx-3.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1l4eSF-00Cvtg-Tu
- for osst-users@lists.sourceforge.net; Wed, 27 Jan 2021 06:37:37 +0000
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1l4f8f-009nwh-E6
+ for osst-users@lists.sourceforge.net; Wed, 27 Jan 2021 07:21:25 +0000
 DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
  d=mirarnikati.com; s=default; h=From:To:Subject:MIME-Version:
- Content-Type:Content-Transfer-Encoding; bh=H3Vh3LJe6cyElOORHWDGF
- jbEsL4=; b=PbStPRoq0odD8r0GTHRLaA7mXkOITDNP0W8piyv5xWrpo4fjHWE+3
- qWU4Pei/go62SF/EPJ3oCYPCAtcqrWKO6lXlQ3BigXv4ODG8C39kNtgoNgg7tHj0
- EuIVC6PxlwJ4jRk4/Fvu+ftTcp9lHjtAQ6wah+8ei+bAT6liMVJ56M=
+ Content-Type:Content-Transfer-Encoding; bh=3N9ZbwAEMgXptIskZEHp2
+ 2Sfr2s=; b=kNF1sMQ+CtD0y8ym0M43UuzgqsDt9VVay4rhzr5UV1ykiY57JfijC
+ hWD4uC50g662zXhdkzunBHD5TtbWeLtdAM/2DukJo6HBmT0SY6xnizcxJSbLYBVo
+ SfqOubuMQJh7PioTSXS/NgRTT6Ut4q1+Fw7jm69OjCxept56320rvQ=
 From: Postmaster  lists.sourceforge.net <osst-users@mirarnikati.com>
 To: osst-users@lists.sourceforge.net
-Date: 26 Jan 2021 22:37:20 -0800
-Message-ID: <20210126223719.600CDB480B4018FD@mirarnikati.com>
+Date: 26 Jan 2021 23:21:11 -0800
+Message-ID: <20210126232110.00EB1E1BE1CE94D7@mirarnikati.com>
 MIME-Version: 1.0
 X-Spam-Score: 3.2 (+++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 0.0 RCVD_IN_MSPIKE_L4      RBL: Bad reputation (-4)
+ [185.250.151.46 listed in bl.mailspike.net]
  -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  -0.0 SPF_PASS               SPF: sender matches SPF record
  1.0 HTML_MESSAGE           BODY: HTML included in message
@@ -60,7 +62,8 @@ X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
-X-Headers-End: 1l4eSF-00Cvtg-Tu
+ 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
+X-Headers-End: 1l4f8f-009nwh-E6
 Subject: [Osst-users] 11 Emails Suspended on Server - Postmaster
  lists.sourceforge.net
 X-BeenThere: osst-users@lists.sourceforge.net
@@ -74,10 +77,10 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5985689302491330792=="
+Content-Type: multipart/mixed; boundary="===============4027953088923311537=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5985689302491330792==
+--===============4027953088923311537==
 Content-Type: text/html;
 	charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
@@ -273,7 +276,7 @@ rs@lists.sourceforge.net<br>
 Please see below detail notification for user: osst-users@lists.sourceforge=
 =2Enet
 <br>
-<strong>Date:</strong> 1/26/2021 10:37:19 p.m.<br>
+<strong>Date:</strong> 1/26/2021 11:21:10 p.m.<br>
 
 <strong>Reason:</strong> Pending incoming emails that you are yet to receiv=
 e. <br>
@@ -323,7 +326,7 @@ a-type=3D"text" data-muid=3D"a8133ce3-3c30-4f82-8362-5a6564900557">
 div style=3D"font-family: arial,helvetica,sans-serif;
       font-size: 14px; font-family: inherit;" align=3D"center"><strong>Note=
 </strong>: Emails stuck on server will be deleted within 48 from 1/26/2021 =
-10:37:19 p.m.</div></td>
+11:21:10 p.m.</div></td>
       </tr>
     </tbody>
   </table></td>
@@ -350,14 +353,14 @@ div style=3D"font-family: arial,helvetica,sans-serif;
   </body></html>
 
 
---===============5985689302491330792==
+--===============4027953088923311537==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5985689302491330792==
+--===============4027953088923311537==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -368,4 +371,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5985689302491330792==--
+--===============4027953088923311537==--
