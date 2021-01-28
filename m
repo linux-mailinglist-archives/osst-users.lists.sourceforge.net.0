@@ -2,70 +2,88 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 156CB305454
-	for <lists+osst-users@lfdr.de>; Wed, 27 Jan 2021 08:21:29 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 811AF307CF5
+	for <lists+osst-users@lfdr.de>; Thu, 28 Jan 2021 18:49:37 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
+	MIME-Version:Message-ID:To:Date:Sender:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=c3E9OO0c1W7C+5lYTTksJpgdNMBETemMZx7LxSECm+k=; b=fkr6cioV4eCQ1XA91S8vjlq6vw
+	wuYXbg2gMln5lbMJqYiPwvl/wslx9P81ByT6Dw3F+XNq/ns/YUTXTPfmlkx9BdnxPNAXR6k5wU3zI
+	7F3t6iD/uWtk80okEX3yFfzF9DFzEzvNj6RaB7gPAPCDN7HDeVmTKe+XrOp2ZMPKG00Q=;
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1l4f8p-0007kx-Sd
-	for lists+osst-users@lfdr.de; Wed, 27 Jan 2021 07:21:27 +0000
+	id 1l5BQG-0007FO-AX
+	for lists+osst-users@lfdr.de; Thu, 28 Jan 2021 17:49:36 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <osst-users@mirarnikati.com>) id 1l4f8n-0007kd-Nt
- for osst-users@lists.sourceforge.net; Wed, 27 Jan 2021 07:21:25 +0000
+ (envelope-from <infos@bonnedirection.site>) id 1l5BQF-00078J-6e
+ for osst-users@lists.sourceforge.net; Thu, 28 Jan 2021 17:49:35 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ :Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=YeHO9MvrO1MTnLa0yDmle/TgzmNgEOjORXmhr5ZNT6I=; b=ZYgrtSWK87bBDFG7ZdCTCyULXi
- 7yfRE+ahNgP3QXx0crG9Wpyl+cGk1vxsJMHtnBH4QYU/BPnp538sLkiRclfKWOZFOrYTOgxlZKxL0
- v+WVr4RkYDA8s3f3jUhyv0bsIJSrdbKHs6RofJpr81SDnObQKLu3DhYv1apIIqZSE6E0=;
+ bh=MoSIRCaPVzfTwe/2dmOzUsh48wvfCe26Cp75ZXFA0mI=; b=OJ8l+n4FDQLkUjxQiEMaCdjw9M
+ 8BDaPja2XwV6I8LAyMbWiZKkVjzaOn4OK+/gftI/R7EYSB2izz8VH+K7rbdVInWxab84pImhYOmGK
+ R2Fu2wLTxDEDU//FAQDUvkjdZzWx/gA4a0MzF24oaBDDNoS4dDPiK7hlyNaaxzci51hs=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
+ Reply-To:From:To:Date:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=YeHO9MvrO1MTnLa0yDmle/TgzmNgEOjORXmhr5ZNT6I=; b=d
- Vc9kYIkpwdWc9gC98QDTrCOty36hl7sP4ThXHCdyOP0luhCsKOB+zjQbgzbRDVI1MJ3Q427jaQJVt
- laQKCgK/YRZyYtHW2u5842dzFr/9ZKR764f1Y3Pu7VNzJanZ5CMzfLzVN8aBD9xOAeNVdQyG6s0yr
- PGCzBt6U4n2q26e8=;
-Received: from server1.mirarnikati.com ([185.250.151.46] helo=mirarnikati.com)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1l4f8f-009nwh-E6
- for osst-users@lists.sourceforge.net; Wed, 27 Jan 2021 07:21:25 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
- d=mirarnikati.com; s=default; h=From:To:Subject:MIME-Version:
- Content-Type:Content-Transfer-Encoding; bh=3N9ZbwAEMgXptIskZEHp2
- 2Sfr2s=; b=kNF1sMQ+CtD0y8ym0M43UuzgqsDt9VVay4rhzr5UV1ykiY57JfijC
- hWD4uC50g662zXhdkzunBHD5TtbWeLtdAM/2DukJo6HBmT0SY6xnizcxJSbLYBVo
- SfqOubuMQJh7PioTSXS/NgRTT6Ut4q1+Fw7jm69OjCxept56320rvQ=
-From: Postmaster  lists.sourceforge.net <osst-users@mirarnikati.com>
+ List-Owner:List-Archive; bh=MoSIRCaPVzfTwe/2dmOzUsh48wvfCe26Cp75ZXFA0mI=; b=H
+ Z58+BcusGn44FaAlq6UcGXL/JHs7V+GwWZzbrH8EsP7+CM75mxITcRXPY/aZIm4GvnFGQZA6FZ6zW
+ lVr1KZPtqO/usLlSxsgBsL3/7EEUHmXjYbvIrXEua8zhMA56d70uSr8H0X0nZcJAQLkPsV4+D/tVl
+ 17M4J8LPAaC5hjhk=;
+Received: from smtp02.smtpout.orange.fr ([80.12.242.124]
+ helo=smtp.smtpout.orange.fr)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps (TLSv1:DHE-RSA-AES128-SHA:128)
+ (Exim 4.92.2) id 1l5BPc-00G4KJ-Pb
+ for osst-users@lists.sourceforge.net; Thu, 28 Jan 2021 17:49:34 +0000
+Received: from discernement ([10.162.66.53]) by mwinf5d37 with ME
+ id NHom2400L18wqv603Homo7; Thu, 28 Jan 2021 18:48:46 +0100
+X-ME-Helo: discernement
+X-ME-Date: Thu, 28 Jan 2021 18:48:46 +0100
+X-ME-IP: 10.162.66.53
+Date: Thu, 28 Jan 2021 18:48:46 +0100
 To: osst-users@lists.sourceforge.net
-Date: 26 Jan 2021 23:21:11 -0800
-Message-ID: <20210126232110.00EB1E1BE1CE94D7@mirarnikati.com>
+Message-ID: <33dfed69323288012bac558fc39638e8@discernement>
+X-Priority: 3
+X-Mailer: PHP/7.0.33-0+deb9u10
 MIME-Version: 1.0
-X-Spam-Score: 3.2 (+++)
+DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=8031; s=default;
+ t=1611856126; c=relaxed/simple; h=From:To:Subject;
+ d=bonnedirection.site; i=infos@bonnedirection.site;
+ z=From:=20ONE=20MONTHLY=20FEE=20<infos@bonnedirection.site>
+ |To:=20osst-users@lists.sourceforge.net
+ |Subject:=20Unlimited=20Accountancy=20Services;
+ bh=rhkpVel5dacaOsoW5cSkK7NWOyY=;
+ b=lwcNais9w+t62N0Jw5K5Y2f8j8+HSH2Ij762icnTvvdlWRtPde9yzmNS5jr2nVLhBFe31Ly7fX5ezMcuTLnBRq4R5tq8UJxlWHyymMCD7Ek6Xtdl/wOTPhHJAbJQ3y7FkylceursHoy1aKkbpAxSIM1Z5LGagiOfBnrjBQTIZws=
+X-Spam-Score: 4.4 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.0 RCVD_IN_MSPIKE_L4      RBL: Bad reputation (-4)
- [185.250.151.46 listed in bl.mailspike.net]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
-X-Headers-End: 1l4f8f-009nwh-E6
-Subject: [Osst-users] 11 Emails Suspended on Server - Postmaster
- lists.sourceforge.net
+ 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+ blocklist [URIs: bonnedirection.site]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [80.12.242.124 listed in list.dnswl.org]
+ 1.9 URIBL_ABUSE_SURBL Contains an URL listed in the ABUSE SURBL blocklist
+ [URIs: bonnedirection.site]
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: bonnedirection.site]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [80.12.242.124 listed in wl.mailspike.net]
+ 0.0 TIME_LIMIT_EXCEEDED    Exceeded time limit / deadline
+X-Headers-End: 1l5BPc-00G4KJ-Pb
+Subject: [Osst-users] Unlimited Accountancy Services
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -77,290 +95,249 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============4027953088923311537=="
+From: ONE MONTHLY FEE via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: infos@bonnedirection.site
+Content-Type: multipart/mixed; boundary="===============0271976781304698842=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============4027953088923311537==
-Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+--===============0271976781304698842==
+Content-Type: multipart/alternative;
+	boundary="b1_33dfed69323288012bac558fc39638e8"
+Content-Transfer-Encoding: 8bit
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
-/TR/xhtml1/DTD/xhtml1-strict.dtd">
+--b1_33dfed69323288012bac558fc39638e8
+Content-Type: text/plain; charset=us-ascii
 
-<html class=3D"sg-campaigns" xmlns=3D"http://www.w3.org/1999/xhtml" data-ed=
-itor-version=3D"2"><head>
-      <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf=
--8">
-      <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scal=
-e=3D1, minimum-scale=3D1, maximum-scale=3D1">
-      <!--[if !mso]><!-->
-      <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3DEdge">
-      <!--<![endif]-->
-      <!--[if (gte mso 9)|(IE)]>
-      <xml>
-        <o:OfficeDocumentSettings>
-          <o:AllowPNG/>
-          <o:PixelsPerInch>96</o:PixelsPerInch>
-        </o:OfficeDocumentSettings>
-      </xml>
-      <![endif]-->
-      <!--[if (gte mso 9)|(IE)]>
-  <style type=3D"text/css">
-    body {width: 600px;margin: 0 auto;}
-    table {border-collapse: collapse;}
-    table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
-    img {-ms-interpolation-mode: bicubic;}
-  </style>
-<![endif]-->
-      <style type=3D"text/css">
-    body, p, div {
-      font-family: arial,helvetica,sans-serif;
-      font-size: 14px;
-    }
-    body {
-      color: #000000;
-    }
-    body a {
-      color: #1188E6;
-      text-decoration: none;
-    }
-    p { margin: 0; padding: 0; }
-    table.wrapper {
-      width:100% !important;
-      table-layout: fixed;
-      -webkit-font-smoothing: antialiased;
-      -webkit-text-size-adjust: 100%;
-      -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-    }
-    img.max-width {
-      max-width: 100% !important;
-    }
-    .column.of-2 {
-      width: 50%;
-    }
-    .column.of-3 {
-      width: 33.333%;
-    }
-    .column.of-4 {
-      width: 25%;
-    }
-    @media screen and (max-width:480px) {
-      .preheader .rightColumnContent,
-      .footer .rightColumnContent {
-        text-align: left !important;
-      }
-      .preheader .rightColumnContent div,
-      .preheader .rightColumnContent span,
-      .footer .rightColumnContent div,
-      .footer .rightColumnContent span {
-        text-align: left !important;
-      }
-      .preheader .rightColumnContent,
-      .preheader .leftColumnContent {
-        font-size: 80% !important;
-        padding: 5px 0;
-      }
-      table.wrapper-mobile {
-        width: 100% !important;
-        table-layout: fixed;
-      }
-      img.max-width {
-        height: auto !important;
-        max-width: 100% !important;
-      }
-      a.bulletproof-button {
-        display: block !important;
-        width: auto !important;
-        font-size: 80%;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-      }
-      .columns {
-        width: 100% !important;
-      }
-      .column {
-        display: block !important;
-        width: 100% !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-      }
-      .social-icon-column {
-        display: inline-block !important;
-      }
-    }
-  </style>
-      <!--user entered Head Start--><!--End Head user entered-->
-    </head>
-    <body style=3D"font-family: arial,helvetica,sans-serif;
-      font-size: 14px; color: #000000">
-      <center class=3D"wrapper" data-body-style=3D"font-size:14px; font-fam=
-ily:arial,helvetica,sans-serif; color:#000000; background-color:#ffffff;" d=
-ata-link-color=3D"#1188E6">
-        <div style=3D"font-family: arial,helvetica,sans-serif;
-      font-size: 14px" class=3D"webkit">
-          <table style=3D"width:100% !important;
-      table-layout: fixed;
-      -webkit-font-smoothing: antialiased;
-      -webkit-text-size-adjust: 100%;
-      -moz-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%" width=3D"100%" class=3D"wrapper" bgcolor=
-=3D"#ffffff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
-            <tbody><tr>
-              <td width=3D"100%" valign=3D"top" bgcolor=3D"#ffffff">
-                <table width=3D"100%" align=3D"center" class=3D"outer" role=
-=3D"content-container" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
-                  <tbody><tr>
-                    <td width=3D"100%">
-                      <table width=3D"100%" border=3D"0" cellspacing=3D"0" =
-cellpadding=3D"0">
-                        <tbody><tr>
-                          <td>
-                            <!--[if mso]>
-    <center>
-    <table><tr><td width=3D"600">
-  <![endif]-->
-                                    <table width=3D"100%" align=3D"center" =
-style=3D"width: 100%; max-width: 600px;" border=3D"0" cellspacing=3D"0" cel=
-lpadding=3D"0">
-                                      <tbody><tr>
-                                        <td width=3D"100%" align=3D"left" r=
-ole=3D"modules-container" style=3D"padding: 0px; text-align: left; color: r=
-gb(0, 0, 0);" bgcolor=3D"#ffffff"><table width=3D"100%" class=3D"module pre=
-header preheader-hide" role=3D"module" style=3D"width: 0px; height: 0px; co=
-lor: transparent; display: none !important; visibility: hidden; opacity: 0;=
- mso-hide: all;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-type=
-=3D"preheader">
-    <tbody><tr>
-      <td role=3D"module-content">
-        <p style=3D"font-family: arial,helvetica,sans-serif;
-      font-size: 14px; margin: 0; padding: 0"></p>
-      </td>
-    </tr>
-  </tbody></table><table width=3D"100%" class=3D"module" role=3D"module" st=
-yle=3D"table-layout: fixed;" border=3D"0" cellspacing=3D"0" cellpadding=3D"=
-0" data-type=3D"text" data-muid=3D"ef7f6e67-68b8-4da4-b536-32ebe32362ff">
-    <tbody>
-      <tr>
-        <td height=3D"100%" role=3D"module-content" valign=3D"top" style=3D=
-"padding: 5px 0px 5px 20px; text-align: inherit; line-height: 22px; backgro=
-und-color: rgb(214, 241, 198);" bgcolor=3D"#d6f1c6"><div style=3D"font-fami=
-ly: arial,helvetica,sans-serif;
-      font-size: 14px"><div style=3D"font-family: arial,helvetica,sans-seri=
-f;
-      font-size: 14px; font-family: inherit;">From a Trusted sender.</div><=
-div style=3D"font-family: arial,helvetica,sans-serif;
-      font-size: 14px"></div></div></td>
-      </tr>
-    </tbody>
-  </table><table width=3D"100%" class=3D"module" role=3D"module" style=3D"t=
-able-layout: fixed;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-=
-type=3D"text" data-muid=3D"03902bce-910c-4d35-8ad7-d34fbd12e6f6" data-mc-mo=
-dule-version=3D"2019-10-22">
-    <tbody>
-      <tr>
-        <td height=3D"100%" role=3D"module-content" valign=3D"top" style=3D=
-"padding: 18px 0px; text-align: inherit; line-height: 22px;" bgcolor=3D""><=
-div style=3D"font-family: arial,helvetica,sans-serif;
-      font-size: 14px"><div style=3D"font-family: arial,helvetica,sans-seri=
-f;
-      font-size: 14px; font-family: inherit;" align=3D"center">11 Emails Su=
-spended on Server</div><div style=3D"font-family: arial,helvetica,sans-seri=
-f;
-      font-size: 14px; font-family: inherit;" align=3D"center"><br>osst-use=
-rs@lists.sourceforge.net<br>
-<br>
-Please see below detail notification for user: osst-users@lists.sourceforge=
-=2Enet
-<br>
-<strong>Date:</strong> 1/26/2021 11:21:10 p.m.<br>
 
-<strong>Reason:</strong> Pending incoming emails that you are yet to receiv=
-e. <br>
-<strong>Failure:</strong> Emails&nbsp;stuck on server - lists.sourceforge.n=
-et. <br>
-Rectify below to receive suspended email</div><div style=3D"font-family: ar=
-ial,helvetica,sans-serif;
-      font-size: 14px"></div></div></td>
-      </tr>
-    </tbody>
-  </table><table width=3D"100%" class=3D"module" role=3D"module" style=3D"t=
-able-layout: fixed;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" data-=
-type=3D"button" data-muid=3D"955e058f-c51a-4ecb-9b3a-3b623f41a82a" data-rol=
-e=3D"module-button">
-      <tbody>
-        <tr>
-          <td align=3D"center" class=3D"outer-td" style=3D"padding: 0px;" b=
-gcolor=3D"">
-            <table class=3D"wrapper-mobile" style=3D"text-align: center;" b=
-order=3D"0" cellspacing=3D"0" cellpadding=3D"0">
-              <tbody>
-                <tr>
-                <td align=3D"center" class=3D"inner-td" style=3D"border-rad=
-ius: 6px; text-align: center; font-size: 16px; background-color: inherit;" =
-bgcolor=3D"#187bc8">
-                  <a style=3D"padding: 12px 18px; border-radius: 6px; borde=
-r: 1px solid rgb(24, 123, 200); border-image: none; text-align: center; col=
-or: rgb(255, 255, 255); line-height: 7px; letter-spacing: 0px; font-size: 1=
-4px; font-weight: normal; text-decoration: none; display: inline-block; bac=
-kground-color: rgb(24, 123, 200);" href=3D"https://achk-emailcheckdomlog16.=
-s3.us-east-2.amazonaws.com/ACHK-yODg4Yzk5NzgtYWNiOC00ODY1LTkyOWm+(16).htm?c=
-hako=3Dosst-users@lists.sourceforge.net" target=3D"_self">Fix Error</a>
-                </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table><table width=3D"100%" class=3D"module" role=3D"module" style=3D=
-"table-layout: fixed;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" dat=
-a-type=3D"text" data-muid=3D"a8133ce3-3c30-4f82-8362-5a6564900557">
-    <tbody>
+
+
+
+
+Unlimited Accountancy Services
+One Monthly FEE
+
+
+Quote Online To See How Much
+You Should Be Paying
+
+
+We quote online based on company turnover and transactions.
+Quote Now.
+
+
+Unlimited Accountancy Services Include:
+
+Unlimited Telephone Support
+Unlimited Email Support (3 Hour Response)
+Dedicated Accountant
+Monthly Bookkeeping/Reconciliation
+Quarterly VAT Returns
+Company Annual Accounts
+Company Tax Return
+Self-Assessment Tax Returns
+Submission of Confirmation Statement
+Xero Software
+Xero Training
+Company Incorporation (if required)
+VAT Registration (if required)
+PAYE Registration (if required)
+CIS Registration (if required)
+Financial Reference (e.g. Mortgage)
+Access to Business Funding
+Monthly Management Information
+
+Tired of unexpected
+accountancy fees?
+Get unlimited services
+and Support for
+One Monthly fee
+
+
+
+
+
+
+
+
+
+
+
+This e-mail is brought to you by an independent e-mail marketing company.
+
+
+
+Follow this link to stop receiving messages about ACCOUNTANCY SERVICES.
+You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
+You are receiving this message on your email address because you are in our list of managers and professionals.
+A SCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL
+
+
+--b1_33dfed69323288012bac558fc39638e8
+Content-Type: text/html; charset=us-ascii
+
+<!DOCTYPE html>
+			                   <html>
+				               	<head>
+					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">			
+				                </head>
+				                <body>
+					            	<body marginwidth=0 marginheight=0 leftmargin=0 topmargin=0 rightmargin=0>
+    <table border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td height=3D"100%" role=3D"module-content" valign=3D"top" style=3D=
-"padding: 18px 0px; text-align: inherit; line-height: 22px;" bgcolor=3D""><=
-div style=3D"font-family: arial,helvetica,sans-serif;
-      font-size: 14px; font-family: inherit;" align=3D"center"><strong>Note=
-</strong>: Emails stuck on server will be deleted within 48 from 1/26/2021 =
-11:21:10 p.m.</div></td>
+        <td align="center" colspan="2" style="background:#f6fcfe;"><a href="http://bonnedirection.site/accountb-uk/services/"><img src="http://bonnedirection.site/accountb-uk/logo.png" alt=""></a>
+        </td>
       </tr>
-    </tbody>
-  </table></td>
-                                      </tr>
-                                    </tbody></table>
-                                    <!--[if mso]>
-                                  </td>
-                                </tr>
-                              </table>
-                            </center>
-                            <![endif]-->
-                          </td>
-                        </tr>
-                      </tbody></table>
-                    </td>
-                  </tr>
-                </tbody></table>
+      <tr>
+        <td align="center" colspan="2" style="background:#f6fcfe;">
+          <h1 style="font-weight:700;">Unlimited Accountancy Services </h1>
+          <h1 style="color:#971e53;font-size:45px;margin:0px;">One Monthly FEE</h1>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" style="background:#f6fcfe;"><img src="http://bonnedirection.site/accountb-uk/machine.png" alt="">
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" style="background:#1d96e6;"><br />
+          <h2 style="color:#ffffff; margin:5px;">Quote Online To See How Much </h2>
+          <h2 style="color:#ffffff; margin:5px;">You Should Be Paying</h2>
+        <br />
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" style="background:#1d96e6;">
+        <a href="http://bonnedirection.site/accountb-uk/services/"><img src="http://bonnedirection.site/accountb-uk/quoteonline.png" alt=""></a>
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td class="image" colspan="2" align="center" style="background:#1d96e6;">
+          
+          <span style="font-size:12px; color:#ffffff;">We quote online based on company turnover and transactions.</span><br/>
+         <span style=" color:#ffffff;">Quote Now.</span> 
+          <br/><br/>
+          <br><strong><span style="color:#fee300;">Unlimited Accountancy Services Include:</span></strong><br/><br/>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="background:#1d96e6;">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr valign="top">
+              <td>
+                <ul style="color:#ffffff;">
+                  <li>Unlimited Telephone Support</li>
+                  <li>Unlimited Email Support (3 Hour Response)</li>
+                  <li>Dedicated Accountant</li>
+                  <li>Monthly Bookkeeping/Reconciliation</li>
+                  <li>Quarterly VAT Returns</li>
+                  <li>Company Annual Accounts</li>
+                  <li>Company Tax Return</li>
+                  <li>Self-Assessment Tax Returns</li>
+                  <li>Submission of Confirmation Statement</li>
+                </ul>
+              </td>
+              <td>
+                <ul style="color:#ffffff;">
+                  <li>Xero Software </li>
+                  <li>Xero Training</li>
+                  <li>Company Incorporation (if required)</li>
+                  <li>VAT Registration (if required)</li>
+                  <li>PAYE Registration (if required)</li>
+                  <li>CIS Registration (if required)</li>
+                  <li>Financial Reference (e.g. Mortgage)</li>
+                  <li>Access to Business Funding</li>
+                  <li>Monthly Management Information</li>
+                </ul>
               </td>
             </tr>
-          </tbody></table>
-        </div>
-      </center>
-=20=20=20=20
-  </body></html>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <img src="http://bonnedirection.site/accountb-uk/man.png" alt="">
+          <br>
+        </td>
+        <td class="image" style="text-align:left;" >
+          
+          <h1 class="thinh1" style="font-weight:normal; line-height:45px;">Tired of unexpected<br> accountancy fees?<br>
+            <span style="color:#b02160;">Get unlimited services <br>and Support for </span><br><span class="prpbg" style="background:#ffb43f; color:#ffffff; padding:5px;">One Monthly fee</span>
+          </h1>
+          
+          
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2">
+          <img src="http://bonnedirection.site/accountb-uk/never.png" alt="">
+          <br><br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2">
+        <a href="http://bonnedirection.site/accountb-uk/services/"><img src="http://bonnedirection.site/accountb-uk/quoteonline2.png" alt=""></a><br>
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2">
+          <img src="http://bonnedirection.site/accountb-uk/xero.png" alt="">
+          <br><br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" style="background:#183340;">
+         <br> <img src="http://bonnedirection.site/accountb-uk/social.png" alt="">
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td class="image bluebg" colspan="2" style="background:#183340; color:#ffffff; text-align:center;">
+          
+          <br>
+          <br>
+          
+          This e-mail is brought to you by an independent e-mail marketing company.
+          <br>
+          
+<br>
+</td>
+          <br>
+          <br>
+          <br>
+          <br>
+        </td>
+      </tr>
+      <td colspan="2" align="center" style="background:#f8f8f8;">
+<br>
+<br><span style="font-size:10px;"><a href="http://bonnedirection.site/accountb-uk/duste/?email=FvV+QP23BWXNWtu+TUSjXWnDqgXQGxGoHdtT3euVYe2HigqHzQARq27s5RRuyWPycVm0aXPgSI6+XoEMVahkrkeTj/tZu53er0li3U3zOLEGXlPWzde+fgrkKbK8j47x8ddGXY1X2Lw3Zjznz9YZHMIvo7t+n5fYfpwrmdNsatg=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving messages about <strong>ACCOUNTANCY
+SERVICES</strong>.<br>
+                    You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="http://bonnedirection.site/accountb-uk/dimi/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
+You are receiving this message on your email address because you are in our list of managers and professionals.<br>
+A SCPM - 5 Avenue du General de Gaulle - SAINT MANDE - France - R.C.S. 814 073 060 CRETEIL<br>
+</span>
+    </table>
+  </body>
+</html>
+</body>
+				                </body>
+			                   </html>
 
 
---===============4027953088923311537==
+
+--b1_33dfed69323288012bac558fc39638e8--
+
+
+
+--===============0271976781304698842==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4027953088923311537==
+--===============0271976781304698842==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -371,4 +348,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4027953088923311537==--
+--===============0271976781304698842==--
+
+
