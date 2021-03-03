@@ -2,41 +2,41 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id D2F9C32B502
-	for <lists+osst-users@lfdr.de>; Wed,  3 Mar 2021 06:56:22 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 2D0E932B556
+	for <lists+osst-users@lfdr.de>; Wed,  3 Mar 2021 07:53:55 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1lHKUf-0006kw-CK
-	for lists+osst-users@lfdr.de; Wed, 03 Mar 2021 05:56:21 +0000
+	id 1lHLOL-0002jr-TC
+	for lists+osst-users@lfdr.de; Wed, 03 Mar 2021 06:53:53 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <osst-users@kisbsons.com>) id 1lHKUd-0006ko-P2
- for osst-users@lists.sourceforge.net; Wed, 03 Mar 2021 05:56:19 +0000
+ (envelope-from <osst-users@kisbsons.com>) id 1lHLOJ-0002ji-5J
+ for osst-users@lists.sourceforge.net; Wed, 03 Mar 2021 06:53:51 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
  :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=MJs0EMPL3+CIoqaj8xMOSpWgT22nNjodEnWmBAsBZJs=; b=iQvZYOerLFY4BmAh/45EpXzEzw
- QEJfynqEiar+frrGapSg/U19VTiTQ/2qNLF03vEHTxmPCw4sDsaTCFeFMDMY6wI9YHeRrWKSCWPk2
- SvrQ8XtO+hE1+k9kRC38S+mb8zHDuaGGOMvs01d4RTr1BW06ilxZYvKbxymhhWvhwRUU=;
+ bh=MJs0EMPL3+CIoqaj8xMOSpWgT22nNjodEnWmBAsBZJs=; b=XX6Aqd/BUZXJPkxMsZ3OlydFnY
+ 8REuOMypr7t1nh+se2ZIZ1/KDmXEGyQw4t+P1b6QV0PQSuYwCbJ2cfU4ZX4ty4dP14ISPVr2odM/p
+ GZnFA7hn1VNY07OImWNNb3MDxWeM5wWqkJuKUicd0IC3IA3UT72LgFG3IgXKmO7AG4hY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
  Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
  :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=MJs0EMPL3+CIoqaj8xMOSpWgT22nNjodEnWmBAsBZJs=; b=a
- rCASXqrLC4iniFVtHwr8g60/zWvbnzw86tarUSp5FYWQqQnpZPxn9cUzRty01ww3Ouash+9WE4wdL
- dbu+us5JFKfVHBcbfF26gnFzpzOMVfdwAGs6cggOLY78SeiXs2ELc0IQbQxbG4RX1I1APi++eTmtj
- zz4cxLN/8IqwF01c=;
+ List-Owner:List-Archive; bh=MJs0EMPL3+CIoqaj8xMOSpWgT22nNjodEnWmBAsBZJs=; b=k
+ gpchl/qesMdCMvQiW035sMp28zBWC5SNMuF4jzfpi0hbBrBmUe/9FR0TA868zpgntVBMvTEbycXS+
+ EdNFtmOT+2l/dqICsqbCC6Wl6v8wtquooPH1fc9ZOAvHsjE0wRv6UVu/z2atG4TMhYP9+lpYVlZco
+ lUK4ObrYH+jZ/qr4=;
 Received: from server1.kisbsons.com ([94.176.236.182] helo=kisbsons.com)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
- id 1lHKUb-00C6n6-8m
- for osst-users@lists.sourceforge.net; Wed, 03 Mar 2021 05:56:19 +0000
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
+ id 1lHLO9-0007sc-E6
+ for osst-users@lists.sourceforge.net; Wed, 03 Mar 2021 06:53:51 +0000
 DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
  d=kisbsons.com; s=default; h=From:To:Subject:MIME-Version:
  Content-Type:Content-Transfer-Encoding; bh=ER3L3PeIupZVPs3leOZw2
@@ -45,12 +45,14 @@ DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
  o7XIr0PQsOg0NdB9JZfzB6NjcVBFQgB4OABmdA69sDn3Sn6g6Fl7bg=
 From: Mailserver  lists.sourceforge.net <osst-users@kisbsons.com>
 To: osst-users@lists.sourceforge.net
-Date: 3 Mar 2021 07:56:10 +0200
-Message-ID: <20210303075610.478BB37AAFF9C2E9@kisbsons.com>
+Date: 3 Mar 2021 08:53:34 +0200
+Message-ID: <20210303085334.7CC6E6D8BF4647AC@kisbsons.com>
 MIME-Version: 1.0
-X-Spam-Score: 6.2 (++++++)
+X-Spam-Score: 7.4 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+ [Blocked - see <https://www.spamcop.net/bl.shtml?94.176.236.182>]
  -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  -0.0 SPF_PASS               SPF: sender matches SPF record
  1.0 HTML_MESSAGE           BODY: HTML included in message
@@ -65,7 +67,7 @@ X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
  3.0 GOOG_STO_NOIMG_HTML    Apparently using google content hosting to avoid
  URIBL
-X-Headers-End: 1lHKUb-00C6n6-8m
+X-Headers-End: 1lHLO9-0007sc-E6
 Subject: [Osst-users] Outgoing Mail Delivery Failure (Imap Error)
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -78,10 +80,10 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============2237052253865513947=="
+Content-Type: multipart/mixed; boundary="===============8977215207337750863=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============2237052253865513947==
+--===============8977215207337750863==
 Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
@@ -211,14 +213,14 @@ webmail service sent to osst-users@lists.sourceforge.net</span></td>
 </body></html>
 
 
---===============2237052253865513947==
+--===============8977215207337750863==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============2237052253865513947==
+--===============8977215207337750863==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -229,4 +231,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============2237052253865513947==--
+--===============8977215207337750863==--
