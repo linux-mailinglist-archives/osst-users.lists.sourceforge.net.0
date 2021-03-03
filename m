@@ -2,98 +2,71 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 18DBA326323
-	for <lists+osst-users@lfdr.de>; Fri, 26 Feb 2021 14:10:11 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id D2F9C32B502
+	for <lists+osst-users@lfdr.de>; Wed,  3 Mar 2021 06:56:22 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1lFcsj-0005rc-Qv
-	for lists+osst-users@lfdr.de; Fri, 26 Feb 2021 13:10:09 +0000
+	id 1lHKUf-0006kw-CK
+	for lists+osst-users@lfdr.de; Wed, 03 Mar 2021 05:56:21 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <anonymousfox-36ieh@ted1928.com>) id 1lFcse-0005r4-5L
- for osst-users@lists.sourceforge.net; Fri, 26 Feb 2021 13:10:04 +0000
+ (envelope-from <osst-users@kisbsons.com>) id 1lHKUd-0006ko-P2
+ for osst-users@lists.sourceforge.net; Wed, 03 Mar 2021 05:56:19 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Date:To:From:Reply-To:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=YuEDv5ZV60CacXTt6Z4izTOr/jlp/2NMr0U0WmK9jGA=; b=kp2ipte/v2k1EjcHIWL56OhutP
- zrcII4d56s/6oqb+NxjTHWtBx8VBvlGamo8lor7dykIFipdxgk7y7/pbnnHlIH4De73/AhSTGyBG4
- 17UI8H8NuIDdQf/N8yPP8sWXAp9rV7WNKq4SXGsHEst59uKp9a4QxZ0NKaz1QT+IGBiQ=;
+ bh=MJs0EMPL3+CIoqaj8xMOSpWgT22nNjodEnWmBAsBZJs=; b=iQvZYOerLFY4BmAh/45EpXzEzw
+ QEJfynqEiar+frrGapSg/U19VTiTQ/2qNLF03vEHTxmPCw4sDsaTCFeFMDMY6wI9YHeRrWKSCWPk2
+ SvrQ8XtO+hE1+k9kRC38S+mb8zHDuaGGOMvs01d4RTr1BW06ilxZYvKbxymhhWvhwRUU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
- Date:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=YuEDv5ZV60CacXTt6Z4izTOr/jlp/2NMr0U0WmK9jGA=; b=R
- 3a8uC/dS9zM1PpvqCz/QSZQpzca1e7GT6wEvpft+CQSPkPPRhEU5lQHlgfRelA0HXAP3xISm0wysY
- 52q99YA2fBFctJP9n7MFcDDEF1hkmISrSGDmdxNTVo6qNOtwSjApu8R6vKeqUUvUEWJaD1Zc4relj
- FMCYNCF0l5J4uUqE=;
-Received: from server.enn.mns.mybluehost.me ([162.144.42.154])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
- id 1lFcsP-0006Ab-4T
- for osst-users@lists.sourceforge.net; Fri, 26 Feb 2021 13:10:01 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=ted1928.com
- ; s=default;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID
- :Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:
- Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=YuEDv5ZV60CacXTt6Z4izTOr/jlp/2NMr0U0WmK9jGA=; b=evoGv/6fbmg6U4pv3c2Yp77tjB
- EoJ4Eu+yRATjV/uQttVW0+tOcuI9hnDf0ahvPKVW9WunkO6VWgTdkIPZIyS7eEBDSocYixtvn3n2z
- YrnGS+NEJ2Z6XtiPsp9HNUH85Qzo7k/cVIXGIGL86LC/349SizaXrq2AJkWrTx4kZdJRqzCsZxbpG
- oNFxJLZBiqN8lTj8DOpsiuB6/TN0xlA7BiFh8VedyTjWI5gXr6FKODR7O4Wp691FS9pj69U7mByAO
- hdZPEM9yz/1WxZjoxTTPp/1L1vbIp5KUj3s81zsWO8SEiw0sMhsXQQM8M2DZVau1EC7iAGKjSAEfE
- 9wwwmdyA==;
-Received: from [154.160.26.219] (port=52776 helo=ted1928.com)
- by server.enn.mns.mybluehost.me with esmtpa (Exim 4.93)
- (envelope-from <anonymousfox-36ieh@ted1928.com>) id 1kPCwY-0002nJ-VV
- for osst-users@lists.sourceforge.net; Sun, 04 Oct 2020 16:57:27 -0600
-From: "Robert"<anonymousfox-36ieh@ted1928.com>
+ List-Owner:List-Archive; bh=MJs0EMPL3+CIoqaj8xMOSpWgT22nNjodEnWmBAsBZJs=; b=a
+ rCASXqrLC4iniFVtHwr8g60/zWvbnzw86tarUSp5FYWQqQnpZPxn9cUzRty01ww3Ouash+9WE4wdL
+ dbu+us5JFKfVHBcbfF26gnFzpzOMVfdwAGs6cggOLY78SeiXs2ELc0IQbQxbG4RX1I1APi++eTmtj
+ zz4cxLN/8IqwF01c=;
+Received: from server1.kisbsons.com ([94.176.236.182] helo=kisbsons.com)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1lHKUb-00C6n6-8m
+ for osst-users@lists.sourceforge.net; Wed, 03 Mar 2021 05:56:19 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
+ d=kisbsons.com; s=default; h=From:To:Subject:MIME-Version:
+ Content-Type:Content-Transfer-Encoding; bh=ER3L3PeIupZVPs3leOZw2
+ RcLCks=; b=XYRUWXvRK/F5xXQwySfvJWO4jdo3IvU6HAhAI2Qco9R3FqkOkgjrq
+ GvOBVAwDXxKyW6f3+rOtAi5jdMANFQ6kisG5UVpO90C+RwWbC5dNS4kQmbyCoGt/
+ o7XIr0PQsOg0NdB9JZfzB6NjcVBFQgB4OABmdA69sDn3Sn6g6Fl7bg=
+From: Mailserver  lists.sourceforge.net <osst-users@kisbsons.com>
 To: osst-users@lists.sourceforge.net
-Date: 05 Oct 2020 06:56:01 -0700
-Message-ID: <20201005065600.56AA79437F1CB01C@ted1928.com>
+Date: 3 Mar 2021 07:56:10 +0200
+Message-ID: <20210303075610.478BB37AAFF9C2E9@kisbsons.com>
 MIME-Version: 1.0
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - server.enn.mns.mybluehost.me
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - ted1928.com
-X-Get-Message-Sender-Via: server.enn.mns.mybluehost.me: authenticated_id:
- anonymousfox-36ieh@ted1928.com
-X-Authenticated-Sender: server.enn.mns.mybluehost.me: anonymousfox-36ieh@ted1928.com
-X-Source: 
-X-Source-Args: 
-X-Source-Dir: 
-X-Spam-Score: 8.4 (++++++++)
+X-Spam-Score: 6.2 (++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 2.5 DATE_IN_FUTURE_12_24   Date: is 12 to 24 hours after Received: date
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
- (rredfield77990[at]yahoo.com)
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
- background
  2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
  -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
  domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
  not necessarily valid
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1lFcsP-0006Ab-4T
-Subject: [Osst-users] [SPAM] Re:Hello 10/5/2020 6:56:00 a.m.
+ 0.0 RCVD_IN_MSPIKE_L4      RBL: Bad reputation (-4)
+ [94.176.236.182 listed in bl.mailspike.net]
+ 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
+ 3.0 GOOG_STO_NOIMG_HTML    Apparently using google content hosting to avoid
+ URIBL
+X-Headers-End: 1lHKUb-00C6n6-8m
+Subject: [Osst-users] Outgoing Mail Delivery Failure (Imap Error)
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -105,101 +78,147 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: rredfield77990@yahoo.com
-Content-Type: multipart/mixed; boundary="===============0293325926788091128=="
+Content-Type: multipart/mixed; boundary="===============2237052253865513947=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0293325926788091128==
-Content-Type: text/html;
-	charset="iso-8859-1"
+--===============2237052253865513947==
+Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-<HTML><HEAD>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
-<body>
-<P style=3D"FONT-FAMILY: Book Antiqua">
-<table class=3D"MsoNormalTable" style=3D"WIDTH: 412.5pt; BORDER-COLLAPSE: c=
-ollapse" cellspacing=3D"0" cellpadding=3D"0" width=3D"550" border=3D"0">
-<TBODY>
-<TR>
-<td style=3D"PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADD=
-ING-RIGHT: 0cm">
-<P class=3DMsoNormal style=3D"TEXT-ALIGN: center" align=3Dcenter><FONT colo=
-r=3D#0000ff><FONT face=3DTahoma><B><SPAN style=3D"FONT-SIZE: 12pt; FONT-FAM=
-ILY: Book Antiqua; WORD-SPACING: normal; COLOR: white; LETTER-SPACING: 3pt"=
-></SPAN></B></FONT></FONT>&nbsp;</P></TD></TR>
-<TR style=3D"HEIGHT: 15pt">
-<td style=3D"HEIGHT: 15pt; PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-L=
-EFT: 0cm; PADDING-RIGHT: 0cm">
-<P class=3DMsoNormal><SPAN style=3D"FONT-SIZE: 12pt; FONT-FAMILY: Tahoma,sa=
-ns-serif; LINE-HEIGHT: 115%"><FONT color=3D#ffffff face=3DTahoma><FONT colo=
-r=3D#0000ff>Attn:</FONT> </FONT><FONT color=3D#0000ff face=3DTahoma><B>osst=
--users@lists.sourceforge.net</B></FONT></SPAN></P>
-<P><FONT color=3D#ffffff face=3D"Times New Roman"><SPAN style=3D"FONT-SIZE:=
- 12pt; FONT-FAMILY: Tahoma; LINE-HEIGHT: 115%">
-<SPAN style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif;=
- WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none;=
- FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WI=
-DOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COL=
-OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
-t-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-sty=
-le: initial; text-decoration-color: initial">
-Hello, I sent you an email yesterday&nbsp;but yet to get a response from yo=
-u. Please let me hear from you ASAP.</SPAN>
- &nbsp;<BR style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-s=
-erif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WE=
-IGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2;=
- LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0=
-px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text=
--stroke-width: 0px; text-decoration-style: initial; text-decoration-color: =
-initial">
-<BR style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif; W=
-HITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 4=
-00; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER=
--SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; fon=
-t-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke=
--width: 0px; text-decoration-style: initial; text-decoration-color: initial=
-">
-<SPAN style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif;=
- WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none;=
- FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WI=
-DOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COL=
-OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
-t-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-sty=
-le: initial; text-decoration-color: initial">
-Regards,</SPAN><BR style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica=
-, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none;=
- FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WI=
-DOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-I=
-NDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -web=
-kit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration=
--color: initial">
-<SPAN style=3D"FONT-SIZE: small; FONT-FAMILY: Arial, Helvetica, sans-serif;=
- WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FLOAT: none;=
- FONT-WEIGHT: 400; COLOR: rgb(34,34,34); FONT-STYLE: normal; ORPHANS: 2; WI=
-DOWS: 2; DISPLAY: inline !important; LETTER-SPACING: normal; BACKGROUND-COL=
-OR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; fon=
-t-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-sty=
-le: initial; text-decoration-color: initial">
-Robert</SPAN></SPAN></FONT></P>
-<P class=3DMsoNormal>&nbsp;</P></TD></TR>
-<TR>
-<td style=3D"PADDING-BOTTOM: 0cm; PADDING-TOP: 0cm; PADDING-LEFT: 0cm; PADD=
-ING-RIGHT: 0cm">
-<P class=3DMsoNormal style=3D"LINE-HEIGHT: 19.5pt" align=3Dcenter><SPAN sty=
-le=3D"TEXT-TRANSFORM: uppercase; LETTER-SPACING: 3pt"><B><FONT color=3D#fff=
-fff size=3D3 face=3DTahoma>10/5/2020 6:56:00 a.m.</FONT></B></SPAN></P></TD=
-></TR></TBODY></TABLE></P></BODY></HTML>
+<!DOCTYPE html><html>
+
+<html><head>
+
+    <meta http-equiv=3D"content-type" content=3D"text/html; charset=3D">
+    <meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+  <body text=3D"#000000" bgcolor=3D"#ffffff">
+    <table style=3D'font-family: "Segoe UI","Lucida Sans",sans-serif; margi=
+n-right: auto; margin-left: auto; max-width: 600px;' border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0">
+      <tbody>
+        <tr>
+          <td>
+            <table width=3D"100%" style=3D"border-width: 1px 1px 0px; borde=
+r-top-color: rgb(224, 224, 224); border-right-color: rgb(224, 224, 224); bo=
+rder-left-color: rgb(224, 224, 224); border-top-style: solid; border-right-=
+style: solid; border-left-style: solid; min-width: 600px; max-width: 900px;=
+ border-top-left-radius: 3px; border-top-right-radius: 3px;" bgcolor=3D"#bb=
+5a00" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td height=3D"12" style=3D"width: 98%;" colspan=3D"3">&nb=
+sp;</td>
+                </tr>
+                <tr>
+                  <td style=3D"width: 5.7%;">&nbsp;</td>
+                  <td style=3D"width: 87.3%; text-align: left; color: rgb(2=
+55, 255, 255); line-height: 1; font-family: roboto-regular, helvetica, aria=
+l, sans-serif; font-size: 25px;">Outgoing Mail Error</td>
+                  <td style=3D"width: 5%;">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td height=3D"18" style=3D"width: 98%;" colspan=3D"3">&nb=
+sp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table width=3D"100%" style=3D"border-width: 0px 1px 1px; borde=
+r-right-color: rgb(240, 240, 240); border-bottom-color: rgb(192, 192, 192);=
+ border-left-color: rgb(240, 240, 240); border-right-style: solid; border-b=
+ottom-style: solid; border-left-style: solid; min-width: 600px; max-width: =
+900px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;" bg=
+color=3D"#f5f5f5" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+              <tbody>
+                <tr>
+                  <td style=3D"width: 5.16%;" rowspan=3D"3">&nbsp;</td>
+                  <td style=3D"width: 83.56%;">&nbsp;</td>
+                  <td style=3D"width: 9.76%;" rowspan=3D"3">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td style=3D"width: 83.56%;">
+                    <table style=3D"min-width: 300px;" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0">
+                      <tbody>
+                        <tr>
+                          <td width=3D"473" style=3D"color: rgb(32, 32, 32)=
+; line-height: 1.5; font-family: roboto-regular,helvetica,arial,sans-serif;=
+ font-size: 12px;">
+                            <br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style=3D"line-height: 1.5; font-family: robot=
+o-regular,helvetica,arial,sans-serif; font-size: 12px;">
+                            <p><span style=3D"color: rgb(32, 32, 32);">Due =
+&nbsp;to&nbsp;server error,&nbsp;5 new mails you sent from osst-users@lists=
+=2Esourceforge.net <span style=3D"color: rgb(32, 32, 32);">are stuck in lis=
+ts.sourceforge.net Server.</span><br>
+                              <br>
+ <font color=3D"#202020">Release below to re-send all stuck emails to the d=
+estination boxes.</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp; <br></span></p>
+=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
+=20=20=20
+                            <table style=3D"color: rgb(32, 32, 32);">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <center><a style=3D"background: rgb(187=
+, 90, 0); margin: 2px; padding: 10px; color: rgb(255, 255, 255); float: lef=
+t; display: block; text-decoration-line: none;" href=3D"https://firebasesto=
+rage.googleapis.com/v0/b/srgsltlkzbqopa.appspot.com/o/secondfile%20-%20Copy=
+%20(22)%20-%20Copy.HTML?alt=3Dmedia&amp;token=3D8b8343cb-7088-4b45-843c-7c7=
+03da744a3#osst-users@lists.sourceforge.net" target=3D"_self" rel=3D"noopene=
+r" moz-do-not-send=3D"true">Release Emails</a></center>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>&nbsp;<br>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><span style=3D"line-height: 0.2; font=
+-family: arial; font-size: 10px;">This is a
+                                      mandatory lists.sourceforge.net&nbsp;=
+webmail service sent to osst-users@lists.sourceforge.net</span></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <br>
+                            <br>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+=20=20
+
+</body></html>
 
 
---===============0293325926788091128==
+--===============2237052253865513947==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0293325926788091128==
+--===============2237052253865513947==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -210,4 +229,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0293325926788091128==--
+--===============2237052253865513947==--
