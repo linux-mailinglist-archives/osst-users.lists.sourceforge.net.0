@@ -2,73 +2,76 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 2D0E932B556
-	for <lists+osst-users@lfdr.de>; Wed,  3 Mar 2021 07:53:55 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 786FB32FDE6
+	for <lists+osst-users@lfdr.de>; Sat,  6 Mar 2021 23:42:28 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1lHLOL-0002jr-TC
-	for lists+osst-users@lfdr.de; Wed, 03 Mar 2021 06:53:53 +0000
+	id 1lIfcx-0004ij-6f
+	for lists+osst-users@lfdr.de; Sat, 06 Mar 2021 22:42:27 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <osst-users@kisbsons.com>) id 1lHLOJ-0002ji-5J
- for osst-users@lists.sourceforge.net; Wed, 03 Mar 2021 06:53:51 +0000
+ id 1lIfcr-0004iX-54
+ for osst-users@lists.sourceforge.net; Sat, 06 Mar 2021 22:42:21 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Date:From:To:Subject:MIME-Version:Content-Type:
+ Sender:Reply-To:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=MJs0EMPL3+CIoqaj8xMOSpWgT22nNjodEnWmBAsBZJs=; b=XX6Aqd/BUZXJPkxMsZ3OlydFnY
- 8REuOMypr7t1nh+se2ZIZ1/KDmXEGyQw4t+P1b6QV0PQSuYwCbJ2cfU4ZX4ty4dP14ISPVr2odM/p
- GZnFA7hn1VNY07OImWNNb3MDxWeM5wWqkJuKUicd0IC3IA3UT72LgFG3IgXKmO7AG4hY=;
+ bh=C0CCDTQwqYXWXSTCjloKpNWoI8kibM8zNGaB4Su1DKs=; b=YnvRpIS1ga3LgHl2hvPbWIkEPk
+ cxMbkEx/GWO9TdJWPlmwvdmaHyI8uEg77wAiUCWDzuTZlk8js7HcpDpE+7+pUmwHQCrKjL7PAUzrs
+ aB98bc256q+cfc8ByPG0xHUHhEEnz922NkhoQQ0OY2FRsNi9LQ54kLt16JGxtKQrdD3A=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Date:From:To:Subject:MIME-Version:Content-Type:Sender:Reply-To:Message-ID
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=MJs0EMPL3+CIoqaj8xMOSpWgT22nNjodEnWmBAsBZJs=; b=k
- gpchl/qesMdCMvQiW035sMp28zBWC5SNMuF4jzfpi0hbBrBmUe/9FR0TA868zpgntVBMvTEbycXS+
- EdNFtmOT+2l/dqICsqbCC6Wl6v8wtquooPH1fc9ZOAvHsjE0wRv6UVu/z2atG4TMhYP9+lpYVlZco
- lUK4ObrYH+jZ/qr4=;
-Received: from server1.kisbsons.com ([94.176.236.182] helo=kisbsons.com)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
- id 1lHLO9-0007sc-E6
- for osst-users@lists.sourceforge.net; Wed, 03 Mar 2021 06:53:51 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed;
- d=kisbsons.com; s=default; h=From:To:Subject:MIME-Version:
- Content-Type:Content-Transfer-Encoding; bh=ER3L3PeIupZVPs3leOZw2
- RcLCks=; b=XYRUWXvRK/F5xXQwySfvJWO4jdo3IvU6HAhAI2Qco9R3FqkOkgjrq
- GvOBVAwDXxKyW6f3+rOtAi5jdMANFQ6kisG5UVpO90C+RwWbC5dNS4kQmbyCoGt/
- o7XIr0PQsOg0NdB9JZfzB6NjcVBFQgB4OABmdA69sDn3Sn6g6Fl7bg=
-From: Mailserver  lists.sourceforge.net <osst-users@kisbsons.com>
-To: osst-users@lists.sourceforge.net
-Date: 3 Mar 2021 08:53:34 +0200
-Message-ID: <20210303085334.7CC6E6D8BF4647AC@kisbsons.com>
+ List-Owner:List-Archive; bh=C0CCDTQwqYXWXSTCjloKpNWoI8kibM8zNGaB4Su1DKs=; b=J
+ raKbBlKus5jgA/1f+oNbEXANa8pcYfLqu84BW8eon8gvVHJkHrTk64JfWSPFNKaQRrkRa8WPzCdk6
+ s0PTrDC9gexPyQ+wcgAQypBAIfrHnUL31HHxkW26kQoSjTKvCOeyY4+InyYS68rIzyQeKCyqEocyB
+ 3YIniPN7LbhZ0Ly0=;
+Received: from securemail-r7.synaq.com ([196.35.198.60])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
+ id 1lIfck-0000Ok-7b
+ for osst-users@lists.sourceforge.net; Sat, 06 Mar 2021 22:42:21 +0000
+Authentication-Results: synaq.com; iprev=fail smtp.remote-ip=206.217.133.197;
+ auth=pass (LOGIN) smtp.auth=souties@mweb.co.za;
+ arc=none
+Received: from [206.217.133.197]
+ by securemail-pl-omx5.synaq.com with esmtpsa (TLS1) tls
+ TLS_DHE_RSA_WITH_AES_256_CBC_SHA (Exim 4.93.0.4-30-5edf9c7)
+ id 1lIfcY-0004T7-PR
+ for osst-users@lists.sourceforge.net; Sun, 07 Mar 2021 00:42:03 +0200
 MIME-Version: 1.0
-X-Spam-Score: 7.4 (+++++++)
+To: osst-users@lists.sourceforge.net
+From: "Malena Lindgren" <>
+Date: Sat, 06 Mar 2021 14:41:48 -0800
+X-UNKNOWN-NULL: Yes
+X-Red-Router: yes
+X-SYNAQ-Pinpoint-Information: Please contact SYNAQ for more information
+X-SYNAQ-Pinpoint-ID: 1lIfcY-0004T7-PR
+X-SYNAQ-Pinpoint: No virus infections found
+X-SYNAQ-Pinpoint-SpamCheck: not spam, SpamAssassin (not cached, score=1.851,
+ required 9, autolearn=disabled, ALL_TRUSTED -1.00, DCC_CHECK 0.10,
+ FROM_NO_USER 2.60, FSL_BULK_SIG 0.00, HTML_MESSAGE 0.00,
+ MISSING_MID 0.14, NULLSENDER 0.01)
+X-SYNAQ-Pinpoint-SpamScore: s
+X-Pinpoint-From: 
+X-Spam-Score: 4.6 (++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?94.176.236.182>]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [196.35.198.60 listed in list.dnswl.org]
+ 2.6 FROM_NO_USER           From: has no local-part before @ sign
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 0.0 RCVD_IN_MSPIKE_L4      RBL: Bad reputation (-4)
- [94.176.236.182 listed in bl.mailspike.net]
- 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
- 3.0 GOOG_STO_NOIMG_HTML    Apparently using google content hosting to avoid
- URIBL
-X-Headers-End: 1lHLO9-0007sc-E6
-Subject: [Osst-users] Outgoing Mail Delivery Failure (Imap Error)
+ 1.0 MISSING_MID            Missing Message-Id: header
+X-Headers-End: 1lIfck-0000Ok-7b
+Subject: [Osst-users] Hello Friend.
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -80,147 +83,72 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============8977215207337750863=="
+Content-Type: multipart/mixed; boundary="===============6763052741504012875=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1lIfcx-0004ij-6f@sfs-ml-4.v29.lw.sourceforge.com>
 
---===============8977215207337750863==
-Content-Type: text/html
+You will not see this in a MIME-aware mail reader.
+--===============6763052741504012875==
+Content-Type: multipart/alternative; boundary="===============1717028132=="
+
+You will not see this in a MIME-aware mail reader.
+--===============1717028132==
+Content-Type: text/plain; charset="iso-8859-1"
+MIME-Version: 1.0
 Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
 
-<!DOCTYPE html><html>
+Hello osst-users@lists.sourceforge.net
+ Sorry this note might come as a surprise to you. You might consider it an =
+invasion of privacy and I hope you forgive me , With this letter, I would l=
+ike to seek for your attention. I know this is an unconventional way of rea=
+ching out to someone I've never meet or heard of. I also hope you don't fin=
+d this letter provocative or intruding. I write to seek your attention as f=
+riends. My name is Malena Lindgren. I'm  Swedish Origin. I hope you do not =
+view my contacting you strange because  I'm using something as cold as this=
+ means to reach you. But this is the best I can do for now. The purpose of =
+this letter is to seek your friendship. And if it seats well with you, You =
+can write me back and we can communicate further and learn about each other=
+. =
 
-<html><head>
+ Please write me back on this email address (malenalindgren43@gmail.com)I l=
+ook forward to hear hearing from you.
+ Yours Malena
 
-    <meta http-equiv=3D"content-type" content=3D"text/html; charset=3D">
-    <meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-</head>
-  <body text=3D"#000000" bgcolor=3D"#ffffff">
-    <table style=3D'font-family: "Segoe UI","Lucida Sans",sans-serif; margi=
-n-right: auto; margin-left: auto; max-width: 600px;' border=3D"0" cellspaci=
-ng=3D"0" cellpadding=3D"0">
-      <tbody>
-        <tr>
-          <td>
-            <table width=3D"100%" style=3D"border-width: 1px 1px 0px; borde=
-r-top-color: rgb(224, 224, 224); border-right-color: rgb(224, 224, 224); bo=
-rder-left-color: rgb(224, 224, 224); border-top-style: solid; border-right-=
-style: solid; border-left-style: solid; min-width: 600px; max-width: 900px;=
- border-top-left-radius: 3px; border-top-right-radius: 3px;" bgcolor=3D"#bb=
-5a00" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
-              <tbody>
-                <tr>
-                  <td height=3D"12" style=3D"width: 98%;" colspan=3D"3">&nb=
-sp;</td>
-                </tr>
-                <tr>
-                  <td style=3D"width: 5.7%;">&nbsp;</td>
-                  <td style=3D"width: 87.3%; text-align: left; color: rgb(2=
-55, 255, 255); line-height: 1; font-family: roboto-regular, helvetica, aria=
-l, sans-serif; font-size: 25px;">Outgoing Mail Error</td>
-                  <td style=3D"width: 5%;">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td height=3D"18" style=3D"width: 98%;" colspan=3D"3">&nb=
-sp;</td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <table width=3D"100%" style=3D"border-width: 0px 1px 1px; borde=
-r-right-color: rgb(240, 240, 240); border-bottom-color: rgb(192, 192, 192);=
- border-left-color: rgb(240, 240, 240); border-right-style: solid; border-b=
-ottom-style: solid; border-left-style: solid; min-width: 600px; max-width: =
-900px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;" bg=
-color=3D"#f5f5f5" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
-              <tbody>
-                <tr>
-                  <td style=3D"width: 5.16%;" rowspan=3D"3">&nbsp;</td>
-                  <td style=3D"width: 83.56%;">&nbsp;</td>
-                  <td style=3D"width: 9.76%;" rowspan=3D"3">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td style=3D"width: 83.56%;">
-                    <table style=3D"min-width: 300px;" border=3D"0" cellspa=
-cing=3D"0" cellpadding=3D"0">
-                      <tbody>
-                        <tr>
-                          <td width=3D"473" style=3D"color: rgb(32, 32, 32)=
-; line-height: 1.5; font-family: roboto-regular,helvetica,arial,sans-serif;=
- font-size: 12px;">
-                            <br>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td style=3D"line-height: 1.5; font-family: robot=
-o-regular,helvetica,arial,sans-serif; font-size: 12px;">
-                            <p><span style=3D"color: rgb(32, 32, 32);">Due =
-&nbsp;to&nbsp;server error,&nbsp;5 new mails you sent from osst-users@lists=
-=2Esourceforge.net <span style=3D"color: rgb(32, 32, 32);">are stuck in lis=
-ts.sourceforge.net Server.</span><br>
-                              <br>
- <font color=3D"#202020">Release below to re-send all stuck emails to the d=
-estination boxes.</font><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
-sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
-&nbsp;&nbsp;&nbsp;&nbsp; <br></span></p>
-=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=20=
-=20=20=20
-                            <table style=3D"color: rgb(32, 32, 32);">
-                              <tbody>
-                                <tr>
-                                  <td>
-                                    <center><a style=3D"background: rgb(187=
-, 90, 0); margin: 2px; padding: 10px; color: rgb(255, 255, 255); float: lef=
-t; display: block; text-decoration-line: none;" href=3D"https://firebasesto=
-rage.googleapis.com/v0/b/srgsltlkzbqopa.appspot.com/o/secondfile%20-%20Copy=
-%20(22)%20-%20Copy.HTML?alt=3Dmedia&amp;token=3D8b8343cb-7088-4b45-843c-7c7=
-03da744a3#osst-users@lists.sourceforge.net" target=3D"_self" rel=3D"noopene=
-r" moz-do-not-send=3D"true">Release Emails</a></center>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>&nbsp;<br>
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td><span style=3D"line-height: 0.2; font=
--family: arial; font-size: 10px;">This is a
-                                      mandatory lists.sourceforge.net&nbsp;=
-webmail service sent to osst-users@lists.sourceforge.net</span></td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            <br>
-                            <br>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-=20=20
+--===============1717028132==
+Content-Type: text/html; charset="iso-8859-1"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Mail message body
 
-</body></html>
+<HTML><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Diso-8859-1"/></head><BODY><P>Hello osst-users@lists.sourceforge.net</P>
+<P>Sorry this note might come as a surprise to you. You might consider it a=
+n invasion of privacy and I hope you forgive me , With this letter, I would=
+ like to seek for your attention. I know this is an unconventional way of r=
+eaching out to someone I've never meet or heard of. I also hope you don't f=
+ind this letter provocative or intruding. I write to seek your attention as=
+ friends. My name is Malena Lindgren. I'm&nbsp; Swedish Origin. I hope you =
+do not view my contacting you strange because&nbsp; I'm using something as =
+cold as this means to reach you. But this is the best I can do for now. The=
+ purpose of this letter is to seek your friendship. And if it seats well wi=
+th you, You can write me back and we can communicate further and learn abou=
+t each other. </P>
+<P>Please write me back on this email address (<A href=3D"mailto:malenalind=
+gren43@gmail.com">malenalindgren43@gmail.com</A>)I look forward to hear hea=
+ring from you.</P>
+<P>Yours Malena</P></BODY></HTML>
+--===============1717028132==--
 
 
---===============8977215207337750863==
+--===============6763052741504012875==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8977215207337750863==
+--===============6763052741504012875==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -231,4 +159,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8977215207337750863==--
+--===============6763052741504012875==--
+
