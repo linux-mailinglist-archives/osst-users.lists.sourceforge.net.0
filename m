@@ -2,76 +2,64 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 26406330725
-	for <lists+osst-users@lfdr.de>; Mon,  8 Mar 2021 06:09:04 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 2FF8F33368B
+	for <lists+osst-users@lfdr.de>; Wed, 10 Mar 2021 08:45:06 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1lJ88c-0000SZ-UM
-	for lists+osst-users@lfdr.de; Mon, 08 Mar 2021 05:09:02 +0000
+	id 1lJtWi-0000OG-8g
+	for lists+osst-users@lfdr.de; Wed, 10 Mar 2021 07:45:04 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <nami@5fafa.xyz>) id 1lJ88b-0000SS-Rk
- for osst-users@lists.sourceforge.net; Mon, 08 Mar 2021 05:09:01 +0000
+ (envelope-from <info7@micky-8.top>) id 1lJtWd-0000Ns-H7
+ for osst-users@lists.sourceforge.net; Wed, 10 Mar 2021 07:44:59 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:Date:
- Reply-To:MIME-Version:To:Subject:From:Sender:Message-ID:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Reply-To:Sender:Content-Transfer-Encoding:
+ MIME-Version:Content-Type:To:Subject:From:Message-ID:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=NXLrjnw6zI7BocruTTJtFWcJ6qWv+mwcqxLRSY3jRJI=; b=eT2dRMdSsAmNZ6Hb+9gsVIA+l3
- lS7AHEUjCPKMNQVbGgIkbBEbVF2/pl2WFMDJU9E5y4IAJoDk3JoPLK19ub9kfw/xr2JztkIm5EP92
- ZEmQrFU2iBbFTe10B5Wnr/gt7CCNLe+JH7zYV3woAI2zYjiDEF5+x0B/dz21mPwKmYxE=;
+ bh=rZhXXI24egGzvq1ejHWKJJWbNAuZF4HtxLTaOJyDuJk=; b=RKH2OB5HBnZExVNjg5lfKiibT5
+ a0sY8tcFADJXrpMmvBq67qIairhLE//vS6Jx5+KDMbJ0IVG+W6Wbs1noyHngSkSyHV2aGrfhGn4+B
+ 5TTQjs/smE4iR9CLHoHvDAFbPO1DMDBgAVOccuH/ju/3Aoi88Xmhp9ib61xW+mcbXk24=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:Date:Reply-To:MIME-Version:To:
- Subject:From:Sender:Message-ID:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Date:Reply-To:Sender:Content-Transfer-Encoding:MIME-Version:Content-Type:
+ To:Subject:From:Message-ID:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=NXLrjnw6zI7BocruTTJtFWcJ6qWv+mwcqxLRSY3jRJI=; b=C
- MGZGbW8rzuGGHMPIOoRU8CAtCtnPW5GrariHg5tNdlYfYnjPvbyzhry4I7CGbqXYWY7g2Rj7qfFVW
- NwmTQhoUGcRe/xvZWD8V1oJtqd9a1ZIJG2FopZHtMrBv8SSVpusqouNyQcURK748EuIwhuJVxW2BG
- 4vfzC8A9SWpi9wpw=;
-Received: from 5fafa.xyz ([106.75.237.29])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
- id 1lJ88Q-0006YS-TN
- for osst-users@lists.sourceforge.net; Mon, 08 Mar 2021 05:09:00 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=default; d=5fafa.xyz;
- h=From:Subject:To:MIME-Version:Reply-To:Date:Content-Type:Content-Transfer-Encoding;
- i=nami@5fafa.xyz; bh=NxP5VtJjwHufso4gXAJ75krU5YQ=;
- b=JrIuwaiyMfeTvT8De/wrwtJ3RRT2YoigBQWGX5gg6G4s7tu1dOSTZgDJkR22Ip7RyJ0W5+RSYONl
- /CktkZDkVyyFTVvqIZ/OKUTrdydXhoDXiD5AYOyGWoFYxpWLMN2ZaclZbspFWMp9JPi5RGvO+SQU
- xA9Oc39mRdCMKTQ32H8=
-From: "Ms. Melvida Bullock" <nami@5fafa.xyz>
+ List-Owner:List-Archive; bh=rZhXXI24egGzvq1ejHWKJJWbNAuZF4HtxLTaOJyDuJk=; b=h
+ d3RiolDIZtSMhW3syNcf5M5ULQaLo+zKezflOnKq8jaLYsDc28ULY3znPi/4/muNvHczn/gSptQPL
+ 7UNYtA9+oDSsYzWg0fVVi/IFN/VSx+n6XqmR2fnHwnp9d/KjMFuJr8wyIZnMrRl15eNIgoQZkqqWG
+ 7cLS17Q0gyN1c97U=;
+Received: from [103.45.185.19] (helo=info.micky-8.top)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
+ id 1lJtWG-0001fT-Hg
+ for osst-users@lists.sourceforge.net; Wed, 10 Mar 2021 07:44:56 +0000
+Received: from SC-201802160242 (223.73.28.243) by info.micky-8.top id
+ h91se80e97cf for <osst-users@lists.sourceforge.net>;
+ Wed, 10 Mar 2021 15:44:30 +0800 (envelope-from <info7@micky-8.top>)
+From: "Sales" <sales@hotfong.com>
 To: osst-users@lists.sourceforge.net
 MIME-Version: 1.0
-Date: Mon, 8 Mar 2021 13:06:28 +0800
-X-Spam-Score: 7.4 (+++++++)
+Date: Wed, 10 Mar 2021 15:44:31 +0800
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.3790.4913
+Content-Disposition: inline
+X-Spam-Score: 2.3 (++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?106.75.237.29>]
- 1.5 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [106.75.237.29 listed in psbl.surriel.com]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
- (melvbullockzone123[at]gmail.com)
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  1.0 MISSING_MID            Missing Message-Id: header
- 0.0 LOTS_OF_MONEY          Huge... sums of money
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
- 0.0 MONEY_FREEMAIL_REPTO   Lots of money from someone using free email?
- 1.0 XFER_LOTSA_MONEY       Transfer a lot of money
- 0.0 ADVANCE_FEE_2_NEW_MONEY Advance Fee fraud and lots of money
-X-Headers-End: 1lJ88Q-0006YS-TN
-Subject: [Osst-users] Greetings Dear Beloved:
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 0.0 TO_NO_BRKTS_MSFT       To: lacks brackets and supposed Microsoft tool
+ 0.0 TIME_LIMIT_EXCEEDED    Exceeded time limit / deadline
+X-Headers-End: 1lJtWG-0001fT-Hg
+Subject: [Osst-users] Ventilador recargable ventilador USB
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -83,24 +71,33 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: melvbullockzone123@gmail.com
-Content-Type: text/plain; charset="us-ascii"
-Content-Transfer-Encoding: 7bit
+Reply-To: sales@hotfong.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1lJ88c-0000SZ-UM@sfs-ml-2.v29.lw.sourceforge.com>
+Message-Id: <E1lJtWi-0000OG-8g@sfs-ml-2.v29.lw.sourceforge.com>
 
-Dear Beloved,
-
-Life is gradually passing away from me as a result of my present medical condition and my personal doctor confided in me yesterday that I have only a few more weeks to live. In view of this setback, I want to donate my estate for humanitarian assistance, since this has always been the plan of my late husband and besides I have no child. In an effort to compliment the good work of our creator for humanity and the wish of my late Husband I donate the sum of 10,000,000.00 Euro (Ten Million EUR) to you. Upon your acknowledgement of this mail and informing me of your nationality and current place of resident, my Bank will facilitate due processes for transfer of this legacy to you. May God bless you as you use this money judiciously for the work of charity to help the less privileged.
-
-Sincere regards,
-
-Ms. Melvida Bullock
-Email: melvbullockzone123@gmail.com
-
-
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
+Q2FybyBjbGllbnRlLA0KDQpNdWl0byBmZWxpeiBlbSBzYWJlciBwZWxvIHNldSBzaXRlLCBwYXJh
+IHNlciBhaW5kYSBtYWlzIGJlbSBzdWNlZGlkbywgdm9jw6ogcG9kZSBwcm9jdXJhciB1bSBmb3Ju
+ZWNlZG9yIGRlIHByb2R1w6fDo28gbXVpdG8gY2FwYXogZSBjb25macOhdmVsLiANCnNvbW9zIHVt
+IGZhYnJpY2FudGUgcHJvZmlzc2lvbmFsIHBhcmEgZWxldHJvZG9tw6lzdGljb3MgZG9tw6lzdGlj
+b3MsIG9zIHByaW5jaXBhaXMgcHJvZHV0b3Mgc8OjbyBVU0IgTWluaSBGYW4gZSBVbWlkaWZpY2Fk
+b3IsIGFjZXNzw7NyaW8gQW50aS1Nb3NxdWl0byBMYW1wLCBzZWNhZG9yIGRlIGNhYmVsbyBlIGFz
+c2ltIHBvciBkaWFudGUsIHRlbW9zIHVtIGZvcnRlIGRlcGFydGFtZW50byBkZSBwZXNxdWlzYSAm
+IGRlc2Vudm9sdmltZW50byBlIGVuZ2VuaGVpcm9zIGV4cGVyaWVudGVzLiANCnBhc3NhcmFtIG5v
+cyB0ZXN0ZXMgY29tbyB2b2PDqiBwcmVjaXNhLCBwb3IgZXhlbXBsbzogQ0UsIFJvSFMsIEZDQywg
+ZXRjLiBjZXJ0aWZpY2Fkby4NClBvZGUgbWUgZmF6ZXIgdW0gZmF2b3I/IA0KTyBxdWUgZGV2ZW1v
+cyBmYXplciBwYXJhIG5vcyBjYW5kaWRhdGFyIGUgbm9zIHRvcm5hciBzZXUgbm92byBmb3JuZWNl
+ZG9yPw0KMS4uMTUwIHRyYWJhbGhhZG9yZXMgLCA2IGxpbmhhIGRlIHByb2R1w6fDo28sDQoyLCBu
+b3Nzb3MgcHJvZHV0b3MgcG9kZW0gcGFzc2FyIG5vcyB0ZXN0ZXMgY29tbyB2b2PDqiBwcmVjaXNh
+LCBwb3IgZXhlbXBsbzogQ0UsIFJvSFMsIEZDQywgZXRjLg0KMyxwcmXDp28gZGUgY29uY29ycsOq
+bmNpYSBlIGJvYSBxYW5saWRhZGUgY29udG9ybCwNClNpbnRhLXNlIGxpdnJlIGVudHJlIGVtIGNv
+bnRhdG8gY29ub3NjbyBzZSBhbGd1bWEgcGVyZ3VudGEuDQpEZW5uaXMNClNhbGVzIE1hbmFnZXIN
+CkhvdGZvbmcgSG91c2UgRWxlY3RyaWNhbCBBcHBsaWFuY2VzDQoNCkRvbmdndWFuIEhvdGZvbmcg
+SW5kdXN0cmlhbCBDby4sTHRkLiANCndlYnNpdGU6IHd3dy5ob3Rmb25nLmNvbQ0KQ29udGFjdCBw
+ZXJzb246IERlbm5pcw0KQ2VsbCBwaG9uZTogKzg2IDE4MSAyMjk1IDg1MzINCldlY2hhdDogbGFs
+YWxhOTU4NTMyDQpBZGRyZXNzOiBKaW5mZW5nIGJ1aWxkaW5nLCBXYW5namlhbmcgZGlzdHJpY3Qs
+IERvbmdndWFuIENpdHksIEd1YW5nZG9uZyBQcm92aW5jZSwgQ2hpbmEgDQoKX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18KT3NzdC11c2VycyBtYWlsaW5nIGxp
+c3QKT3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQKaHR0cHM6Ly9saXN0cy5zb3VyY2Vm
+b3JnZS5uZXQvbGlzdHMvbGlzdGluZm8vb3NzdC11c2Vycwo=
