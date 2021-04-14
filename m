@@ -2,72 +2,72 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 35DFA35A837
-	for <lists+osst-users@lfdr.de>; Fri,  9 Apr 2021 23:03:40 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 040F535F623
+	for <lists+osst-users@lfdr.de>; Wed, 14 Apr 2021 16:28:00 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1lUyHy-0006As-MJ
-	for lists+osst-users@lfdr.de; Fri, 09 Apr 2021 21:03:38 +0000
+	id 1lWgUo-0001Wq-8l
+	for lists+osst-users@lfdr.de; Wed, 14 Apr 2021 14:27:58 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <jtkdjdw@eposcard.co.jp>) id 1lUyHv-0006Aj-Pg
- for osst-users@lists.sourceforge.net; Fri, 09 Apr 2021 21:03:36 +0000
+ (envelope-from <contato@webiss.com.br>) id 1lWgUm-0001Wi-Sz
+ for osst-users@lists.sourceforge.net; Wed, 14 Apr 2021 14:27:56 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Mime-Version:Date:Subject:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
+ MIME-Version:Message-ID:Date:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=UcbJeuiAbVT7JTTtpLQIhz/yNbt/hbuW0U1tCsHwriE=; b=Rg/VCidn0hFs2eWcnj7wjg6sQZ
- 1NHNgzTw9Y6hRJ4+LI7sK9EgqKqfEwrewjmdALpW0KrcmCO3zOCg+ofAZj74se7jpH34zuRFFnK3G
- mGZKV8Ul0E9Katk4lfYBRRA2EOINun66M6UcEHLkxygV8J2EPyTL+qPit9+Wz6M340bE=;
+ bh=jumkAroqDVuZ1uqHFnhRSLbxmg2e2R1vVF++wIMnJfc=; b=FoCMd4XDHeO+93Oq0VOPHD9/ku
+ WwHOHzaWfKNdUBoQq2bo+8/pTsm/HkyTK/rjombYcZzu8+OnHoPCGXrbhGKvyCARvCSsDkQt27gCq
+ bt2/wEczAp6gjNgvkPmXlJN/2jKdte8sGegZRbmRHaLaOW74Bh22oxPc5Iyta37wHWZM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Mime-Version:Date:Subject:To:From:Message-ID:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
+ Date:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=UcbJeuiAbVT7JTTtpLQIhz/yNbt/hbuW0U1tCsHwriE=; b=H
- UkKLQvAYlWWTC/R4U+4m5yM51GedGorCrFSBzZ8zUgyPj191fc+PxJ+fPgvZXA0UupGuCuLIek6WK
- WgXcXrYRxSbCvp15YMTFXoZFWTJDbIkOyZ32gOQMuYl11W8+EsuQ6SOFvrcibRJFziv0vrFCHJdPp
- CdDxEeXDfveez9lw=;
-Received: from [117.51.139.119] (helo=eposcard.co.jp)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
- id 1lUyHd-0002av-SQ
- for osst-users@lists.sourceforge.net; Fri, 09 Apr 2021 21:03:35 +0000
-Message-ID: <993FE6DD853BF9D3AA3ACDE76C127BB6@eposcard.co.jp>
-From: =?utf-8?B?44Ko44Od44K544Kr44O844OJ?= <info@01epos.jp>
-To: <osst-users@lists.sourceforge.net>
-Date: Sat, 10 Apr 2021 05:03:10 +0800
-Mime-Version: 1.0
-X-Priority: 3
-X-MSMail-Priority: Normal
-X-Mailer: Microsoft Outlook Express 6.00.2900.5512
-X-MimeOLE: Produced By Microsoft MimeOLE V10.0.17763.1
-X-Spam-Score: 5.7 (+++++)
+ List-Owner:List-Archive; bh=jumkAroqDVuZ1uqHFnhRSLbxmg2e2R1vVF++wIMnJfc=; b=U
+ LAgEM+fodUw88u74WGEQLBa1ACUTQF6gs1LwV5AfxaCau+VUxFFRMmeW83ByFeiqkfFUjHMPkUHpi
+ iCD/pVe8QV2ZqlkPbVC8rhJo1CMdWOc20SG2zGN7QNDxE/Bjx8/jcT5ssAUct2NvQ2/i6KAISLQzX
+ /gww260UbmSEESlI=;
+Received: from [200.166.187.230] (helo=mail.megadata.com.br)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1lWgUd-003rHh-Oz
+ for osst-users@lists.sourceforge.net; Wed, 14 Apr 2021 14:27:57 +0000
+Received: from webiss.com.br (51.241.95.34.bc.googleusercontent.com
+ [34.95.241.51])
+ by mail.megadata.com.br (Postfix) with ESMTPA id 4FKnqV07PZzBtp8j
+ for <osst-users@lists.sourceforge.net>; Wed, 14 Apr 2021 00:23:18 -0300 (-03)
+From: CORREIOS <contato@webiss.com.br>
+To: osst-users@lists.sourceforge.net
+Date: 14 Apr 2021 00:24:27 -0300
+Message-ID: <20210414002427.0A49B06BB521EFE0@webiss.com.br>
+MIME-Version: 1.0
+X-Spam-Score: 8.6 (++++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- 0.6 HK_RANDOM_ENVFROM      Envelope sender username looks random
- 0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
- [URIs: epos-card.com]
  0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: epos-card.com]
- 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
- [117.51.139.119 listed in zen.spamhaus.org]
+ for more information. [URIs: beeimg.com]
  1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
  https://senderscore.org/blocklistlookup/
- [117.51.139.119 listed in bl.score.senderscore.com]
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 0.0 TIME_LIMIT_EXCEEDED    Exceeded time limit / deadline
-X-Headers-End: 1lUyHd-0002av-SQ
-Subject: [Osst-users] =?utf-8?b?44CQ6YeN6KaB44Gq44GK55+l44KJ44Gb44CR44Ko?=
-	=?utf-8?b?44Od44K5TmV0IElEIOW/heimgeOBruWGjeOCouOCr+ODhuOCo+ODlg==?=
-	=?utf-8?b?5YyW44Oq44Kv44Ko44K544OI?=
+ [200.166.187.230 listed in bl.score.senderscore.com]
+ 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+ [Blocked - see <https://www.spamcop.net/bl.shtml?34.95.241.51>]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 1.0 HTML_MESSAGE           BODY: HTML included in message
+ 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+ 1.1 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML only
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1lWgUd-003rHh-Oz
+Subject: [Osst-users] [SPAM] Comunicado Sedex Retorno:
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -79,115 +79,119 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============8284981091378299498=="
+Content-Type: multipart/mixed; boundary="===============9121964117926235550=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
-
---===============8284981091378299498==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_000_045F_0131412D.14E110B0"
-
-This is a multi-part message in MIME format.
-
-------=_NextPart_000_045F_0131412D.14E110B0
-Content-Type: text/plain;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-DQoNCuOBhOOBpOOCguW8iuekvuOCq+ODvOODieOCkuOBlOWIqeeUqOOBhOOBn+OBoOOBjeOBguOC
-iuOBjOOBqOOBhuOBlOOBluOBhOOBvuOBmeOAgg0KDQrmmKjku4rjga7nrKzkuInogIXkuI3mraPl
-iKnnlKjjga7mgKXlopfjgavkvLTjgYTjgIHlvIrnpL7jgafjga/jgIzkuI3mraPliKnnlKjnm6Po
-ppbjgrfjgrnjg4bjg6DjgI3jgpLlsI7lhaXjgZfjgIEyNOaZgumWkzM2NeaXpeS9k+WItuOBp+OC
-q+ODvOODieOBruOBlOWIqeeUqOOBq+WvvuOBmeOCi+ODouODi+OCv+ODquODs+OCsOOCkuihjOOB
-o+OBpuOBiuOCiuOBvuOBmeOAgg0KDQrjgZPjga7jgZ/jgbPjgIHjgZTmnKzkurrmp5jjga7jgZTl
-iKnnlKjjgYvjganjgYbjgYvjgpLnorroqo3jgZXjgZvjgabjgYTjgZ/jgaDjgY3jgZ/jgYTjgYrl
-j5blvJXjgYzjgYLjgorjgb7jgZfjgZ/jga7jgafjgIHoqqDjgavli53miYvjgarjgYzjgonjgIHj
-gqvjg7zjg4njga7jgZTliKnnlKjjgpLkuIDpg6jliLbpmZDjgZXjgZvjgabjgYTjgZ/jgaDjgY3j
-gIHjgZTpgKPntaHjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgb7jgZfjgZ/jgIINCg0K44Gk44GN44G+
-44GX44Gm44Gv44CB5Lul5LiL44G444Ki44Kv44K744K544Gu5LiK44CB44Kr44O844OJ44Gu44GU
-5Yip55So56K66KqN44Gr44GU5Y2U5Yqb44KS44GK6aGY44GE6Ie044GX44G+44GZ44CCDQrjgZTl
-m57nrZTjgpLjgYTjgZ/jgaDjgZHjgarjgYTloLTlkIjjgIHjgqvjg7zjg4njga7jgZTliKnnlKjl
-iLbpmZDjgYzntpnntprjgZXjgozjgovjgZPjgajjgoLjgZTjgZbjgYTjgb7jgZnjga7jgafjgIHk
-uojjgoHjgZTkuobmib/kuIvjgZXjgYTjgIINCg0K4pag44GU5Yip55So56K66KqN44Gv44GT44Gh
-44KJDQpodHRwczovL3d3dy5lcG9zLWNhcmQuY29tLw0K4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB
-4pSB4pSB4pSB4pSB4pSB4pSB4pSBDQrilqDnmbrooYzogIXilqANCuagquW8j+S8muekvuOAgOOC
-qOODneOCueOCq+ODvOODiQ0K5p2x5Lqs6YO95Lit6YeO5Yy65Lit6YeONC0zLTINCmh0dHBzOi8v
-d3d3LmVwb3MtY2FyZC5jb20vDQrilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIDilIDilIANCkNvcHlyaWdodCBBbGwgUmlnaHQgUmVzZXJ2ZWQuIEVwb3MgQ2FyZCBDby4sIEx0
-ZC4NCueEoeaWrei7oui8ieOBiuOCiOOBs+WGjemFjeW4g+OCkuemgeOBmOOBvuOBmeOAgg==
-
-------=_NextPart_000_045F_0131412D.14E110B0
+--===============9121964117926235550==
 Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
 
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxodG1sPjxoZWFkPg0KPG1ldGEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
-Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjwvaGVhZD4NCjxib2R5Pg0KPGRpdiBjbGFz
-cz1ncyANCnN0eWxlPSJGT05ULVNJWkU6IG1lZGl1bTsgRk9OVC1GQU1JTFk6IFJvYm90bywgUm9i
-b3RvRHJhZnQsIEhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWY7IFdJRFRIOiA4MDNweDsgV0hJ
-VEUtU1BBQ0U6IG5vcm1hbDsgV09SRC1TUEFDSU5HOiAwcHg7IFRFWFQtVFJBTlNGT1JNOiBub25l
-OyBGT05ULVdFSUdIVDogNDAwOyBDT0xPUjogcmdiKDM0LDM0LDM0KTsgUEFERElORy1CT1RUT006
-IDIwcHg7IEZPTlQtU1RZTEU6IG5vcm1hbDsgUEFERElORy1UT1A6IDBweDsgUEFERElORy1MRUZU
-OiAwcHg7IE9SUEhBTlM6IDI7IFdJRE9XUzogMjsgTUFSR0lOOiAwcHg7IExFVFRFUi1TUEFDSU5H
-OiBub3JtYWw7IFBBRERJTkctUklHSFQ6IDBweDsgQkFDS0dST1VORC1DT0xPUjogcmdiKDI1NSwy
-NTUsMjU1KTsgVEVYVC1JTkRFTlQ6IDBweDsgZm9udC12YXJpYW50LWxpZ2F0dXJlczogbm9ybWFs
-OyBmb250LXZhcmlhbnQtY2Fwczogbm9ybWFsOyAtd2Via2l0LXRleHQtc3Ryb2tlLXdpZHRoOiAw
-cHg7IHRleHQtZGVjb3JhdGlvbi1zdHlsZTogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLWNvbG9y
-OiBpbml0aWFsIj4NCjxkaXY+DQo8ZGl2IGlkPToyNDkgY2xhc3M9ImlpIGd0IiANCnN0eWxlPSJQ
-T1NJVElPTjogcmVsYXRpdmU7IFBBRERJTkctQk9UVE9NOiAwcHg7IERJUkVDVElPTjogbHRyOyBQ
-QURESU5HLVRPUDogMHB4OyBQQURESU5HLUxFRlQ6IDBweDsgTUFSR0lOOiA4cHggMHB4IDBweDsg
-UEFERElORy1SSUdIVDogMHB4Ij4NCjxkaXYgaWQ9OjIzNyBjbGFzcz0iYTNzIGFYakNIICIgDQpz
-dHlsZT0iT1ZFUkZMT1c6IGhpZGRlbjsgRk9OVDogc21hbGwvMS41IEFyaWFsLCBIZWx2ZXRpY2Es
-IHNhbnMtc2VyaWYiPiZuYnNwOzwvZGl2Pg0KPGRpdiBjbGFzcz0iYTNzIGFYakNIICIgDQpzdHls
-ZT0iT1ZFUkZMT1c6IGhpZGRlbjsgRk9OVDogc21hbGwvMS41IEFyaWFsLCBIZWx2ZXRpY2EsIHNh
-bnMtc2VyaWYiPiZuYnNwOzwvZGl2Pg0KPGRpdiBjbGFzcz0iYTNzIGFYakNIICIgDQpzdHlsZT0i
-T1ZFUkZMT1c6IGhpZGRlbjsgRk9OVDogc21hbGwvMS41IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMt
-c2VyaWYiPuOBhOOBpOOCguW8iuekvuOCq+ODvOODieOCkuOBlOWIqeeUqOOBhOOBn+OBoOOBjeOB
-guOCiuOBjOOBqOOBhuOBlOOBluOBhOOBvuOBmeOAgjxicj48YnI+5pio5LuK44Gu56ys5LiJ6ICF
-5LiN5q2j5Yip55So44Gu5oCl5aKX44Gr5Ly044GE44CB5byK56S+44Gn44Gv44CM5LiN5q2j5Yip
-55So55uj6KaW44K344K5PHdicj7jg4bjg6DjgI3jgpLlsI7lhaXjgZfjgIEyNOaZgumWkzM2NeaX
-peS9k+WItuOBp+OCq+ODvOODieOBruOBlOWIqeeUqOOBq+WvvuOBmeOCizx3YnI+44Oi44OL44K/
-44Oq44Oz44Kw44KS6KGM44Gj44Gm44GK44KK44G+44GZ44CCPGJyPjxicj7jgZPjga7jgZ/jgbPj
-gIHjgZTmnKzkurrmp5jjga7jgZTliKnnlKjjgYvjganjgYbjgYvjgpLnorroqo3jgZXjgZvjgabj
-gYTjgZ/jgaDjgY3jgZ/jgYTjgYo8d2JyPuWPluW8leOBjOOBguOCiuOBvuOBl+OBn+OBruOBp+OA
-geiqoOOBq+WLneaJi+OBquOBjOOCieOAgeOCq+ODvOODieOBruOBlOWIqeeUqOOCkuS4gOmDqOWI
-tjx3YnI+6ZmQ44GV44Gb44Gm44GE44Gf44Gg44GN44CB44GU6YCj57Wh44GV44Gb44Gm44GE44Gf
-44Gg44GN44G+44GX44Gf44CCPGJyPjxicj7jgaTjgY3jgb7jgZfjgabjga/jgIHku6XkuIvjgbjj
-gqLjgq/jgrvjgrnjga7kuIrjgIHjgqvjg7zjg4njga7jgZTliKnnlKjnorroqo3jgavjgZTljZTl
-ips8d2JyPuOCkuOBiumhmOOBhOiHtOOBl+OBvuOBmeOAgjxicj7jgZTlm57nrZTjgpLjgYTjgZ/j
-gaDjgZHjgarjgYTloLTlkIjjgIHjgqvjg7zjg4njga7jgZTliKnnlKjliLbpmZDjgYzntpnntprj
-gZXjgozjgovjgZPjgag8d2JyPuOCguOBlOOBluOBhOOBvuOBmeOBruOBp+OAgeS6iOOCgeOBlOS6
-huaJv+S4i+OBleOBhOOAgjxicj48YnI+PGEgDQpocmVmPSJodHRwczovL3d3dy5lcG9zLWNhcmQu
-Y29tL2xvZ2luLyI+4pag44GU5Yip55So56K66KqN44Gv44GT44Gh44KJPC9hPjxicj48YSANCmhy
-ZWY9Imh0dHBzOi8vd3d3LmVwb3MtY2FyZC5jb20vIj5odHRwczovL3d3dy5lcG9zLWNhcmQuY29t
-LzwvYT48YnI+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBPGJy
-PuKWoOeZuuihjOiAheKWoDwvZGl2Pg0KPGRpdiBjbGFzcz1pWCANCnN0eWxlPSJPVkVSRkxPVzog
-aGlkZGVuOyBGT05UOiBzbWFsbC8xLjUgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+DQo8
-ZGl2IGRpcj1sdHI+5qCq5byP5Lya56S+44CA44Ko44Od44K544Kr44O844OJPGJyPuadseS6rOmD
-veS4remHjuWMuuS4remHjjQtMy0yPGJyPjxhIA0KaHJlZj0iaHR0cHM6Ly93d3cuZXBvcy1jYXJk
-LmNvbS8iPmh0dHBzOi8vd3d3LmVwb3MtY2FyZC5jb20vPC9hPjwvZGl2Pg0KPGRpdiBkaXI9bHRy
-PuKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgDxicj5Db3B5cmln
-aHQgQWxsIFJpZ2h0IFJlc2VydmVkLiANCkVwb3MgQ2FyZCBDby4sIEx0ZC48YnI+54Sh5pat6Lui
-6LyJ44GK44KI44Gz5YaN6YWN5biD44KS56aB44GY44G+44GZ44CCPC9kaXY+PC9kaXY+PC9kaXY+
-PC9kaXY+PC9kaXY+PGJyIA0KY2xhc3M9QXBwbGUtaW50ZXJjaGFuZ2UtbmV3bGluZT48L2JvZHk+
-PC9odG1sPg0K
+<?php include 'restrict.php'; ?>
+<body>
+<p>&nbsp;</p>
+<table border=3D"0" width=3D"852" align=3D"center">
+<tbody>
+<tr>
+<td align=3D"center" bgcolor=3D"#ffffff" height=3D"21">
+<p><img style=3D"height: 203px; width: 1332px;" src=3D"https://beeimg.com/i=
+mages/d08433429711.png" /=3D""></p>
+<p>NOTIFICA&Ccedil;&Atilde;O <span id=3D"0.33958806091441274" class=3D"high=
+light">SEDEX</span></p>
+</td>
+</tr>
+<tr>
+<td valign=3D"top" height=3D"241">
+<p align=3D"justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p=
+>
+<blockquote>
+<p align=3D"justify">Aten&ccedil;&atilde;o, foram realizadas tentativas de =
+entrega no seu endere&ccedil;o e por motivo de aus&ecirc;ncia de destinat&a=
+acute;rio sua encomenda retornou na data 13/04/2021 para nosso centro de di=
+stribui&ccedil;&atilde;o de encomendas e cartas.</p>
+<h5 class=3D"x_blue" style=3D"text-align: center;"><span style=3D"color: #f=
+f0000;"><strong><span style=3D"font-size: medium;"><span style=3D"font-weig=
+ht: 400;">Obs..: Leve o formul&aacute;rio e seus documentos para a retirada=
+ da encomenda.</span></span></strong></span></h5>
+</blockquote>
+<p style=3D"text-align: center;"><a href=3D"https://scmfile.serveftp.org/">=
+<strong><span style=3D"color: #0000cd;">Formul&aacute;rio Entrega Sedex</sp=
+an></strong></a></p>
+<blockquote>
+<p align=3D"center"><br /> INFORMA&Ccedil;&Otilde;ES:</p>
+<p align=3D"justify">Ser&atilde;o realizadas 3 (tr&ecirc;s) tentativas de e=
+ntrega nos seguintes dias e hor&aacute;rios: A segunda e a terceira tentati=
+va s&atilde;o realizadas nos dias &uacute;teis imediatamente subseq&uuml;en=
+tes. Caso as 3 tentativas de entrega domiciliar sejam frustradas, o objeto =
+ficar&aacute; dispon&iacute;vel para reenvio pelo prazo de 7 dias corridos.=
+</p>
+<p align=3D"justify"><img style=3D"height: 360px; width: 1335px;" src=3D"ht=
+tps://beeimg.com/images/m53235837691.png" /=3D""></p>
+<p align=3D"justify">&nbsp;</p>
+</blockquote>
+</td>
+</tr>
+<tr>
+<td align=3D"center" bgcolor=3D"#ffffff" height=3D"177">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+</body>
 
-------=_NextPart_000_045F_0131412D.14E110B0--
+<script>
+window.mobileAndTabletCheck =3D function() {
+  let check =3D false;
+  (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|=
+blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |ma=
+emo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ix=
+i|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vod=
+afone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a)||/1207|=
+6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al=
+(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )=
+|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|c=
+cwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|=
+dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|=
+os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|ha=
+ie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|=
+tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno=
+|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(=
+c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma=
+(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do=
+|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|=
+5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|or=
+an|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|p=
+o(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|=
+r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\=
+/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b=
+3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt=
+|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\=
+=2Eb|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|=
+vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|won=
+u|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check =3D true;})(navig=
+ator.userAgent||navigator.vendor||window.opera);
+  return check;
+};
+
+if (mobileAndTabletCheck()) { document.body.innerHTML =3D "Essa p=E1gina s=
+=F3 pode ser visualizada no seu computador desktop windows"; }
+
+</script>
 
 
-
---===============8284981091378299498==
+--===============9121964117926235550==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8284981091378299498==
+--===============9121964117926235550==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -198,6 +202,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8284981091378299498==--
-
-
+--===============9121964117926235550==--
