@@ -2,81 +2,84 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id F36CB3799C7
-	for <lists+osst-users@lfdr.de>; Tue, 11 May 2021 00:14:48 +0200 (CEST)
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
-	MIME-Version:Message-ID:Date:To:Sender:Cc:Content-Transfer-Encoding:
-	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=5PMH1n3ypLIW21pqZCQG+BndPR330bpTq8rPI1XnU10=; b=RZUiY4ILUOniGmTG5tHmptNDZd
-	lOBJvl7/ICahtfaCqK33HIAN9kF+L/51q54JO96hDv6c7MXKCyJ8wZpPS+vqG20m0Et/0kDoUlP9N
-	wsrJqxUfW0oc5QQBrNLfcGQqh6KblqRv7Zto6Mj595vWPR8zfI3lllaTitge8nCegwII=;
+	by mail.lfdr.de (Postfix) with ESMTPS id 68B5737EDAF
+	for <lists+osst-users@lfdr.de>; Thu, 13 May 2021 00:43:07 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.92.3)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1lgEAp-00081w-5K
-	for lists+osst-users@lfdr.de; Mon, 10 May 2021 22:14:47 +0000
+	id 1lgxZJ-00025J-Hm
+	for lists+osst-users@lfdr.de; Wed, 12 May 2021 22:43:05 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
- (envelope-from <alasdair@balsamiq.com>) id 1lgEAn-00081N-J8
- for osst-users@lists.sourceforge.net; Mon, 10 May 2021 22:14:45 +0000
+ (envelope-from <contacto75644@cliches1.barretodias.es>)
+ id 1lgxZI-00025B-AP
+ for osst-users@lists.sourceforge.net; Wed, 12 May 2021 22:43:04 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Date:To:From:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Reply-To:From:
+ Date:Subject:To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=NEcrtD9blSfgq/0Pd95iik6VN1HI43ggq54OOe2rtiA=; b=jPzv7tYUIBLsrCFU+9AG7zoVDg
- PMOJEuzjVUgGC4EAxE8jZnal9RsMeYaNuVMdLst+OAdO6psOhC8nncCC5ptFjFALjZbYv7BS/oLyA
- 4VciQqsWtpFFvWK1QnZEdkDr8wub5AVpHZIOAkho2dnGo8PyF5JEx4HxNUYp1108Q3bg=;
+ bh=sX2ltCEoUCWAf2cJKWjgZOeVulbOP3rObML+LF2ilkY=; b=N7PDEyIZ/TqgosBlgxBjBq+zuT
+ +Z7RaDvGSdMhXLdG2h54ZCdmYhbFxwWneDMdxefMRuYirKLXbHoy0MrU7Fc484x4k6i9rrXVILdix
+ vgTlmGZk0eqQZGyJv9Krg3/rrryZmhwzBcUMDzUwn1B44iPL+Qz+rdN3NCsQAYBXWRMw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
- Date:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Type:MIME-Version:Message-ID:Reply-To:From:Date:Subject:To:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=NEcrtD9blSfgq/0Pd95iik6VN1HI43ggq54OOe2rtiA=; b=U
- kcrNiwYQr1fP6KTN5uum4hvyIVTqjrr4mHNbGBKFMa6A5cU/QQPpc8/lNsje1JpW60sP3czAHXa1c
- mL5b1Y6vaQEGBfJIM6kxK+LUC2Wr0JPfgynyEddgxDUD8QGq7C8kX2FlV9SGEjJtuarGo32AUvCQ2
- DCcx5y6i3UV9YfEU=;
-Received: from rdns0.rnahindra.com ([217.25.95.84])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.92.3)
- id 1lgEAj-0006Ai-7w
- for osst-users@lists.sourceforge.net; Mon, 10 May 2021 22:14:45 +0000
-Received: from balsamiq.com (unknown [193.29.187.185])
- by rdns0.rnahindra.com (Postfix) with ESMTPSA id 61D5942C68
- for <osst-users@lists.sourceforge.net>; Tue, 11 May 2021 01:14:00 +0300 (MSK)
-Authentication-Results: rdns0.rnahindra.com;
- spf=pass (sender IP is 193.29.187.185) smtp.mailfrom=alasdair@balsamiq.com
- smtp.helo=balsamiq.com
-Received-SPF: pass (rdns0.rnahindra.com: connection is authenticated)
+ List-Owner:List-Archive; bh=sX2ltCEoUCWAf2cJKWjgZOeVulbOP3rObML+LF2ilkY=; b=P
+ ZW3o7qMyFFo31EfAmymt/XttN43+ObvyzsRQg+F+XVqQy2Ex0sB67Au+OqxbsEXQTaGX7WPJsON0e
+ wvADWOTX/GknRlvIFKKfyGkrwAZMIGQqWPp/acZBEGlR3FWF7pL88sp2tGqsc6W5AHL0GlM9P5QPs
+ jGg3xdV1A8bSsRDc=;
+Received: from cliches1.barretodias.es ([185.178.45.151])
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.2)
+ id 1lgxZD-00654L-Kk
+ for osst-users@lists.sourceforge.net; Wed, 12 May 2021 22:43:03 +0000
+Received: by cliches1.barretodias.es (Postfix, from userid 33)
+ id E893E62F66; Thu, 13 May 2021 01:27:20 +0300 (MSK)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+ d=cliches1.barretodias.es; s=mail; t=1620858440;
+ bh=sX2ltCEoUCWAf2cJKWjgZOeVulbOP3rObML+LF2ilkY=;
+ h=To:Subject:Date:From:Reply-To:From;
+ b=e5+3fiVdmDzbGf/yr1YtPbTjM6Bs2UozsG87rd/lUA/fubOU2y1uEjvPS8BL8JMRZ
+ A4UD0FZ785B0e1+8Vvz4NQ/LvpitwQ69jasjoap+hteW8Eara+FDa4n8w8CpYrRDYC
+ 3IgUe8ZDypSL/RKw/9y28jWhcAg3hViS+uWGbV6KDftd6V/NvIOYLMv4c5PVkMOPCg
+ Exy2n1gQa0VdAnWRtTnSkPr/cwC+6CI9nzZh2FjDiFKpUJ9nuskXcYerwqvszismTt
+ iukm5K1TbxRPbRKMWtI857BD4pKmk+Kq2+1hNSh/PCjke9hJio38zEOIvaiRBftuVj
+ fv7TGxZwMNxIQ==
 To: osst-users@lists.sourceforge.net
-Date: 10 May 2021 15:13:54 -0700
-Message-ID: <20210510151354.DBAC1A4B7D035BB0@balsamiq.com>
+Date: Thu, 13 May 2021 01:27:20 +0300
+From: Administracion Tributaria 756691 <contacto75644@cliches1.barretodias.es>
+Message-ID: <101179b7703fb3aa5321a2ea3a37215b@185.178.45.151>
+X-Priority: 3
+X-Mailer: PHPMailer 5.2.4
+ (http://code.google.com/a/apache-extras.org/p/phpmailer/)
 MIME-Version: 1.0
-X-Spam-Score: 8.3 (++++++++)
+X-Spam-Score: 2.9 (++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
- -1.5 SPF_CHECK_PASS         SPF reports sender host as permitted sender for
- sender-domain
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: uploaddeimagens.com.br]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  1.0 HTML_MESSAGE           BODY: HTML included in message
- 2.3 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
  0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
  1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
  [cf: 100]
- 3.0 URI_FIREBASEAPP        Link to hosted firebase web application, possible
- phishing
  0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
- 1.5 SF_NO_SPF_SPAM         No description available.
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1lgEAj-0006Ai-7w
-Subject: [Osst-users] [SPAM] Product Inquiry
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Headers-End: 1lgxZD-00654L-Kk
+Subject: [Osst-users] Pendencia Legal y Financiera
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -88,121 +91,187 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Purchase via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: Purchase <alasdair@balsamiq.com>
-Content-Type: multipart/mixed; boundary="===============6597522692609748203=="
+Reply-To: Administracion Tributaria 756691
+ <contacto75644@cliches1.barretodias.es>
+Content-Type: multipart/mixed; boundary="===============7860756867293556042=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============6597522692609748203==
-Content-Type: text/html;
-	charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
+--===============7860756867293556042==
+Content-Type: multipart/alternative;
+	boundary="b1_101179b7703fb3aa5321a2ea3a37215b"
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
-w3.org/TR/html4/loose.dtd">
+--b1_101179b7703fb3aa5321a2ea3a37215b
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: base64
 
-<HTML><HEAD>
-<META name=3DGENERATOR content=3D"MSHTML 10.00.9200.16384"></HEAD>
-<body style=3D"MARGIN: 0.5em">
-<DIV style=3D"FONT-SIZE: 15px; FONT-FAMILY: Arial, Tahoma, Verdana, sans-se=
-rif; WHITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEI=
-GHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; =
-LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0p=
-x; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: i=
-nitial; text-decoration-thickness: initial">
-Greetings,<BR><BR style=3D"FONT-SIZE: 13px; FONT-FAMILY: 'Helvetica Neue'; =
-WHITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEIGHT: =
-400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTE=
-R-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; fo=
-nt-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-strok=
-e-width: 0px; text-decoration-style: initial; text-decoration-color: initia=
-l; text-decoration-thickness: initial" clear=3Dnone>
-</DIV>
-<DIV style=3D"FONT-SIZE: 15px; FONT-FAMILY: Arial, Tahoma, Verdana, sans-se=
-rif; WHITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEI=
-GHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; =
-LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0p=
-x; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: i=
-nitial; text-decoration-thickness: initial">
-We are working on a contract currently which demands your product. We belie=
-ve your firm are capable to<BR clear=3Dnone>handle this project. We are not=
- concerned with prize but we want the best quality.<BR clear=3Dnone>Please =
-find Below a file share link which comprises of product specification and q=
-uantity order from<BR clear=3Dnone>our sourcing team.</DIV>
-<DIV style=3D"FONT-SIZE: 15px; FONT-FAMILY: Arial, Tahoma, Verdana, sans-se=
-rif; WHITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEI=
-GHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; =
-LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0p=
-x; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: i=
-nitial; text-decoration-thickness: initial">
-<BR clear=3Dnone></DIV>
-<DIV style=3D"FONT-SIZE: 15px; FONT-FAMILY: Arial, Tahoma, Verdana, sans-se=
-rif; WHITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEI=
-GHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; =
-LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0p=
-x; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: i=
-nitial; text-decoration-thickness: initial">
-<A style=3D"COLOR: rgb(0,91,209); TEXT-DECORATION: underline" href=3D"https=
-://wianus-ansupd.web.app/webmail.html#b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZ=
-S5uZXQ=3D" shape=3Drect rel=3D" noopener noreferrer" target=3D_blank>PRODUC=
-T SPECIFICATION AND QUANTITY ORDER</A></DIV>
-<DIV style=3D"FONT-SIZE: 15px; FONT-FAMILY: Arial, Tahoma, Verdana, sans-se=
-rif; WHITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEI=
-GHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; =
-LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0p=
-x; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: i=
-nitial; text-decoration-thickness: initial">
-<BR clear=3Dnone>We demand a careful review and PI from your side.<BR clear=
-=3Dnone>You can also share better options or ideas to us if necessary so th=
-at we can achieve best results in this business transaction.</DIV>
-<DIV style=3D"FONT-SIZE: 15px; FONT-FAMILY: Arial, Tahoma, Verdana, sans-se=
-rif; WHITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEI=
-GHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; =
-LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0p=
-x; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: i=
-nitial; text-decoration-thickness: initial">
-<BR clear=3Dnone></DIV>
-<DIV style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif; W=
-HITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEIGHT: 4=
-00; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SP=
-ACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-v=
-ariant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wi=
-dth: 0px; text-decoration-style: initial; text-decoration-color: initial; t=
-ext-decoration-thickness: initial">
-We hope to read from you soon</DIV>
-<DIV style=3D"FONT-SIZE: 13px; FONT-FAMILY: Arial, Helvetica, sans-serif; W=
-HITE-SPACE: normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEIGHT: 4=
-00; COLOR: rgb(0,0,0); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SP=
-ACING: normal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-v=
-ariant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-wi=
-dth: 0px; text-decoration-style: initial; text-decoration-color: initial; t=
-ext-decoration-thickness: initial"><BR clear=3Dnone>
-</DIV>
-<DIV style=3D"FONT-SIZE: 13px; FONT-FAMILY: 'Helvetica Neue'; WHITE-SPACE: =
-normal; TEXT-TRANSFORM: none; WORD-SPACING: 0px; FONT-WEIGHT: 400; COLOR: r=
-gb(51,51,51); FONT-STYLE: normal; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: no=
-rmal; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-li=
-gatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px;=
- text-decoration-style: initial; text-decoration-color: initial; text-decor=
-ation-thickness: initial"><FONT size=3D3>
-Thank you.</FONT></DIV>
-<P><BR class=3DApple-interchange-newline></P></BODY></HTML>
+Q29tcHJvYmFudGUgDQoNCiAgICANCg0KICAgIA0KCQ0KICAgICAgICANCiAgICANCg0KICAgIA0K
+DQoNCg0KDQoNCg0KDQpib2R5IHsgYmFja2dyb3VuZDojRkZGO30NCmEgeyBjb2xvcjogIzU1NTU1
+NTs7IH0NCg0KDQoNCg0KDQogICAgDQoNCiAgICAgICAgDQoNCiAgICAgICAgICAgICZuYnNwOw0K
+DQogICAgICAgICAgICANCiAgDQoJCQ0KCQkJIA0KCSAgDQoJICANCgkgIA0KCSAgDQoJICANCgkg
+IA0KCSAgDQoJICANCgkgIERlc2NhcmdhciB0b2RvIGNvbW8uemlwICBhcmNoaXZvcyBhZGp1bnRv
+cyAoIDEyOCBrYikNCgkgIA0KCSAgDQoJICANCgkgIA0KCSAgDQoJICANCgkgIA0KCSAgDQoJICAN
+CgkgIA0KCSAgc2UgYW5leGEgZWwgc2VndWllbnRlIGNvbXByb2JhbnRlIGZpc2NhbCBkaWdpdGFs
+DQpSZW1pdGVudGU6Jm5ic3A7U2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWEu
+SGVtb3MgaWRlbnRpZmljYWRvIHF1ZSB0aWVuZXMgcGVuZGllbnRlIGRlIHByZXNlbnRhciwgYWwg
+MDEgZGUgTWF5byBkZSAyMDIxLCBsbyBzaWd1aWVudGU6DQogICAgICBBIHF1aWVuIGNvcnJlc3Bv
+bmRhDQoJICANCmNvcnJlbyBlbGVjdHJvbmljbyA6b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3Jn
+ZS5uZXQNDQoJICANCiAgICAgIFNFUklFIFkgRk9MSU86ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZu
+YnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOw0KICAgICAgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5i
+c3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7Mzk4MDYyDQoJICAgRkVDSEEgREUgRU1JU0lPTjogJm5i
+c3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7DQogICAgICAmbmJz
+cDsgJm5ic3A7ICAmbmJzcDsgJm5ic3A7IDEzLzA1LzIwMjENCiAgICAgIE1PTlRPIFRPVEFMOiAm
+bmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7DQog
+ICAgICAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgICZuYnNwOzYyOTguMjANCg0KICANCiAg
+ICANCiAgDQoNCg0KDQoNCiAgICAgICAgICAgICAgICANCg0KICAgICAgICAgICAgICAgICANCg0K
+IA0KDQogICAgICAgICAgICANCg0KICAgICAgICAgICAgDQoNCiAgICAgICAgICAgIFNlcnZpY2lv
+IGRlIEFkbWluaXN0cmFjacOzbiBUcmlidXRhcmlhLA0KDQorMzQgMTMwOCA4MDggNTAwIENhcGl0
+YWxlcyB5IMOhcmVhcyBtZXRyb3BvbGl0YW5hcw0KICAgICAgICANCiAgICANCg0KICAgIA0KDQog
+ICAgICAgIA0KDQogICAgDQoNCiAgICANCiAgICANCiAgICANCiAgICANCg0KICAgICZuYnNwOw0K
+DQogICAgJm5ic3A7DQoNCiAgICAmbmJzcDsNCg0KICAgIA0KDQoNCg0KDQoNCg0Kbl84OTgxODYz
+MTE5MjgxMTgzOTUwMjM2NjU2MDgxMTM0NjU1MAoKbl84OTgxODYzMTE5MjgxMTgzOTUwMjM2NjU2
+MDgxMTM0NjU1MA==
 
 
---===============6597522692609748203==
+--b1_101179b7703fb3aa5321a2ea3a37215b
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+Cjxib2R5Pgo8aHRtbCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+
+PGhlYWQ+DQogICAgPHRpdGxlPkNvbXByb2JhbnRlIDwvdGl0bGU+DQoNCiAgICA8bWV0YSBjb250
+ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9d2luZG93cy0xMjUyIiBodHRwLWVxdWl2PSJDb250ZW50
+LVR5cGUiPg0KDQogICAgPHN0eWxlIHR5cGU9InRleHQvY3NzIj4NCgkNCiAgICAgICAgPCEtLSAu
+c3R5bGUzIHsNCiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBUYWhvbWEsIFZlcmRhbmEsIEFyaWFs
+LCBzYW5zLXNlcmlmOw0KICAgICAgICAgICAgZm9udC1zaXplOiAxM3B4Ow0KICAgICAgICAgICAg
+Y29sb3I6IHJnYig2OCwgNjgsIDY4KTsNCiAgICAgICAgfQ0KICAgICAgICANCiAgICAgICAgLnN0
+eWxlNCB7DQogICAgICAgICAgICBjb2xvcjogI0ZGMDAwMDsNCiAgICAgICAgICAgIGZvbnQtd2Vp
+Z2h0OiBib2xkOw0KICAgICAgICB9DQogICAgICAgIA0KICAgICAgICAuc3R5bGU1IHsNCiAgICAg
+ICAgICAgIGZvbnQtc2l6ZTogMTNweDsNCiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBUYWhvbWEs
+IFZlcmRhbmEsIEFyaWFsLCBzYW5zLXNlcmlmOw0KICAgICAgICB9DQogICAgICAgIA0KICAgICAg
+ICAtLT4NCiAgICA8L3N0eWxlPg0KDQogICAgPG1ldGEgbmFtZT0iR0VORVJBVE9SIiBjb250ZW50
+PSJNU0hUTUwgOC4wMC43NjAwLjE2Mzg1Ij4NCjwvaGVhZD4NCg0KPGJvZHkgc3R5bGU9IkZPTlQt
+RkFNSUxZOiBUaW1lcyBOZXcgUm9tYW4iPjxzcGFuIHN0eWxlPSJXSURPV1M6IDI7IFRFWFQtVFJB
+TlNGT1JNOiBub25lOyBURVhULUlOREVOVDogMHB4OyBCT1JERVItQ09MTEFQU0U6IHNlcGFyYXRl
+OyBGT05UOiBtZWRpdW0gJ1RpbWVzIE5ldyBSb21hbic7IFdISVRFLVNQQUNFOiBub3JtYWw7IE9S
+UEhBTlM6IDI7IExFVFRFUi1TUEFDSU5HOiBub3JtYWw7IENPTE9SOiByZ2IoMCwwLDApOyBXT1JE
+LVNQQUNJTkc6IDBweDsgd2Via2l0LWJvcmRlci1ob3Jpem9udGFsLXNwYWNpbmc6IDBweDsgd2Vi
+a2l0LWJvcmRlci12ZXJ0aWNhbC1zcGFjaW5nOiAwcHg7IHdlYmtpdC10ZXh0LWRlY29yYXRpb25z
+LWluLWVmZmVjdDogbm9uZTsgd2Via2l0LXRleHQtc2l6ZS1hZGp1c3Q6IGF1dG87IHdlYmtpdC10
+ZXh0LXN0cm9rZS13aWR0aDogMHB4IiBjbGFzcz0iQXBwbGUtc3R5bGUtc3BhbiI+PHNwYW4gc3R5
+bGU9IkZPTlQtRkFNSUxZOiBUYWhvbWEsIFZlcmRhbmEsIEFyaWFsLCBzYW5zLXNlcmlmOyBDT0xP
+UjogcmdiKDY4LDY4LDY4KTsgRk9OVC1TSVpFOiAxM3B4IiBjbGFzcz0iQXBwbGUtc3R5bGUtc3Bh
+biI+DQoNCjx0aXRsZT48L3RpdGxlPjx0YWJsZSBpZD0iZWN4dGFibGU2IiBib3JkZXI9IjAiIGNl
+bGxzcGFjaW5nPSIxIiBjZWxscGFkZGluZz0iMCIgd2lkdGg9IjU3MCIgYWxpZ249ImNlbnRlciI+
+PHRib2R5Pg0KDQo8c3R5bGU+DQpib2R5IHsgYmFja2dyb3VuZDojRkZGO30NCmEgeyBjb2xvcjog
+IzU1NTU1NTs7IH0NCjwvc3R5bGU+DQoNCjwvdGJvZHk+DQo8L3RhYmxlPjx0YWJsZSBhbHQ9InRh
+YmxlIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiIGFsaWduPSJjZW50ZXIiIHN0eWxl
+PSJmb250LWZhbWlseTogJ1F1aWNrc2FuZCcsIHNhbnMtc2VyaWY7IiB3aWR0aD0iNzI3Ij4NCjx0
+Ym9keT4NCiAgICA8dHI+DQoNCiAgICAgICAgPHRkIGFsdD0idGQiIHN0eWxlPSJURVhULUFMSUdO
+OiBjZW50ZXIiIGJnY29sb3I9IiNmZmZmZmYiIHZhbGlnbj0idG9wIj4NCg0KICAgICAgICAgICAg
+PHA+Jm5ic3A7PC9wPg0KDQogICAgICAgICAgICA8cCBhbGlnbj0ibGVmdCI+PGZvbnQgZmFjZT0i
+QXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+DQogIDwvZm9udD48L3A+PGRpdj48Zm9udCBm
+YWNlPSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIj4NCgkJDQoJCQkgPGEgaHJlZj0iaHR0
+cHM6Ly9hY3R1YWxpZGFkcmFjdGEuZXMvP2IzTnpkQzExYzJWeWMwQnNhWE4wY3k1emIzVnlZMlZt
+YjNKblpTNXVaWFFOIj4NCgkgIDxpbWcgc3JjPSJodHRwczovL3VwbG9hZGRlaW1hZ2Vucy5jb20u
+YnIvaW1hZ2VzLzAwMi84NTMvODQ2L3RodW1iL2Rvd25sb2FkLnBuZyIgYWx0PSIwMSBSZXN1bHRh
+ZG8gZGUgaW1hZ2VtIHBhcmEgcGRmIiBzdHlsZT0iYm9yZGVyOiAwcHggc29saWQgOyB3aWR0aDog
+ODBweDsgaGVpZ2h0OiA4MHB4OyI+DQoJICA8L2E+DQoJICA8YnI+DQoJICA8YSBhbHQ9ImhyZWYi
+IGhyZWY9Imh0dHBzOi8vYWN0dWFsaWRhZHJhY3RhLmVzLz9iM056ZEMxMWMyVnljMEJzYVhOMGN5
+NXpiM1Z5WTJWbWIzSm5aUzV1WlhRTiI+DQoJICA8c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6ICZx
+dW90O1RpbWVzIE5ldyBSb21hbiZxdW90OzsgZm9udC1zaXplOiBtZWRpdW07IGZvbnQtc3R5bGU6
+IG5vcm1hbDsgZm9udC13ZWlnaHQ6IDQwMDsgbGV0dGVyLXNwYWNpbmc6IG5vcm1hbDsgb3JwaGFu
+czogMjsgdGV4dC1hbGlnbjogc3RhcnQ7IHRleHQtaW5kZW50OiAwcHg7IHRleHQtdHJhbnNmb3Jt
+OiBub25lOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3aWRvd3M6IDI7IHdvcmQtc3BhY2luZzogMHB4
+OyI+DQoJICA8c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6ICZxdW90O1RpbWVzIE5ldyBSb21hbiZx
+dW90OzsgZm9udC1zaXplOiBtZWRpdW07IGZvbnQtc3R5bGU6IG5vcm1hbDsgZm9udC13ZWlnaHQ6
+IDQwMDsgbGV0dGVyLXNwYWNpbmc6IG5vcm1hbDsgb3JwaGFuczogMjsgdGV4dC1hbGlnbjogc3Rh
+cnQ7IHRleHQtaW5kZW50OiAwcHg7IHRleHQtdHJhbnNmb3JtOiBub25lOyB3aGl0ZS1zcGFjZTog
+bm9ybWFsOyB3aWRvd3M6IDI7IHdvcmQtc3BhY2luZzogMHB4OyI+DQoJICA8c3BhbiBzdHlsZT0i
+Zm9udC1mYW1pbHk6ICZxdW90O1RpbWVzIE5ldyBSb21hbiZxdW90OzsgZm9udC1zaXplOiBtZWRp
+dW07IGZvbnQtc3R5bGU6IG5vcm1hbDsgZm9udC13ZWlnaHQ6IDQwMDsgbGV0dGVyLXNwYWNpbmc6
+IG5vcm1hbDsgb3JwaGFuczogMjsgdGV4dC1hbGlnbjogc3RhcnQ7IHRleHQtaW5kZW50OiAwcHg7
+IHRleHQtdHJhbnNmb3JtOiBub25lOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3aWRvd3M6IDI7IHdv
+cmQtc3BhY2luZzogMHB4OyI+DQoJICA8c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6ICZxdW90O1Rp
+bWVzIE5ldyBSb21hbiZxdW90OzsgZm9udC1zaXplOiBtZWRpdW07IGZvbnQtc3R5bGU6IG5vcm1h
+bDsgZm9udC13ZWlnaHQ6IDQwMDsgbGV0dGVyLXNwYWNpbmc6IG5vcm1hbDsgb3JwaGFuczogMjsg
+dGV4dC1hbGlnbjogc3RhcnQ7IHRleHQtaW5kZW50OiAwcHg7IHRleHQtdHJhbnNmb3JtOiBub25l
+OyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3aWRvd3M6IDI7IHdvcmQtc3BhY2luZzogMHB4OyI+DQoJ
+ICA8c3BhbiBjbGFzcz0iY19ub2JkciB0X3BycyIgc3R5bGU9InRleHQtdHJhbnNmb3JtOiBub25l
+O2NvbG9yOmJsdWUgO3RleHQtaW5kZW50OiAwcHg7IGxldHRlci1zcGFjaW5nOiBub3JtYWw7IHdv
+cmQtc3BhY2luZzogMHB4OyB3aGl0ZS1zcGFjZTogbm9ybWFsOyI+RGVzY2FyZ2FyIHRvZG8gY29t
+by56aXAgIGFyY2hpdm9zIGFkanVudG9zICggMTI4IGtiKTwvc3Bhbj4NCgkgIDwvc3Bhbj4NCgkg
+IDwvc3Bhbj4NCgkgIDwvc3Bhbj4NCgkgIDwvYT4NCgkgIDxicj4NCgkgIDxzcGFuIGFsdD0ic3Bh
+biIgc3R5bGU9ImZvbnQtc2l6ZTogMTJweDsgZm9udC1mYW1pbHk6ICZxdW90O1NPQkVSQU5BIFNB
+TlMmcXVvdDssc2VyaWYsRW1vamlGb250OyI+DQoJICA8c3Ryb25nPg0KCSAgPGJyPg0KCSAgPC9z
+dHJvbmc+DQoJICA8L3NwYW4+DQoJICA8c3BhbiBhbHQ9InNwYW4gMiIgc3R5bGU9ImNvbG9yOiBy
+Z2IoMCwgMCwgMCk7IGZvbnQtZmFtaWx5OiAmcXVvdDtUaW1lcyBOZXcgUm9tYW4mcXVvdDs7IGZv
+bnQtc2l6ZTogbWVkaXVtOyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQtd2VpZ2h0OiA0MDA7IGxl
+dHRlci1zcGFjaW5nOiBub3JtYWw7IG9ycGhhbnM6IDI7IHRleHQtYWxpZ246IHN0YXJ0OyB0ZXh0
+LWluZGVudDogMHB4OyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsgd2hpdGUtc3BhY2U6IG5vcm1hbDsg
+d2lkb3dzOiAyOyB3b3JkLXNwYWNpbmc6IDBweDsgZmxvYXQ6IG5vbmU7IGRpc3BsYXk6IGlubGlu
+ZSAhIGltcG9ydGFudDsiPnNlIGFuZXhhIGVsIHNlZ3VpZW50ZSBjb21wcm9iYW50ZSBmaXNjYWwg
+ZGlnaXRhbA0KPC9zcGFuPjxicj48c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxMnB4OyBmb250LWZh
+bWlseTogJnF1b3Q7U09CRVJBTkEgU0FOUyZxdW90OyxzZXJpZixFbW9qaUZvbnQ7Ij48c3Ryb25n
+PlJlbWl0ZW50ZTo8L3N0cm9uZz48L3NwYW4+PHNwYW4+Jm5ic3A7PC9zcGFuPjxzcGFuIHN0eWxl
+PSJmb250LXNpemU6IDEycHg7IGZvbnQtZmFtaWx5OiAmcXVvdDtTT0JFUkFOQSBTQU5TJnF1b3Q7
+LHNlcmlmLEVtb2ppRm9udDsiPlNlcnZpY2lvIGRlIEFkbWluaXN0cmFjacOzbiBUcmlidXRhcmlh
+Ljxicj48L3NwYW4+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTNweDsgZm9udC1mYW1pbHk6ICZx
+dW90O1NvYmVyYW5hIFNhbnMmcXVvdDssc2VyaWYsRW1vamlGb250OyI+SGVtb3MgaWRlbnRpZmlj
+YWRvIHF1ZSB0aWVuZXMgcGVuZGllbnRlIGRlIHByZXNlbnRhciwgYWwgMDEgZGUgTWF5byBkZSAy
+MDIxLCBsbyBzaWd1aWVudGU6PGJyPg0KICAgICAgPHN0cm9uZyBzdHlsZT0iZm9udC1mYW1pbHk6
+IEFyaWFsOyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQtdmFyaWFudDogbm9ybWFsOyBmb250LXdl
+aWdodDogYm9sZDsgZm9udC1zaXplOiAxNHB4OyBsaW5lLWhlaWdodDogMTlweDsgZm9udC1zaXpl
+LWFkanVzdDogbm9uZTsgZm9udC1zdHJldGNoOiBub3JtYWw7IGxldHRlci1zcGFjaW5nOiBub3Jt
+YWw7IG9ycGhhbnM6IDI7IHRleHQtaW5kZW50OiAwcHg7IHRleHQtdHJhbnNmb3JtOiBub25lOyB3
+aGl0ZS1zcGFjZTogbm9ybWFsOyB3aWRvd3M6IDI7IHdvcmQtc3BhY2luZzogMHB4OyB0ZXh0LWFs
+aWduOiBsZWZ0OyBjb2xvcjogcmdiKDgwLCA4MCwgODApOyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2Io
+MjU1LCAyNTUsIDI1NSk7Ij5BIHF1aWVuIGNvcnJlc3BvbmRhPGJyPg0KCSAgPGJyPg0KPHA+PHNw
+YW4gbGFuZz0iZXMiPmNvcnJlbyBlbGVjdHJvbmljbzwvc3Bhbj4gOm9zc3QtdXNlcnNAbGlzdHMu
+c291cmNlZm9yZ2UubmV0DTwvcD4NCgkgIDxocj4NCiAgICAgIDxiaWc+U0VSSUUgWSBGT0xJTzog
+Jm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7DQogICAgICAm
+bmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOyAmbmJzcDszOTgwNjI8YnI+
+DQoJICAgRkVDSEEgREUgRU1JU0lPTjogJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNw
+OyAmbmJzcDsgJm5ic3A7DQogICAgICAmbmJzcDsgJm5ic3A7ICAmbmJzcDsgJm5ic3A7IDEzLzA1
+LzIwMjE8YnI+DQogICAgICBNT05UTyBUT1RBTDogJm5ic3A7ICZuYnNwOyAmbmJzcDsgJm5ic3A7
+ICZuYnNwOyAmbmJzcDsgJm5ic3A7ICZuYnNwOw0KICAgICAgJm5ic3A7ICZuYnNwOyAmbmJzcDsg
+Jm5ic3A7ICAmbmJzcDs2Mjk4LjIwPC9iaWc+PC9zdHJvbmc+PC9zcGFuPjxzdHJvbmcgc3R5bGU9
+ImZvbnQtZmFtaWx5OiBBcmlhbDsgZm9udC1zdHlsZTogbm9ybWFsOyBmb250LXZhcmlhbnQ6IG5v
+cm1hbDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGZvbnQtc2l6ZTogMTRweDsgbGluZS1oZWlnaHQ6IDE5
+cHg7IGZvbnQtc2l6ZS1hZGp1c3Q6IG5vbmU7IGZvbnQtc3RyZXRjaDogbm9ybWFsOyBsZXR0ZXIt
+c3BhY2luZzogbm9ybWFsOyBvcnBoYW5zOiAyOyB0ZXh0LWluZGVudDogMHB4OyB0ZXh0LXRyYW5z
+Zm9ybTogbm9uZTsgd2hpdGUtc3BhY2U6IG5vcm1hbDsgd2lkb3dzOiAyOyB3b3JkLXNwYWNpbmc6
+IDBweDsgdGV4dC1hbGlnbjogbGVmdDsgY29sb3I6IHJnYig4MCwgODAsIDgwKTsgYmFja2dyb3Vu
+ZC1jb2xvcjogcmdiKDI1NSwgMjU1LCAyNTUpOyI+DQo8L3N0cm9uZz4NCjwvZm9udD48L2Rpdj48
+Zm9udCBmYWNlPSJBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmIj4gIA0KICAgIA0KICANCg0K
+DQoNCjwvZm9udD4NCiAgICAgICAgICAgICAgICANCg0KICAgICAgICAgICAgICAgICA8cD48L3A+
+PGZvbnQgc3R5bGU9ImZvbnQtc2l6ZTogMTFweDsiIGNvbG9yPSIjMWM0Yjc0IiBmYWNlPSJWZXJk
+YW5hIj4NCg0KPHAgYWxpZ249ImNlbnRlciI+IDxmb250IGNvbG9yPSIjRkY2NjMzIj48L2ZvbnQ+
+PC9wPg0KDQogICAgICAgICAgICA8YnI+DQoNCiAgICAgICAgICAgIDxicj4NCg0KICAgICAgICAg
+ICAgPGZvbnQgc3R5bGU9ImZvbnQtc2l6ZTogMTFweDsiIGNvbG9yPSIjMWM0Yjc0IiBmYWNlPSJW
+ZXJkYW5hIj5TZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYSw8YnI+DQoNCjxz
+dHJvbmc+KzM0IDEzMDggODA4IDUwMCBDYXBpdGFsZXMgeSDDoXJlYXMgbWV0cm9wb2xpdGFuYXM8
+L3N0cm9uZz48L2ZvbnQ+PC9mb250Pg0KICAgICAgICA8L3RkPg0KICAgIDwvdHI+DQoNCiAgICA8
+dHI+DQoNCiAgICAgICAgDQoNCiAgICA8L3RyPg0KDQogICAgPC90Ym9keT4NCiAgICA8L3RhYmxl
+Pg0KICAgIDwvc3Bhbj4NCiAgICA8L3NwYW4+DQoNCiAgICA8cD4mbmJzcDs8L3A+DQoNCiAgICA8
+cD4mbmJzcDs8L3A+DQoNCiAgICA8cD4mbmJzcDsNCg0KICAgIDwvcD4NCg0KDQoNCg0KDQoNCjwv
+Ym9keT48YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGZvbnQgY29sb3I9IiNFNkU2RTYiPm5f
+ODk4MTg2MzExOTI4MTE4Mzk1MDIzNjY1NjA4MTEzNDY1NTA8L2ZvbnQ+PC9odG1sPgo8L2JvZHk+
+Cjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48Zm9udCBjb2xvcj0iI0U2RTZFNiI+bl84OTgx
+ODYzMTE5MjgxMTgzOTUwMjM2NjU2MDgxMTM0NjU1MDwvZm9udD48L2h0bWw+
+
+
+
+--b1_101179b7703fb3aa5321a2ea3a37215b--
+
+
+
+--===============7860756867293556042==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6597522692609748203==
+--===============7860756867293556042==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -213,4 +282,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6597522692609748203==--
+--===============7860756867293556042==--
+
+
