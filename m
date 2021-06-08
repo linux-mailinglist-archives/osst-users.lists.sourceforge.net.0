@@ -2,56 +2,66 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 05F1E39F6FC
-	for <lists+osst-users@lfdr.de>; Tue,  8 Jun 2021 14:41:57 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.92.3)
+	by mail.lfdr.de (Postfix) with ESMTPS id 503063A0677
+	for <lists+osst-users@lfdr.de>; Tue,  8 Jun 2021 23:53:06 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1lqb3K-00065x-AE
-	for lists+osst-users@lfdr.de; Tue, 08 Jun 2021 12:41:54 +0000
+	id 1lqjeh-0003S8-Sp
+	for lists+osst-users@lfdr.de; Tue, 08 Jun 2021 21:53:03 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
- (envelope-from <info@gammashift.ca>) id 1lqb3I-00065c-AN
- for osst-users@lists.sourceforge.net; Tue, 08 Jun 2021 12:41:52 +0000
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
+ (envelope-from <9sporst9@gmail.com>) id 1lqjef-0003Ri-Uh
+ for osst-users@lists.sourceforge.net; Tue, 08 Jun 2021 21:53:01 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Reply-To:Content-Type:To:Subject:From:Sender:
+ Message-ID:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=4tid+79oysoG3Ud21yRrYGhnW0YLojN56ffdQNBPi7U=; b=e/x8tfJ9DzLnf6zTgIIrffsmWW
- NGihDSZbZXCzjU6qJJmGFTcqC/muVZSi568z7QRPWNoyb8AVjtfsb69NEuICtJx8ZoDPsGzt+V3pU
- HeTN0rBRCOcgTQVqJnuwCUuzS+fFNvYCCrFK2gXNPYjm7s+DscyZME671yB+C18tonFM=;
+ bh=FNZtwLvrllRFWL+8hBj0nyO4zumHo8nebc8dxoTUJOs=; b=UVLVmCAvjDc3yuI0Qy3Rh+W1M3
+ joRhOAOmtGQ3BnNN2/qydMZjUXD6wajmwdTp4RF9f9lm64y8gpQIaEByZG9hLsHAO4FHON+Bl2IwN
+ XAJJm69U65ZgqwEN8gNTH9pLY82WekPwGR4GiDbto73oapzJoF815fsS4OpfTCqiZYrM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=4tid+79oysoG3Ud21yRrYGhnW0YLojN56ffdQNBPi7U=; b=V
- 1bJsMRwxaMHLImuLmRpLrZUFP/X7Qq4WLGOKRHsPqLe+luZ3w0NFMzHlB6O1Xlmy32d1/OSiREDw2
- mHaYKIVac2xwEaWM38PfPXJxotsQrjloTkjIiDnwyQJe87ZPwRDLQa+wLYzQU/CEs1OqtNftmqMJj
- s7eEQBHdyME2aq7o=;
-Received: from [46.183.222.121] (helo=gammashift.ca)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
- id 1lqb35-0006du-2B
- for osst-users@lists.sourceforge.net; Tue, 08 Jun 2021 12:41:52 +0000
-From: Lonnie Ray <info@gammashift.ca>
+ h=Date:Reply-To:Content-Type:To:Subject:From:Sender:Message-ID:Cc:
+ MIME-Version:Content-Transfer-Encoding:Content-ID:Content-Description:
+ Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=FNZtwLvrllRFWL+8hBj0nyO4zumHo8nebc8dxoTUJOs=; b=iRydMsPvxpMsMy+u1eM+7stjB8
+ UaEGV7srltHGsBlcCT9N3cov4rV5Fb3L5xdI5Res3hFP2pb/ddY2V3WzXiW+Q0108xcrwTZ0iXwyO
+ e7HFQ4RbdDRxpEj4dpi7Txy2szO3ejpLSpxY/qaAvXZ0KMEVH//dpiED/xVYXSfAqs7I=;
+Received: from [103.11.67.138] (helo=ehv3new.com)
+ by sfi-mx-2.v28.lw.sourceforge.com with smtp (Exim 4.92.3)
+ id 1lqjeT-0007Io-LS
+ for osst-users@lists.sourceforge.net; Tue, 08 Jun 2021 21:53:02 +0000
+From: "Ms. Kim" <9sporst9@gmail.com>
 To: osst-users@lists.sourceforge.net
-Date: 08 Jun 2021 15:41:30 +0300
-Message-ID: <20210608154130.EBAE8AB2076C1E8A@gammashift.ca>
-MIME-Version: 1.0
-X-Spam-Score: 6.3 (++++++)
+Date: Wed, 9 Jun 2021 04:52:41 +0700
+X-Priority: 3
+X-Spam-Score: 7.0 (+++++++)
 X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
  See http://spamassassin.org/tag/ for more details.
+ 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ (9sporst9[at]gmail.com)
+ 0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+ CUSTOM_MED
  1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
- 0.9 URG_BIZ                Contains urgent matter
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
+ (9sporst9[at]gmail.com)
+ 0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
+ digit (9sporst9[at]gmail.com)
+ 1.0 MISSING_MID            Missing Message-Id: header
  1.0 RDNS_NONE Delivered to internal network by a host with no rDNS
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
-X-Headers-End: 1lqb35-0006du-2B
-Subject: [Osst-users] Inquiry for New Order
+ 0.0 SPOOFED_FREEMAIL_NO_RDNS From SPOOFED_FREEMAIL and no rDNS
+ 1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+ 2.0 SPOOFED_FREEMAIL       No description available.
+ 0.3 SPOOF_GMAIL_MID        From Gmail but it doesn't seem to be...
+X-Headers-End: 1lqjeT-0007Io-LS
+Subject: [Osst-users] my future investment ventures in your country
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -63,31 +73,24 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: dalsosvalves@gmail.com
+Reply-To: "Ms. Kim" <9sporst9@gmail.com>
+MIME-Version: 1.0
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1lqjeh-0003S8-Sp@sfs-ml-1.v29.lw.sourceforge.com>
 
-Good Morning
+my future investment ventures in your country
+My name is Ms. Kim Anong, A Thai citizen in Asian Continent but currently
+residing in abroad, I trust this email meets you in good health, I just got
+your contact today during a research about your country and I will say that
+I foresee success of my future investment ventures in your country. I want
+to invest in your country and I would like you to assist me in my investment
+with moral and physical advises. Please do reply me as soon as possible so
+we can discuss more.
 
-We are making inquiry about your product, Please send us a 
-catalogue of your products to enable us prepare an official 
-Purchase Order.
-Our shipping terms is CIF Nashvill, So Please quote your best 
-possible prices CIF Nashvill.
-
-Awaiting your urgent reply
-
-Have a great day and thanks again.
-
-Best Regards,
-
-
-Lonnie Ray
-Southern Carlson
-635 Fairgrounds Road
-Muscle Shoals, AL 35661, USA
-Phone number : +1-256-248-2020
+I look forward to hear from you soon
+9sporst9@gmail.com
 
 
 _______________________________________________
