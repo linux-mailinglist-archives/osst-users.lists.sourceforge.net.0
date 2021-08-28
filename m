@@ -2,85 +2,97 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 855743F33B3
-	for <lists+osst-users@lfdr.de>; Fri, 20 Aug 2021 20:25:57 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 18F113FA771
+	for <lists+osst-users@lfdr.de>; Sat, 28 Aug 2021 21:50:51 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1mH9DI-00062X-8c
-	for lists+osst-users@lfdr.de; Fri, 20 Aug 2021 18:25:56 +0000
+	id 1mK4Lo-0000dZ-UX
+	for lists+osst-users@lfdr.de; Sat, 28 Aug 2021 19:50:48 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <qc@japannetbank.co.jp>) id 1mH9DH-00062R-2e
- for osst-users@lists.sourceforge.net; Fri, 20 Aug 2021 18:25:55 +0000
+ (envelope-from <retrovetteclaire@gmail.com>) id 1mK4Ln-0000dN-Of
+ for osst-users@lists.sourceforge.net; Sat, 28 Aug 2021 19:50:47 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:Mime-Version:Date:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
+ MIME-Version:Message-ID:Reply-To:From:To:Date:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=mbtEIVhCy3iE+hrst/pkX5ZgSiH5miR2QXm+VE+yA2U=; b=kShdDgdZSvISyibtvoyjq8h9F+
- IsN6Jr9QXX4CoILigu0/iroRN44bbl1nlpqDO4f9mmXNxsMvBPArweIjeHdBvKSpb9Rp/ZIgbtnJo
- H4eA6AtZaBYHMs1H4op49M2Cou4t3hIZbhrzQOpsLWo+cZA+AABrVWlvi9aRqlzEW8Tk=;
+ bh=HKEsNAXU32qqAWtsNLgYog18yPLeomV+WCDzymbOQRk=; b=AJdODi8eKd9RReRROhKk9fnaxK
+ 7OR57DFcRyomWNux4hrB/R2SvO9qe6tDjfcJ5fJgio33Mo2oaI0vkcVuASfYJ7b2s3HNqng4RWUrB
+ aokluK0ce6HBsU0ZOwrrX3aUa0YgLOsCOmdKCvB+lcR8bH6lAD0+fEsT5IdMI79mC4qg=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:Mime-Version:Date:To:From:Message-ID:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
+ Reply-To:From:To:Date:Sender:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=mbtEIVhCy3iE+hrst/pkX5ZgSiH5miR2QXm+VE+yA2U=; b=d
- zh9Iqi4OD9vdBSwSJexPHmOKsN3VlmVpwoS5+wNwdBGH+1BZvwJS7lR4DpOjM3nmiHHkY7KLv+S4T
- flYYVxE+3cVeWboxQzr46dbV2b09+24qTfx92K2741ktsLOpTbDWhgHXgsM7cbM75U1J5JHCiSU+A
- wJSXK0turAM56BL8=;
-Received: from [116.80.74.242] (helo=japannetbank.co.jp)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
- id 1mH9DD-00D1wE-Ne
- for osst-users@lists.sourceforge.net; Fri, 20 Aug 2021 18:25:55 +0000
-Message-ID: <DAB45DEEBFB564BE12577A0F22E9B9CB@japannetbank.co.jp>
-From: =?utf-8?B?UGF5UGF56YqA6KGM?= <qc@japannetbank.co.jp>
-To: <osst-users@lists.sourceforge.net>
-Date: Sat, 21 Aug 2021 03:25:42 +0900
-Mime-Version: 1.0
+ List-Owner:List-Archive; bh=HKEsNAXU32qqAWtsNLgYog18yPLeomV+WCDzymbOQRk=; b=U
+ NXxxELA7IXcMtQ6PXIhivmjhlW5k9Gm6kNqlcGrlEqJ8BuAuPjfOeQKz03c4SmY95b3HPeWfBbkiO
+ ewdQVhtjO1m67h/uenTNu+fYoKOIaOLHG4VDgcdyS5Knd4hyC5i1nBG9xEpdwB11XT3UfdDXIUprN
+ TEF5AqS4lYsKufYU=;
+Received: from smtp08.smtpout.orange.fr ([80.12.242.130]
+ helo=smtp.smtpout.orange.fr)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps (TLSv1:DHE-RSA-AES128-SHA:128)
+ (Exim 4.92.3) id 1mK4Lk-0002G7-9C
+ for osst-users@lists.sourceforge.net; Sat, 28 Aug 2021 19:50:47 +0000
+Received: from sauvegardepierre ([10.162.66.61]) by mwinf5d15 with ME
+ id n7qd2500F1KJDdE037qdeh; Sat, 28 Aug 2021 21:50:37 +0200
+X-ME-Helo: sauvegardepierre
+X-ME-Date: Sat, 28 Aug 2021 21:50:37 +0200
+X-ME-IP: 10.162.66.61
+Date: Sat, 28 Aug 2021 21:49:22 +0200
+To: osst-users@lists.sourceforge.net
+From: retrovetteclaire@gmail.com
+Message-ID: <e27ece13ceff469f85a7823d951f6be0@sauvegardepierre>
 X-Priority: 3
-X-MSMail-Priority: Normal
-X-Mailer: Microsoft Outlook Express 6.00.2900.5512
-X-MimeOLE: Produced By Microsoft MimeOLE V10.0.17763.1
-X-Spam-Score: 8.7 (++++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
- message has been attached to this so you can view it or label
- similar future email.  If you have any questions, see
- the administrator of that system for details.
- 
- Content preview:  ＰａｙＰａｙ銀行をご利用のお客さま 利用いただき、ありがとうございます。
-    このたび、ご本人様のご利用かどうかを確認させていただきたいお取
-    [...] 
- 
- Content analysis details:   (8.7 points, 6.0 required)
- 
-  pts rule name              description
- ---- ---------------------- --------------------------------------------------
-  0.5 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [116.80.74.242 listed in dnsbl-1.uceprotect.net]
-  0.0 RCVD_IN_MSPIKE_L4      RBL: Bad reputation (-4)
-                             [116.80.74.242 listed in bl.mailspike.net]
-  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
-                             blocked.  See
-                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
-                              for more information.
-                             [URIs: paypay-bank.co.jp]
-  1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
-  0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-  2.0 MIMEOLE_DIRECT_TO_MX   MIMEOLE + direct-to-MX
-  3.1 DOS_OE_TO_MX           Delivered direct to MX with OE headers
+X-Mailer: PHP/5.6.30
+MIME-Version: 1.0
+DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=7852; s=default;
+ t=1630180162; c=relaxed/simple; h=From:To:Subject;
+ d=gmail.com; i=retrovetteclaire@gmail.com;
+ z=From:=20retrovetteclaire@gmail.com
+ |To:=20osst-users@lists.sourceforge.net
+ |Subject:=20Unlimited=20Accountancy=20Services;
+ bh=8bm/tNMWE3I+SuljAY7ODFOFBXY=;
+ b=bvhQfIidR2OpvU+mNzDUxwMGSSAzq2vPpwS3tBGyOAnvUFYwurc9rCqwctaWC5Drf9H5yX44eAqfA8bNG5R7PhNiS4+fHyujBERsVP2V/gdwJyWcILD45jzvwT0mNMWq6ngv3VeQuqHCC7hWNOeR7hD6R8SbZHXNoF0KBeEFW70=
+X-Spam-Score: 8.5 (++++++++)
+X-Spam-Report: Spam Filtering performed by mx.sourceforge.net.
+ See http://spamassassin.org/tag/ for more details.
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no
+ trust [80.12.242.130 listed in list.dnswl.org]
+ 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
+ (retrovetteclaire[at]gmail.com)
+ 0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+ CUSTOM_MED
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [80.12.242.130 listed in wl.mailspike.net]
+ 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 URIBL_BLOCKED ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+ See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: sinkonitions.site]
+ 1.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ background
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+ 1.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+ [cf: 100]
+ 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+ 1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing list
+ 1.8 SPOOFED_FREEMAIL       No description available.
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+ 1.3 SPOOF_GMAIL_MID        From Gmail but it doesn't seem to be...
+ -0.0 AWL AWL: Adjusted score from AWL reputation of From: address
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1mH9DD-00D1wE-Ne
-Subject: [SPAM] [ＰａｙＰａｙ銀行]利用確認
+X-Headers-End: 1mK4Lk-0002G7-9C
+Subject: [Osst-users] [SPAM] Unlimited Accountancy Services
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -92,98 +104,245 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5094402657749973583=="
+Reply-To: retrovetteclaire@gmail.com
+Content-Type: multipart/mixed; boundary="===============2305340042705681562=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
-
---===============5094402657749973583==
+--===============2305340042705681562==
 Content-Type: multipart/alternative;
-	boundary="----=_NextPart_000_0B7B_01BABF96.1F4B0D90"
+	boundary="b1_e27ece13ceff469f85a7823d951f6be0"
+Content-Transfer-Encoding: 8bit
 
-This is a multi-part message in MIME format.
-
-------=_NextPart_000_0B7B_01BABF96.1F4B0D90
-Content-Type: text/plain;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-77yw772B772Z77yw772B772Z6YqA6KGM44KS44GU5Yip55So44Gu44GK5a6i44GV44G+DQrliKnn
-lKjjgYTjgZ/jgaDjgY3jgIHjgYLjgorjgYzjgajjgYbjgZTjgZbjgYTjgb7jgZnjgIINCuOBk+OB
-ruOBn+OBs+OAgeOBlOacrOS6uuanmOOBruOBlOWIqeeUqOOBi+OBqeOBhuOBi+OCkueiuuiqjeOB
-leOBm+OBpuOBhOOBn+OBoOOBjeOBn+OBhOOBiuWPluW8leOBjOOBguOCiuOBvuOBl+OBn+OBruOB
-p+OAgeiqoOOBq+WLneaJi+OBquOBjOOCieOAgeOCq+ODvOODieOBruOBlOWIqeeUqOOCkuS4gOmD
-qOWItumZkOOBleOBm+OBpuOBhOOBn+OBoOOBjeOAgeOBlOmAo+e1oeOBleOBm+OBpuOBhOOBn+OB
-oOOBjeOBvuOBl+OBn+OAgg0K44Gk44GN44G+44GX44Gm44Gv44CB5Lul5LiL44G444Ki44Kv44K7
-44K544Gu5LiK44CB44Kr44O844OJ44Gu44GU5Yip55So56K66KqN44Gr44GU5Y2U5Yqb44KS44GK
-6aGY44GE6Ie044GX44G+44GZ44CCDQog44GK5a6i5qeY44Gr44Gv44GU6L+35oOR44CB44GU5b+D
-6YWN44KS44GK5o6b44GR44GX44CB6Kqg44Gr55Sz44GX6Kiz44GU44GW44GE44G+44Gb44KT44CC
-DQrkvZXljZLjgZTnkIbop6PjgYTjgZ/jgaDjgY3jgZ/jgY/jgYrpoZjjgYTnlLPjgZfjgYLjgZLj
-gb7jgZnjgIINCuOBlOWbnuetlOOCkuOBhOOBn+OBoOOBkeOBquOBhOWgtOWQiOOAgeOCq+ODvOOD
-ieOBruOBlOWIqeeUqOWItumZkOOBjOe2mee2muOBleOCjOOCi+OBk+OBqOOCguOBlOOBluOBhOOB
-vuOBmeOBruOBp+OAgeS6iOOCgeOBlOS6huaJv+S4i+OBleOBhOOAgg0K4oC744GU5Yip55So56K6
-6KqN44Gv44GT44Gh44KJDQpodHRwczovL3BheXBheS1iYW5say5iYndiZXN0LmNvbS8NCuW8iuek
-vuOBr+OAgeOCpOODs+OCv+ODvOODjeODg+ODiOS4iuOBruS4jeato+ihjOeCuuOBrumYsuatouOD
-u+aKkeWItuOBruims+eCueOBi+OCieOCteOCpOODiOOBqOOBl+OBpuOBruS/oemgvOaAp+ODu+at
-o+W9k+aAp+OCkumrmOOCgeOCi+OBn+OCgeOAgQ0K5aSn5aSJ44GK5omL5pWw44Gn44Gv44GU44GW
-44GE44G+44GZ44GM44CB5LiL6KiY77y177yy77ys44GL44KJ44Ot44Kw44Kk44Oz44GE44Gf44Gg
-44GN44CBDQpodHRwczovL3BheXBheS1iYW5say5iYndiZXN0LmNvbS8NCuKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgQ0KUGF5UGF56YqA6KGM5qCq
-5byP5Lya56S+DQrmnbHkuqzpg73mlrDlrr/ljLropb/mlrDlrr8yLTEtMeOAgOaWsOWuv+S4ieS6
-leODk+ODqw0KaHR0cHM6Ly93d3cucGF5cGF5LWJhbmsuY28uanAvDQpDb3B5cmlnaHQgUGF5UGF5
-IEJhbmsgQ29ycG9yYXRpb24gQWxsIHJpZ2h0cyByZXNlcnZlZC4NCuKUgeKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgQ==
-
-------=_NextPart_000_0B7B_01BABF96.1F4B0D90
-Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxodG1sPjxoZWFkPg0KPG1ldGEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
-Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjwvaGVhZD4NCjxib2R5Pg0KPHA+77yw772B
-772Z77yw772B772Z6YqA6KGM44KS44GU5Yip55So44Gu44GK5a6i44GV44G+PGJyPuWIqeeUqOOB
-hOOBn+OBoOOBjeOAgeOBguOCiuOBjOOBqOOBhuOBlOOBluOBhOOBvuOBmeOAgjxicj7jgZPjga7j
-gZ/jgbPjgIHjgZTmnKzkurrmp5jjga7jgZTliKnnlKjjgYvjganjgYbjgYvjgpLnorroqo3jgZXj
-gZvjgabjgYTjgZ/jgaDjgY3jgZ/jgYTjgYrlj5blvJXjgYzjgYLjgorjgb7jgZfjgZ/jga7jgafj
-gIHoqqDjgavli53miYvjgarjgYzjgonjgIHjgqvjg7zjg4njga7jgZTliKnnlKjjgpLkuIDpg6jl
-iLbpmZDjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgIHjgZTpgKPntaHjgZXjgZvjgabjgYTjgZ/jgaDj
-gY3jgb7jgZfjgZ/jgII8YnI+44Gk44GN44G+44GX44Gm44Gv44CB5Lul5LiL44G444Ki44Kv44K7
-44K544Gu5LiK44CB44Kr44O844OJ44Gu44GU5Yip55So56K66KqN44Gr44GU5Y2U5Yqb44KS44GK
-6aGY44GE6Ie044GX44G+44GZ44CCPGJyPiZuYnNwO+OBiuWuouanmOOBq+OBr+OBlOi/t+aDkeOA
-geOBlOW/g+mFjeOCkuOBiuaOm+OBkeOBl+OAgeiqoOOBq+eUs+OBl+ios+OBlOOBluOBhOOBvuOB
-m+OCk+OAgjxicj7kvZXljZLjgZTnkIbop6PjgYTjgZ/jgaDjgY3jgZ/jgY/jgYrpoZjjgYTnlLPj
-gZfjgYLjgZLjgb7jgZnjgII8YnI+44GU5Zue562U44KS44GE44Gf44Gg44GR44Gq44GE5aC05ZCI
-44CB44Kr44O844OJ44Gu44GU5Yip55So5Yi26ZmQ44GM57aZ57aa44GV44KM44KL44GT44Go44KC
-44GU44GW44GE44G+44GZ44Gu44Gn44CB5LqI44KB44GU5LqG5om/5LiL44GV44GE44CCPGJyPuKA
-u+OBlOWIqeeUqOeiuuiqjeOBr+OBk+OBoeOCiTxicj48YSANCmhyZWY9Imh0dHBzOi8vcGF5cGF5
-LWJhbmxrLmJid2Jlc3QuY29tLyI+aHR0cHM6Ly9wYXlwYXktYmFubGsuYmJ3YmVzdC5jb20vPC9h
-Pjxicj7lvIrnpL7jga/jgIHjgqTjg7Pjgr/jg7zjg43jg4Pjg4jkuIrjga7kuI3mraPooYzngrrj
-ga7pmLLmraLjg7vmipHliLbjga7oprPngrnjgYvjgonjgrXjgqTjg4jjgajjgZfjgabjga7kv6Hp
-oLzmgKfjg7vmraPlvZPmgKfjgpLpq5jjgoHjgovjgZ/jgoHjgIE8YnI+5aSn5aSJ44GK5omL5pWw
-44Gn44Gv44GU44GW44GE44G+44GZ44GM44CB5LiL6KiY77y177yy77ys44GL44KJ44Ot44Kw44Kk
-44Oz44GE44Gf44Gg44GN44CBPGJyPjxhIA0KaHJlZj0iaHR0cHM6Ly9wYXlwYXktYmFubGsuYmJ3
-YmVzdC5jb20vIj5odHRwczovL3BheXBheS1iYW5say5iYndiZXN0LmNvbS88L2E+PC9wPg0KPHA+
-4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBPGJy
-PlBheVBheemKgOihjOagquW8j+S8muekvjxicj7mnbHkuqzpg73mlrDlrr/ljLropb/mlrDlrr8y
-LTEtMeOAgOaWsOWuv+S4ieS6leODk+ODqzxicj48YSANCmhyZWY9Imh0dHBzOi8vd3d3LnBheXBh
-eS1iYW5rLmNvLmpwLyI+aHR0cHM6Ly93d3cucGF5cGF5LWJhbmsuY28uanAvPC9hPjwvcD4NCjxw
-PkNvcHlyaWdodCBQYXlQYXkgQmFuayBDb3Jwb3JhdGlvbiBBbGwgcmlnaHRzIA0KcmVzZXJ2ZWQu
-PGJyPuKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
-gTwvcD48L2JvZHk+PC9odG1sPg0K
-
-------=_NextPart_000_0B7B_01BABF96.1F4B0D90--
+--b1_e27ece13ceff469f85a7823d951f6be0
+Content-Type: text/plain; charset=us-ascii
 
 
 
---===============5094402657749973583==
+Unlimited Accountancy Services
+One Monthly FEE
+
+
+Quote Online To See How Much
+You Should Be Paying
+
+
+We quote online based on company turnover and transactions.
+Quote Now.
+
+
+Unlimited Accountancy Services Include:
+
+Unlimited Telephone Support
+Unlimited Email Support (3 Hour Response)
+Dedicated Accountant
+Monthly Bookkeeping/Reconciliation
+Quarterly VAT Returns
+Company Annual Accounts
+Company Tax Return
+Self-Assessment Tax Returns
+Submission of Confirmation Statement
+Xero Software
+Xero Training
+Company Incorporation (if required)
+VAT Registration (if required)
+PAYE Registration (if required)
+CIS Registration (if required)
+Financial Reference (e.g. Mortgage)
+Access to Business Funding
+Monthly Management Information
+
+Tired of unexpected
+accountancy fees?
+Get unlimited services
+and Support for
+One Monthly fee
+
+
+
+
+
+
+
+
+
+
+
+This e-mail is brought to you by an independent e-mail marketing company.
+
+
+
+Follow this link to stop receiving messages about ACCOUNTANCY SERVICES.
+You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
+You are receiving this message on your email address because you are in our list of managers and professionals.
+
+
+
+--b1_e27ece13ceff469f85a7823d951f6be0
+Content-Type: text/html; charset=us-ascii
+
+<!DOCTYPE html>
+			                   <html>
+				               	<head>
+					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">			
+				                </head>
+				                <body>
+					            	<body marginwidth=0 marginheight=0 leftmargin=0 topmargin=0 rightmargin=0>
+    <table border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td align="center" colspan="2" style="background:#f6fcfe;"><a href="https://sinkonitions.site/accountquaduk/gerta/"><img src="https://sinkonitions.site/accountquaduk/logo.png" alt=""></a>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" style="background:#f6fcfe;">
+          <h1 style="font-weight:700;">Unlimited Accountancy Services </h1>
+          <h1 style="color:#971e53;font-size:45px;margin:0px;">One Monthly FEE</h1>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" style="background:#f6fcfe;"><img src="https://sinkonitions.site/accountquaduk/machine.png" alt="">
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" style="background:#1d96e6;"><br />
+          <h2 style="color:#ffffff; margin:5px;">Quote Online To See How Much </h2>
+          <h2 style="color:#ffffff; margin:5px;">You Should Be Paying</h2>
+        <br />
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" style="background:#1d96e6;">
+        <a href="https://sinkonitions.site/accountquaduk/gerta/"><img src="https://sinkonitions.site/accountquaduk/quoteonline.png" alt=""></a>
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td class="image" colspan="2" align="center" style="background:#1d96e6;">
+          
+          <span style="font-size:12px; color:#ffffff;">We quote online based on company turnover and transactions.</span><br/>
+         <span style=" color:#ffffff;">Quote Now.</span> 
+          <br/><br/>
+          <br><strong><span style="color:#fee300;">Unlimited Accountancy Services Include:</span></strong><br/><br/>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="background:#1d96e6;">
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr valign="top">
+              <td>
+                <ul style="color:#ffffff;">
+                  <li>Unlimited Telephone Support</li>
+                  <li>Unlimited Email Support (3 Hour Response)</li>
+                  <li>Dedicated Accountant</li>
+                  <li>Monthly Bookkeeping/Reconciliation</li>
+                  <li>Quarterly VAT Returns</li>
+                  <li>Company Annual Accounts</li>
+                  <li>Company Tax Return</li>
+                  <li>Self-Assessment Tax Returns</li>
+                  <li>Submission of Confirmation Statement</li>
+                </ul>
+              </td>
+              <td>
+                <ul style="color:#ffffff;">
+                  <li>Xero Software </li>
+                  <li>Xero Training</li>
+                  <li>Company Incorporation (if required)</li>
+                  <li>VAT Registration (if required)</li>
+                  <li>PAYE Registration (if required)</li>
+                  <li>CIS Registration (if required)</li>
+                  <li>Financial Reference (e.g. Mortgage)</li>
+                  <li>Access to Business Funding</li>
+                  <li>Monthly Management Information</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">
+          <img src="https://sinkonitions.site/accountquaduk/man.png" alt="">
+          <br>
+        </td>
+        <td class="image" style="text-align:left;" >
+          
+          <h1 class="thinh1" style="font-weight:normal; line-height:45px;">Tired of unexpected<br> accountancy fees?<br>
+            <span style="color:#b02160;">Get unlimited services <br>and Support for </span><br><span class="prpbg" style="background:#ffb43f; color:#ffffff; padding:5px;">One Monthly fee</span>
+          </h1>
+          
+          
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2">
+          <img src="https://sinkonitions.site/accountquaduk/never.png" alt="">
+          <br><br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2">
+        <a href="https://sinkonitions.site/accountquaduk/gerta/"><img src="https://sinkonitions.site/accountquaduk/quoteonline2.png" alt=""></a><br>
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2">
+          <img src="https://sinkonitions.site/accountquaduk/xero.png" alt="">
+          <br><br>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="2" style="background:#183340;">
+         <br> <img src="https://sinkonitions.site/accountquaduk/social.png" alt="">
+          <br>
+        </td>
+      </tr>
+      <tr>
+        <td class="image bluebg" colspan="2" style="background:#183340; color:#ffffff; text-align:center;">
+          
+          <br>
+          <br>
+          
+          This e-mail is brought to you by an independent e-mail marketing company.
+          <br>
+          
+<br>
+</td>
+          <br>
+          <br>
+          <br>
+          <br>
+        </td>
+      </tr>
+      <td colspan="2" align="center" style="background:#f8f8f8;">
+<br>
+<br><span style="font-size:10px;"><a href="https://sinkonitions.site/accountquaduk/glouret/?email=BNnaIPuwWf5ZYqabxI9kTKU9jLiIxOMkRichei4NraaohdYII0TKihJ+fb2fuR2ZIC0nHO3pQdT23KJemAby4IARVkYQa7WlCQ7lQ4T4IOEcvyHl0t7vXIIOjqdwlAsRuO8Q1Ch+BI43QBJDqvpJHQ3/vvshS/v07GpslrlDxtk=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving messages about <strong>ACCOUNTANCY
+SERVICES</strong>.<br>
+                    You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="https://sinkonitions.site/accountquaduk/dubba/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
+You are receiving this message on your email address because you are in our list of managers and professionals.<br>
+<br>
+</span>
+    </table>
+  </body>
+</html>
+</body>
+				                </body>
+			                   </html>
+
+
+
+--b1_e27ece13ceff469f85a7823d951f6be0--
+
+
+
+--===============2305340042705681562==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5094402657749973583==
+--===============2305340042705681562==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -194,6 +353,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5094402657749973583==--
+--===============2305340042705681562==--
 
 
