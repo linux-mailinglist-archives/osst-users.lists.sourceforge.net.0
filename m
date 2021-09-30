@@ -2,117 +2,104 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 211E441BE7A
-	for <lists+osst-users@lfdr.de>; Wed, 29 Sep 2021 06:45:42 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id 3C13141CFF2
+	for <lists+osst-users@lfdr.de>; Thu, 30 Sep 2021 01:28:51 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1mVRTQ-0001J3-TI
-	for lists+osst-users@lfdr.de; Wed, 29 Sep 2021 04:45:40 +0000
+	id 1mVj0L-0001K1-E8
+	for lists+osst-users@lfdr.de; Wed, 29 Sep 2021 23:28:49 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
  (envelope-from
- <bounces+5502527-c63a-osst-users=lists.sourceforge.net@sendgrid.net>)
- id 1mVRTP-0001Iw-Go
- for osst-users@lists.sourceforge.net; Wed, 29 Sep 2021 04:45:39 +0000
+ <mailz.768.orchestrator.zylo.osst-users@cerimonialdeborasantos.com>)
+ id 1mVj0J-0001Jn-Pg
+ for osst-users@lists.sourceforge.net; Wed, 29 Sep 2021 23:28:48 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=To:Reply-To:Message-ID:Date:Content-Type:Subject:
- From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Date:Subject:To:From:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=6XHYmYl7k9QwVnjLdVXX2g0Six2BG1RewYjt+5XkmKY=; b=UdkLH/JzqlUM1mg48dQi9IwfW5
- 5h56skwTtljvsqYmo0/Sw4XYcaT/P5PrZxu/3oI01GOkOXghGM8UAnVk4EQgvtvUPX4utFmT4oLhd
- KqSN2PFKWfiTBHlN9pQWqGmeIK/DIqntdIlsrl2tKrDbqnygbVB/NnvFpJyvLtNUQHtM=;
+ bh=fDtqiXZaePqSknxmzhRpjvWZV+tng2Dw4B7YpPYqbNk=; b=DHw6RJrnPYVXKkrWn1oFzpL6fk
+ /4/Way48k53vBzCkjP8gUnJmt/r7E+Oy2JfOJ0YlwXv2/KTwHOwKhrMsEvEIqE1zUEYUH9B1JhNRc
+ 1gNrtqo2T+ufCqO8v1r888b32qaBGOr5UONdfzw0QlgIAvJ1Y39l/mr+yHOuj0V1kkHA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=To:Reply-To:Message-ID:Date:Content-Type:Subject:From:MIME-Version:Sender
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Date:Subject:To:From:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=6XHYmYl7k9QwVnjLdVXX2g0Six2BG1RewYjt+5XkmKY=; b=V
- 6Tnj2JRjUFHWLUzrZq4u3oqDW6WLZfDP6FbAnQxFlLQPSPcYwCaFscGAfH5BUuw7FS/XjnpEW+dx6
- L16am6BVMsqKvXSLRSzlP+fDfRxgAKzeTfBeJZCRh8R9aHEAkP/adTLT0w+eHAVP6svD+ULo5DXcz
- mQW7wIMxmAjxwmLU=;
-Received: from o2.smtps-ip-a1.ispeed.it ([167.89.106.149])
+ List-Owner:List-Archive; bh=fDtqiXZaePqSknxmzhRpjvWZV+tng2Dw4B7YpPYqbNk=; b=h
+ ZCxxOVqfsV5uZVpAwu+nbi9aJ3gAU9/+AqzaQ3xw/brIiBSIw7xxlHyOOOAhs4n9BTVsc0RAAug3F
+ wBvv0aFxS/rIM81FwCUhKF70yBrS8eVQCdREGCsMaBQpu+y+RBTiK5T0kd1p4Fi9wNo4pDpBVqsIp
+ +COrkpoxjveqnU7w=;
+Received: from mailz.cerimonialdeborasantos.com ([198.144.158.20])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.92.3)
- id 1mVRTO-0001yC-Eu
- for osst-users@lists.sourceforge.net; Wed, 29 Sep 2021 04:45:39 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=sendgrid.net;
- h=mime-version:from:subject:content-type:reply-to:to;
- s=smtpapi; bh=6XHYmYl7k9QwVnjLdVXX2g0Six2BG1RewYjt+5XkmKY=;
- b=b7bX6Vw5g+1dsvMskCNcBxS9X7Pd2vf3FyTJzIDGgCR7R42yz3jhlAS9SiVocdIQiRpx
- rcxAvvVuxDkht/6LIZkuywYHOQbLFq9zzUox0bT5RoAwZvcdqdwevXZiPC295JYx3xHWwP
- Mb4JVV15gQSTaSky5xQkhrODSfb4lIJQE=
-Received: by filterdrecv-64fcb979b9-5sm82 with SMTP id
- filterdrecv-64fcb979b9-5sm82-1-6153EF6C-10
- 2021-09-29 04:45:32.428794891 +0000 UTC m=+1313324.557621268
-Received: from host-80-183-67-163.business.telecomitalia.it (unknown)
- by geopod-ismtpd-4-1 (SG) with ESMTP id NZDJ17VCTTShcq00A_BGYA
- for <osst-users@lists.sourceforge.net>;
- Wed, 29 Sep 2021 04:45:32.215 +0000 (UTC)
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
+ id 1mVj0F-0005wl-Kp
+ for osst-users@lists.sourceforge.net; Wed, 29 Sep 2021 23:28:47 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=cerimonialdeborasantos; 
+ d=cerimonialdeborasantos.com;
+ h=Sender:Message-ID:From:To:Subject:Date:MIME-Version:Content-Type:
+ Content-Transfer-Encoding;
+ i=mailz.768.orchestrator.zylo.osst-users@cerimonialdeborasantos.com;
+ bh=7v0hTzs2jsAAHcRG9+8Fz9d/TFI=;
+ b=V7+p1MLSKkRXVOGDUIJ41oj4HhiHzs2HJ0t5Ju0pRhrUK9gTdiTlFhCtHvG22qI2w4Yfd1FOM695
+ Q9arvJEFB+tUWMe4Rv8pygaWw3DPzwFHBoWrojmSQUroBDaQrCZCTxMkRl+79lHFI3m1U1d8Sg5m
+ eeGYwOKCxX8foFekrcY=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=cerimonialdeborasantos;
+ d=cerimonialdeborasantos.com; 
+ b=d7q5rXx5JpReiF3faxFE/7nMLyaYyjF9WFs6Hp/+K92+RCWTTMpYMYKljWNJfAKOQf9w+6lbvqZc
+ RA16vomQskYwY7OXxeWrmC934j1NsRkuX0yy4hSKTYQMYuzpepDSzsRyix/9jqde53PNlI+eS8Rr
+ bZnDXCvnZVHl145q3nI=;
+Message-ID: <3716532BB0BE276C11C660094CAA32B0@vxvkums>
+From: Designer Sunglasses <mailz@cerimonialdeborasantos.com>
+To: osst-users <osst-users@lists.sourceforge.net>
+Date: Wed, 29 Sep 2021 23:29:12 -0800
 MIME-Version: 1.0
-From: Toner di Qualita' <tonergarantiti@gmail.com>
-Date: Wed, 29 Sep 2021 04:45:32 +0000 (UTC)
-Message-ID: <12912383447160165225697@user-PC>
-X-SG-EID: =?us-ascii?Q?sC0L0DychgvtYjQuYUedIkYFy=2FJh+Lhd4FX9mIsbNlRxK0ALSUMh7mgoYnSmn9?=
- =?us-ascii?Q?=2F3=2FOLf0jCduroWGZ0RgP08ZBQ0A7CrGD2nkyJ5E?=
- =?us-ascii?Q?CaFZY+TronzpstQDdu4Dl9T207z50UZPtyiTLJf?=
- =?us-ascii?Q?2keFSynoUgadJSN9ZZZtTJ5Y=2FdRFqzJwhKYejPQ?=
- =?us-ascii?Q?l6AbGBUjuwFOMgHB2PJV7mZ0ZHRPA00JmJQ1S1v?=
- =?us-ascii?Q?zrwVDcogYtML+oXYfTCuwOlYL4CgLvHMH6xIlN1?=
- =?us-ascii?Q?1W5gzfTvgbxuMSB0x9apQ=3D=3D?=
-To: osst-users@lists.sourceforge.net
-X-Entity-ID: Pof+8nxNkfEnTANho+DHrw==
-X-Spam-Score: 5.7 (+++++)
+X-Priority: 3
+X-Mailer: Pegasus Mail 4.73
+X-Spam-Score: 7.8 (+++++++)
 X-Spam-Report: Spam detection software,
  running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has NOT identified this incoming email as spam.  The original
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Non tutti i toner compatibili sono uguali! I nostri toner
- compatibili provengono dai migliori produttori che abbiamo selezionato nel
- corso degli anni. Grazie alla nostra esperienza siamo in grado di o [...]
- Content analysis details:   (5.7 points, 6.0 required)
+ Content preview:  If you can't read this email, please view it online We sent
+ out this message to all existing Designer Sunglasses customers. If you want
+ more information about our privacy policy, please visit this page. 
+ Content analysis details:   (7.8 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.1 URIBL_GREY             Contains an URL listed in the URIBL greylist
- [URIs: sendgrid.net]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [167.89.106.149 listed in wl.mailspike.net]
- 0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
- CUSTOM_MED
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
- mail domains are different
+ 0.5 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [198.144.158.20 listed in dnsbl-1.uceprotect.net]
+ 2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [198.144.158.20 listed in psbl.surriel.com]
+ 0.0 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
+ [198.144.158.20 listed in bl.mailspike.net]
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
- provider [tonergarantiti[at]gmail.com]
- 1.0 FORGED_GMAIL_RCVD      'From' gmail.com does not match 'Received'
- headers
+ 0.0 DATE_IN_FUTURE_06_12   Date: is 6 to 12 hours after Received: date
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image
- area 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of
- words
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
  envelope-from domain
  -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
  valid 2.0 PYZOR_CHECK            Listed in Pyzor
  (https://pyzor.readthedocs.io/en/latest/)
- 0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
- lines
- 0.2 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and
- EnvelopeFrom freemail headers are different
- 1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing
- list
-X-Headers-End: 1mVRTO-0001yC-Eu
-Subject: [Osst-users] Toner compatibili di qualita' paragonabile
- all'originale - Nuovi Listini autunno e prezzi sempre piu' bassi - Chiedici
- un preventivo
+ 2.7 FSL_BULK_SIG           Bulk signature with no Unsubscribe
+ 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
+ 0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+ Colors in HTML
+X-Headers-End: 1mVj0F-0005wl-Kp
+Subject: [Osst-users] Ray-Ban Sunglasses. Check Out Our 80s Sunglasses
+ Selection, Get 85% Off All Sales.
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -124,134 +111,318 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: tonergarantiti@gmail.com
-Content-Type: multipart/mixed; boundary="===============8709540914783347515=="
+Content-Type: multipart/mixed; boundary="===============7450598768541269012=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
+--===============7450598768541269012==
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: Quoted-Printable
 
---===============8709540914783347515==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_001_1B0B_40074B19.277F166C"
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v =3D=20
+"urn:schemas-microsoft-com:vml" xmlns:o =3D=20
+"urn:schemas-microsoft-com:office:office"><HEAD><TITLE></TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type=
+>
+<META name=3Dx-apple-disable-message-reformatting>
+<META name=3Dviewport content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+<STYLE type=3Dtext/css>
+    body, .maintable { height:100% !important; width:100% !important; =
+margin:0; padding:0;}
+    img, a img { border:0; outline:none; text-decoration:none;}
+    p {margin-top:0; margin-right:0; margin-left:0; padding:0;}
+    .ReadMsgBody {width:100%;}
+    .ExternalClass {width:100%;}
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalCl=
+ass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+    img {-ms-interpolation-mode: bicubic;}
+    body, table, td, p, a, li, blockquote {-ms-text-size-adjust:100%; =
+-webkit-text-size-adjust:100%;}
+   /*p {display: table; table-layout: fixed; width: 100%; word-wrap: b=
+reak-word;} */
+</STYLE>
 
-
-------=_NextPart_001_1B0B_40074B19.277F166C
-Content-Type: text/plain; charset=us-ascii
-Content-Transfer-Encoding: quoted-printable
-
+<STYLE type=3Dtext/css>
+@media only screen and (max-width: 480px) {
+ .rtable {width: 100% !important;}
+ .rtable tr {height:auto !important; display: block;}
+ .contenttd {max-width: 100% !important; display: block; width: auto !=
+important;}
+ .contenttd:after {content: ""; display: table; clear: both;}
+ .hiddentds {display: none;}
+ .imgtable, .imgtable table {max-width: 100% !important; height: auto;=
+ float: none; margin: 0 auto;}
+ .imgtable.btnset td {display: inline-block;}
+ .imgtable img {width: 100%; height: auto !important;display: block;}
+ table {float: none;}
+ .mobileHide {display: none !important;}
+ .noresponsive p {display: table; table-layout: fixed; width: 100%; wo=
+rd-wrap: break-word;}
+}
+@media only screen and (min-width: 481px) {
+ .desktopHide {display: none !important;}
+}
+</STYLE>
+<!--[if gte mso 9]>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+<![endif]-->
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
+<BODY=20
+style=3D"OVERFLOW: auto; CURSOR: auto; FONT-SIZE: 14px; FONT-FAMILY: a=
+rial, helvetica, sans-serif; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PA=
+DDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #f=
+effff">
+<TABLE style=3D"BACKGROUND-COLOR: #feffff" cellSpacing=3D0 cellPadding=
+=3D0=20
+width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD style=3D"FONT-SIZE: 0px; HEIGHT: 0px; LINE-HEIGHT: 0"></TD></T=
+R>
+  <TR>
+    <TD vAlign=3Dtop>
+      <TABLE class=3Drtable style=3D"WIDTH: 600px; MARGIN: 0px auto" c=
+ellSpacing=3D0=20
+      cellPadding=3D0 width=3D600 align=3Dcenter border=3D0>
+        <TBODY>
+        <TR>
+          <TH class=3Dcontenttd=20
+          style=3D"BORDER-TOP: medium none; BORDER-RIGHT: medium none;=
+ WIDTH: 600px; BORDER-BOTTOM: medium none; FONT-WEIGHT: normal; PADDIN=
+G-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
+BORDER-LEFT: medium none; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #fefff=
+f">
+            <TABLE style=3D"WIDTH: 100%" cellSpacing=3D0 cellPadding=3D=
+0 align=3Dleft>
+              <TBODY>
+              <TR style=3D"HEIGHT: 1489px" height=3D1489>
+                <TH class=3Dcontenttd=20
+                style=3D"BORDER-TOP: medium none; BORDER-RIGHT: medium=
+ none; WIDTH: 590px; VERTICAL-ALIGN: top; BORDER-BOTTOM: medium none; =
+FONT-WEIGHT: normal; PADDING-BOTTOM: 5px; TEXT-ALIGN: left; PADDING-TO=
+P: 5px; PADDING-LEFT: 5px; BORDER-LEFT: medium none; PADDING-RIGHT: 5p=
+x; BACKGROUND-COLOR: transparent">
+                  <P=20
+                  style=3D"MARGIN-BOTTOM: 1em; FONT-SIZE: 12px; FONT-F=
+AMILY: arial, helvetica, sans-serif; COLOR: #2d2d2d; TEXT-ALIGN: cente=
+r; MARGIN-TOP: 0px; LINE-HEIGHT: 15px; BACKGROUND-COLOR: transparent; =
+mso-line-height-rule: exactly"=20
+                  align=3Dcenter>If you can't read this email, please =
+<A title=3D""=20
+                  style=3D"COLOR: #2d2d2d" href=3D"https://www.lrbgz.c=
+om/"=20
+                  target=3D_blank>view it online</A></P><!--[if gte ms=
+o 12]>
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
+00%"><tr><td align=3D"center">
+<![endif]-->
+                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
+ellSpacing=3D0=20
+                  cellPadding=3D0 align=3Dcenter border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD=20
+                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
+PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
+                      align=3Dcenter>
+                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
+0>
+                          <TBODY>
+                          <TR>
+                            <TD=20
+                            style=3D"BORDER-TOP: medium none; BORDER-R=
+IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
+e; BACKGROUND-COLOR: transparent"><A=20
+                              href=3D"https://www.lrbgz.com/" target=3D=
+_blank><IMG=20
+                              style=3D"BORDER-TOP: medium none; BORDER=
+-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
+one; DISPLAY: block"=20
+                              hspace=3D0=20
+                              alt=3D"Check Out Our 80s Sunglasses Sele=
+ction"=20
+                              src=3D"https://mails.cerimonialdeborasan=
+tos.com/Image_1_e88a843ccf80450b844caa3bb8c1edb8.png"=20
+                              width=3D541></A></TD></TR></TBODY></TABL=
+E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
+    </td></tr></table>
+<![endif]--><!--[if gte mso 12]>
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
+00%"><tr><td align=3D"center">
+<![endif]-->
+                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
+ellSpacing=3D0=20
+                  cellPadding=3D0 align=3Dcenter border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD=20
+                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
+PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
+                      align=3Dcenter>
+                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
+0>
+                          <TBODY>
+                          <TR>
+                            <TD=20
+                            style=3D"BORDER-TOP: medium none; BORDER-R=
+IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
+e; BACKGROUND-COLOR: transparent"><A=20
+                              href=3D"https://www.lrbgz.com/" target=3D=
+_blank><IMG=20
+                              style=3D"BORDER-TOP: medium none; BORDER=
+-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
+one; DISPLAY: block"=20
+                              hspace=3D0=20
+                              alt=3D"For The Very Best In Unique Or Cu=
+stom"=20
+                              src=3D"https://mails.cerimonialdeborasan=
+tos.com/Image_2_46dd08223fb94129838e2601c37ccb75.png"=20
+                              width=3D540></A></TD></TR></TBODY></TABL=
+E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
+    </td></tr></table>
+<![endif]--><!--[if gte mso 12]>
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
+00%"><tr><td align=3D"center">
+<![endif]-->
+                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
+ellSpacing=3D0=20
+                  cellPadding=3D0 align=3Dcenter border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD=20
+                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
+PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
+                      align=3Dcenter>
+                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
+0>
+                          <TBODY>
+                          <TR>
+                            <TD=20
+                            style=3D"BORDER-TOP: medium none; BORDER-R=
+IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
+e; BACKGROUND-COLOR: transparent"><A=20
+                              href=3D"https://www.lrbgz.com/" target=3D=
+_blank><IMG=20
+                              style=3D"BORDER-TOP: medium none; BORDER=
+-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
+one; DISPLAY: block"=20
+                              hspace=3D0=20
+                              alt=3D"Handmade Pieces From Our Sunglass=
+es Shops"=20
+                              src=3D"https://mails.cerimonialdeborasan=
+tos.com/Image_3_b4acb305be0b43ffa7080871598f5b42.png"=20
+                              width=3D539></A></TD></TR></TBODY></TABL=
+E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
+    </td></tr></table>
+<![endif]--><!--[if gte mso 12]>
+    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
+00%"><tr><td align=3D"center">
+<![endif]-->
+                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
+ellSpacing=3D0=20
+                  cellPadding=3D0 align=3Dcenter border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD=20
+                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
+PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
+                      align=3Dcenter>
+                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
+0>
+                          <TBODY>
+                          <TR>
+                            <TD=20
+                            style=3D"BORDER-TOP: medium none; BORDER-R=
+IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
+e; BACKGROUND-COLOR: transparent"><A=20
+                              href=3D"https://www.lrbgz.com/" target=3D=
+_blank><IMG=20
+                              style=3D"BORDER-TOP: medium none; BORDER=
+-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
+one; DISPLAY: block"=20
+                              hspace=3D0 alt=3D"Get 85% Off All Sales"=
 =20
-
-=20
-
-=20
-
-Non tutti i toner compatibili sono uguali! I nostri toner compatibili prove=
-ngono dai migliori produttori che abbiamo selezionato nel corso degli anni.=
- Grazie alla nostra esperienza siamo in grado di offrirti i migliori toner =
-dal punto di vista della durata e qualita'
-
-=20
-
-Garanzia soddisfatti o rimborsati ed offriamo possibilita' di pagamento all=
-a consegna al corriere oppure se preferite con bonifico anticipato.=20
-
-=20
-
-Rispondi a questa email indicando il modello della tua stampante, ti invier=
-emo un preventivo
-
-=20
-
-Se rispondi a questa email ti invieremo anche tutti i nostri contatti e le =
-nostre recensioni. Puoi anche chiederci direttamente un preventivo inviando=
- una email all'indirizzo tonergarantiti@gmail.com
-
-=20
-
-=20
-
-Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
-desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
-premi qui ed invia per cancellarti
-
-=20
-
-=20
-
-
-------=_NextPart_001_1B0B_40074B19.277F166C
-Content-Type: text/html; charset=us-ascii
-Content-Transfer-Encoding: quoted-printable
-
-<HEAD>
-<META content=3D"text/html; charset=3Dwindows-1252" http-equiv=3DContent-Ty=
-pe>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
-<BODY>
-<P>&nbsp;</P>
-<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
-<TR>
-<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
-<P>&nbsp;</P>
-<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
-n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
-TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
-ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
-<TR>
-<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
- COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
-x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imageshac=
-k.com/img924/1356/OAULCn.jpg" width=3D650 height=3D350>=20
-<P>&nbsp;</P>
-<UL>
-<LI><FONT color=3D#000000 size=3D4><STRONG>Non tutti i toner compatibili so=
-no uguali! I nostri toner compatibili provengono dai migliori produttori ch=
-e abbiamo selezionato nel corso degli anni. Grazie alla nostra esperienza s=
-iamo in grado di offrirti i migliori toner dal punto di vista della durata =
-e qualita'</STRONG></FONT>=20
-<P>&nbsp;</P>
-<LI><FONT color=3D#000000>Garanzia soddisfatti o rimborsati ed offriamo pos=
-sibilita' <STRONG><FONT color=3D#0000a0>di pagamento alla consegna al corri=
-ere</FONT></STRONG> oppure se preferite con bonifico anticipato.</FONT>&nbs=
-p;=20
-<P>&nbsp;</P>
-<LI><A href=3D"mailto:tonergarantiti@gmail.com?subject=3Dpreventivo"><FONT =
-color=3D#ff0000 size=3D5><STRONG>Rispondi a questa email indicando il model=
-lo della tua stampante, ti invieremo un preventivo</STRONG></FONT></A>=20
-<P>&nbsp;</P>
-<LI><FONT color=3D#000000>Se rispondi a questa email ti invieremo anche tut=
-ti i nostri contatti e le nostre recensioni. Puoi anche chiederci direttame=
-nte un preventivo inviando una email all'indirizzo <A href=3D"mailto:tonerg=
-arantiti@gmail.com">tonergarantiti@gmail.com</A></FONT> </LI></UL>
-<P>&nbsp;</P><IMG style=3D"HEIGHT: 294px; WIDTH: 650px" border=3D2 hspace=
-=3D0 alt=3D"" src=3D"https://imageshack.com/img923/8105/xkDFMJ.jpg" width=
-=3D650 height=3D294>=20
-<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
-vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
-ail con "cancellami" </FONT><A href=3D"mailto:tonergarantiti@gmail.com?subj=
-ect=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancellarti<=
-/FONT></A></TD></TR>
-<TR></TR></TABLE></TD></TR></TABLE>
-<P>&nbsp;</P>
-<P>&nbsp;</P><img src=3D"https://u5502527.ct.sendgrid.net/wf/open?upn=3D2Cw=
-Dr9hAd3sCOBy671QeTaQ-2FYCBCp2N3yugmQOBELsbnGwV3qsXN-2Bwzux1wKAxVDhVQWUmqJ4R=
-7t4iT-2FzLxb2ZmOxyB1T1eZtSY3rJO-2FLzrAr0xNwfGenr1NNDa9RUKfLCcrSS7jbjXAU7JxD=
-mAkcgjblpCboC73qdf1JT3IYt2qs-2FrZ2wOgFMPF0gxhS7ITRfJ4u7gEm2bOfb83xeNd1dhq9D=
-Rq6ZhFF-2Bhbrxnpu2w-3D" alt=3D"" width=3D"1" height=3D"1" border=3D"0" styl=
-e=3D"height:1px !important;width:1px !important;border-width:0 !important;m=
-argin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important=
-;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !import=
-ant;padding-right:0 !important;padding-left:0 !important;"/></BODY>
-------=_NextPart_001_1B0B_40074B19.277F166C--
+                              src=3D"https://mails.cerimonialdeborasan=
+tos.com/Image_4_008ef149552445c1a960ddcdc4436777.png"=20
+                              width=3D540></A></TD></TR></TBODY></TABL=
+E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
+    </td></tr></table>
+<![endif]--></TH></TR></TBODY></TABLE></TH></TR>
+        <TR>
+          <TH class=3Dcontenttd=20
+          style=3D"BORDER-TOP: medium none; BORDER-RIGHT: medium none;=
+ WIDTH: 600px; BORDER-BOTTOM: medium none; FONT-WEIGHT: normal; PADDIN=
+G-BOTTOM: 1px; TEXT-ALIGN: left; PADDING-TOP: 1px; PADDING-LEFT: 0px; =
+BORDER-LEFT: medium none; PADDING-RIGHT: 0px; BACKGROUND-COLOR: transp=
+arent">
+            <TABLE style=3D"WIDTH: 100%" cellSpacing=3D0 cellPadding=3D=
+0 align=3Dleft>
+              <TBODY>
+              <TR style=3D"HEIGHT: 97px" height=3D97>
+                <TH class=3Dcontenttd=20
+                style=3D"BORDER-TOP: medium none; BORDER-RIGHT: medium=
+ none; WIDTH: 570px; VERTICAL-ALIGN: top; BORDER-BOTTOM: medium none; =
+FONT-WEIGHT: normal; PADDING-BOTTOM: 1px; TEXT-ALIGN: left; PADDING-TO=
+P: 1px; PADDING-LEFT: 15px; BORDER-LEFT: medium none; PADDING-RIGHT: 1=
+5px; BACKGROUND-COLOR: transparent">
+                  <P=20
+                  style=3D"MARGIN-BOTTOM: 1em; FONT-SIZE: 12px; FONT-F=
+AMILY: arial, helvetica, sans-serif; COLOR: #2d2d2d; TEXT-ALIGN: cente=
+r; MARGIN-TOP: 0px; LINE-HEIGHT: 15px; BACKGROUND-COLOR: transparent; =
+mso-line-height-rule: exactly"=20
+                  align=3Dcenter>We sent out this message to all exist=
+ing Designer=20
+                  Sunglasses customers.<BR>If you want more informatio=
+n about=20
+                  our privacy policy, please visit <A title=3D""=20
+                  style=3D"COLOR: #2d2d2d" href=3D"https://www.lrbgz.c=
+om/"=20
+                  target=3D_blank>this page</A>.</P>
+                  <P=20
+                  style=3D"MARGIN-BOTTOM: 1em; FONT-SIZE: 12px; FONT-F=
+AMILY: arial, helvetica, sans-serif; COLOR: #2d2d2d; TEXT-ALIGN: cente=
+r; MARGIN-TOP: 0px; LINE-HEIGHT: 15px; BACKGROUND-COLOR: transparent; =
+mso-line-height-rule: exactly"=20
+                  align=3Dcenter>If you no longer wish to receive thes=
+e emails,=20
+                  simply click on the following link <A title=3D""=20
+                  style=3D"COLOR: #2d2d2d"=20
+                  href=3D"https://mails.cerimonialdeborasantos.com/ok/=
+return.php?p=3DTUsxP29zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0PzQ3OTg=
+4"=20
+                  target=3D_blank>Unsubscribe</A>.</P>
+                  <P=20
+                  style=3D"MARGIN-BOTTOM: 1em; FONT-SIZE: 12px; FONT-F=
+AMILY: arial, helvetica, sans-serif; COLOR: #2d2d2d; TEXT-ALIGN: cente=
+r; MARGIN-TOP: 0px; LINE-HEIGHT: 15px; BACKGROUND-COLOR: transparent; =
+mso-line-height-rule: exactly"=20
+                  align=3Dcenter>=C2=A92021 Designer Sunglasses. All r=
+ights=20
+                  reserved.</P></TH></TR></TBODY></TABLE></TH></TR></T=
+BODY></TABLE></TD></TR>
+  <TR>
+    <TD=20
+  style=3D"FONT-SIZE: 0px; HEIGHT: 8px; LINE-HEIGHT: 0">&nbsp;</TD></T=
+R></TBODY></TABLE></BODY></HTML>
 
 
---===============8709540914783347515==
+
+
+--===============7450598768541269012==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8709540914783347515==
+--===============7450598768541269012==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -262,5 +433,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8709540914783347515==--
-
+--===============7450598768541269012==--
