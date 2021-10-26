@@ -2,48 +2,52 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 8CF9643B219
-	for <lists+osst-users@lfdr.de>; Tue, 26 Oct 2021 14:14:34 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.90_1)
+	by mail.lfdr.de (Postfix) with ESMTPS id A387A43BD81
+	for <lists+osst-users@lfdr.de>; Wed, 27 Oct 2021 01:02:41 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.92.3)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1mfLLc-0005py-Lb
-	for lists+osst-users@lfdr.de; Tue, 26 Oct 2021 12:14:32 +0000
+	id 1mfVSq-0002V4-Bj
+	for lists+osst-users@lfdr.de; Tue, 26 Oct 2021 23:02:40 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.90_1)
- (envelope-from <cvfgbn@hotmail.com>) id 1mfLLa-0005pr-WB
- for osst-users@lists.sourceforge.net; Tue, 26 Oct 2021 12:14:31 +0000
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
+ (envelope-from <root@atendimentonubank.openstacklocal>)
+ id 1mfVSp-0002Ux-GF
+ for osst-users@lists.sourceforge.net; Tue, 26 Oct 2021 23:02:39 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Content-Transfer-Encoding:Content-Type:To:
- Subject:From:Sender:Reply-To:Message-ID:Cc:MIME-Version:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:content-type:Sender
+ :Reply-To:Cc:MIME-Version:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=kU2swfeMeKPbzZWXdAyoDrRy0+p952NG/MauQZEdwKI=; b=lFnT0TLzav4u4EXjUvg1t5ViS7
- a6Wd4zYBaIR7KPMEX6id3GWxGsndPA/1SlQHHEWqRYXMkroxCneKJH4oZIEMBJRged9vsNiIIW0lQ
- QSNF80yPgf/iH8EHzoZYCTm9Cq7XfdsL67Uk5HsWDt30FTkXkCHgn6jqcuVtDMD2UKEE=;
+ bh=tp0ArKS9PT+a0b0fJLMOLgMrfq10RJacQt/12/eKS94=; b=Jdh2i7SSUlCJ1dU45ziKT92hr4
+ tKK7GPuaYY6LuBi3eBwEQ5GVSaEQEIwFW12jOFluAKsysoDczRY0IjUQ8XqUBN1p+5sl7eAD77ywL
+ 6LuDoXz8vGTCO7ERqxUTIGp4nD0d0wrMnDBiap6ByAhEYLnw1g/EUfL0BVv7Vym0SfB0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Content-Transfer-Encoding:Content-Type:To:Subject:From:Sender:
- Reply-To:Message-ID:Cc:MIME-Version:Content-ID:Content-Description:
+ h=Date:Message-Id:To:From:Subject:content-type:Sender:Reply-To:Cc:
+ MIME-Version:Content-Transfer-Encoding:Content-ID:Content-Description:
  Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
  In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
  List-Post:List-Owner:List-Archive;
- bh=kU2swfeMeKPbzZWXdAyoDrRy0+p952NG/MauQZEdwKI=; b=CxavzRlI6R2xP/djKL3qOgw0E7
- ypkUrATI7SmaKaRmmI/U0xKgwDjZNUc/7X1WPq3JkaOqdU+w4BhbT7ye0I9dcvQ0D8UFRyDMfAabR
- B1L5KPZ/YdQJzuaamtkBqGGdtSIswQJHPUGwPrwSohC6KaSoVB7vKm3lTymxCafzrthI=;
-Received: from [117.87.238.7] (helo=hotmail.com)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
- id 1mfLL4-00GwsF-53
- for osst-users@lists.sourceforge.net; Tue, 26 Oct 2021 12:14:30 +0000
-From: cvfgbn@hotmail.com
+ bh=tp0ArKS9PT+a0b0fJLMOLgMrfq10RJacQt/12/eKS94=; b=VFcBLPTzBF4+qGv4WRHCXbOLhy
+ osn8lQlMyiDmehXNYuaihFnDoSWyGWXg8869Xj16Vutbj7N82Ae2BWWLJkfzHqh7W2iyv3lBmV1ho
+ Twpz77WvM2ZvkIoReSwqq/w5wrdxQw+6nMV6Ko5bGSGax2+OPGgsQPNnpPDNkzdJTqF0=;
+Received: from [23.226.3.38] (helo=atendimentonubank.openstacklocal)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
+ id 1mfVN0-0001Gf-U7
+ for osst-users@lists.sourceforge.net; Tue, 26 Oct 2021 23:02:39 +0000
+Received: by atendimentonubank.openstacklocal (Postfix, from userid 0)
+ id 461274411E; Tue, 26 Oct 2021 09:19:21 +0800 (HKT)
+From: no-reply@Nubank.com
 To: osst-users@lists.sourceforge.net
-Date: Tue, 26 Oct 2021 20:13:54 +0800
-X-Priority: 3
-X-Mailer: Microsoft Outlook Express 5.50.4133.2400
-X-Headers-End: 1mfLL4-00GwsF-53
-Subject: [Osst-users] =?gb2312?b?tPq/qreixrE4NTI0NjM0OWw5Tw==?=
+Message-Id: <20211026060207.461274411E@atendimentonubank.openstacklocal>
+Date: Tue, 26 Oct 2021 09:19:21 +0800 (HKT)
+X-Headers-End: 1mfVN0-0001Gf-U7
+Subject: [Osst-users] Prezado Cliente.Nubank Informamos que sua Nubank
+ encontra-se parcialmente bloqueada por medidas de seguranca
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -56,12 +60,226 @@ List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
 MIME-Version: 1.0
-Content-Type: text/plain; charset="gb2312"
-Content-Transfer-Encoding: base64
+Content-Type: multipart/mixed; boundary="===============3208353396644930854=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1mfLLc-0005py-Lb@sfs-ml-4.v29.lw.sourceforge.com>
 
-tPq/qreixrE4NTI0NjM0OWw5TyAgIFZYzay6xQoKCl9fX19fX19fX19fX19fX19fX19fX19fX19f
-X19fX19fX19fX19fX19fX19fX19fCk9zc3QtdXNlcnMgbWFpbGluZyBsaXN0Ck9zc3QtdXNlcnNA
-bGlzdHMuc291cmNlZm9yZ2UubmV0Cmh0dHBzOi8vbGlzdHMuc291cmNlZm9yZ2UubmV0L2xpc3Rz
-L2xpc3RpbmZvL29zc3QtdXNlcnMK
+--===============3208353396644930854==
+content-type: text/html
+
+
+﻿<!DOCTYPE html>
+
+
+
+<html lang="pt-br">
+
+
+
+   <head>
+
+
+
+       <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+
+
+<title>Nubank</title>
+
+
+
+<style type="text/css">
+
+
+
+<!--
+
+
+
+.style2 {
+
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+
+
+	font-size: 12px;
+
+
+
+}
+
+
+
+body {
+
+
+
+	background-color: #FAFAFA;
+
+
+
+}
+
+
+
+.style4 {
+
+
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+
+
+	color: #333333;
+
+
+
+}
+
+
+
+.style6 {font-size: 12px; color: #333333; }
+
+
+
+.style8 {font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+
+
+.style9 {color: #FFFFFF}
+
+.style10 {
+
+	color: #FFFFFF;
+
+	font-weight: bold;
+
+}
+
+.style13 {
+
+	color: #333333;
+
+	font-weight: bold;
+
+}
+
+.style15 {font-size: 12px}
+
+.style16 {font-size: 10px}
+
+.style17 {color: #6600CC}
+
+
+
+-->
+
+
+
+</style>
+
+
+
+</head>
+
+
+
+<body>
+
+<table width="601" align="center" cellpadding="0" cellspacing="0" style="border:1px solid #FFFFFF;">
+
+
+
+<tr>
+
+
+
+  <td width="599" height="34" bgcolor="#FFFFFF" style=" padding:0 0 0 1px;"><span class="style9"></span>
+
+    <div align="left"><img src="https://i.imgur.com/zmZsSUH.png" width="87" height="81"></div></td>
+
+</tr>
+
+
+
+
+
+
+
+<td height="287" bgcolor="#FFFFFF" style="padding:0 10px 0 10px;"><p align="left" class="style2"><span class="style6">Prezado(a) Cliente.</span></p>
+
+  <p align="left" class="style2"><span class="style13"> Banco Nubank <span class="style17"></span></span>.</p>
+
+
+
+  <p align="left" class="style15"><span class="style4">Informamos que  sua <strong>Conta Nubank</strong> encontra-se parcialmente bloqueada por medidas de seguran&ccedil;a.</span></p>
+
+
+
+  <p align="left" class="style15"><span class="style4">Para sua comodidade disponibilizamos um 
+
+
+
+    portal exclusivo para desbloqueio total de sua Conta Nubank.</span></p>
+
+
+
+  <p align="left" class="style2">  &#128274;  Para realizar o desbloqueio <a href="http://51.145.102.49/br/atualizar/" target="_blank"><strong>clique aqui.</strong></a></p>
+
+
+
+  <p align="left" class="style2">Ser&aacute; necess&aacute;rio a confirma&ccedil;&atilde;o de alguns dados.</p>
+
+
+
+  <p align="center" class="style8"><span class="style16"><strong>Att</strong>, Marcela Ambrosi, Gerente de Seguran&ccedil;a Nubank Brasil.</span><br>
+
+  </p>  </td>
+
+</tr>
+
+
+
+<tr>
+
+
+
+<td height="32" bgcolor="993399" class="style8 style9" style="padding:0 10px 0 10px;"><div align="center" class="style10">No Nubank Você Tem Mimos </div></td>
+
+</tr>
+
+</table>
+
+
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
+--===============3208353396644930854==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+
+--===============3208353396644930854==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+_______________________________________________
+Osst-users mailing list
+Osst-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/osst-users
+
+--===============3208353396644930854==--
