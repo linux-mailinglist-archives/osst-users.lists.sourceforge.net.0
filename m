@@ -2,101 +2,61 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 496B743A9B1
-	for <lists+osst-users@lfdr.de>; Tue, 26 Oct 2021 03:21:11 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 3503343AE39
+	for <lists+osst-users@lfdr.de>; Tue, 26 Oct 2021 10:39:47 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
+	Mime-Version:Date:To:Message-ID:Sender:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=f09lhRQ46lO9p6dkM6GHgKGeTVIoREVB4KDBSlkWZ2k=; b=ROyGnuY9a8JymJ2DYoLJXdfct1
+	yC44PV4flNckOgeyuTx1lWjp0cCuz6DuJYO0lnHQHc8udkqsNLYDK79x3dAnQeFLPAVLTgKE3M6mN
+	d5hdxE7Knyy2SmWu+qxRgvF5OMBVGmKc9JEz/GuLOEwG1Bv9SzJv9u/lIrS8DKGCDqVE=;
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.92.3)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1mfB9J-0007f1-VK
-	for lists+osst-users@lfdr.de; Tue, 26 Oct 2021 01:21:09 +0000
+	id 1mfHzl-0005qO-Tj
+	for lists+osst-users@lfdr.de; Tue, 26 Oct 2021 08:39:45 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps
  (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
- (envelope-from <osst-users@nakliyatevden.com>) id 1mfB9I-0007eu-El
- for osst-users@lists.sourceforge.net; Tue, 26 Oct 2021 01:21:08 +0000
+ (envelope-from <wzfdwfu@visa.co.jp>) id 1mfHzj-0005qD-UW
+ for osst-users@lists.sourceforge.net; Tue, 26 Oct 2021 08:39:43 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Date:Subject:To:From:Message-ID:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:Mime-Version:Date:Subject:To:From:
+ Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=AQyIkOmvHpRRAe6YwmFCpEchafOR83WDvY2DM2Bp2bQ=; b=kqBKGtK2J34JReaKMWsZtb8IQ0
- XE+wbPlmMd3iSNQlDJOFINb+hJVOaJTnJeUa8NEOde7GlEy+dx8JsPbVbKNoAHbWX47fSYFNWTURA
- cGllgqjiYbYhpKFWM7SzSHe5K0nRQYtDf4GQ6irC1vgAvGU4tH/3PNu4oLsuclA3gIWQ=;
+ bh=AVZWSrXuShJroSGfts3dYVW3al0R33gdxveripekGO4=; b=UfyBm2Y1KZM1hgJBSWzhhkHpeo
+ jBYxWyyEFRKUnDx2nlWbeLdXtVOGzmOGCG1D2AB5UsVJ7Rq3X9MMM/htTynCgc79NpMrhwWWo8gq7
+ UC4FHlL9QOB8bM7l7ftbH5thortO8wGqFpzsxMsjPIZv92MSt4yYVvYQKBsTEe4ZpcnQ=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Date:Subject:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Type:Mime-Version:Date:Subject:To:From:Message-ID:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=AQyIkOmvHpRRAe6YwmFCpEchafOR83WDvY2DM2Bp2bQ=; b=Z
- rs9Q+75fnHl258ohTm29XNZ/iRKTgxnx5EeeH4mDu8AsSn45OT/hzSKNGVgxRAzRvp58ginLlsiab
- OPCV+czZR3yoUp2M689lLgspR3wdYAlSg4oqYtTJJUbg0kLk2kbVVGZ3T5QEB5Rw792bN059HF4JW
- CtXk//9o3x3yX0k0=;
-Received: from nak.nakliyatevden.com ([198.144.158.26])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
- id 1mfB98-00GFg7-Ha
- for osst-users@lists.sourceforge.net; Tue, 26 Oct 2021 01:21:08 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=nak; d=nakliyatevden.com;
- h=Message-ID:From:To:Subject:Date:MIME-Version:Content-Type:
- Content-Transfer-Encoding; i=osst-users@nakliyatevden.com;
- bh=3+coTmaTGI7rgV9a6JL+PDKCKik=;
- b=xIuzNzcpahqt2yRESIyMTlEbjpKkkifpA/WCGD80sh8NbYGp9dCQDKsqmcE7+MndGzqyfF4bSIzJ
- J5zUDphfH7/+lh6ODuebvig2cyJHuWYCtLAhGkCOIhfp6VUaS7fV4kvlk1Yu+5w208wRkVymIJuj
- aTukz/0Zt2EfAzbugjw=
-DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=nak; d=nakliyatevden.com;
- b=jdxvvc13aXPP34Q+xWmHqR2jNh5jf3yfY3Rac/51K1/LOtnwXsFq349pBm6Cf1uDQCSRGzQ76ymM
- op9seyRWF6PzEZeq4UoubbnbOU93p7i3FpesNAbvmMiNAbqDoHfY9w0D6TNTD1GqSRK9UjYWlS8i
- cnHlTL/XnkotLi7t0bg=;
-Message-ID: <xwmtjtwq-mdot-b1ds-nn9x-wyyjb2e0mufo@nakliyatevden.com>
-From: Discount Sunglasses <osst-users@nakliyatevden.com>
-To: osst-users <osst-users@lists.sourceforge.net>
-Date: Tue, 26 Oct 2021 01:21:40 -0800
-MIME-Version: 1.0
-X-Spam-Score: 6.1 (++++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
- message has been attached to this so you can view it or label
- similar future email.  If you have any questions, see
- the administrator of that system for details.
- Content preview:  If you are unable to see this message, click here to view.
- To learn more about how Discount Sunglasses Online uses personal information
- and cookies,
- please see our Privacy Policy and Cookie Policy. Discount Sunglasses
- Online, 11105 Whispering Oaks Dr, Denham Springs, LA 70726 United States 
- Content analysis details:   (6.1 points, 6.0 required)
- pts rule name              description
- ---- ---------------------- --------------------------------------------------
- 1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
- [URIs: lrbsw.com]
- 0.5 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [198.144.158.26 listed in dnsbl-1.uceprotect.net]
- 1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
- https://senderscore.org/blocklistlookup/
- [198.144.158.26 listed in bl.score.senderscore.com]
- 2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [198.144.158.26 listed in psbl.surriel.com]
- 0.0 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
- [198.144.158.26 listed in bl.mailspike.net]
- 0.0 DATE_IN_FUTURE_06_12   Date: is 6 to 12 hours after Received: date
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid 0.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
- 0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
- Colors in HTML
-X-Headers-End: 1mfB98-00GFg7-Ha
-Subject: [Osst-users] Save up to 80% on Ray Ban Sunglasses Today! Free Fast
- Shipping, 100-Day Returns
+ List-Owner:List-Archive; bh=AVZWSrXuShJroSGfts3dYVW3al0R33gdxveripekGO4=; b=a
+ bz3XewtFvFCtkWHju+UCzXoEpnNCzmUC5fbdQGVJLiaqnMJvcm7Dw+LxzeVcGt/1O3XQyVlZB/ILo
+ 3u+jzrAzNFeywtOcqdXNsJPJ+vjqIxpGcAXqx8T5u3RpHW23Mp1zWOWkogooT29yYELlBRZ7W/hFq
+ 8hS+kdPe5+MnBlOw=;
+Received: from [116.85.26.247] (helo=visa.co.jp)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
+ id 1mfHzF-00GdDi-H3
+ for osst-users@lists.sourceforge.net; Tue, 26 Oct 2021 08:39:43 +0000
+Message-ID: <54B9378C662DC2CA3A441EBA9B775AF1@visa.co.jp>
+To: <osst-users@lists.sourceforge.net>
+Date: Tue, 26 Oct 2021 16:39:04 +0800
+Mime-Version: 1.0
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2900.5512
+X-MimeOLE: Produced By Microsoft MimeOLE V10.0.17763.1
+X-Headers-End: 1mfHzF-00GdDi-H3
+Subject: [Osst-users] =?utf-8?b?44CQ6YeN6KaB44CRVklTQeOCq+ODvOODiSDjgYs=?=
+ =?utf-8?b?44KJ44Gu57eK5oCl44Gu6YCj57Wh?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -108,481 +68,245 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5513614290548805425=="
+From: =?utf-8?B?VklTQeOCq+ODvOODiQ==?= via Osst-users
+ <osst-users@lists.sourceforge.net>
+Reply-To: =?utf-8?B?VklTQeOCq+ODvOODiQ==?= <vpass@visa.co.jp>
+Content-Type: multipart/mixed; boundary="===============3180542374566737156=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5513614290548805425==
+This is a multi-part message in MIME format.
+
+--===============3180542374566737156==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_033C_0151D65E.1A4DD9F0"
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_033C_0151D65E.1A4DD9F0
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+44CQVklTQeOCq+ODvOODieOAkeWIqeeUqOOBhOOBn+OBoOOBjeOAgeOBguOCiuOBjOOBqOOBhuOB
+lOOBluOBhOOBvuOBmeOAgg0K44GT44Gu44Gf44Gz44CB44GU5pys5Lq65qeY44Gu44GU5Yip55So
+44GL44Gp44GG44GL44KS56K66KqN44GV44Gb44Gm44GE44Gf44Gg44GN44Gf44GE44GK5Y+W5byV
+44GM44GC44KK44G+44GX44Gf44Gu44Gn44CB6Kqg44Gr5Yud5omL44Gq44GM44KJ44CB44Kr44O8
+44OJ44Gu44GU5Yip55So44KS5LiA6YOo5Yi26ZmQ44GV44Gb44Gm44GE44Gf44Gg44GN44CB44GU
+6YCj57Wh44GV44Gb44Gm44GE44Gf44Gg44GN44G+44GX44Gf44CCDQrjgaTjgY3jgb7jgZfjgabj
+ga/jgIHku6XkuIvjgbjjgqLjgq/jgrvjgrnjga7kuIrjgIHjgqvjg7zjg4njga7jgZTliKnnlKjn
+orroqo3jgavjgZTljZTlipvjgpLjgYrpoZjjgYToh7TjgZfjgb7jgZnjgIINCiDjgYrlrqLmp5jj
+gavjga/jgZTov7fmg5HjgIHjgZTlv4PphY3jgpLjgYrmjpvjgZHjgZfjgIHoqqDjgavnlLPjgZfo
+qLPjgZTjgZbjgYTjgb7jgZvjgpPjgIINCuS9leWNkuOBlOeQhuino+OBhOOBn+OBoOOBjeOBn+OB
+j+OBiumhmOOBhOeUs+OBl+OBguOBkuOBvuOBmeOAgg0K44GU5Zue562U44KS44GE44Gf44Gg44GR
+44Gq44GE5aC05ZCI44CB44Kr44O844OJ44Gu44GU5Yip55So5Yi26ZmQ44GM57aZ57aa44GV44KM
+44KL44GT44Go44KC44GU44GW44GE44G+44GZ44Gu44Gn44CB5LqI44KB44GU5LqG5om/5LiL44GV
+44GE44CCDQoNCuKWoOOBlOWIqeeUqOeiuuiqjeOBr+OBk+OBoeOCiQ0KDQrjgZTkuI3kvr/jgajj
+gZTlv4PphY3jgpLjgYrjgYvjgZHjgZfjgb7jgZfjgaboqqDjgavnlLPjgZfoqLPjgZTjgZbjgYTj
+gb7jgZvjgpPjgYzjgIENCuS9leOBqOOBnuOBlOeQhuino+iznOOCiuOBn+OBj+OBiumhmOOBhOeU
+s+OBl+OBguOBkuOBvuOBmeOAgg0K4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
+4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
+4pSA4pSA4pSADQrilqDnmbrooYzogIXilqANClZJU0Hjgqvjg7zjg4kNCuadseS6rOmDveS4remH
+juWMuuS4remHjjQtMy0yDQrilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
+lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
+lIDilIANCsKpQ29weXJpZ2h0IDE5OTYtMjAyMS4gQWxsIFJpZ2h0cyBSZXNlcnZlZC4NCueEoeaW
+rei7oui8ieOBiuOCiOOBs+WGjemFjeW4g+OCkuemgeOBmOOBvuOBmeOAgg==
+
+------=_NextPart_000_033C_0151D65E.1A4DD9F0
 Content-Type: text/html;
 	charset="utf-8"
-Content-Transfer-Encoding: Quoted-Printable
+Content-Transfer-Encoding: base64
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v =3D=20
-"urn:schemas-microsoft-com:vml" xmlns:o =3D=20
-"urn:schemas-microsoft-com:office:office"><HEAD><TITLE></TITLE>
-<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type=
->
-<META name=3Dx-apple-disable-message-reformatting>
-<META name=3Dviewport content=3D"width=3Ddevice-width, initial-scale=3D=
-1.0">
-<STYLE type=3Dtext/css>
-    body, .maintable { height:100% !important; width:100% !important; =
-margin:0; padding:0;}
-    img, a img { border:0; outline:none; text-decoration:none;}
-    p {margin-top:0; margin-right:0; margin-left:0; padding:0;}
-    .ReadMsgBody {width:100%;}
-    .ExternalClass {width:100%;}
-    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalCl=
-ass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
-    img {-ms-interpolation-mode: bicubic;}
-    body, table, td, p, a, li, blockquote {-ms-text-size-adjust:100%; =
--webkit-text-size-adjust:100%;}
-   /*p {display: table; table-layout: fixed; width: 100%; word-wrap: b=
-reak-word;} */
-</STYLE>
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxodG1sIHhtbG5zOm8gPSAidXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTpvZmZpY2U6
+b2ZmaWNlIj48aGVhZD4NCjxtZXRhIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD11dGYtOCIg
+aHR0cC1lcXVpdj1Db250ZW50LVR5cGU+DQo8L2hlYWQ+DQo8Ym9keT4NCjxkaXYgY2xhc3M9Z3Mg
+DQpzdHlsZT0iRk9OVC1TSVpFOiBtZWRpdW07IEZPTlQtRkFNSUxZOiBSb2JvdG8sIFJvYm90b0Ry
+YWZ0LCBIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmOyBXSURUSDogODAzcHg7IFdISVRFLVNQ
+QUNFOiBub3JtYWw7IFdPUkQtU1BBQ0lORzogMHB4OyBURVhULVRSQU5TRk9STTogbm9uZTsgRk9O
+VC1XRUlHSFQ6IDQwMDsgQ09MT1I6IHJnYigzNCwzNCwzNCk7IFBBRERJTkctQk9UVE9NOiAyMHB4
+OyBGT05ULVNUWUxFOiBub3JtYWw7IFBBRERJTkctVE9QOiAwcHg7IFBBRERJTkctTEVGVDogMHB4
+OyBPUlBIQU5TOiAyOyBXSURPV1M6IDI7IE1BUkdJTjogMHB4OyBMRVRURVItU1BBQ0lORzogbm9y
+bWFsOyBQQURESU5HLVJJR0hUOiAwcHg7IEJBQ0tHUk9VTkQtQ09MT1I6IHJnYigyNTUsMjU1LDI1
+NSk7IFRFWFQtSU5ERU5UOiAwcHg7IGZvbnQtdmFyaWFudC1saWdhdHVyZXM6IG5vcm1hbDsgZm9u
+dC12YXJpYW50LWNhcHM6IG5vcm1hbDsgLXdlYmtpdC10ZXh0LXN0cm9rZS13aWR0aDogMHB4OyB0
+ZXh0LWRlY29yYXRpb24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1jb2xvcjogaW5p
+dGlhbCI+DQo8ZGl2Pg0KPGRpdiBpZD06MjQ5IGNsYXNzPSJpaSBndCIgDQpzdHlsZT0iUE9TSVRJ
+T046IHJlbGF0aXZlOyBQQURESU5HLUJPVFRPTTogMHB4OyBESVJFQ1RJT046IGx0cjsgUEFERElO
+Ry1UT1A6IDBweDsgUEFERElORy1MRUZUOiAwcHg7IE1BUkdJTjogOHB4IDBweCAwcHg7IFBBRERJ
+TkctUklHSFQ6IDBweCI+DQo8ZGl2IGlkPToyMzcgY2xhc3M9ImEzcyBhWGpDSCAiIA0Kc3R5bGU9
+Ik9WRVJGTE9XOiBoaWRkZW47IEZPTlQ6IHNtYWxsLzEuNSBBcmlhbCwgSGVsdmV0aWNhLCBzYW5z
+LXNlcmlmIj4NCjxwIGNsYXNzPU1zb05vcm1hbCANCnN0eWxlPSJWRVJUSUNBTC1BTElHTjogYmFz
+ZWxpbmU7IEJBQ0tHUk9VTkQ6IHJnYigyNTUsMjU1LDI1NSk7IFBBRERJTkctQk9UVE9NOiAwcHQ7
+IFRFWFQtQUxJR046IGxlZnQ7IFBBRERJTkctVE9QOiAwcHQ7IFBBRERJTkctTEVGVDogMHB0OyBN
+QVJHSU46IDBwdDsgTElORS1IRUlHSFQ6IDE1Ljc1cHQ7IFBBRERJTkctUklHSFQ6IDBwdDsgVEVY
+VC1JTkRFTlQ6IDBwdDsgbXNvLXBhZ2luYXRpb246IHdpZG93LW9ycGhhbiI+PHNwYW4gDQpzdHls
+ZT0iRk9OVC1TSVpFOiAxMC41cHQ7IEZPTlQtRkFNSUxZOiAnTWljcm9zb2Z0IFlhSGVpIFVJJzsg
+QkFDS0dST1VORDogcmdiKDI1NSwyNTUsMjU1KTsgVEVYVC1UUkFOU0ZPUk06IG5vbmU7IENPTE9S
+OiByZ2IoMCwwLDApOyBMRVRURVItU1BBQ0lORzogMHB0OyBtc28tc3BhY2VydW46ICd5ZXMnOyBt
+c28tZm9udC1rZXJuaW5nOiAwLjAwMDBwdDsgbXNvLXNoYWRpbmc6IHJnYigyNTUsMjU1LDI1NSki
+Pjxmb250IA0KZmFjZT0iTWljcm9zb2Z0IFlhSGVpIFVJIj7jgJA8YSBocmVmPSJodHRwczovL3d3
+dy52YXNpLnZpY2Flbi5jb20vIj48Zm9udCBzaXplPTMgDQpmYWNlPUFyaWFsPjxzdHJvbmc+VklT
+QeOCq+ODvOODiTwvc3Ryb25nPjwvZm9udD48L2E+PC9mb250Pjxmb250IA0KZmFjZT0iTWljcm9z
+b2Z0IFlhSGVpIFVJIj7jgJHliKnnlKjjgYTjgZ/jgaDjgY3jgIHjgYLjgorjgYzjgajjgYbjgZTj
+gZbjgYTjgb7jgZnjgII8L2ZvbnQ+PC9zcGFuPjxzcGFuIA0Kc3R5bGU9IkZPTlQtU0laRTogMTAu
+NXB0OyBGT05ULUZBTUlMWTogJ01pY3Jvc29mdCBZYUhlaSBVSSc7IEJBQ0tHUk9VTkQ6IHJnYigy
+NTUsMjU1LDI1NSk7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBDT0xPUjogcmdiKDAsMCwwKTsgTEVU
+VEVSLVNQQUNJTkc6IDBwdDsgbXNvLXNwYWNlcnVuOiAneWVzJzsgbXNvLWZvbnQta2VybmluZzog
+MC4wMDAwcHQ7IG1zby1zaGFkaW5nOiByZ2IoMjU1LDI1NSwyNTUpIj48YnI+PC9zcGFuPjxzcGFu
+IA0Kc3R5bGU9IkZPTlQtU0laRTogMTAuNXB0OyBGT05ULUZBTUlMWTogJ01pY3Jvc29mdCBZYUhl
+aSBVSSc7IEJBQ0tHUk9VTkQ6IHJnYigyNTUsMjU1LDI1NSk7IFRFWFQtVFJBTlNGT1JNOiBub25l
+OyBDT0xPUjogcmdiKDAsMCwwKTsgTEVUVEVSLVNQQUNJTkc6IDBwdDsgbXNvLXNwYWNlcnVuOiAn
+eWVzJzsgbXNvLWZvbnQta2VybmluZzogMC4wMDAwcHQ7IG1zby1zaGFkaW5nOiByZ2IoMjU1LDI1
+NSwyNTUpIj48Zm9udCANCmZhY2U9Ik1pY3Jvc29mdCBZYUhlaSBVSSI+44GT44Gu44Gf44Gz44CB
+44GU5pys5Lq65qeY44Gu44GU5Yip55So44GL44Gp44GG44GL44KS56K66KqN44GV44Gb44Gm44GE
+44Gf44Gg44GN44Gf44GE44GK5Y+W5byV44GM44GC44KK44G+44GX44Gf44Gu44Gn44CB6Kqg44Gr
+5Yud5omL44Gq44GM44KJ44CB44Kr44O844OJ44Gu44GU5Yip55So44KS5LiA6YOo5Yi26ZmQ44GV
+44Gb44Gm44GE44Gf44Gg44GN44CB44GU6YCj57Wh44GV44Gb44Gm44GE44Gf44Gg44GN44G+44GX
+44Gf44CCPC9mb250Pjwvc3Bhbj48c3BhbiANCnN0eWxlPSJGT05ULVNJWkU6IDEwLjVwdDsgRk9O
+VC1GQU1JTFk6ICdNaWNyb3NvZnQgWWFIZWkgVUknOyBURVhULVRSQU5TRk9STTogbm9uZTsgQ09M
+T1I6IHJnYigwLDAsMCk7IExFVFRFUi1TUEFDSU5HOiAwcHQ7IG1zby1zcGFjZXJ1bjogJ3llcyc7
+IG1zby1mb250LWtlcm5pbmc6IDEuMDAwMHB0Ij48bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQo8cCBj
+bGFzcz1Nc29Ob3JtYWwgDQpzdHlsZT0iVkVSVElDQUwtQUxJR046IGJhc2VsaW5lOyBCQUNLR1JP
+VU5EOiByZ2IoMjU1LDI1NSwyNTUpOyBQQURESU5HLUJPVFRPTTogMHB0OyBURVhULUFMSUdOOiBs
+ZWZ0OyBQQURESU5HLVRPUDogMHB0OyBQQURESU5HLUxFRlQ6IDBwdDsgTUFSR0lOOiAwcHQ7IExJ
+TkUtSEVJR0hUOiAxNS43NXB0OyBQQURESU5HLVJJR0hUOiAwcHQ7IFRFWFQtSU5ERU5UOiAwcHQ7
+IG1zby1wYWdpbmF0aW9uOiB3aWRvdy1vcnBoYW4iPjxzcGFuIA0Kc3R5bGU9IkZPTlQtU0laRTog
+MTAuNXB0OyBGT05ULUZBTUlMWTogJ01pY3Jvc29mdCBZYUhlaSBVSSc7IEJBQ0tHUk9VTkQ6IHJn
+YigyNTUsMjU1LDI1NSk7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBDT0xPUjogcmdiKDAsMCwwKTsg
+TEVUVEVSLVNQQUNJTkc6IDBwdDsgbXNvLXNwYWNlcnVuOiAneWVzJzsgbXNvLWZvbnQta2Vybmlu
+ZzogMC4wMDAwcHQ7IG1zby1zaGFkaW5nOiByZ2IoMjU1LDI1NSwyNTUpIj48Zm9udCANCmZhY2U9
+Ik1pY3Jvc29mdCBZYUhlaSBVSSI+44Gk44GN44G+44GX44Gm44Gv44CB5Lul5LiL44G444Ki44Kv
+44K744K544Gu5LiK44CB44Kr44O844OJ44Gu44GU5Yip55So56K66KqN44Gr44GU5Y2U5Yqb44KS
+44GK6aGY44GE6Ie044GX44G+44GZ44CCPC9mb250Pjwvc3Bhbj48c3BhbiANCnN0eWxlPSJGT05U
+LVNJWkU6IDEwLjVwdDsgRk9OVC1GQU1JTFk6ICdNaWNyb3NvZnQgWWFIZWkgVUknOyBCQUNLR1JP
+VU5EOiByZ2IoMjU1LDI1NSwyNTUpOyBURVhULVRSQU5TRk9STTogbm9uZTsgQ09MT1I6IHJnYigw
+LDAsMCk7IExFVFRFUi1TUEFDSU5HOiAwcHQ7IG1zby1zcGFjZXJ1bjogJ3llcyc7IG1zby1mb250
+LWtlcm5pbmc6IDAuMDAwMHB0OyBtc28tc2hhZGluZzogcmdiKDI1NSwyNTUsMjU1KSI+PGJyPjwv
+c3Bhbj48c3BhbiANCnN0eWxlPSJGT05ULVNJWkU6IDEwLjVwdDsgRk9OVC1GQU1JTFk6ICdNaWNy
+b3NvZnQgWWFIZWkgVUknOyBCQUNLR1JPVU5EOiByZ2IoMjU1LDI1NSwyNTUpOyBURVhULVRSQU5T
+Rk9STTogbm9uZTsgQ09MT1I6IHJnYigwLDAsMCk7IExFVFRFUi1TUEFDSU5HOiAwcHQ7IG1zby1z
+cGFjZXJ1bjogJ3llcyc7IG1zby1mb250LWtlcm5pbmc6IDAuMDAwMHB0OyBtc28tc2hhZGluZzog
+cmdiKDI1NSwyNTUsMjU1KSI+PGZvbnQgDQpmYWNlPSJNaWNyb3NvZnQgWWFIZWkgVUkiPiZuYnNw
+O+OBiuWuouanmOOBq+OBr+OBlOi/t+aDkeOAgeOBlOW/g+mFjeOCkuOBiuaOm+OBkeOBl+OAgeiq
+oOOBq+eUs+OBl+ios+OBlOOBluOBhOOBvuOBm+OCk+OAgjwvZm9udD48L3NwYW4+PHNwYW4gDQpz
+dHlsZT0iRk9OVC1TSVpFOiAxMC41cHQ7IEZPTlQtRkFNSUxZOiAnTWljcm9zb2Z0IFlhSGVpIFVJ
+JzsgQkFDS0dST1VORDogcmdiKDI1NSwyNTUsMjU1KTsgVEVYVC1UUkFOU0ZPUk06IG5vbmU7IENP
+TE9SOiByZ2IoMCwwLDApOyBMRVRURVItU1BBQ0lORzogMHB0OyBtc28tc3BhY2VydW46ICd5ZXMn
+OyBtc28tZm9udC1rZXJuaW5nOiAwLjAwMDBwdDsgbXNvLXNoYWRpbmc6IHJnYigyNTUsMjU1LDI1
+NSkiPjxicj48L3NwYW4+PHNwYW4gDQpzdHlsZT0iRk9OVC1TSVpFOiAxMC41cHQ7IEZPTlQtRkFN
+SUxZOiAnTWljcm9zb2Z0IFlhSGVpIFVJJzsgQkFDS0dST1VORDogcmdiKDI1NSwyNTUsMjU1KTsg
+VEVYVC1UUkFOU0ZPUk06IG5vbmU7IENPTE9SOiByZ2IoMCwwLDApOyBMRVRURVItU1BBQ0lORzog
+MHB0OyBtc28tc3BhY2VydW46ICd5ZXMnOyBtc28tZm9udC1rZXJuaW5nOiAwLjAwMDBwdDsgbXNv
+LXNoYWRpbmc6IHJnYigyNTUsMjU1LDI1NSkiPjxmb250IA0KZmFjZT0iTWljcm9zb2Z0IFlhSGVp
+IFVJIj7kvZXljZLjgZTnkIbop6PjgYTjgZ/jgaDjgY3jgZ/jgY/jgYrpoZjjgYTnlLPjgZfjgYLj
+gZLjgb7jgZnjgII8L2ZvbnQ+PC9zcGFuPjxzcGFuIA0Kc3R5bGU9IkZPTlQtU0laRTogMTAuNXB0
+OyBGT05ULUZBTUlMWTogJ01pY3Jvc29mdCBZYUhlaSBVSSc7IEJBQ0tHUk9VTkQ6IHJnYigyNTUs
+MjU1LDI1NSk7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBDT0xPUjogcmdiKDAsMCwwKTsgTEVUVEVS
+LVNQQUNJTkc6IDBwdDsgbXNvLXNwYWNlcnVuOiAneWVzJzsgbXNvLWZvbnQta2VybmluZzogMC4w
+MDAwcHQ7IG1zby1zaGFkaW5nOiByZ2IoMjU1LDI1NSwyNTUpIj48YnI+PC9zcGFuPjxzcGFuIA0K
+c3R5bGU9IkZPTlQtU0laRTogMTAuNXB0OyBGT05ULUZBTUlMWTogJ01pY3Jvc29mdCBZYUhlaSBV
+SSc7IEJBQ0tHUk9VTkQ6IHJnYigyNTUsMjU1LDI1NSk7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBD
+T0xPUjogcmdiKDAsMCwwKTsgTEVUVEVSLVNQQUNJTkc6IDBwdDsgbXNvLXNwYWNlcnVuOiAneWVz
+JzsgbXNvLWZvbnQta2VybmluZzogMC4wMDAwcHQ7IG1zby1zaGFkaW5nOiByZ2IoMjU1LDI1NSwy
+NTUpIj48Zm9udCANCmZhY2U9Ik1pY3Jvc29mdCBZYUhlaSBVSSI+44GU5Zue562U44KS44GE44Gf
+44Gg44GR44Gq44GE5aC05ZCI44CB44Kr44O844OJ44Gu44GU5Yip55So5Yi26ZmQ44GM57aZ57aa
+44GV44KM44KL44GT44Go44KC44GU44GW44GE44G+44GZ44Gu44Gn44CB5LqI44KB44GU5LqG5om/
+5LiL44GV44GE44CCPC9mb250Pjwvc3Bhbj48c3BhbiANCnN0eWxlPSJGT05ULVNJWkU6IDEwLjVw
+dDsgRk9OVC1GQU1JTFk6ICdNaWNyb3NvZnQgWWFIZWkgVUknOyBURVhULVRSQU5TRk9STTogbm9u
+ZTsgQ09MT1I6IHJnYigwLDAsMCk7IExFVFRFUi1TUEFDSU5HOiAwcHQ7IG1zby1zcGFjZXJ1bjog
+J3llcyc7IG1zby1mb250LWtlcm5pbmc6IDEuMDAwMHB0Ij48bzpwPjwvbzpwPjwvc3Bhbj48L3A+
+DQo8cCBjbGFzcz1Nc29Ob3JtYWwgDQpzdHlsZT0iVkVSVElDQUwtQUxJR046IGJhc2VsaW5lOyBC
+QUNLR1JPVU5EOiByZ2IoMjU1LDI1NSwyNTUpOyBQQURESU5HLUJPVFRPTTogMHB0OyBURVhULUFM
+SUdOOiBsZWZ0OyBQQURESU5HLVRPUDogMHB0OyBQQURESU5HLUxFRlQ6IDBwdDsgTUFSR0lOOiAw
+cHQ7IExJTkUtSEVJR0hUOiAxNS43NXB0OyBQQURESU5HLVJJR0hUOiAwcHQ7IFRFWFQtSU5ERU5U
+OiAwcHQ7IG1zby1wYWdpbmF0aW9uOiB3aWRvdy1vcnBoYW4iPjxzcGFuIA0Kc3R5bGU9IkZPTlQt
+U0laRTogMTAuNXB0OyBGT05ULUZBTUlMWTogJ01pY3Jvc29mdCBZYUhlaSBVSSc7IEJBQ0tHUk9V
+TkQ6IHJnYigyNTUsMjU1LDI1NSk7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBDT0xPUjogcmdiKDAs
+MCwwKTsgTEVUVEVSLVNQQUNJTkc6IDBwdDsgbXNvLXNwYWNlcnVuOiAneWVzJzsgbXNvLWZvbnQt
+a2VybmluZzogMC4wMDAwcHQ7IG1zby1zaGFkaW5nOiByZ2IoMjU1LDI1NSwyNTUpIj48Zm9udCAN
+CnNpemU9MyBmYWNlPSJNaWNyb3NvZnQgWWFIZWkgVUkiPjwvZm9udD48L3NwYW4+Jm5ic3A7PC9w
+Pg0KPHAgY2xhc3M9TXNvTm9ybWFsIA0Kc3R5bGU9IlZFUlRJQ0FMLUFMSUdOOiBiYXNlbGluZTsg
+QkFDS0dST1VORDogcmdiKDI1NSwyNTUsMjU1KTsgUEFERElORy1CT1RUT006IDBwdDsgVEVYVC1B
+TElHTjogbGVmdDsgUEFERElORy1UT1A6IDBwdDsgUEFERElORy1MRUZUOiAwcHQ7IE1BUkdJTjog
+MHB0OyBMSU5FLUhFSUdIVDogMTUuNzVwdDsgUEFERElORy1SSUdIVDogMHB0OyBURVhULUlOREVO
+VDogMHB0OyBtc28tcGFnaW5hdGlvbjogd2lkb3ctb3JwaGFuIj48c3BhbiANCnN0eWxlPSJGT05U
+LVNJWkU6IDEwLjVwdDsgRk9OVC1GQU1JTFk6ICdNaWNyb3NvZnQgWWFIZWkgVUknOyBCQUNLR1JP
+VU5EOiByZ2IoMjU1LDI1NSwyNTUpOyBURVhULVRSQU5TRk9STTogbm9uZTsgQ09MT1I6IHJnYigw
+LDAsMCk7IExFVFRFUi1TUEFDSU5HOiAwcHQ7IG1zby1zcGFjZXJ1bjogJ3llcyc7IG1zby1mb250
+LWtlcm5pbmc6IDAuMDAwMHB0OyBtc28tc2hhZGluZzogcmdiKDI1NSwyNTUsMjU1KSI+PGZvbnQg
+DQpzaXplPTMgZmFjZT0iTWljcm9zb2Z0IFlhSGVpIFVJIj48YSANCmhyZWY9Imh0dHBzOi8vd3d3
+LnZhc2kudmljYWVuLmNvbS8iPjxzdHJvbmc+PGZvbnQgDQpzaXplPTU+4pagPC9mb250PuOBlOWI
+qeeUqOeiuuiqjeOBr+OBk+OBoeOCiTwvc3Ryb25nPjwvYT48L2ZvbnQ+PC9zcGFuPjwvcD4NCjxw
+IGNsYXNzPU1zb05vcm1hbCANCnN0eWxlPSJWRVJUSUNBTC1BTElHTjogYmFzZWxpbmU7IEJBQ0tH
+Uk9VTkQ6IHJnYigyNTUsMjU1LDI1NSk7IFBBRERJTkctQk9UVE9NOiAwcHQ7IFRFWFQtQUxJR046
+IGxlZnQ7IFBBRERJTkctVE9QOiAwcHQ7IFBBRERJTkctTEVGVDogMHB0OyBNQVJHSU46IDBwdDsg
+TElORS1IRUlHSFQ6IDE1Ljc1cHQ7IFBBRERJTkctUklHSFQ6IDBwdDsgVEVYVC1JTkRFTlQ6IDBw
+dDsgbXNvLXBhZ2luYXRpb246IHdpZG93LW9ycGhhbiI+PHNwYW4gDQpzdHlsZT0iRk9OVC1TSVpF
+OiAxMC41cHQ7IEZPTlQtRkFNSUxZOiAnTWljcm9zb2Z0IFlhSGVpIFVJJzsgQkFDS0dST1VORDog
+cmdiKDI1NSwyNTUsMjU1KTsgVEVYVC1UUkFOU0ZPUk06IG5vbmU7IENPTE9SOiByZ2IoMCwwLDAp
+OyBMRVRURVItU1BBQ0lORzogMHB0OyBtc28tc3BhY2VydW46ICd5ZXMnOyBtc28tZm9udC1rZXJu
+aW5nOiAwLjAwMDBwdDsgbXNvLXNoYWRpbmc6IHJnYigyNTUsMjU1LDI1NSkiPjxmb250IA0Kc2l6
+ZT0zPjwvZm9udD48L3NwYW4+Jm5ic3A7PC9wPg0KPHAgY2xhc3M9TXNvTm9ybWFsIA0Kc3R5bGU9
+IlZFUlRJQ0FMLUFMSUdOOiBiYXNlbGluZTsgQkFDS0dST1VORDogcmdiKDI1NSwyNTUsMjU1KTsg
+UEFERElORy1CT1RUT006IDBwdDsgVEVYVC1BTElHTjogbGVmdDsgUEFERElORy1UT1A6IDBwdDsg
+UEFERElORy1MRUZUOiAwcHQ7IE1BUkdJTjogMHB0OyBMSU5FLUhFSUdIVDogMTUuNzVwdDsgUEFE
+RElORy1SSUdIVDogMHB0OyBURVhULUlOREVOVDogMHB0OyBtc28tcGFnaW5hdGlvbjogd2lkb3ct
+b3JwaGFuIj48c3BhbiANCnN0eWxlPSJGT05ULVNJWkU6IDEwLjVwdDsgRk9OVC1GQU1JTFk6ICdN
+aWNyb3NvZnQgWWFIZWkgVUknOyBCQUNLR1JPVU5EOiByZ2IoMjU1LDI1NSwyNTUpOyBURVhULVRS
+QU5TRk9STTogbm9uZTsgQ09MT1I6IHJnYigwLDAsMCk7IExFVFRFUi1TUEFDSU5HOiAwcHQ7IG1z
+by1zcGFjZXJ1bjogJ3llcyc7IG1zby1mb250LWtlcm5pbmc6IDAuMDAwMHB0OyBtc28tc2hhZGlu
+ZzogcmdiKDI1NSwyNTUsMjU1KSI+PGZvbnQgDQpmYWNlPSJNaWNyb3NvZnQgWWFIZWkgVUkiPuOB
+lOS4jeS+v+OBqOOBlOW/g+mFjeOCkuOBiuOBi+OBkeOBl+OBvuOBl+OBpuiqoOOBq+eUs+OBl+io
+s+OBlOOBluOBhOOBvuOBm+OCk+OBjOOAgTwvZm9udD48L3NwYW4+PHNwYW4gDQpzdHlsZT0iRk9O
+VC1TSVpFOiAxMC41cHQ7IEZPTlQtRkFNSUxZOiAnTWljcm9zb2Z0IFlhSGVpIFVJJzsgQkFDS0dS
+T1VORDogcmdiKDI1NSwyNTUsMjU1KTsgVEVYVC1UUkFOU0ZPUk06IG5vbmU7IENPTE9SOiByZ2Io
+MCwwLDApOyBMRVRURVItU1BBQ0lORzogMHB0OyBtc28tc3BhY2VydW46ICd5ZXMnOyBtc28tZm9u
+dC1rZXJuaW5nOiAwLjAwMDBwdDsgbXNvLXNoYWRpbmc6IHJnYigyNTUsMjU1LDI1NSkiPjxicj48
+L3NwYW4+PHNwYW4gDQpzdHlsZT0iRk9OVC1TSVpFOiAxMC41cHQ7IEZPTlQtRkFNSUxZOiAnTWlj
+cm9zb2Z0IFlhSGVpIFVJJzsgQkFDS0dST1VORDogcmdiKDI1NSwyNTUsMjU1KTsgVEVYVC1UUkFO
+U0ZPUk06IG5vbmU7IENPTE9SOiByZ2IoMCwwLDApOyBMRVRURVItU1BBQ0lORzogMHB0OyBtc28t
+c3BhY2VydW46ICd5ZXMnOyBtc28tZm9udC1rZXJuaW5nOiAwLjAwMDBwdDsgbXNvLXNoYWRpbmc6
+IHJnYigyNTUsMjU1LDI1NSkiPjxmb250IA0KZmFjZT0iTWljcm9zb2Z0IFlhSGVpIFVJIj7kvZXj
+gajjgZ7jgZTnkIbop6Pos5zjgorjgZ/jgY/jgYrpoZjjgYTnlLPjgZfjgYLjgZLjgb7jgZnjgII8
+L2ZvbnQ+PC9zcGFuPjxzcGFuIA0Kc3R5bGU9IkZPTlQtU0laRTogMTAuNXB0OyBGT05ULUZBTUlM
+WTogJ01pY3Jvc29mdCBZYUhlaSBVSSc7IEJBQ0tHUk9VTkQ6IHJnYigyNTUsMjU1LDI1NSk7IFRF
+WFQtVFJBTlNGT1JNOiBub25lOyBDT0xPUjogcmdiKDAsMCwwKTsgTEVUVEVSLVNQQUNJTkc6IDBw
+dDsgbXNvLXNwYWNlcnVuOiAneWVzJzsgbXNvLWZvbnQta2VybmluZzogMC4wMDAwcHQ7IG1zby1z
+aGFkaW5nOiByZ2IoMjU1LDI1NSwyNTUpIj48YnI+PC9zcGFuPjxzcGFuIA0Kc3R5bGU9IkZPTlQt
+U0laRTogMTAuNXB0OyBGT05ULUZBTUlMWTogJ01pY3Jvc29mdCBZYUhlaSBVSSc7IEJBQ0tHUk9V
+TkQ6IHJnYigyNTUsMjU1LDI1NSk7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBDT0xPUjogcmdiKDAs
+MCwwKTsgTEVUVEVSLVNQQUNJTkc6IDBwdDsgbXNvLXNwYWNlcnVuOiAneWVzJzsgbXNvLWZvbnQt
+a2VybmluZzogMC4wMDAwcHQ7IG1zby1zaGFkaW5nOiByZ2IoMjU1LDI1NSwyNTUpIj48Zm9udCAN
+CmNvbG9yPSMyMjIyMjIgc2l6ZT0zIA0KZmFjZT1BcmlhbD7ilIDilIDilIDilIDilIDilIDilIDi
+lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
+lIDilIDilIDilIDilIDilIDilIDilIA8L2ZvbnQ+PC9zcGFuPjxzcGFuIA0Kc3R5bGU9IkZPTlQt
+U0laRTogMTAuNXB0OyBGT05ULUZBTUlMWTogJ01pY3Jvc29mdCBZYUhlaSBVSSc7IEJBQ0tHUk9V
+TkQ6IHJnYigyNTUsMjU1LDI1NSk7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBDT0xPUjogcmdiKDAs
+MCwwKTsgTEVUVEVSLVNQQUNJTkc6IDBwdDsgbXNvLXNwYWNlcnVuOiAneWVzJzsgbXNvLWZvbnQt
+a2VybmluZzogMC4wMDAwcHQ7IG1zby1zaGFkaW5nOiByZ2IoMjU1LDI1NSwyNTUpIj48YnI+PC9z
+cGFuPuKWoOeZuuihjOiAheKWoDwvcD48L2Rpdj4NCjxkaXYgY2xhc3M9aVggDQpzdHlsZT0iT1ZF
+UkZMT1c6IGhpZGRlbjsgRk9OVDogc21hbGwvMS41IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2Vy
+aWYiPg0KPGRpdiBkaXI9bHRyPjxhIA0KaHJlZj0iaHR0cHM6Ly93d3cudmFzaS52aWNhZW4uY29t
+LyI+VklTQeOCq+ODvOODiTxicj48L2E+5p2x5Lqs6YO95Lit6YeO5Yy65Lit6YeONC0zLTI8L2Rp
+dj4NCjxkaXYgZGlyPWx0cj7ilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
+lIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
+lIDilIA8YnI+wqlDb3B5cmlnaHQgDQoxOTk2LTIwMjEuJm5ic3A7QWxsIFJpZ2h0cyANClJlc2Vy
+dmVkLjxicj7nhKHmlq3ou6LovInjgYrjgojjgbPlho3phY3luIPjgpLnpoHjgZjjgb7jgZnjgII8
+L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj48YnIgDQpjbGFzcz1BcHBsZS1pbnRlcmNoYW5n
+ZS1uZXdsaW5lPjwvYm9keT48L2h0bWw+DQo=
 
-<STYLE type=3Dtext/css>
-@media only screen and (max-width: 480px) {
- .rtable {width: 100% !important;}
- .rtable tr {height:auto !important; display: block;}
- .contenttd {max-width: 100% !important; display: block; width: auto !=
-important;}
- .contenttd:after {content: ""; display: table; clear: both;}
- .hiddentds {display: none;}
- .imgtable, .imgtable table {max-width: 100% !important; height: auto;=
- float: none; margin: 0 auto;}
- .imgtable.btnset td {display: inline-block;}
- .imgtable img {width: 100%; height: auto !important;display: block;}
- table {float: none;}
- .mobileHide {display: none !important;}
- .noresponsive p {display: table; table-layout: fixed; width: 100%; wo=
-rd-wrap: break-word;}
-}
-@media only screen and (min-width: 481px) {
- .desktopHide {display: none !important;}
-}
-</STYLE>
-<!--[if gte mso 9]>
-<xml>
-  <o:OfficeDocumentSettings>
-    <o:AllowPNG/>
-    <o:PixelsPerInch>96</o:PixelsPerInch>
-  </o:OfficeDocumentSettings>
-</xml>
-<![endif]-->
-<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
-<BODY=20
-style=3D"OVERFLOW: auto; CURSOR: auto; FONT-SIZE: 14px; FONT-FAMILY: a=
-rial, helvetica, sans-serif; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PA=
-DDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #f=
-effff">
-<TABLE style=3D"BACKGROUND-COLOR: #feffff" cellSpacing=3D0 cellPadding=
-=3D0=20
-width=3D"100%" bgColor=3D#feffff>
-  <TBODY>
-  <TR>
-    <TD style=3D"FONT-SIZE: 0px; HEIGHT: 0px; LINE-HEIGHT: 0"></TD></T=
-R>
-  <TR>
-    <TD vAlign=3Dtop>
-      <TABLE class=3Drtable style=3D"WIDTH: 600px; MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-      cellPadding=3D0 width=3D600 align=3Dcenter border=3D0>
-        <TBODY>
-        <TR>
-          <TH class=3Dcontenttd=20
-          style=3D"BORDER-TOP: medium none; BORDER-RIGHT: medium none;=
- WIDTH: 600px; BORDER-BOTTOM: medium none; FONT-WEIGHT: normal; PADDIN=
-G-BOTTOM: 0px; TEXT-ALIGN: left; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
-BORDER-LEFT: medium none; PADDING-RIGHT: 0px; BACKGROUND-COLOR: transp=
-arent">
-            <TABLE style=3D"WIDTH: 100%" cellSpacing=3D0 cellPadding=3D=
-0 align=3Dleft><!--[if !mso 12 & !mso 14]><!---->
-              <TBODY>
-              <TR style=3D"HEIGHT: 3034px" height=3D3034><!--<![endif]=
---><!--[if mso 12 | mso 14]>
-<tr>
-<!--<![endif]-->
-                <TH class=3Dcontenttd=20
-                style=3D"BORDER-TOP: medium none; BORDER-RIGHT: medium=
- none; WIDTH: 600px; VERTICAL-ALIGN: middle; BORDER-BOTTOM: medium non=
-e; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; TEXT-ALIGN: left; PADDING=
--TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: medium none; PADDING-RIGHT:=
- 0px; BACKGROUND-COLOR: transparent">
-                  <P=20
-                  style=3D"MARGIN-BOTTOM: 1em; FONT-SIZE: 14px; FONT-F=
-AMILY: arial, helvetica, sans-serif; COLOR: #2d2d2d; TEXT-ALIGN: cente=
-r; MARGIN-TOP: 0px; LINE-HEIGHT: 18px; BACKGROUND-COLOR: transparent; =
-mso-line-height-rule: exactly"=20
-                  align=3Dcenter>If you are unable to see this message=
-, <A=20
-                  title=3D"" style=3D"COLOR: #2d2d2d" href=3D"https://=
-www.lrbsw.com/"=20
-                  target=3D_blank>click here to view</A>.</P><!--[if g=
-te mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0 alt=3D"500+ Styles. "=20
-                              src=3D"https://mmn.lrbsw.com/Image_1_98c=
-319dd37564ba58d2adfba110adc81.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]--><!--[if gte mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0 alt=3D"New Wayfarer Polarized=
- Sunglasses."=20
-                              src=3D"https://mmn.lrbsw.com/Image_2_b94=
-e97a7350945f89cf85ada5b197e26.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]--><!--[if gte mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0=20
-                              alt=3D"Buy Sunglasses Get The Best Deals=
- At The Lowest Prices! "=20
-                              src=3D"https://mmn.lrbsw.com/Image_3_968=
-0aa0612a1423aa5147e06a2d0b90b.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]--><!--[if gte mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0 alt=3D""=20
-                              src=3D"https://mmn.lrbsw.com/Image_4_94c=
-7ea34849a477ea9e37947af903fc1.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]--><!--[if gte mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0=20
-                              alt=3D"Great Savings &amp; Free Delivery=
- / Collection On Many Items."=20
-                              src=3D"https://mmn.lrbsw.com/Image_5_c9b=
-4035a914e40db8c24956a64ce7d64.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]--><!--[if gte mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0 alt=3D""=20
-                              src=3D"https://mmn.lrbsw.com/Image_6_e39=
-ede92445c40dca6a6e265ca5b98ef.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]--><!--[if gte mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0 alt=3D"Shop Now!"=20
-                              src=3D"https://mmn.lrbsw.com/Image_7_dd1=
-232be48a84a1cb3096308e2fc8b5c.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]--><!--[if gte mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0 alt=3D""=20
-                              src=3D"https://mmn.lrbsw.com/Image_8_1bc=
-96022c04a49eaa4c49284bc7d9bc5.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]--><!--[if gte mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0 alt=3D""=20
-                              src=3D"https://mmn.lrbsw.com/Image_9_ee8=
-4c99fdc74481597ffaa999cbcf775.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]--><!--[if gte mso 12]>
-    <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"1=
-00%"><tr><td align=3D"center">
-<![endif]-->
-                  <TABLE class=3Dimgtable style=3D"MARGIN: 0px auto" c=
-ellSpacing=3D0=20
-                  cellPadding=3D0 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                      <TD=20
-                      style=3D"PADDING-BOTTOM: 2px; PADDING-TOP: 2px; =
-PADDING-LEFT: 2px; PADDING-RIGHT: 2px"=20
-                      align=3Dcenter>
-                        <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D=
-0>
-                          <TBODY>
-                          <TR>
-                            <TD=20
-                            style=3D"BORDER-TOP: medium none; BORDER-R=
-IGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium non=
-e; BACKGROUND-COLOR: transparent"><A=20
-                              href=3D"https://www.lrbsw.com/" target=3D=
-_blank><IMG=20
-                              style=3D"BORDER-TOP: medium none; BORDER=
--RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium n=
-one; DISPLAY: block"=20
-                              hspace=3D0 alt=3D""=20
-                              src=3D"https://mmn.lrbsw.com/Image_10_e8=
-ee97d3d64f4bef8cd24a68870913e3.png"=20
-                              width=3D596></A></TD></TR></TBODY></TABL=
-E></TD></TR></TBODY></TABLE><!--[if gte mso 12]>
-    </td></tr></table>
-<![endif]-->
-                  <P=20
-                  style=3D"MARGIN-BOTTOM: 1em; FONT-SIZE: 12px; FONT-F=
-AMILY: arial, helvetica, sans-serif; COLOR: #2d2d2d; TEXT-ALIGN: left;=
- MARGIN-TOP: 0px; LINE-HEIGHT: 19px; BACKGROUND-COLOR: transparent; ms=
-o-line-height-rule: exactly"=20
-                  align=3Dleft>To learn more about how Discount Sungla=
-sses Online=20
-                  uses personal information and cookies, please see ou=
-r Privacy=20
-                  Policy and Cookie Policy.<BR><BR>Discount Sunglasses=
- Online,=20
-                  11105 Whispering Oaks Dr, Denham Springs, LA 70726 U=
-nited=20
-                  States<BR><BR>Unsubscribe from Discount Sunglasses O=
-nline <A=20
-                  title=3D"" style=3D"TEXT-DECORATION: none; COLOR: #2=
-d2d2d"=20
-                  href=3D"https://mmn.lrbsw.com/ok/return.php?p=3DTUsx=
-P29zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0Pzg2MTgy"=20
-                  target=3D_blank>updates=20
-        here</A>.</P></TH></TR></TBODY></TABLE></TH></TR></TBODY></TAB=
-LE></TD></TR>
-  <TR>
-    <TD=20
-  style=3D"FONT-SIZE: 0px; HEIGHT: 8px; LINE-HEIGHT: 0">&nbsp;</TD></T=
-R></TBODY></TABLE></BODY></HTML>
+------=_NextPart_000_033C_0151D65E.1A4DD9F0--
 
 
 
-
---===============5513614290548805425==
+--===============3180542374566737156==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5513614290548805425==
+--===============3180542374566737156==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -593,4 +317,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5513614290548805425==--
+--===============3180542374566737156==--
+
+
