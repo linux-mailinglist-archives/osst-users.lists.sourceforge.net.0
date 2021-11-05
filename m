@@ -2,82 +2,92 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id D716E44695B
-	for <lists+osst-users@lfdr.de>; Fri,  5 Nov 2021 20:56:48 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
+	by mail.lfdr.de (Postfix) with ESMTPS id 70B10446C4E
+	for <lists+osst-users@lfdr.de>; Sat,  6 Nov 2021 05:13:03 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1mj5KQ-0007bJ-Vy
-	for lists+osst-users@lfdr.de; Fri, 05 Nov 2021 19:56:47 +0000
+	id 1mjD4f-0005Ei-CW
+	for lists+osst-users@lfdr.de; Sat, 06 Nov 2021 04:13:00 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <export@taurucsraco.com>) id 1mj5KP-0007bD-DQ
- for osst-users@lists.sourceforge.net; Fri, 05 Nov 2021 19:56:45 +0000
+ (envelope-from <tf1h8tveajkdlle@ezstretchnflex.com>)
+ id 1mjD4e-0005Ec-Fx
+ for osst-users@lists.sourceforge.net; Sat, 06 Nov 2021 04:12:59 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Date:To:From:Reply-To:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:Date
+ :Message-ID:To:From:Sender:Reply-To:Cc:MIME-Version:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=pbxz2EQDS/43RRiXfR5E84DorY/lqwT/0iN31kcoe8A=; b=EewINPrLD8DGy0IK4YRkzkcplT
- KCqJrLBPPFqsw+tRv+/77besU45lPboDaAno9ZV8ZwINHOVUEzHUuZ2yu6mAiiEBavPKQ/jjQ0pXR
- fdZy6kZVuYwBtieGQyr5WVod3ML3aorvWJMTLJD4NNXI9Wmbr447mcPP+H2DBWjvUCM0=;
+ bh=bCe+CNliy9ilBLUszEuVkG3WES2FK+0/TuhfINNjX84=; b=EQKOO88h0E57zCzR+zrOZiW8Hm
+ BTpiunsTe99J885owo3CRBYMzyJnlDGmFVfor2Bo0OuV5s2up/8oBle61j1oiCv0gGcaZWQbkO0DY
+ OpTMzSR//Jfb3H7PgfzBpNtt3qf+C5dx44UbDzZz/dHCxvGguDGo3gCdcL0cdVVKPh+E=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
- Date:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Subject:Content-Transfer-Encoding:Content-Type:Date:Message-ID:To:From:
+ Sender:Reply-To:Cc:MIME-Version:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=pbxz2EQDS/43RRiXfR5E84DorY/lqwT/0iN31kcoe8A=; b=Q
- BusAXhHw6Tiy//n2fsv6NoDlsG1FfF16maYCDLoITYz+N3vacgo9AX7jDWU61xABg8rg0Nw2LsAZn
- JqTvlME3Dgvr6ChxIfX3gqSR1RtW+Zn495FTYiBbEFZlE+aQITasjgYPuUrY2hn72n0matMR/Fs4H
- g2LffYWvvWiGOlgw=;
-Received: from [139.59.46.209] (helo=bizcloud-server.japan-retail.or.jp)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
- id 1mj5KO-0033CQ-31
- for osst-users@lists.sourceforge.net; Fri, 05 Nov 2021 19:56:45 +0000
-Received: from taurucsraco.com (bizcloud-server.japan-retail.or.jp [IPv6:::1])
- by bizcloud-server.japan-retail.or.jp (Postfix) with ESMTP id
- BBF4367A213
- for <osst-users@lists.sourceforge.net>; Fri,  5 Nov 2021 15:13:33 +0000 (UTC)
-From: Mr. Kyle<export@taurucsraco.com>
-To: osst-users@lists.sourceforge.net
-Date: 05 Nov 2021 08:13:37 -0700
-Message-ID: <20211105081336.58410C2DD6CA9DEB@taurucsraco.com>
-MIME-Version: 1.0
-X-Spam-Score: 8.5 (++++++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ List-Owner:List-Archive; bh=bCe+CNliy9ilBLUszEuVkG3WES2FK+0/TuhfINNjX84=; b=X
+ wdq7NqYQvUe5bvzTTKe+r74ayMtoZugJIiK09Cgcd6zL/uCcsB9Dd0a/rqFyreTzgnlhJcDz2ZUtu
+ wVjxx05ObmEwmMQMSvJX5vuTB+XY1K1URnbpYj5aMeNuYz+ktLOiXpd/QuT6tWci6z/IqVyibkbdn
+ hnhH5BwEzeAE0I0M=;
+Received: from [1.13.175.28] (helo=163.com)
+ by sfi-mx-2.v28.lw.sourceforge.com with smtp (Exim 4.92.3)
+ id 1mjD4b-0007jV-Rf
+ for osst-users@lists.sourceforge.net; Sat, 06 Nov 2021 04:12:59 +0000
+Received: from affordablebilliardservice.com ([127.0.0.1])
+ (envelope-sender <tf1h8tveajkdlle@ezstretchnflex.com>)
+ by 127.0.0.1 with ESMTP
+ for <osst-users@lists.sourceforge.net>; Fri, 05 Nov 2021 14:42:01 +0800
+X-WM-Sender: tf1h8tveajkdlle@ezstretchnflex.com
+X-Priority: 3
+X-Mailer: lOAuYRXSas 15
+From: "=?gb2312?Q?AOfIWin?=" <Tf1H8tVEaJKDLLE@ezstretchnflex.com>
+To: "=?gb2312?Q?osst-users?=" <osst-users@lists.sourceforge.net>
+Message-ID: <6c4c7f2a35229632440b91e01d99c6b7@ezstretchnflex.com>
+Date: Fri, 05 Nov 2021 14:42:01 +0800
+X-Spam-Score: 8.7 (++++++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Dear "osst-users", We have inquiry about your product, Please
- this is my second mail to this your email: "osst-users@lists.sourceforge.net"
- Kindly send us your company latest catalogue and Your prices list, We may
- place an urgent order 
- Content analysis details:   (8.5 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  owherzgvhwqhy ¡¶·çÁ÷ÔÀÄ¸¡· ÐíêÍËÌÀÏÆÅÈ¥»ú³¡£¬»Ø¼ÒÊ±ÒÑ¾­¿ìÍíÉÏÊ®µãÁË¡£
+    ÎÝÀïÖ»ÓÐÔÀÄ¸µÄ·¿¼ä»¹ÁÁ×ÅµÆ£¬»»Ð¬×ÓµÄÊ±ºò£¬ËûÃÍÈ»Ìýµ½ÔÀÄ¸·�
+    [...] 
+ 
+ Content analysis details:   (8.7 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [139.59.46.209 listed in psbl.surriel.com]
- 0.5 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [139.59.46.209 listed in dnsbl-1.uceprotect.net]
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.0 HK_NAME_MR_MRS         No description available.
- 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
- 1.2 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML
- only
- 1.7 TO_NO_BRKTS_FROM_MSSP  Multiple header formatting problems
- 0.0 FROM_MISSP_EH_MATCH    From misspaced, matches envelope
+  0.3 HK_RANDOM_FROM         From username looks random
+  1.0 HK_RANDOM_ENVFROM      Envelope sender username looks random
+  1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+                             https://senderscore.org/blocklistlookup/
+                             [1.13.175.28 listed in bl.score.senderscore.com]
+  0.5 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+                             [1.13.175.28 listed in dnsbl-1.uceprotect.net]
+  0.0 SPF_HELO_FAIL          SPF: HELO does not match SPF record (fail)
+ [SPF failed: Please see http://www.openspf.org/Why?s=helo;id=163.com;ip=1.13.175.28;r=util-spamd-1.v13.lw.sourceforge.com]
+  0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
+ [SPF failed: Please see http://www.openspf.org/Why?s=mfrom;id=tf1h8tveajkdlle%40ezstretchnflex.com;ip=1.13.175.28;r=util-spamd-1.v13.lw.sourceforge.com]
+  0.8 DATE_IN_PAST_12_24     Date: is 12 to 24 hours before Received: date
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  2.6 MIXED_ES               Too many es are not es
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  0.0 NORDNS_LOW_CONTRAST    No rDNS + hidden text
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1mj5KO-0033CQ-31
-Subject: [Osst-users] [SPAM] Product  and order  inquiry,
+X-Headers-End: 1mjD4b-0007jV-Rf
+Subject: [Osst-users] =?gb2312?b?W1NQQU1dIHNpftPrftChLtLMLtfTLrykLsfpfrrN?=
+ =?gb2312?b?LbjnLbjnLbK7LtKqfrXIvquyysTayN0gIHR0dmRpcQ==?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -89,181 +99,79 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: wlove@taurucsraco.com
-Content-Type: multipart/mixed; boundary="===============2035872678543284335=="
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============3434972474502771081=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============2035872678543284335==
-Content-Type: text/html
-Content-Transfer-Encoding: quoted-printable
+--===============3434972474502771081==
+Content-Type: text/html;
+	charset="gb2312"
+Content-Transfer-Encoding: base64
 
-<!DOCTYPE HTML>
-
-<html><head><title></title>
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-</head>
-<body style=3D"margin: 0.4em;">
-<pre style=3D"border-width: 0px; margin: 0px 0cm 7.5pt; border-radius: 0px;=
- text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: =
-0px; letter-spacing: normal; font-family: &#26032;&#32048;&#26126;&#39636;,=
- serif; font-size: 12pt; font-style: normal; font-weight: 400; word-spacing=
-: 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(25=
-5, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -w=
-ebkit-text-stroke-width: 0px;=20
-text-decoration-style: initial; text-decoration-color: initial;"><span styl=
-e=3D'color: rgb(53, 28, 117); font-family: "Arial Black", sans-serif; font-=
-size: 10.5pt;'><span style=3D"color: rgb(60, 115, 170); font-family: Verdan=
-a, sans-serif;"><span style=3D'color: rgb(53, 28, 117); font-family: "arial=
- black", sans-serif;'><span style=3D"color: black; font-family: Verdana, sa=
-ns-serif; font-size: 10pt;">
-<pre style=3D"background: white; border-width: 0px; margin: 0px 0cm 7.5pt; =
-border-radius: 0px; text-align: left; color: rgb(0, 0, 0); text-transform: =
-none; text-indent: 0px; letter-spacing: normal; font-family: &#26032;&#3204=
-8;&#26126;&#39636;, serif; font-size: 12pt; font-style: normal; font-weight=
-: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-=
-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-w=
-idth: 0px; text-decoration-style: initial;=20
-text-decoration-color: initial;"><span style=3D'color: rgb(53, 28, 117); fo=
-nt-family: "Arial Black", sans-serif; font-size: 10.5pt;'><span style=3D"co=
-lor: rgb(60, 115, 170); font-family: Verdana, sans-serif;"><span style=3D'c=
-olor: rgb(53, 28, 117); font-family: "arial black", sans-serif;'><span styl=
-e=3D"color: black; font-family: Verdana, sans-serif; font-size: 10pt;">Dear=
-<span>&nbsp;"osst-users",</span></span></span></span></span></pre></span></=
-span></span></span></pre>
-<pre style=3D"border-width: 0px; margin: 0px 0cm 12pt; border-radius: 0px; =
-text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0=
-px; letter-spacing: normal; font-family: &#26032;&#32048;&#26126;&#39636;, =
-serif; font-size: 12pt; font-style: normal; font-weight: 400; word-spacing:=
- 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255=
-, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -we=
-bkit-text-stroke-width: 0px; text-decoration-style:=20
-initial; text-decoration-color: initial;"><span style=3D"font-family: Verda=
-na, sans-serif; font-size: 10pt;">We have inquiry about your product, Pleas=
-e<span>&nbsp;</span><span style=3D"font-family: Verdana, sans-serif; font-s=
-ize: 10pt;">this is my second mail to this your email:<span>&nbsp;<font col=
-or=3D"#5825da">"osst-users@lists.sourceforge.net"</font></span></span></spa=
-n></pre>
-<pre style=3D"border-width: 0px; margin: 0px 0cm 12pt; border-radius: 0px; =
-text-align: left; color: rgb(0, 0, 0); text-transform: none; text-indent: 0=
-px; letter-spacing: normal; font-family: &#26032;&#32048;&#26126;&#39636;, =
-serif; font-size: 12pt; font-style: normal; font-weight: 400; word-spacing:=
- 0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255=
-, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -we=
-bkit-text-stroke-width: 0px; text-decoration-style:=20
-initial; text-decoration-color: initial;"><span style=3D"font-family: Verda=
-na, sans-serif; font-size: 10pt;">Kindly send us your company latest catalo=
-gue and&nbsp;Your prices list, We may place an urgent order<span style=3D"f=
-ont-family: Verdana, sans-serif; font-size: 10pt;"><div style=3D'color: rgb=
-(29, 34, 40); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; =
-font-size: 16px;'>&nbsp;</div>
-<div style=3D'color: rgb(29, 34, 40); font-family: "Helvetica Neue", Helvet=
-ica, Arial, sans-serif; font-size: 16px;'>
-<span style=3D"font-family: arial, sans-serif;">Thanks &amp; <br><br>
-Best &nbsp;Regards&#8230;<span style=3D"color: rgb(0, 0, 0); text-transform=
-: none; text-indent: 0px; letter-spacing: normal; font-family: verdana, san=
-s-serif; font-size: large; font-style: normal; font-weight: 400; word-spaci=
-ng: 0px; float: none; display: inline !important; white-space: normal; orph=
-ans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligat=
-ures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; te=
-xt-decoration-style: initial;=20
-text-decoration-color: initial; text-decoration-thickness: initial;"><font =
-size=3D"3">
-<p style=3D'color: rgb(29, 34, 40); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
-ans-serif; font-size: small; font-style: normal; font-weight: 400; word-spa=
-cing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligatur=
-es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
--decoration-style: initial; text-decoration-color: initial; text-decoration=
--thickness: initial;'><strong>Kyle Roseneck</strong>
-</p><p style=3D'color: rgb(29, 34, 40); text-transform: none; text-indent: =
-0px; letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Aria=
-l, sans-serif; font-size: small; font-style: normal; font-weight: 400; word=
--spacing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-lig=
-atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
-text-decoration-style: initial; text-decoration-color: initial; text-decora=
-tion-thickness: initial;'>Sales Representative</p>
-<p style=3D'color: rgb(29, 34, 40); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
-ans-serif; font-size: small; font-style: normal; font-weight: 400; word-spa=
-cing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligatur=
-es: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text=
--decoration-style: initial; text-decoration-color: initial; text-decoration=
--thickness: initial;'>
-<span style=3D"color: rgb(34, 34, 34); font-family: Arial, Helvetica, sans-=
-serif;"><b>TAURUS CRACO MACHINERY INC</b></span></p>
-<p style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
-ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
-ing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligature=
-s: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-=
-decoration-style: initial; text-decoration-color: initial; text-decoration-=
-thickness: initial;'>
-282 Orenda Rd, Brampton,&nbsp;<br>ON L6T 4X6, Canada<span style=3D"color: r=
-gb(153, 0, 0); font-family: arial, sans-serif; font-size: large;"><font siz=
-e=3D"5"><font color=3D"#9d626f"><font><font><span style=3D"font-family: Ver=
-dana, sans-serif;"><font face=3D"Arial"><font style=3D"font-family: monospa=
-ce;"><font><font color=3D"#444444" face=3D"verdana, sans-serif"><br class=
-=3D"Apple-interchange-newline"></font></font></font></font></span></font></=
-font><br><br><strong>
-</strong></font></font></span></p></font>
-<p style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
-ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
-ing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligature=
-s: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-=
-decoration-style: initial; text-decoration-color: initial; text-decoration-=
-thickness: initial;'><br></p></span>
-<p style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
-ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
-ing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligature=
-s: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-=
-decoration-style: initial; text-decoration-color: initial; text-decoration-=
-thickness: initial;'><br></p></span>
-<p style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
-ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
-ing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligature=
-s: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-=
-decoration-style: initial; text-decoration-color: initial; text-decoration-=
-thickness: initial;'><br></p></div>
-<p style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
-ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
-ing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligature=
-s: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-=
-decoration-style: initial; text-decoration-color: initial; text-decoration-=
-thickness: initial;'><br></p></span>
-<p style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
-ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
-ing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligature=
-s: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-=
-decoration-style: initial; text-decoration-color: initial; text-decoration-=
-thickness: initial;'><br></p></span>
-<p style=3D'color: rgb(34, 34, 34); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: "Helvetica Neue", Helvetica, Arial, s=
-ans-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spac=
-ing: 0px; white-space: normal; orphans: 2; widows: 2; font-variant-ligature=
-s: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-=
-decoration-style: initial; text-decoration-color: initial; text-decoration-=
-thickness: initial;'><br></p></pre>
-<div style=3D'color: rgb(29, 34, 40); font-family: "Helvetica Neue", Helvet=
-ica, Arial, sans-serif; font-size: 16px;'><br></div><p>
-</p>
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPjwvSEVBRD4NCjxCT0RZPg0KPFA+PEZPTlQgDQpjb2xvcj0jZmZm
+ZmZmPm93aGVyemd2aHdxaHk8QlI+PC9GT05UPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOzxGT05UIA0KY29sb3I9YmxhY2s+Jm5ic3A7Jm5i
+c3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IDxGT05UIA0Kc2l6ZT00PqG2t+fB99TAxLihtzwv
+Rk9OVD48L0ZPTlQ+PEJSPjxCUj48Rk9OVCANCnNpemU9ND7Q7erNy8zAz8bFyKW7+rOho6y72LzS
+yrHS0b6tv+zN7cnPyq6148HLoaM8QlI+zt3A79a709DUwMS4tcS3v7zku7nBwdfFtcajrLu70KzX
+07XEyrG68qOsy/vDzci7zP21vdTAxLi3v7zkwO+0q7P2wLTBy9K70Km5xbnWtcTJ+dL0oaOyu8/x
+yse6otfT1Nrm0sTWoaM8QlI+zP21vc7dwO/UwMS4tcTJ637S97rN373T76Os0O3qzb7ZxvC1xMrW
+uM+99MLkwcvPwsiloaPQxMDvyty1vcHLvt6087XE1fC+qqOs1MDEuLLFy8TKrrbgy+qjrNPQxMe3
+vcPmtcTQ6MfzutzV/bOjo6y/ybvDz+u21M/zysfX1Ly6o6zV4srHy/vU9cO0trzDu9PQz+u1vbXE
+oaM8QlI+08zSycHL0rvV86OszP3XxcDvw+ayu7bPtcS9v7Sto6zLv7rBsru5y7ywwa6z3LXE373T
+76Os0O3qzbP2z9bBy8e/wdK1xMn6wO23tNOmo6yyu7/J0tbWxrXEx+HH4c7V16HDxbDRo6yw0be/
+w8W08r+qwcvSu8z1t+zPtqGjPEJSPr34yOvK08/ftcTsvey7vrDP86OsyMPL+9DE0arF7MXIwcvG
+8MC0oaPUwMS4zMnU2rSyyc+jrLvrye3Su8u/sru50qOsxqS39LDXtcTKpLn9tqzRqaGj0rvLq9De
+s6S1xM3IuN+438ynxvCjrMrWwO+99NTc18XSu7j5u8a5z6GjPEJSPrWx1MDEuLDR0rvLq7OkzcjC
+5M/CwLS1xMqxuvKjrMv7v7S1vcHLuPy8076rssq1xLK/t9ajrLG7ztq62rOkt6LV2tHawcvSu9Cp
+tcTmr7rDw+bI3cnxzKzD1MDroaM8QlI+wNvBy7rzo6zUwMS4t8XC/cHLytbJz7XEtq/X96Os1+zA
+79LAyLu0rc+isru2z6GjPEJSPqGw0O3qzaOsxOO2vLrN0KHGvL3hu+nBy6OsyLTSu9axvdDO0rCi
+0syjrM7Svs3WqrXAxOO21LCi0szT0Lu1xO7Nt6Gjtb2117u5ysfIw8TjuPi1w7PRwcuho6GxPEJS
+Psz9tb3UwMS419TR1NfU0++1xLbUu7CjrNDt6s2wtcy+wcvSu8n5o6zU59aqtcDKx9Xi0fm1xLuw
+oa2hrTxCUj6yu8jdy/u24M/ro6zUwMS4xvDJ7bXEtq/X96OsyMPL+7jPvfSw0dei0uLBpsirsr+3
+xbvYtb3By7Syyc+hozxCUj7UwMS41/jG8MntwLS686Os1MDEuM3qyKvDu9PQ16LS4rW9tMu/zNPQ
+yMvU2s21v7TX1Ly6oaM8QlI+obDE49Xmyse7tcvAwcujrNChxrzSu9ffo6zE477NttSwotLM1eLR
++aGjobHUwMS40rux38u118WjrNK7sd+w0cfhx+G1xMSmssHBy8G9z8Kho9Dt6s3WqrXAsrvE3NTZ
+v7TPwsilwcujrMfhx+G1xLnYyc+3v8PFo6z15srW9ea9xbXE19/By7P2yKWho7K7xNzIw9TAxLjW
+qrXA19S8ur+0tb3By9Xi0rvEu6GjPEJSPtTauf21wMDvs+nBy9K7uPnRzLrzo6zL+7LF1tjQwsTD
+s/bUv7PXtPK/qre/w8Who73hufvUwMS40rK41brDtNOy3sv5wO+z9sC0o6zJ7cnPtKnXxdK7vP66
+2smrtcTCtrzny6/IuaGjPEJSPtDt6s2jrMTju9jAtMCyoaOhsdTAxLjOotCm18XOyrXAoaM8QlI+
+0O3qzcTU19PA79K7z8K+zbihz9az9sC0wcu41bLFv/rK07W9tcS7rcPmo6yyu77109DQqdDE0Omj
+rNCm18W148HLz8LNt6GjPEJSPqGw0KHGvLK7ysfKrtK7teO1xLfJu/rC8D/E49T1w7TP1tTavs27
+2MC0wcs/obE8QlI+oa7FtqOsy8m1vcTHtvnBy6OsztK+zbvYwLTBy6Gjy/26zc2sysLSu7/ptcSh
+o6Gx0O3qzb6q47W1xLeiz9aho9TAxLi1xNDYsr/U2suvyLnA78PmuN+437XEy8rBotfFo6zBvb/F
+uuzJo7n70uyzo7XEw/fP1KGjy6/IucrHVtfWweyjrMK2s/bAtMHL0rvGrNKr0du1xNGpsNeho8v7
+srvTybXD0crBy8/Cv9rLrqOsytPP38Lktb3By9TAxLi1xNChuLm0pqOs0rK/tLK71ebH0KOstavA
+78Pm06a4w8rHyrLDtLa8w7u0qaGjPEJSPtTAxLjLxrr11eKyxdLiyra1vcHL19S8urXE0sLXxbK7
+tPO1w8zlo6yypsHLz8K2+rzKtcS3osu/o6zIw8v7uM+99LvYzt3Lr771oaM8QlI+0O3qzeDFwcvS
+u8n5oaO72M7dv7/U2rSyzbejrNDE0PfKvNbVxNHS1Ma9vrKhozxCUj7X1LTT1MDEuMC0vNLA77Dv
+w6a0+Lqi19O686Osy/u21NTAxLiyu8rH0ru148/rt6i2vMO709C5/aOstavKx7TTzrS40rbgz+uh
+o827yLu1w9aq1MDEuLDR19S8urWxs8nBy7vDz+u21M/zo6zQxMDvu7nKx9PQ18W63Me/wdK1xM+y
+1MO40KGjPEJSPqGwsKXRvaGjobHN4sPmzbvIu7SrwLTBy9TAxLjLxr2/y8a0rbXEyfnS9KGjoaOh
+o6GjoaOho6GjoaOho6GjoaM8QlI+PEJSPtPJ09qz37bIz97Wxsfr1NpW0MW5q9bausXW0MztvNOh
+vrTzu6jG387Eob+52NeiuvPU2rmr1tq6xbXju/e8zND41MS2waOsvLS/ydaxvdPUxLbBxbYhPEJS
+PjxCUj652NeiuvO4/NPQuPy24L6rssrU2srps8fK19KzsPG1pcDvxbZ+PEJSPjwvRk9OVD48QlI+
+PEJSPjxGT05UIA0KY29sb3I9YmxhY2s+QnV0IGluZGlmZmVyZW50IGFuZCB3ZWFyeSChqiBvbiBh
+Y2NvdW50IG9mIHRoZSB3ZWF0aGVyIKGqIGFzIHRoZSB0b25lIHdhcywgaGlzIGV5ZXMgcmVzdGVk
+IHdpdGggYSBraW5kbHksIGNvcmRpYWwgbGlnaHQgb24gdGhlIG5ld2NvbWVyLCBhIHlvdW5nIGZl
+bGxvdyBvZiBzY2FyY2VseSB0d2VudHksIGxpa2UgaGltc2VsZiBpbiBmZWF0dXJlLCB0aG91Z2gg
+bXVjaCBzbWFsbGVyIGFuZCBzbGlnaHRlciBpbiBidWlsZDsgYSBncmFjZWZ1bCBib3kgZW5vdWdo
+LCB3aXRoIG5vIGZhdWx0IGluIGhpcyBmYWNlLCBleGNlcHQgYSBjZXJ0YWluIHdlYWtuZXNzIGlu
+IHRoZSBtb3V0aCwganVzdCBzaGFkb3dlZCBvbmx5LCBhcyB5ZXQsIHdpdGggZG93bi48L0ZPTlQ+
+PC9QPjwvQk9EWT48L0hUTUw+DQo=
 
 
-</body></html>
 
-
---===============2035872678543284335==
+--===============3434972474502771081==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============2035872678543284335==
+--===============3434972474502771081==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -274,4 +182,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============2035872678543284335==--
+--===============3434972474502771081==--
