@@ -2,48 +2,102 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id DFF014620CD
-	for <lists+osst-users@lfdr.de>; Mon, 29 Nov 2021 20:44:17 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id E70BC4662F5
+	for <lists+osst-users@lfdr.de>; Thu,  2 Dec 2021 13:00:44 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1mrmZU-0006s4-Bx
-	for lists+osst-users@lfdr.de; Mon, 29 Nov 2021 19:44:16 +0000
+	id 1msklX-00052Y-Ha
+	for lists+osst-users@lfdr.de; Thu, 02 Dec 2021 12:00:43 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <noreply@wetransfer.com>) id 1mrmZQ-0006qz-UO
- for osst-users@lists.sourceforge.net; Mon, 29 Nov 2021 19:44:13 +0000
+ (envelope-from <dul.pip@pspwan.com>) id 1msklV-00052S-Ry
+ for osst-users@lists.sourceforge.net; Thu, 02 Dec 2021 12:00:41 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
- To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=IPmLo1X4yptFL7PAfh/aZ9nRqDJfez8X5ds91kdOx3c=; b=RcWsIlNkQsLDdz/Bp7rSmd/G9b
- gZOwohBZ6reUF523o6/ioatv3P3duzOKfdBW1zW86Ta+90sYTR432rneDdbILjL2q2NibupyFZoEJ
- n4ypQIIfSnFVuihT+pY5PcjYgs6ouzRBLuhcuulRpDqsZ/i2F5EX+iJcKQwYJZ7ps/Pk=;
+ bh=c1Kja11ZpJi8mnQkYj3AxpA+xgG6eGMi9pQCM49Wfdw=; b=gVUNhb23J8rQAah0Eds70G893X
+ vFxf0iJJWYAFUqL25zvX00pxUvDZ2ToypP8kgSh60FYGeLeE9gjOBXJd//vU5WCbhF5y/l9wOxq4B
+ RU7CyphqEMhCPl/Ttkp27kavS8XlnDPQPKfPogVdbpdEupq46c+09mwVpG6cDCEDJP4I=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=IPmLo1X4yptFL7PAfh/aZ9nRqDJfez8X5ds91kdOx3c=; b=j
- o/P9b+ro8+TTj1qLEvoYW9lCIHcfFj5wHJMPlEvpk4xZeYiEzNibBJ6GaOPM7J0Mbp2tuXZqTr8c3
- Pall2gqarDoEw5LkzdF/OAaU2Sx0rQ2H58jKoZZKbrmG2FdKH6oMNREMrKHML8Az/eOMBOv7XPzYp
- AjqEpWTDrcQ/9Lu4=;
-Received: from [185.222.57.140] (helo=wetransfer.com)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
- id 1mrmYw-00EfA5-FZ
- for osst-users@lists.sourceforge.net; Mon, 29 Nov 2021 19:44:12 +0000
+ List-Owner:List-Archive; bh=c1Kja11ZpJi8mnQkYj3AxpA+xgG6eGMi9pQCM49Wfdw=; b=H
+ NkOkXQttRURgWEf6/iRbw7ITZOoMK5UppIeaW28Uu6IrKZZWj/ty4yGatHCpaiysqlxuO2LTxsijI
+ I4LhfI9dFCB8jd7V8d5PoUTQtYkeCa4/WTNTrNV0dJcDYX1L1oLeeG79Qsg/uOd+ralQ6hyWcyDXl
+ 1oBp22IPV0Tj/sSI=;
+Received: from slot0.pspwan.com ([194.99.46.154])
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
+ id 1msklV-001Ra3-8I
+ for osst-users@lists.sourceforge.net; Thu, 02 Dec 2021 12:00:41 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=pspwan.com;
+ h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding;
+ i=dul.pip@pspwan.com; bh=sej6TYtOKZHtrSEPTOBiAnx97c4=;
+ b=fnuorheqWA3do0ws0gWDnH8Q3d4rHZjMORI1Jl0AGUI1vtd36Aw8z/nG3a6C575TmI6NoRigpwuN
+ OQeWS/u5XHjIvcGisJdGEScakItxm2QiTa2TKyoite++UkSZ6suyuTa05C34UlneQc/j9+eTpab2
+ yV68g5mb5Nf/oLHejBlmXmxX90JxLJbQqQfNTgJ87Ee1TQ5gdeouogGsbXdUrmBU1bCUmTNFhHNu
+ VtS9zOQ6RiNgUJe7IyA+T3ygJEoxSzV70uX+l/R+9RuxRrwStPhxXEE0/PcpBlzBspOUVf70YSl+
+ dcx30K3MoaHIEaUfxqK/A8FwcGKYI4tsgY/OuA==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=pspwan.com;
+ b=YKZGnwv6idjLcRM8I0lUGi0ZpHIzm3MM5uHObWImUE2QQVFzTqufA1Qgv+3terQYbi80oc9nuodv
+ 4Ps+bCDyR1vXrhSHgIOXmPhTZJNwHM9EFykJbS/b4vU/Cp6vFCSTqiKeckSWJSkZYqdWQRZfl5gE
+ tv29Hl5KS3Dej6Ug9gwqzZKL0Uibm1x67YM/OE7oYx1WUK5LdJjl6w7cJzXhxjsRBntNrQOrxpDJ
+ jWpRsg8q59o52AqtZaAQVAkfHBnBcdb7mQKN8VWGL8+nGZjkR7FwRJwjGDkEQieLbji1XTY+6eZg
+ KciQKr8Es2m6bC1UOrq0XuIZZMD7d/g+MeZAEg==;
+From: Bio pharm <dul.pip@pspwan.com>
 To: osst-users@lists.sourceforge.net
-Date: 29 Nov 2021 20:43:36 +0100
-Message-ID: <20211129204336.72216E13E670955B@wetransfer.com>
+Date: 02 Dec 2021 12:58:30 +0100
+Message-ID: <20211202125829.B02683D07237BB78@pspwan.com>
 MIME-Version: 1.0
-X-Headers-End: 1mrmYw-00EfA5-FZ
-Subject: [Osst-users] info@lists.sourceforge.net sent you files via
- WeTransfer
+X-Spam-Score: 6.7 (++++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ Content preview:  Good Day osst-users@lists.sourceforge.net,
+ Thank you for taking
+ your time to read this offer. My name is Leonidas Akylas. I'm Assistant
+ Scientist
+ with one of the leading Bio pharmaceutical company, I have a profitable and
+ genuine business proposal I wish to share with you. This may not be your
+ [...] Content analysis details:   (6.7 points, 6.0 required)
+ pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: pspwan.com]
+ 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+ blocklist [URIs: pspwan.com]
+ 1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+ https://senderscore.org/blocklistlookup/
+ [194.99.46.154 listed in bl.score.senderscore.com]
+ 0.5 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [194.99.46.154 listed in dnsbl-1.uceprotect.net]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+X-Headers-End: 1msklV-001Ra3-8I
+Subject: Re: [Osst-users] Partnership Proposal
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -55,178 +109,40 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: WeTransfer via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: WeTransfer <noreply@wetransfer.com>
-Content-Type: multipart/mixed; boundary="===============5165383133977809696=="
+Reply-To: Leonidas Akylas <leonidas.akyla@gmail.com>
+Content-Type: multipart/mixed; boundary="===============4348735150595653091=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-
---===============5165383133977809696==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_000_0012_77F361FA.CE66ECC3"
-
-
-------=_NextPart_000_0012_77F361FA.CE66ECC3
-Content-Type: text/plain;
-	charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-Dear, osst-users
-------=_NextPart_000_0012_77F361FA.CE66ECC3
+--===============4348735150595653091==
 Content-Type: text/html;
 	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
 
-<html><head><title></title>
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-</head>
-<body style=3D"margin: 0.4em;">
-<table width=3D"600" align=3D"center" class=3D"inner_wrapper_table table_ce=
-ntered" style=3D"margin: 0px auto; padding: 0px; width: 600px; color: rgb(0=
-, 0, 0); text-transform: none; letter-spacing: normal; font-family: Verdana=
-; font-size: 12px; font-style: normal; font-weight: 400; word-spacing: 0px;=
- white-space: normal; border-collapse: collapse; table-layout: fixed; min-w=
-idth: 600px; border-spacing: 0px; orphans: 2; widows: 2; background-color: =
-rgb(244, 244, 244); font-variant-ligatures: normal;=20
-font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-=
-thickness: initial; text-decoration-style: initial; text-decoration-color: =
-initial;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td w=
-idth=3D"600" align=3D"left" class=3D"inner_wrapper_td" valign=3D"top" style=
-=3D"margin: 0px; padding: 0px; width: 600px; min-width: 600px;">
-<table class=3D"table_full_width" style=3D"margin: 0px; padding: 0px; width=
-: 600px; border-collapse: collapse; table-layout: fixed; border-spacing: 0p=
-x;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=
-=3D"left" class=3D"logo_outer_wrapper_td" valign=3D"top" style=3D"margin: 0=
-px; padding: 55px 0px 0px; width: 600px;">
-<table class=3D"table_full_width" style=3D"margin: 0px; padding: 0px; width=
-: 600px; border-collapse: collapse; table-layout: fixed; border-spacing: 0p=
-x;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><td align=
-=3D"left" class=3D"logo_inner_wrapper_td" valign=3D"top" style=3D"margin: 0=
-px; padding: 0px; width: 600px; font-size: 10px;" bgcolor=3D"#409fff"><cent=
-er>
-<table align=3D"center" class=3D"table_centered" style=3D"margin: 0px auto;=
- padding: 0px; width: auto; border-collapse: collapse; table-layout: fixed;=
- border-spacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tb=
-ody><tr><td height=3D"16" align=3D"left" valign=3D"top" style=3D"margin: 0p=
-x; padding: 0px; width: 56px; height: 16px;"></td></tr><tr><td align=3D"lef=
-t" valign=3D"top" style=3D"margin: 0px; padding: 0px; width: 56px;">
-<a href=3D"https://deref-mail.com/mail/client/1LPnNBH9KeI/dereferrer/?redir=
-ectUrl=3Dhttps%3A%2F%2Fwetransfer.com%2F%3Futm_campaign%3DWT_email_tracking=
-%26utm_content%3Dgeneral%26utm_medium%3Dlogo%26utm_source%3Dnotify_recipien=
-t_email" target=3D"_blank">
-<img width=3D"56" align=3D"center" class=3D"logo_blue_img" style=3D"margin:=
- 0px; padding: 0px; border: currentColor; border-image: none; width: 56px; =
-height: auto; line-height: 10px; text-decoration: none; display: block;" al=
-t=3D"Click 'Download images' to view images" src=3D"https://prod-cdn.wetran=
-sfer.net/assets/email/v2/logos/blue_2x-10b63a7e9107c08c8d89a3f8016c133ae4fc=
-f5afb3e59a65fb17e21eeb83148d.png" border=3D"0"></a></td></tr><tr>
-<td height=3D"11" align=3D"left" valign=3D"top" style=3D"margin: 0px; paddi=
-ng: 0px; width: 56px; height: 11px;"></td></tr></tbody></table></center></t=
-d></tr></tbody></table></td></tr></tbody></table><table class=3D"main_conte=
-nt_outer_wrapper_table" style=3D"margin: 0px; padding: 0px; width: 600px; b=
-order-collapse: collapse; table-layout: fixed; border-spacing: 0px;" bgcolo=
-r=3D"#ffffff" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
-<td align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width=
-: 600px;"><table class=3D"table_full_width" style=3D"margin: 0px; padding: =
-0px; width: 600px; border-collapse: collapse; table-layout: fixed; border-s=
-pacing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><=
-td align=3D"left" class=3D"padded_mobile main_content_inner_wrapper_td" val=
-ign=3D"top" style=3D"margin: 0px; padding: 0px; width: 600px;">
-<table class=3D"table_full_width" style=3D"margin: 0px; padding: 0px; width=
-: 600px; border-collapse: collapse; table-layout: fixed; border-spacing: 0p=
-x;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
-<td align=3D"center" class=3D"main_heading_td unpadded_mobile main_heading_=
-td_wider" valign=3D"top" style=3D'margin: 0px; padding: 60px 80px 0px; widt=
-h: 440px; color: rgb(23, 24, 26); line-height: 30px; font-family: "FreightS=
-ans Pro", "Segoe UI", "SanFrancisco Display", Arial, sans-serif; font-size:=
- 26px; font-style: normal; font-weight: normal; word-spacing: 0px;'><font c=
-olor=3D"#409fff">info@</font>
-<a class=3D"main_heading_email_link" style=3D"color: rgb(23, 24, 26); font-=
-weight: normal; text-decoration: none;" href=3D"mailto:-Domain@-]]" target=
-=3D"_blank"><span class=3D"main_heading_email_link" style=3D"color: rgb(64,=
- 159, 255); font-weight: normal; text-decoration: none;">lists.sourceforge.=
-net</span></a><br>sent you some files</td></tr><tr>
-<td align=3D"center" class=3D"files_details_td unpadded_mobile" valign=3D"t=
-op" style=3D'margin: 0px; padding: 20px 80px 0px; width: 440px; color: rgb(=
-106, 109, 112); line-height: 23px; font-family: "Fakt Pro", "Segoe UI", "Sa=
-nFrancisco Display", Arial, sans-serif; font-size: 14px; font-style: normal=
-; font-weight: normal; word-spacing: 0px;'>9 files, 1.49 MB in total &#1253=
-9; Will be deleted on&nbsp;2nd December, 2021</td></tr><tr>
-<td align=3D"left" class=3D"button_outer_wrapper_td unpadded_mobile" valign=
-=3D"top" style=3D"margin: 0px; padding: 40px 160px 0px; width: 280px;"><tab=
-le class=3D"table_full_width button_table" style=3D"margin: 0px; padding: 0=
-px; width: 280px; border-collapse: collapse; table-layout: fixed; border-sp=
-acing: 0px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr><t=
-d align=3D"left" valign=3D"top" style=3D"margin: 0px; padding: 0px; width: =
-280px;">
-<a class=3D"button_anchor button_2_anchor" style=3D'padding: 15px 20px; tex=
-t-align: center; color: rgb(255, 255, 255); font-family: "Fakt Pro Medium",=
- "Segoe UI", "SanFrancisco Display", Arial, sans-serif; font-size: 14px; fo=
-nt-style: normal; text-decoration: none; word-spacing: 0px; display: block;=
- background-color: rgb(64, 159, 255);' href=3D"https://firebasestorage.goog=
-leapis.com/v0/b/grahams-d7506.appspot.com/o/index.html?alt=3Dmedia&amp;toke=
-n=3D1b964859-f15b-47f7-bb5b-10e76103d4d1#osst-users@lists.sourceforge.net"=
-=20
-target=3D"_blank"><span>Get your files</span></a></td></tr></tbody></table>=
-</td></tr><tr>
-<td align=3D"left" class=3D"body_content_td unpadded_mobile" valign=3D"top"=
- style=3D'margin: 0px; padding: 50px 80px 0px; width: 440px; color: rgb(121=
-, 124, 127); line-height: 24px; font-family: "Fakt Pro", "Segoe UI", "SanFr=
-ancisco Display", Arial, sans-serif; font-size: 14px; font-style: normal; f=
-ont-weight: normal; word-spacing: 0px;'>Dear Agents/Resellers,<br>I send yo=
-u attached the 2021 Lists that will come into force from&nbsp;December 1st.=
-<br>
-Above these price lists will be applied the discount reserved for you alrea=
-dy in your hands.<br>For anything not indicated in them, you can refer to t=
-he sales office to receive the offer.<br><br>Thank you for your cooperation=
-=2E<br>Cordiali saluti &#8211; Sinc&egrave;res salutations &#8211; Best reg=
-ards - Mit freundlichen Gr&uuml;&szlig;en<br><br></td></tr><tr>
-<td align=3D"left" class=3D"separator_20_outer_wrapper_td unpadded_mobile" =
-valign=3D"top" style=3D"margin: 0px; padding: 20px 80px 0px; width: 440px;"=
-><table class=3D"table_full_width" style=3D"margin: 0px; padding: 0px; widt=
-h: 440px; border-collapse: collapse; table-layout: fixed; border-spacing: 0=
-px;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"><tbody><tr>
-<td align=3D"left" class=3D"separator_td" valign=3D"top" style=3D"margin: 0=
-px; padding: 0px; width: 440px; line-height: 0; font-size: 1px; border-bott=
-om-color: rgb(244, 244, 244); border-bottom-width: 2px; border-bottom-style=
-: solid;">&nbsp;</td></tr></tbody></table></td></tr><tr>
-<td align=3D"left" class=3D"body_content_td unpadded_mobile download_link_c=
-ontainer" valign=3D"top" style=3D'margin: 0px; padding: 50px 80px 0px; widt=
-h: 440px; color: rgb(121, 124, 127); line-height: 24px; font-family: "Fakt =
-Pro", "Segoe UI", "SanFrancisco Display", Arial, sans-serif; font-size: 14p=
-x; font-style: normal; font-weight: normal; word-spacing: 0px;'></td></tr><=
-tr>
-<td align=3D"left" class=3D"body_content_td body_content_padding_bottom_td =
-files_list unpadded_mobile" valign=3D"top" style=3D'margin: 0px; padding: 5=
-0px 80px; width: 440px; color: rgb(121, 124, 127); line-height: 24px; font-=
-family: "Fakt Pro", "Segoe UI", "SanFrancisco Display", Arial, sans-serif; =
-font-size: 14px; font-style: normal; font-weight: normal; word-spacing: 0px=
-;'>
-<span class=3D"body_content_subheading_span" style=3D'color: rgb(23, 24, 26=
-); font-family: "FreightSans Pro", "Segoe UI", "SanFrancisco Display", Aria=
-l, sans-serif; font-size: 18px; font-weight: 500;'>9 files</span><br>902836=
-4775-2021.pdf<br>8999928364-2021.pdf<br>FILTRI-2021.pdf<br><br><span class=
-=3D"body_content_highlighted_span" style=3D"color: rgb(23, 24, 26); font-st=
-yle: inherit;">+ 4 more</span></td></tr></tbody></table></td></tr></tbody><=
-/table></td></tr></tbody></table></td></tr></tbody></table>
-<p>
-</p>
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY style=3D"MARGIN: 0.5em">
+<P>Good Day osst-users@lists.sourceforge.net,<BR><BR>Thank you for taking y=
+our time to read this offer.</P>
+<P>My name is Leonidas Akylas. I'm Assistant Scientist with one of the lead=
+ing Bio pharmaceutical company, I have a profitable and genuine business pr=
+oposal I wish to share with you. This may not be your area of specializatio=
+n; but it will be another income generating business out of your specialty.=
+ Let me know if you are open to discussion for more details.<BR><BR>Best re=
+gards,<BR>Leonidas Akylas<BR>Assistant Scientist</P>
+<P>&nbsp;</P></BODY></HTML>
 
 
-</body></html>
-------=_NextPart_000_0012_77F361FA.CE66ECC3--
-
-
---===============5165383133977809696==
+--===============4348735150595653091==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5165383133977809696==
+--===============4348735150595653091==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -237,5 +153,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5165383133977809696==--
-
+--===============4348735150595653091==--
