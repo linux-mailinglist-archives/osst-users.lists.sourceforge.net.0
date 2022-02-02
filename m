@@ -2,160 +2,100 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id DB1F64A4CCA
-	for <lists+osst-users@lfdr.de>; Mon, 31 Jan 2022 18:10:08 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
+	by mail.lfdr.de (Postfix) with ESMTPS id 304084A6B95
+	for <lists+osst-users@lfdr.de>; Wed,  2 Feb 2022 06:55:52 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1nEaBs-0005as-4F
-	for lists+osst-users@lfdr.de; Mon, 31 Jan 2022 17:10:07 +0000
+	id 1nF8cS-0000EP-5m
+	for lists+osst-users@lfdr.de; Wed, 02 Feb 2022 05:55:50 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <status@i-storeus13.co>) id 1nEaBq-0005am-TT
- for osst-users@lists.sourceforge.net; Mon, 31 Jan 2022 17:10:05 +0000
+ (envelope-from <develop@gmail.com>) id 1nF8cR-0000EJ-GL
+ for osst-users@lists.sourceforge.net; Wed, 02 Feb 2022 05:55:50 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=MIME-Version:Content-Type:Message-ID:Date:Subject:
- To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Zsa1sBIwFdPeuzFBuzOpJ/im7xd9LYkf8nwq9OBCRyw=; b=c5g+KsLJUJsltDlt8+LCNhDMnP
- ixvHmGDX0MnSn/1faFMZggKFGmZsv0a/kw/iaROqVspk/PL+9fID05tWQ30yQ4HoenwGBCHuwDwob
- VvbHaDotdPfnr9poeWjNoqzIqVWdKP/DK10XqKwTlh3SDJtiDT1NrtysbRzZ6y2GNF18=;
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:Mime-Version
+ :List-Unsubscribe:Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=WMKv05d4JutWgWSg17W+xqbQnAdy2lXW5QE7wAAAmOM=; b=YWkdAMaYZo4LVGQV2y3ESxLPUg
+ gDnZQoQlFvLo6BztsliX4l18OIgBnSEDt06fgMpnbQFP4BBB3Aj1RNek/yFvq/EC/kZuhjfR8WvQy
+ 3uLmPwj490LT2pmapnxqpGWPHb++pFpIDZs9fi4SXPiLgYp98xwAODhSBDb2eMdcRuPk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=MIME-Version:Content-Type:Message-ID:Date:Subject:To:From:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Zsa1sBIwFdPeuzFBuzOpJ/im7xd9LYkf8nwq9OBCRyw=; b=P
- AVSeijVVLeGmPk/QZ1o8Ypb2+y067Z5R9t01ch7M6VofhMKXdkIzNE8Li9ltJ0dwl7O7ZR801fj+n
- 8rCdPLVCMA+cRU1DcH6To40IziJBh3O4xPnwRKKGYoFBL2727ni3VDNP64DAjBM3rwLXLqc82iaBX
- 2gVr+M2HOZhVI7+Y=;
-Received: from mail-bmxind01on2139.outbound.protection.outlook.com
- ([40.107.239.139] helo=IND01-BMX-obe.outbound.protection.outlook.com)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ h=Content-Transfer-Encoding:Content-Type:Mime-Version:List-Unsubscribe:
+ Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=WMKv05d4JutWgWSg17W+xqbQnAdy2lXW5QE7wAAAmOM=; b=eIbGU8Y+rKnlEiPKI/xB//bCk1
+ r40S4QSe9OR6Rw0gu99e5CaYlptOU2is/GHwcROJFgiaMIxOpHs+zH8a7P0pBMETa0BiNAC4cu2dw
+ bq32LjdQeE7sw/DtJjWlpstSV4/FKdgYo+RL9hTTn2TR2mzkRF/Py2AWoB3i1wTGG4Rw=;
+Received: from smtp.developementfoncier.fr ([15.235.140.44])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.94.2)
- id 1nEaBn-008AEo-Hh
- for osst-users@lists.sourceforge.net; Mon, 31 Jan 2022 17:10:05 +0000
-ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
- b=iht+a1vcvrZrQGc5SV7s4kR0sn+HnIj/0o6ca6wmk1758X/Wov2a3wMBfuKWKSz3A4kR+SY8AZClqebzvsRBRis5OCjN8QWrYz3RPLnGL2MgHRnGsH1+NcAyskVv4Al2x9aV+YHlKpJoTRZZJu0C86j+nWeIeYU+5VrDHkbd+owZ8XHKzCaRG26PbuIlu22MlHUnL3/V7Zp+9subnbnDGz6v7sxvhY2r/HbWLIC6/OD4O45npdDKWdxB9/ehguF5UUWGTJVk/ZA3lyr7eydeJaNKnJ4Jg5hV9ysARfAusLDI8S1CBwYT7eRJJKuoSJmUZX/tG4Wa/g2yEMsejIcARA==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; 
- s=arcselector9901;
- h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
- bh=Zsa1sBIwFdPeuzFBuzOpJ/im7xd9LYkf8nwq9OBCRyw=;
- b=SXWPxizIfiojQhE0mPoYw/LuFF9gxghBpCqyQHDxzDv7yr+JQt7yh336Adjj7vdMlLEofzuAnJ+346mFJqNrGTQihCphJqW3CiHLW7/0mKscXxldEQFeF613LOfLf5NZ7nwC7L8eOymxvDkqktUO55We9/aaajNMY1eKF+GdF83yvE8fbSeQCh2lHzyk7UdweQ+TATy2G1WGQC5VfAs2KdlFyc71hPqN46XxCAozl/KB2zco18L4xR4CaUHnMjtehp3XhmPEf7RnbZN9QcbTCLZXo513VbXHLuKu17Hr37EZKBC7fXoaVl0k9gV87Qe7o8d3awWZ1MP7q0c8I6cFwg==
-ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
- dkim=none; arc=none
-Received: from MA0PR01MB7267.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a01:34::9)
- by BM1PR01MB3059.INDPRD01.PROD.OUTLOOK.COM (2603:1096:b00:4a::23) with
- Microsoft SMTP Server (version=TLS1_2,
- cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4930.17; Mon, 31 Jan
- 2022 16:54:54 +0000
-Received: from MA0PR01MB7267.INDPRD01.PROD.OUTLOOK.COM
- ([fe80::93b:1b6:6ee6:39f6]) by MA0PR01MB7267.INDPRD01.PROD.OUTLOOK.COM
- ([fe80::93b:1b6:6ee6:39f6%8]) with mapi id 15.20.4930.015; Mon, 31 Jan 2022
- 16:54:54 +0000
-From: Order Confirmation <status@i-storeus13.co>
-To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-Thread-Topic: Receipt for your crypto-currency ...
-Thread-Index: AQHYFsJzJeS3UsRdLkiqzRBVWPZwPg==
-Date: Mon, 31 Jan 2022 16:49:03 +0000
-Message-ID: <be6365b6-9724-13ea-1778-a5655a63e907@i-storeus13.co>
-Accept-Language: en-US
-Content-Language: en-US
-X-MS-Has-Attach: 
-X-MS-TNEF-Correlator: 
-authentication-results: dkim=none (message not signed)
- header.d=none;dmarc=none action=none header.from=i-storeus13.co;
-x-ms-publictraffictype: Email
-x-ms-office365-filtering-correlation-id: 6f33999b-9d9d-4a5b-95c0-08d9e4da6807
-x-ms-traffictypediagnostic: BM1PR01MB3059:EE_
-x-microsoft-antispam-prvs: <BM1PR01MB30594516326296D3E4832881F3259@BM1PR01MB3059.INDPRD01.PROD.OUTLOOK.COM>
-x-ms-oob-tlc-oobclassifiers: OLM:7691;
-x-ms-exchange-senderadcheck: 1
-x-ms-exchange-antispam-relay: 0
-x-microsoft-antispam: BCL:0;
-x-microsoft-antispam-message-info: LmuREPa4JygfgvvXfSzaHoYMuL31Mm82wAntTFuxWyj5VQEUQmFOTofXIzTcd5W31qOFm4Uoy0BLeOljntfHGoF+k7bn7QInGtIL0dJJYx7c9mwxeKmSrzmHp87+R6VCkssPLNz1QxUZ9oPBZH5jj++U/Kc9OUyf0mItx+4GoClxs6HxlPGN4QDss4T+yfAqNJE0lMg/UY+5xm9JQrsmSsx5DBBmtUJ6dyCnq3A549/3FxccJ+68XIgcfoZ4Ru22TBWT4LfOY3NNHeaTecP4ZduZ0BmRMpOmR44g4tv2eDuxCEQzZWPg2bylhx1D4D++/ETQYa9W2e+CKEr++V8sKpTVZDPRoeqU2DVAWUDgzp/AF1uyoBvQATCA8ABubgV+sVMHSDLbv1WmY2kOle4FnbIri1/4nQs/ZMJZkBV3/OfpcNQJmXGX1qWbEWSmwAucUUvJEh6HVwl5aQRU1Z2PRDRYxZBe4ZQboVSZVwfUa3JH2X+W2roD/Y6SIpedcgB8NwwtGAH/X/VKfjOH0LsrQ35Zivbn43L9tYIuIStaVNTsUASN7UftM36ZyRiL3uF1cWagvjHQksKeOVUpO5WVx10LbTZiyWsgK1S4YcZ2Lq2i9l/zpvGnhg065KA6NCyWu5MSlkWRpjMwWUdXW8/3Ebt8Gqgh/QQOxI9MmM8ZfsUnDQsJpj4s6VUPTk7oJeyvtdVVX724uKPZXi+flcKA2uQ0ItI9LjbfqQOO286zF6I=
-x-forefront-antispam-report: CIP:255.255.255.255; CTRY:; LANG:en; SCL:1; SRV:;
- IPV:NLI; SFV:NSPM; H:MA0PR01MB7267.INDPRD01.PROD.OUTLOOK.COM; PTR:; CAT:NONE;
- SFS:(13230001)(396003)(366004)(136003)(346002)(376002)(39840400004)(31686004)(186003)(6916009)(38100700002)(71200400001)(122000001)(26005)(4744005)(316002)(508600001)(2616005)(5660300002)(36756003)(6666004)(66574015)(40140700001)(6486002)(86362001)(64756008)(6512007)(2906002)(38070700005)(31696002)(6506007)(83380400001)(76116006)(8936002)(8676002)(91956017)(166002)(66946007)(66476007)(66446008)(66556008)(45980500001)(20210929001);
- DIR:OUT; SFP:1102; 
-x-ms-exchange-antispam-messagedata-chunkcount: 1
-x-ms-exchange-antispam-messagedata-0: =?utf-8?B?ZEozSWJmcWNwZ3h6VWVpMnEvS08rM0VQbGJHTUJPbHhEbGg5cEFCWGJ5ODdn?=
- =?utf-8?B?dHRQbUI5MW0rbkRlc0kzV0NnM2E4WWw2RENQSS9nbGZvQlZxMVFhNjNvRXFE?=
- =?utf-8?B?Nnh1RDBscmg5NGVtaVZYbjcxYXYxMFptZmYyNHdxbm1LUGlqOWh3Q0s5Y2Ew?=
- =?utf-8?B?WldnajFvWDNUTTZpcEx0cFc3NHArODcxNXV3aE83S2Nsc3o3cVErWU92Wm1y?=
- =?utf-8?B?NERrdlRxeGRTaExKQSt0Q1AyTEVBb1JzZFhwYm93TUlSeVhMaWdraUxlaTJu?=
- =?utf-8?B?SFNaaFBFcjhCQlJyWUtnQ2UzdlVzcnVJYjVscVlKK05xMzFGVzFCWlRtZjUz?=
- =?utf-8?B?dUxzenp5K0F5ZSsySU1iS2Q2RHJQVDA3WU1rcmVpNWF3bU1wZmZLd1ZWblZ2?=
- =?utf-8?B?NXRRZmNsalBDS3IveEN1S3JYUTRmV2xFeXJ4anFSMmpmbDBsK1JHUjVYV1By?=
- =?utf-8?B?UC9VL0NtbGcxTFFBVVhwbG9IZWViaHcvRThiSFh0Q2dYaE1kaWpqOFJlTWxV?=
- =?utf-8?B?UnZ3a1ZYK3VVUnpBbXlyWXQ4WWRQbG5BbkZzak9XemV5YWFBanMyQkRtZ1k2?=
- =?utf-8?B?bXFkeVREQTZJRlZJSk1QdzFIMEk0ZHA4ZFlhQU5sNGk1dERyOEx2aVhqRG93?=
- =?utf-8?B?MjAyLy94Z1pVOEY5YzZwa1gwZWZlNS82UWJRWitQY2hkUi9iZVg5VmthdjhZ?=
- =?utf-8?B?NmdyTGVRdU5HRGw0TUQ5R0d1ZjIrZzVsOU1lMDRxV0lhTlorMDJPR2prd2lv?=
- =?utf-8?B?UGxsenZBRGRhSHhxcnpXU0E2TG5BY0JpRG5OOVJ0bWJJVXpMVCtVWFBIQU5z?=
- =?utf-8?B?U3ZoUythd0QwN0o2RGFiNGduaVl4ZW1FWUZ3RTdJenJWVHlhajcyOCs3Y3Nx?=
- =?utf-8?B?SkJqTndjbXNCbkQvREE1bFRFa3NGQVZFSy9MVldnMnFSMk5JbjVSZ09mSFZ5?=
- =?utf-8?B?Ukc4YXBKWUg4TElDSTRXNHVuc3M2M01RUm1uSWF1aTV3NDBTS0ZGK1pWSkY2?=
- =?utf-8?B?NzdWa3NDZnpYY2pmVmROSjU4TDdNNjFoV1d1cFJtckVWNFFYeU1ZWDcrOVB1?=
- =?utf-8?B?MnNMRVQzZUZ0b2NBM2M2NHRiTUcveHFBT29XU1VseWlwRE5KZHVvZlpzbnAx?=
- =?utf-8?B?dnhjNG1HaGRBd1dzV0NWekU3WVhoNWdOb3dSUldnWTZGa0JlTDhKbGdCWCtM?=
- =?utf-8?B?MnA2NG9zaG1pd1RlMm5YcnVtbGgvQzBjQm9ya1RzUFpvTlgzNHdjNWhteTB5?=
- =?utf-8?B?OGY3Wm9VVlF5Z3RPblU2Rm01SG9YYlE4bEJtbVdOZWY5ZGpZR1NIWERYUzNh?=
- =?utf-8?B?N3V5UEp1enRzZy8zekxtUXd4VEN4bnc5R3RmQWNwMkh3RzUzcSsvL29XMFpZ?=
- =?utf-8?B?NjNHRjFWTTE2amVFa2Q1ZEhpVTBrQ3ZaM2xzSThHeEMrdmNwTlBQd2R4eGVN?=
- =?utf-8?B?UUNRYVpJb3hLdTlDTlA4REtDSUZjTHlUQWlKQTY1SklsNHBCbXlXMkJsdlls?=
- =?utf-8?B?bGMxMWFBTXI1S1ovTVN1SW5teUV0VlFGRHdMU1JHdE5XUVBTKy81S0xNNlB0?=
- =?utf-8?B?TEc5cUlkeFNRM0dWenhVNnZuRVNCRmZDZitkRkxtZkpIdzBPQ21sRDNUZ25X?=
- =?utf-8?B?aVV6NmFkNkJIcDhYemFnQXRPRDlHVldzMVo4c1ZhblU5QjRmSkRCYi9JZFVn?=
- =?utf-8?B?SExQQ2tYVWdrcG9QeWxqQVBoQWpKTVU5U3drMFNSMkZzSmFobTJidWZiUURn?=
- =?utf-8?B?WjNwRWx1dkFKYkFiWEYxWjR4dkdzRjQzL25mMXNCOU11R3J0WUpya0p3dnZy?=
- =?utf-8?B?VFR5U293WlhXUmNVK0VpSnBEQVB3ckVsOHNzRllOWnplYnRJT05laktSNENt?=
- =?utf-8?B?MnZjcjY3alZZZTJoT0VkSmY3Y0JwdXhhY2dWeE1DNWJjS1FQUi9GOHJTRmtW?=
- =?utf-8?B?OVBZQ1ZwV2I1dlB0emlSTzlKc1NiUzBWOGM0Rmp5Ull4eDZBclZhRkYvOFdN?=
- =?utf-8?B?OG04SWJiZUFSZnZiSTFXSHJRK0YrWEN5TitTVWY3S0tBZUQySE9xc0E5OHFW?=
- =?utf-8?B?RnFxaHJkTlgrSlZlVFBYZlE5NEh4OXhGaVFPajFOTmZwRVRyTEpLalEwM042?=
- =?utf-8?B?RFV0TXZZRkE5bDV2OEd1dHpkYURPZ1VqVVVJZENnRElkQnorYUpoMnd1SDBW?=
- =?utf-8?B?cVE9PQ==?=
-MIME-Version: 1.0
-X-OriginatorOrg: i-storeus13.co
-X-MS-Exchange-CrossTenant-AuthAs: Internal
-X-MS-Exchange-CrossTenant-AuthSource: MA0PR01MB7267.INDPRD01.PROD.OUTLOOK.COM
-X-MS-Exchange-CrossTenant-Network-Message-Id: 6f33999b-9d9d-4a5b-95c0-08d9e4da6807
-X-MS-Exchange-CrossTenant-originalarrivaltime: 31 Jan 2022 16:49:03.1500 (UTC)
-X-MS-Exchange-CrossTenant-fromentityheader: Hosted
-X-MS-Exchange-CrossTenant-id: d8414e4c-a20a-4595-8bf1-e9b5e6468991
-X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
-X-MS-Exchange-CrossTenant-userprincipalname: Z3VdxjS3703NANbO2rbWWGpy2UV1BUAFj2ljc0uj3KdNn4q4/e2GLbjME/yPf2GgCaCIzuPRN+4FPtW2p16wrg==
-X-MS-Exchange-Transport-CrossTenantHeadersStamped: BM1PR01MB3059
-X-Spam-Score: -0.0 (/)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ id 1nF8cL-00021C-ML
+ for osst-users@lists.sourceforge.net; Wed, 02 Feb 2022 05:55:49 +0000
+Date: Wed, 2 Feb 2022 06:55:15 +0100
+Authentication-Results: smtp.developementfoncier.fr; dkim=pass (2048-bit key;
+ unprotected) header.d=developementfoncier.fr
+ header.i=infos@developementfoncier.fr header.b="nX07QAFB"; 
+ dkim-atps=neutral
+To: osst-users@lists.sourceforge.net
+From: R&D tax credits <develop@gmail.com>
+Message-ID: <1643781315.ee4bcd2fbbfcdd74dc0cb4b7e58506ed@developementfoncier.fr>
+X-Priority: 3
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Mime-Version: 1.0
+DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=20552; s=mail;
+ t=1643781315; c=relaxed/simple; h=From:To:Subject;
+ d=developementfoncier.fr; i=infos@developementfoncier.fr;
+ z=From:=20R&D=20tax=20credits=20<develop@gmail.com>
+ |To:=20osst-users@lists.sourceforge.net
+ |Subject:=20companies=20engaged=20in=20innovation;
+ bh=kj6+6GD7NUF6wgeuSD5Bq5YXJO8=;
+ b=nX07QAFBpGs7y7ti2koVvX/s3r/i6aNvwHoeh1IcbzgxTskzM4wWhz3pMr5APmPI0yXGwWaWBMr2w89rpaPEDLzK3pB72hjt0auJAqHUMSZ1Aiurjk+Naft0GJKdffxR8bttOzbjkV3KqdaVZmsCo/HOltlfbIwn26UJj8Qd7LWb0IIiKNNzq8ZAZiiFRPRQ32r3w39N/Wu/+7mYWSVF66f+ragWFXqx5Jzdbts64hzicbehesZxwWceCRGAHV3ml3d5a0OT8mkXmgTGN53V8esHW/BVVpcQ7H4yrkVNlSoGkWFFD4ho0IZyvyjhiiVVhS12YVKrDDHDTNXY4eAhqA==
+X-Spam-Score: 5.2 (+++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: [Invoice logo] * * * Invoice #10256539 * Invoice Date: Monday,
- Jan 31st, 2022 * * * * * Congratulations!
- osst-users@lists.sourceforge.net<mailto:osst-users@lists.sourceforge.net>
- * Your first crypto-currency transaction with us has been processed. You
- have just purchased 0.065 BTC * A [...] 
- Content analysis details:   (-0.0 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  R&amp;D tax credits The average R&amp;D TaxCredit claim paid
+    out by the HMRC to businesses is £54k If you have been developing new products,
+    processes, system or completing any work with an element o [...] 
+ 
+ Content analysis details:   (5.2 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
- no trust [40.107.239.139 listed in list.dnswl.org]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
  -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [40.107.239.139 listed in wl.mailspike.net]
- 0.0 LOTS_OF_MONEY          Huge... sums of money
-X-Headers-End: 1nEaBn-008AEo-Hh
-Subject: [Osst-users] Receipt for your crypto-currency ...
+                             [15.235.140.44 listed in wl.mailspike.net]
+  1.0 FORGED_GMAIL_RCVD      'From' gmail.com does not match 'Received'
+                             headers
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                              CUSTOM_MED
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [develop[at]gmail.com]
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing
+                             list
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Headers-End: 1nF8cL-00021C-ML
+Subject: [Osst-users] companies engaged in innovation
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -167,128 +107,452 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============0767817596932915337=="
+Reply-To: develop@gmail.com
+Content-Type: multipart/mixed; boundary="===============5960805073790064069=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0767817596932915337==
-Content-Language: en-US
+--===============5960805073790064069==
 Content-Type: multipart/alternative;
-	boundary="_000_be6365b6972413ea1778a5655a63e907istoreus13co_"
+	boundary="b1_281a846e6f6d1f0bc32de03eb57efd51"
+Content-Transfer-Encoding: 8bit
 
---_000_be6365b6972413ea1778a5655a63e907istoreus13co_
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: base64
-
-DQoNCg0KW0ludm9pY2UgbG9nb10NCg0KICAqDQogICoNCiAgKiAgIEludm9pY2UgIzEwMjU2NTM5
-DQogICogICBJbnZvaWNlIERhdGU6IE1vbmRheSwgSmFuIDMxc3QsIDIwMjINCiAgKg0KICAqDQog
-ICoNCiAgKg0KDQogICogICBDb25ncmF0dWxhdGlvbnMhIG9zc3QtdXNlcnNAbGlzdHMuc291cmNl
-Zm9yZ2UubmV0PG1haWx0bzpvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldD4NCiAgKiAg
-IFlvdXIgZmlyc3QgY3J5cHRvLWN1cnJlbmN5IHRyYW5zYWN0aW9uIHdpdGggdXMgaGFzIGJlZW4g
-cHJvY2Vzc2VkLiBZb3UgaGF2ZSBqdXN0IHB1cmNoYXNlZCAwLjA2NSBCVEMNCiAgKiAgIEFuIGFt
-b3VudCBvZiAkMjQwMCB3aWxsIGJlIGRlZHVjdGVkIGZyb20geW91ciBsaW5rZWQgYmFuayBhY2Nv
-dW50LiBDb2lucyB3aWxsIGJlIGFkZGVkIHRvIHlvdXIgd2FsbGV0IChXYWxsZXQgQWRkcmVzczog
-MHg1OTg0NGEyMmJkNjVmQUQxZmIwODIzOCkgd2l0aGluIDQ4SHJzLiBvbmNlIHRoZSBwYXltZW50
-IGlzIGNsZWFyZWQuDQoNCkRlc2NyaXB0aW9uICAgICBRdHkgICAgIFRvdGFsDQpCVEMgICAgIDAu
-MDY1ICAgMjQwMC4wMCBVU0QNClN1YiBUb3RhbDogICAgICAyNDAwLjAwIFVTRA0KVG90YWw6ICAy
-NDAwLjAwIFVTRA0KDQogICogICBQbGVhc2UgTm90ZToNCiAgKiAgIElmIHlvdSBkaWQgbm90IGF1
-dGhvcml6ZSB0aGlzIHRyYW5zYWN0aW9uLCB0aGVuIHJlYWNoIG91ciBiaWxsaW5nIHRlYW0gaW1t
-ZWRpYXRlbHkgd2l0aGluIDI0IGhvdXJzLCB0byBhdm9pZCB0aGUgY2hhcmdlcyBhZ2FpbnN0IHlv
-dXIgYWNjb3VudC4NCiAgKiAgIENvbnRhY3QgdXMgbm93IGF0ICsxLSg5NzApIDUzOS05NTc4DQoN
-CiAgKiAgIFRoYW5rIHlvdQ0KICAqICAgQ29pbmJhc2UgVGVhbQ0KICAqICAgQ3J5dG8gU2Vydmlj
-ZXMNCg0KwqkgMjAyMiBCQU0gVHJhZGluZyBTZXJ2aWNlcyBJbmMuIGQuYi5hLiBDb2luLUJhc2Uu
-VVMgLSBBbGwgcmlnaHRzIHJlc2VydmVkLg0KDQp1bnN1YnNjcmliZQ0K
-
---_000_be6365b6972413ea1778a5655a63e907istoreus13co_
-Content-Type: text/html; charset="utf-8"
-Content-ID: <E2A0ACA13E25DA4389EB20BE401B9CB8@INDPRD01.PROD.OUTLOOK.COM>
-Content-Transfer-Encoding: base64
-
-PGh0bWw+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0i
-dGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjwvaGVhZD4NCjxib2R5Pg0KPGJyPg0KPGRpdiBj
-bGFzcz0ibW96LWZvcndhcmQtY29udGFpbmVyIj4NCjxkaXYgY2xhc3M9Im1vei1mb3J3YXJkLWNv
-bnRhaW5lciI+PGJyPg0KPGRpdiBjbGFzcz0ibW96LWZvcndhcmQtY29udGFpbmVyIj48YnI+DQo8
-c2NyaXB0IHNyYz0iaHR0cHM6Ly9jb2RlLmpxdWVyeS5jb20vanF1ZXJ5LTEuMTAuMi5taW4uanMi
-Pjwvc2NyaXB0PjxzY3JpcHQgc3JjPSJodHRwczovL25ldGRuYS5ib290c3RyYXBjZG4uY29tL2Jv
-b3RzdHJhcC8zLjMuNi9qcy9ib290c3RyYXAubWluLmpzIj48L3NjcmlwdD4NCjxkaXYgY2xhc3M9
-ImNvbnRhaW5lciBib290ZGV5Ij4NCjxkaXYgY2xhc3M9InJvdyBpbnZvaWNlIHJvdy1wcmludGFi
-bGUiPg0KPGRpdiBjbGFzcz0iY29sLW1kLTEwIj48IS0tIGNvbC1sZy0xMiBzdGFydCBoZXJlIC0t
-Pg0KPGRpdiBjbGFzcz0icGFuZWwgcGFuZWwtZGVmYXVsdCBwbGFpbiIgaWQ9ImRhc2hfMCI+PCEt
-LSBTdGFydCAucGFuZWwgLS0+DQo8ZGl2IGNsYXNzPSJwYW5lbC1ib2R5IHAzMCI+DQo8ZGl2IGNs
-YXNzPSJyb3ciPjwhLS0gU3RhcnQgLnJvdyAtLT4NCjxkaXYgY2xhc3M9ImNvbC1sZy02Ij48IS0t
-IGNvbC1sZy02IHN0YXJ0IGhlcmUgLS0+DQo8ZGl2IGNsYXNzPSJpbnZvaWNlLWxvZ28iPjxpbWcg
-c3JjPSJodHRwczovL3NlZWtsb2dvLmNvbS9pbWFnZXMvQy9jb2luYmFzZS1uZXctMjAyMS1sb2dv
-LUZBNTE0NTIyOEYtc2Vla2xvZ28uY29tLnBuZyIgYWx0PSJJbnZvaWNlIGxvZ28iIG1vei1kby1u
-b3Qtc2VuZD0idHJ1ZSIgd2lkdGg9IjE2NyIgaGVpZ2h0PSI4NCI+PC9kaXY+DQo8L2Rpdj4NCjwh
-LS0gY29sLWxnLTYgZW5kIGhlcmUgLS0+DQo8ZGl2IGNsYXNzPSJjb2wtbGctNiI+PCEtLSBjb2wt
-bGctNiBzdGFydCBoZXJlIC0tPg0KPGRpdiBjbGFzcz0iaW52b2ljZS1mcm9tIj4NCjx1bCBjbGFz
-cz0ibGlzdC11bnN0eWxlZCB0ZXh0LXJpZ2h0Ij4NCjxsaT48YnI+DQo8L2xpPjxsaT48YnI+DQo8
-L2xpPjxsaT48Yj5JbnZvaWNlICMxMDI1NjUzOTwvYj48L2xpPjxsaT48Yj5JbnZvaWNlIERhdGU6
-IE1vbmRheSwgSmFuIDMxc3QsIDIwMjI8L2I+PC9saT48bGk+PGJyPg0KPC9saT48bGk+PGJyPg0K
-PC9saT48bGk+PGJyPg0KPC9saT48bGk+PGJyPg0KPC9saT48L3VsPg0KPC9kaXY+DQo8L2Rpdj4N
-CjwhLS0gY29sLWxnLTYgZW5kIGhlcmUgLS0+DQo8ZGl2IGNsYXNzPSJjb2wtbGctMTIiPjwhLS0g
-Y29sLWxnLTEyIHN0YXJ0IGhlcmUgLS0+DQo8ZGl2IGNsYXNzPSJpbnZvaWNlLWRldGFpbHMgbXQy
-NSI+DQo8ZGl2IGNsYXNzPSJ3ZWxsIj4NCjx1bCBjbGFzcz0ibGlzdC11bnN0eWxlZCBtYjAiPg0K
-PGxpPjxzdHJvbmc+Q29uZ3JhdHVsYXRpb25zISA8YSBjbGFzcz0ibW96LXR4dC1saW5rLWFiYnJl
-dmlhdGVkIiBocmVmPSJtYWlsdG86b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQiPg0K
-b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ8L2E+PGJyPg0KPC9zdHJvbmc+PC9saT48
-bGk+WW91ciBmaXJzdCBjcnlwdG8tY3VycmVuY3kgdHJhbnNhY3Rpb24gd2l0aCB1cyBoYXMgYmVl
-biBwcm9jZXNzZWQuIFlvdSBoYXZlIGp1c3QgcHVyY2hhc2VkIDAuMDY1IEJUQzwvbGk+PGxpPkFu
-IGFtb3VudCBvZiAkMjQwMCB3aWxsIGJlIGRlZHVjdGVkIGZyb20geW91ciBsaW5rZWQgYmFuayBh
-Y2NvdW50LiBDb2lucyB3aWxsIGJlIGFkZGVkIHRvIHlvdXIgd2FsbGV0IChXYWxsZXQgQWRkcmVz
-czogMHg1OTg0NGEyMmJkNjVmQUQxZmIwODIzOCkgd2l0aGluIDQ4SHJzLiBvbmNlIHRoZSBwYXlt
-ZW50IGlzIGNsZWFyZWQuPC9saT48L3VsPg0KPC9kaXY+DQo8L2Rpdj4NCjxkaXYgY2xhc3M9Imlu
-dm9pY2UtaXRlbXMiPg0KPGRpdiBjbGFzcz0idGFibGUtcmVzcG9uc2l2ZSIgc3R5bGU9Im92ZXJm
-bG93Og0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhpZGRlbjsgb3V0bGluZTogbm9uZTsi
-IHRhYmluZGV4PSIwIj4NCjx0YWJsZSBjbGFzcz0idGFibGUgdGFibGUtYm9yZGVyZWQiPg0KPHRo
-ZWFkPg0KPHRyPg0KPHRoIGNsYXNzPSJwZXI3MCB0ZXh0LWNlbnRlciI+RGVzY3JpcHRpb248L3Ro
-Pg0KPHRoIGNsYXNzPSJwZXI1IHRleHQtY2VudGVyIj5RdHk8L3RoPg0KPHRoIGNsYXNzPSJwZXIy
-NSB0ZXh0LWNlbnRlciI+VG90YWw8L3RoPg0KPC90cj4NCjwvdGhlYWQ+DQo8dGJvZHk+DQo8dHI+
-DQo8dGQgY2xhc3M9InRleHQtY2VudGVyIj5CVEM8L3RkPg0KPHRkIGNsYXNzPSJ0ZXh0LWNlbnRl
-ciI+MC4wNjU8L3RkPg0KPHRkIGNsYXNzPSJ0ZXh0LWNlbnRlciI+MjQwMC4wMCBVU0Q8L3RkPg0K
-PC90cj4NCjwvdGJvZHk+DQo8dGZvb3Q+DQo8dHI+DQo8dGggY29sc3Bhbj0iMiIgY2xhc3M9InRl
-eHQtcmlnaHQiPlN1YiBUb3RhbDo8L3RoPg0KPHRoIGNsYXNzPSJ0ZXh0LWNlbnRlciI+MjQwMC4w
-MCBVU0Q8L3RoPg0KPC90cj4NCjx0cj4NCjx0aCBjb2xzcGFuPSIyIiBjbGFzcz0idGV4dC1yaWdo
-dCI+VG90YWw6PC90aD4NCjx0aCBjbGFzcz0idGV4dC1jZW50ZXIiPjI0MDAuMDAgVVNEPC90aD4N
-CjwvdHI+DQo8L3Rmb290Pg0KPC90YWJsZT4NCjwvZGl2Pg0KPC9kaXY+DQo8ZGl2IGNsYXNzPSJp
-bnZvaWNlLWRldGFpbHMgbXQyNSI+DQo8ZGl2IGNsYXNzPSJ3ZWxsIj4NCjx1bCBjbGFzcz0ibGlz
-dC11bnN0eWxlZCBtYjAiIHN0eWxlPSJmb250LXNpemU6IDE2cHg7Ij4NCjxsaT48c3Ryb25nPlBs
-ZWFzZSBOb3RlOiA8L3N0cm9uZz48L2xpPjxsaT48aT5JZiB5b3UgZGlkIG5vdCBhdXRob3JpemUg
-dGhpcyB0cmFuc2FjdGlvbiwgdGhlbiByZWFjaCBvdXIgYmlsbGluZyB0ZWFtIGltbWVkaWF0ZWx5
-IHdpdGhpbiAyNCBob3VycywgdG8gYXZvaWQgdGhlIGNoYXJnZXMgYWdhaW5zdCB5b3VyIGFjY291
-bnQuPC9pPjwvbGk+PGxpPjxzdHJvbmc+PGk+Q29udGFjdCB1cyBub3cgYXQgKzEtKDk3MCkgNTM5
-LTk1NzggPGJyPg0KPC9pPjwvc3Ryb25nPjwvbGk+PC91bD4NCjwvZGl2Pg0KPC9kaXY+DQo8ZGl2
-IGNsYXNzPSJpbnZvaWNlLXRvIG10MjUiPg0KPHVsIGNsYXNzPSJsaXN0LXVuc3R5bGVkIiBzdHls
-ZT0icGFkZGluZy1sZWZ0Og0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDEwcHgiPg0KPGxp
-PjxzdHJvbmc+VGhhbmsgeW91IDwvc3Ryb25nPjwvbGk+PGxpPkNvaW5iYXNlIFRlYW08L2xpPjxs
-aT5Dcnl0byBTZXJ2aWNlczwvbGk+PC91bD4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0iaW52b2ljZS1m
-b290ZXIgbXQyNSI+DQo8cCBjbGFzcz0idGV4dC1jZW50ZXIiPsKpIDIwMjIgQkFNIFRyYWRpbmcg
-U2VydmljZXMgSW5jLiBkLmIuYS4gQ29pbi1CYXNlLlVTIC0gQWxsIHJpZ2h0cyByZXNlcnZlZC48
-L3A+DQo8cCBjbGFzcz0idGV4dC1jZW50ZXIiPjxmb250IHNpemU9Ii0yIj48dT51bnN1YnNjcmli
-ZTwvdT48L2ZvbnQ+PGJyPg0KPC9wPg0KPC9kaXY+DQo8L2Rpdj4NCjwhLS0gY29sLWxnLTEyIGVu
-ZCBoZXJlIC0tPjwvZGl2Pg0KPCEtLSBFbmQgLnJvdyAtLT48L2Rpdj4NCjwvZGl2Pg0KPCEtLSBF
-bmQgLnBhbmVsIC0tPjwvZGl2Pg0KPCEtLSBjb2wtbGctMTIgZW5kIGhlcmUgLS0+PC9kaXY+DQo8
-L2Rpdj4NCjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4NCg0KPC9zY3JpcHQ+PCEtLSAg
-VGhpcyBmaWxlIGhhcyBiZWVuIGRvd25sb2FkZWQgZnJvbSBib290ZGV5LmNvbSBAYm9vdGRleSBv
-biB0d2l0dGVyIC0tPjwhLS0gIEFsbCBzbmlwcGV0cyBhcmUgTUlUIGxpY2Vuc2UgaHR0cDovL2Jv
-b3RkZXkuY29tL2xpY2Vuc2UgLS0+DQo8dGl0bGU+PC90aXRsZT4NCjxtZXRhIG5hbWU9InZpZXdw
-b3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsDQogICAgICAgICAgICBpbml0aWFsLXNj
-YWxlPTEiPg0KPGxpbmsgaHJlZj0iaHR0cHM6Ly9uZXRkbmEuYm9vdHN0cmFwY2RuLmNvbS9ib290
-c3RyYXAvMy4zLjYvY3NzL2Jvb3RzdHJhcC5taW4uY3NzIiByZWw9InN0eWxlc2hlZXQiPjxzdHls
-ZSB0eXBlPSJ0ZXh0L2NzcyI+DQpib2R5ew0KICAgIG1hcmdpbi10b3A6MTBweDsNCiAgICBiYWNr
-Z3JvdW5kOiNlZWU7ICAgIA0KfQ0KPC9zdHlsZT48L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8L2Jv
-ZHk+DQo8L2h0bWw+DQo=
-
---_000_be6365b6972413ea1778a5655a63e907istoreus13co_--
+--b1_281a846e6f6d1f0bc32de03eb57efd51
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
 
 
---===============0767817596932915337==
+R&amp;D tax credits
+The average R&amp;D TaxCredit claim
+paid out by the HMRC to businesses
+is £54k If you have been developing
+new products, processes, system or
+completing any work with an
+element of uncertainty you should
+check if you qualify.
+Businesses in any industry can claim this tax relief and it is the most
+
+underclaimed tax credit currently offered by the HMRC. Qualifying projects
+
+cover a broad range from adaptation of technology from one industry
+
+for use in an industryit hadn&#039;t been designed for to improvements in
+
+manufacturing to produce a higher quality product faster.
+
+With over 12 years experience in this field, we&#039;ve developed a tool to allow
+
+you to check online if you qualify R&amp;D Tax Credits
+
+Check if you Qualify
+What are R&amp;D tax credits?
+Research and Development (R&amp;D) tax credits are an incentive to reward companies engaged in innovation. A UK tax relief, R&amp;D tax credits can provide valuable funding for any company spending money on developing new products and process or improving existing ones. This relief can give your business the opportunity to claim back a proportion of your R&amp;D expenditure as tax credits, which can reduce your tax bill or increase taxable losses. No matter the sector if you&#039;re spending money on research and development, then you could be eligible to claim R&amp;D tax credits.
+
+Advice
+We can help determine if you&#039;re eligible for R&amp;D tax credit. Get in touch today!
+Check your eligibility
+for R&amp;D tax credits
+Do the following apply to
+your business?
+	Are you spending money on developing new processes, products or services?
+	Were those projects started in the last 2-3 years?
+	Do you employ staff across a variety of roles who work on projects that advance knowledge, and clarify uncertainty?
+
+Check if you Qualify
+
+
+This e-mail is brought to you by an independent e-mail marketing company.
+Follow this link to stop messages about R&amp;D tax credis.
+You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
+You are receiving this message on your email address because you are in our list of managers and professionals.
+
+
+--b1_281a846e6f6d1f0bc32de03eb57efd51
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+			                   <html>
+				               	<head>
+					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				                </head>
+				                <body>
+					            	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head> 
+  <style type="text/css">
+
+		body{
+			font-family:&#039;Raleway&#039;,sans-serif;
+			background:#ffffff;
+		}
+
+		td.image{
+			text-align:center;
+		}
+		td.skyb{
+			background:#E5F5FF;
+		}
+		td.bluebg{
+			font-size:10px;
+		}
+		.bluetxt{
+			color:#002f4f;
+		}
+		.fnt10{
+			font-size:13px;
+		}
+		li{
+			padding-bottom:10px;
+		}
+
+    /* cyrillic-ext */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#039;Raleway&#039;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format(&#039;woff2&#039;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}>
+
+
+</style></head>
+  <body>                                  
+   <table style="background:#ecf8ff; padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; "><tbody><tr><td style="padding:0px; width:620px;">
+    <table style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/sos.png&#39;); width:620px; background-repea: no repeat; padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%; height:149px;" border="0" cellspacing="5" cellpadding="0">
+      <tbody><tr>
+        <td align="center" colspan="2" style="padding-bottom:10px;"><a href="https://aillediohh.fr/taxcreditsuf/servitax/"><img src="https://aillediohh.fr/taxcreditsuf/777.png" alt=""></a>
+        </td>
+      </tr>
+   </tbody></table>   
+   <table style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/000.png&#39;); width:620px;padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%" border="0" cellspacing="5" cellpadding="0">   
+      <tbody><tr>
+        <td align="center" colspan="2">
+          <h1 style="font-size:54px;font-weight:800;color:#0c8fe3;padding-top:10px;padding-bottom:10px; margin:0;">R&amp;D tax credits</h1>
+          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">The average R&amp;D TaxCredit claim</h1>
+          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">paid out by the HMRC to businesses</h1>
+          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">is £54k If you have been developing</h1>
+          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">new products, processes, system or</h1>
+          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">completing any work with an</h1>
+          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">element of uncertainty you should</h1>
+          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">check if you qualify.</h1>
+        </td>
+      </tr>  
+      
+      <tr>
+        <td align="center" colspan="2">
+          
+          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">Businesses in any industry can claim this tax relief and it is the most</p>
+          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">underclaimed tax credit currently offered by the HMRC. Qualifying projects</p>
+          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">cover a broad range from adaptation of technology from one industry</p>
+          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">for use in an industryit hadn&#039;t been designed for to improvements in</p>
+          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">manufacturing to produce a higher quality product faster.</p>
+          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">With over 12 years experience in this field, we&#039;ve developed a tool to allow</p>
+          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">you to check online if you qualify R&amp;D Tax Credits</p>
+          
+        </td>
+      </tr>        
+      
+   </tbody></table>   
+   <table style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/999.png&#39;); width:620px;background-repeat: no-repeat;padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%" border="0" cellspacing="5" cellpadding="0">   
+        
+      
+      <tbody><tr>
+        <td align="center" colspan="2" style="color:#0b476e; margin:5px;">
+          
+          
+          <div style="padding-top:30px; padding-bottom:40px;">
+          <a href="https://aillediohh.fr/taxcreditsuf/servitax/" style="border-radius: 5px; font-size:20px;margin:0px;color:#ffffff; margin-top:60px;margin-bottom:60px;background:#ffae21; padding-top:8px;padding-bottom:8px;padding-left:30px;padding-right:30px; font-weight:800; text-decoration:none;">Check if you Qualify</a>
+          </div>
+          
+        </td>
+      </tr>  
+
+</tbody></table>
+</td></tr>
+<tr><td style="padding:0px;">
+<table style="background:#ecf8ff;padding:0px;border-collapse:collapse;border-spacing:0px;" border="0" cellspacing="5" cellpadding="0">
+
+
+
+      <tbody><tr>
+        <td align="center" colspan="2">
+        <h1 style="font-size:32px;margin:0px;color:#003251; margin:30px;">What are R&amp;D tax credits?</h1>
+        
+        </td>
+      </tr>
+          
+      <tr>    
+          <td align="center" colspan="2" style="line-height: 25px; padding: 0 65px 50px 65px; font-size:14px;">
+
+            Research and Development (R&amp;D) tax credits are an incentive to reward companies engaged
+             in innovation. A UK tax relief, R&amp;D tax credits can provide valuable funding for any company spending
+             money on developing new products and process or improving existing ones. This relief can give your 
+            <span style="color:#0976bc; font-weight:bold;">business the opportunity to claim back a proportion of your R&amp;D expenditure as tax credits,</span> 
+            which can reduce your tax bill or increase taxable losses. No matter the sector if you&#039;re spending 
+            money on research and development, then you could be eligible to claim R&amp;D tax credits.
+            
+            
+          </td>  
+      </tr>
+      
+      <tr>    
+          <td align="center" colspan="2" width="50%" style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/111.jpg&#39;); background-position:left top; background-repeat:no-repeat;">
+                <br>
+               <table>
+                <tbody><tr>
+               
+               <td width="50%" align="right" style=" vertical-align:bottom; padding-bottom:55px;">
+                     <table style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/222.png&#39;);  background-repeat:no-repeat; text-align:center; width:194px; height:194px;">
+                        <tbody><tr><td style=" vertical-align:bottom;"><h3 style="margin-top:0px; margin-bottom:0px; font-size:32px; ">Advice</h3></td></tr>
+                        <tr><td style="padding-top: 2px; padding-left:10px;padding-right:10px; font-size:12px; vertical-align:top; ">We can help determine if you&#039;re
+                             eligible for R&amp;D tax credit. Get in
+                        touch today!
+                        
+                        </td></tr>  
+                     </tbody></table>
+               </td>
+               <td>
+               
+               
+               
+
+               
+                <h1 style="font-size:26px; font-weight:800; margin:0px;color:#03276c; ">Check your eligibility<br> for R&amp;D tax credits</h1>
+                <h3 style="color:#2b2c2d;font-size:22px; ">Do the following apply to <br> your business?</h3>
+                <table>
+                    <tbody><tr>
+                        <td><img src="https://aillediohh.fr/taxcreditsuf/333.png"></td>
+                        <td style="padding: 5px;"> Are you spending money on developing new processes, products or services?</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://aillediohh.fr/taxcreditsuf/333.png"></td>
+                        <td style="padding: 5px;">Were those projects started in the last 2-3 years?</td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://aillediohh.fr/taxcreditsuf/333.png"></td>
+                        <td style="padding: 5px;">Do you employ staff across a variety of roles who
+                            work on projects that advance knowledge, and
+                            clarify uncertainty?
+                        </td>
+                    </tr>
+                
+                </tbody></table>
+                </td></tr></tbody></table>
+                
+                
+          </td>  
+      </tr>      
+          
+      <tr>    
+          <td align="center" colspan="2">
+
+            <img src="https://aillediohh.fr/taxcreditsuf/666.png">
+            
+          </td>  
+      </tr>      
+      
+          
+      <tr>    
+          <td align="center" colspan="2" style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/555.png&#39;); background-repeat:no-repeat; background-position:bottom center;  padding-bottom:10px; color:#ffffff; font-size:10px;">          
+         
+                            <div style="padding-top:30px; padding-bottom:30px;">
+                            <a href="https://aillediohh.fr//taxcreditsuf/servitax/" style="border-radius: 5px; font-size:20px;margin:0px;color:#ffffff; margin-top:60px;margin-bottom:60px;background:#f72a77; padding-top:8px;padding-bottom:8px;padding-left:30px;padding-right:30px; font-weight:800; text-decoration:none;">Check if you Qualify</a>
+                            </div>
+                            
+                            
+                      <img src="https://aillediohh.fr/taxcreditsuf/888.png"><img src="https://aillediohh.fr/taxcreditsuf/444.png">
+                        <br><br>
+                    
+                    This e-mail is brought to you by an independent e-mail marketing company La grandville.
+                    <br><a href="https://aillediohh.fr/taxcreditsuf/vadonc/?email=PdelGWkIeVsWjbl+oRYG4jwUmpqq8NTJJKFC9E1ZPBEV+kj2zaOV87/qnGJT2q6sphQzY+aTpDe1WC8xSiOCj7ndRBrZcdu3qDM+fhkj7HVtwC+VXeCgkzRJ1Yk8PZdkRY7vP41ieW9RuAANit3LtRhVHQnD8KM/80Xnq9g1ecE=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop messages about <strong>R&D tax credis</strong>.<br>
+                    You have the right of access, rectification, opposition and consent Levent, which you have access on this web page: <a href="https://aillediohh.fr/taxcreditsuf/allions/" style="color:#09f;" target="_blank">Privacy policy Revel</a>.<br>
+You are receiving this message on your email address because you are in our list of managers and professionals.<br>
+                    
+                          
+              
+              
+          </td>  
+      </tr>         
+     
+      
+      
+     
+      
+
+    </tbody></table>
+    </td></tr></tbody></table>
+    
+    
+   
+</body></html>
+				                </body>
+			                   </html>
+
+
+
+--b1_281a846e6f6d1f0bc32de03eb57efd51--
+
+
+
+--===============5960805073790064069==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0767817596932915337==
+--===============5960805073790064069==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -299,5 +563,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0767817596932915337==--
+--===============5960805073790064069==--
+
 
