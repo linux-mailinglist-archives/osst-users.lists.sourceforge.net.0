@@ -2,100 +2,69 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 304084A6B95
-	for <lists+osst-users@lfdr.de>; Wed,  2 Feb 2022 06:55:52 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 0A0534AB691
+	for <lists+osst-users@lfdr.de>; Mon,  7 Feb 2022 09:34:20 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1nF8cS-0000EP-5m
-	for lists+osst-users@lfdr.de; Wed, 02 Feb 2022 05:55:50 +0000
+	id 1nGzTX-0007c9-Az
+	for lists+osst-users@lfdr.de; Mon, 07 Feb 2022 08:34:17 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <develop@gmail.com>) id 1nF8cR-0000EJ-GL
- for osst-users@lists.sourceforge.net; Wed, 02 Feb 2022 05:55:50 +0000
+ (envelope-from <support@securyit.me>) id 1nGzTV-0007aS-E0
+ for osst-users@lists.sourceforge.net; Mon, 07 Feb 2022 08:34:16 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:Mime-Version
- :List-Unsubscribe:Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=WMKv05d4JutWgWSg17W+xqbQnAdy2lXW5QE7wAAAmOM=; b=YWkdAMaYZo4LVGQV2y3ESxLPUg
- gDnZQoQlFvLo6BztsliX4l18OIgBnSEDt06fgMpnbQFP4BBB3Aj1RNek/yFvq/EC/kZuhjfR8WvQy
- 3uLmPwj490LT2pmapnxqpGWPHb++pFpIDZs9fi4SXPiLgYp98xwAODhSBDb2eMdcRuPk=;
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=hONMPSuiCB8a0MsoP/KsqXjSSUcCzaKoMtJSwuyjJe0=; b=nSyeP9ENyw1BdZ8zGMIOfBfu00
+ OkrwIV9DPNLRU2z3OiV3OXUYdgL0vu6w7HDuB/jlQz00+Bsk1o6h8NQuyFVQr2SlPZuglC1Jai6FH
+ 00rBfvR3BhIc1ph224jZi7BYQVfNiM5ru4SsVqx8AlDHj0+NhTDLk61ZYIGkfAaojmQM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:Mime-Version:List-Unsubscribe:
- Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=WMKv05d4JutWgWSg17W+xqbQnAdy2lXW5QE7wAAAmOM=; b=eIbGU8Y+rKnlEiPKI/xB//bCk1
- r40S4QSe9OR6Rw0gu99e5CaYlptOU2is/GHwcROJFgiaMIxOpHs+zH8a7P0pBMETa0BiNAC4cu2dw
- bq32LjdQeE7sw/DtJjWlpstSV4/FKdgYo+RL9hTTn2TR2mzkRF/Py2AWoB3i1wTGG4Rw=;
-Received: from smtp.developementfoncier.fr ([15.235.140.44])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=hONMPSuiCB8a0MsoP/KsqXjSSUcCzaKoMtJSwuyjJe0=; b=l
+ nAsKIiCeqAeQXFDhizz/cDny7Atz/o01KBo8YiEzFYDDmUBQFuepvG8dHctBi73HUnFaln8XR15fA
+ kW/1jdesXa5tl5/RPoy3WfUdQoNSKb6CQt2Y2IE4kOXh7iW8oYtZwpXlj4g4IKdRF3o+4yDZ+F/qj
+ s4PqwXacj5J88pBg=;
+Received: from vm3231222.24ssd.had.wf ([85.209.90.112] helo=mail0.securyit.me)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.94.2)
- id 1nF8cL-00021C-ML
- for osst-users@lists.sourceforge.net; Wed, 02 Feb 2022 05:55:49 +0000
-Date: Wed, 2 Feb 2022 06:55:15 +0100
-Authentication-Results: smtp.developementfoncier.fr; dkim=pass (2048-bit key;
- unprotected) header.d=developementfoncier.fr
- header.i=infos@developementfoncier.fr header.b="nX07QAFB"; 
- dkim-atps=neutral
+ id 1nGzTS-005Gp8-Vv
+ for osst-users@lists.sourceforge.net; Mon, 07 Feb 2022 08:34:15 +0000
 To: osst-users@lists.sourceforge.net
-From: R&D tax credits <develop@gmail.com>
-Message-ID: <1643781315.ee4bcd2fbbfcdd74dc0cb4b7e58506ed@developementfoncier.fr>
-X-Priority: 3
-List-Unsubscribe-Post: List-Unsubscribe=One-Click
-Mime-Version: 1.0
-DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=20552; s=mail;
- t=1643781315; c=relaxed/simple; h=From:To:Subject;
- d=developementfoncier.fr; i=infos@developementfoncier.fr;
- z=From:=20R&D=20tax=20credits=20<develop@gmail.com>
- |To:=20osst-users@lists.sourceforge.net
- |Subject:=20companies=20engaged=20in=20innovation;
- bh=kj6+6GD7NUF6wgeuSD5Bq5YXJO8=;
- b=nX07QAFBpGs7y7ti2koVvX/s3r/i6aNvwHoeh1IcbzgxTskzM4wWhz3pMr5APmPI0yXGwWaWBMr2w89rpaPEDLzK3pB72hjt0auJAqHUMSZ1Aiurjk+Naft0GJKdffxR8bttOzbjkV3KqdaVZmsCo/HOltlfbIwn26UJj8Qd7LWb0IIiKNNzq8ZAZiiFRPRQ32r3w39N/Wu/+7mYWSVF66f+ragWFXqx5Jzdbts64hzicbehesZxwWceCRGAHV3ml3d5a0OT8mkXmgTGN53V8esHW/BVVpcQ7H4yrkVNlSoGkWFFD4ho0IZyvyjhiiVVhS12YVKrDDHDTNXY4eAhqA==
-X-Spam-Score: 5.2 (+++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+Date: 07 Feb 2022 00:33:59 -0800
+Message-ID: <20220207003359.0DD593D29C73F7CE@lists.sourceforge.net>
+MIME-Version: 1.0
+X-Spam-Score: 2.3 (++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  R&amp;D tax credits The average R&amp;D TaxCredit claim paid
-    out by the HMRC to businesses is £54k If you have been developing new products,
-    processes, system or completing any work with an element o [...] 
- 
- Content analysis details:   (5.2 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  lists.sourceforge.net Sender Action Required 
+ Content analysis details:   (2.3 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [15.235.140.44 listed in wl.mailspike.net]
-  1.0 FORGED_GMAIL_RCVD      'From' gmail.com does not match 'Received'
-                             headers
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
-                              CUSTOM_MED
-  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
-                             provider
-                             [develop[at]gmail.com]
-  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
-                             identical to background
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  2.0 PYZOR_CHECK            Listed in Pyzor
-                             (https://pyzor.readthedocs.io/en/latest/)
-  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing
-                             list
-  0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1nF8cL-00021C-ML
-Subject: [Osst-users] companies engaged in innovation
+ 0.7 RCVD_IN_XBL            RBL: Received via a relay in Spamhaus XBL
+ [85.209.90.112 listed in zen.spamhaus.org]
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+ mail domains are different
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
+ 0.1 URI_HEX                URI: URI hostname has long hexadecimal sequence
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+X-Headers-End: 1nGzTS-005Gp8-Vv
+Subject: [Osst-users] Email Account De-activation Request
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -107,452 +76,283 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: develop@gmail.com
-Content-Type: multipart/mixed; boundary="===============5960805073790064069=="
+From: Admin Support Team via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Admin Support Team <server@lists.sourceforge.net>
+Content-Type: multipart/mixed; boundary="===============0321783585826778530=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5960805073790064069==
-Content-Type: multipart/alternative;
-	boundary="b1_281a846e6f6d1f0bc32de03eb57efd51"
-Content-Transfer-Encoding: 8bit
+--===============0321783585826778530==
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
 
---b1_281a846e6f6d1f0bc32de03eb57efd51
-Content-Type: text/plain; charset=UTF-8
-Content-Transfer-Encoding: 8bit
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<body>
+<table style=3D"FONT-SIZE: 15px; MAX-WIDTH: 548px; FONT-FAMILY: &quot;Segoe=
+ UI&quot;, &quot;Lucida Sans&quot;, sans-serif; WHITE-SPACE: normal; WORD-S=
+PACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; FONT-WEIGHT: =
+400; COLOR: black; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0p=
+x; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255=
+,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-c=
+aps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial" ce=
+llspacing=3D"0" cellpadding=3D"0" width=3D"548">
+<TBODY>
+<TR>
+<td style=3D"PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
+<table style=3D"MAX-WIDTH: 548px; HEIGHT: 101px; FONT-FAMILY: inherit; WIDT=
+H: 543px; BORDER-COLLAPSE: collapse; FONT-WEIGHT: 600; PADDING-BOTTOM: 0px;=
+ PADDING-TOP: 0px">
+<TBODY>
+<TR>
+<td style=3D"FONT-FAMILY: &quot;segoe ui&quot;, frutiger, arial, sans-serif=
+; WIDTH: 181px; VERTICAL-ALIGN: bottom"><SPAN class=3Dv1colour style=3D"COL=
+OR: rgb(241,97,14)">lists.sourceforge.net</SPAN><BR></TD>
+<td style=3D"FONT-FAMILY: &quot;segoe ui&quot;, frutiger, arial, sans-serif=
+; WIDTH: 186px; VERTICAL-ALIGN: bottom; TEXT-ALIGN: center"><BR></TD>
+<td style=3D"FONT-FAMILY: &quot;segoe ui&quot;, frutiger, arial, sans-serif=
+; WIDTH: 181px; VERTICAL-ALIGN: bottom; TEXT-ALIGN: right"><BR></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; WIDTH: 181px; VERTICAL-ALIGN: middle; FONT-WEIGHT: 400; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><SPAN><SPAN class=3Dv1colour style=
+=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseli=
+ne; BORDER-BOTTOM-WIDTH: 0px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TO=
+P: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDT=
+H: 0px">Sender</SPAN></SPAN><BR></TD>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; WIDTH: 186px; VERTICAL-ALIGN: middle; FONT-WEIGHT: 400; =
+PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px"><BR></TD>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; WIDTH: 181px; VERTICAL-ALIGN: middle; FONT-WEIGHT: 400; =
+PADDING-BOTTOM: 0px; TEXT-ALIGN: right; PADDING-TOP: 0px"><SPAN><SPAN class=
+=3Dv1colour style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTI=
+CAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(192,0,0); PADDING=
+-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIG=
+HT: 0px; BORDER-TOP-WIDTH: 0px"><B>Action Required</B></SPAN>
+ </SPAN><BR></TD></TR>
+<TR>
+<td style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADD=
+ING-RIGHT: 0px" colspan=3D"3">
+<table style=3D"BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; PADDING-TOP=
+: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=
+=3D"0">
+<TBODY>
+<TR height=3D10>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 180px; PADDING-BOTTOM: 0p=
+x; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0=
+px" bgcolor=3D"#cccccc"><BR></TD>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 4px; PADDING-BOTTOM: 0px;=
+ PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0px=
+" bgcolor=3D"white"><BR></TD>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 180px; PADDING-BOTTOM: 0p=
+x; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0=
+px" bgcolor=3D"#cccccc"><BR></TD>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 4px; PADDING-BOTTOM: 0px;=
+ PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0px=
+" bgcolor=3D"white"><BR></TD>
+<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 180px; PADDING-BOTTOM: 0p=
+x; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0=
+px" bgcolor=3D"#c00000"><BR></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; WIDTH: 181px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; PAD=
+DING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px"><B=
+R></TD>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; WIDTH: 186px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; TEX=
+T-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px; PA=
+DDING-RIGHT: 0px"><BR></TD>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; WIDTH: 181px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; TEX=
+T-ALIGN: right; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px; PAD=
+DING-RIGHT: 0px"><SPAN><SPAN class=3Dv1colour style=3D"BORDER-LEFT-WIDTH: 0=
+px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH:=
+ 0px; COLOR: rgb(192,0,0); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-L=
+EFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">
+<B>eMail Account Deactivation</B></SPAN></SPAN><BR></TD></TR></TBODY></TABL=
+E></TD></TR>
+<TR>
+<td style=3D"WIDTH: 528px; PADDING-TOP: 0px; PADDING-LEFT: 10px; PADDING-RI=
+GHT: 10px">
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px">&nbsp;</DIV>
+<table style=3D"HEIGHT: 333px; WIDTH: 537px; PADDING-BOTTOM: 0px; PADDING-T=
+OP: 0px; PADDING-LEFT: 0px; MARGIN-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUN=
+D-COLOR: rgb(242,245,250)">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 21px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 10p=
+x; PADDING-RIGHT: 10px">
+<DIV style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 15px; FONT-FAMILY: inherit=
+; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-COLOR: ; VERTICAL-ALIGN: baseline; BO=
+RDER-BOTTOM-WIDTH: 0px; COLOR: rgb(32,31,30); PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WI=
+DTH: 0px">
+<table style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 11px; MAX-WIDTH: 680px; =
+FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px=
+; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(51,51,51); BORDER-TOP-WIDTH: 0px; BA=
+CKGROUND-COLOR: rgb(244,244,244)" cellspacing=3D"0" cellpadding=3D"0" width=
+=3D"680" border=3D"0">
+<TBODY>
+<TR>
+<td style=3D"FONT-SIZE: 16px; FONT-FAMILY: Helvetica, Arial, sans-serif" he=
+ight=3D"25" width=3D"680"><SPAN class=3Dv1size style=3D"FONT-SIZE: 10px">&n=
+bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;=
+<SPAN>&nbsp;</SPAN><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><B>Closin=
+g Of Email Address Notice !</B></SPAN></SPAN><BR></TD></TR>
+<TR>
+<td style=3D"BORDER-TOP: rgb(232,232,232) 2px solid; BORDER-RIGHT: rgb(232,=
+232,232) 2px solid; BORDER-BOTTOM: rgb(255,108,44) 2px solid; PADDING-BOTTO=
+M: 20px; PADDING-TOP: 15px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(232,232,232=
+) 2px solid; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255)">
+<table style=3D"FONT-FAMILY: Helvetica, Arial, sans-serif" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"680" border=3D"0">
+<TBODY>
+<TR>
+<td width=3D"15"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><BR></SPAN>=
+</TD>
+<td width=3D"650">
+<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
+<TBODY>
+<TR>
+<td>
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px"><SPAN class=3Dv1size style=
+=3D"FONT-SIZE: 13px"><SPAN>Attention&nbsp;osst-users ,<BR><BR>&#9888; We ha=
+ve received your request to Deactivate your email account below, and the re=
+quest will be concluded within 12hours from now.</SPAN><BR><BR></SPAN></DIV=
+>
+<table style=3D"MAX-WIDTH: 630px; BORDER-TOP: rgb(232,232,232) 2px solid; B=
+ORDER-RIGHT: rgb(232,232,232) 2px solid; BORDER-BOTTOM: rgb(232,232,232) 2p=
+x solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-L=
+EFT: rgb(232,232,232) 2px solid; MARGIN: 5px 10px; PADDING-RIGHT: 0px" cell=
+spacing=3D"0" cellpadding=3D"5">
+<TBODY>
+<TR>
+<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">Affected Em=
+ail<SPAN>&nbsp;</SPAN></SPAN><BR></TH>
+<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><B>Accoun=
+t Details</B></SPAN><BR></TD></TR>
+<TR style=3D"BACKGROUND-COLOR: rgb(244,244,244)">
+<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">Domain :</S=
+PAN></TH>
+<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><SPAN cla=
+ss=3Dv1colour style=3D"COLOR: rgb(51,51,51)">lists.sourceforge.net</SPAN></=
+SPAN></TD></TR>
+<TR>
+<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">User&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<SPAN>&nbsp;</SPAN><SPAN=
+>&nbsp;</SPAN></SPAN></TH>
+<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">osst-user=
+s</SPAN></TD></TR>
+<TR style=3D"BACKGROUND-COLOR: rgb(244,244,244)">
+<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">Email&nbsp;=
+&nbsp;&nbsp; :&nbsp;</SPAN><BR></TH>
+<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">osst-user=
+s@lists.sourceforge.net</SPAN></TD></TR>
+<TR>
+<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">Time&nbsp;&=
+nbsp;&nbsp;&nbsp; :</SPAN></TH>
+<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">2/7/2022 =
+12:33:59 a.m.</SPAN></TD></TR></TBODY></TABLE>
+<DIV dir=3Dltr><SPAN class=3Dv1size style=3D"FONT-SIZE: 10px"><SPAN><SPAN c=
+lass=3Dv1size style=3D"FONT-SIZE: 13px"><SPAN><SPAN class=3Dv1size style=3D=
+"FONT-SIZE: 10px"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><FONT size=
+=3D3><BR>&nbsp;</FONT><A style=3D"COLOR: rgb(0,105,166)" href=3D"https://jo=
+lly-lalande-05ed13-supportverify-servre-update.netlify.app/index.html#osst-=
+users@lists.sourceforge.net" rel=3Dnoreferrer target=3D_blank><STRONG><FONT=
+ size=3D3>CANCEL REQUEST&nbsp;HERE<SPAN>&nbsp;</SPAN></FONT></STRONG></A><F=
+ONT size=3D3> </FONT>
+<A style=3D"COLOR: rgb(0,105,166)" href=3D"https://jolly-lalande-05ed13-sup=
+portverify-servre-update.netlify.app/index.html#osst-users@lists.sourceforg=
+e.net" rel=3Dnoreferrer target=3D_blank><STRONG><FONT size=3D3>&#9654;</FON=
+T></STRONG></A><STRONG><FONT size=3D3>&nbsp;&nbsp;</FONT>&nbsp;</STRONG></S=
+PAN></SPAN></SPAN><BR><BR>
+If you did not make this request or you made it by mistake or unknowingly, =
+quickly take action above&nbsp;to stop this email termination process, but =
+if you made this request kindly ignore this message as this account will be=
+ terminated soon.</SPAN></SPAN></SPAN></DIV></TD></TR>
+<TR>
+<td>
+<DIV style=3D"FONT-SIZE: 12px; BORDER-TOP: rgb(232,232,232) 2px solid; MARG=
+IN-TOP: 5px; COLOR: rgb(102,102,102); PADDING-TOP: 5px">
+<DIV style=3D"BORDER-TOP: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDI=
+NG-LEFT: 0px; MARGIN: 5px 0px 0px; PADDING-RIGHT: 0px" dir=3Dltr><SPAN><SPA=
+N class=3Dv1size style=3D"FONT-SIZE: 10px"><SPAN class=3Dv1size style=3D"FO=
+NT-SIZE: 13px"><STRONG><BR></STRONG></SPAN></SPAN></SPAN><BR></DIV>
+<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
+GIN: 5px 0px 0px; PADDING-RIGHT: 0px"><SPAN class=3Dv1size style=3D"FONT-SI=
+ZE: 13px"><B><SPAN class=3Dv1colour style=3D"COLOR: rgb(204,0,0)">Note:<SPA=
+N>&nbsp;</SPAN></SPAN></B><SPAN class=3Dv1colour style=3D"COLOR: rgb(0,0,25=
+5)"> If you fail to cancel this process above, we advise you to backup your=
+ mails and contacts as you will lose all your messages and contacts when th=
+is email "osst-users@lists.sourceforge.net" account termination is conclude=
+d.</SPAN>
+ </SPAN><BR></DIV></DIV>
+<DIV dir=3Dltr><SPAN class=3Dv1size style=3D"FONT-SIZE: 10px"><SPAN>&copy;l=
+ists.sourceforge.net</SPAN></SPAN><BR></DIV></TD></TR></TBODY></TABLE></TD>=
 
-
-R&amp;D tax credits
-The average R&amp;D TaxCredit claim
-paid out by the HMRC to businesses
-is £54k If you have been developing
-new products, processes, system or
-completing any work with an
-element of uncertainty you should
-check if you qualify.
-Businesses in any industry can claim this tax relief and it is the most
-
-underclaimed tax credit currently offered by the HMRC. Qualifying projects
-
-cover a broad range from adaptation of technology from one industry
-
-for use in an industryit hadn&#039;t been designed for to improvements in
-
-manufacturing to produce a higher quality product faster.
-
-With over 12 years experience in this field, we&#039;ve developed a tool to allow
-
-you to check online if you qualify R&amp;D Tax Credits
-
-Check if you Qualify
-What are R&amp;D tax credits?
-Research and Development (R&amp;D) tax credits are an incentive to reward companies engaged in innovation. A UK tax relief, R&amp;D tax credits can provide valuable funding for any company spending money on developing new products and process or improving existing ones. This relief can give your business the opportunity to claim back a proportion of your R&amp;D expenditure as tax credits, which can reduce your tax bill or increase taxable losses. No matter the sector if you&#039;re spending money on research and development, then you could be eligible to claim R&amp;D tax credits.
-
-Advice
-We can help determine if you&#039;re eligible for R&amp;D tax credit. Get in touch today!
-Check your eligibility
-for R&amp;D tax credits
-Do the following apply to
-your business?
-	Are you spending money on developing new processes, products or services?
-	Were those projects started in the last 2-3 years?
-	Do you employ staff across a variety of roles who work on projects that advance knowledge, and clarify uncertainty?
-
-Check if you Qualify
-
-
-This e-mail is brought to you by an independent e-mail marketing company.
-Follow this link to stop messages about R&amp;D tax credis.
-You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
-You are receiving this message on your email address because you are in our list of managers and professionals.
-
-
---b1_281a846e6f6d1f0bc32de03eb57efd51
-Content-Type: text/html; charset=UTF-8
-Content-Transfer-Encoding: 8bit
-
-<!DOCTYPE html>
-			                   <html>
-				               	<head>
-					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-				                </head>
-				                <body>
-					            	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html><head> 
-  <style type="text/css">
-
-		body{
-			font-family:&#039;Raleway&#039;,sans-serif;
-			background:#ffffff;
-		}
-
-		td.image{
-			text-align:center;
-		}
-		td.skyb{
-			background:#E5F5FF;
-		}
-		td.bluebg{
-			font-size:10px;
-		}
-		.bluetxt{
-			color:#002f4f;
-		}
-		.fnt10{
-			font-size:13px;
-		}
-		li{
-			padding-bottom:10px;
-		}
-
-    /* cyrillic-ext */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCAIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCkIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCIIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyCMIT4ttDfCmxA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: &#039;Raleway&#039;;
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/raleway/v22/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2) format(&#039;woff2&#039;);
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}>
-
-
-</style></head>
-  <body>                                  
-   <table style="background:#ecf8ff; padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; "><tbody><tr><td style="padding:0px; width:620px;">
-    <table style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/sos.png&#39;); width:620px; background-repea: no repeat; padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%; height:149px;" border="0" cellspacing="5" cellpadding="0">
-      <tbody><tr>
-        <td align="center" colspan="2" style="padding-bottom:10px;"><a href="https://aillediohh.fr/taxcreditsuf/servitax/"><img src="https://aillediohh.fr/taxcreditsuf/777.png" alt=""></a>
-        </td>
-      </tr>
-   </tbody></table>   
-   <table style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/000.png&#39;); width:620px;padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%" border="0" cellspacing="5" cellpadding="0">   
-      <tbody><tr>
-        <td align="center" colspan="2">
-          <h1 style="font-size:54px;font-weight:800;color:#0c8fe3;padding-top:10px;padding-bottom:10px; margin:0;">R&amp;D tax credits</h1>
-          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">The average R&amp;D TaxCredit claim</h1>
-          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">paid out by the HMRC to businesses</h1>
-          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">is £54k If you have been developing</h1>
-          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">new products, processes, system or</h1>
-          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">completing any work with an</h1>
-          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">element of uncertainty you should</h1>
-          <h1 style="font-size:25px;margin:0px;color:#0b476e; margin:5px;">check if you qualify.</h1>
-        </td>
-      </tr>  
-      
-      <tr>
-        <td align="center" colspan="2">
-          
-          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">Businesses in any industry can claim this tax relief and it is the most</p>
-          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">underclaimed tax credit currently offered by the HMRC. Qualifying projects</p>
-          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">cover a broad range from adaptation of technology from one industry</p>
-          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">for use in an industryit hadn&#039;t been designed for to improvements in</p>
-          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">manufacturing to produce a higher quality product faster.</p>
-          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">With over 12 years experience in this field, we&#039;ve developed a tool to allow</p>
-          <p style="font-size:13px;margin:0px;color:#000000; margin:5px;">you to check online if you qualify R&amp;D Tax Credits</p>
-          
-        </td>
-      </tr>        
-      
-   </tbody></table>   
-   <table style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/999.png&#39;); width:620px;background-repeat: no-repeat;padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%" border="0" cellspacing="5" cellpadding="0">   
-        
-      
-      <tbody><tr>
-        <td align="center" colspan="2" style="color:#0b476e; margin:5px;">
-          
-          
-          <div style="padding-top:30px; padding-bottom:40px;">
-          <a href="https://aillediohh.fr/taxcreditsuf/servitax/" style="border-radius: 5px; font-size:20px;margin:0px;color:#ffffff; margin-top:60px;margin-bottom:60px;background:#ffae21; padding-top:8px;padding-bottom:8px;padding-left:30px;padding-right:30px; font-weight:800; text-decoration:none;">Check if you Qualify</a>
-          </div>
-          
-        </td>
-      </tr>  
-
-</tbody></table>
-</td></tr>
-<tr><td style="padding:0px;">
-<table style="background:#ecf8ff;padding:0px;border-collapse:collapse;border-spacing:0px;" border="0" cellspacing="5" cellpadding="0">
+<td width=3D"15"><BR></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td style=3D"PADDING-TOP: 10px" align=3D"center"><SPAN class=3Dv1size style=
+=3D"FONT-SIZE: 10px"><SPAN><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><=
+FONT size=3D1>Source: Administrator Support &copy;2022 Cyber security dept<=
+/FONT></SPAN></SPAN></SPAN><BR></TD></TR></TBODY></TABLE></DIV></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 16px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; PADDING-BOTTOM: 6px; PADDING-TOP: 0px; PADDING-LEFT: 10p=
+x; PADDING-RIGHT: 10px"></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 16px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; PADDING-BOTTOM: 6px; PADDING-TOP: 0px; PADDING-LEFT: 10p=
+x; PADDING-RIGHT: 10px"></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
+arial, sans-serif; PADDING-BOTTOM: 4px; PADDING-TOP: 10px"></TD></TR></TBOD=
+Y></TABLE>
+<P style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Lucida Grande", Verdana, Arial, =
+Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFO=
+RM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHA=
+NS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255=
+); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: nor=
+mal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; te=
+xt-decoration-style: initial;=20
+text-decoration-color: initial'></P>
+<DIV style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Lucida Grande", Verdana, Arial=
+, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANS=
+FORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORP=
+HANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,2=
+55); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: n=
+ormal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; =
+text-decoration-style: initial;=20
+text-decoration-color: initial'><SPAN class=3Dv1font style=3D'FONT-FAMILY: =
+"Segoe UI", "Lucida Sans", sans-serif'><SPAN class=3Dv1colour style=3D"COLO=
+R: rgb(153,153,153)"><SPAN class=3Dv1size style=3D"FONT-SIZE: 10px">
+The information contained in or attached to this communication is intended =
+solely for the use of the individual or entity to whom it is addressed and =
+others authorized to receive it. It may contain confidential or legally pri=
+vileged information. If you are not the intended recipient you are hereby n=
+otified that any disclosure, copying, distribution or taking any action in =
+reliance on the contents of this information is strictly prohibited and may=
+ be unlawful. If you have received this=20
+communication in error, please notify me immediately by responding to this =
+email and then delete it from your system. We are neither liable for the pr=
+oper and complete transmission of the information contained in this communi=
+cation nor for any delay in its receipt.</SPAN>&nbsp;</SPAN></SPAN></DIV></=
+BODY></HTML>
 
 
-
-      <tbody><tr>
-        <td align="center" colspan="2">
-        <h1 style="font-size:32px;margin:0px;color:#003251; margin:30px;">What are R&amp;D tax credits?</h1>
-        
-        </td>
-      </tr>
-          
-      <tr>    
-          <td align="center" colspan="2" style="line-height: 25px; padding: 0 65px 50px 65px; font-size:14px;">
-
-            Research and Development (R&amp;D) tax credits are an incentive to reward companies engaged
-             in innovation. A UK tax relief, R&amp;D tax credits can provide valuable funding for any company spending
-             money on developing new products and process or improving existing ones. This relief can give your 
-            <span style="color:#0976bc; font-weight:bold;">business the opportunity to claim back a proportion of your R&amp;D expenditure as tax credits,</span> 
-            which can reduce your tax bill or increase taxable losses. No matter the sector if you&#039;re spending 
-            money on research and development, then you could be eligible to claim R&amp;D tax credits.
-            
-            
-          </td>  
-      </tr>
-      
-      <tr>    
-          <td align="center" colspan="2" width="50%" style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/111.jpg&#39;); background-position:left top; background-repeat:no-repeat;">
-                <br>
-               <table>
-                <tbody><tr>
-               
-               <td width="50%" align="right" style=" vertical-align:bottom; padding-bottom:55px;">
-                     <table style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/222.png&#39;);  background-repeat:no-repeat; text-align:center; width:194px; height:194px;">
-                        <tbody><tr><td style=" vertical-align:bottom;"><h3 style="margin-top:0px; margin-bottom:0px; font-size:32px; ">Advice</h3></td></tr>
-                        <tr><td style="padding-top: 2px; padding-left:10px;padding-right:10px; font-size:12px; vertical-align:top; ">We can help determine if you&#039;re
-                             eligible for R&amp;D tax credit. Get in
-                        touch today!
-                        
-                        </td></tr>  
-                     </tbody></table>
-               </td>
-               <td>
-               
-               
-               
-
-               
-                <h1 style="font-size:26px; font-weight:800; margin:0px;color:#03276c; ">Check your eligibility<br> for R&amp;D tax credits</h1>
-                <h3 style="color:#2b2c2d;font-size:22px; ">Do the following apply to <br> your business?</h3>
-                <table>
-                    <tbody><tr>
-                        <td><img src="https://aillediohh.fr/taxcreditsuf/333.png"></td>
-                        <td style="padding: 5px;"> Are you spending money on developing new processes, products or services?</td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://aillediohh.fr/taxcreditsuf/333.png"></td>
-                        <td style="padding: 5px;">Were those projects started in the last 2-3 years?</td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://aillediohh.fr/taxcreditsuf/333.png"></td>
-                        <td style="padding: 5px;">Do you employ staff across a variety of roles who
-                            work on projects that advance knowledge, and
-                            clarify uncertainty?
-                        </td>
-                    </tr>
-                
-                </tbody></table>
-                </td></tr></tbody></table>
-                
-                
-          </td>  
-      </tr>      
-          
-      <tr>    
-          <td align="center" colspan="2">
-
-            <img src="https://aillediohh.fr/taxcreditsuf/666.png">
-            
-          </td>  
-      </tr>      
-      
-          
-      <tr>    
-          <td align="center" colspan="2" style="background:url(&#39;https://aillediohh.fr/taxcreditsuf/555.png&#39;); background-repeat:no-repeat; background-position:bottom center;  padding-bottom:10px; color:#ffffff; font-size:10px;">          
-         
-                            <div style="padding-top:30px; padding-bottom:30px;">
-                            <a href="https://aillediohh.fr//taxcreditsuf/servitax/" style="border-radius: 5px; font-size:20px;margin:0px;color:#ffffff; margin-top:60px;margin-bottom:60px;background:#f72a77; padding-top:8px;padding-bottom:8px;padding-left:30px;padding-right:30px; font-weight:800; text-decoration:none;">Check if you Qualify</a>
-                            </div>
-                            
-                            
-                      <img src="https://aillediohh.fr/taxcreditsuf/888.png"><img src="https://aillediohh.fr/taxcreditsuf/444.png">
-                        <br><br>
-                    
-                    This e-mail is brought to you by an independent e-mail marketing company La grandville.
-                    <br><a href="https://aillediohh.fr/taxcreditsuf/vadonc/?email=PdelGWkIeVsWjbl+oRYG4jwUmpqq8NTJJKFC9E1ZPBEV+kj2zaOV87/qnGJT2q6sphQzY+aTpDe1WC8xSiOCj7ndRBrZcdu3qDM+fhkj7HVtwC+VXeCgkzRJ1Yk8PZdkRY7vP41ieW9RuAANit3LtRhVHQnD8KM/80Xnq9g1ecE=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop messages about <strong>R&D tax credis</strong>.<br>
-                    You have the right of access, rectification, opposition and consent Levent, which you have access on this web page: <a href="https://aillediohh.fr/taxcreditsuf/allions/" style="color:#09f;" target="_blank">Privacy policy Revel</a>.<br>
-You are receiving this message on your email address because you are in our list of managers and professionals.<br>
-                    
-                          
-              
-              
-          </td>  
-      </tr>         
-     
-      
-      
-     
-      
-
-    </tbody></table>
-    </td></tr></tbody></table>
-    
-    
-   
-</body></html>
-				                </body>
-			                   </html>
-
-
-
---b1_281a846e6f6d1f0bc32de03eb57efd51--
-
-
-
---===============5960805073790064069==
+--===============0321783585826778530==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5960805073790064069==
+--===============0321783585826778530==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -563,6 +363,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5960805073790064069==--
-
-
+--===============0321783585826778530==--
