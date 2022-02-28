@@ -2,59 +2,59 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 03DF34C5E6C
-	for <lists+osst-users@lfdr.de>; Sun, 27 Feb 2022 20:27:40 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
+	by mail.lfdr.de (Postfix) with ESMTPS id 789D94C79E6
+	for <lists+osst-users@lfdr.de>; Mon, 28 Feb 2022 21:18:16 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1nOPCl-0007Dh-OG
-	for lists+osst-users@lfdr.de; Sun, 27 Feb 2022 19:27:38 +0000
+	id 1nOmTI-0005Ic-H3
+	for lists+osst-users@lfdr.de; Mon, 28 Feb 2022 20:18:15 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <amozon-account-update@joibvd.cn>) id 1nOPCj-0007Db-Nh
- for osst-users@lists.sourceforge.net; Sun, 27 Feb 2022 19:27:36 +0000
+ (envelope-from <amozon-account-update@uebjbj.cn>) id 1nOmTH-0005IW-AY
+ for osst-users@lists.sourceforge.net; Mon, 28 Feb 2022 20:18:13 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:Mime-Version:Message-ID:Subject:To:
  From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Sy5HjwaT5N2MsNMDJpvq6Bs7FjZoZzBbtEvr0I5CeQc=; b=NjQyiWWN/XD5Jz1j4+KgqPl/Ub
- Sw9Y8Rd8tqmjOWTC5FZ+PMom3+SBuWEoVVznE7iO7Qx29VzgQHcmXDOtzRESKZTGgt1TmsLwc0MzT
- ughFqN8s/YBTtj0MP7nJfXVlrgLh/w1YXF8tvFyX88Vz6tlK+w3eqLCHtE5QX1xzTQcU=;
+ bh=JUZ/8DIACriOUS+A/CLk9POpUZEsMUDg5Qwxu1G8T3E=; b=gRfpjdX1EgLSozReL9lGfNfPXy
+ OB4VyJdxZAaXOm7NSa0Xwuao3jHv8TGd+6qNUjeiT+7OHEXloURYPvutfMoBYEK3ffMr05Fyn7ovE
+ T9BesApt1GL0SazJLmY8AIM1jpkrqxLZKJu/GkthR6Fgs4yGg5pP0qFxwFaJLqNbKc5Y=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:Mime-Version:Message-ID:Subject:To:From:Date:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Sy5HjwaT5N2MsNMDJpvq6Bs7FjZoZzBbtEvr0I5CeQc=; b=W
- xRKf6RTVjzaR4W3TqkBEyhMipjPNq9slGksQ31nEcshuYS6mAJmqNqK/7t/RzNpt5d3myUPpFYA+m
- M9dZPQJqf+zCBMq4q8LIChdCAUzNIPOa37mqsxFXti1W7uSHLjHLD1t72+tMPIQGd5lYKLTRC5Mp4
- x22XgS6HfAFBx7j4=;
-Received: from joibvd.cn ([91.215.153.118])
+ List-Owner:List-Archive; bh=JUZ/8DIACriOUS+A/CLk9POpUZEsMUDg5Qwxu1G8T3E=; b=c
+ w6m7cuUCqA+dnZB5oJOK6RlhXrD8j/TFhh1pJMrl1BM7VxB8dvaAjSg9oNeyXuG97D43Ga0Up/9gm
+ aiI5ILUZ21nN1s1U5YcNWGOoDZD9QXqkr1H3YcK5CnstUJumiCSpS8KmNp8n5i2zOMmrxHOn3Qn2H
+ AxUR5sh0mUCDXeOw=;
+Received: from uebjbj.cn ([173.82.219.51])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.94.2)
- id 1nOPCf-0005U2-8d
- for osst-users@lists.sourceforge.net; Sun, 27 Feb 2022 19:27:35 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=joibvd.cn; 
+ id 1nOmTE-0003qG-28
+ for osst-users@lists.sourceforge.net; Mon, 28 Feb 2022 20:18:13 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=uebjbj.cn; 
  h=Date:From:To:Subject:Message-ID:Mime-Version:Content-Type;
- i=amozon-account-update@joibvd.cn;
- bh=Sy5HjwaT5N2MsNMDJpvq6Bs7FjZoZzBbtEvr0I5CeQc=;
- b=Jh3Jlk+u2UBQZkK7iL97jJd4ZIzUj9z2gGeDBw0K5nvbOU/FOs0vwk8gLcHJY2gwb1NlGLYS6Hk8
- lGiNUFofJHJs7BDzgAQzI63KTyi77NyiVAB+uiDb5YU7kM3LkbYBvdGpay1Oi/bwLCojdPCNG50D
- hnol6akGS0hxqsyYzslvcQFtH3wBCTiWP1xtOeG+2qkBEiYKBqv0QiL5rKJre7zcCqIW2TynD61j
- stWHdIe9xe6rzfnh64xEgbV4zw6REEjz1w73bk2GdS9C71ywUAS5E8/2VOAMz95iodjSruvte0m/
- W2bN/aM6GQBVD8slXoP5xDCNOp/NvJg0jPQuAw==
-Date: Mon, 28 Feb 2022 03:27:20 +0800
-From: "Amazons.co.jp" <amozon-account-update@joibvd.cn>
+ i=amozon-account-update@uebjbj.cn;
+ bh=JUZ/8DIACriOUS+A/CLk9POpUZEsMUDg5Qwxu1G8T3E=;
+ b=O96DfLNYAJLzF4VBCCy+z2UPInUylvpi2Qvqu4p8/7znHWlW8JAHaLEw43rXflzRlsa8su0KN1Hz
+ ve9lR2BKoHaOXbEtEkMOFO5XLR7l4zGdMZ4ayHqyt6JISBbC7DFTH7HkNZfErEI2NlWhnBWu8xr1
+ VnmPFd54C4e2SJOejFDzb+J6W9Boi3gdAsG7sPaqrm7ZVWCEX1H5Pnpsm0TIuSH1i6+wpk42NU72
+ OzJ/82EZaOCPgmEmbxxd25nI/ek8uiH6r8SXQgDPEOMMxv8L/MVO99+r5Dhd0UEg607IWt2We421
+ 6g3gmTvKQxZayoXo0Py/8t80LwDI310YC+mbUw==
+Date: Tue, 1 Mar 2022 04:18:08 +0800
+From: "Amazons.co.jp" <amozon-account-update@uebjbj.cn>
 To: <osst-users@lists.sourceforge.net>
-Message-ID: <20220228032733373720@joibvd.cn>
+Message-ID: <20220301041814083688@uebjbj.cn>
 Mime-Version: 1.0
-X-Spam-Score: -0.2 (/)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
- has NOT identified this incoming email as spam.  The original
+X-Spam-Score: 7.6 (+++++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
@@ -64,25 +64,36 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.
     お調べしたところ、会費のお支払いに使用できる有効な�
     [...] 
  
- Content analysis details:   (-0.2 points, 6.0 required)
+ Content analysis details:   (7.6 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
+  2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+                             blocklist
+                             [URIs: uebjbj.cn]
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+                             [173.82.219.51 listed in zen.spamhaus.org]
+  0.1 URIBL_CSS_A            Contains URL's A record listed in the Spamhaus CSS
+                             blocklist
+                             [URIs: uebjbj.cn]
   0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: amazon-urgents.shop]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+                             [URIs: amazon-duress.shop]
+  1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
+                             [URIs: amazon-duress.shop]
  -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
   0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
                              identical to background
-  0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
   0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
                              valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
  -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-X-Headers-End: 1nOPCf-0005U2-8d
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Headers-End: 1nOmTE-0003qG-28
 Subject: [Osst-users] =?utf-8?b?QW1hem9u44OX44Op44Kk44Og44Gu6Ieq5YuV5pu0?=
 	=?utf-8?b?5paw6Kit5a6a44KS6Kej6Zmk44GE44Gf44GX44G+44GX44Gf77yB55Wq?=
 	=?utf-8?b?5Y+377yaMDI2NTMxMjgyODk0?=
@@ -97,23 +108,23 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============7776425837352149571=="
+Content-Type: multipart/mixed; boundary="===============0496485349238553274=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
 
---===============7776425837352149571==
+--===============0496485349238553274==
 Content-Type: multipart/related;
 	type="multipart/alternative";
-	boundary="=====003_Dragon566062704175_====="
+	boundary="=====003_Dragon524177866621_====="
 
 This is a multi-part message in MIME format.
 
---=====003_Dragon566062704175_=====
+--=====003_Dragon524177866621_=====
 Content-Type: multipart/alternative;
-	boundary="=====002_Dragon566062704175_====="
+	boundary="=====002_Dragon524177866621_====="
 
---=====002_Dragon566062704175_=====
+--=====002_Dragon524177866621_=====
 Content-Type: text/plain;
 	charset="utf-8"
 Content-Transfer-Encoding: base64
@@ -156,7 +167,7 @@ DQrliKnnlKjopo/ntITjg5fjg6njgqTjg5Djgrfjg7zopo/ntITjg5Hjg7zjgr3jg4rjg6njgqTj
 grrjg4nluoPlkYropo/ntITCqSAyMDIyLCBBbWF6b24uY28uanAsIEluYy4gb3IgaXRzIGFmZmls
 aWF0ZXMu
 
---=====002_Dragon566062704175_=====
+--=====002_Dragon524177866621_=====
 Content-Type: text/html;
 	charset="utf-8"
 Content-Transfer-Encoding: base64
@@ -177,8 +188,8 @@ bWFsOyBURVhULUlOREVOVDogMHB4OyAtd2Via2l0LXRleHQtc3Ryb2tlLXdpZHRoOiAwcHg7IHRl
 eHQtZGVjb3JhdGlvbi1zdHlsZTogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLWNvbG9yOiBpbml0
 aWFsJyANCmNlbGxTcGFjaW5nPTAgY2VsbFBhZGRpbmc9MCB3aWR0aD0iMTAwJSIgYm9yZGVyPTA+
 DQogIDxUQk9EWT4NCiAgPFRSIHZBbGlnbj1taWRkbGU+DQogICAgPFREIGhlaWdodD02ND48SU1H
-IGJvcmRlcj0wIGhzcGFjZT0wIGFsdD0iIiANCiAgICAgIHNyYz0iY2lkOjAwMDNFODM4MjFCNV8w
-NTkxODUzNl8wM0RBM0Q1RiI+PC9URD4NCiAgICA8VEQgdkFsaWduPXRvcCB3aWR0aD0yMCBhbGln
+IGJvcmRlcj0wIGhzcGFjZT0wIGFsdD0iIiANCiAgICAgIHNyYz0iY2lkOjAwMDYyRUM4ODRDRV8w
+RUY5RTU2MV8wQjQ1NURGMCI+PC9URD4NCiAgICA8VEQgdkFsaWduPXRvcCB3aWR0aD0yMCBhbGln
 bj1jZW50ZXI+Jm5ic3A7PC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT4NCjxUQUJMRSBpZD15dWlf
 M18yXzBfMV8xNTM3NTY0ODAxNDA5OTM2NCANCnN0eWxlPSdNQVJHSU4tQk9UVE9NOiAyMHB4OyBG
 T05ULUZBTUlMWTogIk1pY3Jvc29mdCBZYUhlaSI7IFdPUkQtU1BBQ0lORzogMHB4OyBURVhULVRS
@@ -229,67 +240,67 @@ ZGl1bSBub25lOyBDT0xPUjogd2hpdGU7IFBBRERJTkctQk9UVE9NOiAxNXB4OyBURVhULUFMSUdO
 OiBjZW50ZXI7IFBBRERJTkctVE9QOiAxNXB4OyBQQURESU5HLUxFRlQ6IDMycHg7IEJPUkRFUi1M
 RUZUOiBtZWRpdW0gbm9uZTsgTUFSR0lOOiAxNHB4IDEycHg7IERJU1BMQVk6IGlubGluZS1ibG9j
 azsgUEFERElORy1SSUdIVDogMzJweDsgYm9yZGVyLXJhZGl1czogOHB4IiANCiAgICAgIGhyZWY9
-Imh0dHBzOi8vYW1hem9uLXVyZ2VudHMuc2hvcC8iIHRhcmdldD1fYmxhbms+PFNUUk9ORz48Rk9O
-VCANCiAgICAgIGNvbG9yPXdoaXRlPuaUr+aJleaWueazleOCkuWkieabtOOBmeOCizwvRk9OVD48
-L1NUUk9ORz48L0E+PC9GT05UPjxGT05UIGNvbG9yPSMzMzMzMzM+IA0KICAgICAgPFA+PEJSPjxT
-UEFOIA0KICAgICAgc3R5bGU9IkZPTlQtU0laRTogMTRweCI+PEI+44Gq44GK44CBMjTmmYLplpPk
-u6XlhoXjgavjgZTnorroqo3jgYzjgarjgYTloLTlkIjjgIHoqqDjgavnlLPjgZfoqLPjgZTjgZbj
-gYTjgb7jgZvjgpPjgIHjgYrlrqLmp5jjga7lronlhajjga7ngrrjgIHjgqLjgqvjgqbjg7Pjg4jj
-ga7liKnnlKjliLbpmZDjgpLjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgb7jgZnjga7jgafjgIHkuojj
-goHjgZTkuobmib/jgY/jgaDjgZXjgYTjgII8L0I+PC9TUEFOPjwvUD48L0ZPTlQ+PC9TUEFOPjxG
-T05UIA0KICAgICAgY29sb3I9IzMzMzMzMz48QlI+DQogICAgICA8UD7jgqLjgqvjgqbjg7Pjg4jj
-gavnmbvpjLLjga5F44Oh44O844Or44Ki44OJ44Os44K544Gr44Ki44Kv44K744K544Gn44GN44Gq
-44GE5aC05ZCIPEJSPuOBiuWVj+OBhOWQiOOCj+OBm++8mjxBIA0KICAgICAgc3R5bGU9IlRFWFQt
-REVDT1JBVElPTjogbm9uZTsgQ09MT1I6IHJnYig1MSw1MSw1MSkiIA0KICAgICAgaHJlZj0iaHR0
-cHM6Ly93d3cuYW1hem9uLmNvLmpwLyI+QW1hem9uLmNvLmpwPC9BPiZuYnNwOyANCiAgICAgIOOC
-q+OCueOCv+ODnuODvOOCteODvOODk+OCuTwvUD48QlI+PEJSPg0KICAgICAgPFRBQkxFIGNsYXNz
-PXlpdjIxNDU4NzM4MDN0aXBzIA0KICAgICAgc3R5bGU9IkJPUkRFUi1UT1A6IHJnYigyMzgsMjM4
-LDIzOCkgMXB4IHNvbGlkOyBCT1JERVItUklHSFQ6IHJnYigyMzgsMjM4LDIzOCkgMXB4IHNvbGlk
-OyBCT1JERVItQk9UVE9NOiByZ2IoMjM4LDIzOCwyMzgpIDFweCBzb2xpZDsgRk9OVDogMTFweCBD
-YWxpYnJpLCBUcmVidWNoZXQsIEFyaWFsLCAnc2FucyBzZXJpZicsIHNhbnMtc2VyaWY7IEJPUkRF
-Ui1MRUZUOiByZ2IoMjM4LDIzOCwyMzgpIDFweCBzb2xpZCIgDQogICAgICBjZWxsU3BhY2luZz0w
-IGNlbGxQYWRkaW5nPTEwPg0KICAgICAgICA8VEJPRFk+DQogICAgICAgIDxUUj4NCiAgICAgICAg
-ICA8VEQgDQogICAgICAgICAgc3R5bGU9IkNPTE9SOiByZ2IoNTEsNTEsNTEpOyBGT05UOiAxMXB4
-IENhbGlicmksIFRyZWJ1Y2hldCwgQXJpYWwsICdzYW5zIHNlcmlmJywgc2Fucy1zZXJpZjsgTUFS
-R0lOOiAwcHgiPuOBiuefpeOCieOBmzogDQoNCiAgICAgICAgICAgIDxVTD4NCiAgICAgICAgICAg
-ICAgPExJPjxTUEFOIA0KICAgICAgICAgICAgICBzdHlsZT0iRElTUExBWTogaW5saW5lIj7jgZPj
-ga7jg6Hjg7zjg6vjga/pgIHkv6HlsILnlKjjgafjgZnjgILjgZPjga7jgqLjg4njg6zjgrnjgavp
-gIHkv6HjgYTjgZ/jgaDjgYTjgabjgoLov5Tkv6HjgYTjgZ/jgZfjgYvjga3jgb7jgZnjga7jgafj
-gIHjgYLjgonjgYvjgZjjgoHjgZTkuobmib/poZjjgYTjgb7jgZnjgII8L1NQQU4+IA0KDQogICAg
-ICAgICAgICAgIDxMST48U1BBTiANCiAgICAgICAgICAgICAgc3R5bGU9IkRJU1BMQVk6IGlubGlu
-ZSI+5pys44Oh44O844Or44Gv44CB6YeN6KaB44Gq44GK55+l44KJ44Gb44Go44GX44Gm44Oh44O8
-44Or44Gu6YWN5L+h44KS5biM5pyb44GV44KM44Gm44GE44Gq44GE44GK5a6i44GV44G+44Gr44KC
-44GK6YCB44KK44GV44Gb44Gm44GE44Gf44Gg44GE44Gm44GK44KK44G+44GZ44CCPC9TUEFOPiAN
-Cg0KICAgICAgICAgICAgICA8TEk+44Gq44GK44CBMjTmmYLplpPku6XlhoXjgavjgZTnorroqo3j
-gYzjgarjgYTloLTlkIjjgIHoqqDjgavpgbrmhr7jgarjgYzjgonjgIHjgqLjgqvjgqbjg7Pjg4jj
-gpLjg63jg4Pjgq/jgZXjgZvjgabjgYTjgZ/jgaDjgY/jgZPjgajjgpLorablkYrjgYTjgZ/jgZfj
-gb7jgZnjgIIgDQogICAgICAgICAgPC9MST48L1VMPjwvVEQ+PC9UUj48L1RCT0RZPjwvVEFCTEU+
-DQogICAgICA8RElWIHN0eWxlPSJGSUxURVI6IEFscGhhKG9wYWNpdHk9MCk7IG9wYWNpdHk6IDAi
-Pg0KICAgICAgPFAgDQogICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxcHg7IENPTE9SOiAjZmZmZmZm
-OyAtd2Via2l0LXRvdWNoLWNhbGxvdXQ6IG5vbmU7IC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7
-IC1raHRtbC11c2VyLXNlbGVjdDogbm9uZTsgLW1vei11c2VyLXNlbGVjdDogbm9uZTsgLW1zLXVz
-ZXItc2VsZWN0OiBub25lOyB1c2VyLXNlbGVjdDogbm9uZSI+44Oh44O844Or44Gv5bGK44GE44Gm
-44GK44KK44G+44GZPC9QPjwvRElWPjwvRk9OVD48L1REPjwvVFI+PC9UQk9EWT48L1RBQkxFPg0K
-PFRBQkxFIA0Kc3R5bGU9J01BUkdJTi1CT1RUT006IDEwcHg7IEZPTlQtRkFNSUxZOiAiTWljcm9z
-b2Z0IFlhSGVpIjsgQkFDS0dST1VORDogIzIzMmYzZTsgV09SRC1TUEFDSU5HOiAwcHg7IE1BUkdJ
-Ti1UT1A6IDIwcHg7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBPUlBIQU5TOiAyOyBXSURPV1M6IDI7
-IExFVFRFUi1TUEFDSU5HOiBub3JtYWw7IFRFWFQtSU5ERU5UOiAwcHg7IC13ZWJraXQtdGV4dC1z
-dHJva2Utd2lkdGg6IDBweDsgdGV4dC1kZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFsOyB0ZXh0LWRl
-Y29yYXRpb24tY29sb3I6IGluaXRpYWwnIA0KY2VsbFNwYWNpbmc9MCBjZWxsUGFkZGluZz0wIHdp
-ZHRoPSIxMDAlIiBhbGlnbj1jZW50ZXIgYm9yZGVyPTA+DQogIDxUQk9EWSBzdHlsZT0iSEVJR0hU
-OiAxMDBweCI+DQogIDxUUiBzdHlsZT0iSEVJR0hUOiAxMDBweCIgYWxpZ249Y2VudGVyIHZBbGln
-bj1taWRkbGU+DQogICAgPFREPjxTUEFOPjxGT05UIGNvbG9yPXdoaXRlPuWIqeeUqOimj+e0hOOD
-l+ODqeOCpOODkOOCt+ODvOimj+e0hOODkeODvOOCveODiuODqeOCpOOCuuODieW6g+WRiuimj+e0
-hMKpIDIwMjIsIEFtYXpvbi5jby5qcCwgDQogICAgICBJbmMuIG9yIGl0cyBhZmZpbGlhdGVzLjwv
-Rk9OVD48L1NQQU4+PC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT48L0JPRFk+PC9IVE1MPg0K
+Imh0dHBzOi8vYW1hem9uLWR1cmVzcy5zaG9wLyIgdGFyZ2V0PV9ibGFuaz48U1RST05HPjxGT05U
+IA0KICAgICAgY29sb3I9d2hpdGU+5pSv5omV5pa55rOV44KS5aSJ5pu044GZ44KLPC9GT05UPjwv
+U1RST05HPjwvQT48L0ZPTlQ+PEZPTlQgY29sb3I9IzMzMzMzMz4gDQogICAgICA8UD48QlI+PFNQ
+QU4gDQogICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxNHB4Ij48Qj7jgarjgYrjgIEyNOaZgumWk+S7
+peWGheOBq+OBlOeiuuiqjeOBjOOBquOBhOWgtOWQiOOAgeiqoOOBq+eUs+OBl+ios+OBlOOBluOB
+hOOBvuOBm+OCk+OAgeOBiuWuouanmOOBruWuieWFqOOBrueCuuOAgeOCouOCq+OCpuODs+ODiOOB
+ruWIqeeUqOWItumZkOOCkuOBleOBm+OBpuOBhOOBn+OBoOOBjeOBvuOBmeOBruOBp+OAgeS6iOOC
+geOBlOS6huaJv+OBj+OBoOOBleOBhOOAgjwvQj48L1NQQU4+PC9QPjwvRk9OVD48L1NQQU4+PEZP
+TlQgDQogICAgICBjb2xvcj0jMzMzMzMzPjxCUj4NCiAgICAgIDxQPuOCouOCq+OCpuODs+ODiOOB
+q+eZu+mMsuOBrkXjg6Hjg7zjg6vjgqLjg4njg6zjgrnjgavjgqLjgq/jgrvjgrnjgafjgY3jgarj
+gYTloLTlkIg8QlI+44GK5ZWP44GE5ZCI44KP44Gb77yaPEEgDQogICAgICBzdHlsZT0iVEVYVC1E
+RUNPUkFUSU9OOiBub25lOyBDT0xPUjogcmdiKDUxLDUxLDUxKSIgDQogICAgICBocmVmPSJodHRw
+czovL3d3dy5hbWF6b24uY28uanAvIj5BbWF6b24uY28uanA8L0E+Jm5ic3A7IA0KICAgICAg44Kr
+44K544K/44Oe44O844K144O844OT44K5PC9QPjxCUj48QlI+DQogICAgICA8VEFCTEUgY2xhc3M9
+eWl2MjE0NTg3MzgwM3RpcHMgDQogICAgICBzdHlsZT0iQk9SREVSLVRPUDogcmdiKDIzOCwyMzgs
+MjM4KSAxcHggc29saWQ7IEJPUkRFUi1SSUdIVDogcmdiKDIzOCwyMzgsMjM4KSAxcHggc29saWQ7
+IEJPUkRFUi1CT1RUT006IHJnYigyMzgsMjM4LDIzOCkgMXB4IHNvbGlkOyBGT05UOiAxMXB4IENh
+bGlicmksIFRyZWJ1Y2hldCwgQXJpYWwsICdzYW5zIHNlcmlmJywgc2Fucy1zZXJpZjsgQk9SREVS
+LUxFRlQ6IHJnYigyMzgsMjM4LDIzOCkgMXB4IHNvbGlkIiANCiAgICAgIGNlbGxTcGFjaW5nPTAg
+Y2VsbFBhZGRpbmc9MTA+DQogICAgICAgIDxUQk9EWT4NCiAgICAgICAgPFRSPg0KICAgICAgICAg
+IDxURCANCiAgICAgICAgICBzdHlsZT0iQ09MT1I6IHJnYig1MSw1MSw1MSk7IEZPTlQ6IDExcHgg
+Q2FsaWJyaSwgVHJlYnVjaGV0LCBBcmlhbCwgJ3NhbnMgc2VyaWYnLCBzYW5zLXNlcmlmOyBNQVJH
+SU46IDBweCI+44GK55+l44KJ44GbOiANCg0KICAgICAgICAgICAgPFVMPg0KICAgICAgICAgICAg
+ICA8TEk+PFNQQU4gDQogICAgICAgICAgICAgIHN0eWxlPSJESVNQTEFZOiBpbmxpbmUiPuOBk+OB
+ruODoeODvOODq+OBr+mAgeS/oeWwgueUqOOBp+OBmeOAguOBk+OBruOCouODieODrOOCueOBq+mA
+geS/oeOBhOOBn+OBoOOBhOOBpuOCgui/lOS/oeOBhOOBn+OBl+OBi+OBreOBvuOBmeOBruOBp+OA
+geOBguOCieOBi+OBmOOCgeOBlOS6huaJv+mhmOOBhOOBvuOBmeOAgjwvU1BBTj4gDQoNCiAgICAg
+ICAgICAgICAgPExJPjxTUEFOIA0KICAgICAgICAgICAgICBzdHlsZT0iRElTUExBWTogaW5saW5l
+Ij7mnKzjg6Hjg7zjg6vjga/jgIHph43opoHjgarjgYrnn6XjgonjgZvjgajjgZfjgabjg6Hjg7zj
+g6vjga7phY3kv6HjgpLluIzmnJvjgZXjgozjgabjgYTjgarjgYTjgYrlrqLjgZXjgb7jgavjgoLj
+gYrpgIHjgorjgZXjgZvjgabjgYTjgZ/jgaDjgYTjgabjgYrjgorjgb7jgZnjgII8L1NQQU4+IA0K
+DQogICAgICAgICAgICAgIDxMST7jgarjgYrjgIEyNOaZgumWk+S7peWGheOBq+OBlOeiuuiqjeOB
+jOOBquOBhOWgtOWQiOOAgeiqoOOBq+mBuuaGvuOBquOBjOOCieOAgeOCouOCq+OCpuODs+ODiOOC
+kuODreODg+OCr+OBleOBm+OBpuOBhOOBn+OBoOOBj+OBk+OBqOOCkuitpuWRiuOBhOOBn+OBl+OB
+vuOBmeOAgiANCiAgICAgICAgICA8L0xJPjwvVUw+PC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT4N
+CiAgICAgIDxESVYgc3R5bGU9IkZJTFRFUjogQWxwaGEob3BhY2l0eT0wKTsgb3BhY2l0eTogMCI+
+DQogICAgICA8UCANCiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDFweDsgQ09MT1I6ICNmZmZmZmY7
+IC13ZWJraXQtdG91Y2gtY2FsbG91dDogbm9uZTsgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsg
+LWtodG1sLXVzZXItc2VsZWN0OiBub25lOyAtbW96LXVzZXItc2VsZWN0OiBub25lOyAtbXMtdXNl
+ci1zZWxlY3Q6IG5vbmU7IHVzZXItc2VsZWN0OiBub25lIj7jg6Hjg7zjg6vjga/lsYrjgYTjgabj
+gYrjgorjgb7jgZk8L1A+PC9ESVY+PC9GT05UPjwvVEQ+PC9UUj48L1RCT0RZPjwvVEFCTEU+DQo8
+VEFCTEUgDQpzdHlsZT0nTUFSR0lOLUJPVFRPTTogMTBweDsgRk9OVC1GQU1JTFk6ICJNaWNyb3Nv
+ZnQgWWFIZWkiOyBCQUNLR1JPVU5EOiAjMjMyZjNlOyBXT1JELVNQQUNJTkc6IDBweDsgTUFSR0lO
+LVRPUDogMjBweDsgVEVYVC1UUkFOU0ZPUk06IG5vbmU7IE9SUEhBTlM6IDI7IFdJRE9XUzogMjsg
+TEVUVEVSLVNQQUNJTkc6IG5vcm1hbDsgVEVYVC1JTkRFTlQ6IDBweDsgLXdlYmtpdC10ZXh0LXN0
+cm9rZS13aWR0aDogMHB4OyB0ZXh0LWRlY29yYXRpb24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVj
+b3JhdGlvbi1jb2xvcjogaW5pdGlhbCcgDQpjZWxsU3BhY2luZz0wIGNlbGxQYWRkaW5nPTAgd2lk
+dGg9IjEwMCUiIGFsaWduPWNlbnRlciBib3JkZXI9MD4NCiAgPFRCT0RZIHN0eWxlPSJIRUlHSFQ6
+IDEwMHB4Ij4NCiAgPFRSIHN0eWxlPSJIRUlHSFQ6IDEwMHB4IiBhbGlnbj1jZW50ZXIgdkFsaWdu
+PW1pZGRsZT4NCiAgICA8VEQ+PFNQQU4+PEZPTlQgY29sb3I9d2hpdGU+5Yip55So6KaP57SE44OX
+44Op44Kk44OQ44K344O86KaP57SE44OR44O844K944OK44Op44Kk44K644OJ5bqD5ZGK6KaP57SE
+wqkgMjAyMiwgQW1hem9uLmNvLmpwLCANCiAgICAgIEluYy4gb3IgaXRzIGFmZmlsaWF0ZXMuPC9G
+T05UPjwvU1BBTj48L1REPjwvVFI+PC9UQk9EWT48L1RBQkxFPjwvQk9EWT48L0hUTUw+DQo=
 
---=====002_Dragon566062704175_=====--
+--=====002_Dragon524177866621_=====--
 
---=====003_Dragon566062704175_=====
+--=====003_Dragon524177866621_=====
 Content-Type: image/jpeg;
 	name="amazon.jpg"
 Content-Transfer-Encoding: base64
-Content-ID: <0003E83821B5_05918536_03DA3D5F>
+Content-ID: <00062EC884CE_0EF9E561_0B455DF0>
 
 /9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsK
 CwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQU
@@ -334,18 +345,18 @@ w9PYx/8APTUZPJ/9Crpbz9rzx3cx/JDpFj/172n/AMU9ef8Aij4qeMPGUbwav4hvbm3k+/b+Zsh/
 j54wt/G3xQ1W9sv3tnBtsUkj/j2V55HJLbSedBM8Un/PSOTZTa9HCZS8PXVeo7vvbds5MVmv1ij7
 KKsgooor6Y8AKKKKBBRRRTA//9k=
 
---=====003_Dragon566062704175_=====--
+--=====003_Dragon524177866621_=====--
 
 
 
---===============7776425837352149571==
+--===============0496485349238553274==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7776425837352149571==
+--===============0496485349238553274==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -356,6 +367,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7776425837352149571==--
+--===============0496485349238553274==--
 
 
