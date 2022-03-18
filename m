@@ -2,80 +2,163 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id B7FE64D8625
-	for <lists+osst-users@lfdr.de>; Mon, 14 Mar 2022 14:42:54 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id F09DA4DD262
+	for <lists+osst-users@lfdr.de>; Fri, 18 Mar 2022 02:21:02 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1nTkyM-0007jr-OY
-	for lists+osst-users@lfdr.de; Mon, 14 Mar 2022 13:42:53 +0000
+	id 1nV1Id-0002ID-0o
+	for lists+osst-users@lfdr.de; Fri, 18 Mar 2022 01:21:01 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <noreply@ato.gov.au>) id 1nTkyM-0007jg-0h
- for osst-users@lists.sourceforge.net; Mon, 14 Mar 2022 13:42:52 +0000
+ (envelope-from <jc658@hksfbsi.cn>) id 1nV1Ib-0002Ht-Qw
+ for osst-users@lists.sourceforge.net; Fri, 18 Mar 2022 01:21:00 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
- To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=MIME-Version:Content-Transfer-Encoding:Content-Type
+ :Date:Message-ID:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=5y0Ar9TN7mtfiEsVPAIh0njBSX1MXqxmKzYPxwYWRVo=; b=YR76H/4pyb+Gcvft0FbBqLV5Tm
- jwFev86+BqO2q8Ndmxkxfq0eVXmapCgUJiHhJoRN3nb7Gf7M5wHPOy325JVP5k9KrmRTPehyo7J4T
- D4JXvrHj5NAmOVFXCaYBlnF3k4mj2rjBgWrBc3j68GGJNFtxSq+kqL9qlEwdvA7FWyXY=;
+ bh=8eHhTVzTNtfUZ1MMb+nmKKbZTgAb4+HEDrqxbku1oQw=; b=J2kAOY+BEfYa80+v9gW3Li7BAW
+ bC2QQZaRnuj6u6/I+IBU6TI1aFLBiDmiBbUUVNsB6RWqdTNp3ViETf3GPLpiU2uIj4uE1ptNYSCz7
+ 3SCRA3oQKhV9Nf3CW/ehqage2MhgbY+d3PRtfN2Who2OUQD+kXQLcoC0Ep/8LYdjB3jw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=MIME-Version:Content-Transfer-Encoding:Content-Type:Date:Message-ID:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=5y0Ar9TN7mtfiEsVPAIh0njBSX1MXqxmKzYPxwYWRVo=; b=R
- kwgpKgcP9B5F1bhCVNKAG9yG+6psheMqSVO6quI0w2eVv5BX4EEMkI25zjRbMqWT9MJxrf2qVDmdJ
- iC+TehT15rSD5kVIT8XhJf3WWVDFbz+fPhAdxQXNOM/tmD982ERc7V4H4RxZ2vr5xQamRjot3ME30
- +bkHI/5TdZwV4Brc=;
-Received: from ip33.ip-15-204-25.us ([15.204.25.33] helo=ato.gov.au)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.94.2)
- id 1nTkyJ-0007x1-Jm
- for osst-users@lists.sourceforge.net; Mon, 14 Mar 2022 13:42:52 +0000
-To: osst-users@lists.sourceforge.net
-Date: 14 Mar 2022 09:42:46 -0400
-Message-ID: <20220314094246.68575C629ED05466@ato.gov.au>
+ List-Owner:List-Archive; bh=8eHhTVzTNtfUZ1MMb+nmKKbZTgAb4+HEDrqxbku1oQw=; b=E
+ 1ijn6gsoHOgk8ewHC3awJMwxog63TNfHCCuF2JhNPYHLlF6dZajHlUId5ts0VNnV47NEzoT15GlV+
+ yvUvNAVN3xQnkAgcFKvexEslkK6qMkbtltF+TvNNHSiEbNxn+SZxoyk4kxWLVyP1Tt0oC7F3xz7fl
+ CjyeD7VLGpwW1UY0=;
+Received: from mail-co1nam11on2115.outbound.protection.outlook.com
+ ([40.107.220.115] helo=NAM11-CO1-obe.outbound.protection.outlook.com)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.94.2)
+ id 1nV1I7-0008A8-Ha
+ for osst-users@lists.sourceforge.net; Fri, 18 Mar 2022 01:20:48 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=QuXXtISVWgdsdWHY2dhZ5cJ52DZuhYNfCsnEkAOnfwHgeXrjWsAGQOD41CRP+7vVOieblMc7ROodM8V+iXdcwwnD0EVSPNQJe7VxaMdqw50HxKfTdgk9/AmWFcs/ncKoruJXQvsJIdC07eYltNylPCwXfandS04VJTZRMfJ8D/J4j0dgzRBo0KlKjitGRQO1i6Q2RtipHnxCF8k4IJ3Iheck2D8322Wl4U7Ir1jjS0BqvI6AkFr8G966ZzASTVEQzBzI9pgHgr0vhI4IHrhOQQh/cjoN0C01eUU1n2vl77h5iW/a/wbiBjxUsHOZr8pKhM7A3+zeuGMlpEwLrx+r0w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; 
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=8eHhTVzTNtfUZ1MMb+nmKKbZTgAb4+HEDrqxbku1oQw=;
+ b=EjaRnAPVmzd7d0qCiYBz8uxaNlLVzm6COIYTFioHgyy13IF0njFeppWb4KTrhuP4FApBoFf7AQE24N1WWI7cqUn/HiLtVzAPQkZVcqsdDW1PIRWEh7Q8Lucn+xPH3jcyW9nTwVZO7R6draj1TESRo+L9d3YgeAxUywW001pDpjm74X9+iGsf682pD6SMe7JVklP+qS0qNf6fTGCoW5Fu1T5gWuML9fuZQIaUfZn7PXhNzYKuji0Hvl6Gmiu9XAY6+ML6vV2mtGBj3Hm7cTvE+RlAFDaeVFt7kqtjHD52nMzLnTKjQ3CSkmwXAGml79ix/u+zRvpW3R1Qnuu4nQEk0g==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=hksfbsi.cn; dmarc=pass action=none header.from=hksfbsi.cn;
+ dkim=pass header.d=hksfbsi.cn; arc=none
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=hksfbsi.cn;
+Received: from CH2PR12MB4103.namprd12.prod.outlook.com (2603:10b6:610:7e::17)
+ by BN6PR12MB1506.namprd12.prod.outlook.com (2603:10b6:405:10::11)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5061.26; Fri, 18 Mar
+ 2022 01:14:18 +0000
+Received: from CH2PR12MB4103.namprd12.prod.outlook.com
+ ([fe80::6841:e081:4fc9:6eb7]) by CH2PR12MB4103.namprd12.prod.outlook.com
+ ([fe80::6841:e081:4fc9:6eb7%4]) with mapi id 15.20.5081.014; Fri, 18 Mar 2022
+ 01:14:18 +0000
+X-Mailer: wENrTozXl 9
+From: "=?utf-8?Q?=E5=87=86=E9=99=B6?=" <jc658@hksfbsi.cn>
+To: "=?utf-8?Q?osmohkng?=" <osmohkng@ctimail.com>,
+ "=?utf-8?Q?osn368?=" <osn368@tom.com>,
+ "=?utf-8?Q?osst-users?=" <osst-users@lists.sourceforge.net>
+Message-ID: <ca2f9b4cb4ef210a2e0c623b09471174@hksfbsi.cn>
+Date: Fri, 18 Mar 2022 09:14:06 +0800
+X-ClientProxiedBy: SG2PR06CA0152.apcprd06.prod.outlook.com
+ (2603:1096:1:1f::30) To CH2PR12MB4103.namprd12.prod.outlook.com
+ (2603:10b6:610:7e::17)
+Importance: low
+X-Priority: 5
 MIME-Version: 1.0
-Content-Type: multipart/mixed;
- boundary="----=_NextPart_000_0012_419144C5.21BD3458"
-X-Spam-Score: 2.7 (++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: d42a2463-7809-4cfb-569e-08da087ca004
+X-MS-TrafficTypeDiagnostic: BN6PR12MB1506:EE_
+X-Microsoft-Antispam-PRVS: <BN6PR12MB150696164D50B193A4F9563E85139@BN6PR12MB1506.namprd12.prod.outlook.com>
+X-MS-Exchange-SenderADCheck: 1
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam: BCL:0;
+X-Microsoft-Antispam-Message-Info: S6DnGmDbj/PVY/H4H3aValSNAe/rOQx800neRkTvPAhccR/UEZBtUy1s3ezoTA3d8TX0H/Vh5X1dqfmVNgGXhRmuAw8WxGwM5rGnCYzfNX2t0/6Dc/lP5gbgV2ejiezX6aw27fVvLs8QoFJr8WUKkaopH5vPtG36vZ4FecbjcsfbiS1ihkl6l8pMyUE1pmeB8lZmWZjoHlIoo5+NJ+LHGH+8Ym4Wlt79NofMlUN1B4g2jYy/TjmcJ4eaMS9wprmgewYbO/q8ppgulX0d1AzbMpOJtUfdUcjy9IHC2PWRd0Qqer3UhTRce/e8NVL9uZuhmXfiDdWIMqljC7TOBxayMCZ0+LpEb0JlOSNtIYz2NTCEDPXCRoSv62yTPAYLlli6gXF0iFtvMAFgjtcR7iFqC6f1WT1d7lTouCxE9wq/CQNaKBfyirJhwqjzxqT/Gxl7+Vqqrv8TCprZbV2rZelWTGuiwlwVESu4Temq2zigqIA4+N4s5M0HFvLKRm+AdtQOYjvcyuAL5Udh5XOR4lPOWRubBaMPUhla7hrEXU71dF5VcNA6V4i927c+ddoItCmE
+X-Forefront-Antispam-Report: CIP:255.255.255.255; CTRY:; LANG:zh-cn; SCL:1;
+ SRV:; IPV:NLI; SFV:NSPM; H:CH2PR12MB4103.namprd12.prod.outlook.com; PTR:;
+ CAT:NONE;
+ SFS:(13230001)(366004)(6512007)(52116002)(2906002)(6506007)(108616005)(24736004)(38100700002)(38350700002)(2616005)(186003)(26005)(110136005)(8936002)(5660300002)(6666004)(86362001)(558084003)(224303003)(66476007)(66946007)(66556008)(316002)(36756003)(786003)(508600001)(6486002);
+ DIR:OUT; SFP:1102; 
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0: =?utf-8?B?MnZMcXZJM05qelpLbWdHaFRaOUw3cmhvbUt5VGkyUm1aMXVPbmw0UjdhWFN0?=
+ =?utf-8?B?dWFvTWF3Q1FxeEoxbFVtNzdrNTJmREtDa3NJa1BpY2FlMlBrdjFqRDNxNm54?=
+ =?utf-8?B?dm9SUEN0eEdya1JXc0o5enpRd0phekJUVWRrcFRkdXhJYXZwdGUvUWhraG14?=
+ =?utf-8?B?aXY4NVorT1ROR0xSc29OQkNhN0tha3pLMEs1VGdkSWtSbUExakRBNk1lVWpZ?=
+ =?utf-8?B?anlLanAybTRZajZHbjVUL3Bsc1VCK1QzS0kwTHdEUlZXdWJuV2d5YSttdnl3?=
+ =?utf-8?B?OUUybFVIZTE2OUlvNXNPNzRuMENjelEvdDFlVkFDR1RzZm1VK1k5RWhCSFh1?=
+ =?utf-8?B?bDJEUGJmZGw0R0tlTTVMTE4zUjdJRmFEOEFQaXVMeEhyWVFDeWNxVm03WEMv?=
+ =?utf-8?B?MW9RWWpMU0RQNlFKdUU4UkFwZkw4Z1hJWVlsMWtpODlpcDNta0lyMGZ4ck8w?=
+ =?utf-8?B?M0E4WC9pVG1qUENkSTNCMERqcGtSaTJkS2tRMElQc0hmQmhKc250TWxlKzMv?=
+ =?utf-8?B?TXFya1NFOHlJY0Vsd2M4ZXFyaTNiQjVWUk5YZldvYkdraVhOM0R1eGZLOUFp?=
+ =?utf-8?B?Skk4Qk1EbGVUTlRrR0FTN2g1c2NLeWlXUzVPM2ZudDNGK1owTDd5cWtEYlJW?=
+ =?utf-8?B?OXp2NXpSUnNsalVJSDBDbExWd1NhcmU1cGxueCsvUUlzZ0FsS2VSMm83YmV0?=
+ =?utf-8?B?clEvQWZrbzRXc1V2ZnFjMzBzQ3NqeEdiSmJ1azZyT0pKbjNldkZIbHo5L0Y4?=
+ =?utf-8?B?N0JnUDlHT21nQitoalhoS2tVblI5dXo5bzJjYURSRjdpNkFVR1JLSjg3RExR?=
+ =?utf-8?B?SmU4dzhVRXg4THpCblI2VXQyYUQwME5Edy9SbmxoNWNKWXpHcnI3L0R3dFBl?=
+ =?utf-8?B?eVA2UGdZOGpMNnluRHdkdkh3TDZ2TU1PaEgwYWdoMnhBYjJQTHZtcVVDWHgv?=
+ =?utf-8?B?eTh3SUVMcDVUVXA2U290a0VjZjBRN3ZlZlcvc1hwbVJvOGt2UHFhaHMrUEs5?=
+ =?utf-8?B?SGNmNHhhM01xWFZoWlc3OEFqOG1XU1M5Y1EyampEam5hTkprWUpKeHVad1dp?=
+ =?utf-8?B?TUcxMHVHalFGTlB3SEpBQjk2dDh3Q3dZSnQ1M01XQXlkWlBKbVZwNzhqdWtJ?=
+ =?utf-8?B?dnZNVERpdkYrSDdjcU1ON21KYnFSOHFqRzB5ZFF3VWNkc2VPK1JXK3VqUmp4?=
+ =?utf-8?B?cmlBQkNpRXl6a3M3KzVXa3dVcWlIalRlWDhkNktpTFdEQW54eEdFaWJreG9r?=
+ =?utf-8?B?RzNucmZZWUhLMHNtcngwYW5sdWVwTndJeTM1STNIbkdpUStkdDRsL2pUcXh5?=
+ =?utf-8?B?M1g1b2QrWWJOK05wN0lsdFRQekxQSG8vN2ZiVlpFOHpLSjI2R0hVU1VkckN2?=
+ =?utf-8?B?RTBaRitnV2JvM3N0R3BvZS9xT3Zya2ZxYkhZenJENFVOMUF0K1JhaDR0bVVn?=
+ =?utf-8?B?T0lHVEJxcWRvU0JRTTdEZ295YmxFbXFRbFhmdi9URWxRc01ZbW5kTzVnRkxK?=
+ =?utf-8?B?ZjdueW9PaDN2TjZkRWlUblZlZEhQcUJMVmlQQkxWL2lMM25FOUxyUUlHK3Zh?=
+ =?utf-8?B?amx6aVVibmZWdzdudTBhQjc3SEpLU1VBRzI2cDdnamxtNEQ1SDV6OUV3cUZn?=
+ =?utf-8?B?UFNlSFRIR2x5d0xWVERkN2EvNkRkcHZraXAzTmtiRTY2RFdpaVA3QWtGdTB2?=
+ =?utf-8?B?YndRc2dMN0RTdWgrMEZINTlDMnZLa21aaVI0bE45bHBSOGIzWmI4QUpyWU5R?=
+ =?utf-8?B?cXVabG9BekNLWURuMGo4NjFuTk01dXVOVXBrcDlsK1A2ZmtpK3M4M29TNFZl?=
+ =?utf-8?B?QWp0WDVucEs4aWUzZ3NPb0N2NmRObDBITG54UC9oYjU1TERRVXY5QkhDeGQ1?=
+ =?utf-8?B?NWREbW5KWHhKMHF4U0FscEtWUFVtemRWcnpuSDdGYi85ci9VQVMyVytORXcy?=
+ =?utf-8?Q?vMV8D7qBlvTKI4fs9XRpEe1ZNlvBnhW6?=
+X-OriginatorOrg: hksfbsi.cn
+X-MS-Exchange-CrossTenant-Network-Message-Id: d42a2463-7809-4cfb-569e-08da087ca004
+X-MS-Exchange-CrossTenant-AuthSource: CH2PR12MB4103.namprd12.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Mar 2022 01:14:18.0733 (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 24b48e00-d1e6-4342-b43d-390f1775d9a9
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: 4bge811fJgBeAiD/xwDUGBvguOxl5pKAP5bLP/iwxPOoKapmBw652quAzaehEJO5DUk1T+3agEBmjBKsAp7ueQ==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN6PR12MB1506
+X-Spam-Score: 3.1 (+++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  Please don’t reply to this email. We use hyperlinks to give
-    you more information. If you don’t want to click hyperlinks, you can search
-    for the information on the ATO website. Your 2022 lodgment receipt Dear Taxpayer,
-    Your 2022 lodg [...] 
+ Content preview:  幵普通票15302987091 
  
- Content analysis details:   (2.7 points, 6.0 required)
+ Content analysis details:   (3.1 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.7 RCVD_IN_XBL            RBL: Received via a relay in Spamhaus XBL
-                             [15.204.25.33 listed in zen.spamhaus.org]
-  0.5 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [15.204.25.33 listed in dnsbl-1.uceprotect.net]
-  0.0 SPF_HELO_FAIL          SPF: HELO does not match SPF record (fail)
- [SPF failed: Please see http://www.openspf.org/Why?s=helo;id=ato.gov.au;ip=15.204.25.33;r=util-spamd-1.v13.lw.sourceforge.com]
-  0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
- [SPF failed: Please see http://www.openspf.org/Why?s=mfrom;id=noreply%40ato.gov.au;ip=15.204.25.33;r=util-spamd-1.v13.lw.sourceforge.com]
-  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
-                             identical to background
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+                             [40.107.220.115 listed in wl.mailspike.net]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+                              no trust
+                             [40.107.220.115 listed in list.dnswl.org]
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
   0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_FONT_SIZE_LARGE   BODY: HTML font size is large
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
-                             Colors in HTML
-  0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-Headers-End: 1nTkyJ-0007x1-Jm
-Subject: [Osst-users] Your 2022 lodgment receipt [SEC=OFFICIAL]
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+  1.0 FORGED_SPF_HELO        No description available.
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Headers-End: 1nV1I7-0008A8-Ha
+Subject: [Osst-users] =?utf-8?b?6Z2Z6Z2Z?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -87,453 +170,29 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Australian Taxation Office via Osst-users
- <osst-users@lists.sourceforge.net>
-Reply-To: Australian Taxation Office <noreply@ato.gov.au>
+Content-Type: multipart/mixed; boundary="===============7682270950126232451=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
-
-------=_NextPart_000_0012_419144C5.21BD3458
-Content-Type: multipart/related;
-	boundary="----=_NextPart_001_0013_419144C5.21BD3458"
-
-
-------=_NextPart_001_0013_419144C5.21BD3458
+--===============7682270950126232451==
 Content-Type: text/html;
-	charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
-w3.org/TR/html4/loose.dtd">
-
-<HTML><HEAD>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
-<body style=3D"MARGIN: 0.5em">
-<P>
-<table style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; FONT-FAMILY: Helve=
-tica, Arial, &quot;Times New Roman&quot;, serif, EmojiFont; WHITE-SPACE: no=
-rmal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TEXT-TRANSFORM: none; F=
-ONT-WEIGHT: 400; COLOR: rgb(0,0,0); FONT-STYLE: normal; TEXT-ALIGN: left; O=
-RPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; BACKGROUND-COLOR=
-: rgb(255,255,255); font-variant-ligatures: normal; font-variant-caps: norm=
-al; -webkit-text-stroke-width: 0px;=20
-text-decoration-thickness: initial; text-decoration-style: initial; text-de=
-coration-color: initial; -webkit-font-smoothing: antialiased; font-variant-=
-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit" =
-width=3D"100%" align=3D"center">
-<TBODY style=3D"BOX-SIZING: border-box; -webkit-font-smoothing: antialiased=
-">
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 10px; PADDING-BOTTOM: 24px;=
- TEXT-ALIGN: center; PADDING-TOP: 24px; PADDING-LEFT: 0px; LINE-HEIGHT: 1.2=
-; PADDING-RIGHT: 0px; -webkit-font-smoothing: antialiased" colspan=3D"3">
-<DIV style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-=
-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOT=
-TOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: =
-0px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialiased">Please don=
-&#8217;t reply to this email.<BR style=3D"BOX-SIZING: border-box; -webkit-f=
-ont-smoothing: antialiased"></DIV><BR style=3D"BOX-SIZING: border-box; -web=
-kit-font-smoothing: antialiased">
-We use hyperlinks to give you more information. If you don&#8217;t want to =
-click hyperlinks,<BR style=3D"BOX-SIZING: border-box; -webkit-font-smoothin=
-g: antialiased">you can search for the information on the&nbsp;<B style=3D"=
-BOX-SIZING: border-box; FONT-WEIGHT: bolder; MARGIN: 0px; -webkit-font-smoo=
-thing: antialiased">ATO website</B>.</TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 24px; TEXT-ALIGN: cent=
-er; PADDING-TOP: 24px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; -webkit-font-=
-smoothing: antialiased" colspan=3D"3"><img border=3D"0" hspace=3D"0" alt=3D=
-"ATO Logo" src=3D"cid:logo-ato.png" align=3D"textTop" width=3D"248" height=
-=3D"60"></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; COLOR: rgb(255,255,255); PADDING-BOTTO=
-M: 48px; TEXT-ALIGN: center; PADDING-TOP: 48px; PADDING-LEFT: 48px; PADDING=
--RIGHT: 48px; BACKGROUND-COLOR: rgb(0,35,65); -webkit-font-smoothing: antia=
-liased" colspan=3D"3">
-<H1 style=3D"BOX-SIZING: border-box; FONT-SIZE: 30px; FONT-WEIGHT: normal; =
-MARGIN: 0px; LINE-HEIGHT: 32px; -webkit-font-smoothing: antialiased">Your 2=
-022 lodgment receipt</H1></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 20px; COLOR: rgb(14,131,135=
-); PADDING-BOTTOM: 24px; PADDING-TOP: 36px; PADDING-LEFT: 48px; LINE-HEIGHT=
-: 24px; PADDING-RIGHT: 48px; -webkit-font-smoothing: antialiased" colspan=
-=3D"3">Dear Taxpayer,</TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; WIDTH: 48px; -webkit-font-smoothing: a=
-ntialiased"></TD>
-<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 24px; PADDING-TOP: 24p=
-x; PADDING-LEFT: 15px; BORDER-LEFT: rgb(14,131,135) 4px solid; PADDING-RIGH=
-T: 24px; BACKGROUND-COLOR: rgb(229,229,229); -webkit-font-smoothing: antial=
-iased">
-<UL style=3D"BOX-SIZING: border-box; MARGIN-TOP: 0px; -webkit-font-smoothin=
-g: antialiased">
-<LI style=3D"BOX-SIZING: border-box; FONT-SIZE: 18px; MARGIN: 0px; LINE-HEI=
-GHT: 22px; -webkit-font-smoothing: antialiased">Your 2022 lodgment was rece=
-ived on&nbsp;10&nbsp;March 2022 at 03.29pm AEST.<BR style=3D"BOX-SIZING: bo=
-rder-box; -webkit-font-smoothing: antialiased"></LI>
-<LI style=3D"BOX-SIZING: border-box; FONT-SIZE: 18px; MARGIN: 0px; LINE-HEI=
-GHT: 22px; -webkit-font-smoothing: antialiased">Your receipt number is 7088=
-180418611.</LI></UL></TD>
-<td style=3D"BOX-SIZING: border-box; WIDTH: 48px; -webkit-font-smoothing: a=
-ntialiased"></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; -webkit-font-smoothing: antialiased"><=
-/TD>
-<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 0px; PADDING-TOP: 32px=
-; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; -webkit-font-smoothing: antialiase=
-d"></TD>
-<td style=3D"BOX-SIZING: border-box; -webkit-font-smoothing: antialiased"><=
-/TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 8px; PADDING-TOP: 8px;=
- PADDING-LEFT: 48px; PADDING-RIGHT: 48px; -webkit-font-smoothing: antialias=
-ed" colspan=3D"3">
-<P style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: an=
-tialiased">Thanks for your lodgment.</P></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 24px; PADDING-TOP: 8px=
-; PADDING-LEFT: 48px; PADDING-RIGHT: 48px; -webkit-font-smoothing: antialia=
-sed" colspan=3D"3">
-<P style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: an=
-tialiased">It takes about&nbsp;3 weeks to process your lodgment.&nbsp;<B st=
-yle=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder; MARGIN: 0px; -webkit-fo=
-nt-smoothing: antialiased">Please do not call us during this time as we can=
-not speed up this process</B>. Check on the to do list to sign on the attac=
-hed demanded documents in<SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPA=
-N>
-<STRONG style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder">Section C</ST=
-RONG>.</P></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 24px; PADDING-TOP: 8px=
-; PADDING-LEFT: 48px; PADDING-RIGHT: 48px; -webkit-font-smoothing: antialia=
-sed" colspan=3D"3">
-<P style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: an=
-tialiased">You'll receive an email or SMS once your to do list details are =
-complied.</P></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(14,131,135) 2px solid;=
- BORDER-BOTTOM: rgb(14,131,135) 2px solid; PADDING-BOTTOM: 32px; TEXT-ALIGN=
-: center; PADDING-TOP: 48px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; -webkit=
--font-smoothing: antialiased" colspan=3D"3"></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 26px; BORDER-TOP: rgb(14,13=
-1,135) 2px solid; BORDER-BOTTOM: rgb(14,131,135) 2px solid; FONT-WEIGHT: bo=
-ld; COLOR: rgb(255,255,255); PADDING-BOTTOM: 24px; TEXT-ALIGN: center; PADD=
-ING-TOP: 0px; PADDING-LEFT: 48px; LINE-HEIGHT: 29px; PADDING-RIGHT: 48px; -=
-webkit-font-smoothing: antialiased" colspan=3D"3">Track your refund or fix =
-a mistake using our online services via myGov</TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; BORDER-TOP: rgb(14,131,135) 2px solid;=
- BORDER-BOTTOM: rgb(14,131,135) 2px solid; PADDING-BOTTOM: 48px; PADDING-TO=
-P: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; -webkit-font-smoothing: anti=
-aliased" colspan=3D"3">
-<table style=3D"BOX-SIZING: border-box; WIDTH: 441px; BORDER-COLLAPSE: coll=
-apse; MARGIN: 0px; -webkit-font-smoothing: antialiased">
-<TBODY style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing=
-: antialiased">
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; WIDTH: 151px; -webkit-font-smoothing: =
-antialiased"></TD>
-<td style=3D"BOX-SIZING: border-box; PADDING-BOTTOM: 24px; TEXT-ALIGN: cent=
-er; PADDING-TOP: 24px; PADDING-LEFT: 32px; PADDING-RIGHT: 32px; BACKGROUND-=
-COLOR: rgb(245,216,21); -webkit-font-smoothing: antialiased; border-radius:=
- 2px">
-<A style=3D"BOX-SIZING: border-box; FONT-SIZE: 18px; TEXT-DECORATION: none;=
- BORDER-TOP: rgb(245,216,21) 1px solid; FONT-FAMILY: Helvetica, Arial, sans=
--serif; BORDER-RIGHT: rgb(245,216,21) 1px solid; VERTICAL-ALIGN: baseline; =
-BORDER-BOTTOM: rgb(245,216,21) 1px solid; FONT-WEIGHT: bold; COLOR: rgb(0,1=
-05,166); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-L=
-EFT: rgb(245,216,21) 1px solid; MARGIN: 0px; DISPLAY: inline-block; PADDING=
--RIGHT: 0px; BACKGROUND-COLOR: transparent;=20
--webkit-font-smoothing: antialiased; font-stretch: inherit" href=3D"https:/=
-/www.ato.gov.au/Individuals/Lodging-your-tax-return/Tracking-your-refund-or=
--fixing-a-mistake/" rel=3Dnoreferrer target=3D_blank>Track or fix</A></TD>
-<td style=3D"BOX-SIZING: border-box; WIDTH: 151px; -webkit-font-smoothing: =
-antialiased"></TD></TR></TBODY></TABLE></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; COLOR: white; PADDING=
--BOTTOM: 48px; TEXT-ALIGN: center; PADDING-TOP: 48px; PADDING-LEFT: 48px; L=
-INE-HEIGHT: 14px; PADDING-RIGHT: 48px; BACKGROUND-COLOR: black; -webkit-fon=
-t-smoothing: antialiased" colspan=3D"3">
-<H2 style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; FONT-WEIGHT: bold; MA=
-RGIN: 0px 0px 10px; LINE-HEIGHT: 17px; -webkit-font-smoothing: antialiased"=
->Don't get scammed</H2>The ATO never asks for your credit card&nbsp;details=
- by email.<BR style=3D"BOX-SIZING: border-box; -webkit-font-smoothing: anti=
-aliased">
-To learn more about staying safe online, go to&nbsp;<A style=3D"BORDER-LEFT=
--WIDTH: 0px; BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-RIGHT-WI=
-DTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(0,=
-105,166); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN:=
- 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: transpar=
-ent; -webkit-font-smoothing: antialiased" href=3D"https://ato.gov.au/online=
-security" rel=3Dnoreferrer target=3D_blank>
-<B style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder; MARGIN: 0px; -webk=
-it-font-smoothing: antialiased">ato.gov.au/onlinesecurity</B></A>
-<H2 style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; FONT-WEIGHT: bold; MA=
-RGIN: 32px 0px 10px; LINE-HEIGHT: 17px; -webkit-font-smoothing: antialiased=
-">Your privacy</H2>To learn more about how we maintain your privacy,<BR sty=
-le=3D"BOX-SIZING: border-box; -webkit-font-smoothing: antialiased">
-go to&nbsp;<A style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; TEXT=
--DECORATION: none; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDE=
-R-BOTTOM-WIDTH: 0px; COLOR: rgb(0,105,166); PADDING-BOTTOM: 0px; PADDING-TO=
-P: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDT=
-H: 0px; BACKGROUND-COLOR: transparent; -webkit-font-smoothing: antialiased"=
- href=3D"https://ato.gov.au/yourprivacy" rel=3Dnoreferrer target=3D_blank>
-<B style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder; MARGIN: 0px; -webk=
-it-font-smoothing: antialiased">ato.gov.au/yourprivacy</B></A>
-<H2 style=3D"BOX-SIZING: border-box; FONT-SIZE: 15px; FONT-WEIGHT: bold; MA=
-RGIN: 32px 0px 10px; LINE-HEIGHT: 17px; -webkit-font-smoothing: antialiased=
-">Look suspicious?</H2>
-Don't take chances, forward suspicious emails to&nbsp;<A style=3D"BORDER-LE=
-FT-WIDTH: 0px; BOX-SIZING: border-box; TEXT-DECORATION: none; BORDER-RIGHT-=
-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: rgb(=
-0,105,166); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGI=
-N: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: transp=
-arent; -webkit-font-smoothing: antialiased" href=3D"https://rc.ds.network/#=
-NOP" rel=3Dnoreferrer target=3D_blank>
-<SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN><B style=3D"BOX-SIZING:=
- border-box; FONT-WEIGHT: bolder; MARGIN: 0px; -webkit-font-smoothing: anti=
-aliased"><SPAN>&nbsp;</SPAN>ReportEmailFraud@ato.gov.au</B></A></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 12px; COLOR: white; PADDING=
--BOTTOM: 48px; TEXT-ALIGN: center; PADDING-TOP: 48px; PADDING-LEFT: 0px; PA=
-DDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(51,51,51); -webkit-font-smoothing: =
-antialiased" colspan=3D"3">
-<SPAN style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT=
--WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BO=
-TTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 14px 0px 0px; P=
-ADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialias=
-ed">
-<A style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; TEXT-DECORATION=
-: none; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WI=
-DTH: 0px; COLOR: rgb(0,105,166); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PAD=
-DING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BAC=
-KGROUND-COLOR: transparent; -webkit-font-smoothing: antialiased" href=3D"ht=
-tps://www.facebook.com/atogovau" rel=3Dnoreferrer target=3D_blank>
-<img style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-=
-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOT=
-TOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: =
-0px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialiased" alt=3D"Fac=
-ebook" src=3D"https://rc.ds.network/?_task=3Dmail&amp;_action=3Dget&amp;_mb=
-ox=3DINBOX.spam&amp;_uid=3D1&amp;_token=3DFCKWv9zhEwJTj04dLRYY5C5R4o5GMgt8&=
-amp;_part=3D1.3&amp;_embed=3D1&amp;_mimeclass=3Dimage" width=3D"25" height=
-=3D"25">
-</A></SPAN><SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN><SPAN style=
-=3D"BOX-SIZING: border-box"><SPAN>&nbsp;</SPAN>&nbsp;</SPAN><SPAN style=3D"=
-BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-WIDTH: 0px; VE=
-RTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADD=
-ING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 14px 0px 0px; PADDING-RIGHT: 0=
-px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialiased"><SPAN>&nbsp=
-;</SPAN>
-<A style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; TEXT-DECORATION=
-: none; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WI=
-DTH: 0px; COLOR: rgb(0,105,166); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PAD=
-DING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BAC=
-KGROUND-COLOR: transparent; -webkit-font-smoothing: antialiased" href=3D"ht=
-tps://www.youtube.com/user/AusTaxOffice" rel=3Dnoreferrer target=3D_blank>
-<img style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-=
-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOT=
-TOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: =
-0px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialiased" alt=3D"You=
-tube" src=3D"https://rc.ds.network/?_task=3Dmail&amp;_action=3Dget&amp;_mbo=
-x=3DINBOX.spam&amp;_uid=3D1&amp;_token=3DFCKWv9zhEwJTj04dLRYY5C5R4o5GMgt8&a=
-mp;_part=3D1.4&amp;_embed=3D1&amp;_mimeclass=3Dimage" width=3D"25" height=
-=3D"25">
-</A></SPAN><SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN><SPAN style=
-=3D"BOX-SIZING: border-box">&nbsp;</SPAN><SPAN>&nbsp;</SPAN><SPAN style=3D"=
-BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-WIDTH: 0px; VE=
-RTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADD=
-ING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 14px 0px 0px; PADDING-RIGHT: 0=
-px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialiased">
-<A style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; TEXT-DECORATION=
-: none; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WI=
-DTH: 0px; COLOR: rgb(0,105,166); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PAD=
-DING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BAC=
-KGROUND-COLOR: transparent; -webkit-font-smoothing: antialiased" href=3D"ht=
-tps://twitter.com/ato_gov_au" rel=3Dnoreferrer target=3D_blank>
-<img style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-=
-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOT=
-TOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: =
-0px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialiased" alt=3D"Twi=
-tter" src=3D"https://rc.ds.network/?_task=3Dmail&amp;_action=3Dget&amp;_mbo=
-x=3DINBOX.spam&amp;_uid=3D1&amp;_token=3DFCKWv9zhEwJTj04dLRYY5C5R4o5GMgt8&a=
-mp;_part=3D1.5&amp;_embed=3D1&amp;_mimeclass=3Dimage" width=3D"25" height=
-=3D"25">
-</A></SPAN><SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN><SPAN style=
-=3D"BOX-SIZING: border-box">&nbsp;</SPAN><SPAN>&nbsp;</SPAN><SPAN style=3D"=
-BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-WIDTH: 0px; VE=
-RTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADD=
-ING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px 14px 0px 0px; PADDING-RIGHT: 0=
-px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialiased">
-<A style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; TEXT-DECORATION=
-: none; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WI=
-DTH: 0px; COLOR: rgb(0,105,166); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PAD=
-DING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BAC=
-KGROUND-COLOR: transparent; -webkit-font-smoothing: antialiased" href=3D"ht=
-tps://www.linkedin.com/company/australian-taxation-office" rel=3Dnoreferrer=
- target=3D_blank>
-<img style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-=
-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOT=
-TOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: =
-0px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialiased" alt=3D"Lin=
-kedIn" src=3D"https://rc.ds.network/?_task=3Dmail&amp;_action=3Dget&amp;_mb=
-ox=3DINBOX.spam&amp;_uid=3D1&amp;_token=3DFCKWv9zhEwJTj04dLRYY5C5R4o5GMgt8&=
-amp;_part=3D1.6&amp;_embed=3D1&amp;_mimeclass=3Dimage" width=3D"25" height=
-=3D"25">
-</A></SPAN><SPAN style=3D"BOX-SIZING: border-box">&nbsp;</SPAN><SPAN style=
-=3D"BOX-SIZING: border-box"><SPAN>&nbsp;</SPAN>&nbsp;</SPAN>
-<A style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; TEXT-DECORATION=
-: none; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WI=
-DTH: 0px; COLOR: rgb(0,105,166); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PAD=
-DING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; BAC=
-KGROUND-COLOR: transparent; -webkit-font-smoothing: antialiased" href=3D"ht=
-tps://www.ato.gov.au/RSS-news-feeds.aspx" rel=3Dnoreferrer target=3D_blank>=
-<SPAN>&nbsp;</SPAN>
-<img style=3D"BORDER-LEFT-WIDTH: 0px; BOX-SIZING: border-box; BORDER-RIGHT-=
-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOT=
-TOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: =
-0px; BORDER-TOP-WIDTH: 0px; -webkit-font-smoothing: antialiased" alt=3D"RSS=
- Feed" src=3D"https://rc.ds.network/?_task=3Dmail&amp;_action=3Dget&amp;_mb=
-ox=3DINBOX.spam&amp;_uid=3D1&amp;_token=3DFCKWv9zhEwJTj04dLRYY5C5R4o5GMgt8&=
-amp;_part=3D1.7&amp;_embed=3D1&amp;_mimeclass=3Dimage" width=3D"25" height=
-=3D"25"></A>
-<P style=3D"BOX-SIZING: border-box; MARGIN: 32px 0px 0px; -webkit-font-smoo=
-thing: antialiased"><B style=3D"BOX-SIZING: border-box; FONT-WEIGHT: bolder=
-; MARGIN: 0px; -webkit-font-smoothing: antialiased">Australian Taxation Off=
-ice</B>&nbsp;&copy; Commonwealth of Australia</P></TD></TR>
-<TR style=3D"BOX-SIZING: border-box; MARGIN: 0px; -webkit-font-smoothing: a=
-ntialiased">
-<td style=3D"BOX-SIZING: border-box; FONT-SIZE: 10px; HEIGHT: 50px; TEXT-AL=
-IGN: center; LINE-HEIGHT: 48px; -webkit-font-smoothing: antialiased" colspa=
-n=3D"3">74955.500881-01-2022</TD></TR></TBODY></TABLE></P></BODY></HTML>
-------=_NextPart_001_0013_419144C5.21BD3458
-Content-Type: image/png; name="logo-ato.png"
+	charset="utf-8"
 Content-Transfer-Encoding: base64
-Content-ID: <logo-ato.png>
 
-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
-Zlqa5gjgl0xgFljGeYYGF1NYrRFdKYfMac+X+t0KcG7FvRq8YyIzbrV6di/A59gs5rYGj2Ig
-NwG8mavN7wwiWNbal6+wmkSJbBe5MD/S3htps6/AVEswBTvaEkZMOTnY05u9s2H2Mn38rKWj
-/W1qNWMCYdMsY93ix2XZmIkAvmbGTh+1NURr8AjKezR4C+3mnUtrZK1kvvSdZrJ+MjnWm3O2
-l05LTj99+uAtNKfwu2aiTzpPvsu6GoS3Atw6xaTEYzozQ1l2mfWdbLvu9kj0eZqhbcYKxLXk
-vnXhLAbztFa/dayz7btwqM2mfJ8R9e+///69jyku0IzKMsmn+EPWQBA69NYUHeiihcUoMPHX
-X3/9l+sk+toglp1YrSt9MakaAXvK/ZUWwR8tNGawjEC3RlmDXBPk+hPSrsULco3J7SefmX/u
-r6PoE+wd+1DQlbEv1URkrHYjnLMzXVkiAsMzldZnObMWWYP9tHJwTq/pfp7FwntmxSAOF0Ac
-YJ631D87+COC5+wcz2hHKl8a6xHTa+aHb2GC2feRdVyjEy1N+J5d4739ei1355EvbIgldg+/
-XqPRJR4x30udzU38HWIGvAJmAXRL42gAPnLatsRWPHP28G9a2G68KbAp8DgFmD75FO7PqIJs
-+VTY0T4Gs1O7mCn5vsH++JnsETYFnkaBFSBpasGRgDfglgLrYg8mXNfDP21xe6BNgU2B51Mg
-PnhHGVczpM3W1s+n/R7xw6TA/wFQBaXqAGq5jAAAAABJRU5ErkJggg==
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj48aHRtbD48aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVu
+dD0idGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij48L2hlYWQ+DQo8Ym9keT4NCjxwPjxmb250IGNv
+bG9yPSJyZWQiIHNpemU9IjYiPuW5teaZrumAmuelqDE1MzAyOTg3MDkxPC9mb250PjwvcD48L2Jv
+ZHk+PC9odG1sPg0K
 
-------=_NextPart_001_0013_419144C5.21BD3458--
 
-------=_NextPart_000_0012_419144C5.21BD3458
+--===============7682270950126232451==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
-------=_NextPart_000_0012_419144C5.21BD3458
+--===============7682270950126232451==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -544,6 +203,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
-------=_NextPart_000_0012_419144C5.21BD3458--
-
-
+--===============7682270950126232451==--
