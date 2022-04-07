@@ -2,95 +2,102 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id E97494F20D0
-	for <lists+osst-users@lfdr.de>; Tue,  5 Apr 2022 04:39:43 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
+	by mail.lfdr.de (Postfix) with ESMTPS id 9A2944F88E8
+	for <lists+osst-users@lfdr.de>; Thu,  7 Apr 2022 23:39:45 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1nbZ6d-0003lQ-0M
-	for lists+osst-users@lfdr.de; Tue, 05 Apr 2022 02:39:41 +0000
+	id 1ncZqy-0008LX-L9
+	for lists+osst-users@lfdr.de; Thu, 07 Apr 2022 21:39:43 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <support@chasedevere-co.us>) id 1nbZ6b-0003l7-W8
- for osst-users@lists.sourceforge.net; Tue, 05 Apr 2022 02:39:40 +0000
+ (envelope-from <hbsun@sdut.edu.cn>) id 1ncZqx-0008LR-OW
+ for osst-users@lists.sourceforge.net; Thu, 07 Apr 2022 21:39:42 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Message-Id:Date:MIME-Version:Content-Type:
+ To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=CtoAtxEHvdp7XsXQvyzCwOGz2R4sakgchEKvD/MvMuU=; b=UDzWTKh8XzEzegk4Dorac2gBG5
- 8R8hwgDFKSSFaBcrIc3RiyF6uaGyB9CD0GFpCmBpo99p5Sx4UwnfBa76rtT/xoW1ZHJHbvMzHuftR
- d1pCY9/HGd1yJjdFHpCB1+VPqQFPDF4DH3/+Ce7d/W+1NxyT3v2oKHnMWHovClPFwgu8=;
+ bh=lLhsO8fl/zKmmJDjt/IdEtVstQYCnt6C5Bms1E0PUlY=; b=lzBwuFjsiifPBnNsKiDy9ya/X/
+ pWHhTZxRBo2gsiFvFowZ7cz5b0rt5jEcXnUBIfZkfqShlgmRcJ1hsIjlxFfNISrx4u6dHbMt3gvel
+ MRteKZLMDGa+4L6s2ToKHHYqJog6f/vOylW59ma6tonVdp6Gt+5E21y6XYGcsl+Csm/U=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Subject:Message-Id:Date:MIME-Version:Content-Type:To:From:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=CtoAtxEHvdp7XsXQvyzCwOGz2R4sakgchEKvD/MvMuU=; b=J
- NcXxDbluAvKt1eEYM6C0Km6GVbrVlyh991GDG0u5GiZh7fhTGNZywlRG2vxYxRfGbR2I54ruu4WS/
- IqKjoGoCYp9tYrsni5CxVDFyKJzB4DSHNYfndiefXZbEpir1qjjGYu2zBpagqnHfFw9WZyCXjnm4C
- 4ti5o7oFOs79kwvU=;
-Received: from mana0.chasedevere-co.us ([137.184.40.171])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.94.2)
- id 1nbZ6a-005hXH-14
- for osst-users@lists.sourceforge.net; Tue, 05 Apr 2022 02:39:40 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
- d=chasedevere-co.us; 
- h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
- Content-Transfer-Encoding; i=support@chasedevere-co.us;
- bh=CtoAtxEHvdp7XsXQvyzCwOGz2R4sakgchEKvD/MvMuU=;
- b=s1/AqAnL/lC1jKxJoY2PYG7Aq4/VA/uobblOmu0gWYtjvel7X82MdChcCjUeOkTjmpWHubKrrvyv
- vc5QIW/c2TJyj6Xoycg7S5NfogYX7WHnfrAxQSUozCuqyZDugPQMjuQRMJCrMw105SN4Fc/e7BIQ
- QfyIsKSG9KvVBAfZnOc=
-To: osst-users@lists.sourceforge.net
-Date: 5 Apr 2022 02:21:26 +0000
-Message-ID: <20220405022126.C35356F36106CE0F@chasedevere-co.us>
+ List-Owner:List-Archive; bh=lLhsO8fl/zKmmJDjt/IdEtVstQYCnt6C5Bms1E0PUlY=; b=n
+ A9FWtOV9lhhA7gq36g740iGXQpi2HmjvD+KQBgUKMjFZ2WSo5UBMxYvqR8JTaXwNhQ82tmX7pQgCP
+ zH2Zx/vd0x4e4acBoUiYGnbkxSFkjvKpaYlC5B61XvVMZH6UirRzau5yPOE0Rf0IKq6XrS5KSxEUl
+ X3wdtpNEk/zVTpXA=;
+Received: from [210.44.178.7] (helo=sdut.edu.cn)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.94.2)
+ id 1ncZqu-0093Sm-LX
+ for osst-users@lists.sourceforge.net; Thu, 07 Apr 2022 21:39:42 +0000
+Received: from pc267 (unknown [60.166.174.213])
+ by mail-coremail (Coremail) with SMTP id AQAAfwAXERylNk9iwxlBAQ--.62519S2;
+ Fri, 08 Apr 2022 03:08:21 +0800 (CST)
+X-GUID: A0791B90-83AC-4711-9149-4CD26A6ADBD5
+X-Has-Attach: no
+From: =?UTF-8?B?Iue0p+aApemAmuefpe+8mumCrueuse+8iOezu+e7n+S8mOWMlu+8iSI=?=
+ <hbsun@sdut.edu.cn>
+To: "osst-users" <osst-users@lists.sourceforge.net>
 MIME-Version: 1.0
-X-Spam-Score: 6.2 (++++++)
+Date: Fri, 8 Apr 2022 03:11:05 +0800
+X-Priority: 1
+Message-Id: <202204080311041300354@sdut.edu.cn>
+X-Mailer: Foxmail 7, 2, 5, 140[cn]
+X-CM-TRANSID: AQAAfwAXERylNk9iwxlBAQ--.62519S2
+X-Coremail-Antispam: 1UD129KBjDUn29KB7ZKAUJUUUUU529EdanIXcx71UUUUU7v73
+ VFW2AGmfu7bjvjm3AaLaJ3UjIYCTnIWjp_UUUOS7k0a2IF6F4UM7kC6x804xWl14x267AK
+ xVWUJVW8JwAFc2x0x2IEx4CE42xK8VAvwI8IcIk0rVWrJVCq3wAFIxvE14AKwVWUJVWUGw
+ A2ocxC64kIII0Yj41l84x0c7CEw4AK67xGY2AK021l84ACjcxK6xIIjxv20xvE14v26F1j
+ 6w1UM28EF7xvwVC0I7IYx2IY6xkF7I0E14v26r4UJVWxJr1l84ACjcxK6I8E87Iv67AKxV
+ WxJr0_GcWl84ACjcxK6I8E87Iv6xkF7I0E14v26rxl6s0DM2AIxVAIcxkEcVAq07x20xvE
+ ncxIr21l5I8CrVACY4xI64kE6c02F40Ex7xfMcIj6xIIjxv20xvE14v26r1j6r18McIj6I
+ 8E87Iv67AKxVWUJVW8JwAm72CE4IkC6x0Yz7v_Jr0_Gr1lF7xvr2IYc2Ij64vIr41lFcxC
+ 0VAYjxAxZF0Ew4CEw7xC0wACY4xI67k04243AVC20s07Mx8GjcxK6IxK0xIIj40E5I8Crw
+ CY02Avz4vE14v_WwCF04k20xvY0x0EwIxGrwCFx2IqxVCFs4IE7xkEbVWUJVW8JwCFI7km
+ 07C267AKxVWUtVW8ZwC20s026c02F40E14v26r106r1rMI8I3I0E7480Y4vE14v26r106r
+ 1rMI8E67AF67kF1VAFwI0_Jr0_JrylIxkGc2Ij64vIr41lIxAIcVC0I7IYx2IY67AKxVW8
+ JVW5JwCI42IY6xIIjxv20xvEc7CjxVAFwI0_Gr0_Cr1lIxAIcVCF04k26cxKx2IYs7xG6r
+ 1j6r1xMIIF0xvEx4A2jsIE14v26r4j6F4UMIIF0xvEx4A2jsIEc7CjxVAFwI0_Gr0_Gr1U
+ Ms0E7xkvzxkvxsIE5cxS5bIYCTnIWIevJa73UjIFyTuYvjxU3EdyUUUUU
+X-CM-SenderInfo: pkev30o6vg33oohg3hdfq/
+X-Spam-Score: 8.9 (++++++++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  osst-users@lists.sourceforge.net You received some files
-   via wetransfer 3 items, 101 MB in total · Expires on 12th April, 2022 Get
-    your files Download link https://wetransfer.com/downloads/95153613f [...]
-    
+ Content preview:  <p> 通知：osst-users@lists.sourceforge.net由于多位员工反应邮箱卡顿，我司将于2022年4月起开始升级邮箱系统，现在提前采集信息方便升级使用！过期未更换统
+    [...] 
  
- Content analysis details:   (6.2 points, 6.0 required)
+ Content analysis details:   (8.9 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
-                             blocklist
-                             [URIs: chasedevere-co.us]
-  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [137.184.40.171 listed in zen.spamhaus.org]
-  0.1 URIBL_CSS_A            Contains URL's A record listed in the Spamhaus CSS
-                             blocklist
-                             [URIs: chasedevere-co.us]
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  3.6 RCVD_IN_PBL            RBL: Received via a relay in Spamhaus PBL
+                             [210.44.178.7 listed in zen.spamhaus.org]
+  1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+                             [210.44.178.7 listed in dnsbl-1.uceprotect.net]
  -0.0 SPF_PASS               SPF: sender matches SPF record
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+  0.0 HTML_OBFUSCATE_05_10   BODY: Message is 5% to 10% HTML obfuscation
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 HTTPS_HTTP_MISMATCH    BODY: No description available.
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.1 FSL_BULK_SIG           Bulk signature with no Unsubscribe
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
-                             Colors in HTML
-X-Headers-End: 1nbZ6a-005hXH-14
-Subject: [Osst-users] You received some files via WeTransfer
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1ncZqu-0093Sm-LX
+Subject: [SPAM] 关于：公司启用新邮件系统通知！
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -102,329 +109,102 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: WeTransfer via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: WeTransfer <support@chasedevere-co.us>
-Content-Type: multipart/mixed; boundary="===============3196560243220475087=="
+Content-Type: multipart/mixed; boundary="===============5281501640323193670=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============3196560243220475087==
-Content-Type: text/html
-Content-Transfer-Encoding: quoted-printable
+This is a multi-part message in MIME format
 
-<HTML><HEAD>
-<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.20139"></HEAD>
-<BODY>
-<DIV class=3Dydp783f8cc8yahoo-style-wrap style=3D"FONT-SIZE: 13px; FONT-FAM=
-ILY: Helvetica Neue, Helvetica, Arial, sans-serif">
-<DIV id=3Dydp783f8cc8yiv9880020113>
-<DIV>
-<DIV class=3Dydp783f8cc8yiv9880020113ydpe30d4861yahoo-style-wrap style=3D"F=
-ONT-SIZE: 13px; FONT-FAMILY: Helvetica Neue, Helvetica, Arial, sans-serif">=
+--===============5281501640323193670==
+Content-Type: multipart/alternative; charset=UTF-8; boundary="----=_825_NextPart529253250123_=----"
 
-<DIV id=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121>
-<DIV>
-<DIV class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-style-wr=
-ap style=3D"FONT-SIZE: 13px; FONT-FAMILY: Helvetica Neue, Helvetica, Arial,=
- sans-serif">
-<DIV dir=3Dltr>
-<DIV>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WIDTH: 784px; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
-T: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #2c363a; PADDING-B=
-OTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: left;=20
-PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SPACING: 0px; LETT=
-ER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #ffffff; text-dec=
-oration-style: initial; text-decoration-color: initial" cellSpacing=3D0 cel=
-lPadding=3D0 border=3D0>
-<TBODY>
-<TR>
-<TD style=3D"WIDTH: 784px; PADDING-BOTTOM: 0px; PADDING-TOP: 55px; PADDING-=
-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" vAlign=3Dtop align=3Dleft>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"WIDTH: 784px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; PADDI=
-NG-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SP=
-ACING: 0px; PADDING-RIGHT: 0px" cellSpacing=3D0 cellPadding=3D0 border=3D0>=
+This is a multi-part message in MIME format
 
-<TBODY>
-<TR>
-<TD style=3D"FONT-SIZE: 10px; WIDTH: 784px; PADDING-BOTTOM: 0px; PADDING-TO=
-P: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" bgColor=3D#409f=
-ff vAlign=3Dtop align=3Dleft>
-<CENTER>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; PADDING-BOTTOM: 0px=
-; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px auto; BORDER-SPACING: 0p=
-x; PADDING-RIGHT: 0px" cellSpacing=3D0 cellPadding=3D0 align=3Dcenter borde=
-r=3D0>
-<TBODY>
-<TR>
-<TD style=3D"WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEF=
-T: 0px; MARGIN: 0px; MIN-HEIGHT: 16px; PADDING-RIGHT: 0px" vAlign=3Dtop ali=
-gn=3Dleft>&nbsp;</TD></TR>
-<TR>
-<TD style=3D"WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEF=
-T: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" vAlign=3Dtop align=3Dleft>&nbsp;</=
-TD></TR></TBODY></TABLE></CENTER></TD></TR></TBODY></TABLE></TD></TR></TBOD=
-Y></TABLE>
-<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPACE: =
-normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #=
-2c363a; FONT-STYLE: normal; TEXT-ALIGN: left; MARGIN-TOP: 0px; LETTER-SPACI=
-NG: normal; BACKGROUND-COLOR: #ffffff; TEXT-INDENT: 0px; text-decoration-st=
-yle: initial; text-decoration-color: initial">&nbsp;</P>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WIDTH: 784px; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
-T: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #2c363a; PADDING-B=
-OTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: left;=20
-PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SPACING: 0px; LETT=
-ER-SPACING: normal; PADDING-RIGHT: 0px; text-decoration-style: initial; tex=
-t-decoration-color: initial" cellSpacing=3D0 cellPadding=3D0 bgColor=3Dwhit=
-e border=3D0>
-<TBODY>
-<TR>
-<TD style=3D"WIDTH: 784px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-L=
-EFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" vAlign=3Dtop align=3Dleft>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"WIDTH: 784px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; PADDI=
-NG-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SP=
-ACING: 0px; PADDING-RIGHT: 0px" cellSpacing=3D0 cellPadding=3D0 border=3D0>=
+------=_825_NextPart529253250123_=----
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
 
-<TBODY>
-<TR>
-<TD style=3D"WIDTH: 784px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-L=
-EFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" vAlign=3Dtop align=3Dleft>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"WIDTH: 784px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; PADDI=
-NG-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SP=
-ACING: 0px; PADDING-RIGHT: 0px" cellSpacing=3D0 cellPadding=3D0 border=3D0>=
+PHA+DQoJ6YCa55+l77yab3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXTnlLHkuo7lpJrk
+vY3lkZjlt6Xlj43lupTpgq7nrrHljaHpob/vvIzmiJHlj7jlsIbkuo4yMDIy5bm0NOaciOi1t+W8
+gOWni+WNh+e6p+mCrueuseezu+e7n++8jOeOsOWcqOaPkOWJjemHh+mbhuS/oeaBr+aWueS+v+WN
+h+e6p+S9v+eUqO+8gei/h+acn+acquabtOaNoue7n+iuoeeahOS4gOW5tuWBmuS4uuW6n+W8g+mC
+rueuseaIkeWPuOWwhuS6iOS7peWbnuaUtuW5tuWIoOmZpOOAgg0KPC9wPg0KPHA+DQoJ6K+35oyJ
+54Wn6KaB5rGC57uf5LiA55m76K6w44CCDQo8L3A+DQo8cD4NCgnotKblj7fvvJpvc3N0LXVzZXJz
+QGxpc3RzLnNvdXJjZWZvcmdlLm5ldA0KPC9wPg0KPHA+DQoJ5aeT5ZCNOg0KPC9wPg0KPHA+DQoJ
+5a+G56CBOg0KPC9wPg0KPHA+DQoJ57uf5LiA5Zue5aSN6Iez77yaPGEgaHJlZj0ibWFpbHRvOmFk
+LW1paS1pbnN0b3JAZm94bWFpbC5jb20iPmFkLW1paS1pbnN0b3JAZm94bWFpbC5jb208L2E+DQo8
+L3A+DQo8cD4NCgkmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsNCjwvcD4NCjxwPg0KCSZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO+ezu+e7n+mCrueuseeuoeeQ
+huWRmOmAgei+vu+8gQ0KPC9wPg0K
 
-<TBODY>
-<TR>
-<TD style=3D"FONT-SIZE: 26px; FONT-FAMILY: Arial, sans-serif; WIDTH: 784px;=
- WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #17181a; PADDING-BOTTOM: 0p=
-x; FONT-STYLE: normal; PADDING-TOP: 60px; PADDING-LEFT: 80px; MARGIN: 0px; =
-LINE-HEIGHT: 30px; PADDING-RIGHT: 80px" vAlign=3Dtop align=3Dcenter>
-<H2 class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121ydpc77f4e7fv1su=
-bject style=3D"FONT-SIZE: 1.5em; FONT-WEIGHT: bold; MARGIN-TOP: 0px; LINE-H=
-EIGHT: 1.2">osst-users@lists.sourceforge.net</H2><BR>You received some file=
-s via wetransfer</TD></TR>
-<TR>
-<TD style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif; WIDTH: 784px;=
- WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #6a6d70; PADDING-BOTTOM: 0p=
-x; FONT-STYLE: normal; PADDING-TOP: 20px; PADDING-LEFT: 80px; MARGIN: 0px; =
-LINE-HEIGHT: 23px; PADDING-RIGHT: 80px" vAlign=3Dtop align=3Dcenter>3 items=
-, 101 MB in total &middot; Expires on 12th April, 2022</TD></TR>
-<TR>
-<TD style=3D"WIDTH: 784px; PADDING-BOTTOM: 0px; PADDING-TOP: 40px; PADDING-=
-LEFT: 160px; MARGIN: 0px; PADDING-RIGHT: 160px" vAlign=3Dtop align=3Dleft>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"WIDTH: 464px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; PADDI=
-NG-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SP=
-ACING: 0px; PADDING-RIGHT: 0px" cellSpacing=3D0 cellPadding=3D0 border=3D0>=
+------=_825_NextPart529253250123_=----
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
 
-<TBODY>
-<TR>
-<TD style=3D"WIDTH: 464px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-L=
-EFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" vAlign=3Dtop align=3Dleft>
-<A style=3D"FONT-SIZE: 14px; FONT-FAMILY: Pro Arial, sans-serif; WORD-SPACI=
-NG: 0px; COLOR: white; PADDING-BOTTOM: 15px; FONT-STYLE: normal; TEXT-ALIGN=
-: center; PADDING-TOP: 15px; PADDING-LEFT: 20px; DISPLAY: block; PADDING-RI=
-GHT: 20px; BACKGROUND-COLOR: #409fff; text-decoration-style: solid; text-de=
-coration-color: currentcolor; text-decoration-line: none; border-radius: 25=
-px" href=3D"https://designwizard.ir/futun/wetransfiles9080.php#osst-users@l=
-ists.sourceforge.net" rel=3D"nofollow noopener" target=3D_blank>
-Get your files</A></TD></TR></TBODY></TABLE></TD></TR>
-<TR>
-<TD style=3D"WIDTH: 784px; PADDING-BOTTOM: 0px; PADDING-TOP: 40px; PADDING-=
-LEFT: 80px; MARGIN: 0px; PADDING-RIGHT: 80px" vAlign=3Dtop align=3Dleft>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"WIDTH: 624px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; PADDI=
-NG-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SP=
-ACING: 0px; PADDING-RIGHT: 0px" cellSpacing=3D0 cellPadding=3D0 border=3D0>=
+PHA+DQoJ6YCa55+l77yab3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXTnlLHkuo7lpJrk
+vY3lkZjlt6Xlj43lupTpgq7nrrHljaHpob/vvIzmiJHlj7jlsIbkuo4yMDIy5bm0NOaciOi1t+W8
+gOWni+WNh+e6p+mCrueuseezu+e7n++8jOeOsOWcqOaPkOWJjemHh+mbhuS/oeaBr+aWueS+v+WN
+h+e6p+S9v+eUqO+8gei/h+acn+acquabtOaNoue7n+iuoeeahOS4gOW5tuWBmuS4uuW6n+W8g+mC
+rueuseaIkeWPuOWwhuS6iOS7peWbnuaUtuW5tuWIoOmZpOOAgg0KPC9wPg0KPHA+DQoJ6K+35oyJ
+54Wn6KaB5rGC57uf5LiA55m76K6w44CCDQo8L3A+DQo8cD4NCgnotKblj7fvvJpvc3N0LXVzZXJz
+QGxpc3RzLnNvdXJjZWZvcmdlLm5ldA0KPC9wPg0KPHA+DQoJ5aeT5ZCNOg0KPC9wPg0KPHA+DQoJ
+5a+G56CBOg0KPC9wPg0KPHA+DQoJ57uf5LiA5Zue5aSN6Iez77yaPGEgaHJlZj0ibWFpbHRvOmFk
+LW1paS1pbnN0b3JAZm94bWFpbC5jb20iPmFkLW1paS1pbnN0b3JAZm94bWFpbC5jb208L2E+DQo8
+L3A+DQo8cD4NCgkmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsm
+bmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJz
+cDsmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDsNCjwvcD4NCjxwPg0KCSZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNw
+OyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZu
+YnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO+ezu+e7n+mCrueuseeuoeeQ
+huWRmOmAgei+vu+8gQ0KPC9wPg0K
 
-<TBODY>
-<TR>
-<TD style=3D"FONT-SIZE: 1px; WIDTH: 624px; BORDER-BOTTOM: #f4f4f4 2px solid=
-; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LI=
-NE-HEIGHT: 0; PADDING-RIGHT: 0px" vAlign=3Dtop align=3Dleft>&nbsp;</TD></TR=
-></TBODY></TABLE></TD></TR>
-<TR>
-<TD style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif; WIDTH: 784px;=
- WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f; PADDING-BOTTOM: 0p=
-x; FONT-STYLE: normal; PADDING-TOP: 50px; PADDING-LEFT: 80px; MARGIN: 0px; =
-LINE-HEIGHT: 24px; PADDING-RIGHT: 80px" vAlign=3Dtop align=3Dleft><SPAN sty=
-le=3D"FONT-SIZE: 18px; FONT-FAMILY: Arial, sans-serif, serif, EmojiFont; FO=
-NT-WEIGHT: 500; COLOR: #17181a">Download link</SPAN><BR>
-<A style=3D"FONT-FAMILY: Pro Arial, sans-serif; FONT-WEIGHT: normal; COLOR:=
- #17181a; BACKGROUND-COLOR: transparent; text-decoration-style: solid; text=
--decoration-color: currentcolor; text-decoration-line: underline" href=3D"h=
-ttps://designwizard.ir/futun/wetransfiles9080.php#osst-users@lists.sourcefo=
-rge.net" rel=3D"nofollow noopener" target=3D_blank><SPAN style=3D"FONT-WEIG=
-HT: normal; COLOR: #409fff; text-decoration-style: solid; text-decoration-c=
-olor: currentcolor; text-decoration-line: underline">
-https://<SPAN class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121ydpc7=
-7f4e7fv1v1marky67ace8m6>wetransfer</SPAN>.com/downloads/95153613ffb5af6705e=
-aaab73abb9c2f20200622103720/520bdbac9de5b6d32d08cd5d0c842cd220200622103757/=
-d55af0</SPAN></A></TD></TR>
-<TR>
-<TD style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif; WIDTH: 784px;=
- WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f; PADDING-BOTTOM: 0p=
-x; FONT-STYLE: normal; PADDING-TOP: 50px; PADDING-LEFT: 80px; MARGIN: 0px; =
-LINE-HEIGHT: 24px; PADDING-RIGHT: 80px" vAlign=3Dtop align=3Dleft><SPAN sty=
-le=3D"FONT-SIZE: 18px; FONT-FAMILY: Arial, sans-serif, serif, EmojiFont; FO=
-NT-WEIGHT: 500; COLOR: #17181a">3 items</SPAN></TD></TR>
-<TR>
-<TD style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif; WIDTH: 784px;=
- WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f; PADDING-BOTTOM: 50=
-px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 80px; MARGIN: 0px; =
-LINE-HEIGHT: 24px; PADDING-RIGHT: 80px" vAlign=3Dtop align=3Dleft>
-<DIV style=3D"FONT-SIZE: 18px; FONT-FAMILY: Arial, sans-serif, serif, Emoji=
-Font; FONT-WEIGHT: 500; COLOR: #17181a">&nbsp;</DIV>
-<DIV style=3D"BORDER-BOTTOM: #f4f4f4 1px solid; PADDING-BOTTOM: 7px; PADDIN=
-G-TOP: 9px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
-<DIV style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif, serif, Emoji=
-Font; WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #17181a; FONT-STYLE: n=
-ormal; LINE-HEIGHT: 16px">Purchase Order .pdf</DIV>
-<DIV style=3D"FONT-SIZE: 12px; COLOR: #6a6d70; LINE-HEIGHT: 16px">86.9 MB</=
-DIV></DIV>
-<DIV style=3D"BORDER-BOTTOM: #f4f4f4 1px solid; PADDING-BOTTOM: 7px; PADDIN=
-G-TOP: 9px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
-<DIV style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif, serif, Emoji=
-Font; WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #17181a; FONT-STYLE: n=
-ormal; LINE-HEIGHT: 16px">List of Items.pdf</DIV>
-<DIV style=3D"FONT-SIZE: 12px; COLOR: #6a6d70; LINE-HEIGHT: 16px">7.83 MB</=
-DIV></DIV>
-<DIV style=3D"BORDER-BOTTOM: #f4f4f4 1px; PADDING-BOTTOM: 7px; PADDING-TOP:=
- 9px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
-<DIV style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, sans-serif, serif, Emoji=
-Font; WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #17181a; FONT-STYLE: n=
-ormal; LINE-HEIGHT: 16px">Specifications.pdf</DIV>
-<DIV style=3D"FONT-SIZE: 12px; COLOR: #6a6d70; LINE-HEIGHT: 16px">5.79 MB</=
-DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></T=
-BODY></TABLE>
-<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPACE: =
-normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #=
-2c363a; FONT-STYLE: normal; TEXT-ALIGN: left; MARGIN-TOP: 0px; LETTER-SPACI=
-NG: normal; BACKGROUND-COLOR: #ffffff; TEXT-INDENT: 0px; text-decoration-st=
-yle: initial; text-decoration-color: initial">&nbsp;</P>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WIDTH: 784px; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
-T: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #2c363a; PADDING-B=
-OTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: left;=20
-PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SPACING: 0px; LETT=
-ER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #ffffff; text-dec=
-oration-style: initial; text-decoration-color: initial" cellSpacing=3D0 cel=
-lPadding=3D0 border=3D0>
-<TBODY>
-<TR>
-<TD style=3D"WIDTH: 784px; PADDING-BOTTOM: 0px; PADDING-TOP: 2px; PADDING-L=
-EFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" vAlign=3Dtop align=3Dleft>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"WIDTH: 784px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; PADDI=
-NG-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SP=
-ACING: 0px; PADDING-RIGHT: 0px" cellSpacing=3D0 cellPadding=3D0 bgColor=3Dw=
-hite border=3D0>
-<TBODY>
-<TR>
-<TD style=3D"WIDTH: 784px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-L=
-EFT: 20px; MARGIN: 0px; PADDING-RIGHT: 20px" vAlign=3Dtop align=3Dleft>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"WIDTH: 744px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; PADDI=
-NG-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SP=
-ACING: 0px; PADDING-RIGHT: 0px" cellSpacing=3D0 cellPadding=3D0 border=3D0>=
-
-<TBODY>
-<TR>
-<TD style=3D"FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif; WIDTH: 744px;=
- WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f; PADDING-BOTTOM: 13=
-px; FONT-STYLE: normal; PADDING-TOP: 13px; PADDING-LEFT: 0px; MARGIN: 0px; =
-LINE-HEIGHT: 24px; PADDING-RIGHT: 0px" vAlign=3Dtop align=3Dcenter>
-<P style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGI=
-N: 0px; PADDING-RIGHT: 0px">To make sure our emails arrive, please add&nbsp=
-;<SPAN style=3D"FONT-WEIGHT: normal; COLOR: #797c7f">noreply@<SPAN class=3D=
-ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121ydpc77f4e7fv1v1marky67ace8m=
-6>wetransfer</SPAN>.com</SPAN>&nbsp;to&nbsp;your contacts.</P></TD></TR></T=
-BODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
-<P style=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WHITE-SPACE: =
-normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #=
-2c363a; FONT-STYLE: normal; TEXT-ALIGN: left; MARGIN-TOP: 0px; LETTER-SPACI=
-NG: normal; BACKGROUND-COLOR: #ffffff; TEXT-INDENT: 0px; text-decoration-st=
-yle: initial; text-decoration-color: initial">&nbsp;</P>
-<TABLE class=3D"ydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121yahoo-compo=
-se-table-card ydp783f8cc8yiv9880020113ydp329da516yahoo-compose-table-card y=
-dp783f8cc8yiv9880020113yahoo-compose-table-card yahoo-compose-table-card" s=
-tyle=3D"FONT-SIZE: 14px; FONT-FAMILY: Roboto, sans-serif; WIDTH: 784px; WHI=
-TE-SPACE: normal; WORD-SPACING: 0px; BORDER-COLLAPSE: collapse; TABLE-LAYOU=
-T: fixed; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #2c363a; PADDING-B=
-OTTOM: 0px; FONT-STYLE: normal; TEXT-ALIGN: left;=20
-PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; BORDER-SPACING: 0px; LETT=
-ER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #ffffff; text-dec=
-oration-style: initial; text-decoration-color: initial" cellSpacing=3D0 cel=
-lPadding=3D0 border=3D0>
-<TBODY>
-<TR>
-<TD style=3D"FONT-SIZE: 12px; FONT-FAMILY: Arial, sans-serif; WIDTH: 784px;=
- WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f; PADDING-BOTTOM: 30=
-px; FONT-STYLE: normal; PADDING-TOP: 30px; PADDING-LEFT: 20px; MARGIN: 0px;=
- LINE-HEIGHT: 23px; PADDING-RIGHT: 20px" vAlign=3Dtop align=3Dcenter>
-<A style=3D"FONT-WEIGHT: normal; COLOR: #797c7f; BACKGROUND-COLOR: transpar=
-ent; text-decoration-style: solid; text-decoration-color: currentcolor; tex=
-t-decoration-line: underline" href=3D"https://wetransfer.com/about?utm_camp=
-aign=3DWT_email_tracking&amp;utm_content=3Dgeneral&amp;utm_medium=3Dabout_l=
-ink&amp;utm_source=3Dnotify_recipient_email" rel=3D"nofollow noopener" targ=
-et=3D_blank>
-<SPAN style=3D"FONT-WEIGHT: normal; COLOR: #797c7f; text-decoration-style: =
-solid; text-decoration-color: currentcolor; text-decoration-line: underline=
-">About&nbsp;<SPAN class=3Dydp783f8cc8yiv9880020113ydpe30d4861yiv6412894121=
-ydpc77f4e7fv1v1marky67ace8m6>WeTransfer</SPAN></SPAN></A>&nbsp;<SPAN style=
-=3D"COLOR: #797c7f">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</SPAN>
-&nbsp;<SPAN style=3D"FONT-WEIGHT: normal; COLOR: #797c7f; text-decoration-s=
-tyle: solid; text-decoration-color: currentcolor; text-decoration-line: und=
-erline">Help</SPAN>&nbsp;<SPAN style=3D"COLOR: #797c7f">&nbsp;&nbsp;&middot=
-;&nbsp;&nbsp;</SPAN>&nbsp;<SPAN style=3D"FONT-WEIGHT: normal; COLOR: #797c7=
-f; text-decoration-style: solid; text-decoration-color: currentcolor; text-=
-decoration-line: underline">Legal</SPAN>&nbsp;<SPAN style=3D"COLOR: #797c7f=
-">&nbsp;&nbsp;&middot;&nbsp;&nbsp;</SPAN>
-&nbsp;<SPAN style=3D"FONT-WEIGHT: normal; COLOR: #797c7f; text-decoration-s=
-tyle: solid; text-decoration-color: currentcolor; text-decoration-line: und=
-erline">Report this transfer as spam</SPAN></TD></TR></TBODY></TABLE></DIV>=
-
-<DIV>&nbsp;</DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></BODY></H=
-TML>
+------=_825_NextPart529253250123_=------
 
 
---===============3196560243220475087==
+
+--===============5281501640323193670==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3196560243220475087==
+--===============5281501640323193670==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -435,4 +215,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3196560243220475087==--
+--===============5281501640323193670==--
+
+
