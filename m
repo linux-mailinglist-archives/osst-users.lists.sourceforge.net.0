@@ -2,82 +2,163 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0910652DE24
-	for <lists+osst-users@lfdr.de>; Thu, 19 May 2022 22:15:10 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
+	by mail.lfdr.de (Postfix) with ESMTPS id AE3E052F14E
+	for <lists+osst-users@lfdr.de>; Fri, 20 May 2022 19:11:08 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1nrmY9-0008AS-Eu
-	for lists+osst-users@lfdr.de; Thu, 19 May 2022 20:15:08 +0000
+	id 1ns69a-0004tJ-Rr
+	for lists+osst-users@lfdr.de; Fri, 20 May 2022 17:11:07 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <appliedmetaltechltd11@hotmail.com>)
- id 1nrmY5-0008AL-0L
- for osst-users@lists.sourceforge.net; Thu, 19 May 2022 20:15:04 +0000
+ (envelope-from <info@geek-squadservices128.co>) id 1ns69Z-0004tD-EW
+ for osst-users@lists.sourceforge.net; Fri, 20 May 2022 17:11:05 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=MIME-Version:Content-Type:Message-ID:Date:Subject:
+ To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=+NyQCUZop1LRm9ZrTftY/McRdRnIABWaUqZ5MY7ZYJ8=; b=kBUk65blj4gMG5vW3ngldherVg
- Sd/ar0UJHty713qVTurWiSf2CuxSSAyAuhNOVE7wHQkY9D5F8HP5qenn2tWDZBClMyGKtQb0MmZdc
- LhmtDQLipXqzNA5j/fa60V3PHdl/h+SxJJlmlptCBeGUAVD0OqfdQaGOmHx8gxoV2L8c=;
+ bh=x+7jiOm/KIAf5qptE2u58DPJqDj4vJOmT58FskPPkiA=; b=c5gTdvr4aO18xyEi8SYgsnmHSP
+ wV2ckqF8Kl6OYD3diFzeif9ZD5zkNzEbLeQFdHv0haUWXbvhh6t1FSl+DxRFWQwtHA4ebO7IH7MRT
+ ZOl/raH6DVqm4c4WLhIE2enOeXApa7M/AeGBnQDTvQuulixIaXkWlPVDcyavthw7dRNA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=MIME-Version:Content-Type:Message-ID:Date:Subject:To:From:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=+NyQCUZop1LRm9ZrTftY/McRdRnIABWaUqZ5MY7ZYJ8=; b=R
- mPBP44Syl7oNrinxXbCy8I7cO0cLdrkphOqXJUtE5ypnYLn5oNhpvnpMrVNzZ0k5ZZu6/i8h0ZS4a
- +pJkp2o/Rhr1AiUOjsga43m97dp0mBPiKWUQUwGmOHggobpi/NJFyGYut1cR+az+wKjyIm0809PSd
- TaEbTvxY7fa6zuSU=;
-Received: from f240.nskorea.com ([222.231.10.240])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps (TLS1:DHE-RSA-AES256-SHA:256)
- (Exim 4.94.2) id 1nrmY2-00ANou-Mf
- for osst-users@lists.sourceforge.net; Thu, 19 May 2022 20:15:03 +0000
-Received: from [2.56.59.65] ([2.56.59.65]) (authenticated bits=0)
- by f240.nskorea.com (8.13.8/8.13.8) with ESMTP id 24JKEkDM027370
- for <osst-users@lists.sourceforge.net>; Fri, 20 May 2022 05:14:52 +0900
-From: Mr David Williams <appliedmetaltechltd11@hotmail.com>
-To: osst-users@lists.sourceforge.net
-Date: 19 May 2022 21:14:44 +0100
-Message-ID: <20220519211444.7666F9DE9969CB0F@hotmail.com>
+ List-Owner:List-Archive; bh=x+7jiOm/KIAf5qptE2u58DPJqDj4vJOmT58FskPPkiA=; b=W
+ aRJmvbuwCWr+sRb15ftzl87De4AGX/4c8kgh/Wn3ypfbrbT5oxFYnyfsuGJ/PJGucYw5hjGOsUQ/g
+ YsjXIVU6PA/F4LLqMVFnLNvHpNPzU2OsbsZwd8gEYKFh/Df+QTTkN0gz5P6kTenpCg3mU1ZEH0USy
+ y64A8kbCNri5JL28=;
+Received: from mail-ma1ind01on2129.outbound.protection.outlook.com
+ ([40.107.138.129] helo=IND01-MA1-obe.outbound.protection.outlook.com)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.94.2)
+ id 1ns69X-0000tQ-MG
+ for osst-users@lists.sourceforge.net; Fri, 20 May 2022 17:11:05 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=aiq0GfZvTD3/mcz1iRUAejOVbn3FrwwNVSM8bgPbkBykcr/IPSr3ceNyHv6V7g4Rvthr5Y8rSayVwMNuPkTd6s/pvwEFREoUKL/zJHdAt0b+coKu59/Oi2J9zWqa5C0zQPY/Smx17P6RpI6cHuvGTji2KOCN8AyO9J8B4kgLAEm+LwFwvlF8RJjj5SkvmOPADieZMn7pTsUEcl2o20kucHYMcdP9RlEU6+YDf0ScHBkcBI/FUM+tywodd6b0yAJF1KgaXwFCDNIrL/S9sRqh55r/ykyzRvPGONnHjjlGxsGieLjSNdyyOhxhbrcKFfMJEkUV606MHfA11mGV9vWP3w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; 
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=x+7jiOm/KIAf5qptE2u58DPJqDj4vJOmT58FskPPkiA=;
+ b=j2xMn50Z5yvI4bo+sX8Dov21Gzk4JCg4rbU8WpSP1RKPvG2rJJG0e9a2yxtfuJk2ZAuO97UN+2gpSJjbAVnt35+mPp4X+5rwpH+R5kwoad/7g8+drMXYPrwFzRxL++5jYxBMsxxwWaeEOiZKFFP5l45PX8RsPn44x0kpygSVNfWUtJ8d8botieOlqSXYiwomYXc+SFU2+djX3agMTpE7vfZKRU4j2dMUYR81hd7Qa+TgVo28dOr0t65RURUQMUtRpqC4rBmkRkMestPpTrIsXOQIDUt31IFE9umiOfyJ7+gxwO3ss4p4AoA4GXGau6nRCap5o1dRZFbvLm402CAO8g==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=geek-squadservices128.co; dmarc=pass action=none
+ header.from=geek-squadservices128.co; dkim=pass
+ header.d=geek-squadservices128.co; arc=none
+Received: from MAXPR01MB3999.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a00:68::23)
+ by MAXPR0101MB1996.INDPRD01.PROD.OUTLOOK.COM (2603:1096:a00:1a::11)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5273.17; Fri, 20 May
+ 2022 17:10:54 +0000
+Received: from MAXPR01MB3999.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::fc3f:980b:b1d9:19e5]) by MAXPR01MB3999.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::fc3f:980b:b1d9:19e5%6]) with mapi id 15.20.5273.017; Fri, 20 May 2022
+ 17:10:54 +0000
+From: Service Updates <info@geek-squadservices128.co>
+To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
+Thread-Topic: Renewed! Your service plan 9207836 with us ...
+Thread-Index: AQHYbGpCumUg2O6IFEqv/5j+A2VQHw==
+Date: Fri, 20 May 2022 16:54:25 +0000
+Message-ID: <f55ae080-5206-c323-c931-fe67aa480587@geek-squadservices128.co>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=geek-squadservices128.co;
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 4767d7fa-5c5f-4798-d16c-08da3a83b2e2
+x-ms-traffictypediagnostic: MAXPR0101MB1996:EE_
+x-microsoft-antispam-prvs: <MAXPR0101MB19961535BA331DD9D0719DF1B0D39@MAXPR0101MB1996.INDPRD01.PROD.OUTLOOK.COM>
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: SjbfF3ZgpCKn+M1HHeKz05zSEhW+d+rzHynEW/c/HmWHQT5giMAjd4ihvOmxsrR/UlJanZSEG3YKKC4oMAYD+p6mlp7Y/qhEtpX6QgRu2s09y+TrC5clXCXsjAF8DZeS+Am0QCdbPVTLejpu8QzJLv7KkrbNnaHXTQHxZxn+AdyI2NtfaiCcaOP79RC0AhB3AZO/uylh9d20OCFzf0FmeVCmnD2G7G44mGG0MhEXjB/Bs3NC3TKxboZZbFBlsURjTFmSRB2XVDMWDBprRPo4p23nCZt41gRNzt9H/4g6ZysvOpx1W2wI5KxMRSqExHQJEo3Sd3njxfQ3NzxMdFKajoMr6CWvH3m7YRqx/mJq3qKVnaxRf21eCXnHAGNMLKVXFd0+qQSgxAzPsOtItCvuynMib1Cl3xzHocq1DBQlA9R8qHJhl71WT6ha9yZ7R7yv3Oa1rG5j69iPMMkwD72uM9rCCl3aNHxiYMAKKkmRU3XzB2FozX9GQ76ETuit5X03/4va7/JNl9EMCl+bSObzcQUjhuWUW+0CwMnbY/2uJ3wux6dzG8TLcvvdyWXcA8kc8Gv9zE+Ykv7siXWdCuvlDx5rpwUBWHZI35VeyWzYwieCraFjsWtd2LHVOkRVP1/xqBFQetnrN8ju7SA60nIYH/WKSBNcCWkrsDmSVJITVQ+MXlQL+rQrQpI5UE4+YOUvGcUzybh72bdFi+d8s6X/UPSqW81Ht0dwxUOkYjoc51w=
+x-forefront-antispam-report: CIP:255.255.255.255; CTRY:; LANG:en; SCL:1; SRV:;
+ IPV:NLI; SFV:NSPM; H:MAXPR01MB3999.INDPRD01.PROD.OUTLOOK.COM; PTR:; CAT:NONE;
+ SFS:(13230001)(376002)(366004)(136003)(346002)(396003)(39850400004)(38100700002)(31686004)(6916009)(31696002)(316002)(55236004)(86362001)(36756003)(6506007)(83380400001)(6512007)(26005)(186003)(8936002)(66556008)(76116006)(40140700001)(4744005)(8676002)(6666004)(41300700001)(6486002)(2616005)(38070700005)(76236003)(66476007)(99936003)(2906002)(508600001)(122000001)(64756008)(66946007)(66446008)(5660300002)(91956017)(71200400001)(45980500001);
+ DIR:OUT; SFP:1102; 
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: =?utf-8?B?QUE5azBlZlVxbDc1TzRwY2tBVjU5MVhiY05UcFRRSkpGR05qVHFDWW5GdGp3?=
+ =?utf-8?B?OUZoVTVBanFHSUt6eThYWVA0dUU0RDltSTR1RXFhdVlObkJTTUQyeGlxNkFx?=
+ =?utf-8?B?Z1dWY0JLZnlnYmk4b2diWmp1QlQzdklaYkRaVzI5MXdNU1FrVUZyUmFDRjBN?=
+ =?utf-8?B?TnltK0tkc3NGNjJJVmVWWWhKeCt4ak9SazJtbERnRWlxc3NTNTJ3Z1NlWno1?=
+ =?utf-8?B?Wk9PeXQ1Y1hLTExmSURpK285OCs5b05rdmF5dTJxMk1WWDZtU0NUVHdRamNu?=
+ =?utf-8?B?b2hOQytuWlUydU92RTQ5WlpsOWk5NkJHL0w0ckN6RFpqNWNSOHVrYTlucnJ2?=
+ =?utf-8?B?UFZrQ1hFbWlkSExZeVRvVFU3bE9hK2pnaTMrckF2bDQya1Z3a1MxN2FGVUR6?=
+ =?utf-8?B?OGd4dk9KelNvM3RiSGZMenpCcmlFM0Z3NDNmTkRTMDN4QnRpRHpxR1FLY2lU?=
+ =?utf-8?B?U1VLVGdNSHlzV0NiSjVrbnVENk42dW5JMDhkUXJQdTEwYkRHSFZLN01WZkVQ?=
+ =?utf-8?B?NHRFVVNkb0MvaDZDeS9ocHNiUUV6VUpkZURBOTBnWnp4RC9YV2NLZmo0MHp0?=
+ =?utf-8?B?R2ppd24xelA5TUNMa2ZBaHkwNk8raUtXUkVTZTJncUZ6Z2FyeUxrbzUwQ0ZB?=
+ =?utf-8?B?Vkg0WkhmTndxOHhhRUhJbmFkNkNGRTNhWTdUNm55TFZJODdZeFBNU2ZNbkUv?=
+ =?utf-8?B?ajJwelZBUkRvRnJXTzEvdlh1UFFXWTB1eW84bEV3Z2l2TVJUenNiRTFVbFIv?=
+ =?utf-8?B?d3M4aFlUVEZDcGVLWDlaREVRcEpPVjk1c0tTYzVMUFdCNWI4T2QxRjNxTlFq?=
+ =?utf-8?B?WHdWVFR1VC96OE1CY0ZXOWJqekd2RVJWUWlUL0pFdHUxRWRaamdWYVhaUmpK?=
+ =?utf-8?B?SWhuRlJDQzY5czlRZUF3T0tiOTR0RmkvQWN3cGI2dnRraWdpVDg2T3NiUlBy?=
+ =?utf-8?B?eFZSUC8rWWRPL3FYVGxaUzdhMUtIYks1RVdBL3o0WVFqVE5JNUdKcThFRytE?=
+ =?utf-8?B?dWhCYm1nUkVYS3pSYmRZdE5mSFVtYzV0SElUd0xjOUlYQk5kTnpQeXgxOGlu?=
+ =?utf-8?B?eEtNa2o4YUVMd1VEeWV5dnZUZ1NRRERoNWxUR3N3SzRTeVRiQVc4Zk96VXRU?=
+ =?utf-8?B?T0RhUzZaKzNpSW44OUJWOTdVSEtCRTE4M2lhbVBHSDZ6Z3VjZGtCcnpEUFkv?=
+ =?utf-8?B?a2NzcmFvVTc1Z0w2T3c3MjFjZjc0V3AxS3FIbDBrdVBwcWRlR3RMcElJNnNp?=
+ =?utf-8?B?d1N0T3RvN0hyeC9rdDZWWXRpWkIwaHlMZjdLY3ozVko4TEhXK0liZXo2Lzha?=
+ =?utf-8?B?VnBjNGZGQnZRazJLVGtqNmt2dmZpelZpaTdxMGl6Z1NjMWxLdEgxclgrKzBW?=
+ =?utf-8?B?dkJYajc4L09nZzhoVHhWQm9oQStOQkt6U2VleXgrYVdiMnF3d1lNZnVZTjJY?=
+ =?utf-8?B?dzJ5Ukh5UnZ2UXNjYkFWRHVaRXdheS9JZ3F1YU1VamxBMHd1eFhHVXRXendj?=
+ =?utf-8?B?VE5NMGI5QVQxNDc2bk9hZFZiMWl5ckdHUnQwYUMxYzNCN0NSM1RuRlpDTlJN?=
+ =?utf-8?B?VGZqRFQ5K3lpVkhmYnFKWDBhOXZXcXpwL2hmQVE3RXJmeW1Xb0FOZmRKK1Bj?=
+ =?utf-8?B?VFdKNFVYQ0Y1V1M3bXZLSEo2cHdhUi92aCtCREppZGU2cm5zalNBMVljem9N?=
+ =?utf-8?B?T05MQUFjNVZyV2dUQ1hWWVE0am5GMGYxZ3MwMm0zMmJCSFhLazVPVU4veDZJ?=
+ =?utf-8?B?WXBsV0h4blZnOGVrSW9YTkYyTU15ZjlmUHVKdUk3bDUwTXhsTkwyejIwU2pi?=
+ =?utf-8?B?aEEzd3Qzd3NqeHNiSk5jWHdRUzVQMjlDS1lYOUd4VUt5Yk9XakZZNlROTWEz?=
+ =?utf-8?B?UjdBWTRwa0FRWU43VytLdDc5a045b3R4UVZUTDhCTlQ1TlBqVFI3eFBKTjVH?=
+ =?utf-8?B?cDFhYzd2Um54aVZ0L1V6L1BucWNEL3htOEhINDZXZXRzV3JOZ0Z3RVV1bDB1?=
+ =?utf-8?B?d01Sb1VBaFhpaGZ5TiszSUxsdEtHKzRMM1dJdHExa25CZDhLSTVMQnlXeEtz?=
+ =?utf-8?B?OEpCOVZVUkNnQ05XTGxrWlFmQlNCWHcyUXhFbUNUbGlrSW9MbFcvVEVjeVMw?=
+ =?utf-8?B?cWxobDg3cDNaWk4zbnBYdm9XRUIwaWhuTU9FdWppNWNkZnFlYUNmQXgvN0xE?=
+ =?utf-8?B?SmEvSFp2NXFsai9UTU82RmxaRVpJRE1DOXF5R3QvclhJcWpHdytpZEZncGFF?=
+ =?utf-8?B?VHQ0ZnVCdnY3QUxEZHdGTUd4Q002MlMzcHJSZTZRcU1lNnVjN0l2aGtyYVNo?=
+ =?utf-8?B?MytnWkxXUnM3a0d0Mys2MFRtbzhaaE5UWnJpUTQ2em1FTnlwbGJmL3pIU2VH?=
+ =?utf-8?Q?DE2u2zaiToq2WNnc=3D?=
 MIME-Version: 1.0
-X-Spam-Score: 7.5 (+++++++)
+X-OriginatorOrg: geek-squadservices128.co
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: MAXPR01MB3999.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4767d7fa-5c5f-4798-d16c-08da3a83b2e2
+X-MS-Exchange-CrossTenant-originalarrivaltime: 20 May 2022 16:54:25.5310 (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 8971f260-1612-4459-97ee-19212339be13
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: NDwlTQG9XW4fvu6xTD+EIP3Ax8n8FRB5cuI3RcDtXReJ1TqpV+jfd+ItvOxK0cyggbZPlNiNQgM8OltYSVfMCYPVrEmTCehqKDl6DQluq+Y=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MAXPR0101MB1996
+X-Spam-Score: -0.0 (/)
 X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Applied Metal Technology Ltd., Unit 3, Ashfield Close, Leeds,
- West Yorkshire, 
- Content analysis details:   (7.5 points, 6.0 required)
+ Content preview:  [label] Service Plan Renewed Hi,
+ Congratulations! Your security
+ service plan with us has been successfully renewed for next one year. 
+ Content analysis details:   (-0.0 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in
- digit [appliedmetaltechltd11[at]hotmail.com]
- 0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends
- in digit [appliedmetaltechltd11[at]hotmail.com]
- 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
- provider [appliedmetaltechltd11[at]hotmail.com]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 1.2 FORGED_HOTMAIL_RCVD2   hotmail.com 'From' address, but no
- 'Received:'
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [40.107.138.129 listed in wl.mailspike.net]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [40.107.138.129 listed in list.dnswl.org]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+ identical to background
  0.0 HTML_MESSAGE           BODY: HTML included in message
- 1.5 HK_NAME_FM_MR_MRS      No description available.
- -0.0 T_SCC_BODY_TEXT_LINE   No description available.
- 0.0 FILL_THIS_FORM         Fill in a form with personal information
- 1.0 SPOOFED_FREEMAIL       No description available.
- 2.2 FILL_THIS_FORM_LOAN    Answer loan question(s)
-X-Headers-End: 1nrmY2-00ANou-Mf
-Subject: [Osst-users] =?utf-8?b?Q29tcGFueSDhjqFlcHJlc2VudGF0ac69ZSDGlnMg?=
- =?utf-8?q?Needed?=
+X-Headers-End: 1ns69X-0000tQ-MG
+Subject: [Osst-users] Renewed! Your service plan 9207836 with us ...
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -89,417 +170,559 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: appliedmetaltechltd11@hotmail.com
-Content-Type: multipart/mixed; boundary="===============8448202720741097289=="
+Content-Type: multipart/mixed; boundary="===============8980170690863059829=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============8448202720741097289==
-Content-Type: text/html
-Content-Transfer-Encoding: quoted-printable
+--===============8980170690863059829==
+Content-Language: en-US
+Content-Type: multipart/related;
+	boundary="_004_f55ae0805206c323c931fe67aa480587geeksquadservices128co_";
+	type="multipart/alternative"
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
-w3.org/TR/html4/loose.dtd">
+--_004_f55ae0805206c323c931fe67aa480587geeksquadservices128co_
+Content-Type: multipart/alternative;
+	boundary="_000_f55ae0805206c323c931fe67aa480587geeksquadservices128co_"
 
-<html><head>
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
-<body style=3D"margin: 0.5em;">
-<p style=3D'margin: 0px; padding: 0px; color: rgb(17, 17, 17); text-transfo=
-rm: none; text-indent: 0px; letter-spacing: normal; font-family: "&#47569;&=
-#51008; &#44256;&#46357;", "Malgun Gothic", &#46027;&#50880;, dotum, sans-s=
-erif; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: =
-0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255,=
- 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -web=
-kit-text-stroke-width: 0px;=20
-text-decoration-thickness: initial; text-decoration-style: initial; text-de=
-coration-color: initial;'>
-<span style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: Arial; font-size: small; font-style: =
-normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !=
-important; white-space: normal; orphans: 2; widows: 2; background-color: rg=
-b(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal=
-; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-=
-decoration-style: initial; text-decoration-color:=20
-initial;"><font size=3D"3"><font style=3D"vertical-align: inherit;"><font s=
-tyle=3D"vertical-align: inherit;">Applied Metal Technology Ltd.,</font></fo=
-nt></font></span></p>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Unit 3, Ashfield Close,</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Leeds, West Yorkshire,</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">LS12 5JB, UK.</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Email:<span>&nbsp;</span></font><a style=3D"text-decoration: none;" =
-href=3D"https://mail.daum.net/" target=3D"_blank" rel=3D"noopener noreferre=
-r"><font style=3D"vertical-align: inherit;">appliedmetaltechltd11@hotmail.c=
-om</font></a></font><span>&nbsp;</span><a style=3D"text-decoration: none;" =
-href=3D"https://mail.daum.net/" target=3D"_blank" rel=3D"noopener noreferre=
-r"><font style=3D"vertical-align: inherit;"></font></a></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-&nbsp;</div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Applied Metal Technology is a provider of precision sheet metal</fon=
-t></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">components in ferrous and non ferrous materials.The structure of the=
-</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">company reflects today's demands for flexibility, competitive prices=
-</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">and excellent customer service.Our Service include: CNC Punching,CNC=
-</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Folding, Laser Cutting, Assembly and Fabrication Material Finishing.=
-</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-&nbsp;</div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">We need people from different regions to work as our agents in their=
-</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">region in other to create a good and reliable medium between our</fo=
-nt></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">customers and this company;<span>&nbsp;</span></font><font style=3D"=
-vertical-align: inherit;">this is a work at home job and requires</font></f=
-ont></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">less of your time (ie only 0.5% of your time every month).<span>&nbs=
-p;</span></font><font style=3D"vertical-align: inherit;">The</font></font><=
-/div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">salary for this position is $5,500.00 monthly and a bonus of $500.00=
-</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">per transaction.Agent's age is one of the factors that also need to =
-be</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">considered as most of our customers make payment in huge amounts..</=
-font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-&nbsp;</div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">If you are interested in this position, e-mail us with the informati=
-on</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">below for more information.</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-&nbsp;</div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Full Names..... Company Name (If applicable)..</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-&nbsp;</div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Contact Address....</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">City.......</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">State......</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Zip Code...............</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Age.......</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Sex.....</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Marital Status.....</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Current Occupation......</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Phone &amp; Fax.....</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-&nbsp;</div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Signed,</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Mr.<span>&nbsp;</span></font><font style=3D"vertical-align: inherit;=
-">David Williams</font></font></div>
-<div style=3D"margin: 0px; padding: 0px; color: rgb(0, 0, 0); text-transfor=
-m: none; text-indent: 0px; letter-spacing: normal; font-family: Arial; font=
--size: small; font-style: normal; font-weight: 400; word-spacing: 0px; whit=
-e-space: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255=
-); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-=
-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-styl=
-e: initial; text-decoration-color: initial;">
-<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
-erit;">Managing Director</font></font></div>
-<p style=3D'margin: 0px; padding: 0px; color: rgb(17, 17, 17); text-transfo=
-rm: none; text-indent: 0px; letter-spacing: normal; font-family: "&#47569;&=
-#51008; &#44256;&#46357;", "Malgun Gothic", &#46027;&#50880;, dotum, sans-s=
-erif; font-size: 14px; font-style: normal; font-weight: 400; word-spacing: =
-0px; white-space: normal; orphans: 2; widows: 2; background-color: rgb(255,=
- 255, 255); font-variant-ligatures: normal; font-variant-caps: normal; -web=
-kit-text-stroke-width: 0px;=20
-text-decoration-thickness: initial; text-decoration-style: initial; text-de=
-coration-color: initial;'>
-<span style=3D"color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
- letter-spacing: normal; font-family: Arial; font-size: small; font-style: =
-normal; font-weight: 400; word-spacing: 0px; float: none; display: inline !=
-important; white-space: normal; orphans: 2; widows: 2; background-color: rg=
-b(255, 255, 255); font-variant-ligatures: normal; font-variant-caps: normal=
-; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-=
-decoration-style: initial; text-decoration-color:=20
-initial;"><font size=3D"3"><font style=3D"vertical-align: inherit;"><font s=
-tyle=3D"vertical-align: inherit;">Applied Metal Technology Ltd</font></font=
-></font></span></p></body></html>
+--_000_f55ae0805206c323c931fe67aa480587geeksquadservices128co_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+DQpbbGFiZWxdDQpTZXJ2aWNlIFBsYW4gUmVuZXdlZA0KSGksDQoNCkNvbmdyYXR1bGF0aW9ucyEN
+Cg0KWW91ciBzZWN1cml0eSBzZXJ2aWNlIHBsYW4gd2l0aCB1cyBoYXMgYmVlbiBzdWNjZXNzZnVs
+bHkgcmVuZXdlZCBmb3IgbmV4dCBvbmUgeWVhci4NCg0KSGVyZSBhcmUgdGhlIGRldGFpbHMgb2Yg
+dGhlIHJlbmV3YWwgZm9yIHlvdXIgcmVmZXJlbmNlOg0KDQpQbGFuIE5hbWUNCkdlZWsgU2VjdXJl
+IDM2MCBQcm90ZWN0DQoNClJlbmV3YWwgRGF0ZQ0KTWF5IDIwdGgsIDIwMjIgZm9yIE9uZSBZZWFy
+DQoNClByaWNlDQokMzg1Ljk5DQoNCkhlbHAtRGVzayArMSAoODA4KSAzMjAtNDA3Mw0KDQpSZWdp
+c3RlcmVkIEVtYWlsDQpvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldA0KDQpSZW5ld2Fs
+IElEDQo5MjA3ODM2DQoNCk5leHQgUmVuZXdhbA0KTWF5IDIxdGgsIDIwMjMNCg0KDQoNClRoYW5r
+cywNCkdlZWtzIFNxdWFkDQoNCg0KDQpBdmFpbGFibGUgaW4gdGhlIEFwcCBTdG9yZSBhbmQgR29v
+Z2xlIFBsYXkNCg0KDQpZb3UgcmVjZWl2ZWQgdGhpcyBlbWFpbCBiZWNhdXNlIHlvdSBoYXZlIHJl
+Z2lzdGVyZWQgYW4gYWNjb3VudCBvbiBHZWVrcyBTcXVhZCB3ZWJzaXRlLg0KVW5zdWJzY3JpYmUN
+Cg0K
+
+--_000_f55ae0805206c323c931fe67aa480587geeksquadservices128co_
+Content-Type: text/html; charset="utf-8"
+Content-ID: <20330134A919804B91699A6201A289DC@INDPRD01.PROD.OUTLOOK.COM>
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQo8aGVhZD4NCjxtZXRhIGh0dHAtZXF1aXY9IkNvbnRlbnQtVHlwZSIgY29udGVudD0i
+dGV4dC9odG1sOyBjaGFyc2V0PXV0Zi04Ij4NCjwvaGVhZD4NCjxib2R5Pg0KPHA+PC9wPg0KPGRp
+diBjbGFzcz0ibW96LXRleHQtaHRtbCIgbGFuZz0ieC11bmljb2RlIj4NCjxwPjwvcD4NCjxkaXYg
+Y2xhc3M9Im1vei10ZXh0LWh0bWwiIGxhbmc9IngtdW5pY29kZSI+DQo8cD48L3A+DQo8ZGl2IGNs
+YXNzPSJtb3otZm9yd2FyZC1jb250YWluZXIiPg0KPGRpdiBjbGFzcz0ibW96LXRleHQtaHRtbCIg
+bGFuZz0ieC11bmljb2RlIj4NCjxkaXYgY2xhc3M9Im1vei10ZXh0LWh0bWwiIGxhbmc9IngtdW5p
+Y29kZSI+DQo8ZGl2IGNsYXNzPSJtb3otdGV4dC1odG1sIiBsYW5nPSJ4LXVuaWNvZGUiPg0KPGRp
+diBjbGFzcz0ibW96LWZvcndhcmQtY29udGFpbmVyIj4NCjxkaXYgY2xhc3M9Im1vei1mb3J3YXJk
+LWNvbnRhaW5lciI+DQo8ZGl2IGNsYXNzPSJtb3otdGV4dC1odG1sIiBsYW5nPSJ4LXVuaWNvZGUi
+Pg0KPGRpdiBjbGFzcz0ibW96LWZvcndhcmQtY29udGFpbmVyIj4NCjxkaXYgY2xhc3M9Im1vei10
+ZXh0LWh0bWwiIGxhbmc9IngtdW5pY29kZSI+PGJyPg0KPGRpdiBjbGFzcz0ibW96LWZvcndhcmQt
+Y29udGFpbmVyIj4NCjxkaXYgY2xhc3M9ImVzLXdyYXBwZXItY29sb3IiIHN0eWxlPSJiYWNrZ3Jv
+dW5kLWNvbG9yOiNGNkY2RjYiPg0KPHRhYmxlIGNsYXNzPSJlcy13cmFwcGVyIiBzdHlsZT0ibXNv
+LXRhYmxlLWxzcGFjZTowO21zby10YWJsZS1yc3BhY2U6MDtib3JkZXItY29sbGFwc2U6Y29sbGFw
+c2U7Ym9yZGVyLXNwYWNpbmc6MDtwYWRkaW5nOjA7bWFyZ2luOjA7d2lkdGg6MTAwJTtoZWlnaHQ6
+MTAwJTtiYWNrZ3JvdW5kLXJlcGVhdDpyZXBlYXQ7YmFja2dyb3VuZC1wb3NpdGlvbjpjZW50ZXIN
+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdG9wIiB3aWR0aD0iMTAwJSIgY2VsbHNw
+YWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIwIj4NCjx0Ym9keT4NCjx0cj4NCjx0ZCBzdHlsZT0icGFk
+ZGluZzowO21hcmdpbjowIiB2YWxpZ249InRvcCI+DQo8dGFibGUgY2xhc3M9ImVzLWhlYWRlciIg
+c3R5bGU9Im1zby10YWJsZS1sc3BhY2U6MDttc28tdGFibGUtcnNwYWNlOjA7Ym9yZGVyLWNvbGxh
+cHNlOmNvbGxhcHNlO2JvcmRlci1zcGFjaW5nOjA7dGFibGUtbGF5b3V0OmZpeGVkIWltcG9ydGFu
+dDt3aWR0aDoxMDAlO2JhY2tncm91bmQtY29sb3I6dHJhbnNwYXJlbnQ7YmFja2dyb3VuZC1yZXBl
+YXQ6cmVwZWF0O2JhY2tncm91bmQtcG9zaXRpb246Y2VudGVyDQogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgdG9wIiBjZWxsc3BhY2luZz0iMCIgY2VsbHBhZGRpbmc9IjAi
+IGFsaWduPSJjZW50ZXIiPg0KPHRib2R5Pg0KPHRyPg0KPHRkIHN0eWxlPSJwYWRkaW5nOjA7bWFy
+Z2luOjAiIGFsaWduPSJjZW50ZXIiPg0KPHRhYmxlIGNsYXNzPSJlcy1oZWFkZXItYm9keSIgc3R5
+bGU9Im1zby10YWJsZS1sc3BhY2U6MDttc28tdGFibGUtcnNwYWNlOjA7Ym9yZGVyLWNvbGxhcHNl
+OmNvbGxhcHNlO2JvcmRlci1zcGFjaW5nOjA7YmFja2dyb3VuZC1jb2xvcjojRkZGRkZGO3dpZHRo
+OjYwMHB4IiBjZWxsc3BhY2luZz0iMCIgY2VsbHBhZGRpbmc9IjAiIGJnY29sb3I9IiNmZmZmZmYi
+IGFsaWduPSJjZW50ZXIiPg0KPHRib2R5Pg0KPHRyPg0KPHRkIHN0eWxlPSJtYXJnaW46MDtwYWRk
+aW5nLXRvcDoxNXB4O3BhZGRpbmctYm90dG9tOjE1cHg7cGFkZGluZy1sZWZ0OjIwcHg7cGFkZGlu
+Zy1yaWdodDoyMHB4O2JhY2tncm91bmQtaW1hZ2U6dXJsKCk7YmFja2dyb3VuZC1yZXBlYXQ6bm8t
+cmVwZWF0O2JhY2tncm91bmQtcG9zaXRpb246bGVmdA0KICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdG9wIiBhbGlnbj0ibGVmdCI+DQo8dGFibGUg
+c3R5bGU9Im1zby10YWJsZS1sc3BhY2U6MDttc28tdGFibGUtcnNwYWNlOjA7Ym9yZGVyLWNvbGxh
+cHNlOmNvbGxhcHNlO2JvcmRlci1zcGFjaW5nOjAiIHdpZHRoPSIxMDAlIiBjZWxsc3BhY2luZz0i
+MCIgY2VsbHBhZGRpbmc9IjAiPg0KPHRib2R5Pg0KPHRyPg0KPHRkIHN0eWxlPSJwYWRkaW5nOjA7
+bWFyZ2luOjA7d2lkdGg6NTYwcHgiIHZhbGlnbj0idG9wIiBhbGlnbj0iY2VudGVyIj4NCjx0YWJs
+ZSByb2xlPSJwcmVzZW50YXRpb24iIHN0eWxlPSJtc28tdGFibGUtbHNwYWNlOjA7bXNvLXRhYmxl
+LXJzcGFjZTowO2JvcmRlci1jb2xsYXBzZTpjb2xsYXBzZTtib3JkZXItc3BhY2luZzowIiB3aWR0
+aD0iMTAwJSIgY2VsbHNwYWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIwIj4NCjx0Ym9keT4NCjx0cj4N
+Cjx0ZCBzdHlsZT0icGFkZGluZzowO21hcmdpbjowO2ZvbnQtc2l6ZTowIiBhbGlnbj0iY2VudGVy
+Ij48aW1nIGFsdD0ibGFiZWwiIHNyYz0iY2lkOnBhcnQxLjY2NjJCNEY4LkNBRUJDRDQ5QGdlZWst
+c3F1YWRzZXJ2aWNlczEyOC5jbyIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBib3JkZXI6IDBweCBu
+b25lOyBvdXRsaW5lOiBjdXJyZW50Y29sb3Igbm9uZQ0KICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1lZGl1bTsNCiAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0ZXh0LWRlY29yYXRp
+b246DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgbm9uZTsiIGNsYXNzPSIiIHdpZHRoPSIxNjAiIGhlaWdodD0iNjgiPg0KPC90ZD4NCjwv
+dHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjwvdGQ+DQo8L3RyPg0KPC90Ym9keT4NCjwvdGFibGU+
+DQo8L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPg0KPC90ZD4NCjwvdHI+DQo8L3Rib2R5
+Pg0KPC90YWJsZT4NCjx0YWJsZSBjbGFzcz0iZXMtY29udGVudCIgc3R5bGU9Im1zby10YWJsZS1s
+c3BhY2U6MDttc28tdGFibGUtcnNwYWNlOjA7Ym9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlO2JvcmRl
+ci1zcGFjaW5nOjA7dGFibGUtbGF5b3V0OmZpeGVkDQogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgIWltcG9ydGFudDt3aWR0aDoxMDAlIiBjZWxsc3BhY2luZz0iMCIgY2Vs
+bHBhZGRpbmc9IjAiIGFsaWduPSJjZW50ZXIiPg0KPHRib2R5Pg0KPHRyPg0KPHRkIHN0eWxlPSJw
+YWRkaW5nOjA7bWFyZ2luOjAiIGFsaWduPSJjZW50ZXIiPg0KPHRhYmxlIGNsYXNzPSJlcy1jb250
+ZW50LWJvZHkiIHN0eWxlPSJtc28tdGFibGUtbHNwYWNlOjBwdDttc28tdGFibGUtcnNwYWNlOjBw
+dDtib3JkZXItY29sbGFwc2U6Y29sbGFwc2U7Ym9yZGVyLXNwYWNpbmc6MHB4O2JhY2tncm91bmQt
+Y29sb3I6I0ZGRkZGRjt3aWR0aDo2MDBweCIgY2VsbHNwYWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIw
+IiBiZ2NvbG9yPSIjZmZmZmZmIiBhbGlnbj0iY2VudGVyIj4NCjx0Ym9keT4NCjx0cj4NCjx0ZCBj
+bGFzcz0iZXMtbS1wMTVyDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICBlcy1tLXAxNWwiIHN0eWxlPSJtYXJnaW46MDtwYWRkaW5nOg0KICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMCAzNXB4OyIg
+YWxpZ249ImxlZnQiPg0KPHRhYmxlIHN0eWxlPSJtc28tdGFibGUtbHNwYWNlOjBwdDttc28tdGFi
+bGUtcnNwYWNlOjBwdDtib3JkZXItY29sbGFwc2U6Y29sbGFwc2U7Ym9yZGVyLXNwYWNpbmc6MHB4
+IiB3aWR0aD0iMTAwJSIgY2VsbHNwYWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIwIj4NCjx0Ym9keT4N
+Cjx0cj4NCjx0ZCBzdHlsZT0icGFkZGluZzowO01hcmdpbjowO3dpZHRoOjUzMHB4IiB2YWxpZ249
+InRvcCIgYWxpZ249ImNlbnRlciI+DQo8dGFibGUgcm9sZT0icHJlc2VudGF0aW9uIiBzdHlsZT0i
+bXNvLXRhYmxlLWxzcGFjZTowcHQ7bXNvLXRhYmxlLXJzcGFjZTowcHQ7Ym9yZGVyLWNvbGxhcHNl
+OmNvbGxhcHNlO2JvcmRlci1zcGFjaW5nOjBweCIgd2lkdGg9IjEwMCUiIGNlbGxzcGFjaW5nPSIw
+IiBjZWxscGFkZGluZz0iMCI+DQo8dGJvZHk+DQo8dHI+DQo8dGQgY2xhc3M9ImVzLW0tcDMwdA0K
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IGVzLW0tcDEwYg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIGVzLW0tdHh0LWwiIHN0eWxlPSJtYXJnaW46MDtwYWRkaW5nOg0KICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDQwcHgg
+MCAyNXB4OyIgYWxpZ249ImxlZnQiPg0KPGgxIHN0eWxlPSJtYXJnaW46MDtsaW5lLWhlaWdodDo0
+MHB4O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHk7Zm9udC1mYW1pbHk6TW9udHNlcnJhdCxz
+YW5zLXNlcmlmO2ZvbnQtc2l6ZTozNnB4O2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtd2VpZ2h0Ojgw
+MCFpbXBvcnRhbnQ7Y29sb3I6IzI3MjcyNyI+DQpTZXJ2aWNlIFBsYW4gUmVuZXdlZCA8L2gxPg0K
+PC90ZD4NCjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjwvdGQ+DQo8L3RyPg0KPC90Ym9keT4N
+CjwvdGFibGU+DQo8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCBjbGFzcz0iZXMtbS1wMTVyDQogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlcy1tLXAx
+NWwiIHN0eWxlPSJwYWRkaW5nOjA7TWFyZ2luOjA7cGFkZGluZy1sZWZ0OjM1cHg7cGFkZGluZy1y
+aWdodDozNXB4IiBhbGlnbj0ibGVmdCI+DQo8dGFibGUgc3R5bGU9Im1zby10YWJsZS1sc3BhY2U6
+MHB0O21zby10YWJsZS1yc3BhY2U6MHB0O2JvcmRlci1jb2xsYXBzZTpjb2xsYXBzZTtib3JkZXIt
+c3BhY2luZzowcHgiIHdpZHRoPSIxMDAlIiBjZWxsc3BhY2luZz0iMCIgY2VsbHBhZGRpbmc9IjAi
+Pg0KPHRib2R5Pg0KPHRyPg0KPHRkIHN0eWxlPSJwYWRkaW5nOjA7TWFyZ2luOjA7d2lkdGg6NTMw
+cHgiIHZhbGlnbj0idG9wIiBhbGlnbj0iY2VudGVyIj4NCjx0YWJsZSByb2xlPSJwcmVzZW50YXRp
+b24iIHN0eWxlPSJtc28tdGFibGUtbHNwYWNlOjBwdDttc28tdGFibGUtcnNwYWNlOjBwdDtib3Jk
+ZXItY29sbGFwc2U6Y29sbGFwc2U7Ym9yZGVyLXNwYWNpbmc6MHB4IiB3aWR0aD0iMTAwJSIgY2Vs
+bHNwYWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIwIj4NCjx0Ym9keT4NCjx0cj4NCjx0ZCBzdHlsZT0i
+cGFkZGluZzowO21hcmdpbjowO2NvbG9yOiM1ODU4NTg7Zm9udC13ZWlnaHQ6NDAwO2ZvbnQtc2l6
+ZToxOHB4O2xpbmUtaGVpZ2h0OjI3cHg7IiBhbGlnbj0ibGVmdCI+DQo8dGFibGUgYWxpZ249Imxl
+ZnQiPg0KPHRib2R5Pg0KPHRyPg0KPHRkPkhpLCA8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCBoZWln
+aHQ9IjI0Ij48YnI+DQo8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD5Db25ncmF0dWxhdGlvbnMhIDwv
+dGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGhlaWdodD0iMjQiPjxicj4NCjwvdGQ+DQo8L3RyPg0KPHRy
+Pg0KPHRkPllvdXIgc2VjdXJpdHkgc2VydmljZSBwbGFuIHdpdGggdXMgaGFzIGJlZW4gc3VjY2Vz
+c2Z1bGx5IHJlbmV3ZWQgZm9yIG5leHQgb25lIHllYXIuDQo8L3RkPg0KPC90cj4NCjx0cj4NCjx0
+ZCBoZWlnaHQ9IjI0Ij48YnI+DQo8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD5IZXJlIGFyZSB0aGUg
+ZGV0YWlscyBvZiB0aGUgcmVuZXdhbCBmb3IgeW91ciByZWZlcmVuY2U6IDwvdGQ+DQo8L3RyPg0K
+PHRyPg0KPHRkIGhlaWdodD0iMjQiPjxicj4NCjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPjxzcGFu
+IHN0eWxlPSJmb250LWZhbWlseToNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAnT3BlbiBTYW5zJywNCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBNb250c2VycmF0LA0KICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNhbnMt
+c2VyaWY7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgZm9udC1zaXplOg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgIDE4cHg7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbGluZS1oZWlnaHQ6DQogICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMjdweDsgY29sb3I6
+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIzU4NTg1OCI+UGxhbg0KIE5hbWUgPC9zcGFuPjxicj4NCjxzcGFuIHN0eWxlPSJmb250LWZh
+bWlseToNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAnT3BlbiBTYW5zJywNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICBNb250c2VycmF0LA0KICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNhbnMtc2VyaWY7DQogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1z
+aXplOg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgIDI2cHg7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6DQogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYm9sZDsNCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDoNCiAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAzMnB4
+OyBjb2xvcjoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAjMzMzMzMzOyI+R2Vlaw0KIFNlY3VyZSAzNjAgUHJvdGVjdCA8L3NwYW4+PC90
+ZD4NCjwvdHI+DQo8dHI+DQo8dGQgaGVpZ2h0PSIyNCI+PGJyPg0KPC90ZD4NCjwvdHI+DQo8dHI+
+DQo8dGQ+PHNwYW4gc3R5bGU9ImZvbnQtZmFtaWx5Og0KICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICdPcGVuIFNhbnMnLA0KICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1vbnRzZXJy
+YXQsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgc2Fucy1zZXJpZjsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6DQogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMThweDsNCiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDoNCiAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAy
+N3B4OyBjb2xvcjoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAjNTg1ODU4Ij5SZW5ld2FsDQogRGF0ZSA8L3NwYW4+PGJyPg0KPHNwYW4g
+c3R5bGU9ImZvbnQtZmFtaWx5Og0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICdPcGVuIFNhbnMnLA0KICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1vbnRzZXJyYXQsDQogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2Fucy1z
+ZXJpZjsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICBmb250LXNpemU6DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgMjZweDsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDoNCiAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBib2xkOw0KICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxpbmUt
+aGVpZ2h0Og0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgIDMycHg7IGNvbG9yOg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICMzMzMzMzM7Ij5NYXkNCiAyMHRoLCAyMDIyIDwvc3Bh
+bj5mb3IgPGE+T25lIFllYXI8L2E+IDwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGhlaWdodD0iMjQi
+Pjxicj4NCjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseToN
+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAnT3BlbiBTYW5zJywNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICBNb250c2VycmF0LA0KICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNhbnMtc2VyaWY7DQogICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOg0K
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+IDE4cHg7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgbGluZS1oZWlnaHQ6DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgMjdweDsgY29sb3I6DQogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIzU4NTg1OCI+UHJpY2UNCjwv
+c3Bhbj48YnI+DQo8c3BhbiBzdHlsZT0iZm9udC1mYW1pbHk6DQogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJ09wZW4gU2FucycsDQogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTW9u
+dHNlcnJhdCwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICBzYW5zLXNlcmlmOw0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtc2l6ZToNCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAyNnB4Ow0KICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0
+Og0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIGJvbGQ7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgbGluZS1oZWlnaHQ6DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgMzJweDsgY29sb3I6DQogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIzMzMzMzMzsiPiQzODUu
+OTkNCjwvc3Bhbj48L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCBoZWlnaHQ9IjI0Ij48YnI+DQo8L3Rk
+Pg0KPC90cj4NCjx0cj4NCjx0ZCBhbGlnbj0iIj4NCjx0YWJsZSBjbGFzcz0iYnV0dG9uIiBzdHls
+ZT0iYmFja2dyb3VuZDogIzAwQTVFRjsgYm9yZGVyLXJhZGl1czogNHB4IiBjZWxsc3BhY2luZz0i
+MCIgY2VsbHBhZGRpbmc9IjAiIGJvcmRlcj0iMCIgYWxpZ249IiI+DQo8dGJvZHk+DQo8dHI+DQo8
+dGQgc3R5bGU9ImJveC1zaXppbmc6DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWJveDsNCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwYWRkaW5nOiAxMnB4DQogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMjRw
+eDsgYm9yZGVyOg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgIDFweCBzb2xpZA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgIHJnYmEoNTEsIDUxLA0KICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDUxLA0KICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAuMTUpO2ZvbnQt
+c2l6ZToxOHB4O2xpbmUtaGVpZ2h0OjIwcHg7IiBoZWlnaHQ9IjQwIiBhbGlnbj0iY2VudGVyIj4N
+CjxhIHN0eWxlPSJjb2xvcjoNCiNmZmZmZmY7dGV4dC1kZWNvcmF0aW9uOiBub25lIiB0YXJnZXQ9
+Il9ibGFuayI+PHN0cm9uZz5IZWxwLURlc2sgKzEgKDgwOCkgMzIwLTQwNzM8L3N0cm9uZz4NCjwv
+YT48L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPg0KPC90ZD4NCjwvdHI+DQo8dHI+DQo8
+dGQgaGVpZ2h0PSIyNCI+PGJyPg0KPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQ+PHNwYW4gc3R5bGU9
+ImZvbnQtZmFtaWx5Og0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICdPcGVuIFNhbnMnLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1vbnRzZXJyYXQsDQogICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2Fucy1zZXJpZjsN
+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICBmb250LXNpemU6DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgMThweDsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICBsaW5lLWhlaWdodDoNCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAyN3B4OyBjb2xvcjoNCiAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAjNTg1
+ODU4Ij5SZWdpc3RlcmVkDQogRW1haWw8L3NwYW4+PGJyPg0KPGE+b3NzdC11c2Vyc0BsaXN0cy5z
+b3VyY2Vmb3JnZS5uZXQ8L2E+IDwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGhlaWdodD0iMTIiPjxi
+cj4NCjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkPjxzcGFuIHN0eWxlPSJmb250LWZhbWlseToNCiAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAn
+T3BlbiBTYW5zJywNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICBNb250c2VycmF0LA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNhbnMtc2VyaWY7DQogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOg0KICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDE4
+cHg7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgbGluZS1oZWlnaHQ6DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgMjdweDsgY29sb3I6DQogICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIzU4NTg1OCI+UmVuZXdhbA0KIElE
+IDwvc3Bhbj48YnI+DQo8YT45MjA3ODM2PC9hPiA8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZCBoZWln
+aHQ9IjEyIj48YnI+DQo8L3RkPg0KPC90cj4NCjx0cj4NCjx0ZD48c3BhbiBzdHlsZT0iZm9udC1m
+YW1pbHk6DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgJ09wZW4gU2FucycsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgTW9udHNlcnJhdCwNCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzYW5zLXNlcmlmOw0KICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQt
+c2l6ZToNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAxOHB4Ow0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgIGxpbmUtaGVpZ2h0Og0KICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDI3cHg7IGNvbG9yOg0KICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICM1ODU4NTgiPk5l
+eHQNCiBSZW5ld2FsIDwvc3Bhbj48YnI+DQo8YT5NYXkgMjF0aCwgMjAyMzwvYT4gPC90ZD4NCjwv
+dHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjwvdGQ+DQo8L3RyPg0KPHRyPg0KPHRkIHN0eWxlPSJw
+YWRkaW5nOjIwcHg7TWFyZ2luOjA7Zm9udC1zaXplOjAiIGFsaWduPSJjZW50ZXIiPjxicj4NCjwv
+dGQ+DQo8L3RyPg0KPHRyPg0KPHRkIGNsYXNzPSJlc2Qtc3RydWN0dXJlDQogICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZXMtcDIwcg0KICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVz
+LXAyMGwiIGFsaWduPSJsZWZ0Ij4NCjx0YWJsZSB3aWR0aD0iMTAwJSIgY2VsbHNwYWNpbmc9IjAi
+IGNlbGxwYWRkaW5nPSIwIj4NCjx0Ym9keT4NCjx0cj4NCjx0ZCBjbGFzcz0iZXNkLWNvbnRhaW5l
+ci1mcmFtZSIgd2lkdGg9IjU2MCIgdmFsaWduPSJ0b3AiIGFsaWduPSJjZW50ZXIiPg0KPHRhYmxl
+IHdpZHRoPSIxMDAlIiBjZWxsc3BhY2luZz0iMCIgY2VsbHBhZGRpbmc9IjAiPg0KPHRib2R5Pg0K
+PC90Ym9keT4NCjwvdGFibGU+DQo8L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPg0KPC90
+ZD4NCjwvdHI+DQo8dHI+DQo8dGQgc3R5bGU9InBhZGRpbmc6MjBweDtNYXJnaW46MDtmb250LXNp
+emU6MCIgYWxpZ249ImNlbnRlciI+PGJyPg0KPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgc3R5bGU9
+InBhZGRpbmc6MDttYXJnaW46MCIgYWxpZ249ImxlZnQiPg0KPHAgc3R5bGU9Im1hcmdpbjowOy13
+ZWJraXQtdGV4dC1zaXplLWFkanVzdDpub25lOy1tcy10ZXh0LXNpemUtYWRqdXN0Om5vbmU7bXNv
+LWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseTtmb250LWZhbWlseTonb3Blbg0KICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNhbnMnLA0KICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICdo
+ZWx2ZXRpY2ENCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICBuZXVlJywNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICBoZWx2ZXRpY2EsDQogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYXJpYWwsDQogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2Fucy1zZXJpZjsiPg0K
+PHN0cm9uZyBzdHlsZT0ibGluZS1oZWlnaHQ6NDBweDtjb2xvcjojMjcyNzI3O2ZvbnQtc2l6ZToy
+NHB4Ij5UaGFua3MsPC9zdHJvbmc+IDxicj4NCjxzcGFuIHN0eWxlPSJwYWRkaW5nOjA7bWFyZ2lu
+OjA7Y29sb3I6IzU4NTg1ODtmb250LXdlaWdodDo0MDA7Zm9udC1zaXplOjE4cHg7bGluZS1oZWln
+aHQ6MjdweDsiPkdlZWtzIFNxdWFkPC9zcGFuPg0KPC9wPg0KPC90ZD4NCjwvdHI+DQo8L3Rib2R5
+Pg0KPC90YWJsZT4NCjwvdGQ+DQo8L3RyPg0KPC90Ym9keT4NCjwvdGFibGU+DQo8L3RkPg0KPC90
+cj4NCjx0cj4NCjx0ZCBzdHlsZT0icGFkZGluZzowO01hcmdpbjowO3BhZGRpbmctbGVmdDoyMHB4
+O3BhZGRpbmctcmlnaHQ6MjBweCIgYWxpZ249ImxlZnQiPg0KPHRhYmxlIHN0eWxlPSJtc28tdGFi
+bGUtbHNwYWNlOjBwdDttc28tdGFibGUtcnNwYWNlOjBwdDtib3JkZXItY29sbGFwc2U6Y29sbGFw
+c2U7Ym9yZGVyLXNwYWNpbmc6MHB4IiB3aWR0aD0iMTAwJSIgY2VsbHNwYWNpbmc9IjAiIGNlbGxw
+YWRkaW5nPSIwIj4NCjx0Ym9keT4NCjx0cj4NCjx0ZCBzdHlsZT0icGFkZGluZzowO01hcmdpbjow
+O3dpZHRoOjU2MHB4IiB2YWxpZ249InRvcCIgYWxpZ249ImNlbnRlciI+DQo8dGFibGUgcm9sZT0i
+cHJlc2VudGF0aW9uIiBzdHlsZT0ibXNvLXRhYmxlLWxzcGFjZTowcHQ7bXNvLXRhYmxlLXJzcGFj
+ZTowcHQ7Ym9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlO2JvcmRlci1zcGFjaW5nOjBweCIgd2lkdGg9
+IjEwMCUiIGNlbGxzcGFjaW5nPSIwIiBjZWxscGFkZGluZz0iMCI+DQo8dGJvZHk+DQo8dHI+DQo8
+dGQgc3R5bGU9InBhZGRpbmc6MjBweDttYXJnaW46MDtmb250LXNpemU6MCIgYWxpZ249ImNlbnRl
+ciI+PGJyPg0KPC90ZD4NCjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjwvdGQ+DQo8L3RyPg0K
+PC90Ym9keT4NCjwvdGFibGU+DQo8L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPg0KPC90
+ZD4NCjwvdHI+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjx0YWJsZSBjbGFzcz0iZXMtZm9vdGVyIiBz
+dHlsZT0ibXNvLXRhYmxlLWxzcGFjZTowO21zby10YWJsZS1yc3BhY2U6MDtib3JkZXItY29sbGFw
+c2U6Y29sbGFwc2U7Ym9yZGVyLXNwYWNpbmc6MDt0YWJsZS1sYXlvdXQ6Zml4ZWQhaW1wb3J0YW50
+O3dpZHRoOjEwMCU7YmFja2dyb3VuZC1jb2xvcjp0cmFuc3BhcmVudDtiYWNrZ3JvdW5kLXJlcGVh
+dDpyZXBlYXQ7YmFja2dyb3VuZC1wb3NpdGlvbjpjZW50ZXINCiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICB0b3AiIGNlbGxzcGFjaW5nPSIwIiBjZWxscGFkZGluZz0iMCIg
+YWxpZ249ImNlbnRlciI+DQo8dGJvZHk+DQo8dHI+DQo8dGQgc3R5bGU9InBhZGRpbmc6MDttYXJn
+aW46MCIgYWxpZ249ImNlbnRlciI+DQo8dGFibGUgY2xhc3M9ImVzLWZvb3Rlci1ib2R5IiBzdHls
+ZT0ibXNvLXRhYmxlLWxzcGFjZTowO21zby10YWJsZS1yc3BhY2U6MDtib3JkZXItY29sbGFwc2U6
+Y29sbGFwc2U7Ym9yZGVyLXNwYWNpbmc6MDtiYWNrZ3JvdW5kLWNvbG9yOiNmOWY5Zjk7d2lkdGg6
+NjAwcHgiIGNlbGxzcGFjaW5nPSIwIiBjZWxscGFkZGluZz0iMCIgYmdjb2xvcj0iI2Y5ZjlmOSIg
+YWxpZ249ImNlbnRlciI+DQo8dGJvZHk+DQo8dHI+DQo8dGQgY2xhc3M9ImVzLW0tcDMwdA0KICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZXMtbS1w
+MTByDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICBlcy1tLXAxMGwiIHN0eWxlPSJwYWRkaW5nOjA7bWFyZ2luOjA7cGFkZGluZy10b3A6NDBweCIg
+YWxpZ249ImxlZnQiPg0KPGJyPg0KPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgY2xhc3M9ImVzLW0t
+cDMwdA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgZXMtbS1wMTByDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICBlcy1tLXAxMGwiIHN0eWxlPSJwYWRkaW5nOjA7bWFyZ2luOjA7cGFkZGluZy1s
+ZWZ0OjIwcHg7cGFkZGluZy1yaWdodDoyMHB4O3BhZGRpbmctdG9wOjQwcHgiIGFsaWduPSJsZWZ0
+Ij4NCjx0YWJsZSBzdHlsZT0ibXNvLXRhYmxlLWxzcGFjZTowO21zby10YWJsZS1yc3BhY2U6MDti
+b3JkZXItY29sbGFwc2U6Y29sbGFwc2U7Ym9yZGVyLXNwYWNpbmc6MCIgd2lkdGg9IjEwMCUiIGNl
+bGxzcGFjaW5nPSIwIiBjZWxscGFkZGluZz0iMCI+DQo8dGJvZHk+DQo8dHI+DQo8dGQgc3R5bGU9
+InBhZGRpbmc6MDttYXJnaW46MDt3aWR0aDo1NjBweCIgdmFsaWduPSJ0b3AiIGFsaWduPSJjZW50
+ZXIiPg0KPHRhYmxlIHJvbGU9InByZXNlbnRhdGlvbiIgc3R5bGU9Im1zby10YWJsZS1sc3BhY2U6
+MDttc28tdGFibGUtcnNwYWNlOjA7Ym9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlO2JvcmRlci1zcGFj
+aW5nOjAiIHdpZHRoPSIxMDAlIiBjZWxsc3BhY2luZz0iMCIgY2VsbHBhZGRpbmc9IjAiPg0KPHRi
+b2R5Pg0KPHRyPg0KPHRkIGNsYXNzPSJlcy1tLXAxMHINCiAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlcy1tLXAxMGwiIHN0eWxlPSJwYWRk
+aW5nOjA7bWFyZ2luOjAiIGFsaWduPSJjZW50ZXIiPg0KPHAgc3R5bGU9Im1hcmdpbjowOy13ZWJr
+aXQtdGV4dC1zaXplLWFkanVzdDpub25lOy1tcy10ZXh0LXNpemUtYWRqdXN0Om5vbmU7bXNvLWxp
+bmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseTtmb250LWZhbWlseTonb3Blbg0KICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNhbnMnLA0KICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICdoZWx2
+ZXRpY2ENCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICBuZXVlJywNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICBoZWx2ZXRpY2EsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYXJpYWwsDQogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2Fucy1zZXJpZjtsaW5lLWhl
+aWdodDoyN3B4O2NvbG9yOiNiN2I3Yjc7Zm9udC1zaXplOjE4cHgiPg0KQXZhaWxhYmxlIGluIHRo
+ZSBBcHAgU3RvcmUgYW5kIEdvb2dsZSBQbGF5PC9wPg0KPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQg
+Y2xhc3M9ImVzLW0tcDMwdA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgIGVzLW0tcDMwYiIgc3R5bGU9Im1hcmdpbjowO3BhZGRpbmctbGVm
+dDoyMHB4O3BhZGRpbmctcmlnaHQ6MjBweDtwYWRkaW5nLXRvcDozNXB4O3BhZGRpbmctYm90dG9t
+OjM1cHg7Zm9udC1zaXplOjAiIGFsaWduPSJjZW50ZXIiPg0KPGJyPg0KPC90ZD4NCjwvdHI+DQo8
+dHI+DQo8dGQgY2xhc3M9ImVzLW0tcDIwdA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVzLW0tcDIwcg0KICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVzLW0tcDIwbCIgc3R5bGU9
+InBhZGRpbmc6MDttYXJnaW46MDtwYWRkaW5nLXRvcDozNXB4IiBhbGlnbj0iY2VudGVyIj4NCjxw
+IHN0eWxlPSJtYXJnaW46MDstd2Via2l0LXRleHQtc2l6ZS1hZGp1c3Q6bm9uZTstbXMtdGV4dC1z
+aXplLWFkanVzdDpub25lO21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHk7Zm9udC1mYW1pbHk6
+J29wZW4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICBzYW5zJywNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAnaGVsdmV0aWNhDQogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbmV1ZScsDQogICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaGVsdmV0aWNhLA0KICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGFyaWFs
+LA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgIHNhbnMtc2VyaWY7bGluZS1oZWlnaHQ6MTdweDtjb2xvcjojYjdiN2I3O2ZvbnQtc2l6ZTox
+MXB4Ij4NCllvdSByZWNlaXZlZCB0aGlzIGVtYWlsIGJlY2F1c2UgeW91IGhhdmUgcmVnaXN0ZXJl
+ZCBhbiBhY2NvdW50IG9uIEdlZWtzIFNxdWFkIHdlYnNpdGUuPGJyPg0KPGEgc3R5bGU9Ii13ZWJr
+aXQtdGV4dC1zaXplLWFkanVzdDpub25lOy1tcy10ZXh0LXNpemUtYWRqdXN0Om5vbmU7bXNvLWxp
+bmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseTt0ZXh0LWRlY29yYXRpb246bm9uZSFpbXBvcnRhbnQ7Y29s
+b3I6I2I3YjdiNztmb250LXNpemU6MTFweDtmb250LWZhbWlseTonb3Blbg0KICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNhbnMnLA0KICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICdo
+ZWx2ZXRpY2ENCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICBuZXVlJywNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICBoZWx2ZXRpY2EsDQogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYXJpYWwsDQogICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2Fucy1zZXJpZiIgdGFy
+Z2V0PSJfYmxhbmsiPlVuc3Vic2NyaWJlPC9hPjxhIHN0eWxlPSItd2Via2l0LXRleHQtc2l6ZS1h
+ZGp1c3Q6bm9uZTstbXMtdGV4dC1zaXplLWFkanVzdDpub25lO21zby1saW5lLWhlaWdodC1ydWxl
+OmV4YWN0bHk7dGV4dC1kZWNvcmF0aW9uOm5vbmUhaW1wb3J0YW50O2NvbG9yOiNiN2I3Yjc7Zm9u
+dC1zaXplOjExcHg7Zm9udC1mYW1pbHk6J29wZW4NCiAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzYW5zJywNCiAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnaGVsdmV0aWNhDQogICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbmV1
+ZScsDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgaGVsdmV0aWNhLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgIGFyaWFsLA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNhbnMtc2VyaWYiIHRhcmdldD0iX2JsYW5rIj48
+YnI+DQo8L2E+PC9wPg0KPC90ZD4NCjwvdHI+DQo8dHI+DQo8dGQgc3R5bGU9InBhZGRpbmc6MjBw
+eDttYXJnaW46MDtmb250LXNpemU6MCIgYWxpZ249ImNlbnRlciI+PGJyPg0KPC90ZD4NCjwvdHI+
+DQo8L3Rib2R5Pg0KPC90YWJsZT4NCjwvdGQ+DQo8L3RyPg0KPC90Ym9keT4NCjwvdGFibGU+DQo8
+L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPg0KPC90ZD4NCjwvdHI+DQo8L3Rib2R5Pg0K
+PC90YWJsZT4NCjwvdGQ+DQo8L3RyPg0KPC90Ym9keT4NCjwvdGFibGU+DQo8L2Rpdj4NCjwvZGl2
+Pg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+
+DQo8L2Rpdj4NCjwvZGl2Pg0KPC9kaXY+DQo8L2Rpdj4NCjwvYm9keT4NCjwvaHRtbD4NCg==
+
+--_000_f55ae0805206c323c931fe67aa480587geeksquadservices128co_--
+
+--_004_f55ae0805206c323c931fe67aa480587geeksquadservices128co_
+Content-Type: image/png; name="iefgllbnmipcanep.png"
+Content-Description: iefgllbnmipcanep.png
+Content-Disposition: inline; filename="iefgllbnmipcanep.png"; size=7697;
+	creation-date="Fri, 20 May 2022 16:54:25 GMT";
+	modification-date="Fri, 20 May 2022 16:54:25 GMT"
+Content-ID: <part1.6662B4F8.CAEBCD49@geek-squadservices128.co>
+Content-Transfer-Encoding: base64
+
+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
+YII=
+
+--_004_f55ae0805206c323c931fe67aa480587geeksquadservices128co_--
 
 
---===============8448202720741097289==
+--===============8980170690863059829==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8448202720741097289==
+--===============8980170690863059829==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -510,4 +733,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8448202720741097289==--
+--===============8980170690863059829==--
+
