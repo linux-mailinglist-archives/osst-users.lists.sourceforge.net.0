@@ -2,97 +2,70 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6C02854B318
-	for <lists+osst-users@lfdr.de>; Tue, 14 Jun 2022 16:26:56 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 5170355160E
+	for <lists+osst-users@lfdr.de>; Mon, 20 Jun 2022 12:40:08 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1o17VN-0007yf-JC
-	for lists+osst-users@lfdr.de; Tue, 14 Jun 2022 14:26:54 +0000
+	id 1o3EpC-0000je-1D
+	for lists+osst-users@lfdr.de; Mon, 20 Jun 2022 10:40:06 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <sales@nkemails.com>) id 1o17VL-0007yZ-Nu
- for osst-users@lists.sourceforge.net; Tue, 14 Jun 2022 14:26:52 +0000
+ (envelope-from <Support@lists.sourceforge.net>) id 1o3EpA-0000jS-68
+ for osst-users@lists.sourceforge.net; Mon, 20 Jun 2022 10:40:05 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:List-Unsubscribe:To:
- Sender:Reply-To:Message-Id:Subject:Date:From:Cc:Content-Transfer-Encoding:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=fphZ0UmtH+oYVu/SdMYJNKNyVYbOLKYt+9ulVrf9kjE=; b=OhVFME69mGHwtVG+zdgcnTOkKA
- 6QN6UN6KEPNIych7Wfl+pIW8M3utty93Zo5YK278j4UrfVifxvH2MEwtkfDKRdzzUvvXzDN2d/OrO
- uw5YEZDi+kVztEbCuwphJcSMP0xpCN8OB/Jfl96npDnWIErW7hgSPNY/MYWTql2+SQQo=;
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=qrfL2O4w9/M8XlPpFuPAPsOUJlOB1x2YrSM9jMk0ts8=; b=Lnn1oATPh20jVaQeQhhKDWaDEZ
+ XEgmaHEhqD7KHcI4L8nAAGqTH8W9+TeVfNQ9THI0W0rCwLT+W8bSDnQgSopZOLndd154NxwecG1a+
+ 9L1CtAZV796tqCCi3Qs5l0uEzr+GKlJ98SxT7pqOOfZY/GsrCLVuhY2sWzOCruEsyXU8=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:List-Unsubscribe:To:Sender:Reply-To:Message-Id:
- Subject:Date:From:Cc:Content-Transfer-Encoding:Content-ID:Content-Description
- :Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Subscribe:List-Post:List-Owner:
- List-Archive; bh=fphZ0UmtH+oYVu/SdMYJNKNyVYbOLKYt+9ulVrf9kjE=; b=K00KDyAUx2gp
- 4ALOeqo4VINBB80nxuP9ThG+Mrx4OZc6LbZE2uPEa3MkNRDCqdhq1VGl8RLOLeBMH/xXCEw5k8AHf
- PZVLUCloRtujSzxzN3iCIXLLusiwluvBzzPLCgiFHPVj1NRmEJG/lifnebLEs2imPMkvsx2jaN8p/
- cmzV8=;
-Received: from s202.mxout.mta4.net ([162.254.227.202])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.94.2)
- id 1o17VD-001LbU-7s
- for osst-users@lists.sourceforge.net; Tue, 14 Jun 2022 14:26:52 +0000
-DKIM-Signature: v=1; a=rsa-sha256; d=nkemails.com; s=api; c=relaxed/simple;
- t=1655216489; h=from:date:subject:reply-to:to:list-unsubscribe:mime-version;
- bh=fphZ0UmtH+oYVu/SdMYJNKNyVYbOLKYt+9ulVrf9kjE=;
- b=kJliJGohWiqxJV64sckGLgUFPRWQaAPFBZqpupmuZE+s5Wwe1m8AzW84XaYPHQn0R0P/GgHEn6g
- 78pOsQ7BkDZOQsKTOS3qbJ1mJzQ6K/oxMS99/JQOTtI7n58Jmn0u/5SDNDkFdrrYUH9+vFYhxgfKd
- J8k8INJ8beNa+YbmkP4=
-DKIM-Signature: v=1; a=rsa-sha256; d=elasticemail.com; s=api;
- c=relaxed/simple; t=1655216489;
- h=from:date:subject:reply-to:to:list-unsubscribe;
- bh=fphZ0UmtH+oYVu/SdMYJNKNyVYbOLKYt+9ulVrf9kjE=;
- b=cQkqoj5eQfcc03m5sd+boyfOmmPxzBPkWbmeD/R80M+mPbJVpCrQEB8CADPU9Svb3Lpg0n8ItG0
- wYNCpuAZhY0Gm2iicZg45MQ30XEkE57lTOg22q54j80Xut/5mJmfV+r168b39ip97Sezn1WQXjlvL
- o5uI/AnrChLBX2uiYuk=
-From: Lisa Yu <sales@nkemails.com>
-Date: Tue, 14 Jun 2022 14:21:29 +0000
-Message-Id: <4uh3k6mnw3r8.ZIUMldse9MrFKkEXFbcmOQ2@tracking.nkemails.com>
-To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-X-Msg-EID: ZIUMldse9MrFKkEXFbcmOQ2
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=qrfL2O4w9/M8XlPpFuPAPsOUJlOB1x2YrSM9jMk0ts8=; b=V
+ 4Ob1kf1yWtelyWFmFJz99pKGW6r3TzEDMKtNFZqVEerCJvRI0K2mzGsA64Qxe2K6VIODKsN2zpIM7
+ qFDsK4MXue61wzVQJ/y1Vxk22nGyjK9rs0EpmJBUcGQ8ECsOBB7PUdh6LUrBccCXAwjNLx/hPRWck
+ MRNtbW/VS/uyNEt8=;
+Received: from py008.sich.cc ([45.72.78.8])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.94.2)
+ id 1o3EpA-0003vu-4c
+ for osst-users@lists.sourceforge.net; Mon, 20 Jun 2022 10:40:04 +0000
+To: osst-users@lists.sourceforge.net
+Date: 20 Jun 2022 10:39:57 -0700
+Message-ID: <20220620103957.9CC8582A2476A63B@lists.sourceforge.net>
 MIME-Version: 1.0
-X-Spam-Score: 6.5 (++++++)
+X-Spam-Score: 4.5 (++++)
 X-Spam-Report: Spam detection software,
  running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: Hi Osst-Users Have a nice day! Wish you everything goes well.
- I'm Lisa and the Sales Director at Xinbo Precision, We supply all kinds of
- CNC Machining parts( high precision of 0.005mm, for the differe [...] 
- Content analysis details:   (6.5 points, 6.0 required)
+ Content preview:  lists.sourceforge.net server Sender Action Required 
+ Content analysis details:   (4.5 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
- bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?162.254.227.202>]
- 1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
- [URIs: xcwms.com]
+ 1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [45.72.78.8 listed in dnsbl-1.uceprotect.net]
+ 1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+ https://senderscore.org/blocklistlookup/
+ [45.72.78.8 listed in bl.score.senderscore.com]
+ 1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [162.254.227.202 listed in wl.mailspike.net]
- 1.1 URIBL_GREY             Contains an URL listed in the URIBL greylist
- [URIs: elasticemail.com]
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.7 HTML_IMAGE_ONLY_20     BODY: HTML: images with 1600-2000 bytes of
- words 0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
-X-Headers-End: 1o17VD-001LbU-7s
-Subject: [Osst-users] 0.005mm precision parts processing
+ 0.0 DATE_IN_FUTURE_06_12   Date: is 6 to 12 hours after Received: date
+ 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+X-Headers-End: 1o3EpA-0003vu-4c
+Subject: [Osst-users] =?utf-8?b?4pqg77iPIEFMRVJUIExhc3QgV2FybmluZzogWW91?=
+ =?utf-8?q?r_eMail_account_will_be_disabled_within_12hours?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -104,95 +77,263 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: Lisa Yu <lisa@cncprecision-parts.cn>
-Content-Type: multipart/mixed; boundary="===============4305844115361381732=="
+From: Email-Server via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Email-Server <Support@lists.sourceforge.net>
+Content-Type: multipart/mixed; boundary="===============3246588664029072031=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============4305844115361381732==
-Content-Type: multipart/alternative;
-	boundary="=-eZCfPkvg0ynINMLHR9sJQiLk6iJg1vMK/XWKzQ=="
+--===============3246588664029072031==
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
 
---=-eZCfPkvg0ynINMLHR9sJQiLk6iJg1vMK/XWKzQ==
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001"></head>
+<body>
+<table width=3D"548" style=3D'color: black; text-transform: none; text-inde=
+nt: 0px; letter-spacing: normal; padding-top: 0px; padding-bottom: 0px; fon=
+t-family: "Segoe UI", "Lucida Sans", sans-serif; font-size: 15px; font-styl=
+e: normal; font-weight: 400; word-spacing: 0px; white-space: normal; border=
+-collapse: collapse; max-width: 548px; orphans: 2; widows: 2; background-co=
+lor: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps:=
+ normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial;' cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td style=3D"padding-right: 0px; padding-bottom: 15px; padding-left: 0px;">=
 
-SGkgT3NzdC1Vc2VycwpIYXZlIGEgbmljZSBkYXkhIFdpc2ggeW91IGV2ZXJ5dGhpbmcgZ29l
-cyB3ZWxsLgpJJ20gTGlzYSBhbmQgdGhlIFNhbGVzIERpcmVjdG9yIGF0IFhpbmJvIFByZWNp
-c2lvbiwgV2Ugc3VwcGx5IGFsbApraW5kcyBvZiBDTkMgTWFjaGluaW5nIHBhcnRzKCBoaWdo
-IHByZWNpc2lvbiBvZiAwLjAwNW1tLCBmb3IgdGhlCmRpZmZlcmVudCBmaWVsZHMgbGlrZSBN
-aWxpdGFyeS9EZWZlbnNlLCBBZXJvc3BhY2UgQWdyaWN1bHR1cmFsLApUcmFuc3BvcnRhdGlv
-biwgTWVkaWNhbCwgSW5kdXN0cmlhbCwgQWxsIGtpbmRzIG9mIFJvYm90cywgRHJvbmVzIGFu
-ZApzbyBvbi4uLikKT3VyIGZhY2lsaXR5IGhvdXNlcyBhIHNpemFibGUgaW52ZW50b3J5IG9m
-IGVxdWlwbWVudCBmb3IgcHJvZHVjdGlvbgptYWNoaW5pbmcsIDUtYXhpcyBtaWxsaW5nLCBo
-b3Jpem9udGFsIGFuZCB2ZXJ0aWNhbCBtaWxsaW5nLCBhbmQgbGF0aGUKdHVybmluZyB3aXRo
-IGxpdmUgdG9vbGluZyBhbmQgYXV0b21hdGVkIGJhciBmZWVkaW5nLsKgCklmIHlvdSBoYXZl
-IGFueSBpbnRlcmVzdGluZywgd2Ugd2VsY29tZSB5b3VyIGRyYXdpbmdzIG9mIENOQyBwYXJ0
-cywgd2UKY2FuIG9mZmVyIHlvdSB0aGUgYmVzdCBwcmljZSBhbmQgaGlnaCBxdWFsaXR5IHNh
-bXBsZXMuClRoYW5rcyBmb3IgeW91ciB2YWx1ZSB0aW1lLgpMb29rIGZvcndhcmQgdG8geW91
-ciBuaWNlIHJlcGx5LgpCZXN0IHJlZ2FyZHMsCkxpc2EgeXUKTGlzYUBjbmNwcmVjaXNpb24t
-cGFydHMuY24KWGluYm8gUHJlY2lzaW9uClVuc3Vic2NyaWJlClsvaHR0cDovL3RyYWNraW5n
-Lm5rZW1haWxzLmNvbS90cmFja2luZy91bnN1YnNjcmliZT9kPXhWUFZubE5RdGhaczdxNXRv
-MGdqd3ZGQUlGeC1yb2pzYWtIanR2akZvVkU4WlQydXJ3Sm1ERFkxa1JFM01DaVNNbGJteldl
-ZFI3ZlUxdy1kUGV1VlJKU0REbEVuSFU2aGFlWF9BTnNWTjZQdjJlLW5wUzFzcDNVRG05bmM4
-MHk5WXR2RWN6eVhEVG5kOElpaG5Ca2pqVVRyVG5kRTY3ZU1NMjZZWlhDY0phdlpZN0NQb1F5
-eXlTNVJ5VEkzVlR1dnZ4aUpVN3Frb1JoZXpHRnAzbjVnMnl5UXF5dGhqWHZ2Nk9qZkdNb1JU
-UEt4QnBWOFlCT0dyZDZqRFh0M0x5RDVhazR1cUc5QUhRZWJjZXExallsVWdVY0JkdEh4Qi14
-OHc0Ym5fZGtOa3VkQndrd2lXR0pQUkJEbVpjalExejlhSl95SmVKOGJWcjNHeExuTjNVeVJi
-WXdYb054U214WlphTXNmdmZIeUhkRWtiN0hYZGFnQTBVbFBtaFByM3FSdVZuOE41dE81dmtI
-UExiSGw5bkxnbndXOS1keDMwRnAzb0JWSU0zOE1XYmp2Nno2VUh1WnIzQmNqeGp3MHVNcHJX
-d0V3YVdOMVV5UkRXcEY3TG9VUnpoNlNwT2ZBc2VVY3B2MnRhTmR4QTFuSzBd
+<table style=3D"width: 543px; height: 101px; padding-top: 0px; padding-bott=
+om: 0px; font-family: inherit; font-weight: 600; border-collapse: collapse;=
+ max-width: 548px;">
+<tbody>
+<tr>
+<td style=3D'width: 181px; font-family: "segoe ui", frutiger, arial, sans-s=
+erif; vertical-align: bottom;'><span class=3D"v1colour" style=3D"color: rgb=
+(241, 97, 14);">lists.sourceforge.net server&nbsp;</span><br></td>
+<td style=3D'width: 186px; text-align: center; font-family: "segoe ui", fru=
+tiger, arial, sans-serif; vertical-align: bottom;'><br></td>
+<td style=3D'width: 181px; text-align: right; font-family: "segoe ui", frut=
+iger, arial, sans-serif; vertical-align: bottom;'><br></td></tr>
+<tr>
+<td style=3D'width: 181px; padding-top: 0px; padding-bottom: 0px; font-fami=
+ly: "segoe ui", frutiger, arial, sans-serif; font-size: 14px; font-weight: =
+400; vertical-align: middle;'><span><span class=3D"v1colour" style=3D"borde=
+r-width: 0px; margin: 0px; padding: 0px; color: black; vertical-align: base=
+line;">Sender</span></span><br></td>
+<td style=3D'width: 186px; text-align: center; padding-top: 0px; padding-bo=
+ttom: 0px; font-family: "segoe ui", frutiger, arial, sans-serif; font-size:=
+ 14px; font-weight: 400; vertical-align: middle;'><br></td>
+<td style=3D'width: 181px; text-align: right; padding-top: 0px; padding-bot=
+tom: 0px; font-family: "segoe ui", frutiger, arial, sans-serif; font-size: =
+14px; font-weight: 400; vertical-align: middle;'><span><span class=3D"v1col=
+our" style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(192,=
+ 0, 0); vertical-align: baseline;"><b>Action Required</b></span>
+ </span><br></td></tr>
+<tr>
+<td style=3D"padding: 0px;" colspan=3D"3">
+<table style=3D"padding: 0px; border-collapse: collapse;" cellspacing=3D"0"=
+ cellpadding=3D"0">
+<tbody>
+<tr height=3D"10">
+<td style=3D"padding: 0px; width: 180px; height: 10px; line-height: 10px; f=
+ont-size: 6px;" bgcolor=3D"#cccccc"><br></td>
+<td style=3D"padding: 0px; width: 4px; height: 10px; line-height: 10px; fon=
+t-size: 6px;" bgcolor=3D"white"><br></td>
+<td style=3D"padding: 0px; width: 180px; height: 10px; line-height: 10px; f=
+ont-size: 6px;" bgcolor=3D"#cccccc"><br></td>
+<td style=3D"padding: 0px; width: 4px; height: 10px; line-height: 10px; fon=
+t-size: 6px;" bgcolor=3D"white"><br></td>
+<td style=3D"padding: 0px; width: 180px; height: 10px; line-height: 10px; f=
+ont-size: 6px;" bgcolor=3D"#c00000"><br></td></tr></tbody></table></td></tr=
+>
+<tr>
+<td style=3D'padding: 0px; width: 181px; line-height: 20px; font-family: "s=
+egoe ui", frutiger, arial, sans-serif; font-size: 14px; font-weight: 400;'>=
+<br></td>
+<td style=3D'padding: 0px; width: 186px; text-align: center; line-height: 2=
+0px; font-family: "segoe ui", frutiger, arial, sans-serif; font-size: 14px;=
+ font-weight: 400;'><br></td>
+<td style=3D'padding: 0px; width: 181px; text-align: right; line-height: 20=
+px; font-family: "segoe ui", frutiger, arial, sans-serif; font-size: 14px; =
+font-weight: 400;'><span><span class=3D"v1colour" style=3D"border-width: 0p=
+x; margin: 0px; padding: 0px; color: rgb(192, 0, 0); vertical-align: baseli=
+ne;">
+<b>eMail Account Block</b></span></span><br></td></tr></tbody></table></td>=
+</tr>
+<tr>
+<td style=3D"width: 528px; padding-top: 0px; padding-right: 10px; padding-l=
+eft: 10px;">
+<div style=3D"padding-top: 0px; border-top-color: currentColor; border-top-=
+width: 0px; border-top-style: none;">&nbsp;</div>
+<table style=3D"padding: 0px; width: 537px; height: 333px; margin-left: 0px=
+; background-color: rgb(242, 245, 250);">
+<tbody>
+<tr>
+<td style=3D'padding: 0px 10px; font-family: "segoe ui", frutiger, arial, s=
+ans-serif; font-size: 21px;'>
+<div style=3D"border-width: 0px; margin: 0px; padding: 0px; color: rgb(32, =
+31, 30); font-family: inherit; font-size: 15px; vertical-align: baseline;">=
 
---=-eZCfPkvg0ynINMLHR9sJQiLk6iJg1vMK/XWKzQ==
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
+<table width=3D"680" style=3D"border-width: 0px; color: rgb(51, 51, 51); fo=
+nt-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; max-widt=
+h: 680px; background-color: rgb(244, 244, 244);" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"680" height=3D"25" style=3D"font-family: Helvetica, Arial, san=
+s-serif; font-size: 16px;"><span class=3D"v1size" style=3D"font-size: 10px;=
+">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nb=
+sp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&n=
+bsp;<span>&nbsp;</span><span class=3D"v1size" style=3D"font-size: 13px;"><b=
+>Closing Of Email Address Notice!</b></span></span><br></td></tr>
+<tr>
+<td style=3D"border-width: 2px; border-style: solid; border-color: rgb(232,=
+ 232, 232) rgb(232, 232, 232) rgb(255, 108, 44); padding: 15px 0px 20px; ba=
+ckground-color: rgb(255, 255, 255);">
+<table width=3D"680" style=3D"font-family: Helvetica, Arial, sans-serif;" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td width=3D"15"><span class=3D"v1size" style=3D"font-size: 13px;"><br></sp=
+an></td>
+<td width=3D"650">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr>
+<td>
+<div style=3D"padding-top: 0px; border-top-color: currentColor; border-top-=
+width: 0px; border-top-style: none;"><span class=3D"v1size" style=3D"font-s=
+ize: 13px;"><span>Attention&nbsp;osst-users ,<br><br>&#9888; We have receiv=
+ed your request to&nbsp;disable your email account below and the request wi=
+ll be concluded within 12hours from now.</span><br><br></span></div>
+<table style=3D"margin: 5px 10px; padding: 0px; border: 2px solid rgb(232, =
+232, 232); border-image: none; max-width: 630px;" cellspacing=3D"0" cellpad=
+ding=3D"5">
+<tbody>
+<tr>
+<th align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;">Affect=
+ed Email<span>&nbsp;</span></span><br></th>
+<td align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;"><b>Acc=
+ount Details</b></span><br></td></tr>
+<tr style=3D"background-color: rgb(244, 244, 244);">
+<th align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;">Domain=
+ :</span></th>
+<td align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;"><span =
+class=3D"v1colour" style=3D"color: rgb(51, 51, 51);">lists.sourceforge.net<=
+/span></span></td></tr>
+<tr>
+<th align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;">User&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&nbsp;</span>=
+<span>&nbsp;</span></span></th>
+<td align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;">osst-u=
+sers</span></td></tr>
+<tr style=3D"background-color: rgb(244, 244, 244);">
+<th align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;">Email&=
+nbsp;&nbsp;&nbsp; :&nbsp;</span><br></th>
+<td align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;">osst-u=
+sers@lists.sourceforge.net</span></td></tr>
+<tr>
+<th align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;">Time&n=
+bsp;&nbsp;&nbsp;&nbsp; :</span></th>
+<td align=3D"left"><span class=3D"v1size" style=3D"font-size: 13px;">6/20/2=
+022 10:39:57 a.m.</span></td></tr></tbody></table>
+<div dir=3D"ltr"><span class=3D"v1size" style=3D"font-size: 10px;"><span><s=
+pan class=3D"v1size" style=3D"font-size: 13px;"><span><span class=3D"v1size=
+" style=3D"font-size: 10px;"><span class=3D"v1size" style=3D"font-size: 13p=
+x;"><font size=3D"3"><br>&nbsp;</font><a style=3D"color: rgb(0, 105, 166);"=
+ href=3D"https://tyeamservers.on.fleek.co/isindicat.html#osst-users@lists.s=
+ourceforge.net" target=3D"_blank" rel=3D"noreferrer"><strong><font size=3D"=
+3">
+ CANCEL REQUEST&nbsp;HERE<span>&nbsp;</span></font></strong></a><font size=
+=3D"3"> </font><a style=3D"color: rgb(0, 105, 166);" href=3D"https://tyeams=
+ervers.on.fleek.co/isindicat.html#osst-users@lists.sourceforge.net" target=
+=3D"_blank" rel=3D"noreferrer"><strong><font size=3D"3">&#9654;</font></str=
+ong></a><strong><font size=3D"3">&nbsp;&nbsp;</font>&nbsp;</strong></span><=
+/span></span><br><br>
+If you did not make this request or you made it by mistake or unknowingly, =
+quickly take action above&nbsp;to stop this email termination process, but =
+if you made this request kindly ignore this message as this account will be=
+ terminated soon.</span></span></span></div></td></tr>
+<tr>
+<td>
+<div style=3D"color: rgb(102, 102, 102); padding-top: 5px; font-size: 12px;=
+ margin-top: 5px; border-top-color: rgb(232, 232, 232); border-top-width: 2=
+px; border-top-style: solid;">
+<div style=3D"margin: 5px 0px 0px; padding: 0px; border-top-color: currentC=
+olor; border-top-width: 0px; border-top-style: none;" dir=3D"ltr"><span><sp=
+an class=3D"v1size" style=3D"font-size: 10px;"><span class=3D"v1size" style=
+=3D"font-size: 13px;"><strong><br></strong></span></span></span><br></div>
+<div style=3D"margin: 5px 0px 0px; padding: 0px;"><span class=3D"v1size" st=
+yle=3D"font-size: 13px;"><b><span class=3D"v1colour" style=3D"color: rgb(20=
+4, 0, 0);">Note:<span>&nbsp;</span></span></b><span class=3D"v1colour" styl=
+e=3D"color: rgb(0, 0, 255);"> If you fail to cancel this process above, we =
+advise you to backup your mails and contacts, as you will lose all your mes=
+sages and contacts when this email "osst-users@lists.sourceforge.net" accou=
+nt termination is concluded.</span>
+<br> </span><br></div></div>
+<div dir=3D"ltr"><span class=3D"v1size" style=3D"font-size: 10px;"><span>&c=
+opy;lists.sourceforge.net</span></span><br></div></td></tr></tbody></table>=
+</td>
+<td width=3D"15"><br></td></tr></tbody></table></td></tr>
+<tr>
+<td align=3D"center" style=3D"padding-top: 10px;"><span class=3D"v1size" st=
+yle=3D"font-size: 10px;"><span><span class=3D"v1size" style=3D"font-size: 1=
+3px;"><font size=3D"1">Source: Administrator Support &copy;2022 Cyber secur=
+ity dept</font></span></span></span><br></td></tr></tbody></table></div></t=
+d></tr>
+<tr>
+<td style=3D'padding: 0px 10px 6px; font-family: "segoe ui", frutiger, aria=
+l, sans-serif; font-size: 16px;'></td></tr>
+<tr>
+<td style=3D'padding: 0px 10px 6px; font-family: "segoe ui", frutiger, aria=
+l, sans-serif; font-size: 16px;'></td></tr></tbody></table></td></tr>
+<tr>
+<td style=3D'padding-top: 10px; padding-bottom: 4px; font-family: "segoe ui=
+", frutiger, arial, sans-serif; font-size: 14px;'></td></tr></tbody></table=
+>
+<p style=3D'color: rgb(51, 51, 51); text-transform: none; text-indent: 0px;=
+ letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, Helv=
+etica, sans-serif; font-size: 11px; font-style: normal; font-weight: 400; w=
+ord-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-co=
+lor: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-caps:=
+ normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial=
+; text-decoration-style: initial;=20
+text-decoration-color: initial;'></p>
+<div style=3D'color: rgb(51, 51, 51); text-transform: none; text-indent: 0p=
+x; letter-spacing: normal; font-family: "Lucida Grande", Verdana, Arial, He=
+lvetica, sans-serif; font-size: 11px; font-style: normal; font-weight: 400;=
+ word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; background-=
+color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant-cap=
+s: normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initi=
+al; text-decoration-style: initial;=20
+text-decoration-color: initial;'><span class=3D"v1font" style=3D'font-famil=
+y: "Segoe UI", "Lucida Sans", sans-serif;'><span class=3D"v1colour" style=
+=3D"color: rgb(153, 153, 153);"><span class=3D"v1size" style=3D"font-size: =
+10px;">
+The information contained in or attached to this communication is intended =
+solely for the use of the individual or entity to whom it is addressed and =
+others authorized to receive it. It may contain confidential or legally pri=
+vileged information. If you are not the intended recipient you are hereby n=
+otified that any disclosure, copying, distribution or taking any action in =
+reliance on the contents of this information is strictly prohibited and may=
+ be unlawful. If you have received this=20
+communication in error, please notify me immediately by responding to this =
+email and then delete it from your system. We are neither liable for the pr=
+oper and complete transmission of the information contained in this communi=
+cation nor for any delay in its receipt.</span>&nbsp;</span></span></div></=
+body></html>
 
-PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCjxoZWFkPjxtZXRhIGNoYXJzZXQ9InV0Zi04Ii8+
-DQoJPHRpdGxlPjAuMDA1bW0gcHJlY2lzaW9uIHBhcnRzIHByb2Nlc3Npbmc8L3RpdGxlPg0K
-PC9oZWFkPg0KPGJvZHkgZGF0YS1nci1leHQtaW5zdGFsbGVkPSIiIGRhdGEtbmV3LWdyLWMt
-cy1jaGVjay1sb2FkZWQ9IjE0LjEwNjMuMCI+SGkgT3NzdC1Vc2VyczxiciAvPg0KPGJyIC8+
-DQpIYXZlIGEgbmljZSBkYXkhIFdpc2ggeW91IGV2ZXJ5dGhpbmcgZ29lcyB3ZWxsLjxiciAv
-Pg0KPGJyIC8+DQpJJ20gTGlzYSBhbmQgdGhlIFNhbGVzIERpcmVjdG9yIGF0IFhpbmJvIFBy
-ZWNpc2lvbiwgV2Ugc3VwcGx5IGFsbCBraW5kcyBvZiBDTkMgTWFjaGluaW5nIHBhcnRzKCBo
-aWdoIHByZWNpc2lvbiBvZiAwLjAwNW1tLCBmb3IgdGhlIGRpZmZlcmVudCBmaWVsZHMgbGlr
-ZSBNaWxpdGFyeS9EZWZlbnNlLCBBZXJvc3BhY2UgQWdyaWN1bHR1cmFsLCBUcmFuc3BvcnRh
-dGlvbiwgTWVkaWNhbCwgSW5kdXN0cmlhbCwgQWxsIGtpbmRzIG9mIFJvYm90cywgRHJvbmVz
-IGFuZCBzbyBvbi4uLik8YnIgLz4NCjxiciAvPg0KT3VyIGZhY2lsaXR5IGhvdXNlcyBhIHNp
-emFibGUgaW52ZW50b3J5IG9mIGVxdWlwbWVudCBmb3IgcHJvZHVjdGlvbiBtYWNoaW5pbmcs
-IDUtYXhpcyBtaWxsaW5nLCBob3Jpem9udGFsIGFuZCB2ZXJ0aWNhbCBtaWxsaW5nLCBhbmQg
-bGF0aGUgdHVybmluZyB3aXRoIGxpdmUgdG9vbGluZyBhbmQgYXV0b21hdGVkIGJhciBmZWVk
-aW5nLsKgPGJyIC8+DQo8YnIgLz4NCklmIHlvdSBoYXZlIGFueSBpbnRlcmVzdGluZywgd2Ug
-d2VsY29tZSB5b3VyIGRyYXdpbmdzIG9mIENOQyBwYXJ0cywgd2UgY2FuIG9mZmVyIHlvdSB0
-aGUgYmVzdCBwcmljZSBhbmQgaGlnaCBxdWFsaXR5IHNhbXBsZXMuPGJyIC8+DQo8YnIgLz4N
-ClRoYW5rcyBmb3IgeW91ciB2YWx1ZSB0aW1lLjxiciAvPg0KPGJyIC8+DQpMb29rIGZvcndh
-cmQgdG8geW91ciBuaWNlIHJlcGx5LjxiciAvPg0KPGJyIC8+DQo8YnIgLz4NCkJlc3QgcmVn
-YXJkcyw8YnIgLz4NCjxiciAvPg0KTGlzYSB5dTxiciAvPg0KTGlzYUBjbmNwcmVjaXNpb24t
-cGFydHMuY248YnIgLz4NClhpbmJvIFByZWNpc2lvbjxiciAvPg0KPGJyIC8+DQo8YnIgLz4N
-CjxiciAvPg0KPGJyIC8+DQo8YnIgLz4NCjxiciAvPg0KPGJyIC8+DQo8YSBocmVmPSJodHRw
-Oi8vdHJhY2tpbmcubmtlbWFpbHMuY29tL3RyYWNraW5nL3Vuc3Vic2NyaWJlP2Q9WDdFREFi
-dVBNLWdkUnB3Y0FxQl8tV3F5TVpmYjBlb2ZUd2NaOWlnbjZ0V3ZFUmp6bkJZQnVRbEdDTTFL
-SzdtUXI4bTFObzJob1p6QmZaR2VibFhjNmJ6V3dJQnNhdUd2aEtuVTBrTjkzTVlhQ0xNblRm
-ZjZyY0c2Q0RldnBvMF85NXc2RzFCT0lqZHJwZ1BzRXJhQnZ5aWZkellfYTBNS2VTRjBKV2JN
-LVBpWE0tWTkwTDktaGpGMDZiTWx5dGg3MmFwSk8yV0ZPMXFtY0M2eUtkQUtSNUtmWHFPN2J0
-VlE0QjdCak84RjhxcVEwIj5VbnN1YnNjcmliZTwvYT48Z3JhbW1hcmx5LWRlc2t0b3AtaW50
-ZWdyYXRpb24gZGF0YS1ncmFtbWFybHktc2hhZG93LXJvb3Q9InRydWUiPjwvZ3JhbW1hcmx5
-LWRlc2t0b3AtaW50ZWdyYXRpb24+PGltZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBzcmM9Imh0
-dHA6Ly9lLnhjd21zLmNvbS9pbmRleC5waHAvY2FtcGFpZ25zL3BlNzc4dHRhenFkMGIvdHJh
-Y2stb3BlbmluZy9wdzA4MnJweGEyMDM2IiBhbHQ9IiIgLz4KPGltZyBzcmM9Imh0dHA6Ly90
-cmFja2luZy5ua2VtYWlscy5jb20vdHJhY2tpbmcvb3Blbj9tc2dpZD1aSVVNbGRzZTlNckZL
-a0VYRmJjbU9RMiZjPTE1MzY3MTU0NTI2MTE0ODI0MjkiIHN0eWxlPSJ3aWR0aDoxcHg7aGVp
-Z2h0OjFweCIgYWx0PSIiIC8+PC9ib2R5Pg0KPC9odG1sPg==
 
---=-eZCfPkvg0ynINMLHR9sJQiLk6iJg1vMK/XWKzQ==--
-
-
---===============4305844115361381732==
+--===============3246588664029072031==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4305844115361381732==
+--===============3246588664029072031==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -203,5 +344,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4305844115361381732==--
-
+--===============3246588664029072031==--
