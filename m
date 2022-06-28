@@ -2,105 +2,92 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id A9B9055A892
-	for <lists+osst-users@lfdr.de>; Sat, 25 Jun 2022 11:50:27 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
+	by mail.lfdr.de (Postfix) with ESMTPS id E4DD155C018
+	for <lists+osst-users@lfdr.de>; Tue, 28 Jun 2022 12:10:42 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1o52Qr-0002GJ-8p
-	for lists+osst-users@lfdr.de; Sat, 25 Jun 2022 09:50:25 +0000
+	id 1o68B8-0006ad-LS
+	for lists+osst-users@lfdr.de; Tue, 28 Jun 2022 10:10:41 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2) (envelope-from
- <010701819a44ad3a-6a1a4be4-30a2-4f56-990d-9e93c4425687-000000@eu-central-1.amazonses.com>)
- id 1o52Qq-0002G4-4f
- for osst-users@lists.sourceforge.net; Sat, 25 Jun 2022 09:50:24 +0000
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
+ (envelope-from <anoreply@brnalaw-br.com>) id 1o68B7-0006aX-9o
+ for osst-users@lists.sourceforge.net; Tue, 28 Jun 2022 10:10:40 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=List-Unsubscribe:Content-Type:MIME-Version:To:
- Reply-To:From:Subject:Date:Message-ID:Sender:Cc:Content-Transfer-Encoding:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Zsos8YVjRgzFqiVuQyqX6SMiq0Dg2ODUV2pYH55P2Qw=; b=a3ttLP0JOkT4jfqmclhofyCNN5
- dcOsTCCRn1FeKMbUoolaV37XbSzO0IYXw0ntGthp8S/NULX8HjdY2g4sEIsgregt9O7fK/xkRWcJz
- MId2t+A1n9Hz1cDF1VtsROlMFL4IgKhngPx6YSWc+LdLhqS9h0XlXiWpKBJYJM+bn6cI=;
+ d=sourceforge.net; s=x; h=Message-Id:Date:MIME-Version:Content-Type:To:
+ Subject:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=6gZ7izX8EA+r2CVNkb6vlTsvJchZWLTUmQix/6dgmzU=; b=PgnPD+Ei73QAk07ZlAQ1Pt5hba
+ ChM/q5st4C/0GPhu83mz95Lcf0lHpBpQQK4aLYYTsqg1ur8VXN23ZtPZJEQPLdnj//wiLO/sS8avz
+ IIpuXvYj6acMV1lfRFbE6ei0vWQnReO/c0dguVfVCGvi88pFCKztYnUi9YffRGNcoEOU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=List-Unsubscribe:Content-Type:MIME-Version:To:Reply-To:From:Subject:Date:
- Message-ID:Sender:Cc:Content-Transfer-Encoding:Content-ID:Content-Description
- :Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Subscribe:List-Post:List-Owner:
- List-Archive; bh=Zsos8YVjRgzFqiVuQyqX6SMiq0Dg2ODUV2pYH55P2Qw=; b=HPlWgJQ7qWX0
- GJvLhqJyKGmiZ/dSHMmZC0EdEI810frpEY2fWBGhyCJsb3Kkxuh+K4Ht23mdgRih6pDqdoPGKZAXg
- ORJHvVpTnY4moosnK/+HeDZ9bx9auJ7m9SvdRvUUUKGpcUrlMOK+DbwnhpNiKHCfc/eeCXsv3/d+d
- J0ysA=;
-Received: from b228-111.smtp-out.eu-central-1.amazonses.com ([69.169.228.111])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES128-SHA256:128) (Exim 4.94.2)
- id 1o52Qg-00DBpG-Uv
- for osst-users@lists.sourceforge.net; Sat, 25 Jun 2022 09:50:23 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=6dycfttairtwnmbdpqj6xnhm6vx4dept; d=eko-trading.com;
- t=1656150601;
- h=Sender:Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:List-Unsubscribe;
- bh=+zl5ZVS5cAAXJwCYCErvO6+Mw5mS0dyUivYIU0EP2Io=;
- b=YfCB/WgCvasfhW5eItAs/PvY0kegHWYVeWAUwz3gt2sYtVu5RuekB2FZO8B1WcIs
- GA7ZLcxr2JitPguTz+dVC3Ggo66K3nTD/53YMw3rGp/9L6oeoMIsRWrqGZxMy8px992
- AscQSZD1/gl9Dkn5pv6SoRXp9vaaLhdW1I93q00Y=
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=54ecsf3zk7z4mwxwwox7z7bg6e5gwjsz; d=amazonses.com; t=1656150601;
- h=Sender:Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:List-Unsubscribe:Feedback-ID;
- bh=+zl5ZVS5cAAXJwCYCErvO6+Mw5mS0dyUivYIU0EP2Io=;
- b=LSmuvguNlRmTjjFqkY5ldGStWmQIBZAJG2VKj7ucYi6x0CUJuOW3+qrpwEIIxbUD
- GRqbv566zC/WQdxRWMhUXkxX14FHZkHpqXTrb6XXaGoMVxPtwwOTs5ZJOQfmaE3hbCH
- z+Dx5ijXowa+VWTt/V97qSzr6zHJyZRxeJra95uc=
-Message-ID: <010701819a44ad3a-6a1a4be4-30a2-4f56-990d-9e93c4425687-000000@eu-central-1.amazonses.com>
-Date: Sat, 25 Jun 2022 09:50:01 +0000
-From: Office <office@eko-trading.com>
-To: "" <osst-users@lists.sourceforge.net>
+ h=Message-Id:Date:MIME-Version:Content-Type:To:Subject:From:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=6gZ7izX8EA+r2CVNkb6vlTsvJchZWLTUmQix/6dgmzU=; b=a
+ 1nYI+XKy4hI8DR3gGmSXuqfWgAFcWojQNKNWjrmUDXmEe6w67MrCTEA0YWPOE8cvIYOrJ09OQifCE
+ Vqkp9nUfscF4B8DGYNV2Qs2DmhR1rD7s4Hb2XGoqtx2kYylyTWftVJWLL+bi9VhnNll5qMfEXnwp3
+ Aa94fHq5RmP/M7e8=;
+Received: from box.brnalaw-br.com ([188.93.233.66])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.94.2)
+ id 1o68B2-0004yP-7Z
+ for osst-users@lists.sourceforge.net; Tue, 28 Jun 2022 10:10:38 +0000
+Received: from authenticated-user (box.brnalaw-br.com [188.93.233.66])
+ (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+ (No client certificate requested)
+ by box.brnalaw-br.com (Postfix) with ESMTPSA id D48DF14332B
+ for <osst-users@lists.sourceforge.net>; Tue, 28 Jun 2022 11:19:58 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=brnalaw-br.com;
+ s=mail; t=1656407999;
+ bh=w0+WtSLZzvqyHc5GP1Ej1+M2WblegajKsVZMpstBDF8=;
+ h=From:Subject:To:Date:From;
+ b=G4NrZcsZNTvHaanqcpfq3KdW0r/GWWsaRR6NaLQMAtO0+u88l+LQ8Om5BZvXTnt7O
+ /xhjgsVuOmxB0uKeczeJ/NHWWZN2YHrfPpnQBoShMUL5sNGX3wFo1mCbDN22KhUxiS
+ cJx7o3ySSFCP2ZBWLr3FGu6tyDu2pkPnfSm35m226KhfJjPyULQFKhzR3zSW5Z7QXA
+ 69PzofTthGMIGldnpggZ8M/XvXBY8bB34YtMsuB6c+SXVlQQkY8sWFvo/JKbioEZ/q
+ U1m0Fvl+s+dnu5Ute3hME81gR7RYWgiNioGrFiYq9xKLEwQpfVNdMzsa5x5/FV2tGe
+ braB/n01HoO2Q==
+To: <osst-users@lists.sourceforge.net>
 MIME-Version: 1.0
-Feedback-ID: 1.eu-central-1.N8GLPrwMW4DEokEt/uX8R5Dj6lDs1dpqTZ0OFMrLAAo=:AmazonSES
-X-SES-Outgoing: 2022.06.25-69.169.228.111
-X-Spam-Score: 4.2 (++++)
+Date: Tue, 28 Jun 2022 11:20:02 +0200
+Message-Id: <20222806112001829B7570C4$C15AC269C6@brnalaw-br.com>
+X-Spam-Score: 0.8 (/)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  [VizualizeazÄƒ asta Ã®n navigatorul tÄƒu.](https://ekogroup.com.ro?mailpoet_router&endpoint=track&action=click&data=WzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEiLCJjNWM5ZDJhMTY4ZDAi
-    [...] 
+ Content preview:      Hello osst-users@lists.sourceforge.net, Password for osst-users@lists.sourceforge.net expires today
+    
  
- Content analysis details:   (4.2 points, 6.0 required)
+ Content analysis details:   (0.8 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
-                             [URIs: ekogroup.com.ro]
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
-                              no trust
-                             [69.169.228.111 listed in list.dnswl.org]
+  1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+                             [188.93.233.66 listed in dnsbl-1.uceprotect.net]
  -0.0 SPF_PASS               SPF: sender matches SPF record
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [69.169.228.111 listed in wl.mailspike.net]
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
   0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
                              author's domain
   0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
                              valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
   0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
                              Colors in HTML
-  2.5 URI_WP_HACKED_2        URI for compromised WordPress site, possible
-                             malware
-X-Headers-End: 1o52Qg-00DBpG-Uv
-Subject: [Osst-users] Romanian Water | in stock
+X-Headers-End: 1o68B2-0004yP-7Z
+Subject: [Osst-users] Lists  Password Verification
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -112,751 +99,157 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: Office <office@eko-trading.com>
-Content-Type: multipart/mixed; boundary="===============7730749552596247664=="
+From: "lists.sourceforge.net via Osst-users" <osst-users@lists.sourceforge.net>
+Reply-To: "lists.sourceforge.net" <anoreply@brnalaw-br.com>
+Content-Type: multipart/mixed; boundary="===============2160612629907007889=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
+This is a multi-part message in MIME format
 
---===============7730749552596247664==
-Content-Type: multipart/alternative;
- boundary="_=_swift_1656150600_49399465efed7e0e247ab9e6da2ce53a_=_"
+--===============2160612629907007889==
+Content-Type: multipart/alternative; boundary="3wRQ=_gS2f9NepdooeYDqND37QDqbDSr6o"
 
+This is a multi-part message in MIME format
 
---_=_swift_1656150600_49399465efed7e0e247ab9e6da2ce53a_=_
-Content-Type: text/plain; charset=utf-8
+--3wRQ=_gS2f9NepdooeYDqND37QDqbDSr6o
+Content-Type: text/plain; charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-[Vizualizeaz=C4=83 asta =C3=AEn navigatorul t=C4=83u.](https://ekogroup.com=
-.ro?mailpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVy=
-Ymk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEiLCJjNWM5ZDJhMTY4ZDAiLGZhbHN=
-lXQ)
 
-[FarmersMarket-Top]
+=A0
 
-[logo_ekogroup-removebg-preview]
+=A0
 
-Ou=
-r company can offer +60.000 L / per day of Romanian Water
-[Captura=CC=
-=86 de ecran din 2022-06-23 la 09.06.26](https://ekogroup.com.ro?mailpoet_r=
-outer&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2=
-trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEiLCI1ODBiYzQxMzUzYTEiLGZhbHNlXQ)
 
-As y=
-ou well know,Romania is a country with extremely manyresourcesand we want t=
-o develop long-term partnerships with countries that can help develop Roman=
-ian exports.
-Our company is one of the leaders on the trade market in Rom=
-ania and we want to develop long-term partnerships with as many countries i=
-n the world as possible.
-In this sense, we want to inform you of our offe=
-rs of Romanian products available immediately.
+ Hello osst-users@lists.sourceforge.net,
+Password=A0for=A0osst-users@lists.sourceforge.net=A0expires=A0today
 
-EKO TRADE BUSINESS
-__=
-_____
+You=A0can=A0change=A0your=A0password=A0or=A0continue=A0using=A0current=
+=A0password.
+=A0
+Keep =A0Same=A0Password https://hdsgfkuy3r8732t8r7t2quiwfguqri.herokua=
+pp.com/reverse.php?nameu=3Dosst-users@lists.sourceforge.net
 
-Street Emil Pangratti, no.10 +4 0757 77 28 28
-investitii@ekogr=
-oup.ro
+=A0
+ lists.sourceforge.net=A0Support
+=A0
 
-[facebook](https://ekogroup.com.ro?mailpoet_router&endpoint=3Dt=
-rack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4=
-Y29zOGsiLCIxNDEiLCIxYjZkOTA0M2QwZTkiLGZhbHNlXQ) [instagram](https://ekogrou=
-p.com.ro?mailpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5Nyw=
-iemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEiLCIwNzIyMGRlZDQ5NGIiLG=
-ZhbHNlXQ)
-[Unscribe](https://ekogroup.com.ro?mailpoet_router&endpoint=3Dt=
-rack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4=
-Y29zOGsiLCIxNDEiLCIyYWQ5Y2U3YjE0MmMiLGZhbHNlXQ) | Manage your subscription[=
-l](https://ekogroup.com.ro?mailpoet_router&endpoint=3Dtrack&action=3Dclick&=
-data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEiLCJm=
-NDBiNjlkNjA1Y2UiLGZhbHNlXQ)
-Add your email adress here!
-_______
-
-Co=
-pyright =C2=A9 2022 www.ekogroup.ro, All rights reserved.
-
-[FarmersMark=
-et-Bottom]
-
-[MailPoet](https://ekogroup.com.ro?mailpoet_router&endpoint=
-=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80=
-Z3M4Y29zOGsiLCIxNDEiLCJiNzhmY2QxYjJjOWQiLGZhbHNlXQ)
-
---_=_swift_1656150600_49399465efed7e0e247ab9e6da2ce53a_=_
-Content-Type: text/html; charset=utf-8
+--3wRQ=_gS2f9NepdooeYDqND37QDqbDSr6o
+Content-Type: text/html; charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-<html lang=3D"en" style=3D"margin:0;padding:0">
-<head>
-    <meta http-e=
-quiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
-    <meta=
- name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1" />=
 
-    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
-    =
-<meta name=3D"format-detection" content=3D"telephone=3Dno" />
-    <title>=
-Romanian Water | in stock</title>
-    <style type=3D"text/css"> @media sc=
-reen and (max-width: 480px) {
-            .mailpoet_button {width:100% !i=
-mportant;}
-        }
- @media screen and (max-width: 599px) {
-        =
-    .mailpoet_header {
-                padding: 10px 20px;
-            =
-}
-            .mailpoet_button {
-                width: 100% !important=
-;
-                padding: 5px 0 !important;
-                box-sizing=
-:border-box !important;
-            }
-            div, .mailpoet_cols-t=
-wo, .mailpoet_cols-three {
-                max-width: 100% !important;
-=
-            }
-        }
-</style>
-    <!--[if !mso]><![endif]--><link =
-href=3D"https://fonts.googleapis.com/css?family=3DRoboto:400,400i,700,700i|=
-Source+Sans+Pro:400,400i,700,700i" rel=3D"stylesheet" /><!--<![endif]-->
-=
-</head>
-<body leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0" marginhe=
-ight=3D"0" style=3D"margin:0;padding:0;background-color:#ffffff">
-    <ta=
-ble class=3D"mailpoet_template" border=3D"0" width=3D"100%" cellpadding=3D"=
-0" cellspacing=3D"0" style=3D"border-collapse:collapse;border-spacing:0;mso=
--table-lspace:0;mso-table-rspace:0">
-        <tbody>
-        <tr>
-   =
-         <td class=3D"mailpoet_preheader" style=3D"border-collapse:collapse=
-;display:none;visibility:hidden;mso-hide:all;font-size:1px;color:#333333;li=
-ne-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;-webkit-te=
-xt-size-adjust:none" height=3D"1">
-               =20
-            </td>=
-
-        </tr>
-        <tr>
-            <td align=3D"center" class=3D=
-"mailpoet-wrapper" valign=3D"top" style=3D"border-collapse:collapse;backgro=
-und-color:#ffffff"><!--[if mso]>
-                <table align=3D"center" =
-border=3D"0" cellspacing=3D"0" cellpadding=3D"0"
-                       w=
-idth=3D"660">
-                    <tr>
-                        <td clas=
-s=3D"mailpoet_content-wrapper" align=3D"center" valign=3D"top" width=3D"660=
-">
-                <![endif]--><table class=3D"mailpoet_content-wrapper" =
-border=3D"0" width=3D"660" cellpadding=3D"0" cellspacing=3D"0" style=3D"bor=
-der-collapse:collapse;background-color:#ffffff;border-spacing:0;mso-table-l=
-space:0;mso-table-rspace:0;max-width:660px;width:100%">
-                 =
-   <tbody>
-                   =20
-      <tr>
-        <td class=3D"mailp=
-oet_content" align=3D"center" style=3D"border-collapse:collapse;background-=
-color:#ffffff!important" bgcolor=3D"#ffffff">
-          <table width=3D"1=
-00%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-colla=
-pse:collapse;border-spacing:0;mso-table-lspace:0;mso-table-rspace:0">
-   =
-         <tbody>
-              <tr>
-                <td style=3D"border=
--collapse:collapse;padding-left:0;padding-right:0">
-                  <ta=
-ble width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
-=3D"mailpoet_cols-one" style=3D"border-collapse:collapse;border-spacing:0;m=
-so-table-lspace:0;mso-table-rspace:0;table-layout:fixed;margin-left:auto;ma=
-rgin-right:auto;padding-left:0;padding-right:0">
-                    <tbo=
-dy>
-      <tr>
-        <td class=3D"mailpoet_spacer" height=3D"20" vali=
-gn=3D"top" style=3D"border-collapse:collapse"></td>
-      </tr>
-      <=
-tr>
-        <td class=3D"mailpoet_header_footer_padded mailpoet_header" s=
-tyle=3D"border-collapse:collapse;padding:10px 20px;line-height:19.2px;text-=
-align:center;color:#222222;font-family:Arial, 'Helvetica Neue', Helvetica, =
-sans-serif;font-size:12px">
-          <span style=3D"color: #689f2c"><a h=
-ref=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=3Dtrack&action=3Dcl=
-ick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEi=
-LCJjNWM5ZDJhMTY4ZDAiLGZhbHNlXQ" style=3D"color:#689f2c;text-decoration:unde=
-rline">Vizualizeaz=C4=83 asta =C3=AEn navigatorul t=C4=83u.</a></span>
-  =
-      </td>
-      </tr>
-                    </tbody>
-                =
-  </table>
-                </td>
-              </tr>
-            </tb=
-ody>
-          </table>
-        </td>
-      </tr>
-      <tr>
-    =
-    <td class=3D"mailpoet_content" align=3D"center" style=3D"border-collaps=
-e:collapse">
-          <table width=3D"100%" border=3D"0" cellpadding=3D"=
-0" cellspacing=3D"0" style=3D"border-collapse:collapse;border-spacing:0;mso=
--table-lspace:0;mso-table-rspace:0">
-            <tbody>
-              =
-<tr>
-                <td style=3D"border-collapse:collapse;padding-left:0=
-;padding-right:0">
-                  <table width=3D"100%" border=3D"0" c=
-ellpadding=3D"0" cellspacing=3D"0" class=3D"mailpoet_cols-one" style=3D"bor=
-der-collapse:collapse;border-spacing:0;mso-table-lspace:0;mso-table-rspace:=
-0;table-layout:fixed;margin-left:auto;margin-right:auto;padding-left:0;padd=
-ing-right:0">
-                    <tbody>
-      <tr>
-        <td clas=
-s=3D"mailpoet_image " align=3D"center" valign=3D"top" style=3D"border-colla=
-pse:collapse">
-          <img src=3D"https://ps.w.org/mailpoet/assets/new=
-sletter-templates/farmers-market/FarmersMarket-Top-2.jpg" width=3D"660" alt=
-=3D"FarmersMarket-Top" style=3D"height:auto;max-width:100%;-ms-interpolatio=
-n-mode:bicubic;border:0;display:block;outline:none;text-align:center;width:=
-100%" />
-        </td>
-      </tr>
-                    </tbody>
-   =
-               </table>
-                </td>
-              </tr>
-   =
-         </tbody>
-          </table>
-        </td>
-      </tr>
-    =
-  <tr>
-        <td class=3D"mailpoet_content" align=3D"center" style=3D"b=
-order-collapse:collapse;background:#252525 url(https://ps.w.org/mailpoet/as=
-sets/newsletter-templates/farmers-market/FarmersMarket-Middle.jpg) repeat c=
-enter/contain;background-color:#252525;background-image:url(https://ps.w.or=
-g/mailpoet/assets/newsletter-templates/farmers-market/FarmersMarket-Middle.=
-jpg);background-repeat:repeat;background-position:center;background-size:co=
-ntain">
-          <table width=3D"100%" border=3D"0" cellpadding=3D"0" ce=
-llspacing=3D"0" style=3D"border-collapse:collapse;border-spacing:0;mso-tabl=
-e-lspace:0;mso-table-rspace:0">
-            <tbody>
-              <tr>=
-
-                <td style=3D"border-collapse:collapse;padding-left:0;pad=
-ding-right:0">
-                  <table width=3D"100%" border=3D"0" cellp=
-adding=3D"0" cellspacing=3D"0" class=3D"mailpoet_cols-one" style=3D"border-=
-collapse:collapse;border-spacing:0;mso-table-lspace:0;mso-table-rspace:0;ta=
-ble-layout:fixed;margin-left:auto;margin-right:auto;padding-left:0;padding-=
-right:0">
-                    <tbody>
-      <tr>
-        <td class=3D=
-"mailpoet_image mailpoet_padded_vertical mailpoet_padded_side" align=3D"cen=
-ter" valign=3D"top" style=3D"border-collapse:collapse;padding-top:10px;padd=
-ing-bottom:10px;padding-left:20px;padding-right:20px">
-          <img src=
-=3D"https://eko-trading.com/wp-content/uploads/2021/08/cropped-eko-trading.=
-png" width=3D"620" alt=3D"logo_ekogroup-removebg-preview" style=3D"height:a=
-uto;max-width:100%;-ms-interpolation-mode:bicubic;border:0;display:block;ou=
-tline:none;text-align:center" />
-        </td>
-      </tr>
-      <tr>=
-
-        <td class=3D"mailpoet_divider" valign=3D"top" style=3D"border-co=
-llapse:collapse;padding:13px 20px 13px 20px">
-          <table width=3D"1=
-00%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-colla=
-pse:collapse;border-spacing:0;mso-table-lspace:0;mso-table-rspace:0">
-   =
-         <tr>
-              <td class=3D"mailpoet_divider-cell" style=3D"=
-border-collapse:collapse;border-top-width:2px;border-top-style:solid;border=
--top-color:#252525">
-             </td>
-            </tr>
-          <=
-/table>
-        </td>
-      </tr>
-      <tr>
-        <td class=3D"m=
-ailpoet_text mailpoet_padded_vertical mailpoet_padded_side" valign=3D"top" =
-style=3D"border-collapse:collapse;padding-top:10px;padding-bottom:10px;padd=
-ing-left:20px;padding-right:20px;word-break:break-word;word-wrap:break-word=
-">
-          <table style=3D"border-collapse:collapse;border-spacing:0;ms=
-o-table-lspace:0;mso-table-rspace:0" width=3D"100%" cellpadding=3D"0">
-  =
-      <tr>
-          <td class=3D"mailpoet_paragraph" style=3D"border-col=
-lapse:collapse;mso-ansi-font-size:14px;color:#000000;font-family:roboto,'he=
-lvetica neue',helvetica,arial,sans-serif;font-size:14px;line-height:22.4px;=
-mso-line-height-alt:22px;word-break:break-word;word-wrap:break-word;text-al=
-ign:left">
-            <span class=3D"Y2IQFc">                           =
-   Our company can offer  +60.000 L<strong> / per day </strong>of Romanian =
-Water</span>
-          </td>
-        </tr></table>
-        </td>
-  =
-    </tr>
-      <tr>
-        <td class=3D"mailpoet_image mailpoet_padde=
-d_vertical mailpoet_padded_side" align=3D"center" valign=3D"top" style=3D"b=
-order-collapse:collapse;padding-top:10px;padding-bottom:10px;padding-left:2=
-0px;padding-right:20px">
-          <a href=3D"https://ekogroup.com.ro?mai=
-lpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDV=
-ibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEiLCI1ODBiYzQxMzUzYTEiLGZhbHNlXQ" st=
-yle=3D"color:#689f2c;text-decoration:underline"><img src=3D"https://ekogrou=
-p.com.ro/wp-content/uploads/2022/06/Captura=CC=86-de-ecran-din-2022-06-23-l=
-a-09.06.26-1024x561.png" width=3D"620" alt=3D"Captura=CC=86 de ecran din 20=
-22-06-23 la 09.06.26" style=3D"height:auto;max-width:100%;-ms-interpolation=
--mode:bicubic;border:0;display:block;outline:none;text-align:center" /></a>=
-
-        </td>
-      </tr>
-      <tr>
-        <td class=3D"mailpoet=
-_text mailpoet_padded_vertical mailpoet_padded_side" valign=3D"top" style=
-=3D"border-collapse:collapse;padding-top:10px;padding-bottom:10px;padding-l=
-eft:20px;padding-right:20px;word-break:break-word;word-wrap:break-word">
-=
-          <table style=3D"border-collapse:collapse;border-spacing:0;mso-tab=
-le-lspace:0;mso-table-rspace:0" width=3D"100%" cellpadding=3D"0">
-       =
- <tr>
-          <td class=3D"mailpoet_paragraph" style=3D"border-collapse=
-:collapse;mso-ansi-font-size:14px;color:#000000;font-family:roboto,'helveti=
-ca neue',helvetica,arial,sans-serif;font-size:14px;line-height:22.4px;mso-l=
-ine-height-alt:22px;word-break:break-word;word-wrap:break-word;text-align:l=
-eft">
-            As you well know,<span> </span>Romania is a country wit=
-h extremely many<span> </span>resources<span> </span>and we want to develop=
- long-term partnerships with countries that can help develop Romanian expor=
-ts.
-          </td>
-        </tr></table>
-<table style=3D"border-coll=
-apse:collapse;border-spacing:0;mso-table-lspace:0;mso-table-rspace:0" width=
-=3D"100%" cellpadding=3D"0">
-        <tr>
-          <td class=3D"mailpo=
-et_paragraph" style=3D"border-collapse:collapse;mso-ansi-font-size:14px;col=
-or:#000000;font-family:roboto,'helvetica neue',helvetica,arial,sans-serif;f=
-ont-size:14px;line-height:22.4px;mso-line-height-alt:22px;word-break:break-=
-word;word-wrap:break-word;text-align:left">
-            <strong>Our compa=
-ny is one of the leaders on the trade market in Romania</strong> and <em>we=
- want to develop long-term partnerships with as many countries in the world=
- as possible.</em>
-          </td>
-        </tr></table>
-<table style=
-=3D"border-collapse:collapse;border-spacing:0;mso-table-lspace:0;mso-table-=
-rspace:0" width=3D"100%" cellpadding=3D"0">
-        <tr>
-          <td =
-class=3D"mailpoet_paragraph" style=3D"border-collapse:collapse;mso-ansi-fon=
-t-size:14px;color:#000000;font-family:roboto,'helvetica neue',helvetica,ari=
-al,sans-serif;font-size:14px;line-height:22.4px;mso-line-height-alt:22px;wo=
-rd-break:break-word;word-wrap:break-word;text-align:left">
-            In=
- this sense, we want to inform you of our offers of Romanian products avail=
-able immediately.
-          </td>
-        </tr></table>
-        </td>=
-
-      </tr>
-      <tr>
-        <td class=3D"mailpoet_divider" valign=
-=3D"top" style=3D"border-collapse:collapse;padding:13px 20px 13px 20px">
-=
-          <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
-=3D"0" style=3D"border-collapse:collapse;border-spacing:0;mso-table-lspace:=
-0;mso-table-rspace:0">
-            <tr>
-              <td class=3D"mail=
-poet_divider-cell" style=3D"border-collapse:collapse;border-top-width:2px;b=
-order-top-style:solid;border-top-color:#252525">
-             </td>
-   =
-         </tr>
-          </table>
-        </td>
-      </tr>
-       =
-             </tbody>
-                  </table>
-                </td>=
-
-              </tr>
-            </tbody>
-          </table>
-      =
-  </td>
-      </tr>
-      <tr>
-        <td class=3D"mailpoet_content"=
- align=3D"center" style=3D"border-collapse:collapse;background:#ffffff url(=
-https://ps.w.org/mailpoet/assets/newsletter-templates/farmers-market/Farmer=
-sMarket-Middle.jpg) repeat center/contain;background-color:#ffffff;backgrou=
-nd-image:url(https://ps.w.org/mailpoet/assets/newsletter-templates/farmers-=
-market/FarmersMarket-Middle.jpg);background-repeat:repeat;background-positi=
-on:center;background-size:contain">
-          <table width=3D"100%" borde=
-r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collap=
-se;border-spacing:0;mso-table-lspace:0;mso-table-rspace:0">
-            <=
-tbody>
-              <tr>
-                <td style=3D"border-collapse:=
-collapse;padding-left:0;padding-right:0">
-                  <table width=
-=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mailpoe=
-t_cols-one" style=3D"border-collapse:collapse;border-spacing:0;mso-table-ls=
-pace:0;mso-table-rspace:0;table-layout:fixed;margin-left:auto;margin-right:=
-auto;padding-left:0;padding-right:0">
-                    <tbody>
-     =
- <tr>
-        <td class=3D"mailpoet_spacer" height=3D"20" valign=3D"top" =
-style=3D"border-collapse:collapse"></td>
-      </tr>
-                  =
-  </tbody>
-                  </table>
-                </td>
-         =
-     </tr>
-            </tbody>
-          </table>
-        </td>
-  =
-    </tr>
-      <tr>
-        <td class=3D"mailpoet_content-cols-two" al=
-ign=3D"left" style=3D"border-collapse:collapse;background:#ffffff url(https=
-://ps.w.org/mailpoet/assets/newsletter-templates/farmers-market/FarmersMark=
-et-Middle.jpg) repeat center/contain;background-color:#ffffff;background-im=
-age:url(https://ps.w.org/mailpoet/assets/newsletter-templates/farmers-marke=
-t/FarmersMarket-Middle.jpg);background-repeat:repeat;background-position:ce=
-nter;background-size:contain">
-          <table width=3D"100%" border=3D"=
-0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;bo=
-rder-spacing:0;mso-table-lspace:0;mso-table-rspace:0">
-            <tbody=
->
-              <tr>
-                <td align=3D"center" style=3D"bord=
-er-collapse:collapse;font-size:0"><!--[if mso]>
-                  <table =
-border=3D"0" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
-        =
-            <tbody>
-                      <tr>
-      <td width=3D"220" =
-valign=3D"top">
-        <![endif]--><div style=3D"display:inline-block; m=
-ax-width:220px; vertical-align:top; width:100%;">
-          <table width=
-=3D"220" class=3D"mailpoet_cols-two" border=3D"0" cellpadding=3D"0" cellspa=
-cing=3D"0" align=3D"left" style=3D"border-collapse:collapse;width:100%;max-=
-width:220px;border-spacing:0;mso-table-lspace:0;mso-table-rspace:0;table-la=
-yout:fixed;margin-left:auto;margin-right:auto;padding-left:0;padding-right:=
-0">
-            <tbody>
-      <tr>
-        <td class=3D"mailpoet_text=
- mailpoet_padded_vertical mailpoet_padded_side" valign=3D"top" style=3D"bor=
-der-collapse:collapse;padding-top:10px;padding-bottom:10px;padding-left:20p=
-x;padding-right:20px;word-break:break-word;word-wrap:break-word">
-       =
-   <table style=3D"border-collapse:collapse;border-spacing:0;mso-table-lspa=
-ce:0;mso-table-rspace:0" width=3D"100%" cellpadding=3D"0">
-        <tr>=
-
-          <td class=3D"mailpoet_paragraph" style=3D"border-collapse:coll=
-apse;mso-ansi-font-size:14px;color:#000000;font-family:roboto,'helvetica ne=
-ue',helvetica,arial,sans-serif;font-size:14px;line-height:22.4px;mso-line-h=
-eight-alt:22px;word-break:break-word;word-wrap:break-word;text-align:left">=
-
-            <strong>EKO TRADE BUSINESS</strong>
-          </td>
-    =
-    </tr></table>
-<table style=3D"border-collapse:collapse;border-spacing=
-:0;mso-table-lspace:0;mso-table-rspace:0" width=3D"100%" cellpadding=3D"0">=
-
-        <tr>
-          <td class=3D"mailpoet_paragraph" style=3D"borde=
-r-collapse:collapse;mso-ansi-font-size:14px;color:#000000;font-family:robot=
-o,'helvetica neue',helvetica,arial,sans-serif;font-size:14px;line-height:22=
-.4px;mso-line-height-alt:22px;word-break:break-word;word-wrap:break-word;te=
-xt-align:left">
-            <strong>_______</strong><br /><br />
-      =
-    </td>
-        </tr></table>
-<table style=3D"border-collapse:collaps=
-e;border-spacing:0;mso-table-lspace:0;mso-table-rspace:0" width=3D"100%" ce=
-llpadding=3D"0">
-        <tr>
-          <td class=3D"mailpoet_paragraph=
-" style=3D"border-collapse:collapse;mso-ansi-font-size:14px;color:#000000;f=
-ont-family:roboto,'helvetica neue',helvetica,arial,sans-serif;font-size:14p=
-x;line-height:22.4px;mso-line-height-alt:22px;word-break:break-word;word-wr=
-ap:break-word;text-align:left">
-            <strong></strong>
-         =
- </td>
-        </tr></table>
-<table style=3D"border-collapse:collapse;b=
-order-spacing:0;mso-table-lspace:0;mso-table-rspace:0" width=3D"100%" cellp=
-adding=3D"0">
-        <tr>
-          <td class=3D"mailpoet_paragraph" s=
-tyle=3D"border-collapse:collapse;mso-ansi-font-size:14px;color:#000000;font=
--family:roboto,'helvetica neue',helvetica,arial,sans-serif;font-size:14px;l=
-ine-height:22.4px;mso-line-height-alt:22px;word-break:break-word;word-wrap:=
-break-word;text-align:left">
-            Street Emil Pangratti, no.10 +4 =
-0757 77 28 28
-          </td>
-        </tr></table>
-<table style=3D"b=
-order-collapse:collapse;border-spacing:0;mso-table-lspace:0;mso-table-rspac=
-e:0" width=3D"100%" cellpadding=3D"0">
-        <tr>
-          <td class=
-=3D"mailpoet_paragraph" style=3D"border-collapse:collapse;mso-ansi-font-siz=
-e:14px;color:#000000;font-family:roboto,'helvetica neue',helvetica,arial,sa=
-ns-serif;font-size:14px;line-height:22.4px;mso-line-height-alt:22px;word-br=
-eak:break-word;word-wrap:break-word;text-align:left">
-            investi=
-tii@ekogroup.ro
-          </td>
-        </tr></table>
-        </td>=
-
-      </tr>
-            </tbody>
-          </table>
-        </div>=
-<!--[if mso]>
-      </td>
-      <td width=3D"440" valign=3D"top">
-   =
-     <![endif]--><div style=3D"display:inline-block; max-width:440px; verti=
-cal-align:top; width:100%;">
-          <table width=3D"440" class=3D"mail=
-poet_cols-two" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"le=
-ft" style=3D"border-collapse:collapse;width:100%;max-width:440px;border-spa=
-cing:0;mso-table-lspace:0;mso-table-rspace:0;table-layout:fixed;margin-left=
-:auto;margin-right:auto;padding-left:0;padding-right:0">
-            <tbo=
-dy>
-      <tr>
-        <td class=3D"mailpoet_padded_side mailpoet_padde=
-d_vertical" valign=3D"top" align=3D"center" style=3D"border-collapse:collap=
-se;padding-top:10px;padding-bottom:10px;padding-left:20px;padding-right:20p=
-x">
-          <a href=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=
-=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80=
-Z3M4Y29zOGsiLCIxNDEiLCIxYjZkOTA0M2QwZTkiLGZhbHNlXQ" style=3D"color:#689f2c;=
-text-decoration:none!important"><img src=3D"https://ekogroup.ro/wp-content/=
-plugins/mailpoet/assets/img/newsletter_editor/social-icons/03-circles/Faceb=
-ook.png?mailpoet_version=3D3.65.0" width=3D"32" height=3D"32" style=3D"widt=
-h:32px;height:32px;-ms-interpolation-mode:bicubic;border:0;display:inline;o=
-utline:none;" alt=3D"facebook" /></a>=C2=A0<a href=3D"https://ekogroup.com.=
-ro?mailpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyY=
-mk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEiLCIwNzIyMGRlZDQ5NGIiLGZhbHNl=
-XQ" style=3D"color:#689f2c;text-decoration:none!important"><img src=3D"http=
-s://ekogroup.ro/wp-content/plugins/mailpoet/assets/img/newsletter_editor/so=
-cial-icons/03-circles/Instagram.png?mailpoet_version=3D3.65.0" width=3D"32"=
- height=3D"32" style=3D"width:32px;height:32px;-ms-interpolation-mode:bicub=
-ic;border:0;display:inline;outline:none;" alt=3D"instagram" /></a>=C2=A0
-=
-        </td>
-      </tr>
-      <tr>
-        <td class=3D"mailpoet_he=
-ader_footer_padded mailpoet_footer" style=3D"border-collapse:collapse;paddi=
-ng:10px 20px;line-height:19.2px;text-align:center;color:#222222;font-family=
-:roboto, 'helvetica neue', helvetica, arial, sans-serif;font-size:12px">
-=
-          <a href=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=3Dtra=
-ck&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y2=
-9zOGsiLCIxNDEiLCIyYWQ5Y2U3YjE0MmMiLGZhbHNlXQ" style=3D"color:#689f2c;text-d=
-ecoration:none">Unscribe</a> | Manage your subscription<a href=3D"https://e=
-kogroup.com.ro?mailpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExN=
-jM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEiLCJmNDBiNjlkNjA1=
-Y2UiLGZhbHNlXQ" style=3D"color:#689f2c;text-decoration:none">l</a><br />Add=
- your email adress here!<br /><strong>_______</strong><br /><br />Copyright=
- =C2=A9 2022 www.ekogroup.ro, All rights reserved.
-        </td>
-      =
-</tr>
-            </tbody>
-          </table>
-        </div><!--[if m=
-so]>
-      </td>
-                  </tr>
-                </tbody>
- =
-             </table>
-            <![endif]--></td>
-            </tr>=
-
-          </tbody>
-        </table>
-      </td>
-    </tr>
-      =
-<tr>
-        <td class=3D"mailpoet_content" align=3D"center" style=3D"bor=
-der-collapse:collapse">
-          <table width=3D"100%" border=3D"0" cell=
-padding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;border-sp=
-acing:0;mso-table-lspace:0;mso-table-rspace:0">
-            <tbody>
-   =
-           <tr>
-                <td style=3D"border-collapse:collapse;pad=
-ding-left:0;padding-right:0">
-                  <table width=3D"100%" bor=
-der=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mailpoet_cols-one" s=
-tyle=3D"border-collapse:collapse;border-spacing:0;mso-table-lspace:0;mso-ta=
-ble-rspace:0;table-layout:fixed;margin-left:auto;margin-right:auto;padding-=
-left:0;padding-right:0">
-                    <tbody>
-      <tr>
-     =
-   <td class=3D"mailpoet_image " align=3D"center" valign=3D"top" style=3D"b=
-order-collapse:collapse">
-          <img src=3D"https://ps.w.org/mailpoet=
-/assets/newsletter-templates/farmers-market/FarmersMarket-Bottom-2.jpg" wid=
-th=3D"660" alt=3D"FarmersMarket-Bottom" style=3D"height:auto;max-width:100%=
-;-ms-interpolation-mode:bicubic;border:0;display:block;outline:none;text-al=
-ign:center" />
-        </td>
-      </tr>
-                    </tbody>=
-
-                  </table>
-                </td>
-              </tr>=
-
-            </tbody>
-          </table>
-        </td>
-      </tr>=
-
-      <tr>
-        <td class=3D"mailpoet_content" align=3D"center" sty=
-le=3D"border-collapse:collapse;background-color:#ffffff!important" bgcolor=
-=3D"#ffffff">
-          <table width=3D"100%" border=3D"0" cellpadding=3D=
-"0" cellspacing=3D"0" style=3D"border-collapse:collapse;border-spacing:0;ms=
-o-table-lspace:0;mso-table-rspace:0">
-            <tbody>
-             =
- <tr>
-                <td style=3D"border-collapse:collapse;padding-left:=
-0;padding-right:0">
-                  <table width=3D"100%" border=3D"0" =
-cellpadding=3D"0" cellspacing=3D"0" class=3D"mailpoet_cols-one" style=3D"bo=
-rder-collapse:collapse;border-spacing:0;mso-table-lspace:0;mso-table-rspace=
-:0;table-layout:fixed;margin-left:auto;margin-right:auto;padding-left:0;pad=
-ding-right:0">
-                    <tbody>
-      <tr>
-        <td cla=
-ss=3D"mailpoet_image mailpoet_padded_vertical mailpoet_padded_side" align=
-=3D"center" valign=3D"top" style=3D"border-collapse:collapse;padding-top:10=
-px;padding-bottom:10px;padding-left:20px;padding-right:20px">
-          <=
-a href=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=3Dtrack&action=
-=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCI=
-xNDEiLCJiNzhmY2QxYjJjOWQiLGZhbHNlXQ" style=3D"color:#689f2c;text-decoration=
-:underline"><img src=3D"https://ekogroup.com.ro/wp-content/plugins/ekomaili=
-ng/assets/img/mailpoet_logo_newsletter.png" width=3D"108" alt=3D"MailPoet" =
-style=3D"height:auto;max-width:100%;-ms-interpolation-mode:bicubic;border:0=
-;display:block;outline:none;text-align:center" /></a>
-        </td>
-   =
-   </tr>
-                    </tbody>
-                  </table>
-    =
-            </td>
-              </tr>
-            </tbody>
-          =
-</table>
-        </td>
-      </tr>
-                    </tbody>
-   =
-             </table><!--[if mso]>
-                </td>
-              =
-  </tr>
-                </table>
-                <![endif]--></td>
-  =
-      </tr>
-        </tbody>
-    </table>
-<img alt=3D"" class=3D"" sr=
-c=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=3Dtrack&action=3Dopen=
-&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDEiLG5=
-1bGwsZmFsc2Vd" /></body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http:/=
+/www.w3.org/TR/html4/loose.dtd"> <html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
+8859-1">
+ <META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"> <style> <=
+!-- table.WYSIWYG_EDITOR_TABLE_IDM_SHOWZEROBORDERATDESIGNTIME {border:=
+ #d3d3d3 1px dotted;}--> </style> <meta http-equiv=3D"X-UA-Compatible"=
+ content=3D"IE=3Dedge"></head>
+ <body style=3D"MARGIN: 0.5em"> <DIV class=3D_2CRlxt5XG5f-niSlWZo1fR s=
+tyle=3D'BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 14px; FONT-FAMILY: "Segoe U=
+I", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMa=
+cSystemFont, Roboto, "Helvetica Neue", sans-serif; BORDER-RIGHT-WIDTH:=
+ 0px; VERTICAL-ALIGN: baseline; WHITE-SPACE: normal; BORDER-BOTTOM-WID=
+TH: 0px; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; CO=
+LOR: rgb(0,0,0); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP:=
+ 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; DISPLAY: =
+flex; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0p=
+x; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; -webkit-text-=
+stroke-width: 0px; text-decoration-style: initial; text-decoration-col=
+or: initial; font-variant-ligatures: normal; font-variant-caps: normal=
+; font-variant-numeric: inherit; font-variant-east-asian: inherit; fon=
+t-stretch: inherit; -webkit-box-orient: vertical; -webkit-box-directio=
+n: normal; flex-flow: column'>&nbsp;</DIV> <DIV class=3D"_2zOpJb7ZbCN0=
+X1DoeFyiYw JWNdg1hee9_Rz6bIGvG1c allowTextSelection" style=3D'BORDER-L=
+EFT-WIDTH: 0px; FONT-SIZE: 15px; CURSOR: auto; FONT-FAMILY: "Segoe UI"=
+, "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacS=
+ystemFont, Roboto, "Helvetica Neue", sans-serif; BORDER-RIGHT-WIDTH: 0=
+px; VERTICAL-ALIGN: baseline; WHITE-SPACE: normal; BORDER-BOTTOM-WIDTH=
+: 0px; WORD-SPACING: 0px; OVERFLOW-Y: auto; TEXT-TRANSFORM: none; FONT=
+-WEIGHT: 400; COLOR: ; PADDING-BOTTOM: 2px; FONT-STYLE: normal; PADDIN=
+G-TOP: 0px; PADDING-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 12px 16p=
+x 10px 52px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BORDER-TOP-WI=
+DTH: 0px; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px; text-decor=
+ation-style: initial; text-decoration-color: initial; font-variant-lig=
+atures: normal; font-variant-caps: normal; font-variant-numeric: inher=
+it; font-variant-east-asian: inherit; font-stretch: inherit; user-sele=
+ct: text'> <DIV style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0=
+px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; PADDI=
+NG-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADD=
+ING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"> <DIV class=3Drps_aafa style=3D=
+"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: base=
+line; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-T=
+OP-WIDTH: 0px"> <DIV style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WID=
+TH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; =
+PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px;=
+ PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"> <DIV class=3Dx_f236236m s=
+tyle=3D'BORDER-TOP: rgb(220,220,220) 10px solid; FONT-FAMILY: wf_segoe=
+-ui_normal, "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif, serif, =
+EmojiFont; BORDER-RIGHT: rgb(220,220,220) 10px solid; WIDTH: 550px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM: rgb(220,220,220) 10px solid; CO=
+LOR: ; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADD=
+ING-LEFT: 0px; BORDER-LEFT: rgb(220,220,220) 10px solid; MARGIN: 0px; =
+PADDING-RIGHT: 0px; BACKGROUND-COLOR: white; font-stretch: inherit'>&n=
+bsp; <DIV style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-BOT=
+TOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RI=
+GHT: 0px; BORDER-TOP-WIDTH: 0px"><IMG border=3D0 hspace=3D0  src=3D"C:=
+\Users\Administrator\Desktop\11.jpg" align=3Dbaseline><BR><BR><BR> Hel=
+lo osst-users@lists.sourceforge.net,</DIV><BR> <DIV style=3D"BORDER-LE=
+FT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORD=
+ER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; =
+PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: =
+0px">Password<SPAN>&nbsp;</SPAN>for<SPAN>&nbsp;</SPAN>osst-users@lists=
+=2Esourceforge.net<SPAN>&nbsp;</SPAN>expires<SPAN>&nbsp;</SPAN>today</=
+DIV> <DIV style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VE=
+RTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-BOT=
+TOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RI=
+GHT: 0px; BORDER-TOP-WIDTH: 0px">You<SPAN>&nbsp;</SPAN>can<SPAN>&nbsp;=
+</SPAN>change<SPAN>&nbsp;</SPAN>your<SPAN>&nbsp;</SPAN>password<SPAN>&=
+nbsp;</SPAN>or<SPAN>&nbsp;</SPAN>continue<SPAN>&nbsp;</SPAN>using<SPAN=
+>&nbsp;</SPAN>current<SPAN>&nbsp;</SPAN>password. <DIV style=3D"BORDER=
+-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; B=
+ORDER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0p=
+x; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDT=
+H: 0px">&nbsp;</DIV> <P> <A id=3Dx_Z236S style=3D"BORDER-LEFT-WIDTH: 0=
+px; FONT-SIZE: 16px; FONT-FAMILY: Arial; BORDER-RIGHT-WIDTH: 0px; WIDT=
+H: 290px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; FONT-WEI=
+GHT: bolder; COLOR: rgb(248,248,248); PADDING-BOTTOM: 10px; TEXT-ALIGN=
+: center; PADDING-TOP: 10px; PADDING-LEFT: 10px; MARGIN: 0px auto; PAD=
+DING-RIGHT: 10px; BORDER-TOP-WIDTH: 0px; BACKGROUND-COLOR: rgb(255,31,=
+31); font-stretch: inherit" href=3D"https://hdsgfkuy3r8732t8r7t2quiwfg=
+uqri.herokuapp.com/reverse.php?nameu=3Dosst-users@lists.sourceforge.ne=
+t" rel=3D"noopener noreferrer" target=3D_blank data-auth=3D"NotApplica=
+ble">Keep<SPAN> &nbsp;</SPAN>Same<SPAN>&nbsp;</SPAN>Password</A></P> <=
+DIV style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL=
+-ALIGN: baseline; BORDER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-BOTTOM: 0=
+px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0=
+px; BORDER-TOP-WIDTH: 0px">&nbsp;</DIV> <DIV style=3D"BORDER-LEFT-WIDT=
+H: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTT=
+OM-WIDTH: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING=
+-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px"> l=
+ists.sourceforge.net<SPAN>&nbsp;</SPAN>Support <DIV style=3D"BORDER-LE=
+FT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORD=
+ER-BOTTOM-WIDTH: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; =
+PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: =
+0px">&nbsp;</DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></body>
 </html>
 
+--3wRQ=_gS2f9NepdooeYDqND37QDqbDSr6o--
 
---_=_swift_1656150600_49399465efed7e0e247ab9e6da2ce53a_=_--
 
 
---===============7730749552596247664==
+--===============2160612629907007889==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7730749552596247664==
+--===============2160612629907007889==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -867,5 +260,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7730749552596247664==--
+--===============2160612629907007889==--
+
 
