@@ -2,107 +2,104 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id C1005568C61
-	for <lists+osst-users@lfdr.de>; Wed,  6 Jul 2022 17:10:31 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
+	by mail.lfdr.de (Postfix) with ESMTPS id E3ABD56A14B
+	for <lists+osst-users@lfdr.de>; Thu,  7 Jul 2022 13:51:48 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1o96fe-0001FE-Bk
-	for lists+osst-users@lfdr.de; Wed, 06 Jul 2022 15:10:30 +0000
+	id 1o9Q2u-0000D8-Kx
+	for lists+osst-users@lfdr.de; Thu, 07 Jul 2022 11:51:47 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2) (envelope-from
- <01070181d40fc6b7-18327c18-1f86-4333-99a2-b5669dd48945-000000@eu-central-1.amazonses.com>)
- id 1o96fc-0001Ez-MH
- for osst-users@lists.sourceforge.net; Wed, 06 Jul 2022 15:10:28 +0000
+ <01070181d880173a-0f75c0c5-490f-4ace-af15-0462ede1bcaf-000000@eu-central-1.amazonses.com>)
+ id 1o9Q2s-0000D1-6x
+ for osst-users@lists.sourceforge.net; Thu, 07 Jul 2022 11:51:45 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=List-Unsubscribe:Content-Type:MIME-Version:To:
  Reply-To:From:Subject:Date:Message-ID:Sender:Cc:Content-Transfer-Encoding:
  Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
  Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
  List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=2Oach3UmcIFs65rdK33yKPOYBTCuEJs0ZYDD0X/er1c=; b=jefytytdmKCbfdyhpAZFPgjCp6
- E1iNdTXY2CzwMoKT7kYULwoejkHWPtZS/fjiaJnoHmOyrc5FgOzc5AzPr4odReGLB5jo9cPD6U/YP
- rPAagkI6bSbcucQn7hYyGJR2o3II7YlHJVcaJQfEFO7BHHxOtHT7lMQD0J3ZdTyDLp/E=;
+ bh=TZZz9GRh7Vgi9xr7jcsCO1OaF94UBx7QXu94L94DM2k=; b=a6NVrfwYetd1pjlbkSB8sY2NvX
+ LIwB6UMbBUXMqPmZ20eSrp0p2sv0quTlGRwDudhFt6ZouLFHEidISGIREYkf27Vrxu7r1gzG3MzId
+ 36KQuSH3L82pI3naOqX/LtIuXdp+k+pm6pTlx1ouSFVKnl/+ol/Ru3s/rwSfv7J7g2aY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=List-Unsubscribe:Content-Type:MIME-Version:To:Reply-To:From:Subject:Date:
  Message-ID:Sender:Cc:Content-Transfer-Encoding:Content-ID:Content-Description
  :Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
  In-Reply-To:References:List-Id:List-Help:List-Subscribe:List-Post:List-Owner:
- List-Archive; bh=2Oach3UmcIFs65rdK33yKPOYBTCuEJs0ZYDD0X/er1c=; b=DwEB+VjFaJqv
- MIW9hPNHEVenvzq2BaxwpXna6elI8Ft+v2w7RAMpv1mpdSWDDm10Zt1nE4wOfvMxbEgm6cwx89y2u
- SKQYPDYoUO4NeZAMwbpZMe2FKLTunCkt28EsrDASDMaN6dmfFxbXWaZSUMmHjsBXS1XUonhMdOYs3
- 4weUU=;
-Received: from b228-111.smtp-out.eu-central-1.amazonses.com ([69.169.228.111])
+ List-Archive; bh=TZZz9GRh7Vgi9xr7jcsCO1OaF94UBx7QXu94L94DM2k=; b=erRIy5TWS7pW
+ +dKH8CoB/VxjAYYtv2ZTNkRrXx3mf4xk8coBJGlE4AqUF21/KZ9Vmu85d+N0y0YHQSI7Vi1XQVRhH
+ dGfmkreyq4iZ4fJNo5jY82yvZC0ckpX1Fuxmq1/vN1hk12NYaeubyHNHk1MXg7KZu3+xnEXhA6h3A
+ se7jE=;
+Received: from b227-249.smtp-out.eu-central-1.amazonses.com ([69.169.227.249])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES128-SHA256:128) (Exim 4.94.2)
- id 1o96fW-0005ka-UW
- for osst-users@lists.sourceforge.net; Wed, 06 Jul 2022 15:10:28 +0000
+ id 1o9Q2k-0007og-Jh
+ for osst-users@lists.sourceforge.net; Thu, 07 Jul 2022 11:51:44 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
  s=6dycfttairtwnmbdpqj6xnhm6vx4dept; d=eko-trading.com;
- t=1657120213;
+ t=1657194682;
  h=Sender:Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:List-Unsubscribe;
- bh=nimUzKVRMdBzJkm2ooByHGEXUv53dQOkoC2EQqrXAfs=;
- b=G7+Uzp/mjDgSY893/xKHekrZj5BwipvZawJtDsocakJQeF2EWNoQzJaIlt3WlgpQ
- tCQ5mJzKHj4V/O6tn7UEsOt1gV+pWoHr+KsUMNLnQ6+bNjUSSqqPnoypCVlygNAS7eM
- yMPpRw6hKl7iPlHdKDKW8W0XfuRgCWgjSV3+y55k=
+ bh=IlncSt5q7yZOc+T1WrjXCSuVTk88IQbeggMizdxhW98=;
+ b=a6TPZgwifEJ50wB2WXrYraTVrNyJwyKw0AzHVYoAi6/elU21/1Ilg5IjSP/HA31R
+ br0N+WrZP2Dg4vmpttFvv+QhjWDnCezdZW0qvzDkaWW/rMKjtnOYfcpGL1Od2f5T5yA
+ CfF3f1UpF9Zop9yrREjg1Elj6azuueml8AsxpwIs=
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
- s=54ecsf3zk7z4mwxwwox7z7bg6e5gwjsz; d=amazonses.com; t=1657120213;
+ s=54ecsf3zk7z4mwxwwox7z7bg6e5gwjsz; d=amazonses.com; t=1657194682;
  h=Sender:Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:List-Unsubscribe:Feedback-ID;
- bh=nimUzKVRMdBzJkm2ooByHGEXUv53dQOkoC2EQqrXAfs=;
- b=anwoTbl6NwG3Gw2jji5FELsU67BcSFK5W5NjGLVG7IVE5t8VxzZGpqUcYRAt43n8
- gj1fEXWIXSB4bzck0l3au7YCzp1a8yXw/SupKiepJ+Wx/Ell7pCecQnRU2GrzxYFoei
- Z7lJ7O0mj4zWTHZBAFQNhpc7Pt1KiMKagNeiWPOI=
-Message-ID: <01070181d40fc6b7-18327c18-1f86-4333-99a2-b5669dd48945-000000@eu-central-1.amazonses.com>
-Date: Wed, 6 Jul 2022 15:10:12 +0000
+ bh=IlncSt5q7yZOc+T1WrjXCSuVTk88IQbeggMizdxhW98=;
+ b=lcd/F3SXvcjlXCXj3laI2G3o54NxaF6/RJgP2iCIJT9KtohqxvQdLCmo7IYRqUb0
+ W1Q4i3/aj5DLRcqBYSaVcrLOXHESsinh7D2OTh8FW8BXx1J6jIHhZjpuLB+YAp7PoXI
+ DZq01+W9KASszj5iNNv5UIptprw2iOD2CgzuoA+s=
+Message-ID: <01070181d880173a-0f75c0c5-490f-4ace-af15-0462ede1bcaf-000000@eu-central-1.amazonses.com>
+Date: Thu, 7 Jul 2022 11:51:22 +0000
 From: Office <office@eko-trading.com>
 To: "" <osst-users@lists.sourceforge.net>
 MIME-Version: 1.0
 Feedback-ID: 1.eu-central-1.N8GLPrwMW4DEokEt/uX8R5Dj6lDs1dpqTZ0OFMrLAAo=:AmazonSES
-X-SES-Outgoing: 2022.07.06-69.169.228.111
+X-SES-Outgoing: 2022.07.07-69.169.227.249
 X-Spam-Score: 6.2 (++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  [Vizualizează asta în navigatorul tău.](https://ekogroup.com.ro?mailpoet_router&endpoint=track&action=click&data=WzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDUiLCJhYjM5MjAxNTVlYmYi
+ Content preview:  [Vizualizează asta în navigatorul tău.](https://ekogroup.com.ro?mailpoet_router&endpoint=track&action=click&data=WzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDYiLCI3MjBlODVhZDdkY2Ui
     [...] 
  
  Content analysis details:   (6.2 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
-                              no trust
-                             [69.169.228.111 listed in list.dnswl.org]
   1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
                              [URIs: ekogroup.com.ro]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [69.169.228.111 listed in wl.mailspike.net]
- -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+                              no trust
+                             [69.169.227.249 listed in list.dnswl.org]
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
   0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
                              mail domains are different
+ -0.0 SPF_PASS               SPF: sender matches SPF record
   0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
                              envelope-from domain
   0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
                              valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
                              author's domain
   2.0 PYZOR_CHECK            Listed in Pyzor
                              (https://pyzor.readthedocs.io/en/latest/)
   0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
                              Colors in HTML
- -0.0 T_SCC_BODY_TEXT_LINE   No description available.
   2.5 URI_WP_HACKED_2        URI for compromised WordPress site, possible
                              malware
-X-Headers-End: 1o96fW-0005ka-UW
-Subject: [Osst-users] 335 euro wheat from Romania
+X-Headers-End: 1o9Q2k-0007og-Jh
+Subject: [Osst-users] 0.18 euro/0.5L, from Romania
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -115,22 +112,22 @@ List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
 Reply-To: Office <office@eko-trading.com>
-Content-Type: multipart/mixed; boundary="===============7922794058214697670=="
+Content-Type: multipart/mixed; boundary="===============2772845727020938459=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 
---===============7922794058214697670==
+--===============2772845727020938459==
 Content-Type: multipart/alternative;
- boundary="_=_swift_1657120212_1b0832b49d04b12e2f5bf278fccdc11f_=_"
+ boundary="_=_swift_1657194682_250f804a1bb819a7a235bfdd49de2e50_=_"
 
 
---_=_swift_1657120212_1b0832b49d04b12e2f5bf278fccdc11f_=_
+--_=_swift_1657194682_250f804a1bb819a7a235bfdd49de2e50_=_
 Content-Type: text/plain; charset=utf-8
 Content-Transfer-Encoding: quoted-printable
 
 [Vizualizeaz=C4=83 asta =C3=AEn navigatorul t=C4=83u.](https://ekogroup.com=
 .ro?mailpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVy=
-Ymk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDUiLCJhYjM5MjAxNTVlYmYiLGZhbHN=
+Ymk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDYiLCI3MjBlODVhZDdkY2UiLGZhbHN=
 lXQ)
 
 [FarmersMarket-Top]
@@ -138,17 +135,17 @@ lXQ)
 [Captura=CC=86_de_ecran_din_2022-07-05_l=
 a_14.38.33-removebg-preview](https://ekogroup.com.ro?mailpoet_router&endpoi=
 nt=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG=
-80Z3M4Y29zOGsiLCIxNDUiLCIwYWFkZTc3MzcxOTAiLGZhbHNlXQ)
+80Z3M4Y29zOGsiLCIxNDYiLCI1MWE1MTc4ODU3OWIiLGZhbHNlXQ)
 
 [Captura=CC=
 =86 de ecran din 2022-07-05 la 08.58.03](https://ekogroup.com.ro?mailpoet_r=
 outer&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2=
-trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDUiLCI4YTRlNTYyMzQyNDUiLGZhbHNlXQ)
+trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDYiLCI3ZDQ3YTBjMjNiZjkiLGZhbHNlXQ)
 
 [Cap=
-tura=CC=86 de ecran din 2022-07-06 la 09.38.51](https://ekogroup.com.ro?mai=
+tura=CC=86 de ecran din 2022-07-07 la 11.13.40](https://ekogroup.com.ro?mai=
 lpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDV=
-ibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDUiLCIwYWFkZTc3MzcxOTAiLGZhbHNlXQ)
+ibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDYiLCI1MWE1MTc4ODU3OWIiLGZhbHNlXQ)
 =
 
 As you well know,Romania is a country with extremely manyresourcesand we=
@@ -170,16 +167,16 @@ office=
 
 [facebook](https://ekogroup.com.ro?mailpoet_router&en=
 dpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYz=
-RzOG80Z3M4Y29zOGsiLCIxNDUiLCJmOTQ1ZGRmYWZmMjEiLGZhbHNlXQ) [instagram](https=
+RzOG80Z3M4Y29zOGsiLCIxNDYiLCI0OTc1NDZjMzkxZTgiLGZhbHNlXQ) [instagram](https=
 ://ekogroup.com.ro?mailpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DW=
-zExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDUiLCI1YTE5NmYx=
-ODAyMjIiLGZhbHNlXQ)
+zExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDYiLCIzMjEzNWU0=
+M2E0YTgiLGZhbHNlXQ)
 [Unscribe](https://ekogroup.com.ro?mailpoet_router&en=
 dpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYz=
-RzOG80Z3M4Y29zOGsiLCIxNDUiLCIwMjA5NmRkOTE3ZmYiLGZhbHNlXQ) | Manage your sub=
+RzOG80Z3M4Y29zOGsiLCIxNDYiLCJjZGVmM2Q1ZGQxODkiLGZhbHNlXQ) | Manage your sub=
 scription[l](https://ekogroup.com.ro?mailpoet_router&endpoint=3Dtrack&actio=
 n=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLC=
-IxNDUiLCI3M2I4M2ViMWM1YWEiLGZhbHNlXQ)
+IxNDYiLCJmMzdkYmVkZjIxNGYiLGZhbHNlXQ)
 Add your email adress here!
 _____=
 __
@@ -191,9 +188,9 @@ armersMarket-Bottom]
 
 [MailPoet](https://ekogroup.com.ro?mailpoet_route=
 r&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNG=
-djYzRzOG80Z3M4Y29zOGsiLCIxNDUiLCJlOGVlNGRiNjMyYWUiLGZhbHNlXQ)
+djYzRzOG80Z3M4Y29zOGsiLCIxNDYiLCJmNWQxYzkxMDZkNTEiLGZhbHNlXQ)
 
---_=_swift_1657120212_1b0832b49d04b12e2f5bf278fccdc11f_=_
+--_=_swift_1657194682_250f804a1bb819a7a235bfdd49de2e50_=_
 Content-Type: text/html; charset=utf-8
 Content-Transfer-Encoding: quoted-printable
 
@@ -208,7 +205,7 @@ quiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
     =
 <meta name=3D"format-detection" content=3D"telephone=3Dno" />
     <title>=
-335 euro wheat from Romania </title>
+0.18 euro/0.5L, from Romania</title>
     <style type=3D"text/css"> @media=
  screen and (max-width: 480px) {
             .mailpoet_button {width:100%=
@@ -307,7 +304,7 @@ ca, sans-serif;font-size:12px">
           <span style=3D"color: #689f2c">=
 <a href=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=3Dtrack&action=
 =3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCI=
-xNDUiLCJhYjM5MjAxNTVlYmYiLGZhbHNlXQ" style=3D"color:#689f2c;text-decoration=
+xNDYiLCI3MjBlODVhZDdkY2UiLGZhbHNlXQ" style=3D"color:#689f2c;text-decoration=
 :underline">Vizualizeaz=C4=83 asta =C3=AEn navigatorul t=C4=83u.</a></span>=
 
         </td>
@@ -392,7 +389,7 @@ n=3D"center" valign=3D"top" style=3D"border-collapse:collapse;padding-top:1=
           =
 <a href=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=3Dtrack&action=
 =3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCI=
-xNDUiLCIwYWFkZTc3MzcxOTAiLGZhbHNlXQ" style=3D"color:#689f2c;text-decoration=
+xNDYiLCI1MWE1MTc4ODU3OWIiLGZhbHNlXQ" style=3D"color:#689f2c;text-decoration=
 :underline"><img src=3D"https://ekogroup.com.ro/wp-content/uploads/2022/07/=
 Captura=CC=86_de_ecran_din_2022-07-05_la_14.38.33-removebg-preview.png" wid=
 th=3D"174" alt=3D"Captura=CC=86_de_ecran_din_2022-07-05_la_14.38.33-removeb=
@@ -426,7 +423,7 @@ e:collapse;padding-top:10px;padding-bottom:10px;padding-left:20px;padding-r=
 ight:20px">
           <a href=3D"https://ekogroup.com.ro?mailpoet_router&=
 endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdj=
-YzRzOG80Z3M4Y29zOGsiLCIxNDUiLCI4YTRlNTYyMzQyNDUiLGZhbHNlXQ" style=3D"color:=
+YzRzOG80Z3M4Y29zOGsiLCIxNDYiLCI3ZDQ3YTBjMjNiZjkiLGZhbHNlXQ" style=3D"color:=
 #689f2c;text-decoration:underline"><img src=3D"https://ekogroup.com.ro/wp-c=
 ontent/uploads/2022/07/Captura=CC=86-de-ecran-din-2022-07-05-la-08.58.03.pn=
 g" width=3D"620" alt=3D"Captura=CC=86 de ecran din 2022-07-05 la 08.58.03" =
@@ -460,10 +457,10 @@ dding-top:10px;padding-bottom:10px;padding-left:20px;padding-right:20px">=
 
           <a href=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=3D=
 track&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M=
-4Y29zOGsiLCIxNDUiLCIwYWFkZTc3MzcxOTAiLGZhbHNlXQ" style=3D"color:#689f2c;tex=
+4Y29zOGsiLCIxNDYiLCI1MWE1MTc4ODU3OWIiLGZhbHNlXQ" style=3D"color:#689f2c;tex=
 t-decoration:underline"><img src=3D"https://ekogroup.com.ro/wp-content/uplo=
-ads/2022/07/Captura=CC=86-de-ecran-din-2022-07-06-la-09.38.51-1024x573.png"=
- width=3D"620" alt=3D"Captura=CC=86 de ecran din 2022-07-06 la 09.38.51" st=
+ads/2022/07/Captura=CC=86-de-ecran-din-2022-07-07-la-11.13.40-1024x576.png"=
+ width=3D"620" alt=3D"Captura=CC=86 de ecran din 2022-07-07 la 11.13.40" st=
 yle=3D"height:auto;max-width:100%;-ms-interpolation-mode:bicubic;border:0;d=
 isplay:block;outline:none;text-align:center" /></a>
         </td>
@@ -734,7 +731,7 @@ tyle=3D"border-collapse:collapse;padding-top:10px;padding-bottom:10px;paddi=
 ng-left:20px;padding-right:20px">
           <a href=3D"https://ekogroup.c=
 om.ro?mailpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5Nywiem=
-VyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDUiLCJmOTQ1ZGRmYWZmMjEiLGZhb=
+VyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDYiLCI0OTc1NDZjMzkxZTgiLGZhb=
 HNlXQ" style=3D"color:#689f2c;text-decoration:none!important"><img src=3D"h=
 ttps://ekogroup.ro/wp-content/plugins/mailpoet/assets/img/newsletter_editor=
 /social-icons/03-circles/Facebook.png?mailpoet_version=3D3.65.0" width=3D"3=
@@ -742,7 +739,7 @@ ttps://ekogroup.ro/wp-content/plugins/mailpoet/assets/img/newsletter_editor=
 ubic;border:0;display:inline;outline:none;" alt=3D"facebook" /></a>=C2=
 =A0<a href=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=3Dtrack&acti=
 on=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiL=
-CIxNDUiLCI1YTE5NmYxODAyMjIiLGZhbHNlXQ" style=3D"color:#689f2c;text-decorati=
+CIxNDYiLCIzMjEzNWU0M2E0YTgiLGZhbHNlXQ" style=3D"color:#689f2c;text-decorati=
 on:none!important"><img src=3D"https://ekogroup.ro/wp-content/plugins/mailp=
 oet/assets/img/newsletter_editor/social-icons/03-circles/Instagram.png?mail=
 poet_version=3D3.65.0" width=3D"32" height=3D"32" style=3D"width:32px;heigh=
@@ -758,11 +755,11 @@ gn:center;color:#222222;font-family:roboto, 'helvetica neue', helvetica, ar=
 ial, sans-serif;font-size:12px">
           <a href=3D"https://ekogroup.co=
 m.ro?mailpoet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemV=
-yYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDUiLCIwMjA5NmRkOTE3ZmYiLGZhbH=
+yYmk1NDVibzBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDYiLCJjZGVmM2Q1ZGQxODkiLGZhbH=
 NlXQ" style=3D"color:#689f2c;text-decoration:none">Unscribe</a> | Manage yo=
 ur subscription<a href=3D"https://ekogroup.com.ro?mailpoet_router&endpoint=
 =3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2trNGdjYzRzOG80=
-Z3M4Y29zOGsiLCIxNDUiLCI3M2I4M2ViMWM1YWEiLGZhbHNlXQ" style=3D"color:#689f2c;=
+Z3M4Y29zOGsiLCIxNDYiLCJmMzdkYmVkZjIxNGYiLGZhbHNlXQ" style=3D"color:#689f2c;=
 text-decoration:none">l</a><br />Add your email adress here!<br /><strong>_=
 ______</strong><br /><br />Copyright =C2=A9 2022 www.ekogroup.ro, All right=
 s reserved.
@@ -850,7 +847,7 @@ der-collapse:collapse;padding-top:10px;padding-bottom:10px;padding-left:20p=
 x;padding-right:20px">
           <a href=3D"https://ekogroup.com.ro?mailp=
 oet_router&endpoint=3Dtrack&action=3Dclick&data=3DWzExNjM5NywiemVyYmk1NDVib=
-zBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDUiLCJlOGVlNGRiNjMyYWUiLGZhbHNlXQ" styl=
+zBjY2trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDYiLCJmNWQxYzkxMDZkNTEiLGZhbHNlXQ" styl=
 e=3D"color:#689f2c;text-decoration:underline"><img src=3D"https://ekogroup.=
 com.ro/wp-content/plugins/ekomailing/assets/img/mailpoet_logo_newsletter.pn=
 g" width=3D"108" alt=3D"MailPoet" style=3D"height:auto;max-width:100%;-ms-i=
@@ -883,21 +880,21 @@ nter" /></a>
 /table>
 <img alt=3D"" class=3D"" src=3D"https://ekogroup.com.ro?mailpoet_=
 router&endpoint=3Dtrack&action=3Dopen&data=3DWzExNjM5NywiemVyYmk1NDVibzBjY2=
-trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDUiLG51bGwsZmFsc2Vd" /></body>
+trNGdjYzRzOG80Z3M4Y29zOGsiLCIxNDYiLG51bGwsZmFsc2Vd" /></body>
 </html>
 
 
---_=_swift_1657120212_1b0832b49d04b12e2f5bf278fccdc11f_=_--
+--_=_swift_1657194682_250f804a1bb819a7a235bfdd49de2e50_=_--
 
 
---===============7922794058214697670==
+--===============2772845727020938459==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7922794058214697670==
+--===============2772845727020938459==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -908,5 +905,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7922794058214697670==--
+--===============2772845727020938459==--
 
