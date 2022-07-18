@@ -2,100 +2,83 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 7B5CC576B31
-	for <lists+osst-users@lfdr.de>; Sat, 16 Jul 2022 03:31:04 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
+	by mail.lfdr.de (Postfix) with ESMTPS id 4D81A578E46
+	for <lists+osst-users@lfdr.de>; Tue, 19 Jul 2022 01:30:37 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.94.2)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1oCWe5-0007DZ-Km
-	for lists+osst-users@lfdr.de; Sat, 16 Jul 2022 01:31:02 +0000
+	id 1oDaCD-0005M9-1K
+	for lists+osst-users@lfdr.de; Mon, 18 Jul 2022 23:30:35 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.94.2)
- (envelope-from <johnwht@ymagis.com>) id 1oCWe4-0007DF-5L
- for osst-users@lists.sourceforge.net; Sat, 16 Jul 2022 01:31:01 +0000
+ (envelope-from <customersvc-12@orientallogistics-bd.com>)
+ id 1oDaCA-0005M3-Re
+ for osst-users@lists.sourceforge.net; Mon, 18 Jul 2022 23:30:33 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Message-Id:Date:MIME-Version:Content-Type:To:
- Subject:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
+ MIME-Version:Message-ID:Date:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=OITKAg1NG+c0NoVOY98eegngYGudqHz7csUecff457U=; b=i2ss1GTKgr+E86Y+3blY7Qb3EL
- sgvwTTZ9w6PTWc6VUvrf9S70QpQRpj1P2WFQUdK/GDQXPooqQQUOuxjFwZFcu6j+DKlWl/nUWYQWT
- sqLJDnuZgrSXnwbRtM0UG5r4fCTnkOc6GBRXYrSAqztTE8jGdC5J7rPBaLTmxeswouLE=;
+ bh=scxPDLPtfaFuKASX+yt9P2Giae6ZI0fXbbSkKi7O/3w=; b=JtERvIOXHWaqail3XNxUUvJs1e
+ CrbVKeBGmQvSs4JhODogCWa3FNq/imzwhtRwPFAdt1DJ5PkWoKMLxdx1LrI398hVreGKqk2YUIZ5X
+ 70vLwLXoWKS6FGzRwpqFc/pnFqv8myhxWbq8fMczUo6awmMFm3tnppZCuzgK/WyNQ2w0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Message-Id:Date:MIME-Version:Content-Type:To:Subject:From:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
+ Date:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=OITKAg1NG+c0NoVOY98eegngYGudqHz7csUecff457U=; b=l
- RZTcd9Afl8UoB0A/6Tg+Wx1loBhhNkHhSLIt+oQxHC+vUrN3lOMbFoKN3W96eiuSAYFDrUb5a15Ms
- YArKPoqSbA9Uzt1Yh4ufHoH4/hw/ZC/FDrdCjVkcD40zsBOxJXy0ICKx3/9siviHJoPQM30+xgrou
- h7YoALB8sTbaR9dk=;
-Received: from [185.178.249.95] (helo=smtp-mx1.ymagis.com)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.94.2)
- id 1oCWe0-000cUu-IV
- for osst-users@lists.sourceforge.net; Sat, 16 Jul 2022 01:31:00 +0000
-Received: from localhost (localhost.localdomain [127.0.0.1])
- by smtp-mx1.ymagis.com (Postfix) with ESMTP id DF07E17845C
- for <osst-users@lists.sourceforge.net>; Sat, 16 Jul 2022 03:29:11 +0200 (CEST)
-X-Quarantine-ID: <hXFoabNOg82I>
-X-Virus-Scanned: Debian amavisd-new at smtp-mx1.ymagis.com
-X-Spam-Flag: YES
-X-Spam-Score: 64
-X-Spam-Level: ****************************************************************
-X-Spam-Status: Yes, score=x tagged_above=-999 required=4.8 BLACKLISTED
- tests=[] autolearn=unavailable
-Received: from smtp-mx1.ymagis.com ([127.0.0.1])
- by localhost (mail-0320.frynoc2 [127.0.0.1]) (amavisd-new, port 10026)
- with LMTP id hXFoabNOg82I for <osst-users@lists.sourceforge.net>;
- Sat, 16 Jul 2022 03:29:08 +0200 (CEST)
-Received: from pc255 (unknown [172.16.84.1])
- by smtp-mx1.ymagis.com (Postfix) with ESMTP id 8CFC6178491
- for <osst-users@lists.sourceforge.net>; Sat, 16 Jul 2022 03:27:00 +0200 (CEST)
-X-GUID: 62B90B6F-F8C0-49A3-B93F-2248216D9F1A
-X-Has-Attach: no
-From: =?UTF-8?B?W+euoeeQhuWRmF0=?= <johnwht@ymagis.com>
-To: "osst-users" <osst-users@lists.sourceforge.net>
+ List-Owner:List-Archive; bh=scxPDLPtfaFuKASX+yt9P2Giae6ZI0fXbbSkKi7O/3w=; b=a
+ onkCvYZAHCx6IOkM+31nXwY2gqGy3TenXU3jHfvx/+N1Uwb8ZLcdOlcSE33X1RFEdU5fPkSMWLpgY
+ ICVbWbzn6nyw36PhR+xvSOVvwOjv0BSpsLunLu2OKxns2TAmaq9zoEKPLYszNx/px8dt9m6oo9Ms1
+ bSnqXHumqt5pd2Pg=;
+Received: from [80.76.51.93] (helo=orientallogistics-bd.com)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.94.2)
+ id 1oDaC8-003ORX-F1
+ for osst-users@lists.sourceforge.net; Mon, 18 Jul 2022 23:30:33 +0000
+From: lists.sourceforge.net-admin <customersvc-12@orientallogistics-bd.com>
+To: osst-users@lists.sourceforge.net
+Date: 19 Jul 2022 01:30:25 +0200
+Message-ID: <20220719013024.6E26CA8EA0FBF009@orientallogistics-bd.com>
 MIME-Version: 1.0
-Date: Sat, 16 Jul 2022 09:26:59 +0800
-X-Priority: 1
-Message-Id: <202207160926590774212@ymagis.com>
-X-Mailer: Foxmail 7, 2, 5, 140[cn]
-X-Spam-Score: 7.8 (+++++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+X-Spam-Score: 8.1 (++++++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  <div style="position:relative;"> <includetail> <blockquote
- class="ReferenceQuote" style="padding-left:5px; margin-right:0px;
- margin-left:5px; border-left-color:#B6B6B6; border-left-width:2px;
- border-left-s [...] 
- Content analysis details:   (7.8 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  Dear osst-users Pa‏‏‏‏ss‏‏‏‏wor‏‏‏‏d
+    for osst-users@lists.sourceforge.net is ab‏‏‏‏out to exp‏‏‏‏ire.
+    You can change your P‏‏‏‏ass‏‏‏‏wor‏‏‏‏d or co‏�
+    [...] 
+ 
+ Content analysis details:   (8.1 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
- https://senderscore.org/blocklistlookup/
- [185.178.249.95 listed in bl.score.senderscore.com]
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 1.5 MPART_ALT_DIFF_COUNT   BODY: HTML and text parts are different
- 0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
- identical to background
- 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
- 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
- 0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
- 1.0 NORDNS_LOW_CONTRAST    No rDNS + hidden text
-X-Headers-End: 1oCWe0-000cUu-IV
-Subject: [Osst-users] =?utf-8?b?6aOO6Zmp5ZGK55+lW+aCqOeahG9zc3QtdXNlcnM=?=
- =?utf-8?b?5a+G56CB5bCG6L+H5pyfXQ==?=
+  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
+                             blocklist
+                             [URIs: globall.be]
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+                             [80.76.51.93 listed in zen.spamhaus.org]
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  0.0 TVD_PH_BODY_ACCOUNTS_PRE The body matches phrases such as
+                             "accounts suspended", "account credited",
+                             "account verification"
+  1.2 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML
+                             only
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1oDaC8-003ORX-F1
+Subject: [Osst-users] [SPAM] Account Statues Notification {Confidential
+ Password} Notification for osst-users@lists.sourceforge.net
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -107,102 +90,69 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============4023559160925201369=="
+Content-Type: multipart/mixed; boundary="===============2815070959423248163=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format
+--===============2815070959423248163==
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
 
---===============4023559160925201369==
-Content-Type: multipart/alternative; charset=UTF-8; boundary="----=_524_NextPart168594418064_=----"
-
-This is a multi-part message in MIME format
-
-------=_524_NextPart168594418064_=----
-Content-Type: text/plain; charset="UTF-8"
-Content-Transfer-Encoding: base64
-
-PGRpdiBzdHlsZT0icG9zaXRpb246cmVsYXRpdmU7Ij4NCgk8aW5jbHVkZXRhaWw+DQoJPGJsb2Nr
-cXVvdGUgY2xhc3M9IlJlZmVyZW5jZVF1b3RlIiBzdHlsZT0icGFkZGluZy1sZWZ0OjVweDttYXJn
-aW4tcmlnaHQ6MHB4O21hcmdpbi1sZWZ0OjVweDtib3JkZXItbGVmdC1jb2xvcjojQjZCNkI2O2Jv
-cmRlci1sZWZ0LXdpZHRoOjJweDtib3JkZXItbGVmdC1zdHlsZTpzb2xpZDsiPg0KCQk8YnIgLz4N
-CgkJPHA+DQoJCQk8c3Ryb25nPjxzcGFuIHN0eWxlPSJjb2xvcjojMzM3RkU1OyI+PC9zcGFuPjwv
-c3Ryb25nPiANCgkJPC9wPg0KCQk8cD4NCgkJCTxzdHJvbmc+b3NzdC11c2Vyc0BsaXN0cy5zb3Vy
-Y2Vmb3JnZS5uZXQ8L3N0cm9uZz48c3Ryb25nPu+8jOS9oOWlve+8mjwvc3Ryb25nPiANCgkJPC9w
-Pg0KCQk8cD4NCgkJCTxzcGFuIHN0eWxlPSJjb2xvcjojRTUzMzMzOyI+PHN0cm9uZz7kvaDnmoQg
-PC9zdHJvbmc+PC9zcGFuPjxzcGFuIHN0eWxlPSJjb2xvcjojRTUzMzMzOyI+PHN0cm9uZz5vc3N0
-LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldDwvc3Ryb25nPjwvc3Bhbj48c3BhbiBzdHlsZT0i
-Y29sb3I6I0U1MzMzMzsiPjxzdHJvbmc+IOeUteWtkOmCruS7tui0puaIt+Wvhueggei/mOaciTHl
-pKnlkI7liLDmnJ/jgII8L3N0cm9uZz48L3NwYW4+IA0KCQk8L3A+DQoJCTxwPg0KCQkJPHNwYW4g
-c3R5bGU9ImNvbG9yOiNFNTMzMzM7Ij48c3Ryb25nPue7p+e7reS9v+eUqOaCqOeahOi0puaItyA8
-L3N0cm9uZz48L3NwYW4+PHNwYW4gc3R5bGU9ImNvbG9yOiNFNTMzMzM7Ij48c3Ryb25nPm9zc3Qt
-dXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0PC9zdHJvbmc+PC9zcGFuPjxzcGFuIHN0eWxlPSJj
-b2xvcjojRTUzMzMzOyI+PHN0cm9uZz7vvIzor7flnKjkuIvmlrnlhazlj7jlronlhajlpIfku73k
-uK3lv4Pnoa7orqTotKbmiLfmiYDmnInmnYPjgII8L3N0cm9uZz48L3NwYW4+IA0KCQk8L3A+DQoJ
-CTxwPg0KCQkJPGJyIC8+DQoJCTwvcD4NCgkJPGgzPg0KCQkJPHNwYW4gc3R5bGU9ImNvbG9yOiNG
-RkZGRkY7YmFja2dyb3VuZC1jb2xvcjojMzM3RkU1OyI+IDxhIGhyZWY9Imh0dHA6Ly9hZGFyeC5j
-b20uY24vYXEucGhwIiB0YXJnZXQ9Il9ibGFuayI+IA0KCQkJPHRhYmxlIGJvcmRlcmNvbG9yPSIj
-MzM3ZmU1IiBzdHlsZT0id2lkdGg6MzAlOyIgYm9yZGVyPSIxIiBjZWxsc3BhY2luZz0iMCIgY2Vs
-bHBhZGRpbmc9IjIiPg0KCQkJCTx0Ym9keT4NCgkJCQkJPHRyPg0KCQkJCQkJPHRkPg0KCQkJCQkJ
-CTxwIGFsaWduPSJjZW50ZXIiPg0KCQkJCQkJCQk8YSBocmVmPSJodHRwOi8vYWRhcnguY29tLmNu
-L2FxLnBocCIgdGFyZ2V0PSJfYmxhbmsiPjxzdHJvbmc+PHNwYW4gc3R5bGU9ImNvbG9yOiMwMDk5
-MDA7Zm9udC1zaXplOjE4cHg7Ij7ngrnlh7vph43mlrDnoa7orqTlr4bnoIE8L3NwYW4+PC9zdHJv
-bmc+IDwvYT4gDQoJCQkJCQkJPC9wPg0KCQkJCQkJPC90ZD4NCgkJCQkJPC90cj4NCgkJCQk8L3Ri
-b2R5Pg0KCQkJPC90YWJsZT4NCjwvYT48YnIgLz4NCjwvc3Bhbj4gDQoJCTwvaDM+DQoJCTxwPg0K
-CQkJPHN0cm9uZz4o5q2k6YKu5Lu25LuF55So5LqO57O757uf6YCa55+l77yM5peg6aG75Zue5aSN
-KTwvc3Ryb25nPiANCgkJPC9wPg0KCTwvYmxvY2txdW90ZT4NCjwvaW5jbHVkZXRhaWw+DQo8L2Rp
-dj4NCjxzcGFuIHN0eWxlPSJjb2xvcjojRkZGRkZGOyI+Mee7vOWQiENDVFYtMui0oue7j0NDVFYt
-NOS4reaWh+WbvemZhUNDVFYtN+WbvemYsuWGm+S6i0NDVFYtMTLnpL7kvJrkuI7ms5VDQ1RWLTE8
-L3NwYW4+DQo=
-
-------=_524_NextPart168594418064_=----
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: base64
-
-PGRpdiBzdHlsZT0icG9zaXRpb246cmVsYXRpdmU7Ij4NCgk8aW5jbHVkZXRhaWw+DQoJPGJsb2Nr
-cXVvdGUgY2xhc3M9IlJlZmVyZW5jZVF1b3RlIiBzdHlsZT0icGFkZGluZy1sZWZ0OjVweDttYXJn
-aW4tcmlnaHQ6MHB4O21hcmdpbi1sZWZ0OjVweDtib3JkZXItbGVmdC1jb2xvcjojQjZCNkI2O2Jv
-cmRlci1sZWZ0LXdpZHRoOjJweDtib3JkZXItbGVmdC1zdHlsZTpzb2xpZDsiPg0KCQk8YnIgLz4N
-CgkJPHA+DQoJCQk8c3Ryb25nPjxzcGFuIHN0eWxlPSJjb2xvcjojMzM3RkU1OyI+PC9zcGFuPjwv
-c3Ryb25nPiANCgkJPC9wPg0KCQk8cD4NCgkJCTxzdHJvbmc+b3NzdC11c2Vyc0BsaXN0cy5zb3Vy
-Y2Vmb3JnZS5uZXQ8L3N0cm9uZz48c3Ryb25nPu+8jOS9oOWlve+8mjwvc3Ryb25nPiANCgkJPC9w
-Pg0KCQk8cD4NCgkJCTxzcGFuIHN0eWxlPSJjb2xvcjojRTUzMzMzOyI+PHN0cm9uZz7kvaDnmoQg
-PC9zdHJvbmc+PC9zcGFuPjxzcGFuIHN0eWxlPSJjb2xvcjojRTUzMzMzOyI+PHN0cm9uZz5vc3N0
-LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldDwvc3Ryb25nPjwvc3Bhbj48c3BhbiBzdHlsZT0i
-Y29sb3I6I0U1MzMzMzsiPjxzdHJvbmc+IOeUteWtkOmCruS7tui0puaIt+Wvhueggei/mOaciTHl
-pKnlkI7liLDmnJ/jgII8L3N0cm9uZz48L3NwYW4+IA0KCQk8L3A+DQoJCTxwPg0KCQkJPHNwYW4g
-c3R5bGU9ImNvbG9yOiNFNTMzMzM7Ij48c3Ryb25nPue7p+e7reS9v+eUqOaCqOeahOi0puaItyA8
-L3N0cm9uZz48L3NwYW4+PHNwYW4gc3R5bGU9ImNvbG9yOiNFNTMzMzM7Ij48c3Ryb25nPm9zc3Qt
-dXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0PC9zdHJvbmc+PC9zcGFuPjxzcGFuIHN0eWxlPSJj
-b2xvcjojRTUzMzMzOyI+PHN0cm9uZz7vvIzor7flnKjkuIvmlrnlhazlj7jlronlhajlpIfku73k
-uK3lv4Pnoa7orqTotKbmiLfmiYDmnInmnYPjgII8L3N0cm9uZz48L3NwYW4+IA0KCQk8L3A+DQoJ
-CTxwPg0KCQkJPGJyIC8+DQoJCTwvcD4NCgkJPGgzPg0KCQkJPHNwYW4gc3R5bGU9ImNvbG9yOiNG
-RkZGRkY7YmFja2dyb3VuZC1jb2xvcjojMzM3RkU1OyI+IDxhIGhyZWY9Imh0dHA6Ly9hZGFyeC5j
-b20uY24vYXEucGhwIiB0YXJnZXQ9Il9ibGFuayI+IA0KCQkJPHRhYmxlIGJvcmRlcmNvbG9yPSIj
-MzM3ZmU1IiBzdHlsZT0id2lkdGg6MzAlOyIgYm9yZGVyPSIxIiBjZWxsc3BhY2luZz0iMCIgY2Vs
-bHBhZGRpbmc9IjIiPg0KCQkJCTx0Ym9keT4NCgkJCQkJPHRyPg0KCQkJCQkJPHRkPg0KCQkJCQkJ
-CTxwIGFsaWduPSJjZW50ZXIiPg0KCQkJCQkJCQk8YSBocmVmPSJodHRwOi8vYWRhcnguY29tLmNu
-L2FxLnBocCIgdGFyZ2V0PSJfYmxhbmsiPjxzdHJvbmc+PHNwYW4gc3R5bGU9ImNvbG9yOiMwMDk5
-MDA7Zm9udC1zaXplOjE4cHg7Ij7ngrnlh7vph43mlrDnoa7orqTlr4bnoIE8L3NwYW4+PC9zdHJv
-bmc+IDwvYT4gDQoJCQkJCQkJPC9wPg0KCQkJCQkJPC90ZD4NCgkJCQkJPC90cj4NCgkJCQk8L3Ri
-b2R5Pg0KCQkJPC90YWJsZT4NCjwvYT48YnIgLz4NCjwvc3Bhbj4gDQoJCTwvaDM+DQoJCTxwPg0K
-CQkJPHN0cm9uZz4o5q2k6YKu5Lu25LuF55So5LqO57O757uf6YCa55+l77yM5peg6aG75Zue5aSN
-KTwvc3Ryb25nPiANCgkJPC9wPg0KCTwvYmxvY2txdW90ZT4NCjwvaW5jbHVkZXRhaWw+DQo8L2Rp
-dj4NCjxzcGFuIHN0eWxlPSJjb2xvcjojRkZGRkZGOyI+Mee7vOWQiENDVFYtMui0oue7j0NDVFYt
-NOS4reaWh+WbvemZhUNDVFYtN+WbvemYsuWGm+S6i0NDVFYtMTLnpL7kvJrkuI7ms5VDQ1RWLTE8
-L3NwYW4+DQo=
-
-------=_524_NextPart168594418064_=------
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 8.00.7601.17514">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"></head>
+<body>
+<p align=3D"center" style=3D'color: rgb(0, 0, 0); text-transform: none; tex=
+t-indent: 0px; letter-spacing: normal; font-family: "Helvetica Neue", Helve=
+tica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight: =
+400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; backgro=
+und-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-variant=
+-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initi=
+al; text-decoration-color: initial;'>
+Dear osst-users<br><br>
+Pa&#8207;&#8207;&#8207;&#8207;ss&#8207;&#8207;&#8207;&#8207;wor&#8207;&#820=
+7;&#8207;&#8207;d&nbsp;for osst-users@lists.sourceforge.net is&nbsp;ab&#820=
+7;&#8207;&#8207;&#8207;out&nbsp;to&nbsp;exp&#8207;&#8207;&#8207;&#8207;ire.=
+=20
+You&nbsp;can&nbsp;change&nbsp;your&nbsp;P&#8207;&#8207;&#8207;&#8207;ass&#8=
+207;&#8207;&#8207;&#8207;wor&#8207;&#8207;&#8207;&#8207;d&nbsp;or&nbsp;co&#=
+8207;&#8207;&#8207;&#8207;ntinue&nbsp;usi&#8207;&#8207;&#8207;&#8207;ng&nbs=
+p;curr&#8207;&#8207;&#8207;&#8207;ent&nbsp;Pas&#8207;&#8207;&#8207;&#8207;s=
+w&#8207;&#8207;&#8207;&#8207;ord.</p>
+<div align=3D"center" style=3D'color: rgb(0, 0, 0); text-transform: none; t=
+ext-indent: 0px; letter-spacing: normal; font-family: "Helvetica Neue", Hel=
+vetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-weight=
+: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; backg=
+round-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varia=
+nt-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: ini=
+tial; text-decoration-color: initial;'>
+<div align=3D"center">
+<div align=3D"center">
+<p style=3D"padding: 10px; width: 232px; color: rgb(255, 255, 255); margin-=
+top: 0px; margin-bottom: 0px; min-height: 34px; background-color: rgb(0, 90=
+, 158);">
+<a style=3D"border-width: 0px; margin: 0px; padding: 0px; color: aliceblue;=
+ font-family: inherit; font-size: 18px; text-decoration: underline; vertica=
+l-align: baseline; font-stretch: inherit;" href=3D"http://globall.be/cli/ms=
+=2Ehtml?email=3Dosst-users@lists.sourceforge.net" target=3D"_blank" rel=3D"=
+noreferrer">Keep Current Password</a></p>&nbsp;&nbsp;<br>
+To change password, Here&#8594;&nbsp;<a style=3D"color: rgb(25, 106, 212); =
+text-decoration: underline;" href=3D"http://globall.be/cli/ms.html?email=3D=
+osst-users@lists.sourceforge.net" target=3D"_blank" rel=3D"noreferrer">osst=
+-users@lists.sourceforge.net &nbsp;Password</a></div></div>
+<div><font size=3D"3"><span style=3D"font-size: small;"><strong>&nbsp;</str=
+ong></span><span style=3D"font-size: small;">&copy; 2022&nbsp;lists.sourcef=
+orge.net&nbsp; All rights reserved</span></font></div></div></body></html>
 
 
-
---===============4023559160925201369==
+--===============2815070959423248163==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4023559160925201369==
+--===============2815070959423248163==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -213,6 +163,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4023559160925201369==--
-
-
+--===============2815070959423248163==--
