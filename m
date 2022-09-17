@@ -2,51 +2,51 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 423665BB7F4
-	for <lists+osst-users@lfdr.de>; Sat, 17 Sep 2022 13:16:33 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 1D8105BB880
+	for <lists+osst-users@lfdr.de>; Sat, 17 Sep 2022 15:28:49 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1oZVoF-0006pC-B2
+	id 1oZXs2-0004EL-NX
 	for lists+osst-users@lfdr.de;
-	Sat, 17 Sep 2022 11:16:31 +0000
+	Sat, 17 Sep 2022 13:28:47 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
  (envelope-from <www-data@dinhsw2.mottstedx.space>)
- id 1oZVny-0006oz-DN for osst-users@lists.sourceforge.net;
- Sat, 17 Sep 2022 11:16:14 +0000
+ id 1oZXs1-0004EB-0t for osst-users@lists.sourceforge.net;
+ Sat, 17 Sep 2022 13:28:45 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Subject:Date:Message-Id:From:Content-type:
  MIME-Version:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Nm6c9PDzw4mYKeELkHqO2FC++hWVU4bnqFPmH7uRh0Y=; b=CHhzddy1bAziz8PedCeDCVc5v2
- hZToXsAzb8x+w+YqO6TzWavfRDRZi6qLecZYUlriv8xKUzGPsCwfiCcjD+29N0G3v1XEp1Y8VFZJM
- g8xBB08E03TURumasVFTY0LKjSn52+1nN+cmDNTt/JmsGW6jLKMD2RpNe22KsiS6s0T0=;
+ bh=X21Ye5K3Db3+QOq3XLZ19lYXjaZJwmTazOBeGJlcfKo=; b=QS/GEyYGsWKBLsi8C0YTWLdQdV
+ QKCwJVKK2b1W6AG4qkeAzTF+MHpT+rlQJy2ht6Z7GacEPRlfJOSoM2t96nVJXELOvF3azKOZj2U3/
+ rOEdBJUe1xb9vBUIF9DUOS2gGXKcsKtM25kHbcqpMEtCqY4Ji5Kfb39mj31YXWvMmgUY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Subject:Date:Message-Id:From:Content-type:MIME-Version:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Nm6c9PDzw4mYKeELkHqO2FC++hWVU4bnqFPmH7uRh0Y=; b=H
- Cv+4cRN8Tm3TTajQW9xwGyo6bV2f4AClr11w+CJWSygDGQc3eUimIMGrPYiusB7N5dUJIMPf65SvQ
- Uptbl4Hw8ksy1GI0sCASKXKO9PO/UyNTryycGBsPn3QiCMHNK/ugNxoTIxZEWwHFlqjADn5wj5+Zh
- AmBAlWZw07800trM=;
+ List-Owner:List-Archive; bh=X21Ye5K3Db3+QOq3XLZ19lYXjaZJwmTazOBeGJlcfKo=; b=P
+ 11eTA/0y8ShkFafQRz2i4kscvcUELnbD45KUgUdNQl9Nd/QykdpYd9L/gG1yrEmjG2AsMNgO6iOnp
+ Rc6rKYW8IUibvuSs5XGIMROAzFGRURanzrEz1vYcUI/BljBBcTg2cIo1L+fSle5cxUFUS54ZvoSTX
+ qBN3KKFu8kD+kVF0=;
 Received: from dinhsw2.mottstedx.space ([94.101.178.202])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1oZVnu-0002E2-A7 for osst-users@lists.sourceforge.net;
- Sat, 17 Sep 2022 11:16:14 +0000
+ id 1oZXsB-0007mU-Ga for osst-users@lists.sourceforge.net;
+ Sat, 17 Sep 2022 13:28:44 +0000
 Received: by dinhsw2.mottstedx.space (Postfix, from userid 33)
- id 36ADB8CA13; Sat, 17 Sep 2022 10:12:05 +0000 (UTC)
+ id DFA1F916BE; Sat, 17 Sep 2022 12:31:44 +0000 (UTC)
 To: osst-users@lists.sourceforge.net
 MIME-Version: 1.0
-From: Magalu Recomenda <emailcenter38@dinhsw2.mottstedx.space>
-Message-Id: <20220917101205.36ADB8CA13@dinhsw2.mottstedx.space>
-Date: Sat, 17 Sep 2022 10:12:05 +0000 (UTC)
+From: Magalu <personalizado@dinhsw2.mottstedx.space>
+Message-Id: <20220917123144.DFA1F916BE@dinhsw2.mottstedx.space>
+Date: Sat, 17 Sep 2022 12:31:44 +0000 (UTC)
 X-Spam-Score: 8.5 (++++++++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
@@ -68,9 +68,9 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
                              [URIs: webhop.me]
-  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [94.101.178.202 listed in zen.spamhaus.org]
   3.6 RCVD_IN_PBL            RBL: Received via a relay in Spamhaus PBL
+                             [94.101.178.202 listed in zen.spamhaus.org]
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
   1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
                              https://senderscore.org/blocklistlookup/
                             [94.101.178.202 listed in bl.score.senderscore.com]
@@ -81,9 +81,9 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
   0.0 LOTS_OF_MONEY          Huge... sums of money
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1oZVnu-0002E2-A7
+X-Headers-End: 1oZXsB-0007mU-Ga
 Subject: [Osst-users] [SPAM] Smart TV 43" UHD 4K R$ 949,
- 90 - Black Oferta Magalu - [ 610307058382  ]
+ 90 - Black Oferta Magalu - [ 750270924484  ]
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -95,10 +95,10 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============7698458653250434487=="
+Content-Type: multipart/mixed; boundary="===============0189248270143377675=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============7698458653250434487==
+--===============0189248270143377675==
 Content-type: text/html; charset=iso-8859-1
 
 <!DOCTYPE html>
@@ -400,17 +400,17 @@ Content-type: text/html; charset=iso-8859-1
             </tr>
          </tbody>
       </table>
-   </body>17/09/2022 10:12:05
+   </body>17/09/2022 12:31:44
 
 
---===============7698458653250434487==
+--===============0189248270143377675==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7698458653250434487==
+--===============0189248270143377675==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -421,4 +421,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7698458653250434487==--
+--===============0189248270143377675==--
