@@ -2,82 +2,87 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 83EA7605C34
-	for <lists+osst-users@lfdr.de>; Thu, 20 Oct 2022 12:24:00 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id C738E606182
+	for <lists+osst-users@lfdr.de>; Thu, 20 Oct 2022 15:24:21 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1olSiV-0005zO-9Y
+	id 1olVX2-0002aT-He
 	for lists+osst-users@lfdr.de;
-	Thu, 20 Oct 2022 10:23:59 +0000
+	Thu, 20 Oct 2022 13:24:20 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <blisstageadmin@sz0032.gcd-s.net>) id 1olSiS-0005zD-3U
- for osst-users@lists.sourceforge.net; Thu, 20 Oct 2022 10:23:56 +0000
+ (envelope-from <infos@agasido.fr>) id 1olVWz-0002aF-RZ
+ for osst-users@lists.sourceforge.net; Thu, 20 Oct 2022 13:24:17 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Reply-To:From:Date:Subject:To:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=MeoxH/NuYjH2M8ioKiVA0Wp6JeOHfHGaQjo5vVHKHmM=; b=iO985GIeBiW8+mqW3G7FVr+MWc
- nR3k9E5B3EbGCAmQXTOL0qS1aEHycf3ooghUquqVqxVoj67NF2YNyY3dzLPWxbQR6M++Gi7SmP9Ju
- LBD/Q14B1YLYZjEeX9NAzQzGk4tLEH0542vSvjLpSTc0c8F8nYCTWO6c2L4imvo+t070=;
+ d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
+ Mime-Version:List-Unsubscribe:Message-ID:Reply-To:From:To:Date:Sender:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=OeKxhDJ7cyC7rrSeAj7fBS6wg2M1OIli3SF1W0N4uGI=; b=nCwyuXiqJc9/iBrki+9KJ4a2yX
+ x4SNkgtFpNq9rG5Ob8ppva0FStUFrIggTxNZ4VCrFW8fvYahnMRu0rgwGW1W7+H+jAmxH1BxQ/nst
+ Wssy8OiXyZ8WI9JfGfPtxwITdRYDN9v8ugQkY5y/sj3TKLj8aZcP9B3cWjWUHikGCJEk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Reply-To:
- From:Date:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=MeoxH/NuYjH2M8ioKiVA0Wp6JeOHfHGaQjo5vVHKHmM=; b=F
- 4IPkFiChm6Xi7tway3sZIqj6UkNFBn4kVgoEzmjQxfy6jEkJRw/sHaJUgH6Gl2O3S9WmAOeQwMc9Y
- InIpGFbPaw7fz0KlJyHe8q5mCqjnSVDOHHTJxmTmVcIm8y9Nh9npjzUd1Vvl+NzPd5HpMX0l6STBy
- 3q0w0Oko6ByAjJM0=;
-Received: from sz0032.gcd-s.net ([218.223.84.199])
+ h=Subject:Content-Transfer-Encoding:Content-Type:Mime-Version:
+ List-Unsubscribe:Message-ID:Reply-To:From:To:Date:Sender:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=OeKxhDJ7cyC7rrSeAj7fBS6wg2M1OIli3SF1W0N4uGI=; b=U1hQtWCi+F5Wd7WjdTAy1jKMyZ
+ 0m63aM7X/L9jVlOr7uZwMHYUepH15EFp9mtZaEixRdDV7b5s5bikhxbwKxEdiQVCQdgBm8ld/HUL6
+ 4dltBDtE7EX9cTOqXuSKOtq3Sf0TmtOzoHshj85UbYAa22aQUAlN28oR4y350UCccbH8=;
+Received: from smtp.agasido.fr ([5.196.106.63])
  by sfi-mx-1.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1olSiR-00AmSQ-9j for osst-users@lists.sourceforge.net;
- Thu, 20 Oct 2022 10:23:56 +0000
-Received: by sz0032.gcd-s.net (Postfix, from userid 10005)
- id 8B21BE858519; Thu, 20 Oct 2022 19:16:13 +0900 (JST)
+ id 1olVWx-00AvV7-MK for osst-users@lists.sourceforge.net;
+ Thu, 20 Oct 2022 13:24:17 +0000
+Date: Thu, 20 Oct 2022 15:24:07 +0200
 To: osst-users@lists.sourceforge.net
-Date: Thu, 20 Oct 2022 10:16:13 +0000
-From: Lists <blisstageadmin@sz0032.gcd-s.net>
-Message-ID: <eacd82d5ec2e144d698c2000c4ffde1f@www.blisstage.jp>
-MIME-Version: 1.0
-X-Spam-Score: 3.0 (+++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has NOT identified this incoming email as spam.  The original
+Message-ID: <1666272247.dcb55a989d702d68094f6f66679cc79e@agasido.fr>
+X-Priority: 3
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Mime-Version: 1.0
+X-Spam-Score: 8.3 (++++++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: Security risk for your email osst-users@lists.sourceforge.net
- Due to the latest email data breach on our server it is mandatory that all
- users must re-confirm their email accounts or we will suspend unconfirmed
- users, we are sending this notice to all Email Admi [...] 
- Content analysis details:   (3.0 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  R&amp;D TAX CREDITS The average R&amp;D Tax Credit claim paid
+    out by the HMRC to businesses is £54k Check to see if you qualify if you&quot;ve
+    been developing new goods, processes, systems, or accomp [...] 
+ 
+ Content analysis details:   (8.3 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
- blocked.  See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: bubbleapps.io]
- 1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [218.223.84.199 listed in dnsbl-1.uceprotect.net]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
- 0.0 TVD_PH_BODY_ACCOUNTS_PRE The body matches phrases such as
- "accounts suspended", "account credited", "account verification"
- 0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
- Colors in HTML
-X-Headers-End: 1olSiR-00AmSQ-9j
-Subject: [Osst-users] Your email address will be suspended! Please confirm
- your email
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: hosting.ovh.net]
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+                             [5.196.106.63 listed in zen.spamhaus.org]
+  2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+                             [5.196.106.63 listed in psbl.surriel.com]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+                             [5.196.106.63 listed in wl.mailspike.net]
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 T_SPF_PERMERROR        SPF: test of record failed (permerror)
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+  0.0 T_REMOTE_IMAGE         Message contains an external image
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1olVWx-00AvV7-MK
+Subject: [Osst-users] [SPAM] Check your eligibility
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -89,93 +94,308 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: info@kenilshah.com
-Content-Type: multipart/mixed; boundary="===============4262353751952318364=="
+From: R&D tax credits via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: infos@agasido.fr
+Content-Type: multipart/mixed; boundary="===============6052018528419396550=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
-
---===============4262353751952318364==
+--===============6052018528419396550==
 Content-Type: multipart/alternative;
-	boundary="b1_eacd82d5ec2e144d698c2000c4ffde1f"
+	boundary="b1_d1c51c6f6de00a915405d639e7e1e534"
 Content-Transfer-Encoding: 8bit
 
-This is a multi-part message in MIME format.
+--b1_d1c51c6f6de00a915405d639e7e1e534
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
 
---b1_eacd82d5ec2e144d698c2000c4ffde1f
-Content-Type: text/plain; charset=us-ascii
+R&amp;D TAX CREDITS
+The average R&amp;D Tax Credit
+claim paid out by the HMRC
+to businesses is £54k
+Check to see if you qualify if you&quot;ve been developing new goods, processes, systems, or accomplishing any work with a degree of uncertainty. This tax credit is available to businesses in any industry, and it is currently the HMRC&quot;s most underutilised tax credit.
+
+Qualifying projects range from the adaptation of technology from one industry for use in an industry for which it was not meant to manufacturing enhancements to create a higher qualit product faster.
+
+We&quot;ve developed a tool that allows you to verify online if you qualify for R&amp;D Tax Credits based on our 12 years of experience in this industry.
+
+Check if you Qualify
+What are R&amp;D tax credits?
+Research and Development (R&amp;D) tax credits are an incentive to reward companies engaged in innovation. A UK tax relief, R&amp;D tax credits can provide valuable funding for any company spending money on developing new products and process or improving existing ones. This relief can give your business the opportunity to claim back a proportion of your R&amp;D expenditure as tax credits, which can reduce your tax bill or increase taxable losses. No matter the sector, if you&quot;re spending money on research and development, then you could be eligible to claim R&amp;D tax credits.
+
+Check your eligibility for
+R&amp;D tax credits
+Do the following apply to your business?
+
+Are you spending money on developing new processes, products or services?
+
+Were those projects started in the last 2-3 years?
+
+Do you employ staff across a variety of roles who work on projects that advance knowledge, and clarify uncertainty?
+Advice
+We can help determine
+
+if you&quot;re eligible for
+
+R&amp;D tax credit
+
+Get in touch today!
 
 
 
+Check if you Qualify
 
 
 
-
-Security risk for your email
-
-
-
+This e-mail is brought to you by an independent e-mail marketing company.
+Follow this link to stop receiving these e-mails.
+You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
 
 
-osst-users@lists.sourceforge.net
-
-Due to the latest email data breach on our server it is mandatory that all users must re-confirm their email accounts or we will suspend unconfirmed users, we are sending this notice to all Email Administrator users, in order to filter real and active accounts.
-In order to avoid your osst-users@lists.sourceforge.net
-
-
-address from being suspended,please confirm you are still using your account:
-
-Confirm osst-users@lists.sourceforge.net
-
-
-By logging in you are confirming that you are still using our services and that the person registered is the person using them.
-
-
---b1_eacd82d5ec2e144d698c2000c4ffde1f
+--b1_d1c51c6f6de00a915405d639e7e1e534
 Content-Type: text/html; charset=us-ascii
 
-<HTML><HEAD>
-<META name=GENERATOR content="MSHTML 11.00.10570.1001"></HEAD>
-<BODY>
-<DIV style="FONT-SIZE: small; BORDER-TOP: rgb(218,220,224) thin solid; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT: rgb(218,220,224) thin solid; VERTICAL-ALIGN: baseline; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(218,220,224) thin solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 40px; FONT-STYLE: normal; PADDING-TOP: 40px; PADDING-LEFT: 20px; BORDER-LEFT: rgb(218,220,224) thin solid; ORPHANS: 2; WIDOWS: 2; 
-MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 20px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; border-radius: 8px" align=center>
-<DIV aria-hidden=true style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px"></DIV>
-<DIV style='BORDER-LEFT-WIDTH: 0px; FONT-FAMILY: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: thin; COLOR: ; PADDING-BOTTOM: 24px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; font-stretch: inherit; border-image: initial'>
-<DIV style="FONT-SIZE: 24px; BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit">Security risk for your email</DIV>
-<TABLE style="MARGIN-TOP: 8px" align=center>
-<TBODY>
-<TR style="LINE-HEIGHT: normal">
-<TD style="FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; WHITE-SPACE: normal !important; MARGIN: 0px; PADDING-RIGHT: 8px" align=right>
-<IMG class=x_x_CToWUd style="BORDER-TOP: 0px; HEIGHT: 20px; BORDER-RIGHT: 0px; WIDTH: 20px; VERTICAL-ALIGN: sub; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; border-radius: 50%" width=20 height=20 blockedimagesrc="https://www.gstatic.com/accountalerts/email/anonymous_profile_photo.png" data-imagetype="External"></TD>
-<TD style="FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; WHITE-SPACE: normal !important; MARGIN: 0px"><A style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" rel="noopener noreferrer" target=_blank data-linkindex="0" data-auth="NotApplicable">osst-users@lists.sourceforge.net</A></TD></TR></TBODY></TABLE></DIV>
-<DIV style="FONT-SIZE: 14px; BORDER-TOP: 0px; FONT-FAMILY: Roboto-Regular, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px; font-stretch: inherit">
-<P style="TEXT-ALIGN: left"><FONT size=3>Due to the latest email data breach on our server it is mandatory that all users must re-confirm their email accounts or we will suspend unconfirmed users, we are sending this notice to all Email Administrator users, in order to filter real and active accounts.</FONT></P>
-<P style="TEXT-ALIGN: left"><FONT size=1><STRONG><FONT size=2>In order to avoid your</FONT></STRONG></FONT><A style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" rel="noopener noreferrer" target=_blank data-linkindex="1" data-auth="NotApplicable"><SPAN></SPAN><FONT size=1><STRONG> osst-users@lists.sourceforge.net</STRONG></FONT></A><FONT size=1><STRONG>
-<SPAN></SPAN><SPAN style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255)">
-<SPAN class=x_font style="BORDER-TOP: 0px; FONT-FAMILY: Roboto-Regular, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit">
-<SPAN class=x_size style="FONT-SIZE: 14px; BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit"><FONT size=2>address from being suspended</FONT>,</SPAN></SPAN></SPAN><FONT size=2>please confirm you are still using your account</FONT><SPAN></SPAN>:</STRONG></FONT></P>
-<DIV style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 32px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
-<A style='BORDER-TOP: 0px; FONT-FAMILY: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; MIN-WIDTH: 90px; BORDER-BOTTOM: 0px; COLOR: rgb(255,255,255) !important; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 24px; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: inline-block; LINE-HEIGHT: 16px; PADDING-RIGHT: 24px; BACKGROUND-COLOR: rgb(65,132,243); font-stretch: inherit; border-radius: 5px; text-decoration-line: none' 
-href="http://onmybvg.bubbleapps.io/version-test#osst-users@lists.sourceforge.net" rel="noopener noreferrer" target=_blank data-linkindex="2" data-auth="NotApplicable">Confirm osst-users@lists.sourceforge.net</A></DIV></DIV></DIV>
-<DIV style="FONT-SIZE: small; BORDER-TOP: 0px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); 
-TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit">
-<DIV style="FONT-SIZE: 11px; BORDER-TOP: 0px; FONT-FAMILY: Roboto-Regular, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 12px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px; font-stretch: inherit">
-<DIV style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">By logging in you are confirming that you are still using our services and that the person registered is the person using them.</DIV></DIV></DIV></BODY></HTML>
+<!DOCTYPE html>
+			                   <html>
+				               	<head>
+					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				                </head>
+				                <body>
+					            	<head>
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+    
+  <style type="text/css">
+
+    body{
+      font-family:"Raleway",sans-serif;
+      background:#ffffff;
+    }
+
+    td.image{
+      text-align:center;
+    }
+    td.skyb{
+      background:#E5F5FF;
+    }
+    td.bluebg{
+      font-size:10px;
+    }
+    .bluetxt{
+      color:#002f4f;
+    }
+    .fnt10{
+      font-size:13px;
+    }
+    li{
+      padding-bottom:10px;
+    }
 
 
 
---b1_eacd82d5ec2e144d698c2000c4ffde1f--
+</style></head>
+  <body>                                  
+   <table style="background:#ecf8ff; padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; "  ><tr><td style="padding:0px; width:620px;" >
+    <table  style="background:url(&#039;http://srvttam.cluster029.hosting.ovh.net/spencer/top_back.jpg&#039;); width:620px; background-repeat: no-repeat; padding:0px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%; height:149px;" border="0" cellspacing="5" cellpadding="0">
+      <tr>
+        <td align="center" colspan="2" style="padding-bottom:10px;padding-top:80px;"><a href="http://srvttam.cluster029.hosting.ovh.net/spencer/serva/"><img src="http://srvttam.cluster029.hosting.ovh.net/spencer/logo.png" alt=""></a>
+        </td>
+      </tr>
+      
+      <tr>
+        <td align="center" colspan="2"style="padding:0px 140px;">
+          <h1 style="font-size:65px;font-weight:800; line-height:57px; color:#0c8fe3;padding-top:10px;padding-bottom:10px; margin:0;">R&D <span style="font-weight:normal;">TAX CREDITS</span></h1>
+          <h1 style="font-size:22px;margin:0px;color:#ffffff; margin:5px;">The average R&D Tax Credit </h1>
+          <h1 style="font-size:22px;margin:0px;color:#ffffff; margin:5px;">claim paid out by the HMRC </h1>
+          <h1 style="font-size:22px;margin:0px;color:#ffffff; margin:5px;">to businesses is &#163;54k </h1>
+         
+          <p style="font-size:16px;color:#ffffff; margin:10px; text-align:left; line-height: 19px;">
+          Check to see if you qualify if you"ve been
+developing new goods, processes, systems,
+or accomplishing any work with a degree of
+uncertainty. This tax credit is available to
+businesses in any industry,  and it is currently
+the HMRC"s most underutilised tax credit.
+          </p>
+
+          <p style="font-size:16px;color:#ffffff; margin:10px; text-align:left; line-height: 19px;">
+          Qualifying projects range from the adaptation
+of technology from one industry for use in an
+industry for which it was not meant to
+manufacturing enhancements to create a
+higher qualit product faster.
+          </p>
+          
+ <p style="font-size:16px;color:#ffffff; margin:10px; text-align:left; line-height: 19px;">
+We"ve developed a tool that allows you to
+verify online if you qualify for R&D Tax Credits
+based on our 12 years of experience in this
+industry.         
+          </p>
+          
+          <div style="padding-top:19px; padding-bottom:40px;">
+          <a href="http://srvttam.cluster029.hosting.ovh.net/spencer/serva/" style="border-radius: 5px; font-size:16px;margin:0px;color:#ffffff; margin-top:60px;margin-bottom:60px;background:#129cf4; padding-top:10px;padding-bottom:10px;padding-left:30px;padding-right:30px; font-weight:800; text-decoration:none;" >Check if you Qualify</a>
+          </div>
+          
+                    
+       
+        </td>
+      </tr>  
+      
+   </table>   
+   <table  style="background:url(&#039;http://srvttam.cluster029.hosting.ovh.net/spencer/tax.jpg&#039;); background-repeat: no-repeat; width:620px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%" border="0" cellspacing="5" cellpadding="0">   
+      <tr>
+        <td align="center" colspan="2" style="padding-left:240px;">
+          <h1 style="font-size:20px;font-weight:800;color:#0c8fe3;padding-top:30px;padding-bottom:0px; margin:0;">What are R&D tax credits?</h1>
+          
+          
+          <p style="font-size:14px; text-align:justify; line-height:17px; padding-bottom:20px;">
+          
+Research and Development (R&D) tax credits are an incentive to     
+reward companies engaged in innovation. A UK tax relief, R&D tax
+credits can provide valuable funding for any company spending
+money on developing new products and process or improving
+existing ones. This relief can give your business the opportunity
+to claim back a proportion of your R&D expenditure as tax credits,
+which can reduce your tax bill or increase taxable losses. No
+matter the sector, if you"re spending money on research and
+development, then you could be eligible to claim R&D tax credits.
+          
+          </p>
+          
+     
+        </td>
+      </tr>  
+      
+     
+      
+   </table>   
+   
+   
+   
+   <table  style="background:#003399; width:620px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%" border="0" cellspacing="5" cellpadding="0">   
+      <tr>
+        <td align="center" colspan="2" style="padding:0 120px;" >
+          <h1 style="font-size:23px;font-weight:800;color:#ffffff;padding-top:30px;padding-bottom:0px; margin:0;">Check your eligibility for</h1>
+          
+          <h1 style="font-size:28px;font-weight:800;color:#129bf3;padding-bottom:0px; margin:0;">R&D tax credits</h1>
+          
+                           
+          <h2 style="font-size:16px;font-weight:normal;color:#ffffff; margin:15px 5px 5px 5px;">Do the following apply to your business?</h2>
+          
+          <img src="http://srvttam.cluster029.hosting.ovh.net/spencer/check.jpg">
+          
+          
+          <h2 style="font-size:16px;font-weight:normal;color:#ffffff; margin:5px;">Are you spending money on developing new processes, products or services?</h2>
+          
+          <img src="http://srvttam.cluster029.hosting.ovh.net/spencer/check.jpg">
+          
+          <h2 style="font-size:16px;font-weight:normal;color:#ffffff; margin:5px;">Were those projects started in the last 2-3 years?</h2>
+          
+          <img src="http://srvttam.cluster029.hosting.ovh.net/spencer/check.jpg">
+                    
+          <h2 style="font-size:16px;font-weight:normal;color:#ffffff; margin:5px 5px 45px 5px;">Do you employ staff across a variety of roles who work on projects that advance knowledge, and clarify uncertainty?</h2>
+          
+          
+          
+
+     
+        </td>
+      </tr>  
+      
+     
+      
+   </table>  
+   
+   
+   <table  style="background:#ffffff; width:620px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%" border="0" cellspacing="5" cellpadding="0">   
+      <tr>
+        <td align="center" colspan="2" style="padding:0 120px; " >
+          
+          <table style="background:#ffd802; padding:20px 20px; text-align:center; border-bottom-left-radius:5px; border-bottom-right-radius:5px;"><tr><td>
+          
+          <h1 style="font-size:36px;font-weight:800; text-align:center;color:#000000;padding:20px 20px 2;padding-bottom:0px; margin:0; border-bottom:3px solid #000000; ">Advice</h1>
+          
+          <p style="margin:10px 0px 5px 0px; text-align:center;">We can help determine</p>
+          
+          <p style="margin:5px 0px 5px 0px; text-align:center;">if you"re eligible for </p>
+          
+          <p style="margin:5px 0px 5px 0px; text-align:center;">R&D tax credit</p>
+          
+          <p style="margin:5px 0px 5px 0px; text-align:center;">Get in touch today!</p>
+          
+          
+          </td></tr></table>
+          
+          
+
+     
+        </td>
+      </tr>  
+      
+     
+      
+   </table>     
+   
+   
+   <table  style="background:#fff; width:620px;border-collapse:collapse;border-spacing:0px;max-width:620px; width:100%" border="0" cellspacing="5" cellpadding="0">   
+      <tr>
+        <td align="center" colspan="2" style="padding:0" >
+          
+          
+                <br />
+              <img src="http://srvttam.cluster029.hosting.ovh.net/spencer/howmuch.jpg">
+                 <br />  
+          
+          <div style="padding-top:19px; padding-bottom:30px;">
+          <a href="http://srvttam.cluster029.hosting.ovh.net/spencer/serva/" style="border-radius: 5px; font-size:16px;margin:0px;color:#ffffff; margin-top:60px;margin-bottom:60px;background:#f72a77; padding-top:10px;padding-bottom:10px;padding-left:30px;padding-right:30px; font-weight:800; text-decoration:none;" >Check if you Qualify</a>
+          </div>
+                     <br />
+
+                              
+                      <img src="http://srvttam.cluster029.hosting.ovh.net/spencer/fb.jpg"><img src="http://srvttam.cluster029.hosting.ovh.net/spencer/tw.jpg">
+                        <br /><br />
+                    <p style="font-size:12px;">
+                    This e-mail is brought to you by an independent e-mail marketing company.
+                    <br />
+
+                    <a href="http://srvttam.cluster029.hosting.ovh.net/spencer/duble/?email=Rvginm3lgiPIqLyQE9iq7VLXAM8m/Ajsfngsf7DKsyPUeQahogD03C6OiUtmPvMypgUoRcU7lnL6vAaT2gFhyKbEXb5k5CP/mw5hEsK5NmK/KBrM/fQBN62afwh54WIfavr7Pe3sP1ZtclGbLko0hC8RdeedtQ1okJuV2SiQRcs=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving these e-mails</strong>.<br>
+                    You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="http://srvttam.cluster029.hosting.ovh.net/spencer/ollu/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
+                     </p>
+
+
+          
+     
+        </td>
+      </tr>  
+      
+     
+      
+   </table>     
+      
+   
+   
+</td></tr>
+</table>
+    
+    
+    
+  </body>
+				                </body>
+			                   </html>
 
 
 
---===============4262353751952318364==
+--b1_d1c51c6f6de00a915405d639e7e1e534--
+
+
+
+--===============6052018528419396550==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4262353751952318364==
+--===============6052018528419396550==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -186,6 +406,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4262353751952318364==--
+--===============6052018528419396550==--
 
 
