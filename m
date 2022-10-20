@@ -2,95 +2,82 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 931D9601B5B
-	for <lists+osst-users@lfdr.de>; Mon, 17 Oct 2022 23:34:28 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 83EA7605C34
+	for <lists+osst-users@lfdr.de>; Thu, 20 Oct 2022 12:24:00 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1okXkh-0006Ag-BS
+	id 1olSiV-0005zO-9Y
 	for lists+osst-users@lfdr.de;
-	Mon, 17 Oct 2022 21:34:27 +0000
+	Thu, 20 Oct 2022 10:23:59 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <cnc@e1.nkemails.com>) id 1okXkf-0006AR-Ot
- for osst-users@lists.sourceforge.net; Mon, 17 Oct 2022 21:34:25 +0000
+ (envelope-from <blisstageadmin@sz0032.gcd-s.net>) id 1olSiS-0005zD-3U
+ for osst-users@lists.sourceforge.net; Thu, 20 Oct 2022 10:23:56 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:List-Unsubscribe:To:
- Sender:Reply-To:Message-Id:Subject:Date:From:Cc:Content-Transfer-Encoding:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=7lCtjUc/nz8xV7GNAo9Hg2RksyKRlM/oEI5Ca8DoEW4=; b=fXjlGgTSa6Pger4dpVBl1kcyEG
- j6OBdwrNRo315JFRbrMNa0iD3xRi0N+xkKOjH8ildJ5F1fjRTCCq0mfpjmLQH2435A3NWwTwNd6mh
- Fa+RE9ZuYB8B1ZxR/bklEyCUoY0Wab+p/fUBYGn7tgUfnGseeBUZ/yV47gprpOfi2onY=;
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Reply-To:From:Date:Subject:To:Sender:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=MeoxH/NuYjH2M8ioKiVA0Wp6JeOHfHGaQjo5vVHKHmM=; b=iO985GIeBiW8+mqW3G7FVr+MWc
+ nR3k9E5B3EbGCAmQXTOL0qS1aEHycf3ooghUquqVqxVoj67NF2YNyY3dzLPWxbQR6M++Gi7SmP9Ju
+ LBD/Q14B1YLYZjEeX9NAzQzGk4tLEH0542vSvjLpSTc0c8F8nYCTWO6c2L4imvo+t070=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:List-Unsubscribe:To:Sender:Reply-To:Message-Id:
- Subject:Date:From:Cc:Content-Transfer-Encoding:Content-ID:Content-Description
- :Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Subscribe:List-Post:List-Owner:
- List-Archive; bh=7lCtjUc/nz8xV7GNAo9Hg2RksyKRlM/oEI5Ca8DoEW4=; b=O+8kZQ7vUzTD
- JUAX7rJoxcRis+6m+yrqfT2vyxpkZk7X8XzIdTmB6w0MFyrgagg4EgQvwGSSpzSzHzz6h0peoviJh
- Csug/LU81bUFqIkcHCwoWnomIBRPnmH3OxuYyROIY8K+gZ7OFZJxkfMveSPbzqB7m9ks+AVEXK6e+
- iaARs=;
-Received: from m231.mxout.mta4.net ([67.227.85.231])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Reply-To:
+ From:Date:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=MeoxH/NuYjH2M8ioKiVA0Wp6JeOHfHGaQjo5vVHKHmM=; b=F
+ 4IPkFiChm6Xi7tway3sZIqj6UkNFBn4kVgoEzmjQxfy6jEkJRw/sHaJUgH6Gl2O3S9WmAOeQwMc9Y
+ InIpGFbPaw7fz0KlJyHe8q5mCqjnSVDOHHTJxmTmVcIm8y9Nh9npjzUd1Vvl+NzPd5HpMX0l6STBy
+ 3q0w0Oko6ByAjJM0=;
+Received: from sz0032.gcd-s.net ([218.223.84.199])
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1okXka-0003cn-Hu for osst-users@lists.sourceforge.net;
- Mon, 17 Oct 2022 21:34:25 +0000
-DKIM-Signature: v=1; a=rsa-sha256; d=e1.nkemails.com; s=api; c=relaxed/simple; 
- t=1666042453;
- h=from:date:subject:reply-to:to:list-unsubscribe:mime-version; 
- bh=7lCtjUc/nz8xV7GNAo9Hg2RksyKRlM/oEI5Ca8DoEW4=;
- b=Hl5bCreMxnHPwkaf6SWYJ1BkMHHp+XTS/HdzFuPxsccWhSu5iZzchBM8oO+s6Uu8XgXOCT2+Xtp
- 6ynDYKi/iiVXoaqhEAWCONFrqJl93hrtj0zy09wm7kW8N+4zw2jS1kbuNmQ6IomtGwFRvhxpolkse
- fO+m3BnDDpauPlCMVK0=
-DKIM-Signature: v=1; a=rsa-sha256; d=elasticemail.com; s=api;
- c=relaxed/simple; t=1666042453;
- h=from:date:subject:reply-to:to:list-unsubscribe;
- bh=7lCtjUc/nz8xV7GNAo9Hg2RksyKRlM/oEI5Ca8DoEW4=;
- b=B1RED3ZcXgtC4lRsdVEVowpBkVdpMBdji+9BnFjI5PG5v2ax33yXUEKgGbNcslq/x6apCQzCRAb
- kuj60AR6KS5aDWRkpbQT+RTRFjDKtQvVXBNmSlc7CDf+nhu7fg7eijMfzw21mSQe0dDTYPMmUZj0c
- 68Y2m5H69Y6HUlKMQMc=
-From: Lisa Yu <cnc@e1.nkemails.com>
-Date: Mon, 17 Oct 2022 21:34:13 +0000
-Message-Id: <4ui5xofgbwzj.rzPQtd2h8UBLcOTeWFsDXw2@tracking.e1.nkemails.com>
-To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-X-Msg-EID: rzPQtd2h8UBLcOTeWFsDXw2
+ id 1olSiR-00AmSQ-9j for osst-users@lists.sourceforge.net;
+ Thu, 20 Oct 2022 10:23:56 +0000
+Received: by sz0032.gcd-s.net (Postfix, from userid 10005)
+ id 8B21BE858519; Thu, 20 Oct 2022 19:16:13 +0900 (JST)
+To: osst-users@lists.sourceforge.net
+Date: Thu, 20 Oct 2022 10:16:13 +0000
+From: Lists <blisstageadmin@sz0032.gcd-s.net>
+Message-ID: <eacd82d5ec2e144d698c2000c4ffde1f@www.blisstage.jp>
 MIME-Version: 1.0
-X-Spam-Score: 5.4 (+++++)
+X-Spam-Score: 3.0 (+++)
 X-Spam-Report: Spam detection software,
  running on the system "util-spamd-2.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Dear manager, I am Lisa from XinBo Precision Co.,
- Ltd in China, 
- thank you for taking the time to read this email I writing for you. Since
- 2011, we have been providing high-precision CNC parts machinin [...] 
- Content analysis details:   (5.4 points, 6.0 required)
+ Content preview: Security risk for your email osst-users@lists.sourceforge.net
+ Due to the latest email data breach on our server it is mandatory that all
+ users must re-confirm their email accounts or we will suspend unconfirmed
+ users, we are sending this notice to all Email Admi [...] 
+ Content analysis details:   (3.0 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
- no trust [67.227.85.231 listed in list.dnswl.org]
- 1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
- [URIs: xcwms.com]
- 1.1 URIBL_GREY             Contains an URL listed in the URIBL greylist
- [URIs: elasticemail.com]
+ 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: bubbleapps.io]
+ 1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [218.223.84.199 listed in dnsbl-1.uceprotect.net]
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.7 HTML_IMAGE_ONLY_20     BODY: HTML: images with 1600-2000 bytes of
- words 0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid 2.0 PYZOR_CHECK            Listed in Pyzor
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 2.0 PYZOR_CHECK            Listed in Pyzor
  (https://pyzor.readthedocs.io/en/latest/)
-X-Headers-End: 1okXka-0003cn-Hu
-Subject: [Osst-users] High-precision CNC parts respond quickly
+ 0.0 TVD_PH_BODY_ACCOUNTS_PRE The body matches phrases such as
+ "accounts suspended", "account credited", "account verification"
+ 0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+ Colors in HTML
+X-Headers-End: 1olSiR-00AmSQ-9j
+Subject: [Osst-users] Your email address will be suspended! Please confirm
+ your email
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -102,94 +89,93 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: Lisa Yu <lisa@cncprecision-parts.cn>
-Content-Type: multipart/mixed; boundary="===============3941754871538861138=="
+Reply-To: info@kenilshah.com
+Content-Type: multipart/mixed; boundary="===============4262353751952318364=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============3941754871538861138==
+This is a multi-part message in MIME format.
+
+--===============4262353751952318364==
 Content-Type: multipart/alternative;
-	boundary="=-eZCfFnjlzzHIdc/GX+sDagb11zNExtod23WKzQ=="
+	boundary="b1_eacd82d5ec2e144d698c2000c4ffde1f"
+Content-Transfer-Encoding: 8bit
 
---=-eZCfFnjlzzHIdc/GX+sDagb11zNExtod23WKzQ==
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
+This is a multi-part message in MIME format.
 
-RGVhciBtYW5hZ2VyLApJIGFtIExpc2EgZnJvbSBYaW5CbyBQcmVjaXNpb24gQ28uLCBMdGQg
-aW4gQ2hpbmEsIHRoYW5rIHlvdSBmb3IgdGFraW5nCnRoZSB0aW1lIHRvIHJlYWQgdGhpcyBl
-bWFpbCBJIHdyaXRpbmcgZm9yIHlvdS4KU2luY2UgMjAxMSwgd2UgaGF2ZSBiZWVuIHByb3Zp
-ZGluZyBoaWdoLXByZWNpc2lvbiBDTkMgcGFydHMgbWFjaGluaW5nCnNlcnZpY2VzIGZvciBz
-b21lIGdsb2JhbCBicmFuZHMsIHN1Y2ggYXMgQ2Fub24sIFN1bWl0b21vLCBHRSwgZXRjLjsK
-Q3VzdG9tZXJzIGFyZSBub3Qgb25seSBzYXRpc2ZpZWQgd2l0aCBvdXIgQ05DIG1hY2hpbmlu
-ZyBjYXBhYmlsaXRpZXMKYnV0IGFsc28gYW1hemVkIGJ5IG91ciBxdWljayByZXNwb25zZSBz
-ZXJ2aWNlcy4gSElHSCBQUkVDSVNJT04gT0YKMC4wMDVNTTsgOCBIT1VSUyBRVUlDSyBRVU9U
-QVRJT04gUFJPQ0VTUzsgU0FNUExFUyBBUkUgQVZBSUxBQkxFIFdJVEhJTgozLTEwIERBWVM7
-IGl0IGNhbiBzaG9ydGVuIHlvdXIgcHJvamVjdCBkZXZlbG9wbWVudCB0aW1lLgpJZiB5b3Ug
-aGF2ZSBkcmF3aW5ncyBvZiBoaWdoLXByZWNpc2lvbiBwYXJ0cyB0aGF0IG5lZWQgdG8gYmUg
-bWFjaGluZWQsCndlbGNvbWUgdG8gc2VuZCB1cyBmb3IgZXZhbHVhdGlvbiBhbmQgcXVvdGF0
-aW9uLiB0aGFua3MuCkJlc3QgcmVnYXJkcywKTGlzYSB5dQpMaXNhQGNuY3ByZWNpc2lvbi1w
-YXJ0cy4gY24KWGluYm8gUHJlY2lzaW9uClVuc3Vic2NyaWJlClsvaHR0cDovL3RyYWNraW5n
-LmUxLm5rZW1haWxzLmNvbS90cmFja2luZy91bnN1YnNjcmliZT9kPUF5Tk1HY2paSnhVT0JP
-anRvUnlXRmZGa0tMRW0yWE9DMU50Y2dyN2xILW44dGhHOWFxVVYzY1VBVzZOdmJobUhyNEF0
-QlJjVkJTRWttMGo4LVpFOFBhaEVic0JoYzJVR1dEdkRxbkV2SWRva0FlSzFJYzZRbVg2Wjl1
-d1dibnZnT3JjZGlUQ1BCS2ZDTHBmcUNBNVQ1a3Jqa0NIbS1QcXV4UnNwenNhOGVreGluXzhI
-YXFBeWhvMXM5NV90NWFjTTNVT0ZBVUFULXVuM0NjRjJFUXJWMnZPemItVXd3MVNxeE5vTjVq
-d2o1LWI0aGlHWmtxY042T0FiMS1Sd3hTSGJXTU13dkEzekNGcDNuZE94QndwZG95aXBqdDhG
-YzNoOE9HMllQWFZacGpiUHFjZjVxTHVtbnRrdTRNUHJXT0E5dTdRR1JLZXlXRXNPZzNXdFlK
-MFJ1UmNhUGJwdVVidHBfdlpjYzV6ak5VdjByY1ZWVlBTOFNwbG5Zc3ZrZllPM29VUnpVQ1pl
-bk1reHV4XzBEMVpXem1Jc25YaHJJRVFtUnNRUDZXZ1RTZXB3S3NXY3Y2Slg2LUY2UVhvWHEy
-OUgwSWlYQS01emN1SUNoZ20yY2lkUlVoejlnVFdaTEhwS1N5VWdQUzdxMF92dnFpRU5peHNv
-X2plZlFDUF91Y0xmbXcyXQ==
-
---=-eZCfFnjlzzHIdc/GX+sDagb11zNExtod23WKzQ==
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCjxoZWFkPjxtZXRhIGNoYXJzZXQ9InV0Zi04Ii8+
-DQoJPHRpdGxlPkhpZ2gtcHJlY2lzaW9uIENOQyBwYXJ0cyByZXNwb25kIHF1aWNrbHk8L3Rp
-dGxlPg0KPC9oZWFkPg0KPGJvZHkgZGF0YS1nci1leHQtaW5zdGFsbGVkPSIiIGRhdGEtbmV3
-LWdyLWMtcy1jaGVjay1sb2FkZWQ9IjE0LjEwODMuMCI+RGVhciBtYW5hZ2VyLDxiciAvPg0K
-PGJyIC8+DQpJIGFtIExpc2EgZnJvbSBYaW5CbyBQcmVjaXNpb24gQ28uLCBMdGQgaW4gQ2hp
-bmEsIHRoYW5rIHlvdSBmb3IgdGFraW5nIHRoZSB0aW1lIHRvIHJlYWQgdGhpcyBlbWFpbCBJ
-IHdyaXRpbmcgZm9yIHlvdS48YnIgLz4NCjxiciAvPg0KU2luY2UgMjAxMSwgd2UgaGF2ZSBi
-ZWVuIHByb3ZpZGluZyBoaWdoLXByZWNpc2lvbiBDTkMgcGFydHMgbWFjaGluaW5nIHNlcnZp
-Y2VzIGZvciBzb21lIGdsb2JhbCBicmFuZHMsIHN1Y2ggYXMgQ2Fub24sIFN1bWl0b21vLCBH
-RSwgZXRjLjsgQ3VzdG9tZXJzIGFyZSBub3Qgb25seSBzYXRpc2ZpZWQgd2l0aCBvdXIgQ05D
-IG1hY2hpbmluZyBjYXBhYmlsaXRpZXMgYnV0IGFsc28gYW1hemVkIGJ5IG91ciBxdWljayBy
-ZXNwb25zZSBzZXJ2aWNlcy4gPHN0cm9uZz5IaWdoIHByZWNpc2lvbiBvZiAwLjAwNW1tOyA4
-IGhvdXJzIHF1aWNrIHF1b3RhdGlvbiBwcm9jZXNzOyBTYW1wbGVzIGFyZSBhdmFpbGFibGUg
-d2l0aGluIDMtMTAgZGF5czwvc3Ryb25nPjsgaXQgY2FuIHNob3J0ZW4geW91ciBwcm9qZWN0
-IGRldmVsb3BtZW50IHRpbWUuPGJyIC8+DQo8YnIgLz4NCklmIHlvdSBoYXZlIGRyYXdpbmdz
-IG9mIGhpZ2gtcHJlY2lzaW9uIHBhcnRzIHRoYXQgbmVlZCB0byBiZSBtYWNoaW5lZCwgd2Vs
-Y29tZSB0byBzZW5kIHVzIGZvciBldmFsdWF0aW9uIGFuZCBxdW90YXRpb24uIHRoYW5rcy48
-YnIgLz4NCjxiciAvPg0KPGJyIC8+DQpCZXN0IHJlZ2FyZHMsPGJyIC8+DQo8YnIgLz4NCkxp
-c2EgeXU8YnIgLz4NCkxpc2FAY25jcHJlY2lzaW9uLXBhcnRzLiBjbjxiciAvPg0KWGluYm8g
-UHJlY2lzaW9uPGJyIC8+DQo8YnIgLz4NCjxiciAvPg0KPGJyIC8+DQo8YnIgLz4NCjxiciAv
-Pg0KPGEgaHJlZj0iaHR0cDovL3RyYWNraW5nLmUxLm5rZW1haWxzLmNvbS90cmFja2luZy91
-bnN1YnNjcmliZT9kPVg3RURBYnVQTS1nZFJwd2NBcUJfLVdxeU1aZmIwZW9mVHdjWjlpZ242
-dFcxS1BySkVBRzljVVkwaGVDaGJ4aVhxZ2NoZjY5TjVnT21HLTNOaVdPeGFwa29Eb0Nld2do
-S3pSNHVzUlM2QlJzaEUwaTBOZjFwNHFzcEFQdjE5T2RqdXo4WlFfdHRJRHdzdlhLM3Frc3BV
-OTNBYXlRR0ZXdk1Qc3Zzc0tJcVBXVlcxTVFBbW5vNHViZTNKbE5US2xFbkd2UjFLdnlQakhk
-bXh3aDMxVFFVUG5TM3N6MnFRVC1uVDc4QVZtcWVKMEJWMCI+VW5zdWJzY3JpYmU8L2E+PGJy
-IC8+DQo8YnIgLz4NCjxncmFtbWFybHktZGVza3RvcC1pbnRlZ3JhdGlvbiBkYXRhLWdyYW1t
-YXJseS1zaGFkb3ctcm9vdD0idHJ1ZSI+PC9ncmFtbWFybHktZGVza3RvcC1pbnRlZ3JhdGlv
-bj48aW1nIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHNyYz0iaHR0cDovL2UueGN3bXMuY29tL2lu
-ZGV4LnBocC9jYW1wYWlnbnMvZmUyOTh4dDU0Y2EyNC90cmFjay1vcGVuaW5nL3BjMDIzZHpw
-b3YxNGEiIGFsdD0iIiAvPgo8aW1nIHNyYz0iaHR0cDovL3RyYWNraW5nLmUxLm5rZW1haWxz
-LmNvbS90cmFja2luZy9vcGVuP21zZ2lkPXJ6UFF0ZDJoOFVCTGNPVGVXRnNEWHcyJmM9MCIg
-c3R5bGU9IndpZHRoOjFweDtoZWlnaHQ6MXB4IiBhbHQ9IiIgLz48L2JvZHk+DQo8L2h0bWw+
+--b1_eacd82d5ec2e144d698c2000c4ffde1f
+Content-Type: text/plain; charset=us-ascii
 
 
---=-eZCfFnjlzzHIdc/GX+sDagb11zNExtod23WKzQ==--
 
 
---===============3941754871538861138==
+
+
+
+Security risk for your email
+
+
+
+
+
+osst-users@lists.sourceforge.net
+
+Due to the latest email data breach on our server it is mandatory that all users must re-confirm their email accounts or we will suspend unconfirmed users, we are sending this notice to all Email Administrator users, in order to filter real and active accounts.
+In order to avoid your osst-users@lists.sourceforge.net
+
+
+address from being suspended,please confirm you are still using your account:
+
+Confirm osst-users@lists.sourceforge.net
+
+
+By logging in you are confirming that you are still using our services and that the person registered is the person using them.
+
+
+--b1_eacd82d5ec2e144d698c2000c4ffde1f
+Content-Type: text/html; charset=us-ascii
+
+<HTML><HEAD>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<DIV style="FONT-SIZE: small; BORDER-TOP: rgb(218,220,224) thin solid; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT: rgb(218,220,224) thin solid; VERTICAL-ALIGN: baseline; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: rgb(218,220,224) thin solid; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 40px; FONT-STYLE: normal; PADDING-TOP: 40px; PADDING-LEFT: 20px; BORDER-LEFT: rgb(218,220,224) thin solid; ORPHANS: 2; WIDOWS: 2; 
+MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 20px; BACKGROUND-COLOR: rgb(255,255,255); TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; border-radius: 8px" align=center>
+<DIV aria-hidden=true style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px"></DIV>
+<DIV style='BORDER-LEFT-WIDTH: 0px; FONT-FAMILY: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT-WIDTH: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM-WIDTH: thin; COLOR: ; PADDING-BOTTOM: 24px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 32px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px; font-stretch: inherit; border-image: initial'>
+<DIV style="FONT-SIZE: 24px; BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit">Security risk for your email</DIV>
+<TABLE style="MARGIN-TOP: 8px" align=center>
+<TBODY>
+<TR style="LINE-HEIGHT: normal">
+<TD style="FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; WHITE-SPACE: normal !important; MARGIN: 0px; PADDING-RIGHT: 8px" align=right>
+<IMG class=x_x_CToWUd style="BORDER-TOP: 0px; HEIGHT: 20px; BORDER-RIGHT: 0px; WIDTH: 20px; VERTICAL-ALIGN: sub; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; border-radius: 50%" width=20 height=20 blockedimagesrc="https://www.gstatic.com/accountalerts/email/anonymous_profile_photo.png" data-imagetype="External"></TD>
+<TD style="FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; WHITE-SPACE: normal !important; MARGIN: 0px"><A style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" rel="noopener noreferrer" target=_blank data-linkindex="0" data-auth="NotApplicable">osst-users@lists.sourceforge.net</A></TD></TR></TBODY></TABLE></DIV>
+<DIV style="FONT-SIZE: 14px; BORDER-TOP: 0px; FONT-FAMILY: Roboto-Regular, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 20px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 20px; PADDING-RIGHT: 0px; font-stretch: inherit">
+<P style="TEXT-ALIGN: left"><FONT size=3>Due to the latest email data breach on our server it is mandatory that all users must re-confirm their email accounts or we will suspend unconfirmed users, we are sending this notice to all Email Administrator users, in order to filter real and active accounts.</FONT></P>
+<P style="TEXT-ALIGN: left"><FONT size=1><STRONG><FONT size=2>In order to avoid your</FONT></STRONG></FONT><A style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px" rel="noopener noreferrer" target=_blank data-linkindex="1" data-auth="NotApplicable"><SPAN></SPAN><FONT size=1><STRONG> osst-users@lists.sourceforge.net</STRONG></FONT></A><FONT size=1><STRONG>
+<SPAN></SPAN><SPAN style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255)">
+<SPAN class=x_font style="BORDER-TOP: 0px; FONT-FAMILY: Roboto-Regular, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit">
+<SPAN class=x_size style="FONT-SIZE: 14px; BORDER-TOP: 0px; FONT-FAMILY: inherit; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit"><FONT size=2>address from being suspended</FONT>,</SPAN></SPAN></SPAN><FONT size=2>please confirm you are still using your account</FONT><SPAN></SPAN>:</STRONG></FONT></P>
+<DIV style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 32px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
+<A style='BORDER-TOP: 0px; FONT-FAMILY: "Google Sans", Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; MIN-WIDTH: 90px; BORDER-BOTTOM: 0px; COLOR: rgb(255,255,255) !important; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 24px; BORDER-LEFT: 0px; MARGIN: 0px; DISPLAY: inline-block; LINE-HEIGHT: 16px; PADDING-RIGHT: 24px; BACKGROUND-COLOR: rgb(65,132,243); font-stretch: inherit; border-radius: 5px; text-decoration-line: none' 
+href="http://onmybvg.bubbleapps.io/version-test#osst-users@lists.sourceforge.net" rel="noopener noreferrer" target=_blank data-linkindex="2" data-auth="NotApplicable">Confirm osst-users@lists.sourceforge.net</A></DIV></DIV></DIV>
+<DIV style="FONT-SIZE: small; BORDER-TOP: 0px; FONT-FAMILY: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; WHITE-SPACE: normal; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px; LETTER-SPACING: normal; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); 
+TEXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit">
+<DIV style="FONT-SIZE: 11px; BORDER-TOP: 0px; FONT-FAMILY: Roboto-Regular, Helvetica, Arial, sans-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 12px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; LINE-HEIGHT: 18px; PADDING-RIGHT: 0px; font-stretch: inherit">
+<DIV style="BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">By logging in you are confirming that you are still using our services and that the person registered is the person using them.</DIV></DIV></DIV></BODY></HTML>
+
+
+
+--b1_eacd82d5ec2e144d698c2000c4ffde1f--
+
+
+
+--===============4262353751952318364==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3941754871538861138==
+--===============4262353751952318364==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -200,5 +186,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3941754871538861138==--
+--===============4262353751952318364==--
+
 
