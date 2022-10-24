@@ -2,28 +2,28 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id C738E606182
-	for <lists+osst-users@lfdr.de>; Thu, 20 Oct 2022 15:24:21 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 31FDC60B7FE
+	for <lists+osst-users@lfdr.de>; Mon, 24 Oct 2022 21:39:52 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1olVX2-0002aT-He
+	id 1on3Ic-0000zg-U7
 	for lists+osst-users@lfdr.de;
-	Thu, 20 Oct 2022 13:24:20 +0000
+	Mon, 24 Oct 2022 19:39:50 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <infos@agasido.fr>) id 1olVWz-0002aF-RZ
- for osst-users@lists.sourceforge.net; Thu, 20 Oct 2022 13:24:17 +0000
+ (envelope-from <infos@agasido.fr>) id 1on3Ia-0000zZ-JO
+ for osst-users@lists.sourceforge.net; Mon, 24 Oct 2022 19:39:48 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
  Mime-Version:List-Unsubscribe:Message-ID:Reply-To:From:To:Date:Sender:Cc:
  Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
  Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
  List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=OeKxhDJ7cyC7rrSeAj7fBS6wg2M1OIli3SF1W0N4uGI=; b=nCwyuXiqJc9/iBrki+9KJ4a2yX
- x4SNkgtFpNq9rG5Ob8ppva0FStUFrIggTxNZ4VCrFW8fvYahnMRu0rgwGW1W7+H+jAmxH1BxQ/nst
- Wssy8OiXyZ8WI9JfGfPtxwITdRYDN9v8ugQkY5y/sj3TKLj8aZcP9B3cWjWUHikGCJEk=;
+ bh=aXXS1zxSHipq6bReDAn/bKz0CxqEmlB1+JgXenPefLE=; b=KF3HWk81vtREb1P6RvWHC2Cj7K
+ PmLG0L6ylkDz6hqMHJ1bNwJfNxGSSFDnxY5op9Ctkj30LhKDdrvntfBulAMhGybGqd+LZa6pPOkZh
+ g97Ngm+n6UWa1qdTRxfxLcKyICV259WnBP5WDhmM7pJf04fm5aMZqz6hmowCB6mRXKyE=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Subject:Content-Transfer-Encoding:Content-Type:Mime-Version:
@@ -31,22 +31,22 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
  List-Post:List-Owner:List-Archive;
- bh=OeKxhDJ7cyC7rrSeAj7fBS6wg2M1OIli3SF1W0N4uGI=; b=U1hQtWCi+F5Wd7WjdTAy1jKMyZ
- 0m63aM7X/L9jVlOr7uZwMHYUepH15EFp9mtZaEixRdDV7b5s5bikhxbwKxEdiQVCQdgBm8ld/HUL6
- 4dltBDtE7EX9cTOqXuSKOtq3Sf0TmtOzoHshj85UbYAa22aQUAlN28oR4y350UCccbH8=;
+ bh=aXXS1zxSHipq6bReDAn/bKz0CxqEmlB1+JgXenPefLE=; b=ZY59BMZuajiV4NuvQsKTN/QMdv
+ VH58Jl9DO4HESq3j0UI58ZT9jFGyNNgVdgCS3JwCUOvAY7ywJQOcLDYJ5zLulefFb648uMdtmOHHg
+ Z0kGrLaMTqflXvOH4gA7/syiqztUX3rzzkV5QDZPIh5rPR7lGUBZeQiyBD2Fk4LdhkkM=;
 Received: from smtp.agasido.fr ([5.196.106.63])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1olVWx-00AvV7-MK for osst-users@lists.sourceforge.net;
- Thu, 20 Oct 2022 13:24:17 +0000
-Date: Thu, 20 Oct 2022 15:24:07 +0200
+ id 1on3IZ-0007OW-8c for osst-users@lists.sourceforge.net;
+ Mon, 24 Oct 2022 19:39:48 +0000
+Date: Mon, 24 Oct 2022 21:39:30 +0200
 To: osst-users@lists.sourceforge.net
-Message-ID: <1666272247.dcb55a989d702d68094f6f66679cc79e@agasido.fr>
+Message-ID: <1666640370.dcb55a989d702d68094f6f66679cc79e@agasido.fr>
 X-Priority: 3
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 Mime-Version: 1.0
 X-Spam-Score: 8.3 (++++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
@@ -60,19 +60,14 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
-                             blocked.  See
-                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
-                              for more information.
-                             [URIs: hosting.ovh.net]
   3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
                              [5.196.106.63 listed in zen.spamhaus.org]
   2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
                              [5.196.106.63 listed in psbl.surriel.com]
  -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
                              [5.196.106.63 listed in wl.mailspike.net]
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
   0.0 T_SPF_PERMERROR        SPF: test of record failed (permerror)
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
   0.0 HTML_MESSAGE           BODY: HTML included in message
   0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
                              identical to background
@@ -81,7 +76,7 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.
   0.0 T_REMOTE_IMAGE         Message contains an external image
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1olVWx-00AvV7-MK
+X-Headers-End: 1on3IZ-0007OW-8c
 Subject: [Osst-users] [SPAM] Check your eligibility
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -96,15 +91,15 @@ List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
 From: R&D tax credits via Osst-users <osst-users@lists.sourceforge.net>
 Reply-To: infos@agasido.fr
-Content-Type: multipart/mixed; boundary="===============6052018528419396550=="
+Content-Type: multipart/mixed; boundary="===============8885216034946037142=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============6052018528419396550==
+--===============8885216034946037142==
 Content-Type: multipart/alternative;
-	boundary="b1_d1c51c6f6de00a915405d639e7e1e534"
+	boundary="b1_fc8c4ee8edc2ef851dff00d13e6163d8"
 Content-Transfer-Encoding: 8bit
 
---b1_d1c51c6f6de00a915405d639e7e1e534
+--b1_fc8c4ee8edc2ef851dff00d13e6163d8
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit
 
@@ -151,7 +146,7 @@ Follow this link to stop receiving these e-mails.
 You have the right of access, rectification, opposition and consent, which you have access on this web page: Privacy policy.
 
 
---b1_d1c51c6f6de00a915405d639e7e1e534
+--b1_fc8c4ee8edc2ef851dff00d13e6163d8
 Content-Type: text/html; charset=us-ascii
 
 <!DOCTYPE html>
@@ -357,7 +352,7 @@ development, then you could be eligible to claim R&D tax credits.
                     This e-mail is brought to you by an independent e-mail marketing company.
                     <br />
 
-                    <a href="http://srvttam.cluster029.hosting.ovh.net/spencer/duble/?email=Rvginm3lgiPIqLyQE9iq7VLXAM8m/Ajsfngsf7DKsyPUeQahogD03C6OiUtmPvMypgUoRcU7lnL6vAaT2gFhyKbEXb5k5CP/mw5hEsK5NmK/KBrM/fQBN62afwh54WIfavr7Pe3sP1ZtclGbLko0hC8RdeedtQ1okJuV2SiQRcs=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving these e-mails</strong>.<br>
+                    <a href="http://srvttam.cluster029.hosting.ovh.net/spencer/duble/?email=K+1IjNCg/1YZ/ch2M8GZY1SmF+DXCN/ZuUZyzQD719LxUejU4hcYf2q6v1Un9V2uU9iXqMPfrMwPSq2MEG5IIDR2yl8eBwbuzfH5OwltJ+X7WSvhVASCrcZ7j+rcTar86iML4MvGQ5VH0BIoaNaJh95n05cCcnmbajIIrKVbSh0=&c=uuukkk1" style="color:#09f;" target="_blank">Follow this link</a> to stop receiving these e-mails</strong>.<br>
                     You have the right of access, rectification, opposition and consent, which you have access on this web page: <a href="http://srvttam.cluster029.hosting.ovh.net/spencer/ollu/" style="color:#09f;" target="_blank">Privacy policy</a>.<br>
                      </p>
 
@@ -384,18 +379,18 @@ development, then you could be eligible to claim R&D tax credits.
 
 
 
---b1_d1c51c6f6de00a915405d639e7e1e534--
+--b1_fc8c4ee8edc2ef851dff00d13e6163d8--
 
 
 
---===============6052018528419396550==
+--===============8885216034946037142==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6052018528419396550==
+--===============8885216034946037142==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -406,6 +401,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6052018528419396550==--
+--===============8885216034946037142==--
 
 
