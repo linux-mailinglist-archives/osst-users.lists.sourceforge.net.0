@@ -2,83 +2,97 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 92CED633C43
-	for <lists+osst-users@lfdr.de>; Tue, 22 Nov 2022 13:19:04 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id ACBCB6371A5
+	for <lists+osst-users@lfdr.de>; Thu, 24 Nov 2022 06:07:07 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1oxSEx-0004dc-B2
+	id 1oy4S2-0002GR-8P
 	for lists+osst-users@lfdr.de;
-	Tue, 22 Nov 2022 12:19:03 +0000
+	Thu, 24 Nov 2022 05:07:06 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <www-data@canipoa11.blacktreh.lol>)
- id 1oxSEw-0004dR-I7 for Osst-users@lists.sourceforge.net;
- Tue, 22 Nov 2022 12:19:02 +0000
+ (envelope-from <newsletter@toner-top.info>) id 1oy4S0-0002GH-K2
+ for osst-users@lists.sourceforge.net; Thu, 24 Nov 2022 05:07:04 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Message-ID:Date:Content-Type:Subject:To:Reply-To:
+ From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=CjrOcJhNZifpf+HbwAqNiHnXwHblo2IABjAnc4+qFtg=; b=W+kJLAHbofYawDJ6sMofsWACc0
- ndqyAwe5uRuTDk7yuQssa4DAvitScelMP7rrXpk4E4/4x/e3QwsittTY1pwb0pM5UERWaPow890go
- ZuB/a8Yuxl9iiSDZLbSW5Dd5KmnmbfF2szEqYTNXbFq2rkoJYrJRUyzw1PDEU4OwCqy0=;
+ bh=B6kbqIvWPo4qq45ngXEAEBkQoIHMSO12igkWEhuOdx8=; b=ZPj0siuEYB9SxeCNsFIxzdbdJQ
+ bktDHF+esObCxPAxem/CXVSVQ8yWqsBuH/H5Bw0JKZ6L6sGNavpCAIFF5dRgT/MLBSZW8nCEhvrY6
+ a0oqF/WJt9mHzHWMFUXnMnfZhL6jU5JFBi6RQY9AWQcP2yy9Pw1jaqJHSHNa4LARlM8E=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
+ h=Message-ID:Date:Content-Type:Subject:To:Reply-To:From:MIME-Version:Sender
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=CjrOcJhNZifpf+HbwAqNiHnXwHblo2IABjAnc4+qFtg=; b=X
- 9CGeylBBajMHaI0mmRTx9iU6Jw1UsKp6DMIwLkmi68h2nZR0vEhDSXL6ZVGxZJOGMNzUeT62wbJlG
- TZmNwAYKXcMR35DLBWxaehVCi/DZw/AyiX+rCvNeCmRRJPj3nIhJOj8vZmJCUCfDfTULd2MGm8wzp
- Kln8HKfAsXAnyKrk=;
-Received: from canipoa11.blacktreh.lol ([65.110.42.101])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ List-Owner:List-Archive; bh=B6kbqIvWPo4qq45ngXEAEBkQoIHMSO12igkWEhuOdx8=; b=E
+ F19/iUO0ITV9wVgCSaFV9zfzGKLjqibv880I240wti2v7DDrkttpdmfSpzxKpeTf7ZA0CtyWI0dYo
+ aSmtk0WytxDtG6RYuLU1cCTAlTO9kr1Q3L4m8b9vCCVIlJrgohQlvmb2LJgArD0zABRFMcGNfNUFl
+ NYm+czJKzM2NuXrE=;
+Received: from smtp202.ext.armada.it ([5.134.127.26])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1oxSEv-00BhXM-LK for Osst-users@lists.sourceforge.net;
- Tue, 22 Nov 2022 12:19:02 +0000
-Received: by canipoa11.blacktreh.lol (Postfix, from userid 33)
- id DEFB83CF47; Tue, 22 Nov 2022 11:52:47 +0000 (UTC)
-To: Osst-users@lists.sourceforge.net
+ id 1oy4Rv-0003Uw-OC for osst-users@lists.sourceforge.net;
+ Thu, 24 Nov 2022 05:07:04 +0000
+Received: from host-87-14-74-15.retail.telecomitalia.it
+ (host-80-181-14-28.pool80181.interbusiness.it [80.181.14.28])
+ (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+ (No client certificate requested)
+ (Authenticated sender: SMTP-MEGA-13798-1)
+ by smtp200.ext.armada.it (Postfix) with ESMTPSA id 13C19219892E
+ for <osst-users@lists.sourceforge.net>; Thu, 24 Nov 2022 06:06:53 +0100 (CET)
+DKIM-Filter: OpenDKIM Filter v2.11.0 smtp200.ext.armada.it 13C19219892E
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=toner-top.info;
+ s=mail; t=1669266413;
+ bh=ViSVkEtPq6hW+DV8CagXPPUNdWCqe3oz9nXbi3FPYDQ=;
+ h=From:Reply-To:To:Subject:Date:From;
+ b=HcWi/LyPTxkvmx2rcTAjteu8+wFVWWJx7rt1kJWV7g9OukTF0Hxx8MQ3T9OqFgim/
+ JpOLA7MW9oq2IBxUhxzF3w5NBKgX+m6kr5WznfpJ0Hf1dALmwH1MOJLylA/GH8mtOI
+ 0vyhFGr35Gi+trShj3brE3GppVvHCq+YxdpO8MFY=
 MIME-Version: 1.0
-Message-Id: <20221122115247.DEFB83CF47@canipoa11.blacktreh.lol>
-Date: Tue, 22 Nov 2022 11:52:47 +0000 (UTC)
-X-Spam-Score: 6.2 (++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
+From: "Toner Compatibili" <newsletter@toner-top.info>
+To: osst-users@lists.sourceforge.net
+Date: Thu, 24 Nov 2022 06:06:57 +0100
+Message-ID: <3300356692056116248712@sendi-PC>
+X-Spam-Score: 5.9 (+++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Preços exclusivos só no e-mail :) política de privacidade
-    | descadastre-se Smart TV 60” Crystal 4K Samsung 60AU8000 Wi-Fi - Bluetooth
-    HDR Alexa Built in 3 HDMI 2 USB 
- 
- Content analysis details:   (6.2 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  Approfitta dei nostri sconti per la Black Friday week! da
+ oggi fino al 30 Novembre offriamo sconti sui nostri toner che non si
+ ripeteranno
+ a breve! Rispondendo a questa email riceverai tutti i nostri contatti e il
+ link al nostro sito e anche tutte le nostre recensioni certificate. 
+ Content analysis details:   (5.9 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [65.110.42.101 listed in zen.spamhaus.org]
+ 1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
+ [URIs: toner-top.info]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  -0.0 SPF_PASS               SPF: sender matches SPF record
-  1.3 URIBL_CR_SURBL         Contains an URL listed in the CR SURBL blocklist
-                             [URIs: 20.197.231.93]
-  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
-  0.0 NORMAL_HTTP_TO_IP      URI: URI host has a public dotted-decimal IPv4
-                              address
-  0.0 NUMERIC_HTTP_ADDR      URI: Uses a numeric IP address in URL
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 LOTS_OF_MONEY          Huge... sums of money
-  1.0 CONTENT_AFTER_HTML_WEAK More content after HTML close tag
-X-Headers-End: 1oxSEv-00BhXM-LK
-Subject: [Osst-users] Smart TV 60" 4K R$ 1.699, 90 - Smart TV 55" 4k R$ 1.299,
- 99 - Smart TV 43" 4k R$ 999, 00 - Aproveite  - [ 24298957455  ]
+ 0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image
+ area 0.0 HTML_FONT_SIZE_LARGE   BODY: HTML font size is large
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain 2.0 PYZOR_CHECK            Listed in Pyzor
+ (https://pyzor.readthedocs.io/en/latest/)
+ 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+X-Headers-End: 1oy4Rv-0003Uw-OC
+Subject: [Osst-users] Toner compatibili - La Settimana Black Friday inizia
+ ora! approfitta delle nostre offerte : Chiedici un preventivo
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -90,310 +104,397 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Magalu-50 via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: Magalu-50 <pravoce@novidades.magazineluiza.com.br>
-Content-Type: multipart/mixed; boundary="===============7106053937558901929=="
+Reply-To: tonergarantiti@gmail.com
+Content-Type: multipart/mixed; boundary="===============8217329234035629607=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============7106053937558901929==
-Content-type: text/html; charset=iso-8859-1
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns=http://www.w3.org/1999/xhtml>
-
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
-    <meta name=x-apple-disable-message-reformatting>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style type=text/css>
-        body {
-            font-size: 0;
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-        }
-        /* bugfix iOS: remove o background da imagem depois que carregou, pra evitar bugs de renderizacao */
-        
-        img[src^="http"] {
-            background: transparent;
-        }
-        
-        a,
-        p,
-        span,
-        div {
-            text-decoration: none;
-            font-family: 'Trebuchet MS', 'Arial', sans-serif !important;
-        }
-    </style>
-</head>
-
-<body align=center bgcolor=#0086ff cellspacing=0 cellpadding=0 topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 data-pinterest-extension-installed=cr1.3.4 style="text-decoration: none; -ms-text-size-adjust: 100%; font-size: 100%; -webkit-text-size-adjust: 100%; background-color: #fff; font-size: 100%; font-family: 'arial'!important; text-align: center; margin:0; padding:0; width:100%; -webkit-font-smoothing: antialiased; width: 100%!;">
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom">
-                                    <br><font color=#0087ff size=3><b>Pre&ccedil;os exclusivos s&oacute; no e-mail :)</b></font>
-                                    <br>
-                                    <div style="height: 6px;"></div><font color=#847870 size=2><a rilt="política de privacidade" href=https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/ target=_blank style="color: #939393"><b>pol&iacute;tica de privacidade</b></a> | <a rilt=descadastre-se href="https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/" target=_blank style="color: #939393"><b>descadastre-se</b></a></font>
-                                    <br>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.imgur.com/JFjxmP4.png border=0 alt="top banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.ibb.co/Jy0R4jM/unnamed-1.png border=0 alt style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-	<br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                           
-                          
-                          
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="http://20.197.231.93/redirecionamento/tv60m.php"><img src=https://i.ibb.co/6r9GmMf/600.png width=460px height=auto border=0 style="vertical-align: middle; max-height: 495px;" alt="SMART SAMSUNG 58"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="http://20.197.231.93/redirecionamento/tv60m.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 60” Crystal 4K Samsung 60AU8000 Wi-Fi - Bluetooth HDR Alexa Built in 3 HDMI 2 USB</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;3.099,00</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.699,90 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista </p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center> <p>
-                                                    <a href="http://20.197.231.93/redirecionamento/tv60m.php" target=_blank style=text-decoration:none;><img src=https://i.ibb.co/fDYRzf2/botao-comprar-email.png alt=magazineluiza.com width=100% style=max-width:160px;></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="http://20.197.231.93/redirecionamento/tv55m.php"><img src=https://i.ibb.co/bvRbkkJ/555.png width=290px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV 4K Crystal UHD 58"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="http://20.197.231.93/redirecionamento/tv55m.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 55” Crystal 4K Samsung 55AU8000 - Wi-Fi Bluetooth HDR Alexa Built in 3 HDMI 2 USB</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;2.799,90</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.299,99 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                                                    <a href="http://20.197.231.93/redirecionamento/tv55m.php" target=_blank style=text-decoration:none;><img src=https://i.ibb.co/fDYRzf2/botao-comprar-email.png alt=magazineluiza.com width=100% style=max-width:160px;></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <p><a href="http://20.197.231.93/redirecionamento/tv43m.php"><img src=https://i.ibb.co/TtxJBYg/444.png width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV Full HD LED 43” Samsung 43T5300A"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="http://20.197.231.93/redirecionamento/tv43m.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 43” Crystal 4K Samsung 43AU7700 Wi-Fi - Bluetooth HDR Alexa Built in 3 HDMI 1 USB</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 1.999,00</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 999,99 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                                                    <a href="http://20.197.231.93/redirecionamento/tv43m.php" target=_blank style=text-decoration:none;><img src=https://i.ibb.co/fDYRzf2/botao-comprar-email.png alt=magazineluiza.com width=100% style=max-width:160px;></a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.ibb.co/0KNNYTp/EIes-TUd-XYAIc2-H5.jpg width=100% alt="app store">
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src= border=0 alt="">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                   <img src=https://i.ibb.co/MVb6MZR/email-novo-10.png border=0 alt=instagram>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.ibb.co/DLMGy77/email-novo-11.png border=0 alt=facebook>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                   <img src=https://i.ibb.co/zS2Qbmf/email-novo-12.png border=0 alt=twitter>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.ibb.co/swKTnh6/email-novo-13.png border=0 alt=youtube>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.ibb.co/m5KRktK/email-novo-14.png border=0 alt="blog da lu">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.ibb.co/J7QJgph/2910-CRM-650x95-Footer.png border=0 alt="bottom banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:20px;padding-left:20px;padding-top:0;padding-bottom:0;text-align:center;><font color=#5a5a5a size=2> As ofertas valem apenas para o dia de recebimento deste e-mail nas compras feitas online ou por Televendas. Os pre&ccedil;os podem sofrer altera&ccedil;&otilde;es ao longo do dia e enquanto durarem os estoques. <br><br><b>*</b>Confira nosso regulamento de Desconto e Frete. <br><br> Contato Televendas: Regi&atilde;o Metropolitana de S&atilde;o Paulo | (11) 3508-9900 <br> Outras regi&otilde;es: procure a cidade mais pr&oacute;xima de voc&ecirc;.<br> Hor&aacute;rio de atendimento: de segunda a sexta, das 8h30 &agrave;s 22h / aos s&aacute;bados e domingos, das 9h &agrave;s 22h (exceto feriados) <br><br> Ficou com d&uacute;vidas? Acesse nossa <a rilt="central de atendimento" >Central de Atendimento</a> :) <br><br> Ah! E cadastre o e-mail personalizado@pravoce.<wbr>magazineluiza.com.br na sua lista de contatos pra receber sempre as nos
- sas melhores ofertas! <br><br><b>pol&iacute;tica de privacidade</b></a> | <b>descadastre-se</b></a><br><br></font></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-
-</html>22/11/2022 11:52:47
+--===============8217329234035629607==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_209B_708D38F9.56607BD5"
 
 
---===============7106053937558901929==
+------=_NextPart_001_209B_708D38F9.56607BD5
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Approfitta dei nostri sconti per la Black Friday week! da oggi fino al 30 N=
+ovembre offriamo sconti sui nostri toner che non si ripeteranno a breve!
+
+=20
+
+Rispondendo a questa email riceverai tutti i nostri contatti e il link al n=
+ostro sito e anche tutte le nostre recensioni certificate.
+
+=20
+
+Chiedici un preventivo rispondendo a questa email indicando il modello dell=
+a tua stampante o del toner, oppure comunicaci queste informazioni inviando=
+ una email all'indirizzo: tonergarantiti@gmail.com
+
+
+Chiedici un preventivo
+
+
+Richiedici un preventivo senza impegno rispondendo a questa email
+
+
+Indica il modello della stampante
+
+
+Indicando il modello ti invieremo un preventivo senza impegno per i toner
+
+
+Spedizioni con corriere
+
+
+Spedizioni gestite con corriere espresso, consegna entro 24/48 ore
+
+
+
+Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
+desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
+premi qui ed invia per cancellarti
+
+
+------=_NextPart_001_209B_708D38F9.56607BD5
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<HTML lang=3Den xmlns:v =3D "urn:schemas-microsoft-com:vml" xmlns:o =3D "ur=
+n:schemas-microsoft-com:office:office"><HEAD><TITLE></TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<META name=3Dviewport content=3D"width=3Ddevice-width, initial-scale=3D1.0">
+<STYLE>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: inherit !important;
+		}
+
+		#MessageViewBody a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		p {
+			line-height: inherit
+		}
+
+		.desktop_hide,
+		.desktop_hide table {
+			mso-hide: all;
+			display: none;
+			max-height: 0px;
+			overflow: hidden;
+		}
+
+		@media (max-width:720px) {
+
+			.image_block img.big,
+			.row-content {
+				width: 100% !important;
+			}
+
+			.mobile_hide {
+				display: none;
+			}
+
+			.stack .column {
+				width: 100%;
+				display: block;
+			}
+
+			.mobile_hide {
+				min-height: 0;
+				max-height: 0;
+				max-width: 0;
+				overflow: hidden;
+				font-size: 0px;
+			}
+
+			.desktop_hide,
+			.desktop_hide table {
+				display: table !important;
+				max-height: none !important;
+			}
+		}
+	</STYLE>
+
+<META name=3DGENERATOR content=3D"MSHTML 8.00.7600.16385"></HEAD>
+<BODY style=3D"PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #f9f9f9; MARGIN: 0px;=
+ PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; -webkit-text-size=
+-adjust: none; text-size-adjust: none">
+<TABLE style=3D"BACKGROUND-COLOR: #f9f9f9; mso-table-lspace: 0pt; mso-table=
+-rspace: 0pt" class=3Dnl-container role=3Dpresentation border=3D0 cellSpaci=
+ng=3D0 cellPadding=3D0 width=3D"100%">
+<TR>
+<TD>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
+row-1" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
+=3D"100%" align=3Dcenter>
+<TR>
+<TD>
+<DIV align=3Dcenter>
+<TABLE style=3D"WIDTH: 700px; COLOR: #000000; mso-table-lspace: 0pt; mso-ta=
+ble-rspace: 0pt" class=3D"row-content stack" role=3Dpresentation border=3D0=
+ cellSpacing=3D0 cellPadding=3D0 width=3D700 align=3Dcenter>
+<TR>
+<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 5px; BORDER-RIGHT-WIDTH: 0px=
+; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BOR=
+DER-LEFT-WIDTH: 0px; FONT-WEIGHT: 400; PADDING-TOP: 5px; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt" class=3D"column column-1" width=3D"100%">
+<DIV style=3D"LINE-HEIGHT: 20px; HEIGHT: 20px; FONT-SIZE: 1px" class=3Dspac=
+er_block></DIV><IMG border=3D0 hspace=3D0 src=3D"https://imageshack.com/img=
+923/9407/w9nGkm.jpg" width=3D700 height=3D220></TD></TR></TABLE></DIV>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
+row-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
+=3D"100%" align=3Dcenter>
+</TABLE>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
+row-3" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
+=3D"100%" align=3Dcenter>
+<TR>
+<TD>
+<DIV align=3Dcenter>
+<TABLE style=3D"BACKGROUND-COLOR: #e8edfa; WIDTH: 700px; COLOR: #000000; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row-content stack" rol=
+e=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D700 ali=
+gn=3Dcenter>
+<TR>
+<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 5px; BORDER-RIGHT-WIDTH: 0px=
+; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BOR=
+DER-LEFT-WIDTH: 0px; FONT-WEIGHT: 400; PADDING-TOP: 5px; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt" class=3D"column column-1" width=3D"100%">
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
+_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 40px; PADDING-LEFT: 30px; PADDING-RIGHT: 30px;=
+ PADDING-TOP: 30px" class=3Dpad>
+<DIV style=3D"FONT-FAMILY: sans-serif">
+<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
+da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
+627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
+xtTinyMce-wrapper>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
+=3D"FONT-SIZE: 20px"><FONT style=3D"BACKGROUND-COLOR: #000000" color=3D#fff=
+fff size=3D6><STRONG>Approfitta dei nostri sconti per la Black Friday week!=
+ da oggi fino al 30 Novembre offriamo sconti sui nostri toner che non si ri=
+peteranno a breve!</STRONG></FONT></SPAN></P>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
+=3D"FONT-SIZE: 20px"></SPAN>&nbsp;</P>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
+=3D"FONT-SIZE: 20px"><STRONG>Rispondendo a questa email riceverai tutti i n=
+ostri contatti e il link al nostro sito e anche tutte le nostre recensioni =
+certificate.</STRONG></SPAN></P>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
+=3D"FONT-SIZE: 20px"></SPAN>&nbsp;</P>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
+=3D"FONT-SIZE: 20px"><STRONG>Chiedici un preventivo rispondendo a&nbsp;ques=
+ta email indicando&nbsp;il modello della tua stampante o del toner, oppure =
+comunicaci queste informazioni&nbsp;inviando una email&nbsp;all'indirizzo: =
+</STRONG><A href=3D"mailto:tonergarantiti@gmail.com=3Fsubject=3Dpreventivo"=
+><STRONG>tonergarantiti@gmail.com</STRONG></A></SPAN></P></DIV></DIV></TD><=
+/TR></TABLE></TD></TR></TABLE></DIV></TD></TR></TABLE>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
+row-4" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
+=3D"100%" align=3Dcenter>
+<TR>
+<TD>
+<DIV align=3Dcenter>
+<TABLE style=3D"BACKGROUND-COLOR: #e8edfa; WIDTH: 700px; COLOR: #000000; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row-content stack" rol=
+e=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D700 ali=
+gn=3Dcenter>
+<TR>
+<TD style=3D"TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0=
+px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-LEFT-WIDTH: 0px; =
+FONT-WEIGHT: 400; mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"co=
+lumn column-1" width=3D"33.33%">
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"imag=
+e_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-=
+RIGHT: 0px; PADDING-TOP: 5px" class=3Dpad>
+<DIV style=3D"LINE-HEIGHT: 10px" class=3Dalignment align=3Dcenter><IMG styl=
+e=3D"BORDER-RIGHT-WIDTH: 0px; WIDTH: 58px; DISPLAY: block; MAX-WIDTH: 100%;=
+ BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: auto; BORDER-LEFT=
+-WIDTH: 0px" title=3D"Alternate text" alt=3D"Alternate text" src=3D"https:/=
+/imageshack.com/img923/1199/35g1nT.png" width=3D58></DIV></TD></TR></TABLE>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
+_block block-3" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 10px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px;=
+ PADDING-TOP: 10px" class=3Dpad>
+<DIV style=3D"FONT-FAMILY: sans-serif">
+<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
+da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
+627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
+xtTinyMce-wrapper>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
+=3D"FONT-SIZE: 15px"><STRONG><FONT color=3D#ff0000>Chiedici un preventivo</=
+FONT></STRONG></SPAN></P></DIV></DIV></TD></TR></TABLE>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
+_block block-4" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; =
+PADDING-TOP: 10px" class=3Dpad>
+<DIV style=3D"FONT-FAMILY: sans-serif">
+<DIV style=3D"LINE-HEIGHT: 1.5; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
+da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #84=
+8484; FONT-SIZE: 12px; mso-line-height-alt: 18px" class=3DtxtTinyMce-wrappe=
+r>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px; mso-line-heig=
+ht-alt: 21px"><SPAN style=3D"FONT-SIZE: 14px"><FONT size=3D2><A href=3D"mai=
+lto:tonergarantiti@gmail.com=3Fsubject=3Dpreventivo"><FONT size=3D2><STRONG=
+>Richiedici un preventivo senza impegno rispondendo a questa email</STRONG>=
+</FONT></A></FONT></SPAN></P></DIV></DIV></TD></TR></TABLE></TD>
+<TD style=3D"TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0=
+px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-LEFT-WIDTH: 0px; =
+FONT-WEIGHT: 400; mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"co=
+lumn column-2" width=3D"33.33%">
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"imag=
+e_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-=
+RIGHT: 0px; PADDING-TOP: 5px" class=3Dpad>
+<DIV style=3D"LINE-HEIGHT: 10px" class=3Dalignment align=3Dcenter><IMG styl=
+e=3D"BORDER-RIGHT-WIDTH: 0px; WIDTH: 60px; DISPLAY: block; MAX-WIDTH: 100%;=
+ BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: auto; BORDER-LEFT=
+-WIDTH: 0px" title=3D"Alternate text" alt=3D"Alternate text" src=3D"https:/=
+/imageshack.com/img924/641/zVCESb.jpg" width=3D60></DIV></TD></TR></TABLE>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
+_block block-3" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 10px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px;=
+ PADDING-TOP: 10px" class=3Dpad>
+<DIV style=3D"FONT-FAMILY: sans-serif">
+<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
+da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
+627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
+xtTinyMce-wrapper>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><STRONG><SPAN=
+ style=3D"FONT-SIZE: 15px"><FONT color=3D#ff0000>Indica il modello della st=
+ampante</FONT></SPAN></STRONG></P></DIV></DIV></TD></TR></TABLE>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
+_block block-4" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; =
+PADDING-TOP: 10px" class=3Dpad>
+<DIV style=3D"FONT-FAMILY: sans-serif">
+<DIV style=3D"LINE-HEIGHT: 1.5; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
+da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #84=
+8484; FONT-SIZE: 12px; mso-line-height-alt: 18px" class=3DtxtTinyMce-wrappe=
+r>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px; mso-line-heig=
+ht-alt: 21px"><SPAN style=3D"FONT-SIZE: 14px"><FONT color=3D#000000>Indican=
+do il modello ti invieremo un preventivo senza impegno per i toner</FONT></=
+SPAN></P></DIV></DIV></TD></TR></TABLE></TD>
+<TD style=3D"TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0=
+px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-LEFT-WIDTH: 0px; =
+FONT-WEIGHT: 400; mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"co=
+lumn column-3" width=3D"33.33%">
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"imag=
+e_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-=
+RIGHT: 0px; PADDING-TOP: 5px" class=3Dpad>
+<DIV style=3D"LINE-HEIGHT: 10px" class=3Dalignment align=3Dcenter><IMG styl=
+e=3D"BORDER-RIGHT-WIDTH: 0px; WIDTH: 58px; DISPLAY: block; MAX-WIDTH: 100%;=
+ BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: auto; BORDER-LEFT=
+-WIDTH: 0px" title=3D"Alternate text" alt=3D"Alternate text" src=3D"https:/=
+/imageshack.com/img922/9108/fyE6gd.png" width=3D58></DIV></TD></TR></TABLE>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
+_block block-3" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 10px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px;=
+ PADDING-TOP: 10px" class=3Dpad>
+<DIV style=3D"FONT-FAMILY: sans-serif">
+<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
+da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
+627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
+xtTinyMce-wrapper>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><STRONG><SPAN=
+ style=3D"FONT-SIZE: 15px"><FONT color=3D#ff0000>Spedizioni con corriere</F=
+ONT></SPAN></STRONG></P></DIV></DIV></TD></TR></TABLE>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
+_block block-4" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; =
+PADDING-TOP: 10px" class=3Dpad>
+<DIV style=3D"FONT-FAMILY: sans-serif">
+<DIV style=3D"LINE-HEIGHT: 1.5; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
+da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #84=
+8484; FONT-SIZE: 12px; mso-line-height-alt: 18px" class=3DtxtTinyMce-wrappe=
+r>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px; mso-line-heig=
+ht-alt: 21px"><SPAN style=3D"FONT-SIZE: 14px"><FONT color=3D#000000>Spedizi=
+oni gestite con corriere espresso, consegna entro 24/48 ore</FONT></SPAN></=
+P></DIV></DIV></TD></TR></TABLE></TD></TR></TABLE></DIV>
+<P align=3Dcenter><IMG border=3D0 hspace=3D0 src=3D"https://imageshack.com/=
+img924/1108/QKjt5w.jpg" width=3D700 height=3D272></P></TD></TR></TABLE>
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
+row-5" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
+=3D"100%" align=3Dcenter>
+<TR>
+<TD>
+<DIV align=3Dcenter>
+<TABLE style=3D"BACKGROUND-COLOR: #e8edfa; WIDTH: 700px; COLOR: #000000; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row-content stack" rol=
+e=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D700 ali=
+gn=3Dcenter>
+<TR>
+<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 5px; BORDER-RIGHT-WIDTH: 0px=
+; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BOR=
+DER-LEFT-WIDTH: 0px; FONT-WEIGHT: 400; PADDING-TOP: 5px; mso-table-lspace: =
+0pt; mso-table-rspace: 0pt" class=3D"column column-1" width=3D"100%">
+<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
+_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
+=3D0 width=3D"100%">
+<TR>
+<TD style=3D"PADDING-BOTTOM: 10px; PADDING-LEFT: 30px; PADDING-RIGHT: 30px;=
+ PADDING-TOP: 30px" class=3Dpad>
+<DIV style=3D"FONT-FAMILY: sans-serif">
+<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
+da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
+627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
+xtTinyMce-wrapper>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><FONT size=3D=
+2>Se hai ricevuto questa email per errore, per favore comunicacelo, Nel cas=
+o desideri essere cancellato rispondi a questa email con "cancellami" </FON=
+T><A href=3D"mailto:tonergarantiti@gmail.com=3Fsubject=3DCancellami"><FONT =
+size=3D2>Oppure premi qui ed invia per cancellarti</FONT></A></P></DIV></DI=
+V></TD></TR></TABLE></TD></TR></TABLE></DIV></TD></TR></TABLE></TD></TR></T=
+ABLE><!-- End --></TD></TR></TABLE></BODY></HTML>
+------=_NextPart_001_209B_708D38F9.56607BD5--
+
+
+--===============8217329234035629607==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7106053937558901929==
+--===============8217329234035629607==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -404,4 +505,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7106053937558901929==--
+--===============8217329234035629607==--
+
