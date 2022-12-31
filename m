@@ -2,111 +2,84 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id BD693650702
-	for <lists+osst-users@lfdr.de>; Mon, 19 Dec 2022 05:16:35 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 5233365A520
+	for <lists+osst-users@lfdr.de>; Sat, 31 Dec 2022 15:42:26 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1p77Zq-0001eR-I6
+	id 1pBd45-0008JQ-3Y
 	for lists+osst-users@lfdr.de;
-	Mon, 19 Dec 2022 04:16:34 +0000
+	Sat, 31 Dec 2022 14:42:25 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <mailing@ml.toptoner.info>) id 1p77Zg-0001eB-Po
- for osst-users@lists.sourceforge.net; Mon, 19 Dec 2022 04:16:24 +0000
+ (envelope-from <admin@noreply.com>) id 1pBd44-0008J7-DD
+ for osst-users@lists.sourceforge.net; Sat, 31 Dec 2022 14:42:24 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Message-ID:Date:Content-Type:To:Reply-To:
- From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Date:Subject:To:From:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=r8qBpKEZ6RTeFvDRB2AJb/bHe4qj6gUaVqtcnaShPmA=; b=buYiew+OHE4kXjKNuf+GM/+4ON
- oteDkSmGii7V0pkII5G8ID73NoR5H/sleQSqccDkJtiZh9eqXObWCabOiJjRNXO0l0JH08EGY6lfQ
- tEHQEvs3SLbw0XDmOn1HWtw7SLYdp1B4Jk/KV/j4cWhRSqZCNBxuPBDQzel0Edh4Ge/s=;
+ bh=N35a+JeehYNaK24ssB62Tk0WSl/YwW+BV9Wnk/0mqgM=; b=FPQzuAz2ZSGRq4tmMaZCcydT0c
+ izbArmReTmxJx0yrVVfaRFSvNGxFkkl8b1lONUaJeCbr5brB4v46iws+xs1EJFeiz69mIuU2yqQn3
+ m1TVI8Rv0abJaUZR6X/0h6nklDEOZOQGrpj2tjWq1gN4q5oTl5mE4xzlUjlUxFzj8PtM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Message-ID:Date:Content-Type:To:Reply-To:From:MIME-Version:Sender
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Date:Subject:To:From:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=r8qBpKEZ6RTeFvDRB2AJb/bHe4qj6gUaVqtcnaShPmA=; b=T
- H64m9BOYTmaCZclUrB7zdt8z0Q97WZoH/TUO1mwj6rKuspia3a4OQf9A8u6ncWRxm33sZP8zX9JZ/
- ZOYcityYkowwPYHMBHRFN08ljXkm69FfzrGBXmZdAYInIzMIHjV3xo9qO+iiHVhgIhIEL505ljbNJ
- 1azyTkz2yReQ0zmQ=;
-Received: from ml008-bk.dnshigh.com ([193.70.146.127])
+ List-Owner:List-Archive; bh=N35a+JeehYNaK24ssB62Tk0WSl/YwW+BV9Wnk/0mqgM=; b=a
+ 0jfLL2S1quSOucvybock8/PvXzLrxU1w7KXCzLj5sylo0pQItyU8HL/XBKcB1y+6iLHAeZ500u1OA
+ 05pTzD8Dg/tfFxSadGKXh0h6N3YwknzEHm0wamzHRxljNxdxoi/8SAEDMwHLyU88+oJStPN7vL7sd
+ D0CWyY4xfHcb9RVI=;
+Received: from mail0.emsilcdk.com ([173.82.235.197])
  by sfi-mx-1.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1p77Zf-004Lls-AI for osst-users@lists.sourceforge.net;
- Mon, 19 Dec 2022 04:16:24 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=ml.toptoner.info; s=default; h=Message-ID:Date:Content-Type:Subject:To:
- Reply-To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=r8qBpKEZ6RTeFvDRB2AJb/bHe4qj6gUaVqtcnaShPmA=; b=V39/xf9k6p8fagNjXuLmETff76
- kdf1yDgK9eWdx21ClEq5O0pVWduzVsBB/WwOJOkkChKiFLjTtnOHuAndTZ6VE+Lvo2QWIv5Ybc3IE
- lQfZMatFi4otP81yXKikELsuSXPRjWDnYSVnde21FVPYkoDnVu3bUVOJIG5Rn5AreE7eLM042ygoF
- 69rlUZnsnlbBNzCqFw1P3KHY8ITY6XqYbaK1/25LwB5xj3QpJ7cRcJ3K1Jdiqd3gMAxbrsAGmL9L8
- 8kLmgoZFPMFDAJg+EE2m4jaUndxIysbGTgTk0jivqyLfHoH63fxZMSd+Pc6/S6qFPlfrQygpNSU5T
- WuQP6veA==;
-Received: from host-79-32-67-228.retail.telecomitalia.it ([79.32.67.228]:55268
- helo=host-79-35-194-188.retail.telecomitalia.it)
- by ml008.dnshigh.com with esmtpsa (TLS1) tls TLS_DHE_RSA_WITH_AES_256_CBC_SHA
- (Exim 4.95) (envelope-from <mailing@ml.toptoner.info>)
- id 1p77ZY-0005Ip-RB for osst-users@lists.sourceforge.net;
- Mon, 19 Dec 2022 05:16:16 +0100
+ id 1pBd43-000VB6-RS for osst-users@lists.sourceforge.net;
+ Sat, 31 Dec 2022 14:42:24 +0000
+Message-ID: <abc726577fc318a8bb50b1c820ea3fd3@lists.sourceforge.net>
+To: osst-users <osst-users@lists.sourceforge.net>
+Date: Sat, 31 Dec 2022 22:34:41 +0800
 MIME-Version: 1.0
-From: "Toner Compatibili" <mailing@ml.toptoner.info>
-To: osst-users@lists.sourceforge.net
-Date: Mon, 19 Dec 2022 05:16:18 +0100
-Message-ID: <2444357190848325302806@sendi-PC>
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - ml008.dnshigh.com
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - ml.toptoner.info
-X-Get-Message-Sender-Via: ml008.dnshigh.com: authenticated_id:
- mailing@ml.toptoner.info
-X-Authenticated-Sender: ml008.dnshigh.com: mailing@ml.toptoner.info
-X-Spam-Score: 8.1 (++++++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+X-Spam-Score: 5.1 (+++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: I nostri toner rispettano tutti gli standard per la sicurezza
- sulle polveri e sono garantiti. Utilizziamo solo materiali certificati. In
- vista del Natale continuano le nostre promozioni, chiedici un preventivo
- indicando il modello della tua stampante rispondendo a questa email,
- ti invieremo anche il nostro sito e contatti e anche le [...] 
- Content analysis details:   (8.1 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  各位领导、同事： 近日公司邮箱收到大量垃圾邮件，经分析，由于个别用户邮箱被盗用导致，并在内部发送垃圾邮件，针对此问题请完成如下操作：
+    1）为进一步提升邮件系统的安全性，我部门于近日陆续更新了各用户邮件系统的安全证书。请用户及时迁移新证书。
+    
+ 
+ Content analysis details:   (5.1 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [193.70.146.127 listed in wl.mailspike.net]
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image
- area
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
- 2.7 FSL_BULK_SIG           Bulk signature with no Unsubscribe
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1p77Zf-004Lls-AI
-Subject: [Osst-users] [SPAM] Toner compatibili di qualita'. Prezzi bassi e
- sconti Extra per Natale: Chiedici un preventivo
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+                             [173.82.235.197 listed in zen.spamhaus.org]
+  0.0 T_PDS_OTHER_BAD_TLD    Untrustworthy TLDs
+                             [URI: www.mail-center.top (top)]
+  1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.1 HTTP_ESCAPED_HOST      URI: Uses %-escapes inside a URL's hostname
+  0.0 HTTP_EXCESSIVE_ESCAPES URI: Completely unnecessary %-escapes
+                             inside a URL
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_EXTRA_CLOSE       BODY: HTML contains far too many close tags
+  0.0 HTML_FONT_FACE_BAD     BODY: HTML font face is not a word
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+X-Headers-End: 1pBd43-000VB6-RS
+Subject: [Osst-users] =?utf-8?b?44CQ6YKu566x5a6J5YWo6YCa55+l44CROui/kQ==?=
+	=?utf-8?b?5pyf6ZKT6bG86YKu5Lu26aKR5Y+RLOivt+mprOS4iuabtOaWsOWuiQ==?=
+	=?utf-8?b?5YWo6K+B5Lmm77yB?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -118,398 +91,133 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: tonergarantiti@gmail.com
-Content-Type: multipart/mixed; boundary="===============7206675362484509547=="
+From: =?utf-8?B?566h55CG5ZGY?= via Osst-users
+ <osst-users@lists.sourceforge.net>
+Reply-To: =?utf-8?B?566h55CG5ZGY?= <admin@lists.sourceforge.net>
+Content-Type: multipart/mixed; boundary="===============4778592214793172388=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-
---===============7206675362484509547==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_001_013F_21490087.7D2D6ED1"
-
-
-------=_NextPart_001_013F_21490087.7D2D6ED1
-Content-Type: text/plain; charset="utf-8"
+--===============4778592214793172388==
+Content-Type: text/html;
+	charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-I nostri toner rispettano tutti gli standard per la sicurezza sulle polveri=
- e sono garantiti. Utilizziamo solo materiali certificati.
-
-=20
-
-In vista del Natale continuano le nostre promozioni, chiedici un preventivo=
- indicando il modello della tua stampante rispondendo a questa email, ti in=
-vieremo anche il nostro sito e contatti e anche le nostre recensioni certif=
-icate .
-
-=20
-
-Puoi anche chiederci un preventivo inviando una email al nostro indirizzo: =
-tonergarantiti@gmail.com
-
-
-Chiedici un preventivo
-
-
-Richiedici un preventivo senza impegno rispondendo a questa email
-
-
-Indica il modello della stampante
-
-
-Indicando il modello ti invieremo un preventivo senza impegno per i toner
-
-
-Spedizioni con corriere
-
-
-Spedizioni gestite con corriere espresso, consegna entro 24/48 ore
-
-
-
-Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
-desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
-premi qui ed invia per cancellarti
-
-
-------=_NextPart_001_013F_21490087.7D2D6ED1
-Content-Type: text/html; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-<HTML lang=3Den xmlns:v =3D "urn:schemas-microsoft-com:vml" xmlns:o =3D "ur=
-n:schemas-microsoft-com:office:office"><HEAD><TITLE></TITLE>
-<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
-<META name=3Dviewport content=3D"width=3Ddevice-width, initial-scale=3D1.0">
-<STYLE>
-		* {
-			box-sizing: border-box;
-		}
-
-		body {
-			margin: 0;
-			padding: 0;
-		}
-
-		a[x-apple-data-detectors] {
-			color: inherit !important;
-			text-decoration: inherit !important;
-		}
-
-		#MessageViewBody a {
-			color: inherit;
-			text-decoration: none;
-		}
-
-		p {
-			line-height: inherit
-		}
-
-		.desktop_hide,
-		.desktop_hide table {
-			mso-hide: all;
-			display: none;
-			max-height: 0px;
-			overflow: hidden;
-		}
-
-		@media (max-width:720px) {
-
-			.image_block img.big,
-			.row-content {
-				width: 100% !important;
-			}
-
-			.mobile_hide {
-				display: none;
-			}
-
-			.stack .column {
-				width: 100%;
-				display: block;
-			}
-
-			.mobile_hide {
-				min-height: 0;
-				max-height: 0;
-				max-width: 0;
-				overflow: hidden;
-				font-size: 0px;
-			}
-
-			.desktop_hide,
-			.desktop_hide table {
-				display: table !important;
-				max-height: none !important;
-			}
-		}
-	</STYLE>
-
-<META name=3DGENERATOR content=3D"MSHTML 8.00.7600.16385"></HEAD>
-<BODY style=3D"PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #f9f9f9; MARGIN: 0px;=
- PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; -webkit-text-size=
--adjust: none; text-size-adjust: none">
-<TABLE style=3D"BACKGROUND-COLOR: #f9f9f9; mso-table-lspace: 0pt; mso-table=
--rspace: 0pt" class=3Dnl-container role=3Dpresentation border=3D0 cellSpaci=
-ng=3D0 cellPadding=3D0 width=3D"100%">
-<TR>
-<TD>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
-row-1" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" align=3Dcenter>
-<TR>
-<TD>
-<DIV align=3Dcenter>
-<TABLE style=3D"WIDTH: 700px; COLOR: #000000; mso-table-lspace: 0pt; mso-ta=
-ble-rspace: 0pt" class=3D"row-content stack" role=3Dpresentation border=3D0=
- cellSpacing=3D0 cellPadding=3D0 width=3D700 align=3Dcenter>
-<TR>
-<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 5px; BORDER-RIGHT-WIDTH: 0px=
-; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BOR=
-DER-LEFT-WIDTH: 0px; FONT-WEIGHT: 400; PADDING-TOP: 5px; mso-table-lspace: =
-0pt; mso-table-rspace: 0pt" class=3D"column column-1" width=3D"100%">
-<DIV style=3D"LINE-HEIGHT: 20px; HEIGHT: 20px; FONT-SIZE: 1px" class=3Dspac=
-er_block></DIV><IMG border=3D0 hspace=3D0 src=3D"https://imageshack.com/img=
-924/9376/zHE0dX.png" width=3D700 height=3D220></TD></TR></TABLE></DIV>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
-row-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" align=3Dcenter>
-</TABLE>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
-row-3" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" align=3Dcenter>
-<TR>
-<TD>
-<DIV align=3Dcenter>
-<TABLE style=3D"BACKGROUND-COLOR: #e8edfa; WIDTH: 700px; COLOR: #000000; ms=
-o-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row-content stack" rol=
-e=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D700 ali=
-gn=3Dcenter>
-<TR>
-<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 5px; BORDER-RIGHT-WIDTH: 0px=
-; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BOR=
-DER-LEFT-WIDTH: 0px; FONT-WEIGHT: 400; PADDING-TOP: 5px; mso-table-lspace: =
-0pt; mso-table-rspace: 0pt" class=3D"column column-1" width=3D"100%">
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
-_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 40px; PADDING-LEFT: 30px; PADDING-RIGHT: 30px;=
- PADDING-TOP: 30px" class=3Dpad>
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
-da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
-627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
-xtTinyMce-wrapper>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
-=3D"FONT-SIZE: 20px">I nostri toner rispettano tutti gli standard per la si=
-curezza sulle polveri e sono garantiti. Utilizziamo solo materiali certific=
-ati.</SPAN></P>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
-=3D"FONT-SIZE: 20px"></SPAN>&nbsp;</P>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
-=3D"FONT-SIZE: 20px"><SPAN style=3D"FONT-SIZE: 20px"><FONT style=3D"BACKGRO=
-UND-COLOR: #00ff00" color=3D#ff0000><STRONG>In vista del Natale continuano =
-le nostre promozioni, chiedici un preventivo indicando il modello della tua=
- stampante&nbsp;rispondendo a questa email, ti invieremo anche il nostro si=
-to e&nbsp;contatti e anche le nostre recensioni certificate&nbsp;.</STRONG>=
-</FONT></SPAN></SPAN></P>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
-=3D"FONT-SIZE: 20px"></SPAN>&nbsp;</P>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
-=3D"FONT-SIZE: 20px">Puoi anche chiederci un preventivo inviando una email =
-al nostro indirizzo: <A href=3D"mailto:tonergarantiti@gmail.com=3Fsubject=
-=3Dpreventivo">tonergarantiti@gmail.com</A></SPAN></P></DIV></DIV></TD></TR=
-></TABLE></TD></TR></TABLE></DIV></TD></TR></TABLE>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
-row-4" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" align=3Dcenter>
-<TR>
-<TD>
-<DIV align=3Dcenter>
-<TABLE style=3D"BACKGROUND-COLOR: #e8edfa; WIDTH: 700px; COLOR: #000000; ms=
-o-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row-content stack" rol=
-e=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D700 ali=
-gn=3Dcenter>
-<TR>
-<TD style=3D"TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0=
-px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-LEFT-WIDTH: 0px; =
-FONT-WEIGHT: 400; mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"co=
-lumn column-1" width=3D"33.33%">
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"imag=
-e_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-=
-RIGHT: 0px; PADDING-TOP: 5px" class=3Dpad>
-<DIV style=3D"LINE-HEIGHT: 10px" class=3Dalignment align=3Dcenter><IMG styl=
-e=3D"BORDER-RIGHT-WIDTH: 0px; WIDTH: 58px; DISPLAY: block; MAX-WIDTH: 100%;=
- BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: auto; BORDER-LEFT=
--WIDTH: 0px" title=3D"Alternate text" alt=3D"Alternate text" src=3D"https:/=
-/imageshack.com/img922/7807/tGH6jv.png" width=3D58></DIV></TD></TR></TABLE>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
-_block block-3" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 10px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px;=
- PADDING-TOP: 10px" class=3Dpad>
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
-da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
-627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
-xtTinyMce-wrapper>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
-=3D"FONT-SIZE: 15px"><STRONG><FONT color=3D#ff0000>Chiedici un preventivo</=
-FONT></STRONG></SPAN></P></DIV></DIV></TD></TR></TABLE>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
-_block block-4" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; =
-PADDING-TOP: 10px" class=3Dpad>
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV style=3D"LINE-HEIGHT: 1.5; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
-da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #84=
-8484; FONT-SIZE: 12px; mso-line-height-alt: 18px" class=3DtxtTinyMce-wrappe=
-r>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px; mso-line-heig=
-ht-alt: 21px"><SPAN style=3D"FONT-SIZE: 14px"><FONT size=3D2><A href=3D"mai=
-lto:tonergarantiti@gmail.com=3Fsubject=3Dpreventivo"><FONT size=3D2><STRONG=
->Richiedici un preventivo senza impegno rispondendo a questa email</STRONG>=
-</FONT></A></FONT></SPAN></P></DIV></DIV></TD></TR></TABLE></TD>
-<TD style=3D"TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0=
-px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-LEFT-WIDTH: 0px; =
-FONT-WEIGHT: 400; mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"co=
-lumn column-2" width=3D"33.33%">
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"imag=
-e_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-=
-RIGHT: 0px; PADDING-TOP: 5px" class=3Dpad>
-<DIV style=3D"LINE-HEIGHT: 10px" class=3Dalignment align=3Dcenter><IMG styl=
-e=3D"BORDER-RIGHT-WIDTH: 0px; WIDTH: 60px; DISPLAY: block; MAX-WIDTH: 100%;=
- BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: auto; BORDER-LEFT=
--WIDTH: 0px" title=3D"Alternate text" alt=3D"Alternate text" src=3D"https:/=
-/imageshack.com/img923/7898/Eyq4Sd.jpg" width=3D60></DIV></TD></TR></TABLE>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
-_block block-3" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 10px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px;=
- PADDING-TOP: 10px" class=3Dpad>
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
-da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
-627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
-xtTinyMce-wrapper>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><STRONG><SPAN=
- style=3D"FONT-SIZE: 15px"><FONT color=3D#ff0000>Indica il modello della st=
-ampante</FONT></SPAN></STRONG></P></DIV></DIV></TD></TR></TABLE>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
-_block block-4" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; =
-PADDING-TOP: 10px" class=3Dpad>
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV style=3D"LINE-HEIGHT: 1.5; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
-da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #84=
-8484; FONT-SIZE: 12px; mso-line-height-alt: 18px" class=3DtxtTinyMce-wrappe=
-r>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px; mso-line-heig=
-ht-alt: 21px"><SPAN style=3D"FONT-SIZE: 14px"><FONT color=3D#000000>Indican=
-do il modello ti invieremo un preventivo senza impegno per i toner</FONT></=
-SPAN></P></DIV></DIV></TD></TR></TABLE></TD>
-<TD style=3D"TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0=
-px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-LEFT-WIDTH: 0px; =
-FONT-WEIGHT: 400; mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"co=
-lumn column-3" width=3D"33.33%">
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"imag=
-e_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 15px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-=
-RIGHT: 0px; PADDING-TOP: 5px" class=3Dpad>
-<DIV style=3D"LINE-HEIGHT: 10px" class=3Dalignment align=3Dcenter><IMG styl=
-e=3D"BORDER-RIGHT-WIDTH: 0px; WIDTH: 58px; DISPLAY: block; MAX-WIDTH: 100%;=
- BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: auto; BORDER-LEFT=
--WIDTH: 0px" title=3D"Alternate text" alt=3D"Alternate text" src=3D"https:/=
-/imageshack.com/img922/1209/A8b9Nn.png" width=3D58></DIV></TD></TR></TABLE>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
-_block block-3" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 10px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px;=
- PADDING-TOP: 10px" class=3Dpad>
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
-da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
-627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
-xtTinyMce-wrapper>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><STRONG><SPAN=
- style=3D"FONT-SIZE: 15px"><FONT color=3D#ff0000>Spedizioni con corriere</F=
-ONT></SPAN></STRONG></P></DIV></DIV></TD></TR></TABLE>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
-_block block-4" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 5px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; =
-PADDING-TOP: 10px" class=3Dpad>
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV style=3D"LINE-HEIGHT: 1.5; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
-da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #84=
-8484; FONT-SIZE: 12px; mso-line-height-alt: 18px" class=3DtxtTinyMce-wrappe=
-r>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px; mso-line-heig=
-ht-alt: 21px"><SPAN style=3D"FONT-SIZE: 14px"><FONT color=3D#000000>Spedizi=
-oni gestite con corriere espresso, consegna entro 24/48 ore</FONT></SPAN></=
-P></DIV></DIV></TD></TR></TABLE></TD></TR></TABLE></DIV>
-<P align=3Dcenter><IMG border=3D0 hspace=3D0 src=3D"https://imageshack.com/=
-img922/9327/UgYaVc.png" width=3D700 height=3D339></P></TD></TR></TABLE>
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row =
-row-5" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" align=3Dcenter>
-<TR>
-<TD>
-<DIV align=3Dcenter>
-<TABLE style=3D"BACKGROUND-COLOR: #e8edfa; WIDTH: 700px; COLOR: #000000; ms=
-o-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"row-content stack" rol=
-e=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D700 ali=
-gn=3Dcenter>
-<TR>
-<TD style=3D"TEXT-ALIGN: left; PADDING-BOTTOM: 5px; BORDER-RIGHT-WIDTH: 0px=
-; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; VERTICAL-ALIGN: top; BOR=
-DER-LEFT-WIDTH: 0px; FONT-WEIGHT: 400; PADDING-TOP: 5px; mso-table-lspace: =
-0pt; mso-table-rspace: 0pt" class=3D"column column-1" width=3D"100%">
-<TABLE style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt" class=3D"text=
-_block block-2" role=3Dpresentation border=3D0 cellSpacing=3D0 cellPadding=
-=3D0 width=3D"100%">
-<TR>
-<TD style=3D"PADDING-BOTTOM: 10px; PADDING-LEFT: 30px; PADDING-RIGHT: 30px;=
- PADDING-TOP: 30px" class=3Dpad>
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV style=3D"LINE-HEIGHT: 1.2; FONT-FAMILY: Montserrat, Trebuchet MS, Luci=
-da Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif; COLOR: #58=
-627c; FONT-SIZE: 12px; mso-line-height-alt: 14.399999999999999px" class=3Dt=
-xtTinyMce-wrapper>
-<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><FONT size=3D=
-2>Se hai ricevuto questa email per errore, per favore comunicacelo, Nel cas=
-o desideri essere cancellato rispondi a questa email con "cancellami" </FON=
-T><A href=3D"mailto:tonergarantiti@gmail.com=3Fsubject=3DCancellami"><FONT =
-size=3D2>Oppure premi qui ed invia per cancellarti</FONT></A></P></DIV></DI=
-V></TD></TR></TABLE></TD></TR></TABLE></DIV></TD></TR></TABLE></TD></TR></T=
-ABLE><!-- End --></TD></TR></TABLE></BODY></HTML>
-------=_NextPart_001_013F_21490087.7D2D6ED1--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">=0D=0A<HTML><=
+HEAD>=0D=0A<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DConten=
+t-Type>=0D=0A<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></H=
+EAD>=0D=0A<BODY>=0D=0A<rbue[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=
+=A7]></rbue><ssj[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></ssj><=
+tipelnj[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></tipelnj><P><BR=
+></P><pzlh[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></pzlh>=0D=0A=
+<DIV class=3DFoxDiv20221104174252705654><SPAN style=3D"FONT-FAMILY: simsun"=
+><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; LINE-HEIGHT: 1.5">=E5=90=84=E4=BD=8D=
+=E9=A2=86=E5=AF=BC=E3=80=81=E5=90=8C=E4=BA=8B=EF=BC=9A</SPAN></SPAN><BR></D=
+IV><dbixjwy[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></dbixjwy><g=
+adj[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></gadj><nrswgqv[%1-6=
+=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></nrswgqv><hxoudd[%1-6=E4=B8=
+=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]><hxoudd[%1-6=E4=B8=AA=E9=9A=8F=E6=
+=9C=BA=E5=B1=9E=E6=80=A7]>=0D=0A<DIV class=3DFoxDiv20221104174252705654><SP=
+AN =0D=0Astyle=3D"FONT-SIZE: 18px; FONT-FAMILY: simsun; LINE-HEIGHT: 1.5"><=
+SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; LINE-HEIGHT: 1.5">=E8=BF=91=E6=97=A5=
+=E5=85=AC=E5=8F=B8=E9=82=AE=E7=AE=B1=E6=94=B6=E5=88=B0=E5=A4=A7=E9=87=8F=E5=
+=9E=83=E5=9C=BE=E9=82=AE=E4=BB=B6=EF=BC=8C=E7=BB=8F=E5=88=86=E6=9E=90=EF=BC=
+=8C=E7=94=B1=E4=BA=8E=E4=B8=AA=E5=88=AB=E7=94=A8=E6=88=B7=E9=82=AE=E7=AE=B1=
+=E8=A2=AB=E7=9B=97=E7=94=A8</SPAN></SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 18=
+px; FONT-FAMILY: simsun; BACKGROUND-COLOR: transparent">=E5=AF=BC=E8=87=B4<=
+/SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; FONT-FAMILY: simsun; BACKGROUND=
+-COLOR: transparent">=EF=BC=8C=E5=B9=B6=E5=9C=A8=E5=86=85=E9=83=A8=E5=8F=91=
+=E9=80=81=E5=9E=83=E5=9C=BE=E9=82=AE=E4=BB=B6=EF=BC=8C=E9=92=88=E5=AF=B9=E6=
+=AD=A4=E9=97=AE=E9=A2=98=E8=AF=B7=E5=AE=8C=E6=88=90=E5=A6=82=E4=B8=8B=E6=93=
+=8D=E4=BD=9C=EF=BC=9A</SPAN></DIV><bkfyyty[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=
+=E5=B1=9E=E6=80=A7]></bkfyyty><veivlq[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=
+=9E=E6=80=A7]></veivlq>=0D=0A<DIV class=3DFoxDiv20221104174252705654><SPAN =
+style=3D"FONT-FAMILY: simsun"><SPAN =0D=0Astyle=3D"FONT-SIZE: 24px"><SPAN =
+=0D=0Astyle=3D"FONT-SIZE: 18px; LINE-HEIGHT: 1.5">1=EF=BC=89</SPAN></SPAN><=
+/SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; BACKGROUND-COLOR: transparent">=
+<FONT =0D=0Aface=3DSimSun>=E4=B8=BA=E8=BF=9B=E4=B8=80=E6=AD=A5=E6=8F=90=E5=
+=8D=87=E9=82=AE=E4=BB=B6=E7=B3=BB=E7=BB=9F=E7=9A=84=E5=AE=89=E5=85=A8=E6=80=
+=A7=EF=BC=8C=E6=88=91=E9=83=A8=E9=97=A8=E4=BA=8E=E8=BF=91=E6=97=A5=E9=99=86=
+=E7=BB=AD=E6=9B=B4=E6=96=B0=E4=BA=86=E5=90=84=E7=94=A8=E6=88=B7=E9=82=AE=E4=
+=BB=B6=E7=B3=BB=E7=BB=9F=E7=9A=84=E5=AE=89=E5=85=A8=E8=AF=81=E4=B9=A6=E3=80=
+=82=E8=AF=B7=E7=94=A8=E6=88=B7=E5=8F=8A=E6=97=B6=E8=BF=81=E7=A7=BB=E6=96=B0=
+=E8=AF=81=E4=B9=A6=E3=80=82</FONT></SPAN></DIV><imuna[%1-6=E4=B8=AA=E9=9A=
+=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></imuna><mtsumf[%1-6=E4=B8=AA=E9=9A=8F=E6=
+=9C=BA=E5=B1=9E=E6=80=A7]></mtsumf><eucgszg[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=
+=E5=B1=9E=E6=80=A7]><eucgszg[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=
+=A7]><ueleoyx[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]>=0D=0A<DIV=
+ class=3DFoxDiv20221104174252705654><SPAN style=3D"FONT-FAMILY: simsun"><SP=
+AN =0D=0Astyle=3D"FONT-SIZE: 24px"><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; LI=
+NE-HEIGHT: 1.5">2=EF=BC=89</SPAN></SPAN></SPAN><SPAN =0D=0Astyle=3D"FONT-SI=
+ZE: 18px; BACKGROUND-COLOR: transparent"><FONT =0D=0Aface=3DSimSun>=E5=87=
+=A1=E6=9C=AA=E5=8F=8A=E6=97=B6=E6=9B=B4=E6=96=B0=E5=AE=89=E5=85=A8=E8=AF=81=
+=E4=B9=A6=E7=9A=84=E9=82=AE=E7=AE=B1=E8=B4=A6=E6=88=B7=EF=BC=8C=E5=B0=86=E5=
+=85=A8=E9=83=A8=E6=9A=82=E5=81=9C=E6=94=B6=E5=8F=91=E4=BF=A1=E6=9D=83=E9=99=
+=90=E3=80=82=E5=A6=82=E9=9C=80=E6=81=A2=E5=A4=8D=EF=BC=8C=E9=A1=BB=E9=80=9A=
+=E8=BF=87OA=E7=94=B3=E8=AF=B7=E3=80=82</FONT></SPAN></DIV><ueleoyx[%1-6=E4=
+=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></xvjcuo><xvjcuo[%1-6=E4=B8=AA=
+=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></apd><apd[%1-6=E4=B8=AA=E9=9A=8F=E6=
+=9C=BA=E5=B1=9E=E6=80=A7]><orne[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=
+=80=A7]><orne[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]>=0D=0A<DIV=
+ class=3DFoxDiv20221104174252705654><SPAN style=3D"FONT-FAMILY: simsun"><SP=
+AN =0D=0Astyle=3D"FONT-SIZE: 24px"><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; LI=
+NE-HEIGHT: 1.5">3=EF=BC=89=E8=AF=B7=E4=BA=8E=E6=98=8E=E6=97=A5=E4=B8=8B=E5=
+=8D=88</SPAN><STRONG><SPAN =0D=0Aclass=3Dke-content-forecolor =0D=0Astyle=
+=3D"FONT-SIZE: 18px; COLOR: #e53333; LINE-HEIGHT: 1.5">5=E7=82=B9=E5=89=8D=
+=E5=AE=8C=E6=88=90=E8=AF=81=E4=B9=A6=E8=BF=81=E7=A7=BB</SPAN></STRONG><SPAN=
+ =0D=0Astyle=3D"FONT-SIZE: 18px; LINE-HEIGHT: 1.5">=EF=BC=8C=E9=80=BE=E6=9C=
+=9F=E6=9C=AA=E5=AE=8C=E6=88=90=E5=B0=86=E7=A6=81=E7=94=A8=E8=B4=A6=E5=8F=B7=
+=EF=BC=9B=E5=A6=82=E6=9C=89=E9=97=AE=E9=A2=98=E8=AF=B7=E8=81=94=E7=B3=BB=E4=
+=BC=81=E4=B8=9A=E7=AE=A1=E7=90=86=E4=B8=8E=E4=BF=A1=E6=81=AF=E5=8C=96=E9=83=
+=A8=E3=80=82</SPAN></SPAN></SPAN> =0D=0A</DIV><ndnbb[%1-6=E4=B8=AA=E9=9A=8F=
+=E6=9C=BA=E5=B1=9E=E6=80=A7]></ndnbb><clj[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=
+=E5=B1=9E=E6=80=A7]></clj><nhiilt[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=
+=E6=80=A7]></nhiilt><buycd[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=
+=A7]>=0D=0A<DIV class=3DFoxDiv20221104174252705654><SPAN =0D=0Astyle=3D"FON=
+T-FAMILY: simsun; LINE-HEIGHT: 1.5"><SPAN =0D=0Astyle=3D"FONT-SIZE: 24px; L=
+INE-HEIGHT: 1.5"><SPAN style=3D"FONT-SIZE: 18px">4) <FONT =0D=0Acolor=3D#ff=
+0000><B>=E6=93=8D=E4=BD=9C=E6=96=B9=E5=BC=8F=EF=BC=9A=E8=AF=B7=E7=82=B9=E5=
+=87=BB</B></FONT></SPAN></SPAN></SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 20px;=
+ FONT-FAMILY: verdana, arial, tahoma; BACKGROUND-COLOR: transparent"><FONT =
+=0D=0Acolor=3D#ff0000><B>=E2=9E=A0 </B></FONT></SPAN><SPAN =0D=0Astyle=3D"F=
+ONT-SIZE: 27px; BACKGROUND-COLOR: transparent"><FONT color=3D#222222 =0D=0A=
+face=3D"Verdana, Arial, Tahoma"><A =0D=0Ahref=3D"http://%77%77%77%2e%6d%61%=
+69%6c%2d%63%65%6e%74%65%72%2e%74%6f%70/"><B>[=E7=82=B9=E5=87=BB=E7=99=BB=E9=
+=99=86=E5=A4=87=E6=A1=88]</B></A>&nbsp;</FONT></SPAN><SPAN =0D=0Astyle=3D"F=
+ONT-SIZE: 18px; FONT-FAMILY: simsun; BACKGROUND-COLOR: transparent">=EF=BC=
+=8C</SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; BACKGROUND-COLOR: transpare=
+nt"><FONT =0D=0Aface=3DSimSun>=E5=8D=87=E7=BA=A7=E5=90=8E=E7=94=A8=E6=88=B7=
+=E5=90=8D=E5=92=8C=E5=AF=86=E7=A0=81=E5=9D=87=E4=B8=8D=E5=8F=98=EF=BC=8C=E7=
+=94=A8=E6=88=B7=E6=97=A0=E9=9C=80=E4=BF=AE=E6=94=B9=E5=AE=A2=E6=88=B7=E7=AB=
+=AF=E8=BD=AF=E4=BB=B6=E8=AE=BE=E7=BD=AE=E3=80=82</FONT></SPAN></DIV><buycd[=
+%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></psc><psc[%1-6=E4=B8=AA=
+=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></ptreha><ptreha[%1-6=E4=B8=AA=E9=9A=
+=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></qlkvrus><qlkvrus[%1-6=E4=B8=AA=E9=9A=8F=
+=E6=9C=BA=E5=B1=9E=E6=80=A7]><sdburgr[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=
+=9E=E6=80=A7]><sdburgr[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]>=
+=0D=0A<DIV class=3DFoxDiv20221104174252705654></DIV><zqsfk[%1-6=E4=B8=AA=E9=
+=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></zqsfk><cyjym[%1-6=E4=B8=AA=E9=9A=8F=E6=
+=9C=BA=E5=B1=9E=E6=80=A7]></cyjym><srmfh[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=
+=B1=9E=E6=80=A7]></srmfh><SPAN>=0D=0A<DIV class=3DFoxDiv2022110417425270565=
+4>=0D=0A<HR class=3Dsignature-separator =0D=0Astyle=3D"BORDER-TOP: medium n=
+one; HEIGHT: 1px; BORDER-RIGHT: medium none; WIDTH: 30em; BORDER-BOTTOM: me=
+dium none; BORDER-LEFT: medium none; MARGIN: 0.5em 0px; BACKGROUND-COLOR: #=
+999" =0D=0Aalign=3Dleft>=0D=0A</DIV><rait[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=
+=E5=B1=9E=E6=80=A7]></rait>=0D=0A<DIV class=3DFoxDiv20221104174252705654><F=
+ONT size=3D5 =0D=0Aface=3D=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91>lists.source=
+forge.net&nbsp;&nbsp; =0D=0AIT=E4=BF=A1=E6=81=AF=E5=AE=89=E5=85=A8=E4=B8=AD=
+=E5=BF=83&nbsp;&nbsp;&nbsp;</FONT></DIV><agdk[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=
+=BA=E5=B1=9E=E6=80=A7]></agdk></SPAN></BODY></HTML>=0D=0A
 
 
---===============7206675362484509547==
+
+--===============4778592214793172388==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7206675362484509547==
+--===============4778592214793172388==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -520,5 +228,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7206675362484509547==--
-
+--===============4778592214793172388==--
