@@ -2,50 +2,50 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 5233365A520
-	for <lists+osst-users@lfdr.de>; Sat, 31 Dec 2022 15:42:26 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id EEABC65B60B
+	for <lists+osst-users@lfdr.de>; Mon,  2 Jan 2023 18:43:44 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1pBd45-0008JQ-3Y
+	id 1pCOqd-0008A9-OE
 	for lists+osst-users@lfdr.de;
-	Sat, 31 Dec 2022 14:42:25 +0000
+	Mon, 02 Jan 2023 17:43:43 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <admin@noreply.com>) id 1pBd44-0008J7-DD
- for osst-users@lists.sourceforge.net; Sat, 31 Dec 2022 14:42:24 +0000
+ (envelope-from <admin@noreply.com>) id 1pCOqb-0008A2-Sc
+ for osst-users@lists.sourceforge.net; Mon, 02 Jan 2023 17:43:41 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Date:Subject:To:From:Message-ID:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
+ MIME-Version:Date:To:From:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=N35a+JeehYNaK24ssB62Tk0WSl/YwW+BV9Wnk/0mqgM=; b=FPQzuAz2ZSGRq4tmMaZCcydT0c
- izbArmReTmxJx0yrVVfaRFSvNGxFkkl8b1lONUaJeCbr5brB4v46iws+xs1EJFeiz69mIuU2yqQn3
- m1TVI8Rv0abJaUZR6X/0h6nklDEOZOQGrpj2tjWq1gN4q5oTl5mE4xzlUjlUxFzj8PtM=;
+ bh=TdxWtyYsq/2upIB8IRjLmhP/dqxEa7fE7ws/slr89cc=; b=DSdatrtBIfYEW+BX/o0n80D5K4
+ /TDmVJjbpBVa5TU9Vbbas7WoFxmGza4TplhF+fERahdLY/zRoEI9x3w6AxubbwxwlI050KLnNJAVH
+ RtQDfEsP0HkXs6WbyH14HV/EsfBExh30H5AOPkLa+ihn/em6v716xCk3FiYw5Q3/rgdc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Date:Subject:To:From:
+ h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Date:To:From:
  Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=N35a+JeehYNaK24ssB62Tk0WSl/YwW+BV9Wnk/0mqgM=; b=a
- 0jfLL2S1quSOucvybock8/PvXzLrxU1w7KXCzLj5sylo0pQItyU8HL/XBKcB1y+6iLHAeZ500u1OA
- 05pTzD8Dg/tfFxSadGKXh0h6N3YwknzEHm0wamzHRxljNxdxoi/8SAEDMwHLyU88+oJStPN7vL7sd
- D0CWyY4xfHcb9RVI=;
-Received: from mail0.emsilcdk.com ([173.82.235.197])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ List-Owner:List-Archive; bh=TdxWtyYsq/2upIB8IRjLmhP/dqxEa7fE7ws/slr89cc=; b=I
+ i9PR2aJy1PqOWgUlyBnABY02XJ+vgImn/Cvc9tQ5H4iw+j5RAf0bN0QtkycBAGdy4Nr5vqon9erLy
+ sLlGaDTCyAQ5gBwpLmXmljx/327l9bxH9J3KzVD7pgnfXP3wTLuA9tyYxQv46sAaLlIyKUfX3xEPa
+ nJPbqcjLp+nCouCc=;
+Received: from [203.9.150.107] (helo=mail0.secmail-smtp.com)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1pBd43-000VB6-RS for osst-users@lists.sourceforge.net;
- Sat, 31 Dec 2022 14:42:24 +0000
-Message-ID: <abc726577fc318a8bb50b1c820ea3fd3@lists.sourceforge.net>
+ id 1pCOqb-0001fr-54 for osst-users@lists.sourceforge.net;
+ Mon, 02 Jan 2023 17:43:41 +0000
+Message-ID: <2564102dd4788ca4bdc69b6e0d3445a2@lists.sourceforge.net>
 To: osst-users <osst-users@lists.sourceforge.net>
-Date: Sat, 31 Dec 2022 22:34:41 +0800
+Date: Tue, 03 Jan 2023 01:43:30 +0800
 MIME-Version: 1.0
-X-Spam-Score: 5.1 (+++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has NOT identified this incoming email as spam.  The original
+X-Spam-Score: 8.3 (++++++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
@@ -54,32 +54,32 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
     1）为进一步提升邮件系统的安全性，我部门于近日陆续更新了各用户邮件系统的安全证书。请用户及时迁移新证书。
     
  
- Content analysis details:   (5.1 points, 6.0 required)
+ Content analysis details:   (8.3 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_RED              Contains an URL listed in the URIBL redlist
+                             [URIs: coolcy.xyz]
   3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [173.82.235.197 listed in zen.spamhaus.org]
-  0.0 T_PDS_OTHER_BAD_TLD    Untrustworthy TLDs
-                             [URI: www.mail-center.top (top)]
-  1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
+                             [203.9.150.107 listed in zen.spamhaus.org]
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  2.0 PDS_OTHER_BAD_TLD      Untrustworthy TLDs
+                             [URI: www.coolcy.xyz (xyz)]
   0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
                              mail domains are different
+  1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
   0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.1 HTTP_ESCAPED_HOST      URI: Uses %-escapes inside a URL's hostname
-  0.0 HTTP_EXCESSIVE_ESCAPES URI: Completely unnecessary %-escapes
-                             inside a URL
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
   0.0 HTML_EXTRA_CLOSE       BODY: HTML contains far too many close tags
-  0.0 HTML_FONT_FACE_BAD     BODY: HTML font face is not a word
   0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_FONT_FACE_BAD     BODY: HTML font face is not a word
   0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
                              Colors in HTML
-X-Headers-End: 1pBd43-000VB6-RS
-Subject: [Osst-users] =?utf-8?b?44CQ6YKu566x5a6J5YWo6YCa55+l44CROui/kQ==?=
-	=?utf-8?b?5pyf6ZKT6bG86YKu5Lu26aKR5Y+RLOivt+mprOS4iuabtOaWsOWuiQ==?=
-	=?utf-8?b?5YWo6K+B5Lmm77yB?=
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1pCOqb-0001fr-54
+Subject: [SPAM] 【邮箱安全通知】:近期钓鱼邮件频发,请马上更新安全证书！
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -94,130 +94,113 @@ List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
 From: =?utf-8?B?566h55CG5ZGY?= via Osst-users
  <osst-users@lists.sourceforge.net>
 Reply-To: =?utf-8?B?566h55CG5ZGY?= <admin@lists.sourceforge.net>
-Content-Type: multipart/mixed; boundary="===============4778592214793172388=="
+Content-Type: multipart/mixed; boundary="===============0008972523487297666=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============4778592214793172388==
+--===============0008972523487297666==
 Content-Type: text/html;
 	charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: base64
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">=0D=0A<HTML><=
-HEAD>=0D=0A<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DConten=
-t-Type>=0D=0A<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></H=
-EAD>=0D=0A<BODY>=0D=0A<rbue[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=
-=A7]></rbue><ssj[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></ssj><=
-tipelnj[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></tipelnj><P><BR=
-></P><pzlh[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></pzlh>=0D=0A=
-<DIV class=3DFoxDiv20221104174252705654><SPAN style=3D"FONT-FAMILY: simsun"=
-><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; LINE-HEIGHT: 1.5">=E5=90=84=E4=BD=8D=
-=E9=A2=86=E5=AF=BC=E3=80=81=E5=90=8C=E4=BA=8B=EF=BC=9A</SPAN></SPAN><BR></D=
-IV><dbixjwy[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></dbixjwy><g=
-adj[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></gadj><nrswgqv[%1-6=
-=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></nrswgqv><hxoudd[%1-6=E4=B8=
-=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]><hxoudd[%1-6=E4=B8=AA=E9=9A=8F=E6=
-=9C=BA=E5=B1=9E=E6=80=A7]>=0D=0A<DIV class=3DFoxDiv20221104174252705654><SP=
-AN =0D=0Astyle=3D"FONT-SIZE: 18px; FONT-FAMILY: simsun; LINE-HEIGHT: 1.5"><=
-SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; LINE-HEIGHT: 1.5">=E8=BF=91=E6=97=A5=
-=E5=85=AC=E5=8F=B8=E9=82=AE=E7=AE=B1=E6=94=B6=E5=88=B0=E5=A4=A7=E9=87=8F=E5=
-=9E=83=E5=9C=BE=E9=82=AE=E4=BB=B6=EF=BC=8C=E7=BB=8F=E5=88=86=E6=9E=90=EF=BC=
-=8C=E7=94=B1=E4=BA=8E=E4=B8=AA=E5=88=AB=E7=94=A8=E6=88=B7=E9=82=AE=E7=AE=B1=
-=E8=A2=AB=E7=9B=97=E7=94=A8</SPAN></SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 18=
-px; FONT-FAMILY: simsun; BACKGROUND-COLOR: transparent">=E5=AF=BC=E8=87=B4<=
-/SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; FONT-FAMILY: simsun; BACKGROUND=
--COLOR: transparent">=EF=BC=8C=E5=B9=B6=E5=9C=A8=E5=86=85=E9=83=A8=E5=8F=91=
-=E9=80=81=E5=9E=83=E5=9C=BE=E9=82=AE=E4=BB=B6=EF=BC=8C=E9=92=88=E5=AF=B9=E6=
-=AD=A4=E9=97=AE=E9=A2=98=E8=AF=B7=E5=AE=8C=E6=88=90=E5=A6=82=E4=B8=8B=E6=93=
-=8D=E4=BD=9C=EF=BC=9A</SPAN></DIV><bkfyyty[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=
-=E5=B1=9E=E6=80=A7]></bkfyyty><veivlq[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=
-=9E=E6=80=A7]></veivlq>=0D=0A<DIV class=3DFoxDiv20221104174252705654><SPAN =
-style=3D"FONT-FAMILY: simsun"><SPAN =0D=0Astyle=3D"FONT-SIZE: 24px"><SPAN =
-=0D=0Astyle=3D"FONT-SIZE: 18px; LINE-HEIGHT: 1.5">1=EF=BC=89</SPAN></SPAN><=
-/SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; BACKGROUND-COLOR: transparent">=
-<FONT =0D=0Aface=3DSimSun>=E4=B8=BA=E8=BF=9B=E4=B8=80=E6=AD=A5=E6=8F=90=E5=
-=8D=87=E9=82=AE=E4=BB=B6=E7=B3=BB=E7=BB=9F=E7=9A=84=E5=AE=89=E5=85=A8=E6=80=
-=A7=EF=BC=8C=E6=88=91=E9=83=A8=E9=97=A8=E4=BA=8E=E8=BF=91=E6=97=A5=E9=99=86=
-=E7=BB=AD=E6=9B=B4=E6=96=B0=E4=BA=86=E5=90=84=E7=94=A8=E6=88=B7=E9=82=AE=E4=
-=BB=B6=E7=B3=BB=E7=BB=9F=E7=9A=84=E5=AE=89=E5=85=A8=E8=AF=81=E4=B9=A6=E3=80=
-=82=E8=AF=B7=E7=94=A8=E6=88=B7=E5=8F=8A=E6=97=B6=E8=BF=81=E7=A7=BB=E6=96=B0=
-=E8=AF=81=E4=B9=A6=E3=80=82</FONT></SPAN></DIV><imuna[%1-6=E4=B8=AA=E9=9A=
-=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></imuna><mtsumf[%1-6=E4=B8=AA=E9=9A=8F=E6=
-=9C=BA=E5=B1=9E=E6=80=A7]></mtsumf><eucgszg[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=
-=E5=B1=9E=E6=80=A7]><eucgszg[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=
-=A7]><ueleoyx[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]>=0D=0A<DIV=
- class=3DFoxDiv20221104174252705654><SPAN style=3D"FONT-FAMILY: simsun"><SP=
-AN =0D=0Astyle=3D"FONT-SIZE: 24px"><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; LI=
-NE-HEIGHT: 1.5">2=EF=BC=89</SPAN></SPAN></SPAN><SPAN =0D=0Astyle=3D"FONT-SI=
-ZE: 18px; BACKGROUND-COLOR: transparent"><FONT =0D=0Aface=3DSimSun>=E5=87=
-=A1=E6=9C=AA=E5=8F=8A=E6=97=B6=E6=9B=B4=E6=96=B0=E5=AE=89=E5=85=A8=E8=AF=81=
-=E4=B9=A6=E7=9A=84=E9=82=AE=E7=AE=B1=E8=B4=A6=E6=88=B7=EF=BC=8C=E5=B0=86=E5=
-=85=A8=E9=83=A8=E6=9A=82=E5=81=9C=E6=94=B6=E5=8F=91=E4=BF=A1=E6=9D=83=E9=99=
-=90=E3=80=82=E5=A6=82=E9=9C=80=E6=81=A2=E5=A4=8D=EF=BC=8C=E9=A1=BB=E9=80=9A=
-=E8=BF=87OA=E7=94=B3=E8=AF=B7=E3=80=82</FONT></SPAN></DIV><ueleoyx[%1-6=E4=
-=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></xvjcuo><xvjcuo[%1-6=E4=B8=AA=
-=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></apd><apd[%1-6=E4=B8=AA=E9=9A=8F=E6=
-=9C=BA=E5=B1=9E=E6=80=A7]><orne[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=
-=80=A7]><orne[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]>=0D=0A<DIV=
- class=3DFoxDiv20221104174252705654><SPAN style=3D"FONT-FAMILY: simsun"><SP=
-AN =0D=0Astyle=3D"FONT-SIZE: 24px"><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; LI=
-NE-HEIGHT: 1.5">3=EF=BC=89=E8=AF=B7=E4=BA=8E=E6=98=8E=E6=97=A5=E4=B8=8B=E5=
-=8D=88</SPAN><STRONG><SPAN =0D=0Aclass=3Dke-content-forecolor =0D=0Astyle=
-=3D"FONT-SIZE: 18px; COLOR: #e53333; LINE-HEIGHT: 1.5">5=E7=82=B9=E5=89=8D=
-=E5=AE=8C=E6=88=90=E8=AF=81=E4=B9=A6=E8=BF=81=E7=A7=BB</SPAN></STRONG><SPAN=
- =0D=0Astyle=3D"FONT-SIZE: 18px; LINE-HEIGHT: 1.5">=EF=BC=8C=E9=80=BE=E6=9C=
-=9F=E6=9C=AA=E5=AE=8C=E6=88=90=E5=B0=86=E7=A6=81=E7=94=A8=E8=B4=A6=E5=8F=B7=
-=EF=BC=9B=E5=A6=82=E6=9C=89=E9=97=AE=E9=A2=98=E8=AF=B7=E8=81=94=E7=B3=BB=E4=
-=BC=81=E4=B8=9A=E7=AE=A1=E7=90=86=E4=B8=8E=E4=BF=A1=E6=81=AF=E5=8C=96=E9=83=
-=A8=E3=80=82</SPAN></SPAN></SPAN> =0D=0A</DIV><ndnbb[%1-6=E4=B8=AA=E9=9A=8F=
-=E6=9C=BA=E5=B1=9E=E6=80=A7]></ndnbb><clj[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=
-=E5=B1=9E=E6=80=A7]></clj><nhiilt[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=
-=E6=80=A7]></nhiilt><buycd[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=
-=A7]>=0D=0A<DIV class=3DFoxDiv20221104174252705654><SPAN =0D=0Astyle=3D"FON=
-T-FAMILY: simsun; LINE-HEIGHT: 1.5"><SPAN =0D=0Astyle=3D"FONT-SIZE: 24px; L=
-INE-HEIGHT: 1.5"><SPAN style=3D"FONT-SIZE: 18px">4) <FONT =0D=0Acolor=3D#ff=
-0000><B>=E6=93=8D=E4=BD=9C=E6=96=B9=E5=BC=8F=EF=BC=9A=E8=AF=B7=E7=82=B9=E5=
-=87=BB</B></FONT></SPAN></SPAN></SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 20px;=
- FONT-FAMILY: verdana, arial, tahoma; BACKGROUND-COLOR: transparent"><FONT =
-=0D=0Acolor=3D#ff0000><B>=E2=9E=A0 </B></FONT></SPAN><SPAN =0D=0Astyle=3D"F=
-ONT-SIZE: 27px; BACKGROUND-COLOR: transparent"><FONT color=3D#222222 =0D=0A=
-face=3D"Verdana, Arial, Tahoma"><A =0D=0Ahref=3D"http://%77%77%77%2e%6d%61%=
-69%6c%2d%63%65%6e%74%65%72%2e%74%6f%70/"><B>[=E7=82=B9=E5=87=BB=E7=99=BB=E9=
-=99=86=E5=A4=87=E6=A1=88]</B></A>&nbsp;</FONT></SPAN><SPAN =0D=0Astyle=3D"F=
-ONT-SIZE: 18px; FONT-FAMILY: simsun; BACKGROUND-COLOR: transparent">=EF=BC=
-=8C</SPAN><SPAN =0D=0Astyle=3D"FONT-SIZE: 18px; BACKGROUND-COLOR: transpare=
-nt"><FONT =0D=0Aface=3DSimSun>=E5=8D=87=E7=BA=A7=E5=90=8E=E7=94=A8=E6=88=B7=
-=E5=90=8D=E5=92=8C=E5=AF=86=E7=A0=81=E5=9D=87=E4=B8=8D=E5=8F=98=EF=BC=8C=E7=
-=94=A8=E6=88=B7=E6=97=A0=E9=9C=80=E4=BF=AE=E6=94=B9=E5=AE=A2=E6=88=B7=E7=AB=
-=AF=E8=BD=AF=E4=BB=B6=E8=AE=BE=E7=BD=AE=E3=80=82</FONT></SPAN></DIV><buycd[=
-%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></psc><psc[%1-6=E4=B8=AA=
-=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></ptreha><ptreha[%1-6=E4=B8=AA=E9=9A=
-=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></qlkvrus><qlkvrus[%1-6=E4=B8=AA=E9=9A=8F=
-=E6=9C=BA=E5=B1=9E=E6=80=A7]><sdburgr[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=
-=9E=E6=80=A7]><sdburgr[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]>=
-=0D=0A<DIV class=3DFoxDiv20221104174252705654></DIV><zqsfk[%1-6=E4=B8=AA=E9=
-=9A=8F=E6=9C=BA=E5=B1=9E=E6=80=A7]></zqsfk><cyjym[%1-6=E4=B8=AA=E9=9A=8F=E6=
-=9C=BA=E5=B1=9E=E6=80=A7]></cyjym><srmfh[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=E5=
-=B1=9E=E6=80=A7]></srmfh><SPAN>=0D=0A<DIV class=3DFoxDiv2022110417425270565=
-4>=0D=0A<HR class=3Dsignature-separator =0D=0Astyle=3D"BORDER-TOP: medium n=
-one; HEIGHT: 1px; BORDER-RIGHT: medium none; WIDTH: 30em; BORDER-BOTTOM: me=
-dium none; BORDER-LEFT: medium none; MARGIN: 0.5em 0px; BACKGROUND-COLOR: #=
-999" =0D=0Aalign=3Dleft>=0D=0A</DIV><rait[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=BA=
-=E5=B1=9E=E6=80=A7]></rait>=0D=0A<DIV class=3DFoxDiv20221104174252705654><F=
-ONT size=3D5 =0D=0Aface=3D=E5=BE=AE=E8=BD=AF=E9=9B=85=E9=BB=91>lists.source=
-forge.net&nbsp;&nbsp; =0D=0AIT=E4=BF=A1=E6=81=AF=E5=AE=89=E5=85=A8=E4=B8=AD=
-=E5=BF=83&nbsp;&nbsp;&nbsp;</FONT></DIV><agdk[%1-6=E4=B8=AA=E9=9A=8F=E6=9C=
-=BA=E5=B1=9E=E6=80=A7]></agdk></SPAN></BODY></HTML>=0D=0A
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
+Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
+bnQ9Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWT4NCjxhZ21kb2h2WyUx
+LTbkuKrpmo/mnLrlsZ7mgKddPjwvYWdtZG9odj48cWltWyUxLTbkuKrpmo/mnLrlsZ7mgKddPjwv
+cWltPjxQPjxCUj48L1A+PGxreWhpcXVbJTEtNuS4qumaj+acuuWxnuaAp10+PC9sa3loaXF1Pjxh
+dm13alslMS025Liq6ZqP5py65bGe5oCnXT48L2F2bXdqPg0KPERJViBjbGFzcz1Gb3hEaXYyMDIy
+MTEwNDE3NDI1MjcwNTY1ND48U1BBTiBzdHlsZT0iRk9OVC1GQU1JTFk6IHNpbXN1biI+PFNQQU4g
+DQpzdHlsZT0iRk9OVC1TSVpFOiAxOHB4OyBMSU5FLUhFSUdIVDogMS41Ij7lkITkvY3pooblr7zj
+gIHlkIzkuovvvJo8L1NQQU4+PC9TUEFOPjxCUj48L0RJVj48ZnB0WyUxLTbkuKrpmo/mnLrlsZ7m
+gKddPjwvZnB0Pjxpb2Jzc1slMS025Liq6ZqP5py65bGe5oCnXT48L2lvYnNzPjxseWhhWyUxLTbk
+uKrpmo/mnLrlsZ7mgKddPjxseWhhWyUxLTbkuKrpmo/mnLrlsZ7mgKddPg0KPERJViBjbGFzcz1G
+b3hEaXYyMDIyMTEwNDE3NDI1MjcwNTY1ND48U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDE4cHg7
+IEZPTlQtRkFNSUxZOiBzaW1zdW47IExJTkUtSEVJR0hUOiAxLjUiPjxTUEFOIA0Kc3R5bGU9IkZP
+TlQtU0laRTogMThweDsgTElORS1IRUlHSFQ6IDEuNSI+6L+R5pel5YWs5Y+46YKu566x5pS25Yiw
+5aSn6YeP5Z6D5Zy+6YKu5Lu277yM57uP5YiG5p6Q77yM55Sx5LqO5Liq5Yir55So5oi36YKu566x
+6KKr55uX55SoPC9TUEFOPjwvU1BBTj48U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDE4cHg7IEZP
+TlQtRkFNSUxZOiBzaW1zdW47IEJBQ0tHUk9VTkQtQ09MT1I6IHRyYW5zcGFyZW50Ij7lr7zoh7Q8
+L1NQQU4+PFNQQU4gDQpzdHlsZT0iRk9OVC1TSVpFOiAxOHB4OyBGT05ULUZBTUlMWTogc2ltc3Vu
+OyBCQUNLR1JPVU5ELUNPTE9SOiB0cmFuc3BhcmVudCI+77yM5bm25Zyo5YaF6YOo5Y+R6YCB5Z6D
+5Zy+6YKu5Lu277yM6ZKI5a+55q2k6Zeu6aKY6K+35a6M5oiQ5aaC5LiL5pON5L2c77yaPC9TUEFO
+PjwvRElWPjxvZ29bJTEtNuS4qumaj+acuuWxnuaAp10+PC9vZ28+PG5pZnlyWyUxLTbkuKrpmo/m
+nLrlsZ7mgKddPjwvbmlmeXI+PGRrYXZldFslMS025Liq6ZqP5py65bGe5oCnXT48L2RrYXZldD4N
+CjxESVYgY2xhc3M9Rm94RGl2MjAyMjExMDQxNzQyNTI3MDU2NTQ+PFNQQU4gc3R5bGU9IkZPTlQt
+RkFNSUxZOiBzaW1zdW4iPjxTUEFOIA0Kc3R5bGU9IkZPTlQtU0laRTogMjRweCI+PFNQQU4gDQpz
+dHlsZT0iRk9OVC1TSVpFOiAxOHB4OyBMSU5FLUhFSUdIVDogMS41Ij4x77yJPC9TUEFOPjwvU1BB
+Tj48L1NQQU4+PFNQQU4gDQpzdHlsZT0iRk9OVC1TSVpFOiAxOHB4OyBCQUNLR1JPVU5ELUNPTE9S
+OiB0cmFuc3BhcmVudCI+PEZPTlQgDQpmYWNlPVNpbVN1bj7kuLrov5vkuIDmraXmj5DljYfpgq7k
+u7bns7vnu5/nmoTlronlhajmgKfvvIzmiJHpg6jpl6jkuo7ov5Hml6XpmYbnu63mm7TmlrDkuobl
+kITnlKjmiLfpgq7ku7bns7vnu5/nmoTlronlhajor4HkuabjgILor7fnlKjmiLflj4rml7bov4Hn
+p7vmlrDor4HkuabjgII8L0ZPTlQ+PC9TUEFOPjwvRElWPjx0amJnbGJbJTEtNuS4qumaj+acuuWx
+nuaAp10+PC90amJnbGI+PHl3c3Nxd2pbJTEtNuS4qumaj+acuuWxnuaAp10+PC95d3NzcXdqPjx1
+b21wWyUxLTbkuKrpmo/mnLrlsZ7mgKddPjx1b21wWyUxLTbkuKrpmo/mnLrlsZ7mgKddPjxsd3Zh
+cmJ6WyUxLTbkuKrpmo/mnLrlsZ7mgKddPg0KPERJViBjbGFzcz1Gb3hEaXYyMDIyMTEwNDE3NDI1
+MjcwNTY1ND48U1BBTiBzdHlsZT0iRk9OVC1GQU1JTFk6IHNpbXN1biI+PFNQQU4gDQpzdHlsZT0i
+Rk9OVC1TSVpFOiAyNHB4Ij48U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDE4cHg7IExJTkUtSEVJ
+R0hUOiAxLjUiPjLvvIk8L1NQQU4+PC9TUEFOPjwvU1BBTj48U1BBTiANCnN0eWxlPSJGT05ULVNJ
+WkU6IDE4cHg7IEJBQ0tHUk9VTkQtQ09MT1I6IHRyYW5zcGFyZW50Ij48Rk9OVCANCmZhY2U9U2lt
+U3VuPuWHoeacquWPiuaXtuabtOaWsOWuieWFqOivgeS5pueahOmCrueusei0puaIt++8jOWwhuWF
+qOmDqOaaguWBnOaUtuWPkeS/oeadg+mZkOOAguWmgumcgOaBouWkje+8jOmhu+mAmui/h09B55Sz
+6K+344CCPC9GT05UPjwvU1BBTj48L0RJVj48bHd2YXJielslMS025Liq6ZqP5py65bGe5oCnXT48
+L2Ridz48ZGJ3WyUxLTbkuKrpmo/mnLrlsZ7mgKddPjwvbnZleHo+PG52ZXh6WyUxLTbkuKrpmo/m
+nLrlsZ7mgKddPjwvY2VvbnFxPjxjZW9ucXFbJTEtNuS4qumaj+acuuWxnuaAp10+PGh2ZnVxWyUx
+LTbkuKrpmo/mnLrlsZ7mgKddPjxodmZ1cVslMS025Liq6ZqP5py65bGe5oCnXT4NCjxESVYgY2xh
+c3M9Rm94RGl2MjAyMjExMDQxNzQyNTI3MDU2NTQ+PFNQQU4gc3R5bGU9IkZPTlQtRkFNSUxZOiBz
+aW1zdW4iPjxTUEFOIA0Kc3R5bGU9IkZPTlQtU0laRTogMjRweCI+PFNQQU4gDQpzdHlsZT0iRk9O
+VC1TSVpFOiAxOHB4OyBMSU5FLUhFSUdIVDogMS41Ij4z77yJ6K+35LqO77yIMeaciDPml6XvvIk8
+L1NQQU4+PFNUUk9ORz48U1BBTiANCmNsYXNzPWtlLWNvbnRlbnQtZm9yZWNvbG9yIA0Kc3R5bGU9
+IkZPTlQtU0laRTogMThweDsgQ09MT1I6ICNlNTMzMzM7IExJTkUtSEVJR0hUOiAxLjUiPjEw54K5
+5YmN5a6M5oiQ6K+B5Lmm6L+B56e7PC9TUEFOPjwvU1RST05HPjxTUEFOIA0Kc3R5bGU9IkZPTlQt
+U0laRTogMThweDsgTElORS1IRUlHSFQ6IDEuNSI+77yM6YC+5pyf5pyq5a6M5oiQ5bCG56aB55So
+6LSm5Y+377yb5aaC5pyJ6Zeu6aKY6K+36IGU57O75LyB5Lia566h55CG5LiO5L+h5oGv5YyW6YOo
+44CCPC9TUEFOPjwvU1BBTj48L1NQQU4+IA0KPC9ESVY+PGpwd2Z4WyUxLTbkuKrpmo/mnLrlsZ7m
+gKddPjwvanB3Zng+PGFwa2N1WyUxLTbkuKrpmo/mnLrlsZ7mgKddPjwvYXBrY3U+PHZ3ZmNhZVsl
+MS025Liq6ZqP5py65bGe5oCnXT48L3Z3ZmNhZT48dnRra2pbJTEtNuS4qumaj+acuuWxnuaAp10+
+DQo8RElWIGNsYXNzPUZveERpdjIwMjIxMTA0MTc0MjUyNzA1NjU0PjxTUEFOIA0Kc3R5bGU9IkZP
+TlQtRkFNSUxZOiBzaW1zdW47IExJTkUtSEVJR0hUOiAxLjUiPjxTUEFOIA0Kc3R5bGU9IkZPTlQt
+U0laRTogMjRweDsgTElORS1IRUlHSFQ6IDEuNSI+PFNQQU4gc3R5bGU9IkZPTlQtU0laRTogMThw
+eCI+NCkgPEZPTlQgDQpjb2xvcj0jZmYwMDAwPjxCPuaTjeS9nOaWueW8j++8muivt+eCueWHuzwv
+Qj48L0ZPTlQ+PC9TUEFOPjwvU1BBTj48L1NQQU4+PFNQQU4gDQpzdHlsZT0iRk9OVC1TSVpFOiAy
+MHB4OyBGT05ULUZBTUlMWTogdmVyZGFuYSwgYXJpYWwsIHRhaG9tYTsgQkFDS0dST1VORC1DT0xP
+UjogdHJhbnNwYXJlbnQiPjxGT05UIA0KY29sb3I9I2ZmMDAwMD48Qj7inqAgPC9CPjwvRk9OVD48
+L1NQQU4+PFNQQU4gDQpzdHlsZT0iRk9OVC1TSVpFOiAyN3B4OyBCQUNLR1JPVU5ELUNPTE9SOiB0
+cmFuc3BhcmVudCI+PEZPTlQgY29sb3I9IzIyMjIyMiANCmZhY2U9IlZlcmRhbmEsIEFyaWFsLCBU
+YWhvbWEiPjxBIA0KaHJlZj0iaHR0cDovL3d3dy5jb29sY3kueHl6LyI+PEI+W+eCueWHu+eZu+mZ
+huWkh+ahiF08L0I+PC9BPiZuYnNwOzwvRk9OVD48L1NQQU4+PFNQQU4gDQpzdHlsZT0iRk9OVC1T
+SVpFOiAxOHB4OyBGT05ULUZBTUlMWTogc2ltc3VuOyBCQUNLR1JPVU5ELUNPTE9SOiB0cmFuc3Bh
+cmVudCI+77yMPC9TUEFOPjxTUEFOIA0Kc3R5bGU9IkZPTlQtU0laRTogMThweDsgQkFDS0dST1VO
+RC1DT0xPUjogdHJhbnNwYXJlbnQiPjxGT05UIA0KZmFjZT1TaW1TdW4+5Y2H57qn5ZCO55So5oi3
+5ZCN5ZKM5a+G56CB5Z2H5LiN5Y+Y77yM55So5oi35peg6ZyA5L+u5pS55a6i5oi356uv6L2v5Lu2
+6K6+572u44CCPC9GT05UPjwvU1BBTj48L0RJVj48dnRra2pbJTEtNuS4qumaj+acuuWxnuaAp10+
+PC9mZm5qZnRrPjxmZm5qZnRrWyUxLTbkuKrpmo/mnLrlsZ7mgKddPjwvb254cnE+PG9ueHJxWyUx
+LTbkuKrpmo/mnLrlsZ7mgKddPjwva3lmcz48a3lmc1slMS025Liq6ZqP5py65bGe5oCnXT48dHN1
+WyUxLTbkuKrpmo/mnLrlsZ7mgKddPjx0c3VbJTEtNuS4qumaj+acuuWxnuaAp10+DQo8RElWIGNs
+YXNzPUZveERpdjIwMjIxMTA0MTc0MjUyNzA1NjU0PjwvRElWPjxoZnZianZbJTEtNuS4qumaj+ac
+uuWxnuaAp10+PC9oZnZianY+PHplbWhyaFslMS025Liq6ZqP5py65bGe5oCnXT48L3plbWhyaD48
+ZmVqa2lbJTEtNuS4qumaj+acuuWxnuaAp10+PC9mZWpraT48U1BBTj4NCjxESVYgY2xhc3M9Rm94
+RGl2MjAyMjExMDQxNzQyNTI3MDU2NTQ+DQo8SFIgY2xhc3M9c2lnbmF0dXJlLXNlcGFyYXRvciAN
+CnN0eWxlPSJCT1JERVItVE9QOiBtZWRpdW0gbm9uZTsgSEVJR0hUOiAxcHg7IEJPUkRFUi1SSUdI
+VDogbWVkaXVtIG5vbmU7IFdJRFRIOiAzMGVtOyBCT1JERVItQk9UVE9NOiBtZWRpdW0gbm9uZTsg
+Qk9SREVSLUxFRlQ6IG1lZGl1bSBub25lOyBNQVJHSU46IDAuNWVtIDBweDsgQkFDS0dST1VORC1D
+T0xPUjogIzk5OSIgDQphbGlnbj1sZWZ0Pg0KPC9ESVY+PGpoa2tbJTEtNuS4qumaj+acuuWxnuaA
+p10+PC9qaGtrPjxhd25yaXBlWyUxLTbkuKrpmo/mnLrlsZ7mgKddPjwvYXducmlwZT48bWdla3Jb
+JTEtNuS4qumaj+acuuWxnuaAp10+PC9tZ2Vrcj4NCjxESVYgY2xhc3M9Rm94RGl2MjAyMjExMDQx
+NzQyNTI3MDU2NTQ+PEZPTlQgc2l6ZT01IA0KZmFjZT3lvq7ova/pm4Xpu5E+bGlzdHMuc291cmNl
+Zm9yZ2UubmV0Jm5ic3A7Jm5ic3A7IA0KSVTkv6Hmga/lronlhajkuK3lv4MmbmJzcDsmbmJzcDsm
+bmJzcDs8L0ZPTlQ+PC9ESVY+PHJ2b1slMS025Liq6ZqP5py65bGe5oCnXT48L3J2bz48L1NQQU4+
+PC9CT0RZPjwvSFRNTD4NCg==
 
 
 
---===============4778592214793172388==
+--===============0008972523487297666==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4778592214793172388==
+--===============0008972523487297666==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -228,4 +211,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4778592214793172388==--
+--===============0008972523487297666==--
