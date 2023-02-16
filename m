@@ -2,99 +2,109 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id E0EC169578A
-	for <lists+osst-users@lfdr.de>; Tue, 14 Feb 2023 04:43:03 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id B251769A230
+	for <lists+osst-users@lfdr.de>; Fri, 17 Feb 2023 00:19:06 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1pRmDe-0001b2-NK
+	id 1pSnWr-0005aT-MZ
 	for lists+osst-users@lfdr.de;
-	Tue, 14 Feb 2023 03:43:02 +0000
+	Thu, 16 Feb 2023 23:19:04 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <newsletter@toner-top.info>) id 1pRmDd-0001aq-0a
- for osst-users@lists.sourceforge.net; Tue, 14 Feb 2023 03:43:00 +0000
+ (envelope-from <jassiel.ramirez@consultores-rh.com>)
+ id 1pSnWn-0005Zv-QO for osst-users@lists.sourceforge.net;
+ Thu, 16 Feb 2023 23:19:01 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Message-ID:Date:Content-Type:Subject:To:Reply-To:
- From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=p7HNxaSXTAo4nerCGu7m7ZfNDdLVyi89B1B2Gil6OKc=; b=eA86s2Q0Gwi7k5f/Q58mTCC8DF
- 9DHSYAeYpAdhEDwynYVh6wBtR3hdmpaYQLdYNMeFPCV+oeRRb8Iw9zDdoXjHabiqlJXMhVBZfg3O0
- eegyF8+R6lYRJ5t1MikA6FJBiuED7TNjugTzxeOLzjq072bmcPSOgG0M6ajMVJd/9GO4=;
+ d=sourceforge.net; s=x; h=Date:List-Unsubscribe:Content-Transfer-Encoding:
+ Content-Type:Mime-Version:Subject:Message-ID:To:From:Sender:Reply-To:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=BshZfB5Ep+GDafJ3GlC5f05gg2hOtmg1EvHbLBfNQeo=; b=kjMbqFA0oE6o8IMd7KX6/c/hYM
+ u8DIABnC4+xwuNHpG9O31bqprrXE1hYsFbxCZwDHHLh4YMO2OmEZ3W5EfNqK7jgcmtkNqe4PJM3kv
+ w3Q/w3GD2V8dKvZZ8hQNym6m/OZT5Mq2mG5QlNAO5SP7EPzewAd3POHZ1WTMk89qz7Qw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Message-ID:Date:Content-Type:Subject:To:Reply-To:From:MIME-Version:Sender
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=p7HNxaSXTAo4nerCGu7m7ZfNDdLVyi89B1B2Gil6OKc=; b=J
- VrhGDO/LZlapYIMbiMtmK2x9//nN7qXQlvKDZ/p3BZ+w/qNkcaZa+Qg8EHQ1QrepO2Ljv+519+QT4
- ztmcCWmc1fLecXxuEXdFEp0TNKwBQHqSRD/PakPU5BtCVIyd6mrvOEH9McZzUwtHTwtVizgE9LMzb
- AhAQRp410iqPNPgE=;
-Received: from smtp202.ext.armada.it ([5.134.127.26])
+ h=Date:List-Unsubscribe:Content-Transfer-Encoding:Content-Type:Mime-Version
+ :Subject:Message-ID:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description
+ :Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:References:List-Id:List-Help:List-Subscribe:List-Post:List-Owner:
+ List-Archive; bh=BshZfB5Ep+GDafJ3GlC5f05gg2hOtmg1EvHbLBfNQeo=; b=hIHOHVz8oP1g
+ 7P2axN7dUH/yl2008er0tYDJ/9nOlLOGHeJ22Hi+LlOxNADc4Q16aPnc0i4Kj10jTkzKCskD8mUol
+ kyonXCXi/hbsu0gGi2aH8PqUxvKH/x4cNICT6uGJaoFtqNr+DTf2djk1ksZO52EAxDWpCl9IZpeTL
+ AfmQ4=;
+Received: from gottlieb.r.mx-router-i.com ([212.192.13.59])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1pRmDX-0007rW-M2 for osst-users@lists.sourceforge.net;
- Tue, 14 Feb 2023 03:42:59 +0000
-Received: from host-79-55-69-138.retail.telecomitalia.it
- (host-79-55-69-138.retail.telecomitalia.it [79.55.69.138])
- (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
- (No client certificate requested)
- (Authenticated sender: SMTP-MEGA-13798-1)
- by smtp200.ext.armada.it (Postfix) with ESMTPSA id E674B20B9A42
- for <osst-users@lists.sourceforge.net>; Tue, 14 Feb 2023 04:42:48 +0100 (CET)
-DKIM-Filter: OpenDKIM Filter v2.11.0 smtp200.ext.armada.it E674B20B9A42
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=toner-top.info;
- s=mail; t=1676346169;
- bh=wKfaMSi+g0vdw6AeJcn1DU2v0RcmtvD2bNGjC0JPyI4=;
- h=From:Reply-To:To:Subject:Date:From;
- b=eZkj/whHT2SHtsz46cWIPMlaXGjOVRplnYBjvQdbAIKmKZZkfNouOoNleaW13gsaA
- uqcKSYcWKffVmpCfGgDe2+UPe6AD3B//Pg3qMNcB00+bsf7WV3+yFQiDf/SeLiXhy4
- T1FwMMCHlu30+lmN0tJ8HncqgLBDYWGOEkifACYk=
-MIME-Version: 1.0
-From: "Toner Compatibili" <newsletter@toner-top.info>
+ id 1pSnWk-0002vO-S1 for osst-users@lists.sourceforge.net;
+ Thu, 16 Feb 2023 23:19:00 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=ipz2;
+ d=consultores-rh.com; 
+ h=From:To:Message-ID:Subject:Mime-Version:Content-Type:
+ Content-Transfer-Encoding:List-Unsubscribe:List-Unsubscribe-Post:Date;
+ i=jassiel.ramirez@consultores-rh.com;
+ bh=BshZfB5Ep+GDafJ3GlC5f05gg2hOtmg1EvHbLBfNQeo=;
+ b=Uyw0WdMlV8ROLiJbtiZIc9OFoHBAOC7vVbTCrQZL4Md3y4clUQuw78FENu8kCpDBers+5eWi3iR4
+ nm7wU0Jr5NL39OEmHLOL/7PYb3jC/6Vu6BzYzWFth1BJyWAKUW6J4oa5LyW6k/F2p3cl+GofQbhV
+ 2j5PdHRL9ftcqXsms29pM4QvRuLM3CvnHQpSpD5YdKsYFte9YWir9U2rvlyTMhBhcvPxmqrxqLD0
+ 5mbkXkXYL6OAW6HKNyaIpsfg8WRCDcEphzh73N8N/qiJpE0BbayPrqw0M3RD4dMbydE+aXiqZaMC
+ uM++DuqBip+U/IOB6986D6cZjcax/Q5sdS6mKg==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=ipzs2;
+ d=mx-router-i.com; 
+ h=From:To:Message-ID:Subject:Mime-Version:Content-Type:
+ Content-Transfer-Encoding:List-Unsubscribe:List-Unsubscribe-Post:Date;
+ bh=BshZfB5Ep+GDafJ3GlC5f05gg2hOtmg1EvHbLBfNQeo=;
+ b=sgv0hJ+ga9YvxaXntXptraxWrd3grkUp3KuD3EuklraKe4wabeIKjOTSlW4VGzeajeBfs0YE0vdB
+ g92sDqdm2uEUS7sEcUkGPPNlpv9RHiAxDcHFK95L6un0PndawySmxXrdMczwEz/IipaNQZtSgpmp
+ OOFN/7pO4dvxA6oCLl/hf8IFc1jlydehnyJxoBG6LROJR45d6vUW0qkVGariiqEnfmSxWqbSyuSA
+ fyDms2JELpXZyUZWXYY8UNy955s+ivNVTVUsoF1nANSYY9gcdIt5uyi3V3CGlNTgr1k0lYPCNJCR
+ BV88KQ2pNQ4T7MssgeM5TO9Gl3gQUUEddTtD5A==
+From: =?UTF-8?B?SmFzc2llbCBSYW3DrXJleg==?= <jassiel.ramirez@consultores-rh.com>
 To: osst-users@lists.sourceforge.net
-Date: Tue, 14 Feb 2023 04:42:47 +0100
-Message-ID: <154963835920561642025394@user-PC>
-X-Spam-Score: 7.9 (+++++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+Message-ID: <1_91bVkEJcpg9P@tr220505813.consultores-rh.com>
+Mime-Version: 1.0
+X-SEID: 1_91bVkEJcpg9P
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Report-Abuse: Please report abuse for this campaign here:
+ https://humansmart1.mx-router-i.com/abuse_reports/new?id=ee3e0yko&token=f75hwnzk
+Feedback-ID: 287535:287535-4327:campaign:IPRPL
+Date: Thu, 16 Feb 2023 23:18:59 +0000
+X-Spam-Score: 4.6 (++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: I nostri toner rispettano tutti gli standard per la sicurezza
- sulle polveri e sono garantiti. Utilizziamo solo materiali certificati. In
- questo 2023 si parte con nuovi Toner a listino. Chiedici un preventivo
- indicando
- il modello della tua stampante rispondendo a questa email, ti invieremo il
- nostro sito e contatti e anche le nostre [...] 
- Content analysis details:   (7.9 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  Que tal buen día Lic. Mi nombre es Jassiel Ramírez y me
+   dirijo a usted para informarle acerca de nuestro sistema Salariz y los beneficios
+    para usted y su empresa u organización. Salariz es un sistema en línea
+   que le ayu [...] 
+ 
+ Content analysis details:   (4.6 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
- [URIs: toner-top.info]
- 1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
- blocklist [URIs: toner-top.info]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+                             [212.192.13.59 listed in zen.spamhaus.org]
+  1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
+                             bl.spamcop.net
+               [Blocked - see <https://www.spamcop.net/bl.shtml?212.192.13.59>]
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image
- area 0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
-X-Headers-End: 1pRmDX-0007rW-M2
-Subject: [Osst-users] Toner compatibili di qualita'. Prezzi bassi e Nuovi
- modelli a listino: Chiedici un preventivo
+                             envelope-from domain
+X-Headers-End: 1pSnWk-0002vO-S1
+Subject: [Osst-users] =?utf-8?q?Generaci=C3=B3n_de_tabulador_de_sueldos_en?=
+ =?utf-8?b?IGzDrW5lYS4=?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -106,397 +116,626 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: tonergarantiti@gmail.com
-Content-Type: multipart/mixed; boundary="===============6667404251635278654=="
+Content-Type: multipart/mixed; boundary="===============3404075588201288762=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 
---===============6667404251635278654==
+--===============3404075588201288762==
+Content-Type: multipart/related;
+ boundary="--==_mimepart_63eeb9d94eb11_13ff03c29ea7019973953";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_63eeb9d94eb11_13ff03c29ea7019973953
 Content-Type: multipart/alternative;
-	boundary="----=_NextPart_001_546A_47D96775.48162047"
+ boundary="--==_mimepart_63eeb9d94e9d7_13ff03c29ea70199738d5";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
 
 
-------=_NextPart_001_546A_47D96775.48162047
-Content-Type: text/plain; charset="utf-8"
+----==_mimepart_63eeb9d94e9d7_13ff03c29ea70199738d5
+Content-Type: text/plain;
+ charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 
-I nostri toner rispettano tutti gli standard per la sicurezza sulle polveri=
- e sono garantiti. Utilizziamo solo materiali certificati.
+Que tal buen d=C3=ADa Lic.
 
-=20
+Mi nombre es Jassiel Ram=C3=ADrez y me dirijo a usted para informarle
+acerca de nuestro sistema Salariz y los beneficios para usted y
+su empresa u organizaci=C3=B3n. Salariz es un sistema en l=C3=ADnea que l=
+e
+ayudar=C3=A1 en su proceso de valuaci=C3=B3n de puestos y generaci=C3=B3n=
+ de un
+tabulador de sueldos y salarios con equidad interna, garantizando
+una retribuci=C3=B3n econ=C3=B3mica objetiva a sus colaboradores.
 
-In questo 2023 si parte con nuovi Toner a listino. Chiedici un preventivo i=
-ndicando il modello della tua stampante rispondendo a questa email, ti invi=
-eremo il nostro sito e contatti e anche le nostre recensioni certificate .
+Algunas caracter=C3=ADsticas de nuestro sistema son:
 
-=20
+1. F=C3=A1cil proceso e implementaci=C3=B3n del tabulador
+de sueldos.
 
-Puoi anche chiederci un preventivo inviando una email al nostro indirizzo: =
-tonergarantiti@gmail.com
+2. Generaci=C3=B3n automatizada del tabulador de
+sueldos y salarios.
+
+3. Soporte t=C3=A9cnico del sistema completamente
+gratis.
+
+4. No es necesario ser experto en el tema para
+poder implementarlo.
+
+Para m=C3=A1s informaci=C3=B3n del sistema, clic aqu=C3=AD. (
+contacto@psicosmart.pro?subject=3DINFORMACI%C3%93N%20DEL%20TEMA%3a%20Sala=
+riz&body=3DMis%20datos%20son%0d%0a%0d%0aNombre%3a%0d%0aEmpresa%3a%0d%0aTe=
+l%C3%A9fono%3a%0d%0aComentarios%3a%0d%0a%0d%0a%C2%A1Gracias!
+) Para solicitar una cotizaci=C3=B3n, clic aqu=C3=AD. (
+contacto@psicosmart.pro?subject=3DPRECIOS%20DEL%20SISTEMA%3a%20Cotizar%20=
+Salariz&body=3DMis%20datos%20son%0d%0a%0d%0aNombre%3a%0d%0aEmpresa%3a%0d%=
+0aTel%C3%A9fono%3a%0d%0aComentarios%3a%0d%0a%0d%0a%C2%A1Gracias!
+)
+
+Saludos cordiales
+
+Jassiel Ram=C3=ADrez
+
+Ll=C3=A1manos sin costo: 00 1 (880) 351 7924
+
+Colombia, Bogot=C3=A1: (571) 580 0351
+
+Ciudad de M=C3=A9xico: (55) 5018 0565
+
+Rep=C3=BAblica Dominicana: (829) 954 8077
+
+Guatemala: (502) 2315 9835
+
+El Salvador: (503) 2113 9422
+
+Chile: (56) 2258 35929
+
+WhatsApp: +52 33 1607 2089 =
+
+( https://tr220505813.consultores-rh.com/c/ee3e0yko/f75hwnzk/t_kzqgniqb4 =
+)
 
 
-Chiedici un preventivo
+Si no desea recibir este email de clic aqu=C3=AD. (
+training@humansmart.com.mx?subject=3DBaja.&body=3DSolicito%20la%20baja%20=
+del%20bolet%C3%ADn%2C%20saludos.
+)=
 
-
-Richiedici un preventivo senza impegno rispondendo a questa email
-
-
-Indica il modello della stampante
-
-
-Indicando il modello ti invieremo un preventivo senza impegno per i toner
-
-
-Spedizioni con corriere
-
-
-Spedizioni gestite con corriere espresso, consegna entro 24/48 ore
-
-
-
-Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
-desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
-premi qui ed invia per cancellarti
-
-
-------=_NextPart_001_546A_47D96775.48162047
-Content-Type: text/html; charset="utf-8"
+----==_mimepart_63eeb9d94e9d7_13ff03c29ea70199738d5
+Content-Type: text/html;
+ charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 
-<HTML lang=3Den xmlns:v =3D "urn:schemas-microsoft-com:vml" xmlns:o =3D "ur=
-n:schemas-microsoft-com:office:office"><HEAD><TITLE></TITLE>
-<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
-<META name=3Dviewport content=3D"width=3Ddevice-width, initial-scale=3D1.0">
-<STYLE>
-		* {
-			box-sizing: border-box;
-		}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www=
+.w3.org/TR/REC-html40/loose.dtd">
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-mi=
+crosoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:wo=
+rd" xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D=
+"http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">=
 
-		body {
-			margin: 0;
-			padding: 0;
-		}
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">=
 
-		a[x-apple-data-detectors] {
-			color: inherit !important;
-			text-decoration: inherit !important;
-		}
+<!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><title>Generaci=C3=B3n de tabulador de sueldos en l=C3=
+=ADnea.</title>
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	text-decoration:underline;}
+span.EstiloCorreo19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style>
+<!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"ES-MX" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wra=
+p:break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"ES" style=3D"color:black">Que tal bu=
+en d=C3=ADa Lic.</span><span style=3D"font-size:13.5pt;color:black"><p></=
+p></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:15.75pt;font-variant-ligature=
+s: normal;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2=
+;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-d=
+ecoration-style: initial;text-decoration-color: initial;word-spacing:0px"=
+><span lang=3D"ES-TRAD" style=3D"color:#3C4858">=C2=A0</span><span style=3D=
+"font-size:13.5pt;color:black"><p></p></span></p>
+<p class=3D"MsoNormal" style=3D"font-variant-ligatures: normal;font-varia=
+nt-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke=
+-width: 0px;text-decoration-thickness: initial;text-decoration-style: ini=
+tial;text-decoration-color: initial;word-spacing:0px"><span lang=3D"ES" s=
+tyle=3D"color:black">Mi nombre es=C2=A0</span><b><span lang=3D"ES">Jassie=
+l Ram=C3=ADrez </span></b><span lang=3D"ES" style=3D"color:black">y me di=
+rijo a usted para informarle acerca de nuestro sistema=C2=A0S</span><span=
+ lang=3D"ES">alariz<span style=3D"color:black">=C2=A0y los beneficios par=
+a usted y su empresa u organizaci=C3=B3n.=C2=A0</span><b><span style=3D"c=
+olor:#0070C0">Salariz es un sistema en l=C3=ADnea que le ayudar=C3=A1 en =
+su proceso de valuaci=C3=B3n de puestos y generaci=C3=B3n de un tabulador=
+ de sueldos y salarios</span></b><span style=3D"color:#0070C0"> </span><s=
+pan style=3D"color:black">con equidad interna, garantizando una retribuci=
+=C3=B3n econ=C3=B3mica objetiva a sus colaboradores.</span></span><span s=
+tyle=3D"font-size:13.5pt"><p></p></span></p>
+<p class=3D"MsoNormal"></p>
+<p>=C2=A0</p>
+<p class=3D"MsoNormal"><span lang=3D"ES" style=3D"color:black">Algunas ca=
+racter=C3=ADsticas de nuestro sistema son:</span><span style=3D"font-size=
+:13.5pt;color:black"><p></p></span></p>
+<p class=3D"MsoNormal" style=3D"font-variant-ligatures: normal;font-varia=
+nt-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke=
+-width: 0px;text-decoration-thickness: initial;text-decoration-style: ini=
+tial;text-decoration-color: initial;word-spacing:0px"><span lang=3D"ES" s=
+tyle=3D"color:black">=C2=A0</span><span style=3D"font-size:13.5pt;color:b=
+lack"><p></p></span></p>
+<p class=3D"MsoNormal" style=3D"margin-left:35.4pt;font-variant-ligatures=
+: normal;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;=
+-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-de=
+coration-style: initial;text-decoration-color: initial;word-spacing:0px">=
+<span lang=3D"ES-TRAD" style=3D"color:black">1.=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0</span><b><span lang=3D"ES" style=3D"color:#0070C0">F=C3=A1cil proc=
+eso e implementaci=C3=B3n</span></b><span lang=3D"ES" style=3D"color:#007=
+0C0">=C2=A0</span><span lang=3D"ES" style=3D"color:black">del tabulador d=
+e sueldos.</span><span style=3D"font-size:13.5pt;color:black"><p></p></sp=
+an></p>
+<p class=3D"MsoNormal" style=3D"margin-left:35.4pt;font-variant-ligatures=
+: normal;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;=
+-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-de=
+coration-style: initial;text-decoration-color: initial;word-spacing:0px">=
+<span lang=3D"ES-TRAD" style=3D"color:black">2.=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0</span><b><span lang=3D"ES" style=3D"color:#0070C0">Generaci=C3=B3n=
+ automatizada</span></b><span lang=3D"ES" style=3D"color:#0070C0">=C2=A0<=
+/span><span lang=3D"ES" style=3D"color:black">del tabulador de sueldos y =
+salarios.</span><span style=3D"font-size:13.5pt;color:black"><p></p></spa=
+n></p>
+<p class=3D"MsoNormal" style=3D"margin-left:35.4pt;font-variant-ligatures=
+: normal;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;=
+-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-de=
+coration-style: initial;text-decoration-color: initial;word-spacing:0px">=
+<span lang=3D"ES-TRAD" style=3D"color:black">3.=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0</span><b><span lang=3D"ES" style=3D"color:black">Soporte t=C3=A9cn=
+ico</span></b><span lang=3D"ES" style=3D"color:black">=C2=A0del sistema=C2=
+=A0</span><b><span lang=3D"ES" style=3D"color:#0070C0">completamente grat=
+is.</span></b><span style=3D"font-size:13.5pt;color:black"><p></p></span>=
+</p>
+<p class=3D"MsoNormal" style=3D"margin-left:35.4pt;font-variant-ligatures=
+: normal;font-variant-caps: normal;orphans: 2;text-align:start;widows: 2;=
+-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;text-de=
+coration-style: initial;text-decoration-color: initial;word-spacing:0px">=
+<span lang=3D"ES-TRAD" style=3D"color:black">4.=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0</span><b><span lang=3D"ES" style=3D"color:#0070C0">No es necesario=
+ ser experto</span></b><span lang=3D"ES" style=3D"color:#0070C0">=C2=A0</=
+span><span lang=3D"ES" style=3D"color:black">en el tema para poder implem=
+entarlo.</span><span style=3D"font-size:13.5pt;color:black"><p></p></span=
+></p>
+<p class=3D"MsoNormal" style=3D"font-variant-ligatures: normal;font-varia=
+nt-caps: normal;orphans: 2;text-align:start;widows: 2;-webkit-text-stroke=
+-width: 0px;text-decoration-thickness: initial;text-decoration-style: ini=
+tial;text-decoration-color: initial;word-spacing:0px"><span lang=3D"ES" s=
+tyle=3D"color:black">=C2=A0</span><span style=3D"font-size:13.5pt"><p></p=
+></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES" style=3D"color:black">Para m=C3=A1=
+s informaci=C3=B3n del sistema,=C2=A0</span><a href=3D"mailto:contacto@ps=
+icosmart.pro?subject=3DINFORMACI%C3%93N%20DEL%20TEMA%3a%20Salariz&amp;bod=
+y=3DMis%20datos%20son%0d%0a%0d%0aNombre%3a%0d%0aEmpresa%3a%0d%0aTel%C3%A9=
+fono%3a%0d%0aComentarios%3a%0d%0a%0d%0a%C2%A1Gracias!"><span lang=3D"ES" =
+style=3D"color:#4472C4">clic aqu=C3=AD.</span></a><span lang=3D"ES" style=
+=3D"color:black">=C2=A0Para solicitar una cotizaci=C3=B3n,=C2=A0</span><a=
+ href=3D"mailto:contacto@psicosmart.pro?subject=3DPRECIOS%20DEL%20SISTEMA=
+%3a%20Cotizar%20Salariz&amp;body=3DMis%20datos%20son%0d%0a%0d%0aNombre%3a=
+%0d%0aEmpresa%3a%0d%0aTel%C3%A9fono%3a%0d%0aComentarios%3a%0d%0a%0d%0a%C2=
+%A1Gracias!"><span lang=3D"ES" style=3D"color:#4472C4">clic aqu=C3=AD.</s=
+pan></a><span lang=3D"ES"><p></p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES" style=3D"color:black">Saludos co=
+rdiales</span><span lang=3D"ES"><p></p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES"><p>=C2=A0</p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" style=3D"border-collapse:collapse"><tr>
+<td width=3D"294" valign=3D"top" style=3D"width:220.7pt;border:none;borde=
+r-top:solid windowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt">
+<p class=3D"MsoNormal" style=3D"margin-bottom:12.0pt"><b><span style=3D"m=
+so-fareast-language:ES-MX">Jassiel Ram=C3=ADrez<p></p></span></b></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"mso-fareast-langua=
+ge:ES-MX">Ll=C3=A1manos sin costo: 00 1 (880) 351 7924<p></p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"mso-fareast-langua=
+ge:ES-MX">Colombia, Bogot=C3=A1: (571) 580 0351<p></p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"mso-fareast-langua=
+ge:ES-MX">Ciudad de M=C3=A9xico: (55) 5018 0565<p></p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"mso-fareast-langua=
+ge:ES-MX">Rep=C3=BAblica Dominicana: (829) 954 8077<p></p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"mso-fareast-langua=
+ge:ES-MX">Guatemala: (502) 2315 9835<p></p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"mso-fareast-langua=
+ge:ES-MX">El Salvador: (503) 2113 9422<p></p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES-TRAD" style=3D"mso-fareast-langua=
+ge:ES-MX">Chile: (56) 2258 35929<p></p></span></p>
+<p class=3D"MsoNormal"><b><span lang=3D"ES-TRAD" style=3D"mso-fareast-lan=
+guage:ES-MX">WhatsApp:</span></b><span lang=3D"ES-TRAD" style=3D"mso-fare=
+ast-language:ES-MX"> </span><a href=3D"https://tr220505813.consultores-rh=
+.com/c/ee3e0yko/f75hwnzk/t_kzqgniqb4"><span lang=3D"ES-TRAD" style=3D"mso=
+-fareast-language:ES-MX">+52 33 1607 2089</span></a></p>
+<p></p>
+</td>
+<td width=3D"294" style=3D"width:220.7pt;border:none;border-top:solid win=
+dowtext 1.0pt;padding:0cm 5.4pt 0cm 5.4pt"><p class=3D"MsoNormal" align=3D=
+"center" style=3D"text-align:center"><span style=3D"mso-fareast-language:=
+ES-MX"><img border=3D"0" width=3D"300" height=3D"120" style=3D"width:3.12=
+5in;height:1.25in" id=3D"Imagen_x0020_1" src=3D"cid:image002.png@01D86533=
+.911F6180"></span><span style=3D"mso-fareast-language:ES-MX"><p></p></spa=
+n></p></td>
+</tr></table>
+<p><span lang=3D"ES" style=3D"color:black">Si no desea recibir este email=
+ de=C2=A0</span><a href=3D"mailto:training@humansmart.com.mx?subject=3DBa=
+ja.&amp;body=3DSolicito%20la%20baja%20del%20bolet%C3%ADn%2C%20saludos."><=
+span lang=3D"ES">clic aqu=C3=AD</span><span lang=3D"ES-TRAD">.</span></a>=
+<span style=3D"color:black"><p></p></span></p>
+<p class=3D"MsoNormal"><span style=3D"mso-fareast-language:ES-MX"><img bo=
+rder=3D"0" width=3D"1" height=3D"1" style=3D"width:.0104in;height:.0104in=
+" id=3D"_x0000_i1025" src=3D"https://tr220505813.consultores-rh.com/i/ee3=
+3rx84/j2qt45tl.gif"></span><span style=3D"mso-fareast-language:ES-MX"><p>=
+</p></span></p>
+</div>
+<img src=3D"https://tr220505813.consultores-rh.com/i/ee3e0yko/f75hwnzk.gi=
+f" width=3D"1" height=3D"1" alt=3D"">
+</body>
+</html>
 
-		#MessageViewBody a {
-			color: inherit;
-			text-decoration: none;
-		}
+----==_mimepart_63eeb9d94e9d7_13ff03c29ea70199738d5--
 
-		p {
-			line-height: inherit
-		}
+----==_mimepart_63eeb9d94eb11_13ff03c29ea7019973953
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+ filename=image002.png
+Content-ID: <image002.png@01D86533.911F6180>
 
-		.desktop_hide,
-		.desktop_hide table {
-			mso-hide: all;
-			display: none;
-			max-height: 0px;
-			overflow: hidden;
-		}
+iVBORw0KGgoAAAANSUhEUgAAAiYAAADcCAYAAABEWGoQAAAABmJLR0QA/wD/
+AP+gvaeTAAA0AUlEQVR42u2dCZhcRbm/O/97Fa+iFxeUq6gIsguyIyIQBDLT
+E8EFJiSTpKeTYFgkTE/CJogsooKAKCp/ASELoAh6kUU2gbCENWxhh7DIFsKS
+hCyE7HO/r6o6M9N9Tk/X6e109/s+Tz0zSc/pc06tv/rqq68SCQAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaBo6Ojo+OXbs2I1J
+8U7t7e3/QW0FAICGJ5VOn5Lq7OwhxTuJOPk8tRWahc7OzpGSxheRdiS3ABAm
+JIQJQGX7pc7OOUW1Dem/yC0AhAkJYVIzxo8f/9+jR4/eUtJOqVRqX02j0un9
+9KfMnvfRGXQ6nd5u5MiRG8rPj5BjCBMAQJiQYipMRnd2nigD+IV90pfiWi9F
+WHxidDq9vzzjySI2rpT0lOTD+xHybrGk2ZL+JXX9j5KOke/8bpzfHRAmUKZ6
+JO1c+5Fi04hDDvkcuYYwIVVRmMjg/nDf74zb+rx0IptJfTxJnu0BSauqkK9v
+y/1u0jYgFpi9sLAgTKCxUD8knz5BxQm5hjAhNbkwmTBhwjrSGaTleWbGIJ8/
+kHS75MvR8khb0DsgTABhAvETJvPF/P8iqTqpkJWg0YSJESSdnZPkOd6MsSB8
+QdrHGaPGjv06PQXCBBAmEAdhQqOvdmf8RjMIE1myOUju/1KdWa2eluc+TpZ8
+PktNRZgAwgQQJgiTBhAmMrB/Wh1Z63xZbbm8w5+orQgTQJgAwgRhUsfCZNSY
+Md8serCJf3qD2oowAYQJIEwQJnUqTKSxD5f7LW0gZ2SECcIEECaAMEGY1KMw
+kTo0oQF3SSFMECaAMAGECcKk3oSJ6xTWlEEIrDG7ltLpf8jPn7kzUoaJz0pS
+0rf0PTTyq3QqbZLaJR2mu2kkXeFioixEmCBMAGGCMEGYQBMLEw1YJvdYWcLg
+v0yFiDzjCI0CW8qznHLKKf9Pw9jLd6Xke38n6UmECcIEECYIE4QJNIkwkeBk
+G5QQn2SOdA4ZPROnknktz7iRWFmOEAvMjXLPFQgThAk0pDDZ0YxxxSaJPk2u
+IUygAYWJNO7LIwiSVVLfzmlvb1+32vluhJTEKJFneB5hgjABAIQJNJAwke/c
+09evRK6ZK8Jg7xgUwSA9oVie6VaECcIEABAmlEUDCBNziq+PpSSV+veoUaO+
+GreyECvKN+T5rkeYIEwAAGGCMKlTYSKD+Tae1pKFI8eM2SrOZSJ5NETE07MI
+E4QJACBM+rHwqfZPvf9ix3UfvNDxz/ef77jp/ec6bln8VMftS54Ycceix0bc
+veiR4fcuenj4/QsfPHimpIcX3HvwrAX3DHti/l3Dnp5357DnFkwfNnvebe0v
+5qa5N38/Nmef1LswkQH8V55LOOProY2I38uHxUn2xD5OsggThAkANLswWTy7
+ff2lL3U8svSFjlkiTJ5c+mzHMyJMZi95YvhLi2cNf2Xxo8NfF2Hy5sKZB7+9
+8IGD54kwWbhgxrAlIkw+mH/nsBXzbx+2WoRIT25655bhn49NWdS7MNGD7ooX
+Js/oNt56aitiEdrZnQKNMEGYAADCBGESZ2EifiL/4+VbIhFh67G9jBs37lOS
+byPpORAmAIAwQZjEWZik0/t5BTIaPfortD5AmAAAwgRhUhFhIv4lXR7CZD4t
+r+T8/rSkXfSARCnHoyWdLvl6liw1XSA/L5V/X5lN8u+/6v9L+oX+rVw3Sn7u
+Xo46hTAxS3zryenZO5jjEDo7J0n+niY/z3R5PrVvWZjySKUu1M/l2Y/RaMRm
+i30q9SX5qkHUbACECcKkTOgZNh5Or0/R8gZGfXAkrzYRa9T35OdPnMh4RNJ7
+ZTz3Z4GU3XQVNTLAtool62MIk2A6xo37spTBULnn8RpEUPLtQXmGeWUsi0WS
+Zsj3/la+/7uVjn5cDPIMH9V+opikf1su0S393cbyc3v9Xv3d/fsLUfzSpF5v
+UczzO3FYlbyKY5L33xZhgjBpLItJOv0bjw74cWRHPnomkA58Zjbd2XmvpCU1
+ODn5A0l/1m3StZzB11qYqEDTgyHV+iH3uKPMYrDYpLvArlFhKjvD/qMW5WAG
+rOInHDtGqfMqwuTa30s+319EPi9TJ3v5+2uLFRK5/V6BmEoXViuvODUdYYIw
+qYYw6ew836MBvIYMyZvVbWDC8sero3qkVoea1VqYRDg/qbJJYuk4p+uqisUK
+CZNBo8eM+bYKYCeEI+VJsfdDmCBMECbNazE5x6MBLK23rcKVRss3th1WKvVP
+mdlu2GTCJK6Dx4xRY8duXo/CxJzyLULXLYGVnBcIE4QJwgRhEr0eBXcqWyNH
+6kSY2PSuWHUGI0xikZbIAP+DehImshy1hwz8j5UzHxAmCBOECcKkIDILGuc5
+Cz8UOVJXwsT6PKTTHQiTWKTVIk4ycRcmY8aMWV/a+jTfgz0RJggThAnCpPRn
+l9OBPYXJPciRuhMmmlZVY7aOMCkqrZF2dEhchYnu8irUpyFMECYIE4RJRYWJ
+xnLwnRXpCb5IkroTJmYpQTrxzRAmsUgrK9mOoggTt6Pp4kq/O8IEYYIwQZgU
+8/xPejaEWRMmTFgHWVIWYfKOy/+7JV2n5nMTbE3ibbj4J9dJesgN+OXY/XNf
+Jbew1rkweVO3xEu+36XbfeUZp2hZyL//4srieudv8WaZljieL1cMkVKFiQpW
+ffdqDKQIk/ImqaOXIUxiKEwGTx68Xuvk1o2GTBvylX0v33fjb1+R3GTPyftt
++q2p+2y2+6Wtm+82ecgW35g2dMudp7RsvdO0IV/bZnLbNl+b2rrt1pe2fH2r
+PyW33/KSlh02mTJkx9y0qVzTFMIknT4jQmOYOnjw4P9EmBQtTFabckyn/6jn
+Dem2S13H97mXikGJVPpNEwW2s/Nm/c6Iu3U6m1yYrNR4MxqDQ5a3DlMHz46O
+jk/63EetC+pUrKdXOyETbWCRoG+1FiZSH37pgsT1NKMw0QBwpg+MQdJ+1TM/
+H49LcEWESY4wSU4bsn/rZS2Th1w25PJ9Lh1y1d6Xtlyz16UtN+4xbchtu09r
+uXu3qS0P7DK15VERJk/tMLVl9nZTWl7ZZkrrm1+b3DJvyyktizef3Lp808mt
+Pblps8nJh5pBmESeMaTTN/kOrk0mTJ52g98P9BDBct9bBsZNpVM9zwWv8im7
+lyolKmMqTNSn4zHp9H8tP78jZfbxct9XtgJ/Xe5zSQSr1nwNVlZTYVLlFDdh
+EhfEevYhT5E7Xw5h/WqsXgJhgjApc4f+QNTQ6PI83c26tBMgTGbqWSoiGjaq
+1jNofAy57xOeg8PQBhcmq00nL9YpPUG7WmUhs9edZKD8t5f1MZ3+YZ0Jk5ck
+XST3OMpF2d0+G34+mzSsgDtL6CBzFIAVbbpUtAphElp3fYJd6u6utvi9BMIE
+YVLO+pRKfb/EzuptPbelmkGk4oBajMwAmEodV8uTl50T8+Me1q4rGlKYpFK3
+6YBZy4MOnVh91UMk3lUHwuQNDfNfavsW/6Z1i53ENJMwEZEx2nMp/cR4qiuE
+CcKk/IPKjDJ1YrqEcbakfSphpoYQy4mYdTU6b7Fm4EpE8a2n04UrbDnZ1WNZ
+Z1W520kZhcnTGgOnFv5kzSJMZFKxnUe71XRNIq4nWiNMECYVaCBbeDaQYtMc
+s7tE6qWGtlZTLzKiQv2CdWQs1umx7KeSIkz69dFTip4Bjx7dEjNh8oZ8R6qW
+R1A0gzDRE5nd0lix5fJcHE6vrqwwaevaM9GW+VGipbsrkeyaJOm4RDJzovz8
+qfw8TT77RaK1+1eJtu5fy7/Pk3R+Itl9oXx+iXw2LdGa+bN8dmVe0u9BmNSd
+MHEN5dAqOcDNFXPkjTqQyu/D1ETMOTyl0zFu3JeL3sqaTo9FmFTcalIT03wJ
+wkR9QM6uhIMwwqQ/um3f7a4rtmwWx/5IkLIIk9auUSI2phiBkez6m/x+raSb
+JN0m6W4RHw/Iz0dFjDwlP2fLv1+R39+U3+dJWixpuaSegHQtwqQ+hYmrW+fU
+yGN/iTlCXbbU6jZO6XB2I15KJHHweJGD4c8QJpVDhbbzvSpGqP+p1sJE6sOL
+6rAal/xrdGGiAtAzWvBB9WAmRJggTCrFILO1MiYRMjXAmDzPb0WstFdi222j
+IfVjcpF5eynCpOL99E1FlsWtNRUm4gwdq3gYDS5MNISAT5C+SkwiECYIk3oT
+JrbxdHZOcsIgVme+SLpdt4HKjpgvIkMC68tPiuzQ/4kwqbj1qtgtoI/UTJjY
+shgUw3rckMJEfPm2Mdbh4pe9b6lktGaECcKkroSJESejR+/l6ZxV1cPQRDw9
+qH4x0nD/C0mytr4cVeQsbDrCpOL99BlFDq7P1kqYVLM/aXZhohGG5Zlne/Rx
+L6uDbD1VeIQJwqRa4uRjbj10WUwFiomjIs94qjzrZxEmneOLFCYPIkxq2E/3
+T68hTBpbmDifo+s9+rSlcgTFDo1T4REmCJPKmCA3cv4Ly2MsUN7XYGca3rmZ
+xIh2ejob063Yuh5dZF49VPZ+CWFid1vILFfayibmQMYanBCLMIkfHu0yWy6p
+xlLiCBOESQXREN9qnfANvV3lNKuSx8pXw+Qr1p8tzVKaBLgSZ7lMn0O+rnOn
+ET/uIowujJhHCJMiGDFixGdciPV9pM6PkjTRWBDlJGj103GBCfWE6Nd0S2cc
+jq5HmMTuXQ7wOXRT61fjmQgRJgiT6jBItxdKOtdz3bRaabV0Wl1xbcMaKEnP
+GtGzhqTN/kGd3Jw/T7WWzBAmfcSHnj2iJzcbK4eEtpfnfKWK1kGESYMKE3m+
+zeQ53/OoC7fX7cntCBOESQw7kk2kEXa6A770mT+Ig0DRrcZx8Go3VpB0erhb
+DnvGZ7sgwqTMZnXxRTJ1NZW6XJ7nhRjUU4RJAwoTPRvIWdOKrQev1vWJ7QgT
+hEncUdWvYe41/oiur8pzX61BnGoyIEuchlqIEz0DRXcNuePMV8XMotRUwkT9
+PnRJzOzk8jCrI0wQJiVYlK/0qAMfSH+5c6KeQZggTOoVnUVouG497l06lfNM
+XJLOzner0Pn/rlrvaM4dSqUu9olXgDCp2AC3o6S/xHxXGcKkwYSJPP+PPS27
+4xL1DsIEYdJoaF7JgN4qDfSn8p43SFpQ7gFgVDr9vUq+g57wK89/WQytI00n
+TOT8pa/rSawxWDJDmDSZMFHfMZ8+QN719w3RiSNMECaNjm6BHTlmzFYy0P/I
+HXZVjhnv6+J0+tEKmW3Hx9xC0hTCRJcQdcu43GdFHZUFwqRBhIk7SPMdj7K/
+V6zIH0aYIEwQJnWI28XSJXnwfIn+JseUtSOy0RxvraNBsGGFidSPL+h71WFZ
+IEwaQJhoBGrP+vem1tmG6aQRJgiTJkatE5IVnXMjDQISf6VcjrBavvKdT1Q6
+9L6rY3qfO9WJ2PmvnKXr2GqpkXSg/N/eZvkilTqkGYWJvPvmVYito+b51zVO
+job0l/v9XXehye9nSjpW814PaJMlycHy+7aSTkCYNI8w8ThAU9MKWVreo6F6
+ZoQJwqTZ0V0Wbokniq/JHmW6f7m2muoukadd0K6T3VbWvXULtq+ZVwbG/ZtN
+mGhUYvnet8p4ovUsFX8iNk6U/Byt9UVN9L4RhYs9HgBhUv/CxARB9HF2TacP
+a7xOGWGCMAET/tvtuPC1mvyylPsaP4bSlm9UiNyts2ydXUs9+XgZO8imEibq
+MyTl+VgpQkSD2+nAIj93L6cPEsKkOYSJnGnzTa9gfDIBaczZIsIEYQJ2IJZD
+Bj2DGGke3lWx9lc4LdCYLuWoFwiTtZarC6OUhVkKTKePr+TprQiTxhcmekRH
+0fXepkca9jR0hAnCBPp0DrIN2HNgWiiXDYpyL+d1v9TbQiJh59WBtwom5aYR
+Jnr6aoRgaSvk/j+vxuCAMGlsYaJLe+6spGLr3rsykfpKw3bECBOECfTijhT3
+Oq9Hw5JHGvhtnJIer85ozJhvV82C1ETCxAXn8ymLV6t5lDzCpLGFiae1bqX6
+jTV0R4wwQZhAXjmc7zNIiW/Hdr73kGvW84yn8qYGXatmPjSLMDFnM/kFT3tO
+ym+DKg+uCJMGFSYeZZvN5+7G74QRJggTyM2nkZ7CZHAEa8k4j3ssk05zt2rn
+Q7MIE/mOkzzK4j3dThzjwQthUkfCRI/U8Jyg/Lk5ZocIE4QJ5ObT7p7CpDXC
+wHuNz6nGtciHphEmnZ0zPYLqHR/zWTXCpE6EyYhDDvmc3Pc1j75mljroI0wQ
+JgiTJkQa/5aesUz2izAYvlrserJ66yNMKiNM3HbtD4p8z/m1GhgQJo0lTEy9
+S6fv8Ohn5uuSY9N0wgiT+AiTajdQhElIm0ilvuTp/Lqr5/d/2uP7766ZQGsC
+YSLWrm08yuKvNWy7CJMGEiZqBfXaiZdKJZurE0aYIEwgN5+29nRG85rJqL+I
+x3efjjCpnDDRsO8ewayOQJggTMow5nZ49i8/br7ZIcIEYQK5+TTUo+P4wPe8
+HPVJ8RgMD0WYVE6YyPVjPUJ/748wQZiUgjmDqrPzfQ+fpn8kIsZJQpggTJpa
+mGjobT0HxPf8jxi3CZ9dGo9EKIdhHsLkIIRJRS0mRZ9LouHCESYIk6iMGzfu
+U7KE86JH23+2GoEUESYIEz1FdmOpnBeUK0kZ/bHYUNiVEibuZFz9znvHjBnz
+xbpvEz7HjafT51Rylq5blxEmlRMmkr8/8RgoahbUCmFS38LEBW68wWPCs2jk
+mDFbNa3ZGmFSfYuJOea8TMen6/HYtbaY9BEmJjqpLoXUa3uQZZadPfN/nwgD
+/miP5YMMwqSCSzmp1HEeZT0MYYIwiTjOnuHRr6yRZz4w0cwgTKovTJxz5coy
+CJN5PuHQqyRMelwUzYsqeahZhRgkz3ybTzTWKMtXXufxpFLnIUwqKkyOiHsM
+E4RJfQsT+d7vekUWTqVOSzQ7CJPa+Jj4hj0P6QjGl9JAKyhMsukduceYRJ04
+b8mzHuWZ/5F2zIiY3MlnnbkWeaEH06k1rgmWcg7wKPPba2TFW88jIB/CJEbC
+RKME60GfHnl4i68zPcIEYVI2YaKOUDpwRxUlshz0oK5bxlyYZNN9Mhi3xFyU
+HOBpxVo2cuTIDUsYaNZ4dFZbV7VPSKV2kfs+45EXdStMdB3f4z2Xa7TOKpfF
+vh7B+BAmMRIm0i9+XO79lEfZvVyHVmaESaPtyhFx8aOIwmSVVODtS22gVRQm
+awVKHAMFqVXHHGHvZy05u8SB9zmPe11djXww0Sitz8UKz/pYt8LEOSW+57Gc
+84dqWaycX8Jqz7JAmMRDmAyS/v1vHuW2RCZvX0ORIEyqJUwWbXZJy5GBHaLs
+zhgdwddEGtq55WigNRAm2fS4vPuEjo6OT9ay7uv9PZYr+i1RlfrsxgfH554V
+3jbs/F6ejiiU6/2snOs93nWF1Jk9K1UO2i/I90txp/4dsSwQJjEQJtKv/9TH
+2VXufTBqBGFSDWGyerPJrdM2mtyWdzy6O1Hy3ogdz5tR97bHSJisDU4mDXKa
+PMcQmSF+uFp1XuOuqDCKvJRWBpGgS1ue99UThvetQKe9Zwl1sSGEiTj5pj3f
+9z2JabJDBZZtvmNEe2llgTCpsTDR/sxYtYvvT36FEkGYVEOYTN90ctt2udmk
+MT50IPby0M7fPtpergYaA2HSNy2U+naFPNMI4TOVqOtqKtVOQO71VjW2Zw+4
+bOJ3smiP6+zOUjN/ycsXsqTmGVehYYWJCn2NGxFBKJ6g5VjivT+kW0P1TKQy
+lQXCpIbCRDTuRhoywUOU3FZqHUKYIEwGEiYvbDYlmcrNHnGS/IRbL/6gxE7n
+5nI20JgJk9z0nOTZFA3JLo39Gz7borPLNLI8sYdeb4LQdXa+VIZdUHfJs3yk
+jB1md8RneUcPAdOYK8VuV9ZTcUXUtukyoFz/SpnLqq6FibvfWRHf/XWpY7+U
+tG2xuymM83Mq9X3dmSflMbfMZYEwqZEw0TbmafHSZcHDdbIZl1QJqyzCpHbC
+5NWtJrecsNHkwR8JXC+W5ZcydDjLdOtZEwmTwGiIkmZJ+peeISGN6HKNfivv
+caWb/d/p3vHNCtx7Vrl9YsySknril/Zcy907/9VEAlaLkIhgJ0Aukt9vcqJs
+dQXLpe6FiVgz19e4QCXmg56B8oDk/V9cVOYzNJmTZFOpi0299dthgzCpJ2HS
+2XlZlfrBnnpqywiTqguT1pe3mdLyu+0vSa4fsF68t+Tho2WrMKnUyeVuoHUo
+TGqTUql7KrWNz/PAwGqn1c0iTJyvyQ8boCwQJjUSJpr3CBOESa2FybQdpg3d
+MkCQbOYRDKlveqtTZ1nBn80uxxICwiSSKLl4woQJ61S44zw3hu99m5qZm0mY
+uPY7LYZl8Xcpix8jTBAmCBOESaAw2XVq6zW7TGttCVw3tn4kyzwrwgo19WZ3
+2gSdo6O+AZVooOXqSFzMhXPkO+c3kChZVK0D9NRPRMr9xpi8t+6UmpjQOAxN
+EJI+oC6vq8sxMSmLhbpjyLVdQtIjTBAmsRAmbZm1OyB6Zk9YZ+kLI4+VdF+N
+hMmNu01pSW19Zf9trepR7TqNKDs9rpNrN8lpRP3P0ZGdKpVqoOXuSNRnwpnD
+H6nzxvm/6l1fzXZoxJ2EPK/xez8i771Nn6WNphMmiovK/GhNyyKdvkOcKb/S
+p+0iTBAmCJMaC5N5ibburkSAl3vP3NEf+2D2yFFLnx05vUrC5IY9pw05/luX
+D/1kgNl33yhxB7ShSKezV4Ey+cNaZ89U6gv1Ikxy8mZbjY5a9AATg6T5ozEI
+atUWdclIHSdr8O5Lta3nxpJpVmGStZzUyIr1nrSdrtzjJhAmCBOESe2EyUpJ
+FyT2nzRgHIueh8Z/aNETw7+/5MnhN1ZQmJwmouQrufd2BzNdF6HQ52gHM9C2
+Qt394Q7AO6qSDbQaHYm+q9xnHz0ltwLbVMuRNKbM7TE6y0dPOO6KsCQYyaFS
+dzSJj9DGQQ/SzMIkaw11/eOqKpTFct3JIxarDULaLsIEYYIwqYEwuU2sJNsU
+WibQeCBBny189OCdFz06fMqih0fMKYcw2e+y/c7eZ2rrbrn30cBfzprhG0Z+
+qXQ6P9NZWLHlogNluU+ZrIUwyRN1EjFTz2PRUzTd9spaNcBX9XRgGQg2jWNn
+6oLB3VYp3wVJv1NH7YLP0OTCJIuJoyOHZlaoLN4xvmmp1JcGaLsIE4QJwqRq
+wqSt+xlzfYEZpAv8omdHLFJH0Y5x474c9IeLH2nfatFDB5+98IFhc6IIk6GX
+t+w95NIh+7Vf2V8QuOiM4yOGML+u71pxnBporTsSXbqQcv2WlG/GhaZ/KoLo
+Kza9qzE95B5H9/WjiDvG2mTPcil11r5YDwPU85mKFchSb7fMxuIYIE0ouzDr
+7Jxk+qYBkpTl4GqUg4tJdIBzTl9TYlnMV98xSR3F7rYzJz4XUxYSjbbMS7Jf
+KLIOnFHOZecyt6HxxdQlFeIl5tUJRedVfNOEWBRazYRJa/dL8rfHJQaHN0yN
+bGliSATv6b9OZt/fDBEo68+/d9iPF9zT/pqPMAmpbPt6Hl2dTTN10I3zzCGO
+MxznTLyJ+npIR3GY/DzVWamucoPCQ+qYKL+/2De5wGsPub+51ETy1CUROX9E
+LG0bJuocjXxrHIvtdlY9mXh5gbqn4u5JSX921ql9Kr3luZnQ+mROBhdx4epe
+ITG93NXXqbrbSaMRE4IcIJbCpOuSRHLChoUavseZMg9pdNWgxt7zVPu68+9q
+P3L+He2zw4TJ29PbNwidLUY7S+R1Vei5zmsIEygnuszn2slmWo6jRo366ohD
+DvlcqefoQDQxrUsxMpHaQstCfXY0kmw5jy8AQJhUTpj8TZZudirQ2a6r6/5m
+l4Dv4XYyc1FnUekUPp4nUEQkzJ9+8HdEiNyTFSTzb2ufPe/2YUHxSDZwR9L7
+hvBeIvl1UpwHBoQJAAAgTKww+ZcIko5EuDOn9SMpz66Nhe5sikBnsvm3HrTH
+vFvbu3py4pHoVkm3G2Kh764Oc1bLAM5rCBMAAIDaC5NbRJAck9j3uP8Ou1SW
+THaVe91XobMlrhPBsNtAj69OT26t2DcI0v3FfD/CBAAAoObCpPuMxJAjQ3ej
+6DqsiIG/VSlw1l3idPa9XL8P41zb2Tkj4rLRgfVW1ggTAABoPmHSmvm9/L57
+2J9qLBIZ2M+MEEBquYvrUMp20tnyHUeaAGnFO9fmLhMdW687HBAmAADQRMKk
+68JE28QDJejHh4L+RHcR6HZHGQznRhAU12QDYekZJu7AuIVVDDqzSu75R92y
+Wc9ljTABAIDmECZtme0S38usF3qPVGpvSY9FEARPy3XJoO/U3TfOWfXlSh//
+LhaWrzdCWSNMAACgOYRJCGrlMDtWokTpFNFRTEh29RtxobNnlFmUPK87hRqp
+rBEmAADQlMJEBMl6brlluacYWKb+J2Fn4gyERoLVCKElhu+ep6JofMiSFMKk
+SFoy/yPRfY8Qn6OLZGfWleJ3dIU4RJ+aaOnemlYHDYee85XMjCUjIBDdmZrs
+Hp/Y78jP+9etrl3l2v2rWJeHJVom1naVoJzCxJ0nkZJr34pypoyGIi/HO+nZ
+NCbuf2fnAo/7r9TTPevdj6TmwmT/8R+VDvo3kt6XdKdU8t+KODlHfr/KHdi4
+WhrZJHoqqDuSE7ZKtB2zQfBnXf9f0iNkEoRM1IZK39eT+E63/3lCdpfrhVWq
+4+vI/ZaJ3+gBDSFM3GFjsyJs5X1YxMBelXi3tX4o9gDAQs/xLz3NtdHbRsWF
+ydDDP+ki/D6UGJrZMr9xdn9KPr9a0ppCO7cAYsggqbMLJI0M7tBlNtzaPZxs
+gmBh0r2HsRhHEguZuSJ6f1gda4laZ0RAqcW7noWJO6sjih/JHD1Tphg/klJZ
+64eSfyDgM/IMQ5ulbVRUmGiMGBPpt+u+xAHHfryAIl9f/m6lNNLf0VtBHQ0s
+XzUddmvX5mQGVI2h3RtboVClpZW27i653ys1f++owmTcuHGfkoH+PPm7FZ6C
+ZKl878+LPXq97O8rJ/7KM/xVBuXDm+2Uz4oKk2TmcBEb84taQ23resZYTsIY
+MvGL8jcHyiAwzphAdXkoDDWNqqVm7XWyPtra/f3E/pM+0080tWZ2k//vlM+/
+mxh8ykdCRZP6CqwVWt17yXVpEVsHFwoWGL0TkGWB7HPqz9bMD+ReKRkEdyl4
+nYr5ZPcQyZ+jTEpmvm1m9AOWkSxFJDPfM7N+nRkVmhRoh5jN96FH7Vj0Gvfg
+U/7T/H2BXXry+dcKHeKZ//dSvlkT+OAj1k20HtVm3iHXKpecsIkpK/1s4Ho4
+yL6X/K3Wi9aubyXCDt7UQSGZOdqZuHdeW0d677uOya+++dne/V/m+4cc/bFI
++aDWxbau/Ux9aO1qSezzo08XFPvZJaYDuj5n6ngUX4Zse2rNDDbvWSBid7+6
+OPSob8rOzNEm6XUDDbTZejVk0hYu1MTBif27anOkR3LCJ0x/kcwcKz+7TZkp
+mn/6fEH5E/T/Ji9O+bC5Xss+r61P+nLBCZsp88wOJg+1jWbLW61wuiyu7aoc
+7bpvnW3p3tfWr6P2SezofCqTXZebM+3qTZioU6haOuTzt6P4kaj/BzK4wYSJ
+Vupk5lWp1McV3fkFrdUPOfqz0jD/Lt/zgXzfDSZoXzIzS9JbxhQaNLgkM++6
+QUOcazNPS5pu/l4bs+kw5dDIZOZZSW+Yk62Nj4v8O0jsJDNnSbojMXTi3vLz
+eUkz5HkmS7rLXKe+MoVn1VvL30yT5/9fcxxDMvOE/H526OCkn7dmTpbO52fy
++2vu2We5pa6pgde0dm3rhN2z9l7d15n8au2+J1TAmfeR5TWbL3dKut/l8Uwz
+0OeVg4gwa84d6g7g7JGf1xdVtkY0ZZYaoRo8GO9oLGYDDWD980mDN/7DDB7J
+zOty7e02b00+nWQHca03mUWSnnTvttSI0eDv291d/4qky6z/k4hqtfblCgAd
+bJKZB109W2DyUetE/zJpzxs8VGiafBOREDwz3SkwH8xyp56+bvyxZrp3fcO+
+T1dLyPvc4gJbni5plbmvj/DLigR7jMjb7oyzh80ztGV+HHqNCsS27pfy8rG1
+68bAwTlbr9q6W229zTzn3k+vX2HOU4tsWZC2bvuAq83ZbNm2tWOBTQzqrJzM
+zDN9l73mWZt32g+IRbdNAobmlZuJbn55cH6IoDP9y4T+mzes391KIwTC68Kj
+Oc+xzGweSGbONefNlaNd99bXcfa9u59y93vD3ts8xwumndWTMBFrw77y/09E
+ECQPSUj4PZAGDSpMrFpfUnCWPLCCX980Ch1gc60T2sGYxpMTcTdrXldBop1d
+39mqFUr3mYFKZ55r7zNxe2uSl1lSfqdzl+nQtLPVGXR/K8+BZiAMG2h01q0d
+e9vEzfrNxozYCOjIdPZkB5E5ct+JZgDsfY4f2WfMGVitD8/bRsj0tZCYGZOK
+E7Hu5HdCO5uyae06tN9Myg5ECwN3klirwwo3IJ8k37tRwmfJVZ1Ak5nzQoSk
+dJ6ZC/wsS0aIzTWO1H1FXmvmF/L/75mOWx2qs/VDO2V7zcUB37WfERFtmVP6
+CQnr//REnujoreN3mgEr+LOzzOf5+fCmlNXxef+vlhkj+HKWM62omyHX/cW0
+h77iyAqvGSF5usCV1XRTZwpZGIMH1N2c6Dq1Xxuz7XqNsRzmD6Yd8tny0HxM
+dv08pF6pyH3MDKr930EnIu8UZfnLz/9jre9aHzGmkxwj8mViEHiN1hepB2qx
+6deWxJfD9ikqljIB93oh8P/tZ0ebwT6/zu1p8jGof7ROsfNCnkOWvDMvB76D
+bdcLpexGFN2u7TP+xvSNfSd6en1b1x/cu60xAqsehIls/91C/n19BEHyhlpX
+TgkzkUKjCJPzzayttO+42nTWfQfovssD2nHqrKj/NSOtWJCGn9/x3GoHoD5C
+ofez+UZI5N9jiUlhplqdSer25/xO4gAz8wt6dutMtsp02HmzHeOzcGi+Remo
+Te1nYmLtf/8JZkYWtBSVzNxslnXyBdM9oULADIIBnazdRdVjzLzRynKqmYkF
+ije1TPQZdAfCbLM0Vq7LAgbHYW4QOTzgHablmaTtoPl2qDXHDrbzQqxAasE4
+KFS0tHX/KtCSEWT5UkdZneVmlyD7i9t5gbNdc43MjvPr3uauHgXXv4Gwlp25
+odZOI9a7T8jJ243crrtC+fhESL1aHOino+JcrULedU3yRcMRBAkaK6wW54lq
+u7V7hbH4BH/nrSZPc/sbW3/W5P1/7/v91Vi78svoGCOU8/9+I5sfAzyH1vOg
+dq1WMp92bS1E75kJXdDSjrW8rCpobYmDMJGB6/fy8/wI59O8r98ryzYfQw40
+hTB5VBreLyNfb2dsPaGm97XLHjlb2HQGHTQA2r9/MXDWbi0Va/IGfetH0GOs
+M+Ez9z/k+caoSNDlhbD4LFnntVyTvQ4EulwU1KFak2qP8Znp/06nu45qTPEm
+brl/0FKSHZDeC+wUbcd2c/TylI5YLVz98kk6O/0/tQb5YNbBdTCQ98ifgR9n
+ZnlB1hy7RHBuTj37hZlFh83Ks/Uw9/Ns3QhaHikkWuxAPDPY6hVg3dIyCd+O
+fIlZzsr//5S1vE3YJGLb+71pv2GTR7WWZP0ueuvHlCLycU5IvTo35D6nmufw
+t7K+E7qDRK2eQVt0beiCKwr0Nacb4ZK7HJXMJAP/v7fdviTpsIDvu8rkWZCA
+H/g5eoyAKbVdG+GhFjxpm+Ht9sZAQRk7i4l/WqM7dPQ8G2RAUwmTdyLPru31
+F5h11cJ/MzffYiJLNbpeGtw41xhrRV6DdpYKdRLs/10/NMshhZwVzYwoJ56A
+neW+YQfJoGRMpz1mCan/DPHvpuMJ7iDGmffNxZpp33VWgseNuVz9JQaySKoj
+n85izcCs8TY0LoKZHa3J86mw/kJLnWk5GsaHQJ6xr/Oknjauy2qFnPiCB6wT
+jCUt+LO/Beah3SG2MKduDHLCaGKB5/5uoMXEWjjmBAsnJ1qCnDeN47SIlr4D
+uBUCM0IHdRW6Wkdbu35i6k5b96Vm6cMuPx4fKJbVqhEFret2Wat4sWiXSZcW
+kY9PBFgkxcoy8Rshbesfct2f/ESV5Ifxxwhre8ZXp39btxOT5YF9Q29fc5rx
+scl/xpMD/7+vNSW3ndvve8X4i/RFl3WKe463ytKu7TLa+wUdmu1y2sUNJUwk
+ONmDMtARm6LZhIl1DlwT6LORzyCz8yRvV4M6YYn1I7wD/axpVH3Xzu19lxn/
+irxOwqzbBnuyqzOfWlPyO52L5P/vHUAcvZhnvjZiJetwWCDlLuWolaWv70v/
+/LhQPr8m8DOze8c4xd3klp56jOVFd3jkYpdBptjlE+cgqTMmswvBiJrn8u/t
+fHByhZsPOkM1lh3X6RqrkfGBGRxBtF4b6nQclodmt4uxcGyVZ7kKqi+9A2pX
+oJOvdtbq0BxsyfihmYkGWquMo2+v5cs8l+SDni0WPDinjRO08T8xFpKTjUBs
+6/qOmzkPDni2B42IiTYhSHo7ylrH4YHzMVfA644TffcwZ1QVfr6xOqxP2EBt
+b2k/Eag72NSiUEjMm7YlA33+/a6X9McCebk07/3UAmatnDvlTD4OGPA5zORF
+nITL0a5t/zY99F5GOBqLyqGNIkxekRghwxNRnJag/oWJnSn05PlsBHfiKWMK
+zdvmqabHAp2r9SW4Kue+u5iOLkh8WLPw3SEdyNWB/gp2N0z4Fmbr9b8y3yxs
+PNsP8TRBbxg4q+ntkB4rarCx1o2ksQTo0kW+1WCGcbAMMj3bnRdB5uXDjUm6
+dCvavLVLTiqy1KEz2vfMDdytobPFsDy0Fqf+nb51QOwxIjf8XlcFWv7sTp/j
+QsTERYFLLL3WhVVrd9Poji+1goSLkpl5y3fWMtBt6l6uNc8uIy4P3e0x8MA+
+MW/gHtgaNqyofMx9JhNOQERUoNgWa1OUWB3qd6aTEC8ri8nnh0M/t8+yOnC5
+1Fojgp1K1XKlfh+B1iPpp3L9f+xOwocL9BHrOyfWk8rUru8sGD3WCqWeQItP
+nQkT9SM5o1bxSCAmwsSayBcOaAK0jl5zAztmnS0FOZX2fv8tebPMZNeRoR2d
+2R3T9euQz94w1+abtFeZHSPhzxDW4F8L9dK32wSPzXP2M/FKZOty+DUrTZyS
+/h3HqFD/F7vdeGZOR7mfsfAE+V9Yi8aKwPVw3ZWiVqBS0dmsOoSqL49ZLpA4
+Dt7fIdcYHwFxBs6vT+F5aJcGb84ZIHYqONM3O5tEZObOeNfunureK+Rej+c5
+h/b//DlTP6yj9tyQnWuDTFnpVvDgvHwgMNy99eVYk+dEW/zAfpIRJmHLa7ob
+JNdCoPFsBszHgB1KWq/CBkb1zxkoVkfwdavNEkXowC5iMnciYeOEhPtRWD+y
+njyfMdsue3J2E/VaMe3usHMD8vDngZbYZObEop4jd4t41HZtd8NNCbyXETtm
+B6N/GcRImBg/Etk6/KUEIEx6zYTLQwOD2V0mL9v4BgE7B2yMilfytgPrIKFL
+PLmzBnvNtJCOzsY20W10uehsNMismp1Na0eX6+in36eOvWbZIMAxUQVBkAOu
+Dep2kZlt582WxN8iKEaCtQTtEWgJsOJjTsCOnEEmX3OXO+xs+IZ8y48MYnan
+Tk/gkoIOzjqbK1mYmI71hgEH7oFn5+8FzugL5aFanHQba771YklgXdKdWyaO
+RID/Q9YnKWht3gralQUtFsYPRoNWaf2RQTEIK36WBgw2WpfPdHXz/ID86Qo0
+2xfdbo1/VE+gn4MKMTPY5ggQa6laFZ6PMsAF74R7Ks/PorcNnRnJT8bG38jf
+9aTtzfYp0/PqjvXTWhl4ZIbdTbTaxMPJXWKxyydr8oSQtVrd4KzGwwPq4r8C
+J2NWWK8q8BwrzP1yl4Ajt2vjb/NGwI6bQW67+6qQ7eh1IEzS6ftFkOzGEI8w
+yZsx2EBLi8wShA782jmp2tdZsx0Qrg2Nr2D9Gt43HYmJFyIDhIkIqcGszG6f
+QYEz0SCnvexW28AtcWZmtjTErPqa89uY68zOu5tOyO7ueCGwA7Gd+xFu4LjA
+iBq9v/UJuM2KsQCPehNvQszzwQPZpOA1YplNq/jTDld3G+j7af7qMonOqIO3
+I6+wyxoaEVXy1G43nm12K5lnlsGn73V2gFwduP3aX1Qc5gKgvZAnOIseeGTG
+rlsmgwel4DzMWpz6xrXpX87LjagxwbDk/VXAqGjQJbFgkXOIy6v98612ZvBe
+UzB+j3WYXOMG3kEFLHLPGaGt9UzL2kT8NNtF73bBt87LsxxZwXNZ5DKycXbm
+mK2sulRpHG+NL85JZpkkzG/M7jYKysfZgTvrsvUqPODd9NB4I4WFyemujp1p
+88xsnT7IxXSZFbot3UxqMv+2eezahrHoaNuQJcfcZdHe/L7PXddtgurZ3WdP
+Wx8ktabk7RyzMWaCliKtoHk+5DnmOKvf8yFC2a9d2/5jZyd27jfWWFPO8tMK
+p1uMVSfMyhxjYfKqnhqcwI8ECokT67S5oJ/jmYn9UYRjrHUUvNYtCy20kSFD
+PPjVkqLLDblOtHamvqvrrIPEzOGBMyyNg6Dr4tqBauPUzsI4KZogXacNsK9/
+kOsg3+99bxN9cUroNkbtyMLW043QCTl92XYkD1inX9kJZX/PhEeWlSUr8w76
+LiocxaHPdN4iFOzWwMf7LbGomNS8GCh0djHYbb49RqRFHjiNuXusVx4aB1MR
+tLkdc2+epFxU02V2xi1r9YUOLLPLSTNcpN1f5NSbVmMZKpwPu5hBJmw7ea9I
+2MqJ2QUuGunNRhhbn4LD7f1z4tToYF6c0/lA973DDfA9zjn3+gDLYY7p3wyG
+T1qBoqJeRErYklK2XoW1Iy3LKI7R1sfqfPcM2T5nkSnTQmLRXnessXbq4K9t
+QYW0igUzEZF3CezjxP9Ed0nZyKxPmt+1fM0yYcDZX/aIiytDw+0bXzMjLt9y
+FovXzHKQWksL9gOe7bo3n7/tAgUucvV/lrmP3fJ+cSwCqxUpTJbo57L99yOM
+vFA02gHZTqo+hKwNBT2xpO9QcaCzXU1RLQSNhHa4YU6hED90qUvFXFx8DHzQ
+ZRZzHIQMzqU8fzYmTaliDyomTFbLks00ESQbkEPQ0GS38xUK7gZ+GIdX2coY
+tMMEIK5kY9LkOsxCLITJ7SJItiNnoDmEiQkGtTz0xGHwyEtzIvShZplJ1+AB
+6olCgfSgZsJktsQjoTOBZhMmXaHBzKB4rDPfbLMzQAUKQN0JE/EVCw9bANVE
+xEhGorZOkngkHyY3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg
+Ev8Hx1Vla8ChlaMAAAAASUVORK5CYII=
 
-		@media (max-width:720px) {
-
-			.image_block img.big,
-			.row-content {
-				width: 100% !important;
-			}
-
-			.mobile_hide {
-				display: none;
-			}
-
-			.stack .column {
-				width: 100%;
-				display: block;
-			}
-
-			.mobile_hide {
-				min-height: 0;
-				max-height: 0;
-				max-width: 0;
-				overflow: hidden;
-				font-size: 0px;
-			}
-
-			.desktop_hide,
-			.desktop_hide table {
-				display: table !important;
-				max-height: none !important;
-			}
-		}
-	</STYLE>
-
-<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
-<BODY style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MA=
-RGIN: 0px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: #f9f9f9; -webkit-text-size=
--adjust: none; text-size-adjust: none">
-<TABLE role=3Dpresentation class=3Dnl-container style=3D"BACKGROUND-COLOR: =
-#f9f9f9; mso-table-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cell=
-Padding=3D0 width=3D"100%" border=3D0>
-<TR>
-<TD>
-<TABLE role=3Dpresentation class=3D"row row-1" style=3D"mso-table-lspace: 0=
-pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" a=
-lign=3Dcenter border=3D0>
-<TR>
-<TD>
-<DIV align=3Dcenter>
-<TABLE role=3Dpresentation class=3D"row-content stack" style=3D"WIDTH: 700p=
-x; COLOR: #000000; mso-table-lspace: 0pt; mso-table-rspace: 0pt" cellSpacin=
-g=3D0 cellPadding=3D0 width=3D700 align=3Dcenter border=3D0>
-<TR>
-<TD class=3D"column column-1" style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT=
--WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM-WIDTH: 0px; FONT-WEIGHT: 40=
-0; PADDING-BOTTOM: 5px; TEXT-ALIGN: left; PADDING-TOP: 5px; BORDER-TOP-WIDT=
-H: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt" width=3D"100%">
-<DIV class=3Dspacer_block style=3D"FONT-SIZE: 1px; HEIGHT: 20px; LINE-HEIGH=
-T: 20px"></DIV><IMG border=3D0 hspace=3D0 src=3D"https://imageshack.com/img=
-922/4714/gZsJUg.jpg" width=3D701 height=3D350></TD></TR></TABLE></DIV>
-<TABLE role=3Dpresentation class=3D"row row-2" style=3D"mso-table-lspace: 0=
-pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" a=
-lign=3Dcenter border=3D0>
-</TABLE>
-<TABLE role=3Dpresentation class=3D"row row-3" style=3D"mso-table-lspace: 0=
-pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" a=
-lign=3Dcenter border=3D0>
-<TR>
-<TD>
-<DIV align=3Dcenter>
-<TABLE role=3Dpresentation class=3D"row-content stack" style=3D"WIDTH: 700p=
-x; COLOR: #000000; BACKGROUND-COLOR: #e8edfa; mso-table-lspace: 0pt; mso-ta=
-ble-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=3D700 align=3Dcenter=
- border=3D0>
-<TR>
-<TD class=3D"column column-1" style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT=
--WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM-WIDTH: 0px; FONT-WEIGHT: 40=
-0; PADDING-BOTTOM: 5px; TEXT-ALIGN: left; PADDING-TOP: 5px; BORDER-TOP-WIDT=
-H: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt" width=3D"100%">
-<TABLE role=3Dpresentation class=3D"text_block block-2" style=3D"mso-table-=
-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"PADDING-BOTTOM: 40px; PADDING-TOP: 30px; PADDING-L=
-EFT: 30px; PADDING-RIGHT: 30px">
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV class=3DtxtTinyMce-wrapper style=3D"FONT-SIZE: 12px; FONT-FAMILY: Mont=
-serrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Taho=
-ma, sans-serif; COLOR: #58627c; LINE-HEIGHT: 1.2; mso-line-height-alt: 14.3=
-99999999999999px">
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px"><SPAN style=
-=3D"FONT-SIZE: 20px">I nostri toner rispettano tutti gli standard per la si=
-curezza sulle polveri e sono garantiti. Utilizziamo solo materiali certific=
-ati.</SPAN></P>
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px"><SPAN style=
-=3D"FONT-SIZE: 20px"></SPAN>&nbsp;</P>
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px"><SPAN style=
-=3D"FONT-SIZE: 20px"><SPAN style=3D"FONT-SIZE: 20px"><FONT style=3D"BACKGRO=
-UND-COLOR: #ffff00" color=3D#ff0000><STRONG>In questo 2023 si parte con nuo=
-vi&nbsp;Toner a listino. Chiedici un preventivo indicando il modello della =
-tua stampante&nbsp;rispondendo a questa email, ti invieremo il nostro sito =
-e&nbsp;contatti e anche le nostre recensioni certificate&nbsp;.</STRONG></F=
-ONT></SPAN></SPAN></P>
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px"><SPAN style=
-=3D"FONT-SIZE: 20px"></SPAN>&nbsp;</P>
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px"><SPAN style=
-=3D"FONT-SIZE: 20px">Puoi anche chiederci un preventivo inviando una email =
-al nostro indirizzo: <A href=3D"mailto:tonergarantiti@gmail.com=3Fsubject=
-=3Dpreventivo">tonergarantiti@gmail.com</A></SPAN></P></DIV></DIV></TD></TR=
-></TABLE></TD></TR></TABLE></DIV></TD></TR></TABLE>
-<TABLE role=3Dpresentation class=3D"row row-4" style=3D"mso-table-lspace: 0=
-pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" a=
-lign=3Dcenter border=3D0>
-<TR>
-<TD>
-<DIV align=3Dcenter>
-<TABLE role=3Dpresentation class=3D"row-content stack" style=3D"WIDTH: 700p=
-x; COLOR: #000000; BACKGROUND-COLOR: #e8edfa; mso-table-lspace: 0pt; mso-ta=
-ble-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=3D700 align=3Dcenter=
- border=3D0>
-<TR>
-<TD class=3D"column column-1" style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT=
--WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM-WIDTH: 0px; FONT-WEIGHT: 40=
-0; TEXT-ALIGN: left; BORDER-TOP-WIDTH: 0px; mso-table-lspace: 0pt; mso-tabl=
-e-rspace: 0pt" width=3D"33.33%">
-<TABLE role=3Dpresentation class=3D"image_block block-2" style=3D"mso-table=
--lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"WIDTH: 100%; PADDING-BOTTOM: 15px; PADDING-TOP: 5p=
-x; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
-<DIV class=3Dalignment style=3D"LINE-HEIGHT: 10px" align=3Dcenter><IMG titl=
-e=3D"Alternate text" style=3D"BORDER-LEFT-WIDTH: 0px; MAX-WIDTH: 100%; HEIG=
-HT: auto; BORDER-RIGHT-WIDTH: 0px; WIDTH: 58px; BORDER-BOTTOM-WIDTH: 0px; D=
-ISPLAY: block; BORDER-TOP-WIDTH: 0px" alt=3D"Alternate text" src=3D"https:/=
-/imageshack.com/img922/5186/CtTWmO.png" width=3D58></DIV></TD></TR></TABLE>
-<TABLE role=3Dpresentation class=3D"text_block block-3" style=3D"mso-table-=
-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-L=
-EFT: 15px; PADDING-RIGHT: 15px">
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV class=3DtxtTinyMce-wrapper style=3D"FONT-SIZE: 12px; FONT-FAMILY: Mont=
-serrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Taho=
-ma, sans-serif; COLOR: #58627c; LINE-HEIGHT: 1.2; mso-line-height-alt: 14.3=
-99999999999999px">
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px"><SPAN style=
-=3D"FONT-SIZE: 15px"><STRONG><FONT color=3D#ff0000>Chiedici un preventivo</=
-FONT></STRONG></SPAN></P></DIV></DIV></TD></TR></TABLE>
-<TABLE role=3Dpresentation class=3D"text_block block-4" style=3D"mso-table-=
-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"PADDING-BOTTOM: 5px; PADDING-TOP: 10px; PADDING-LE=
-FT: 15px; PADDING-RIGHT: 15px">
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV class=3DtxtTinyMce-wrapper style=3D"FONT-SIZE: 12px; FONT-FAMILY: Mont=
-serrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Taho=
-ma, sans-serif; COLOR: #848484; LINE-HEIGHT: 1.5; mso-line-height-alt: 18px=
-">
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px; mso-line-heig=
-ht-alt: 21px"><SPAN style=3D"FONT-SIZE: 14px"><FONT size=3D2><A href=3D"mai=
-lto:tonergarantiti@gmail.com=3Fsubject=3Dpreventivo"><FONT size=3D2><STRONG=
->Richiedici un preventivo senza impegno rispondendo a questa email</STRONG>=
-</FONT></A></FONT></SPAN></P></DIV></DIV></TD></TR></TABLE></TD>
-<TD class=3D"column column-2" style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT=
--WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM-WIDTH: 0px; FONT-WEIGHT: 40=
-0; TEXT-ALIGN: left; BORDER-TOP-WIDTH: 0px; mso-table-lspace: 0pt; mso-tabl=
-e-rspace: 0pt" width=3D"33.33%">
-<TABLE role=3Dpresentation class=3D"image_block block-2" style=3D"mso-table=
--lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"WIDTH: 100%; PADDING-BOTTOM: 15px; PADDING-TOP: 5p=
-x; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
-<DIV class=3Dalignment style=3D"LINE-HEIGHT: 10px" align=3Dcenter><IMG titl=
-e=3D"Alternate text" style=3D"BORDER-LEFT-WIDTH: 0px; MAX-WIDTH: 100%; HEIG=
-HT: auto; BORDER-RIGHT-WIDTH: 0px; WIDTH: 60px; BORDER-BOTTOM-WIDTH: 0px; D=
-ISPLAY: block; BORDER-TOP-WIDTH: 0px" alt=3D"Alternate text" src=3D"https:/=
-/imageshack.com/img924/6843/88mZnF.jpg" width=3D60></DIV></TD></TR></TABLE>
-<TABLE role=3Dpresentation class=3D"text_block block-3" style=3D"mso-table-=
-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-L=
-EFT: 15px; PADDING-RIGHT: 15px">
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV class=3DtxtTinyMce-wrapper style=3D"FONT-SIZE: 12px; FONT-FAMILY: Mont=
-serrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Taho=
-ma, sans-serif; COLOR: #58627c; LINE-HEIGHT: 1.2; mso-line-height-alt: 14.3=
-99999999999999px">
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px"><STRONG><SPAN=
- style=3D"FONT-SIZE: 15px"><FONT color=3D#ff0000>Indica il modello della st=
-ampante</FONT></SPAN></STRONG></P></DIV></DIV></TD></TR></TABLE>
-<TABLE role=3Dpresentation class=3D"text_block block-4" style=3D"mso-table-=
-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"PADDING-BOTTOM: 5px; PADDING-TOP: 10px; PADDING-LE=
-FT: 15px; PADDING-RIGHT: 15px">
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV class=3DtxtTinyMce-wrapper style=3D"FONT-SIZE: 12px; FONT-FAMILY: Mont=
-serrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Taho=
-ma, sans-serif; COLOR: #848484; LINE-HEIGHT: 1.5; mso-line-height-alt: 18px=
-">
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px; mso-line-heig=
-ht-alt: 21px"><SPAN style=3D"FONT-SIZE: 14px"><FONT color=3D#000000>Indican=
-do il modello ti invieremo un preventivo senza impegno per i toner</FONT></=
-SPAN></P></DIV></DIV></TD></TR></TABLE></TD>
-<TD class=3D"column column-3" style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT=
--WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM-WIDTH: 0px; FONT-WEIGHT: 40=
-0; TEXT-ALIGN: left; BORDER-TOP-WIDTH: 0px; mso-table-lspace: 0pt; mso-tabl=
-e-rspace: 0pt" width=3D"33.33%">
-<TABLE role=3Dpresentation class=3D"image_block block-2" style=3D"mso-table=
--lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"WIDTH: 100%; PADDING-BOTTOM: 15px; PADDING-TOP: 5p=
-x; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
-<DIV class=3Dalignment style=3D"LINE-HEIGHT: 10px" align=3Dcenter><IMG titl=
-e=3D"Alternate text" style=3D"BORDER-LEFT-WIDTH: 0px; MAX-WIDTH: 100%; HEIG=
-HT: auto; BORDER-RIGHT-WIDTH: 0px; WIDTH: 58px; BORDER-BOTTOM-WIDTH: 0px; D=
-ISPLAY: block; BORDER-TOP-WIDTH: 0px" alt=3D"Alternate text" src=3D"https:/=
-/imageshack.com/img922/5325/xUUjFD.jpg" width=3D58></DIV></TD></TR></TABLE>
-<TABLE role=3Dpresentation class=3D"text_block block-3" style=3D"mso-table-=
-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-L=
-EFT: 15px; PADDING-RIGHT: 15px">
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV class=3DtxtTinyMce-wrapper style=3D"FONT-SIZE: 12px; FONT-FAMILY: Mont=
-serrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Taho=
-ma, sans-serif; COLOR: #58627c; LINE-HEIGHT: 1.2; mso-line-height-alt: 14.3=
-99999999999999px">
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px"><STRONG><SPAN=
- style=3D"FONT-SIZE: 15px"><FONT color=3D#ff0000>Spedizioni con corriere</F=
-ONT></SPAN></STRONG></P></DIV></DIV></TD></TR></TABLE>
-<TABLE role=3Dpresentation class=3D"text_block block-4" style=3D"mso-table-=
-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"PADDING-BOTTOM: 5px; PADDING-TOP: 10px; PADDING-LE=
-FT: 15px; PADDING-RIGHT: 15px">
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV class=3DtxtTinyMce-wrapper style=3D"FONT-SIZE: 12px; FONT-FAMILY: Mont=
-serrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Taho=
-ma, sans-serif; COLOR: #848484; LINE-HEIGHT: 1.5; mso-line-height-alt: 18px=
-">
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px; mso-line-heig=
-ht-alt: 21px"><SPAN style=3D"FONT-SIZE: 14px"><FONT color=3D#000000>Spedizi=
-oni gestite con corriere espresso, consegna entro 24/48 ore</FONT></SPAN></=
-P></DIV></DIV></TD></TR></TABLE></TD></TR></TABLE></DIV>
-<P align=3Dcenter><IMG border=3D0 hspace=3D0 src=3D"https://imageshack.com/=
-img923/1102/8URLgW.png" width=3D700 height=3D339></P></TD></TR></TABLE>
-<TABLE role=3Dpresentation class=3D"row row-5" style=3D"mso-table-lspace: 0=
-pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" a=
-lign=3Dcenter border=3D0>
-<TR>
-<TD>
-<DIV align=3Dcenter>
-<TABLE role=3Dpresentation class=3D"row-content stack" style=3D"WIDTH: 700p=
-x; COLOR: #000000; BACKGROUND-COLOR: #e8edfa; mso-table-lspace: 0pt; mso-ta=
-ble-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=3D700 align=3Dcenter=
- border=3D0>
-<TR>
-<TD class=3D"column column-1" style=3D"BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT=
--WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM-WIDTH: 0px; FONT-WEIGHT: 40=
-0; PADDING-BOTTOM: 5px; TEXT-ALIGN: left; PADDING-TOP: 5px; BORDER-TOP-WIDT=
-H: 0px; mso-table-lspace: 0pt; mso-table-rspace: 0pt" width=3D"100%">
-<TABLE role=3Dpresentation class=3D"text_block block-2" style=3D"mso-table-=
-lspace: 0pt; mso-table-rspace: 0pt" cellSpacing=3D0 cellPadding=3D0 width=
-=3D"100%" border=3D0>
-<TR>
-<TD class=3Dpad style=3D"PADDING-BOTTOM: 10px; PADDING-TOP: 30px; PADDING-L=
-EFT: 30px; PADDING-RIGHT: 30px">
-<DIV style=3D"FONT-FAMILY: sans-serif">
-<DIV class=3DtxtTinyMce-wrapper style=3D"FONT-SIZE: 12px; FONT-FAMILY: Mont=
-serrat, Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Taho=
-ma, sans-serif; COLOR: #58627c; LINE-HEIGHT: 1.2; mso-line-height-alt: 14.3=
-99999999999999px">
-<P style=3D"FONT-SIZE: 14px; TEXT-ALIGN: center; MARGIN: 0px"><FONT size=3D=
-2>Se hai ricevuto questa email per errore, per favore comunicacelo, Nel cas=
-o desideri essere cancellato rispondi a questa email con "cancellami" </FON=
-T><A href=3D"mailto:tonergarantiti@gmail.com=3Fsubject=3DCancellami"><FONT =
-size=3D2>Oppure premi qui ed invia per cancellarti</FONT></A></P></DIV></DI=
-V></TD></TR></TABLE></TD></TR></TABLE></DIV></TD></TR></TABLE></TD></TR></T=
-ABLE><!-- End --></TD></TR></TABLE></BODY></HTML>
-------=_NextPart_001_546A_47D96775.48162047--
+----==_mimepart_63eeb9d94eb11_13ff03c29ea7019973953--
 
 
---===============6667404251635278654==
+--===============3404075588201288762==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6667404251635278654==
+--===============3404075588201288762==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -507,5 +746,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6667404251635278654==--
+--===============3404075588201288762==--
 
