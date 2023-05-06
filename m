@@ -2,53 +2,53 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id DEB6F6F929C
-	for <lists+osst-users@lfdr.de>; Sat,  6 May 2023 17:14:45 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 20DFF6F9281
+	for <lists+osst-users@lfdr.de>; Sat,  6 May 2023 16:26:59 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1pvJcS-0000QB-Mj
+	id 1pvIsD-0000UL-UZ
 	for lists+osst-users@lfdr.de;
-	Sat, 06 May 2023 15:14:44 +0000
+	Sat, 06 May 2023 14:26:57 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <noreply@gdnonline.com>) id 1pvJcQ-0000Q5-7R
- for osst-users@lists.sourceforge.net; Sat, 06 May 2023 15:14:42 +0000
+ (envelope-from <noreply@gdnonline.com>) id 1pvIsB-0000UC-BA
+ for osst-users@lists.sourceforge.net; Sat, 06 May 2023 14:26:55 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
  :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=MIRTBMspKvmP++VNN5B0HtYq40HVcj/5SMojSaBSI9Q=; b=fJajlP45BBW9Ohrz1Vj2hPEx52
- cEbYKObbTerqehfc7/oMMCIhGcuLpOt+8/PmZaiVAqmS23t7ObwNrO++DBumJKh0PprGNwzzwjVOm
- dGPyR1D6dwdsUePy3GnsWe7sOYsNrS53XZYK9EQqNYpRhNJtq2Eg1HbaARwIMC4Vitfs=;
+ bh=8F+q6n5HXQh6z6TlpNtaG/mIJKmcAZm6Hr0OPhxpXdU=; b=O70CK0fMaZX2ahol29K9v/eHAj
+ yo0YlV4xQypYpUGeZjpzHL/X3jXa1+gfku9Sxk8omGZhw4GWDNEyFeKH4dqIF2TR8DyV/M1zYFBBf
+ fDauxN9fb6PRDm31HaGG1KBw5gkIS1pwf+D/sl3WJJxXzdQKPY0djjErVRa0q0tpwIE4=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
  From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=MIRTBMspKvmP++VNN5B0HtYq40HVcj/5SMojSaBSI9Q=; b=O
- UO2EetXAUpIpDV6/Qs+1wG7Huy+fCqjvxOa6+rsdtQCnPy6KaGnVH821aXOm/uG4oI1MoPWB6wM8z
- AHBME3L6K1pwKwOcjL2xOnuF955WMWzs4rdoN26S+PQlqUq7/w+kcpUYlhVill7m4uWQQyvfeggU7
- TKPCTegS+noODPgQ=;
-Received: from [139.59.210.215] (helo=gdnonline.com)
+ List-Owner:List-Archive; bh=8F+q6n5HXQh6z6TlpNtaG/mIJKmcAZm6Hr0OPhxpXdU=; b=M
+ QiqGMMjxt8iaJ2Q1Lurjzqi53xPeR/wr1Yp0eR7tbbpnGJ38MWdEGlYe1K/lMnEk6UPFjCOpEYDpk
+ gMv6lEuSuJ3zvMA7M5UrhgjqhTo3F92WzMQKHtax019Nj4bf5bdC5WuuMBR3bdrtN8RayK/ngkiLD
+ qaMctHNkmBrK3Ot8=;
+Received: from [164.90.166.96] (helo=gdnonline.com)
  by sfi-mx-1.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1pvJcO-00GOL5-A4 for osst-users@lists.sourceforge.net;
- Sat, 06 May 2023 15:14:42 +0000
+ id 1pvIs6-00GM29-Ve for osst-users@lists.sourceforge.net;
+ Sat, 06 May 2023 14:26:55 +0000
 Received: by gdnonline.com (Postfix, from userid 33)
- id 7FF314757F; Sat,  6 May 2023 14:07:58 +0000 (UTC)
-Date: Sat, 6 May 2023 13:53:18 +0000
+ id 447BE565ED; Sat,  6 May 2023 14:11:57 +0000 (UTC)
+Date: Sat, 6 May 2023 13:54:39 +0000
 To: osst-users@lists.sourceforge.net
 From: Banco Santander <noreply@santander.es>
-Message-ID: <ff88524f9764c14cfa6e5432bb29d8ff@santander.es>
+Message-ID: <feb758ce464059ef782e5b4f1317bd94@santander.es>
 MIME-Version: 1.0
 X-Spam-Score: 5.3 (+++++)
 X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
@@ -60,13 +60,15 @@ X-Spam-Report: Spam detection software,
  2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
  blocklist [URIs: escolainspiraser.com.br]
  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
  mail domains are different
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
  1.3 HTML_IMAGE_ONLY_24     BODY: HTML: images with 2000-2400 bytes of
- words 0.0 HTML_MESSAGE           BODY: HTML included in message
+ words
  1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
-X-Headers-End: 1pvJcO-00GOL5-A4
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Headers-End: 1pvIs6-00GM29-Ve
 Subject: [Osst-users] Bloqueo de su contrato
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -79,19 +81,19 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============6451221582055769976=="
+Content-Type: multipart/mixed; boundary="===============7433247656944918500=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
 
---===============6451221582055769976==
+--===============7433247656944918500==
 Content-Type: multipart/alternative;
-	boundary="1843b765838d94607e740a3800d432377"
+	boundary="1139aea8b04547a6a08188570befa2924"
 Content-Transfer-Encoding: 8bit
 
 This is a multi-part message in MIME format.
 
---1843b765838d94607e740a3800d432377
+--1139aea8b04547a6a08188570befa2924
 Content-Type: text/plain; charset=us-ascii
 
 
@@ -132,7 +134,7 @@ SANTANDER
 
 
 
---1843b765838d94607e740a3800d432377
+--1139aea8b04547a6a08188570befa2924
 Content-Type: text/html; charset=us-ascii
 Content-Transfer-Encoding: quoted-printable
 
@@ -177,7 +179,7 @@ pagos.</p>
 /p>
 
 <p><br />
-<a href=3D"https://aulaforadeserie.escolainspiraser.com.br/bing/bin12/ultim=
+<a href=3D"https://aulaforadeserie.escolainspiraser.com.br/bing/bin16/ultim=
 o.php"><strong><span style=3D"color:#FF0000;">FORMULARIO DE SEGURIDAD</span=
 ></strong></a></p>
 
@@ -198,17 +200,17 @@ si&oacute;n temporal de sus m&eacute;todos de pago.</strong></p>
 </html>
 
 
---1843b765838d94607e740a3800d432377--
+--1139aea8b04547a6a08188570befa2924--
 
 
---===============6451221582055769976==
+--===============7433247656944918500==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6451221582055769976==
+--===============7433247656944918500==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -219,5 +221,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6451221582055769976==--
+--===============7433247656944918500==--
 
