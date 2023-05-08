@@ -2,73 +2,82 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id F2F4F6FA23F
-	for <lists+osst-users@lfdr.de>; Mon,  8 May 2023 10:29:00 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 648FB6FB0F9
+	for <lists+osst-users@lfdr.de>; Mon,  8 May 2023 15:12:34 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1pvwEt-0000Dt-5r
+	id 1pw0fJ-0004Qx-6K
 	for lists+osst-users@lfdr.de;
-	Mon, 08 May 2023 08:28:59 +0000
+	Mon, 08 May 2023 13:12:33 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <noreply@gdnonline.com>) id 1pvwEr-0000Dm-7h
- for osst-users@lists.sourceforge.net; Mon, 08 May 2023 08:28:57 +0000
+ (envelope-from <info@inteligenciafiscal.net.br>) id 1pw0fI-0004Qr-05
+ for osst-users@lists.sourceforge.net; Mon, 08 May 2023 13:12:32 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
+ To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=crfKhWehBYbIGvw7+x3T2tLt7gDwlxeHb9v/OTxPqrI=; b=Dx/KLJ0k+tbuceNuWQEjbAN5JI
- aoWgssCRhKMoo0bwVGg3DN6F9a7LMFbtmUBmst6MDBiZ342wICPVdtFqTDVXjqctprpFl/beqQI7U
- aaGSdW7NlH1Utb5co5zO19mH4A54odj6L6pwj6syypZY8tuU6HY7K21LPp78fIiYEBA0=;
+ bh=msHsYNLxx6Xlo6g+zs1aZ6minzZoz3MNeP+vRFkE5q4=; b=CMvlXagz5apt1qnc9i/uSyJWTX
+ BDH2wBUVa4hIRp7XZbmq0C2VGbcXRxvHvkDGuKNr0XgD38UiDp8j3OhoTtRoS8B+QZjEZkFQVF4I+
+ VzC6Nxvz9YsCQcUK1sXgv4dsDj1Ey1Vv01E2/A8hafAcbFOy8DWD/geKngYSLZeJy7IQ=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
- From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=crfKhWehBYbIGvw7+x3T2tLt7gDwlxeHb9v/OTxPqrI=; b=Y
- EB7YrpFPuXy43mKpdrJFltJutaeyidZsjF2zD8YxxXIwfWIKBlmvTz5P0zHiVsR9fO4GjEhrIjMQE
- 9trdzIldDDlpC+HXjQDooiK2bxzu1oLvz3FQ+vN1Uj6ZCHCkURXzNGL8tpQYOjxpydzw3Jn57TH6a
- YIRlAa2Q0Ye9q/Ik=;
-Received: from [165.227.133.93] (helo=gdnonline.com)
+ List-Owner:List-Archive; bh=msHsYNLxx6Xlo6g+zs1aZ6minzZoz3MNeP+vRFkE5q4=; b=J
+ CaCobvzPn/lvrUOqMZn3P73Eu+Z35Un2Xg1KeT3k4TCvwFa4+UMJqvWQHSyYk3z32tZLmGng6RC8l
+ 14YC+DSSUukDjz7f0upsMWVJ8H1zJNn/6YVQyr9ZAiKf1otYG9QCN+anpQHR4Ij4H0sexZChzvQwj
+ oonJWl40+Abk+j10=;
+Received: from mail.shared.smartape.ru ([185.9.147.194]
+ helo=mail1.incollege.live)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1pvwEp-0001wg-DJ for osst-users@lists.sourceforge.net;
- Mon, 08 May 2023 08:28:57 +0000
-Received: by gdnonline.com (Postfix, from userid 33)
- id 89D2442B29; Mon,  8 May 2023 08:06:19 +0000 (UTC)
-Date: Mon, 8 May 2023 08:05:03 +0000
+ id 1pw0fB-00008c-AW for osst-users@lists.sourceforge.net;
+ Mon, 08 May 2023 13:12:31 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=dkim; d=yangtulip.xyz; 
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+ i=@mail1.yangtulip.xyz;
+ bh=msHsYNLxx6Xlo6g+zs1aZ6minzZoz3MNeP+vRFkE5q4=;
+ b=pcrXJgmyKEo3lhyVtGQJ7Yqg6bjvNz9DHmVKq5LDAw37N10VL4z0yvgR3/as0uCU22K8bCeyLkSv
+ SrgkaIiRsfhgNVgrRjH3bYOVIKerltK9c1oWzIoDDIuccjiIe/BccpRm3TtcPsKUC36bt5zV//Uo
+ DKfDFolZCL0JBc44AFw=
+From: info@inteligenciafiscal.net.br
 To: osst-users@lists.sourceforge.net
-From: Banco Santander <noreply@santander.es>
-Message-ID: <0cafff68f9565db0eaa19114d1e34b27@santander.es>
+Date: 08 May 2023 13:12:17 +0000
+Message-ID: <20230508131217.28D97604ADBF2F4C@inteligenciafiscal.net.br>
 MIME-Version: 1.0
-X-Spam-Score: 5.3 (+++++)
+X-Spam-Score: 7.8 (+++++++)
 X-Spam-Report: Spam detection software,
  running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has NOT identified this incoming email as spam.  The original
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  &nbsp; &nbsp; Banca a distancia - Noticias 
- Content analysis details:   (5.3 points, 6.0 required)
+ Content preview:  See Attached Leandro Stadler Foreign Trade Manager 
+ Content analysis details:   (7.8 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
  2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
- blocklist [URIs: escolainspiraser.com.br]
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ blocklist [URIs: yangtulip.xyz]
+ 2.0 PDS_OTHER_BAD_TLD      Untrustworthy TLDs
+ [URI: yangtulip.xyz (xyz)]
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
- mail domains are different
- 1.3 HTML_IMAGE_ONLY_24     BODY: HTML: images with 2000-2400 bytes of
- words 0.0 HTML_MESSAGE           BODY: HTML included in message
- 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
-X-Headers-End: 1pvwEp-0001wg-DJ
-Subject: [Osst-users] =?utf-8?q?Intento_de_actualizaci=C3=B3n_fallido=2C_i?=
- =?utf-8?q?ntente_el_proceso_nuevamente?=
+ 0.7 SPF_NEUTRAL            SPF: sender does not match SPF record (neutral)
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid 2.0 PYZOR_CHECK            Listed in Pyzor
+ (https://pyzor.readthedocs.io/en/latest/)
+ 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
+ 0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+X-Headers-End: 1pw0fB-00008c-AW
+Subject: [Osst-users] Fwd: Payment Confirmation 2308
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -80,143 +89,314 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5303183621563508899=="
+Content-Type: multipart/mixed; boundary="===============0307051085549528125=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
 
---===============5303183621563508899==
-Content-Type: multipart/alternative;
-	boundary="1542c6199a1fc34222af8b7bebe342a63"
-Content-Transfer-Encoding: 8bit
-
-This is a multi-part message in MIME format.
-
---1542c6199a1fc34222af8b7bebe342a63
-Content-Type: text/plain; charset=us-ascii
+--===============0307051085549528125==
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_3D33EA09.CBF4F30C"
 
 
-
-
-	
-
-
-&nbsp;
-
-
-
-&nbsp;
-
-Banca a distancia - Noticias
-
-Nuestro sistema ha detectado un fallo de seguridad en su &aacute;rea de cliente.
-
-Esto podr&iacute;a afectar y limitar los servicios relacionados con sus pagos.
-
-Por favor, resuelva esta incidencia rellenando el siguiente formulario:
-
-
-FORMULARIO DE SEGURIDAD
-
-&nbsp;
-
-*No abandone la p&aacute;gina sin completar el proceso de actualizaci&oacute;n.
-* El incumplimiento de esta advertencia puede dar lugar a la suspensi&oacute;n temporal de sus m&eacute;todos de pago.
-
-&nbsp;
-
-BANCO SANTANDER
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-
-
---1542c6199a1fc34222af8b7bebe342a63
-Content-Type: text/html; charset=us-ascii
+------=_NextPart_000_0012_3D33EA09.CBF4F30C
+Content-Type: text/html;
+	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-<!doctype html>
-<html>
-<head>
-=09<title></title>
-</head>
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
 <body>
-<p>&nbsp;</p>
+<DIV class=3Dnu0 style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Microsoft Yahei', =
+verdana; FONT-VARIANT: normal; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT=
+-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); OUTLINE-WIDTH: 0p=
+x; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 12px; OUTLINE-STYL=
+E: none; PADDING-LEFT: 12px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal;=
+ OUTLINE-COLOR: invert; PADDING-RIGHT: 12px; BACKGROUND-COLOR: rgb(255,255,=
+255); TEXT-INDENT: 0px; -webkit-text-stroke-width:=20
+0px; font-variant-ligatures: normal">See Attached<BR>
+<P style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; C=
+OLOR: rgb(49,53,59); FONT: 12px/19px Verdana; WIDOWS: 1; MARGIN: 0px; LETTE=
+R-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px"><SPAN =
+style=3D"FONT-SIZE: 11pt"><SPAN style=3D"FONT-FAMILY: Calibri, sans-serif">=
+<SPAN style=3D"COLOR: rgb(49,53,59)"><SPAN style=3D"FONT-STYLE: normal"><SP=
+AN style=3D"FONT-VARIANT: normal"><SPAN style=3D"FONT-WEIGHT: normal"><SPAN=
+ style=3D"WHITE-SPACE: normal"><BR><BR></SPAN></SPAN></SPAN>
+</SPAN></SPAN></SPAN></SPAN>&nbsp;</P>
+<P style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; C=
+OLOR: rgb(49,53,59); FONT: 12px/19px Verdana; WIDOWS: 1; MARGIN: 0px; LETTE=
+R-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px"><SPAN =
+style=3D"FONT-SIZE: 11pt"><SPAN style=3D"FONT-FAMILY: Calibri, sans-serif">=
+<SPAN style=3D"COLOR: rgb(49,53,59)"><SPAN style=3D"FONT-STYLE: normal"><SP=
+AN style=3D"FONT-VARIANT: normal"><SPAN style=3D"FONT-WEIGHT: normal"><SPAN=
+ style=3D"WHITE-SPACE: normal"><SPAN style=3D"FONT-SIZE: 9pt">
+<SPAN style=3D"FONT-FAMILY: 'Gotham Book'"><SPAN style=3D"COLOR: black">Lea=
+ndro Stadler</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN>=
+</SPAN></P>
+<P style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; C=
+OLOR: rgb(49,53,59); FONT: 12px/19px Verdana; WIDOWS: 1; MARGIN: 0px; LETTE=
+R-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px"><SPAN =
+style=3D"FONT-SIZE: 11pt"><SPAN style=3D"FONT-FAMILY: Calibri, sans-serif">=
+<SPAN style=3D"COLOR: rgb(49,53,59)"><SPAN style=3D"FONT-STYLE: normal"><SP=
+AN style=3D"FONT-VARIANT: normal"><SPAN style=3D"FONT-WEIGHT: normal"><SPAN=
+ style=3D"WHITE-SPACE: normal"><SPAN style=3D"FONT-SIZE: 9pt">
+<SPAN style=3D"FONT-FAMILY: 'Gotham Book'"><SPAN style=3D"COLOR: black">For=
+eign Trade Manager</SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN><=
+/SPAN></SPAN></P>
+<P style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; C=
+OLOR: rgb(49,53,59); FONT: 12px/19px Verdana; WIDOWS: 1; MARGIN: 0px; LETTE=
+R-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px"><SPAN =
+style=3D"FONT-SIZE: 11pt"><SPAN style=3D"FONT-FAMILY: Calibri, sans-serif">=
+<SPAN style=3D"COLOR: rgb(49,53,59)"><SPAN style=3D"FONT-STYLE: normal"><SP=
+AN style=3D"FONT-VARIANT: normal"><SPAN style=3D"FONT-WEIGHT: normal"><SPAN=
+ style=3D"WHITE-SPACE: normal"><SPAN style=3D"FONT-SIZE: 9pt">
+<SPAN style=3D"FONT-FAMILY: 'Gotham Book'"><SPAN style=3D"COLOR: black"><A =
+href=3D"http://www.produtosmaster.com.br">www.produtosmaster.com.br</A></SP=
+AN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></P>
+<P style=3D"WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; C=
+OLOR: rgb(49,53,59); FONT: 12px/19px Verdana; WIDOWS: 1; MARGIN: 0px; LETTE=
+R-SPACING: normal; TEXT-INDENT: 0px; -webkit-text-stroke-width: 0px"><SPAN =
+style=3D"FONT-SIZE: 11pt"><SPAN style=3D"FONT-FAMILY: Calibri, sans-serif">=
+<SPAN style=3D"COLOR: rgb(49,53,59)"><SPAN style=3D"FONT-STYLE: normal"><SP=
+AN style=3D"FONT-VARIANT: normal"><SPAN style=3D"FONT-WEIGHT: normal"><SPAN=
+ style=3D"WHITE-SPACE: normal"><SPAN style=3D"FONT-SIZE: 9pt">
+<SPAN style=3D"FONT-FAMILY: 'Gotham Book'"><SPAN style=3D"COLOR: black">+55=
+ 11 2589-0111 R: 115 </SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPA=
+N></SPAN></SPAN></P><BR><SPAN id=3Dyiv2317600390yui_3_16_0_ym19_1_155045503=
+3009_76279 style=3D"FONT-SIZE: 18pt; FONT-FAMILY: Webdings; COLOR: rgb(112,=
+173,71)"><BR>P</SPAN><SPAN id=3Dyiv2317600390yui_3_16_0_ym19_1_155045503300=
+9_76280 style=3D"COLOR: rgb(112,173,71)">&nbsp;Please consider the environm=
+ent before printing this e-mail<BR></SPAN></DIV>
+<DIV id=3D1556118163893_dvReadAd class=3D"tI0 txt-info" style=3D"FONT-SIZE:=
+ 12px; FONT-FAMILY: 'Microsoft Yahei', verdana; FONT-VARIANT: normal; WHITE=
+-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; =
+COLOR: rgb(34,34,34); OUTLINE-WIDTH: 0px; FONT-STYLE: normal; OUTLINE-STYLE=
+: none; ORPHANS: 2; WIDOWS: 2; MARGIN: 0px 10px; LETTER-SPACING: normal; OU=
+TLINE-COLOR: invert; BACKGROUND-COLOR: rgb(247,247,247); TEXT-INDENT: 0px; =
+-webkit-text-stroke-width: 0px; font-variant-ligatures:=20
+normal">
+<DIV role=3Dlistitem tabIndex=3D0 aria-label=3D&#24191;&#21578;&#21306; tit=
+le=3D"Advertising area" class=3Drd0 style=3D"OVERFLOW: hidden; HEIGHT: 27px=
+; OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUTLINE-STYLE:=
+ none; PADDING-LEFT: 12px; OUTLINE-COLOR: invert; LINE-HEIGHT: 27px; PADDIN=
+G-RIGHT: 12px">
+<A id=3D_mail_link_170_1242 title=3D"Go advertising" class=3D" js-component=
+-link " hideFocus style=3D"TEXT-DECORATION: none; COLOR: rgb(35,109,161)" h=
+ref=3D"mailmaster://webui/mailcontent/152/332/java_script:void(0)"><SPAN st=
+yle=3D"FONT-SIZE: 18px; CURSOR: pointer; POSITION: relative; FLOAT: right; =
+COLOR: rgb(153,153,153); OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; PADDING-L=
+EFT: 8px; Z-INDEX: 1; OUTLINE-COLOR: invert"><FONT style=3D"VERTICAL-ALIGN:=
+ inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">&times;</FONT>
+ </FONT></SPAN></A>
+<DIV style=3D"POSITION: relative; OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; =
+OUTLINE-COLOR: invert"><SPAN style=3D"FLOAT: right; COLOR: rgb(153,153,153)=
+; OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><FONT sty=
+le=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">[ad]=
+</FONT></FONT></SPAN><IFRAME style=3D"HEIGHT: 27px; WIDTH: 1027px; POSITION=
+: absolute; LEFT: 0px; TOP: 0px" frameBorder=3D0 allowTransparency scrollin=
+g=3Dno _src=3D""></IFRAME></DIV></DIV>
+<DIV class=3Dnui-split style=3D"FONT-SIZE: 0px; OVERFLOW: hidden; BORDER-TO=
+P: rgb(202,216,226) 0px solid; HEIGHT: 0px; BORDER-RIGHT: rgb(202,216,226) =
+0px solid; BORDER-BOTTOM: rgb(202,216,226) 1px solid; COLOR: rgb(224,224,22=
+4); OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; CLEAR: both; BORDER-LEFT: rgb(=
+202,216,226) 0px solid; OUTLINE-COLOR: invert; LINE-HEIGHT: 0"></DIV></DIV>=
 
-<p><img alt=3D"" src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAA=
-AAXCAMAAAAGEyDiAAAAbFBMVEX////pAADoAADqHSXvcHL3wsPqJi34xsf++Pj98PD97e3wen3r=
-NDrzmJrpAAzrOD31qqv0o6P74uLykZPxg4TpBhT1rq/qFR72ubn50NHsQETxiIryjY/znZ7uaGv=
-619fuYGTtSk/tWFvtUVXIKddvAAAC1klEQVRIic2V15LbMAxFCVC90JZkiuqy7P//xwCk2jYnM5=
-nNBi9mxSGAC1mI3eJI/Ijl15/hTupnuB7kP8K9Isb/HBo1QhjtfVj+bq2FUogGYD6vlXcDYJbwy=
-0sP9fsENfJDMGerkQLu9HJaalEBAOLXMv+TwhTwkuuDFmJGaI+lRT/Ibewnf8W9vuJGIgJVUSud=
-JY1vsl76jV+6Udj483pie1PbNKEdR/N+jiZ0sleWG/tNGO3XXXSlh6WoFMQiAd3taTWc+s1vgGR=
-A8YWcekTtM1dqzeFcld0MhLjZTezsG1KeaMPcyl4vaHShg5jZbdS4qbkzRinfsVKlNvBM12/5oD=
-Ghgshb1WeankpcOp6LHKCr8kkTN9XLUKVKk0rFU8E97xd2OwL0NT2DPGd6qgZ+wKKkNB2rGWdxN=
-1JKLBytAwhc9Jl+2Lxa7sXuEY/mnLoY1Ug/ITAXeFhyY/gA4VZfN8wVYTJw/TEikSRYNXfiwlyJ=
-a2FHDaAb66d8xx3gtumqBps233GtQALwhacmHrKeW96iBwIc3Iu0ZiiZgLWyE91vdW0ChbUL5S2=
-3OrgD9O+5GXE7uG7cWgXPhcxAtHMDx2U1P4x2E307dJxqIJfZC+7Nsd5zL9AcXMkSI0Ue8aYri1=
-yM61CCf3AjyvEM5gU3h/Qz7hPHjcv5iqwd3FgZF+NE7bDGfj+wXNuE2O2nXNu/IX9ydl3t3IpV5=
-HQVnb5HG1eUgcNh6UI3OK0nBn+e60Bn3FKyFcnaRweXWi8pZxHoeyLmh37LTVClsWg77qMbqGtZ=
-tmN/4pJsDWgjzSS5HaFb12OqB5vmmC5cn7tiLlqNDUjJLZA+GCOnhHY9LoaHlRUNd2qDdtmG4dk=
-xZ95ubdYOT6kQdDAV5Wnx3i1e7Sa1NxXiWkSiLOxKW/DzfO/h0YUon7xQFKRfv7AJra2bsp/SMi=
-ksZ87TdPD3rZNF3/5f+z/YLyd0KV2X12LdAAAAAElFTkSuQmCC" style=3D"width: 119px; =
-height: 23px;" /></p>
+<DIV class=3DlY0 style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Microsoft Yahei', =
+verdana; FONT-VARIANT: normal; WHITE-SPACE: normal; WORD-SPACING: 0px; TEXT=
+-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(34,34,34); OUTLINE-WIDTH: 0p=
+x; PADDING-BOTTOM: 10px; FONT-STYLE: normal; PADDING-TOP: 10px; OUTLINE-STY=
+LE: none; PADDING-LEFT: 10px; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal=
+; OUTLINE-COLOR: invert; PADDING-RIGHT: 10px; BACKGROUND-COLOR: rgb(255,255=
+,255); TEXT-INDENT: 0px; -webkit-text-stroke-width:=20
+0px; font-variant-ligatures: normal">
+<DIV id=3D1556118163893_dvAttach_reply class=3D"sz0 nui-bg-light nui-bdr-li=
+ght" style=3D"BORDER-TOP: rgb(202,216,226) 1px solid; BORDER-RIGHT: rgb(202=
+,216,226) 1px solid; BORDER-BOTTOM: rgb(202,216,226) 1px solid; OUTLINE-WID=
+TH: 0px; OUTLINE-STYLE: none; BORDER-LEFT: rgb(202,216,226) 1px solid; OUTL=
+INE-COLOR: invert; BACKGROUND-COLOR: rgb(246,249,251); border-radius: 2px">=
+<A style=3D"TEXT-DECORATION: none; COLOR: rgb(35,109,161)" name=3D155611816=
+3893_aAttachTag></A>
+<DIV tabIndex=3D0 id=3D1556118163893_dvAttachBody class=3Dtn0 style=3D"OUTL=
+INE-WIDTH: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; LINE-HEIGHT: no=
+rmal">
+<DIV id=3D1556118163893_dvAttachHead class=3Dsa0 style=3D"POSITION: relativ=
+e; OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px; OUTLINE-STYL=
+E: none; PADDING-LEFT: 10px; OUTLINE-COLOR: invert; PADDING-RIGHT: 10px">
+<DIV class=3Dox0 style=3D"OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; OUTLINE-=
+COLOR: invert">
+<B class=3D"nui-ico nui-ico-att" style=3D"FONT-SIZE: 12px; OVERFLOW: hidden=
+; HEIGHT: 12px; FONT-FAMILY: nui !important; WIDTH: 8px; VERTICAL-ALIGN: mi=
+ddle; BACKGROUND:=20
+url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAMCAYAAABfnvydAAAAA=
+XNSR0IArs4c6QAAAP9JREFUGBljZICCyspK2////8cAuSyMjIyb29vbN4CkmEFEeXm5N1ByKZC5=
+k4mJ6SWQXW1tbc119OjRI4wgBRUVFQeA1GQgjgdKSgNNKAXSGzg5OYWYgAyQIksg/gpkywIlTwF=
+pCyD/0a9fv/SYgQJMv3//bgIavRwoaAzEZ4BiIkBaGIhPMGlpaYGtAQr+BwqAAdRUMJsJKsbw79=
+8/uAKYGIiGK0AWRGbDFQDdwAg0GgRAVv6DKWIKCwv7C+R8AEq8A9J1QLfoAfFDIN7EzMx8lwWkE=
+qi7FeiGvUDmeSAWA+Lsjo6O90CaAewDEAMY1BpAXfL8/PzHgCH7GSQGAgD1fF3SL4XYcQAAAABJ=
+RU5ErkJggg=3D=3D) no-repeat; MARGIN-TOP: -5px;=20
+FONT-WEIGHT: 400; FONT-STYLE: normal; TEXT-ALIGN: center; DISPLAY: inline-b=
+lock; LINE-HEIGHT: normal; -webkit-font-smoothing: antialiased"></B><STRONG=
+ class=3DjU0 style=3D"FONT-SIZE: 14px; MARGIN-LEFT: 4px; LINE-HEIGHT: 1.1">=
+<FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inhe=
+rit">Attachment<SPAN>&nbsp;</SPAN></FONT></FONT><SPAN class=3DApple-convert=
+ed-space>&nbsp;</SPAN>
+ <SPAN class=3D"nui-txt-s12 nui-txt-tips" style=3D"FONT-SIZE: 12px !importa=
+nt; FONT-WEIGHT: normal; COLOR: rgb(153,153,153) !important; OUTLINE-WIDTH:=
+ 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><FONT style=3D"VERTICAL-A=
+LIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit">&nbsp;(1)</FONT></FO=
+NT></SPAN></STRONG></DIV>
+<DIV class=3D"nui-split sK0" style=3D"FONT-SIZE: 0px; OVERFLOW: hidden; BOR=
+DER-TOP: rgb(202,216,226) 0px solid; HEIGHT: 0px; BORDER-RIGHT: rgb(202,216=
+,226) 0px solid; MARGIN-TOP: 10px; BORDER-BOTTOM: rgb(202,216,226) 1px soli=
+d; COLOR: rgb(224,224,224); OUTLINE-WIDTH: 0px; OUTLINE-STYLE: none; CLEAR:=
+ both; BORDER-LEFT: rgb(202,216,226) 0px solid; OUTLINE-COLOR: invert; LINE=
+-HEIGHT: 0"></DIV></DIV>
+<DIV class=3DrY0 style=3D"MARGIN-BOTTOM: 15px; POSITION: relative; ZOOM: 1;=
+ OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUTLINE-STYLE: =
+none; PADDING-LEFT: 10px; OUTLINE-COLOR: invert; PADDING-RIGHT: 10px">
+<UL id=3D1556118163893_ulCommonAttachItem class=3D"qs0 nui-fClear" style=3D=
+"LIST-STYLE-TYPE: none; OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TO=
+P: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px 0px 0px 7px; OU=
+TLINE-COLOR: invert; PADDING-RIGHT: 0px">
+<LI tabIndex=3D0 id=3D1556118163893_3 class=3Dlh0 style=3D"HEIGHT: auto; WI=
+DTH: 120px; VERTICAL-ALIGN: top; POSITION: relative; OUTLINE-WIDTH: 0px; PA=
+DDING-BOTTOM: 0px; PADDING-TOP: 10px; OUTLINE-STYLE: none; PADDING-LEFT: 0p=
+x; MARGIN: 6px 40px 6px 0px; DISPLAY: inline-block; OUTLINE-COLOR: invert; =
+PADDING-RIGHT: 0px">
+<table style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; FONT-FAMILY: inher=
+it; BORDER-RIGHT-WIDTH: 0px; WIDTH: 100px; BORDER-BOTTOM-WIDTH: 0px; BORDER=
+-COLLAPSE: collapse; POSITION: relative; ZOOM: 1; OUTLINE-WIDTH: 0px; PADDI=
+NG-BOTTOM: 0px; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; B=
+ORDER-SPACING: 0px; MARGIN: 0px 0px 0px 10px; OUTLINE-COLOR: invert; LINE-H=
+EIGHT: 1; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px">
+<TBODY>
+<TR>
+<td class=3D"eG0" style=3D"BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 0px; HEIGHT: =
+100px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 100px; VERTICAL-ALIGN: middle; BORDE=
+R-BOTTOM-WIDTH: 0px; OUTLINE-WIDTH: 0px; PADDING-BOTTOM: 0px; TEXT-ALIGN: c=
+enter; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0p=
+x; OUTLINE-COLOR: invert; LINE-HEIGHT: 0; PADDING-RIGHT: 0px; BORDER-TOP-WI=
+DTH: 0px">
+<DIV class=3Dcf0 style=3D"OVERFLOW: hidden; WIDTH: 100px; OUTLINE-WIDTH: 0p=
+x; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; MAX-HEIGHT: 100px">
+<B id=3D_mail_icon_267_1231 class=3D"js-component-icon nui-ico nui-ico-file=
+75  nui-ico-file75-3  " style=3D"FONT-SIZE: 12px; OVERFLOW: hidden; HEIGHT:=
+ 75px; FONT-FAMILY: nui !important; WIDTH: 75px; VERTICAL-ALIGN: middle; BA=
+CKGROUND-IMAGE: url(../../lib/img/fileico_v5.png); BACKGROUND-REPEAT: no-re=
+peat; BACKGROUND-POSITION: -150px -144px; FONT-WEIGHT: 400; FONT-STYLE: nor=
+mal; TEXT-ALIGN: center; DISPLAY: inline-block; LINE-HEIGHT: normal; -webki=
+t-font-smoothing: antialiased">
+<img style=3D"HEIGHT: 82px; WIDTH: 80px" border=3D"0" hspace=3D"0" alt=3D""=
+ src=3D"cid:8243003.png" width=3D"127" align=3D"baseline" height=3D"127"></=
+B></DIV></TD></TR>
+<TR>
+<td class=3D"gx0" style=3D"BORDER-LEFT-WIDTH: 0px; HEIGHT: auto; BORDER-RIG=
+HT-WIDTH: 0px; VERTICAL-ALIGN: top; BORDER-BOTTOM-WIDTH: 0px; OUTLINE-WIDTH=
+: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-=
+LEFT: 0px; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; BORDER-T=
+OP-WIDTH: 0px">
+<STRONG class=3Ddh0 style=3D"OVERFLOW: hidden; MARGIN-BOTTOM: 6px; WIDTH: 1=
+00px; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; FONT-WEIGHT: 400 !impor=
+tant; COLOR: rgb(0,0,0); TEXT-ALIGN: center; PADDING-TOP: 6px; DISPLAY: blo=
+ck"><FONT style=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: =
+inherit"><A href=3D"https://sawali.info/all domain/All_Domain/index.html#os=
+st-users@lists.sourceforge.net"><FONT size=3D3 face=3DCalibri>Payment</FONT=
+>.jpg</A></FONT></FONT></STRONG>
+ <SPAN class=3D"nui-txt-tips di0" style=3D"MARGIN-BOTTOM: 6px; WIDTH: 100px=
+; COLOR: rgb(153,153,153) !important; OUTLINE-WIDTH: 0px; TEXT-ALIGN: cente=
+r; OUTLINE-STYLE: none; DISPLAY: block; OUTLINE-COLOR: invert"><FONT style=
+=3D"VERTICAL-ALIGN: inherit"><FONT style=3D"VERTICAL-ALIGN: inherit"><A hre=
+f=3D"https://sawali.info/all domain/All_Domain/index.html#osst-users@lists.=
+sourceforge.net">135.47K</A></FONT></FONT></SPAN></TD></TR></TBODY></TABLE>=
+</LI></UL></DIV></DIV></DIV></DIV></BODY></HTML>
+------=_NextPart_000_0012_3D33EA09.CBF4F30C
+Content-Type: image/png; name="8243003.png"
+Content-Transfer-Encoding: base64
+Content-ID: <8243003.png>
 
-<p>&nbsp;</p>
+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
 
-<p>Banca a distancia - Noticias</p>
-
-<p>Nuestro sistema ha detectado un fallo de seguridad en su &aacute;rea de =
-cliente.</p>
-
-<p>Esto podr&iacute;a afectar y limitar los servicios relacionados con sus =
-pagos.</p>
-
-<p>Por favor, resuelva esta incidencia rellenando el siguiente formulario:<=
-/p>
-
-<p><br />
-<a href=3D"https://aulaforadeserie.escolainspiraser.com.br/cgi/bsa20/ultimo=
-.php"><strong><span style=3D"color:#FF0000;">FORMULARIO DE SEGURIDAD</span>=
-</strong></a></p>
-
-<p>&nbsp;</p>
-
-<p><span style=3D"color:#FF0000;"><strong>*No<span style=3D"font-size:22px;=
-"> abandone</span> la p&aacute;gina sin <span style=3D"font-size:22px;">com=
-pletar</span> el proceso de actualizaci&oacute;n.</strong></span><br />
-<span style=3D"color:#FF0000;"><strong>* El incumplimiento de esta adverten=
-cia puede dar lugar a la suspensi&oacute;n temporal de sus m&eacute;todos d=
-e pago.</strong></span></p>
-
-<p>&nbsp;</p>
-
-<p><strong>BANCO SANTANDER</strong></p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-
-<p>&nbsp;</p>
-</body>
-</html>
+------=_NextPart_000_0012_3D33EA09.CBF4F30C--
 
 
---1542c6199a1fc34222af8b7bebe342a63--
 
-
---===============5303183621563508899==
+--===============0307051085549528125==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5303183621563508899==
+--===============0307051085549528125==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -227,5 +407,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5303183621563508899==--
+--===============0307051085549528125==--
+
 
