@@ -2,80 +2,87 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 8BA9270A964
-	for <lists+osst-users@lfdr.de>; Sat, 20 May 2023 18:57:27 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 476D070D984
+	for <lists+osst-users@lfdr.de>; Tue, 23 May 2023 11:49:41 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1q0PtW-0001NI-CL
+	id 1q1OeC-0000DV-4F
 	for lists+osst-users@lfdr.de;
-	Sat, 20 May 2023 16:57:26 +0000
+	Tue, 23 May 2023 09:49:40 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <support@castleescapestravel.com>) id 1q0FpI-0003on-OV
- for osst-users@lists.sourceforge.net; Sat, 20 May 2023 06:12:25 +0000
+ (envelope-from <hi@ordfs.com>) id 1q1OeA-0000DP-00
+ for osst-users@lists.sourceforge.net; Tue, 23 May 2023 09:49:38 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Reply-To:From:
- Date:Subject:To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:Message-ID:Mime-Version:Subject:To:
+ From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=mbECnVVrrixX029ODNQVtkuowiNGI2D23vlYZGv6igY=; b=LZaXqZALJH+dB92LzL0Wfq2oeQ
- I5banEavQb20XbaovUWNjIMqdBk4Zn8zkcYXXxz7ioHFQh7kDlXjr+5X2NH14l096k2QwWiTGgGP8
- ZrLK9MkXCbkOy216T8LH2j/UixJV4RqXa9ETrp80oLzcxbvZtbbbmpjr+G56nuI6Ss6Y=;
+ bh=D09Np1+wGJWVLYYlSnAQd/R802eB3gMh6/F3icI3Ay0=; b=RsE2EQHlE1X4LCTd6Yqk5PsT0o
+ CpNhz/sWQGFDZ7MIPcGUddWZXAnBMJlcYYvJoE7eaC6qROeubg2go+vIWdXsUCbBDiM5Z8vrCm2ma
+ 1rkhXHfeB0Klor23mMnnp9lX9jQmLDAKDpNLt+RXuiyb5Fj0JzEdw3CnFWVejpt1Z5xY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Message-ID:Reply-To:From:Date:Subject:To:Sender
+ h=Content-Type:Message-ID:Mime-Version:Subject:To:From:Date:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=mbECnVVrrixX029ODNQVtkuowiNGI2D23vlYZGv6igY=; b=H
- hbJzUQxHgn3fIvXfn825U9ZoPMDEUytVfRiZ3AAzyXZYD5cNHk0O+GW3CtDlzHOPu1cKJF+NjGMDX
- etS/1kIZWUAEkHRtvHgbBJDNie1hwADEzhJ5TFkdCZXCCAvvSGGVXlYItWij67VGP7sggXB8hbwci
- SggvBWsLxsaqgTMc=;
-Received: from aws.dowhosting.net ([54.200.8.95] helo=dj1.dowhosting.net)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.95)
- id 1q0FpH-00Dy8r-Kc for osst-users@lists.sourceforge.net;
- Sat, 20 May 2023 06:12:24 +0000
-Received: by dj1.dowhosting.net (Postfix, from userid 10031)
- id 322A52D67E28; Sat, 20 May 2023 05:53:18 +0000 (UTC)
-To: osst-users@lists.sourceforge.net
-Date: Sat, 20 May 2023 05:53:18 +0000
-From: Ivan Dawson <support@castleescapestravel.com>
-Message-ID: <16ab2c4df1c9b1da685007a4909ead34@castleescapestravel.com>
-MIME-Version: 1.0
-X-Spam-Score: 6.6 (++++++)
+ List-Owner:List-Archive; bh=D09Np1+wGJWVLYYlSnAQd/R802eB3gMh6/F3icI3Ay0=; b=j
+ uSBiMOlE61Z3bFdj/QnzT+PTA7d4J6NlT99Lwgxi91RXMXQam/sEtGqItq3Hmg+1ItnC/Db8q87/1
+ aC/pAW/toO6PLlE0hF5o5WFpPQO0daJUAo5lQk/QcoPSVEleZ5ScvrwbOGOTihxL3KRPLK5A4L7wI
+ izwaHSZlG+F5Qhjg=;
+Received: from mail4.ordfs.com ([192.3.179.122])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1q1Oe6-0000sv-5M for osst-users@lists.sourceforge.net;
+ Tue, 23 May 2023 09:49:37 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=ordfs.com; 
+ h=Date:From:To:Subject:Mime-Version:Message-ID:Content-Type;
+ i=hi@ordfs.com; 
+ bh=D09Np1+wGJWVLYYlSnAQd/R802eB3gMh6/F3icI3Ay0=;
+ b=klS6FQGJAM0dBWySC1ZxQX0I7b/4LPvBiI/aua0gZ2IAaJWvsZxlGMneqcBBRi+6Ud/GZL/Z9Wbb
+ 3RtRDdmeCwbWojC8PFtCTXIPCZCh0rhGul49HwORxo9bKm/8IamknOkbpVnUSOubTYZ3V7y7xsnT
+ rxfi6axmlEdrNzgrlvQ=
+Date: Tue, 23 May 2023 18:29:09 +0900
+To: osst-users <osst-users@lists.sourceforge.net>
+X-Has-Attach: no
+Mime-Version: 1.0
+Message-ID: <202305231829161833423@ordfs.com>
+X-Spam-Score: 7.9 (+++++++)
 X-Spam-Report: Spam detection software,
  running on the system "util-spamd-2.v13.lw.sourceforge.com", 
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Dear friend, It is with trust and sincerity that I approach
- you for assistance to transfer some funds into your bank account. Please
- accept my apology if my mail infringes on your personal ethics. My name is
- Barri [...] 
- Content analysis details:   (6.6 points, 6.0 required)
+ Content preview:  t5SW t5SW 
+ Content analysis details:   (7.9 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ 2.5 URIBL_DBL_PHISH        Contains a Phishing URL listed in the Spamhaus
+ DBL blocklist [URIs: ordfs.com]
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [192.3.179.122 listed in zen.spamhaus.org]
+ 0.1 URIBL_CSS_A Contains URL's A record listed in the Spamhaus CSS
+ blocklist [URIs: ordfs.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 2.6 DEAR_FRIEND            BODY: Dear Friend? That's not very dear!
- 0.0 HK_SCAM                No description available.
- 0.0 LOTS_OF_MONEY          Huge... sums of money
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain 2.0 PYZOR_CHECK            Listed in Pyzor
+ (https://pyzor.readthedocs.io/en/latest/)
+ 0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
- 0.0 T_MONEY_PERCENT        X% of a lot of money for you
- 0.0 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
- 0.0 T_FILL_THIS_FORM_SHORT Fill in a short form with personal
- information
- 0.0 MONEY_FRAUD_8          Lots of money and very many fraud phrases
- 0.0 MONEY_FORM_SHORT       Lots of money if you fill out a short form
- 3.0 ADVANCE_FEE_5_NEW_MONEY Advance Fee fraud and lots of money
- 0.0 FORM_FRAUD_5           Fill a form and many fraud phrases
-X-Headers-End: 1q0FpH-00Dy8r-Kc
-Subject: Re: [Osst-users] Funds transfer information
+X-Headers-End: 1q1Oe6-0000sv-5M
+Subject: [Osst-users] 0415
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -87,31 +94,59 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: ivandawn084@ivandaw.net
-Content-Type: text/plain; charset="us-ascii"
-Content-Transfer-Encoding: 7bit
+From: happy via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: happy <hi@ordfs.com>
+Content-Type: multipart/mixed; boundary="===============4373760934327469614=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-Dear friend,
+This is a multi-part message in MIME format.
 
-It is with trust and sincerity that I approach you for assistance to transfer some funds into your bank account. Please accept my apology if my mail infringes on your personal ethics. My name is Barrister Ivan Dawson, a Private Lawyer based here in London, United Kingdom. Honestly it will be my humble pleasure if we can work together.
+--===============4373760934327469614==
+Content-Type: multipart/alternative;
+	boundary="=====001_Dragon328135220663_====="
 
-I would like you to act as the next of kin to my deceased client Mr. Franz Hoffmann, a German citizen who made a deposit of GBP25Million only with a bank here in England a few years back. He died in a plane crash with his immediate family without any registered next of kin and as such the funds now have an open beneficiary mandate with the bank. This means that any person from your country can act as the next of kin and claim the inheritance funds without any risk.
+This is a multi-part message in MIME format.
 
-I have received an official letter from the bank suggesting a likely proceeding for confiscation of the Fund in line with existing laws by the bank in which my client deposited the sum of GBP25million. According to the Government Law as provided in section 129 sub 63(N), Bank of England Banking Edit of 1961 at the expiration of 11 years the fund will revert to the ownership of the British Government, if nobody applies to claim the fund.
+--=====001_Dragon328135220663_=====
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
 
-My proposition to you is to present you to the bank as the Next of Kin and beneficiary of my deceased client so that the bank will pay this GBP25million to you for us to share the amount on a mutually agreed percentage of 60% for me 40% for you.
+DQp0NVNXDQo=
 
-All legal documents to back up your claim as the deceased Next of Kin will be provided by me. All I require is your honest cooperation to enable us to see this transaction through. I guarantee you that this will be executed under a legitimate arrangement that will protect you from any breach of the law.
+--=====001_Dragon328135220663_=====
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
 
-If you are interested in this transaction, Please do let me know immediately so that I can give you comprehensive details on how to proceed.  This is my private email address.
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
+Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
+bnQ9Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWT4NCjxQPnQ1U1c8L1A+
+PC9CT0RZPjwvSFRNTD4NCg==
 
-Regards,
-Barrister Ivan Dawson.
+--=====001_Dragon328135220663_=====--
 
 
+
+--===============4373760934327469614==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+
+--===============4373760934327469614==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
 
 _______________________________________________
 Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
+
+--===============4373760934327469614==--
+
+
