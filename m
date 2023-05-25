@@ -2,94 +2,69 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9A576710233
-	for <lists+osst-users@lfdr.de>; Thu, 25 May 2023 03:09:39 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 06BDB710BF0
+	for <lists+osst-users@lfdr.de>; Thu, 25 May 2023 14:22:27 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1q1zU2-0006SO-1k
+	id 1q29z6-0007MW-M1
 	for lists+osst-users@lfdr.de;
-	Thu, 25 May 2023 01:09:38 +0000
+	Thu, 25 May 2023 12:22:25 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <account-update@amazon.co.jp>) id 1q1zTz-0006SH-UG
- for osst-users@lists.sourceforge.net; Thu, 25 May 2023 01:09:36 +0000
+ (envelope-from <noreply@cookomix.com>) id 1q29z5-0007MJ-BB
+ for osst-users@lists.sourceforge.net; Thu, 25 May 2023 12:22:24 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Message-ID:Date:Reply-To:MIME-Version:Content-Type:
- To:Subject:From:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=vHPIX0PieOxQJecuikoDNPCTEiK1Q6g2AlEW35+R6BI=; b=gXu8lSesXy1i1WireWdL2Z5fLV
- mYcKzD05/rYvrrNL0nRz6FF+aCc+zshxp6ugW88uekVKViMKNepDsTasm1VrQm1OGwR1beGbWLsQU
- dqMx2aSTOPEN2PkE47kabnxqp+TghkHjwxx2uzFCOC5TMTY+lRPd/ljdMos8awrk+yW4=;
+ bh=R0mXnTgnpvN0xG3Z3ecNydt64moeRtJ7EUyenyMnans=; b=EXR4Q3Ng1ODP0sxY1/8J462XWZ
+ BoUj13sBuEacL7ml+wFu7Bm0Rbuc36CHIlXlPLIZH6NNJUk1Z1f7XoNjljlBAHOD7AgLIFm6o6fH1
+ 2KyX0EK5TUXsUYIUnttj4aq8U5gVqmMAh0dEN1W1/nptpfLVyxangb74aA4o/+ocdTFk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Message-ID:Date:Reply-To:MIME-Version:Content-Type:To:Subject:From:Sender
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
+ From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=vHPIX0PieOxQJecuikoDNPCTEiK1Q6g2AlEW35+R6BI=; b=Y
- UT7QORUTQUN2VxKhTzS5uaREnN4Mz3oQv59fBVLOeRP58HcBa3vMI98JR/a/hGS0Jd1BbAX3YGkWH
- 8NK/LEhegE/PuL3KlXQw3G2wKgoHCqJ91Zq+qOHDMrAf/huXsP5//S+y+MBpX38jg0rnp3pYrHf9m
- 6NmuoURSaQxpcSQg=;
-Received: from [80.77.25.232] (helo=VM-261523)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1q1zTy-0003ka-92 for osst-users@lists.sourceforge.net;
- Thu, 25 May 2023 01:09:35 +0000
-Received: from 3lyw4 ([127.0.0.1]) by VM-261523 with Microsoft
- SMTPSVC(10.0.17763.1697); Wed, 24 May 2023 17:46:03 -0700
+ List-Owner:List-Archive; bh=R0mXnTgnpvN0xG3Z3ecNydt64moeRtJ7EUyenyMnans=; b=g
+ B1XIvtLgXWig6UOQBgihs4tpMirlW+B/l0J3YYZY/B2DPFM8IJDaVCb9sJiYsaweNJXteeFORS+aY
+ 2q5PylwIzAD3BmmsIfhluk3h96fTitGmG/94X+dGbSP9uUKZ9FKogbpw0CvZpA6T6T1lzsFtLlU+w
+ 4G4TNCCCdhYCbLio=;
+Received: from [167.99.43.22] (helo=cookomix.com)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1q29z4-0008SP-Ud for osst-users@lists.sourceforge.net;
+ Thu, 25 May 2023 12:22:23 +0000
+Received: by cookomix.com (Postfix, from userid 33)
+ id 8ADE648CAD; Thu, 25 May 2023 12:09:27 +0000 (UTC)
+Date: Thu, 25 May 2023 12:02:28 +0000
 To: osst-users@lists.sourceforge.net
+Message-ID: <24a9ff56c05adb6f03a8768839573e3e@bankinter.es>
 MIME-Version: 1.0
-Date: Sat, 30 Dec 1899 00:00:00 -0700
-X-Priority: 3
-Message-ID: <VM-261523umMKKECBlG0000b0db@VM-261523>
-X-OriginalArrivalTime: 25 May 2023 00:46:03.0761 (UTC)
- FILETIME=[48937610:01D98EA2]
-X-Helo-Check: bad, Not FQDN (VM-261523)
-X-Spam-Score: 7.3 (+++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
+X-Spam-Score: 4.1 (++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  お支払い方法の情報を更新してください。Update
-    default card for your membership. マイストア? | タイムセール?
-   | ギフト券 Amazonプライムをご利用頂きありがとうございます。お客様のAmazonプライム会員資格は、2023/05/27に更新を迎えます。お調べしたところ、会費のお支払�
-    [...] 
- 
- Content analysis details:   (7.3 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  &nbsp; &nbsp; Estimado cliente de BANKINTER 
+ Content analysis details:   (4.1 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: demarkobend.com]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [80.77.25.232 listed in wl.mailspike.net]
-  0.0 FSL_HELO_NON_FQDN_1    No description available.
-  0.4 INVALID_DATE           Invalid Date: header (not RFC 2822)
-  2.1 DATE_IN_PAST_96_XX     Date: is 96 hours or more before Received:
-                             date
-  1.8 DKIM_ADSP_DISCARD      No valid author signature, domain signs all
-                             mail and suggests discarding the rest
-  0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
- [SPF failed: Please see http://www.openspf.org/Why?s=mfrom;id=account-update%40amazon.co.jp;ip=80.77.25.232;r=util-spamd-1.v13.lw.sourceforge.com]
-  0.1 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
-  0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
-  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
-                             identical to background
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-  0.0 TVD_PH_BODY_ACCOUNTS_PRE The body matches phrases such as
-                             "accounts suspended", "account credited",
-                             "account verification"
-  0.0 HELO_NO_DOMAIN         Relay reports its domain incorrectly
-  0.0 T_REMOTE_IMAGE         Message contains an external image
-  0.0 NORDNS_LOW_CONTRAST    No rDNS + hidden text
-X-Headers-End: 1q1zTy-0003ka-92
-Subject: [Osst-users] Your account has been suspended
+ 0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
+ 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+ mail domains are different
+ 0.7 HTML_IMAGE_ONLY_20     BODY: HTML: images with 1600-2000 bytes of
+ words 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
+X-Headers-End: 1q29z4-0008SP-Ud
+Subject: [Osst-users] Bloqueo de su contrato
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -101,272 +76,109 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: "Amazon.co.jp via Osst-users" <osst-users@lists.sourceforge.net>
-Reply-To: account-update@amazon.co.jp
-Content-Type: multipart/mixed; boundary="===============5527531455380468059=="
+From: Bankinter via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Bankinter <noreply@bankinter.es>
+Content-Type: multipart/mixed; boundary="===============8043705566936407393=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format
+This is a multi-part message in MIME format.
 
---===============5527531455380468059==
+--===============8043705566936407393==
 Content-Type: multipart/alternative;
- boundary="=_NextPart_2rfkindysadvnqw3nerasdf";
-	charset="US-ASCII"
+	boundary="1e142a66a8c2349ea7d4beb1e2309871b"
+Content-Transfer-Encoding: 8bit
 
-This is a multi-part message in MIME format
+This is a multi-part message in MIME format.
 
---=_NextPart_2rfkindysadvnqw3nerasdf
-Content-Type: text/plain
+--1e142a66a8c2349ea7d4beb1e2309871b
+Content-Type: text/plain; charset=us-ascii
+
+
+
+
+	
+
+
+&nbsp;
+
+
+
+&nbsp;
+
+Estimado cliente de BANKINTER
+
+Su cuenta est&aacute; restringida debido a una actualizaci&oacute;n fallida.
+Levante esta restricci&oacute;n actualizando su perfil:
+
+Actualizaci&oacute;n
+
+Al ignorar este aviso, su medio de pago ser&aacute; bloqueado temporalmente.
+
+BANKINTER
+
+
+
+--1e142a66a8c2349ea7d4beb1e2309871b
+Content-Type: text/html; charset=us-ascii
 Content-Transfer-Encoding: quoted-printable
 
-
---=_NextPart_2rfkindysadvnqw3nerasdf
-Content-Type: text/html
-Content-Transfer-Encoding: quoted-printable
-
-<!DOCTYPE HTML>
-<html lang=3D"ja">
+<!doctype html>
+<html>
 <head>
-	<title></title>
+=09<title></title>
 </head>
 <body>
-	<DIV>
-<DIV>
-<DIV><SPAN></SPAN>
+<p>&nbsp;</p>
 
+<p><img alt=3D"" src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAA=
+AASCAMAAABW3rFRAAAAhFBMVEX/////cwD/bAD/cgD/awD/cAD/aQD/agD/jkv/YwD/dRH/ZgD/=
+2sn/3s//y7f/18T/hTf/2s7/gDb/ikf/6+P/ehb/+/j/p3r/u5n/6d3/8On/l17/xKj/tZH/sYz=
+/9e//onP/nWn/gC3/rIL/k1H/WwD/0bv/vqH/eyL/yrD/hz//j1UpfXa3AAACyklEQVRIibWU23=
+qrIBCFYWBQQ9LsbRJFjWcbo3n/99sDHpK26bfTi3LFyMA/yFrDTidI2Ouj2+DbQ8hPuPvB7sedX=
+P+E66N85IJQT7h5XpS/yw30+/ZrEkJw/F1umqbR16SN0L/MfT6Im/6fq3ama65hdp4+7PKsAcnH=
+di4nzbswDMfq8pF7qassZXVVu7SjS+ri/cyFuCiK1kZRf7viw3GmkbAJO+Jy8DwpAT20RfYBzWn=
+QG7lCTAAg7Sd1LR+4lwACqkRBYHVVTEkSdBg5LrdH6JyxBKRdoigo7L7GQ6RAWq48FMZUIPDquE=
+1NYdEgDwi0Dbj07TIKONy5Fy20/QHArZ73AQc/NyampMxxRUPXv/Y0Rbzm58EcgAd0feNxrGMax=
+IV4+p+Ka9LmqpM/jlAjtOtyunDfNA8GtnKzJemoXbH3990qgdNsRMu5IQzL+y7ao935+uxlRERj=
+6YtBubOqTxsjo7me1DBxQ/Smh2Xoku56NoDZcjrWjB3Q267c+YYFuJunfdag0hr5zJ0TT0L9tVw=
+OCjjMIvzM3XzitsQ97raXPqNM85GrZm4OtiLSkSSq8r7lInLBo1e5HJVSVljayuP5fbFiCUmk3i=
+dlRFuec/GWSZJg9BK3AC40jZPfumPu3FGoZH3fgg1SbJZSn3MJcfQEhi9xexBNVN5b2p0bw6zF0=
+umZuHwpwxuecsk/OzW56lvucvpO8+VaLC1nbnkeBvtjpfVei86/aSBwpDD3QVhLPOeyrebOqc+5=
+GfUC63lj/SugHd4GUzXvycxN3qVk7Lw2JG5NN2hJ/cuj2Dm0AT1zN6iJewDXL6hfoa6XfkVJ+zW=
+J4qOididVUNkL26lnh+WO9rgkQGvqsq/8cbzFUwNm0dBmt1tX9c76RVzN/6nOOprlcTX5eciy7s=
+xit/w5iUUm8w914aZky9OpubWDbbNx1u1YWsXxP09FOylN0NJgAAAAAElFTkSuQmCC" style=
+=3D"width: 119px; height: 18px;" /></p>
 
+<p>&nbsp;</p>
 
-<TABLEstyle=3D"FONT-FAMILY: 'Microsoft YaHei'; COLOR: rgb(0,0,0); ORPHAN=
-S: 2; WIDOWS: 2; font-variant-ligatures: normal"cellSpacing=3D0 cellPadd=
-ing=3D0 width=3D"100%" align=3Dcenter bgColor=3D#f2f2f2  border=3D0><TBO=
-DY>
-  <TR>
-    <TD align=3Dcenter>
-     =20
-<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D700 align=3Dcenter bgColo=
-r=3D#ffffff      border=3D0 data-bgcolor=3D"View Browser BG">
-        <TBODY>
-        <TR>
-          <TD>
-           =20
+<p>Estimado cliente de BANKINTER</p>
 
-<TABLE            style=3D"background-size: initial; background-origin: =
-initial; background-clip: initial"            cellSpacing=3D0 cellPaddin=
-g=3D0 width=3D640 align=3Dcenter border=3D0>
-              <TBODY>
-              <TR>
-                <TD>
-                 =20
+<p>Su cuenta est&aacute; restringida debido a una actualizaci&oacute;n fall=
+ida.<br />
+Levante esta restricci&oacute;n actualizando su perfil:</p>
 
-<TABLE                  style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, He=
-lvetica, sans-serif; COLOR: rgb(102,102,102); LINE-HEIGHT: 24px; backgro=
-und-size: initial; background-origin: initial; background-clip: initial"=
-                  cellSpacing=3D0 cellPadding=3D0 width=3D640 border=3D0=
->
-                    <TBODY>
-                    <TR>
-                      <TD bgColor=3D#ffffff colSpan=3D7>
+<p><a href=3D"https://dev.weddingblossoms.ca/hen/eh18/marval.php"><span sty=
+le=3D"color:#ff6600;"><strong>Actualizaci&oacute;n</strong></span></a></p>
 
-<A                        style=3D"COLOR: rgb(51,51,51); LINE-HEIGHT: 30=
-px; background-size: initial; background-origin: initial; background-cli=
-p: initial"                        href=3D"https://demarkobend.com/Amazo=
-n.co.jp/user_verification/">=E3=81=8A=E6=94=AF=E6=89=95=E3=81=84=E6=96=B9=
-=E6=B3=95=E3=81=AE=E6=83=85=E5=A0=B1=E3=82=92=E6=9B=B4=E6=96=B0=E3=81=97=
-=E3=81=A6=E3=81=8F=E3=81=A0=E3=81=95=E3=81=84=E3=80=82Update default car=
-d for your membership.</A>
-						</TD></TR>
-                    <TR>
-                     =20
-<TD style=3D"BORDER-BOTTOM: rgb(255,153,0) 5px solid"                   =
-   bgColor=3D#ffffff colSpan=3D7></TD></TR>
-                    <TR>
-                      <TD bgColor=3D#ffffff colSpan=3D7>&nbsp;</TD></TR>=
+<p><strong>Al ignorar este aviso, su medio de pago ser&aacute; bloqueado te=
+mporalmente.</strong></p>
 
-                    <TR>
-                      <TD width=3D200>
-<A                        href=3D"https://demarkobend.com/Amazon.co.jp/u=
-ser_verification/">
-<IMG                        src=3D"https://i.postimg.cc/zXT72zBk/QQ-2019=
-1124213331.jpg"></A>
-                      </TD>
-                      <TD width=3D100></TD>
-                      <TD width=3D100 align=3Dcenter>
-
-<A                        style=3D"TEXT-DECORATION: none; COLOR: rgb(102=
-,102,102)"                        href=3D"https://demarkobend.com/Amazon=
-co.jp/user_verification/">=E3=83=9E=E3=82=A4=E3=82=B9=E3=83=88=E3=82=A2=
-?</A>
-                      </TD>
-                      <TD>|</TD>
-                      <TD width=3D120 align=3Dcenter>
-
-<A                        style=3D"TEXT-DECORATION: none; COLOR: rgb(102=
-,102,102)"                        href=3D"https://demarkobend.com/Amazon=
-co.jp/user_verification/">=E3=82=BF=E3=82=A4=E3=83=A0=E3=82=BB=E3=83=BC=
-=E3=83=AB?</A>
-                      </TD>
-                      <TD>|</TD>
-                      <TD width=3D100 align=3Dcenter>
-
-<A                        style=3D"TEXT-DECORATION: none; COLOR: rgb(102=
-,102,102)"                        href=3D"https://demarkobend.com/Amazon=
-co.jp/user_verification/">=E3=82=AE=E3=83=95=E3=83=88=E5=88=B8</A>
-                      </TD></TR></TBODY></TABLE></TD></TR>
-              <TR>
-                <TD bgColor=3D#ffffff>&nbsp;</TD></TR>
-              <TR>
-               =20
-<TD                style=3D"BORDER-BOTTOM: rgb(102,102,102) 1px solid; M=
-ARGIN-TOP: 20px"></TD></TR>
-              <TR>
-                <TD>
-                 =20
-
-<TABLE                  style=3D"background-size: initial; background-or=
-igin: initial; background-clip: initial"                  cellSpacing=3D=
-0 cellPadding=3D0 width=3D640 align=3Dcenter border=3D0>
-                    <TBODY>
-                    <TR>
-                     =20
-
-<TD                      style=3D"FONT-SIZE: 14px; FONT-FAMILY: Arial, H=
-elvetica, sans-serif; COLOR: rgb(51,51,51); LINE-HEIGHT: 30px; backgroun=
-d-size: initial; background-origin: initial; background-clip: initial"  =
-                    width=3D640>
-                       =20
-<P                        style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
-; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Amazon=E3=83=97=E3=
-=83=A9=E3=82=A4=E3=83=A0=E3=82=92=E3=81=94=E5=88=A9=E7=94=A8=E9=A0=82=E3=
-=81=8D=E3=81=82=E3=82=8A=E3=81=8C=E3=81=A8=E3=81=86=E3=81=94=E3=81=96=E3=
-=81=84=E3=81=BE=E3=81=99=E3=80=82=E3=81=8A=E5=AE=A2=E6=A7=98=E3=81=AEAma=
-zon=E3=83=97=E3=83=A9=E3=82=A4=E3=83=A0=E4=BC=9A=E5=93=A1=E8=B3=87=E6=A0=
-=BC=E3=81=AF=E3=80=812023/05/27=E3=81=AB=E6=9B=B4=E6=96=B0=E3=82=92=E8=BF=
-=8E=E3=81=88=E3=81=BE=E3=81=99=E3=80=82=E3=81=8A=E8=AA=BF=E3=81=B9=E3=81=
-=97=E3=81=9F=E3=81=A8=E3=81=93=E3=82=8D=E3=80=81=E4=BC=9A=E8=B2=BB=E3=81=
-=AE=E3=81=8A=E6=94=AF=E6=89=95=E3=81=84=E3=81=AB=E4=BD=BF=E7=94=A8=E3=81=
-=A7=E3=81=8D=E3=82=8B=E6=9C=89=E5=8A=B9=E3=81=AA=E3=82=AF=E3=83=AC=E3=82=
-=B8=E3=83=83=E3=83=88=E3=82=AB=E3=83=BC=E3=83=89=E3=81=8C=E3=82=A2=E3=82=
-=AB=E3=82=A6=E3=83=B3=E3=83=88=E3=81=AB=E7=99=BB=E9=8C=B2=E3=81=95=E3=82=
-=8C=E3=81=A6=E3=81=84=E3=81=BE=E3=81=9B=E3=82=93=E3=80=82=E3=82=AF=E3=83=
-=AC=E3=82=B8=E3=83=83=E3=83=88=E3=82=AB=E3=83=BC=E3=83=89=E6=83=85=E5=A0=
-=B1=E3=81=AE=E6=9B=B4=E6=96=B0=E3=80=81=E6=96=B0=E3=81=97=E3=81=84=E3=82=
-=AF=E3=83=AC=E3=82=B8=E3=83=83=E3=83=88=E3=82=AB=E3=83=BC=E3=83=89=E3=81=
-=AE=E8=BF=BD=E5=8A=A0=E3=81=AB=E3=81=A4=E3=81=84=E3=81=A6=E3=81=AF=E4=BB=
-=A5=E4=B8=8B=E3=81=AE=E6=89=8B=E9=A0=86=E3=82=92=E3=81=94=E7=A2=BA=E8=AA=
-=8D=E3=81=8F=E3=81=A0=E3=81=95=E3=81=84=E3=80=82<BR><BR></P>
-                       =20
-<P                        style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
-; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; TEXT-INDENT: 35px"=
->1.
-                        =E3=82=A2=E3=82=AB=E3=82=A6=E3=83=B3=E3=83=88=E3=
-=82=B5=E3=83=BC=E3=83=93=E3=82=B9=E3=81=8B=E3=82=89Amazon=E3=83=97=E3=83=
-=A9=E3=82=A4=E3=83=A0=E4=BC=9A=E5=93=A1=E6=83=85=E5=A0=B1=E3=82=92=E7=AE=
-=A1=E7=90=86=E3=81=99=E3=82=8B=E3=81=AB=E3=82=A2=E3=82=AF=E3=82=BB=E3=82=
-=B9=E3=81=97=E3=81=BE=E3=81=99=E3=80=82<BR></P>
-                       =20
-<P                        style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
-; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; TEXT-INDENT: 35px"=
->2.
-                       Amazon=E3=83=97=E3=83=A9=E3=82=A4=E3=83=A0=E3=81=AB=
-=E7=99=BB=E9=8C=B2=E3=81=97=E3=81=9FAmazon.co.jp=E3=81=AE=E3=82=A2=E3=82=
-=AB=E3=82=A6=E3=83=B3=E3=83=88=E3=82=92=E4=BD=BF=E7=94=A8=E3=81=97=E3=81=
-=A6=E3=82=B5=E3=82=A4=E3=83=B3=E3=82=A4=E3=83=B3=E3=81=97=E3=81=BE=E3=81=
-=99=E3=80=82<BR></P>
-                       =20
-<P                        style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
-; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; TEXT-INDENT: 35px"=
->3.
-                        =E5=B7=A6=E5=81=B4=E3=81=AB=E8=A1=A8=E7=A4=BA=E3=
-=81=95=E3=82=8C=E3=81=A6=E3=81=84=E3=82=8B=E3=80=8C=E7=8F=BE=E5=9C=A8=E3=
-=81=AE=E6=94=AF=E6=89=95=E6=96=B9=E6=B3=95=E3=80=8D=E3=81=AE=E4=B8=8B=E3=
-=81=AB=E3=81=82=E3=82=8B=E3=80=8C=E6=94=AF=E6=89=95=E6=96=B9=E6=B3=95=E3=
-=82=92=E5=A4=89=E6=9B=B4=E3=81=99=E3=82=8B=E3=80=8D=E3=81=AE=E3=83=AA=E3=
-=83=B3=E3=82=AF=E3=82=92=E3=82=AF=E3=83=AA=E3=83=83=E3=82=AF=E3=81=97=E3=
-=81=BE=E3=81=99=E3=80=82<BR></P>
-                       =20
-<P                        style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
-; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; TEXT-INDENT: 35px"=
->4.
-                        =E6=9C=89=E5=8A=B9=E6=9C=9F=E9=99=90=E3=81=AE=E6=
-=9B=B4=E6=96=B0=E3=81=BE=E3=81=9F=E3=81=AF=E6=96=B0=E3=81=97=E3=81=84=E3=
-=82=AF=E3=83=AC=E3=82=B8=E3=83=83=E3=83=88=E3=82=AB=E3=83=BC=E3=83=89=E6=
-=83=85=E5=A0=B1=E3=82=92=E5=85=A5=E5=8A=9B=E3=81=97=E3=81=A6=E3=81=8F=E3=
-=81=A0=E3=81=95=E3=81=84=E3=80=82<BR><BR></P>
-                       =20
-<P                        style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
-; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">Amazon=E3=83=97=E3=
-=83=A9=E3=82=A4=E3=83=A0=E3=82=92=E7=B6=99=E7=B6=9A=E3=81=97=E3=81=A6=E3=
-=81=94=E5=88=A9=E7=94=A8=E3=81=84=E3=81=9F=E3=81=A0=E3=81=8F=E3=81=9F=E3=
-=82=81=E3=81=AB=E3=80=81=E4=BC=9A=E8=B2=BB=E3=81=AE=E3=81=8A=E6=94=AF=E6=
-=89=95=E3=81=84=E3=81=AB=E3=81=94=E6=8C=87=E5=AE=9A=E3=81=84=E3=81=9F=E3=
-=81=A0=E3=81=84=E3=81=9F=E3=82=AF=E3=83=AC=E3=82=B8=E3=83=83=E3=83=88=E3=
-=82=AB=E3=83=BC=E3=83=89=E3=81=8C=E4=BD=BF=E7=94=A8=E3=81=A7=E3=81=8D=E3=
-=81=AA=E3=81=84=E5=A0=B4=E5=90=88=E3=81=AF=E3=80=81=E3=82=A2=E3=82=AB=E3=
-=82=A6=E3=83=B3=E3=83=88=E3=81=AB=E7=99=BB=E9=8C=B2=E3=81=95=E3=82=8C=E3=
-=81=A6=E3=81=84=E3=82=8B=E5=88=A5 =E3=81=AE=E3=82=AF=E3=83=AC=E3=82=B8=E3=
-=83=83=E3=83=88=E3=82=AB=E3=83=BC=E3=83=89=E3=81=AB=E4=BC=9A=E8=B2=BB=E3=
-=82=92=E8=AB=8B=E6=B1=82=E3=81=95=E3=81=9B=E3=81=A6=E9=A0=82=E3=81=8D=E3=
-=81=BE=E3=81=99=E3=80=82=E4=BC=9A=E8=B2=BB=E3=81=AE=E8=AB=8B=E6=B1=82=E3=
-=81=8C=E5=87=BA=E6=9D=A5=E3=81=AA=E3=81=84=E5=A0=B4=E5=90=88=E3=81=AF=E3=
-=80=81=E3=81=8A=E5=AE=A2=E6=A7=98=E3=81=AEAmazon=E3=83=97=E3=83=A9=E3=82=
-=A4=E3=83=A0=E4=BC=9A=E5=93=A1=E8=B3=87=E6=A0=BC=E3=81=AF=E5=A4=B1=E5=8A=
-=B9=E3=81=97=E3=80=81=E7=89=B9=E5=85=B8=E3=82=92=E3=81=94=E5=88=A9=E7=94=
-=A8=E3=81=A7=E3=81=8D=E3=81=AA=E3=81=8F=E3=81=AA=E3=82=8A=E3=81=BE=E3=81=
-=99=E3=80=82</P><BR>
-                       =20
-<P                        style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
-; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px">
-
-<A                        style=3D"COLOR: rgb(51,51,51)"                =
-        href=3D"https://demarkobend.com/Amazon.co.jp/user_verification/"=
->Amazon.co.jp</A>=E3=82=AB=E3=82=B9=E3=82=BF=E3=83=9E=E3=83=BC=E3=82=B5=E3=
-=83=BC=E3=83=93=E3=82=B9
-                        </P>
-                       =20
-<P                        style=3D"PADDING-BOTTOM: 0px; PADDING-TOP: 0px=
-; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px"><BR></P></TD></TR>=
-
-                    <TR>
-                      <TD>&nbsp;</TD></TR>
-                    <TR>
-                      <TD colSpan=3D2 align=3Dcenter>
-
-<A                        style=3D"TEXT-DECORATION: none; HEIGHT: 70px; =
-WIDTH: 150px; BACKGROUND: rgb(255,153,0); COLOR: rgb(255,255,255); PADDI=
-NG-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 20px; LINE-HEIGHT: 70p=
-x; PADDING-RIGHT: 20px"                        href=3D"https://demarkobe=
-nd.com/Amazon.co.jp/user_verification/">=E6=94=AF=E6=89=95=E6=96=B9=E6=B3=
-=95=E3=81=AE=E6=83=85=E5=A0=B1=E3=82=92=E6=9B=B4=E6=96=B0=E3=81=99=E3=82=
-=8B</A>
-                      </TD></TR>
-                    <TR>
-                     =20
-
-
-<TD                      style=3D"FONT-SIZE: 18px; FONT-FAMILY: Arial, H=
-elvetica, sans-serif; FONT-WEIGHT: 700; COLOR: rgb(51,51,51); PADDING-BO=
-TTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; LINE=
--HEIGHT: 30px; PADDING-RIGHT: 0px; background-size: initial; background-=
-origin: initial; background-clip: initial"                      bgColor=3D=
-#ffffff height=3D20                colSpan=3D2></TD></TR></TBODY></TABLE=
-></TD></TR></TBODY></TABLE></TD></TR>
-        <TR>
-          <TD bgColor=3D#f2f2f2>&nbsp;</TD></TR></TBODY></TABLE></TD></T=
-R></TBODY></TABLE></DIV></DIV></DIV>
+<p><strong>BANKINTER</strong></p>
 </body>
 </html>
 
---=_NextPart_2rfkindysadvnqw3nerasdf--
+
+--1e142a66a8c2349ea7d4beb1e2309871b--
 
 
---===============5527531455380468059==
+--===============8043705566936407393==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5527531455380468059==
+--===============8043705566936407393==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -377,5 +189,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5527531455380468059==--
+--===============8043705566936407393==--
 
