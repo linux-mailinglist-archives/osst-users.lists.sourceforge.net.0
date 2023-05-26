@@ -2,69 +2,86 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 06BDB710BF0
-	for <lists+osst-users@lfdr.de>; Thu, 25 May 2023 14:22:27 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 78395712ED3
+	for <lists+osst-users@lfdr.de>; Fri, 26 May 2023 23:16:47 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1q29z6-0007MW-M1
+	id 1q2enl-0001gd-Fk
 	for lists+osst-users@lfdr.de;
-	Thu, 25 May 2023 12:22:25 +0000
+	Fri, 26 May 2023 21:16:45 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <noreply@cookomix.com>) id 1q29z5-0007MJ-BB
- for osst-users@lists.sourceforge.net; Thu, 25 May 2023 12:22:24 +0000
+ (envelope-from <vkziyyhat@vbj.tw>) id 1q2enj-0001gX-V1
+ for osst-users@lists.sourceforge.net; Fri, 26 May 2023 21:16:44 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:From:
+ Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=R0mXnTgnpvN0xG3Z3ecNydt64moeRtJ7EUyenyMnans=; b=EXR4Q3Ng1ODP0sxY1/8J462XWZ
- BoUj13sBuEacL7ml+wFu7Bm0Rbuc36CHIlXlPLIZH6NNJUk1Z1f7XoNjljlBAHOD7AgLIFm6o6fH1
- 2KyX0EK5TUXsUYIUnttj4aq8U5gVqmMAh0dEN1W1/nptpfLVyxangb74aA4o/+ocdTFk=;
+ bh=CDrTvrEotQK0iIz8kkeDac1+fmMkuMKdPP1iK9C8Jfg=; b=G0VJcHwFiBhVEfqkZTkshy8boV
+ BIinA6GAVolCKW+QqzhE/kOFjmJZEeljlY/1rWywqntRjhSk4OeII2qvqq9vNaVDR4O0bb62J4id1
+ UJWSnDU9oDt4uJtX6xR3qpDvcdbLDaZ/Adc3TXcy28b/fnVD2gHPdOC/b4XWN8yAGxsg=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
- From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Type:MIME-Version:Date:Subject:To:From:Message-ID:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=R0mXnTgnpvN0xG3Z3ecNydt64moeRtJ7EUyenyMnans=; b=g
- B1XIvtLgXWig6UOQBgihs4tpMirlW+B/l0J3YYZY/B2DPFM8IJDaVCb9sJiYsaweNJXteeFORS+aY
- 2q5PylwIzAD3BmmsIfhluk3h96fTitGmG/94X+dGbSP9uUKZ9FKogbpw0CvZpA6T6T1lzsFtLlU+w
- 4G4TNCCCdhYCbLio=;
-Received: from [167.99.43.22] (helo=cookomix.com)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1q29z4-0008SP-Ud for osst-users@lists.sourceforge.net;
- Thu, 25 May 2023 12:22:23 +0000
-Received: by cookomix.com (Postfix, from userid 33)
- id 8ADE648CAD; Thu, 25 May 2023 12:09:27 +0000 (UTC)
-Date: Thu, 25 May 2023 12:02:28 +0000
-To: osst-users@lists.sourceforge.net
-Message-ID: <24a9ff56c05adb6f03a8768839573e3e@bankinter.es>
+ List-Owner:List-Archive; bh=CDrTvrEotQK0iIz8kkeDac1+fmMkuMKdPP1iK9C8Jfg=; b=M
+ KvHm1Pc2VmL/qTmFE78NZ+nvByiDj8zUG5L7Cfog4AxC5Z+2syxpbG2LqViu1vMS3zcTRcYcsoArL
+ ROoRFpCFi2ok/tI1alufbZqJon7nT2JCh7png99MtLKSbLTVpx7wtq8VESZH8TQ6tlhp24mLgjc6G
+ XvW33THu1i17EtVc=;
+Received: from [118.143.140.68] (helo=hkmail.eastmoney.com)
+ by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1q2enf-003b80-Qm for osst-users@lists.sourceforge.net;
+ Fri, 26 May 2023 21:16:44 +0000
+Received: from duksadc (unknown [103.127.83.61])
+ by hkmail.eastmoney.com (Postfix) with ESMTPA id F225D10AE1D64
+ for <osst-users@lists.sourceforge.net>; Sat, 27 May 2023 02:42:30 +0800 (HKT)
+Message-ID: <FA3F1084E40201556BCD85DBC701E37E@duksadc>
+From: Admin <vkziyyhat@vbj.tw>
+To: osst-users <osst-users@lists.sourceforge.net>
+Date: Sat, 27 May 2023 02:42:12 +0800
 MIME-Version: 1.0
-X-Spam-Score: 4.1 (++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has NOT identified this incoming email as spam.  The original
+X-Priority: 3
+X-Mailer: Supmailer 38.1.1
+X-Spam-Score: 6.3 (++++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  &nbsp; &nbsp; Estimado cliente de BANKINTER 
- Content analysis details:   (4.1 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  升级企业邮箱通知 尊敬的领导、同事： 近日我们发现，公司邮箱收到了大量垃圾邮件。经过分析，发现是由于部分用户的邮箱账户被盗用，导致内部发送了钓鱼邮件，给公司带来了安全隐患�
+    [...] 
+ 
+ Content analysis details:   (6.3 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
- mail domains are different
- 0.7 HTML_IMAGE_ONLY_20     BODY: HTML: images with 1600-2000 bytes of
- words 0.0 HTML_MESSAGE           BODY: HTML included in message
- 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
-X-Headers-End: 1q29z4-0008SP-Ud
-Subject: [Osst-users] Bloqueo de su contrato
+  1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+                             https://senderscore.org/blocklistlookup/
+                            [118.143.140.68 listed in bl.score.senderscore.com]
+  0.4 NO_DNS_FOR_FROM        DNS: Envelope sender has no MX or A DNS records
+  0.5 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
+                             [118.143.140.68 listed in bl.mailspike.net]
+  0.1 URIBL_SBL_A            Contains URL's A record listed in the Spamhaus SBL
+                             blocklist
+                             [URIs: icorernail.net]
+  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
+                             DNS
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+                             [118.143.140.68 listed in dnsbl-1.uceprotect.net]
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
+X-Headers-End: 1q2enf-003b80-Qm
+Subject: [Osst-users] =?utf-8?b?5a6J5YWo5Y2H57qn5o+Q6YaS77yB?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -76,109 +93,94 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Bankinter via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: Bankinter <noreply@bankinter.es>
-Content-Type: multipart/mixed; boundary="===============8043705566936407393=="
+Content-Type: multipart/mixed; boundary="===============8436791304247858260=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
 
---===============8043705566936407393==
+--===============8436791304247858260==
 Content-Type: multipart/alternative;
-	boundary="1e142a66a8c2349ea7d4beb1e2309871b"
-Content-Transfer-Encoding: 8bit
+	boundary="----=_001_8c095ea1829ee3da_=----"
 
 This is a multi-part message in MIME format.
 
---1e142a66a8c2349ea7d4beb1e2309871b
-Content-Type: text/plain; charset=us-ascii
+------=_001_8c095ea1829ee3da_=----
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+5Y2H57qn5LyB5Lia6YKu566x6YCa55+lDQrlsIrmlaznmoTpooblr7zjgIHlkIzkuovvvJoNCg0K
+6L+R5pel5oiR5Lus5Y+R546w77yM5YWs5Y+46YKu566x5pS25Yiw5LqG5aSn6YeP5Z6D5Zy+6YKu
+5Lu244CC57uP6L+H5YiG5p6Q77yM5Y+R546w5piv55Sx5LqO6YOo5YiG55So5oi355qE6YKu566x
+6LSm5oi36KKr55uX55So77yM5a+86Ie05YaF6YOo5Y+R6YCB5LqG6ZKT6bG86YKu5Lu277yM57uZ
+5YWs5Y+45bim5p2l5LqG5a6J5YWo6ZqQ5oKj44CCDQoNCuS4uui/m+S4gOatpeaPkOWNh+WFrOWP
+uOmCruS7tuezu+e7n+eahOWuieWFqOaAp++8jOaIkemDqOmXqOW3suS6jui/keaXpemZhue7reab
+tOaWsOS6huWQhOeUqOaIt+mCruS7tuezu+e7n+eahOWuieWFqOivgeS5puOAguS4uuS6huS/nema
+nOWFrOWPuOmCrueuseeahOWuieWFqO+8jOaIkeS7rOmcgOimgeaCqOWwveW/q+WujOaIkOivgeS5
+pueahOi/geenu++8jOWFt+S9k+aTjeS9nOWmguS4i++8mg0KDQrnq4vljbPljYfnuqcNCg0K56e7
+5Yqo6K6+5aSH5aSN5Yi25Lul5LiL6ZO+5o6l5Zyo5rWP6KeI5Zmo5Lit5omT5byA77yaaHR0cDov
+L2xpc3RzLnNvdXJjZWZvcmdlLm5ldA0KDQrlpoLmnpzmgqjml6Dms5Xngrnlh7vkuIrpnaLnmoTp
+k77mjqXvvIzor7flsIbpk77mjqXlnLDlnYDlpI3liLblubbnspjotLTliLDmgqjnmoTmtY/op4jl
+majnmoTlnLDlnYDmoI/kuK3ov5vooYzorr/pl67jgIINCg0K6LCi6LCi5oKo55qE6YWN5ZCI77yB
+DQoNCuWmguaenOaCqOWvueatpOmCruS7tuacieS7u+S9leeWkemXruaIlumcgOimgeW4ruWKqe+8
+jOivt+iBlOezu+aKgOacr+aUr+aMgeWboumYn+OAgg0KDQrmraTpgq7ku7bkuLrns7vnu5/oh6rl
+iqjnlJ/miJDvvIzor7fli7/lm57lpI3jgIINCg0K6Ziy5q2i5q2k57G76YKu5Lu26KKr5oum5oiq
+77yM6K+35bCG5oqA5pyv5pSv5oyB5Zui6Zif55qE5Zyw5Z2A5Yqg5YWl5oKo55qE6IGU57O75Lq6
+5YiX6KGo77yaDQoNClvmioDmnK/mlK/mjIHmi6bmiKrlnLDlnYBdDQo=
+
+------=_001_8c095ea1829ee3da_=----
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+DQo8aGVhZD4NCjxtZXRhIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD11dGYtOCIg
+aHR0cC1lcXVpdj1Db250ZW50LVR5cGU+DQo8L2hlYWQ+DQo8Ym9keT4NCjxkaXYgc3R5bGU9InBh
+ZGRpbmctYm90dG9tOjIwcHg7cGFkZGluZy10b3A6MjBweDtwYWRkaW5nLWxlZnQ6MjBweDtwYWRk
+aW5nLXJpZ2h0OjIwcHg7YmFja2dyb3VuZC1jb2xvcjojZmZmZmZmO2JvcmRlci1yYWRpdXM6NXB4
+OyI+DQo8aDEgc3R5bGU9Im1hcmdpbi1ib3R0b206MjBweDtmb250LXNpemU6MjRweDsiPuWNh+e6
+p+S8geS4mumCrueusemAmuefpTwvaDE+DQo8cD7lsIrmlaznmoTpooblr7zjgIHlkIzkuovvvJo8
+L3A+DQo8cD7ov5Hml6XmiJHku6zlj5HnjrDvvIzlhazlj7jpgq7nrrHmlLbliLDkuoblpKfph4/l
+noPlnL7pgq7ku7bjgILnu4/ov4fliIbmnpDvvIzlj5HnjrDmmK/nlLHkuo7pg6jliIbnlKjmiLfn
+moTpgq7nrrHotKbmiLfooqvnm5fnlKjvvIzlr7zoh7TlhoXpg6jlj5HpgIHkuobpkpPpsbzpgq7k
+u7bvvIznu5nlhazlj7jluKbmnaXkuoblronlhajpmpDmgqPjgII8L3A+DQo8cD7kuLrov5vkuIDm
+raXmj5DljYflhazlj7jpgq7ku7bns7vnu5/nmoTlronlhajmgKfvvIzmiJHpg6jpl6jlt7Lkuo7o
+v5Hml6XpmYbnu63mm7TmlrDkuoblkITnlKjmiLfpgq7ku7bns7vnu5/nmoTlronlhajor4Hkuabj
+gILkuLrkuobkv53pmpzlhazlj7jpgq7nrrHnmoTlronlhajvvIzmiJHku6zpnIDopoHmgqjlsL3l
+v6vlrozmiJDor4HkuabnmoTov4Hnp7vvvIzlhbfkvZPmk43kvZzlpoLkuIvvvJo8L3A+DQo8cCBz
+dHlsZT0ibWFyZ2luLWJvdHRvbToyMHB4OyI+PHN0cm9uZz7nq4vljbPljYfnuqc8L3N0cm9uZz48
+L3A+DQo8cD48c3Ryb25nPuenu+WKqOiuvuWkh+WkjeWItuS7peS4i+mTvuaOpeWcqOa1j+iniOWZ
+qOS4reaJk+W8gO+8mjxzcGFuIHN0eWxlPSJmb250LXNpemU6MTlweDsiPjxhIGNsYXNzPSJidGxp
+bmsgZXZlbnRfbmFtZV9yV3BSUCIgc3R5bGU9ImJveC1zaXppbmc6Ym9yZGVyLWJveDtib3JkZXIt
+dG9wOjBweDtmb250LWZhbWlseTpTb3VyY2VIYW5TYW5zU0MtcmVndWxhciwg5b6u6L2v6ZuF6buR
+LCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmO2JvcmRlci1yaWdodDowcHg7Ym9yZGVyLWJv
+dHRvbTowcHg7Y29sb3I6cmdiKDMyLDE2NSw1OCk7Ym9yZGVyLWxlZnQ6MHB4O3RleHQtZGVjb3Jh
+dGlvbi1saW5lOm5vbmU7LXdlYmtpdC10YXAtaGlnaGxpZ2h0LWNvbG9yOnJnYmEoMCwgMCwgMCwg
+MCk7IiBocmVmPSJodHRwOi8vaWNvcmVybmFpbC5uZXQvI29zc3QtdXNlcnNAbGlzdHMuc291cmNl
+Zm9yZ2UubmV0JnVybD1odHRwOi8vbGlzdHMuc291cmNlZm9yZ2UubmV0IiB0YXJnZXQ9X2JsYW5r
+Pmh0dHA6Ly9saXN0cy5zb3VyY2Vmb3JnZS5uZXQ8L2E+PC9zcGFuPjwvc3Ryb25nPjwvcD4NCjxw
+PuWmguaenOaCqOaXoOazleeCueWHu+S4iumdoueahOmTvuaOpe+8jOivt+WwhumTvuaOpeWcsOWd
+gOWkjeWItuW5tueymOi0tOWIsOaCqOeahOa1j+iniOWZqOeahOWcsOWdgOagj+S4rei/m+ihjOiu
+v+mXruOAgjwvcD4NCjxwPuiwouiwouaCqOeahOmFjeWQiO+8gTwvcD4NCjxkaXYgc3R5bGU9ImZv
+bnQtc2l6ZToxMnB4O2NvbG9yOiM5OTk5OTk7bWFyZ2luLXRvcDoyMHB4OyI+DQo8cD7lpoLmnpzm
+gqjlr7nmraTpgq7ku7bmnInku7vkvZXnlpHpl67miJbpnIDopoHluK7liqnvvIzor7fogZTns7vm
+ioDmnK/mlK/mjIHlm6LpmJ/jgII8L3A+DQo8cD7mraTpgq7ku7bkuLrns7vnu5/oh6rliqjnlJ/m
+iJDvvIzor7fli7/lm57lpI3jgII8L3A+DQo8cD7pmLLmraLmraTnsbvpgq7ku7booqvmi6bmiKrv
+vIzor7flsIbmioDmnK/mlK/mjIHlm6LpmJ/nmoTlnLDlnYDliqDlhaXmgqjnmoTogZTns7vkurrl
+iJfooajvvJo8L3A+DQo8cD5b5oqA5pyv5pSv5oyB5oum5oiq5Zyw5Z2AXTwvcD48L2Rpdj48L2Rp
+dj4NCjwvYm9keT4NCjwvaHRtbD4NCg==
+
+------=_001_8c095ea1829ee3da_=------
 
 
 
-
-	
-
-
-&nbsp;
-
-
-
-&nbsp;
-
-Estimado cliente de BANKINTER
-
-Su cuenta est&aacute; restringida debido a una actualizaci&oacute;n fallida.
-Levante esta restricci&oacute;n actualizando su perfil:
-
-Actualizaci&oacute;n
-
-Al ignorar este aviso, su medio de pago ser&aacute; bloqueado temporalmente.
-
-BANKINTER
-
-
-
---1e142a66a8c2349ea7d4beb1e2309871b
-Content-Type: text/html; charset=us-ascii
-Content-Transfer-Encoding: quoted-printable
-
-<!doctype html>
-<html>
-<head>
-=09<title></title>
-</head>
-<body>
-<p>&nbsp;</p>
-
-<p><img alt=3D"" src=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAA=
-AASCAMAAABW3rFRAAAAhFBMVEX/////cwD/bAD/cgD/awD/cAD/aQD/agD/jkv/YwD/dRH/ZgD/=
-2sn/3s//y7f/18T/hTf/2s7/gDb/ikf/6+P/ehb/+/j/p3r/u5n/6d3/8On/l17/xKj/tZH/sYz=
-/9e//onP/nWn/gC3/rIL/k1H/WwD/0bv/vqH/eyL/yrD/hz//j1UpfXa3AAACyklEQVRIibWU23=
-qrIBCFYWBQQ9LsbRJFjWcbo3n/99sDHpK26bfTi3LFyMA/yFrDTidI2Ouj2+DbQ8hPuPvB7sedX=
-P+E66N85IJQT7h5XpS/yw30+/ZrEkJw/F1umqbR16SN0L/MfT6Im/6fq3ama65hdp4+7PKsAcnH=
-di4nzbswDMfq8pF7qassZXVVu7SjS+ri/cyFuCiK1kZRf7viw3GmkbAJO+Jy8DwpAT20RfYBzWn=
-QG7lCTAAg7Sd1LR+4lwACqkRBYHVVTEkSdBg5LrdH6JyxBKRdoigo7L7GQ6RAWq48FMZUIPDquE=
-1NYdEgDwi0Dbj07TIKONy5Fy20/QHArZ73AQc/NyampMxxRUPXv/Y0Rbzm58EcgAd0feNxrGMax=
-IV4+p+Ka9LmqpM/jlAjtOtyunDfNA8GtnKzJemoXbH3990qgdNsRMu5IQzL+y7ao935+uxlRERj=
-6YtBubOqTxsjo7me1DBxQ/Smh2Xoku56NoDZcjrWjB3Q267c+YYFuJunfdag0hr5zJ0TT0L9tVw=
-OCjjMIvzM3XzitsQ97raXPqNM85GrZm4OtiLSkSSq8r7lInLBo1e5HJVSVljayuP5fbFiCUmk3i=
-dlRFuec/GWSZJg9BK3AC40jZPfumPu3FGoZH3fgg1SbJZSn3MJcfQEhi9xexBNVN5b2p0bw6zF0=
-umZuHwpwxuecsk/OzW56lvucvpO8+VaLC1nbnkeBvtjpfVei86/aSBwpDD3QVhLPOeyrebOqc+5=
-GfUC63lj/SugHd4GUzXvycxN3qVk7Lw2JG5NN2hJ/cuj2Dm0AT1zN6iJewDXL6hfoa6XfkVJ+zW=
-J4qOididVUNkL26lnh+WO9rgkQGvqsq/8cbzFUwNm0dBmt1tX9c76RVzN/6nOOprlcTX5eciy7s=
-xit/w5iUUm8w914aZky9OpubWDbbNx1u1YWsXxP09FOylN0NJgAAAAAElFTkSuQmCC" style=
-=3D"width: 119px; height: 18px;" /></p>
-
-<p>&nbsp;</p>
-
-<p>Estimado cliente de BANKINTER</p>
-
-<p>Su cuenta est&aacute; restringida debido a una actualizaci&oacute;n fall=
-ida.<br />
-Levante esta restricci&oacute;n actualizando su perfil:</p>
-
-<p><a href=3D"https://dev.weddingblossoms.ca/hen/eh18/marval.php"><span sty=
-le=3D"color:#ff6600;"><strong>Actualizaci&oacute;n</strong></span></a></p>
-
-<p><strong>Al ignorar este aviso, su medio de pago ser&aacute; bloqueado te=
-mporalmente.</strong></p>
-
-<p><strong>BANKINTER</strong></p>
-</body>
-</html>
-
-
---1e142a66a8c2349ea7d4beb1e2309871b--
-
-
---===============8043705566936407393==
+--===============8436791304247858260==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8043705566936407393==
+--===============8436791304247858260==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -189,5 +191,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8043705566936407393==--
+--===============8436791304247858260==--
+
 
