@@ -2,108 +2,91 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id B5BB67467EC
-	for <lists+osst-users@lfdr.de>; Tue,  4 Jul 2023 05:27:53 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 445F2747A6C
+	for <lists+osst-users@lfdr.de>; Wed,  5 Jul 2023 01:35:09 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1qGWhi-0004tQ-HG
+	id 1qGpY3-0002DC-7j
 	for lists+osst-users@lfdr.de;
-	Tue, 04 Jul 2023 03:27:51 +0000
+	Tue, 04 Jul 2023 23:35:08 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <info.smbc-card.com@metaplanning.co>)
- id 1qGWhh-0004tJ-UH for osst-users@lists.sourceforge.net;
- Tue, 04 Jul 2023 03:27:50 +0000
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) (envelope-from
+ <plsmgcl-wwuc4463-common-19897-4-20230705080025@puberr.backend.sys.combz.jp>)
+ id 1qGpY2-0002D6-9G for osst-users@lists.sourceforge.net;
+ Tue, 04 Jul 2023 23:35:07 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:MIME-Version:Date:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Message-Id:Content-Type:From:MIME-Version:
+ Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=4DRMMbAcAJxdNPLgQAh7m0zvGmNXav/VOM89x/pR800=; b=D8tO81s4P8uPXUfSOWo1GB9pqh
- 4EZlY8iBUOuERxkKXekAD9BZewx/p+3HspcL9eDzgGoz/jVSQ4arYq40fFKqmKBuntWrMzrvR8wfa
- N3cpM0u3XUNs5vqd4I15cqRRFlZ4DV3Y3U2hbFogDlCc+fA1c5mMPyC1chA1CKYenGQM=;
+ bh=uIJfVWsUdGApt5wX0YvrA74KyZRmFrHJoayWoy+o60Y=; b=dxwVY+KXiJxGc4ynOUEOGccWkh
+ 9x2ia2dtb7CaF5KrzGvQsvL7YJupkeo2uDkZGn44mdyIA4Q/p3TMCMayEgiIZtCj1Ladc+yxUIIHY
+ KAC0eH8kFI1Y4AFYAAqThwRcsYX3tilfVmtr06VmzdQvo2dQFLMOq7PtXkDORGqEQdyY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:MIME-Version:Date:To:From:Message-ID:Sender:Reply-To
+ h=Date:Message-Id:Content-Type:From:MIME-Version:Subject:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=4DRMMbAcAJxdNPLgQAh7m0zvGmNXav/VOM89x/pR800=; b=m
- u32Im2RDIfS+prhJjMJ3HxByykkWrT3InDPi9kxmly3C7EGlkoNBE6JRzuyJIyWa3lqpYPDnuqfHb
- Xns/EurwPfvDvE/vChhRh/KrCS6F98Sn1n44vbzDvgAkoKK/iSq0xY32upEIdpIZD9OxNVcV4Ja4d
- rEeqQFZnTWpKTRuw=;
-Received: from [23.94.179.79] (helo=metaplanning.co)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
+ List-Owner:List-Archive; bh=uIJfVWsUdGApt5wX0YvrA74KyZRmFrHJoayWoy+o60Y=; b=Y
+ UrhlKzSOp5gbQEw7kSFCYSc5NWONUC9tS4w2U/YOFiuNJ25/LTCSj0s5JEl4ygQVNCkDX3i8veBX1
+ F4kLYOGNT5KSlmzUA5PdfXJ+aSv1BgC4U7EY1Tv7/H6IXVyiaSztZ+xq7ZhWsbatFIgfoN0rEjNHn
+ 4RrmJsesFkpCmNCA=;
+Received: from clsend0342-mobengine.backend.sys.combz.jp ([153.126.162.166])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1qGWhe-005KR9-7h for osst-users@lists.sourceforge.net;
- Tue, 04 Jul 2023 03:27:50 +0000
-Received: from jinpkmae (unknown [23.94.172.157])
- by metaplanning.co (Postfix) with ESMTPA id CDBAD2ABE4
- for <osst-users@lists.sourceforge.net>; Tue,  4 Jul 2023 11:12:23 +0800 (CST)
-DKIM-Filter: OpenDKIM Filter v2.11.0 metaplanning.co CDBAD2ABE4
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=metaplanning.co;
- s=default; t=1688440344;
- bh=4DRMMbAcAJxdNPLgQAh7m0zvGmNXav/VOM89x/pR800=;
- h=From:To:Subject:Date:From;
- b=fKW2sicabxjZVs+Fd1kxHClnZcyECYvfn75d9cXGALNS0G3xxSLefMZweak3MfpUF
- frMFPM8FeDq3We6BjY3Wm/lPP4o330JyDFUhLTLQMRKQqsXktQJSTq7L1D0mY46NLc
- JcDTQ6RxuQ/LHZca5ZeoibZ77ugXQfagejH4B7cI=
-Message-ID: <8CA9A1A416AD865A10038F7B66F1F08E@jinpkmae>
-To: osst-users <osst-users@lists.sourceforge.net>
-Date: Tue, 4 Jul 2023 12:12:15 +0900
+ id 1qGpY1-0004EG-VK for osst-users@lists.sourceforge.net;
+ Tue, 04 Jul 2023 23:35:07 +0000
+Received: by clsend0342-mobengine.backend.sys.combz.jp (Postfix,
+ from userid 500) id 58888FF3A8; Wed,  5 Jul 2023 08:17:34 +0900 (JST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=puberr.backend.sys.combz.jp; s=2022puberr-combz-jp; t=1688512680;
+ bh=DC1ILETqYkZaGFBZBEPzbdEPR+YZA2awwhyuPgpFwVk=;
+ h=To:Subject:From:Date:From;
+ b=Uolm/Q1969BNbXlbHP9dnwm31xonG94CKG/+VN3gU2T/7HmeraN7pgjMNrsa1fnDQ
+ SOcviQLPauiAiQKNtrYO3e5TuzwbrECmgI54eSOGaZdraZFHvrY1WvUmiWhSHQmoLY
+ tKgnhVQxCIDMpzYa7dM6k/mVr6pKt9kGQBO38yw4=
+To: osst-users@lists.sourceforge.net
 MIME-Version: 1.0
-X-Priority: 3
-X-Mailer: Supmailer 38.1.1
-X-Spam-Score: 8.1 (++++++++)
+From: =?utf-8?B?44ix44OU44O844Ki44O844Or44O744OH44Kk44Oq44O85a6J56mN?=
+ <azumi@prdaily.jp>
+Message-Id: <20230704231800.58888FF3A8@clsend0342-mobengine.backend.sys.combz.jp>
+Date: Wed,  5 Jul 2023 08:17:34 +0900 (JST)
+X-Spam-Score: 3.2 (+++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  ※※※三井住友カード重要なお知らせ※※※
-    受付日時：7/4/2023 平素、「三井住友カード」をご利用いただきまして誠にありがとうございます。
-    「三井住友カード」 会員様、弊社にお預かりする「クレジットカードのお客様情報」は正確な情報ではないため、
-    弊社では、クレジットカード会社 [...] 
+ Content preview:  採用ご担当者様突然のご連絡失礼いたします。ピーアール・デイリーの安積と申します。&nbsp;弊社は、求人広告の代理店のものでして、お得情報を�
+    [...] 
  
- Content analysis details:   (8.1 points, 6.0 required)
+ Content analysis details:   (3.2 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: yahaha.mobi]
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
-                             blocklist
-                             [URIs: yahaha.mobi]
-  1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
-                             [URIs: yahaha.mobi]
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
  -0.0 SPF_PASS               SPF: sender matches SPF record
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
-  0.1 HTTPS_HTTP_MISMATCH    BODY: No description available.
-  1.3 HTML_IMAGE_ONLY_24     BODY: HTML: images with 2000-2400 bytes of
-                             words
+  0.0 HTML_OBFUSCATE_05_10   BODY: Message is 5% to 10% HTML obfuscation
   0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
   0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
                              valid
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
-  2.0 PYZOR_CHECK            Listed in Pyzor
-                             (https://pyzor.readthedocs.io/en/latest/)
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-  0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
+  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-  0.0 T_REMOTE_IMAGE         Message contains an external image
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1qGWhe-005KR9-7h
-Subject: [Osst-users] =?utf-8?b?W1NQQU1dIOOAkOmHjeimgeOAkeS4ieS6leS9jw==?=
- =?utf-8?b?5Y+L44Kr44O844OJ44GK5a6i5qeY5oOF5aCx44Gu56K66KqN?=
+  2.8 URI_GOOGLE_PROXY       Accessing a blacklisted URI or obscuring source
+                              of phish via Google proxy?
+X-Headers-End: 1qGpY1-0004EG-VK
+Subject: Re: [Osst-users] 
+ =?utf-8?b?4piF4piG4piF54m55Yil44Kt44Oj44Oz44Oa44O8?=
+ =?utf-8?b?44Oz4piF4piG4piFIOOAkDcvMTQgMTfmmYLjgb7jgafjga7lvqHnlLPovrw=?=
+ =?utf-8?b?6ZmQ5a6a77yB44CR44OU44O844Ki44O844Or44O744OH44Kk44Oq44O85a6J?=
+ =?utf-8?b?56mN?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -115,109 +98,318 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: =?utf-8?B?5LiJ5LqV5L2P5Y+L44Kr44O844OJ5qCq5byP5Lya56S+?= via Osst-users
- <osst-users@lists.sourceforge.net>
-Reply-To: =?utf-8?B?5LiJ5LqV5L2P5Y+L44Kr44O844OJ5qCq5byP5Lya56S+?=
- <info.smbc-card.com@metaplanning.co>
-Content-Type: multipart/mixed; boundary="===============6797394016894241540=="
+Content-Type: multipart/mixed; boundary="===============4603618050382826501=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
 
---===============6797394016894241540==
-Content-Type: multipart/alternative;
-	boundary="----=_001_a4e41945518fc191_=----"
-
-This is a multi-part message in MIME format.
-
-------=_001_a4e41945518fc191_=----
-Content-Type: text/plain;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-IA0KDQoNCuKAu+KAu+KAu+S4ieS6leS9j+WPi+OCq+ODvOODiemHjeimgeOBquOBiuefpeOCieOB
-m+KAu+KAu+KAuw0K5Y+X5LuY5pel5pmC77yaNy80LzIwMjMNCuW5s+e0oOOAgeOAjOS4ieS6leS9
-j+WPi+OCq+ODvOODieOAjeOCkuOBlOWIqeeUqOOBhOOBn+OBoOOBjeOBvuOBl+OBpuiqoOOBq+OB
-guOCiuOBjOOBqOOBhuOBlOOBluOBhOOBvuOBmeOAgg0KDQrjgIzkuInkupXkvY/lj4vjgqvjg7zj
-g4njgI0g5Lya5ZOh5qeY44CB5byK56S+44Gr44GK6aCQ44GL44KK44GZ44KL44CM44Kv44Os44K4
-44OD44OI44Kr44O844OJ44Gu44GK5a6i5qeY5oOF5aCx44CN44Gv5q2j56K644Gq5oOF5aCx44Gn
-44Gv44Gq44GE44Gf44KB44CBDQrlvIrnpL7jgafjga/jgIHjgq/jg6zjgrjjg4Pjg4jjgqvjg7zj
-g4nkvJrnpL7jgoTpioDooYzjga7msbrmuIjopo/liYfjgavln7rjgaXjgY3jgIHopoHku7bjgpLm
-uoDjgZ/jgZfjgabjgYTjgarjgYTjgYrlrqLmp5jjgavlr77jgZfjgabliLbpmZDmjqrnva7jgpLj
-gZXjgZvjgabpoILjgY3jgb7jgZnjgIINCuOBlOWIqeeUqOOBq+aUr+manOOCkuOBjeOBn+OBleOB
-quOBhOOCiOOBhuOAgeOBiuaXqeOCgeOBq+S4i+iomOOBruODquODs+OCr+OCkuOCr+ODquODg+OC
-r+OBl+OBpuOAgeato+OBl+OBhOaDheWgseOCkuOBlOiomOWFpeOBj+OBoOOBleOBhOOAgg0KDQrj
-gZPjgZPjgYvjgonjg63jgrDjgqTjg7PjgZfjgIHnlLvpnaLjga7mjIfnpLrjgavlvpPjgaPjgabj
-gY/jgaDjgZXjgYTjgIINCg0KaHR0cHM6Ly93d3cuc21iYy1jYXJkLmNvbS9pbmRleC5qc3ANCg0K
-44GT44Gu6ZaT44CB44GU6L+35oOR44KS44GK44GL44GR44GX44G+44GZ44GM44GU5a656LWm44GP
-44Gg44GV44GE44CCDQrigLvlpInmm7TlvozjgIE0OOaZgumWk+S7peWGheOBq+eZuuWKueOBmeOC
-i+W/heimgeOBjOOBguOCiuOAgeacn+mWk+S4reOBr+S9v+eUqOOBp+OBjeOBvuOBm+OCk+OAgg0K
-4oC744Kr44O844OJ44Gu5YCL5Lq65oOF5aCx44Gr44KI44Gj44Gm44Gv6Zu76Kmx44Gn6YCj57Wh
-44GZ44KL5aC05ZCI44KC44GU44GW44GE44G+44GZ44CCDQrigLvmraPnorrjgarmg4XloLHjga/l
-v4XjgZroqJjlhaXjgZfjgabjgY/jgaDjgZXjgYTjgIINCg0KDQoNCuS4ieS6leS9j+WPi+OCq+OD
-vOODieagquW8j+S8muekvg0KDQpDb3B5cmlnaHQgKEMpIDIwMjMgU3VtaXRvbW8gTWl0c3VpIENh
-cmQgQ28uLCBMdGQuIA0K
-
-------=_001_a4e41945518fc191_=----
-Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
-Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
-bnQ9Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWT48SU1HIHN0eWxlPSJI
-RUlHSFQ6IDQwcHg7IFdJRFRIOiAyOTJweCIgYm9yZGVyPTAgaHNwYWNlPTAgDQphbHQ944CQ6YeN
-6KaB44CR44Kr44O844OJ5Yip55So44Gu5LiA5pmC5Yi26ZmQ44Gr44Gk44GE44Gm44Gu44GK55+l
-44KJ44GbIA0Kc3JjPSJodHRwczovL3d3dy5zbWJjLWNhcmQuY29tL21lbS9jYXJkaW5mby9tYWls
-bWFnYS9jb21tb24vaW1nLzIxMTExMC83NjhfaGVhZGVyXzAxLnBuZyIgDQphbGlnbj1iYXNlbGlu
-ZT4gDQo8UCANCnN0eWxlPSJCT1JERVItVE9QOiByZ2IoNjUsMTE3LDUpIDVweCBzb2xpZDsgRk9O
-VC1GQU1JTFk6IFVidW50dSwgSGVsdmV0aWNhLCBBcmlhbDsgV0lEVEg6IDEwMCU7IE1BUkdJTjog
-MHB4IGF1dG8iPjwvUD48U1BBTiANCnN0eWxlPSJGT05ULUZBTUlMWTogTWVpcnlvIj4NCjxQPuKA
-u+KAu+KAu+S4ieS6leS9j+WPi+OCq+ODvOODiemHjeimgeOBquOBiuefpeOCieOBm+KAu+KAu+KA
-uzxCUj7lj5fku5jml6XmmYLvvJo3LzQvMjAyMzxCUj7lubPntKDjgIHjgIzkuInkupXkvY/lj4vj
-gqvjg7zjg4njgI3jgpLjgZTliKnnlKjjgYTjgZ/jgaDjgY3jgb7jgZfjgaboqqDjgavjgYLjgorj
-gYzjgajjgYbjgZTjgZbjgYTjgb7jgZnjgII8L1A+DQo8UD7jgIzkuInkupXkvY/lj4vjgqvjg7zj
-g4njgI0gDQrkvJrlk6Hmp5jjgIHlvIrnpL7jgavjgYrpoJDjgYvjgorjgZnjgovjgIzjgq/jg6zj
-grjjg4Pjg4jjgqvjg7zjg4njga7jgYrlrqLmp5jmg4XloLHjgI3jga/mraPnorrjgarmg4XloLHj
-gafjga/jgarjgYTjgZ/jgoHjgIE8QlI+5byK56S+44Gn44Gv44CB44Kv44Os44K444OD44OI44Kr
-44O844OJ5Lya56S+44KE6YqA6KGM44Gu5rG65riI6KaP5YmH44Gr5Z+644Gl44GN44CB6KaB5Lu2
-44KS5rqA44Gf44GX44Gm44GE44Gq44GE44GK5a6i5qeY44Gr5a++44GX44Gm5Yi26ZmQ5o6q572u
-44KS44GV44Gb44Gm6aCC44GN44G+44GZ44CCPEJSPuOBlOWIqeeUqOOBq+aUr+manOOCkuOBjeOB
-n+OBleOBquOBhOOCiOOBhuOAgeOBiuaXqeOCgeOBq+S4i+iomOOBruODquODs+OCr+OCkuOCr+OD
-quODg+OCr+OBl+OBpuOAgeato+OBl+OBhOaDheWgseOCkuOBlOiomOWFpeOBj+OBoOOBleOBhOOA
-gjwvUD4NCjxQPuOBk+OBk+OBi+OCieODreOCsOOCpOODs+OBl+OAgeeUu+mdouOBruaMh+ekuuOB
-q+W+k+OBo+OBpuOBj+OBoOOBleOBhOOAgjwvUD4NCjxQPjxBIGhyZWY9Imh0dHBzOi8vYWNjb3V0
-LXVwZGF0ZS1zbWJhLmpwLnlhaGFoYS5tb2JpIj5odHRwczovL3d3dy5zbWJjLWNhcmQuY29tL2lu
-ZGV4LmpzcDwvQT48L1A+DQo8UD7jgZPjga7plpPjgIHjgZTov7fmg5HjgpLjgYrjgYvjgZHjgZfj
-gb7jgZnjgYzjgZTlrrnotabjgY/jgaDjgZXjgYTjgII8QlI+4oC75aSJ5pu05b6M44CBNDjmmYLp
-lpPku6XlhoXjgavnmbrlirnjgZnjgovlv4XopoHjgYzjgYLjgorjgIHmnJ/plpPkuK3jga/kvb/n
-lKjjgafjgY3jgb7jgZvjgpPjgII8QlI+4oC744Kr44O844OJ44Gu5YCL5Lq65oOF5aCx44Gr44KI
-44Gj44Gm44Gv6Zu76Kmx44Gn6YCj57Wh44GZ44KL5aC05ZCI44KC44GU44GW44GE44G+44GZ44CC
-PEJSPuKAu+ato+eiuuOBquaDheWgseOBr+W/heOBmuiomOWFpeOBl+OBpuOBj+OBoOOBleOBhOOA
-gjwvU1BBTj48L1A+DQo8UCANCnN0eWxlPSJCT1JERVItVE9QOiByZ2IoNjUsMTE3LDUpIDVweCBz
-b2xpZDsgRk9OVC1GQU1JTFk6IFVidW50dSwgSGVsdmV0aWNhLCBBcmlhbDsgV0lEVEg6IDEwMCU7
-IE1BUkdJTjogMHB4IGF1dG8iPjwvUD4NCjxQIA0Kc3R5bGU9IkZPTlQtU0laRTogMTFweDsgRk9O
-VC1GQU1JTFk6IFVidW50dSwgSGVsdmV0aWNhLCBBcmlhbDsgVEVYVC1BTElHTjogY2VudGVyIj48
-U1BBTiANCnN0eWxlPSJGT05ULVNJWkU6IDE1cHgiPjxTVFJPTkc+PFNQQU4gDQpzdHlsZT0iQ09M
-T1I6IHJnYigyLDg4LDcwKSI+5LiJ5LqV5L2P5Y+L44Kr44O844OJ5qCq5byP5Lya56S+PC9TUEFO
-PjwvU1RST05HPjwvU1BBTj48L1A+DQo8UCANCnN0eWxlPSJGT05ULVNJWkU6IDExcHg7IEZPTlQt
-RkFNSUxZOiBVYnVudHUsIEhlbHZldGljYSwgQXJpYWw7IFRFWFQtQUxJR046IGNlbnRlciI+PFNQ
-QU4gDQpzdHlsZT0iRk9OVC1TSVpFOiAxNHB4Ij5Db3B5cmlnaHQgKEMpIDIwMjMgU3VtaXRvbW8g
-TWl0c3VpIENhcmQgQ28uLCANCkx0ZC4mbmJzcDs8L1NQQU4+PC9QPjwvQk9EWT48L0hUTUw+DQo=
-
-------=_001_a4e41945518fc191_=------
+--===============4603618050382826501==
+Content-Type: multipart/related; boundary="91b3adbdee95d1b1fe491"
 
 
+--91b3adbdee95d1b1fe491
+Content-Type: multipart/alternative; boundary="aefe522d42a7e69513be9"
 
---===============6797394016894241540==
+--aefe522d42a7e69513be9
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+採用ご担当者様突然のご連絡失礼いたします。ピーアール・デイリーの安積と申します。&nbsp;弊社は、求人広告の代理店のものでして、お得情報を共有させて頂ければとご連絡させていただきました。表題内容は・・・今回、7月14日（金）17時までの御申込限定で、業界屈指の知名度を誇る「doda」に12週間&nbsp;28万円&nbsp;※税別（※通常実施価格&nbsp;120万円）でご掲載頂けるキャンペーンを実施しております。
+
+▼【doda/B 企画】&nbsp;※このサイズに約 3 ヶ月掲載できますhttps://www.saiyo-doda.jp/service/careers/plan上記のような感じで、ご掲載ができます。&nbsp;★★★&nbsp;★原稿取材ライターが付きます！★ご掲載後のフォローを致します！(原稿修正・ターゲットメール配信など代行します)&nbsp;★★★&nbsp;◆キャンペーン適用条件◆現在掲載中、お申し込み中の企業様には適応できませんので、ご了承頂ければ幸いです。前回終了から直近の企業様には適用できません。詳しくはお問い合わせくださいませ。&nbsp;◆御申込締切　　7/14（金）17：00まで。&nbsp;急な情報で、お時間が無い中、申し訳ありませんが・・・とてもお得なキャンペーンですので、ぜひご検討いただければと思います。&nbsp;ご不明な点などございましたら、私、安積までご連絡いただ
+ けますと幸いです。何卒、よろしくお願いいたします。&nbsp;追伸：複数職種キャンペーンや年間チケットキャンペーン100なども大好評につきご継続しております！&nbsp;★【特典】本メールは、オプションプレゼント保証もしております★（限定枠のため設置は優先順位）もしご興味ございましたら、詳細のご提案のお時間を頂戴できますと幸いです。求人マーケットの情報データも多数ございますのでお気軽にご連絡ください。&nbsp;-----------------------------------------------------------------------------------------------メールマガジンの配信停止ご希望の方は、お手数ですが下記URLからお手続きを頂くか、こちらのメールに対し、停止するメールアドレスが分かる形でご返信下さい。＜配信停止URL＞&nbsp;https://plus.combz.jp/connectFromMail/regist/wwuc4463----------
+ ------------------------------------------------------------------------------------
+
+■■■□□□□□□□□□□□□□□□□□□□□Public Relations&nbsp;Daily Co.,Ltd　株式会社ピーアールデイリー営業担当：安積陵（メディア事業部）♢弊社URL：https://www.prdaily.jp/♢弊社グループURL：https://www.dac-group.co.jp/♢mail：azumi@prdaily.jp♢tel：090-7186-0787
+♢〒650-0037
+　兵庫県神戸市中央区明石町32　明海ビル5F※不在時は078-326-2031までお願いします。
+Public Relations Daily Co.,Ltd□□□□□□□□□□□□□□□□□□□□■■■
+
+--aefe522d42a7e69513be9
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E6=8E=A1=E7=94=A8=E3=81=94=E6=8B=85=E5=BD=93=E8=80=85=E6=A7=98</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E7=AA=81=E7=84=B6=E3=81=AE=E3=81=94=E9=80=A3=E7=B5=A1=E5=A4=B1=E7=A4=BC=E3=
+=81=84=E3=81=9F=E3=81=97=E3=81=BE=E3=81=99=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E3=83=94=E3=83=BC=E3=82=A2=E3=83=BC=E3=83=AB=E3=83=BB=E3=83=87=E3=82=A4=E3=
+=83=AA=E3=83=BC=E3=81=AE=E5=AE=89=E7=A9=8D=E3=81=A8=E7=94=B3=E3=81=97=E3=81=
+=BE=E3=81=99=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E5=BC=8A=E7=A4=BE=E3=81=AF=E3=80=81=E6=B1=82=E4=BA=BA=E5=BA=83=E5=91=8A=E3=
+=81=AE=E4=BB=A3=E7=90=86=E5=BA=97=E3=81=AE=E3=82=82=E3=81=AE=E3=81=A7=E3=81=
+=97=E3=81=A6=E3=80=81</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E3=81=8A=E5=BE=97=E6=83=85=E5=A0=B1=E3=82=92=E5=85=B1=E6=9C=89=E3=81=95=E3=
+=81=9B=E3=81=A6=E9=A0=82=E3=81=91=E3=82=8C=E3=81=B0=E3=81=A8=E3=81=94=E9=80=
+=A3=E7=B5=A1=E3=81=95=E3=81=9B=E3=81=A6=E3=81=84=E3=81=9F=E3=81=A0=E3=81=8D=
+=E3=81=BE=E3=81=97=E3=81=9F=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><i=
+mg src=3D"https://ci3.googleusercontent.com/proxy/zW-J6oNbHiKNfx3FhG6SAkcso=
+4Pqb9sRrD4Pg89uFxK7N1bCXuRhOE9mfuAFsXMRQMXEa1OgA6EbVrTvyBPL5WwpktPB6OdZqQbF=
+_v_dIVbTtmUEHxI=3Ds0-d-e1-ft#https://storage.plus.combz.jp/file_api/wwuc446=
+3/202305/q4t6l0os.png" alt=3D"" width=3D"392" height=3D"157" /></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E8=A1=A8=E9=A1=8C=E5=86=85=E5=AE=B9=E3=81=AF=E3=83=BB=E3=83=BB=E3=83=BB</p=
+>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E4=BB=8A=E5=9B=9E=E3=80=817=E6=9C=8814=E6=97=A5=EF=BC=88=E9=87=91=EF=BC=89=
+17=E6=99=82=E3=81=BE=E3=81=A7=E3=81=AE=E5=BE=A1=E7=94=B3=E8=BE=BC=E9=99=90=
+=E5=AE=9A=E3=81=A7=E3=80=81</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E6=A5=AD=E7=95=8C=E5=B1=88=E6=8C=87=E3=81=AE=E7=9F=A5=E5=90=8D=E5=BA=A6=E3=
+=82=92=E8=AA=87=E3=82=8B=E3=80=8C<span lang=3D"EN-US" style=3D"color: #0000=
+ff;">doda</span>=E3=80=8D=E3=81=AB</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan style=3D"color: #ff0000;"><span style=3D"font-size: xx-large;"><span la=
+ng=3D"EN-US">12</span>=E9=80=B1=E9=96=93<span lang=3D"EN-US">&nbsp;28</span=
+>=E4=B8=87=E5=86=86</span><span style=3D"color: #000000;"><span lang=3D"EN-=
+US"><span style=3D"font-size: 14pt;">&nbsp;</span><span style=3D"font-size:=
+ xx-large;">=E2=80=BB</span></span><span style=3D"font-size: xx-large;">=E7=
+=A8=8E=E5=88=A5=EF=BC=88<span lang=3D"EN-US">=E2=80=BB</span>=E9=80=9A=E5=
+=B8=B8=E5=AE=9F=E6=96=BD=E4=BE=A1=E6=A0=BC<span lang=3D"EN-US">&nbsp;120</s=
+pan>=E4=B8=87=E5=86=86=EF=BC=89</span></span></span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E3=81=A7=E3=81=94=E6=8E=B2=E8=BC=89=E9=A0=82=E3=81=91=E3=82=8B=E3=82=AD=E3=
+=83=A3=E3=83=B3=E3=83=9A=E3=83=BC=E3=83=B3=E3=82=92=E5=AE=9F=E6=96=BD=E3=81=
+=97=E3=81=A6=E3=81=8A=E3=82=8A=E3=81=BE=E3=81=99=E3=80=82<br /><br /></p>
+<div style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;"=
+>=E2=96=BC=E3=80=90doda/B =E4=BC=81=E7=94=BB=E3=80=91&nbsp;</div>
+<div style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;"=
+>=E2=80=BB=E3=81=93=E3=81=AE=E3=82=B5=E3=82=A4=E3=82=BA=E3=81=AB=E7=B4=84 3=
+ =E3=83=B6=E6=9C=88=E6=8E=B2=E8=BC=89=E3=81=A7=E3=81=8D=E3=81=BE=E3=81=99</=
+div>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;">=
+<a style=3D"color: #1155cc;" href=3D"https://www.saiyo-doda.jp/service/care=
+ers/plan" target=3D"_blank" rel=3D"noopener" data-saferedirecturl=3D"https:=
+//www.google.com/url?q=3Dhttps://www.saiyo-doda.jp/service/careers/plan&amp=
+;source=3Dgmail&amp;ust=3D1687853054309000&amp;usg=3DAOvVaw1GScg-cLGXQLAViW=
+CLHTbX">https://www.saiyo-doda.jp/<wbr />service/careers/plan</a></span><br=
+ style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;" /><=
+span style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;"=
+>=E4=B8=8A=E8=A8=98=E3=81=AE=E3=82=88=E3=81=86=E3=81=AA=E6=84=9F=E3=81=98=
+=E3=81=A7=E3=80=81=E3=81=94=E6=8E=B2=E8=BC=89=E3=81=8C=E3=81=A7=E3=81=8D=E3=
+=81=BE=E3=81=99=E3=80=82</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E2=98=85=E2=98=85=E2=98=85</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan style=3D"color: #ff00ff;">=E2=98=85=E5=8E=9F=E7=A8=BF=E5=8F=96=E6=9D=90=
+=E3=83=A9=E3=82=A4=E3=82=BF=E3=83=BC=E3=81=8C=E4=BB=98=E3=81=8D=E3=81=BE=E3=
+=81=99=EF=BC=81</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan style=3D"color: #ff00ff;">=E2=98=85=E3=81=94=E6=8E=B2=E8=BC=89=E5=BE=8C=
+=E3=81=AE=E3=83=95=E3=82=A9=E3=83=AD=E3=83=BC=E3=82=92=E8=87=B4=E3=81=97=E3=
+=81=BE=E3=81=99=EF=BC=81<span lang=3D"EN-US">(</span>=E5=8E=9F=E7=A8=BF=E4=
+=BF=AE=E6=AD=A3=E3=83=BB<wbr />=E3=82=BF=E3=83=BC=E3=82=B2=E3=83=83=E3=83=
+=88=E3=83=A1=E3=83=BC=E3=83=AB=E9=85=8D=E4=BF=A1=E3=81=AA=E3=81=A9=E4=BB=A3=
+=E8=A1=8C=E3=81=97=E3=81=BE=E3=81=99</span><span lang=3D"EN-US"><span style=
+=3D"color: #ff00ff;">)</span></span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E2=98=85=E2=98=85=E2=98=85</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E2=97=86=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=83=BC=E3=83=B3=E9=81=A9=E7=
+=94=A8=E6=9D=A1=E4=BB=B6=E2=97=86</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E7=8F=BE=E5=9C=A8=E6=8E=B2=E8=BC=89=E4=B8=AD=E3=80=81=E3=81=8A=E7=94=B3=E3=
+=81=97=E8=BE=BC=E3=81=BF=E4=B8=AD=E3=81=AE=E4=BC=81=E6=A5=AD=E6=A7=98=E3=81=
+=AB=E3=81=AF=E9=81=A9=E5=BF=9C=E3=81=A7=E3=81=8D=E3=81=BE=E3=81=9B=E3=82=93=
+=E3=81=AE=E3=81=A7=E3=80=81</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E3=81=94=E4=BA=86=E6=89=BF=E9=A0=82=E3=81=91=E3=82=8C=E3=81=B0=E5=B9=B8=E3=
+=81=84=E3=81=A7=E3=81=99=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E5=89=8D=E5=9B=9E=E7=B5=82=E4=BA=86=E3=81=8B=E3=82=89=E7=9B=B4=E8=BF=91=E3=
+=81=AE=E4=BC=81=E6=A5=AD=E6=A7=98=E3=81=AB=E3=81=AF=E9=81=A9=E7=94=A8=E3=81=
+=A7=E3=81=8D=E3=81=BE=E3=81=9B=E3=82=93=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E8=A9=B3=E3=81=97=E3=81=8F=E3=81=AF=E3=81=8A=E5=95=8F=E3=81=84=E5=90=88=E3=
+=82=8F=E3=81=9B=E3=81=8F=E3=81=A0=E3=81=95=E3=81=84=E3=81=BE=E3=81=9B=E3=80=
+=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E2=97=86=E5=BE=A1=E7=94=B3=E8=BE=BC=E7=B7=A0=E5=88=87=E3=80=80=E3=80=807<s=
+pan lang=3D"EN-US">/14</span>=EF=BC=88=E9=87=91=EF=BC=8917=EF=BC=9A00=E3=81=
+=BE=E3=81=A7=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E6=80=A5=E3=81=AA=E6=83=85=E5=A0=B1=E3=81=A7=E3=80=81=E3=81=8A=E6=99=82=E9=
+=96=93=E3=81=8C=E7=84=A1=E3=81=84=E4=B8=AD=E3=80=81=E7=94=B3=E3=81=97=E8=A8=
+=B3=E3=81=82=E3=82=8A=E3=81=BE=E3=81=9B=E3=82=93=E3=81=8C=E3=83=BB=E3=83=BB=
+=E3=83=BB</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E3=81=A8=E3=81=A6=E3=82=82=E3=81=8A=E5=BE=97=E3=81=AA=E3=82=AD=E3=83=A3=E3=
+=83=B3=E3=83=9A=E3=83=BC=E3=83=B3=E3=81=A7=E3=81=99=E3=81=AE=E3=81=A7=E3=80=
+=81<wbr />=E3=81=9C=E3=81=B2=E3=81=94=E6=A4=9C=E8=A8=8E=E3=81=84=E3=81=9F=
+=E3=81=A0=E3=81=91=E3=82=8C=E3=81=B0=E3=81=A8=E6=80=9D=E3=81=84=E3=81=BE=E3=
+=81=99=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E3=81=94=E4=B8=8D=E6=98=8E=E3=81=AA=E7=82=B9=E3=81=AA=E3=81=A9=E3=81=94=E3=
+=81=96=E3=81=84=E3=81=BE=E3=81=97=E3=81=9F=E3=82=89=E3=80=81</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E7=A7=81=E3=80=81=E5=AE=89=E7=A9=8D=E3=81=BE=E3=81=A7=E3=81=94=E9=80=A3=E7=
+=B5=A1=E3=81=84=E3=81=9F=E3=81=A0=E3=81=91=E3=81=BE=E3=81=99=E3=81=A8=E5=B9=
+=B8=E3=81=84=E3=81=A7=E3=81=99=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E4=BD=95=E5=8D=92=E3=80=81=E3=82=88=E3=82=8D=E3=81=97=E3=81=8F=E3=81=8A=E9=
+=A1=98=E3=81=84=E3=81=84=E3=81=9F=E3=81=97=E3=81=BE=E3=81=99=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E8=BF=BD=E4=BC=B8=EF=BC=9A</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E8=A4=87=E6=95=B0=E8=81=B7=E7=A8=AE=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=
+=83=BC=E3=83=B3=E3=82=84=E5=B9=B4=E9=96=93=E3=83=81=E3=82=B1=E3=83=83=E3=83=
+=88=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=83=BC=E3=83=B3<span lang=3D"EN-U=
+S">100</span>=E3=81=AA=E3=81=A9=E3=82=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E5=A4=A7=E5=A5=BD=E8=A9=95=E3=81=AB=E3=81=A4=E3=81=8D=E3=81=94=E7=B6=99=E7=
+=B6=9A=E3=81=97=E3=81=A6=E3=81=8A=E3=82=8A=E3=81=BE=E3=81=99=EF=BC=81</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span></p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E2=98=85=E3=80=90=E7=89=B9=E5=85=B8=E3=80=91=E6=9C=AC=E3=83=A1=E3=83=BC=E3=
+=83=AB=E3=81=AF=E3=80=81<wbr />=E3=82=AA=E3=83=97=E3=82=B7=E3=83=A7=E3=83=
+=B3=E3=83=97=E3=83=AC=E3=82=BC=E3=83=B3=E3=83=88=E4=BF=9D=E8=A8=BC=E3=82=82=
+=E3=81=97=E3=81=A6=E3=81=8A=E3=82=8A=E3=81=BE=E3=81=99=E2=98=85</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=EF=BC=88=E9=99=90=E5=AE=9A=E6=9E=A0=E3=81=AE=E3=81=9F=E3=82=81=E8=A8=AD=E7=
+=BD=AE=E3=81=AF=E5=84=AA=E5=85=88=E9=A0=86=E4=BD=8D=EF=BC=89</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E3=82=82=E3=81=97=E3=81=94=E8=88=88=E5=91=B3=E3=81=94=E3=81=96=E3=81=84=E3=
+=81=BE=E3=81=97=E3=81=9F=E3=82=89=E3=80=81</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E8=A9=B3=E7=B4=B0=E3=81=AE=E3=81=94=E6=8F=90=E6=A1=88=E3=81=AE=E3=81=8A=E6=
+=99=82=E9=96=93=E3=82=92=E9=A0=82=E6=88=B4=E3=81=A7=E3=81=8D=E3=81=BE=E3=81=
+=99=E3=81=A8=E5=B9=B8=E3=81=84=E3=81=A7=E3=81=99=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E6=B1=82=E4=BA=BA=E3=83=9E=E3=83=BC=E3=82=B1=E3=83=83=E3=83=88=E3=81=AE=E6=
+=83=85=E5=A0=B1=E3=83=87=E3=83=BC=E3=82=BF=E3=82=82=E5=A4=9A=E6=95=B0=E3=81=
+=94=E3=81=96=E3=81=84=E3=81=BE=E3=81=99=E3=81=AE=E3=81=A7</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
+=E3=81=8A=E6=B0=97=E8=BB=BD=E3=81=AB=E3=81=94=E9=80=A3=E7=B5=A1=E3=81=8F=E3=
+=81=A0=E3=81=95=E3=81=84=E3=80=82</p>
+<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
+pan lang=3D"EN-US">&nbsp;</span>-----------------------------<wbr />-------=
+-----------------------<wbr />------------------------------<wbr />------</=
+p>
+<br style=3D"font-family: Meiryo; font-size: medium;" />
+<div style=3D"font-family: Meiryo; font-size: medium;">=E3=83=A1=E3=83=BC=
+=E3=83=AB=E3=83=9E=E3=82=AC=E3=82=B8=E3=83=B3=E3=81=AE=E9=85=8D=E4=BF=A1=E5=
+=81=9C=E6=AD=A2=E3=81=94=E5=B8=8C=E6=9C=9B=E3=81=AE=E6=96=B9=E3=81=AF=E3=80=
+=81</div>
+<div style=3D"font-family: Meiryo; font-size: medium;">=E3=81=8A=E6=89=8B=
+=E6=95=B0=E3=81=A7=E3=81=99=E3=81=8C=E4=B8=8B=E8=A8=98URL=E3=81=8B=E3=82=89=
+=E3=81=8A=E6=89=8B=E7=B6=9A=E3=81=8D=E3=82=92=E9=A0=82=E3=81=8F=E3=81=8B=E3=
+=80=81</div>
+<div style=3D"font-family: Meiryo; font-size: medium;">=E3=81=93=E3=81=A1=
+=E3=82=89=E3=81=AE=E3=83=A1=E3=83=BC=E3=83=AB=E3=81=AB=E5=AF=BE=E3=81=97=E3=
+=80=81<wbr />=E5=81=9C=E6=AD=A2=E3=81=99=E3=82=8B=E3=83=A1=E3=83=BC=E3=83=
+=AB=E3=82=A2=E3=83=89=E3=83=AC=E3=82=B9=E3=81=8C=E5=88=86=E3=81=8B=E3=82=8B=
+=E5=BD=A2=E3=81=A7=E3=81=94=E8=BF=94=E4=BF=A1=E4=B8=8B=E3=81=95=E3=81=84=E3=
+=80=82</div>
+<br style=3D"font-family: Meiryo; font-size: medium;" />
+<div style=3D"font-family: Meiryo; font-size: medium;"><strong>=EF=BC=9C=E9=
+=85=8D=E4=BF=A1=E5=81=9C=E6=AD=A2URL=EF=BC=9E</strong></div>
+<div style=3D"font-family: Meiryo; font-size: medium;">&nbsp;<a href=3D"htt=
+ps://plus.combz.jp/connectFromMail/regist/wwuc4463" target=3D"_blank" rel=
+=3D"noopener" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps:=
+//plus.combz.jp/connectFromMail/regist/wwuc4463&amp;source=3Dgmail&amp;ust=
+=3D1684803712213000&amp;usg=3DAOvVaw2clqNs92ZzwiIm0DBxHm9A">https://plus.co=
+mbz.jp/<wbr />connectFromMail/regist/<wbr />wwuc4463</a></div>
+<div style=3D"font-family: Meiryo; font-size: medium;">--------------------=
+----------<wbr />------------------------------<wbr />---------------------=
+---------<wbr />----<br /><br />
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
+color: #222222;"><span style=3D"color: #000000; font-family: arial, sans-se=
+rif;">=E2=96=A0=E2=96=A0=E2=96=A0=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=
+=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=
+=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1</span><span=
+ style=3D"color: #000000; font-family: arial, sans-serif; font-size: large;=
+"><span lang=3D"EN-US">Public Relations&nbsp;</span>Daily Co.,Ltd</span></d=
+iv>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
+color: #222222;">
+<p class=3D"MsoNormal" style=3D"color: #000000; font-family: Roboto, Roboto=
+Draft, Helvetica, Arial, sans-serif;"><img src=3D"cid:ii_kmwyz5zg0" alt=3D"=
+PRD=E3=83=AD=E3=82=B3=E3=82=99.png" width=3D"96" height=3D"37" data-surl=3D=
+"cid:ii_kmwyz5zg0" />=E3=80=80</p>
+<p class=3D"MsoNormal" style=3D"color: #000000; font-family: Roboto, Roboto=
+Draft, Helvetica, Arial, sans-serif;"><span style=3D"font-family: arial, sa=
+ns-serif;"><strong>=E6=A0=AA=E5=BC=8F=E4=BC=9A=E7=A4=BE=E3=83=94=E3=83=BC=
+=E3=82=A2=E3=83=BC=E3=83=AB=E3=83=87=E3=82=A4=E3=83=AA=E3=83=BC</strong></s=
+pan></p>
+</div>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
+color: #222222;"><strong>=E5=96=B6=E6=A5=AD=E6=8B=85=E5=BD=93=EF=BC=9A=E5=
+=AE=89=E7=A9=8D=E9=99=B5=EF=BC=88=E3=83=A1=E3=83=87=E3=82=A3=E3=82=A2=E4=BA=
+=8B=E6=A5=AD=E9=83=A8=EF=BC=89</strong></div>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
+color: #222222;"><strong>=E2=99=A2=E5=BC=8A=E7=A4=BEURL=EF=BC=9A<a href=3D"=
+https://www.prdaily.jp/" target=3D"_blank" rel=3D"noopener" data-saferedire=
+cturl=3D"https://www.google.com/url?q=3Dhttps://www.prdaily.jp/&amp;source=
+=3Dgmail&amp;ust=3D1684803712213000&amp;usg=3DAOvVaw2nGUMu_xjPi5vEzoKYz5KG"=
+>https://www.prdaily.jp/</a></strong></div>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
+color: #222222;"><strong>=E2=99=A2=E5=BC=8A=E7=A4=BE=E3=82=B0=E3=83=AB=E3=
+=83=BC=E3=83=97URL=EF=BC=9A<a href=3D"https://www.dac-group.co.jp/" target=
+=3D"_blank" rel=3D"noopener" data-saferedirecturl=3D"https://www.google.com=
+/url?q=3Dhttps://www.dac-group.co.jp/&amp;source=3Dgmail&amp;ust=3D16848037=
+12213000&amp;usg=3DAOvVaw1sUiTBRqIloQD_gWm0pJpe">https://www.dac-<wbr />gro=
+up.co.jp/</a></strong></div>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
+color: #222222;"><strong>=E2=99=A2mail=EF=BC=9A<a href=3D"mailto:azumi@prda=
+ily.jp" target=3D"_blank" rel=3D"noopener">azumi@prdaily.jp</a></strong></d=
+iv>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
+color: #222222;"><strong>=E2=99=A2tel=EF=BC=9A090-7186-0787<br /></strong><=
+strong>=E2=99=A2=E3=80=92650-0037<br /></strong><strong>=E3=80=80=E5=85=B5=
+=E5=BA=AB=E7=9C=8C=E7=A5=9E=E6=88=B8=E5=B8=82=E4=B8=AD=E5=A4=AE=E5=8C=BA=E6=
+=98=8E=E7=9F=B3=E7=94=BA32=E3=80=80=E6=98=8E=E6=B5=B7=E3=83=93=E3=83=AB5F</=
+strong></div>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
+color: #222222;"><u style=3D"font-family: arial, sans-serif;">=E2=80=BB=E4=
+=B8=8D=E5=9C=A8=E6=99=82=E3=81=AF<span style=3D"color: #000000;">078-326-20=
+31</span>=E3=81=BE=E3=81=A7=E3=81=8A=E9=A1=98=E3=81=84=E3=81=97=E3=81=BE=E3=
+=81=99=E3=80=82</u><strong><br /></strong></div>
+<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
+color: #222222;"><span style=3D"color: #000000; font-family: arial, sans-se=
+rif; font-size: large;">Public Relations Daily Co.,Ltd</span><span style=3D=
+"color: #000000; font-family: arial, sans-serif;">=E2=96=A1=E2=96=A1=E2=96=
+=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=
+=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=
+=96=A1=E2=96=A0=E2=96=A0=E2=96=A0</span></div>
+</div><img src=3D"https://i.r.cbz.jp/mo/pl/wwuc4463/19897/fgnl3j3t/" />
+
+--aefe522d42a7e69513be9--
+--91b3adbdee95d1b1fe491--
+
+
+
+--===============4603618050382826501==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6797394016894241540==
+--===============4603618050382826501==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -228,6 +420,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6797394016894241540==--
+--===============4603618050382826501==--
 
 
