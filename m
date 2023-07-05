@@ -2,91 +2,109 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 445F2747A6C
-	for <lists+osst-users@lfdr.de>; Wed,  5 Jul 2023 01:35:09 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 7B404747BC9
+	for <lists+osst-users@lfdr.de>; Wed,  5 Jul 2023 05:28:12 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1qGpY3-0002DC-7j
+	id 1qGtBZ-0005iF-R4
 	for lists+osst-users@lfdr.de;
-	Tue, 04 Jul 2023 23:35:08 +0000
+	Wed, 05 Jul 2023 03:28:10 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) (envelope-from
- <plsmgcl-wwuc4463-common-19897-4-20230705080025@puberr.backend.sys.combz.jp>)
- id 1qGpY2-0002D6-9G for osst-users@lists.sourceforge.net;
- Tue, 04 Jul 2023 23:35:07 +0000
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
+ (envelope-from <mailing@ml.officeparts.info>) id 1qGtBY-0005i9-Ba
+ for osst-users@lists.sourceforge.net; Wed, 05 Jul 2023 03:28:09 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:Content-Type:From:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Message-ID:Date:Content-Type:Subject:To:Reply-To:
+ From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=uIJfVWsUdGApt5wX0YvrA74KyZRmFrHJoayWoy+o60Y=; b=dxwVY+KXiJxGc4ynOUEOGccWkh
- 9x2ia2dtb7CaF5KrzGvQsvL7YJupkeo2uDkZGn44mdyIA4Q/p3TMCMayEgiIZtCj1Ladc+yxUIIHY
- KAC0eH8kFI1Y4AFYAAqThwRcsYX3tilfVmtr06VmzdQvo2dQFLMOq7PtXkDORGqEQdyY=;
+ bh=FtTSuNjwPdtEHHlYT4L7BukdHPGl3YsSFZwYFwtu/JQ=; b=YP+/E67WoU9kMulXBqsaKXEMyU
+ +63SgYBce7DbSP/nqVn2CGJQEhZ9eHpKO9Sn9CmR8HzATPJIQz/iJ+tyKedfInUE5QTJWhRnDRv6K
+ yJsyNGHBASkOh0qAfFpbC7tT+rNJjuL6AG57hZzh1MK/OnmlwJkXY/MBdm+CJv7iE2uo=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:Content-Type:From:MIME-Version:Subject:To:Sender:Reply-To
+ h=Message-ID:Date:Content-Type:Subject:To:Reply-To:From:MIME-Version:Sender
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=uIJfVWsUdGApt5wX0YvrA74KyZRmFrHJoayWoy+o60Y=; b=Y
- UrhlKzSOp5gbQEw7kSFCYSc5NWONUC9tS4w2U/YOFiuNJ25/LTCSj0s5JEl4ygQVNCkDX3i8veBX1
- F4kLYOGNT5KSlmzUA5PdfXJ+aSv1BgC4U7EY1Tv7/H6IXVyiaSztZ+xq7ZhWsbatFIgfoN0rEjNHn
- 4RrmJsesFkpCmNCA=;
-Received: from clsend0342-mobengine.backend.sys.combz.jp ([153.126.162.166])
+ List-Owner:List-Archive; bh=FtTSuNjwPdtEHHlYT4L7BukdHPGl3YsSFZwYFwtu/JQ=; b=L
+ gp2buygsFHoBebyFxhj4DX/6Jus8ny/sxgrevUrKMeUt8xAmMGCLC8fJqKV7WDqFJSqW2ml2/irHr
+ JCcQoYkL+So01BD6q9063M+9ClBGP2QTznBMvRfV9f2dOYpIvNl44HSELmb0IquuwWGFRAfw9hR1S
+ zy5GdlAwKvdaoLig=;
+Received: from ml011-b.dnshigh.com ([193.70.146.124])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1qGpY1-0004EG-VK for osst-users@lists.sourceforge.net;
- Tue, 04 Jul 2023 23:35:07 +0000
-Received: by clsend0342-mobengine.backend.sys.combz.jp (Postfix,
- from userid 500) id 58888FF3A8; Wed,  5 Jul 2023 08:17:34 +0900 (JST)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
- d=puberr.backend.sys.combz.jp; s=2022puberr-combz-jp; t=1688512680;
- bh=DC1ILETqYkZaGFBZBEPzbdEPR+YZA2awwhyuPgpFwVk=;
- h=To:Subject:From:Date:From;
- b=Uolm/Q1969BNbXlbHP9dnwm31xonG94CKG/+VN3gU2T/7HmeraN7pgjMNrsa1fnDQ
- SOcviQLPauiAiQKNtrYO3e5TuzwbrECmgI54eSOGaZdraZFHvrY1WvUmiWhSHQmoLY
- tKgnhVQxCIDMpzYa7dM6k/mVr6pKt9kGQBO38yw4=
-To: osst-users@lists.sourceforge.net
+ id 1qGtBY-0006wj-DW for osst-users@lists.sourceforge.net;
+ Wed, 05 Jul 2023 03:28:09 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=ml.officeparts.info; s=default; h=Message-ID:Date:Content-Type:Subject:To:
+ Reply-To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=FtTSuNjwPdtEHHlYT4L7BukdHPGl3YsSFZwYFwtu/JQ=; b=cenMfh725O6B6Hpgb31VbxJHvQ
+ 64+MzYXQ2L9XtunZ1MtCObCVh7TYC0rtSHL8/TJDErpobTj5n5vYimraNvwnK6rKq+ND91e7T0u3S
+ l6AhJM/U9wma4/LOCaVbEybikdsQr9XTaQNOamQGloeueP5czfDz8jMUjPD5CWTPrPjyRoqclZY68
+ xlGxUd1CFjikIK2D3tRrQnGe4pqlGvkNaF54djzHmW3kLJ6hV0fWx9p+rOEFB6Y7+4tbvINxMT7V+
+ xYfvxL7K7ewr1HKYbHvxlSrIL77u3/n5QjWk4YPItXDVs+6xZPpOrwz9mZXM0qd0iH1Xbj+SZdi5N
+ oWvOpXHQ==;
+Received: from host-79-56-124-195.retail.telecomitalia.it
+ ([79.56.124.195]:55196 helo=host-87-4-197-246.retail.telecomitalia.it)
+ by ml011.dnshigh.com with esmtpa (Exim 4.96)
+ (envelope-from <mailing@ml.officeparts.info>) id 1qGtBP-00AsdY-0M
+ for osst-users@lists.sourceforge.net; Wed, 05 Jul 2023 05:28:01 +0200
 MIME-Version: 1.0
-From: =?utf-8?B?44ix44OU44O844Ki44O844Or44O744OH44Kk44Oq44O85a6J56mN?=
- <azumi@prdaily.jp>
-Message-Id: <20230704231800.58888FF3A8@clsend0342-mobengine.backend.sys.combz.jp>
-Date: Wed,  5 Jul 2023 08:17:34 +0900 (JST)
-X-Spam-Score: 3.2 (+++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has NOT identified this incoming email as spam.  The original
+From: "Toner Compatibili" <mailing@ml.officeparts.info>
+To: osst-users@lists.sourceforge.net
+Date: Wed, 5 Jul 2023 05:28:05 +0200
+Message-ID: <3388233958856276058643@sendi-PC>
+X-AntiAbuse: This header was added to track abuse,
+ please include it with any abuse report
+X-AntiAbuse: Primary Hostname - ml011.dnshigh.com
+X-AntiAbuse: Original Domain - lists.sourceforge.net
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - ml.officeparts.info
+X-Get-Message-Sender-Via: ml011.dnshigh.com: authenticated_id:
+ mailing@ml.officeparts.info
+X-Authenticated-Sender: ml011.dnshigh.com: mailing@ml.officeparts.info
+X-Spam-Score: 7.1 (+++++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  採用ご担当者様突然のご連絡失礼いたします。ピーアール・デイリーの安積と申します。&nbsp;弊社は、求人広告の代理店のものでして、お得情報を�
-    [...] 
- 
- Content analysis details:   (3.2 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  Grazie alla nostra esperienza siamo in grado di offrirti i
+ migliori toner dal punto di vista della durata e qualita'. Garanzia
+ soddisfatti
+ o rimborsati ed offriamo possibilita' di pagamento alla consegna al corriere
+ senza costi aggiuntivi oppure se preferite con bonifico anticipato o carta.
+ Content analysis details:   (7.1 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
  -0.0 SPF_PASS               SPF: sender matches SPF record
-  0.0 HTML_OBFUSCATE_05_10   BODY: Message is 5% to 10% HTML obfuscation
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
-  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
- -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-  2.8 URI_GOOGLE_PROXY       Accessing a blacklisted URI or obscuring source
-                              of phish via Google proxy?
-X-Headers-End: 1qGpY1-0004EG-VK
-Subject: Re: [Osst-users] 
- =?utf-8?b?4piF4piG4piF54m55Yil44Kt44Oj44Oz44Oa44O8?=
- =?utf-8?b?44Oz4piF4piG4piFIOOAkDcvMTQgMTfmmYLjgb7jgafjga7lvqHnlLPovrw=?=
- =?utf-8?b?6ZmQ5a6a77yB44CR44OU44O844Ki44O844Or44O744OH44Kk44Oq44O85a6J?=
- =?utf-8?b?56mN?=
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 URIBL_RED              Contains an URL listed in the URIBL redlist
+ [URIs: officeparts.info]
+ 0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image
+ area 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.7 HTML_IMAGE_ONLY_28     BODY: HTML: images with 2400-2800 bytes of
+ words
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ 1.0 IMG_ONLY_FM_DOM_INFO   HTML image-only message from .info domain
+ 3.0 HOSTED_IMG_MULTI_PUB_01 Multiple hosted images at public site
+ 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Headers-End: 1qGtBY-0006wj-DW
+Subject: [Osst-users] Indicaci il modello della tua stampante e ti inviamo
+ un preventivo per i nostri toner compatibili a basso costo
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -98,318 +116,119 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============4603618050382826501=="
+Reply-To: tonergarantiti@gmail.com
+Content-Type: multipart/mixed; boundary="===============0582652690468106562=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 
---===============4603618050382826501==
-Content-Type: multipart/related; boundary="91b3adbdee95d1b1fe491"
+--===============0582652690468106562==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_5C7A_70A055D1.00437609"
 
 
---91b3adbdee95d1b1fe491
-Content-Type: multipart/alternative; boundary="aefe522d42a7e69513be9"
-
---aefe522d42a7e69513be9
-Content-Type: text/plain; charset="UTF-8"
-Content-Transfer-Encoding: 7bit
-
-採用ご担当者様突然のご連絡失礼いたします。ピーアール・デイリーの安積と申します。&nbsp;弊社は、求人広告の代理店のものでして、お得情報を共有させて頂ければとご連絡させていただきました。表題内容は・・・今回、7月14日（金）17時までの御申込限定で、業界屈指の知名度を誇る「doda」に12週間&nbsp;28万円&nbsp;※税別（※通常実施価格&nbsp;120万円）でご掲載頂けるキャンペーンを実施しております。
-
-▼【doda/B 企画】&nbsp;※このサイズに約 3 ヶ月掲載できますhttps://www.saiyo-doda.jp/service/careers/plan上記のような感じで、ご掲載ができます。&nbsp;★★★&nbsp;★原稿取材ライターが付きます！★ご掲載後のフォローを致します！(原稿修正・ターゲットメール配信など代行します)&nbsp;★★★&nbsp;◆キャンペーン適用条件◆現在掲載中、お申し込み中の企業様には適応できませんので、ご了承頂ければ幸いです。前回終了から直近の企業様には適用できません。詳しくはお問い合わせくださいませ。&nbsp;◆御申込締切　　7/14（金）17：00まで。&nbsp;急な情報で、お時間が無い中、申し訳ありませんが・・・とてもお得なキャンペーンですので、ぜひご検討いただければと思います。&nbsp;ご不明な点などございましたら、私、安積までご連絡いただ
- けますと幸いです。何卒、よろしくお願いいたします。&nbsp;追伸：複数職種キャンペーンや年間チケットキャンペーン100なども大好評につきご継続しております！&nbsp;★【特典】本メールは、オプションプレゼント保証もしております★（限定枠のため設置は優先順位）もしご興味ございましたら、詳細のご提案のお時間を頂戴できますと幸いです。求人マーケットの情報データも多数ございますのでお気軽にご連絡ください。&nbsp;-----------------------------------------------------------------------------------------------メールマガジンの配信停止ご希望の方は、お手数ですが下記URLからお手続きを頂くか、こちらのメールに対し、停止するメールアドレスが分かる形でご返信下さい。＜配信停止URL＞&nbsp;https://plus.combz.jp/connectFromMail/regist/wwuc4463----------
- ------------------------------------------------------------------------------------
-
-■■■□□□□□□□□□□□□□□□□□□□□Public Relations&nbsp;Daily Co.,Ltd　株式会社ピーアールデイリー営業担当：安積陵（メディア事業部）♢弊社URL：https://www.prdaily.jp/♢弊社グループURL：https://www.dac-group.co.jp/♢mail：azumi@prdaily.jp♢tel：090-7186-0787
-♢〒650-0037
-　兵庫県神戸市中央区明石町32　明海ビル5F※不在時は078-326-2031までお願いします。
-Public Relations Daily Co.,Ltd□□□□□□□□□□□□□□□□□□□□■■■
-
---aefe522d42a7e69513be9
-Content-Type: text/html; charset="UTF-8"
+------=_NextPart_001_5C7A_70A055D1.00437609
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
 
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E6=8E=A1=E7=94=A8=E3=81=94=E6=8B=85=E5=BD=93=E8=80=85=E6=A7=98</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E7=AA=81=E7=84=B6=E3=81=AE=E3=81=94=E9=80=A3=E7=B5=A1=E5=A4=B1=E7=A4=BC=E3=
-=81=84=E3=81=9F=E3=81=97=E3=81=BE=E3=81=99=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E3=83=94=E3=83=BC=E3=82=A2=E3=83=BC=E3=83=AB=E3=83=BB=E3=83=87=E3=82=A4=E3=
-=83=AA=E3=83=BC=E3=81=AE=E5=AE=89=E7=A9=8D=E3=81=A8=E7=94=B3=E3=81=97=E3=81=
-=BE=E3=81=99=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E5=BC=8A=E7=A4=BE=E3=81=AF=E3=80=81=E6=B1=82=E4=BA=BA=E5=BA=83=E5=91=8A=E3=
-=81=AE=E4=BB=A3=E7=90=86=E5=BA=97=E3=81=AE=E3=82=82=E3=81=AE=E3=81=A7=E3=81=
-=97=E3=81=A6=E3=80=81</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E3=81=8A=E5=BE=97=E6=83=85=E5=A0=B1=E3=82=92=E5=85=B1=E6=9C=89=E3=81=95=E3=
-=81=9B=E3=81=A6=E9=A0=82=E3=81=91=E3=82=8C=E3=81=B0=E3=81=A8=E3=81=94=E9=80=
-=A3=E7=B5=A1=E3=81=95=E3=81=9B=E3=81=A6=E3=81=84=E3=81=9F=E3=81=A0=E3=81=8D=
-=E3=81=BE=E3=81=97=E3=81=9F=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><i=
-mg src=3D"https://ci3.googleusercontent.com/proxy/zW-J6oNbHiKNfx3FhG6SAkcso=
-4Pqb9sRrD4Pg89uFxK7N1bCXuRhOE9mfuAFsXMRQMXEa1OgA6EbVrTvyBPL5WwpktPB6OdZqQbF=
-_v_dIVbTtmUEHxI=3Ds0-d-e1-ft#https://storage.plus.combz.jp/file_api/wwuc446=
-3/202305/q4t6l0os.png" alt=3D"" width=3D"392" height=3D"157" /></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E8=A1=A8=E9=A1=8C=E5=86=85=E5=AE=B9=E3=81=AF=E3=83=BB=E3=83=BB=E3=83=BB</p=
->
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E4=BB=8A=E5=9B=9E=E3=80=817=E6=9C=8814=E6=97=A5=EF=BC=88=E9=87=91=EF=BC=89=
-17=E6=99=82=E3=81=BE=E3=81=A7=E3=81=AE=E5=BE=A1=E7=94=B3=E8=BE=BC=E9=99=90=
-=E5=AE=9A=E3=81=A7=E3=80=81</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E6=A5=AD=E7=95=8C=E5=B1=88=E6=8C=87=E3=81=AE=E7=9F=A5=E5=90=8D=E5=BA=A6=E3=
-=82=92=E8=AA=87=E3=82=8B=E3=80=8C<span lang=3D"EN-US" style=3D"color: #0000=
-ff;">doda</span>=E3=80=8D=E3=81=AB</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan style=3D"color: #ff0000;"><span style=3D"font-size: xx-large;"><span la=
-ng=3D"EN-US">12</span>=E9=80=B1=E9=96=93<span lang=3D"EN-US">&nbsp;28</span=
->=E4=B8=87=E5=86=86</span><span style=3D"color: #000000;"><span lang=3D"EN-=
-US"><span style=3D"font-size: 14pt;">&nbsp;</span><span style=3D"font-size:=
- xx-large;">=E2=80=BB</span></span><span style=3D"font-size: xx-large;">=E7=
-=A8=8E=E5=88=A5=EF=BC=88<span lang=3D"EN-US">=E2=80=BB</span>=E9=80=9A=E5=
-=B8=B8=E5=AE=9F=E6=96=BD=E4=BE=A1=E6=A0=BC<span lang=3D"EN-US">&nbsp;120</s=
-pan>=E4=B8=87=E5=86=86=EF=BC=89</span></span></span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E3=81=A7=E3=81=94=E6=8E=B2=E8=BC=89=E9=A0=82=E3=81=91=E3=82=8B=E3=82=AD=E3=
-=83=A3=E3=83=B3=E3=83=9A=E3=83=BC=E3=83=B3=E3=82=92=E5=AE=9F=E6=96=BD=E3=81=
-=97=E3=81=A6=E3=81=8A=E3=82=8A=E3=81=BE=E3=81=99=E3=80=82<br /><br /></p>
-<div style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;"=
->=E2=96=BC=E3=80=90doda/B =E4=BC=81=E7=94=BB=E3=80=91&nbsp;</div>
-<div style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;"=
->=E2=80=BB=E3=81=93=E3=81=AE=E3=82=B5=E3=82=A4=E3=82=BA=E3=81=AB=E7=B4=84 3=
- =E3=83=B6=E6=9C=88=E6=8E=B2=E8=BC=89=E3=81=A7=E3=81=8D=E3=81=BE=E3=81=99</=
-div>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;">=
-<a style=3D"color: #1155cc;" href=3D"https://www.saiyo-doda.jp/service/care=
-ers/plan" target=3D"_blank" rel=3D"noopener" data-saferedirecturl=3D"https:=
-//www.google.com/url?q=3Dhttps://www.saiyo-doda.jp/service/careers/plan&amp=
-;source=3Dgmail&amp;ust=3D1687853054309000&amp;usg=3DAOvVaw1GScg-cLGXQLAViW=
-CLHTbX">https://www.saiyo-doda.jp/<wbr />service/careers/plan</a></span><br=
- style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;" /><=
-span style=3D"font-size: small; font-family: Arial, Helvetica, sans-serif;"=
->=E4=B8=8A=E8=A8=98=E3=81=AE=E3=82=88=E3=81=86=E3=81=AA=E6=84=9F=E3=81=98=
-=E3=81=A7=E3=80=81=E3=81=94=E6=8E=B2=E8=BC=89=E3=81=8C=E3=81=A7=E3=81=8D=E3=
-=81=BE=E3=81=99=E3=80=82</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E2=98=85=E2=98=85=E2=98=85</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan style=3D"color: #ff00ff;">=E2=98=85=E5=8E=9F=E7=A8=BF=E5=8F=96=E6=9D=90=
-=E3=83=A9=E3=82=A4=E3=82=BF=E3=83=BC=E3=81=8C=E4=BB=98=E3=81=8D=E3=81=BE=E3=
-=81=99=EF=BC=81</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan style=3D"color: #ff00ff;">=E2=98=85=E3=81=94=E6=8E=B2=E8=BC=89=E5=BE=8C=
-=E3=81=AE=E3=83=95=E3=82=A9=E3=83=AD=E3=83=BC=E3=82=92=E8=87=B4=E3=81=97=E3=
-=81=BE=E3=81=99=EF=BC=81<span lang=3D"EN-US">(</span>=E5=8E=9F=E7=A8=BF=E4=
-=BF=AE=E6=AD=A3=E3=83=BB<wbr />=E3=82=BF=E3=83=BC=E3=82=B2=E3=83=83=E3=83=
-=88=E3=83=A1=E3=83=BC=E3=83=AB=E9=85=8D=E4=BF=A1=E3=81=AA=E3=81=A9=E4=BB=A3=
-=E8=A1=8C=E3=81=97=E3=81=BE=E3=81=99</span><span lang=3D"EN-US"><span style=
-=3D"color: #ff00ff;">)</span></span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E2=98=85=E2=98=85=E2=98=85</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E2=97=86=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=83=BC=E3=83=B3=E9=81=A9=E7=
-=94=A8=E6=9D=A1=E4=BB=B6=E2=97=86</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E7=8F=BE=E5=9C=A8=E6=8E=B2=E8=BC=89=E4=B8=AD=E3=80=81=E3=81=8A=E7=94=B3=E3=
-=81=97=E8=BE=BC=E3=81=BF=E4=B8=AD=E3=81=AE=E4=BC=81=E6=A5=AD=E6=A7=98=E3=81=
-=AB=E3=81=AF=E9=81=A9=E5=BF=9C=E3=81=A7=E3=81=8D=E3=81=BE=E3=81=9B=E3=82=93=
-=E3=81=AE=E3=81=A7=E3=80=81</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E3=81=94=E4=BA=86=E6=89=BF=E9=A0=82=E3=81=91=E3=82=8C=E3=81=B0=E5=B9=B8=E3=
-=81=84=E3=81=A7=E3=81=99=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E5=89=8D=E5=9B=9E=E7=B5=82=E4=BA=86=E3=81=8B=E3=82=89=E7=9B=B4=E8=BF=91=E3=
-=81=AE=E4=BC=81=E6=A5=AD=E6=A7=98=E3=81=AB=E3=81=AF=E9=81=A9=E7=94=A8=E3=81=
-=A7=E3=81=8D=E3=81=BE=E3=81=9B=E3=82=93=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E8=A9=B3=E3=81=97=E3=81=8F=E3=81=AF=E3=81=8A=E5=95=8F=E3=81=84=E5=90=88=E3=
-=82=8F=E3=81=9B=E3=81=8F=E3=81=A0=E3=81=95=E3=81=84=E3=81=BE=E3=81=9B=E3=80=
-=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E2=97=86=E5=BE=A1=E7=94=B3=E8=BE=BC=E7=B7=A0=E5=88=87=E3=80=80=E3=80=807<s=
-pan lang=3D"EN-US">/14</span>=EF=BC=88=E9=87=91=EF=BC=8917=EF=BC=9A00=E3=81=
-=BE=E3=81=A7=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E6=80=A5=E3=81=AA=E6=83=85=E5=A0=B1=E3=81=A7=E3=80=81=E3=81=8A=E6=99=82=E9=
-=96=93=E3=81=8C=E7=84=A1=E3=81=84=E4=B8=AD=E3=80=81=E7=94=B3=E3=81=97=E8=A8=
-=B3=E3=81=82=E3=82=8A=E3=81=BE=E3=81=9B=E3=82=93=E3=81=8C=E3=83=BB=E3=83=BB=
-=E3=83=BB</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E3=81=A8=E3=81=A6=E3=82=82=E3=81=8A=E5=BE=97=E3=81=AA=E3=82=AD=E3=83=A3=E3=
-=83=B3=E3=83=9A=E3=83=BC=E3=83=B3=E3=81=A7=E3=81=99=E3=81=AE=E3=81=A7=E3=80=
-=81<wbr />=E3=81=9C=E3=81=B2=E3=81=94=E6=A4=9C=E8=A8=8E=E3=81=84=E3=81=9F=
-=E3=81=A0=E3=81=91=E3=82=8C=E3=81=B0=E3=81=A8=E6=80=9D=E3=81=84=E3=81=BE=E3=
-=81=99=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E3=81=94=E4=B8=8D=E6=98=8E=E3=81=AA=E7=82=B9=E3=81=AA=E3=81=A9=E3=81=94=E3=
-=81=96=E3=81=84=E3=81=BE=E3=81=97=E3=81=9F=E3=82=89=E3=80=81</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E7=A7=81=E3=80=81=E5=AE=89=E7=A9=8D=E3=81=BE=E3=81=A7=E3=81=94=E9=80=A3=E7=
-=B5=A1=E3=81=84=E3=81=9F=E3=81=A0=E3=81=91=E3=81=BE=E3=81=99=E3=81=A8=E5=B9=
-=B8=E3=81=84=E3=81=A7=E3=81=99=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E4=BD=95=E5=8D=92=E3=80=81=E3=82=88=E3=82=8D=E3=81=97=E3=81=8F=E3=81=8A=E9=
-=A1=98=E3=81=84=E3=81=84=E3=81=9F=E3=81=97=E3=81=BE=E3=81=99=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E8=BF=BD=E4=BC=B8=EF=BC=9A</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E8=A4=87=E6=95=B0=E8=81=B7=E7=A8=AE=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=
-=83=BC=E3=83=B3=E3=82=84=E5=B9=B4=E9=96=93=E3=83=81=E3=82=B1=E3=83=83=E3=83=
-=88=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=83=BC=E3=83=B3<span lang=3D"EN-U=
-S">100</span>=E3=81=AA=E3=81=A9=E3=82=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E5=A4=A7=E5=A5=BD=E8=A9=95=E3=81=AB=E3=81=A4=E3=81=8D=E3=81=94=E7=B6=99=E7=
-=B6=9A=E3=81=97=E3=81=A6=E3=81=8A=E3=82=8A=E3=81=BE=E3=81=99=EF=BC=81</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span></p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E2=98=85=E3=80=90=E7=89=B9=E5=85=B8=E3=80=91=E6=9C=AC=E3=83=A1=E3=83=BC=E3=
-=83=AB=E3=81=AF=E3=80=81<wbr />=E3=82=AA=E3=83=97=E3=82=B7=E3=83=A7=E3=83=
-=B3=E3=83=97=E3=83=AC=E3=82=BC=E3=83=B3=E3=83=88=E4=BF=9D=E8=A8=BC=E3=82=82=
-=E3=81=97=E3=81=A6=E3=81=8A=E3=82=8A=E3=81=BE=E3=81=99=E2=98=85</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=EF=BC=88=E9=99=90=E5=AE=9A=E6=9E=A0=E3=81=AE=E3=81=9F=E3=82=81=E8=A8=AD=E7=
-=BD=AE=E3=81=AF=E5=84=AA=E5=85=88=E9=A0=86=E4=BD=8D=EF=BC=89</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E3=82=82=E3=81=97=E3=81=94=E8=88=88=E5=91=B3=E3=81=94=E3=81=96=E3=81=84=E3=
-=81=BE=E3=81=97=E3=81=9F=E3=82=89=E3=80=81</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E8=A9=B3=E7=B4=B0=E3=81=AE=E3=81=94=E6=8F=90=E6=A1=88=E3=81=AE=E3=81=8A=E6=
-=99=82=E9=96=93=E3=82=92=E9=A0=82=E6=88=B4=E3=81=A7=E3=81=8D=E3=81=BE=E3=81=
-=99=E3=81=A8=E5=B9=B8=E3=81=84=E3=81=A7=E3=81=99=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E6=B1=82=E4=BA=BA=E3=83=9E=E3=83=BC=E3=82=B1=E3=83=83=E3=83=88=E3=81=AE=E6=
-=83=85=E5=A0=B1=E3=83=87=E3=83=BC=E3=82=BF=E3=82=82=E5=A4=9A=E6=95=B0=E3=81=
-=94=E3=81=96=E3=81=84=E3=81=BE=E3=81=99=E3=81=AE=E3=81=A7</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;">=
-=E3=81=8A=E6=B0=97=E8=BB=BD=E3=81=AB=E3=81=94=E9=80=A3=E7=B5=A1=E3=81=8F=E3=
-=81=A0=E3=81=95=E3=81=84=E3=80=82</p>
-<p class=3D"MsoNormal" style=3D"font-family: Meiryo; font-size: medium;"><s=
-pan lang=3D"EN-US">&nbsp;</span>-----------------------------<wbr />-------=
------------------------<wbr />------------------------------<wbr />------</=
-p>
-<br style=3D"font-family: Meiryo; font-size: medium;" />
-<div style=3D"font-family: Meiryo; font-size: medium;">=E3=83=A1=E3=83=BC=
-=E3=83=AB=E3=83=9E=E3=82=AC=E3=82=B8=E3=83=B3=E3=81=AE=E9=85=8D=E4=BF=A1=E5=
-=81=9C=E6=AD=A2=E3=81=94=E5=B8=8C=E6=9C=9B=E3=81=AE=E6=96=B9=E3=81=AF=E3=80=
-=81</div>
-<div style=3D"font-family: Meiryo; font-size: medium;">=E3=81=8A=E6=89=8B=
-=E6=95=B0=E3=81=A7=E3=81=99=E3=81=8C=E4=B8=8B=E8=A8=98URL=E3=81=8B=E3=82=89=
-=E3=81=8A=E6=89=8B=E7=B6=9A=E3=81=8D=E3=82=92=E9=A0=82=E3=81=8F=E3=81=8B=E3=
-=80=81</div>
-<div style=3D"font-family: Meiryo; font-size: medium;">=E3=81=93=E3=81=A1=
-=E3=82=89=E3=81=AE=E3=83=A1=E3=83=BC=E3=83=AB=E3=81=AB=E5=AF=BE=E3=81=97=E3=
-=80=81<wbr />=E5=81=9C=E6=AD=A2=E3=81=99=E3=82=8B=E3=83=A1=E3=83=BC=E3=83=
-=AB=E3=82=A2=E3=83=89=E3=83=AC=E3=82=B9=E3=81=8C=E5=88=86=E3=81=8B=E3=82=8B=
-=E5=BD=A2=E3=81=A7=E3=81=94=E8=BF=94=E4=BF=A1=E4=B8=8B=E3=81=95=E3=81=84=E3=
-=80=82</div>
-<br style=3D"font-family: Meiryo; font-size: medium;" />
-<div style=3D"font-family: Meiryo; font-size: medium;"><strong>=EF=BC=9C=E9=
-=85=8D=E4=BF=A1=E5=81=9C=E6=AD=A2URL=EF=BC=9E</strong></div>
-<div style=3D"font-family: Meiryo; font-size: medium;">&nbsp;<a href=3D"htt=
-ps://plus.combz.jp/connectFromMail/regist/wwuc4463" target=3D"_blank" rel=
-=3D"noopener" data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps:=
-//plus.combz.jp/connectFromMail/regist/wwuc4463&amp;source=3Dgmail&amp;ust=
-=3D1684803712213000&amp;usg=3DAOvVaw2clqNs92ZzwiIm0DBxHm9A">https://plus.co=
-mbz.jp/<wbr />connectFromMail/regist/<wbr />wwuc4463</a></div>
-<div style=3D"font-family: Meiryo; font-size: medium;">--------------------=
-----------<wbr />------------------------------<wbr />---------------------=
----------<wbr />----<br /><br />
-<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
-color: #222222;"><span style=3D"color: #000000; font-family: arial, sans-se=
-rif;">=E2=96=A0=E2=96=A0=E2=96=A0=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=
-=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=
-=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1</span><span=
- style=3D"color: #000000; font-family: arial, sans-serif; font-size: large;=
-"><span lang=3D"EN-US">Public Relations&nbsp;</span>Daily Co.,Ltd</span></d=
-iv>
-<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
-color: #222222;">
-<p class=3D"MsoNormal" style=3D"color: #000000; font-family: Roboto, Roboto=
-Draft, Helvetica, Arial, sans-serif;"><img src=3D"cid:ii_kmwyz5zg0" alt=3D"=
-PRD=E3=83=AD=E3=82=B3=E3=82=99.png" width=3D"96" height=3D"37" data-surl=3D=
-"cid:ii_kmwyz5zg0" />=E3=80=80</p>
-<p class=3D"MsoNormal" style=3D"color: #000000; font-family: Roboto, Roboto=
-Draft, Helvetica, Arial, sans-serif;"><span style=3D"font-family: arial, sa=
-ns-serif;"><strong>=E6=A0=AA=E5=BC=8F=E4=BC=9A=E7=A4=BE=E3=83=94=E3=83=BC=
-=E3=82=A2=E3=83=BC=E3=83=AB=E3=83=87=E3=82=A4=E3=83=AA=E3=83=BC</strong></s=
-pan></p>
-</div>
-<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
-color: #222222;"><strong>=E5=96=B6=E6=A5=AD=E6=8B=85=E5=BD=93=EF=BC=9A=E5=
-=AE=89=E7=A9=8D=E9=99=B5=EF=BC=88=E3=83=A1=E3=83=87=E3=82=A3=E3=82=A2=E4=BA=
-=8B=E6=A5=AD=E9=83=A8=EF=BC=89</strong></div>
-<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
-color: #222222;"><strong>=E2=99=A2=E5=BC=8A=E7=A4=BEURL=EF=BC=9A<a href=3D"=
-https://www.prdaily.jp/" target=3D"_blank" rel=3D"noopener" data-saferedire=
-cturl=3D"https://www.google.com/url?q=3Dhttps://www.prdaily.jp/&amp;source=
-=3Dgmail&amp;ust=3D1684803712213000&amp;usg=3DAOvVaw2nGUMu_xjPi5vEzoKYz5KG"=
->https://www.prdaily.jp/</a></strong></div>
-<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
-color: #222222;"><strong>=E2=99=A2=E5=BC=8A=E7=A4=BE=E3=82=B0=E3=83=AB=E3=
-=83=BC=E3=83=97URL=EF=BC=9A<a href=3D"https://www.dac-group.co.jp/" target=
-=3D"_blank" rel=3D"noopener" data-saferedirecturl=3D"https://www.google.com=
-/url?q=3Dhttps://www.dac-group.co.jp/&amp;source=3Dgmail&amp;ust=3D16848037=
-12213000&amp;usg=3DAOvVaw1sUiTBRqIloQD_gWm0pJpe">https://www.dac-<wbr />gro=
-up.co.jp/</a></strong></div>
-<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
-color: #222222;"><strong>=E2=99=A2mail=EF=BC=9A<a href=3D"mailto:azumi@prda=
-ily.jp" target=3D"_blank" rel=3D"noopener">azumi@prdaily.jp</a></strong></d=
-iv>
-<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
-color: #222222;"><strong>=E2=99=A2tel=EF=BC=9A090-7186-0787<br /></strong><=
-strong>=E2=99=A2=E3=80=92650-0037<br /></strong><strong>=E3=80=80=E5=85=B5=
-=E5=BA=AB=E7=9C=8C=E7=A5=9E=E6=88=B8=E5=B8=82=E4=B8=AD=E5=A4=AE=E5=8C=BA=E6=
-=98=8E=E7=9F=B3=E7=94=BA32=E3=80=80=E6=98=8E=E6=B5=B7=E3=83=93=E3=83=AB5F</=
-strong></div>
-<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
-color: #222222;"><u style=3D"font-family: arial, sans-serif;">=E2=80=BB=E4=
-=B8=8D=E5=9C=A8=E6=99=82=E3=81=AF<span style=3D"color: #000000;">078-326-20=
-31</span>=E3=81=BE=E3=81=A7=E3=81=8A=E9=A1=98=E3=81=84=E3=81=97=E3=81=BE=E3=
-=81=99=E3=80=82</u><strong><br /></strong></div>
-<div style=3D"font-family: Arial, Helvetica, sans-serif; font-size: small; =
-color: #222222;"><span style=3D"color: #000000; font-family: arial, sans-se=
-rif; font-size: large;">Public Relations Daily Co.,Ltd</span><span style=3D=
-"color: #000000; font-family: arial, sans-serif;">=E2=96=A1=E2=96=A1=E2=96=
-=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=
-=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=96=A1=E2=
-=96=A1=E2=96=A0=E2=96=A0=E2=96=A0</span></div>
-</div><img src=3D"https://i.r.cbz.jp/mo/pl/wwuc4463/19897/fgnl3j3t/" />
+=20
 
---aefe522d42a7e69513be9--
---91b3adbdee95d1b1fe491--
+=20
+
+Grazie alla nostra esperienza siamo in grado di offrirti i migliori toner d=
+al punto di vista della durata e qualita'.
+
+=20
+
+Garanzia soddisfatti o rimborsati ed offriamo possibilita' di pagamento all=
+a consegna al corriere senza costi aggiuntivi oppure se preferite con bonif=
+ico anticipato o carta.=20
+
+=20
+
+Rispondi a questa email indicando il modello della tua stampante, ti invier=
+emo un preventivo
+
+=20
+
+Puoi anche chiederci un preventivo inviando una email al nostro indirizzo: =
+tonergarantiti@gmail.com ti invieremo anche i nostri contatti e recensioni.
 
 
+=20
 
---===============4603618050382826501==
+=20
+
+Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
+desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
+premi qui ed invia per cancellarti
+
+=20
+
+
+------=_NextPart_001_5C7A_70A055D1.00437609
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<HEAD><TITLE></TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 8.00.7600.16385"></HEAD>
+<BODY>
+<TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+<TR>
+<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
+<P>&nbsp;</P>
+<TABLE style=3D"BORDER-BOTTOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-=
+LEFT: #808080 1px solid; MARGIN: 0px auto; WIDTH: 600px; FONT-FAMILY: 'Time=
+s New Roman', Times, serif; BORDER-TOP: #808080 1px solid; BORDER-RIGHT: #8=
+08080 1px solid" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D600>
+<TR>
+<TD style=3D"PADDING-BOTTOM: 25px; PADDING-LEFT: 25px; PADDING-RIGHT: 25px;=
+ FONT-FAMILY: 'Times New Roman', Times, serif; COLOR: #6e6d6d; FONT-SIZE: 1=
+8px; PADDING-TOP: 25px"><IMG border=3D0 hspace=3D0 src=3D"https://imgur.com=
+/u9RFYa9.jpg" width=3D650 height=3D294>=20
+<P>&nbsp;</P>
+<UL>
+<LI><FONT color=3D#000000 size=3D4><STRONG>Grazie alla nostra esperienza si=
+amo in grado di offrirti i migliori toner dal punto di vista della durata e=
+ qualita'.</STRONG></FONT>=20
+<P>&nbsp;</P>
+<LI><FONT color=3D#000000>Garanzia soddisfatti o rimborsati ed offriamo pos=
+sibilita' <FONT color=3D#000080>di pagamento alla consegna al corriere senz=
+a costi aggiuntivi</FONT> oppure se preferite con bonifico anticipato o car=
+ta.</FONT>&nbsp;=20
+<P>&nbsp;</P>
+<LI><A href=3D"mailto:tonergarantiti@gmail.com=3Fsubject=3Dpreventivo"><FON=
+T color=3D#ff0000 size=3D5><STRONG>Rispondi a questa email indicando il mod=
+ello della tua stampante, ti invieremo un preventivo</STRONG></FONT></A>=20
+<P>&nbsp;</P>
+<LI><FONT color=3D#000000>
+<P style=3D"TEXT-ALIGN: center; MARGIN: 0px; FONT-SIZE: 14px"><SPAN style=
+=3D"FONT-SIZE: 20px">Puoi anche chiederci un preventivo inviando una email =
+al nostro indirizzo: <A href=3D"mailto:tonergarantiti@gmail.com=3Fsubject=
+=3Dpreventivo">tonergarantiti@gmail.com</A>&nbsp;ti invieremo anche i nostr=
+i contatti e recensioni.</SPAN></P></FONT></LI></UL>
+<P>&nbsp;</P>
+<P align=3Dcenter><IMG style=3D"WIDTH: 600px; HEIGHT: 250px" border=3D2 hsp=
+ace=3D0 alt=3D"" src=3D"https://imgur.com/LuK0NCk.jpg" width=3D600 height=
+=3D250></P>
+<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
+vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
+ail con "cancellami" </FONT><A href=3D"mailto:tonergarantiti@gmail.com=3Fsu=
+bject=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancellart=
+i</FONT></A></TD></TR>
+<TR></TR></TABLE></TD></TR></TABLE>
+<P>&nbsp;</P></BODY>
+------=_NextPart_001_5C7A_70A055D1.00437609--
+
+
+--===============0582652690468106562==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4603618050382826501==
+--===============0582652690468106562==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -420,6 +239,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4603618050382826501==--
-
+--===============0582652690468106562==--
 
