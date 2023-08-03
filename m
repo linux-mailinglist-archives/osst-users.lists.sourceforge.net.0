@@ -2,77 +2,77 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 14AD076EF3E
-	for <lists+osst-users@lfdr.de>; Thu,  3 Aug 2023 18:17:11 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 7262A76EF40
+	for <lists+osst-users@lfdr.de>; Thu,  3 Aug 2023 18:17:13 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1qRb0f-0006YD-S0
+	id 1qRb0h-0004Ol-Rk
 	for lists+osst-users@lfdr.de;
-	Thu, 03 Aug 2023 16:17:09 +0000
+	Thu, 03 Aug 2023 16:17:12 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
  (envelope-from <valeria.perez@consultores-rh.com>)
- id 1qRb0d-0006Y7-Oo for osst-users@lists.sourceforge.net;
- Thu, 03 Aug 2023 16:17:07 +0000
+ id 1qRb0f-0004Oe-Ld for osst-users@lists.sourceforge.net;
+ Thu, 03 Aug 2023 16:17:10 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Date:List-Unsubscribe:Content-Transfer-Encoding:
  Content-Type:Mime-Version:Subject:Message-ID:To:From:Sender:Reply-To:Cc:
  Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
  Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
  List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=NE2nf3LL4X7OEJQjfbRmxSYBnS/wX6xbBq16yqCzkn0=; b=dcLZjSN5112exJZoPc610J5KFU
- 9kex+Pp5F7h1hMpsH1XbvOqsbF0383Jj5Uz+GXC0+LIja1fio66axupcU0rV++08VxNg/3GHyVCet
- IteTF5s8pT68xOvEinnNGarJy1zHpGn34pCWrlK99/kmReKzB7Dz50iQUSj0t9gu540I=;
+ bh=h74eapGQAcvq4lcHhs7dHadyw/1byDrW/aeXli/B3Hw=; b=YrRSaLZaXkI20ulGWdfX9V4YOG
+ 0zLzOiNZJCpp09xagNDmOkkAIMRncV6B1LUcNttMm33DkMm4EhUALlzTUuEbW37M0/Z3BnC6AfZWV
+ Y9KlZVPwC8L6nNE6yeyHFcFtZmPwn+n5sF6SJEg4aclB4eAuMMdXXkbL/iLd8cQo/HQA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Date:List-Unsubscribe:Content-Transfer-Encoding:Content-Type:Mime-Version
  :Subject:Message-ID:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description
  :Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
  In-Reply-To:References:List-Id:List-Help:List-Subscribe:List-Post:List-Owner:
- List-Archive; bh=NE2nf3LL4X7OEJQjfbRmxSYBnS/wX6xbBq16yqCzkn0=; b=k2pjZmV8T9Wn
- EjZgTIoh3NRFuAKKDlAtOnI4RQPpPiCn0hQC7sPsQoeH2NALBEWqdG/bD59A18/NMdpt5VIkNAQtE
- KOltzPjJkQ7d91uRxHvJHCXi32v1Ooc7vfZWC3HWOT47aSqrRK9MXAeHf6yFpoFudPO+Ez1NG59LL
- 7oc9E=;
+ List-Archive; bh=h74eapGQAcvq4lcHhs7dHadyw/1byDrW/aeXli/B3Hw=; b=mMphDQaxGTsq
+ 7Qv7yWoBYXH5iwD4frnMAPP49CAZrhEnLGKhKnSRn/PsVVlSMMqetWnT2Y0dKw+2yRH9AMnWb4GNK
+ I7VVPB90NfzZXahFT9nd9IN7ramQrW6XYqtWn47UqGUKopyqAyK9cnVrzRPnEkjYcDfjW5G6aqajG
+ 9wygk=;
 Received: from bednarwitting.r.mx-router-i.com ([212.192.13.57])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1qRb0c-0003VC-7f for osst-users@lists.sourceforge.net;
- Thu, 03 Aug 2023 16:17:07 +0000
+ id 1qRb0e-0003VC-K1 for osst-users@lists.sourceforge.net;
+ Thu, 03 Aug 2023 16:17:10 +0000
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=ipz2;
  d=consultores-rh.com; 
  h=From:To:Message-ID:Subject:Mime-Version:Content-Type:
  Content-Transfer-Encoding:List-Unsubscribe:List-Unsubscribe-Post:Date;
  i=valeria.perez@consultores-rh.com;
- bh=NE2nf3LL4X7OEJQjfbRmxSYBnS/wX6xbBq16yqCzkn0=;
- b=hdmx3jL0OWCookmhAN5eypXR16IpoGg4zgFNahiEX2YxJKVkgBqAJiJwBuHf+NoyIk82Jmg54RFZ
- K/QKDnDJwB/YOISSHa6lRGaA/wO10URB9balOzn5IDIYd71f9vzWHCkHeVGwrnoDowCurv1WX8tR
- E7syGwFH6MLwTL8n+q4ERx5ftRkcaPabi/cX3cJUpsgnkHfUDEzReQq4dDbdrInMg7ZUqh6Fysy8
- 3Xp9IxF8o0DGCltYJTASANst3tRy+vTaCBh4Ovf0mEoyL3NbRx5FysjQTVeBRdrkS8kzS5Nf53BB
- o8CSFw2cw+zttha4I/9awXgV/iuc5XblXm6KvQ==
+ bh=h74eapGQAcvq4lcHhs7dHadyw/1byDrW/aeXli/B3Hw=;
+ b=gmODs2GWWvuXxBZEKBr/XxsyeFkqlxOSW0QIhUbEkAwmDBxHuSeoBwn+9Q4J728hMdiJLzNJvIyN
+ wCLL68EKs0jZlpP36kBWXawnSl9FCNns1OtFoC93APsWla7qdOJQlIN44jxc1dHB3qaOhesYmIoV
+ o+Z1lBO69nVJ27HqVNJNthURw6lAFY99MbZcUg7qVn9s3q5PcCpf7d64nuWL8MYI2gcwRdyXt4ri
+ efEtg6zXsBztL7rav497JADm1kZINrEnCoJAl1n8v5+qEEVzCEth3YTC1zMDZQfWsDs5PNrosAqn
+ e8c6swU0gPPk6guIm6PokzoGwEu55YGH+o/Sgw==
 DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=ipzs2;
  d=mx-router-i.com; 
  h=From:To:Message-ID:Subject:Mime-Version:Content-Type:
  Content-Transfer-Encoding:List-Unsubscribe:List-Unsubscribe-Post:Date;
- bh=NE2nf3LL4X7OEJQjfbRmxSYBnS/wX6xbBq16yqCzkn0=;
- b=gPgzpqxZqyGKQyGL/db9eHNC0ZTGoZvYMLuZgD5D1DV+XuwNuDRbpJ9mZ0SPy98JvKbw43OQW85C
- cXL4GGg9fWIIg1UVfoe/EbpZvJWQH+ALv9U87UOYPQ0DwYJghw4HE6Q2jfmCu3HQH/1fACNqBDSb
- rrTSxMUcGnrW0Y9oIvgvjouvJyowvIYOyW4EtS/uJ1Tbey0YGMAgQzdslXgr/CB/Mh2/vpGqWulA
- bekZIJZe038AyPhe91iC813m+R2OSfSDi6qYWb8W1L1IsFa7Ao/7tkZETbBKdPWIkcPX061qW3OZ
- J9t/5aqlmBfDt+845ByvzwWfakVgcnjL3TAEog==
+ bh=h74eapGQAcvq4lcHhs7dHadyw/1byDrW/aeXli/B3Hw=;
+ b=suztX+thQUd3Si2ZwQDgMIe/xaL3Wwey8Om7qvONbnctU61DdOIAT4LpmjJTeP4uAn+qMpcUkW9X
+ jSaOda9D94HDUWf5hJINaSAJiK830cAEkj6RcZMojUFJ21Q/gSRaV5ztXRmBA99aUZ+qiatWToC7
+ RgKuQE3F1kiO0uVMNPyP7BglS1CXmuMhHyYLLDW49q2MCrWaxihrKN97ueD83X9kwit6CVMdaTNw
+ EDIl3eNtCMEoAPoF+0tMHv6P6h3bYDhUtCMY2/ufgIXfGMgSkPmvIIX8vbIHG3X9jFaGpfBHl9N2
+ iq+QrO/cBBddrGxaAVQI1O4hgSgHUAqjZofMoQ==
 From: =?UTF-8?B?VmFsZXJpYSBQw6lyZXo=?= <valeria.perez@consultores-rh.com>
 To: osst-users@lists.sourceforge.net
-Message-ID: <1_D8DKz06FKv4P@tr220505813.consultores-rh.com>
+Message-ID: <1_P8l60BjtDkep@tr220505813.consultores-rh.com>
 Mime-Version: 1.0
-X-SEID: 1_D8DKz06FKv4P
+X-SEID: 1_P8l60BjtDkep
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 X-Report-Abuse: Please report abuse for this campaign here:
- https://humansmart1.mx-router-i.com/abuse_reports/new?id=rooxm4dp&token=nwwbidis
+ https://humansmart1.mx-router-i.com/abuse_reports/new?id=eeen8zyn&token=mnwlkifz
 Feedback-ID: 287535:287535-4597:campaign:IPRPL
-Date: Thu, 3 Aug 2023 16:17:06 +0000
+Date: Thu, 3 Aug 2023 16:17:08 +0000
 X-Spam-Score: 7.9 (+++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
@@ -86,27 +86,28 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+                             [212.192.13.57 listed in zen.spamhaus.org]
+  0.3 RCVD_IN_MSPIKE_L3      RBL: Low reputation (-3)
+                             [212.192.13.57 listed in bl.mailspike.net]
   1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
                              bl.spamcop.net
                [Blocked - see <https://www.spamcop.net/bl.shtml?212.192.13.57>]
-  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [212.192.13.57 listed in zen.spamhaus.org]
  -0.0 SPF_PASS               SPF: sender matches SPF record
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.3 RCVD_IN_MSPIKE_L3      RBL: Low reputation (-3)
-                             [212.192.13.57 listed in bl.mailspike.net]
   0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
  -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
   0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
                              valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
   2.0 PYZOR_CHECK            Listed in Pyzor
                              (https://pyzor.readthedocs.io/en/latest/)
-  1.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
-X-Headers-End: 1qRb0c-0003VC-7f
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  1.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
+X-Headers-End: 1qRb0e-0003VC-K1
 Subject: [Osst-users] =?utf-8?q?=C2=A1Mejora_el_rendimiento_de_tu_equipo_c?=
  =?utf-8?q?on_Smart360!?=
 X-BeenThere: osst-users@lists.sourceforge.net
@@ -120,25 +121,25 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3806968264528246200=="
+Content-Type: multipart/mixed; boundary="===============2185427855056089801=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 
---===============3806968264528246200==
+--===============2185427855056089801==
 Content-Type: multipart/related;
- boundary="--==_mimepart_64cbd2fa40f38_13fa9fb88295031317033";
+ boundary="--==_mimepart_64cbd2fa5a990_13fa9fb8829503131724a";
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
 
-----==_mimepart_64cbd2fa40f38_13fa9fb88295031317033
+----==_mimepart_64cbd2fa5a990_13fa9fb8829503131724a
 Content-Type: multipart/alternative;
- boundary="--==_mimepart_64cbd2fa40d13_13fa9fb882950313169bf";
+ boundary="--==_mimepart_64cbd2fa5a76f_13fa9fb882950313171ac";
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
 
-----==_mimepart_64cbd2fa40d13_13fa9fb882950313169bf
+----==_mimepart_64cbd2fa5a76f_13fa9fb882950313171ac
 Content-Type: text/plain;
  charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
@@ -219,7 +220,7 @@ training@humansmart.com.mx?subject=3DBaja.&body=3DSolicito%20la%20baja%20=
 del%20bolet%C3%ADn%2C%20saludos.
 ) darse de baja del bolet=C3=ADn=
 
-----==_mimepart_64cbd2fa40d13_13fa9fb882950313169bf
+----==_mimepart_64cbd2fa5a76f_13fa9fb882950313171ac
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
@@ -457,14 +458,14 @@ pan lang=3D"ES" style=3D"color:black">=C2=A0darse de baja del bolet=C3=AD=
 n</span></p>
 <p></p>
 </div>
-<img src=3D"https://tr220505813.consultores-rh.com/i/rooxm4dp/nwwbidis.gi=
+<img src=3D"https://tr220505813.consultores-rh.com/i/eeen8zyn/mnwlkifz.gi=
 f" width=3D"1" height=3D"1" alt=3D"">
 </body>
 </html>
 
-----==_mimepart_64cbd2fa40d13_13fa9fb882950313169bf--
+----==_mimepart_64cbd2fa5a76f_13fa9fb882950313171ac--
 
-----==_mimepart_64cbd2fa40f38_13fa9fb88295031317033
+----==_mimepart_64cbd2fa5a990_13fa9fb8829503131724a
 Content-Type: image/png
 Content-Transfer-Encoding: base64
 Content-Disposition: inline;
@@ -928,17 +929,17 @@ oqE/S30MDQzygMG6tPLz+6bv0JMrc7dkk746+Y8Ar050Ullhs1hXGAzmu5+l
 Pu3at8/6Hs/l8/ghaFmXzqJ0ohOd6EQnOtGJTnSiE53oRCc60YlO/pPyPwEG
 ABvzhV1o1hOZAAAAAElFTkSuQmCCAA==
 
-----==_mimepart_64cbd2fa40f38_13fa9fb88295031317033--
+----==_mimepart_64cbd2fa5a990_13fa9fb8829503131724a--
 
 
---===============3806968264528246200==
+--===============2185427855056089801==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3806968264528246200==
+--===============2185427855056089801==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -949,5 +950,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3806968264528246200==--
+--===============2185427855056089801==--
 
