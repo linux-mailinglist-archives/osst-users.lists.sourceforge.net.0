@@ -2,84 +2,101 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6BDCE77FF58
-	for <lists+osst-users@lfdr.de>; Thu, 17 Aug 2023 22:54:47 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 4E29A7881A7
+	for <lists+osst-users@lfdr.de>; Fri, 25 Aug 2023 10:11:15 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1qWk10-0003Qk-6o
+	id 1qZRuR-0001Wn-Ir
 	for lists+osst-users@lfdr.de;
-	Thu, 17 Aug 2023 20:54:46 +0000
+	Fri, 25 Aug 2023 08:11:12 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <anonymous@s239.xrea.com>) id 1qWk0z-0003Qd-79
- for osst-users@lists.sourceforge.net; Thu, 17 Aug 2023 20:54:45 +0000
+ (envelope-from <michal.rmoutil@venturelinkbiz.com>)
+ id 1qZRuM-0001UI-KL for osst-users@lists.sourceforge.net;
+ Fri, 25 Aug 2023 08:11:07 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:From:To:Message-ID:Date:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Enla+M8K8O/nUWgtZH9DSK0T4OLUE4odgkbH8vR1+Y8=; b=hpUuVIEVh1GD6KtTFkls2jkfcg
- KZl61IvhNOmzXalmswijSdd6BA9qcjg5RvC9ARluhJtzEkQ9C2XVA5zx8T06ZNhsqwoy20H24Ekp/
- 1e3sgq8LBUfb+NzSCjt9EGWpiWHoaMZJXJUoZr+iMuLqyxBSls4pfvjHaXNdEVsfyKwY=;
+ bh=JBV4b8UUo1MSngn/QBoedt1Dv52bT8rWeq4R22MtJMs=; b=QhKic8TX/nOjI/sJYgSzKj4CzM
+ ymCFcJIu6UF2joED+s2TJGAwBqm6ODftwj8m+9xxWeH/sjhTzL5aNLQ2hEqhwjwaLplthvFwMs2Re
+ iWpJ+jaU0zCMbKVblUetjLA2wyslccvFKXev8emtxxa+pJqgHmjo7m+hyb5Kp1fjZBYQ=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:From:To:
- Message-ID:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Enla+M8K8O/nUWgtZH9DSK0T4OLUE4odgkbH8vR1+Y8=; b=j
- A0+cGNbNs7Grkfo7lzsE4ygOYVJgoD/G9HJ4yNQ5jD1JuYLuH9aZCIlj6ZTyGbymWPibE+Hywd1V1
- OlBmjVfjXTWzumA72CSuSwYkteQU0UDTC5KgfIhwoeaUEfAgttp8hfNGLmCrHNkVkZh8kzx/4Whmn
- ixRlUumAqp1II9js=;
-Received: from s239.xrea.com ([160.251.151.71])
- by sfi-mx-1.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.95)
- id 1qWk0v-008D6k-Au for osst-users@lists.sourceforge.net;
- Thu, 17 Aug 2023 20:54:45 +0000
-Received: (qmail 963380 invoked by uid 10464); 18 Aug 2023 05:54:25 +0900
-Date: 18 Aug 2023 05:54:25 +0900
-Message-ID: <20230817205425.963379.qmail@s239.xrea.com>
-To: osst-users@lists.sourceforge.net
-X-PHP-Originating-Script: 10464:chisom(1).php
+ List-Owner:List-Archive; bh=JBV4b8UUo1MSngn/QBoedt1Dv52bT8rWeq4R22MtJMs=; b=Z
+ wJO9eCegcQ4a/7Eih/2U/L280B7amJECxbStslHztCT3VXFGnc8HNXdTagYnIqTNgjjCFn2e0bmjh
+ GbTnTAChWr8WZRD+DWQLehPgNq8OgUxpxNChiM5+lC73egdPuDiv0p77tH/aTPy40KOoLIAytLUlc
+ ZDdF8pBAGjqPBMdk=;
+Received: from mail.venturelinkbiz.com ([51.195.119.142])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1qZRuI-0002DP-DP for osst-users@lists.sourceforge.net;
+ Fri, 25 Aug 2023 08:11:07 +0000
+Received: by mail.venturelinkbiz.com (Postfix, from userid 1002)
+ id E3D084720E; Fri, 25 Aug 2023 08:10:49 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=venturelinkbiz.com;
+ s=mail; t=1692951055;
+ bh=JBV4b8UUo1MSngn/QBoedt1Dv52bT8rWeq4R22MtJMs=;
+ h=Date:From:To:Subject:From;
+ b=gUgHrXEU6DsIC1NuH/FtIVmXn0RHb5pOtTCRkvszlN848GTrErzXtm1eDiodjS329
+ +CMhXDc3Xa1OTD8jNlG/Dyd4tmjSZDA7UbzrBQJXZo6GLbYAqaJmlCOQ+1Shx9KG7+
+ hOQksa/EortIds65j1/F82UdnzOWgjb1wn2Lqww0j21MgMsjE62JCrhq7gmA54QJAm
+ GBmeMd37is85pmGt0xzxj1EuCma/ws2mHe4x9uC+7YI6bjLujdYJtWnmkky0FDAmrU
+ MmvFxsSHkzLULPatByeLctj9VIWUQzJWJsYHM3h4AyUxYlPkLJCvOikysNJETSV8A/
+ 2r5YPCrO1Ey7g==
+Received: by mail.venturelinkbiz.com for <osst-users@lists.sourceforge.net>;
+ Fri, 25 Aug 2023 08:10:47 GMT
+Message-ID: <20230825064500-0.1.20.5d04.0.k269227a24@venturelinkbiz.com>
+Date: Fri, 25 Aug 2023 08:10:47 GMT
+To: <osst-users@lists.sourceforge.net>
+X-Mailer: mail.venturelinkbiz.com
 MIME-Version: 1.0
-X-Spam-Score: 8.6 (++++++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+X-Spam-Score: 5.9 (+++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
- @@CONTACT_ADDRESS@@ for details.
- Content preview: A new document has been shared with you. File:
- [CamScanner_file#:58791.xlsx] Preview document 
- Content analysis details:   (8.6 points, 6.0 required)
- pts rule name              description
+ the administrator of that system for details.
+ 
+ Content preview:  Dobré ráno, máte možnost sledovat stav každého stroje
+    a výrobního procesu z kanceláře, konferenční místnosti nebo dokonce
+    z domova či na cestách – na vašem telefonu? Poskytujeme rychle implementovatelný
+    a snadno použitelný nástroj, který zachytí i několikasekundový mikroprostoj
+    a okamžitě přepočítá využití stroje v kontextu dané výrobní zakázky
+    [...] 
+ 
+ Content analysis details:   (5.9 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [160.251.151.71 listed in dnsbl-1.uceprotect.net]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- 1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
- 1.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
- mail domains are different
+  2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+                             blocklist
+                             [URIs: venturelinkbiz.com]
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+                             [51.195.119.142 listed in zen.spamhaus.org]
+  0.1 URIBL_CSS_A            Contains URL's A record listed in the Spamhaus CSS
+                             blocklist
+                             [URIs: venturelinkbiz.com]
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
- identical to background
- 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
- 0.4 RCVD_IN_MSPIKE_L4      RBL: Bad reputation (-4)
- [160.251.151.71 listed in bl.mailspike.net]
- 1.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
- 1.0 RCVD_IN_MSPIKE_BL      Mailspike blacklisted
- 0.0 FROM_EXCESS_BASE64     From: base64 encoded unnecessarily
- 1.0 TO_NO_BRKTS_HTML_ONLY  To: lacks brackets and HTML only
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1qWk0v-008D6k-Au
-Subject: [Osst-users] [SPAM] Cargo //DO Document REF#08/12/2023
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+X-Headers-End: 1qZRuI-0002DP-DP
+Subject: [Osst-users] =?utf-8?b?RWZla3Rpdm7DrSBzbGVkb3bDoW7DrSBhIG9wdGlt?=
+ =?utf-8?q?alizace_v=C3=BDroby_pro_va=C5=A1i_spole=C4=8Dnost?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -91,73 +108,26 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: =?UTF-8?B?TGlzdHMgQ2xvdWQ=?= via Osst-users
- <osst-users@lists.sourceforge.net>
-Reply-To: =?UTF-8?B?TGlzdHMgQ2xvdWQ=?= <Cloud77039@lists.sourceforge.net>
-Content-Type: multipart/mixed; boundary="===============2128192058336393141=="
+From: Michal Rmoutil via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Michal Rmoutil <michal.rmoutil@venturelinkbiz.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============2128192058336393141==
-Content-Type: text/html; charset=UTF-8
-Content-Transfer-Encoding: 8BIT
-
- 
-
-
-
-  <html><head>
-
-<meta name="GENERATOR">
-
-</head>
-
-
-
-<body>
-
-<p>A new document has been shared with you.</p>
-
-
-
-<p>File:  <strong> [CamScanner_file#:58791.xlsx]</strong></p>
-
-
-
-<p> <a style="background: rgb(76, 100, 155); margin: 2px; padding: 10px; color: rgb(255, 255, 255);   text-decoration: none; float: left; display: block;" href=http://googleweblight.com/i?u=https://ringed-invincible-astronomy.glitch.me#osst-users@lists.sourceforge.net>
-
-        Preview document</a></p><br><br><br><br><br>
-
-
-
- 
-
-<br><p>Message!<br> <br>Please treat this file urgently so  we can have everything by Saturday<br><br>Best regards.
-
-</p></body></html>
-
-
-
-
-
-
-
-
---===============2128192058336393141==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---===============2128192058336393141==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
-
---===============2128192058336393141==--
+RG9icsOpIHLDoW5vLAoKbcOhdGUgbW/Fvm5vc3Qgc2xlZG92YXQgc3RhdiBrYcW+ZMOpaG8gc3Ry
+b2plIGEgdsO9cm9ibsOtaG8gcHJvY2VzdSB6IGthbmNlbMOhxZllLCBrb25mZXJlbsSNbsOtIG3D
+rXN0bm9zdGkgbmVibyBkb2tvbmNlIHogZG9tb3ZhIMSNaSBuYSBjZXN0w6FjaCDigJMgbmEgdmHF
+oWVtIHRlbGVmb251PwoKUG9za3l0dWplbWUgcnljaGxlIGltcGxlbWVudG92YXRlbG7DvSBhIHNu
+YWRubyBwb3XFvml0ZWxuw70gbsOhc3Ryb2osIGt0ZXLDvSB6YWNoeXTDrSBpIG7Em2tvbGlrYXNl
+a3VuZG92w70gbWlrcm9wcm9zdG9qIGEgb2thbcW+aXTEmyBwxZllcG/EjcOtdMOhIHZ5dcW+aXTD
+rSBzdHJvamUgdiBrb250ZXh0dSBkYW7DqSB2w71yb2Juw60gemFrw6F6a3kuCgpLZHlrb2xpIHZp
+ZMOtdGUgc3RhdiBvYmplZG7DoXZreSBhIGpzdGUgaW5mb3Jtb3bDoW5pIG8gcMWZw61wYWRuw6lt
+IHNuw63FvmVuw60gZWZla3Rpdml0eS4gU3lzdMOpbSBzw6FtIGFuYWx5enVqZSBkYXRhIGEgcMWZ
+aXByYXZ1amUgY2VubsOpIHJlcG9ydHksIGNvxb4gb3BlcsOhdG9yxa9tIHVtb8W+xYh1amUgc291
+c3TFmWVkaXQgc2UgbmEgdsO9cm9ibsOtIGPDrWwuCgpDw61sIGplIGplZG5vZHVjaMO9OiBqZWRl
+biBwb2hsZWQg4oCTIGNlbMOhIHRvdsOhcm5hLiDEjGVrw6FtIG5hIG9kcG92xJvEjywgamVzdGxp
+IHZpZMOtdGUgbW/Fvm5vc3Qgdnl1xb5pdMOtIHRha292w6lobyBuw6FzdHJvamUgdmUgdmHFocOt
+IGZpcm3Emy4KCgpQb3pkcmF2eQpNaWNoYWwgUm1vdXRpbAoKCl9fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fCk9zc3QtdXNlcnMgbWFpbGluZyBsaXN0Ck9zc3Qt
+dXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0Cmh0dHBzOi8vbGlzdHMuc291cmNlZm9yZ2UubmV0
+L2xpc3RzL2xpc3RpbmZvL29zc3QtdXNlcnMK
