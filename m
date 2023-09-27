@@ -2,29 +2,29 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 75BB77AE64D
-	for <lists+osst-users@lfdr.de>; Tue, 26 Sep 2023 08:56:13 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 03A1C7AFB2B
+	for <lists+osst-users@lfdr.de>; Wed, 27 Sep 2023 08:36:04 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1ql1zQ-0007G7-EM
+	id 1qlO9S-0003Iw-GQ
 	for lists+osst-users@lfdr.de;
-	Tue, 26 Sep 2023 06:56:11 +0000
+	Wed, 27 Sep 2023 06:36:02 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <bounce-11672-10341008-6164-248@mail2.daqiancai.xyz>)
- id 1ql1zM-0007G1-4N for osst-users@lists.sourceforge.net;
- Tue, 26 Sep 2023 06:56:07 +0000
+ (envelope-from <bounce-12284-10341008-6164-248@mail2.daqiancai.xyz>)
+ id 1qlO9Q-0003IV-3q for osst-users@lists.sourceforge.net;
+ Wed, 27 Sep 2023 06:36:00 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Subject:Content-Type:Content-Transfer-Encoding:
  MIME-Version:List-Unsubscribe:Message-ID:Reply-to:From:To:Date:Sender:Cc:
  Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
  Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
  List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=XzbX9EakRgKO8zT7aOYOW3/l5yxj9OqWbbuUQRPMHXQ=; b=LUyxwiAQfMT9zlfOvGhxnWgiXr
- vgI18cxfIxefmgVAyZRo5KAhJhNjjpQ+s/CUzcOMzJeCkxh2eLW0BTZgj9HNf0DAzBHywF6jdrZTb
- Zrmzf6I2ZI4lYXq4QYFV5u5EEkCdahO/or6G4ZAgIOp8IRmTmh76Wyw7n4wROzLwa9fs=;
+ bh=cUkNi07v9MTeb/jrHmGkB+2UzSTqZWr16csCaCnhN+4=; b=FTCVmrDNGkm6oEHLJKj7TzLFld
+ SMLvvKFsIQK5qnGnt27fUQgkNIewMCV/DUtpnpxyv0vzb1XCcU1AmkahZxDZNvR9Pevsl6359I1+j
+ wz9u92qT7DqNTrMZtRxgQ4vtQCrXgIaxTfA1l3EU/xHIUBWdhNPSSVNFRBP9Rh+yh4n0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Subject:Content-Type:Content-Transfer-Encoding:MIME-Version:
@@ -32,25 +32,25 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
  List-Post:List-Owner:List-Archive;
- bh=XzbX9EakRgKO8zT7aOYOW3/l5yxj9OqWbbuUQRPMHXQ=; b=aKLuf/CnWE3f194Kmq45OllCyV
- j61fbQmRdLF18dxcwrOd3u8NVvkSfvQiiH3Z/+1ISwbLlqI23kjszrGSFZaBI04cYAJw5gCXj4I3W
- F2zSssD8VuSdK00beFOUmRJ06Ak7vp7vaU7HuAS0C3vX6zsCRjDSVLfgPouvomBhlVXc=;
+ bh=cUkNi07v9MTeb/jrHmGkB+2UzSTqZWr16csCaCnhN+4=; b=NIQ5tC/XPBa35m7S9RHi1Ez3I+
+ imB7FnEBWxnTEd3INO5a0P3CmRDSxpzzySeWNjg4mmsxAwMJsyK6bttHV94RraNLPPNn/upZGapDv
+ exKgvGyF1231Gng24LJ6zhfbKWyaTRHDwhg4nOCjiEeFHjt91Oje2EiufKtnu9yj448c=;
 Received: from [112.213.120.58] (helo=mail2.daqiancai.xyz)
  by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1ql1zK-006uNk-6Y for osst-users@lists.sourceforge.net;
- Tue, 26 Sep 2023 06:56:06 +0000
-Received: by mail2.daqiancai.xyz id h2a08c0e97ch for
+ id 1qlO9N-008ATJ-K4 for osst-users@lists.sourceforge.net;
+ Wed, 27 Sep 2023 06:36:00 +0000
+Received: by mail2.daqiancai.xyz id h2f6kq0e97co for
  <osst-users@lists.sourceforge.net>;
- Tue, 26 Sep 2023 14:54:57 +0800 (envelope-from
- <bounce-11672-10341008-6164-248@mail2.daqiancai.xyz>)
-Date: Tue, 26 Sep 2023 06:54:56 +0000
+ Wed, 27 Sep 2023 14:35:47 +0800 (envelope-from
+ <bounce-12284-10341008-6164-248@mail2.daqiancai.xyz>)
+Date: Wed, 27 Sep 2023 06:35:47 +0000
 To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-Message-ID: <2d0f5dbb707fd739ad592a4fc48de6cd@112.213.120.58>
+Message-ID: <814628ff52e2e72521aa2383c1244bdd@112.213.120.58>
 X-Priority: 3
 X-Mailer: Email Sending System
 X-Complaints-To: test@test.com
-X-MessageID: NTd8fHx8NTA2OTF8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8MzB8fHx8MXx8fHww
-X-Report-Abuse: <http://112.213.120.58/oem/report_abuse.php?mid=NTd8fHx8NTA2OTF8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8MzB8fHx8MXx8fHww>
+X-MessageID: NjB8fHx8NTA2OTF8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8MzB8fHx8MXx8fHww
+X-Report-Abuse: <http://112.213.120.58/oem/report_abuse.php?mid=NjB8fHx8NTA2OTF8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8MzB8fHx8MXx8fHww>
 MIME-Version: 1.0
 X-Spam-Score: 8.8 (++++++++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
@@ -66,13 +66,13 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [112.213.120.58 listed in dnsbl-1.uceprotect.net]
   0.1 URIBL_CSS              Contains an URL's NS IP listed in the Spamhaus CSS
                              blocklist
                              [URIs: 112.213.120.58]
   3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
                              [112.213.120.58 listed in zen.spamhaus.org]
+  1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+                             [112.213.120.58 listed in dnsbl-1.uceprotect.net]
   1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
                              https://senderscore.org/blocklistlookup/
                             [112.213.120.58 listed in bl.score.senderscore.com]
@@ -105,8 +105,8 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
   0.0 T_REMOTE_IMAGE         Message contains an external image
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1ql1zK-006uNk-6Y
-Subject: [SPAM] Re：0元副业，5G项目合伙人创业
+X-Headers-End: 1qlO9N-008ATJ-K4
+Subject: [SPAM] Re：0元副业，5G项目合伙人创业，宝妈兼职全职
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -121,10 +121,10 @@ List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
 From: =?utf-8?B?NUflkIjkvJnkuro=?= via Osst-users
  <osst-users@lists.sourceforge.net>
 Reply-To: =?utf-8?B?NUflkIjkvJnkuro=?= <1678655209@qq.com>
-Content-Type: multipart/mixed; boundary="===============2591866045054544451=="
+Content-Type: multipart/mixed; boundary="===============7537277173591793293=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============2591866045054544451==
+--===============7537277173591793293==
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/html; charset="utf-8"
 
@@ -161,24 +161,24 @@ span style=3D"font-size: small;"><strong><span style=3D"font-size: x-large;=
 img height=3D"148" width=3D"150" src=3D"https://s1.imagehub.cc/images/2023/=
 09/21/wei.png" /></p>
 <p style=3D"font-family: &quot;Microsoft YaHei&quot;; font-size: medium;"><=
-a href=3D"http://112.213.120.58/oem/u.php?p=3Dtd/rs/13vv/sm/tc/rs">=E7=82=
+a href=3D"http://112.213.120.58/oem/u.php?p=3Dtg/rs/13vv/sm/te/rs">=E7=82=
 =B9=E5=87=BB=E6=AD=A4=E5=A4=84=E9=80=80=E8=AE=A2</a></p>
 
-<img src=3D"http://112.213.120.58/oem/to.php?p=3Dtd/tc/rs/13vv/sm/rs" width=
+<img src=3D"http://112.213.120.58/oem/to.php?p=3Dtg/te/rs/13vv/sm/rs" width=
 =3D"5" height=3D"2" alt=3D".">
 
 </body>
 </html>
 
 
---===============2591866045054544451==
+--===============7537277173591793293==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============2591866045054544451==
+--===============7537277173591793293==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -189,4 +189,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============2591866045054544451==--
+--===============7537277173591793293==--
