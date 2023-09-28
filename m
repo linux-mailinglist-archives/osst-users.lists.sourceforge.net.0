@@ -2,111 +2,96 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 03A1C7AFB2B
-	for <lists+osst-users@lfdr.de>; Wed, 27 Sep 2023 08:36:04 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 1A2AF7B1F02
+	for <lists+osst-users@lfdr.de>; Thu, 28 Sep 2023 15:54:22 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1qlO9S-0003Iw-GQ
+	id 1qlrTA-0003rn-SN
 	for lists+osst-users@lfdr.de;
-	Wed, 27 Sep 2023 06:36:02 +0000
+	Thu, 28 Sep 2023 13:54:20 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <bounce-12284-10341008-6164-248@mail2.daqiancai.xyz>)
- id 1qlO9Q-0003IV-3q for osst-users@lists.sourceforge.net;
- Wed, 27 Sep 2023 06:36:00 +0000
+ (envelope-from <contatonfe22655@nf25.parnotpecas.net>)
+ id 1qlrT8-0003rd-MI for osst-users@lists.sourceforge.net;
+ Thu, 28 Sep 2023 13:54:18 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:Content-Transfer-Encoding:
- MIME-Version:List-Unsubscribe:Message-ID:Reply-to:From:To:Date:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=cUkNi07v9MTeb/jrHmGkB+2UzSTqZWr16csCaCnhN+4=; b=FTCVmrDNGkm6oEHLJKj7TzLFld
- SMLvvKFsIQK5qnGnt27fUQgkNIewMCV/DUtpnpxyv0vzb1XCcU1AmkahZxDZNvR9Pevsl6359I1+j
- wz9u92qT7DqNTrMZtRxgQ4vtQCrXgIaxTfA1l3EU/xHIUBWdhNPSSVNFRBP9Rh+yh4n0=;
+ d=sourceforge.net; s=x; h=Subject:Content-Type:MIME-Version:Message-ID:
+ Reply-To:From:Date:To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=Cej6F4+/F0gi4dIEobG73c/R/yVClCH0vyceRmB3nfU=; b=UCxkY0fvzbTc0kgGdLd4q/o/sZ
+ Ij7Ft5n3095DQxit7yr3r4Gr/L9YgIYjT11yWdhg9cFj8iux2jG34ZiJCKsEMndQaaWaSiY1OZ27i
+ 9tlOI0xMDpLM5QbPrY3Cciid6qbfILm243ZmdWpD/kU7vVNREdFg5ZyQS/rgtLimfVIM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:Content-Transfer-Encoding:MIME-Version:
- List-Unsubscribe:Message-ID:Reply-to:From:To:Date:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=cUkNi07v9MTeb/jrHmGkB+2UzSTqZWr16csCaCnhN+4=; b=NIQ5tC/XPBa35m7S9RHi1Ez3I+
- imB7FnEBWxnTEd3INO5a0P3CmRDSxpzzySeWNjg4mmsxAwMJsyK6bttHV94RraNLPPNn/upZGapDv
- exKgvGyF1231Gng24LJ6zhfbKWyaTRHDwhg4nOCjiEeFHjt91Oje2EiufKtnu9yj448c=;
-Received: from [112.213.120.58] (helo=mail2.daqiancai.xyz)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1qlO9N-008ATJ-K4 for osst-users@lists.sourceforge.net;
- Wed, 27 Sep 2023 06:36:00 +0000
-Received: by mail2.daqiancai.xyz id h2f6kq0e97co for
- <osst-users@lists.sourceforge.net>;
- Wed, 27 Sep 2023 14:35:47 +0800 (envelope-from
- <bounce-12284-10341008-6164-248@mail2.daqiancai.xyz>)
-Date: Wed, 27 Sep 2023 06:35:47 +0000
-To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-Message-ID: <814628ff52e2e72521aa2383c1244bdd@112.213.120.58>
+ h=Subject:Content-Type:MIME-Version:Message-ID:Reply-To:From:Date:To:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=Cej6F4+/F0gi4dIEobG73c/R/yVClCH0vyceRmB3nfU=; b=c
+ TBiMkOJSVnHxYgL9l34obnQe9r6GUGLHa3XTfAgIfLNoBcS8lf1UDhGWSHG+E6PaO9cv9xpaxVFRG
+ 2BiF+9QxL/p/nDsj5myyWiO222aDs4MYkQejIjVqXgh/zHgTQE/ynedUThmWAizlUQCgkT9l7wwdc
+ vZV+Waw+eHLyUbSI=;
+Received: from nf25.parnotpecas.net ([147.182.148.233])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1qlrT6-0005DQ-JH for osst-users@lists.sourceforge.net;
+ Thu, 28 Sep 2023 13:54:18 +0000
+Received: by nf25.parnotpecas.net (Postfix, from userid 33)
+ id 3D1C941353; Thu, 28 Sep 2023 13:36:00 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=nf25.parnotpecas.net;
+ s=mail; t=1695908160;
+ bh=Cej6F4+/F0gi4dIEobG73c/R/yVClCH0vyceRmB3nfU=;
+ h=To:Subject:Date:From:Reply-To:From;
+ b=HlDwO5asOng4UgIS54d5yj0sfL154CFDIZ+kEel2bmlV0hGSD+Rd9UUT7Igo5khAw
+ FN6SGh4eaFEkH4gqs1bpDg/zIemFGsf97JiNqWS2l6PmKM/riulx49at9qSNSdcbt4
+ G8+j9kH5rxVsH+I20xVjLTz/4tPF1/O7Dslx/FkenC3vFeCDSYsZ+HHc4sNyGHHve0
+ viI2KA5ug+Q+6UNm9kv3MaWR1EqA+MyMM9lsvY8YSbS80ma2l3O41bga4QOqs0cTBT
+ JHlXd6obGtSK+vt6Bx5hGLoknoOQVH6eUN1n3fsDcm4VhB6A2fK0Pw5rCAMA8blh+/
+ jawh+ImCoxpxA==
+To: osst-users@lists.sourceforge.net
+Date: Thu, 28 Sep 2023 13:36:00 +0000
+From: "ATACADAO S.A 227332" <contatonfe22655@nf25.parnotpecas.net>
+Message-ID: <50a9016a30b3001ffbcbb205df367449@147.182.148.233>
 X-Priority: 3
-X-Mailer: Email Sending System
-X-Complaints-To: test@test.com
-X-MessageID: NjB8fHx8NTA2OTF8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8MzB8fHx8MXx8fHww
-X-Report-Abuse: <http://112.213.120.58/oem/report_abuse.php?mid=NjB8fHx8NTA2OTF8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8MzB8fHx8MXx8fHww>
+X-Mailer: PHPMailer 5.2.4
+ (http://code.google.com/a/apache-extras.org/p/phpmailer/)
 MIME-Version: 1.0
 X-Spam-Score: 8.8 (++++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Untitled document 流量不够怎么办？我为你支招，流量多，流量快，流量好又便宜的卡来了！再也不担心流量不够用了！扫码下单，0元包邮！分享此卡，还能边用流量边�
-    [...] 
- 
+ Content preview:  NOTA FISCAL ELETR&Ocirc; NICA NACIONAL Autoriza&ccedil;
+ &atilde; o de uso - Protocolo: 135231530042213 . 
  Content analysis details:   (8.8 points, 6.0 required)
- 
-  pts rule name              description
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.1 URIBL_CSS              Contains an URL's NS IP listed in the Spamhaus CSS
-                             blocklist
-                             [URIs: 112.213.120.58]
-  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [112.213.120.58 listed in zen.spamhaus.org]
-  1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [112.213.120.58 listed in dnsbl-1.uceprotect.net]
-  1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
-                             https://senderscore.org/blocklistlookup/
-                            [112.213.120.58 listed in bl.score.senderscore.com]
-  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
-                             provider
-                             [1678655209[at]qq.com]
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
-  0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in
-                             digit
-                             [1678655209[at]qq.com]
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 NUMERIC_HTTP_ADDR      URI: Uses a numeric IP address in URL
-  0.0 NORMAL_HTTP_TO_IP      URI: URI host has a public dotted-decimal IPv4
-                              address
-  0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image
-                             area
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.7 HTML_IMAGE_ONLY_20     BODY: HTML: images with 1600-2000 bytes of
-                             words
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-  0.2 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and
-                             EnvelopeFrom freemail headers are
-                             different
-  0.0 SPOOFED_FREEMAIL_NO_RDNS From SPOOFED_FREEMAIL and no rDNS
-  0.0 SPOOFED_FREEMAIL       No description available.
-  0.0 TVD_SPACE_RATIO_MINFP  Space ratio (vertical text obfuscation?)
-  0.0 T_REMOTE_IMAGE         Message contains an external image
+ 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+ blocklist [URIs: parnotpecas.net]
+ 0.7 RCVD_IN_XBL            RBL: Received via a relay in Spamhaus XBL
+ [147.182.148.233 listed in zen.spamhaus.org]
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ 0.1 URIBL_CSS_A Contains URL's A record listed in the Spamhaus CSS
+ blocklist [URIs: nf25.parnotpecas.net]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid 2.0 PYZOR_CHECK            Listed in Pyzor
+ (https://pyzor.readthedocs.io/en/latest/)
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1qlO9N-008ATJ-K4
-Subject: [SPAM] Re：0元副业，5G项目合伙人创业，宝妈兼职全职
+X-Headers-End: 1qlrT6-0005DQ-JH
+Subject: [Osst-users] [SPAM] NF-e: 002 - ATACADAO S.A
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -118,67 +103,67 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: =?utf-8?B?NUflkIjkvJnkuro=?= via Osst-users
- <osst-users@lists.sourceforge.net>
-Reply-To: =?utf-8?B?NUflkIjkvJnkuro=?= <1678655209@qq.com>
-Content-Type: multipart/mixed; boundary="===============7537277173591793293=="
+Reply-To: "ATACADAO S.A 227332" <contatonfe22655@nf25.parnotpecas.net>
+Content-Type: multipart/mixed; boundary="===============5369100767516709882=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============7537277173591793293==
-Content-Transfer-Encoding: quoted-printable
-Content-Type: text/html; charset="utf-8"
+--===============5369100767516709882==
+Content-Type: multipart/alternative;
+	boundary="b1_50a9016a30b3001ffbcbb205df367449"
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
-w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-<title>Untitled document</title>
-</head>
-<body>
-<p style=3D"font-family: &quot;Microsoft YaHei&quot;; font-size: medium;"><=
-strong>=E6=B5=81=E9=87=8F=E4=B8=8D=E5=A4=9F=E6=80=8E=E4=B9=88=E5=8A=9E=EF=
-=BC=9F=E6=88=91=E4=B8=BA=E4=BD=A0=E6=94=AF=E6=8B=9B=EF=BC=8C=E6=B5=81=E9=87=
-=8F=E5=A4=9A=EF=BC=8C=E6=B5=81=E9=87=8F=E5=BF=AB=EF=BC=8C=E6=B5=81=E9=87=8F=
-=E5=A5=BD=E5=8F=88=E4=BE=BF=E5=AE=9C=E7=9A=84=E5=8D=A1=E6=9D=A5=E4=BA=86=EF=
-=BC=81=E5=86=8D=E4=B9=9F=E4=B8=8D=E6=8B=85=E5=BF=83=E6=B5=81=E9=87=8F=E4=B8=
-=8D=E5=A4=9F=E7=94=A8=E4=BA=86=EF=BC=81=E6=89=AB=E7=A0=81=E4=B8=8B=E5=8D=95=
-=EF=BC=8C0=E5=85=83=E5=8C=85=E9=82=AE=EF=BC=81=E5=88=86=E4=BA=AB=E6=AD=A4=
-=E5=8D=A1=EF=BC=8C=E8=BF=98=E8=83=BD=E8=BE=B9=E7=94=A8=E6=B5=81=E9=87=8F=E8=
-=BE=B9=E6=8C=A3=E7=94=9F=E6=B4=BB=E8=B4=B9=EF=BC=81</strong></p>
-<p style=3D"font-family: &quot;Microsoft YaHei&quot;; font-size: medium;"><=
-strong><img height=3D"267" width=3D"150" src=3D"https://s1.imagehub.cc/imag=
-es/2023/09/21/_20230921094759.jpeg" />&nbsp;<img height=3D"267" width=3D"15=
-0" src=3D"https://s1.imagehub.cc/images/2023/09/21/_20230921094808.jpeg" />=
-&nbsp;<img height=3D"267" width=3D"150" src=3D"https://s1.imagehub.cc/image=
-s/2023/09/21/_20230921094814.jpeg" /></strong></p>
-<p style=3D"font-family: &quot;Microsoft YaHei&quot;; font-size: medium;"><=
-span style=3D"font-size: small;"><strong><span style=3D"font-size: x-large;=
-">=E6=8B=9B5G=E5=90=88=E4=BC=99=E4=BA=BA=EF=BC=8C0=E5=85=83=E5=88=9B=E4=B8=
-=9A=E3=80=82=E6=84=9F=E5=85=B4=E8=B6=A3=E5=8F=AF=E4=BB=A5=E5=8A=A0=E5=BE=AE=
-=E4=BF=A1=EF=BC=9A<span style=3D"color: #ff00ff;">yingshi52088</span></span=
-></strong></span></p>
-<p style=3D"font-family: &quot;Microsoft YaHei&quot;; font-size: medium;"><=
-img height=3D"148" width=3D"150" src=3D"https://s1.imagehub.cc/images/2023/=
-09/21/wei.png" /></p>
-<p style=3D"font-family: &quot;Microsoft YaHei&quot;; font-size: medium;"><=
-a href=3D"http://112.213.120.58/oem/u.php?p=3Dtg/rs/13vv/sm/te/rs">=E7=82=
-=B9=E5=87=BB=E6=AD=A4=E5=A4=84=E9=80=80=E8=AE=A2</a></p>
+--b1_50a9016a30b3001ffbcbb205df367449
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: base64
 
-<img src=3D"http://112.213.120.58/oem/to.php?p=3Dtg/te/rs/13vv/sm/rs" width=
-=3D"5" height=3D"2" alt=3D".">
-
-</body>
-</html>
+Tk9UQSBGSVNDQUwgRUxFVFImT2NpcmM7TklDQSBOQUNJT05BTA0KCQkNCgkJDQoJCQkNCgkJCUF1
+dG9yaXphJmNjZWRpbDsmYXRpbGRlO28gZGUgdXNvIC0gUHJvdG9jb2xvOiAxMzUyMzE1MzAwNDIy
+MTMNCgkJCQ0KCQkNCgkJDQoJCQkuDQoJCQ0KCQkNCgkJCQ0KCQkJVm9jJmVjaXJjOyBlc3QmYWFj
+dXRlOyByZWNlYmVuZG8gYSBOb3RhIEZpc2NhbCBFbGV0ciZvY2lyYztuaWNhIG4mdWFjdXRlO21l
+cm8gMDAyLjkwMC4yNjYgcyZlYWN1dGU7cmllIDAwMSBkYSBBVEFDQURBTyBTLkEuLiZuYnNwOw0K
+DQoJCQlQYXJhIHZlcmlmaWNhciBhIGF1dGVudGljaWRhZGUgZGEgbm90YSwgc3VnZXJpbW9zIHF1
+ZSBlbnRyZW0gbm8gcG9ydGFsIG5hY2lvbmFsIGRhIE5GLSB2aXN1YWxpemVtIGEgTkYtZSB1c2Fu
+ZG8gYSBjaGF2ZSBkZSBhY2Vzc28gYWJhaXhvLg0KDQoJCQlORi1lLiAzNTE2MDEwMzMwNTkwNTAw
+MDE2ODU1MDAxMDAwMjY0ODIxMTAwMDIwMzk5Mw0KDQoJCQkmbmJzcDsNCgkJCQ0KCQkNCgkNCgoK
+bl80NjE3MDgyMzc3MzEzNTU3ODEyOTg4NjU3MDU4MjY4ODYwMzkwNzA4NTk5OTUxOTQ0MA==
 
 
---===============7537277173591793293==
+--b1_50a9016a30b3001ffbcbb205df367449
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+Cjxib2R5Pgo8dGFibGUgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNp
+bmc9IjAiIHN0eWxlPSJ3aWR0aDoxMDAlIj4NCgk8dGJvZHk+DQoJCTx0cj4NCgkJCTx0ZCBzdHls
+ZT0idGV4dC1hbGlnbjogY2VudGVyOyI+Tk9UQSBGSVNDQUwgRUxFVFImT2NpcmM7TklDQSBOQUNJ
+T05BTDwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZCBjb2xzcGFuPSIyIj4NCgkJCTxwPkF1
+dG9yaXphJmNjZWRpbDsmYXRpbGRlO28gZGUgdXNvIC0gUHJvdG9jb2xvOiAxMzUyMzE1MzAwNDIy
+MTM8L3A+DQoJCQk8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQgY29sc3Bhbj0iMiI+Ljwv
+dGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZCBjb2xzcGFuPSIyIj4NCgkJCTxwPlZvYyZlY2ly
+YzsgZXN0JmFhY3V0ZTsgcmVjZWJlbmRvIGEgTm90YSBGaXNjYWwgRWxldHImb2NpcmM7bmljYSBu
+JnVhY3V0ZTttZXJvIDAwMi45MDAuMjY2IHMmZWFjdXRlO3JpZSAwMDEgZGEgQVRBQ0FEQU8gUy5B
+Li4mbmJzcDs8L3A+DQoNCgkJCTxwPlBhcmEgdmVyaWZpY2FyIGEgYXV0ZW50aWNpZGFkZSBkYSBu
+b3RhLCBzdWdlcmltb3MgcXVlIGVudHJlbSBubyBwb3J0YWwgbmFjaW9uYWwgZGEgTkYtIHZpc3Vh
+bGl6ZW0gYSBORi1lIHVzYW5kbyBhIGNoYXZlIGRlIGFjZXNzbyBhYmFpeG8uPC9wPg0KDQoJCQk8
+cCBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+PGEgaHJlZj0iaHR0cHM6Ly9icmFzZnJ1dGVz
+LmNvbSI+TkYtZS4gMzUxNjAxMDMzMDU5MDUwMDAxNjg1NTAwMTAwMDI2NDgyMTEwMDAyMDM5OTM8
+L2E+PC9wPg0KDQoJCQk8cCBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyOyI+Jm5ic3A7PC9wPg0K
+CQkJPC90ZD4NCgkJPC90cj4NCgk8L3Rib2R5Pg0KPC90YWJsZT4KPC9ib2R5Pgo8YnI+PGJyPjxi
+cj48YnI+PGJyPjxicj48YnI+PGZvbnQgY29sb3I9IiNFNkU2RTYiPm5fNDYxNzA4MjM3NzMxMzU1
+NzgxMjk4ODY1NzA1ODI2ODg2MDM5MDcwODU5OTk1MTk0NDA8L2ZvbnQ+PC9odG1sPg==
+
+
+
+--b1_50a9016a30b3001ffbcbb205df367449--
+
+
+
+--===============5369100767516709882==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7537277173591793293==
+--===============5369100767516709882==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -189,4 +174,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7537277173591793293==--
+--===============5369100767516709882==--
+
+
