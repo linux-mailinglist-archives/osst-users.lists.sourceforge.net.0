@@ -2,100 +2,79 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 709EB7E1563
-	for <lists+osst-users@lfdr.de>; Sun,  5 Nov 2023 18:05:03 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id CD8047E9F0F
+	for <lists+osst-users@lfdr.de>; Mon, 13 Nov 2023 15:45:37 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1qzgYX-0001i6-Ss
+	id 1r2YC0-0006Wn-8k
 	for lists+osst-users@lfdr.de;
-	Sun, 05 Nov 2023 17:05:01 +0000
+	Mon, 13 Nov 2023 14:45:36 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <info@iklnhez.cn>) id 1qzgYW-0001hf-3T
- for osst-users@lists.sourceforge.net; Sun, 05 Nov 2023 17:05:00 +0000
+ (envelope-from <root@gh24.icwestphlen.com>) id 1r2YBy-0006Wg-RC
+ for osst-users@lists.sourceforge.net; Mon, 13 Nov 2023 14:45:35 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Message-ID:Mime-Version:Subject:To:
- From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=HIXeURwcKcRDtZzbl54N7X1i2JJPNrHhbd2a/2eWRWU=; b=U65soFshbbDYVcbB6mZAqjMDEF
- oSBx/XWRhO8My1F1xEtB/C2YPMhM2KQ5JiUKXnQ1Sm8vsZLxIk7u9CIdNEEa3A8kq2rZDCEGRG/S/
- od0Mu1wiXfv1etygUJCh1OplbYY+N47glVXrcg+hpFD4XMBCPHmjLMW2hLnFKgugZVXE=;
+ d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:
+ Content-Transfer-Encoding:Content-type:MIME-Version:Sender:Reply-To:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=gi8Eo6Ng2S0v/3zDJxM5bf7QxSHxMbQMZ/E5z74TabY=; b=ia0qkp71TDJtEUZJkyFnBkV1wi
+ jvxIagmj8OyM+2CNcKhvE9yBMUj1n69bW+A+44/HtnjANcPzi1N/5E5QIE1Vj6+hotco/wI7wpkFd
+ 9ACbOZcPA9ruUdw/EIFvMgbgc2QaCRKIses5g5ddzmRc5W3XONn4BIXcU7nBVE4UqVHA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Message-ID:Mime-Version:Subject:To:From:Date:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Date:Message-Id:To:From:Subject:Content-Transfer-Encoding:Content-type:
+ MIME-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=HIXeURwcKcRDtZzbl54N7X1i2JJPNrHhbd2a/2eWRWU=; b=Q
- LmKqiDBrHW0grSBgKzRPjYz8+BgI+MNgGcscZO00nMApSTt71rlEqECGxEHIlJlq8LyMwGsItbaz7
- g6kifMru1mDodTEXmSPbgj+Mq3HyaLoeXKXMujsDxOmt1Lto0jw/2/5H9kZ2+dBNQKBIMQ5KdmVyv
- CupnjTdg+YDf4xO8=;
-Received: from [203.195.65.99] (helo=iklnhez.cn)
- by sfi-mx-1.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1qzgYU-00FM90-WA for osst-users@lists.sourceforge.net;
- Sun, 05 Nov 2023 17:04:59 +0000
-Received: from uykhvkanfd (unknown [113.103.150.192])
- by iklnhez.cn (Postfix) with ESMTPA id DF256A0F93
- for <osst-users@lists.sourceforge.net>; Mon,  6 Nov 2023 01:04:51 +0800 (CST)
-DKIM-Filter: OpenDKIM Filter v2.11.0 iklnhez.cn DF256A0F93
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=iklnhez.cn;
- s=default; t=1699203892;
- bh=HIXeURwcKcRDtZzbl54N7X1i2JJPNrHhbd2a/2eWRWU=;
- h=Date:From:To:Subject:From;
- b=Yy5mIewypDs/Xbn89CcpOEGMhCf7SXQbJpriZAJzTi/8Fyzs/fljysCgn9gKR2Ya+
- 8cIws+ezd04XMZTW5+MaK1+xBJ4Q4Fm/YaeRmWEpD8wImZEK0RcOCxYqaQR+hRayE2
- Z3AhHhKrXU/48i34UuqvxS0uEHHfxZnSanm/PIRY=
-Date: Mon, 6 Nov 2023 01:08:17 +0800
-From: =?UTF-8?B?NTHkupHliqnmiYs=?= <info@iklnhez.cn>
-To: osst-users <osst-users@lists.sourceforge.net>
-X-Priority: 3
-X-Has-Attach: no
-X-Mailer: Foxmail 7, 0, 1, 91[cn]
-Mime-Version: 1.0
-Message-ID: <202311060108303814257@iklnhez.cn>
-X-Spam-Score: 7.3 (+++++++)
+ List-Owner:List-Archive; bh=gi8Eo6Ng2S0v/3zDJxM5bf7QxSHxMbQMZ/E5z74TabY=; b=H
+ wgilEjP4oigJFfjFq1cEEKjE88JNSLeij3fysp/LkRj6OkQ7IrXY5ODxGYEwD8toP1p8zVcycEKol
+ P7dizTY4ufYxZ5NDC7TGZQcztO27yHPKc61esrS6U4ss1XzUItjM1fNEugq5yGdlhF9RkMM3YJZwP
+ TH9l8foxEfGd0+r4=;
+Received: from gh24.icwestphlen.com ([68.183.237.7])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1r2YBv-000630-2j for osst-users@lists.sourceforge.net;
+ Mon, 13 Nov 2023 14:45:35 +0000
+Received: by gh24.icwestphlen.com (Postfix, from userid 0)
+ id BA1FA3FC32; Mon, 13 Nov 2023 14:26:40 +0000 (UTC)
+MIME-Version: 1.0
+From: AFIP Notificacion <eventanilla@afip.gov.ar.com>
+To: osst-users@lists.sourceforge.net
+Message-Id: <20231113142640.BA1FA3FC32@gh24.icwestphlen.com>
+Date: Mon, 13 Nov 2023 14:26:40 +0000 (UTC)
+X-Spam-Score: 5.7 (+++++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  尊敬的客户您好: 发票信息如下： 开票日期：2023/11/6
-    星期一 票据代码：033002200211 票据号码：43040100 点击下载票据
-    我们将电子发票发送给您，以便作为� [...] 
+ Content preview:  Notificación de AFIP Notificación de AFIP Estimado(a), osst-users@lists.sourceforge.net
+    
  
- Content analysis details:   (7.3 points, 6.0 required)
+ Content analysis details:   (5.7 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  2.5 URIBL_DBL_PHISH        Contains a Phishing URL listed in the Spamhaus
-                             DBL blocklist
-                             [URIs: iklnhez.cn]
   3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [203.195.65.99 listed in zen.spamhaus.org]
-  0.1 URIBL_CSS_A            Contains URL's A record listed in the Spamhaus CSS
-                             blocklist
-                             [URIs: iklnhez.cn]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
-  0.1 URI_HEX                URI: URI hostname has long hexadecimal sequence
+                             [68.183.237.7 listed in zen.spamhaus.org]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
+                             DNS
   0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  1.0 URI_AZURE_CLOUDAPP     Link to hosted azure web application,
+                             possible phishing
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-X-Headers-End: 1qzgYU-00FM90-WA
-Subject: [Osst-users] =?utf-8?b?NTHlj5HnpajmiJDlip/lvIDlhbcyMDIzLzExLzYg?=
-	=?utf-8?b?5pif5pyf5LiA?=
+X-Headers-End: 1r2YBv-000630-2j
+Subject: [Osst-users] Se ha generado un nuevo documento fiscal - 1938079
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -107,59 +86,47 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============6977685981326944418=="
+Content-Type: multipart/mixed; boundary="===============4676330801686107420=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
-
---===============6977685981326944418==
-Content-Type: multipart/alternative;
-	boundary="=====001_Dragon634428830226_====="
-
-This is a multi-part message in MIME format.
-
---=====001_Dragon634428830226_=====
-Content-Type: text/plain;
-	charset="UTF-8"
+--===============4676330801686107420==
+Content-type: text/html; charset=UTF-8
 Content-Transfer-Encoding: base64
 
-5bCK5pWs55qE5a6i5oi35oKo5aW9Og0K5Y+R56Wo5L+h5oGv5aaC5LiL77yaDQrlvIDnpajml6Xm
-nJ/vvJoyMDIzLzExLzYg5pif5pyf5LiADQrnpajmja7ku6PnoIHvvJowMzMwMDIyMDAyMTENCuel
-qOaNruWPt+egge+8mjQzMDQwMTAwDQrngrnlh7vkuIvovb3npajmja4gDQrmiJHku6zlsIbnlLXl
-rZDlj5Hnpajlj5HpgIHnu5nmgqjvvIzku6Xkvr/kvZzkuLrmgqjnmoTnu7TmnYPkv53kv67lh63o
-r4HjgIHmiqXplIDlh63or4EuIA0KDQo=
-
---=====001_Dragon634428830226_=====
-Content-Type: text/html;
-	charset="UTF-8"
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
-Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
-bnQ9Ik1TSFRNTCAxMS4wMC45NjAwLjE3NDk2Ij48L0hFQUQ+DQo8Qk9EWT48U1RST05HPg0KPEhS
-Pg0KPFNQQU4gDQpzdHlsZT0iRk9OVC1TSVpFOiAyOXB4Ij48U1RST05HPuWwiuaVrOeahOWuouaI
-t+aCqOWlvTo8QlI+5Y+R56Wo5L+h5oGv5aaC5LiL77yaPEJSPuW8gOelqOaXpeacn++8mjIwMjMv
-MTEvNiDmmJ/mnJ/kuIA8QlI+56Wo5o2u5Luj56CB77yaMDMzMDAyMjAwMjExPEJSPuelqOaNruWP
-t+egge+8mjQzMDQwMTAwPEJSPjwvU1RST05HPjxBIA0KaHJlZj0iaHR0cHM6Ly9udW9udW9waWFv
-d3UwMS0xMzIyMTQ5NzQxLmNvcy5hcC1zaGFuZ2hhaS5teXFjbG91ZC5jb20vaW5kZXguaHRtbCI+
-PFNUUk9ORz7ngrnlh7vkuIvovb3npajmja4gDQo8L1NUUk9ORz48L0E+PEJSPjxTVFJPTkc+5oiR
-5Lus5bCG55S15a2Q5Y+R56Wo5Y+R6YCB57uZ5oKo77yM5Lul5L6/5L2c5Li65oKo55qE57u05p2D
-5L+d5L+u5Yet6K+B44CB5oql6ZSA5Yet6K+BPC9TVFJPTkc+PC9TUEFOPjwvU1RST05HPjxTVFJP
-Tkc+LiANCg0KPEhSPg0KPC9TVFJPTkc+DQo8UD48L1A+PC9CT0RZPjwvSFRNTD4NCg==
-
---=====001_Dragon634428830226_=====--
+PCFET0NUWVBFIGh0bWw+DQoKPGh0bWwgbGFuZz0iZXMiPg0KCjxoZWFkPg0KCg0KCg0KCg0KCiAg
+DQoKICANCgogIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4NCgoNCgoNCgogIA0KCg0KCg0KCiAgDQoK
+ICANCgogIA0KCiAgPHRpdGxlPk5vdGlmaWNhY2kmb2FjdXRlO24gZGUgQUZJUDwvdGl0bGU+DQoK
+ICA8c3R5bGU+DQoKYm9keSB7Zm9udC1mYW1pbHk6QXJpYWw7bWFyZ2luOjA7cGFkZGluZzowO2Jh
+Y2tncm91bmQ6I0Y1RjVGNTtjb2xvcjojMzMzO30NCgouYyB7d2lkdGg6NjAwcHg7bWFyZ2luOjAg
+YXV0bztwYWRkaW5nOjIwcHg7YmFja2dyb3VuZDojRkZGO30NCgouaCwgLmYge3RleHQtYWxpZ246
+Y2VudGVyO21hcmdpbi1ib3R0b206MjBweDtwYWRkaW5nOjEwcHggMDtiYWNrZ3JvdW5kOiNFRkVG
+RUY7fQ0KCi5jbyB7bWFyZ2luLWJvdHRvbToyMHB4O30NCgouZiB7Y29sb3I6Izc3Nztmb250LXNp
+emU6MC44ZW07fQ0KCmEge2NvbG9yOiMwMDY2Q0M7fQ0KCiAgPC9zdHlsZT4NCgo8L2hlYWQ+DQoK
+DQoKDQoKPGJvZHk+DQoKDQoKDQoKDQoKPGRpdiBjbGFzcz0iYyI+DQoKPGRpdiBjbGFzcz0iaCI+
+DQoKPGgxPk5vdGlmaWNhY2kmb2FjdXRlO24gZGUgQUZJUDwvaDE+DQoKDQoKDQoKDQoKPC9kaXY+
+DQoKDQoKDQoKDQoKPGRpdiBjbGFzcz0iY28iPg0KCjxwPkVzdGltYWRvKGEpLCAmbmJzcDtvc3N0
+LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldA0KPC9wPg0KCg0KCg0KCg0KCjxwPlNlIGhhIGdl
+bmVyYWRvIHVuIG51ZXZvIGRvY3VtZW50byBmaXNjYWwuPC9wPg0KCg0KCg0KCg0KCjxwPjxhIGhy
+ZWY9Imh0dHBzOi8vZXhhbHVtbm9zZmFjdHNvbHV0ZGVsYXNhbGxlcy5lYXN0dXMyLmNsb3VkYXBw
+LmF6dXJlLmNvbS8iPkRlc2NhcmdhciBEb2N1bWVudG88L2E+PC9wPg0KCg0KCg0KCg0KCjxwPlJl
+dmlzZWxvIHkgdG9tZSBsYXMgYWNjaW9uZXMgbmVjZXNhcmlhcy48L3A+DQoKDQoKDQoKDQoKPHA+
+U2kgdGllbmUgZHVkYXMsIGNvbnRhY3RlIGNvbiBBRklQLjwvcD4NCgoNCgoNCgoNCgo8cD5BdGVu
+dGFtZW50ZSw8YnI+DQoKDQoKDQoKDQoKRWwgZXF1aXBvIGRlIEFGSVA8L3A+DQoKDQoKDQoKDQoK
+PC9kaXY+DQoKDQoKDQoKDQoKPGRpdiBjbGFzcz0iZiI+DQoKPHA+Q29ycmVvIGF1dG9tJmFhY3V0
+ZTt0aWNvLiBObyByZXNwb25kZXIuPC9wPg0KCg0KCg0KCg0KCjwvZGl2Pg0KCg0KCg0KCg0KCjwv
+ZGl2Pg0KCg0KCg0KCg0KCjwvYm9keT4NCgo8L2h0bWw+DQo=
 
 
 
---===============6977685981326944418==
+
+--===============4676330801686107420==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6977685981326944418==
+--===============4676330801686107420==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -170,6 +137,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6977685981326944418==--
-
-
+--===============4676330801686107420==--
