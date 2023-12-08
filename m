@@ -2,95 +2,97 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id C9F16809EA6
-	for <lists+osst-users@lfdr.de>; Fri,  8 Dec 2023 09:56:24 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id C24DD80A1C0
+	for <lists+osst-users@lfdr.de>; Fri,  8 Dec 2023 12:03:58 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rBWel-0004FC-7u
+	id 1rBYeD-0005v6-Io
 	for lists+osst-users@lfdr.de;
-	Fri, 08 Dec 2023 08:56:23 +0000
+	Fri, 08 Dec 2023 11:03:57 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <michal.rmoutil@venturelinkbiz.com>)
- id 1rBWej-0004F6-8I for osst-users@lists.sourceforge.net;
- Fri, 08 Dec 2023 08:56:21 +0000
+ (envelope-from <dcu57160@cateta12.yesbrap.com>) id 1rBYe9-0005uv-M7
+ for osst-users@lists.sourceforge.net; Fri, 08 Dec 2023 11:03:53 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Reply-To:From:
+ Date:Subject:To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Mjfq+hZZ0+rPTC06HjjASvlnsTMgj1yAndWxi/OAu2M=; b=ZMRUdkz1X8oDxOz06BW7p7XfBl
- 0rp65HOLQs8LcLe4nihQC8GVFPTFcf/aRIQmr3n7EmJbUsajvMFqyyIoVyej+W8wasPn18HBuuf1z
- A/Fz+gMffLQsHzGsu1DQ9NCyw3I7r/OFKduLUtYBIi37Q6B/XrGOV1w4tw7jcvpE1iZE=;
+ bh=RArmnHFzC1gplEt2gqP2/PacIM0MGMjhkpOumLe+E5E=; b=Cz2DaVs+pLOxN06wXtgWl3fnur
+ TfDI0hywzFLgwp5ohIb2QUamO6jpWWd1QBvAd5e8bqppi95idD2EM4RZUVWsiJDGfyzxwcJ8vS361
+ KnfFHhW8VSiHotIWhNlAX3hYKGblSAr1mjEH1uHWfPVqqFtX6SL4QNIPd4CzbQB/k85Q=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
- Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Type:MIME-Version:Message-ID:Reply-To:From:Date:Subject:To:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Mjfq+hZZ0+rPTC06HjjASvlnsTMgj1yAndWxi/OAu2M=; b=I
- 3zCS7++2X904UvzfzkrgFtoY3y5jLmHNiIrw3bMuQi1zTC4YPjn8MyOnMo1ttMk/mKBBXKvOeN/h0
- qszNsdga0yzTNqghY3iJKqGwd8ADr/d7hd1hBkH7hgFV8tI6cqZb0jkQNxMMfAy/TNhBRjCaiSjl8
- RjQYjnuejwD1llNs=;
-Received: from mail.venturelinkbiz.com ([51.195.119.142])
+ List-Owner:List-Archive; bh=RArmnHFzC1gplEt2gqP2/PacIM0MGMjhkpOumLe+E5E=; b=V
+ bfAifym2VJVlCYS7DhsjLY35SOizo1baeiRDdlzPdrtyqscAjP96J04lsHpuk1e5rAgS47g2zHUjm
+ J7X1joVt1OWpOljR3RjSX6vWolFFdN+sUos1JhmG4nraHIh2MrnbNucuKo7MWvweqVKkhRzIF+c+K
+ oDlEMGqmcSY9xbI4=;
+Received: from cateta12.yesbrap.com ([206.189.56.215])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1rBWei-0004jW-G2 for osst-users@lists.sourceforge.net;
- Fri, 08 Dec 2023 08:56:21 +0000
-Received: by mail.venturelinkbiz.com (Postfix, from userid 1002)
- id 3024B47A83; Fri,  8 Dec 2023 08:56:08 +0000 (UTC)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=venturelinkbiz.com;
- s=mail; t=1702025773;
- bh=Mjfq+hZZ0+rPTC06HjjASvlnsTMgj1yAndWxi/OAu2M=;
- h=Date:From:To:Subject:From;
- b=g0L0yMNC1COmo4XASBOpMFG7tKNWD8A2VZAC/2SuoIrlsAiYQlT/74FdC7fC5QEk0
- odSdNk60+gC0koUN81t1Fq6WozP+qEyMw8FVUifVI3NvvCrSD5UoLnbVv293V2gRel
- wqMHa7n5Ti2vT7qmQnoI80+pyZFzeeWtVx5HsjsmAYrpHhpZ3TGqrIXyi9ewYIuucA
- JSo6pVSeCAf6fdcRhBYnNpWWp4HyTeWKSU9e/9aW3tyU/zJpDHNd2SWu+8Gkbv6bv4
- f/mGZ9bumqm6TM6hF3+vL0ILdHc8i6EqOB0r36M10FUkiMzqBOECl3ebN48wi1weeZ
- WpgxmzbaWOp8A==
-Received: by mail.venturelinkbiz.com for <osst-users@lists.sourceforge.net>;
- Fri,  8 Dec 2023 08:55:59 GMT
-Message-ID: <20231208074500-0.1.42.c503.0.a85o0qqs7t@venturelinkbiz.com>
-Date: Fri,  8 Dec 2023 08:55:59 GMT
-To: <osst-users@lists.sourceforge.net>
-X-Mailer: mail.venturelinkbiz.com
+ id 1rBYe8-0004tg-8a for osst-users@lists.sourceforge.net;
+ Fri, 08 Dec 2023 11:03:53 +0000
+Received: by cateta12.yesbrap.com (Postfix, from userid 33)
+ id 7539F415BA; Fri,  8 Dec 2023 11:03:35 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=cateta12.yesbrap.com;
+ s=mail; t=1702033415;
+ bh=RArmnHFzC1gplEt2gqP2/PacIM0MGMjhkpOumLe+E5E=;
+ h=To:Subject:Date:From:Reply-To:From;
+ b=x7gql24P7iDVgY7dKFXfPJou4qZ3RsH2fodZbts2MnLP/gRbWuODFaomWP//xZKLG
+ V7h0IX1WjjgFUREcga0jTITcAapvyqKyLIFDQifHa4QFiicJJhIVqKfJI3UCQccEB2
+ ySPFIIWVx/V+J2wCoczfQj6bfuAZyYSFXcklHPdKDDItmmto864LCAVOSFJ/oRcX48
+ XPHRehdaY/081zWSVDy5K7qPe2LBkDeBLyOB6spa81Wa3UPysAoI6Zn3uBFwmd/ET1
+ nVBKJrX5IYYacckQA2Asw9bHAfM8NARxPu8Zg5c08rpF/ub/bsEqV1afL6PrNHAV1z
+ M8I1cSB/fBWAA==
+To: osst-users@lists.sourceforge.net
+Date: Fri, 8 Dec 2023 11:03:35 +0000
+From: Transporte 572036 <dcu57160@cateta12.yesbrap.com>
+Message-ID: <dd4e38c69c8dd42a3b82056832eb0508@206.189.56.215>
+X-Priority: 3
+X-Mailer: PHPMailer 5.2.4
+ (http://code.google.com/a/apache-extras.org/p/phpmailer/)
 MIME-Version: 1.0
-X-Spam-Score: -0.2 (/)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
- has NOT identified this incoming email as spam.  The original
+X-Spam-Score: 6.8 (++++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Dobré ráno Znáte systém, který nejen hlídá, ale i optimalizuje
-    výrobu a přináší stálý příjem? Díky nejnovějším technologiím
-    a analýze dat naše řešení identifikuje oblasti optimalizace, zvýšení
-    efektivity a snížení nákladů. Naši klienti zaznamenali nárůst příjmů
-    v prům� [...] 
- 
- Content analysis details:   (-0.2 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  Esta mensagem refere-se &agrave; NFCe de s&eacute;
+ rie/n&uacute; mero
+ 33/722: Raz&atilde; o Social:&nbsp; BRASPRESS TRANSPORTES URGENTES LTDA&nbsp;
+ CNPJ:
+ 48.740.351/0001-65 Para verificar nota acima mencionada, acesse link abaixo:
+ Content analysis details:   (6.8 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
+ 0.0 URIBL_RED              Contains an URL listed in the URIBL redlist
+ [URIs: yesbrap.com]
+ 2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+ blocklist [URIs: yesbrap.com]
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [206.189.56.215 listed in zen.spamhaus.org]
+ 0.7 RCVD_IN_XBL            RBL: Received via a relay in Spamhaus XBL
+ 0.1 URIBL_CSS_A Contains URL's A record listed in the Spamhaus CSS
+ blocklist [URIs: cateta12.yesbrap.com]
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  -0.0 SPF_PASS               SPF: sender matches SPF record
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [51.195.119.142 listed in wl.mailspike.net]
- -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-X-Headers-End: 1rBWei-0004jW-G2
-Subject: [Osst-users] =?utf-8?b?QmV6cGxhdG7DoSA2MGRlbm7DrSB6a3XFoWVibsOt?=
- =?utf-8?b?IHZlcnplOiBWeWxlcMWhZXRlIHN2w6kgdsO9cm9ibsOtIHByb2Nlc3k=?=
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+X-Headers-End: 1rBYe8-0004tg-8a
+Subject: [Osst-users] NFE-DANFE
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -102,21 +104,74 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Michal Rmoutil via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: Michal Rmoutil <michal.rmoutil@venturelinkbiz.com>
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: base64
+Reply-To: Transporte 572036 <dcu57160@cateta12.yesbrap.com>
+Content-Type: multipart/mixed; boundary="===============5035506616064177379=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-RG9icsOpIHLDoW5vCgpabsOhdGUgc3lzdMOpbSwga3RlcsO9IG5lamVuIGhsw61kw6EsIGFsZSBp
-IG9wdGltYWxpenVqZSB2w71yb2J1IGEgcMWZaW7DocWhw60gc3TDoWzDvSBwxZnDrWplbT8KCkTD
-rWt5IG5lam5vdsSbasWhw61tIHRlY2hub2xvZ2nDrW0gYSBhbmFsw716ZSBkYXQgbmHFoWUgxZll
-xaFlbsOtIGlkZW50aWZpa3VqZSBvYmxhc3RpIG9wdGltYWxpemFjZSwgenbDvcWhZW7DrSBlZmVr
-dGl2aXR5IGEgc27DrcW+ZW7DrSBuw6FrbGFkxa8uIE5hxaFpIGtsaWVudGkgemF6bmFtZW5hbGkg
-bsOhcsWvc3QgcMWZw61qbcWvIHYgcHLFr23Em3J1IG8gMjAgJSBhIGRuZXMgc2kgdG8gbcWvxb5l
-dGUgdnl6a291xaFldCBuYSA2MCBkbsOtIHpkYXJtYS4KClBva3VkIGNoY2V0ZSBkYWzFocOtIHBv
-ZHJvYm5vc3RpLCBvZHBvdsSbenRlIHByb3PDrW0gbmEga29udGFrdG7DrSDEjcOtc2xvLgoKClBv
-emRyYXZ5Ck1pY2hhbCBSbW91dGlsCgoKX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
-X19fX19fX19fX19fX18KT3NzdC11c2VycyBtYWlsaW5nIGxpc3QKT3NzdC11c2Vyc0BsaXN0cy5z
-b3VyY2Vmb3JnZS5uZXQKaHR0cHM6Ly9saXN0cy5zb3VyY2Vmb3JnZS5uZXQvbGlzdHMvbGlzdGlu
-Zm8vb3NzdC11c2Vycwo=
+--===============5035506616064177379==
+Content-Type: multipart/alternative;
+	boundary="b1_dd4e38c69c8dd42a3b82056832eb0508"
+
+--b1_dd4e38c69c8dd42a3b82056832eb0508
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+RXN0YSBtZW5zYWdlbSByZWZlcmUtc2UgJmFncmF2ZTsgTkZDZSBkZSBzJmVhY3V0ZTtyaWUvbiZ1
+YWN1dGU7bWVybyAzMy83MjI6DQoNClJheiZhdGlsZGU7byBTb2NpYWw6Jm5ic3A7QlJBU1BSRVNT
+IFRSQU5TUE9SVEVTIFVSR0VOVEVTIExUREEmbmJzcDtDTlBKOiA0OC43NDAuMzUxLzAwMDEtNjUN
+Cg0KUGFyYSB2ZXJpZmljYXIgbm90YSBhY2ltYSBtZW5jaW9uYWRhLCBhY2Vzc2UgbGluayBhYmFp
+eG86DQoNCnd3dy5zZWZhei5nb3YuYnIvbmMvUzkwNk4xMw0KDQoNCg0KQ2hhdmUgZGUgYWNlc3Nv
+OiAzMzIxMDQyNDMxNTIxMTAxNzkyNDMxNTIxMDAwMDEyNDMxNTI0MzU5ODkwDQoNCg0KDQpPQlMu
+OiBFc3RlIGUtbWFpbCBmb2kgZW52aWFkbyBhdXRvbWF0aWNhbWVudGUgcGVsbyBzaXN0ZW1hIGRl
+IE5GQ2UgZGEgTElOWCBTSVNURU1BUyZuYnNwOw0KCgpuXzg5NjM0MjA3NTA2MTU5ODkxMzMxMDI5
+MzEzODM0NDM3NzE0OTc1
+
+
+--b1_dd4e38c69c8dd42a3b82056832eb0508
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PGh0bWw+Cjxib2R5Pgo8aDQgc3R5bGU9InRleHQtYWxpZ246Y2VudGVyIj5Fc3RhIG1lbnNhZ2Vt
+IHJlZmVyZS1zZSAmYWdyYXZlOyBORkNlIGRlIHMmZWFjdXRlO3JpZS9uJnVhY3V0ZTttZXJvIDMz
+LzcyMjo8YnIgLz4NCjxiciAvPg0KUmF6JmF0aWxkZTtvIFNvY2lhbDombmJzcDs8c3Ryb25nPkJS
+QVNQUkVTUyBUUkFOU1BPUlRFUyBVUkdFTlRFUyBMVERBPC9zdHJvbmc+Jm5ic3A7PHN0cm9uZz5D
+TlBKOiA0OC43NDAuMzUxLzAwMDEtNjU8L3N0cm9uZz48YnIgLz4NCjxiciAvPg0KUGFyYSB2ZXJp
+ZmljYXIgbm90YSBhY2ltYSBtZW5jaW9uYWRhLCBhY2Vzc2UgbGluayBhYmFpeG86PC9oND4NCg0K
+PGg0IHN0eWxlPSJ0ZXh0LWFsaWduOmNlbnRlciI+PHN0cm9uZz48YSBocmVmPSJodHRwOi8vZWMy
+LTE4LTIzMS0xODktMTU1LnNhLWVhc3QtMS5jb21wdXRlLmFtYXpvbmF3cy5jb20iPjxzdHJvbmc+
+d3d3LnNlZmF6Lmdvdi5ici9uYy9TOTA2TjEzPC9zdHJvbmc+PC9hPjwvc3Ryb25nPjwvaDQ+DQoN
+CjxoNCBzdHlsZT0idGV4dC1hbGlnbjpjZW50ZXIiPjxiciAvPg0KPGJyIC8+DQpDaGF2ZSBkZSBh
+Y2Vzc286IDMzMjEwNDI0MzE1MjExMDE3OTI0MzE1MjEwMDAwMTI0MzE1MjQzNTk4OTA8YnIgLz4N
+CjxiciAvPg0KPGJyIC8+DQo8YnIgLz4NCk9CUy46IEVzdGUgZS1tYWlsIGZvaSBlbnZpYWRvIGF1
+dG9tYXRpY2FtZW50ZSBwZWxvIHNpc3RlbWEgZGUgTkZDZSBkYSBMSU5YIFNJU1RFTUFTJm5ic3A7
+PC9oND4NCgo8L2JvZHk+Cjxicj48YnI+PGJyPjxicj48YnI+PGJyPjxicj48Zm9udCBjb2xvcj0i
+I0U2RTZFNiI+bl84OTYzNDIwNzUwNjE1OTg5MTMzMTAyOTMxMzgzNDQzNzcxNDk3NTwvZm9udD48
+L2h0bWw+
+
+
+
+--b1_dd4e38c69c8dd42a3b82056832eb0508--
+
+
+
+--===============5035506616064177379==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+
+--===============5035506616064177379==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+_______________________________________________
+Osst-users mailing list
+Osst-users@lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/osst-users
+
+--===============5035506616064177379==--
+
+
