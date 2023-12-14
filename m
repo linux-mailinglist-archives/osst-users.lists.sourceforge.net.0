@@ -2,84 +2,82 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6663480EC63
-	for <lists+osst-users@lfdr.de>; Tue, 12 Dec 2023 13:46:08 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 741A78130E6
+	for <lists+osst-users@lfdr.de>; Thu, 14 Dec 2023 14:06:33 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rD29G-00042Z-R0
+	id 1rDlQ8-0004Io-8j
 	for lists+osst-users@lfdr.de;
-	Tue, 12 Dec 2023 12:46:07 +0000
+	Thu, 14 Dec 2023 13:06:32 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <root@qw22.uchefar.com>) id 1rD29D-00042T-Of
- for osst-users@lists.sourceforge.net; Tue, 12 Dec 2023 12:46:04 +0000
+ (envelope-from <root@qw42.autgraf.com>) id 1rDlQ6-0004Ii-MX
+ for osst-users@lists.sourceforge.net; Thu, 14 Dec 2023 13:06:30 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:
+ d=sourceforge.net; s=x; h=Subject:Date:Message-Id:To:From:
  Content-Transfer-Encoding:Content-type:MIME-Version:Sender:Reply-To:Cc:
  Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
  Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
  List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=/Zls8PmDB796xCTiWRSWz2fmQc00cV0faXBsOY5RhWo=; b=N74C5w8rUHS9bSYiOLLSoicfqE
- Cdkq6JJ4soEdKzBInfgkw1vHmxYpuag9WJa9wIXhDFpW9JMOytNJo8zaFKKSqkgRcuFcxOu1oO+E/
- An5EgKhyz7bZC3jjmDfsQxw0UYVKNikj7qOj1vLu2wD+Lov4kaus05JmSYpnH/fA9nZs=;
+ bh=OMQAqJR59rLU5F2ix8G6fS3JNhPsUMGePladNgqkBVo=; b=YObJMOlAryGYaJuYu2WiiIiC82
+ vd6cmAVuYZj+Ld57bFIc5SoR0KzuVOpFg0G62XlowvLVwZTtV4t/GhuG6Rx9M4kcuENEzaQiL7lcU
+ 26TsQ1bFqjI9pHxsUegW/E9B6fgAQiQ6Lt3484pUxMtLdc4qhk0oNlSLHO959mZGJ8f0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:To:From:Subject:Content-Transfer-Encoding:Content-type:
+ h=Subject:Date:Message-Id:To:From:Content-Transfer-Encoding:Content-type:
  MIME-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=/Zls8PmDB796xCTiWRSWz2fmQc00cV0faXBsOY5RhWo=; b=d
- 9JaZlAAP5+xysRlGQOB4KrQenc5a3P5elh5/xUaxbAJVo/a8VTyls3ME3QQeuX6kZuXJIjS8E/fSp
- xWMetH0VP1j7XprazJ4IQNlxdzScdja4w/Rr0S7lIgvbyJls5iq8tEaadCtK1K3Uh5e0whh8ZEbAm
- dJctU9ChAz6m5o7U=;
-Received: from qw22.uchefar.com ([143.198.42.55])
+ List-Owner:List-Archive; bh=OMQAqJR59rLU5F2ix8G6fS3JNhPsUMGePladNgqkBVo=; b=T
+ iOpk/Tv4R7HqmVV33YPwKnvNLEBZBJ/3wHu1D7BFgyv63Y5bCvJjXVhV6OQLpGGtjUxI1rHh7g63B
+ +PQ6S1V4FvlfELhYgqKcyKvLZWiOgovqU1Fqu1oZBR8/Loq6N0RYNqxa8oYPeGPO0gV6OSOg4PU5g
+ +Xt9d9r1Bcdbk1SY=;
+Received: from qw42.autgraf.com ([165.232.65.112])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1rD29C-0008Hs-3i for osst-users@lists.sourceforge.net;
- Tue, 12 Dec 2023 12:46:04 +0000
-Received: by qw22.uchefar.com (Postfix, from userid 0)
- id A1D32447EF; Tue, 12 Dec 2023 12:16:24 +0000 (UTC)
+ id 1rDlQ5-00044O-W4 for osst-users@lists.sourceforge.net;
+ Thu, 14 Dec 2023 13:06:30 +0000
+Received: by qw42.autgraf.com (Postfix, from userid 0)
+ id 637F64B5EE; Thu, 14 Dec 2023 12:43:16 +0000 (UTC)
 MIME-Version: 1.0
-From: AFIP Notificacion <cviera@afip.gov.ar.com>
+From: Facturacion<contacto@accesofinanciero.com>
 To: osst-users@lists.sourceforge.net
-Message-Id: <20231212123520.A1D32447EF@qw22.uchefar.com>
-Date: Tue, 12 Dec 2023 12:16:24 +0000 (UTC)
-X-Spam-Score: 6.4 (++++++)
+Message-Id: <20231214125131.637F64B5EE@qw42.autgraf.com>
+Date: Thu, 14 Dec 2023 12:43:16 +0000 (UTC)
+X-Spam-Score: 8.5 (++++++++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  Querido contribuyente, osst-users@lists.sourceforge.net En
-    nuestro empeño continuado por mejorar la transparencia y los servicios que
-    prestamos, queremos comunicarle una actualización en su situación impositiva.
-    Le aconsejamos que repase esta informaci� [...] 
+ Content preview:  Envio de Factura A 7498-503914630 - AR$ 519.421,17 File #702105
+    - 14/12/2023 Ver Comprobante Si no podés visualizar el comprobante, hacé
+    click aquí Milagros Dearma Grupo RolSol SRL 
  
- Content analysis details:   (6.4 points, 6.0 required)
+ Content analysis details:   (8.5 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
+  3.6 RCVD_IN_PBL            RBL: Received via a relay in Spamhaus PBL
+                             [165.232.65.112 listed in zen.spamhaus.org]
   3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [143.198.42.55 listed in zen.spamhaus.org]
-  0.7 RCVD_IN_XBL            RBL: Received via a relay in Spamhaus XBL
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
   0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
                              mail domains are different
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
-                             DNS
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
   0.0 HTML_MESSAGE           BODY: HTML included in message
   0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
   1.0 URI_AZURE_CLOUDAPP     Link to hosted azure web application,
                              possible phishing
+  0.0 LOTS_OF_MONEY          Huge... sums of money
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-  0.0 MANY_SUBDOM            Lots and lots of subdomain parts in a URI
-X-Headers-End: 1rD29C-0008Hs-3i
-Subject: [Osst-users] Le informamos que hemos detectado una discrepancia en
- su ultima declaracion de impuestos No.17650
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1rDlQ5-00044O-W4
+Subject: [Osst-users] [SPAM] Envio del Comprobante Fiscal Digital 68541
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -91,70 +89,64 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============9210494336881165223=="
+Content-Type: multipart/mixed; boundary="===============5623802372039000065=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============9210494336881165223==
+--===============5623802372039000065==
 Content-type: text/html; charset=UTF-8
 Content-Transfer-Encoding: base64
 
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEgVHJhbnNpdGlvbmFs
-Ly9FTiI+DQoKPGh0bWw+DQoKPGhlYWQ+DQoKDQoKICA8c3R5bGU+DQoKYm9keSB7DQoKZm9udC1m
-YW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOw0KCm1hcmdpbjogMDsNCgpwYWRkaW5nOiAwOw0KCmJh
-Y2tncm91bmQtY29sb3I6ICNmNGY0ZjQ7DQoKfQ0KCi5lbWFpbC1jb250YWluZXIgew0KCndpZHRo
-OiA2MDBweDsNCgptYXJnaW46IGF1dG87DQoKYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7DQoKcGFk
-ZGluZzogMjBweDsNCgpib3JkZXItcmFkaXVzOiAxMHB4Ow0KCn0NCgoubG9nbyB7DQoKZGlzcGxh
-eTogZmxleDsNCgpqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsNCgpwYWRkaW5nOiAyMHB4Ow0KCn0N
-CgoubWVzc2FnZSB7DQoKdGV4dC1hbGlnbjogY2VudGVyOw0KCnBhZGRpbmc6IDIwcHg7DQoKZm9u
-dC1zaXplOiAxNnB4Ow0KCn0NCgogIDwvc3R5bGU+DQoKPC9oZWFkPg0KCg0KCg0KCjxib2R5Pg0K
-Cg0KCjxkaXYgY2xhc3M9ImVtYWlsLWNvbnRhaW5lciI+DQoKPGRpdiBjbGFzcz0idGV4dG8iIHN0
-eWxlPSJib3JkZXItdG9wOiAwcHggbm9uZTsgcGFkZGluZzogMjBweDsgdGV4dC1hbGlnbjogY2Vu
-dGVyOyBmb250LXNpemU6IDE2cHg7IGNvbG9yOiByZ2IoNTEsIDUxLCA1MSk7IGZvbnQtZmFtaWx5
-OiBBcmlhbCxzYW5zLXNlcmlmOyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQtd2VpZ2h0OiA0MDA7
-IGxldHRlci1zcGFjaW5nOiBub3JtYWw7IG9ycGhhbnM6IDI7IHRleHQtaW5kZW50OiAwcHg7IHRl
-eHQtdHJhbnNmb3JtOiBub25lOyB3aWRvd3M6IDI7IHdvcmQtc3BhY2luZzogMHB4OyB3aGl0ZS1z
-cGFjZTogbm9ybWFsOyI+DQoKPHA+UXVlcmlkbyBjb250cmlidXllbnRlLCZuYnNwO29zc3QtdXNl
-cnNAbGlzdHMuc291cmNlZm9yZ2UubmV0DQo8L3A+DQoKDQoKPHA+RW4gbnVlc3RybyBlbXBlJm50
-aWxkZTtvIGNvbnRpbnVhZG8gcG9yIG1lam9yYXIgbGENCgp0cmFuc3BhcmVuY2lhIHkNCgpsb3Mg
-c2VydmljaW9zIHF1ZSBwcmVzdGFtb3MsIHF1ZXJlbW9zIGNvbXVuaWNhcmxlIHVuYQ0KCmFjdHVh
-bGl6YWNpJm9hY3V0ZTtuIGVuIHN1IHNpdHVhY2kmb2FjdXRlO24gaW1wb3NpdGl2YS4gTGUNCgph
-Y29uc2VqYW1vcw0KCnF1ZSByZXBhc2UgZXN0YSBpbmZvcm1hY2kmb2FjdXRlO24gbWludWNpb3Nh
-bWVudGUuPC9wPg0KCg0KCjxwPkxhIEFkbWluaXN0cmFjaSZvYWN1dGU7biBGZWRlcmFsIGRlIElu
-Z3Jlc29zDQoKUCZ1YWN1dGU7YmxpY29zIGVzIGVsDQoKb3JnYW5pc21vIHF1ZSBzZSBvY3VwYSBk
-ZSBsYSBhZG1pbmlzdHJhY2kmb2FjdXRlO24geSBjb250cm9sIGRlIGxhcw0KCnBvbCZpYWN1dGU7
-dGljYXMgZmlzY2FsZXMsIGFkdWFuZXJhcyB5IGRlIHNlZ3VyaWRhZCBzb2NpYWwgZW4NCgpBcmdl
-bnRpbmEuPC9wPg0KCg0KCjxhIGhyZWY9Imh0dHBzOi8vdHJhbnNmYWNzYWx0c29sdWNpcG9ydC5m
-cmFuY2VjZW50cmFsLmNsb3VkYXBwLmF6dXJlLmNvbT9hdXRoLmFmaXAuZ29iLmFyL2NvbnRyaWJ1
-eWVudGUvc2VydmljaW9zd2ViLmFmaXAuZ29iLmFyL2dlbmVyaWNvcy9ndWlhc1Bhc29QYXNvL1Zl
-ckd1aWEuYXNweD9pZD00NzQiIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiIHN0eWxl
-PSJjb2xvcjogcmdiKDAsIDEwNSwgMTY2KTsiPlJldmlzYXINCgpzaXR1YWNpJm9hY3V0ZTtuIGZp
-c2NhbDwvYT4NCgo8cD5TaSBubyBwdWVkZXMgdmVyIGVzdGUgbWVuc2FqZSBjb3JyZWN0YW1lbnRl
-IGVuIHVuDQoKVGVsJmVhY3V0ZTtmb25vIG0mb2FjdXRlO3ZpbCwgdGUgcmVjb21lbmRhbW9zIHVz
-YXIgdW5hDQoKY29tcHV0YWRvcmEuPC9wPg0KCg0KCjwvZGl2Pg0KCg0KCjxwIHN0eWxlPSJjb2xv
-cjogcmdiKDUxLCA1MSwgNTEpOyBmb250LWZhbWlseTogQXJpYWwsc2Fucy1zZXJpZjsgZm9udC1z
-aXplOiAxMXB4OyBmb250LXN0eWxlOiBub3JtYWw7IGZvbnQtd2VpZ2h0OiA0MDA7IGxldHRlci1z
-cGFjaW5nOiBub3JtYWw7IG9ycGhhbnM6IDI7IHRleHQtYWxpZ246IHN0YXJ0OyB0ZXh0LWluZGVu
-dDogMHB4OyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsgd2lkb3dzOiAyOyB3b3JkLXNwYWNpbmc6IDBw
-eDsgd2hpdGUtc3BhY2U6IG5vcm1hbDsiPjxiaWc+U2FsdWRvcyw8L2JpZz48L3A+DQoKDQoKPHAg
-c3R5bGU9ImNvbG9yOiByZ2IoNTEsIDUxLCA1MSk7IGZvbnQtZmFtaWx5OiBBcmlhbCxzYW5zLXNl
-cmlmOyBmb250LXNpemU6IDExcHg7IGZvbnQtc3R5bGU6IG5vcm1hbDsgZm9udC13ZWlnaHQ6IDQw
-MDsgbGV0dGVyLXNwYWNpbmc6IG5vcm1hbDsgb3JwaGFuczogMjsgdGV4dC1hbGlnbjogc3RhcnQ7
-IHRleHQtaW5kZW50OiAwcHg7IHRleHQtdHJhbnNmb3JtOiBub25lOyB3aWRvd3M6IDI7IHdvcmQt
-c3BhY2luZzogMHB4OyB3aGl0ZS1zcGFjZTogbm9ybWFsOyI+PGJpZz5BRklQDQoKLSBBZG1pbmlz
-dHJhY2kmb2FjdXRlO24gRmVkZXJhbCBkZSBJbmdyZXNvcyBQJnVhY3V0ZTtibGljb3M8L2JpZz48
-L3A+DQoKDQoKPC9kaXY+DQoKDQoKPC9ib2R5Pg0KCjwvaHRtbD4NCg==
+PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEgVHJhbnNpdGlvbmFs
+Ly9FTiI+DQoKPGh0bWw+DQoKPGhlYWQ+DQoKDQoKDQoKICANCgogIA0KCiAgPG1ldGEgY29udGVu
+dD0idGV4dC9odG1sOyBjaGFyc2V0PUlTTy04ODU5LTEiIGh0dHAtZXF1aXY9ImNvbnRlbnQtdHlw
+ZSI+DQoKDQoKDQoKICANCgogIA0KCiAgPHRpdGxlPjwvdGl0bGU+DQoKPC9oZWFkPg0KCg0KCg0K
+Cjxib2R5Pg0KCg0KCg0KCjx0YWJsZSBzdHlsZT0id2lkdGg6IDU0OHB4OyBoZWlnaHQ6IDI2MnB4
+OyIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iNiIgY2VsbHNwYWNpbmc9IjAiPg0KCg0KCg0KCiAg
+PHRib2R5Pg0KCg0KCg0KCiAgICA8dHI+DQoKDQoKDQoKICAgICAgPHRkIHN0eWxlPSJib3JkZXIt
+Ym90dG9tOiAxcHggc29saWQgcmdiKDIyMiwgMjIyLCAyMjIpOyBmb250LXNpemU6IDIycHg7Ij5F
+bnZpbyBkZSBGYWN0dXJhIEEgNzQ5OC01MDM5MTQ2MzAgLSA8c3Ryb25nPiBBUiQgNTE5LjQyMSwx
+Nzwvc3Ryb25nPjxicj4NCgoNCgoNCgogICAgICA8L3RkPg0KCg0KCg0KCiAgICA8L3RyPg0KCg0K
+Cg0KCg0KCiAgICAgICAgICAgIDx0cj4NCgoNCgoNCgogICAgICA8dGQ+PHNwYW4gc3R5bGU9ImZv
+bnQtc2l6ZTogMTRweDsiPkZpbGUgIzcwMjEwNTxzdHJvbmc+PC9zdHJvbmc+IC0gMTQvMTIvMjAy
+MyZuYnNwOzwvc3Bhbj48L3RkPg0KCg0KCg0KCiAgICA8L3RyPg0KCg0KCg0KCg0KCiAgICAgICAg
+ICAgIA0KCiAgICAgICAgICAgIDx0cj4NCgoNCgoNCgogICAgICA8dGQ+DQoKICAgICAgDQoKICAg
+ICAgDQoKICAgICAgPGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyNCwgMjIyLCAy
+MjIpOyI+Jm5ic3A7PC9kaXY+DQoKDQoKDQoKICAgICAgPC90ZD4NCgoNCgoNCgogICAgPC90cj4N
+CgoNCgoNCgoNCgoJCQk8dHI+DQoKDQoKDQoKDQoKICAgICAgICAgICAgICAgIDx0ZD4NCgogICAg
+ICAgICAgICAgICAgICAgIDxiciBzdHlsZT0iY29sb3I6IHJnYig1MSwgNTEsIDI1NSk7Ij4NCgoN
+CgoNCgogICAgICANCgogICAgICANCgogICAgICA8ZGl2IGNsYXNzPSJ2MUJvdG9uVmVyIiBzdHls
+ZT0id2lkdGg6IDE0MHB4OyBjb2xvcjogcmdiKDUxLCA1MSwgMjU1KTsiPjxhIGhyZWY9Imh0dHBz
+Oi8vYXRlbmNmYWN0Y2xpZW50c29sdWN0Y3NoLndlc3R1czMuY2xvdWRhcHAuYXp1cmUuY29tPzIz
+NTcyNzNGNTU3MzY5NjQzRDM1MzIzNTM4MzQzNTM1MzQzNzI2NzU2OTY0M0QyNjc0NjQ2OTY0M0Q0
+NDRGNDMyNjY0Njk2NDNEMzIzMjM0MzEzNjMxMjY2NTY5NjQzRDQ1NEQ0OTM1NzQ1NiIgdGl0bGU9
+IlZlciBjb21wcm9iYW50ZS4uLiIgc3R5bGU9InRleHQtZGVjb3JhdGlvbjogbm9uZTsgZm9udC1z
+aXplOiAxNnB4OyIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9yZWZlcnJlciI+VmVyIENvbXByb2Jh
+bnRlPC9hPjxicj4NCgoNCgogICAgICA8YnI+DQoKDQoKDQoKICAgICAgPC9kaXY+DQoKDQoKDQoK
+ICAgICAgPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTFweDsiPjxiaWc+U2kgbm8gcG9kJmVhY3V0
+ZTtzIHZpc3VhbGl6YXIgZWwgPHN0cm9uZz5jb21wcm9iYW50ZTwvc3Ryb25nPiwgaGFjJmVhY3V0
+ZTs8L2JpZz4gPC9zcGFuPjxiaWc+PGEgaHJlZj0iaHR0cHM6Ly9hdGVuY2ZhY3RjbGllbnRzb2x1
+Y3Rjc2gud2VzdHVzMy5jbG91ZGFwcC5henVyZS5jb20/MjM1NzI3M0Y1NTczNjk2NDNEMzUzMjM1
+MzgzNDM1MzUzNDM3MjY3NTY5NjQzRDI2NzQ2NDY5NjQzRDQ0NEY0MzI2NjQ2OTY0M0QzMjMyMzQz
+MTM2MzEyNjY1Njk2NDNENDU0RDQ5MzU3NDU2IiB0aXRsZT0iVmVyIGNvbXByb2JhbnRlLi4uIiBh
+bHQ9IlZlciBjb21wcm9iYW50ZS4uLiIgdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9yZWZlcnJlciI+
+Y2xpY2sgYXF1JmlhY3V0ZTs8L2E+PC9iaWc+DQoKICAgICAgICAgICAgICAgIDwvdGQ+DQoKDQoK
+DQoKDQoKCQkJPC90cj4NCgoNCgoNCgoNCgogICAgICAgICAgICAgICAgDQoKDQoKICAgICAgICAg
+ICAgPHRyPg0KCg0KCg0KCiAgICAgIDx0ZD4NCgogICAgICAgIDxzdHJvbmc+TWlsYWdyb3MgRGVh
+cm1hPC9zdHJvbmc+PGJyPg0KCg0KCg0KCg0KCiAgICAgICAgPHN0cm9uZz4gR3J1cG8gUm9sU29s
+IFNSTDwvc3Ryb25nPjwvdGQ+DQoKDQoKDQoKICAgIDwvdHI+DQoKDQoKDQoKICANCgogIA0KCiAg
+PC90Ym9keT4NCgo8L3RhYmxlPg0KCg0KCg0KCjwvYm9keT4NCgo8L2h0bWw+DQo=
 
 
 
 
---===============9210494336881165223==
+--===============5623802372039000065==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============9210494336881165223==
+--===============5623802372039000065==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -165,4 +157,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============9210494336881165223==--
+--===============5623802372039000065==--
