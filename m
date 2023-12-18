@@ -2,92 +2,89 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 4801981420F
-	for <lists+osst-users@lfdr.de>; Fri, 15 Dec 2023 08:04:40 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id BF8D081699E
+	for <lists+osst-users@lfdr.de>; Mon, 18 Dec 2023 10:16:44 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rE2FU-0006x6-1C
+	id 1rF9jv-000637-61
 	for lists+osst-users@lfdr.de;
-	Fri, 15 Dec 2023 07:04:39 +0000
+	Mon, 18 Dec 2023 09:16:43 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <jof@rt.kt.kg>) id 1rE2FR-0006wz-1s
- for osst-users@lists.sourceforge.net; Fri, 15 Dec 2023 07:04:36 +0000
+ (envelope-from <jakub.kovarik@corebizinsight.com>)
+ id 1rF9js-00062x-R5 for osst-users@lists.sourceforge.net;
+ Mon, 18 Dec 2023 09:16:41 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=XfjsI1ZG2CG5MN3x3axfseUgO8m7aFuG0D/uarnsyL4=; b=TQAF/m/4MwWLXQfzvFPAPQ2XCX
- bnlsS/tCEpAH+wrVgBonqLA2299SMary0JcQrDmb0LdXred5k4kZJJ8wE/hLmovHBc162aCRcFSPi
- X+Ny+hwLgqbcXhI/fRoXxfNsOMNzbJq8Ki7nc3CdhPDEua4E11rJUOYJWswtEQD6GD5E=;
+ bh=CEmchsDu5Oe+RNHCZSBmKSgMOuy1xnO2dydqkEjt3Qs=; b=HNWedTXP2K3tApqTjjDqm7iKWE
+ 3s4lSDiVmONec27MoHAhOD3y/0TI4GfleKwoBcRZTMhLXmabDl/7rdeau/hq/e/eEKBngAaCzYBJ1
+ giMeXvaYPKve4ZnZU+yw+TlBiGIUDNKIFFS/Rt7sPataTxjRvk92tOq17ZCJCgxclvj0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=XfjsI1ZG2CG5MN3x3axfseUgO8m7aFuG0D/uarnsyL4=; b=N
- yXw2WuXpGQfuteOLJw/8imETmJxuBpPKudToLb0vfNpN56cEyb7WWjU6+QM8HYR9Ym5XmmY/zFjg8
- 4LbSkPizW92j1ZbIxwBUDDWtkf5z5FMfFOcAyoLMMqNtncqNCdMfT78SCe1rCuzsUZ7XElXN6u2Ff
- xby6MaWWcCOb0Jko=;
-Received: from mail.ktnet.kg ([213.145.129.21])
+ List-Owner:List-Archive; bh=CEmchsDu5Oe+RNHCZSBmKSgMOuy1xnO2dydqkEjt3Qs=; b=i
+ gUI3RmfFKUmdyAfwjz806x+Qk42bn0isqQ+MmRyDg959btIQ5GAVCVS+C2E3i7to2tsf16sCi4Nwg
+ Jc+jw01b5N4/jowXg/M5ASxEZsnZNdDZvc/qt+mRo5N7YYI0ahUEcUMln5s7VBjAkdTko3M3T0pYX
+ HJg7t45yfvo5MXS4=;
+Received: from mail.corebizinsight.com ([217.61.112.124])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1rE2FL-0002Vz-Ob for osst-users@lists.sourceforge.net;
- Fri, 15 Dec 2023 07:04:35 +0000
-DomainKey-Signature: a=rsa-sha1;  q=dns; c=nofws; s=default; d=rt.kt.kg;
- b=G1VDlfIRZ3ETbFAqDfGgfCpe3VmWaa3+uj6a1VCLgZKkffz+exBxd15eYZsPTcTZmYMBNKjfCOWqb4TuQ2pnBk9judZhcUhydHSaKe3OqE2/L5FJVOi9Vyq1mB85GOWnWQkAp2jUg5jyjxOfMQlC8djJhS4uRcl6tWzz5zfvnuQ=;
- h=Received:Received:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding:X-PPP-Message-ID:X-PPP-Vhost;
-Received: (qmail 21548 invoked from network); 15 Dec 2023 12:55:36 +0600
-Received: from unknown (HELO rt.kt.kg) (87.120.252.222)
- by mail.ktnet.kg with ESMTPA; 15 Dec 2023 12:55:35 +0600
-From: Nota Fiscal emitida <jof@rt.kt.kg
-To: osst-users@lists.sourceforge.net
-Date: 15 Dec 2023 07:04:12 +0000
-Message-ID: <20231215070411.BA618728AD3998A1@rt.kt.kg>
+ id 1rF9jq-0002iJ-Ut for osst-users@lists.sourceforge.net;
+ Mon, 18 Dec 2023 09:16:39 +0000
+Received: by mail.corebizinsight.com (Postfix, from userid 1002)
+ id 2586582B31; Mon, 18 Dec 2023 10:16:04 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=corebizinsight.com;
+ s=mail; t=1702890977;
+ bh=CEmchsDu5Oe+RNHCZSBmKSgMOuy1xnO2dydqkEjt3Qs=;
+ h=Date:From:To:Subject:From;
+ b=de+Z3PhJoArMnbhCbYLSLN5DM5L4RiO8jC9jJ6M8sB1Yfrg9d6F7L+pZ5+XQFZizm
+ FOWyeetVAXca+jzZ85LFS9RwScA07m5CH8ZN6C8iqnPzxGsNMSRXHJD3yQktazY6ju
+ Uziw19vPBwr39vht7ohhiP/QME2XKef8A25AHt7f/K5lulg4NR4FgbvkibWsQPnZz6
+ vgfQ1kvJS3+P6uT7swohgvs+9BeOpOCHGQXx1w3LBuMccWwWs8ctHuk6aDla80hWuY
+ OTTQ/xZCa5K5C46nh+tR+efzFZvKbUjehSEnQk6t8x4xNrEoNhLhn+MQZiW0bkPJXT
+ qa1ZqVh2vyMZA==
+Received: by mail.corebizinsight.com for <osst-users@lists.sourceforge.net>;
+ Mon, 18 Dec 2023 09:15:58 GMT
+Message-ID: <20231218084500-0.1.2n.dkah.0.6jd3xh9r9i@corebizinsight.com>
+Date: Mon, 18 Dec 2023 09:15:58 GMT
+To: <osst-users@lists.sourceforge.net>
+X-Mailer: mail.corebizinsight.com
 MIME-Version: 1.0
-X-PPP-Message-ID: <20231215065536.21545.8990@localhost.localdomain>
-X-PPP-Vhost: rt.kt.kg
-X-Spam-Score: 5.2 (+++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  A Nota Fiscal de Serviços Eletrônica de número 1933553734412
-    autorizada pela Prefeitura de São Paulo foi emitida para o remetente recebido.
-    Nome do prestador/emissor: NACIONAL SERVIÇOS LTDA. Data de emissão: 22/12/2022
-    03:27:42 Valor: R$ 340,09 
+ Content preview:  Dobré ráno, Je možné s vámi navázat spolupráci? Rád
+    si promluvím s osobou zabývající se prodejní činností. 
  
- Content analysis details:   (5.2 points, 6.0 required)
+ Content analysis details:   (-0.2 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  2.2 FROM_UNBAL1            From with unbalanced angle brackets, '>' missing
  -0.0 SPF_PASS               SPF: sender matches SPF record
-  0.3 RCVD_IN_MSPIKE_L3      RBL: Low reputation (-3)
-                             [213.145.129.21 listed in bl.mailspike.net]
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.1 HTTPS_HTTP_MISMATCH    BODY: No description available.
-  0.7 HTML_IMAGE_ONLY_20     BODY: HTML: images with 1600-2000 bytes of
-                             words
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
   0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
                              valid
-  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
-  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML
-                             tag
-  1.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-  0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1rE2FL-0002Vz-Ob
-Subject: [Osst-users] Pagamento Recebido
+X-Headers-End: 1rF9jq-0002iJ-Ut
+Subject: [Osst-users] =?utf-8?q?Pros=C3=ADm_kontaktujte?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -99,78 +96,18 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============1474122563752991136=="
+From: Jakub Kovarik via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Jakub Kovarik <jakub.kovarik@corebizinsight.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============1474122563752991136==
-Content-Type: text/html;
-	charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
-
-<div id=3D"mainscreen">
-<div id=3D"mainscreencontent">
-<div class=3D"uibox" id=3D"mailview-right">
-<div id=3D"messagecontent">
-<div class=3D"leftcol">
-<div id=3D"messagebody">
-<div class=3D"message-htmlpart">
-<div class=3D"rcmBody">
-<p><img alt=3D"" height=3D"73" src=3D"https://zebel.mymediapc.net/sefaz.png=
-" style=3D"float:left" width=3D"110" /=3D""></p>
-
-<p>A Nota Fiscal de Servi&ccedil;os Eletr&ocirc;nica de n&uacute;mero <stro=
-ng>1933553734412</strong> autorizada pela <strong>Prefeitura de S&atilde;o =
-Paulo</strong> foi emitida para o remetente recebido.</p>
-
-<p>Nome do prestador/emissor: <strong>NACIONAL SERVI&Ccedil;OS LTDA. </stro=
-ng><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
-; &nbsp; &nbsp; &nbsp; &nbsp; Data de emiss&atilde;o: <strong>22/12/2022 03=
-:27:42</strong><br />
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp=
-; &nbsp; &nbsp; &nbsp; &nbsp; Valor: <strong>R$ 340,09</strong><br />
-&nbsp;</p>
-
-<p style=3D"text-align:center"><strong>Vizualizar&nbsp;NFE:</strong> <a hre=
-f=3D"https://lojasmonteirosa.com" rel=3D"noreferrer" target=3D"_blank">http=
-s://nfse.capital.sp.gov.br/?num=3D734402&amp;key=3DB6AF7CF09F5758DG</a></p>=
-
-
-<p>&nbsp;</p>
-
-<h5 style=3D"text-align:center">Esta mensagem &eacute; informativa e autom&=
-aacute;tica emitida pelo sistema de NFS-e da Prefeitura Municipal de S&atil=
-de;o Paulo. N&atilde;o &eacute; poss&iacute;vel respond&ecirc;-la.<br />
-Todas as notas emitidas para o seu documento encontram-se no Portal Nota S&=
-atilde;o Paulo, nota.capital.sp.gov.br.<br />
-ATEN&Ccedil;&Atilde;O: ESTE EMAIL N&Atilde;O CONT&Eacute;M ANEXOS.</h5>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- end mailview-right --></div>
-<!-- end mainscreencontent --></div>
-<!-- end mainscreen -->
-
-
---===============1474122563752991136==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---===============1474122563752991136==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
-
---===============1474122563752991136==--
+RG9icsOpIHLDoW5vLAoKSmUgbW/Fvm7DqSBzIHbDoW1pIG5hdsOhemF0IHNwb2x1cHLDoWNpPwoK
+UsOhZCBzaSBwcm9tbHV2w61tIHMgb3NvYm91IHphYsO9dmFqw61jw60gc2UgcHJvZGVqbsOtIMSN
+aW5ub3N0w60uCgpQb23DoWjDoW1lIGVmZWt0aXZuxJsgesOtc2vDoXZhdCBub3bDqSB6w6FrYXpu
+w61reS4KCk5ldmFoZWp0ZSBtZSBrb250YWt0b3ZhdC4KClYgcMWZw61wYWTEmyB6w6FqbXUgVsOh
+cyBidWRlIGtvbnRha3RvdmF0IG7DocWhIGFuZ2xpY2t5IG1sdXbDrWPDrSB6w6FzdHVwY2UuCgoK
+UG96ZHJhdnkKSmFrdWIgS292YXJpawoKCl9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fCk9zc3QtdXNlcnMgbWFpbGluZyBsaXN0Ck9zc3QtdXNlcnNAbGlzdHMu
+c291cmNlZm9yZ2UubmV0Cmh0dHBzOi8vbGlzdHMuc291cmNlZm9yZ2UubmV0L2xpc3RzL2xpc3Rp
+bmZvL29zc3QtdXNlcnMK
