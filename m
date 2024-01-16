@@ -2,86 +2,78 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 3CF0B82BB24
-	for <lists+osst-users@lfdr.de>; Fri, 12 Jan 2024 07:07:31 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 2AAD582ED5B
+	for <lists+osst-users@lfdr.de>; Tue, 16 Jan 2024 12:06:00 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rOAhW-00071n-0b
+	id 1rPhGS-0003Qt-On
 	for lists+osst-users@lfdr.de;
-	Fri, 12 Jan 2024 06:07:30 +0000
+	Tue, 16 Jan 2024 11:05:53 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <grace@cfhardwares.com>) id 1rOAhU-00071g-3Q
- for osst-users@lists.sourceforge.net; Fri, 12 Jan 2024 06:07:28 +0000
+ (envelope-from <noreply@wetransfer.com>) id 1rPhGR-0003Qm-8E
+ for osst-users@lists.sourceforge.net; Tue, 16 Jan 2024 11:05:51 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:MIME-Version:Date:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=5cy9nYLy64jkzbmrH0OcJL6PsYqoByicvKuaUOn+FzU=; b=CxCd90EFuv/YFPiIQqW7A7lS6N
- 2yR5I733MlMjzeMbblGKyMGFEFidYK4tsjIq8tOGt7WyDjtuDnqqAVMEkQ2UVMhzEgDxsYH7wTArx
- 4NRMC51jSsnfR9pFDnqkblfZ7IHm60/ZVU1GhHUGFQURAO/za7FGZDkWOxTU+Xx5JeL0=;
+ bh=h8B/lHW5oQ/AVqGHdkIzezevv4MGrGI1Z3SINfN2PX0=; b=jb7jrF5XkSAtSqA2bAY7D2ACCQ
+ miXHdeexWTwjDD5uMcPkmNNfDZ90VukT/AqgpCSeR8pmBQClrLbRBcVQkw92ITS7lOa9CkPoCjXLr
+ M6VqG8YIey4KEIiiXODVm34PPUYxheXPwvcsQUXbWXb7cOsmbBOIZvaWdpgn9py7g2kU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:MIME-Version:Date:To:From:Message-ID:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=5cy9nYLy64jkzbmrH0OcJL6PsYqoByicvKuaUOn+FzU=; b=S
- 0tisVe3MOMFUcLHO93AbTqDvYW+9pUrKe+75RqWYpyKhqO+WdSqKfY97fERufKv+Hn1UiFJCpzGqB
- F/1ayyaIg07Gi4oXO+42qaSbsGM3Jwp9d/LLeXCWH8BI8XmOhxAqLD2JXmjvh5lPeUi9B9cipjRsD
- +cfxmOY9zLT1rBY8=;
-Received: from [58.221.206.54] (helo=mail.cfmounts.com)
- by sfi-mx-2.v28.lw.sourceforge.com with smtp (Exim 4.95)
- id 1rOAhO-0000C5-Us for osst-users@lists.sourceforge.net;
- Fri, 12 Jan 2024 06:07:28 +0000
-Received: from ssg ([58.221.206.54]) (envelope-sender <grace@cfhardwares.com>)
- by 192.168.3.11 with ESMTP
- for <osst-users@lists.sourceforge.net>; Fri, 12 Jan 2024 14:07:11 +0800
-Message-ID: <F7A0F431FFE296A3FD264CA4AB9C99A4@ssg>
-From: =?utf-8?B?44CQ566h55CG5ZGY44CR?= <grace@cfhardwares.com>
-To: <osst-users@lists.sourceforge.net>
-Date: Fri, 12 Jan 2024 14:07:07 +0800
+ List-Owner:List-Archive; bh=h8B/lHW5oQ/AVqGHdkIzezevv4MGrGI1Z3SINfN2PX0=; b=I
+ SEUhdF/cPVLk7F/EEKNAWTTz/MD8Og52Z6jbnazaOdSioEcxQDItBGRqPnyUPtofipAbhlxRl5yPF
+ J0e813CwBloNuxf0+8jIMWS+Nx6wG0oKfTmCbRZ1mZlSYBlxAUFTkI9dsPr3aggZWvT07mDQm7bKb
+ ZYWEki4w5kMzspwI=;
+Received: from static.221.203.202.116.clients.your-server.de
+ ([116.202.203.221] helo=wetransfer.com)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1rPhGQ-0007eZ-Fz for osst-users@lists.sourceforge.net;
+ Tue, 16 Jan 2024 11:05:51 +0000
+To: osst-users@lists.sourceforge.net
+Date: 16 Jan 2024 08:05:39 -0300
+Message-ID: <20240116080539.6D6501027E852FF8@wetransfer.com>
 MIME-Version: 1.0
-X-Priority: 3
-X-MSMail-Priority: Normal
-X-Mailer: Microsoft Outlook Express 6.00.2900.5512
-X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5512
-X-Spam-Score: 8.4 (++++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+X-Spam-Score: 7.6 (+++++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  osst-users禁用通知! 你好,osst-users@lists.sourceforge.net
-    您的: osst-users@lists.sourceforge.net密码验证今天到期！ 请按照以下保留当前密码并更新。
-    点击保持当前密码 禁用通知。 2024 
+ Content preview:  This transfer expires on 2024-01-23 info@bueschel.de sent
+    you Request for Quotation 1 item, 703 KB in total ・ Expires on 23 January,
+    2024 Request for Quotation Good Day, 
  
- Content analysis details:   (8.4 points, 6.0 required)
+ Content analysis details:   (7.6 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  3.6 RCVD_IN_PBL            RBL: Received via a relay in Spamhaus PBL
-                             [58.221.206.54 listed in zen.spamhaus.org]
+  0.7 RCVD_IN_XBL            RBL: Received via a relay in Spamhaus XBL
+                             [116.202.203.221 listed in zen.spamhaus.org]
   3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.0 SPF_HELO_FAIL          SPF: HELO does not match SPF record (fail)
+                             [SPF failed: Rejected by SPF record]
+  0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
+                             [SPF failed: Rejected by SPF record]
+  0.1 HTTPS_HTTP_MISMATCH    BODY: No description available.
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
-                             identical to background
-  0.0 HDR_ORDER_FTSDMCXX_NORDNS Header order similar to spam
-                             (FTSDMCXX/boundary variant) + no rDNS
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-  0.0 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1rOAhO-0000C5-Us
-Subject: [SPAM] 关于：您的账号osst-users@lists.sourceforge.net禁用通知【重要】
+  2.0 MIXED_HREF_CASE        Has href in mixed case
+  0.3 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+X-Headers-End: 1rPhGQ-0007eZ-Fz
+Subject: [Osst-users] info@bueschel.de sent you Request for Quotation via
+ WeTransfer
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -93,209 +85,724 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5107923578181659861=="
+From: WeTransfer via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: WeTransfer <noreply@wetransfer.com>
+Content-Type: multipart/mixed; boundary="===============4347421389571759983=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
-
---===============5107923578181659861==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_000_0981_01E5DEE3.1AA77830"
-
-This is a multi-part message in MIME format.
-
-------=_NextPart_000_0981_01E5DEE3.1AA77830
-Content-Type: text/plain;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-DQoNCm9zc3QtdXNlcnPnpoHnlKjpgJrnn6UhDQoNCuS9oOWlvSxvc3N0LXVzZXJzQGxpc3RzLnNv
-dXJjZWZvcmdlLm5ldA0KDQrmgqjnmoQ6IG9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0
-5a+G56CB6aqM6K+B5LuK5aSp5Yiw5pyf77yBDQror7fmjInnhafku6XkuIvkv53nlZnlvZPliY3l
-r4bnoIHlubbmm7TmlrDjgIIgDQrngrnlh7vkv53mjIHlvZPliY3lr4bnoIEgDQog56aB55So6YCa
-55+l44CCIDIwMjQgDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoN
-Cg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0K
-DQoNCg0KDQoNCui3teihjOKAnOWbm+S4i+WfuuWxguKAneW3peS9nOaWueazle+8jOW7uueri+WH
-uuWPo+mynOa0u+WGnOS6p+WTgeWxnuWcsOafpeajgOKAnOe7v+iJsumAmumBk+KAne+8jOWFsOW3
-nua1t+WFs+aJgOWxnuW5s+WHiea1t+WFs+W4uOaAgeWMluW8gOWxleKAnDfDlzI04oCd5bCP5pe2
-6aKE57qm55Sz5oql44CB6aKE57qm5p+l5qOA77yM5a6e6KGM6ZqP5oql6ZqP5qOA44CB6ZqP5oql
-6ZqP5pS+44CCMjAyM+W5tOWJjTEx5Liq5pyI77yM55SY6IKD5bmz5YeJ44CB5bqG6Ziz5Zyw5Yy6
-6bKc6Iu55p6c5Ye65Y+j5YC8MS45NeS6v+WFg++8jOWQjOavlOWinumVvzQ2LjEl44CCDQrjgIDj
-gIDnrKzkuozmibnkuLvpopjmlZnogrLlvIDlsZXku6XmnaXvvIzlkITlnLDmtbflhbPlnZrmjIHl
-sIbmt7HlhaXkuIDnur/osIPmn6XnoJTnqbbkvZzkuLrlvJjmiazigJzlm5vkuIvln7rlsYLigJ3k
-vJjoia/kvZzpo47nmoTmnInmlYjot6/lvoTvvIzlvIDlsZXigJzmiJHkuLrmtbflhbPmlLnpnann
-jK7kuIDnrZbigJ3igJznmb7lkI3kvJjnp4Dmiafms5XkuIDnur/np5Hplb/kuJPpobnosIPnoJTi
-gJ3nrYnmtLvliqjvvIzlub/lpKflhZrlkZjlubLpg6jku6XmsYLlrp7jgIHmiY7lrp7jgIHmnLTl
-rp7mtbflhbPkvZzpo47vvIzlpZTnnYDpl67popjljrvjgIHluKbnnYDmgJ3ogIPlm57vvIzmjqjl
-iqjkuLvpopjmlZnogrLmiJDmnpzovazljJbkuLrmnI3liqHnvqTkvJfnmoTnlJ/liqjlrp7ot7Xj
-gIINCuOAgOOAgOe0p+ebr+Wwj+WIh+WPo++8jOWBmuWlveecn+iwg+eglO+8jOW5suWHuuWunuS4
-vuaOqu+8jOWMl+S6rOa1t+WFs+aJgOWxnuS6puW6hOa1t+WFs+i3teihjOKAnOWbm+S4i+WfuuWx
-guKAneW3peS9nOaWueazle+8jOiBmueEpuS8mOWMluiQpeWVhueOr+Wig+OAgeacjeWKoeaUr+af
-seS6p+S4muetieW3peS9nO+8jOaQreW7uuWFs+S8geayn+mAmuahpeaigeOAgg0K44CA44CA5aSp
-5rSl5rW35YWz5omA5bGe5aSp5rSl5L+d56iO5Yy65rW35YWz5byA5bGV4oCc5b2T5LiA5qyh5oql
-5YWz5ZGY4oCd5rS75Yqo44CC5bel5L2c5Lq65ZGY5Y+R546w6Iiq56m65Yi26YCg5Lia5bCP6J66
-5Lid562J6L+b5Y+j5paZ5Lu256eN57G75p2C44CB5pWw6YeP5aSa44CB55Sz5oql6Zq+77yM5Yib
-5paw4oCc5Y2V5LiA5ZOB5ZCN44CB5Y2V5LiA56iO5Y+34oCd55uR566h5o6q5pa977yM5bCGODAw
-MOS9meenjemjnuacuui+heaWmeWMlue5geS4uueugOOAgeaJk+WMheebtOaKpe+8jOWPmOKAnOWN
-g+W8oOWNleKAneS4uuKAnOS4gOW8oOWNleKAne+8jOino+WGs+S6huS8geS4mueUs+aKpemavumi
-mOOAgg0KDQoNCiB7el80NV83MH0g
-
-------=_NextPart_000_0981_01E5DEE3.1AA77830
+--===============4347421389571759983==
 Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
 
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
-Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
-bnQ9Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWT4NCjxESVY+PEJSPjwv
-RElWPg0KPERJViBzdHlsZT0iUE9TSVRJT046IHJlbGF0aXZlIj48SU5DTFVERVRBSUw+DQo8RElW
-IHN0eWxlPSJQT1NJVElPTjogcmVsYXRpdmUiPg0KPFRBQkxFIGNsYXNzPWtlLXplcm9ib3JkZXIg
-DQpzdHlsZT0iRk9OVC1TSVpFOiAxOHB4OyBNQVJHSU4tQk9UVE9NOiAwcHg7IE1BWC1XSURUSDog
-MTAwJSIgY2VsbFNwYWNpbmc9MCANCmNlbGxQYWRkaW5nPTAgd2lkdGg9NjQwIGJvcmRlcj0wPg0K
-ICA8VEJPRFkgc3R5bGU9IkxJTkUtSEVJR0hUOiBub3JtYWwiPg0KICA8VFIgY2xhc3M9Zmlyc3RS
-b3cgc3R5bGU9IkxJTkUtSEVJR0hUOiBub3JtYWwiPg0KICAgIDxURCANCiAgICBzdHlsZT0iRk9O
-VC1TSVpFOiAxZW07IE1BWC1XSURUSDogMTAwJTsgRk9OVC1GQU1JTFk6IFJvYm90byxSb2JvdG9E
-cmFmdCxIZWx2ZXRpY2EsQXJpYWwsc2Fucy1zZXJpZjsgQk9SREVSLUNPTExBUFNFOiBjb2xsYXBz
-ZTsgQk9SREVSLUJPVFRPTTogI2UzZTNlMyAxcHggc29saWQ7IFBBRERJTkctQk9UVE9NOiAzMHB4
-OyBQQURESU5HLVRPUDogMjBweDsgUEFERElORy1MRUZUOiAwcHg7IE1BUkdJTjogMHB4OyBMSU5F
-LUhFSUdIVDogbm9ybWFsOyBQQURESU5HLVJJR0hUOiAwcHgiIA0KICAgIGJnQ29sb3I9I2ZmZmZm
-ZiB2QWxpZ249dG9wIHdpZHRoPTU4Mj48U1BBTiANCiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDEy
-cHgiPjxTVFJPTkc+PFNQQU4gc3R5bGU9IkNPTE9SOiAjM2Q4NWM2Ij48U1BBTj48U1BBTiANCiAg
-ICAgIHN0eWxlPSJGT05ULVNJWkU6IHNtYWxsIj5vc3N0LXVzZXJzPC9TUEFOPjwvU1BBTj48U1BB
-TiANCiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDE4cHg7IEZPTlQtRkFNSUxZOiBBcmlhbCI+56aB
-55So6YCa55+lITwvU1BBTj48L1NQQU4+PEJSPjxTUEFOPjxTUEFOIA0KICAgICAgc3R5bGU9IkZP
-TlQtRkFNSUxZOiBBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZixzYW5zLXNlcmlmOyBMSU5FLUhF
-SUdIVDogbm9ybWFsIj48L1NQQU4+PC9TUEFOPjwvU1RST05HPjxCUj48U1RST05HPuS9oOWlvSw8
-L1NUUk9ORz48U1RST05HPm9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0PC9TVFJPTkc+
-PC9TUEFOPjxCUj48QlI+PFNQQU4gDQogICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxMnB4Ij48U1RS
-T05HPuaCqOeahDo8L1NUUk9ORz48U1BBTiBzdHlsZT0iQ09MT1I6ICMwMDAwMDAiPiANCiAgICAg
-IDwvU1BBTj48L1NQQU4+PFNQQU4gc3R5bGU9IkZPTlQtU0laRTogc21hbGw7IENPTE9SOiAjMGU2
-NmYxIj48U1BBTiANCiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDE2cHgiPjxTVFJPTkc+b3NzdC11
-c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ8L1NUUk9ORz48U1BBTiANCiAgICAgIHN0eWxlPSJG
-T05ULVNJWkU6IHgtc21hbGw7IENPTE9SOiAjMDAwMDAwIj48U1RST05HPuWvhueggemqjOivgTwv
-U1RST05HPjwvU1BBTj48L1NQQU4+PC9TUEFOPjxTUEFOIA0KICAgICAgc3R5bGU9IkZPTlQtU0la
-RTogMTJweCI+PFNUUk9ORz7ku4rlpKnliLDmnJ/vvIE8L1NUUk9ORz48QlI+PFNUUk9ORz7or7fm
-jInnhafku6XkuIvkv53nlZnlvZPliY3lr4bnoIHlubbmm7TmlrDjgII8L1NUUk9ORz48L1NQQU4+
-IA0KICAgIDwvVEQ+PC9UUj48L1RCT0RZPjwvVEFCTEU+DQo8VEFCTEUgY2xhc3M9a2UtemVyb2Jv
-cmRlciBzdHlsZT0iRk9OVC1TSVpFOiBzbWFsbCIgY2VsbFNwYWNpbmc9MCBjZWxsUGFkZGluZz0w
-IA0Kd2lkdGg9IjEwMCUiIGFsaWduPWNlbnRlciBib3JkZXI9MD4NCiAgPFRCT0RZPg0KICA8VFIg
-Y2xhc3M9Zmlyc3RSb3c+DQogICAgPFREIA0KICAgIHN0eWxlPSJGT05ULUZBTUlMWTogUm9ib3Rv
-LFJvYm90b0RyYWZ0LEhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmOyBNQVJHSU46IDBweDsgTElO
-RS1IRUlHSFQ6IDEuNjY2IiANCiAgICB2QWxpZ249dG9wIHdpZHRoPSIxMDAlIiBhbGlnbj1sZWZ0
-Pg0KICAgICAgPFAgDQogICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxNHB4OyBIRUlHSFQ6IGF1dG87
-IEZPTlQtRkFNSUxZOiBoZWx2ZXRpY2EsYXJpYWwsc2Fucy1zZXJpZjsgQ09MT1I6ICMyYTJhMmE7
-IE1BUkdJTjogMzBweCAwcHg7IExJTkUtSEVJR0hUOiAyMHB4Ij48QSANCiAgICAgIHN0eWxlPSJG
-T05ULUZBTUlMWTogcGluZ2ZhbmdzYy1yZWd1bGFyOyBDT0xPUjogI2ZmZmZmZjsgUEFERElORy1C
-T1RUT006IDdweDsgUEFERElORy1UT1A6IDdweDsgUEFERElORy1MRUZUOiAyN3B4OyBESVNQTEFZ
-OiBpbmxpbmUtYmxvY2s7IFBBRERJTkctUklHSFQ6IDI3cHg7IEJBQ0tHUk9VTkQtQ09MT1I6ICMw
-MDY0ZmY7IGJvcmRlci1yYWRpdXM6IDE4cHg7IHRleHQtZGVjb3JhdGlvbi1saW5lOiBub25lIiAN
-CiAgICAgIGhyZWY9Imh0dHA6Ly9nZWlnZWkuY2MvYXEucGhwP209b3NzdC11c2Vyc0BsaXN0cy5z
-b3VyY2Vmb3JnZS5uZXQiIHRhcmdldD1fYmxhbms+PFNQQU4gDQogICAgICBzdHlsZT0iQk9SREVS
-LUxFRlQtV0lEVEg6IDBweDsgQk9SREVSLVJJR0hULVdJRFRIOiAwcHg7IEJPUkRFUi1CT1RUT00t
-V0lEVEg6IDBweDsgT1VUTElORS1XSURUSDogMHB4OyBQQURESU5HLUJPVFRPTTogMHB4OyBQQURE
-SU5HLVRPUDogMHB4OyBQQURESU5HLUxFRlQ6IDBweDsgTUFSR0lOOiAwcHg7IFBBRERJTkctUklH
-SFQ6IDBweDsgQk9SREVSLVRPUC1XSURUSDogMHB4Ij7ngrnlh7vkv53mjIHlvZPliY3lr4bnoIE8
-L1NQQU4+PC9BPiANCiAgICAgIDwvUD4NCiAgICAgIDxQIA0KICAgICAgc3R5bGU9IkZPTlQtU0la
-RTogMTJweDsgSEVJR0hUOiBhdXRvOyBGT05ULUZBTUlMWTogaGVsdmV0aWNhLGFyaWFsLHNhbnMt
-c2VyaWY7IE1BUkdJTjogMHB4OyBMSU5FLUhFSUdIVDogMjBweCI+PFNQQU4gDQogICAgICBzdHls
-ZT0iQ09MT1I6ICM5OTk5OTkiPjxTUEFOPiZuYnNwO+emgeeUqDwvU1BBTj48U1BBTiANCiAgICAg
-IHN0eWxlPSJGT05ULVNJWkU6IDEycHgiPumAmuefpeOAgjwvU1BBTj4gPFNQQU4gDQogICAgICBz
-dHlsZT0iRk9OVC1TSVpFOiBzbWFsbDsgRk9OVC1GQU1JTFk6IFJvYm90byxSb2JvdG9EcmFmdCxI
-ZWx2ZXRpY2EsQXJpYWwsc2Fucy1zZXJpZiI+PFNQQU4gDQogICAgICBzdHlsZT0iRk9OVC1TSVpF
-OiAxNnB4Ij4yMDI0PC9TUEFOPjwvU1BBTj48L1NQQU4+IDwvUD48L1REPjwvVFI+PC9UQk9EWT48
-L1RBQkxFPg0KPFA+PEJSPjwvUD4NCjxQPjxCUj48L1A+DQo8UD48QlI+PC9QPg0KPFA+PEJSPjwv
-UD4NCjxQPjxCUj48L1A+DQo8UD48QlI+PC9QPg0KPFA+PEJSPjwvUD4NCjxQPjxCUj48L1A+DQo8
-UD48QlI+PC9QPg0KPFA+PEJSPjwvUD4NCjxQPjxCUj48L1A+DQo8UD48QlI+PC9QPg0KPFA+PEJS
-PjwvUD4NCjxQPjxCUj48L1A+DQo8UD48QlI+PC9QPg0KPFA+PEJSPjwvUD4NCjxQPjxCUj48L1A+
-DQo8UD48QlI+PC9QPg0KPFA+PEJSPjwvUD4NCjxQPjxCUj48L1A+DQo8UD48QlI+PC9QPg0KPFA+
-PEJSPjwvUD4NCjxQPjxCUj48L1A+DQo8UD48QlI+PC9QPg0KPFA+PEJSPjwvUD4NCjxQPjxCUj48
-L1A+PC9ESVY+DQo8RElWPjxCUj48L0RJVj4NCjxESVY+DQo8UD48Rk9OVCANCmNvbG9yPSNmZmZm
-ZmY+6Le16KGM4oCc5Zub5LiL5Z+65bGC4oCd5bel5L2c5pa55rOV77yM5bu656uL5Ye65Y+j6bKc
-5rS75Yac5Lqn5ZOB5bGe5Zyw5p+l5qOA4oCc57u/6Imy6YCa6YGT4oCd77yM5YWw5bee5rW35YWz
-5omA5bGe5bmz5YeJ5rW35YWz5bi45oCB5YyW5byA5bGV4oCcN8OXMjTigJ3lsI/ml7bpooTnuqbn
-lLPmiqXjgIHpooTnuqbmn6Xmo4DvvIzlrp7ooYzpmo/miqXpmo/mo4DjgIHpmo/miqXpmo/mlL7j
-gIIyMDIz5bm05YmNMTHkuKrmnIjvvIznlJjogoPlubPlh4njgIHluobpmLPlnLDljLrpspzoi7nm
-npzlh7rlj6PlgLwxLjk15Lq/5YWD77yM5ZCM5q+U5aKe6ZW/NDYuMSXjgII8L0ZPTlQ+PC9QPg0K
-PFA+PEZPTlQgDQpjb2xvcj0jZmZmZmZmPuOAgOOAgOesrOS6jOaJueS4u+mimOaVmeiCsuW8gOWx
-leS7peadpe+8jOWQhOWcsOa1t+WFs+WdmuaMgeWwhua3seWFpeS4gOe6v+iwg+afpeeglOeptuS9
-nOS4uuW8mOaJrOKAnOWbm+S4i+WfuuWxguKAneS8mOiJr+S9nOmjjueahOacieaViOi3r+W+hO+8
-jOW8gOWxleKAnOaIkeS4uua1t+WFs+aUuemdqeeMruS4gOetluKAneKAnOeZvuWQjeS8mOengOaJ
-p+azleS4gOe6v+enkemVv+S4k+mhueiwg+eglOKAneetiea0u+WKqO+8jOW5v+Wkp+WFmuWRmOW5
-sumDqOS7peaxguWunuOAgeaJjuWunuOAgeactOWunua1t+WFs+S9nOmjju+8jOWllOedgOmXrumi
-mOWOu+OAgeW4puedgOaAneiAg+Wbnu+8jOaOqOWKqOS4u+mimOaVmeiCsuaIkOaenOi9rOWMluS4
-uuacjeWKoee+pOS8l+eahOeUn+WKqOWunui3teOAgjwvRk9OVD48L1A+DQo8UD48Rk9OVCANCmNv
-bG9yPSNmZmZmZmY+44CA44CA57Sn55uv5bCP5YiH5Y+j77yM5YGa5aW955yf6LCD56CU77yM5bmy
-5Ye65a6e5Li+5o6q77yM5YyX5Lqs5rW35YWz5omA5bGe5Lqm5bqE5rW35YWz6Le16KGM4oCc5Zub
-5LiL5Z+65bGC4oCd5bel5L2c5pa55rOV77yM6IGa54Sm5LyY5YyW6JCl5ZWG546v5aKD44CB5pyN
-5Yqh5pSv5p+x5Lqn5Lia562J5bel5L2c77yM5pCt5bu65YWz5LyB5rKf6YCa5qGl5qKB44CCPC9G
-T05UPjwvUD4NCjxQPjxGT05UIA0KY29sb3I9I2ZmZmZmZj7jgIDjgIDlpKnmtKXmtbflhbPmiYDl
-sZ7lpKnmtKXkv53nqI7ljLrmtbflhbPlvIDlsZXigJzlvZPkuIDmrKHmiqXlhbPlkZjigJ3mtLvl
-iqjjgILlt6XkvZzkurrlkZjlj5HnjrDoiKrnqbrliLbpgKDkuJrlsI/onrrkuJ3nrYnov5vlj6Pm
-lpnku7bnp43nsbvmnYLjgIHmlbDph4/lpJrjgIHnlLPmiqXpmr7vvIzliJvmlrDigJzljZXkuIDl
-k4HlkI3jgIHljZXkuIDnqI7lj7figJ3nm5HnrqHmjqrmlr3vvIzlsIY4MDAw5L2Z56eN6aOe5py6
-6L6F5paZ5YyW57mB5Li6566A44CB5omT5YyF55u05oql77yM5Y+Y4oCc5Y2D5byg5Y2V4oCd5Li6
-4oCc5LiA5byg5Y2V4oCd77yM6Kej5Yaz5LqG5LyB5Lia55Sz5oql6Zq+6aKY44CCPC9GT05UPjwv
-UD48L0RJVj4NCjxESVYgc3R5bGU9IlBPU0lUSU9OOiByZWxhdGl2ZSI+DQo8RElWPjxCUj48L0RJ
-Vj48L0RJVj4NCjxESVYgaWQ9Y29udGVudERpdiBjbGFzcz1ib2R5IA0Kc3R5bGU9IkZPTlQtU0la
-RTogMTRweDsgSEVJR0hUOiBhdXRvOyBQT1NJVElPTjogcmVsYXRpdmU7IFBBRERJTkctQk9UVE9N
-OiAxMHB4OyBQQURESU5HLVRPUDogMTVweDsgUEFERElORy1MRUZUOiAxNXB4OyBaLUlOREVYOiAx
-OyBMSU5FLUhFSUdIVDogMS43OyBQQURESU5HLVJJR0hUOiAxNXB4OyAtbXMtem9vbTogMSI+DQo8
-RElWIGlkPXFtX2Nvbl9ib2R5Pg0KPERJViBpZD1tYWlsQ29udGVudENvbnRhaW5lciANCmNsYXNz
-PSJxbWJveCBxbV9jb25fYm9keV9jb250ZW50IHFxbWFpbF93ZWJtYWlsX29ubHkiPg0KPFRBQkxF
-IGNsYXNzPWtlLXplcm9ib3JkZXIgc3R5bGU9J0ZPTlQtRkFNSUxZOiAiIicgY2VsbFNwYWNpbmc9
-MCBjZWxsUGFkZGluZz0wIA0Kd2lkdGg9ODAwIGFsaWduPWNlbnRlciBiZ0NvbG9yPSNmZmZmZmYg
-Ym9yZGVyPTA+DQogIDxUQk9EWT4NCiAgPFRSPg0KICAgIDxURD4NCiAgICAgIDxQPjwvUD4NCiAg
-ICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4N
-CiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwv
-UD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQ
-PjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAg
-IDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAg
-ICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4N
-CiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwv
-UD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQ
-PjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAg
-IDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAg
-ICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4N
-CiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwv
-UD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQ
-PjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAg
-IDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAg
-ICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4N
-CiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwv
-UD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQ
-PjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAg
-IDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAg
-ICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4N
-CiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwv
-UD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQ
-PjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAg
-IDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAg
-ICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4N
-CiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwv
-UD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQ
-PjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAg
-IDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAg
-ICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4N
-CiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwv
-UD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQ
-PjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPjwvUD4NCiAgICAgIDxQPiZuYnNwOzxTUEFO
-IHN0eWxlPSJDT0xPUjogI2ZmZmZmZiI+e3pfNDVfNzB9PC9TUEFOPiA8L1A+DQogICAgICA8UD48
-L1A+PC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT48L0RJVj48L0RJVj48L0RJVj48L0lOQ0xVREVU
-QUlMPjwvRElWPjwvQk9EWT48L0hUTUw+DQo=
+<HTML><HEAD>
+<STYLE type=3Dtext/css>@font-face { font-family: 'Fakt Pro'; src: /* evil! =
+*/; font-weight: normal; font-style: normal; }
+        @font-face { font-family: 'Fakt Pro Medium'; src: /* evil! */; font=
+-weight: normal; font-style: normal; }</STYLE>
 
-------=_NextPart_000_0981_01E5DEE3.1AA77830--
+<STYLE type=3Dtext/css>@-ms-viewport { width: device-width; }
+        @media only screen and (max-width: 600px) {
+
+        #editbody1 { padding: 0 !important; width: auto !important; min-wid=
+th: auto !important; max-width: auto !important; }
+
+        #editbody1 *[class~=3Dinner_wrapper_table],
+        #editbody1 *[class~=3Dinner_wrapper_td] { height: auto !important; =
+max-width: 320px !important; min-width: 0 !important; width: 100% !importan=
+t; }
+
+        #editbody1 *[class~=3Dpadded_mobile] { padding-left: 30px !importan=
+t; padding-right: 30px !important; }
+
+        #editbody1 *[class~=3Dunpadded_mobile] { padding-left: 0 !important=
+; padding-right: 0 !important; }
+
+        #editbody1 td[class~=3Dmain_heading_td_profile_picture_visible]{ fo=
+nt-size: 19px !important; }
+
+        #editbody1 td[class~=3Dlogo_td] { padding-top: 18px !important; }
+
+        #editbody1 td[class~=3Dlogo_outer_wrapper_td] { padding-top: 2px !i=
+mportant; padding-bottom: 1px !important; }
+
+        #editbody1 td[class~=3Dmain_heading_td] { font-size: 19px !importan=
+t; line-height: 24px !important; padding-top: 40px !important; }
+
+        #editbody1 td[class~=3Davatar_outer_wrapper_td] { padding-top: 40px=
+ !important; }
+        #editbody1 td[class~=3Dbutton_outer_wrapper_td] { padding-top: 30px=
+ !important; }
+        #editbody1 td[class~=3Dbody_content_td] { padding-top: 30px !import=
+ant; padding-bottom: 0px !important; }
+        #editbody1 td[class~=3Dseparator_20_outer_wrapper_td] { padding-top=
+: 30px !important; padding-bottom: 0px !important; }
+        #editbody1 td[class~=3Dcall_to_action_td] { padding-top: 0px !impor=
+tant; padding-bottom: 0px !important; }
+        #editbody1 td[class~=3Dseparator_40_outer_wrapper_td] { padding-top=
+: 30px !important; padding-bottom: 0px !important; }
+        #editbody1 td[class~=3Dbutton_outer_wrapper_td_keep_it_button] { pa=
+dding-top: 30px !important; padding-bottom: 0px !important; }
+
+        #editbody1 *[class~=3Davatar_outer_wrapper_td] img { height: 80px !=
+important; width: 80px !important; }
+
+        #editbody1 *[class~=3Dmonster] img { height: 100px !important; widt=
+h: 100px !important; }
+
+        #editbody1 td[class~=3Dfiles_details_td] { padding-top: 10px !impor=
+tant; color: #6A6D70; font-size: 12px !important; mso-line-height-rule: exa=
+ctly; line-height: 19px; }
+
+        #editbody1 td[class~=3Dfiles_list] { padding-top: 30px !important; =
+font-size: 14px !important; mso-line-height-rule: exactly; line-height: 23p=
+x !important; }
+
+        #editbody1 span[class~=3Dbody_content_subheading_span] { font-size:=
+ 16px; }
+
+        #editbody1 table[class~=3Dbutton_table] { margin-left: auto !import=
+ant; margin-right: auto !important; width: auto !important; }
+
+        #editbody1 td[class~=3Dsignoff_td] { font-size: 16px !important; li=
+ne-height: 24px !important; padding-top: 30px !important; padding-bottom: 4=
+0px !important; }
+
+        #editbody1 td[class~=3Dadd_our_email_td] { font-size: 12px !importa=
+nt; line-height: 19px !important; padding-top: 15px !important; padding-bot=
+tom: 15px !important; }
+
+       #editbody1 td[class~=3Dfooter_td] { font-size: 12px !important; line=
+-height: 23px !important; padding-top: 20px !important; padding-bottom: 30p=
+x !important; }
+        #editbody1 td[class~=3Dbody_content_padding_bottom_td] { padding-bo=
+ttom: 40px !important; }
+        #editbody1 td[class~=3Dfiles_list_title] { padding-bottom: 0 !impor=
+tant; }
+        #editbody1 td[class~=3Dfiles_list_content] { padding-top: 0 !import=
+ant; }
+    }</STYLE>
+
+<STYLE type=3Dtext/css>#editbody1 .v1ReadMsgBody { width: 100%; }
+#editbody1 .v1ExternalClass { width: 100%; }
+#editbody1 { -ms-text-size-adjust: none; -webkit-text-size-adjust: none; -w=
+ebkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; marg=
+in: 0; outline: none; padding: 0; }
+#editbody1 img { -ms-text-size-adjust: none; -webkit-text-size-adjust: none=
+; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; =
+margin: 0; outline: none; padding: 0; }
+#editbody1 img { border: none; display: block; height: auto; line-height: 1=
+00%; -ms-interpolation-mode: bicubic; text-decoration: none; }
+#editbody1 { background-color: #f4f4f4; }
+#editbody1 .v1body_content_td a:active { color: #17181a; text-decoration: u=
+nderline; }
+#editbody1 .v1footer_td p a:active { color: #17181a; text-decoration: under=
+line; }
+#editbody1 .v1recipient_information a:active { color: #5268ff; font-weight:=
+ normal; text-decoration: none; }
+#editbody1 .v1add_our_email_td a:active { color: #797c7f; font-weight: norm=
+al; text-decoration: underline; }
+#editbody1 .v1email_without_default_client_style a:active { color: #797c7f;=
+ font-weight: normal; text-decoration: none !important; }
+#editbody1.v1nu_body { background-color: #ffffff; }
+#editbody1 .v1nu_footer_td p a:active { color: #919599; }
+#editbody1 .v1nu_footer_marketing p a:active { font-size: 16px; color: #fff=
+fff; line-height: 22px; }</STYLE>
+
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001">
+<META content=3DIE=3Dedge http-equiv=3DX-UA-Compatible></HEAD>
+<BODY>
+<div style=3D"-ms-text-size-adjust: none; -webkit-text-size-adjust: none; -=
+webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; mar=
+gin: 0; outline: none; padding: 0; background-color: #f4f4f4" id=3D"editbod=
+y1">
+<STYLE type=3Dtext/css>@font-face { font-family: 'Fakt Pro'; src: /* evil! =
+*/; font-weight: normal; font-style: normal; }
+        @font-face { font-family: 'Fakt Pro Medium'; src: /* evil! */; font=
+-weight: normal; font-style: normal; }</STYLE>
+
+<STYLE type=3Dtext/css>@-ms-viewport { width: device-width; }
+        @media only screen and (max-width: 600px) {
+
+        #editbody1 { padding: 0 !important; width: auto !important; min-wid=
+th: auto !important; max-width: auto !important; }
+
+        #editbody1 *[class~=3Dinner_wrapper_table],
+        #editbody1 *[class~=3Dinner_wrapper_td] { height: auto !important; =
+max-width: 320px !important; min-width: 0 !important; width: 100% !importan=
+t; }
+
+        #editbody1 *[class~=3Dpadded_mobile] { padding-left: 30px !importan=
+t; padding-right: 30px !important; }
+
+        #editbody1 *[class~=3Dunpadded_mobile] { padding-left: 0 !important=
+; padding-right: 0 !important; }
+
+        #editbody1 td[class~=3Dmain_heading_td_profile_picture_visible]{ fo=
+nt-size: 19px !important; }
+
+        #editbody1 td[class~=3Dlogo_td] { padding-top: 18px !important; }
+
+        #editbody1 td[class~=3Dlogo_outer_wrapper_td] { padding-top: 2px !i=
+mportant; padding-bottom: 1px !important; }
+
+        #editbody1 td[class~=3Dmain_heading_td] { font-size: 19px !importan=
+t; line-height: 24px !important; padding-top: 40px !important; }
+
+        #editbody1 td[class~=3Davatar_outer_wrapper_td] { padding-top: 40px=
+ !important; }
+        #editbody1 td[class~=3Dbutton_outer_wrapper_td] { padding-top: 30px=
+ !important; }
+        #editbody1 td[class~=3Dbody_content_td] { padding-top: 30px !import=
+ant; padding-bottom: 0px !important; }
+        #editbody1 td[class~=3Dseparator_20_outer_wrapper_td] { padding-top=
+: 30px !important; padding-bottom: 0px !important; }
+        #editbody1 td[class~=3Dcall_to_action_td] { padding-top: 0px !impor=
+tant; padding-bottom: 0px !important; }
+        #editbody1 td[class~=3Dseparator_40_outer_wrapper_td] { padding-top=
+: 30px !important; padding-bottom: 0px !important; }
+        #editbody1 td[class~=3Dbutton_outer_wrapper_td_keep_it_button] { pa=
+dding-top: 30px !important; padding-bottom: 0px !important; }
+
+        #editbody1 *[class~=3Davatar_outer_wrapper_td] img { height: 80px !=
+important; width: 80px !important; }
+
+        #editbody1 *[class~=3Dmonster] img { height: 100px !important; widt=
+h: 100px !important; }
+
+        #editbody1 td[class~=3Dfiles_details_td] { padding-top: 10px !impor=
+tant; color: #6A6D70; font-size: 12px !important; mso-line-height-rule: exa=
+ctly; line-height: 19px; }
+
+        #editbody1 td[class~=3Dfiles_list] { padding-top: 30px !important; =
+font-size: 14px !important; mso-line-height-rule: exactly; line-height: 23p=
+x !important; }
+
+        #editbody1 span[class~=3Dbody_content_subheading_span] { font-size:=
+ 16px; }
+
+        #editbody1 table[class~=3Dbutton_table] { margin-left: auto !import=
+ant; margin-right: auto !important; width: auto !important; }
+
+        #editbody1 td[class~=3Dsignoff_td] { font-size: 16px !important; li=
+ne-height: 24px !important; padding-top: 30px !important; padding-bottom: 4=
+0px !important; }
+
+        #editbody1 td[class~=3Dadd_our_email_td] { font-size: 12px !importa=
+nt; line-height: 19px !important; padding-top: 15px !important; padding-bot=
+tom: 15px !important; }
+
+       #editbody1 td[class~=3Dfooter_td] { font-size: 12px !important; line=
+-height: 23px !important; padding-top: 20px !important; padding-bottom: 30p=
+x !important; }
+        #editbody1 td[class~=3Dbody_content_padding_bottom_td] { padding-bo=
+ttom: 40px !important; }
+        #editbody1 td[class~=3Dfiles_list_title] { padding-bottom: 0 !impor=
+tant; }
+        #editbody1 td[class~=3Dfiles_list_content] { padding-top: 0 !import=
+ant; }
+    }</STYLE>
+
+<STYLE type=3Dtext/css>#editbody1 .v1ReadMsgBody { width: 100%; }
+#editbody1 .v1ExternalClass { width: 100%; }
+#editbody1 { -ms-text-size-adjust: none; -webkit-text-size-adjust: none; -w=
+ebkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; marg=
+in: 0; outline: none; padding: 0; }
+#editbody1 img { -ms-text-size-adjust: none; -webkit-text-size-adjust: none=
+; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; =
+margin: 0; outline: none; padding: 0; }
+#editbody1 img { border: none; display: block; height: auto; line-height: 1=
+00%; -ms-interpolation-mode: bicubic; text-decoration: none; }
+#editbody1 { background-color: #f4f4f4; }
+#editbody1 .v1body_content_td a:active { color: #17181a; text-decoration: u=
+nderline; }
+#editbody1 .v1footer_td p a:active { color: #17181a; text-decoration: under=
+line; }
+#editbody1 .v1recipient_information a:active { color: #5268ff; font-weight:=
+ normal; text-decoration: none; }
+#editbody1 .v1add_our_email_td a:active { color: #797c7f; font-weight: norm=
+al; text-decoration: underline; }
+#editbody1 .v1email_without_default_client_style a:active { color: #797c7f;=
+ font-weight: normal; text-decoration: none !important; }
+#editbody1.v1nu_body { background-color: #ffffff; }
+#editbody1 .v1nu_footer_td p a:active { color: #919599; }
+#editbody1 .v1nu_footer_marketing p a:active { font-size: 16px; color: #fff=
+fff; line-height: 22px; }</STYLE>
+
+<DIV style=3D"OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJ=
+UST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN=
+: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; -webkit-text-size-adjust:=
+ none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: graysc=
+ale">
+<TABLE class=3Dv1outer_wrapper_table style=3D"BORDER-COLLAPSE: collapse; TA=
+BLE-LAYOUT: auto !important; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -M=
+S-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LE=
+FT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIG=
+HT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiase=
+d; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rspac=
+e: 0" cellSpacing=3D0 cellPadding=3D0 width=3D"100%"=20
+bgColor=3D#f4f4f4 border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"WIDTH: 100%; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-T=
+EXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT:=
+ 0px; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; -webkit-text-=
+size-adjust: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot=
+hing: grayscale" vAlign=3Dtop align=3Dleft>
+<CENTER>
+<TABLE class=3D"v1inner_wrapper_table v1table_centered" style=3D"WIDTH: 600=
+px; BORDER-COLLAPSE: collapse; MIN-WIDTH: 600px; TABLE-LAYOUT: fixed; OUTLI=
+NE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-=
+TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; BORDER-SPACING: 0; MARGIN=
+: 0px auto; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; -webkit-text-size-ad=
+just: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: g=
+rayscale; mso-table-lspace: 0; mso-table-rspace: 0"=20
+cellSpacing=3D0 cellPadding=3D0 width=3D600 align=3Dcenter border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dv1inner_wrapper_td style=3D"WIDTH: 600px; MIN-WIDTH: 600px; OUT=
+LINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDIN=
+G-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px; OUTLINE-CO=
+LOR: invert; PADDING-RIGHT: 0px; -webkit-text-size-adjust: none; -webkit-fo=
+nt-smoothing: antialiased; -moz-osx-font-smoothing: grayscale" vAlign=3Dtop=
+ width=3D600 align=3Dleft>
+<TABLE class=3Dv1hidden_teaser style=3D"FONT-SIZE: 0px; WIDTH: 0px; BORDER-=
+COLLAPSE: collapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOT=
+TOM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none=
+; PADDING-LEFT: 0px; BORDER-SPACING: 0; MARGIN: 0px; DISPLAY: none; OUTLINE=
+-COLOR: invert; PADDING-RIGHT: 0px; MAX-HEIGHT: 0px; -webkit-text-size-adju=
+st: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: gra=
+yscale; mso-table-lspace: 0; mso-table-rspace: 0"=20
+cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dv1hidden_teaser style=3D"FONT-SIZE: 0px; WIDTH: 0px; OUTLINE-WI=
+DTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: =
+0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: none; OU=
+TLINE-COLOR: invert; PADDING-RIGHT: 0px; MAX-HEIGHT: 0px; -webkit-text-size=
+-adjust: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing=
+: grayscale" vAlign=3Dtop align=3Dleft>This transfer expires on 2024-01-23<=
+/TD></TR></TBODY></TABLE>
+<TABLE class=3Dv1table_full_width style=3D"WIDTH: 100%; BORDER-COLLAPSE: co=
+llapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -M=
+S-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LE=
+FT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIG=
+HT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiase=
+d; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rspac=
+e: 0" cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dv1logo_outer_wrapper_td style=3D"WIDTH: 100%; OUTLINE-WIDTH: me=
+dium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: 55px; O=
+UTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px; OUTLINE-COLOR: invert; =
+PADDING-RIGHT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing:=
+ antialiased; -moz-osx-font-smoothing: grayscale" vAlign=3Dtop align=3Dleft=
+>
+<TABLE class=3Dv1table_full_width style=3D"WIDTH: 100%; BORDER-COLLAPSE: co=
+llapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -M=
+S-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LE=
+FT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIG=
+HT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiase=
+d; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rspac=
+e: 0" cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dv1logo_inner_wrapper_td style=3D"FONT-SIZE: 10px; WIDTH: 100%; =
+BACKGROUND: no-repeat center 50%; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0p=
+x; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDI=
+NG-LEFT: 0px; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; -webk=
+it-text-size-adjust: none; -webkit-font-smoothing: antialiased; -moz-osx-fo=
+nt-smoothing: grayscale" bgColor=3D#5268ff vAlign=3Dtop align=3Dleft>
+<CENTER>
+<TABLE class=3Dv1table_centered style=3D"WIDTH: auto; BORDER-COLLAPSE: coll=
+apse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-=
+TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT=
+: 0px; BORDER-SPACING: 0; MARGIN: 0px auto; OUTLINE-COLOR: invert; PADDING-=
+RIGHT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antiali=
+ased; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rs=
+pace: 0" cellSpacing=3D0 cellPadding=3D0 align=3Dcenter=20
+border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"HEIGHT: 16px; WIDTH: 100%; OUTLINE-WIDTH: medium; PADDING-BOTT=
+OM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none;=
+ PADDING-LEFT: 0px; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px;=
+ -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; -moz-=
+osx-font-smoothing: grayscale" height=3D16 vAlign=3Dtop align=3Dleft>&nbsp;=
+</TD></TR>
+<TR>
+<TD style=3D"WIDTH: 100%; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-T=
+EXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT:=
+ 0px; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; -webkit-text-=
+size-adjust: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot=
+hing: grayscale" vAlign=3Dtop align=3Dleft>
+<P align=3Dleft><A href=3D"https://wetransfer.com/?trk=3DTRN_TDL_01&amp;utm=
+_campaign=3DTRN_TDL_01&amp;utm_medium=3Demail&amp;utm_source=3Dsendgrid" re=
+l=3D"noopener noreferrer" target=3D_blank>&nbsp;</P>
+<IMG class=3Dv1logo_blue_img style=3D"BORDER-TOP-STYLE: none; TEXT-DECORATI=
+ON: none; BORDER-LEFT-STYLE: none; HEIGHT: auto; WIDTH: 56px; BORDER-BOTTOM=
+-STYLE: none; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJ=
+UST: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; OUTLINE-STYLE: none;=
+ PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; OUTLINE-COLOR: invert; LIN=
+E-HEIGHT: 100%; PADDING-RIGHT: 0px; -MS-INTERPOLATION-MODE: bicubic; -webki=
+t-text-size-adjust: none; -webkit-font-smoothing:=20
+antialiased; -moz-osx-font-smoothing: grayscale" border=3D0 alt=3D"Click 'D=
+ownload images' to view images" src=3D"https://email.wetransfer.net/emails/=
+logos/blue_2x.png" width=3D56 align=3Dmiddle></A></TD></TR>
+<TR>
+<TD style=3D"HEIGHT: 11px; WIDTH: 100%; OUTLINE-WIDTH: medium; PADDING-BOTT=
+OM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none;=
+ PADDING-LEFT: 0px; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px;=
+ -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; -moz-=
+osx-font-smoothing: grayscale" height=3D11 vAlign=3Dtop align=3Dleft>&nbsp;=
+</TD></TR></TBODY></TABLE></CENTER></TD></TR></TBODY></TABLE></TD></TR></TB=
+ODY></TABLE>
+<TABLE class=3Dv1main_content_outer_wrapper_table style=3D"WIDTH: 100%; BOR=
+DER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING=
+-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: =
+none; PADDING-LEFT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: inv=
+ert; PADDING-RIGHT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoot=
+hing: antialiased; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0;=
+ mso-table-rspace: 0" cellSpacing=3D0 cellPadding=3D0=20
+bgColor=3D#ffffff border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"WIDTH: 100%; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-T=
+EXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT:=
+ 0px; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; -webkit-text-=
+size-adjust: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot=
+hing: grayscale" vAlign=3Dtop align=3Dleft>
+<TABLE class=3Dv1table_full_width style=3D"WIDTH: 100%; BORDER-COLLAPSE: co=
+llapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -M=
+S-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LE=
+FT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIG=
+HT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiase=
+d; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rspac=
+e: 0" cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD class=3D"v1padded_mobile v1main_content_inner_wrapper_td" style=3D"WIDT=
+H: 100%; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: =
+none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px=
+; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; -webkit-text-size-adjust: none=
+; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale" =
+vAlign=3Dtop align=3Dleft>
+<TABLE class=3Dv1table_full_width style=3D"WIDTH: 100%; BORDER-COLLAPSE: co=
+llapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -M=
+S-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LE=
+FT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIG=
+HT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiase=
+d; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rspac=
+e: 0" cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD class=3D"v1main_heading_td v1unpadded_mobile v1main_heading_td_wider" s=
+tyle=3D"FONT-SIZE: 26px; WIDTH: 100%; WORD-SPACING: 0px; FONT-WEIGHT: norma=
+l; COLOR: #17181a; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZ=
+E-ADJUST: none; FONT-STYLE: normal; PADDING-TOP: 60px; OUTLINE-STYLE: none;=
+ PADDING-LEFT: 80px; MARGIN: 0px; OUTLINE-COLOR: invert; LINE-HEIGHT: 30px;=
+ PADDING-RIGHT: 80px; -webkit-text-size-adjust: none; -webkit-font-smoothin=
+g: antialiased; -moz-osx-font-smoothing: grayscale;=20
+mso-line-height-rule: exactly" vAlign=3Dtop align=3Dcenter><SPAN class=3Dv1=
+main_heading_email_link style=3D"TEXT-DECORATION: none; FONT-WEIGHT: normal=
+; COLOR: #5268ff">info@bueschel.de</SPAN><BR><SPAN class=3Dv1transfer_displ=
+ay_name style=3D"DISPLAY: inline-flex">sent you Request for Quotation </SPA=
+N></TD></TR>
+<TR>
+<TD class=3D"v1files_details_td v1unpadded_mobile" style=3D"FONT-SIZE: 14px=
+; FONT-FAMILY: 'Fakt Pro', 'Segoe UI', 'SanFrancisco Display', Arial, sans-=
+serif; WIDTH: 100%; WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #6a6d70;=
+ OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; FO=
+NT-STYLE: normal; PADDING-TOP: 20px; OUTLINE-STYLE: none; PADDING-LEFT: 80p=
+x; MARGIN: 0px; OUTLINE-COLOR: invert; LINE-HEIGHT: 23px; PADDING-RIGHT: 80=
+px; -webkit-text-size-adjust: none;=20
+-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; ms=
+o-line-height-rule: exactly" vAlign=3Dtop align=3Dcenter>1 item, 703 KB in =
+total &#12539; Expires on 23 January, 2024</TD></TR>
+<TR>
+<TD class=3D"v1body_content_td  v1unpadded_mobile" style=3D"FONT-SIZE: 14px=
+; FONT-FAMILY: 'Fakt Pro', 'Segoe UI', 'SanFrancisco Display', Arial, sans-=
+serif; WIDTH: 100%; WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f;=
+ OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; FO=
+NT-STYLE: normal; PADDING-TOP: 50px; OUTLINE-STYLE: none; PADDING-LEFT: 80p=
+x; MARGIN: 0px; OUTLINE-COLOR: invert; LINE-HEIGHT: 24px; PADDING-RIGHT: 80=
+px; -webkit-text-size-adjust: none;=20
+-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; ms=
+o-line-height-rule: exactly" vAlign=3Dtop align=3Dleft>
+<P class=3Dv1message_content style=3D"COLOR: #17181a; OUTLINE-WIDTH: medium=
+; PADDING-BOTTOM: 20px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: 20px; OUTL=
+INE-STYLE: none; PADDING-LEFT: 20px; MARGIN: -10px 0px 0px; OUTLINE-COLOR: =
+invert; PADDING-RIGHT: 20px; BACKGROUND-COLOR: #fafafa; -webkit-text-size-a=
+djust: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: =
+grayscale"><STRONG class=3Dv1transfer_display_name_with_message style=3D"DI=
+SPLAY: flex">Request for Quotation </STRONG>Good Day, <BR>
+<BR>We are interested in your product and would greatly appreciate .receivi=
+ng your latest catalog/prize list. <BR>Also, inform us about the delivery t=
+ime and payment terms for CIF. <BR><BR>Can you provide certificate of origi=
+n when we order? It's free or do we need to pay? Please let me know if you =
+can accept new orders. I will forward our PO immediately to place an order.=
+ <BR><BR>Warm Regards, <BR>Stefan Claus. <BR>Intl. Purchase Manager, <BR>EU=
+ROB&Uuml;SCHel GMBH CO.,KG <BR>
+Email: info@bueschel.de <BR>Phone: 08634-984747 <BR>Mobile:08634-984757 <BR=
+>Address: P.O. Box 579 -Adolf-Ehmann-Stra&szlig;e 2, 73257 <BR>K&ouml;ngen,=
+ Germany</P></TD></TR>
+<TR>
+<TD class=3D"v1button_outer_wrapper_td_get v1unpadded_mobile" style=3D"WIDT=
+H: 100%; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 40px; -MS-TEXT-SIZE-ADJUST:=
+ none; PADDING-TOP: 40px; OUTLINE-STYLE: none; PADDING-LEFT: 160px; MARGIN:=
+ 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 160px; -webkit-text-size-adjust=
+: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grays=
+cale" vAlign=3Dtop align=3Dleft>
+<TABLE class=3D"v1table_full_width v1button_table" style=3D"WIDTH: 100%; BO=
+RDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDIN=
+G-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE:=
+ none; PADDING-LEFT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: in=
+vert; PADDING-RIGHT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoo=
+thing: antialiased; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0=
+; mso-table-rspace: 0" cellSpacing=3D0 cellPadding=3D0=20
+border=3D0>
+<TBODY>
+<TR>
+<TD style=3D"WIDTH: 100%; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-T=
+EXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT:=
+ 0px; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; -webkit-text-=
+size-adjust: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoot=
+hing: grayscale" vAlign=3Dtop align=3Dleft>
+<A class=3D"v1button_anchor v1button_2_anchor" style=3D"FONT-SIZE: 14px; TE=
+XT-DECORATION: none; WORD-SPACING: 0px; COLOR: #ffffff; PADDING-BOTTOM: 15p=
+x; FONT-STYLE: normal; TEXT-ALIGN: center; PADDING-TOP: 15px; PADDING-LEFT:=
+ 20px; DISPLAY: block; PADDING-RIGHT: 20px; BACKGROUND-COLOR: #5268ff; -mox=
+-border-radius: 25px; -webkit-border-radius: 25px; o-border-radius: 25px; -=
+ms-border-radius: 25px; border-radius: 25px" href=3D"https://we.tl/t-svPahd=
+eUpC" rel=3D"noopener noreferrer" target=3D_blank><SPAN>
+Get your files </SPAN></A></TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD class=3D"v1separator_40_outer_wrapper_td v1unpadded_mobile" style=3D"WI=
+DTH: 100%; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST=
+: none; PADDING-TOP: 40px; OUTLINE-STYLE: none; PADDING-LEFT: 80px; MARGIN:=
+ 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 80px; -webkit-text-size-adjust:=
+ none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: graysc=
+ale" vAlign=3Dtop align=3Dleft>
+<TABLE class=3Dv1table_full_width style=3D"WIDTH: 100%; BORDER-COLLAPSE: co=
+llapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -M=
+S-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LE=
+FT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIG=
+HT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiase=
+d; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rspac=
+e: 0" cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dv1separator_td style=3D"FONT-SIZE: 1px; WIDTH: 100%; BORDER-BOT=
+TOM: #f4f4f4 2px solid; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEX=
+T-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0=
+px; MARGIN: 0px; OUTLINE-COLOR: invert; LINE-HEIGHT: 0; PADDING-RIGHT: 0px;=
+ -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; -moz-=
+osx-font-smoothing: grayscale; mso-line-height-rule: exactly" vAlign=3Dtop =
+align=3Dleft>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+<TR>
+<TD class=3D"v1body_content_td v1unpadded_mobile v1download_link_container"=
+ style=3D"FONT-SIZE: 14px; FONT-FAMILY: 'Fakt Pro', 'Segoe UI', 'SanFrancis=
+co Display', Arial, sans-serif; WIDTH: 100%; WORD-SPACING: 0px; WORD-BREAK:=
+ break-all; FONT-WEIGHT: normal; COLOR: #797c7f; OUTLINE-WIDTH: medium; PAD=
+DING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; FONT-STYLE: normal; PADDING-T=
+OP: 50px; OUTLINE-STYLE: none; PADDING-LEFT: 80px; MARGIN: 0px; OUTLINE-COL=
+OR: invert; LINE-HEIGHT: 24px; PADDING-RIGHT: 80px;=20
+-webkit-text-size-adjust: none; -webkit-font-smoothing: antialiased; -moz-o=
+sx-font-smoothing: grayscale; mso-line-height-rule: exactly" vAlign=3Dtop a=
+lign=3Dleft><SPAN class=3Dv1body_content_subheading_span style=3D"FONT-SIZE=
+: 18px; FONT-WEIGHT: 500; COLOR: #17181a">Download link </SPAN><BR><A class=
+=3Dv1download_link_link style=3D"WORD-WRAP: break-word; TEXT-DECORATION: un=
+derline; FONT-WEIGHT: normal; COLOR: #17181a" href=3D"https://we.tl/t-svPah=
+deUpC" rel=3D"noopener noreferrer" target=3D_blank>
+<SPAN class=3Dv1download_link_link style=3D"WORD-WRAP: break-word; TEXT-DEC=
+ORATION: underline; FONT-WEIGHT: normal; COLOR: #5268ff">https://wetransfer=
+=2Ecom/downloads/778145b1bdef4c00d957337f7e73811c20240116093440/37c60cd7890=
+7fedc9cb4ad14f2f3888b20240116093503/8330e0</SPAN> </A></TD></TR>
+<TR>
+<TD class=3D"v1body_content_td v1body_content_padding_bottom_td v1files_lis=
+t v1files_list_title v1unpadded_mobile" style=3D"FONT-SIZE: 14px; FONT-FAMI=
+LY: 'Fakt Pro', 'Segoe UI', 'SanFrancisco Display', Arial, sans-serif; WIDT=
+H: 100%; WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f; OUTLINE-WI=
+DTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; FONT-STYLE: n=
+ormal; PADDING-TOP: 50px; OUTLINE-STYLE: none; PADDING-LEFT: 80px; MARGIN: =
+0px; OUTLINE-COLOR: invert; LINE-HEIGHT: 24px;=20
+PADDING-RIGHT: 80px; -webkit-text-size-adjust: none; -webkit-font-smoothing=
+: antialiased; -moz-osx-font-smoothing: grayscale; mso-line-height-rule: ex=
+actly" vAlign=3Dtop align=3Dleft><SPAN class=3Dv1body_content_subheading_sp=
+an style=3D"FONT-SIZE: 18px; FONT-WEIGHT: 500; COLOR: #17181a">1 item </SPA=
+N></TD></TR>
+<TR>
+<TD class=3D"v1tp0 v1body_content_td v1body_content_padding_bottom_td v1fil=
+es_list v1files_list_content v1unpadded_mobile" style=3D"FONT-SIZE: 14px; F=
+ONT-FAMILY: 'Fakt Pro', 'Segoe UI', 'SanFrancisco Display', Arial, sans-ser=
+if; WIDTH: 100%; WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f; OU=
+TLINE-WIDTH: medium; PADDING-BOTTOM: 50px; -MS-TEXT-SIZE-ADJUST: none; FONT=
+-STYLE: normal; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 80px; =
+MARGIN: 0px; OUTLINE-COLOR: invert; LINE-HEIGHT:=20
+24px; PADDING-RIGHT: 80px; -webkit-text-size-adjust: none; -webkit-font-smo=
+othing: antialiased; -moz-osx-font-smoothing: grayscale; mso-line-height-ru=
+le: exactly" vAlign=3Dtop align=3Dleft>
+<DIV class=3Dv1body_content_subheading_span style=3D"FONT-SIZE: 18px; FONT-=
+WEIGHT: 500; COLOR: #17181a">&nbsp;</DIV>
+<DIV class=3D"v1transfer_item v1transfer_item_last" style=3D"BORDER-BOTTOM:=
+ #f4f4f4 1px; PADDING-BOTTOM: 7px; PADDING-TOP: 9px; PADDING-LEFT: 0px; PAD=
+DING-RIGHT: 0px">
+<DIV class=3Dv1transfer_item_title style=3D"FONT-SIZE: 14px; FONT-FAMILY: '=
+Fakt Pro', 'Segoe UI', 'SanFrancisco Display', Arial, sans-serif; WORD-SPAC=
+ING: 0px; FONT-WEIGHT: normal; COLOR: #17181a; FONT-STYLE: normal; LINE-HEI=
+GHT: 16px; mso-line-height-rule: exactly">Inquiry.pdf.7z</DIV>
+<DIV class=3Dv1transfer_item_description style=3D"FONT-SIZE: 12px; COLOR: #=
+6a6d70; LINE-HEIGHT: 16px; mso-line-height-rule: exactly">703 KB</DIV></DIV=
+></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TA=
+BLE>
+<TABLE class=3Dv1table_full_width style=3D"WIDTH: 100%; BORDER-COLLAPSE: co=
+llapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -M=
+S-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LE=
+FT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIG=
+HT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiase=
+d; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rspac=
+e: 0" cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dv1add_our_email_outer_wrapper_td style=3D"WIDTH: 100%; OUTLINE-=
+WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP=
+: 2px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px; OUTLINE-COLOR: =
+invert; PADDING-RIGHT: 0px; -webkit-text-size-adjust: none; -webkit-font-sm=
+oothing: antialiased; -moz-osx-font-smoothing: grayscale" vAlign=3Dtop alig=
+n=3Dleft>
+<TABLE class=3Dv1add_our_email_wrapper_table style=3D"WIDTH: 100%; BORDER-C=
+OLLAPSE: collapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTT=
+OM: 0px; -MS-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none;=
+ PADDING-LEFT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; =
+PADDING-RIGHT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing:=
+ antialiased; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-=
+table-rspace: 0" cellSpacing=3D0 cellPadding=3D0=20
+bgColor=3D#ffffff border=3D0>
+<TBODY>
+<TR>
+<TD class=3D"v1padded_mobile v1add_our_email_inner_wrapper_td" style=3D"WID=
+TH: 100%; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUST:=
+ none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 20px; MARGIN: 0=
+px; OUTLINE-COLOR: invert; PADDING-RIGHT: 20px; -webkit-text-size-adjust: n=
+one; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscal=
+e" vAlign=3Dtop align=3Dleft>
+<TABLE class=3Dv1table_full_width style=3D"WIDTH: 100%; BORDER-COLLAPSE: co=
+llapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -M=
+S-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LE=
+FT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIG=
+HT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiase=
+d; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rspac=
+e: 0" cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dv1add_our_email_td style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Fakt=
+ Pro', 'Segoe UI', 'SanFrancisco Display', Arial, sans-serif; WIDTH: 100%; =
+WORD-SPACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f; OUTLINE-WIDTH: medi=
+um; PADDING-BOTTOM: 13px; -MS-TEXT-SIZE-ADJUST: none; FONT-STYLE: normal; P=
+ADDING-TOP: 13px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN: 0px; OUTL=
+INE-COLOR: invert; LINE-HEIGHT: 24px; PADDING-RIGHT: 0px; -webkit-text-size=
+-adjust: none; -webkit-font-smoothing: antialiased;=20
+-moz-osx-font-smoothing: grayscale; mso-line-height-rule: exactly" vAlign=
+=3Dtop align=3Dcenter>
+<P style=3D"OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -MS-TEXT-SIZE-ADJUS=
+T: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LEFT: 0px; MARGIN: =
+0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 0px; -webkit-text-size-adjust: n=
+one; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscal=
+e">
+To make sure our emails arrive, please add <A class=3Dv1email_without_defau=
+lt_client_style style=3D"TEXT-DECORATION: none !important; FONT-WEIGHT: nor=
+mal; COLOR: #797c7f" href=3D"mailto:noreply@wetransfer.com" rel=3Dnoreferre=
+r><SPAN class=3Dv1email_without_default_client_style style=3D"TEXT-DECORATI=
+ON: none !important; FONT-WEIGHT: normal; COLOR: #797c7f">noreply@wetransfe=
+r.com</SPAN></A>
+ to <A style=3D"TEXT-DECORATION: underline; FONT-WEIGHT: normal; COLOR: #79=
+7c7f" href=3D"https://wetransfer.zendesk.com/hc/en-us/articles/204909429?ut=
+m_campaign=3DTRN_TDL_01&amp;utm_source=3Dsendgrid&amp;utm_medium=3Demail&am=
+p;trk=3DTRN_TDL_01" rel=3D"noopener noreferrer" target=3D_blank>your contac=
+ts</A>.</P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></=
+TBODY></TABLE>
+<TABLE class=3Dv1table_full_width style=3D"WIDTH: 100%; BORDER-COLLAPSE: co=
+llapse; TABLE-LAYOUT: fixed; OUTLINE-WIDTH: medium; PADDING-BOTTOM: 0px; -M=
+S-TEXT-SIZE-ADJUST: none; PADDING-TOP: 0px; OUTLINE-STYLE: none; PADDING-LE=
+FT: 0px; BORDER-SPACING: 0; MARGIN: 0px; OUTLINE-COLOR: invert; PADDING-RIG=
+HT: 0px; -webkit-text-size-adjust: none; -webkit-font-smoothing: antialiase=
+d; -moz-osx-font-smoothing: grayscale; mso-table-lspace: 0; mso-table-rspac=
+e: 0" cellSpacing=3D0 cellPadding=3D0 border=3D0>
+<TBODY>
+<TR>
+<TD class=3Dv1footer_td style=3D"FONT-SIZE: 12px; FONT-FAMILY: 'Fakt Pro', =
+'Segoe UI', 'SanFrancisco Display', Arial, sans-serif; WIDTH: 100%; WORD-SP=
+ACING: 0px; FONT-WEIGHT: normal; COLOR: #797c7f; OUTLINE-WIDTH: medium; PAD=
+DING-BOTTOM: 30px; -MS-TEXT-SIZE-ADJUST: none; FONT-STYLE: normal; PADDING-=
+TOP: 30px; OUTLINE-STYLE: none; PADDING-LEFT: 20px; MARGIN: 0px; OUTLINE-CO=
+LOR: invert; LINE-HEIGHT: 23px; PADDING-RIGHT: 20px; -webkit-text-size-adju=
+st: none; -webkit-font-smoothing: antialiased;=20
+-moz-osx-font-smoothing: grayscale; mso-line-height-rule: exactly" vAlign=
+=3Dtop align=3Dcenter><A class=3Dv1footer_link style=3D"TEXT-DECORATION: un=
+derline; FONT-WEIGHT: normal; COLOR: #797c7f" href=3D"https://wetransfer.co=
+m/about?trk=3DTRN_TDL_01&amp;utm_campaign=3DTRN_TDL_01&amp;utm_medium=3Dema=
+il&amp;utm_source=3Dsendgrid" rel=3D"noopener noreferrer" target=3D_blank><=
+SPAN class=3Dv1footer_link style=3D"TEXT-DECORATION: underline; FONT-WEIGHT=
+: normal; COLOR: #797c7f">About WeTransfer</SPAN></A>
+ <SPAN class=3Dv1footer_link_separator style=3D"COLOR: #797c7f">&nbsp;&nbsp=
+;&#12539;&nbsp;&nbsp;</SPAN> <A class=3Dv1footer_link style=3D"TEXT-DECORAT=
+ION: underline; FONT-WEIGHT: normal; COLOR: #797c7f" href=3D"https://wetran=
+sfer.zendesk.com/hc/en-us?utm_campaign=3DTRN_TDL_01&amp;utm_source=3Dsendgr=
+id&amp;utm_medium=3Demail&amp;trk=3DTRN_TDL_01" rel=3D"noopener noreferrer"=
+ target=3D_blank><SPAN class=3Dv1footer_link style=3D"TEXT-DECORATION: unde=
+rline; FONT-WEIGHT: normal; COLOR: #797c7f">Help</SPAN></A>
+ <SPAN class=3Dv1footer_link_separator style=3D"COLOR: #797c7f">&nbsp;&nbsp=
+;&#12539;&nbsp;&nbsp;</SPAN> <A class=3Dv1footer_link style=3D"TEXT-DECORAT=
+ION: underline; FONT-WEIGHT: normal; COLOR: #797c7f" href=3D"https://wetran=
+sfer.com/legal/terms?trk=3DTRN_TDL_01&amp;utm_campaign=3DTRN_TDL_01&amp;utm=
+_medium=3Demail&amp;utm_source=3Dsendgrid" rel=3D"noopener noreferrer" targ=
+et=3D_blank><SPAN class=3Dv1footer_link style=3D"TEXT-DECORATION: underline=
+; FONT-WEIGHT: normal; COLOR: #797c7f">Legal</SPAN></A>
+ <SPAN class=3Dv1footer_link_separator style=3D"COLOR: #797c7f">&nbsp;&nbsp=
+;&#12539;&nbsp;&nbsp;</SPAN>
+ <A class=3Dv1footer_link style=3D"TEXT-DECORATION: underline; FONT-WEIGHT:=
+ normal; COLOR: #797c7f"=20
+href=3D"https://wetransfer.zendesk.com/hc/en-us/requests/new?ticket_form_id=
+=3D360000007663&amp;utm_campaign=3DTRN_TDL_01&amp;utm_source=3Dsendgrid&amp=
+;utm_medium=3Demail&amp;trk=3DTRN_TDL_01&amp;token=3DeyJhbGciOiJub25lIn0.ey=
+JyZXF1ZXN0X3N1YmplY3QiOiJSZXBvcnQgdGhpcyB0cmFuc2ZlciBhcyBzcGFtIiwicmVxdWVzd=
+F9kZXNjcmlwdGlvbiI6Imh0dHBzOi8vd2V0cmFuc2Zlci5jb20vZG93bmxvYWRzLzc3ODE0NWIx=
+YmRlZjRjMDBkOTU3MzM3ZjdlNzM4MTFjMjAyNDAxMTYwOTM0NDAvMzdjNjBjZDc4OTA3ZmVkYzl=
+jYjRhZDE0ZjJmMzg4OGIyMDI0MDExNjA5MzUwMy84MzMwZTAiLCJyZXF1ZXN0X2N
+1c3RvbV9maWVsZHNfMzYwMDAwMTcxMjIzIjoiNDRkZTk1NjZlZGU3ZTVkMzYxMDJjOTVjY2Q2N2=
+U2ODhkMTgxMDZkM2FiMDlkMWIzZGFhZDg2OGEwOGY5YmI0MzMyNWZkNTQyODc3YTg0YzZiYzg4M=
+DhjMzJlMjQyNzgwMzFmMmZlNDFlMGEwMzg5NWU5MDBmYjU3MDdjODI2N2YifQ." rel=3D"noop=
+ener noreferrer" target=3D_blank><SPAN class=3Dv1footer_link style=3D"TEXT-=
+DECORATION: underline; FONT-WEIGHT: normal; COLOR: #797c7f">Report this tra=
+nsfer as spam</SPAN></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE=
+></CENTER></TD></TR></TBODY></TABLE>
+<DIV style=3D"WHITE-SPACE: nowrap; COLOR: #ffffff; FONT: 20px courier; DISP=
+LAY: none">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;=
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</DIV=
+>
+<IMG style=3D"BORDER-LEFT-WIDTH: 0px !important; HEIGHT: 1px !important; BO=
+RDER-RIGHT-WIDTH: 0px !important; WIDTH: 1px !important; BORDER-BOTTOM-WIDT=
+H: 0px !important; PADDING-BOTTOM: 0px !important; PADDING-TOP: 0px !import=
+ant; PADDING-LEFT: 0px !important; MARGIN: 0px; PADDING-RIGHT: 0px !importa=
+nt; BORDER-TOP-WIDTH: 0px !important" border=3D0=20
+src=3D"http://email.wetransfer.com/wf/open?upn=3DwUz9t4btiUlbWWkDsK2xurwwrF=
+brxNC1aFJjG-2Bj95yOFSicOI8nHNGujEbeVNvXK8J286bCgaU7m58gJqiMlhL7P1TDkBQp-2BZ=
+r7p2XZP4hfG-2BCzSg6o3mL6PyCjXl493wAN272CYfC67bPQu4XoWyQbuvCVbWmbpVFutN9rILX=
+t1oAtXBtow2xsOZiCwB-2FCOy-2FFiDQTjth44zTS17U7w3fMH0Or0j3H83wOzF9RnXnYHHdLzU=
+IbhDpbFn-2FmdKJN7Ud2VCKSlcslAQgpR5rbfRXPTc5mMOuKK501gLXIvpfOWR4eywN6nmPf1Vf=
+8I4i393LNKW2Fl6sKKEPSoxPF7a0KvGvA2D1ylsXoYHaZXfgmeRBn9eOD-2BwIAoqEaXe-2F77"=
+ width=3D1 height=3D1></DIV></DIV></BODY></HTML>
 
 
-
---===============5107923578181659861==
+--===============4347421389571759983==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5107923578181659861==
+--===============4347421389571759983==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -306,6 +813,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5107923578181659861==--
-
-
+--===============4347421389571759983==--
