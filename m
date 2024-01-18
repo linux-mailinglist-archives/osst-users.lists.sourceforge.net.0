@@ -2,104 +2,87 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id C4072831955
-	for <lists+osst-users@lfdr.de>; Thu, 18 Jan 2024 13:43:05 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 702FB831E66
+	for <lists+osst-users@lfdr.de>; Thu, 18 Jan 2024 18:27:20 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rQRjc-0001GV-JL
+	id 1rQWAg-0003W3-Lf
 	for lists+osst-users@lfdr.de;
-	Thu, 18 Jan 2024 12:43:04 +0000
+	Thu, 18 Jan 2024 17:27:19 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <newsletter@inktoner.info>) id 1rQRjb-0001GP-Ck
- for osst-users@lists.sourceforge.net; Thu, 18 Jan 2024 12:43:03 +0000
+ (envelope-from <root@zx19.cnriurg.com>) id 1rQWAf-0003Vx-Lt
+ for osst-users@lists.sourceforge.net; Thu, 18 Jan 2024 17:27:18 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Message-ID:Date:Content-Type:To:Reply-To:
- From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=0JbGjnm4ZBa8xOgQ4QBQgMsR3pL/AacM+vu6DsgxXOM=; b=P63T03E85Nhs3pektg6bbVS33J
- IT/gJprRR8Nqp8p2WFHbQnCrlaeci27oANoIN0VKLyS2IsfMRH7/o557wP1wub+DmuiMCXgdmAdls
- IIPPIbXL5RxwTqhQQrF/ZoRGSsyc1N6081NqcBp6+B2TajJKgugPuVTyFVopatU1CYSg=;
+ d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:
+ Content-Transfer-Encoding:Content-type:MIME-Version:Sender:Reply-To:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=M/3fsZxUcmrSXV7LmELeyWYerQOWF3l//EY7PL+smB4=; b=VoQ+oy2GaiDtbrr3yQnoquMuVU
+ 5qRE8qcM2L8l1Q+tNlFpPpwQpECWUEahN9lEVuShtKsboEvml46ddKQrPuFEi2JVldzSVYDPbN+OV
+ CoMUHgirdWCtzoFcJOWX5fMXd2lDmvp9A0iIulTjH3snr1HDarSTmciNNzaN0p5EA1eA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Message-ID:Date:Content-Type:To:Reply-To:From:MIME-Version:Sender
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Date:Message-Id:To:From:Subject:Content-Transfer-Encoding:Content-type:
+ MIME-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=0JbGjnm4ZBa8xOgQ4QBQgMsR3pL/AacM+vu6DsgxXOM=; b=h
- hhnimybOCzw1IXvXB4boPvRNFyPcTJcPlS2zYsR9JizlXCsdp+FBF5VTNgq3Zm/DdSktXZgVAP+Nx
- Q5DRn0pEwoYZPcm/AZxIJUR6P4LgfSFm+wmLTyqAELMw9e5moYXgyfpeO9HDe0F91XSdoWGCiXPeO
- mJBRGacdBMN29g70=;
-Received: from smtp202.ext.armada.it ([5.134.127.26])
+ List-Owner:List-Archive; bh=M/3fsZxUcmrSXV7LmELeyWYerQOWF3l//EY7PL+smB4=; b=Y
+ +t0PHims+MrjPwZqZ2unZ8riL0PnEQVAIRp41E3fCzY7Jr/Ptz9mVO1+Ex2SHz6CGEDu8woJFi85E
+ jMolpTMT0fe9CSHBeR8S5UtyzAu9y8/RJYAP/5tJnLGjbGlI1IgEhGN6dcdKjb9P5g5ulPDJS98co
+ qatAoBYCLZo29pQM=;
+Received: from zx19.cnriurg.com ([104.248.173.66])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1rQRjY-0006fs-2w for osst-users@lists.sourceforge.net;
- Thu, 18 Jan 2024 12:43:01 +0000
-Received: from host-79-18-64-67.retail.telecomitalia.it
- (host-87-20-64-183.retail.telecomitalia.it [87.20.64.183])
- (using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
- (No client certificate requested)
- (Authenticated sender: SMTP-MEGA-13798-1)
- by smtp200.ext.armada.it (Postfix) with ESMTPSA id F3E6920F7830
- for <osst-users@lists.sourceforge.net>; Thu, 18 Jan 2024 13:42:48 +0100 (CET)
-DKIM-Filter: OpenDKIM Filter v2.11.0 smtp200.ext.armada.it F3E6920F7830
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=inktoner.info;
- s=mail; t=1705581769;
- bh=0JbGjnm4ZBa8xOgQ4QBQgMsR3pL/AacM+vu6DsgxXOM=;
- h=From:Reply-To:To:Subject:Date:From;
- b=d4/Av03OFMrEXjOYCJF2mOBArALyRluQeQdtdUCFsFnCYWp0OXba7FMu+1uAeYlNH
- pph3SrCji6dXq/IJ4+v3SyWLzkotyNY4evYtVLrYg5FD9gp3gq0kuu41Bu/IH3RVMe
- iY37azs71dn3htLAB8BYSu2UCLBOa6QNq+qYVoEA=
+ id 1rQWAe-0006VD-FZ for osst-users@lists.sourceforge.net;
+ Thu, 18 Jan 2024 17:27:18 +0000
+Received: by zx19.cnriurg.com (Postfix, from userid 0)
+ id 9330F42553; Thu, 18 Jan 2024 14:48:22 +0000 (UTC)
 MIME-Version: 1.0
-From: "Gadget ufficio" <newsletter@inktoner.info>
+From: Telecom <morosidad@mailing.telecom.com>
 To: osst-users@lists.sourceforge.net
-Date: Thu, 18 Jan 2024 13:42:54 +0100
-Message-ID: <35843620843041131724919@sendi-PC>
-X-Spam-Score: 8.2 (++++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+Message-Id: <20240118165035.9330F42553@zx19.cnriurg.com>
+Date: Thu, 18 Jan 2024 14:48:22 +0000 (UTC)
+X-Spam-Score: 6.4 (++++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  Ci hai mai pensato? E’ tempo di regalare un piccolo gadget
-    ai tuoi clienti! 100 penne personalizzate col tuo nome o logo a partire da
-    35,00 euro (iva 22% compresa) 200 penne personalizzate col tuo nome o logo
-    a partire da 55,00 euro (iva 22% compresa) 
+ Content preview:  osst-users@lists.sourceforge.net , Nos comunicamos para informarte
+    que tenés un saldo pendiente de $43.437,43 por tu servicio de telefonía
+    fija: Nº Factura Vencimiento Importe deuda 9133610571158 29/01/2024 43.437,43
+    
  
- Content analysis details:   (8.2 points, 6.0 required)
+ Content analysis details:   (6.4 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
-                             blocklist
-                             [URIs: inktoner.info]
+  0.7 RCVD_IN_XBL            RBL: Received via a relay in Spamhaus XBL
+                             [104.248.173.66 listed in zen.spamhaus.org]
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.0 SPF_PASS               SPF: sender matches SPF record
-  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
+                             DNS
+  0.0 URIBL_RED              Contains an URL listed in the URIBL redlist
+                             [URIs: movistar.com.ar]
   0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image
                              area
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
-  2.0 PYZOR_CHECK            Listed in Pyzor
-                             (https://pyzor.readthedocs.io/en/latest/)
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+  1.0 URI_AZURE_CLOUDAPP     Link to hosted azure web application,
+                             possible phishing
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-  2.0 MIXED_HREF_CASE        Has href in mixed case
-  2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1rQRjY-0006fs-2w
-Subject: [Osst-users] [SPAM] Offerta Penne personalizzate e gadget
- promozionali: Consulta il nostro catalogo online!
+X-Headers-End: 1rQWAe-0006VD-FZ
+Subject: [Osst-users] Aviso Deuda Telecom Argentina
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -111,328 +94,317 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: accessoriufficio@gmail.com
-Content-Type: multipart/mixed; boundary="===============6179192002523278190=="
+Content-Type: multipart/mixed; boundary="===============2664803103055107731=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
+--===============2664803103055107731==
+Content-type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
 
---===============6179192002523278190==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_001_407D_25E22559.4A301B69"
-
-
-------=_NextPart_001_407D_25E22559.4A301B69
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-=20
-
-Ci hai mai pensato=3F E=E2=80=99 tempo di regalare un piccolo gadget ai tuo=
-i clienti!
-
-=20
-
-100 penne personalizzate col tuo nome o logo a partire da 35,00 euro (iva 2=
-2% compresa)
-
-200 penne personalizzate col tuo nome o logo a partire da 55,00 euro (iva 2=
-2% compresa)
-
-500 penne personalizzate col tuo nome o logo a partire da 145,00 euro (iva =
-22% compresa)
-
-=20
-
-50 accendini personalizzati col tuo nome o logo a partire da 45,00 euro (iv=
-a 22% compresa)
-
-100 accendini personalizzati col tuo nome o logo a partire da 65,00 euro (i=
-va 22% compresa)
-
-=20
-
-500 Biglietti da visita stampa fronte/retro a partire da 35,00 euro (iva 22=
-% compresa)
-
-1000 Biglietti da visita stampa fronte/retro a partire da 55,00 euro (iva 2=
-2% compresa)
-
-=20
-
-100 portachiavi personalizzati col tuo nome o logo a partire da 90,00 euro =
-(iva 22% compresa)
-
-=20
-
-100 calendari personalizzati col tuo nome o logo a partire da 140,00 euro (=
-iva 22% compresa)
-
-=20
-
-50 sacche personalizzate col tuo nome o logo a partire da 190,00 euro (iva =
-22% compresa)
-
-100 sacche personalizzate col tuo nome o logo a partire da 250,00 euro (iva=
- 22% compresa)
-
-=20
-
-Vuoi ricevere il nostro catalogo con oltre 1000 prodotti=3F Clicca qui per =
-visionarlo online e chiedici un preventivo rispondendo a questa email e ti =
-invieremo la nostra proposta personalizzata.
-
-=20
-
-=20
-
-=20
-
-Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
-desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
-premi qui ed invia per cancellarti
-
-=20
-
-
-------=_NextPart_001_407D_25E22559.4A301B69
-Content-Type: text/html; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-
-<HEAD><TITLE></TITLE>
-<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
-<META name=3DGENERATOR content=3D"MSHTML 8.00.7600.16385"></HEAD>
-<BODY>
-<TABLE border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
-<TR>
-<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
-<P>&nbsp;</P>
-<TABLE style=3D"BORDER-BOTTOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-=
-LEFT: #808080 1px solid; MARGIN: 0px auto; WIDTH: 600px; FONT-FAMILY: 'Time=
-s New Roman', Times, serif; BORDER-TOP: #808080 1px solid; BORDER-RIGHT: #8=
-08080 1px solid" border=3D0 cellSpacing=3D0 cellPadding=3D0 width=3D600>
-<TR>
-<TD style=3D"PADDING-BOTTOM: 25px; PADDING-LEFT: 25px; PADDING-RIGHT: 25px;=
- FONT-FAMILY: 'Times New Roman', Times, serif; COLOR: #6e6d6d; FONT-SIZE: 1=
-8px; PADDING-TOP: 25px">
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><B><SPAN=
- style=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZ=
-E: 11pt"><FONT size=3D3>Ci hai mai pensato=3F E=E2=80=99 tempo di regalare =
-un piccolo gadget ai tuoi clienti!</FONT></SPAN></B></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt"></SPAN><U></U><U></U>&nbsp;</P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">100 penne personalizzate col tuo nome o logo a partire da 35,00 euro =
-(iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">200 penne personalizzate col tuo nome o logo a partire da 55,00 euro =
-(iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">500 penne personalizzate col tuo nome o logo a partire da 145,00 euro=
- (iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt"></SPAN><U></U><U></U>&nbsp;</P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">50 accendini personalizzati col tuo nome o logo a partire da 45,00 eu=
-ro (iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">100 accendini personalizzati col tuo nome o logo a partire da 65,00 e=
-uro (iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt"></SPAN><U></U><U></U>&nbsp;</P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">500 Biglietti da visita stampa fronte/retro a partire da 35,00 euro (=
-iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">1000 Biglietti da visita stampa fronte/retro a partire da 55,00 euro =
-(iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt"></SPAN><U></U><U></U>&nbsp;</P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">100 portachiavi personalizzati col tuo nome o logo a partire da 90,00=
- euro (iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt"></SPAN><U></U><U></U>&nbsp;</P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">100 calendari personalizzati col tuo nome o logo a partire da 140,00 =
-euro (iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt"></SPAN><U></U><U></U>&nbsp;</P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">50 sacche personalizzate col tuo nome o logo a partire da 190,00 euro=
- (iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt">100 sacche personalizzate col tuo nome o logo a partire da 250,00 eur=
-o (iva 22% compresa)</SPAN><U></U><U></U></P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><SPAN st=
-yle=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZE: =
-11pt"></SPAN><U></U><U></U>&nbsp;</P>
-<P style=3D"WIDOWS: 2; TEXT-TRANSFORM: none; BACKGROUND-COLOR: rgb(255,255,=
-255); FONT-STYLE: normal; TEXT-INDENT: 0px; MARGIN: 0px 0cm; FONT-FAMILY: '=
-Times New Roman', serif; WHITE-SPACE: normal; ORPHANS: 2; LETTER-SPACING: n=
-ormal; COLOR: rgb(34,34,34); FONT-SIZE: 12pt; FONT-WEIGHT: 400; WORD-SPACIN=
-G: 0px; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-=
-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration=
--style: initial; text-decoration-color: initial" class=3DMsoNormal><B><SPAN=
- style=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-SIZ=
-E: 11pt"><FONT size=3D3>Vuoi ricevere il nostro catalogo con oltre 1000 pro=
-dotti=3F <A href=3D"https://catalogs-online.com/catalog/"><FONT color=3D#ff=
-0000>Clicca qui per visionarlo online</FONT></A> e </FONT></SPAN></B><B><SP=
-AN style=3D"FONT-FAMILY: Calibri, sans-serif; COLOR: rgb(31,73,125); FONT-S=
-IZE: 11pt"><FONT size=3D3>chiedici un preventivo <A href=3D"mailto:accessor=
-iufficio@gmail.com=3Fsubject=3Dpreventivo">rispondendo a questa email</A> e=
- ti invieremo la nostra proposta personalizzata.</FONT></SPAN></B></P>
-<P>&nbsp;</P>
-<P><IMG border=3D0 hspace=3D0 src=3D"https://i.imgur.com/GiyCmsT.png" width=
-=3D528 height=3D724>&nbsp;</P>
-<P>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per errore, per fa=
-vore comunicacelo, Nel caso desideri essere cancellato rispondi a questa em=
-ail con "cancellami" </FONT><A href=3D"mailto:accessoriufficio@gmail.com=3F=
-subject=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia per cancella=
-rti</FONT></A></TD></TR>
-<TR></TR></TABLE></TD></TR></TABLE>
-<P>&nbsp;</P></BODY>
-------=_NextPart_001_407D_25E22559.4A301B69--
+PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMDEgVHJhbnNpdGlvbmFs
+Ly9FTiI+DQoKPGh0bWw+DQoKPGhlYWQ+DQoKDQoKICA8bWV0YSBjb250ZW50PSJ0ZXh0L2h0bWw7
+IGNoYXJzZXQ9SVNPLTg4NTktMSIgaHR0cC1lcXVpdj0iY29udGVudC10eXBlIj4NCgogIDx0aXRs
+ZT48L3RpdGxlPg0KCg0KCg0KCjwvaGVhZD4NCgo8Ym9keT4NCgoNCgo8ZGl2IHN0eWxlPSJ0ZXh0
+LWFsaWduOiBjZW50ZXI7Ij48aW1nIHNyYz0iaHR0cHM6Ly90ZWxlY29tLmNvbS5hci9maWxlcy9n
+ZW9fbG9nb190ZWNvIiBzdHlsZT0iYm9yZGVyOiBtZWRpdW0gbm9uZSAgISBpbXBvcnRhbnQ7IiBh
+bHQ9IlRFTEVDT00iIGJvcmRlcj0iMCIgaGVpZ2h0PSJhdXRvIiB3aWR0aD0iMTQwIj4gPC9kaXY+
+DQoKDQoKPGRpdiBzdHlsZT0ibWFyZ2luOiAwcHQgYXV0bzsgYmFja2dyb3VuZDogcmdiKDI1NSwg
+MjU1LCAyNTUpIG5vbmUgcmVwZWF0IHNjcm9sbCAwJSA1MCU7IC1tb3otYmFja2dyb3VuZC1jbGlw
+OiBpbml0aWFsOyAtbW96LWJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyAtbW96LWJhY2tncm91
+bmQtaW5saW5lLXBvbGljeTogaW5pdGlhbDsgbWF4LXdpZHRoOiA2MDBweDsiPg0KCjx0YWJsZSBz
+dHlsZT0ibWFyZ2luOiAwcHQgYXV0bzsgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsgZm9udC1z
+aXplOiAwcHg7IiBhbGlnbj0iY2VudGVyIiBiZ2NvbG9yPSIjZmZmZmZmIiBib3JkZXI9IjAiIGNl
+bGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9IjEwMCUiPg0KCg0KCiAgPHRib2R5
+Pg0KCg0KCiAgICA8dHI+DQoKDQoKICAgICAgPHRkPg0KCiAgICAgIDx0YWJsZSBjbGFzcz0idjFk
+X2Jsb2NrIiBzdHlsZT0iYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsiIGJvcmRlcj0iMCIgY2Vs
+bHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIj4NCgoNCgogICAgICAgIDx0Ym9keT4NCgoNCgog
+ICAgICAgICAgPHRyPg0KCg0KCiAgICAgICAgICAgIDx0ZCBzdHlsZT0iZm9udC1zaXplOiAwcHg7
+IGNvbG9yOiByZ2IoMjU1LCAyNTUsIDI1NSk7IiB3aWR0aD0iMTAwJSI+IDxpbWcgc3JjPSJodHRw
+czovL3RlbGVjb20uY29tLmFyL2ZpbGVzL2dlb19oZWFkZXJfZGVza3RvcCIgYWx0PSJURUxFQ09N
+IiBzdHlsZT0iY29sb3I6IHJnYigyNTUsIDI1NSwgMjU1KTsiIGNsYXNzPSJ2MW1vYmlsZS1oaWRl
+IHYxaGlkZSIgYm9yZGVyPSIwIiBoZWlnaHQ9ImF1dG8iIHdpZHRoPSI2MDAiPiA8L3RkPg0KCg0K
+CiAgICAgICAgICA8L3RyPg0KCg0KCiAgICAgICAgPC90Ym9keT4NCgogICAgICA8L3RhYmxlPg0K
+Cg0KCiAgICAgIDwvdGQ+DQoKDQoKICAgIDwvdHI+DQoKDQoKICA8L3Rib2R5Pg0KCjwvdGFibGU+
+DQoKDQoKPC9kaXY+DQoKDQoKPGRpdiBzdHlsZT0ibWFyZ2luOiAwcHQgYXV0bzsgYmFja2dyb3Vu
+ZDogcmdiKDI1NSwgMjU1LCAyNTUpIG5vbmUgcmVwZWF0IHNjcm9sbCAwJSA1MCU7IC1tb3otYmFj
+a2dyb3VuZC1jbGlwOiBpbml0aWFsOyAtbW96LWJhY2tncm91bmQtb3JpZ2luOiBpbml0aWFsOyAt
+bW96LWJhY2tncm91bmQtaW5saW5lLXBvbGljeTogaW5pdGlhbDsgbWF4LXdpZHRoOiA2MDBweDsi
+Pg0KCjx0YWJsZSBzdHlsZT0ibWFyZ2luOiAwcHQgYXV0bzsgYm9yZGVyLWNvbGxhcHNlOiBjb2xs
+YXBzZTsgZm9udC1zaXplOiAwcHg7IiBhbGlnbj0iY2VudGVyIiBiZ2NvbG9yPSIjZmZmZmZmIiBi
+b3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9IjEwMCUiPg0K
+Cg0KCiAgPHRib2R5Pg0KCg0KCiAgICA8dHI+DQoKDQoKICAgICAgPHRkIHN0eWxlPSJwYWRkaW5n
+OiAzMHB4IDMwcHggMHB4OyB0ZXh0LWFsaWduOiBjZW50ZXI7IiBjbGFzcz0idjFwYWRfdDQwX2xy
+MjAiPg0KCiAgICAgIDx0YWJsZSBzdHlsZT0ibWFyZ2luOiAwcHQgYXV0bzsgYm9yZGVyLWNvbGxh
+cHNlOiBjb2xsYXBzZTsgZm9udC1zaXplOiAwcHg7IiBjbGFzcz0idjF3XzEwMHAiIGFsaWduPSJj
+ZW50ZXIiIGJnY29sb3I9IiNmZmZmZmYiIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxz
+cGFjaW5nPSIwIiB3aWR0aD0iMTAwJSI+DQoKDQoKICAgICAgICA8dGJvZHk+DQoKDQoKICAgICAg
+ICAgIDx0cj4NCgoNCgogICAgICAgICAgICA8dGQgc3R5bGU9ImZvbnQtZmFtaWx5OiAnUm9ib3Rv
+JyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC1zaXplOiAxOHB4OyBjb2xvcjogcmdi
+KDIwLCAyLCA1MCk7IGxpbmUtaGVpZ2h0OiAyOHB4OyBmb250LXdlaWdodDogbm9ybWFsOyB0ZXh0
+LWFsaWduOiBsZWZ0OyI+DQoKICAgICAgICAgICAgPHNwYW4gc3R5bGU9ImZvbnQtd2VpZ2h0OiBi
+b2xkOyI+b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQNCiw8L3NwYW4+DQoKICAgICAg
+ICAgICAgPC90ZD4NCgoNCgogICAgICAgICAgPC90cj4NCgoNCgogICAgICAgICAgPHRyPg0KCg0K
+CiAgICAgICAgICAgIDx0ZCBzdHlsZT0iZm9udC1mYW1pbHk6ICdSb2JvdG8nLEFyaWFsLEhlbHZl
+dGljYSxzYW5zLXNlcmlmOyBmb250LXNpemU6IDE2cHg7IGNvbG9yOiByZ2IoMjAsIDIsIDUwKTsg
+bGluZS1oZWlnaHQ6IDI4cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IHRleHQtYWxpZ246IGxlZnQ7
+Ij4NCgpOb3MgY29tdW5pY2Ftb3MgcGFyYSBpbmZvcm1hcnRlIHF1ZSB0ZW4mZWFjdXRlO3MgdW4g
+c2FsZG8gcGVuZGllbnRlDQoKZGUgPHNwYW4gc3R5bGU9ImZvbnQtd2VpZ2h0OiBib2xkOyI+JDQz
+LjQzNyw0Mzwvc3Bhbj4NCgpwb3IgdHUgc2VydmljaW8gZGUgdGVsZWZvbiZpYWN1dGU7YSBmaWph
+OiA8L3RkPg0KCg0KCiAgICAgICAgICA8L3RyPg0KCg0KCiAgICAgICAgPC90Ym9keT4NCgogICAg
+ICA8L3RhYmxlPg0KCg0KCiAgICAgIDwvdGQ+DQoKDQoKICAgIDwvdHI+DQoKDQoKICA8L3Rib2R5
+Pg0KCjwvdGFibGU+DQoKDQoKPC9kaXY+DQoKDQoKPGRpdiBzdHlsZT0ibWFyZ2luOiAwcHQgYXV0
+bzsgYmFja2dyb3VuZDogcmdiKDI1NSwgMjU1LCAyNTUpIG5vbmUgcmVwZWF0IHNjcm9sbCAwJSA1
+MCU7IC1tb3otYmFja2dyb3VuZC1jbGlwOiBpbml0aWFsOyAtbW96LWJhY2tncm91bmQtb3JpZ2lu
+OiBpbml0aWFsOyAtbW96LWJhY2tncm91bmQtaW5saW5lLXBvbGljeTogaW5pdGlhbDsgbWF4LXdp
+ZHRoOiA2MDBweDsiPg0KCjx0YWJsZSBzdHlsZT0ibWFyZ2luOiAwcHQgYXV0byAwcHg7IGJvcmRl
+ci1jb2xsYXBzZTogY29sbGFwc2U7IGZvbnQtc2l6ZTogMHB4OyIgYWxpZ249ImNlbnRlciIgYmdj
+b2xvcj0iI2ZmZmZmZiIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAi
+IHdpZHRoPSIxMDAlIj4NCgoNCgogIDx0Ym9keT4NCgoNCgogICAgPHRyPg0KCg0KCiAgICAgIDx0
+ZCBzdHlsZT0icGFkZGluZzogMjBweCAxMHB4IDEwcHg7IiB2YWxpZ249InRvcCI+DQoKICAgICAg
+PHRhYmxlIHN0eWxlPSJib3JkZXItYm90dG9tOiAycHggc29saWQgcmdiKDYwLCAwLCAxNTkpOyBt
+YXJnaW46IDBwdCBhdXRvOyB3aWR0aDogNTQwcHg7IGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7
+IGZvbnQtc2l6ZTogMHB4OyIgY2xhc3M9InYxd18xMDBwIiBhbGlnbj0iY2VudGVyIiBiZ2NvbG9y
+PSIjZmZmZmZmIiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgd2lk
+dGg9IjU0MCI+DQoKDQoKICAgICAgICA8dGJvZHk+DQoKDQoKICAgICAgICAgIDx0cj4NCgoNCgog
+ICAgICAgICAgICA8dGQgY2xhc3M9InYxbWF1dG8gdjFzaG93IHYxdHh0X2NlbnRlciB2MXdfMTAw
+cCB2MXBhZF90YjEwIiBzdHlsZT0icGFkZGluZzogMTVweCAwcHQgN3B4OyBiYWNrZ3JvdW5kOiBy
+Z2IoMjM0LCAyMzQsIDIzNCkgbm9uZSByZXBlYXQgc2Nyb2xsIDAlIDUwJTsgLW1vei1iYWNrZ3Jv
+dW5kLWNsaXA6IGluaXRpYWw7IC1tb3otYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IC1tb3ot
+YmFja2dyb3VuZC1pbmxpbmUtcG9saWN5OiBpbml0aWFsOyBmb250LWZhbWlseTogJ1JvYm90bycs
+QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTRweDsgY29sb3I6IHJnYig2
+MCwgMCwgMTU5KTsgbGluZS1oZWlnaHQ6IDE4cHg7IHRleHQtYWxpZ246IGNlbnRlcjsgZm9udC13
+ZWlnaHQ6IGJvbGQ7IiB3aWR0aD0iMTc0Ij5OJm9yZG07IEZhY3R1cmE8L3RkPg0KCg0KCiAgICAg
+ICAgICAgIDx0ZCBjbGFzcz0idjFzaG93IHYxaF8yMCIgc3R5bGU9Im1pbi13aWR0aDogNXB4OyI+
+PC90ZD4NCgoNCgogICAgICAgICAgICA8dGQgY2xhc3M9InYxbWF1dG8gdjFzaG93IHYxdHh0X2Nl
+bnRlciB2MXdfMTAwcCB2MXBhZF90YjEwIiBzdHlsZT0icGFkZGluZzogMTVweCAwcHQgN3B4OyBi
+YWNrZ3JvdW5kOiByZ2IoMjM0LCAyMzQsIDIzNCkgbm9uZSByZXBlYXQgc2Nyb2xsIDAlIDUwJTsg
+LW1vei1iYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IC1tb3otYmFja2dyb3VuZC1vcmlnaW46IGlu
+aXRpYWw7IC1tb3otYmFja2dyb3VuZC1pbmxpbmUtcG9saWN5OiBpbml0aWFsOyBmb250LWZhbWls
+eTogJ1JvYm90bycsQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTRweDsg
+Y29sb3I6IHJnYig2MCwgMCwgMTU5KTsgbGluZS1oZWlnaHQ6IDE4cHg7IHRleHQtYWxpZ246IGNl
+bnRlcjsgZm9udC13ZWlnaHQ6IGJvbGQ7IiB3aWR0aD0iMTc0Ij5WZW5jaW1pZW50bzwvdGQ+DQoK
+DQoKICAgICAgICAgICAgPHRkIGNsYXNzPSJ2MXNob3cgdjFoXzIwIiBzdHlsZT0ibWluLXdpZHRo
+OiA1cHg7Ij48L3RkPg0KCg0KCiAgICAgICAgICAgIDx0ZCBjbGFzcz0idjFtYXV0byB2MXNob3cg
+djF0eHRfY2VudGVyIHYxd18xMDBwIHYxbWIyMCB2MXBhZF90YjEwIiBzdHlsZT0icGFkZGluZzog
+MTVweCAwcHQgN3B4OyBiYWNrZ3JvdW5kOiByZ2IoMjM0LCAyMzQsIDIzNCkgbm9uZSByZXBlYXQg
+c2Nyb2xsIDAlIDUwJTsgLW1vei1iYWNrZ3JvdW5kLWNsaXA6IGluaXRpYWw7IC1tb3otYmFja2dy
+b3VuZC1vcmlnaW46IGluaXRpYWw7IC1tb3otYmFja2dyb3VuZC1pbmxpbmUtcG9saWN5OiBpbml0
+aWFsOyBmb250LWZhbWlseTogJ1JvYm90bycsQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7IGZv
+bnQtc2l6ZTogMTRweDsgY29sb3I6IHJnYig2MCwgMCwgMTU5KTsgbGluZS1oZWlnaHQ6IDE4cHg7
+IHRleHQtYWxpZ246IGNlbnRlcjsgZm9udC13ZWlnaHQ6IGJvbGQ7IiB3aWR0aD0iMTc0Ij5JbXBv
+cnRlIGRldWRhPC90ZD4NCgoNCgogICAgICAgICAgPC90cj4NCgoNCgogICAgICAgICAgPHRyPg0K
+Cg0KCiAgICAgICAgICAgIDx0ZCBjbGFzcz0idjFtYXV0byB2MXNob3cgdjF0eHRfY2VudGVyIHYx
+d18xMDBwIHYxcGFkX3RiMTAiIHN0eWxlPSJwYWRkaW5nOiA1cHggMHB4IDIwcHg7IGJhY2tncm91
+bmQ6IHJnYigyMzQsIDIzNCwgMjM0KSBub25lIHJlcGVhdCBzY3JvbGwgMCUgNTAlOyAtbW96LWJh
+Y2tncm91bmQtY2xpcDogaW5pdGlhbDsgLW1vei1iYWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsg
+LW1vei1iYWNrZ3JvdW5kLWlubGluZS1wb2xpY3k6IGluaXRpYWw7IGZvbnQtZmFtaWx5OiAnUm9i
+b3RvJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC1zaXplOiAxNHB4OyBjb2xvcjog
+cmdiKDExMCwgMTEwLCAxMTApOyBsaW5lLWhlaWdodDogMThweDsgdGV4dC1hbGlnbjogY2VudGVy
+OyBmb250LXdlaWdodDogbm9ybWFsOyIgd2lkdGg9IjE3NCI+OTEzMzYxMDU3MTE1ODwvdGQ+DQoK
+DQoKICAgICAgICAgICAgPHRkIGNsYXNzPSJ2MXNob3cgdjFoXzIwIiBzdHlsZT0ibWluLXdpZHRo
+OiA1cHg7Ij48L3RkPg0KCg0KCiAgICAgICAgICAgIDx0ZCBjbGFzcz0idjFtYXV0byB2MXNob3cg
+djF0eHRfY2VudGVyIHYxd18xMDBwIHYxcGFkX3RiMTAiIHN0eWxlPSJwYWRkaW5nOiA1cHggMHB4
+IDIwcHg7IGJhY2tncm91bmQ6IHJnYigyMzQsIDIzNCwgMjM0KSBub25lIHJlcGVhdCBzY3JvbGwg
+MCUgNTAlOyAtbW96LWJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgLW1vei1iYWNrZ3JvdW5kLW9y
+aWdpbjogaW5pdGlhbDsgLW1vei1iYWNrZ3JvdW5kLWlubGluZS1wb2xpY3k6IGluaXRpYWw7IGZv
+bnQtZmFtaWx5OiAnUm9ib3RvJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC1zaXpl
+OiAxNHB4OyBjb2xvcjogcmdiKDExMCwgMTEwLCAxMTApOyBsaW5lLWhlaWdodDogMThweDsgdGV4
+dC1hbGlnbjogY2VudGVyOyBmb250LXdlaWdodDogbm9ybWFsOyIgd2lkdGg9IjE3NCI+MjkvMDEv
+MjAyNDwvdGQ+DQoKDQoKICAgICAgICAgICAgPHRkIGNsYXNzPSJ2MXNob3cgdjFoXzIwIiBzdHls
+ZT0ibWluLXdpZHRoOiA1cHg7Ij48L3RkPg0KCg0KCiAgICAgICAgICAgIDx0ZCBjbGFzcz0idjFt
+YXV0byB2MXNob3cgdjF0eHRfY2VudGVyIHYxd18xMDBwIHYxcGFkX3RiMTAiIHN0eWxlPSJwYWRk
+aW5nOiA1cHggMHB4IDIwcHg7IGJhY2tncm91bmQ6IHJnYigyMzQsIDIzNCwgMjM0KSBub25lIHJl
+cGVhdCBzY3JvbGwgMCUgNTAlOyAtbW96LWJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgLW1vei1i
+YWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgLW1vei1iYWNrZ3JvdW5kLWlubGluZS1wb2xpY3k6
+IGluaXRpYWw7IGZvbnQtZmFtaWx5OiAnUm9ib3RvJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJp
+ZjsgZm9udC1zaXplOiAxNHB4OyBjb2xvcjogcmdiKDExMCwgMTEwLCAxMTApOyBsaW5lLWhlaWdo
+dDogMThweDsgdGV4dC1hbGlnbjogY2VudGVyOyBmb250LXdlaWdodDogbm9ybWFsOyIgd2lkdGg9
+IjE3NCI+NDMuNDM3LDQzPC90ZD4NCgoNCgogICAgICAgICAgPC90cj4NCgoNCgogICAgICAgIDwv
+dGJvZHk+DQoKICAgICAgPC90YWJsZT4NCgoNCgogICAgICA8L3RkPg0KCg0KCiAgICA8L3RyPg0K
+Cg0KCiAgPC90Ym9keT4NCgo8L3RhYmxlPg0KCg0KCjwvZGl2Pg0KCg0KCjxkaXYgc3R5bGU9Im1h
+cmdpbjogMHB0IGF1dG87IGJhY2tncm91bmQ6IHJnYigyNTUsIDI1NSwgMjU1KSBub25lIHJlcGVh
+dCBzY3JvbGwgMCUgNTAlOyAtbW96LWJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgLW1vei1iYWNr
+Z3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgLW1vei1iYWNrZ3JvdW5kLWlubGluZS1wb2xpY3k6IGlu
+aXRpYWw7IG1heC13aWR0aDogNjAwcHg7Ij4NCgo8dGFibGUgc3R5bGU9Im1hcmdpbjogMHB0IGF1
+dG8gMHB4OyBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlOyBmb250LXNpemU6IDBweDsiIGFsaWdu
+PSJjZW50ZXIiIGJnY29sb3I9IiNmZmZmZmYiIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNl
+bGxzcGFjaW5nPSIwIiB3aWR0aD0iMTAwJSI+DQoKDQoKICA8dGJvZHk+DQoKDQoKICAgIDx0cj4N
+CgoNCgogICAgICA8dGQgc3R5bGU9InBhZGRpbmc6IDBweCAxMHB4IDEwcHg7IiB2YWxpZ249InRv
+cCI+DQoKICAgICAgPHRhYmxlIHN0eWxlPSJib3JkZXItYm90dG9tOiAycHggc29saWQgcmdiKDYw
+LCAwLCAxNTkpOyBtYXJnaW46IDBwdCBhdXRvOyB3aWR0aDogNTQwcHg7IGJvcmRlci1jb2xsYXBz
+ZTogY29sbGFwc2U7IGZvbnQtc2l6ZTogMHB4OyIgY2xhc3M9InYxd18xMDBwIiBhbGlnbj0iY2Vu
+dGVyIiBiZ2NvbG9yPSIjZmZmZmZmIiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3Bh
+Y2luZz0iMCIgd2lkdGg9IjU0MCI+DQoKDQoKICAgICAgICA8dGJvZHk+DQoKDQoKICAgICAgICAg
+IDx0cj4NCgoNCgogICAgICAgICAgICA8dGQgY2xhc3M9InYxbWF1dG8gdjFzaG93IHYxdHh0X2Nl
+bnRlciB2MXdfMTAwcCB2MXBhZF90YjEwIiBzdHlsZT0icGFkZGluZzogMTVweCAwcHQgN3B4IDEw
+cHg7IGJhY2tncm91bmQ6IHJnYigyMzQsIDIzNCwgMjM0KSBub25lIHJlcGVhdCBzY3JvbGwgMCUg
+NTAlOyAtbW96LWJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgLW1vei1iYWNrZ3JvdW5kLW9yaWdp
+bjogaW5pdGlhbDsgLW1vei1iYWNrZ3JvdW5kLWlubGluZS1wb2xpY3k6IGluaXRpYWw7IGZvbnQt
+ZmFtaWx5OiAnUm9ib3RvJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC1zaXplOiAx
+NHB4OyBjb2xvcjogcmdiKDYwLCAwLCAxNTkpOyBsaW5lLWhlaWdodDogMThweDsgdGV4dC1hbGln
+bjogbGVmdDsgZm9udC13ZWlnaHQ6IGJvbGQ7IiB3aWR0aD0iMTAwJSI+U2VydmljaW9zL3MgPC90
+ZD4NCgoNCgogICAgICAgICAgPC90cj4NCgoNCgogICAgICAgICAgPHRyPg0KCg0KCiAgICAgICAg
+ICAgIDx0ZCBjbGFzcz0idjFtYXV0byB2MXNob3cgdjF0eHRfY2VudGVyIHYxd18xMDBwIHYxcGFk
+X3RiMTAiIHN0eWxlPSJwYWRkaW5nOiAwcHggMHB0IDdweCAxMHB4OyBiYWNrZ3JvdW5kOiByZ2Io
+MjM0LCAyMzQsIDIzNCkgbm9uZSByZXBlYXQgc2Nyb2xsIDAlIDUwJTsgLW1vei1iYWNrZ3JvdW5k
+LWNsaXA6IGluaXRpYWw7IC1tb3otYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IC1tb3otYmFj
+a2dyb3VuZC1pbmxpbmUtcG9saWN5OiBpbml0aWFsOyBmb250LWZhbWlseTogJ1JvYm90bycsQXJp
+YWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTRweDsgbGluZS1oZWlnaHQ6IDE4
+cHg7IHRleHQtYWxpZ246IGxlZnQ7IGNvbG9yOiByZ2IoMTEwLCAxMTAsIDExMCk7IGZvbnQtd2Vp
+Z2h0OiBub3JtYWw7IiB3aWR0aD0iMTAwJSI+OTkyMTYxODEsOTEzMzYxMDU3PGJyPg0KCg0KCiAg
+ICAgICAgICAgIDxicj4NCgoNCgogICAgICAgICAgICA8dGFibGUgc3R5bGU9ImJvcmRlci1jb2xs
+YXBzZTogY29sbGFwc2U7IiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0i
+MCIgd2lkdGg9IjYwMiI+DQoKDQoKICAgICAgICAgICAgICA8dGJvZHk+DQoKDQoKICAgICAgICAg
+ICAgICAgIDx0ciBzdHlsZT0idmVydGljYWwtYWxpZ246IHRvcDsiPg0KCg0KCiAgICAgICAgICAg
+ICAgICAgIDx0ZCBzdHlsZT0iYm9yZGVyLXN0eWxlOiBub25lOyIgaGVpZ2h0PSI0OCIgd2lkdGg9
+IjYwMiI+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0ibGluZS1oZWlnaHQ6IDJweDsg
+dGV4dC1hbGlnbjogY2VudGVyOyI+PGEgaHJlZj0iaHR0cHM6Ly9zdG9jb25lY3NlcnZzdGFsY2xv
+dWR5dHoud2VzdHVzMy5jbG91ZGFwcC5henVyZS5jb20/cD1leUprWld4cGRtVnllVWQxYVdRaU9p
+SXlNREl6TVRJeE5TMHhORFUxTFRBMlpHTXRPVGhqWlMweE1qYzNOMkpoTkRVNVpqZ2lMQ0pzYVc1
+clZYSnNJam9pYUhSMGNITTZMeTl0YjNZdWFYTXZZbTkwYjI1d1lXZHZMWEpsYzNWd2IzTndZV2R2
+SWl3aVlVbGtJam94TWpnd2ZRJTNEJTNEIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiIHRhcmdl
+dD0iX2JsYW5rIiB0aXRsZT0iVGhpcyBleHRlcm5hbCBsaW5rIHdpbGwgb3BlbiBpbiBhIG5ldyB3
+aW5kb3ciIG9uY2xpY2s9InJldHVybiBXZWJtYWlsLldpZGdldHMuRW1haWwuTWVzc2FnZS5ldkxp
+bmtDbGljayh0aGlzKTsiPjxpbWcgc3R5bGU9ImJvcmRlcjogMHB4IG5vbmUgOyB2ZXJ0aWNhbC1h
+bGlnbjogYmFzZWxpbmU7IiBhbHQ9Imh0dHBzOi8vc3RvY29uZWNzZXJ2c3RhbGNsb3VkeXR6Lndl
+c3R1czMuY2xvdWRhcHAuYXp1cmUuY29tIiBzcmM9Imh0dHBzOi8vZGVsaXZlci5tb3Zpc3Rhci5j
+b20uYXIvYm90b25QYWdhckZhY3R1cmEucG5nIiBoZWlnaHQ9IjQ0IiB3aWR0aD0iMjI0Ij48L2E+
+IDwvZGl2Pg0KCg0KCiAgICAgICAgICAgICAgICAgIDwvdGQ+DQoKDQoKICAgICAgICAgICAgICAg
+IDwvdHI+DQoKDQoKICAgICAgICAgICAgICA8L3Rib2R5Pg0KCiAgICAgICAgICAgIDwvdGFibGU+
+DQoKDQoKICAgICAgICAgICAgPC90ZD4NCgoNCgogICAgICAgICAgPC90cj4NCgoNCgogICAgICAg
+IDwvdGJvZHk+DQoKICAgICAgPC90YWJsZT4NCgoNCgogICAgICA8L3RkPg0KCg0KCiAgICA8L3Ry
+Pg0KCg0KCiAgPC90Ym9keT4NCgo8L3RhYmxlPg0KCg0KCjwvZGl2Pg0KCg0KCjxkaXYgc3R5bGU9
+Im1hcmdpbjogMHB0IGF1dG87IGJhY2tncm91bmQ6IHJnYigyNTUsIDI1NSwgMjU1KSBub25lIHJl
+cGVhdCBzY3JvbGwgMCUgNTAlOyAtbW96LWJhY2tncm91bmQtY2xpcDogaW5pdGlhbDsgLW1vei1i
+YWNrZ3JvdW5kLW9yaWdpbjogaW5pdGlhbDsgLW1vei1iYWNrZ3JvdW5kLWlubGluZS1wb2xpY3k6
+IGluaXRpYWw7IG1heC13aWR0aDogNjAwcHg7Ij4NCgo8dGFibGUgc3R5bGU9Im1hcmdpbjogMHB0
+IGF1dG87IGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7IGZvbnQtc2l6ZTogMHB4OyIgYWxpZ249
+ImNlbnRlciIgYmdjb2xvcj0iI2ZmZmZmZiIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2Vs
+bHNwYWNpbmc9IjAiIHdpZHRoPSIxMDAlIj4NCgoNCgogIDx0Ym9keT4NCgoNCgogICAgPHRyPg0K
+Cg0KCiAgICAgIDx0ZCBzdHlsZT0icGFkZGluZzogMTBweCAzMHB4IDBweDsgdGV4dC1hbGlnbjog
+Y2VudGVyOyIgY2xhc3M9InYxcGFkX3Q0MF9scjIwIj4NCgogICAgICA8dGFibGUgc3R5bGU9Im1h
+cmdpbjogMHB0IGF1dG87IGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7IGZvbnQtc2l6ZTogMHB4
+OyIgY2xhc3M9InYxd18xMDBwIiBhbGlnbj0iY2VudGVyIiBiZ2NvbG9yPSIjZmZmZmZmIiBib3Jk
+ZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9IjEwMCUiPg0KCg0K
+CiAgICAgICAgPHRib2R5Pg0KCg0KCiAgICAgICAgICA8dHI+DQoKDQoKICAgICAgICAgICAgPHRk
+IHN0eWxlPSJmb250LWZhbWlseTogJ1JvYm90bycsQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7
+IGZvbnQtc2l6ZTogMTZweDsgY29sb3I6IHJnYigyMCwgMiwgNTApOyBsaW5lLWhlaWdodDogMjJw
+eDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgdGV4dC1hbGlnbjogbGVmdDsiPg0KClBvciBmYXZvciwg
+cmVhbGl6JmFhY3V0ZTsgZWwgcGFnbyBhIHRyYXYmZWFjdXRlO3MgZGUgbG9zIDxzcGFuIHN0eWxl
+PSJmb250LXdlaWdodDogYm9sZDsiPmNhbmFsZXMgZWxlY3RyJm9hY3V0ZTtuaWNvcw0KCmhhYmls
+aXRhZG9zOjwvc3Bhbj4gPC90ZD4NCgoNCgogICAgICAgICAgPC90cj4NCgoNCgogICAgICAgIDwv
+dGJvZHk+DQoKICAgICAgPC90YWJsZT4NCgoNCgogICAgICA8L3RkPg0KCg0KCiAgICA8L3RyPg0K
+Cg0KCiAgICA8dHI+DQoKDQoKICAgICAgPHRkIHN0eWxlPSJwYWRkaW5nOiAyMHB4IDMwcHggMzBw
+eDsgdGV4dC1hbGlnbjogY2VudGVyOyIgY2xhc3M9InYxcGFkMzAiPg0KCiAgICAgIDx0YWJsZSBz
+dHlsZT0ibWFyZ2luOiAwcHQgYXV0bzsgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsgZm9udC1z
+aXplOiAwcHg7IiBjbGFzcz0idjF3XzEwMHAiIGFsaWduPSJjZW50ZXIiIGJnY29sb3I9IiNmZmZm
+ZmYiIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiB3aWR0aD0iMTAw
+JSI+DQoKDQoKICAgICAgICA8dGJvZHk+DQoKDQoKICAgICAgICAgIDx0ciBzdHlsZT0icGFkZGlu
+Zy1ib3R0b206IDEwcHg7IGhlaWdodDogNTBweDsiIHZhbGlnbj0ibWlkZGxlIj4NCgoNCgogICAg
+ICAgICAgICA8dGQgYWxpZ249ImxlZnQiIGhlaWdodD0iMzAiIHZhbGlnbj0ibWlkZGxlIiB3aWR0
+aD0iNDAiPiA8aW1nIHNyYz0iaHR0cHM6Ly90ZWxlY29tLmNvbS5hci9maWxlcy9nZW9fY2hlY2si
+IGFsdD0iVEVMRUNPTSIgc3R5bGU9IiIgYm9yZGVyPSIwIiBoZWlnaHQ9ImF1dG8iPiA8L3RkPg0K
+Cg0KCiAgICAgICAgICAgIDx0ZCBzdHlsZT0iZm9udC1mYW1pbHk6ICdSb2JvdG8nLEFyaWFsLEhl
+bHZldGljYSxzYW5zLXNlcmlmOyBmb250LXNpemU6IDE2cHg7IGNvbG9yOiByZ2IoMjAsIDIsIDUw
+KTsgbGluZS1oZWlnaHQ6IDE4cHg7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IHRleHQtYWxpZ246IGxl
+ZnQ7Ij4NCgogICAgICAgICAgICA8c3BhbiBzdHlsZT0iZm9udC13ZWlnaHQ6IGJvbGQ7Ij5QYWdv
+IG1pcw0KCmN1ZW50YXMgRW1wcmVzYXMuPC9zcGFuPiA8L3RkPg0KCg0KCiAgICAgICAgICA8L3Ry
+Pg0KCg0KCiAgICAgICAgICA8dHIgc3R5bGU9InBhZGRpbmctYm90dG9tOiAxMHB4OyBoZWlnaHQ6
+IDUwcHg7IiB2YWxpZ249Im1pZGRsZSI+DQoKDQoKICAgICAgICAgICAgPHRkIGFsaWduPSJsZWZ0
+IiBoZWlnaHQ9IjMwIiB2YWxpZ249Im1pZGRsZSIgd2lkdGg9IjQwIj4gPGltZyBzcmM9Imh0dHBz
+Oi8vdGVsZWNvbS5jb20uYXIvZmlsZXMvZ2VvX2NoZWNrIiBhbHQ9IlRFTEVDT00iIHN0eWxlPSIi
+IGJvcmRlcj0iMCIgaGVpZ2h0PSJhdXRvIj4gPC90ZD4NCgoNCgogICAgICAgICAgICA8dGQgc3R5
+bGU9ImZvbnQtZmFtaWx5OiAnUm9ib3RvJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9u
+dC1zaXplOiAxNnB4OyBjb2xvcjogcmdiKDIwLCAyLCA1MCk7IGxpbmUtaGVpZ2h0OiAxOHB4OyBm
+b250LXdlaWdodDogbm9ybWFsOyB0ZXh0LWFsaWduOiBsZWZ0OyI+DQoKICAgICAgICAgICAgPHNw
+YW4gc3R5bGU9ImZvbnQtd2VpZ2h0OiBib2xkOyI+TGluayBQYWdvcy48L3NwYW4+DQoKICAgICAg
+ICAgICAgPC90ZD4NCgoNCgogICAgICAgICAgPC90cj4NCgoNCgogICAgICAgICAgPHRyIHN0eWxl
+PSJwYWRkaW5nLWJvdHRvbTogMTBweDsgaGVpZ2h0OiA1MHB4OyIgdmFsaWduPSJtaWRkbGUiPg0K
+Cg0KCiAgICAgICAgICAgIDx0ZCBhbGlnbj0ibGVmdCIgaGVpZ2h0PSIzMCIgdmFsaWduPSJtaWRk
+bGUiIHdpZHRoPSI0MCI+IDxpbWcgc3JjPSJodHRwczovL3RlbGVjb20uY29tLmFyL2ZpbGVzL2dl
+b19jaGVjayIgYWx0PSJURUxFQ09NIiBzdHlsZT0iIiBib3JkZXI9IjAiIGhlaWdodD0iYXV0byI+
+IDwvdGQ+DQoKDQoKICAgICAgICAgICAgPHRkIHN0eWxlPSJmb250LWZhbWlseTogJ1JvYm90bycs
+QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTZweDsgY29sb3I6IHJnYigy
+MCwgMiwgNTApOyBsaW5lLWhlaWdodDogMThweDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgdGV4dC1h
+bGlnbjogbGVmdDsiPg0KCiAgICAgICAgICAgIDxzcGFuIHN0eWxlPSJmb250LXdlaWdodDogYm9s
+ZDsiPkQmZWFjdXRlO2JpdG8NCgpiYW5jYXJpbyAtc2UgZGViaXRhIGF1dG9tJmFhY3V0ZTt0aWNh
+bWVudGUgZGUgdHUgY3VlbnRhIGJhbmNhcmlhLTwvc3Bhbj4NCgooY2FqYSBkZSBhaG9ycm9zIG8g
+Y3RhLiBjb3JyaWVudGUpLiA8L3RkPg0KCg0KCiAgICAgICAgICA8L3RyPg0KCg0KCiAgICAgICAg
+ICA8dHIgc3R5bGU9InBhZGRpbmctYm90dG9tOiAxMHB4OyBoZWlnaHQ6IDUwcHg7IiB2YWxpZ249
+Im1pZGRsZSI+DQoKDQoKICAgICAgICAgICAgPHRkIGFsaWduPSJsZWZ0IiBoZWlnaHQ9IjMwIiB2
+YWxpZ249Im1pZGRsZSIgd2lkdGg9IjQwIj4gPGltZyBzcmM9Imh0dHBzOi8vdGVsZWNvbS5jb20u
+YXIvZmlsZXMvZ2VvX2NoZWNrIiBhbHQ9IlRFTEVDT00iIHN0eWxlPSIiIGJvcmRlcj0iMCIgaGVp
+Z2h0PSJhdXRvIj4gPC90ZD4NCgoNCgogICAgICAgICAgICA8dGQgc3R5bGU9ImZvbnQtZmFtaWx5
+OiAnUm9ib3RvJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC1zaXplOiAxNnB4OyBj
+b2xvcjogcmdiKDIwLCAyLCA1MCk7IGxpbmUtaGVpZ2h0OiAxOHB4OyBmb250LXdlaWdodDogbm9y
+bWFsOyB0ZXh0LWFsaWduOiBsZWZ0OyI+DQoKICAgICAgICAgICAgPHNwYW4gc3R5bGU9ImZvbnQt
+d2VpZ2h0OiBib2xkOyI+RCZlYWN1dGU7Yml0bw0KCmF1dG9tJmFhY3V0ZTt0aWNvPC9zcGFuPiAt
+c2UgZGViaXRhDQoKYXV0b20mYWFjdXRlO3RpY2FtZW50ZSBkZSB0dSB0YXJqZXRhIGRlIGNyJmVh
+Y3V0ZTtkaXRvLiA8L3RkPg0KCg0KCiAgICAgICAgICA8L3RyPg0KCg0KCiAgICAgICAgICA8dHIg
+c3R5bGU9InBhZGRpbmctYm90dG9tOiAxMHB4OyBoZWlnaHQ6IDUwcHg7IiB2YWxpZ249Im1pZGRs
+ZSI+DQoKDQoKICAgICAgICAgICAgPHRkIGFsaWduPSJsZWZ0IiBoZWlnaHQ9IjMwIiB2YWxpZ249
+Im1pZGRsZSIgd2lkdGg9IjQwIj4gPGltZyBzcmM9Imh0dHBzOi8vdGVsZWNvbS5jb20uYXIvZmls
+ZXMvZ2VvX2NoZWNrIiBhbHQ9IlRFTEVDT00iIHN0eWxlPSIiIGJvcmRlcj0iMCIgaGVpZ2h0PSJh
+dXRvIj4gPC90ZD4NCgoNCgogICAgICAgICAgICA8dGQgc3R5bGU9ImZvbnQtZmFtaWx5OiAnUm9i
+b3RvJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsgZm9udC1zaXplOiAxNnB4OyBjb2xvcjog
+cmdiKDIwLCAyLCA1MCk7IGxpbmUtaGVpZ2h0OiAxOHB4OyBmb250LXdlaWdodDogbm9ybWFsOyB0
+ZXh0LWFsaWduOiBsZWZ0OyI+DQoKICAgICAgICAgICAgPHNwYW4gc3R5bGU9ImZvbnQtd2VpZ2h0
+OiBib2xkOyI+VGFyamV0YSBkZQ0KCkNyJmVhY3V0ZTtkaXRvLiA8L3NwYW4+IDwvdGQ+DQoKDQoK
+ICAgICAgICAgIDwvdHI+DQoKDQoKICAgICAgICA8L3Rib2R5Pg0KCiAgICAgIDwvdGFibGU+DQoK
+DQoKICAgICAgPC90ZD4NCgoNCgogICAgPC90cj4NCgoNCgogIDwvdGJvZHk+DQoKPC90YWJsZT4N
+CgoNCgo8L2Rpdj4NCgoNCgo8ZGl2IHN0eWxlPSJtYXJnaW46IDBwdCBhdXRvOyBiYWNrZ3JvdW5k
+OiByZ2IoMjMxLCAyMzEsIDIzMSkgbm9uZSByZXBlYXQgc2Nyb2xsIDAlIDUwJTsgLW1vei1iYWNr
+Z3JvdW5kLWNsaXA6IGluaXRpYWw7IC1tb3otYmFja2dyb3VuZC1vcmlnaW46IGluaXRpYWw7IC1t
+b3otYmFja2dyb3VuZC1pbmxpbmUtcG9saWN5OiBpbml0aWFsOyBtYXgtd2lkdGg6IDYwMHB4OyI+
+DQoKPHRhYmxlIHN0eWxlPSJtYXJnaW46IDBwdCBhdXRvOyBib3JkZXItY29sbGFwc2U6IGNvbGxh
+cHNlOyBmb250LXNpemU6IDBweDsiIGFsaWduPSJjZW50ZXIiIGJnY29sb3I9IiNlN2U3ZTciIGJv
+cmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiB3aWR0aD0iMTAwJSI+DQoK
+DQoKICA8dGJvZHk+DQoKDQoKICAgIDx0cj4NCgoNCgogICAgICA8dGQgc3R5bGU9InBhZGRpbmc6
+IDMwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsiIGNsYXNzPSJ2MXBhZDMwIj4NCgogICAgICA8dGFi
+bGUgc3R5bGU9Im1hcmdpbjogMHB0IGF1dG87IGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7IGZv
+bnQtc2l6ZTogMHB4OyIgY2xhc3M9InYxd18xMDBwIiBhbGlnbj0iY2VudGVyIiBiZ2NvbG9yPSIj
+ZTdlN2U3IiBib3JkZXI9IjAiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9
+IjEwMCUiPg0KCg0KCiAgICAgICAgPHRib2R5Pg0KCg0KCiAgICAgICAgICA8dHI+DQoKDQoKICAg
+ICAgICAgICAgPHRkIHN0eWxlPSJmb250LWZhbWlseTogJ1JvYm90bycsQXJpYWwsSGVsdmV0aWNh
+LHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTZweDsgY29sb3I6IHJnYigyMCwgMiwgNTApOyBsaW5l
+LWhlaWdodDogMjJweDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgdGV4dC1hbGlnbjogY2VudGVyOyI+
+DQoKUGFyYSBtJmFhY3V0ZTtzIGluZm9ybWFjaSZvYWN1dGU7biwgaW5ncmVzJmFhY3V0ZTsgYQ0K
+Cm51ZXN0cm8gc2l0aW8gPGEgaHJlZj0iaHR0cHM6Ly9zdG9jb25lY3NlcnZzdGFsY2xvdWR5dHou
+d2VzdHVzMy5jbG91ZGFwcC5henVyZS5jb20vIiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOiBub25l
+OyBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHJnYig2MCwgMCwgMTU5KTsiIHRhcmdldD0iX2Js
+YW5rIiByZWw9Im5vcmVmZXJyZXIiPlB5bWVzLnRlbGVjb20uY29tLmFyPC9hPg0KCiAgICAgICAg
+ICAgIDwvdGQ+DQoKDQoKICAgICAgICAgIDwvdHI+DQoKDQoKICAgICAgICA8L3Rib2R5Pg0KCiAg
+ICAgIDwvdGFibGU+DQoKDQoKICAgICAgPC90ZD4NCgoNCgogICAgPC90cj4NCgoNCgogIDwvdGJv
+ZHk+DQoKPC90YWJsZT4NCgoNCgo8L2Rpdj4NCgoNCgo8dGFibGUgc3R5bGU9Im1hcmdpbjogMHB0
+IGF1dG87IGJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7IGZvbnQtc2l6ZTogMHB4OyIgY2xhc3M9
+InYxd18xMDBwIiBhbGlnbj0iY2VudGVyIiBiZ2NvbG9yPSIjZmZmZmZmIiBib3JkZXI9IjAiIGNl
+bGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9IjEwMCUiPg0KCg0KCiAgPHRib2R5
+Pg0KCg0KCiAgICA8dHI+DQoKDQoKICAgICAgPHRkIHN0eWxlPSJmb250LWZhbWlseTogJ1JvYm90
+bycsQXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTZweDsgY29sb3I6IHJn
+YigyMCwgMiwgNTApOyBsaW5lLWhlaWdodDogMjJweDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgdGV4
+dC1hbGlnbjogY2VudGVyOyI+PGJyPg0KCiAgICAgIDxhIGhyZWY9Im1haWx0bzphdGVuY2lvbmNv
+cnBvcmF0aXZhQHRlY28uY29tLmFyIiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOiBub25lOyBmb250
+LXdlaWdodDogYm9sZDsgY29sb3I6IHJnYigyMCwgMiwgNTApOyIgb25jbGljaz0icmV0dXJuIHJj
+bWFpbC5jb21tYW5kKCdjb21wb3NlJywnYXRlbmNpb25jb3Jwb3JhdGl2YUB0ZWNvLmNvbS5hcics
+dGhpcykiIHJlbD0ibm9yZWZlcnJlciI+PC9hPiA8L3RkPg0KCg0KCiAgICA8L3RyPg0KCg0KCiAg
+ICA8dHI+DQoKDQoKICAgICAgPHRkIGNsYXNzPSJ2MXBhZDIwIiBzdHlsZT0icGFkZGluZy10b3A6
+IDIwcHg7IGZvbnQtZmFtaWx5OiAnUm9ib3RvJyxBcmlhbCxIZWx2ZXRpY2Esc2Fucy1zZXJpZjsg
+Zm9udC1zaXplOiAxNnB4OyBmb250LXdlaWdodDogYm9sZDsgY29sb3I6IHJnYig2MCwgMCwgMTU5
+KTsgbGluZS1oZWlnaHQ6IDIycHg7IHRleHQtYWxpZ246IGNlbnRlcjsiPg0KCk11Y2hhcyBncmFj
+aWFzLiA8L3RkPg0KCg0KCiAgICA8L3RyPg0KCg0KCiAgPC90Ym9keT4NCgo8L3RhYmxlPg0KCg0K
+CjwvYm9keT4NCgo8L2h0bWw+DQo=
 
 
---===============6179192002523278190==
+
+
+--===============2664803103055107731==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6179192002523278190==
+--===============2664803103055107731==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -443,5 +415,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6179192002523278190==--
-
+--===============2664803103055107731==--
