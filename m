@@ -2,108 +2,74 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 2E0B9854932
-	for <lists+osst-users@lfdr.de>; Wed, 14 Feb 2024 13:28:29 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 6C31C8592FE
+	for <lists+osst-users@lfdr.de>; Sat, 17 Feb 2024 22:32:51 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1raENG-0003ZQ-EZ
+	id 1rbSIj-0007O0-Co
 	for lists+osst-users@lfdr.de;
-	Wed, 14 Feb 2024 12:28:27 +0000
+	Sat, 17 Feb 2024 21:32:49 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <financeiro@biani.com.br>) id 1raENE-0003ZK-9h
- for osst-users@lists.sourceforge.net; Wed, 14 Feb 2024 12:28:25 +0000
+ (envelope-from <root@node173051-env-1728999.nl.realcloud.in>)
+ id 1rbSIh-0007Ni-Av for osst-users@lists.sourceforge.net;
+ Sat, 17 Feb 2024 21:32:47 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Jgtf+vlzJaSsvgXRE9caUtnnVw6MjOzR0wh91wG3GVo=; b=R8NVWTCN7uFM35t25HQDID+6Nc
- IQpf6YqsYj/kOAnyBKwTRJ+2VgVl2mHiO1IPecJZk4TADksR+ml+HIgdgMZvkR5v58g5kuA/QDFJq
- vwdmhOlt0qCRoWuZrs1hxlu8zP+4T53AMqipka3EJGYhBk6uZ16qKQqjkuc1rIx4koZE=;
+ d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:
+ Content-Transfer-Encoding:Content-type:MIME-Version:Sender:Reply-To:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=gT8EKij90Yyf7R0tIuo4rLbno/enchwVR/UgD8sY+88=; b=crOXTxA/0Y0y38nxV8sJIYL/UQ
+ 6STKNuL+AcjfzHtDHBYXptBApguI+CBoan9yGzNBsxeQ51k3f2FlRgLsgprmmW10AaY1jf6ZTxIEp
+ KgGDvOQY9U+qoUTDimi+QZarULQWtho1dCdFG35FIY5EtlA2KH98PphuCHx1fTsWOuVw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Date:Message-Id:To:From:Subject:Content-Transfer-Encoding:Content-type:
+ MIME-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Jgtf+vlzJaSsvgXRE9caUtnnVw6MjOzR0wh91wG3GVo=; b=h
- x5C9joyUp2VdTQZ1vWJW1QrgXp0oMHCWRLX8f7n6FYFkniFwvvm3qLzCYfLLaiRfkh+psEpmWQix4
- WkMXQj2dsXToKNYaAmOJAUFzbLGJ9aRSGPsYNdjjdug9hnB3tZT/pWw68+PC5WCXIGyyOSwTo96i/
- 2YvqdhhI5lgBQ9FE=;
-Received: from [162.214.64.70] (helo=6603267.arkanplus.com)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1raEND-0000s0-WD for osst-users@lists.sourceforge.net;
- Wed, 14 Feb 2024 12:28:25 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=arkanpro.com; s=default; h=Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Jgtf+vlzJaSsvgXRE9caUtnnVw6MjOzR0wh91wG3GVo=; b=jaicfnwFggaEYJ/cTar86EUzA1
- x0Q3hP3cg5uAuiBdFoJMy0v5ZNOLfRQmFNA0nU4SgTmTdiDjAhzSBeT0GFu3otsIvvV6cPDxQvhJE
- Pde3PqR7Z7bNhnJlwPmwrfU0jW99K+UV1omdRzPA67qJfpvL8M3jiQKJQX2JWayX/+wmicenfKDf+
- pzKzZom735UikCgjP5ZyWTb1fIadDNDbXHUQQeMehyCzJPJPvG/7NUi031aCoQ6pGMmeZk5uV96NB
- 1nb3h108pEUNyI9S4NXh+VDcBefrqFx3ll+CZ7XNzuvZg4FNC+CQIrwFduD5eTAcB7shp6qE8WdPD
- dNRDv3Gw==;
-Received: from [78.111.104.186] (port=63859 helo=biani.com.br)
- by 6603267.arkanplus.com with esmtpa (Exim 4.96.2)
- (envelope-from <financeiro@biani.com.br>) id 1raEN2-0004ot-2Y
- for osst-users@lists.sourceforge.net; Wed, 14 Feb 2024 06:28:12 -0600
-From: Acordo Biani <financeiro@biani.com.br>
-To: osst-users@lists.sourceforge.net
-Date: 14 Feb 2024 12:28:13 +0000
-Message-ID: <20240214122813.879A229F55C58ABC@biani.com.br>
+ List-Owner:List-Archive; bh=gT8EKij90Yyf7R0tIuo4rLbno/enchwVR/UgD8sY+88=; b=i
+ SagcKAXUabD8zSCz6OBeIeFuVl0Gt9n3PvEjShqB45suZmRTxqWBUqs4E6OfR9Jg1o+SVt63Mqv9r
+ WYn89LKhCbJTfIaygHQW5JF5jslD90QQEdIWy2b49h+gkiVSEors1l0XuUWu4lgdZtEjaZjgG29C8
+ 56qUnz4dUYKyBtX8=;
+Received: from [185.15.210.67] (helo=node173051-env-1728999.nl.realcloud.in)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1rbSIc-0007UI-8E for osst-users@lists.sourceforge.net;
+ Sat, 17 Feb 2024 21:32:47 +0000
+Received: by node173051-env-1728999.nl.realcloud.in (Postfix, from userid 0)
+ id 73DDD81BAE; Sat, 17 Feb 2024 17:56:38 +0000 (UTC)
 MIME-Version: 1.0
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - 6603267.arkanplus.com
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - biani.com.br
-X-Get-Message-Sender-Via: 6603267.arkanplus.com: authenticated_id:
- alhakamik@arkanpro.com
-X-Authenticated-Sender: 6603267.arkanplus.com: alhakamik@arkanpro.com
-X-Source: 
-X-Source-Args: 
-X-Source-Dir: 
-X-Spam-Score: 5.2 (+++++)
+Subject: Detectamos um novo acesso à sua conta ❗[REF ID: 96306089]
+From: Comunicado-Mercado-Pago@node173051-env-1728999.nl.realcloud.in
+To: osst-users@lists.sourceforge.net
+Message-Id: <20240217175638.73DDD81BAE@node173051-env-1728999.nl.realcloud.in>
+Date: Sat, 17 Feb 2024 17:56:38 +0000 (UTC)
+X-Spam-Score: 3.3 (+++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  BOL-PAULO-ZERA Prezado Cliente, Consta em nosso controle a
-    pendência do boleto referente a competência 01/2024. Queira nos informar
-    caso este boleto já tenha sido quitado. Para visualizar o boleto. Boleto
-    de Acordo-03494629 
+ Content preview:  Detectamos um novo acesso á sua conta Data e Hora: 17/02/2024
+    ás 14:51 Dispositivo: iPhone 14 pro Max 
  
- Content analysis details:   (5.2 points, 6.0 required)
+ Content analysis details:   (3.3 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
-                             bl.spamcop.net
-              [Blocked - see <https://www.spamcop.net/bl.shtml?78.111.104.186>]
-  0.7 SPF_NEUTRAL            SPF: sender does not match SPF record (neutral)
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  1.1 DATE_IN_PAST_03_06     Date: is 3 to 6 hours before Received: date
   0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  2.0 PYZOR_CHECK            Listed in Pyzor
-                             (https://pyzor.readthedocs.io/en/latest/)
+  0.0 HTML_MESSAGE           BODY: HTML included in message
   1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-X-Headers-End: 1raEND-0000s0-WD
-Subject: [Osst-users] Aguardamos Pagamento, Evite mulda de quebra do acordo.
+  0.8 HELO_DYNAMIC_DHCP      Relay HELO'd using suspicious hostname (DHCP)
+X-Headers-End: 1rbSIc-0007UI-8E
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -115,46 +81,214 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5502231836370914081=="
+Content-Type: multipart/mixed; boundary="===============6139085012819286819=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5502231836370914081==
-Content-Type: text/html;
-	charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
+--===============6139085012819286819==
+Content-type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-  <meta content=3D"text/html; charset=3DISO-8859-1" http-equiv=3D"content-t=
-ype">
-  <title>BOL-PAULO-ZERA</title>
-</head>
-<body>
-Prezado Cliente,<br>
-<br>
-Consta em nosso controle a pend&ecirc;ncia do boleto referente a compet&eci=
-rc;ncia 01/2024.<br>
-Queira nos informar caso este boleto j&aacute; tenha sido quitado.<br>
-Para visualizar o boleto. <a href=3D"http://topvalder.com/">Boleto de Acord=
-o-03494629</a><br>
-<br>
-Atenciosamente,<br>
-E-financeiro<br>
-Telefone: (031) 3842-3080<br>
-E-mail: financeiro@biani.com.br
-</body>
-</html>
+PCFET0NUWVBFIGh0bWwgUFVCTElDICItLy9XM0MvL0RURCBYSFRNTCAxLjAgU3RyaWN0Ly9FTiIg
+Imh0dHA6Ly93d3cudzMub3JnL1RSL3hodG1sMS9EVEQveGh0bWwxLXN0cmljdC5kdGQiPg0KCjxo
+dG1sIGNsYXNzPSJzZy1jYW1wYWlnbnMiIGRhdGEtZWRpdG9yLXZlcnNpb249IjIiIHhtbG5zPSJo
+dHRwOi8vd3d3LnczLm9yZy8xOTk5L3hodG1sIj4NCgoJPGhlYWQ+DQoKCQk8bWV0YSBodHRwLWVx
+dWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD11dGYtOCI+DQoK
+CQk8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0
+aWFsLXNjYWxlPTEsIG1pbmltdW0tc2NhbGU9MSwgbWF4aW11bS1zY2FsZT0xIj4NCgoJCTwhLS1b
+aWYgIW1zb10+DQoKCQkJCTwhLS0+DQoKCQk8bWV0YSBodHRwLWVxdWl2PSJYLVVBLUNvbXBhdGli
+bGUiIGNvbnRlbnQ9IklFPUVkZ2UiPg0KCgkJPCEtLQ0KCgkJCQkJDQoKCQkJCQk8IVtlbmRpZl0t
+LT4NCgoJCTwhLS1baWYgKGd0ZSBtc28gOSl8KElFKV0+DQoKCQkJCQk8eG1sPg0KCgkJCQkJCTxv
+Ok9mZmljZURvY3VtZW50U2V0dGluZ3M+DQoKCQkJCQkJCTxvOkFsbG93UE5HLz4NCgoJCQkJCQkJ
+PG86UGl4ZWxzUGVySW5jaD45NjwvbzpQaXhlbHNQZXJJbmNoPg0KCgkJCQkJCTwvbzpPZmZpY2VE
+b2N1bWVudFNldHRpbmdzPg0KCgkJCQkJPC94bWw+DQoKCQkJCQk8IVtlbmRpZl0tLT4NCgoJCTwh
+LS1baWYgKGd0ZSBtc28gOSl8KElFKV0+DQoKCQkJCQk8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0K
+CiAgICBib2R5IHt3aWR0aDogNjAwcHg7bWFyZ2luOiAwIGF1dG87fQ0KCiAgICB0YWJsZSB7Ym9y
+ZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTt9DQoKICAgIHRhYmxlLCB0ZCB7bXNvLXRhYmxlLWxzcGFj
+ZTogMHB0O21zby10YWJsZS1yc3BhY2U6IDBwdDt9DQoKICAgIGltZyB7LW1zLWludGVycG9sYXRp
+b24tbW9kZTogYmljdWJpYzt9DQoKICA8L3N0eWxlPg0KCgkJCQkJPCFbZW5kaWZdLS0+DQoKCQk8
+c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCgkJCWJvZHksDQoKCQkJcCwNCgoJCQlkaXYgew0KCgkJ
+CQlmb250LWZhbWlseTogYXJpYWwsIGhlbHZldGljYSwgc2Fucy1zZXJpZjsNCgoJCQkJZm9udC1z
+aXplOiAxNHB4Ow0KCgkJCX0NCgoNCgoJCQlib2R5IHsNCgoJCQkJY29sb3I6ICMwMDAwMDA7DQoK
+CQkJfQ0KCg0KCgkJCWJvZHkgYSB7DQoKCQkJCWNvbG9yOiAjMTE4OEU2Ow0KCgkJCQl0ZXh0LWRl
+Y29yYXRpb246IG5vbmU7DQoKCQkJfQ0KCg0KCgkJCXAgew0KCgkJCQltYXJnaW46IDA7DQoKCQkJ
+CXBhZGRpbmc6IDA7DQoKCQkJfQ0KCg0KCgkJCXRhYmxlLndyYXBwZXIgew0KCgkJCQl3aWR0aDog
+MTAwJSAhaW1wb3J0YW50Ow0KCgkJCQl0YWJsZS1sYXlvdXQ6IGZpeGVkOw0KCgkJCQktd2Via2l0
+LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDsNCgoJCQkJLXdlYmtpdC10ZXh0LXNpemUtYWRq
+dXN0OiAxMDAlOw0KCgkJCQktbW96LXRleHQtc2l6ZS1hZGp1c3Q6IDEwMCU7DQoKCQkJCS1tcy10
+ZXh0LXNpemUtYWRqdXN0OiAxMDAlOw0KCgkJCX0NCgoNCgoJCQlpbWcubWF4LXdpZHRoIHsNCgoJ
+CQkJbWF4LXdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7DQoKCQkJfQ0KCg0KCgkJCS5jb2x1bW4ub2Yt
+MiB7DQoKCQkJCXdpZHRoOiA1MCU7DQoKCQkJfQ0KCg0KCgkJCS5jb2x1bW4ub2YtMyB7DQoKCQkJ
+CXdpZHRoOiAzMy4zMzMlOw0KCgkJCX0NCgoNCgoJCQkuY29sdW1uLm9mLTQgew0KCgkJCQl3aWR0
+aDogMjUlOw0KCgkJCX0NCgoNCgoJCQl1bCB1bCB1bCB1bCB7DQoKCQkJCWxpc3Qtc3R5bGUtdHlw
+ZTogZGlzYyAhaW1wb3J0YW50Ow0KCgkJCX0NCgoNCgoJCQlvbCBvbCB7DQoKCQkJCWxpc3Qtc3R5
+bGUtdHlwZTogbG93ZXItcm9tYW4gIWltcG9ydGFudDsNCgoJCQl9DQoKDQoKCQkJb2wgb2wgb2wg
+ew0KCgkJCQlsaXN0LXN0eWxlLXR5cGU6IGxvd2VyLWxhdGluICFpbXBvcnRhbnQ7DQoKCQkJfQ0K
+Cg0KCgkJCW9sIG9sIG9sIG9sIHsNCgoJCQkJbGlzdC1zdHlsZS10eXBlOiBkZWNpbWFsICFpbXBv
+cnRhbnQ7DQoKCQkJfQ0KCg0KCgkJCUBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NDgwcHgp
+IHsNCgoNCgoJCQkJLnByZWhlYWRlciAucmlnaHRDb2x1bW5Db250ZW50LA0KCgkJCQkuZm9vdGVy
+IC5yaWdodENvbHVtbkNvbnRlbnQgew0KCgkJCQkJdGV4dC1hbGlnbjogbGVmdCAhaW1wb3J0YW50
+Ow0KCgkJCQl9DQoKDQoKCQkJCS5wcmVoZWFkZXIgLnJpZ2h0Q29sdW1uQ29udGVudCBkaXYsDQoK
+CQkJCS5wcmVoZWFkZXIgLnJpZ2h0Q29sdW1uQ29udGVudCBzcGFuLA0KCgkJCQkuZm9vdGVyIC5y
+aWdodENvbHVtbkNvbnRlbnQgZGl2LA0KCgkJCQkuZm9vdGVyIC5yaWdodENvbHVtbkNvbnRlbnQg
+c3BhbiB7DQoKCQkJCQl0ZXh0LWFsaWduOiBsZWZ0ICFpbXBvcnRhbnQ7DQoKCQkJCX0NCgoNCgoJ
+CQkJLnByZWhlYWRlciAucmlnaHRDb2x1bW5Db250ZW50LA0KCgkJCQkucHJlaGVhZGVyIC5sZWZ0
+Q29sdW1uQ29udGVudCB7DQoKCQkJCQlmb250LXNpemU6IDgwJSAhaW1wb3J0YW50Ow0KCgkJCQkJ
+cGFkZGluZzogNXB4IDA7DQoKCQkJCX0NCgoNCgoJCQkJdGFibGUud3JhcHBlci1tb2JpbGUgew0K
+CgkJCQkJd2lkdGg6IDEwMCUgIWltcG9ydGFudDsNCgoJCQkJCXRhYmxlLWxheW91dDogZml4ZWQ7
+DQoKCQkJCX0NCgoNCgoJCQkJaW1nLm1heC13aWR0aCB7DQoKCQkJCQloZWlnaHQ6IGF1dG8gIWlt
+cG9ydGFudDsNCgoJCQkJCW1heC13aWR0aDogMTAwJSAhaW1wb3J0YW50Ow0KCgkJCQl9DQoKDQoK
+CQkJCWEuYnVsbGV0cHJvb2YtYnV0dG9uIHsNCgoJCQkJCWRpc3BsYXk6IGJsb2NrICFpbXBvcnRh
+bnQ7DQoKCQkJCQl3aWR0aDogYXV0byAhaW1wb3J0YW50Ow0KCgkJCQkJZm9udC1zaXplOiA4MCU7
+DQoKCQkJCQlwYWRkaW5nLWxlZnQ6IDAgIWltcG9ydGFudDsNCgoJCQkJCXBhZGRpbmctcmlnaHQ6
+IDAgIWltcG9ydGFudDsNCgoJCQkJfQ0KCg0KCgkJCQkuY29sdW1ucyB7DQoKCQkJCQl3aWR0aDog
+MTAwJSAhaW1wb3J0YW50Ow0KCgkJCQl9DQoKDQoKCQkJCS5jb2x1bW4gew0KCgkJCQkJZGlzcGxh
+eTogYmxvY2sgIWltcG9ydGFudDsNCgoJCQkJCXdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7DQoKCQkJ
+CQlwYWRkaW5nLWxlZnQ6IDAgIWltcG9ydGFudDsNCgoJCQkJCXBhZGRpbmctcmlnaHQ6IDAgIWlt
+cG9ydGFudDsNCgoJCQkJCW1hcmdpbi1sZWZ0OiAwICFpbXBvcnRhbnQ7DQoKCQkJCQltYXJnaW4t
+cmlnaHQ6IDAgIWltcG9ydGFudDsNCgoJCQkJfQ0KCg0KCgkJCQkuc29jaWFsLWljb24tY29sdW1u
+IHsNCgoJCQkJCWRpc3BsYXk6IGlubGluZS1ibG9jayAhaW1wb3J0YW50Ow0KCgkJCQl9DQoKCQkJ
+fQ0KCgkJPC9zdHlsZT4NCgoJCTxzdHlsZT4NCgoJCQlAbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdp
+ZHRoOjQ4MHB4KSB7DQoKCQkJCXRhYmxlXDAgew0KCgkJCQkJd2lkdGg6IDQ4MHB4ICFpbXBvcnRh
+bnQ7DQoKCQkJCX0NCgoJCQl9DQoKCQk8L3N0eWxlPg0KCgkJPCEtLXVzZXIgZW50ZXJlZCBIZWFk
+IFN0YXJ0LS0+DQoKCQk8IS0tRW5kIEhlYWQgdXNlciBlbnRlcmVkLS0+DQoKCTwvaGVhZD4NCgoJ
+PGJvZHk+DQoKCQk8ZGl2IGNsYXNzPSJ3ZWJraXQiPg0KCgkJCTx0YWJsZSBjZWxscGFkZGluZz0i
+MCIgY2VsbHNwYWNpbmc9IjAiIGJvcmRlcj0iMCIgd2lkdGg9IjEwMCUiIGNsYXNzPSJ3cmFwcGVy
+IiBiZ2NvbG9yPSIjRkZGRkZGIj4NCgoJCQkJPHRib2R5Pg0KCgkJCQkJPHRyPg0KCgkJCQkJCTx0
+ZCB2YWxpZ249InRvcCIgYmdjb2xvcj0iI0ZGRkZGRiIgd2lkdGg9IjEwMCUiPg0KCgkJCQkJCQk8
+dGFibGUgd2lkdGg9IjEwMCUiIGNsYXNzPSJvdXRlciIgYWxpZ249ImNlbnRlciIgY2VsbHBhZGRp
+bmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBib3JkZXI9IjAiPg0KCgkJCQkJCQkJPHRib2R5Pg0KCgkJ
+CQkJCQkJCTx0cj4NCgoJCQkJCQkJCQkJPHRkIHdpZHRoPSIxMDAlIj4NCgoJCQkJCQkJCQkJCTx0
+YWJsZSB3aWR0aD0iMTAwJSIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBib3JkZXI9
+IjAiPg0KCgkJCQkJCQkJCQkJCTx0Ym9keT4NCgoJCQkJCQkJCQkJCQkJPHRyPg0KCgkJCQkJCQkJ
+CQkJCQkJPHRkPg0KCgkJCQkJCQkJCQkJCQkJCTwhLS1baWYgbXNvXT4NCgoJCQkJCQkJCQkJCQkJ
+CQkJCQk8Y2VudGVyPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQk8dGFibGU+DQoKCQkJCQkJCQkJCQkJ
+CQkJCQkJCQk8dHI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJPHRkIHdpZHRoPSI2MDAiPg0KCgkJ
+CQkJCQkJCQkJCQkJCQkJCQkJCQk8IVtlbmRpZl0tLT4NCgoJCQkJCQkJCQkJCQkJCQk8dGFibGUg
+d2lkdGg9IjEwMCUiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgYm9yZGVyPSIwIiBz
+dHlsZT0id2lkdGg6MTAwJTsgbWF4LXdpZHRoOjYwMHB4OyIgYWxpZ249ImNlbnRlciI+DQoKCQkJ
+CQkJCQkJCQkJCQkJCTx0Ym9keT4NCgoJCQkJCQkJCQkJCQkJCQkJCTx0cj4NCgoJCQkJCQkJCQkJ
+CQkJCQkJCQk8dGQgc3R5bGU9InBhZGRpbmc6MHB4IDBweCAwcHggMHB4OyBjb2xvcjojMDAwMDAw
+OyB0ZXh0LWFsaWduOmxlZnQ7IiBiZ2NvbG9yPSIjRkZGRkZGIiB3aWR0aD0iMTAwJSIgYWxpZ249
+ImxlZnQiPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQk8dGFibGUgY2xhc3M9Im1vZHVsZSBwcmVoZWFk
+ZXIgcHJlaGVhZGVyLWhpZGUiIGRhdGEtdHlwZT0icHJlaGVhZGVyIiBib3JkZXI9IjAiIGNlbGxw
+YWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgd2lkdGg9IjEwMCUiIHN0eWxlPSJkaXNwbGF5OiBu
+b25lICFpbXBvcnRhbnQ7IG1zby1oaWRlOiBhbGw7IHZpc2liaWxpdHk6IGhpZGRlbjsgb3BhY2l0
+eTogMDsgY29sb3I6IHRyYW5zcGFyZW50OyBoZWlnaHQ6IDA7IHdpZHRoOiAwOyI+DQoKCQkJCQkJ
+CQkJCQkJCQkJCQkJCQk8dGJvZHk+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJPHRyPg0KCgkJCQkJ
+CQkJCQkJCQkJCQkJCQkJCQk8dGQ+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQk8cD4NCgoJCQkJ
+CQkJCQkJCQkJCQkJCQkJCQkJCQk8YnI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQk8L3A+DQoK
+CQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGQ+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJPC90cj4N
+CgoJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGJvZHk+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGFi
+bGU+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCTx0YWJsZSBjbGFzcz0id3JhcHBlciIgZGF0YS10eXBl
+PSJpbWFnZSIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiIHdpZHRo
+PSIxMDAlIiBzdHlsZT0idGFibGUtbGF5b3V0OiBmaXhlZDsiIGRhdGEtbXVpZD0iZjE3NDcwNGYt
+NzFhNy00NzI2LWJkNDctMTY1MTNmM2U4YWI3Ij4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCTx0Ym9k
+eT4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQk8dHI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTx0
+ZCBzdHlsZT0iZm9udC1zaXplOjZweDsgbGluZS1oZWlnaHQ6MTBweDsgcGFkZGluZzowcHggMHB4
+IDBweCAwcHg7IiB2YWxpZ249InRvcCIgYWxpZ249ImNlbnRlciI+DQoKCQkJCQkJCQkJCQkJCQkJ
+CQkJCQkJCQk8YnI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGQ+DQoKCQkJCQkJCQkJCQkJ
+CQkJCQkJCQkJPC90cj4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGJvZHk+DQoKCQkJCQkJCQkJ
+CQkJCQkJCQkJCTwvdGFibGU+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCTx0YWJsZSBjbGFzcz0ibW9k
+dWxlIiBkYXRhLXR5cGU9InRleHQiIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFj
+aW5nPSIwIiB3aWR0aD0iMTAwJSIgc3R5bGU9InRhYmxlLWxheW91dDogZml4ZWQ7IiBkYXRhLW11
+aWQ9ImVlYzQ4YTQwLTE3M2ItNGMyMi1iMWUwLWExMzc2NTFjYjU5NyI+DQoKCQkJCQkJCQkJCQkJ
+CQkJCQkJCQk8dGJvZHk+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJPHRyPg0KCgkJCQkJCQkJCQkJ
+CQkJCQkJCQkJCQk8dGQgc3R5bGU9InBhZGRpbmc6IDE4cHggMHB4OyBsaW5lLWhlaWdodDogMjJw
+eDsgdGV4dC1hbGlnbjogaW5oZXJpdDsgYmFja2dyb3VuZC1jb2xvcjogcmdiKDAsIDE1OCwgMjI3
+KTsiIGhlaWdodD0iMTAwJSIgdmFsaWduPSJ0b3AiIGJnY29sb3I9IiI+DQoKCQkJCQkJCQkJCQkJ
+CQkJCQkJCQkJCQk8ZGl2Pg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTxkaXYgc3R5bGU9ImZv
+bnQtZmFtaWx5OiBpbmhlcml0OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij4NCgoJCQkJCQkJCQkJCQkJ
+CQkJCQkJCQkJCQkJPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMjBweDsgY29sb3I6IHJnYigyNTUs
+IDI1NSwgMjU1KTsiPkRldGVjdGFtb3MgdW0gbm92byBhY2Vzc28gJmFhY3V0ZTsgc3VhIGNvbnRh
+PC9zcGFuPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvZGl2Pg0KCgkJCQkJCQkJCQkJCQkJ
+CQkJCQkJCQkJCTxkaXY+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTxicj4NCgoJCQkJCQkJ
+CQkJCQkJCQkJCQkJCQkJCQk8L2Rpdj4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvZGl2Pg0K
+CgkJCQkJCQkJCQkJCQkJCQkJCQkJCQk8L3RkPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdHI+
+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQk8L3Rib2R5Pg0KCgkJCQkJCQkJCQkJCQkJCQkJCQk8L3Rh
+YmxlPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQk8dGFibGUgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0i
+MCIgY2VsbHNwYWNpbmc9IjAiIGNsYXNzPSJtb2R1bGUiIGRhdGEtcm9sZT0ibW9kdWxlLWJ1dHRv
+biIgZGF0YS10eXBlPSJidXR0b24iIHN0eWxlPSJ0YWJsZS1sYXlvdXQ6Zml4ZWQ7IiB3aWR0aD0i
+MTAwJSIgZGF0YS1tdWlkPSIxZTZkMjhlMy1mODBjLTQwZjgtYjMyNy1hMWU4NzlmOWIyNWUiPg0K
+CgkJCQkJCQkJCQkJCQkJCQkJCQkJPHRib2R5Pg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCTx0cj4N
+CgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPHRkIGFsaWduPSJjZW50ZXIiIGJnY29sb3I9IiIgY2xh
+c3M9Im91dGVyLXRkICIgc3R5bGU9InBhZGRpbmc6MHB4IDBweCAwcHggMHB4OyI+DQoKCQkJCQkJ
+CQkJCQkJCQkJCQkJCQkJCQk8YnI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQk8c3BhbiBzdHls
+ZT0iZm9udC1zaXplOiAxOHB4OyI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPHN0cm9uZz5E
+YXRhIGUgSG9yYTo8L3N0cm9uZz4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvc3Bhbj4NCgoJ
+CQkJCQkJCQkJCQkJCQkJCQkJCQkJCTxicj4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTxzcGFu
+IHN0eWxlPSJmb250LXNpemU6IDE4cHg7Ij4xNy8wMi8yMDI0ICZhYWN1dGU7cyAxNDo1MTwvc3Bh
+bj4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTxicj4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ
+CTxicj4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTxzcGFuIHN0eWxlPSJmb250LXNpemU6IDE4
+cHg7Ij4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQk8c3Ryb25nPkRpc3Bvc2l0aXZvOjwvc3Ry
+b25nPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPC9zcGFuPg0KCgkJCQkJCQkJCQkJCQkJCQkJ
+CQkJCQkJPGJyPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPHNwYW4gc3R5bGU9ImZvbnQtc2l6
+ZTogMThweDsiPmlQaG9uZSAxNCBwcm8gTWF4PC9zcGFuPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJ
+CQkJPGJyPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPGJyPg0KCgkJCQkJCQkJCQkJCQkJCQkJ
+CQkJCQkJPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMThweDsiPg0KCgkJCQkJCQkJCQkJCQkJCQkJ
+CQkJCQkJCTxzdHJvbmc+TG9jYWxpemEmY2NlZGlsOyZhdGlsZGU7bzo8L3N0cm9uZz4NCgoJCQkJ
+CQkJCQkJCQkJCQkJCQkJCQkJCTwvc3Bhbj4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTxicj4N
+CgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTxzcGFuIHN0eWxlPSJmb250LXNpemU6IDE4cHg7Ij5Q
+ciZvYWN1dGU7eGltbyBhIEFjcmUsIEJyYXNpbC48L3NwYW4+DQoKCQkJCQkJCQkJCQkJCQkJCQkJ
+CQkJCQk8YnI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQk8YnI+DQoKCQkJCQkJCQkJCQkJCQkJ
+CQkJCQkJCQk8YnI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQk8dGFibGUgYm9yZGVyPSIwIiBj
+ZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiIGNsYXNzPSJ3cmFwcGVyLW1vYmlsZSIgc3R5
+bGU9InRleHQtYWxpZ246Y2VudGVyOyI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPHRib2R5
+Pg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQk8dHI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJ
+CQkJCQk8dGQgYWxpZ249ImNlbnRlciIgYmdjb2xvcj0iIzAwOUVFMyIgY2xhc3M9ImlubmVyLXRk
+IiBzdHlsZT0iYm9yZGVyLXJhZGl1czo2cHg7IGZvbnQtc2l6ZToxNnB4OyB0ZXh0LWFsaWduOmNl
+bnRlcjsgYmFja2dyb3VuZC1jb2xvcjppbmhlcml0OyI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJ
+CQkJCQkJPGEgaHJlZj0iaHR0cDovL21lcmNhZG8tc2VnLnNpdGVzZWd1cm8ud3MvaHRtbC8/YXRl
+bmRpbWVudG89MSIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IzAwOUVFMzsgYm9yZGVyOjFweCBz
+b2xpZCAjMDA5RUUzOyBib3JkZXItY29sb3I6IzAwOUVFMzsgYm9yZGVyLXJhZGl1czoycHg7IGJv
+cmRlci13aWR0aDoxcHg7IGNvbG9yOiNmZmZmZmY7IGRpc3BsYXk6aW5saW5lLWJsb2NrOyBmb250
+LXNpemU6MTRweDsgZm9udC13ZWlnaHQ6bm9ybWFsOyBsZXR0ZXItc3BhY2luZzowcHg7IGxpbmUt
+aGVpZ2h0Om5vcm1hbDsgcGFkZGluZzoxMnB4IDE4cHggMTJweCAxOHB4OyB0ZXh0LWFsaWduOmNl
+bnRlcjsgdGV4dC1kZWNvcmF0aW9uOm5vbmU7IGJvcmRlci1zdHlsZTpzb2xpZDsiIHRhcmdldD0i
+X2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiPk4mQXRpbGRlO08gUkVDT05IRSZDY2Vk
+aWw7TyBFU1NFIEFDRVNTTzwvYT4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGQ+DQoK
+CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdHI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ
+PC90Ym9keT4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGFibGU+DQoKCQkJCQkJCQkJCQkJ
+CQkJCQkJCQkJCTwvdGQ+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJPC90cj4NCgoJCQkJCQkJCQkJ
+CQkJCQkJCQkJCQk8dHI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTx0ZCBzdHlsZT0icGFkZGlu
+ZzowcHggMHB4IDBweCAwcHg7Ij4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTxicj4NCgoJCQkJ
+CQkJCQkJCQkJCQkJCQkJCQkJPC90ZD4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCQk8L3RyPg0KCgkJ
+CQkJCQkJCQkJCQkJCQkJCQkJPC90Ym9keT4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJPC90YWJsZT4N
+CgoJCQkJCQkJCQkJCQkJCQkJCQkJPHRhYmxlIGNsYXNzPSJtb2R1bGUiIGRhdGEtdHlwZT0idGV4
+dCIgYm9yZGVyPSIwIiBjZWxscGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiIHdpZHRoPSIxMDAl
+IiBzdHlsZT0idGFibGUtbGF5b3V0OiBmaXhlZDsiIGRhdGEtbXVpZD0iYjY0MTcyYWUtZWQzYS00
+ZGMzLWFlMjItZjA5OTc3ZGE0NDViIj4NCgoJCQkJCQkJCQkJCQkJCQkJCQkJCTx0Ym9keT4NCgoJ
+CQkJCQkJCQkJCQkJCQkJCQkJCQk8dHI+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTx0ZCBzdHls
+ZT0icGFkZGluZzoxOHB4IDBweCAxOHB4IDBweDsgbGluZS1oZWlnaHQ6MjJweDsgdGV4dC1hbGln
+bjppbmhlcml0OyIgaGVpZ2h0PSIxMDAlIiB2YWxpZ249InRvcCIgYmdjb2xvcj0iIj4NCgoJCQkJ
+CQkJCQkJCQkJCQkJCQkJCQkJCTxkaXY+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPGRpdiBz
+dHlsZT0iZm9udC1mYW1pbHk6IGluaGVyaXQ7IHRleHQtYWxpZ246IGNlbnRlcjsiPlN1cHBvcnQg
+fCBQcml2YW5jeSBQb2xpY3kgPGJyPkNvcHlyaWdodCBAIDIwMjQgTWVyY2FkbyBQYWdvIFRlYW0u
+IDwvZGl2Pg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPC9kaXY+DQoKCQkJCQkJCQkJCQkJCQkJ
+CQkJCQkJCTwvdGQ+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJPC90cj4NCgoJCQkJCQkJCQkJCQkJ
+CQkJCQkJCTwvdGJvZHk+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGFibGU+DQoKCQkJCQkJCQkJ
+CQkJCQkJCQkJPC90ZD4NCgoJCQkJCQkJCQkJCQkJCQkJCTwvdHI+DQoKCQkJCQkJCQkJCQkJCQkJ
+CTwvdGJvZHk+DQoKCQkJCQkJCQkJCQkJCQkJPC90YWJsZT4NCgoJCQkJCQkJCQkJCQkJCQk8IS0t
+W2lmIG1zb10+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGQ+DQoK
+CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJPC90cj4NCgoJCQkJCQkJCQkJCQkJ
+CQkJCQkJCQkJCQkJCQkJCQkJCQkJCTwvdGFibGU+DQoKCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJ
+CQkJCQkJCQkJCTwvY2VudGVyPg0KCgkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQk8
+IVtlbmRpZl0tLT4NCgoJCQkJCQkJCQkJCQkJCTwvdGQ+DQoKCQkJCQkJCQkJCQkJCTwvdHI+DQoK
+CQkJCQkJCQkJCQkJPC90Ym9keT4NCgoJCQkJCQkJCQkJCTwvdGFibGU+DQoKCQkJCQkJCQkJCTwv
+dGQ+DQoKCQkJCQkJCQkJPC90cj4NCgoJCQkJCQkJCTwvdGJvZHk+DQoKCQkJCQkJCTwvdGFibGU+
+DQoKCQkJCQkJPC90ZD4NCgoJCQkJCTwvdHI+DQoKCQkJCTwvdGJvZHk+DQoKCQkJPC90YWJsZT4N
+CgoJCTwvZGl2Pg0KCgk8L2JvZHk+DQoKPC9odG1sPg==
 
 
---===============5502231836370914081==
+
+
+--===============6139085012819286819==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5502231836370914081==
+--===============6139085012819286819==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -165,4 +299,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5502231836370914081==--
+--===============6139085012819286819==--
