@@ -2,82 +2,107 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id BC5FF86B02E
-	for <lists+osst-users@lfdr.de>; Wed, 28 Feb 2024 14:23:03 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id A4F6586B9AB
+	for <lists+osst-users@lfdr.de>; Wed, 28 Feb 2024 22:09:45 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rfJtl-0002QX-W7
+	id 1rfRBP-0002A8-VN
 	for lists+osst-users@lfdr.de;
-	Wed, 28 Feb 2024 13:23:02 +0000
+	Wed, 28 Feb 2024 21:09:44 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <intimaciones82915@formsmail.is-a-anarchist.com>)
- id 1rfJtk-0002QH-6k for osst-users@lists.sourceforge.net;
- Wed, 28 Feb 2024 13:23:00 +0000
+ (envelope-from <info@estipharma.com>) id 1rfRBN-00029t-VV
+ for osst-users@lists.sourceforge.net; Wed, 28 Feb 2024 21:09:42 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Reply-To:From:
- Date:Subject:To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=8g9LYJI9jvR7xmDkv3nGq5tfgaBsvh4zdzxpagU3KAA=; b=JobSNO9puLVRotPoVrgtYJNate
- JTI/UiG3pjGhEJ5Xj4iwR7lmu5Ow+x1T02+Z0jceVLxf65wZBa84WPZo3TTIj0Jn03ZZ4dSE8zsZT
- D17ugufYI0aV3pJW3rLHBy92wkJsHAMgnFT7daqqXrFDHKy7P8KBbLZVoiuTMdEmIlqs=;
+ bh=vgPo3cW71ai4/A15PHNPSaeWZ4C37AERDkuWgdo5DnI=; b=Yt3iqi36cyqzYvZdF/PMcBfv0w
+ 3OE4P3iFMvUB7ZO2rBuNJQ9QxZQWYBMhK4CWNqe2kjbq6L0wME/RiFRIf/rq6UmcU+VkvJSpTsXhO
+ sHxOwu5TYvLvndSVDH4iYRewUM9EK8gsEi10JPqJvYlDKzVcxNTwFPO0B2CTGtYHDC2k=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Message-ID:Reply-To:From:Date:Subject:To:Sender
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=8g9LYJI9jvR7xmDkv3nGq5tfgaBsvh4zdzxpagU3KAA=; b=D
- WFyQ+I2ioiQImogDRFQPvImWsxblLxybpgzYR8nPn0od05athMB230OblK89CtsGtVByrpIe2hjd1
- 89yLZkRRZnToqfPYzmA/cE6Q+THzMc8WnomKqvrUdBvckM0UtcvPaVhxNpJzscukB5lcRLRn53RHw
- S3le64YDztWlhLcQ=;
-Received: from formsmail.is-a-anarchist.com ([5.8.33.165])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1rfJtk-0001lW-2P for osst-users@lists.sourceforge.net;
- Wed, 28 Feb 2024 13:23:00 +0000
-Received: by formsmail.is-a-anarchist.com (Postfix, from userid 33)
- id D66EE48FCD; Wed, 28 Feb 2024 13:00:49 +0000 (UTC)
+ List-Owner:List-Archive; bh=vgPo3cW71ai4/A15PHNPSaeWZ4C37AERDkuWgdo5DnI=; b=U
+ L0TAJq0DCcu8/Lhy44QKZAHX+Vga03zkRDh+LlMtdJEVH6qpSQYALQNoDXKU3hv6edcViNs9UpbdP
+ tHoyf81yfCWBWpeKge3e2kZ8wuN+kS60C/LCtwc96GYothoJYfOSyjml06Qj9UNd/2k3+cKq+abng
+ bwanLx49D9rV/qNA=;
+Received: from server.rvkmyanmar.com ([142.4.12.109])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1rfRBN-0004mr-T3 for osst-users@lists.sourceforge.net;
+ Wed, 28 Feb 2024 21:09:42 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=estipharma.com; s=default; h=Content-Transfer-Encoding:Content-Type:
+ MIME-Version:Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=vgPo3cW71ai4/A15PHNPSaeWZ4C37AERDkuWgdo5DnI=; b=WT341SerQO3KzIydzHSQPemjd+
+ Pzb8K3Oj7DWUvreP94oquUYPH1M1NIXdnKL4LDMsRD2aVnrS+5hBfhDTDkrIMrGtmgKbhz+DvvW9p
+ l2anDnDO+A6aaKTTFFMR8WB+1srmLSK+2NwdSVVc+EuCDOOG37rGmB4XFZSGdNaNozVSS8koLsq1u
+ TQYFTBSJZMwhNIZVu39zLuDfVGkQByOHNtb+3SKe8JRiwofLtiMOwVwLVgz3IN4Z+YTbo/i0hJdhY
+ SHVJEbTEOoSpDCzmTUlHEoyiNl5F3B5Z8jEPEVpvtiD5LCs3Fi3PWA1OlgrumiFafPo8bEghUgRGz
+ +643vDVQ==;
+Received: from [103.114.106.21] (port=54066 helo=estipharma.com)
+ by server.rvkmyanmar.com with esmtpsa (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.93)
+ (envelope-from <info@estipharma.com>) id 1rfRBC-0000no-QC
+ for osst-users@lists.sourceforge.net; Thu, 29 Feb 2024 03:39:31 +0630
+From: "Mr. Floyd W. Brownn" <info@estipharma.com>
 To: osst-users@lists.sourceforge.net
-Date: Wed, 28 Feb 2024 13:00:49 +0000
-From: POLICIA NACIONAL <intimaciones82915@formsmail.is-a-anarchist.com>
-Message-ID: <125e0f87261ede8e1fd022c0160e2502@5.8.33.165>
-X-Priority: 3
-X-Mailer: PHPMailer 5.2.4
- (http://code.google.com/a/apache-extras.org/p/phpmailer/)
+Date: 28 Feb 2024 13:09:27 -0800
+Message-ID: <20240228130927.A266DC7EDBB77B30@estipharma.com>
 MIME-Version: 1.0
-X-Spam-Score: 5.0 (+++++)
+X-AntiAbuse: This header was added to track abuse,
+ please include it with any abuse report
+X-AntiAbuse: Primary Hostname - server.rvkmyanmar.com
+X-AntiAbuse: Original Domain - lists.sourceforge.net
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - estipharma.com
+X-Get-Message-Sender-Via: server.rvkmyanmar.com: authenticated_id:
+ info@estipharma.com
+X-Authenticated-Sender: server.rvkmyanmar.com: info@estipharma.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+X-Spam-Score: 3.9 (+++)
 X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  ADVERTENCIA DE CITACI&Oacute;
- N BUENOS DIAS SR(A), De conformidad
- con el art. 455, &sect; 1 del C&oacute;digo de Procedimiento Civil se hace
- presente al &Iacute;NTIMO Su Se&ntilde;or&iacute;a comparezca, como testigo,
- en la audiencia que se celebrar&a [...] 
- Content analysis details:   (5.0 points, 6.0 required)
+ Content preview:  Greetings, Hope this note finds you and your family in good
+ health and spirit. We are a unique Investment Consultation Firm registered
+ in the United Kingdom; we specialize in searching for potential investments
+ [...] Content analysis details:   (3.9 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
  1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [5.8.33.165 listed in dnsbl-1.uceprotect.net]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.5 SUBJ_ALL_CAPS          Subject is all capitals
+ [142.4.12.109 listed in dnsbl-1.uceprotect.net]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
  0.0 HTML_MESSAGE           BODY: HTML included in message
- 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
- 0.5 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
- [5.8.33.165 listed in bl.mailspike.net]
- 1.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid 1.0 HK_NAME_MR_MRS         No description available.
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-X-Headers-End: 1rfJtk-0001lW-2P
-Subject: [Osst-users] INFORME POLICIAL EMITIDO
+ 2.0 MIXED_HREF_CASE        Has href in mixed case
+X-Headers-End: 1rfRBN-0004mr-T3
+Subject: [Osst-users] Funding Consultant for your Business growth
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -89,70 +114,53 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: POLICIA NACIONAL <intimaciones82915@formsmail.is-a-anarchist.com>
-Content-Type: multipart/mixed; boundary="===============7609320338554003326=="
+Reply-To: floyd.brown@igfsolutions.org
+Content-Type: multipart/mixed; boundary="===============8993208776773848394=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============7609320338554003326==
-Content-Type: multipart/alternative;
-	boundary="b1_125e0f87261ede8e1fd022c0160e2502"
+--===============8993208776773848394==
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
 
---b1_125e0f87261ede8e1fd022c0160e2502
-Content-Type: text/plain; charset=UTF-8
-Content-Transfer-Encoding: base64
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
 
-QURWRVJURU5DSUEgREUgQ0lUQUNJJk9hY3V0ZTtODQoNCkJVRU5PUyBESUFTIFNSKEEpLA0KDQpE
-ZSBjb25mb3JtaWRhZCBjb24gZWwgYXJ0LiA0NTUsICZzZWN0OyAxIGRlbCBDJm9hY3V0ZTtkaWdv
-IGRlIFByb2NlZGltaWVudG8gQ2l2aWwNCnNlIGhhY2UgcHJlc2VudGUgYWwgJklhY3V0ZTtOVElN
-Tw0KU3UgU2UmbnRpbGRlO29yJmlhY3V0ZTthIGNvbXBhcmV6Y2EsIGNvbW8gdGVzdGlnbywgZW4g
-bGEgYXVkaWVuY2lhIHF1ZSBzZSBjZWxlYnJhciZhYWN1dGU7DQptaSZlYWN1dGU7cmNvbGVzLCAy
-OS8wMi8yMDI0Lg0KDQpEb2N1bWVudG8gYWRqdW50byByZWZlcmVudGUgYWwgdHImYWFjdXRlO21p
-dGUNCg0KQ0lUQUNJJk9hY3V0ZTtOIEFESlVOVEEgTiZvcmRtOyA1MDgyNDU1OTc4OTIwMCBbMV0N
-Cg0KVGl0dWxhcjogTGljLiBEci4gRGVsaW8gRGFudGUgTCZvYWN1dGU7cGV6IE1lZHJhbm8NCkZp
-c2NhbGlhIEdlbmVyYWwgZGUgbGEgUmVwdWJsaWNhDQpDb3B5cmlnaHQgKGMpIDIwMjMsIFRvZG9z
-IGxvcyBkZXJlY2hvcyByZXNlcnZhZG9zLg0KDQoNCg0KTGlua3M6DQotLS0tLS0NCkRFU0NBUkdB
-UiBDSVRBQ0nDk04gKFBERi9YTUwpDQoKCm5fMjcxOTY5ODA4NTAxNjc1Njg0MzEyNjky
-
-
---b1_125e0f87261ede8e1fd022c0160e2502
-Content-Type: text/html; charset=UTF-8
-Content-Transfer-Encoding: base64
-
-PGh0bWw+Cjxib2R5Pgo8cD48c3Ryb25nPkFEVkVSVEVOQ0lBIERFIENJVEFDSSZPYWN1dGU7Tjxi
-ciAvPg0KPGJyIC8+DQpCVUVOT1MgRElBUyBTUihBKSw8L3N0cm9uZz48YnIgLz4NCjxiciAvPg0K
-RGUgY29uZm9ybWlkYWQgY29uIGVsIGFydC4gNDU1LCAmc2VjdDsgMSBkZWwgQyZvYWN1dGU7ZGln
-byBkZSBQcm9jZWRpbWllbnRvIENpdmlsPGJyIC8+DQpzZSBoYWNlIHByZXNlbnRlIGFsIDxzdHJv
-bmc+JklhY3V0ZTtOVElNTzwvc3Ryb25nPjxiciAvPg0KU3UgU2UmbnRpbGRlO29yJmlhY3V0ZTth
-IGNvbXBhcmV6Y2EsIGNvbW8gdGVzdGlnbywgZW4gbGEgYXVkaWVuY2lhIHF1ZSBzZSBjZWxlYnJh
-ciZhYWN1dGU7PGJyIC8+DQptaSZlYWN1dGU7cmNvbGVzLCAyOS8wMi8yMDI0LjxiciAvPg0KPGJy
-IC8+DQpEb2N1bWVudG8gYWRqdW50byByZWZlcmVudGUgYWwgdHImYWFjdXRlO21pdGU8YnIgLz4N
-CjxiciAvPg0KPHN0cm9uZz5DSVRBQ0kmT2FjdXRlO04gQURKVU5UQSBOJm9yZG07PC9zdHJvbmc+
-IDUwODI0NTU5Nzg5MjAwIFsxXTxiciAvPg0KPGJyIC8+DQpUaXR1bGFyOiBMaWMuIERyLiBEZWxp
-byBEYW50ZSBMJm9hY3V0ZTtwZXogTWVkcmFubzxiciAvPg0KRmlzY2FsaWEgR2VuZXJhbCBkZSBs
-YSBSZXB1YmxpY2E8YnIgLz4NCkNvcHlyaWdodCAoYykgMjAyMywgVG9kb3MgbG9zIGRlcmVjaG9z
-IHJlc2VydmFkb3MuPGJyIC8+DQo8YnIgLz4NCjxiciAvPg0KPGJyIC8+DQo8c3Ryb25nPkxpbmtz
-Ojwvc3Ryb25nPjxiciAvPg0KLS0tLS0tPGJyIC8+DQo8cD48YSBocmVmPSJodHRwOi8vY2l0YWNp
-b25lc2FyZ2VudGluLmlhbWFsbGFtYS5jb20vIj48YnV0dG9uIHN0eWxlPSJiYWNrZ3JvdW5kOiAj
-ZjU1NzQyOyBib3JkZXItcmFkaXVzOiA2cHg7IHBhZGRpbmc6IDE1cHg7IGN1cnNvcjogcG9pbnRl
-cjsgY29sb3I6ICNmZmY7IGJvcmRlcjogbm9uZTsgZm9udC1zaXplOiAxNnB4OyI+REVTQ0FSR0FS
-IENJVEFDScOTTiA8c3Ryb25nPihQREYvWE1MKTwvc3Ryb25nPjwvYnV0dG9uPjwvYT48L3A+DQoK
-PC9ib2R5Pgo8YnI+PGJyPjxicj48YnI+PGJyPjxicj48YnI+PGZvbnQgY29sb3I9IiNFNkU2RTYi
-Pm5fMjcxOTY5ODA4NTAxNjc1Njg0MzEyNjkyPC9mb250PjwvaHRtbD4=
+<HTML><HEAD>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"></HEAD>
+<body style=3D"MARGIN: 0.5em">
+<P>Greetings,</P>
+<P>Hope this note finds you and your family in good health and spirit. We a=
+re a unique Investment Consultation Firm registered in the United Kingdom; =
+we specialize in searching for potential investments opportunities for our =
+high net-worth clients worldwide.</P>
+<P>Are you an entrepreneur/business owner/ a consultant Broker or chief exe=
+cutive officer seeking for capital for your business growth or expansion? I=
+'m contacting you to know if you are open for investors into your company a=
+s we are currently providing financial support to companies and individuals=
+ for business and project expansion. We also pay commission to individuals =
+who direct clients to us for financing.</P>
+<P>We are willing to partner with you for your business growth by providing=
+&nbsp; Debth Finance and viable Project Funding. Reply for further discussi=
+ons if interested with your business plan and executive summary for our man=
+agement to review.</P>
+<P>Should this be of interest to you, please do not hesitate to e-mail us t=
+hrough our official email <A href=3D"mailto:floyd.brown@igfsolutions.org">f=
+loyd.brown@igfsolutions.org</A>&nbsp; for further information or Ignore if =
+not interested thank you.</P>
+<P><BR>Kind Regards,</P>
+<P>Mr. Floyd W. Brown<BR>Investment Consultant<BR>Email : :floyd.brown@igfs=
+olutions.org</P></BODY></HTML>
 
 
-
---b1_125e0f87261ede8e1fd022c0160e2502--
-
-
-
---===============7609320338554003326==
+--===============8993208776773848394==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7609320338554003326==
+--===============8993208776773848394==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -163,6 +171,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7609320338554003326==--
-
-
+--===============8993208776773848394==--
