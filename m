@@ -2,81 +2,95 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 525BF87A7A5
-	for <lists+osst-users@lfdr.de>; Wed, 13 Mar 2024 13:34:32 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 96B7D87B713
+	for <lists+osst-users@lfdr.de>; Thu, 14 Mar 2024 05:21:18 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rkNoU-0003Kj-Pr
+	id 1rkcah-0004QB-V1
 	for lists+osst-users@lfdr.de;
-	Wed, 13 Mar 2024 12:34:31 +0000
+	Thu, 14 Mar 2024 04:21:16 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <support@phatfloor.com>) id 1rkNoT-0003KZ-AR
- for osst-users@lists.sourceforge.net; Wed, 13 Mar 2024 12:34:29 +0000
+ (envelope-from <darrenia@hx0596.com>) id 1rkcag-0004Q3-9u
+ for osst-users@lists.sourceforge.net; Thu, 14 Mar 2024 04:21:14 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ :Reply-To:From:Date:Message-ID:Subject:To:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=B+Q0V8fgnp7fHAkL+C2ypvEfgDYuIxxOanK7ZBFNw3c=; b=O2CawS+tKRB4z+4rt6YdEhkDLV
- 3nWeZPJQfzVHVLCy2Wm6hWdUhmo8qy4Mjw7z+i7rP7+CtLXmTqDGIPF9G+AlcJn3RTxsExOryF8F3
- 0FGPemqk5Hwb5B2rv8OwbJiQL/qdf9El2sixF72nQTtV6yD1lLYfcBIC4tmT9FWBvuQc=;
+ bh=OqGxKi+k5i4wOoypSwfvGMNs4jySRKCXJV4w/fPrFSw=; b=WZLoe2fq9mp14syrU95NTVVc7S
+ DD3SdVMkb1Q6v88hgo3BZyOUPM3r2DYi6U6UTDPjcdCnmhRG8BURs8Q/ldg0utKhctv+w+kHZUE46
+ u45gM0Txa1Zdvl8cS4Szm7kMp7skao0lUouuowXXpssaSDniMOEN2H1gVTUc3GA+0qYM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Reply-To:From:Date:
+ Message-ID:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=B+Q0V8fgnp7fHAkL+C2ypvEfgDYuIxxOanK7ZBFNw3c=; b=f
- eqZzCGAtAcX79R/1PrlWXtPlMg+Hu70LMW5wEiHux1s6eVl7t4XDpHNDsa04/4PYLoMs8f6IQEl9A
- q2X3dt5GuvnnAFSmAg7cEO2tJzwceNWhj5zPV7cpPddMOCMfwwT5JdupG0BBxYVUQY/N8ccQLHTKw
- M7HSyOYypb67SxFI=;
-Received: from ip85-215-73-40.pbiaas.com ([85.215.73.40] helo=phatfloor.com)
+ List-Owner:List-Archive; bh=OqGxKi+k5i4wOoypSwfvGMNs4jySRKCXJV4w/fPrFSw=; b=U
+ mWDs0KHniu6eqTDYaLZyH6S3m55MUIHfbn+hWwHQgLK9HIxer5KaKf8np6MKwMAUvQD/m7AQPf9/z
+ vU0Uq8Y10/yFGtj8j03ke6hOQQ6aBLFi0QPUZ+fkkjA/2Yj8RCpjvPF2EHPLsZrkZAuYSIyt9yEih
+ RgJYzebpeKG0CVxE=;
+Received: from tzljm.com ([45.86.230.181])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1rkNoJ-0000nv-3L for osst-users@lists.sourceforge.net;
- Wed, 13 Mar 2024 12:34:29 +0000
-Received: from ip85-215-73-40.pbiaas.com (account support@phatfloor.com
- [85.215.73.40] verified)
- by phatfloor.com (CommuniGate Pro SMTP 6.1.9 _community_)
- with ESMTPSA id 667698 for osst-users@lists.sourceforge.net;
- Wed, 13 Mar 2024 11:59:24 +0000
-From: "Support" <support@phatfloor.com>
+ id 1rkcaW-0007Np-6B for osst-users@lists.sourceforge.net;
+ Thu, 14 Mar 2024 04:21:14 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=hx0596.com;
+ h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding;
+ bh=44yByoX6s54McATFkoPHHaT37fU=;
+ b=inuuBe7ZlPdMdMaTu3Hj3E5V8lt0tom7dazzsw5lFi5Zp1pvktO0nnd9akpQbQ6ZX5YTnQork0UK
+ ec5/XSy9n4ZStEbNtRJABeOkXItu3V7svPElyZBBf4GYdArI0XE4YrnWNI3Hl591nIamWMKYYR13
+ N0fSLaDQDZAgBTuBqI4=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail; d=hx0596.com;
+ b=RnxGbhgQbQSajxk4QCDevG6hQKy3ZidA1dKkVbAAHYm7wBmj1tnyjV+PDdRIqFdM9nqzXkNULlij
+ /sO8USDPE6FBIDn+rMu1ciNMOMFeMCXGg5c9ww5ztKYP/wKCJM6rue8ltbuaFH95ywlq5Ryne/zX
+ Y3qwA+9aJGRKmgMQxeg=;
 To: osst-users@lists.sourceforge.net
-Date: 13 Mar 2024 11:59:23 +0000
-Message-ID: <20240313115923.8273A7B1A0BF5EAE@phatfloor.com>
+Message-ID: <eff7c042438d929c15f0e47e4d669456@hx0596.com>
+Date: Thu, 14 Mar 2024 04:14:43 +0100
+From: "Darren" <darrenia@hx0596.com>
 MIME-Version: 1.0
-X-Spam-Score: 5.2 (+++++)
+X-Helo-Check: bad, Forged Random Domain (tzljm.com)
+X-Spam-Score: 7.7 (+++++++)
 X-Spam-Report: Spam detection software,
  running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has NOT identified this incoming email as spam.  The original
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Message Delivery Failed Message Delivery Failed We regret
- to inform you that 10 messages failed to deliver due to security reasons. 
- Content analysis details:   (5.2 points, 6.0 required)
+ Content preview:  Hello, I hope this message finds you well. i am reaching
+ out to you from our ebike factory, where we have established ourselves as
+ a leading manufacturer in the ebike industry with a robust production capabi
+ [...] Content analysis details:   (7.7 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
- bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?85.215.73.40>]
- 0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
- 1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
- https://senderscore.org/blocklistlookup/
- [85.215.73.40 listed in bl.score.senderscore.com]
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.1 URI_HEX                URI: URI hostname has long hexadecimal sequence
+ 1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
+ [URIs: hx0596.com]
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [45.86.230.181 listed in zen.spamhaus.org]
+ 1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [45.86.230.181 listed in dnsbl-1.uceprotect.net]
+ 0.0 SPF_HELO_NEUTRAL       SPF: HELO does not match SPF record (neutral)
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.5 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
+ [45.86.230.181 listed in bl.mailspike.net]
+ 0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image
+ area
  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
  0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.4 RDNS_DYNAMIC           Delivered to internal network by host with
- dynamic-looking rDNS
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid 1.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
- 0.3 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-Headers-End: 1rkNoJ-0000nv-3L
-Subject: [Osst-users] Message Delivery Failed
+X-Headers-End: 1rkcaW-0007Np-6B
+Subject: [Osst-users] The mountain electric bicycle has arrived
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -88,106 +102,95 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============1943225048902853414=="
+Reply-To: darrrenzh@hx0596.com
+Content-Type: multipart/mixed; boundary="===============5226027137605877849=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============1943225048902853414==
-Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
+--===============5226027137605877849==
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
 
-<!DOCTYPE html>
-
-<html lang=3D"en"><head>
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-<meta charset=3D"UTF-8">
-<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
-0">
-<title>Message Delivery Failed</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #f0f0f0;
-    }
-    .container {
-        margin-top: 100px;
-        padding: 20px;
-        border-radius: 10px;
-        background-color: #ffffff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    h1 {
-        color: #333333;
-    }
-    p {
-        color: #666666;
-        margin-bottom: 20px;
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        background-color: #4CAF50;
-        color: #ffffff;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-align: center;
-width:55%;
-    }
-    button:hover {
-        background-color: #45a049;
-    }
-</style>
+<html>
+<head>
 </head>
-<body style=3D"font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #f0f0f0">
-    <div style=3D"margin-top: 100px;
-        padding: 20px;
-        border-radius: 10px;
-        background-color: #ffffff;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto" class=3D"container">
-        <h1 style=3D"color: #333333">Message Delivery Failed</h1>
-        <p style=3D"color: #666666;
-        margin-bottom: 20px">We regret to inform you that 10 messages faile=
-d to deliver due to security reasons.</p>
-        <p style=3D"color: #666666;
-        margin-bottom: 20px">To enable successful delivery, please click th=
-e button below:</p>
-        <a href=3D"https://zealous-river-09c72a610.5.azurestaticapps.net/?e=
-ml=3Dosst-users@lists.sourceforge.net" target=3D"_blank"><button style=3D"p=
-adding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        background-color: #4CAF50;
-        color: #ffffff;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-align: center;
-width:55%">Allow</button></a>
-    </div>
+<body>
+Hello,<br /> <br /> I hope this message finds you well. i am reaching out
+to you from our ebike factory, where we have established ourselves as a
+leading manufacturer <br />in the ebike industry with a robust production
+capability and a commitment to quality. our factory is equipped with
+state-of-the-art machinery and <br />a dedicated workforce that specializes
+in the design and assembly of premium electric bicycles.<br /> <br /> I am
+particularly excited to introduce you to our latest mountain ebike. this
+model is a testament to our innovation and attention to detail, <br
+/>showcasing features that cater to the needs of the modern rider. We have
+a warehouse in Europe, which allows us to ensure that, <br />you can expect
+to receive your ebike within 3-7 days in all European countries.<br /> <br
+/> Adjustable stem upgrade: with the adjustable stem, riders can tailor the
+angle to their height and riding preferences, offering an optimized and
+comfortable experience.<br /> Fast charge technology: our 3a fast charger
+significantly reduces the battery recharge time to just 2-3 hours, making
+it an efficient choice for those on the move.<br /> <br /> Enhanced battery
+capacity: we have upgraded the battery to a 36v/13ah unit, which is still
+removable for convenience. this powerful battery allows for extended ranges
+of 20-40 miles and maintains the fast charging capability. Motor power is
+350w.<br /> 21-speed shimano gearset: the professional shimano 21-speed
+gear system adapts to various terrains, providing a smooth and responsive
+riding experience.<br /> <br /> It arrives most parts assembled. with the
+included instruction manual and installation tools, final assembly is
+straightforward and hassle.<br /> We have a warehouse in Europe, which
+allows us to ensure that, you can expect to receive your ebike within 3-7
+days.<br /> <br /> <img
+src="http://www.be-ja.com/tier/ezcatfiles/be-ja/img/pictures/s/SP2_L_500.jpg"
+width="500" height="500" /><img src="http://fafreesbike.com/pic/pic/11.jpg"
+width="500" height="500" /><br /><br /><br /><br /> Should you decide to
+proceed with a purchase of our ebike, we kindly ask you to provide us with
+your detailed address. <br />This will enable us to arrange for the
+shipment and ensure that your order is delivered to you promptly and
+efficiently.<br /> <br /> Please note that every purchase of a totem
+electric bike includes the battery and charger. we also offer additional
+batteries and chargers to <br />help ensure that your adventures are never
+cut short due to charging needs.<br /> <br /> We are confident that this
+mountain ebike will be an excellent addition to your product offerings, <br
+/>and we are eager to support you in bringing this exceptional bike to your
+customers.<br /> <br /> Should you decide to proceed with a purchase of our
+ebike, we kindly ask you to provide us with your detailed address. <br
+/>This will enable us to arrange for the shipment and ensure that your
+order is delivered to you promptly and efficiently.<br /> <br /> We are
+committed to providing you with a seamless and satisfying purchasing
+experience, and timely delivery is a crucial part of that promise.<br />
+Thank you once again for your interest in our products. We are looking
+forward to the possibility of serving you and meeting your ebike needs.<br
+/> <br /> Best Regards,<br /> Darren Zhao<br /> The mountain ebike
+manufacture<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br />If you don't want to receive our email, please
+send address to unlist.
+</body>
+</html>
 
 
- </body></html>
 
-
---===============1943225048902853414==
+--===============5226027137605877849==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1943225048902853414==
+--===============5226027137605877849==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -198,4 +201,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1943225048902853414==--
+--===============5226027137605877849==--
