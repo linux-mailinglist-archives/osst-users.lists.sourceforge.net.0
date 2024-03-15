@@ -2,95 +2,90 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 96B7D87B713
-	for <lists+osst-users@lfdr.de>; Thu, 14 Mar 2024 05:21:18 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 0E1B187C967
+	for <lists+osst-users@lfdr.de>; Fri, 15 Mar 2024 08:38:39 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rkcah-0004QB-V1
+	id 1rl29E-0004U3-G0
 	for lists+osst-users@lfdr.de;
-	Thu, 14 Mar 2024 04:21:16 +0000
+	Fri, 15 Mar 2024 07:38:37 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <darrenia@hx0596.com>) id 1rkcag-0004Q3-9u
- for osst-users@lists.sourceforge.net; Thu, 14 Mar 2024 04:21:14 +0000
+ (envelope-from <bikeji@zhjh505.com>) id 1rl29D-0004Ts-RY
+ for osst-users@lists.sourceforge.net; Fri, 15 Mar 2024 07:38:36 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
  :Reply-To:From:Date:Message-ID:Subject:To:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=OqGxKi+k5i4wOoypSwfvGMNs4jySRKCXJV4w/fPrFSw=; b=WZLoe2fq9mp14syrU95NTVVc7S
- DD3SdVMkb1Q6v88hgo3BZyOUPM3r2DYi6U6UTDPjcdCnmhRG8BURs8Q/ldg0utKhctv+w+kHZUE46
- u45gM0Txa1Zdvl8cS4Szm7kMp7skao0lUouuowXXpssaSDniMOEN2H1gVTUc3GA+0qYM=;
+ bh=z2GdklCOy+ycxn5C6R9BHfvFHGurLQwQfzbUqC3ZtaE=; b=HMo0Mwk/7P7/BRAD910XMT3Ptz
+ 2KulGeAJ+qCYDkFAkpFKEb61uaey4UCKP8G0ykiyVbXc0SeogaFXUtBwy8sFU1q8EW0CYeEWA2v9m
+ KiKWiSoNkkMeYRRg2iyqZm97umm5UYhzOtB7x7vOjqonjlaQqHQVMRI58NusJCOasy+o=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Transfer-Encoding:Content-Type:MIME-Version:Reply-To:From:Date:
  Message-ID:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=OqGxKi+k5i4wOoypSwfvGMNs4jySRKCXJV4w/fPrFSw=; b=U
- mWDs0KHniu6eqTDYaLZyH6S3m55MUIHfbn+hWwHQgLK9HIxer5KaKf8np6MKwMAUvQD/m7AQPf9/z
- vU0Uq8Y10/yFGtj8j03ke6hOQQ6aBLFi0QPUZ+fkkjA/2Yj8RCpjvPF2EHPLsZrkZAuYSIyt9yEih
- RgJYzebpeKG0CVxE=;
-Received: from tzljm.com ([45.86.230.181])
+ List-Owner:List-Archive; bh=z2GdklCOy+ycxn5C6R9BHfvFHGurLQwQfzbUqC3ZtaE=; b=P
+ DE/v8H4/ht5vig63i+kjE7ryHRbrXyASIjeZIZb6Z6naIueFNYNPU9t2LHLev6DAOwb0rTeIKLQix
+ MWGzuUi+uDeTi3/Y9+k/zo9F8g/XSuINaU23lP08yyi7r10nh8ynUZMtvksafg8vsqQTFmFBM856j
+ 3V6F/wEPWwupg/l4=;
+Received: from zumbare.com ([64.188.4.222])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1rkcaW-0007Np-6B for osst-users@lists.sourceforge.net;
- Thu, 14 Mar 2024 04:21:14 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=hx0596.com;
+ id 1rl293-0007jf-7v for osst-users@lists.sourceforge.net;
+ Fri, 15 Mar 2024 07:38:36 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mail; d=zhjh505.com;
  h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding;
- bh=44yByoX6s54McATFkoPHHaT37fU=;
- b=inuuBe7ZlPdMdMaTu3Hj3E5V8lt0tom7dazzsw5lFi5Zp1pvktO0nnd9akpQbQ6ZX5YTnQork0UK
- ec5/XSy9n4ZStEbNtRJABeOkXItu3V7svPElyZBBf4GYdArI0XE4YrnWNI3Hl591nIamWMKYYR13
- N0fSLaDQDZAgBTuBqI4=
-DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail; d=hx0596.com;
- b=RnxGbhgQbQSajxk4QCDevG6hQKy3ZidA1dKkVbAAHYm7wBmj1tnyjV+PDdRIqFdM9nqzXkNULlij
- /sO8USDPE6FBIDn+rMu1ciNMOMFeMCXGg5c9ww5ztKYP/wKCJM6rue8ltbuaFH95ywlq5Ryne/zX
- Y3qwA+9aJGRKmgMQxeg=;
+ bh=x37vk5v/uoWZNvS1zrnAQOtv9zk=;
+ b=SS8oljLAUIrBjh5BYob2W2vKUGm5aVlHCS3SvIln0IB18iMMyJfoRi+ZIyvLO5gkH7ChPaP0LcXY
+ dfJXpbQYn0+yvMb1adQpszIYEzWlRISzCE4FuoamPIAdL0qRgBbNkpsRp71CyZ9IuzmZ3uL4nvzZ
+ JfJ2VZpkwNEIln+VCUg=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=mail; d=zhjh505.com;
+ b=PENQTOX+b1MiHBH5fin9eyMEF+wJkFUaEGicHnWPPxQp/Izv4k8Ub5eaWtBDqfghWKONjSiG0Zvk
+ KFv9hhaBMuis2lNYmC8k6IY0yGPca9Wf4ACDkY+KP4S13NNPcRzYB1Fou1ZyGSollsQ6y9ULGbWJ
+ tPWrFLukTYCyrSwl04k=;
 To: osst-users@lists.sourceforge.net
-Message-ID: <eff7c042438d929c15f0e47e4d669456@hx0596.com>
-Date: Thu, 14 Mar 2024 04:14:43 +0100
-From: "Darren" <darrenia@hx0596.com>
+Message-ID: <b9dd1a4cc96a2fc8f598f2f54273b586@zhjh505.com>
+Date: Fri, 15 Mar 2024 06:02:36 +0100
+From: "David Dike" <bikeji@zhjh505.com>
 MIME-Version: 1.0
-X-Helo-Check: bad, Forged Random Domain (tzljm.com)
-X-Spam-Score: 7.7 (+++++++)
+X-Spam-Score: 2.6 (++)
 X-Spam-Report: Spam detection software,
  running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Hello, I hope this message finds you well. i am reaching
- out to you from our ebike factory, where we have established ourselves as
- a leading manufacturer in the ebike industry with a robust production capabi
- [...] Content analysis details:   (7.7 points, 6.0 required)
+ Content preview:  Hello, We hope this email finds you well. We are glad to
+ introduce you to our latest product from our factory: the 20-inch 4.0 Fat
+ Tire eBike. With its exceptional features and reliable performance, this eBi
+ [...] Content analysis details:   (2.6 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
- [URIs: hx0596.com]
- 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
- [45.86.230.181 listed in zen.spamhaus.org]
- 1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [45.86.230.181 listed in dnsbl-1.uceprotect.net]
- 0.0 SPF_HELO_NEUTRAL       SPF: HELO does not match SPF record (neutral)
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [64.188.4.222 listed in wl.mailspike.net]
+ 2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
+ [64.188.4.222 listed in psbl.surriel.com]
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.5 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
- [45.86.230.181 listed in bl.mailspike.net]
- 0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image
+ 0.0 SPF_HELO_NEUTRAL       SPF: HELO does not match SPF record (neutral)
+ 0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image
  area
  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
  envelope-from domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
  author's domain
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid 1.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-X-Headers-End: 1rkcaW-0007Np-6B
-Subject: [Osst-users] The mountain electric bicycle has arrived
+X-Headers-End: 1rl293-0007jf-7v
+Subject: [Osst-users] electric bicycle in stock
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -102,11 +97,11 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: darrrenzh@hx0596.com
-Content-Type: multipart/mixed; boundary="===============5226027137605877849=="
+Reply-To: davidd@zhjh505.com
+Content-Type: multipart/mixed; boundary="===============4516341106934781683=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5226027137605877849==
+--===============4516341106934781683==
 Content-Type: text/html; charset="UTF-8"
 Content-Transfer-Encoding: 8bit
 
@@ -114,54 +109,48 @@ Content-Transfer-Encoding: 8bit
 <head>
 </head>
 <body>
-Hello,<br /> <br /> I hope this message finds you well. i am reaching out
-to you from our ebike factory, where we have established ourselves as a
-leading manufacturer <br />in the ebike industry with a robust production
-capability and a commitment to quality. our factory is equipped with
-state-of-the-art machinery and <br />a dedicated workforce that specializes
-in the design and assembly of premium electric bicycles.<br /> <br /> I am
-particularly excited to introduce you to our latest mountain ebike. this
-model is a testament to our innovation and attention to detail, <br
-/>showcasing features that cater to the needs of the modern rider. We have
-a warehouse in Europe, which allows us to ensure that, <br />you can expect
-to receive your ebike within 3-7 days in all European countries.<br /> <br
-/> Adjustable stem upgrade: with the adjustable stem, riders can tailor the
-angle to their height and riding preferences, offering an optimized and
-comfortable experience.<br /> Fast charge technology: our 3a fast charger
-significantly reduces the battery recharge time to just 2-3 hours, making
-it an efficient choice for those on the move.<br /> <br /> Enhanced battery
-capacity: we have upgraded the battery to a 36v/13ah unit, which is still
-removable for convenience. this powerful battery allows for extended ranges
-of 20-40 miles and maintains the fast charging capability. Motor power is
-350w.<br /> 21-speed shimano gearset: the professional shimano 21-speed
-gear system adapts to various terrains, providing a smooth and responsive
-riding experience.<br /> <br /> It arrives most parts assembled. with the
-included instruction manual and installation tools, final assembly is
-straightforward and hassle.<br /> We have a warehouse in Europe, which
-allows us to ensure that, you can expect to receive your ebike within 3-7
-days.<br /> <br /> <img
-src="http://www.be-ja.com/tier/ezcatfiles/be-ja/img/pictures/s/SP2_L_500.jpg"
-width="500" height="500" /><img src="http://fafreesbike.com/pic/pic/11.jpg"
-width="500" height="500" /><br /><br /><br /><br /> Should you decide to
-proceed with a purchase of our ebike, we kindly ask you to provide us with
-your detailed address. <br />This will enable us to arrange for the
-shipment and ensure that your order is delivered to you promptly and
-efficiently.<br /> <br /> Please note that every purchase of a totem
-electric bike includes the battery and charger. we also offer additional
-batteries and chargers to <br />help ensure that your adventures are never
-cut short due to charging needs.<br /> <br /> We are confident that this
-mountain ebike will be an excellent addition to your product offerings, <br
-/>and we are eager to support you in bringing this exceptional bike to your
-customers.<br /> <br /> Should you decide to proceed with a purchase of our
-ebike, we kindly ask you to provide us with your detailed address. <br
-/>This will enable us to arrange for the shipment and ensure that your
-order is delivered to you promptly and efficiently.<br /> <br /> We are
-committed to providing you with a seamless and satisfying purchasing
-experience, and timely delivery is a crucial part of that promise.<br />
-Thank you once again for your interest in our products. We are looking
-forward to the possibility of serving you and meeting your ebike needs.<br
-/> <br /> Best Regards,<br /> Darren Zhao<br /> The mountain ebike
-manufacture<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+Hello,<br /><br />We hope this email finds you well. We are glad to
+introduce you to our latest product from our factory: the 20-inch 4.0 Fat
+Tire eBike. <br /> With its exceptional features and reliable performance,
+this eBike is set to revolutionize your cycling experience.<br /> <br />
+Key Features:<br /> 20 inches with 4.0 fat tire for enhanced stability and
+traction on various terrains.<br /> Battery: Equipped with a powerful 48V
+13AH battery, providing long-lasting support for your rides.<br /> Motor
+Power: The 500W motor ensures a smooth and effortless ride, making uphill
+climbs and longer distances a breeze.<br /> <br /> With a remarkable range
+of up to 50km, you can confidently explore the surroundings without
+worrying about running out of power.<br /> Pedal Assist Mode: Enjoy the
+convenience of pedal assist mode, which seamlessly complements your
+pedaling efforts and extends your riding distance.<br /> <br /> Our German
+warehouse is fully stocked with this eBike model, ensuring prompt shipping
+to all European countries. <br /> Customers can expect to receive their
+order within 3-7 days.<br /> <br /> If you are interested in purchasing our
+20-inch 4.0 Fat Tire eBike or have any inquiries, please don't hesitate to
+contact us. <br /> We would be delighted to assist you further and provide
+any additional information you may require.<br /> <br /><img
+src="https://freegobikes.com/cdn/shop/files/FreegoE1Model.jpg?v=1699322251&amp;width=1800"
+width="900" height="900" /><br /><img
+src="https://shopezusa.com/cdn/shop/products/imageService-2023-11-16T152241.206_1024x.jpg?v=1700908829"
+width="800" height="800" /><br /> <br /> If you are interested in
+purchasing our 20-inch 4.0 Fat Tire eBike or have any inquiries, please
+don't hesitate to contact us. <br /> We would be delighted to assist you
+further and provide any additional information you may require.<br /> <br
+/> At our factory, we take pride in our commitment to producing
+high-quality and reliable electric bikes. <br /> With years of experience
+in the industry, we have established a reputation for delivering
+exceptional products that meet the evolving needs of our customers.<br />
+<br /> Here's why you should choose our factory:<br /> Each eBike undergoes
+rigorous testing and quality checks to ensure its durability and
+performance.<br /> We incorporate the latest advancements in eBike
+technology to provide you with a seamless and enjoyable riding
+experience.<br /> We prioritize customer satisfaction and strive to exceed
+your expectations with our products and services. <br /> Our factory offers
+competitive pricing without compromising on the quality and features of our
+eBikes. <br /> We value long-term partnerships and are committed to
+providing ongoing support and assistance to our clients.<br /><br /> Thank
+you for considering our eBike for your cycling needs. We look forward to
+serving you and providing an exceptional riding experience.<br /> <br />
+Best regards,<br /> David Wilson<br /> The E-bike Supplier<br /><br /><br
 /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
 /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
 /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
@@ -176,21 +165,23 @@ manufacture<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
 /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
 /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
 /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><br /><br /><br /><br />If you don't want to receive our email, please
-send address to unlist.
+/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
+/><br /><br /><br /><br /><br /><br /><br /><br />Thank you for considering
+our eBike for your cycling needs. We look forward to serving you and
+providing an exceptional riding experience.
 </body>
 </html>
 
 
 
---===============5226027137605877849==
+--===============4516341106934781683==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5226027137605877849==
+--===============4516341106934781683==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -201,4 +192,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5226027137605877849==--
+--===============4516341106934781683==--
