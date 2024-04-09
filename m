@@ -2,89 +2,100 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 041A189B383
-	for <lists+osst-users@lfdr.de>; Sun,  7 Apr 2024 20:25:37 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id F1F0589CFC0
+	for <lists+osst-users@lfdr.de>; Tue,  9 Apr 2024 03:21:26 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rtXCy-0007s3-Ci
+	id 1ru0Av-0005Uv-Cq
 	for lists+osst-users@lfdr.de;
-	Sun, 07 Apr 2024 18:25:36 +0000
+	Tue, 09 Apr 2024 01:21:25 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <return+irwsro47-gd4zblj6-5ch@smoton.com>)
- id 1rtXCx-0007rx-1R for osst-users@lists.sourceforge.net;
- Sun, 07 Apr 2024 18:25:35 +0000
+ (envelope-from <bounce-860-3317288-452-248@69np4g.cn>)
+ id 1ru0At-0005Up-Ga for osst-users@lists.sourceforge.net;
+ Tue, 09 Apr 2024 01:21:23 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:List-Id:List-Unsubscribe:
- Message-Id:Date:Reply-To:To:From:Subject:Sender:Cc:Content-Transfer-Encoding:
+ d=sourceforge.net; s=x; h=Content-Type:Content-Transfer-Encoding:MIME-Version
+ :List-Unsubscribe:Sender:Message-ID:Subject:Reply-to:From:To:Date:Cc:
  Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Help:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=8/2ukrkdhqlg7qdmOCtNmnuhlCCOvjNXMypBPPTwPE8=; b=W8OkFvlWFd7oUvDukRaQYvs8Go
- 96Lakqaq26JaDzd1t0jAU2mir9cMRr0ofGGpToOCI68QP3UCMANu0HjknpXoUA0RVh4PDD2/na4ha
- JuU7/rS4G4CnkwulTVFetcsHAJDwX7sOoBJkqvx4MgGqMZ5X4BI56VZE/DKKygSkr2F8=;
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=wWnME6yG4Z5o2wsHr6r8x3lFDMTaD9v9VCxcCW9mDcY=; b=LqlWoAifZq9jyXjwm/lZK28Uw5
+ piOFMNBBVloq11FW48CPAdgG5XgU81u6+FWvVrTPXnbIrZnZWG2DLC9x3SlDDqJZZVIABn+Zv/y0k
+ vHaBKPfgKcaMXOvVwDTOIcva+HPy5BmHZQdvBtSVuNVyxwEbOrcjMQQdfrVrUw12+9Ww=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:List-Id:List-Unsubscribe:Message-Id:Date:
- Reply-To:To:From:Subject:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ h=Content-Type:Content-Transfer-Encoding:MIME-Version:List-Unsubscribe:
+ Sender:Message-ID:Subject:Reply-to:From:To:Date:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Help:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=8/2ukrkdhqlg7qdmOCtNmnuhlCCOvjNXMypBPPTwPE8=; b=I
- 8bq0b1exypSs3JPmHk4Mf56Q9Jp54a5aATpZlnDbWFDcsIpkIRJEY3o1hMuSofxLd9zy9bbqMWMOs
- Pl2HTMFHnOC0D8dHXhJmVYdFsP7a4tPM+sjoOJ85jDqUccdZ+cMUIcpeF+GpV/P7RFKeQHMXU8J6q
- Xieriue66l7MPq/M=;
-Received: from m42127.smoton.com ([62.138.121.48])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1rtXCt-00062o-1N for osst-users@lists.sourceforge.net;
- Sun, 07 Apr 2024 18:25:35 +0000
-From: =?UTF-8?B?0KHQvtGW1bhi0LDRldC1?= <info@winter-sport.de>
-To: osst-users@lists.sourceforge.net
-Date: Sun, 07 Apr 2024 20:19:28 +0200
-Message-Id: <8152871883696412@m42127.smoton.com>
-List-Unsubscribe-Post: List-Unsubscribe=One-Click
-Feedback-ID: N-kibybsbn:C-irwsro47:P-g68d6rmb
-X-AntiAbuse: Please report spam to postmaster@smoton.com and refer to this ID:
- irwsro47-gd4zblj6-5ch
-X-CSA-Complaints: csa-complaints@eco.de
-X-rpcampaign: RPkibybsbn
-DKIM-Signature: a=rsa-sha256;
- b=Y+m1kdg/mGL6IA2/xnehUKTHtaiJFBZqya4mIvxsNKYTP/5WfX06rW2tgIbgajx1t23YT78gRnW2Dl5TgNVIQ52MlzU20SiI24ArKlW+67nlrNwT4R4Xb+b5tr5lwTawx/KVVM34MzGXEUgdO/freWbDHrOIkm9NzUr8xb34vH4=;
- s=default; d=smoton.com; v=1; bh=JtlzjPcv6SGSHH06JY6JdctsJ6zh5yPJettM6/n41bE=;
- h=Reply-To:List-Id:From:To:Message-Id:Subject:MIME-Version:Date:Feedback-ID:List-Unsubscribe:List-Unsubscribe-Post:X-CSA-Complaints;
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=wWnME6yG4Z5o2wsHr6r8x3lFDMTaD9v9VCxcCW9mDcY=; b=bpYMeiXASzuPjYWplLhlU9h7yR
+ y0RvVLYE+uBtQK316hH2noGqU6GMaPu8q5VkFd7ZD16/HkhPhQsdJF853VRBAAM807iDgRG2vAor4
+ ij/x/v4fZa5O7ubnTzWIaxqSktBrQetF9HLHCp08V7CuUpfLbrV+tf/G6P6iCEypTWUk=;
+Received: from [143.92.42.17] (helo=69np4g.cn)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1ru0As-0002yt-2c for osst-users@lists.sourceforge.net;
+ Tue, 09 Apr 2024 01:21:23 +0000
+Received: by 69np4g.cn id h2ic120e97c2 for <osst-users@lists.sourceforge.net>;
+ Tue, 9 Apr 2024 01:21:10 +0000 (envelope-from
+ <bounce-860-3317288-452-248@69np4g.cn>)
+Date: Tue, 9 Apr 2024 01:21:09 +0000
+To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
+Message-ID: <1a757a066148849dc3404c87df2d4f04@143.92.42.17>
+X-Priority: 3
+X-Mailer: Email Sending System
+X-Complaints-To: test@test.com
+X-MessageID: NHx8fHwxNjI2MXx8fHxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHx8fHwyfHx8fDF8fHx8MA%3D%3D
+X-Report-Abuse: <http://143.92.42.17/oem/report_abuse.php?mid=NHx8fHwxNjI2MXx8fHxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHx8fHwyfHx8fDF8fHx8MA%3D%3D>
 MIME-Version: 1.0
-X-Spam-Score: 0.1 (/)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has NOT identified this incoming email as spam.  The original
+X-Spam-Score: 6.3 (++++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Account Alert: Immediate Action Required for Reactivation
- ========================================================= Dear Customer, We
- hope this message finds you well. We're reaching out to inform you that access
- to your account has been temporarily disabled as a part of our ongoing efforts
- to ensure the security and integrity of [...] 
- Content analysis details:   (0.1 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  Untitled document 您好，打扰了！我们是专业做国际物流的
+    主要从事欧洲.美国.加拿大.墨西哥.澳大利亚.东南亚等地区国家海运空运物流专线，双清包税到门DDP！
+    
+ 
+ Content analysis details:   (6.3 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
- mail domains are different
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
- identical to background
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
-X-Headers-End: 1rtXCt-00062o-1N
-Subject: [Osst-users] Account Alert: Immediate Action Required for
- Reactivation
+  1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+                             [143.92.42.17 listed in dnsbl-1.uceprotect.net]
+  1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+                             https://senderscore.org/blocklistlookup/
+                             [143.92.42.17 listed in bl.score.senderscore.com]
+  0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in
+                             digit
+                             [3763888523[at]qq.com]
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [3763888523[at]qq.com]
+  0.0 NUMERIC_HTTP_ADDR      URI: Uses a numeric IP address in URL
+  0.0 NORMAL_HTTP_TO_IP      URI: URI host has a public dotted-decimal IPv4
+                              address
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and
+                             EnvelopeFrom freemail headers are
+                             different
+  2.2 HTML_TITLE_SUBJ_DIFF   No description available.
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  0.0 SPOOFED_FREEMAIL_NO_RDNS From SPOOFED_FREEMAIL and no rDNS
+  0.0 SPOOFED_FREEMAIL       No description available.
+  0.0 TVD_SPACE_RATIO_MINFP  Space ratio (vertical text obfuscation?)
+X-Headers-End: 1ru0As-0002yt-2c
+Subject: [Osst-users] RE
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -96,270 +107,117 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: =?UTF-8?B?0KHQvtGW1bhi0LDRldC1?= <info@winter-sport.de>
-Content-Type: multipart/mixed; boundary="===============5979556251595722452=="
+From: jiaying via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: jiaying <3763888523@qq.com>
+Content-Type: multipart/mixed; boundary="===============0954442534052686284=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5979556251595722452==
-Content-Type: multipart/alternative; boundary="=a060c14c14215df32f7e3a1c7c7f9cd1"
-
---=a060c14c14215df32f7e3a1c7c7f9cd1
-Content-Type: text/plain; charset=utf-8
+--===============0954442534052686284==
 Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
 
-Account Alert: Immediate Action Required for Reactivation
-=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
-=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
-=3D=3D=3D=3D=3D=3D=3D
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Untitled document</title>
+</head>
+<body>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: med=
+ium;">=E6=82=A8=E5=A5=BD=EF=BC=8C=E6=89=93=E6=89=B0=E4=BA=86=EF=BC=81=E6=88=
+=91=E4=BB=AC=E6=98=AF=E4=B8=93=E4=B8=9A=E5=81=9A=E5=9B=BD=E9=99=85=E7=89=A9=
+=E6=B5=81=E7=9A=84</span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: med=
+ium;">=E4=B8=BB=E8=A6=81=E4=BB=8E=E4=BA=8B=E6=AC=A7=E6=B4=B2.=E7=BE=8E=E5=
+=9B=BD.=E5=8A=A0=E6=8B=BF=E5=A4=A7.=E5=A2=A8=E8=A5=BF=E5=93=A5.=E6=BE=B3=E5=
+=A4=A7=E5=88=A9=E4=BA=9A.=E4=B8=9C=E5=8D=97=E4=BA=9A=E7=AD=89=E5=9C=B0=E5=
+=8C=BA=E5=9B=BD=E5=AE=B6=E6=B5=B7=E8=BF=90=E7=A9=BA=E8=BF=90=E7=89=A9=E6=B5=
+=81=E4=B8=93=E7=BA=BF=EF=BC=8C=E5=8F=8C=E6=B8=85=E5=8C=85=E7=A8=8E=E5=88=B0=
+=E9=97=A8DDP=EF=BC=81</span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: med=
+ium;">=E4=B8=80=E6=89=8B=E5=BA=84=E5=AE=B6=EF=BC=8C=E4=B8=80=E6=89=8B=E6=93=
+=8D=E4=BD=9C=EF=BC=8C=E8=87=AA=E8=90=A5=E6=B5=B7=E5=A4=96=E4=BB=933000=E3=
+=8E=A1+=EF=BC=8C=E5=8F=AF=E6=8F=90=E4=BE=9B=E5=AE=89=E5=85=A8=E5=BF=AB=E6=
+=8D=B7=E3=80=81=E4=BD=8E=E6=88=90=E6=9C=AC=E3=80=81=E6=97=B6=E6=95=88=E9=AB=
+=98=E7=9A=84=E7=89=A9=E6=B5=81=E6=9C=8D=E5=8A=A1=E3=80=82</span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: med=
+ium;">=E8=BF=90=E8=BE=93=E8=B4=A7=E7=89=A9=E5=8F=AF=E5=85=A8=E7=A8=8B=E8=BD=
+=A8=E8=BF=B9=E8=BF=BD=E8=B8=AA=EF=BC=8C=E4=B8=93=E4=B8=9A=E5=AE=A2=E6=9C=8D=
+=E4=B8=80=E5=AF=B9=E4=B8=80=E5=AF=B9=E6=8E=A5=EF=BC=8C=E8=AE=A9=E6=82=A8=E7=
+=9C=81=E5=BF=83=E6=9B=B4=E7=9C=81=E5=8A=9B=E3=80=82</span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: med=
+ium;">=E8=81=94=E7=B3=BB=E6=96=B9=E5=BC=8F=EF=BC=9A</span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: med=
+ium;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; QQ:3763888523</span>=
+</div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: med=
+ium;">=E6=89=8B=E6=9C=BA/Wechat=EF=BC=9A18320008719</span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: med=
+ium;">=E6=84=9F=E8=B0=A2=E6=82=A8=E9=98=85=E8=AF=BB=E9=82=AE=E4=BB=B6=EF=BC=
+=8C=E6=AC=A2=E8=BF=8E=E5=92=A8=E8=AF=A2=EF=BC=81</span></div>
+<div><span style=3D"font-size: medium;">=E6=82=A8=E5=A5=BD=EF=BC=8C=E6=89=
+=93=E6=89=B0=E4=BA=86=EF=BC=81=E6=88=91=E4=BB=AC=E6=98=AF=E4=B8=93=E4=B8=9A=
+=E5=81=9A=E5=9B=BD=E9=99=85=E7=89=A9=E6=B5=81=E7=9A=84</span></div>
+<div><span style=3D"font-size: medium;"><br /></span></div>
+<div><span style=3D"font-size: medium;"><strong><span style=3D"color: #9933=
+00;">=E4=B8=BB=E8=A6=81=E4=BB=8E=E4=BA=8B=E6=AC=A7=E6=B4=B2.=E7=BE=8E=E5=9B=
+=BD.=E5=8A=A0=E6=8B=BF=E5=A4=A7.=E5=A2=A8=E8=A5=BF=E5=93=A5.=E6=BE=B3=E5=A4=
+=A7=E5=88=A9=E4=BA=9A.=E4=B8=9C=E5=8D=97=E4=BA=9A=E7=AD=89=E5=9C=B0=E5=8C=
+=BA=E5=9B=BD=E5=AE=B6=E6=B5=B7=E8=BF=90=E7=A9=BA=E8=BF=90=E7=89=A9=E6=B5=81=
+=E4=B8=93=E7=BA=BF=EF=BC=8C=E5=8F=8C=E6=B8=85=E5=8C=85=E7=A8=8E=E5=88=B0=E9=
+=97=A8DDP=EF=BC=81</span></strong></span></div>
+<div><span style=3D"font-size: medium;"><br /></span></div>
+<div><span style=3D"font-size: medium;"><span style=3D"color: #3366ff;"><st=
+rong>=E4=B8=80=E6=89=8B=E5=BA=84=E5=AE=B6=EF=BC=8C=E4=B8=80=E6=89=8B=E6=93=
+=8D=E4=BD=9C=EF=BC=8C=E8=87=AA=E8=90=A5=E6=B5=B7=E5=A4=96=E4=BB=933000=E3=
+=8E=A1+=EF=BC=8C=E5=8F=AF=E6=8F=90=E4=BE=9B=E5=AE=89=E5=85=A8=E5=BF=AB=E6=
+=8D=B7=E3=80=81=E4=BD=8E=E6=88=90=E6=9C=AC=E3=80=81=E6=97=B6=E6=95=88=E9=AB=
+=98=E7=9A=84=E7=89=A9=E6=B5=81=E6=9C=8D=E5=8A=A1=E3=80=82</strong></span></=
+span></div>
+<div><span style=3D"font-size: medium;"><br /></span></div>
+<div><span style=3D"font-size: medium;"><span style=3D"color: #ff9900;"><st=
+rong>=E8=BF=90=E8=BE=93=E8=B4=A7=E7=89=A9=E5=8F=AF=E5=85=A8=E7=A8=8B=E8=BD=
+=A8=E8=BF=B9=E8=BF=BD=E8=B8=AA=EF=BC=8C=E4=B8=93=E4=B8=9A=E5=AE=A2=E6=9C=8D=
+=E4=B8=80=E5=AF=B9=E4=B8=80=E5=AF=B9=E6=8E=A5=EF=BC=8C=E8=AE=A9=E6=82=A8=E7=
+=9C=81=E5=BF=83=E6=9B=B4=E7=9C=81=E5=8A=9B=E3=80=82</strong></span></span><=
+/div>
+<div><span style=3D"font-size: medium;"><br /></span></div>
+<div><span style=3D"font-size: medium;"><strong><span style=3D"font-size: l=
+arge;"><span style=3D"color: #ff0000;">=E8=81=94=E7=B3=BB=E6=96=B9=E5=BC=8F=
+=EF=BC=9A</span></span></strong></span></div>
+<div><span style=3D"font-size: medium;"><strong><span style=3D"font-size: l=
+arge;"><span style=3D"color: #ff0000;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &=
+nbsp; &nbsp; &nbsp; QQ:3763888523</span></span></strong></span></div>
+<div><span style=3D"font-size: medium;"><strong><span style=3D"font-size: l=
+arge;"><span style=3D"color: #ff0000;">=E6=89=8B=E6=9C=BA/Wechat=EF=BC=9A18=
+320008719</span></span></strong></span></div>
+<div><span style=3D"font-size: medium;">=E6=84=9F=E8=B0=A2=E6=82=A8=E9=98=
+=85=E8=AF=BB=E9=82=AE=E4=BB=B6=EF=BC=8C=E6=AC=A2=E8=BF=8E=E5=92=A8=E8=AF=A2=
+=EF=BC=81</span></div>
 
-Dear Customer,
+<img src=3D"http://143.92.42.17/oem/to.php?p=3Drw/rv/rs/dbh/ru/rs" width=3D=
+"5" height=3D"2" alt=3D".">
 
-We hope this message finds you well. We're reaching out to inform you that =
-access to your account has been temporarily disabled as a part of our ongoi=
-ng efforts to ensure the security and integrity of our platform.
-
-To regain access and continue using your account, additional verification s=
-teps are necessary. This is a precautionary measure designed to protect you=
-r personal information and prevent unauthorized access.
-
-[Verify Your Account](https://smoton.com/irwsro47-gd4zblj6-h303nzyu-7ns "Bu=
-tton Title")
-
-=C2=A0 =C2=A0 Once you have successfully verified your identity, your accou=
-nt will be reactivated, and you=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 will rega=
-in full access.
-
-=C2=A0 =C2=A0 We understand that this may be inconvenient, but please rest =
-assured that these measures=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 are taken wit=
-h your best interest in mind, aiming to safeguard your account and personal=
-=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 information.
-
-=C2=A0 =C2=A0 Thank you,
-=C2=A0 =C2=A0 The =D0=A1=D0=BE=D1=96=D5=B8b=D0=B0=D1=95=D0=B5 Team,
-
-=C2=A0
-
-[a](https://smoton.com/irwsro47-gd4zblj6-kztwhbiv-12pl)
---=a060c14c14215df32f7e3a1c7c7f9cd1
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: quoted-printable
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
-/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
-ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head> <met=
-a http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"> <meta=
- http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"> <meta name=3D"format=
--detection" content=3D"telephone=3Dno"> <meta name=3D"viewport" content=3D"=
-width=3Ddevice-width, initial-scale=3D1.0"> <title></title> <style type=3D"=
-text/css" emogrify=3D"no">#outlook a { padding:0; } .ExternalClass { width:=
-100%; } .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalCla=
-ss font, .ExternalClass td, .ExternalClass div { line-height: 100%; } table=
- td { border-collapse: collapse; mso-line-height-rule: exactly; } .editable=
-.image { font-size: 0 !important; line-height: 0 !important; } .nl2go_prehe=
-ader { display: none !important; mso-hide:all !important; mso-line-height-r=
-ule: exactly; visibility: hidden !important; line-height: 0px !important; f=
-ont-size: 0px !important; } body { width:100% !important; -webkit-text-size=
--adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0; } img { outli=
-ne:none; text-decoration:none; -ms-interpolation-mode: bicubic; } a img { b=
-order:none; } p { margin: 1em 0; } table { border-collapse:collapse; mso-ta=
-ble-lspace:0pt; mso-table-rspace:0pt; } th { font-weight: normal; text-alig=
-n: left; } .nl2go-hide { display: none; display: none !important; } </style=
-> <style type=3D"text/css" emogrify=3D"no"> @media (max-width: 600px) { .gm=
-x-killpill { content: ' \03D1';} } </style> <style type=3D"text/css" emogri=
-fy=3D"no">@media (max-width: 600px) { .gmx-killpill { content: ' \03D1';} .=
-r0-c { box-sizing: border-box !important; text-align: center !important; wi=
-dth: 320px !important } .r1-o { Margin: 0 auto 0 auto !important; border-st=
-yle: solid !important; width: 320px !important } .r2-i { background-color: =
-#ffffff !important } .r3-c { box-sizing: border-box !important; text-align:=
- left !important; width: 100% !important } .r4-o { Margin: 0 auto 0 0 !impo=
-rtant; border-style: solid !important; width: 100% !important } .r5-i { pad=
-ding-left: 6px !important; padding-right: 0px !important } .r6-c { box-sizi=
-ng: border-box !important; text-align: center !important; valign: top !impo=
-rtant; width: 100% !important } .r7-o { Margin: 0 auto 0 auto !important; b=
-order-style: solid !important; width: 100% !important } .r8-c { box-sizing:=
- border-box !important; text-align: center !important; width: 100% !importa=
-nt } .r9-i { padding-bottom: 10px !important; padding-top: 10px !important =
-} .r10-c { box-sizing: border-box !important; text-align: left !important; =
-valign: top !important; width: 100% !important } .r11-i { padding-bottom: 0=
-px !important; padding-left: 10px !important; padding-right: 10px !importan=
-t; padding-top: 15px !important } .r12-i { padding-bottom: 0px !important; =
-padding-left: 10px !important; padding-right: 10px !important; padding-top:=
- 10px !important } .r13-i { text-align: center !important } .r14-r { backgr=
-ound-color: #0010ff !important; border-color: #34add9 !important; border-ra=
-dius: 5px !important; border-width: 1px !important; box-sizing: border-box;=
- height: initial !important; padding-bottom: 12px !important; padding-left:=
- 5px !important; padding-right: 5px !important; padding-top: 12px !importan=
-t; text-align: center !important; width: 100% !important } .r15-i { text-al=
-ign: left !important } body { -webkit-text-size-adjust: none } .nl2go-respo=
-nsive-hide { display: none } .nl2go-body-table { min-width: unset !importan=
-t } .mobshow { height: auto !important; overflow: visible !important; max-h=
-eight: unset !important; visibility: visible !important; border: none !impo=
-rtant } .resp-table { display: inline-table !important } .magic-resp { disp=
-lay: table-cell !important } } </style> <!--[if !mso]><!--> <style type=3D"=
-text/css" emogrify=3D"no"> </style> <!--<![endif]--> <style type=3D"text/cs=
-s">a, a:link { color: #0000ff; text-decoration: none } .nl2go-default-texts=
-tyle { color: #666666; font-family: Arial, Helvetica, sans-serif; font-size=
-: 14px } .nl2go_class_headline { color: #677876; font-family: Arial, Helvet=
-ica, sans-serif; font-size: 26px } .nl2go_class_impressum { color: #999999;=
- font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: it=
-alic } a[x-apple-data-detectors] { color: inherit !important; text-decorati=
-on: inherit !important; font-size: inherit !important; font-family: inherit=
- !important; font-weight: inherit !important; line-height: inherit !importa=
-nt; } .no-show-for-you { border: none; display: none; float: none; font-siz=
-e: 0; height: 0; line-height: 0; max-height: 0; mso-hide: all; overflow: hi=
-dden; table-layout: fixed; visibility: hidden; width: 0; } </style> <!--[if=
- mso]><xml> <o:OfficeDocumentSettings> <o:AllowPNG/> <o:PixelsPerInch>96</o=
-:PixelsPerInch> </o:OfficeDocumentSettings> </xml><![endif]--> <style type=
-=3D"text/css" ignore=3D"ignore">.nl2go_preheader {display:none !important; =
-mso-hide:all !important; mso-line-height-rule: exactly; visibility: hidden =
-!important; line-height: 0px !important; font-size: 0px !important;}</style=
-></head><body style=3D"background-color: #eeeeee; min-height: 1000px;" bgco=
-lor=3D"#eeeeee" text=3D"#666666" link=3D"#0000ff" yahoo=3D"fix"><div class=
-=3D"nl2go_preheader" style=3D"display: none !important; mso-hide:all !impor=
-tant;=20
-        mso-line-height-rule: exactly; visibility: hidden !important;=20
-        line-height: 0px !important; font-size: 0px !important;"><img src=
-=3D"http://smoton.com/irwsro47-kibybsbn-gd4zblj6-1cn.gif"=20
-                style=3D"display:none" width=3D"1" height=3D"1" alt=3D"" ti=
-tle=3D"" /></div> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" r=
-ole=3D"presentation" style=3D"background-color: #eeeeee; width: 100%;" clas=
-s=3D"nl2go-body-table" width=3D"100%"> <tr> <td align=3D"center" class=3D"r=
-0-c"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"prese=
-ntation" width=3D"600" style=3D"table-layout: fixed; width: 600px;" class=
-=3D"r1-o">  <tr> <td style=3D"background-color: #ffffff;" valign=3D"top" cl=
-ass=3D"r2-i"> <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" bor=
-der=3D"0" role=3D"presentation"> <tr> <td class=3D"r3-c" align=3D"left"> <t=
-able cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation"=
- width=3D"130" style=3D"table-layout: fixed; width: 130px;" class=3D"r4-o">=
-  <tr> <td style=3D"font-size: 0px; line-height: 0px;" class=3D"nl2go-respo=
-nsive-hide" width=3D"6">=C2=AD</td> <td style=3D"font-size: 0px; line-heigh=
-t: 0px;" class=3D"r5-i"> <img src=3D"https://d15k2d11r6t6rl.cloudfront.net/=
-public/users/Integrators/669d5713-9b6a-46bb-bd7e-c542cff6dd6a/3aca563719674=
-18192255878e9689713/Continuum%20Welcome%20Images/masterhead_coinbase_logo.p=
-ng" width=3D"124" border=3D"0" style=3D"display: block; width: 100%;" class=
-=3D""> </td> </tr> </table> </td> </tr> <tr> <td class=3D"r6-c" align=3D"ce=
-nter"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"pres=
-entation" width=3D"90" style=3D"table-layout: fixed; width: 90px;" class=3D=
-"r7-o">  <tr> <td style=3D"font-size: 0px; line-height: 0px;" class=3D""> <=
-img src=3D"https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/6=
-69d5713-9b6a-46bb-bd7e-c542cff6dd6a/3aca56371967418192255878e9689713/Contin=
-uum/coinbase%20logo.png" width=3D"90" border=3D"0" style=3D"display: block;=
- width: 100%;" class=3D""> </td> </tr> </table> </td> </tr> <tr> <td class=
-=3D"r8-c" align=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0" bord=
-er=3D"0" role=3D"presentation" width=3D"10%" style=3D"table-layout: fixed;"=
- class=3D"r7-o">  <tr class=3D"nl2go-responsive-hide"> <td style=3D"font-si=
-ze: 10px; line-height: 10px;" height=3D"10">=C2=AD</td> </tr> <tr> <td styl=
-e=3D"height: 5px;" class=3D"r9-i"> <table width=3D"100%" cellspacing=3D"0" =
-cellpadding=3D"0" border=3D"0" role=3D"presentation"> <tr> <td><table width=
-=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presenta=
-tion" valign=3D"" class=3D"r9-i" height=3D"5" style=3D"border-top-style: so=
-lid; background-clip: border-box; border-top-color: #dbdbdb; border-top-wid=
-th: 5px; font-size: 5px; line-height: 5px;"> <tr> <td height=3D"0" style=3D=
-"font-size: 0px; line-height: 0px;">=C2=AD</td> </tr> </table></td> </tr> <=
-/table> </td> </tr> <tr class=3D"nl2go-responsive-hide"> <td style=3D"font-=
-size: 10px; line-height: 10px;" height=3D"10">=C2=AD</td> </tr> </table> </=
-td> </tr> <tr> <td class=3D"r10-c" align=3D"left"> <table cellspacing=3D"0"=
- cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=
-=3D"table-layout: fixed; width: 100%;" class=3D"r4-o">  <tr class=3D"nl2go-=
-responsive-hide"> <td style=3D"font-size: 30px; line-height: 30px;" height=
-=3D"30" width=3D"20">=C2=AD</td> <td style=3D"font-size: 30px; line-height:=
- 30px;" height=3D"30">=C2=AD</td> <td style=3D"font-size: 30px; line-height=
-: 30px;" height=3D"30" width=3D"20">=C2=AD</td> </tr> <tr> <td style=3D"fon=
-t-size: 0px; line-height: 0px;" class=3D"nl2go-responsive-hide" width=3D"20=
-">=C2=AD</td> <td style=3D"color: #666666; font-family: Arial, Helvetica, s=
-ans-serif; font-size: 14px;" class=3D"r11-i nl2go-default-textstyle"> <span=
- style=3D"color: #000000;"><span style=3D"font-size: 20px;"><span>Account A=
-lert: Immediate Action Required for Reactivation</span></span></span> </td>=
- <td style=3D"font-size: 0px; line-height: 0px;" class=3D"nl2go-responsive-=
-hide" width=3D"20">=C2=AD</td> </tr> </table> </td> </tr> <tr> <td class=3D=
-"r10-c" align=3D"left"> <table cellspacing=3D"0" cellpadding=3D"0" border=
-=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-layout: fixed; w=
-idth: 100%;" class=3D"r4-o">  <tr class=3D"nl2go-responsive-hide"> <td styl=
-e=3D"font-size: 20px; line-height: 20px;" height=3D"20" width=3D"20">=C2=AD=
-</td> <td style=3D"font-size: 20px; line-height: 20px;" height=3D"20">=C2=
-=AD</td> <td style=3D"font-size: 20px; line-height: 20px;" height=3D"20" wi=
-dth=3D"20">=C2=AD</td> </tr> <tr> <td style=3D"font-size: 0px; line-height:=
- 0px;" class=3D"nl2go-responsive-hide" width=3D"20">=C2=AD</td> <td style=
-=3D"color: #666666; font-family: Arial, Helvetica, sans-serif; font-size: 1=
-4px;" class=3D"r12-i nl2go-default-textstyle"> <span style=3D"color: #00000=
-0;">Dear Customer,<br><br>We hope this message finds you well. We're reachi=
-ng out to inform you that access to your account has been temporarily disab=
-led as a part of our ongoing efforts to ensure the security and integrity o=
-f our platform.<br><br>To regain access and continue using your account, ad=
-ditional verification steps are necessary. This is a precautionary measure =
-designed to protect your personal information and prevent unauthorized acce=
-ss.</span> </td> <td style=3D"font-size: 0px; line-height: 0px;" class=3D"n=
-l2go-responsive-hide" width=3D"20">=C2=AD</td> </tr> <tr class=3D"nl2go-res=
-ponsive-hide"> <td style=3D"font-size: 10px; line-height: 10px;" height=3D"=
-10" width=3D"20">=C2=AD</td> <td style=3D"font-size: 10px; line-height: 10p=
-x;" height=3D"10">=C2=AD</td> <td style=3D"font-size: 10px; line-height: 10=
-px;" height=3D"10" width=3D"20">=C2=AD</td> </tr> </table> </td> </tr> <tr>=
- <td class=3D"r6-c" align=3D"center"> <table cellspacing=3D"0" cellpadding=
-=3D"0" border=3D"0" role=3D"presentation" width=3D"50%" style=3D"table-layo=
-ut: fixed; width: 50%;" class=3D"r7-o">  <tr> <td height=3D"16" align=3D"ce=
-nter" valign=3D"top" class=3D"r13-i nl2go-default-textstyle" style=3D"color=
-: #666666; font-family: Arial, Helvetica, sans-serif; font-size: 14px;">  <=
-!--[if mso]> <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:w=
-=3D"urn:schemas-microsoft-com:office:word" href=3D"https://smoton.com/irwsr=
-o47-gd4zblj6-8h06nvev-1131" style=3D"v-text-anchor:middle; height: 41px; wi=
-dth: 1px;" arcsize=3D"12%" fillcolor=3D"#0010ff" strokecolor=3D"#34add9" st=
-rokeweight=3D"1px"> <w:anchorlock/> <div style=3D"display:none;"> <center c=
-lass=3D"nl2go-default-textstyle"><span style=3D"font-weight:bold;"><span st=
-yle=3D"color:#ffffff;"><span _msttexthash=3D"349479" _msthash=3D"85">Verify=
- Your Account</span></span></span></center> </div> </v:roundrect> <![endif]=
--->  <!--[if !mso]><!-- --> <a href=3D"https://smoton.com/irwsro47-gd4zblj6=
--8h06nvev-1131" style=3D"border-style: solid; display: inline-block; -webki=
-t-text-size-adjust: none; mso-hide: all; background-color: #0010ff; border-=
-color: #34add9; border-radius: 5px; border-width: 1px; height: 16px; paddin=
-g-bottom: 12px; padding-left: 5px; padding-right: 5px; padding-top: 12px; w=
-idth: none; color: #0000ff; text-decoration: none;" class=3D"r14-r" title=
-=3D"Button Title"><span style=3D"font-weight: bold;"><span style=3D"color: =
-#ffffff;"><span _msttexthash=3D"349479" _msthash=3D"85">Verify Your Account=
-</span></span></span></a> <!--<![endif]--> </td> </tr> </table> </td> </tr>=
- <tr> <td class=3D"r10-c" align=3D"left"> <table cellspacing=3D"0" cellpadd=
-ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
-layout: fixed; width: 100%;" class=3D"r4-o">  <tr> <td align=3D"left" valig=
-n=3D"top" style=3D"text-align: left; color: #666666; font-family: Arial, He=
-lvetica, sans-serif; font-size: 14px;" class=3D"r15-i nl2go-default-textsty=
-le"> <br><span style=3D"color: #000000;" _msttexthash=3D"84814145" _msthash=
-=3D"86">=C2=A0 =C2=A0 Once you have successfully verified your identity, yo=
-ur account will be reactivated, and you=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 w=
-ill regain full access.<br _istranslated=3D"1"><br _istranslated=3D"1">=C2=
-=A0 =C2=A0 We understand that this may be inconvenient, but please rest ass=
-ured that these measures=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 are taken with y=
-our best interest in mind, aiming to safeguard your account and personal=C2=
-=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 information.<br _istranslated=
-=3D"1"><br _istranslated=3D"1">=C2=A0 =C2=A0 Thank you,<br _istranslated=3D=
-"1">=C2=A0 =C2=A0 The =D0=A1=D0=BE=D1=96=D5=B8b=D0=B0=D1=95=D0=B5 Team,</sp=
-an><br><br>=C2=A0 </td> </tr> </table> </td> </tr> <tr> <td class=3D"r6-c" =
-align=3D"center"> <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" r=
-ole=3D"presentation" width=3D"600" style=3D"table-layout: fixed; width: 600=
-px;" class=3D"r7-o">  <tr> <td style=3D"font-size: 0px; line-height: 0px;" =
-class=3D""> <img src=3D"https://i.imgur.com/bircLO9.png" width=3D"600" bord=
-er=3D"0" style=3D"display: block; width: 100%;" class=3D""> </td> </tr> </t=
-able> </td> </tr> <tr> <td class=3D"r10-c" align=3D"left"> <table cellspaci=
-ng=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" width=3D"100%=
-" style=3D"table-layout: fixed; width: 100%;" class=3D"r4-o">  <tr> <td ali=
-gn=3D"left" valign=3D"top" style=3D"text-align: left; color: #666666; font-=
-family: Arial, Helvetica, sans-serif; font-size: 14px;" class=3D"r15-i nl2g=
-o-default-textstyle"> <span style=3D"font-size: 8px;"><a href=3D"https://sm=
-oton.com/irwsro47-gd4zblj6-betcceiv-19f1" style=3D"color: #0000ff; text-dec=
-oration: none;"><span style=3D"color: #ffffff;">a</span></a></span> </td> <=
-/tr> </table> </td> </tr> </table> </td> </tr> </table> </td> </tr> </table=
-></body></html>
-
---=a060c14c14215df32f7e3a1c7c7f9cd1--
+</body>
+</html>
 
 
---===============5979556251595722452==
+--===============0954442534052686284==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5979556251595722452==
+--===============0954442534052686284==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -370,5 +228,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5979556251595722452==--
-
+--===============0954442534052686284==--
