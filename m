@@ -2,71 +2,63 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id F07598A05DE
-	for <lists+osst-users@lfdr.de>; Thu, 11 Apr 2024 04:35:33 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id CAD628A2087
+	for <lists+osst-users@lfdr.de>; Thu, 11 Apr 2024 22:57:24 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rukHk-00032S-LY
+	id 1rv1U3-0001WO-8q
 	for lists+osst-users@lfdr.de;
-	Thu, 11 Apr 2024 02:35:32 +0000
+	Thu, 11 Apr 2024 20:57:23 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <support@service.kh7g7gwe4.com>) id 1rukHj-00032M-G5
- for osst-users@lists.sourceforge.net; Thu, 11 Apr 2024 02:35:31 +0000
+ (envelope-from <www-data@v150-95-26-219.a00d.g.bkk1.static.cnode.io>)
+ id 1rv1Tz-0001WH-Q9 for osst-users@lists.sourceforge.net;
+ Thu, 11 Apr 2024 20:57:20 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
+ Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=dt2tCHGVcRXKCk9y/PPfBUbvH9O9YJ3clg65JUJSATg=; b=hNOOYqyvBDtEMRbnBF4rPg0UGf
- v3NmFtjw0Jj4MduNxH7mXAmBurf7gR1KZAQyaCwKyxKxZjoLWb53cz07VI5hd5Evxhr0SfR6vomal
- 82QxkedaIRiG21HYGgyoq/qCjUxI8pPiI8vuOvUbWDKO0NzinNzGmPihu2IRD7Sg0tPI=;
+ bh=d9ETTrnszonXCwIbh23HpYCdM9jP87I7jvL1hYWWbpg=; b=QBmBrTTT6eSw0mujWPC92qUM83
+ 3mUcK+1kK6vla5U8Q8LDTL9M7+nLv8d31HKBz6QcorBsnM9zSlGKcMNejhvPO5Nb+e7bxG2jbeOu1
+ hs/QouI6ub0Eb2odm8+2EoRs7UHelHWTvTHaUJAK3S5udJYXH77LvGhXU9udxmsm65Js=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Date:Subject:To:From:Message-ID:Sender:Reply-To
+ h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=dt2tCHGVcRXKCk9y/PPfBUbvH9O9YJ3clg65JUJSATg=; b=F
- DysJy8d7t0bGxHrUPNc+ECdqSX32IVEii7OSHnnPM14IvATz7LGxv532H7EYH+9k2YTUgSrB5dCgW
- vfAoBcdvdAAhYL6WwiJHncGQLCJJ6VFNH+7bJRTjZKgo07MZ+vyedoegVXFmtBlu+Ir7IiE1YbChE
- W+JQ4MXBxdvfhbnc=;
-Received: from [192.3.159.139] (helo=service.kh7g7gwe4.com)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1rukHi-0002VJ-95 for osst-users@lists.sourceforge.net;
- Thu, 11 Apr 2024 02:35:31 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mykey;
- d=service.kh7g7gwe4.com; 
- h=Message-ID:From:To:Subject:Date:MIME-Version:Content-Type;
- bh=6m+hFIFKENHY08jwIWNe1Xm5ry4=;
- b=PbI6srH6hdYlGalKXZ/vmPF0eRs16Cz/+1EeTBJHKnVyCAM00FqJc51bEaV/1ybC/ailXR5Q+0zN
- GRdbWJYuHLR22o4QOLxfdUk1WHSUAmiRJFUEBg/C4l9PSkIgUEJk+JiDvqFGC2pzwd7Zj9St12QP
- azuJeRrvemZ6Kige8ro=
-Received: from itqdussk (172.105.112.76) by service.kh7g7gwe4.com id
- h2t68e0001gv for <osst-users@lists.sourceforge.net>;
- Wed, 10 Apr 2024 22:15:19 -0400 (envelope-from
- <support@service.kh7g7gwe4.com>)
-Message-ID: <20240411101458735744@service.kh7g7gwe4.com>
-From: "Amazon.co.jp" <support@service.kh7g7gwe4.com>
-To: <osst-users@lists.sourceforge.net>
-Date: Thu, 11 Apr 2024 10:14:49 +0800
+ List-Owner:List-Archive; bh=d9ETTrnszonXCwIbh23HpYCdM9jP87I7jvL1hYWWbpg=; b=J
+ ZEMIFyJd42xZXzTtPdqpHdsbzAsh/E0QSAU215igEGibn/iWlPX+4qtweHd5y7oUbVlx1S9JAMlkL
+ BRjbOviD+t0eVA199EgWU7Z6WvS8BjcMke83II9DF6w4GwyNY4jhnXlEdXU6/oABaMJkqo7PDDBuu
+ IXxrdNBf1tE72//g=;
+Received: from v150-95-26-219.a00d.g.bkk1.static.cnode.io ([150.95.26.219])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1rv1Ty-0004RC-Gc for osst-users@lists.sourceforge.net;
+ Thu, 11 Apr 2024 20:57:20 +0000
+Received: by v150-95-26-219.a00d.g.bkk1.static.cnode.io (Postfix,
+ from userid 33) id 6D277A7679; Fri, 12 Apr 2024 03:41:43 +0700 (+07)
+To: osst-users@lists.sourceforge.net
 MIME-Version: 1.0
-X-mailer: Gdljzi 4
-X-Spam-Score: 5.2 (+++++)
+From: Magalu Recomenda <ofertas@magazine-luiza.com>
+Message-Id: <20240411204143.6D277A7679@v150-95-26-219.a00d.g.bkk1.static.cnode.io>
+Date: Fri, 12 Apr 2024 03:41:43 +0700 (+07)
+X-Spam-Score: 3.6 (+++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  こんにちは 次回の配達に使用されるお支払い方法に問題があります。
-    お支払い方法を更新してください。更新しないと、遅延を防ぐために予備の支
-    [...] 
+ Content preview:  Ofertas exclusivas Aproveite nossas promoções.🤩 Políticas
+    de privacidade | Descadastre-se Semana do Consumidor Magalu. Smart TV 65”
+    UHD 4K LED Samsung 65CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI 
  
- Content analysis details:   (5.2 points, 6.0 required)
+ Content analysis details:   (3.6 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
@@ -74,32 +66,30 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
                              blocked.  See
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
-                             [URIs: amazon.co.jp]
+                             [URIs: imgur.com]
   0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: bjvsm.cn]
+                             [URIs: redirmagal.com]
   1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
                              blocklist
-                             [URIs: bjvsm.cn]
-  0.0 RCVD_IN_DNSWL_BLOCKED  RBL: ADMINISTRATOR NOTICE: The query to
-                             DNSWL was blocked.  See
-                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
-                              for more information.
-                             [192.3.159.139 listed in list.dnswl.org]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- -0.0 SPF_PASS               SPF: sender matches SPF record
-  0.1 HTTPS_HTTP_MISMATCH    BODY: No description available.
+                             [URIs: redirmagal.com]
+  0.2 CK_HELO_GENERIC        Relay used name indicative of a Dynamic Pool or
+                             Generic rPTR
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
   0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
-  2.0 PYZOR_CHECK            Listed in Pyzor
-                             (https://pyzor.readthedocs.io/en/latest/)
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-X-Headers-End: 1rukHi-0002VJ-95
-Subject: [Osst-users] =?utf-8?b?44GK5pSv5omV44GE5pa55rOV44KS5pu05paw44GX?=
- =?utf-8?b?44Gm44GP44Gg44GV44GE?=
+  0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image
+                             area
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+  1.0 CONTENT_AFTER_HTML_WEAK More content after HTML close tag
+X-Headers-End: 1rv1Ty-0004RC-Gc
+Subject: [Osst-users] Semana do Consumidor Magalu: Smart TV Samsung 4k 65''
+ - Apenas: R$ 1.979, 15 - Smart TV Samsung 4k 55'' - Apenas R$ 1.418,
+ 10 - Smart TV Samsung 4K 43'' - Apenas: R$ 1.099,
+ 05 - Smart TV Samsung 4k 32 - Apenas: R$ 698,
+ 99 - APROVEITE  - [ 15915368999  ]
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -111,217 +101,429 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============4115321989505783924=="
+Content-Type: multipart/mixed; boundary="===============4104581764077897734=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
+--===============4104581764077897734==
+Content-type: text/html; charset=iso-8859-1
 
---===============4115321989505783924==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_000_05E8_01D9307E.1AFEE360"
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" data-upload="uploadLoader-1664672579870-323704224">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ofertas exclusivas</title>
+  </head>
+  <body class="is-html-mode dc-highlight" data-contenteditable="true">
+    <span style="display:none !important;visibility:hidden;mso-hide:all;opacity:0;" class="acr-preheader">Aproveite nossas promo&#xE7;&#xF5;es.&#x1F929;</span>
+    <br>
+    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:760px;min-width:575px;background-color:#0b57d0;border-radius:16px;">
+      <tbody>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="4%">&nbsp;</td>
+                  <td align="center" width="40%">
+                    <span style="color:#FFFFFF;font-family:Open Sans, Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;">Pol&#xED;ticas de privacidade</span>
+                  </td>
+                  <td width="1%">&nbsp;</td>
+                  <td width="10%" align="center" style="color:#FFFFFF;text-decoration:none;font-family:Open Sans, Helvetica, Arial, sans-serif;font-size:12px;font-weight:500;">|</td>
+                  <td align="center" width="40%">
+                    <span style="color:#FFFFFF;font-family:Open Sans, Helvetica, Arial, sans-serif;font-size:12px;font-weight:500;">Descadastre-se</span>
+                  </td>
+                  <td width="4%">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td align="center" height="120">
+            <br>
+            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td align="center" width="20%">&nbsp;</td>
+                  <td align="center" width="60%">
+                    <img src="https://i.imgur.com/nfxVcnZ.png" alt="campanha" style="width:182px;height:52px;display:block;border-collapse:collapse;">
+                  </td>
+                  <td align="center" width="20%">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" height="40">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="8%">&nbsp;</td>
+                  <td align="center" width="80%">
+                    <span style="color:rgb(255, 255, 255);font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:20px;">Semana do Consumidor Magalu.</span>
+                  </td>
+                  <td width="8%">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td align="center" height="24">
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="5%">&nbsp;</td>
+                  <td width="90%" align="center" class="is-hover">
+                    <img src="https://s.mlcdn.com.br/banner/campanhas/Semanadoconsumidor80off-extralarge.png" alt="Banner Magalu 1" style="width:100%;display:block;border-collapse:collapse;border-radius:24px;" title="Banner Magalu 1" data-upload="uploadLoader-1684268213640-502032557">
+                  </td>
+                  <td width="5%">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" height="40">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td width="5%">&nbsp;</td>
+                  <td align="center" width="90%" style="background-color:#FFFFFF;border-radius:16px;">
+                    <table style="text-align: center; padding: 0;font-size:100%;font-family:Arial, Verdana, sans-serif!important;text-align:center;margin:0;padding:0;width:100%;-webkit-font-smoothing:antialiased;width:100%!;" class="one-column" style="border-spacing: 0;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                      <tbody>
+                        <tr style="border-top-width: 0; border-bottom-width: 0; padding-top: 0; padding-bottom: 0;" valign="top">
+                          <td valign="top">
+                            <table style="max-width: 640px; border-collapse: collapse;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                              <tbody>
+                                <tr>
+                                  <td style="text-align: center; padding: 0;">
+                                    <table style="max-width: 345px; height: 480px; border-collapse: collapse;" border="0" width="320px" cellspacing="0" cellpadding="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td style="text-align: center; vertical-align: bottom; padding: 0;"><a href="https://liquids.redirmagal.com/redirecionamento/tv65nv.php" target="_blank"><img style="vertical-align: middle; max-height: 295px;" src="https://i.imgur.com/zQ9520y.png" alt="Smart TV 65'' UHD 4K LED Samsung 65CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI" width="260px" height="auto" border="0" /></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align: center; vertical-align: middle; padding: 0 10px 0 10px;">
+                                            <a style="font-size: 16px; color: #0083ca; text-decoration: none;" href="https://liquids.redirmagal.com/redirecionamento/tv65nv.php" target="_blank"> <span style="font-size: 18px; color: #5c5a5a;"><strong>Smart TV 65&rdquo; UHD 4K LED Samsung 65CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</strong></span></a>
+                                            <div style="height: 12px;">&nbsp;</div>
+                                            <p style="font-size: 16px; margin: 0; line-height: 1em;color: #5c5a5a;">de&nbsp;<s>R$&nbsp;3.198,00</s></p>
+                                            <p style="font-size: 30px; margin: 0; letter-spacing: -3px;color: #5c5a5a;"><span style="font-size: 16px; letter-spacing: -1px;"> por&nbsp;R$&nbsp; </span> 1.979,15</p>
+                                            <br />
+                                            <p style="font-size: 16px; margin: 0; line-height: 0.9em;color: #5c5a5a;">&Agrave; Vista</p>
+                                          </td>
+                                        </tr>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
+                        <center><a style="background-color: #8B0000;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://liquids.redirmagal.com/redirecionamento/tv65nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                                                </td>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>                                  <td style="text-align: center; padding: 0;">
+                                    <table style="max-width: 345px; height: 480px; border-collapse: collapse;" border="0" width="320px" cellspacing="0" cellpadding="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td style="text-align: center; vertical-align: bottom; padding: 0;"><a href="https://liquids.redirmagal.com/redirecionamento/tv55nv.php" target="_blank"><img style="vertical-align: middle; max-height: 295px;" src="https://i.imgur.com/o8E3XSI.png" alt="Smart TV 55'' UHD 4K LED Samsung 55CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI" width="260px" height="auto" border="0" /></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align: center; vertical-align: middle; padding: 0 10px 0 10px;">
+                                            <a style="font-size: 16px; color: #0083ca; text-decoration: none;" href="https://liquids.redirmagal.com/redirecionamento/tv55nv.php" target="_blank"> <span style="font-size: 18px; color: #5c5a5a;"><strong>Smart TV 55&rdquo; UHD 4K LED Samsung 55CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</strong></span></a>
+                                            <div style="height: 12px;">&nbsp;</div>
+                                            <p style="font-size: 16px; margin: 0; line-height: 1em;color: #5c5a5a;">de&nbsp;<s>R$&nbsp;2.719,90</s></p>
+                                            <p style="font-size: 30px; margin: 0; letter-spacing: -3px;color: #5c5a5a;"><span style="font-size: 16px; letter-spacing: -1px;"> por&nbsp;R$&nbsp; </span> 1.418,10</p>
+                                            <br />
+                                            <p style="font-size: 16px; margin: 0; line-height: 0.9em;color: #5c5a5a;">&Agrave; Vista</p>
+                                          </td>
+                                        </tr>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
+                        <center><a style="background-color: #8B0000;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://liquids.redirmagal.com/redirecionamento/tv55nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                                                </td>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+                    <table style="text-align: center; padding: 0;font-size:100%;font-family:Arial, Verdana, sans-serif!important;text-align:center;margin:0;padding:0;width:100%;-webkit-font-smoothing:antialiased;width:100%!;" class="one-column" style="border-spacing: 0;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                      <tbody>
+                        <tr style="border-top-width: 0; border-bottom-width: 0; padding-top: 0; padding-bottom: 0;" valign="top">
+                          <td valign="top">
+                            <table style="max-width: 640px; border-collapse: collapse;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+                              <tbody>
+                                <tr>
+                                  <td style="text-align: center; padding: 0;">
+                                    <table style="max-width: 345px; height: 480px; border-collapse: collapse;" border="0" width="320px" cellspacing="0" cellpadding="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td style="text-align: center; vertical-align: bottom; padding: 0;"><a href="https://liquids.redirmagal.com/redirecionamento/tv43nv.php" target="_blank"><img style="vertical-align: middle; max-height: 295px;" src="https://i.imgur.com/rOiCGCn.png" alt="Smart TV 43&rdquo; Ultra HD 4K LED LG 43UP7500 - 60Hz Wi-Fi e Bluetooth Alexa 2 HDMI 1 USB" width="260px" height="auto" border="0" /></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align: center; vertical-align: middle; padding: 0 10px 0 10px;">
+                                            <a style="font-size: 16px; color: #0083ca; text-decoration: none;" href="https://liquids.redirmagal.com/redirecionamento/tv43nv.php" target="_blank"> <span style="font-size: 18px; color: #5c5a5a;"><strong>Smart TV 43&rdquo; UHD 4K LED Samsung 43CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</strong></span></a>
+                                            <div style="height: 12px;">&nbsp;</div>
+                                            <p style="font-size: 16px; margin: 0; line-height: 1em;color: #5c5a5a;">de&nbsp;<s>R$&nbsp;2.198,00</s></p>
+                                            <p style="font-size: 30px; margin: 0; letter-spacing: -3px;color: #5c5a5a;"><span style="font-size: 16px; letter-spacing: -1px;"> por&nbsp;R$&nbsp; </span> 1.099,05</p>
+                                            <br />
+                                            <p style="font-size: 16px; margin: 0; line-height: 0.9em;color: #5c5a5a;">&Agrave; Vista</p>
+                                          </td>
+                                        </tr>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
+                        <center><a style="background-color: #8B0000;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://liquids.redirmagal.com/redirecionamento/tv43nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                                                </td>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                  <td style="text-align: center; padding: 0;">
+                                    <table style="max-width: 345px; height: 480px; border-collapse: collapse;" border="0" width="320px" cellspacing="0" cellpadding="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td style="text-align: center; vertical-align: bottom; padding: 0;"><a href="https://liquids.redirmagal.com/redirecionamento/tv32nv.php" target="_blank"><img style="vertical-align: middle; max-height: 295px;" src="https://i.imgur.com/0lZdEoD.png" alt="Smart TV 32&rdquo; HD LED LG 32LQ620 AI Processor - Wi-Fi Bluetooth Alexa Google Assistente 1 USB" width="260px" height="auto" border="0" /></a></td>
+                                        </tr>
+                                        <tr>
+                                          <td style="text-align: center; vertical-align: middle; padding: 0 10px 0 10px;">
+                                            <a style="font-size: 16px; color: #0083ca; text-decoration: none;" href="https://liquids.redirmagal.com/redirecionamento/tv32nv.php" target="_blank"> <span style="font-size: 18px; color: #5c5a5a;"><strong>Smart TV UHD 4k LED 32&rdquo; Samsung T4300 - Wi-Fi HDR 2 HDMI 1 USB</strong></span></a>
+                                            <div style="height: 12px;">&nbsp;</div>
+                                            <p style="font-size: 16px; margin: 0; line-height: 1em;color: #5c5a5a;">de&nbsp;<s>R$&nbsp;1.109,90</s></p>
+                                            <p style="font-size: 30px; margin: 0; letter-spacing: -3px;color: #5c5a5a;"><span style="font-size: 16px; letter-spacing: -1px;"> por&nbsp;R$&nbsp; </span> 698,99</p>
+                                            <br />
+                                            <p style="font-size: 16px; margin: 0; line-height: 0.9em;color: #5c5a5a;">&Agrave; Vista</p>
+                                          </td>
+                                        </tr>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
+                        <center><a style="background-color: #8B0000;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://liquids.redirmagal.com/redirecionamento/tv32nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                                                </td>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<br>
+<br>
+                  <td width="5%">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+<tr>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td align="center">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td width="5%">&nbsp;</td>
+          <td width="90%" align="center">
+            <img src="https://s.mlcdn.com.br/banner/campanhas/medium_oferta-relampago.gif" alt="Banner Magalu 1" style="width:100%;display:block;border-collapse:collapse;border-radius:24px;" data-upload="uploadLoader-1684268340481-968046953">
+          </td>
+          <td width="5%">&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </td>
+</tr>
+        <tr>
+          <td height="48">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" height="60">
+            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td align="center" width="20%">&nbsp;</td>
+                  <td align="center" width="60%">
+                    <img src="https://i.imgur.com/nfxVcnZ.png" alt="Logo Magalu" style="width:182px;height:52px;display:block;border-collapse:collapse;">
+                  </td>
+                  <td align="center" width="20%">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td height="16">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <td width="4%">&nbsp;</td>
+                          <td align="center" width="92%" height="32">
+                            <table width="90%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td height="32" align="center">
+                                    <font style="font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-weight:800;font-size:14px;color:rgb(255, 255, 255);line-height:25px;text-align:center;">Ofertas v&#xE1;lidas para as compras efetuadas pela Internet e Televendas* ou enquanto durarem os estoques.</font>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" width="100%">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td width="12%">&nbsp;</td>
+                                          <td width="76%" align="center">
+                                            <font style="font-family:Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:400;font-size:14px;color:#FFFFFF;line-height:25px;text-align:center;">*Confira nosso regulamento de Desconto e Frete.
+                                            </font>
+                                          </td>
+                                          <td width="12%">&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td width="4%">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td width="4%">&nbsp;</td>
+                          <td align="center" width="92%" height="32">
+                            <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td height="8" align="center">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td height="32" align="center">
+                                    <font style="font-family:Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:800;font-size:14px;color:#FFFFFF;line-height:25px;text-align:center;">Contato e Televendas</font>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" width="100%">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td width="12%">&nbsp;</td>
+                                          <td width="76%" align="center">
+                                            <font style="font-family:Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:400;font-size:14px;color:#FFFFFF;line-height:25px;text-align:center;">Regi&#xE3;o Metropolitana de S&#xE3;o Paulo | (11) 3508-9900 Outras regi&#xF5;es: 0800-310-0002. Hor&#xE1;rio de atendimento: de segunda a sexta, das 8h30 &#xE0;s 22h / aos s&#xE1;bados e domingos, das 9h &#xE0;s 22h (exceto feriados).</font>
+                                          </td>
+                                          <td width="12%">&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td width="4%">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td width="4%">&nbsp;</td>
+                          <td align="center" width="92%" height="32">
+                            <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td height="8" align="center">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                  <td height="32" align="center">
+                                    <font style="font-family:Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:800;font-size:14px;color:#FFFFFF;line-height:25px;text-align:center;">Ficou com d&#xFA;vidas?</font>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" width="100%">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td width="12%">&nbsp;</td>
+                                          <td width="76%" align="center">
+                                            <font style="font-family:Open Sans, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:400;font-size:14px;color:#FFFFFF;line-height:25px;text-align:center;">Acesse nossa Central de Atendimento :)
+                                            </font>
+                                          </td>
+                                          <td width="12%">&nbsp;</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td width="4%">&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>12/04/2024 03:41:43
 
-This is a multi-part message in MIME format.
 
-------=_NextPart_000_05E8_01D9307E.1AFEE360
-Content-Type: text/plain;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-ICANCg0KDQrjgZPjgpPjgavjgaHjga8gDQrmrKHlm57jga7phY3pgZTjgavkvb/nlKjjgZXjgozj
-govjgYrmlK/miZXjgYTmlrnms5XjgavllY/poYzjgYzjgYLjgorjgb7jgZnjgIIgDQrjgYrmlK/m
-iZXjgYTmlrnms5XjgpLmm7TmlrDjgZfjgabjgY/jgaDjgZXjgYTjgILmm7TmlrDjgZfjgarjgYTj
-gajjgIHpgYXlu7bjgpLpmLLjgZDjgZ/jgoHjgavkuojlgpnjga7mlK/miZXjgYTmlrnms5XjgYzk
-vb/nlKjjgZXjgozjgb7jgZnjgIIgDQrjgYrmlK/miZXjgYTmlrnms5XjgpLmm7TmlrDjgZnjgosg
-DQogIA0K5pSv5omV44GE5pa55rOV44Gr44Gk44GE44Gm44Gu6Kmz57Sw44GK44KI44GzIOazqOaW
-h+WGheWuueOBrueiuuiqjeODu+WkieabtOOBruaWueazleOBq+OBpOOBhOOBpuOBr+OAgeODmOOD
-q+ODl+ODmuODvOOCuOOCkuOBlOimp+OBj+OBoOOBleOBhOOAgiANCg0KDQrjgZPjga5F44Oh44O8
-44Or44Ki44OJ44Os44K544Gv44CB6YWN5L+h5bCC55So44Gn44GZ44CC44GU5LiN5piO44Gq54K5
-44Gv44CB5LiL6KiY44GuVVJM44GL44KJ44Kr44K544K/44Oe44O844K144O844OT44K544G+44Gn
-44GK5ZWP44GE5ZCI44KP44Gb44GP44Gg44GV44GE44CCIGh0dHBzOi8vd3d3LmFtYXpvbi5jby5q
-cC9ncC9jc3MvY29udGFjdC11cy1hY2Nlc3Mg
-
-------=_NextPart_000_05E8_01D9307E.1AFEE360
-Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjwhLS0gVXBkYXRlIG1lc3NhZ2luZyBpZiBhIGJhY2t1cCBwYXltZW50IG1ldGhvZCAo
-QlBNKSB3YXMgdXNlZCBmb3IgYW4gb3JkZXIgLS0+PEhUTUw+PEhFQUQ+DQo8TUVUQSBuYW1lPXZp
-ZXdwb3J0IA0KY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEsIG1h
-eGltdW0tc2NhbGU9MSwgdXNlci1zY2FsYWJsZT0wIiANCmNoYXJzZXQ9VVRGLTg+DQo8U1RZTEUg
-dHlwZT10ZXh0L2Nzcz4NCiAgICAgICAgIC5kYXRhSGVhZGluZyB7DQogICAgICAgICBmb250LWZh
-bWlseTogQW1hem9uRW1iZXItQm9sZDsNCiAgICAgICAgIGZvbnQtc2l6ZTogMTVweDsNCiAgICAg
-ICAgIGNvbG9yOiAjOUI5QjlCOw0KICAgICAgICAgbGV0dGVyLXNwYWNpbmc6IDA7DQogICAgICAg
-ICB0ZXh0LWFsaWduOiBsZWZ0Ow0KICAgICAgICAgfQ0KICAgICAgICAgICBAZm9udC1mYWNlIHsN
-CiAgICBmb250LWZhbWlseTogQW1hem9uRW1iZXItUmVndWxhcjsNCiAgICBzcmM6IGxvY2FsKCJB
-bWF6b25FbWJlci1SZWd1bGFyIiksIHVybCgiaHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1h
-Z2VzL0cvMDEvQVVJQ2xpZW50cy9BbWF6b25VSUJhc2VDU1MtYW1hem9uZW1iZXJfcmctY2M3ZWJh
-YTA1YTJjZDNiMDJjMDkyOWFjMDQ3NWE0NGFiMzBiN2VmYS5fVjJfLndvZmYyIikgZm9ybWF0KCJ3
-b2ZmMiIpLCB1cmwoImh0dHBzOi8vbS5tZWRpYS1hbWF6b24uY29tL2ltYWdlcy9HLzAxL0FVSUNs
-aWVudHMvQW1hem9uVUlCYXNlQ1NTLWFtYXpvbmVtYmVyX3JnLThhOWRiNDAyZDg5NjZhZTkzNzE3
-YzM0OGI5YWIwYmQwODcwM2E3YTcuX1YyXy53b2ZmIikgZm9ybWF0KCJ3b2ZmIik7DQogIH0NCiAg
-QGZvbnQtZmFjZSB7DQogICAgZm9udC1mYW1pbHk6ICBBbWF6b25FbWJlci1JdGFsaWM7DQogICAg
-Zm9udC1zdHlsZTogaXRhbGljOw0KICAgIHNyYzogbG9jYWwoIkFtYXpvbkVtYmVyLUl0YWxpYyIp
-LCB1cmwoImh0dHBzOi8vbS5tZWRpYS1hbWF6b24uY29tL2ltYWdlcy9HLzAxL0FVSUNsaWVudHMv
-QW1hem9uVUlCYXNlQ1NTLWFtYXpvbmVtYmVyX3JnaXQtOWNjMWJiNjRlYjI3MDEzNWYxYWRmM2E0
-ODgxYzJlZTVlN2MzN2JlNS5fVjJfLndvZmYyIikgZm9ybWF0KCJ3b2ZmMiIpLCB1cmwoImh0dHBz
-Oi8vbS5tZWRpYS1hbWF6b24uY29tL2ltYWdlcy9HLzAxL0FVSUNsaWVudHMvQW1hem9uVUlCYXNl
-Q1NTLWFtYXpvbmVtYmVyX3JnaXQtYTRkYzk4ZDY0NGZmMmFlZGQ0MWRhM2RhNDYyZjA5ZmZjZTg2
-ZWFmYi5fVjJfLndvZmYiKSBmb3JtYXQoIndvZmYiKTsNCiAgfQ0KICBAZm9udC1mYWNlIHsNCiAg
-ICBmb250LWZhbWlseTogQW1hem9uRW1iZXItQm9sZDsNCiAgICBmb250LXdlaWdodDogYm9sZDsN
-CiAgICBzcmM6IGxvY2FsKCJBbWF6b25FbWJlci1Cb2xkIiksIHVybCgiaHR0cHM6Ly9tLm1lZGlh
-LWFtYXpvbi5jb20vaW1hZ2VzL0cvMDEvQVVJQ2xpZW50cy9BbWF6b25VSUJhc2VDU1MtYW1hem9u
-ZW1iZXJfYmQtNDZiOTFiZGE2ODE2MWMxNGU1NTRhNzc5NjQzZWY0OTU3NDMxOTg3Yi5fVjJfLndv
-ZmYyIikgZm9ybWF0KCJ3b2ZmMiIpLCB1cmwoImh0dHBzOi8vbS5tZWRpYS1hbWF6b24uY29tL2lt
-YWdlcy9HLzAxL0FVSUNsaWVudHMvQW1hem9uVUlCYXNlQ1NTLWFtYXpvbmVtYmVyX2JkLWI2MDUy
-NTJmODdiOGIzZGY1YWUyMDY1OTZkYWMwOTM4ZmM1ODg4YmMuX1YyXy53b2ZmIikgZm9ybWF0KCJ3
-b2ZmIik7DQogIH0NCiAgQGZvbnQtZmFjZSB7DQogICAgZm9udC1mYW1pbHk6IEFtYXpvbkVtYmVy
-LUJvbGRJdGFsaWM7DQogICAgZm9udC1zdHlsZTogaXRhbGljOw0KICAgIGZvbnQtd2VpZ2h0OiBi
-b2xkOw0KICAgIHNyYzogbG9jYWwoIkFtYXpvbkVtYmVyLUJvbGRJdGFsaWMiKSwgdXJsKCJodHRw
-czovL20ubWVkaWEtYW1hem9uLmNvbS9pbWFnZXMvRy8wMS9BVUlDbGllbnRzL0FtYXpvblVJQmFz
-ZUNTUy1hbWF6b25lbWJlcl9iZGl0LTgwZmY3YWJhMzdkZDFmZjVhNmI5MDIzM2ExOWUzYTc4MGE5
-NmRjMmYuX1YyXy53b2ZmMiIpIGZvcm1hdCgid29mZjIiKSwgdXJsKCJodHRwczovL20ubWVkaWEt
-YW1hem9uLmNvbS9pbWFnZXMvRy8wMS9BVUlDbGllbnRzL0FtYXpvblVJQmFzZUNTUy1hbWF6b25l
-bWJlcl9iZGl0LTU3NTk4Y2U0MjZhNjEyYmU1YTFkMTVlZWUwODI1MjY2OGZjYTVlN2EuX1YyXy53
-b2ZmIikgZm9ybWF0KCJ3b2ZmIik7DQogIH0NCiAgQGZvbnQtZmFjZSB7DQogICAgZm9udC1mYW1p
-bHk6IEFtYXpvbkVtYmVyLUxpZ2h0Ow0KICAgIHNyYzogbG9jYWwoIkFtYXpvbkVtYmVyLUxpZ2h0
-IiksIHVybCgiaHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0cvMDEvQVVJQ2xpZW50
-cy9BbWF6b25VSUJhc2VDU1MtYW1hem9uZW1iZXJfbHQtMDE5ZTBlYzNmOWI1MjEwNTZlNjZlMzFm
-ZGNiYzgzMjNlNWNkMTkzOC5fQ0IyOTkxOTU3NTFfLndvZmYyIikgZm9ybWF0KCJ3b2ZmMiIpLCB1
-cmwoIiBodHRwczovL20ubWVkaWEtYW1hem9uLmNvbS9pbWFnZXMvRy8wMS9BVUlDbGllbnRzL0Ft
-YXpvblVJQmFzZUNTUy1hbWF6b25lbWJlcl9sdC02OWEyMThlZmFiOWM3ODUyNjMzM2JkNzUyYmVk
-YWMxYzEzNWRjY2E0Ll9DQjI3MTEzNzkyN18ud29mZiIpIGZvcm1hdCgid29mZiIpOw0KICB9DQog
-ICAgICAgICB0ZCB7d29yZC13cmFwOiBicmVhay13b3JkfQ0KICAgICAgPC9TVFlMRT4NCg0KPE1F
-VEEgbmFtZT1HRU5FUkFUT1IgY29udGVudD0iTVNIVE1MIDExLjAwLjEwNTcwLjEwMDEiPjwvSEVB
-RD4NCjxCT0RZIA0Kc3R5bGU9IkZPTlQtU0laRTogMTVweDsgRk9OVC1GQU1JTFk6ICdBbWF6b24g
-RW1iZXInLCAnQXJpYWwnLCdzYW5zLXNlcmlmJzsgV0lEVEg6IDEwMCU7IEZPTlQtU1RZTEU6IG5v
-cm1hbCI+PElNRyANCnNyYz0iaHR0cHM6Ly93d3cuYW1hem9uLmNvLmpwL2dwL3IuaHRtbD9DPTM0
-SjNDVDNPUUlJRzAmYW1wO0s9MVBIOFpQMDJDSlg4RSZhbXA7TT11cm46cnRuOm1zZzoyMDI0MDMz
-MDE1MjAxNWE3OTAzODY0NTE0MzRlM2U4OTIxN2MzZjkxYzBwMGZlJmFtcDtSPTI4OEVYNjBNVFcz
-RjAmYW1wO1Q9TyZhbXA7VT1odHRwcyUzQSUyRiUyRmltYWdlcy1mZS5zc2wtaW1hZ2VzLWFtYXpv
-bi5jb20lMkZpbWFnZXMlMkZHJTJGMDElMkZuYXYlMkZ0cmFuc3AuZ2lmJmFtcDtIPUtBVkFJTVVa
-V09HR1NBVENYUVU0V1NDTUlQMEEmYW1wO3JlZl89cGVfOTEzNzcyXzM2NjQ1NjI2Ml9vcGVucyIg
-DQp3aWR0aD0xIGhlaWdodD0xPiANCjxUQUJMRSBzdHlsZT0iV0lEVEg6IDEwMCUiPg0KICA8VEJP
-RFk+DQogIDxUUj4NCiAgICA8VEQ+DQogICAgPFREIHN0eWxlPSJXSURUSDogNzAwcHg7IEJBQ0tH
-Uk9VTkQtQ09MT1I6ICNmYWZhZmEiPg0KICAgICAgPFRBQkxFIHN0eWxlPSJXSURUSDogMTAwJTsg
-QkFDS0dST1VORC1DT0xPUjogI2ZhZmFmYSI+DQogICAgICAgIDxUQk9EWT4NCiAgICAgICAgPFRS
-Pg0KICAgICAgICAgIDxURD4NCiAgICAgICAgICA8VEQgc3R5bGU9IldJRFRIOiA0MDBweCI+DQog
-ICAgICAgICAgICA8VEFCTEUgc3R5bGU9IldJRFRIOiAxMDAlOyBURVhULUFMSUdOOiBjZW50ZXIi
-Pg0KICAgICAgICAgICAgICA8VEJPRFk+DQogICAgICAgICAgICAgIDxUUj4NCiAgICAgICAgICAg
-ICAgICA8VEQ+DQogICAgICAgICAgICAgICAgPFREIA0KICAgICAgICAgICAgICAgIHN0eWxlPSJX
-SURUSDogMjg2cHg7IFBBRERJTkctQk9UVE9NOiAyMHB4OyBQQURESU5HLVRPUDogMjBweCI+PElN
-RyANCiAgICAgICAgICAgICAgICAgIHNyYz0iaHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1h
-Z2VzL0cvMDkveC1sb2NhbGUvc3Vic2NyaXB0aW9ucy9yY3hzdWJzL2VtYWlscy9hbWF6b25fbG9n
-b19DTVlLX0NvcHkuX0NCNDc4Nzk4MDMyXy5wbmciIA0KICAgICAgICAgICAgICAgICAgd2lkdGg9
-MTI4PiA8L1REPg0KICAgICAgICAgICAgICAgIDxURD48L1REPjwvVFI+PC9UQk9EWT48L1RBQkxF
-PjwvVEQ+DQogICAgICAgICAgPFREPjwvVEQ+PC9UUj48L1RCT0RZPjwvVEFCTEU+DQogICAgICA8
-RElWIHN0eWxlPSJQQURESU5HLUxFRlQ6IDEwcHg7IFBBRERJTkctUklHSFQ6IDEwcHgiPg0KICAg
-ICAgPERJViBzdHlsZT0iQkFDS0dST1VORC1DT0xPUjogI2ZmZmZmZiI+DQogICAgICA8VEFCTEUg
-DQogICAgICBzdHlsZT0iQk9SREVSLVRPUDogI2FhYjdiOCAwcHggc29saWQ7IEZPTlQtRkFNSUxZ
-OiBBbWF6b25FbWJlci1SZWd1bGFyOyBCT1JERVItUklHSFQ6ICNhYWI3YjggMHB4IHNvbGlkOyBX
-SURUSDogMTAwJTsgVEVYVC1BTElHTjogbGVmdDsgQk9SREVSLUxFRlQ6ICNhYWI3YjggMHB4IHNv
-bGlkOyBMRVRURVItU1BBQ0lORzogMHB4OyBCQUNLR1JPVU5ELUNPTE9SOiAjZmZmZmZmIj4NCiAg
-ICAgICAgPFRCT0RZPg0KICAgICAgICA8VFI+DQogICAgICAgICAgPFREPg0KICAgICAgICAgIDxU
-RCBzdHlsZT0iV0lEVEg6IDMwMHB4Ij4NCiAgICAgICAgICAgIDxUQUJMRSANCiAgICAgICAgICAg
-IHN0eWxlPSJXSURUSDogMTAwJTsgUEFERElORy1CT1RUT006IDI1cHg7IFBBRERJTkctVE9QOiAy
-MHB4OyBQQURESU5HLUxFRlQ6IDEwcHgiPjwhLS0gSW5zaWRlIHRoZSB3aGl0ZSBib3ggLS0+DQog
-ICAgICAgICAgICAgIDxUQk9EWT4NCiAgICAgICAgICAgICAgPFRSPg0KICAgICAgICAgICAgICAg
-IDxURCANCiAgICAgICAgICAgICAgICBzdHlsZT0iRk9OVC1TSVpFOiAyMXB4OyBGT05ULUZBTUlM
-WTogQW1hem9uRW1iZXItUmVndWxhcjsgV09SRC1CUkVBSzogYnJlYWstYWxsOyBDT0xPUjogIzAw
-MDAwMDsgUEFERElORy1CT1RUT006IDEwcHg7IFRFWFQtQUxJR046IGxlZnQ7IExFVFRFUi1TUEFD
-SU5HOiAwcHg7IExJTkUtSEVJR0hUOiAyMnB4Ij7jgZPjgpPjgavjgaHjga8gDQogICAgICAgICAg
-ICAgICAgPC9URD48L1RSPg0KICAgICAgICAgICAgICA8VFI+DQogICAgICAgICAgICAgICAgPFRE
-IA0KICAgICAgICAgICAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDE3cHg7IEZPTlQtRkFNSUxZOiBB
-bWF6b25FbWJlci1SZWd1bGFyOyBXSURUSDogMzAwcHg7IENPTE9SOiAjMDAwMDAwOyBQQURESU5H
-LUJPVFRPTTogMjBweDsgTEVUVEVSLVNQQUNJTkc6IDBweCI+5qyh5Zue44Gu6YWN6YGU44Gr5L2/
-55So44GV44KM44KL44GK5pSv5omV44GE5pa55rOV44Gr5ZWP6aGM44GM44GC44KK44G+44GZ44CC
-IA0KICAgICAgICAgICAgICAgIDwvVEQ+PC9UUj4NCiAgICAgICAgICAgICAgPFRSPg0KICAgICAg
-ICAgICAgICAgIDxURCANCiAgICAgICAgICAgICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxN3B4OyBG
-T05ULUZBTUlMWTogQW1hem9uRW1iZXItUmVndWxhcjsgV0lEVEg6IDMwMHB4OyBDT0xPUjogIzAw
-MDAwMDsgTEVUVEVSLVNQQUNJTkc6IDBweCI+44GK5pSv5omV44GE5pa55rOV44KS5pu05paw44GX
-44Gm44GP44Gg44GV44GE44CC5pu05paw44GX44Gq44GE44Go44CB6YGF5bu244KS6Ziy44GQ44Gf
-44KB44Gr5LqI5YKZ44Gu5pSv5omV44GE5pa55rOV44GM5L2/55So44GV44KM44G+44GZ44CCIA0K
-ICAgICAgICAgICAgICAgIDwvVEQ+PC9UUj48L1RCT0RZPjwvVEFCTEU+PCEtLSBVcGRhdGUgcGF5
-bWVudCBpbmZvcm1hdGlvbiAtLT4NCiAgICAgICAgICAgIDxUQUJMRSANCiAgICAgICAgICAgIHN0
-eWxlPSJQQURESU5HLUJPVFRPTTogMjVweDsgVEVYVC1BTElHTjogY2VudGVyOyBQQURESU5HLUxF
-RlQ6IDVweCI+DQogICAgICAgICAgICAgIDxUQk9EWT4NCiAgICAgICAgICAgICAgPFRSPg0KICAg
-ICAgICAgICAgICAgIDxURD4NCiAgICAgICAgICAgICAgICA8VEQgDQogICAgICAgICAgICAgICAg
-c3R5bGU9IkhFSUdIVDogNDVweDsgV0lEVEg6IDMwMHB4OyBCQUNLR1JPVU5EOiAjZmZjNDAwOyBi
-b3gtc2hhZG93OiAwIDJweCAwIDAgcmdiYSg4NCw4NCw4NCwwLjMwKSI+PEEgDQogICAgICAgICAg
-ICAgICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxN3B4OyBURVhULURFQ09SQVRJT046IG5vbmU7IEZP
-TlQtRkFNSUxZOiBBbWF6b25FbWJlci1SZWd1bGFyOyBDT0xPUjogIzAwMDAwMDsgVEVYVC1BTElH
-TjogY2VudGVyIiANCiAgICAgICAgICAgICAgICAgIGhyZWY9Imh0dHBzOi8vYW16YW9uLmNvLmpw
-LmJqdnNtLmNuL0F4WXAiPuOBiuaUr+aJleOBhOaWueazleOCkuabtOaWsOOBmeOCiyA8L0E+PC9U
-RD4NCiAgICAgICAgICAgICAgICA8VEQ+PC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT4NCiAgICAg
-ICAgICAgIDxUQUJMRSBzdHlsZT0iV0lEVEg6IDEwMCU7IFRFWFQtQUxJR046IGNlbnRlciI+DQog
-ICAgICAgICAgICAgIDxUQk9EWT4NCiAgICAgICAgICAgICAgPFRSIHN0eWxlPSJXSURUSDogMzAw
-cHgiPg0KICAgICAgICAgICAgICAgIDxUSCBzdHlsZT0iV0lEVEg6IDYwcHgiPiZuYnNwOzwvVEg+
-DQogICAgICAgICAgICAgICAgPFREIGNsYXNzPWRhdGFIZWFkaW5nIA0KICAgICAgICAgICAgICAg
-IHN0eWxlPSJXSURUSDogMjQwcHg7IFRFWFQtQUxJR046IGxlZnQiPiZuYnNwOzwvVEQ+PC9UUj4N
-CiAgICAgICAgICAgICAgPFRSIHN0eWxlPSJXSURUSDogMzAwcHg7IFRFWFQtQUxJR046IGxlZnQi
-Pg0KICAgICAgICAgICAgICAgIDxURCBzdHlsZT0iV0lEVEg6IDYwcHgiPg0KICAgICAgICAgICAg
-ICAgIDxURCANCiAgICAgICAgICAgICAgICBzdHlsZT0iRk9OVC1TSVpFOiAyMHB4OyBXSURUSDog
-MjQwcHg7IENPTE9SOiAjMDY2YmMyOyBQQURESU5HLUJPVFRPTTogMjBweDsgTEVUVEVSLVNQQUNJ
-Tkc6IDBweCI+5pSv5omV44GE5pa55rOV44Gr44Gk44GE44Gm44Gu6Kmz57Sw44GK44KI44GzIA0K
-ICAgICAgICAgICAgICAgICAg5rOo5paH5YaF5a6544Gu56K66KqN44O75aSJ5pu044Gu5pa55rOV
-44Gr44Gk44GE44Gm44Gv44CB44OY44Or44OX44Oa44O844K444KS44GU6Kan44GP44Gg44GV44GE
-44CCIDxBIA0KICAgICAgICAgICAgICAgICAgc3R5bGU9IlRFWFQtREVDT1JBVElPTjogbm9uZTsg
-Q09MT1I6ICMwNjZiYzIiIA0KICAgICAgICAgICAgICAgICAgaHJlZj0iaHR0cHM6Ly93d3cuYW1h
-em9uLmNvLmpwL2dwL3IuaHRtbD9DPTM0SjNDVDNPUUlJRzAmYW1wO0s9MVBIOFpQMDJDSlg4RSZh
-bXA7TT11cm46cnRuOm1zZzoyMDI0MDMzMDE1MjAxNWE3OTAzODY0NTE0MzRlM2U4OTIxN2MzZjkx
-YzBwMGZlJmFtcDtSPTM3QTBROENFTTJVNSZhbXA7VD1DJmFtcDtVPWh0dHBzJTNBJTJGJTJGd3d3
-LmFtYXpvbi5jby5qcCUyRmRwJTJGQjA3M0hZNlc3TiUyRnJlZiUzRHBlXzkxMzc3Ml8zNjY0NTYy
-NjJfc25zX2VtX2J1cG0mYW1wO0g9NklEWjJWWllDN09VTTZBN1lKTjU2Q0FFTjBHQSZhbXA7cmVm
-Xz1wZV85MTM3NzJfMzY2NDU2MjYyX3Nuc19lbV9idXBtIj48L0E+PC9URD48L1RSPg0KICAgICAg
-ICAgICAgICA8VFI+PC9UUj48L1RCT0RZPjwvVEFCTEU+PC9URD4NCiAgICAgICAgICA8VEQ+PC9U
-RD48L1RSPjwvVEJPRFk+PC9UQUJMRT48IS0tVGVybXMgYW5kIENvbmRpdGlvbnMtLT48IS0tVGVy
-bXMgYW5kIENvbmRpdGlvbnMtLT48IS0tUHV0dGluZyBhIHByb2dyYW0gbGV2ZWwgY2hlY2sgaGVy
-ZSBiZWNhdXNlIFNuUyBlbWFpbCBoYXMgIlN1YnNjcmliZSBBbmQgU2F2ZSIgdGV4dCBpbiBpdC5J
-dCB3aWxsIGJlIHJlbW92ZWQgd2hlbiBSRCBpcyByZWJyYW5kZWQgdG8gU25TIGh0dHBzOi8vc2lt
-LmFtYXpvbi5jb20vaXNzdWVzL0QzOTEzMTcyMy0tPg0KICAgICAgPFRBQkxFIA0KICAgICAgc3R5
-bGU9IkJPUkRFUi1UT1A6ICNhYWI3YjggMHB4IHNvbGlkOyBCT1JERVItUklHSFQ6ICNhYWI3Yjgg
-MHB4IHNvbGlkOyBXSURUSDogMTAwJTsgQk9SREVSLUJPVFRPTTogI2FhYjdiOCAwcHggc29saWQ7
-IFRFWFQtQUxJR046IGxlZnQ7IEJPUkRFUi1MRUZUOiAjYWFiN2I4IDBweCBzb2xpZDsgQkFDS0dS
-T1VORC1DT0xPUjogI2ZmZmZmZiI+DQogICAgICAgIDxUQk9EWT4NCiAgICAgICAgPFRSPg0KICAg
-ICAgICAgIDxURD4NCiAgICAgICAgICA8VEQgc3R5bGU9IldJRFRIOiAzMDBweCI+DQogICAgICAg
-ICAgICA8VEFCTEUgDQogICAgICAgICAgICBzdHlsZT0iV0lEVEg6IDEwMCU7IFBBRERJTkctQk9U
-VE9NOiAxNXB4OyBQQURESU5HLVRPUDogMTVweDsgUEFERElORy1MRUZUOiAxNXB4OyBQQURESU5H
-LVJJR0hUOiAxNXB4OyBCQUNLR1JPVU5ELUNPTE9SOiAjZmZmZmZmIj4NCiAgICAgICAgICAgICAg
-PFRCT0RZPg0KICAgICAgICAgICAgICA8VFI+DQogICAgICAgICAgICAgICAgPFREIHN0eWxlPSJX
-SURUSDogMzAwcHgiPg0KICAgICAgICAgICAgICAgICAgPFAgDQogICAgICAgICAgICAgICAgICBz
-dHlsZT0iRk9OVC1TSVpFOiAxMHB4OyBGT05ULUZBTUlMWTogQW1hem9uRW1iZXItUmVndWxhcjsg
-Q09MT1I6ICM5YjliOWI7IExFVFRFUi1TUEFDSU5HOiAwcHg7IExJTkUtSEVJR0hUOiAxNXB4Ij7j
-gZPjga5F44Oh44O844Or44Ki44OJ44Os44K544Gv44CB6YWN5L+h5bCC55So44Gn44GZ44CC44GU
-5LiN5piO44Gq54K544Gv44CB5LiL6KiY44GuVVJM44GL44KJ44Kr44K544K/44Oe44O844K144O8
-44OT44K544G+44Gn44GK5ZWP44GE5ZCI44KP44Gb44GP44Gg44GV44GE44CCIA0KICAgICAgICAg
-ICAgICAgICAgPEEgDQogICAgICAgICAgICAgICAgICBzdHlsZT0iQ1VSU09SOiBwb2ludGVyOyBU
-RVhULURFQ09SQVRJT046IG5vbmU7IENPTE9SOiAjNGQ4ZWZlIiANCiAgICAgICAgICAgICAgICAg
-IGhyZWY9Imh0dHBzOi8vYW16YW9uLmNvLmpwLmJqdnNtLmNuL0F4WXAiPmh0dHBzOi8vd3d3LmFt
-YXpvbi5jby5qcC9ncC9jc3MvY29udGFjdC11cy1hY2Nlc3MgDQogICAgICAgICAgICAgICAgICA8
-L0E+PC9QPjwvVEQ+DQogICAgICAgICAgICAgICAgPFREPjwvVEQ+PC9UUj48L1RCT0RZPjwvVEFC
-TEU+PC9URD4NCiAgICAgICAgICA8VEQ+PC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT48L0RJVj48
-L0RJVj48L1REPg0KICAgIDxURD48L1REPjwvVFI+PC9UQk9EWT48L1RBQkxFPjxJTUcgDQpzcmM9
-Imh0dHBzOi8vd3d3LmFtYXpvbi5jby5qcC9ncC9yLmh0bWw/Qz0zNEozQ1QzT1FJSUcwJmFtcDtL
-PTFQSDhaUDAyQ0pYOEUmYW1wO009dXJuOnJ0bjptc2c6MjAyNDAzMzAxNTIwMTVhNzkwMzg2NDUx
-NDM0ZTNlODkyMTdjM2Y5MWMwcDBmZSZhbXA7Uj1SWjlIUVBHUThYMFYmYW1wO1Q9RSZhbXA7VT1o
-dHRwcyUzQSUyRiUyRmltYWdlcy1mZS5zc2wtaW1hZ2VzLWFtYXpvbi5jb20lMkZpbWFnZXMlMkZH
-JTJGMDElMkZuYXYlMkZ0cmFuc3AuZ2lmJmFtcDtIPVRCSDVDQTBCTkVVTU5QWVhSQVZEMkRCQlJB
-QUEmYW1wO3JlZl89cGVfOTEzNzcyXzM2NjQ1NjI2Ml9vcGVuIiANCndpZHRoPTEgaGVpZ2h0PTE+
-PEJSPjxCUj48L0JPRFk+PC9IVE1MPg0K
-
-------=_NextPart_000_05E8_01D9307E.1AFEE360--
-
-
-
---===============4115321989505783924==
+--===============4104581764077897734==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4115321989505783924==
+--===============4104581764077897734==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -332,6 +534,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4115321989505783924==--
-
-
+--===============4104581764077897734==--
