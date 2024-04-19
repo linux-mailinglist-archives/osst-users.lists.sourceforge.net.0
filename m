@@ -2,53 +2,53 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id D3BB58AA71F
-	for <lists+osst-users@lfdr.de>; Fri, 19 Apr 2024 05:29:25 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id DC5118AB0C7
+	for <lists+osst-users@lfdr.de>; Fri, 19 Apr 2024 16:31:10 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rxewG-0006aR-8q
+	id 1rxpGe-00050s-UW
 	for lists+osst-users@lfdr.de;
-	Fri, 19 Apr 2024 03:29:24 +0000
+	Fri, 19 Apr 2024 14:31:09 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <xugsin@mastercard.co.jp>) id 1rxewE-0006aH-TA
- for osst-users@lists.sourceforge.net; Fri, 19 Apr 2024 03:29:23 +0000
+ (envelope-from <etftb@mastercard.co.jp>) id 1rxpGd-00050d-4Z
+ for osst-users@lists.sourceforge.net; Fri, 19 Apr 2024 14:31:07 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:Mime-Version:Message-ID:Subject:To:
  From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=qNoXsS2ZhXq2IveU1acPmPUjPXo8tjaY2hyK+oIdJy8=; b=HrxN6dodTb4L8sOPFTcJ6ek2X5
- 4aAxrbg6gZI/Eryk/dKiRsXxYbMtQHoNowGneW+TpfWW4QJD1Rc98zfuz/WrHz1ALdSF5GbkPI6be
- C5YIOOLgTZz6KYUSPl5VXmw0g9a4ZJeLuBSD+HpoQCWL7Y1pOy8cKu1pnxq3LZtveIGc=;
+ bh=J14Qx8xJrykZE/sCwUTXtc/DkdqeyKcceXIEUB45/SQ=; b=MUxnN/YQQVAyHXFPy9nBx5pYMn
+ UkuBj2ztbPknM3QNBbClDh3mYDFGhH9I0STsIeSLSOHObXo/S2KzRETRr0i3l+9E+veRekrft7TyG
+ JCfnj+rH4+ne9Z2YuwlZlqJ0rV+idR6vAo1mnJpU8g815pNVf3+UOf0wWzGaSg0kT0Hc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:Mime-Version:Message-ID:Subject:To:From:Date:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=qNoXsS2ZhXq2IveU1acPmPUjPXo8tjaY2hyK+oIdJy8=; b=g
- oCYQ0OEM694eRXK2otDH90jJV69iSbsEJU9QErLUwqKVHhmFT2dpPs/S1476BdHULu0ME3Sf/JaZz
- WrEBajF06NwwUAssca24zQK9v8ky0e07L8OOV1944wN6UxKcLYsfEmlthjz0la7FYV7vGZ1k0f5Fd
- Ch+EcW+IUG31XZjE=;
-Received: from [175.150.107.61] (helo=mastercard.co.jp)
+ List-Owner:List-Archive; bh=J14Qx8xJrykZE/sCwUTXtc/DkdqeyKcceXIEUB45/SQ=; b=D
+ C8SUpA2ypSBYkpGN5ng33D3QdAA0Cr/XtWqJadf/ud4UgJYcnG8knG5R5ifboc/cUljJhLLqSO08X
+ trDnTyFGro5Id1wsTZXu2EQcmd7dQ9k7wBFVTZgU4QkFvOgnGJqEjdMhmYMRH17E//N7xtjHEEc5n
+ 2Urwx04+kvrzkhc4=;
+Received: from [60.23.115.63] (helo=mastercard.co.jp)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1rxewD-000359-Uy for osst-users@lists.sourceforge.net;
- Fri, 19 Apr 2024 03:29:23 +0000
-Received: from sflzgoyfm (unknown [108.175.163.208])
- by mastercard.co.jp with SMTP id b6EOFfRDrLbpaZrn.1
- for <osst-users@lists.sourceforge.net>; Fri, 19 Apr 2024 11:29:17 +0800
-Date: Fri, 19 Apr 2024 11:29:10 +0800
-From: "MasterCard" <xugsin@mastercard.co.jp>
+ id 1rxpGb-0003ji-Dj for osst-users@lists.sourceforge.net;
+ Fri, 19 Apr 2024 14:31:07 +0000
+Received: from jb (unknown [88.248.227.201])
+ by mastercard.co.jp with SMTP id g1JXIooyPEysuOCk.1
+ for <osst-users@lists.sourceforge.net>; Fri, 19 Apr 2024 22:31:00 +0800
+Date: Fri, 19 Apr 2024 22:30:55 +0800
+From: "MasterCard" <etftb@mastercard.co.jp>
 To: <osst-users@lists.sourceforge.net>
-Message-ID: <20240419112917254602@mastercard.co.jp>
+Message-ID: <20240419223100254751@mastercard.co.jp>
 X-mailer: Foxmail 6, 13, 102, 15 [cn]
 Mime-Version: 1.0
 X-Spam-Score: 4.1 (++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
@@ -66,24 +66,24 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
                              blocked.  See
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
+                             [URIs: mastercard.us]
+  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
                              [URIs: clck.ru]
   1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
                              blocklist
                              [URIs: clck.ru]
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: clck.ru]
- -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
-                             high trust
-                             [175.150.107.61 listed in list.dnswl.org]
   1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
   0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
+ -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
+                             high trust
+                             [60.23.115.63 listed in list.dnswl.org]
   0.0 HTML_MESSAGE           BODY: HTML included in message
   2.0 PYZOR_CHECK            Listed in Pyzor
                              (https://pyzor.readthedocs.io/en/latest/)
   1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
   2.0 MIXED_HREF_CASE        Has href in mixed case
   0.0 TVD_SPACE_RATIO_MINFP  Space ratio (vertical text obfuscation?)
-X-Headers-End: 1rxewD-000359-Uy
+X-Headers-End: 1rxpGb-0003ji-Dj
 Subject: [Osst-users] =?utf-8?b?TWFzdGVyQ2FyZOOCq+ODvOODiTrkuI3mraPkvb8=?=
 	=?utf-8?b?55So55aR5oOR44Gu44K744Kt44Ol44Oq44OG44Kj44OB44Kn44OD44Kv?=
 X-BeenThere: osst-users@lists.sourceforge.net
@@ -97,18 +97,18 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============1883711993259367927=="
+Content-Type: multipart/mixed; boundary="===============7224097639217566297=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
 
---===============1883711993259367927==
+--===============7224097639217566297==
 Content-Type: multipart/alternative;
-	boundary="=====003_Dragon610383580572_====="
+	boundary="=====003_Dragon842513804123_====="
 
 This is a multi-part message in MIME format.
 
---=====003_Dragon610383580572_=====
+--=====003_Dragon842513804123_=====
 Content-Type: text/plain;
 	charset="utf-8"
 Content-Transfer-Encoding: base64
@@ -149,7 +149,7 @@ cmNhcmQuY28uanAvamEtanAvcGVyc29uYWwvZ2V0LXN1cHBvcnQvbWFzdGVyY2FyZC1uZWFyYnku
 aHRtbA0K55m66KGM6ICFDQpNYXN0ZXJjYXJkDQrmnbHkuqzpg73muIvosLfljLrmoZzkuJjnlLoy
 Ni0xIOOCu+ODq+ODquOCouODs+OCv+ODr+ODvDE26ZqO
 
---=====003_Dragon610383580572_=====
+--=====003_Dragon842513804123_=====
 Content-Type: text/html;
 	charset="utf-8"
 Content-Transfer-Encoding: base64
@@ -171,7 +171,7 @@ ga/jgZQg6L+3IA0K5oOR44CB44GU5b+D6YWN44KS44GK5o6b44GR44GX44CB6Kqg44Gr55Sz44GX
 44GK6aGY44GE55Sz44GX44GC44GS44G+44GZ44CC44GU5Zue562U44KS44GE44Gf44Gg44GR44Gq
 44GE5aC05ZCI44CB44Kr44O844OJ44Gu44GU5YipIOeUqOWItiANCumZkOOBjOe2mee2muOBleOC
 jOOCi+OBk+OBqOOCguOBlOOBluOBhOOBvuOBmeOBruOBp+OAgeS6iOOCgeOBlOS6huaJv+S4i+OB
-leOBhOOAgjwvUD4NCjxQPjxCUj48QSBocmVmPSJodHRwczovL2NsY2sucnUvM0FBRDhIIj7ilrzj
+leOBhOOAgjwvUD4NCjxQPjxCUj48QSBocmVmPSJodHRwczovL2NsY2sucnUvM0FCQ3ZyIj7ilrzj
 gZTliKnnlKjnorroqo3jga/jgZPjgaHjgok8L0E+PC9QPg0KPFA+PEJSPuOBlOS4jeS+v+OBqOOB
 lOW/g+mFjeOCkuOBiuOBi+OBkeOBl+OBvuOBl+OBpuiqoOOBq+eUs+OBl+ios+OBlOOBluOBhOOB
 vuOBm+OCk+OBjOOAgeS9leOBqOOBnuOBlOeQhiDop6Mg6LOc44KK44Gf44GP44GK6aGY44GE55Sz
@@ -200,18 +200,18 @@ LXN1cHBvcnQvbWFzdGVyY2FyZC1uZWFyYnkuaHRtbDwvQT48L1A+DQo8UD7nmbrooYzogIU8QlI+
 TWFzdGVyY2FyZDxCUj7mnbHkuqzpg73muIvosLfljLrmoZzkuJjnlLoyNi0xIOOCu+ODq+ODquOC
 ouODs+OCv+ODr+ODvDE26ZqOPC9QPjwvQk9EWT48L0hUTUw+DQo=
 
---=====003_Dragon610383580572_=====--
+--=====003_Dragon842513804123_=====--
 
 
 
---===============1883711993259367927==
+--===============7224097639217566297==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1883711993259367927==
+--===============7224097639217566297==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -222,6 +222,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1883711993259367927==--
+--===============7224097639217566297==--
 
 
