@@ -2,97 +2,63 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id E5E0F8AB771
-	for <lists+osst-users@lfdr.de>; Sat, 20 Apr 2024 01:23:51 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 972458AB92F
+	for <lists+osst-users@lfdr.de>; Sat, 20 Apr 2024 05:16:26 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rxxa9-0007bR-Uk
+	id 1ry1DE-0003MR-IH
 	for lists+osst-users@lfdr.de;
-	Fri, 19 Apr 2024 23:23:50 +0000
+	Sat, 20 Apr 2024 03:16:24 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <bounce.L3079S11945M109@s1.arrobamail.com>)
- id 1rxxa4-0007bH-Vn for osst-users@lists.sourceforge.net;
- Fri, 19 Apr 2024 23:23:45 +0000
+ (envelope-from <mfkwfz@mastercard.co.jp>) id 1ry1DD-0003MK-C5
+ for osst-users@lists.sourceforge.net; Sat, 20 Apr 2024 03:16:23 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:List-ID:List-Unsubscribe:
- Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-Transfer-Encoding:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Help:
+ d=sourceforge.net; s=x; h=Content-Type:Mime-Version:Message-ID:Subject:To:
+ From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=q+NstMVfCLnjjz9Bu2Pgsknsalv9ll4Eb1e16gY9t3o=; b=TZIMOBtH5JlI2KhuQdMpFkPK+7
- swFYzMRWmoh5Gbrwc6jr3vlH3fanBNkdCZ8hmdktTVg30OZ7ZBIchzPQd1QQCGYALj1QpWhsm7yV9
- YAIxb7kxDLVpOve6+Z7rrmd67yXT67yQIxFacC3WMslD42eqJUok2iTFqf0j5YbuqVYQ=;
+ bh=FbRL8+pGPDrrwOx/CpICCEVlMX1xWseZFS9aUoXGSwQ=; b=layQ1eD2GRjUcjRZyxjb7/3A+p
+ 4LjBZ5BlIWyLSRRz19jSTVkaxMArmRBrAINUGNBYCSzHm6MQNEbGRSq45aFcKBoVNfdWo0LEohK26
+ PsnSZ2axxsoiL35YFe3euuNQRqpfqXa53K+VBcW/MCnCQPPq6XtIb8NgdrSoEYczpd10=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:List-ID:List-Unsubscribe:Message-ID:Subject:
- Reply-To:From:To:Date:Sender:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Help:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=q+NstMVfCLnjjz9Bu2Pgsknsalv9ll4Eb1e16gY9t3o=; b=K
- sgoy7kjahWUWOfbwfn9Tfn6UAkrU/55cpb6hNj3YlKBSn8kc0TmOohWEm/AK1tHC1b32Wu6kdvnJG
- s+iTMUrnsGTN6InSKqyVkKb7YIF/ZXAXiLDChsKKTsBGDFd25dcBtn/YsFDous68eSUuUzzY1A3G5
- 9RcFduiBBi05W+sk=;
-Received: from pf-28.fleetservers.net ([190.105.146.28])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1rxxa2-0005hG-56 for osst-users@lists.sourceforge.net;
- Fri, 19 Apr 2024 23:23:44 +0000
-Date: Fri, 19 Apr 2024 18:23:35 -0500
-To: osst-users@lists.sourceforge.net
-From: Mariann Rivas <mariann.rivas@consultores-rh.com>
-Message-ID: <9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs@s1.arrobamail.com>
-X-Mailer: FMMailer v3
-X-Data: ZXxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHw=
-X-Fid: eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC0xMDktMzA3OS0xMTk0NS0yNjktczEuYXJyb2JhbWFpbC5jb20=
-X-fmbh: b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7MTA5OzMwNzk7MTE5NDU7MjY5
-X-bhid: X-bhd: 109;3079;11945
-List-Unsubscribe-Post: List-Unsubscribe=One-Click
-X-AntiAbuse: abuse@outservices.net
-Precedence: bulk
-Feedback-ID: 109:3079s11945:124931:WPservicesESP
-X-Transport: AgdLcOmFm
-MIME-Version: 1.0
-DKIM-Signature: v=1; d=consultores-rh.com; s=fm;
- a=rsa-sha256; q=dns/txt; t=1713569015; c=relaxed/simple;
- h=Date:To:From:Reply-To:Subject:Message-ID:X-Mailer:X-Data:X-Fid:X-fmbh:List-Unsubscribe:X-AntiAbuse:Feedback-ID:List-ID:MIME-Version:Content-Type;
- z=Date:Fri,=2019=20Apr=202024=2018:23:35=20-0500
- |To:osst-users@lists.sourceforge.net
- |From:Mariann=20Rivas=20<mariann.rivas@consultores-rh.com>
- |Reply-To:Mariann=20Rivas=20<mariann.rivas@consultores-rh.com>
- |Subject:=3D?utf-8?Q?Plan_de_capacitaci=3DC3=3DB3n_anual?=3D
- |Message-ID:<9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs@s1.arrobamail.com>
- |X-Mailer:FMMailer=20v3
- |X-Data:ZXxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHw=3D
- |X-Fid:eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC0xMDktMzA3OS0xMTk
- 0NS0yNjktczEuYXJyb2JhbWFpbC5jb20=3D
- |X-fmbh:b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7MTA5OzMwNzk7MTE5NDU7Mj
- Y5
- |List-Unsubscribe:<https://s1.arrobamail.com/unsuscribe.php?FormData=3Dwwp
- tysrqipswqpseup> |X-AntiAbuse:abuse@outservices.net
- |Feedback-ID:109:3079s11945:124931:WPservicesESP
- |List-ID:<36948:215010> |MIME-Version:1.0
- |Content-Type:multipart/alternative=3B=20boundary=3D"b1_9PIt8XYE5G71x6XUPi
- b8YJZ4GhESpDuca02gNRrdUs";
- bh=q+NstMVfCLnjjz9Bu2Pgsknsalv9ll4Eb1e16gY9t3o=;
- b=mMQ1LXIWSEXWk/ytJ0ffE7kMIdBRfoNEnKcuM5LSwSjYlW6LXvW69tIS8BbUwYSWLnTxpEzTZ
- msPf+InGVkazq4ZrQ5YWanoqBC9n7171yVMfm4MPydyxXwMJZCnDrJAZtmFYV4qeAjmfd9FQl
- aLDKPwd8IOJ6fQZchOIvPimKU=
-X-Spam-Score: -0.8 (/)
+ h=Content-Type:Mime-Version:Message-ID:Subject:To:From:Date:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=FbRL8+pGPDrrwOx/CpICCEVlMX1xWseZFS9aUoXGSwQ=; b=j
+ wz9qz4bDcBsJljjFO4rfkZgpVn7u02oTceFRn4F/zF/s7QbPO0ZccoUxfSqUz2RL/JVDXwCc/O2bq
+ DDRQBt+IF5U/uTzmL0P3ebnYi/+nSVt/FE89CZ3VbHwNVh3Xty1LfteZvGO/we2n6i5odS2KhWivF
+ mYn25Veiie0I3rvs=;
+Received: from [175.165.161.55] (helo=mastercard.co.jp)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1ry1DB-0000tC-JL for osst-users@lists.sourceforge.net;
+ Sat, 20 Apr 2024 03:16:23 +0000
+Received: from otwmukckz (unknown [63.162.9.96])
+ by mastercard.co.jp with SMTP id Yl9w5hwYKFImkYyg.1
+ for <osst-users@lists.sourceforge.net>; Sat, 20 Apr 2024 11:16:15 +0800
+Date: Sat, 20 Apr 2024 11:16:03 +0800
+From: "MasterCard" <mfkwfz@mastercard.co.jp>
+To: <osst-users@lists.sourceforge.net>
+Message-ID: <20240420111615747575@mastercard.co.jp>
+X-mailer: Foxmail 6, 13, 102, 15 [cn]
+Mime-Version: 1.0
+X-Spam-Score: 6.4 (++++++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has NOT identified this incoming email as spam.  The original
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  Hola, &nbsp; Un estudio de LinkedIn indica que el 94% de los
-    empleados se inclinan a permanecer más&nbsp;tiempo en empresas que invierten
-    en su desarrollo profesional. Esto subraya la importancia de contar con un
+ Content preview:  【Mastercard】利用いただき、ありがとうございます。このたび、ご本人様のご利
+    用かどうかを確 認させていただきたいお取 引がありましたので、誠�
     [...] 
  
- Content analysis details:   (-0.8 points, 6.0 required)
+ Content analysis details:   (6.4 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
@@ -100,30 +66,34 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
                              blocked.  See
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
-                             [URIs: consultores-rh.com]
-  0.0 RCVD_IN_DNSWL_BLOCKED  RBL: ADMINISTRATOR NOTICE: The query to
-                             DNSWL was blocked.  See
-                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
-                              for more information.
-                             [190.105.146.28 listed in list.dnswl.org]
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+                             [URIs: mastercard.co.jp]
+  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
+                             blocklist
+                             [URIs: clck.ru]
+  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+                             [URIs: clck.ru]
+  0.0 HK_RANDOM_ENVFROM      Envelope sender username looks random
+  1.0 HK_RANDOM_FROM         From username looks random
+  1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+                             https://senderscore.org/blocklistlookup/
+                            [175.165.161.55 listed in bl.score.senderscore.com]
+  0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
+  1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
+ -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
+                             high trust
+                             [175.165.161.55 listed in list.dnswl.org]
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
-  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
-                             Colors in HTML
- -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
-                             manager
-X-Headers-End: 1rxxa2-0005hG-56
-Subject: [Osst-users] =?utf-8?q?Plan_de_capacitaci=C3=B3n_anual?=
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  2.0 MIXED_HREF_CASE        Has href in mixed case
+  0.0 TVD_SPACE_RATIO_MINFP  Space ratio (vertical text obfuscation?)
+X-Headers-End: 1ry1DB-0000tC-JL
+Subject: [Osst-users] =?utf-8?b?TWFzdGVyQ2FyZOOCq+ODvOODiTrkuI3mraPkvb8=?=
+	=?utf-8?b?55So55aR5oOR44Gu44K744Kt44Ol44Oq44OG44Kj44OB44Kn44OD44Kv?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
+Precedence: list
 List-Id: <osst-users.lists.sourceforge.net>
 List-Unsubscribe: <https://lists.sourceforge.net/lists/options/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=unsubscribe>
@@ -132,328 +102,121 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: Mariann Rivas <mariann.rivas@consultores-rh.com>
-Content-Type: multipart/mixed; boundary="===============9196169784163694859=="
+Content-Type: multipart/mixed; boundary="===============8455404203143743586=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
 
---===============9196169784163694859==
+--===============8455404203143743586==
 Content-Type: multipart/alternative;
- boundary="b1_9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs"
+	boundary="=====003_Dragon622360353367_====="
 
 This is a multi-part message in MIME format.
 
---b1_9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: quoted-printable
-
-=0A=0A=0A=09=0A=09=0A=0A=0AHola,=0A=0A&nbsp;=0A=0AUn estudio de LinkedIn in=
-dica que el 94% de los empleados se inclinan a permanecer m=C3=A1s&nbsp;tie=
-mpo en empresas que invierten en su desarrollo profesional. Esto subraya la=
- importancia de contar con una plataforma eficiente de capacitaci=C3=B3n, c=
-omo Human Learning, para retener talento y mejorar la competitividad.=0A=0A=
-&nbsp;=0A=0AHuman Learning ofrece capacitaci=C3=B3n&nbsp;online efectiva pa=
-ra 1 a 5,000 colaboradores simult=C3=A1neamente, con un cat=C3=A1logo&nbsp;=
-en expansi=C3=B3n&nbsp;de m=C3=A1s&nbsp;de 100 cursos en =C3=81reas&nbsp;co=
-mo recursos humanos, ventas, y desarrollo humano y gerencial. Adem=C3=A1s, =
-con Human Learning podr=C3=A1s elaborar un plan anual de capacitaci=C3=
-=B3n&nbsp;personalizado, alineado con las necesidades y objetivos espec=
-=C3=ADficos de tu empresa y empleados, asegurando un desarrollo profesional=
- constante y actualizado con las tendencias del mercado.=0A=0A&nbsp;=0A=0AB=
-eneficios de usar Human Learning:=0A=0A&nbsp;=0A=0A=0A=09Acceso flexible pa=
-ra todos: Permite que tus empleados se capaciten desde cualquier lugar y di=
-spositivo, facilitando la gesti=C3=B3n&nbsp;y seguimiento de su progreso de=
- forma eficiente y equitativa.=0A=09Monitoreo en tiempo real: Observa el av=
-ance de cada empleado con datos actualizados, lo que facilita ajustes preci=
-sos y oportunos para maximizar su desarrollo profesional.=0A=09Certificaci=
-=C3=B3n autom=C3=A1tica: Al completar los cursos, tus colaboradores recibir=
-=C3=A1n certificados que reconocen y celebran sus logros, motiv=C3=A1ndolos=
-&nbsp;hacia su crecimiento continuo=0A=0A=0A&nbsp;=0A=0APara descubrir como=
-&nbsp;Human Learning puede elevar el potencial de tu equipo, clic aqu=C3=
-=AD, o si lo que requieres es una demostraci=C3=B3n&nbsp;del sistema, da cl=
-ic aqu=C3=AD=C2=AD.=0A=0A&nbsp;=0A=0ASaludos=0A=0A=0A=09=0A=09=09=0A=09=09=
-=09=0A=09=09=09Mariann Rivas=0A=0A=09=09=09&nbsp;=0A=0A=09=09=09Ll=C3=A1man=
-os sin costo: 00 1 (880) 351 7924=0A=0A=09=09=09Ciudad de M=C3=A9xico: (55)=
- 5018 0565=0A=0A=09=09=09Colombia, Bogot=C3=A1: (571) 580 0351=0A=0A=09=09=
-=09Rep=C3=BAblica Dominicana: (829) 954 8077=0A=0A=09=09=09Guatemala: (502)=
- 2315 9835=0A=0A=09=09=09El Salvador: (503) 2113 9422=0A=0A=09=09=09Chile: =
-(56) 2258 35929=0A=0A=09=09=09WhatsApp: +52 33 1607 2089=0A=09=09=09=0A=09=
-=09=09=0A=09=09=09=0A=09=09=09=0A=09=09=0A=09=0A=0A=0A&nbsp;=0A=0A&nbsp;=0A=
-=0AClic aqu=C3=AD&nbsp;para darse de baja.=0A=0A&nbsp;=0A=0A=0A=0A=0APara r=
-emover su direcci&oacute;n de esta lista haga <a href=3D"https://s1.arrobam=
-ail.com/unsuscribe.php?id=3Dwwptysrqipswqpseup">click aqu&iacute;</a>
---b1_9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs
-Content-Type: multipart/related;
- boundary="b2_9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs";
- type="text/html"
-
---b2_9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: quoted-printable
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
-w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html data-lt-installed=3D"true">
-<head>
-=09<title></title>
-=09<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"=
-><meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
-</head>
-<body data-gramm=3D"false" data-lt-tmp-id=3D"lt-991772" style=3D"cursor: au=
-to;">
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif">Hola,</span></span></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif">&nbsp;</span></span></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif"><strong>Un estudio de LinkedIn indica que el 9=
-4% de los empleados se inclinan a permanecer m=C3=A1s&nbsp;tiempo en empres=
-as que invierten en su desarrollo profesional</strong>. Esto subraya la imp=
-ortancia de contar con una plataforma eficiente de capacitaci=C3=B3n, como =
-Human Learning, para retener talento y mejorar la competitividad.</span></s=
-pan></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif">&nbsp;</span></span></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif"><strong>Human Learning ofrece capacitaci=C3=
-=B3n&nbsp;online efectiva para 1 a 5,000 colaboradores simult=C3=A1neamente=
-</strong>, con un cat=C3=A1logo&nbsp;en expansi=C3=B3n&nbsp;de m=C3=A1s&nbs=
-p;de 100 cursos en =C3=81reas&nbsp;como recursos humanos, ventas, y desarro=
-llo humano y gerencial. Adem=C3=A1s, con <strong>Human Learning podr=C3=
-=A1s elaborar un plan anual de capacitaci=C3=B3n&nbsp;personalizado, alinea=
-do con las necesidades y objetivos espec=C3=ADficos de tu empresa y emplead=
-os</strong>, asegurando un desarrollo profesional constante y actualizado c=
-on las tendencias del mercado.</span></span></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif">&nbsp;</span></span></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif">Beneficios de usar Human Learning:</span></spa=
-n></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><font face=3D"Aria=
-l">&nbsp;</font></span></p>
-
-<ul style=3D"margin-top: 0cm;" type=3D"disc">
-=09<li style=3D"margin: 0cm; color: black; font-family: &quot;Calibri&quot;=
-,sans-serif; font-size: 12pt; font-style: normal; font-weight: normal; mso-=
-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style=3D"font-size:12p=
-x"><span style=3D"font-family:calibri,sans-serif"><strong>Acceso flexible p=
-ara todos</strong>: Permite que tus empleados se capaciten desde cualquier =
-lugar y dispositivo, facilitando la gesti=C3=B3n&nbsp;y seguimiento de su p=
-rogreso de forma eficiente y equitativa.</span></span></li>
-=09<li style=3D"margin: 0cm; color: black; font-family: &quot;Calibri&quot;=
-,sans-serif; font-size: 12pt; font-style: normal; font-weight: normal; mso-=
-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style=3D"font-size:12p=
-x"><span style=3D"font-family:calibri,sans-serif"><strong>Monitoreo en tiem=
-po real:</strong> Observa el avance de cada empleado con datos actualizados=
-, lo que facilita ajustes precisos y oportunos para maximizar su desarrollo=
- profesional.</span></span></li>
-=09<li style=3D"margin: 0cm; color: black; font-family: &quot;Calibri&quot;=
-,sans-serif; font-size: 12pt; font-style: normal; font-weight: normal; mso-=
-list: l0 level1 lfo1; tab-stops: list 36.0pt;"><span style=3D"font-size:12p=
-x"><span style=3D"font-family:calibri,sans-serif"><strong>Certificaci=C3=
-=B3n autom=C3=A1tica</strong>: Al completar los cursos, tus colaboradores r=
-ecibir=C3=A1n certificados que reconocen y celebran sus logros, motiv=C3=
-=A1ndolos&nbsp;hacia su crecimiento continuo</span></span></li>
-</ul>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif">&nbsp;</span></span></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif">Para descubrir como&nbsp;Human Learning puede =
-elevar el potencial de tu equipo, <a href=3D"mailto:contacto@psicosmart.pro=
-?subject=3DInformaci%C3%B3n%20sobre%20Human%20Learning&amp;body=3DMis%20dat=
-os%20son%20%0ANombre%3A%20%0AEmpresa%3A%20%0ATel%C3%A9fono%3A%20%0AComentar=
-ios%3A%20%0A%C2%A1Gracias!%20%0A">clic aqu=C3=AD</a>, o si lo que requieres=
- es una demostraci=C3=B3n&nbsp;del sistema, da <a href=3D"mailto:contacto@p=
-sicosmart.pro?subject=3DDemostraci%C3%B3n%20Human%20Learning&amp;body=3DMis=
-%20datos%20son%20%0ANombre%3A%20%0AEmpresa%3A%20%0ATel%C3%A9fono%3A%20%0ACo=
-mentarios%3A%20%0A%C2%A1Gracias!%20%0A">clic aqu=C3=AD=C2=AD.</a></span></s=
-pan></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif">&nbsp;</span></span></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span style=3D"fon=
-t-family:calibri,sans-serif">Saludos</span></span></p>
-
-<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-col=
-lapse:collapse; mso-padding-alt:0cm 0cm 0cm 0cm; mso-yfti-tbllook:1184">
-=09<tbody>
-=09=09<tr style=3D"mso-yfti-irow: 0; mso-yfti-firstrow: yes; mso-yfti-lastr=
-ow: yes;">
-=09=09=09<td style=3D"border-width: 1pt 0px 0px; border-style: solid none n=
-one; border-color: windowtext rgb(0, 0, 0) rgb(0, 0, 0); padding: 0cm 5.4pt=
-; border-image: none; width: 220.7pt; background-color: transparent;" valig=
-n=3D"top" width=3D"294">
-=09=09=09<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span sty=
-le=3D"font-family:calibri,sans-serif"><strong>Mariann Rivas</strong></span>=
-</span></p>
-
-=09=09=09<p style=3D"margin: 0cm;">&nbsp;</p>
-
-=09=09=09<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span lan=
-g=3D"ES-TRAD"><font face=3D"Calibri">Ll=C3=A1manos sin costo: 00 1 (880) 35=
-1 7924</font></span></span></p>
-
-=09=09=09<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span lan=
-g=3D"ES-TRAD"><font face=3D"Calibri">Ciudad de M=C3=A9xico: (55) 5018 0565<=
-/font></span></span></p>
-
-=09=09=09<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span lan=
-g=3D"ES-TRAD"><font face=3D"Calibri">Colombia, Bogot=C3=A1: (571) 580 0351<=
-/font></span></span></p>
-
-=09=09=09<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span lan=
-g=3D"ES-TRAD"><font face=3D"Calibri">Rep=C3=BAblica Dominicana: (829) 954 8=
-077</font></span></span></p>
-
-=09=09=09<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span lan=
-g=3D"ES-TRAD"><font face=3D"Calibri">Guatemala: (502) 2315 9835</font></spa=
-n></span></p>
-
-=09=09=09<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span lan=
-g=3D"ES-TRAD"><font face=3D"Calibri">El Salvador: (503) 2113 9422</font></s=
-pan></span></p>
-
-=09=09=09<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><span lan=
-g=3D"ES-TRAD"><font face=3D"Calibri">Chile: (56) 2258 35929</font></span></=
-span></p>
-
-=09=09=09<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><font fac=
-e=3D"Calibri"><strong><span lang=3D"ES-TRAD">WhatsApp</span></strong><span =
-lang=3D"ES-TRAD">: +52 33 1607 2089</span></font></span></p>
-=09=09=09</td>
-=09=09=09<td style=3D"border-width: 1pt 0px 0px; border-style: solid none n=
-one; border-color: windowtext rgb(0, 0, 0) rgb(0, 0, 0); padding: 0cm 5.4pt=
-; border-image: none; width: 220.7pt; background-color: transparent;" width=
-=3D"294">
-=09=09=09<p align=3D"center" style=3D"margin: 0cm; text-align: center;"><sp=
-an style=3D"font-size:12px"><img alt=3D"" border=3D"0" src=3D"cid:6389bbeff=
-03acacd7a2f731515ababd1@phpmailer.0" style=3D"height:0.841in; width:2.066in=
-" v:shapes=3D"Imagen_x0020_4" /></span></p>
-=09=09=09</td>
-=09=09</tr>
-=09</tbody>
-</table>
-
-<p style=3D"margin: 0cm;">&nbsp;</p>
-
-<p style=3D"margin: 0cm;">&nbsp;</p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><a href=3D"mailto:=
-training@humansmart.com.mx?subject=3DBaja.&amp;body=3DSolicito%20la%20baja%=
-20del%20bolet%C3%ADn%2C%20saludos.%20"><span style=3D"color:black"><span la=
-ng=3D"ES-TRAD"><font face=3D"Calibri">Clic aqu=C3=AD</font></span></span></=
-a><span lang=3D"ES-TRAD" style=3D"color:black; mso-ansi-language:ES-TRAD"><=
-font face=3D"Calibri"><a href=3D"mailto:training@humansmart.com.mx?subject=
-=3DBaja.&amp;body=3DSolicito%20la%20baja%20del%20bolet%C3%ADn%2C%20saludos.=
-%20">&nbsp;</a>para darse de baja.</font></span></span></p>
-
-<p style=3D"margin: 0cm;"><span style=3D"font-size:12px"><font face=3D"Cali=
-bri">&nbsp;</font></span></p>
-<div align=3D"center" style=3D"font: 13px Tahoma,Helvetica;color: #000000;p=
-adding: 4px;margin-top:15px;text-align: center;">Para remover su direcci&oa=
-cute;n de esta lista haga <a href=3D"https://s1.arrobamail.com/unsuscribe.p=
-hp?id=3Dwwptysrqipswqpseup">click aqu&iacute;</a></div><div align=3D"center=
-" style=3D"font: 12px Tahoma,Helvetica;color: #444444;padding: 4px;text-ali=
-gn: center;">Si considera que este email es correo no deseado, por favor re=
-p&oacute;rtelo <a href=3D"https://s1.arrobamail.com/unsuscribe.php?id=3Dwwp=
-tysrqipswqpseup">aqu&iacute;</a></div>
-<img src=3D"https://s1.arrobamail.com/class/open_track.php?dataType=3Dt3&si=
-d=3D1039264226AZD&lid=3D1027995540AZD&mid=3D1024220670AZD&uid=3D1024424030A=
-ZD&addr=3DBG8AdQUnWiNVf1F1AHdUZAIiU3oGFg45BmhXdFNzVXIHLQZzWGYKcgF0BTdWN1ZlA=
-D1Te1NkWWcDKgQ6AzJScg&xfid=3Dwwptysrqipswqpseup" style=3D"border:none !impo=
-rtant;height: 1px !important;width: 1px !important;margin: 0 !important;" w=
-idth=3D"1" height=3D"1" border=3D"0" alt=3D"" /></body>
-</html>
-
---b2_9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs
-Content-Type: image/png; name=embed0
+--=====003_Dragon622360353367_=====
+Content-Type: text/plain;
+	charset="utf-8"
 Content-Transfer-Encoding: base64
-Content-ID: <6389bbeff03acacd7a2f731515ababd1@phpmailer.0>
-Content-Disposition: inline; filename=embed0
 
-R0lGODlhxgBRAHcAMSH+GlNvZnR3YXJlOiBNaWNyb3NvZnQgT2ZmaWNlACH5BAEAAAAALAAAAADG
-AFEAhwAAAAAAAAAAMwAAZgAAmQAAzAAA/wAzAAAzMwAzZgAzmQAzzAAz/wBmAABmMwBmZgBmmQBm
-zABm/wCZAACZMwCZZgCZmQCZzACZ/wDMAADMMwDMZgDMmQDMzADM/wD/AAD/MwD/ZgD/mQD/zAD/
-/zMAADMAMzMAZjMAmTMAzDMA/zMzADMzMzMzZjMzmTMzzDMz/zNmADNmMzNmZjNmmTNmzDNm/zOZ
-ADOZMzOZZjOZmTOZzDOZ/zPMADPMMzPMZjPMmTPMzDPM/zP/ADP/MzP/ZjP/mTP/zDP//2YAAGYA
-M2YAZmYAmWYAzGYA/2YzAGYzM2YzZmYzmWYzzGYz/2ZmAGZmM2ZmZmZmmWZmzGZm/2aZAGaZM2aZ
-ZmaZmWaZzGaZ/2bMAGbMM2bMZmbMmWbMzGbM/2b/AGb/M2b/Zmb/mWb/zGb//5kAAJkAM5kAZpkA
-mZkAzJkA/5kzAJkzM5kzZpkzmZkzzJkz/5lmAJlmM5lmZplmmZlmzJlm/5mZAJmZM5mZZpmZmZmZ
-zJmZ/5nMAJnMM5nMZpnMmZnMzJnM/5n/AJn/M5n/Zpn/mZn/zJn//8wAAMwAM8wAZswAmcwAzMwA
-/8wzAMwzM8wzZswzmcwzzMwz/8xmAMxmM8xmZsxmmcxmzMxm/8yZAMyZM8yZZsyZmcyZzMyZ/8zM
-AMzMM8zMZszMmczMzMzM/8z/AMz/M8z/Zsz/mcz/zMz///8AAP8AM/8AZv8Amf8AzP8A//8zAP8z
-M/8zZv8zmf8zzP8z//9mAP9mM/9mZv9mmf9mzP9m//+ZAP+ZM/+ZZv+Zmf+ZzP+Z///MAP/MM//M
-Zv/Mmf/MzP/M////AP//M///Zv//mf//zP///wECAwECAwECAwECAwECAwECAwECAwECAwECAwEC
-AwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwEC
-AwECAwECAwECAwECAwECAwECAwECAwECAwECAwECAwj/ALEJHEiwoMGDCBMqXMiwocOHECNKnEix
-osWLGDNq3Mixo8ePIEOKHEmypMmTKFOqXMmypcuXMGMqbBXRFTabMnPqfNiK5kBXNLLQePiFBo1B
-O5MqLdhTUMFBNVxk8clwkIIaX5ZqTdpKkFOCrlwYJUrDBdKtaF92veK1YKKoUx0OcoE1rd2VXb0K
-oioQaI2hDoUevUvYpF69fLG9lZo4odW6hSN/zHt4b8GwYx0WNSu580bKlRMvjttwLmTPqCmCrmyw
-lVHADYsOTk2bZyu2lQVdaQyVsdyrWcG6SuSq8cBWrs4SpDXIFU5sg4p+GUSrIHPpX4ovRB4dyxcs
-2hES/1feKpF3GomM71yduzFm2Aw3Kx9o1MVzg19ccCaIpazNQa8FqByAr4nlG0KDZCFWfWXREJxB
-DQq0WYEObpXbhQeNRhNNNm2IDYcf5nfaQCKqh01/LihSUH5ZDPIYXTDWoEBzL0Zl44HL0XBjWQra
-CB99Y6F4Y1SZJXXhhe7pSAMWWAiVRZNBQfmkYLPxZ9R9T4k1HzaCKRhUccXlZxSBWYDZipgVPtVg
-mcg5R+WDJIollAtfINeTbFXKlBdulfH5lVt/9RjjoDf2COeHCpJ20BcyJvKUAj1u6UqidGFh0GM/
-ChTdlhLClRgWPmKJDaM4wnTkqQe91yCDrK4aFaevif86EIFb4nmopq9ZahBQRjkKUawr6rgfhGWZ
-iFJXLJyKoUGjNUfcs8NF+6yIt5aYEKj2ZakgQmEpKOuJWSjwrWN0bYmtolmOyNJtV7Sr7GHGuVZk
-fGMalEVU486V56hG3SqQvGUiJBunqQ7Xypy1iuWvhPW6xEe7V7Dg7mF+InZQb+gq9NihZ5a6oowq
-EvQYwQLRlSmJUYXcmnlF9XiVjuaCnFAiwLXELsQ4v/vnZQuSNSyQNOTbMIll+bqrUVmQu+9NExoY
-YFm19uoY1OvibPXEqGboqVx0VUuXiSiqrGm5CUl1cqcuGD0QjAp+NwgWb4tprn/kqmvY1Xgry62S
-Dwn/xml/QSckd7DoIQTwt7QWBDgNxgH486himZj4sYJI3K7lV7QAseV9eqWehr+pe7DHBAWlgNrQ
-XUUyNiYn5EVUajue8axk8yfjuDTbLdLNePeOJLc9a0a14lca/lrUae8dlNLz6bswNscTLvnwJemG
-ee95Uzzz1qV1fanCCMKIpWmrmy24jPORSvJiNcScbfi6f6Qb9vRj7bnx8y408KXAuqXkvrJB3XGQ
-Vp2LDQ06fDMILYTyqhVFbmpL+8jlNkfBCVowYvZzDPeqUjMIJcporTCN6VA3srL95XwpEtlfaqCr
-43wBUjBT3O1m1sGQ8K5+ONRLQt7jM4LpyyjeWdx0/w7Ir+SlCmnMI1y/vvCFOQ3xcbKZ3uM4giwM
-SkximrsiBrNoxcxhEDfbUwDjNHOVFqZLLFepFAJntCLVJSSN52OjDOkixqsooE6uEKMZoUcDcTnm
-Kl4IyfzYArFBGrKQiHQXxIw1iESsjlkuGpcrmgjEOgmEOYMQTSQRQgtHSrKR8UqQUJqEk05m8jKb
-NFwqS3KNg7TSIK8sSCzXtZMO1eaWuFSJFwaxy17y8pe+DCYwh7lLEzWlJ7lMJi2+E8QmfueZ3skC
-NJ8pzWZCaVytsFwytwmdaZ7Hm9KxZjhb9rybGYubkjlTM5koTnZO051BSdNBbobObYbQQeLMJzjj
-Wf+UhNxGYuesJ0H2ElCXMGedz3SnQqnppBrM7l8QE6hDzIkWV4gTn9PEKD8dFLh5LlKiDMlmxAr6
-kkkmlJonDaKT4lkDAUK0XSANKQZJChN36vM8QmkZR0n2z93EdDvIJEwiUspEhsbTSVl4kuEiapGe
-0PRfTn3qcYLqT6pqxKkSiQZWM3ImjT6To9IBq4Pi9VGJeMWCbZnJbSr3RcscRDeWWUvEvrKWuA7S
-XSYiJFPguqG7siWge2qrT/gqkeR4x6YrTWw8ZUXPiNzwaurx69V2NpCI3vBPlsUeZV96BYNEVLKF
-9CdoIXYKbLSrBVL9iUZzulHWtsijAI0IFhU5vyz/NmaQySIkWzV322RZj7YDYetvdXtathyEqcep
-3Fk5xxYuxoutzJ2fxLwSW4pYtIlIzW5QkhrBxj4EZ4nh3XH/ypTQFgRn1S3IXd3K2c6Wt12JsRp7
-P3TazWLjYXhVL2QvAqWw+pejSm1NWRtSyOcid6AJuZxB2EreeWqxMexiQWMO/CHp2lekLGgNFueb
-3AdjBCpHDXFiPQrTiQ5YwCV+yPzie2L9whch89sshU3b4sq667wzJgjvUnuxsLoWwCfrKUlF6t4E
-Zy4i1ksMg2eiTRiP1LMpDm6T3/rk45g3IYPk8TwVq90aiMq7DInxQlZc1T7dmCBXpnIL7PsvzVGW
-/6JoniuW3azjKSukxhW553+l8z4d4/mt0SUuXC93W+l2kdDqnS6TjevkZEG5yP8Sc6P5Yj02+zm9
-GkmEiFnKKTAv5GqY09wFKTva9eLYp1g+M4nfPOM/Y0PSAoH1nV/cEVpICcidnqlDGKwz3VAavB6K
-dZWlzGjDKbrRMo5yrI9NZQkPVM7b8aKW46PdpKIY0mNWNU/S/OxiC8TVr9Y2U5jNWRajGtDeJjKB
-af2RBIk1Y3AOqZ0nOu84O3ugmF4wufXr6FPvVdzPvjdE971gXdtQp0LBkqdnAm4qe/vUlAW3rN+b
-bGzT+NwFfzjOGN5wjNzTSVsS8ncNflwl1/tfV/80+cPHvfLgQjvOFhduqgWO8rk+F3PThoim/8Kx
-slLl536ucYR3Fm8rc1viL28NnYOOcRrTXL1L7zZv3wtekwAlwEbHYZQxDN+9UPfoGCToqxk87GU3
-neWWrvSj/91yYT+9wlrk0wS/nnOJ3KuAbdY6u+lbPwj3zs3sinjZM27pVkSds482kSAO323fXbzu
-EqGOjrGASMofUtnf7qLlrBp0Lfo23A+fOMVTfXa9ujjte98rdPMrcto0xXMFfT3nJdoVzuf4p7iH
-SOtzz3vd3773IC0oooHfe8y7+OzElyiDZw964ydfoPIlaFOs9vze/zbuX3R+9Wl/1+u1ffs/zQsR
-ZT4E/vKb//zoT7/610+QgAAAOw==
+44CQTWFzdGVyY2FyZOOAkeWIqeeUqOOBhOOBn+OBoOOBjeOAgeOBguOCiuOBjOOBqOOBhuOBlOOB
+luOBhOOBvuOBmeOAguOBk+OBruOBn+OBs+OAgeOBlOacrOS6uuanmOOBruOBlOWIqSDnlKjjgYvj
+ganjgYbjgYvjgpLnorog6KqN44GV44Gb44Gm44GE44Gf44Gg44GN44Gf44GE44GK5Y+WIOW8leOB
+jOOBguOCiuOBvuOBl+OBn+OBruOBp+OAgeiqoOOBq+WLneaJi+OBquOBjOOCieOAgeOCq+ODvOOD
+ieOBruOBlOWIqSDnlKjjgpLkuIDpg6jliLYg6ZmQ44GV44Gb44Gm44GE44Gf44Gg44GN44CB44GU
+6YCjIOe1oeOBleOBm+OBpuOBhOOBn+OBoOOBjeOBvuOBl+OBn+OAgg0K44Gk44GN44G+44GX44Gm
+44Gv44CB5Lul5LiL44OY44Ki44Kv44K744K544Gu5LiK44CB44Kr44O844OJ44Gu44GU5YipIOeU
+qOeiuiDoqo3jgavjgZTljZTlipvjgpLjgYrpoZjjgYToh7TjgZfjgb7jgZnjgILjgYrlrqLmp5jj
+gavjga/jgZQg6L+3IOaDkeOAgeOBlOW/g+mFjeOCkuOBiuaOm+OBkeOBl+OAgeiqoOOBq+eUs+OB
+l+ios+OBlOOBluOBhOOBvuOBm+OCk+OAguS9leWNkuOBlOeQhuino+OBhOOBn+OBoOOBjeOBn+OB
+j+OBiumhmOOBhOeUs+OBl+OBguOBkuOBvuOBmeOAguOBlOWbnuetlOOCkuOBhOOBn+OBoOOBkeOB
+quOBhOWgtOWQiOOAgeOCq+ODvOODieOBruOBlOWIqSDnlKjliLYg6ZmQ44GM57aZ57aa44GV44KM
+44KL44GT44Go44KC44GU44GW44GE44G+44GZ44Gu44Gn44CB5LqI44KB44GU5LqG5om/5LiL44GV
+44GE44CCDQoNCuKWvOOBlOWIqeeUqOeiuuiqjeOBr+OBk+OBoeOCiQ0KDQrjgZTkuI3kvr/jgajj
+gZTlv4PphY3jgpLjgYrjgYvjgZHjgZfjgb7jgZfjgaboqqDjgavnlLPjgZfoqLPjgZTjgZbjgYTj
+gb7jgZvjgpPjgYzjgIHkvZXjgajjgZ7jgZTnkIYg6KejIOiznOOCiuOBn+OBj+OBiumhmOOBhOeU
+s+OBl+OBguOBkuOBvuOBmeOAgg0KDQrnmbrooYzogIUNCk1hc3RlcmNhcmQNCuadseS6rOmDvea4
+i+iwt+WMuuahnOS4mOeUujI2LTEg44K744Or44Oq44Ki44Oz44K/44Ov44O8MTbpmo4NCg0K44GZ
+44G544Gm44Gu44Om44O844K244O844Gv44CB44GT44GuV2Vi44K144Kk44OI44Gu6aGn5a6i44Gu
+44OX44Op44Kk44OQ44K344O85Yip55So6KaP57SE44KS5om/6KqN44GK44KI44Gz5ZCM5oSP44GX
+44Gf44KC44Gu44Go6KaL44Gq44GV44KM44G+44GZ44CCDQrCqTE5OTQtMjAyNCBNYXN0ZXJjYXJk
+LiBNYXN0ZXJjYXJk44Gv44CB5qmf5Lya5Z2H562J6ZuH55So5Li744Go44GX44Gm5LyB5qWt5rS7
+5YuV44KS6KGM44Gj44Gm44GE44G+44GZ44CCDQog44Kr44O844OJ44Gu57Sb5aSx44O755uX6Zuj
+44CB57eK5oCl5pmC44Gu44Ki44Kr44Km44Oz44OI5oOF5aCx44G444Gu44Ki44Kv44K744K544Gq
+44Gp44CBMzY15pelMjTmmYLplpPjgIHlm73lhoXjgYvjgonjgafjgoLmtbflpJbjgYvjgonjgafj
+goLjgIFNYXN0ZXJjYXJk5Lya5ZOh5qeY44KI44KK44Gu44GK5ZWP44GE5ZCI44KP44Gb44KS5Y+X
+44GR5LuY44GR44Gm44GE44G+44GZ44CCaHR0cHM6Ly93d3cubWFzdGVyY2FyZC51cy9jb250ZW50
+L2RhbS9tY2NvbS9nbG9iYWwvZG9jdW1lbnRzL2dsb2JhbC1zZXJ2aWNlcy1waG9uZS1udW1iZXJz
+LnBkZg0K44Kz44Oz44K/44Kv44OI44Os44K55rG65riI44KE44Oi44OQ44Kk44Or5rG65riI44KS
+5ZCr44KA44Kv44Os44K444OD44OI44CB44OH44OT44OD44OI44CB44OX44Oq44Oa44Kk44OJIE1h
+c3RlcmNhcmTjga7jgZTliKnnlKjjgYTjgZ/jgaDjgZHjgovliqDnm5/lupfjgoTmnIDlr4Tjgorj
+ga5BVE3jgpLmpJzntKLjgpLjgYTjgZ/jgaDjgZHjgb7jgZnjgIINCmh0dHBzOi8vd3d3Lm1hc3Rl
+cmNhcmQuY28uanAvamEtanAvcGVyc29uYWwvZ2V0LXN1cHBvcnQvbWFzdGVyY2FyZC1uZWFyYnku
+aHRtbA0K55m66KGM6ICFDQpNYXN0ZXJjYXJkDQrmnbHkuqzpg73muIvosLfljLrmoZzkuJjnlLoy
+Ni0xIOOCu+ODq+ODquOCouODs+OCv+ODr+ODvDE26ZqO
 
---b2_9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs--
+--=====003_Dragon622360353367_=====
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
+Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
+bnQ9Ik1TSFRNTCA4LjAwLjc2MDEuMTc1MTQiPjwvSEVBRD4NCjxCT0RZPg0KPFA+44CQTWFzdGVy
+Y2FyZOOAkeWIqeeUqOOBhOOBn+OBoOOBjeOAgeOBguOCiuOBjOOBqOOBhuOBlOOBluOBhOOBvuOB
+meOAguOBk+OBruOBn+OBs+OAgeOBlOacrOS6uuanmOOBruOBlOWIqSDnlKjjgYvjganjgYbjgYvj
+gpLnorog6KqN44GV44Gb44Gm44GE44Gf44Gg44GN44Gf44GE44GK5Y+WIA0K5byV44GM44GC44KK
+44G+44GX44Gf44Gu44Gn44CB6Kqg44Gr5Yud5omL44Gq44GM44KJ44CB44Kr44O844OJ44Gu44GU
+5YipIOeUqOOCkuS4gOmDqOWItiDpmZDjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgIHjgZTpgKMgDQrn
+taHjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgb7jgZfjgZ/jgII8QlI+44Gk44GN44G+44GX44Gm44Gv
+44CB5Lul5LiL44OY44Ki44Kv44K744K544Gu5LiK44CB44Kr44O844OJ44Gu44GU5YipIOeUqOei
+uiDoqo3jgavjgZTljZTlipvjgpLjgYrpoZjjgYToh7TjgZfjgb7jgZnjgILjgYrlrqLmp5jjgavj
+ga/jgZQg6L+3IA0K5oOR44CB44GU5b+D6YWN44KS44GK5o6b44GR44GX44CB6Kqg44Gr55Sz44GX
+6Kiz44GU44GW44GE44G+44Gb44KT44CC5L2V5Y2S44GU55CG6Kej44GE44Gf44Gg44GN44Gf44GP
+44GK6aGY44GE55Sz44GX44GC44GS44G+44GZ44CC44GU5Zue562U44KS44GE44Gf44Gg44GR44Gq
+44GE5aC05ZCI44CB44Kr44O844OJ44Gu44GU5YipIOeUqOWItiANCumZkOOBjOe2mee2muOBleOC
+jOOCi+OBk+OBqOOCguOBlOOBluOBhOOBvuOBmeOBruOBp+OAgeS6iOOCgeOBlOS6huaJv+S4i+OB
+leOBhOOAgjwvUD4NCjxQPjxCUj48QSBocmVmPSJodHRwczovL2NsY2sucnUvM0FCa1E1Ij7ilrzj
+gZTliKnnlKjnorroqo3jga/jgZPjgaHjgok8L0E+PC9QPg0KPFA+PEJSPuOBlOS4jeS+v+OBqOOB
+lOW/g+mFjeOCkuOBiuOBi+OBkeOBl+OBvuOBl+OBpuiqoOOBq+eUs+OBl+ios+OBlOOBluOBhOOB
+vuOBm+OCk+OBjOOAgeS9leOBqOOBnuOBlOeQhiDop6Mg6LOc44KK44Gf44GP44GK6aGY44GE55Sz
+44GX44GC44GS44G+44GZ44CCPC9QPg0KPFA+PEJSPueZuuihjOiAhTxCUj5NYXN0ZXJjYXJkPEJS
+PuadseS6rOmDvea4i+iwt+WMuuahnOS4mOeUujI2LTEg44K744Or44Oq44Ki44Oz44K/44Ov44O8
+MTbpmo48L1A+DQo8UD48QlI+44GZ44G544Gm44Gu44Om44O844K244O844Gv44CB44GT44GuV2Vi
+44K144Kk44OI44Gu6aGn5a6i44Gu44OX44Op44Kk44OQ44K344O85Yip55So6KaP57SE44KS5om/
+6KqN44GK44KI44Gz5ZCM5oSP44GX44Gf44KC44Gu44Go6KaL44Gq44GV44KM44G+44GZ44CCPEJS
+PsKpMTk5NC0yMDI0IA0KTWFzdGVyY2FyZC4gTWFzdGVyY2FyZOOBr+OAgeapn+S8muWdh+etiemb
+h+eUqOS4u+OBqOOBl+OBpuS8gealrea0u+WLleOCkuihjOOBo+OBpuOBhOOBvuOBmeOAgjwvUD4N
+CjxQPiZuYnNwO+OCq+ODvOODieOBrue0m+WkseODu+ebl+mbo+OAgee3iuaApeaZguOBruOCouOC
+q+OCpuODs+ODiOaDheWgseOBuOOBruOCouOCr+OCu+OCueOBquOBqeOAgTM2NeaXpTI05pmC6ZaT
+44CB5Zu95YaF44GL44KJ44Gn44KC5rW35aSW44GL44KJ44Gn44KC44CBTWFzdGVyY2FyZOS8muWT
+oeanmOOCiOOCiuOBruOBiuWVj+OBhOWQiOOCj+OBm+OCkuWPl+OBkeS7mOOBkeOBpuOBhOOBvuOB
+meOAgjxBIA0KaHJlZj0iaHR0cHM6Ly93d3cubWFzdGVyY2FyZC51cy9jb250ZW50L2RhbS9tY2Nv
+bS9nbG9iYWwvZG9jdW1lbnRzL2dsb2JhbC1zZXJ2aWNlcy1waG9uZS1udW1iZXJzLnBkZiI+aHR0
+cHM6Ly93d3cubWFzdGVyY2FyZC51cy9jb250ZW50L2RhbS9tY2NvbS9nbG9iYWwvZG9jdW1lbnRz
+L2dsb2JhbC1zZXJ2aWNlcy1waG9uZS1udW1iZXJzLnBkZjwvQT48L1A+DQo8UD7jgrPjg7Pjgr/j
+gq/jg4jjg6zjgrnmsbrmuIjjgoTjg6Ljg5DjgqTjg6vmsbrmuIjjgpLlkKvjgoDjgq/jg6zjgrjj
+g4Pjg4jjgIHjg4fjg5Pjg4Pjg4jjgIHjg5fjg6rjg5rjgqTjg4kgDQpNYXN0ZXJjYXJk44Gu44GU
+5Yip55So44GE44Gf44Gg44GR44KL5Yqg55uf5bqX44KE5pyA5a+E44KK44GuQVRN44KS5qSc57Si
+44KS44GE44Gf44Gg44GR44G+44GZ44CCPC9QPg0KPFA+PEEgDQpocmVmPSJodHRwczovL3d3dy5t
+YXN0ZXJjYXJkLmNvLmpwL2phLWpwL3BlcnNvbmFsL2dldC1zdXBwb3J0L21hc3RlcmNhcmQtbmVh
+cmJ5Lmh0bWwiPmh0dHBzOi8vd3d3Lm1hc3RlcmNhcmQuY28uanAvamEtanAvcGVyc29uYWwvZ2V0
+LXN1cHBvcnQvbWFzdGVyY2FyZC1uZWFyYnkuaHRtbDwvQT48L1A+DQo8UD7nmbrooYzogIU8QlI+
+TWFzdGVyY2FyZDxCUj7mnbHkuqzpg73muIvosLfljLrmoZzkuJjnlLoyNi0xIOOCu+ODq+ODquOC
+ouODs+OCv+ODr+ODvDE26ZqOPC9QPjwvQk9EWT48L0hUTUw+DQo=
+
+--=====003_Dragon622360353367_=====--
 
 
---b1_9PIt8XYE5G71x6XUPib8YJZ4GhESpDuca02gNRrdUs--
 
-
-
---===============9196169784163694859==
+--===============8455404203143743586==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============9196169784163694859==
+--===============8455404203143743586==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -464,6 +227,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============9196169784163694859==--
+--===============8455404203143743586==--
 
 
