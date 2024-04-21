@@ -2,101 +2,96 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 1C94C8ABF9D
-	for <lists+osst-users@lfdr.de>; Sun, 21 Apr 2024 16:31:57 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 46BC28AC142
+	for <lists+osst-users@lfdr.de>; Sun, 21 Apr 2024 23:34:43 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1ryYEV-0001Ik-FR
+	id 1ryepd-0003PM-Th
 	for lists+osst-users@lfdr.de;
-	Sun, 21 Apr 2024 14:31:55 +0000
+	Sun, 21 Apr 2024 21:34:42 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <infos@lacommarket.fr>) id 1ryYER-0001Ie-BR
- for osst-users@lists.sourceforge.net; Sun, 21 Apr 2024 14:31:51 +0000
+ (envelope-from <amazon-confirm@zqqwemwytf.com>) id 1ryepZ-0003PB-5o
+ for osst-users@lists.sourceforge.net; Sun, 21 Apr 2024 21:34:37 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:Mime-Version
- :List-Unsubscribe:Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=REAUILl0R2WxTzdTSp8/UvqmP43UNda3XmLfl+mJ1lg=; b=P40OSm5F0PO2pU5Iz+lyLsXzL6
- JmbpTYBr5nyR5YFInEjXKYq+e4Qh+4EFtJBDZZIFNGXMtK/sOB+zBaN4ysMCWqOEYyVycetXuOd3p
- yno0NISSfGvwuvGHySbvqIah/EFw4esrXM9S075TrX9LLJw+9rXh2fGI7b7y585L+MFs=;
+ d=sourceforge.net; s=x; h=Content-Type:Message-ID:Mime-Version:Subject:To:
+ From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=uIbo4GYk811hRVRX5lBga+ztXfDtNJx8yQbr3Qh42v4=; b=GmG7wLNx/64Kdy8Cz5VmQco428
+ M5hHaT1Jde9rZXR0lnDvb/Sao8R8Q4mFJoG3A/H1eZhoSA5nrK0/+tF3yR/uVawcW71o/SVwIyByu
+ S/Cx0J6KCb8ZKhE2UXKY4Mj+Dyyuy9eca8rQzqWub0R6V2xCC2kh/zh0GaagTsR9JvLM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:Mime-Version:List-Unsubscribe:
- Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=REAUILl0R2WxTzdTSp8/UvqmP43UNda3XmLfl+mJ1lg=; b=D02zSVHCXH97w/BbnfLH3dC4wB
- NQ5QzCBTMNSGgx03Qj1ZlqGkxCD8XQwaYRDIw6yuBvlDH/+iOd3TR0mXr7kUMbmzSu7lRDn1T6ESY
- zfexfDl2MflS6Ty1LTPeS0gaik862lmnY9ipE4JaPKjJX7n9XW0JF1ZFIuW7zUMBbuW4=;
-Received: from smtp.lacommarket.fr ([103.252.90.179])
+ h=Content-Type:Message-ID:Mime-Version:Subject:To:From:Date:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=uIbo4GYk811hRVRX5lBga+ztXfDtNJx8yQbr3Qh42v4=; b=W
+ NcVoMRCJGcnGvIu27zJ65N8ZYrJwxxn+lzCRxogBMmGgvThtJiMv2R9uuEHs3Qb3+GaLvN68HwcQJ
+ Zz2Dpl5X826cozvGYXilUPg7IDVGqQ5/3RE7gegRYbqM1yYM7tfgVMe+5RE7eGr+Y1hycrtIROF8C
+ UHkC0V3R5UclTt7o=;
+Received: from [45.91.225.82] (helo=mail1.zqqwemwytf.com)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1ryYEP-0000UC-Me for osst-users@lists.sourceforge.net;
- Sun, 21 Apr 2024 14:31:51 +0000
-Date: Sun, 21 Apr 2024 16:31:38 +0200
-Authentication-Results: smtp.lacommarket.fr; dkim=pass (2048-bit key;
- unprotected) header.d=lacommarket.fr header.i=infos@lacommarket.fr
- header.b="RAt7741t"; dkim-atps=neutral
-To: osst-users@lists.sourceforge.net
-Message-ID: <1713709898.09e0781b529d4805df9b7e319e2efbbe@lacommarket.fr>
-X-Priority: 3
-List-Unsubscribe-Post: List-Unsubscribe=One-Click
+ id 1ryepW-0005YB-20 for osst-users@lists.sourceforge.net;
+ Sun, 21 Apr 2024 21:34:35 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=zqqwemwytf.com; 
+ h=Date:From:To:Subject:Mime-Version:Message-ID:Content-Type;
+ i=amazon-confirm@zqqwemwytf.com;
+ bh=uIbo4GYk811hRVRX5lBga+ztXfDtNJx8yQbr3Qh42v4=;
+ b=kzptStA1KHt1TFj8JY59NzWx6Wog8wrM+ta9ukR4qHsnkd2oxorDn2BgvQKoSKdgNIvX65eXMOfc
+ 0SPrkFWFeilxVvU2bMvd7WyfUG2eJB1g7vZFBKpkFIdw/Jyo8R0w9oZ867NgYVCWqUs4T997C7AG
+ JqvMjbad3RU6mW0NL6A=
+Date: Mon, 22 Apr 2024 03:12:30 +0900
+To: osst-users <osst-users@lists.sourceforge.net>
+X-Has-Attach: no
 Mime-Version: 1.0
-DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=12841; s=mail;
- t=1713709898; c=relaxed/simple; h=From:To:Subject;
- d=lacommarket.fr; i=infos@lacommarket.fr;
- z=From:=20The=20Complete=20Accountant=20<infos@lacommarket.fr>
- |To:=20osst-users@lists.sourceforge.net
- |Subject:=20Unlimited=20Accountancy=20Services=20for=20One=20Monthly=20Fee;
- bh=qvnlSrEPI5uGxs7E3dnnnn9vKiA=;
- b=RAt7741txaFmqMeLeXwokqnV5AWidxu3UGlHIzwj7Zmyx9fcx3RefBw1NRjb/8lQbuR/5+AiE2nE2GyAF7q106k0HbTUyAc01Jy6+gtPNIVEbWOsBymLHM8WTcSLuIldY8k4q3mg1r9VbzRiqopIMrvucIu6fR60byUHIqBwsKgYeaaUTiUc+YtWYt8LZ3BL6H5ji9w+h88qx/SigHIdvCKrMymWWixT2IA0VlyeArdl12WTpA3oE459m7sVoCAZy8xlICMlrlw4sq3rE9vN1o4xIEnn16tkxcXQLhf0nMvAhzeNt+/+g40LdtCybYI+X51wa28fArxx3oHtCqKTDA==
-X-Spam-Score: -1.0 (-)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+Message-ID: <202404220312365842385@zqqwemwytf.com>
+X-Spam-Score: 2.2 (++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: Unlimited Accountancy Services ONE MONTHLY FEE Quote Online
- To See How Much You Should Be Paying GET QUOTE ONLINE Unlimited Accountancy
- Services Unlimited Telephone Support Unlimited Email Support (3 Hour Response)
- Dedicated Accountant Monthly Bookkeeping/Reconciliation Quarterly VAT Returns
- Company Annual Accoun [...] 
- Content analysis details:   (-1.0 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  P {margin-top:0;margin-bottom:0;LINE-HEIGHT: 20px;} Amazonプライムをご利用いただきありがとうございます。
+    Amazonプライムの会費のお支払いにご指定いただいたお客様のお支払い方法が承認されないため、Amazonプライムの会費（税込500円）をご請求すること�
+    [...] 
+ 
+ Content analysis details:   (2.2 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
- blocked.  See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: hosting.ovh.net]
- 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
- bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?103.252.90.179>]
- 1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [103.252.90.179 listed in dnsbl-1.uceprotect.net]
- -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
- high trust [103.252.90.179 listed in list.dnswl.org]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: fyfyzl.com]
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
- identical to background
- 0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.1 DATE_IN_PAST_03_06     Date: is 3 to 6 hours before Received: date
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
+  0.0 HTML_MESSAGE           BODY: HTML included in message
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
-X-Headers-End: 1ryYEP-0000UC-Me
-Subject: [Osst-users] Unlimited Accountancy Services for One Monthly Fee
+                             envelope-from domain
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  0.0 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
+  0.0 NORDNS_LOW_CONTRAST    No rDNS + hidden text
+X-Headers-End: 1ryepW-0005YB-20
+Subject: [Osst-users] =?utf-8?b?44CQ5aSn5YiH44Gq44GK55+l44KJ44Gb44CRQW1h?=
+	=?utf-8?b?em9u44OX44Op44Kk44Og5Lya6LK744Gu44GK5pSv5omV44GE5pa55rOV?=
+	=?utf-8?b?44Gr5ZWP6aGM44GM44GC44KK44G+44GZICM0MTYtNzMwODk4OA==?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -108,370 +103,333 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: The Complete Accountant via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: infos@lacommarket.fr
-Content-Type: multipart/mixed; boundary="===============4918508243179786072=="
+From: "Amazon.co.jp via Osst-users" <osst-users@lists.sourceforge.net>
+Reply-To: "Amazon.co.jp" <amazon-confirm@zqqwemwytf.com>
+Content-Type: multipart/mixed; boundary="===============5943796756848801322=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============4918508243179786072==
+This is a multi-part message in MIME format.
+
+--===============5943796756848801322==
+Content-Type: multipart/related;
+	boundary="=====001_Dragon801558237110_====="
+
+This is a multi-part message in MIME format.
+
+--=====001_Dragon801558237110_=====
 Content-Type: multipart/alternative;
-	boundary="b1_a42e07c2974383937641bdbe37ae3ae3"
-Content-Transfer-Encoding: 8bit
-
---b1_a42e07c2974383937641bdbe37ae3ae3
-Content-Type: text/plain; charset=us-ascii
-
-
-Unlimited
-Accountancy
-Services
-ONE MONTHLY FEE
-Quote Online To See How Much You Should Be Paying
-GET QUOTE ONLINE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Unlimited Accountancy
-Services
-Unlimited Telephone Support
-Unlimited Email Support (3 Hour Response)
-Dedicated Accountant
-Monthly Bookkeeping/Reconciliation
-Quarterly VAT Returns
-Company Annual Accounts
-Company Tax Return
-Self-Assessment Tax Returns
-Submission of Confirmation Statement
-Xero Software
-Xero Training
-Company Incorporation (if required)
-VAT Registration (if required)
-PAYE Registration (if required)
-CIS Registration (if required)
-Financial Reference (e.g. Mortgage)
-Access to Business Funding
-Monthly Management Information
-Tired of unexpected accountancy fees?
-Get unlimited services and Support for
-
-One Monthly fee
-NEVER ANY UNEXPECTED FEES*
-
-
-
-
-  
-
-
-
-This e-mail is brought to you by an independent e-mail marketing company.
-Follow this link to stop messages about ACCOUNTANCY SERVICES.
-You have the right of access, rectification, opposition and consent,
-which you have access on this web page: Privacy policy.
-
-
-
-
-
-
---b1_a42e07c2974383937641bdbe37ae3ae3
-Content-Type: text/html; charset=us-ascii
-
-<!DOCTYPE html>
-			                   <html>
-				               	<head>
-					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-				                </head>
-				                <body>
-					            	<head>   
-  <style type="text/css">
-		.padding10{
-			padding:20px 0;
-		}
-		body{
-			font-family:&#039;Poppins&#039;,sans-serif;
-			
-		}
-		h1.head1{
-			background:#49b4fc;
-			color:#ffffff;
-			font-size:36px;
-			font-weight:500;
-			padding:5px;
-			text-align:center;
-			margin:0;
-			width:350px;
-		}
-		h2.head2{
-			padding:0;
-			margin:0;
-			font-size:36px;
-			font-weight:500;
-			text-align:center;
-		}
-		td.image{
-			text-align:center;
-		}
-		td.skyb{
-			background:#E5F5FF;
-		}
-		td.bluebg{
-			font-size:10px;
-		}
-		.fnt10{
-			font-size:13px;
-		}
-		li{
-			padding-bottom:10px;
-		}
-		.thinh1{
-			font-weight:normal;
-			line-height:45px;
-		}
-	@media only screen and (max-width: 480px){
-		table#canspamBar td{
-			font-size:14px !important;
-		}
-
-}	@media only screen and (max-width: 480px){
-		table#canspamBar td a{
-			display:block !important;
-			margin-top:10px !important;
-		}
-
-}
-
-#lli li{
-color:#41b10c;
-
-}
-
-#lld li{
-color:#e40f48;
-
-}
-
-
-</style></head>
-  <body >
-    
-      <table id="bodyTable" style="background:#fff; padding:0px;border-collapse:collapse;border-spacing:0px; marging:20px;max-width:620px;" border="0"  cellspacing="5" cellpadding="0">
-
-      <tbody>
-        <tr>
-          <td align="center" valign="top" style="">
-            <table style="padding:0px;border-collapse:collapse;border-spacing:0px;" border="0" cellspacing="0" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;background:#ffffff;"><img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/logo.jpg" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                    <h1 style="font-size: 74px; font-weight: 900; line-height: 74px; margin: 50px 0 0 0;"> <a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/services/">Unlimited<br>Accountancy<br>Services</a></h1>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                    <h1 style="font-size: 42px; font-weight: 900; line-height: 74px; color:#ed393b; margin:0; > ">ONE MONTHLY FEE</h1>
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                    <h3 style="font-size: 20px; font-weight: 500; line-height: 74px; color:#000000; margin:0; > ">Quote Online To See How Much You Should Be Paying</h1>
-                  </td>
-                </tr>                
-                
-                
-                                
-
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                    <a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/services/" style="background: #54c81e; color:#fff; text-decoration:none;font-weight: bold; padding: 14px 45px;">GET QUOTE ONLINE</a>
-                  </td>
-                </tr>
-                
-
-
-
-                <tr>                
-                    <td colspan="2" align="center"  style="background:url(&#039;http://trazibm.cluster029.hosting.ovh.net/mtaccounting/back.jpg&#039;); background-position: top center; background-repeat: no-repeat; padding:0px;" >
-                            <table>  
-                            
-                                                                                    
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-
-
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <br> 
-                    <br>  
-
-                  </td>
-                </tr>                
-                
-                
-               
-
-
-                <tr>
-                  <td colspan="2"  style="padding: 25px;">
-                    <table border="0" cellpadding="0" cellspacing="10" width="100%">
-                    
-                    
-                <tr>
-                  <td class="image" colspan="2" align="center">
-                    
-                  
-                    
-                    
-                   <strong><span style="color: #ffffff; background: #556ae4e8; padding: 10px 20px; font-size: 40px; display:inline-block;">Unlimited Accountancy <br> <span style="color: #08c0ed;" >Services</span> </span></strong>
-                  </td>
-                </tr>                     
-                    
-                    
-                      <tr valign="top">
-                        <td width="50%">
-                          <ul id="lli" style="background: #fff; margin: 0 10px; border-bottom: 15px #e8e8e8 solid; border-top: 25px #fff solid; padding-bottom: 5px; height: 290px;">
-                            <li><span style="color:#000;">Unlimited Telephone Support</span></li>
-                            <li><span style="color:#000;">Unlimited Email Support (3 Hour Response)</span></li>
-                            <li><span style="color:#000;">Dedicated Accountant</span></li>
-                            <li><span style="color:#000;">Monthly Bookkeeping/Reconciliation</span></li>
-                            <li><span style="color:#000;">Quarterly VAT Returns</span></li>
-                            <li><span style="color:#000;">Company Annual Accounts</span></li>
-                            <li><span style="color:#000;">Company Tax Return</span></li>
-                            <li><span style="color:#000;">Self-Assessment Tax Returns</span></li>
-                            <li><span style="color:#000;">Submission of Confirmation Statement</span></li>
-                          </ul>
-                        </td>
-                        <td>
-                          <ul id="lld" style="background: #fff; margin: 0 10px; border-bottom: 15px #e8e8e8 solid; border-top: 25px #fff solid; padding-bottom: 5px; height: 290px;">
-                            <li><span style="color:#000;">Xero Software </span></li>
-                            <li><span style="color:#000;">Xero Training</span></li>
-                            <li><span style="color:#000;">Company Incorporation (if required)</span></li>
-                            <li><span style="color:#000;">VAT Registration (if required)</span></li>
-                            <li><span style="color:#000;">PAYE Registration (if required)</span></li>
-                            <li><span style="color:#000;">CIS Registration (if required)</span></li>
-                            <li><span style="color:#000;">Financial Reference (e.g. Mortgage)</span></li>
-                            <li><span style="color:#000;">Access to Business Funding</span></li>
-                            <li><span style="color:#000;">Monthly Management Information</span></li>
-                          </ul>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                
-                
-                </table>
-                </td>
-                </tr>
-                
-                
-                                                                                                                                
-                <tr>
-                  <td class="image" colspan="2" align="center">
-                  
-                    <h1 class="thinh1">Tired of unexpected accountancy fees?<br>
-                      Get unlimited services and Support for <br>
-                      <br>
-                      <span style="background:#78ee41; padding:10px 20px; margin: 5px 0 0 0;" > <a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/services/">One Monthly fee</a>
-                    </h1>
-                    <h1 style=&#039;color:#f73333; font-weight:800; font-size: 25px;&#039;>NEVER ANY UNEXPECTED FEES*</h1>
-                    
-                  </td>
-                </tr>
-                
-
-                <tr>                
-                    <td colspan="2" align="center"  style="background:url(&#039;http://trazibm.cluster029.hosting.ovh.net/mtaccounting/footer.jpg&#039;); background-position: center center; background-repeat: no-repeat; padding:0px;" >
-                            <table>     
-                                            <tr>
-                                              <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                       <br>
- <img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/xero.png" alt="">
-                    <br>
-                    <br> 
-                    <br>
-                    
-                                               <img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/fb.png" alt="">
-                                               <img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/ig.png" alt="">
-                                               <img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/li.png" alt="">                    
-                   
-                    <br>                  
-                    <br>
-                                               </td>
-                                            </tr>                            
-                                       
-
-                                            <tr>
-                                              <td  style="color:#fff; font-size:12px;" colspan="2" align="center">
-                                                <br>
-                                                   <br />
- This e-mail is brought to you by an independent e-mail marketing company.
-                    <br><a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/devant/?email=DHNab7BRvQfAa7rPbO5XYznYerCya8gx/UMJwohma8CUBcvmiZMCfTisesmOJamhLCsCbRX5gx887jWhOfaAVpEdsa/2D1tac24oRc3eLZHU0HjQ+wcjJIZ/iGpFVfHzz1T+1RR+SwFiGhNGh2m6E+PaoKXdg4SntX5KZDPprm0=&c=uuukkk1">Follow this link</a> to stop messages about <strong>ACCOUNTANCY SERVICES</strong>.<br>
-                    You have the right of access, rectification, opposition and consent, <br>which you have access on this web page: <a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/yvais/" style="color:#09f;" target="_blank">Privacy policy</a>.
-                 
-            <br />  
-                                                <br>
-                                                <br> <br>
-                    <br>
-                                              </td>
-                                            </tr>                
-                            </table>                
-                    </td>
-                </tr>                
-
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-				                </body>
-			                   </html>
-
-
-
---b1_a42e07c2974383937641bdbe37ae3ae3--
-
-
-
---===============4918508243179786072==
+	boundary="=====002_Dragon801558237110_====="
+
+--=====002_Dragon801558237110_=====
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+IFAge21hcmdpbi10b3A6MDttYXJnaW4tYm90dG9tOjA7TElORS1IRUlHSFQ6IDIwcHg7fQ0KDQog
+DQoNCkFtYXpvbuODl+ODqeOCpOODoOOCkuOBlOWIqeeUqOOBhOOBn+OBoOOBjeOBguOCiuOBjOOB
+qOOBhuOBlOOBluOBhOOBvuOBmeOAgg0KDQoNCkFtYXpvbuODl+ODqeOCpOODoOOBruS8muiyu+OB
+ruOBiuaUr+aJleOBhOOBq+OBlOaMh+WumuOBhOOBn+OBoOOBhOOBn+OBiuWuouanmOOBruOBiuaU
+r+aJleOBhOaWueazleOBjOaJv+iqjeOBleOCjOOBquOBhOOBn+OCgeOAgUFtYXpvbuODl+ODqeOC
+pOODoOOBruS8muiyu++8iOeojui+vDUwMOWGhu+8ieOCkuOBlOiri+axguOBmeOCi+OBk+OBqOOB
+jOOBp+OBjeOBvuOBm+OCk+OBp+OBl+OBn+OAgg0K54++5Zyo44CBQW1hem9u44OX44Op44Kk44Og
+5Lya5ZOh44Gu54m55YW444Gv44GU5Yip55So44GE44Gf44Gg44GR44G+44Gb44KT44CCDQoNCjfm
+l6Xku6XlhoXjgavjgYrmlK/miZXmlrnms5XjgpLmm7TmlrDjgYTjgZ/jgaDjgZHjgarjgYTloLTl
+kIjjga/jgIHjgYrlrqLmp5jjga5BbWF6b27jg5fjg6njgqTjg6DkvJrlk6Hos4fmoLzjga/jgq3j
+g6Pjg7Pjgrvjg6vjgZXjgozjgb7jgZnjgIINCg0K44Gf44Gg44CB6IOM6Z2i5YWo5L2T44Gr44OQ
+44OD44Kv44Op44Kk44OI44KS6YWN572u44GX44Gm44GE44KL44GT44Go44Gn44CB5pys5L2T44K1
+44Kk44K644Gr5Y6a44G/44GM5Ye644Gm44GX44G+44GE44G+44GZ44CCDQoNCuW8leOBjee2muOB
+jUFtYXpvbuODl+ODqeOCpOODoOOBrueJueWFuOOCkuOBlOWIqeeUqOOBleOCjOOBn+OBhOWgtOWQ
+iOOAgeOBiuaUr+aJleOBhOaWueazleOCkuabtOaWsOOBmeOCi+OBq+OBr+OAgeS7peS4i+OBruOD
+quODs+OCr+OCkuOCr+ODquODg+OCr+OBl+OBpuOBj+OBoOOBleOBhOOAgg0KDQrmqZnoibLjgoTm
+nLHoibLjga7okYnjgarjganjgIHnvo7jgZfjgYTjgrDjg6njg4fjg7zjgrfjg6fjg7PjgYznm67j
+gavmta7jgYvjgbPjgb7jgZnjgIINCuaUr+aJleaWueazleOCkuabtOaWsOOBmeOCiyANCuacrOOC
+teODvOODk+OCueWGheOBp+aYjuekuuOBl+OBn+aQuuW4r+OCreODo+ODquOCouOBjOaPkOS+m+OB
+meOCi2RvY29tbyBzcOODouODvOODieaxuua4iOOAgWTmiZXjgYQoZG9jb21v5Zue57ea44Gu44G/
+KeOAgWF1IC8gdXEgbW9iaWxl44GK44KI44Gz44K944OV44OI44OQ44Oz44Kv44O744Ov44Kk44Oi
+44OQ44Kk44Or44G+44Go44KB44Gm5pSv5omV44GE562J44Gu5pC65biv44Kt44Oj44Oq44Ki44Gu
+6KaP57SE44Gr44KC44Go44Gl44GN44CB6Zu76Kmx5paZ6YeR44Go5L2144Gb44Gm5pSv5omV44GG
+5pa55rOV44CCDQoNCuePvuWcqOOBlOaMh+WumuOBruOBiuaUr+aJleOBhOaWueazleOBjOaJv+iq
+jeOBleOCjOOBquOBhOWOn+WboOOBr+OAgeaPkOaQuuS8muekvijjgq/jg6zjgrjjg4Pjg4jjgqvj
+g7zjg4nkvJrnpL7nrYkp44Gu5LqL5oOF44Gr44KI44KK55Ww44Gq44KL44Gf44KB44CB5aSn5aSJ
+44GK5omL5pWw44Gn44GZ44GM44K144O844OT44K544Gu5o+Q5L6b5YWD5Lya56S+44Gr55u05o6l
+44GK5ZWP44GE5ZCI44KP44Gb44GP44Gg44GV44GE44CCDQoNCueUu+izquOBr+OAgeeZuuiJsuOB
+jOS4jeiHqueEtuOBp+OAgem7kuiJsuihqOePvuOBjOi1pOOBv+OBjOOBi+OBo+OBpuOBl+OBvuOB
+hOS9juipleS+oeOBq+OAgg0KDQplUuKAu+acrOODoeODvOODq+OBr+OAgeOBlOeZu+mMsuOBleOC
+jOOBn+ODoeODvOODq+OCouODieODrOOCueWum+OBq+iHquWLleeahOOBq+mAgeS/oeOBl+OBpuOB
+hOOBvuOBmeOAgg0KDQplUuKAu+OBk+OBruODoeODvOODq+OBr+OAgeWPl+S/oeODoeODvOODq+OC
+kuWPl+OBkeWFpeOCjOOCi+OBk+OBqOOBjOOBp+OBjeOBquOBhOmAmuefpeWwgueUqOOCouODieOD
+rOOCueOBi+OCiemAgeS/oeOBleOCjOOBvuOBl+OBn+OAguOBk+OBruODoeODg+OCu+ODvOOCuOOB
+q+OBr+i/lOS/oeOBl+OBquOBhOOBp+OBj+OBoOOBleOBhOOAgg0KDQrku4rlvozjgajjgoLjgpLj
+gojjgo3jgZfjgY/jgYrpoZjjgYTjgYTjgZ/jgZfjgb7jgZnjgIINCg0K5YuV55S76YWN5L+h44KE
+6Z+z5aOw5pON5L2c44Gr5a++5b+c44GX44CB44Oq44Oi44Kz44Oz44GrbmV0ZmxpeOOChHlvdXR1
+YmXjgarjganoqIg444K144O844OT44K544Gu44Oc44K/44Oz44GM5YKZ44KP44KK44Ov44Oz44K/
+44OD44OB44Gn6LW35YuV5Y+v6IO944CC44Gd44Gu44G744GL44CBZ29vZ2xl44Ki44K344K544K/
+44Oz44OI44Gn5Lya6Kmx44KS44GZ44KL44KI44GG44Gr5aOw44Gn5qSc57Si44GM44Gn44GN44KL
+44Gq44Gp5YWF5a6f44Gu5qmf6IO95oCn44Gn44GZ44GM44CB5pep6YCB44KK5YaN55Sf44Gr5a++
+5b+c44GX44Gm44GE44Gq44GE44GT44Go44Gn44KE44KE6KmV5L6h44GM5Ly444Gz5oKp44KA57WQ
+5p6c44Go44Gq44KK44G+44GX44Gf44CCDQoNCg0KDQoNCsKpIDE5OTYtMjAyNCwgQW1hem9uLmNv
+bSwgSW5jLiBvciBpdHMgYWZmaWxpYXRlcw0KDQo=
+
+--=====002_Dragon801558237110_=====
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVU
+Ri04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxTVFlMRSBzdHlsZT0iRElTUExBWTogbm9u
+ZSIgdHlwZT10ZXh0L2Nzcz4NCiBQIHttYXJnaW4tdG9wOjA7bWFyZ2luLWJvdHRvbTowO0xJTkUt
+SEVJR0hUOiAyMHB4O30NCjwvU1RZTEU+DQoNCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRlbnQ9
+Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWSBzdHlsZT0iQkFDS0dST1VO
+RDogI2ZmZmZmZiIgZGlyPWx0cj4NCjxDRU5URVI+DQo8VEFCTEU+DQogIDxUQk9EWT4NCiAgPFRS
+Pg0KICAgIDxURCANCiAgICBzdHlsZT0iV0lEVEg6IDY0MHB4OyBCT1JERVItQ09MTEFQU0U6IGNv
+bGxhcHNlICFpbXBvcnRhbnQ7IFdPUkQtQlJFQUs6IGJyZWFrLWFsbCAhaW1wb3J0YW50OyBQQURE
+SU5HLUJPVFRPTTogMHB4OyBQQURESU5HLVRPUDogMHB4OyBQQURESU5HLUxFRlQ6IDBweDsgTUFS
+R0lOOiAwcHggYXV0bzsgUEFERElORy1SSUdIVDogMHB4Ij4NCiAgICAgIDxESVYgDQogICAgICBz
+dHlsZT0iRk9OVC1TSVpFOiAxNHB4OyBURVhULURFQ09SQVRJT046IG5vbmU7IEZPTlQtRkFNSUxZ
+OiBFbWJlcixIZWx2ZXRpY2EsQXJpYWwsc2Fucy1zZXJpZjsgV09SRC1CUkVBSzogYnJlYWstYWxs
+ICFpbXBvcnRhbnQ7IEZPTlQtV0VJR0hUOiA0MDA7IENPTE9SOiBibGFjayI+DQogICAgICA8UCAN
+CiAgICAgIHN0eWxlPSJIRUlHSFQ6IDRweDsgTElORS1IRUlHSFQ6IDRweDsgQkFDS0dST1VORC1D
+T0xPUjogI2ZmOTkwMCI+PC9QPjwvRElWPg0KICAgICAgPERJViANCiAgICAgIHN0eWxlPSJGT05U
+LVNJWkU6IDE0cHg7IFRFWFQtREVDT1JBVElPTjogbm9uZTsgRk9OVC1GQU1JTFk6IEVtYmVyLEhl
+bHZldGljYSxBcmlhbCxzYW5zLXNlcmlmOyBXT1JELUJSRUFLOiBicmVhay1hbGwgIWltcG9ydGFu
+dDsgRk9OVC1XRUlHSFQ6IDQwMDsgQ09MT1I6IGJsYWNrIj4NCiAgICAgIDxESVYgDQogICAgICBz
+dHlsZT0iQk9SREVSLVRPUDogMHB4OyBCT1JERVItUklHSFQ6IDBweDsgVkVSVElDQUwtQUxJR046
+IGJhc2VsaW5lOyBCT1JERVItQk9UVE9NOiAwcHg7IFpPT006IDE7IFBBRERJTkctQk9UVE9NOiAw
+cHg7IFRFWFQtQUxJR046IGNlbnRlcjsgUEFERElORy1UT1A6IDBweDsgUEFERElORy1MRUZUOiAw
+cHg7IEJPUkRFUi1MRUZUOiAwcHg7IE1BUkdJTjogMHB4OyBQQURESU5HLVJJR0hUOiAwcHgiPjxJ
+TUcgDQogICAgICBzdHlsZT0iQk9YLVNJWklORzogYm9yZGVyLWJveDsgVEVYVC1ERUNPUkFUSU9O
+OiBub25lOyBNQVgtV0lEVEg6IDEwMCU7IEJPUkRFUi1UT1A6IDBweDsgQk9SREVSLVJJR0hUOiAw
+cHg7IEJPUkRFUi1CT1RUT006IDBweDsgWk9PTTogMTsgUEFERElORy1CT1RUT006IDBweDsgUEFE
+RElORy1UT1A6IDBweDsgUEFERElORy1MRUZUOiAwcHg7IEJPUkRFUi1MRUZUOiAwcHg7IE1BUkdJ
+TjogMHB4OyBESVNQTEFZOiBpbmxpbmUtYmxvY2s7IFBBRERJTkctUklHSFQ6IDBweCIgDQogICAg
+ICBhbHQ9cGlua3RvIHNyYz0iY2lkOjAwMDFDNzQ5QzRBMF8wRDNEOTI3NF8wRjAyRkI5OSIgd2lk
+dGg9MTM3IGhlaWdodD00OD4gDQogICAgICA8L0RJVj48L0RJVj4NCiAgICAgIDxQIA0KICAgICAg
+c3R5bGU9IkZPTlQtU0laRTogMTRweDsgVEVYVC1ERUNPUkFUSU9OOiBub25lOyBGT05ULUZBTUlM
+WTogRW1iZXIsSGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWY7IFdPUkQtQlJFQUs6IGJyZWFrLWFs
+bCAhaW1wb3J0YW50OyBGT05ULVdFSUdIVDogNDAwOyBDT0xPUjogYmxhY2siPjxCUj5BbWF6b27j
+g5fjg6njgqTjg6DjgpLjgZTliKnnlKjjgYTjgZ/jgaDjgY3jgYLjgorjgYzjgajjgYbjgZTjgZbj
+gYTjgb7jgZnjgII8L1A+DQogICAgICA8UCANCiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDE0cHg7
+IFRFWFQtREVDT1JBVElPTjogbm9uZTsgRk9OVC1GQU1JTFk6IEVtYmVyLEhlbHZldGljYSxBcmlh
+bCxzYW5zLXNlcmlmOyBXT1JELUJSRUFLOiBicmVhay1hbGwgIWltcG9ydGFudDsgRk9OVC1XRUlH
+SFQ6IDQwMDsgQ09MT1I6IGJsYWNrIj48QlI+QW1hem9u44OX44Op44Kk44Og44Gu5Lya6LK744Gu
+44GK5pSv5omV44GE44Gr44GU5oyH5a6a44GE44Gf44Gg44GE44Gf44GK5a6i5qeY44Gu44GK5pSv
+5omV44GE5pa55rOV44GM5om/6KqN44GV44KM44Gq44GE44Gf44KB44CBQW1hem9u44OX44Op44Kk
+44Og44Gu5Lya6LK777yI56iO6L68NTAw5YaG77yJ44KS44GU6KuL5rGC44GZ44KL44GT44Go44GM
+44Gn44GN44G+44Gb44KT44Gn44GX44Gf44CCPEJSPuePvuWcqOOAgUFtYXpvbuODl+ODqeOCpOOD
+oOS8muWToeOBrueJueWFuOOBr+OBlOWIqeeUqOOBhOOBn+OBoOOBkeOBvuOBm+OCk+OAgjxCUj48
+QlI+N+aXpeS7peWGheOBq+OBiuaUr+aJleaWueazleOCkuabtOaWsOOBhOOBn+OBoOOBkeOBquOB
+hOWgtOWQiOOBr+OAgeOBiuWuouanmOOBrkFtYXpvbuODl+ODqeOCpOODoOS8muWToeizh+agvOOB
+r+OCreODo+ODs+OCu+ODq+OBleOCjOOBvuOBmeOAgjwvUD4NCiAgICAgIDxESVYgDQogICAgICBz
+dHlsZT0iRk9OVC1TSVpFOiAxNHB4OyBURVhULURFQ09SQVRJT046IG5vbmU7IEZPTlQtRkFNSUxZ
+OiBFbWJlcixIZWx2ZXRpY2EsQXJpYWwsc2Fucy1zZXJpZjsgV09SRC1CUkVBSzogYnJlYWstYWxs
+ICFpbXBvcnRhbnQ7IEZPTlQtV0VJR0hUOiA0MDA7IENPTE9SOiBibGFjazsgb3BhY2l0eTogMCI+
+DQogICAgICA8UCANCiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDFweDsgQ09MT1I6ICNmZmZmZmY7
+IC13ZWJraXQtdG91Y2gtY2FsbG91dDogbm9uZTsgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsg
+LWtodG1sLXVzZXItc2VsZWN0OiBub25lOyAtbW96LXVzZXItc2VsZWN0OiBub25lOyAtbXMtdXNl
+ci1zZWxlY3Q6IG5vbmU7IHVzZXItc2VsZWN0OiBub25lIj7jgZ/jgaDjgIHog4zpnaLlhajkvZPj
+gavjg5Djg4Pjgq/jg6njgqTjg4jjgpLphY3nva7jgZfjgabjgYTjgovjgZPjgajjgafjgIHmnKzk
+vZPjgrXjgqTjgrrjgavljprjgb/jgYzlh7rjgabjgZfjgb7jgYTjgb7jgZnjgII8L1A+PC9ESVY+
+DQogICAgICA8UCANCiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDE0cHg7IFRFWFQtREVDT1JBVElP
+Tjogbm9uZTsgRk9OVC1GQU1JTFk6IEVtYmVyLEhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmOyBX
+T1JELUJSRUFLOiBicmVhay1hbGwgIWltcG9ydGFudDsgRk9OVC1XRUlHSFQ6IDQwMDsgQ09MT1I6
+IGJsYWNrIj7lvJXjgY3ntprjgY1BbWF6b27jg5fjg6njgqTjg6Djga7nibnlhbjjgpLjgZTliKnn
+lKjjgZXjgozjgZ/jgYTloLTlkIjjgIHjgYrmlK/miZXjgYTmlrnms5XjgpLmm7TmlrDjgZnjgovj
+gavjga/jgIHku6XkuIvjga7jg6rjg7Pjgq/jgpLjgq/jg6rjg4Pjgq/jgZfjgabjgY/jgaDjgZXj
+gYTjgII8L1A+DQogICAgICA8RElWIA0KICAgICAgc3R5bGU9IkZPTlQtU0laRTogMTRweDsgVEVY
+VC1ERUNPUkFUSU9OOiBub25lOyBGT05ULUZBTUlMWTogRW1iZXIsSGVsdmV0aWNhLEFyaWFsLHNh
+bnMtc2VyaWY7IFdPUkQtQlJFQUs6IGJyZWFrLWFsbCAhaW1wb3J0YW50OyBGT05ULVdFSUdIVDog
+NDAwOyBDT0xPUjogYmxhY2s7IG9wYWNpdHk6IDAiPg0KICAgICAgPFAgDQogICAgICBzdHlsZT0i
+Rk9OVC1TSVpFOiAxcHg7IENPTE9SOiAjZmZmZmZmOyAtd2Via2l0LXRvdWNoLWNhbGxvdXQ6IG5v
+bmU7IC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7IC1raHRtbC11c2VyLXNlbGVjdDogbm9uZTsg
+LW1vei11c2VyLXNlbGVjdDogbm9uZTsgLW1zLXVzZXItc2VsZWN0OiBub25lOyB1c2VyLXNlbGVj
+dDogbm9uZSI+5qmZ6Imy44KE5pyx6Imy44Gu6JGJ44Gq44Gp44CB576O44GX44GE44Kw44Op44OH
+44O844K344On44Oz44GM55uu44Gr5rWu44GL44Gz44G+44GZ44CCPC9QPjwvRElWPjxTUEFOIA0K
+ICAgICAgc3R5bGU9IkZPTlQtU0laRTogMTRweDsgVEVYVC1ERUNPUkFUSU9OOiBub25lOyBGT05U
+LUZBTUlMWTogRW1iZXIsSGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWY7IFdPUkQtQlJFQUs6IGJy
+ZWFrLWFsbCAhaW1wb3J0YW50OyBGT05ULVdFSUdIVDogNDAwOyBDT0xPUjogYmxhY2s7IFRFWFQt
+QUxJR046IGNlbnRlcjsgRElTUExBWTogYmxvY2siPjxBIA0KICAgICAgc3R5bGU9IkNVUlNPUjog
+cG9pbnRlcjsgVEVYVC1ERUNPUkFUSU9OOiBub25lOyBIRUlHSFQ6IDUwcHg7IFdJRFRIOiAyNzBw
+eDsgQ09MT1I6ICMwMDAwMDA7IFRFWFQtQUxJR046IGNlbnRlcjsgRElTUExBWTogaW5saW5lLWJs
+b2NrOyBMSU5FLUhFSUdIVDogNTBweDsgQkFDS0dST1VORC1DT0xPUjogI2ZmYzQzNTsgYm9yZGVy
+LXJhZGl1czogNXB4OyAtbW96LWJvcmRlci1yYWRpdXM6IDVweDsgLXdlYmtpdC1ib3JkZXItcmFk
+aXVzOiA1cHgiIA0KICAgICAgaHJlZj0iaHR0cHM6Ly93d3cuZnlmeXpMLmNvbSIgDQogICAgICB0
+YXJnZXQ9X2JsYW5rPjxTVFJPTkc+5pSv5omV5pa55rOV44KS5pu05paw44GZ44KLPC9TVFJPTkc+
+PC9BPjwvU1BBTj4gDQogICAgICA8RElWIA0KICAgICAgc3R5bGU9IkZPTlQtU0laRTogMTRweDsg
+VEVYVC1ERUNPUkFUSU9OOiBub25lOyBGT05ULUZBTUlMWTogRW1iZXIsSGVsdmV0aWNhLEFyaWFs
+LHNhbnMtc2VyaWY7IFdPUkQtQlJFQUs6IGJyZWFrLWFsbCAhaW1wb3J0YW50OyBGT05ULVdFSUdI
+VDogNDAwOyBDT0xPUjogYmxhY2siPjwvRElWPg0KICAgICAgPERJViANCiAgICAgIHN0eWxlPSJG
+T05ULVNJWkU6IDE0cHg7IFRFWFQtREVDT1JBVElPTjogbm9uZTsgRk9OVC1GQU1JTFk6IEVtYmVy
+LEhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmOyBXT1JELUJSRUFLOiBicmVhay1hbGwgIWltcG9y
+dGFudDsgRk9OVC1XRUlHSFQ6IDQwMDsgQ09MT1I6IGJsYWNrOyBvcGFjaXR5OiAwIj4NCiAgICAg
+IDxQIA0KICAgICAgc3R5bGU9IkZPTlQtU0laRTogMXB4OyBDT0xPUjogI2ZmZmZmZjsgLXdlYmtp
+dC10b3VjaC1jYWxsb3V0OiBub25lOyAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOyAta2h0bWwt
+dXNlci1zZWxlY3Q6IG5vbmU7IC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7IC1tcy11c2VyLXNlbGVj
+dDogbm9uZTsgdXNlci1zZWxlY3Q6IG5vbmUiPuacrOOCteODvOODk+OCueWGheOBp+aYjuekuuOB
+l+OBn+aQuuW4r+OCreODo+ODquOCouOBjOaPkOS+m+OBmeOCi2RvY29tbyBzcOODouODvOODieax
+uua4iOOAgWTmiZXjgYQoZG9jb21v5Zue57ea44Gu44G/KeOAgWF1IC8gdXEgbW9iaWxl44GK44KI
+44Gz44K944OV44OI44OQ44Oz44Kv44O744Ov44Kk44Oi44OQ44Kk44Or44G+44Go44KB44Gm5pSv
+5omV44GE562J44Gu5pC65biv44Kt44Oj44Oq44Ki44Gu6KaP57SE44Gr44KC44Go44Gl44GN44CB
+6Zu76Kmx5paZ6YeR44Go5L2144Gb44Gm5pSv5omV44GG5pa55rOV44CCPC9QPjwvRElWPg0KICAg
+ICAgPFAgDQogICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxNHB4OyBURVhULURFQ09SQVRJT046IG5v
+bmU7IEZPTlQtRkFNSUxZOiBFbWJlcixIZWx2ZXRpY2EsQXJpYWwsc2Fucy1zZXJpZjsgV09SRC1C
+UkVBSzogYnJlYWstYWxsICFpbXBvcnRhbnQ7IEZPTlQtV0VJR0hUOiA0MDA7IENPTE9SOiBibGFj
+ayI+54++5Zyo44GU5oyH5a6a44Gu44GK5pSv5omV44GE5pa55rOV44GM5om/6KqN44GV44KM44Gq
+44GE5Y6f5Zug44Gv44CB5o+Q5pC65Lya56S+KOOCr+ODrOOCuOODg+ODiOOCq+ODvOODieS8muek
+vuetiSnjga7kuovmg4XjgavjgojjgornlbDjgarjgovjgZ/jgoHjgIHlpKflpInjgYrmiYvmlbDj
+gafjgZnjgYzjgrXjg7zjg5Pjgrnjga7mj5DkvpvlhYPkvJrnpL7jgavnm7TmjqXjgYrllY/jgYTl
+kIjjgo/jgZvjgY/jgaDjgZXjgYTjgII8L1A+DQogICAgICA8RElWIA0KICAgICAgc3R5bGU9IkZP
+TlQtU0laRTogMTRweDsgVEVYVC1ERUNPUkFUSU9OOiBub25lOyBGT05ULUZBTUlMWTogRW1iZXIs
+SGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWY7IFdPUkQtQlJFQUs6IGJyZWFrLWFsbCAhaW1wb3J0
+YW50OyBGT05ULVdFSUdIVDogNDAwOyBDT0xPUjogYmxhY2s7IG9wYWNpdHk6IDAiPg0KICAgICAg
+PFAgDQogICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxcHg7IENPTE9SOiAjZmZmZmZmOyAtd2Via2l0
+LXRvdWNoLWNhbGxvdXQ6IG5vbmU7IC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7IC1raHRtbC11
+c2VyLXNlbGVjdDogbm9uZTsgLW1vei11c2VyLXNlbGVjdDogbm9uZTsgLW1zLXVzZXItc2VsZWN0
+OiBub25lOyB1c2VyLXNlbGVjdDogbm9uZSI+55S76LOq44Gv44CB55m66Imy44GM5LiN6Ieq54S2
+44Gn44CB6buS6Imy6KGo54++44GM6LWk44G/44GM44GL44Gj44Gm44GX44G+44GE5L2O6KmV5L6h
+44Gr44CCPC9QPjwvRElWPg0KICAgICAgPFAgDQogICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxNHB4
+OyBURVhULURFQ09SQVRJT046IG5vbmU7IEZPTlQtRkFNSUxZOiBFbWJlcixIZWx2ZXRpY2EsQXJp
+YWwsc2Fucy1zZXJpZjsgV09SRC1CUkVBSzogYnJlYWstYWxsICFpbXBvcnRhbnQ7IEZPTlQtV0VJ
+R0hUOiA0MDA7IENPTE9SOiBibGFjayI+PEZPTlQgDQogICAgICBjb2xvcj13aGl0ZT5lUjwvRk9O
+VD7igLvmnKzjg6Hjg7zjg6vjga/jgIHjgZTnmbvpjLLjgZXjgozjgZ/jg6Hjg7zjg6vjgqLjg4nj
+g6zjgrnlrpvjgavoh6rli5XnmoTjgavpgIHkv6HjgZfjgabjgYTjgb7jgZnjgII8QlI+PEJSPjxG
+T05UIA0KICAgICAgY29sb3I9d2hpdGU+ZVI8L0ZPTlQ+4oC744GT44Gu44Oh44O844Or44Gv44CB
+5Y+X5L+h44Oh44O844Or44KS5Y+X44GR5YWl44KM44KL44GT44Go44GM44Gn44GN44Gq44GE6YCa
+55+l5bCC55So44Ki44OJ44Os44K544GL44KJ6YCB5L+h44GV44KM44G+44GX44Gf44CC44GT44Gu
+44Oh44OD44K744O844K444Gr44Gv6L+U5L+h44GX44Gq44GE44Gn44GP44Gg44GV44GE44CCPEJS
+PjxCUj7ku4rlvozjgajjgoLjgpLjgojjgo3jgZfjgY/jgYrpoZjjgYTjgYTjgZ/jgZfjgb7jgZnj
+gII8L1A+DQogICAgICA8RElWIA0KICAgICAgc3R5bGU9IkZPTlQtU0laRTogMTRweDsgVEVYVC1E
+RUNPUkFUSU9OOiBub25lOyBGT05ULUZBTUlMWTogRW1iZXIsSGVsdmV0aWNhLEFyaWFsLHNhbnMt
+c2VyaWY7IFdPUkQtQlJFQUs6IGJyZWFrLWFsbCAhaW1wb3J0YW50OyBGT05ULVdFSUdIVDogNDAw
+OyBDT0xPUjogYmxhY2s7IG9wYWNpdHk6IDAiPg0KICAgICAgPFAgDQogICAgICBzdHlsZT0iRk9O
+VC1TSVpFOiAxcHg7IENPTE9SOiAjZmZmZmZmOyAtd2Via2l0LXRvdWNoLWNhbGxvdXQ6IG5vbmU7
+IC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7IC1raHRtbC11c2VyLXNlbGVjdDogbm9uZTsgLW1v
+ei11c2VyLXNlbGVjdDogbm9uZTsgLW1zLXVzZXItc2VsZWN0OiBub25lOyB1c2VyLXNlbGVjdDog
+bm9uZSI+5YuV55S76YWN5L+h44KE6Z+z5aOw5pON5L2c44Gr5a++5b+c44GX44CB44Oq44Oi44Kz
+44Oz44GrbmV0ZmxpeOOChHlvdXR1YmXjgarjganoqIg444K144O844OT44K544Gu44Oc44K/44Oz
+44GM5YKZ44KP44KK44Ov44Oz44K/44OD44OB44Gn6LW35YuV5Y+v6IO944CC44Gd44Gu44G744GL
+44CBZ29vZ2xl44Ki44K344K544K/44Oz44OI44Gn5Lya6Kmx44KS44GZ44KL44KI44GG44Gr5aOw
+44Gn5qSc57Si44GM44Gn44GN44KL44Gq44Gp5YWF5a6f44Gu5qmf6IO95oCn44Gn44GZ44GM44CB
+5pep6YCB44KK5YaN55Sf44Gr5a++5b+c44GX44Gm44GE44Gq44GE44GT44Go44Gn44KE44KE6KmV
+5L6h44GM5Ly444Gz5oKp44KA57WQ5p6c44Go44Gq44KK44G+44GX44Gf44CCPC9QPjwvRElWPg0K
+ICAgICAgPERJViANCiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDE0cHg7IFRFWFQtREVDT1JBVElP
+Tjogbm9uZTsgRk9OVC1GQU1JTFk6IEVtYmVyLEhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmOyBX
+T1JELUJSRUFLOiBicmVhay1hbGwgIWltcG9ydGFudDsgRk9OVC1XRUlHSFQ6IDQwMDsgQ09MT1I6
+IGJsYWNrIj4NCiAgICAgIDxQIA0KICAgICAgc3R5bGU9IkhFSUdIVDogMXB4OyBMSU5FLUhFSUdI
+VDogMXB4OyBCQUNLR1JPVU5ELUNPTE9SOiAjY2NjY2NjIj48L1A+PC9ESVY+DQogICAgICA8UCAN
+CiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDEwcHg7IFRFWFQtREVDT1JBVElPTjogbm9uZTsgRk9O
+VC1GQU1JTFk6IEVtYmVyLEhlbHZldGljYSxBcmlhbCxzYW5zLXNlcmlmOyBXT1JELUJSRUFLOiBi
+cmVhay1hbGwgIWltcG9ydGFudDsgRk9OVC1XRUlHSFQ6IDQwMDsgQ09MT1I6ICM2NjY2NjY7IExJ
+TkUtSEVJR0hUOiAxNHB4IiANCiAgICAgIGFsaWduPWNlbnRlcj48QlI+wqkgMTk5Ni0yMDI0LCBB
+bWF6b24uY29tLCBJbmMuIG9yIGl0cyANCiAgYWZmaWxpYXRlczwvUD48L1REPjwvVFI+PC9UQk9E
+WT48L1RBQkxFPjwvQ0VOVEVSPjwvQk9EWT48L0hUTUw+DQo=
+
+--=====002_Dragon801558237110_=====--
+
+--=====001_Dragon801558237110_=====
+Content-Type: image/png;
+	name="a_jp_logo_274x96.png"
+Content-Transfer-Encoding: base64
+Content-ID: <0001C749C4A0_0D3D9274_0F02FB99>
+
+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
+
+--=====001_Dragon801558237110_=====--
+
+
+
+--===============5943796756848801322==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4918508243179786072==
+--===============5943796756848801322==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -482,6 +440,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4918508243179786072==--
+--===============5943796756848801322==--
 
 
