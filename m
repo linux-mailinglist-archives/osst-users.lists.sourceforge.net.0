@@ -2,94 +2,84 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 3C8B48B1C00
-	for <lists+osst-users@lfdr.de>; Thu, 25 Apr 2024 09:36:43 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 90CEC8B2BD5
+	for <lists+osst-users@lfdr.de>; Thu, 25 Apr 2024 23:58:58 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1rzter-00087S-Ta
+	id 1s077J-00075s-2K
 	for lists+osst-users@lfdr.de;
-	Thu, 25 Apr 2024 07:36:42 +0000
+	Thu, 25 Apr 2024 21:58:57 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <martin.juve@cybercircuitryco.com>)
- id 1rztep-00087I-C7 for osst-users@lists.sourceforge.net;
- Thu, 25 Apr 2024 07:36:39 +0000
+ (envelope-from <nafisaabdul@financialpartiner.com>)
+ id 1s077E-00075i-ML for osst-users@lists.sourceforge.net;
+ Thu, 25 Apr 2024 21:58:53 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
+ :Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=tVslr6M9x1pIHGiSzdyYljX75LuTQ7r8zoSPK9nueHs=; b=OXLsbc62oKvqO2u5aieoI7rHgb
- HtCK6xiMu1agYFFIJ+idFKbg5ukyk3tkSHKaB4ZohqRuWyQSVWWZrlgrsKdOd871YWjhUUL45nptT
- ZbRp0Z2pVu9W59DmtmlwwhSvuvMyG1QkD+KR3xp7k/5VAlfeiwf7tLMc+8i5+Zd0cFzo=;
+ bh=2O6rNA/x5MBvfGF5J6xBvBTrtmgrXV6oxdbZJga3bd8=; b=nEw5KuAfHPTPMUC6yW7+QOak1J
+ gSX8jlz4o6Vlt5ZZ/p/gCfdMNbEqV7Gb31jcVvZ+sDlzUHkkhvvyenG7+uh4DCi0B0M9CQFmGoBtx
+ X6XyHmgknpei7bPYuKgQqoqZ7dbE1r3iCUNuYG3Lj7KOZEJFQN6m1YxkIg6VMJMfuV9E=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
- Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=tVslr6M9x1pIHGiSzdyYljX75LuTQ7r8zoSPK9nueHs=; b=k
- 20DfnThHlrM8TJY9/lbe2vzSVxYpUkxsiI/gdFGYYP8Qic5OINmjc5cSg+9eG7+trS1WNCc9N7LNB
- 2VKzjb65GbvzZkU8Db4Wq+TBKak4z6wCkCz+VtGu0fLnMissTTvfXpU8b0kTm4LUxbx5XMlkUOFYQ
- Mg+BtP2dLk7OvOuk=;
-Received: from mail.cybercircuitryco.com ([217.61.16.57])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1rzten-0007sD-Ax for osst-users@lists.sourceforge.net;
- Thu, 25 Apr 2024 07:36:39 +0000
-Received: by mail.CyberCircuitryCo.com (Postfix, from userid 1002)
- id 407DE828CF; Thu, 25 Apr 2024 09:36:19 +0200 (CEST)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=CyberCircuitryCo.com;
- s=mail; t=1714030586;
- bh=tVslr6M9x1pIHGiSzdyYljX75LuTQ7r8zoSPK9nueHs=;
- h=Date:From:To:Subject:From;
- b=dhRiRtwnLLNNR9Mjg9L/FJlKcTEq45sseEuRLYgwNVuS5kZXrruKvAI+DrtcDdBAV
- Oi2JbqGw9fojmDL1Qc9LTvQgATCVe5BoTZq459hF39wIBSLQJ2cWbih1vP0KiSbGAQ
- B8tKI9NGaWv6sa9/+NCp6iutN3hMXkAClpqiZj0cQLjTTJMEKcrl5NrcCS/XXRjNQX
- sRO1EJ3NPFlw9tZX0aSp+FcdkSzsNsQkfNg2zGq+MjU6tvLXMhymn+gUEmnlnfCBqc
- LMxfUBKhcy05R2gc0N2m10mMykI0hqB7tzoZJ1wkki7Cenr2RL7tmQmFy+z1wj4vT9
- h22dqHn6pxc4g==
-Received: by mail.CyberCircuitryCo.com for <osst-users@lists.sourceforge.net>;
- Thu, 25 Apr 2024 07:36:15 GMT
-Message-ID: <20240425084500-0.1.12.2j0y.0.bqp1pt4lmu@CyberCircuitryCo.com>
-Date: Thu, 25 Apr 2024 07:36:15 GMT
-To: <osst-users@lists.sourceforge.net>
-X-Mailer: mail.CyberCircuitryCo.com
+ List-Owner:List-Archive; bh=2O6rNA/x5MBvfGF5J6xBvBTrtmgrXV6oxdbZJga3bd8=; b=D
+ sTb3laabTXcwCJtppwmYYJh1jaONhmBQk+lWExyp4G9T+Ihs1vWvrp1Uwa4RoBuQlRUJitlt2hDPL
+ OGh8ehbypqu3F5jg65Hgm7/R5B+8bBYV6yOQD+3WybCQQfvLqKQejJDj8/Z5hR4fbReLFS8chkUUb
+ 8yjULHEtF4BKUe6g=;
+Received: from mail.financialpartiner.com ([104.168.19.115]
+ helo=financialpartiner.com)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1s077D-0004Ze-N9 for osst-users@lists.sourceforge.net;
+ Thu, 25 Apr 2024 21:58:52 +0000
+Received: from mail.financialpartiner.com (unknown [104.168.19.115])
+ by financialpartiner.com (Postfix) with ESMTP id C2B0443125
+ for <osst-users@lists.sourceforge.net>; Thu, 25 Apr 2024 16:51:49 -0500 (CDT)
+From: Nafisa Abdul<nafisaabdul@financialpartiner.com>
+To: osst-users@lists.sourceforge.net
+Date: 25 Apr 2024 21:51:49 +0000
+Message-ID: <20240425215149.7177F91FFE7422FD@financialpartiner.com>
 MIME-Version: 1.0
-X-Spam-Score: -0.2 (/)
+X-Spam-Score: 3.4 (+++)
 X-Spam-Report: Spam detection software,
  running on the system "util-spamd-1.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Hello,
- we are a software house specializing in software development
- and cloud services. We provide our clients with cloud service support and
- security, as well as Office 365 management. 
- Content analysis details:   (-0.2 points, 6.0 required)
+ Content preview:  Dear osst-users , I hope this message finds you well. I'm
+ pleased to inform you of an exciting financing opportunity recently made
+ available
+ by our Investor. This opportunity offers a low-interest rate, presenting
+ your business with the potential for significant growth and a favorable annual
+ ROI. Content analysis details:   (3.4 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
- blocked.  See
+ 0.0 RCVD_IN_DNSWL_BLOCKED  RBL: ADMINISTRATOR NOTICE: The query to
+ DNSWL was blocked.  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: cybercircuitryco.com]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [217.61.16.57 listed in wl.mailspike.net]
+ for more information. [104.168.19.115 listed in list.dnswl.org]
+ 1.2 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
+ bl.spamcop.net
+ [Blocked - see <https://www.spamcop.net/bl.shtml?104.168.19.115>]
+ 1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [104.168.19.115 listed in dnsbl-1.uceprotect.net]
+ 1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
-X-Headers-End: 1rzten-0007sD-Ax
-Subject: [Osst-users] Protecting Your Data and Applications in the Cloud
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 FROM_MISSP_EH_MATCH    From misspaced, matches envelope
+X-Headers-End: 1s077D-0004Ze-N9
+Subject: Re: [Osst-users] Exclusive Financing Opportunities Await You!
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -101,30 +91,54 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Martin Juve via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: Martin Juve <martin.juve@cybercircuitryco.com>
-Content-Type: text/plain; charset="us-ascii"
-Content-Transfer-Encoding: 7bit
+Reply-To: Nafisa Abdul <nafisaabdul@lcapitalloan.com>
+Content-Type: multipart/mixed; boundary="===============2071043744047734994=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-Hello,
+--===============2071043744047734994==
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
 
-we are a software house specializing in software development and cloud services.
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body><p>Dear osst-users&nbsp;,</p>
+<p>I hope this message finds you well. I'm pleased to inform you of an exci=
+ting financing opportunity recently made available by our Investor. <br><br=
+>This opportunity offers a low-interest rate, presenting your business with=
+ the potential for significant growth and a favorable annual ROI.</p>
+<p>Our lending process is characterized by efficiency and effectiveness, de=
+signed to provide essential funding support for your project promptly.</p>
+<p>I urge you not to overlook this opportunity. Kindly share your funding r=
+equirements with us at your earliest convenience.</p>
+<p>Additionally, we extend generous commissions to brokers who facilitate c=
+onnections with individuals or businesses seeking financing. <br><br>If you=
+ are aware of anyone who could benefit from our services, please do not hes=
+itate to refer them to us.</p>
+<p>Should you wish to explore this opportunity further and discuss your fun=
+ding needs in detail, please do not hesitate to contact us. Your prompt res=
+ponse would be greatly appreciated.</p>
+<p>Best regards,</p>
+<p>Nafisa Abdul<br>Loan Consultant</p>
+</body></html>
 
-We provide our clients with cloud service support and security, as well as Office 365 management.
 
-We have been operating in the market for over 13 years, during which many companies like yours have benefited from our services.
+--===============2071043744047734994==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
 
-We have a complete technology team with experience in virtually every programming language.
 
-Do you have a need for support in the field of cloud services?
-
-
-Best regards
-Martin Juve
-
+--===============2071043744047734994==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
 
 _______________________________________________
 Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
+
+--===============2071043744047734994==--
