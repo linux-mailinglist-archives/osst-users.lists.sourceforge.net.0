@@ -2,96 +2,105 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id F168D8C91B1
-	for <lists+osst-users@lfdr.de>; Sat, 18 May 2024 19:04:56 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id D72FB8C9456
+	for <lists+osst-users@lfdr.de>; Sun, 19 May 2024 13:01:25 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1s8NUN-0006iN-2i
+	id 1s8eI7-0001pm-FF
 	for lists+osst-users@lfdr.de;
-	Sat, 18 May 2024 17:04:55 +0000
+	Sun, 19 May 2024 11:01:24 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <booking@onyxvacationrentals.com>) id 1s8NUM-0006iG-L6
- for osst-users@lists.sourceforge.net; Sat, 18 May 2024 17:04:55 +0000
+ (envelope-from <infos@directdiffusion.uk>) id 1s8eI6-0001pg-C1
+ for osst-users@lists.sourceforge.net; Sun, 19 May 2024 11:01:23 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Message-Id:Date:MIME-Version:Content-Type:To:
- Subject:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=2WW3xPi5rI5pry9egQVDmxfdUq/zaMsGDguTeDZr+jc=; b=BpR9RIdjbkeGOGhdZLnOlJXIX2
- +T+XuaPjru2N8BqHT+9r2HbMjasV357XsVYFqCHd+EhI7N7G1wnZi3RalWsiyycihJdB+st+ZbO1w
- ZA4bkJRmFXpTS6RVrp7d1WJz3XpCxvTtwr6h922CvvQrw8TxmGGU9bXd3RKahmoHwOcQ=;
+ d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
+ Mime-Version:List-Unsubscribe:Message-ID:Reply-To:From:To:Date:Sender:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=NLZhfIVLB0eghCKj78wCNvREcSHnz+93nAjio5GVdUs=; b=es3UvKu9BGuERjFwS3MezGgil/
+ ghpnqqtNrr0wWQKQpTb6dj0gzHHuEmpbk3VG2oA9yeI8gVun3UhOGuixEKnBZqwu1faZHy6aSwUsC
+ qyN9b9Ex0Ad7NsFRlFie59Uzj8BbpZwEO+dwOXBdtmq3uIXDDBYEnfbh7iIaI2QMfRxs=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Message-Id:Date:MIME-Version:Content-Type:To:Subject:From:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=2WW3xPi5rI5pry9egQVDmxfdUq/zaMsGDguTeDZr+jc=; b=f
- N9UvtqQhPkbCfgt3jEWqHLTvlGOz5SXU1DiL6Luysarc6U6QqTUOFpCl92Ai2u2jL2RNgCaiffwWH
- aoAo9Ud31gvfNb//xjuNcSfUa0f+j6KUODaeiM/yDxbQcQduJg2FyQmKf6TlC8zmzOhg3dPvRWwpH
- GA89TkftpCxaJEeg=;
-Received: from 5771653.baggerbags.com ([162.215.217.107])
+ h=Subject:Content-Transfer-Encoding:Content-Type:Mime-Version:
+ List-Unsubscribe:Message-ID:Reply-To:From:To:Date:Sender:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=NLZhfIVLB0eghCKj78wCNvREcSHnz+93nAjio5GVdUs=; b=KjgBiooojsVMstkvnhABzI90J0
+ rUnHJTiJRA3axp9YSTnls9eyjnCjLYyStCZDHj1dO3QBVzkRYYW1u1ufAizZBBMEyLl8D4vSLt0GK
+ IQ2AWIliNfJDLxhsrPq/j4e5RBD70wkicu6OvbhZKmJYGwzEV1PNc0J0Hok3Ubv2fZYM=;
+Received: from [103.252.90.204] (helo=smtp.directdiffusion.uk)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1s8NUM-0000aY-Ug for osst-users@lists.sourceforge.net;
- Sat, 18 May 2024 17:04:55 +0000
-Received: from [188.215.229.134] (port=57961 helo=188)
- by 5771653.baggerbags.com with esmtpsa (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.96.2)
- (envelope-from <booking@onyxvacationrentals.com>) id 1s6XRI-0004Ny-1O
- for osst-users@lists.sourceforge.net; Mon, 13 May 2024 10:18:08 -0500
-From: =?iso-8859-1?B?SVQgTWVzc2dlIENlbnRlcq4=?=
- <booking@onyxvacationrentals.com>
-To: <osst-users@lists.sourceforge.net>
-MIME-Version: 1.0
-Date: Mon, 13 May 2024 17:18:09 +0200
-Message-Id: <20241305171808F559BDCB65-AE9311AA81@onyxvacationrentals.com>
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - 5771653.baggerbags.com
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - onyxvacationrentals.com
-X-Get-Message-Sender-Via: 5771653.baggerbags.com: authenticated_id:
- booking@onyxvacationrentals.com
-X-Authenticated-Sender: 5771653.baggerbags.com: booking@onyxvacationrentals.com
-X-Source: 
-X-Source-Args: 
-X-Source-Dir: 
-X-Spam-Score: 5.3 (+++++)
+ id 1s8eI6-0001UN-Ll for osst-users@lists.sourceforge.net;
+ Sun, 19 May 2024 11:01:23 +0000
+Date: Sun, 19 May 2024 13:01:15 +0200
+Authentication-Results: smtp.directdiffusion.uk; dkim=pass (2048-bit key;
+ unprotected) header.d=directdiffusion.uk header.i=infos@directdiffusion.uk
+ header.b="HNTv7RJ7"; dkim-atps=neutral
+To: osst-users@lists.sourceforge.net
+Message-ID: <1716116475.936526c5137809ef4aa1f391b5c3f9da@directdiffusion.uk>
+X-Priority: 3
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Mime-Version: 1.0
+DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=12839; s=mail;
+ t=1716116475; c=relaxed/simple; h=From:To:Subject;
+ d=directdiffusion.uk; i=infos@directdiffusion.uk;
+ z=From:=20The=20Complete=20Accountant=20<infos@directdiffusion.uk>
+ |To:=20osst-users@lists.sourceforge.net
+ |Subject:=20Unlimited=20Accountancy=20Services=20for=20One=20Monthly=20Fee;
+ bh=zUdGkBwXGJ9lV9YTXOeSk4I715g=;
+ b=HNTv7RJ7F2s9KCL7dVcHcFmdTqq5KPPyjOiLYY0g77IA27zJFiXHcjcjIJt+ToE6hSJI4tQySjYL6Of/Vzu+DszLyV8ckBfYuEyDn2u6w2Kqx1XI4vuKQ+6FEys1NuzRSnrIY6G2P6o5pXEWI/BH+1m/GkceCn0HQ9iMstDWTWVsuftQG41ATD00olTrexTrKSW0VenGk48vslWt5jPXavtV9sSfNRCdkCFwRaE4QhdD5CFZoWLNyN4f4sW9mabK1Ct3eW96PF4QdZXvoIMOwWXMz8PzoZsj1N0LYNNT39Yc8+yLM3GPR+wNM7torw2OYIw8+s3Eb3Q0WgstK4purw==
+X-Spam-Score: 8.1 (++++++++)
 X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has NOT identified this incoming email as spam.  The original
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  lists.sourceforge.net account Security alert We think that
- someone else might have accessed the lists.sourceforge.net account 
- Content analysis details:   (5.3 points, 6.0 required)
+ Content preview: Unlimited Accountancy Services ONE MONTHLY FEE Quote Online
+ To See How Much You Should Be Paying GET QUOTE ONLINE Unlimited Accountancy
+ Services Unlimited Telephone Support Unlimited Email Support (3 Hour Response)
+ Dedicated Accountant Monthly Bookkeeping/Reconciliation Quarterly VAT Returns
+ Company Annual Accoun [...] 
+ Content analysis details:   (8.1 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
  blocked.  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: emlnk.com]
- 0.3 RCVD_IN_MSPIKE_L3      RBL: Low reputation (-3)
- [162.215.217.107 listed in bl.mailspike.net]
+ for more information. [URIs: hosting.ovh.net]
+ 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [103.252.90.204 listed in dnsbl-1.uceprotect.net]
  0.0 RCVD_IN_DNSWL_BLOCKED  RBL: ADMINISTRATOR NOTICE: The query to
  DNSWL was blocked.  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [162.215.217.107 listed in list.dnswl.org]
- -0.0 SPF_PASS               SPF: sender matches SPF record
+ for more information. [103.252.90.204 listed in list.dnswl.org]
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 HTML_MESSAGE           BODY: HTML included in message
- 5.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
- 0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
- Colors in HTML
-X-Headers-End: 1s8NUM-0000aY-Ug
-Subject: [Osst-users] lists.sourceforge.net account security alert
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+ identical to background
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain 2.0 PYZOR_CHECK            Listed in Pyzor
+ (https://pyzor.readthedocs.io/en/latest/)
+ 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 0.0 NORDNS_LOW_CONTRAST    No rDNS + hidden text
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1s8eI6-0001UN-Ll
+Subject: [Osst-users] [SPAM] Unlimited Accountancy Services for One Monthly
+ Fee
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -103,205 +112,369 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3515844109669667323=="
+From: The Complete Accountant via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: infos@directdiffusion.uk
+Content-Type: multipart/mixed; boundary="===============4176225804675771722=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format
+--===============4176225804675771722==
+Content-Type: multipart/alternative;
+	boundary="b1_23deb512f6bbba8b8f74dc7cec405b1e"
+Content-Transfer-Encoding: 8bit
 
---===============3515844109669667323==
-Content-Type: multipart/alternative; boundary="u9apa5Zyj5rxzAC9T1koC4qo4x5J=_93Hu"
+--b1_23deb512f6bbba8b8f74dc7cec405b1e
+Content-Type: text/plain; charset=us-ascii
 
-This is a multi-part message in MIME format
-
---u9apa5Zyj5rxzAC9T1koC4qo4x5J=_93Hu
-Content-Type: text/plain; charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
-
-
-lists.sourceforge.net account
-
-Security alert
-
-We think that someone else might have accessed the lists.sourceforge.n=
-et account=20
-
-osst-users@lists.sourceforge.net
-
-=2E When this happens, we require you to verify your identity with a s=
-ecurity challenge and then change your password the next time you sign=
- in.
-
-If someone else has access to your account, they have your password an=
-d might be trying to access your personal information or send junk ema=
-il.
-
-If you haven't already recovered your account, we can help you do it n=
-ow.
-
-Recover account https://servidomic66338.lt.emlnk.com/Prod/link-tracker=
-?notrack=3D1&redirectUrl=3DaHR0cHMlM0ElMkYlMkZjbG91ZGZsYXJlLWlwZnMuY29=
-tJTJGaXBmcyUyRmJhZnliZWlhNGR2YzNpbDZ0YWd1YjU3bDVqbWltZ2JsN2o2eHdtbzRmd=
-2tqaTdueWhrYXR5Z3FhYmlpJTJGYXR0YWNodW9kYXRlLmh0bWw=3D&sig=3DGoLMM5oDxw=
-XkVSo4qCBPYCCA7bR9NNLeGF35ygY76bsD&iat=3D1715030762&a=3D%7C%7C47855547=
-7%7C%7C&account=3Dservidomic66338%2Eactivehosted%2Ecom&email=3DCWuTNiv=
-KslSMhmU%2BK63VkDSOLcfLmaDlx0sThdJ6yXXpEGKofA%3D%3D%3A9MG0jdT4TxOBNgAs=
-qE0DYRRBb%2FJdKdJt&s=3DYmFiYWNsZXR1c0B5YW5kZXguY29t&i=3D1A3A0A9#osst-u=
-sers@lists.sourceforge.net
-
-Learn how to=20
-
-make your account more secure http:///#
-
-=2E
-
-Thanks,
-
-The lists.sourceforge.net account team
-
-Privacy Statement http://#
-
-lists.sourceforge.net Corporation, One Microsoft Way, Redmond, WA 9805=
-2
-
---u9apa5Zyj5rxzAC9T1koC4qo4x5J=_93Hu
-Content-Type: text/html; charset="iso-8859-1"
-Content-Transfer-Encoding: quoted-printable
-
-
-<html><head>
-<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-=
-8859-1">
-  <META content=3D"text/html; charset=3Diso-8859-1" http-equiv=3DConte=
-nt-Type><body<TABLE style=3D"FONT-SIZE: 15px; WHITE-SPACE: normal; WOR=
-D-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: #242424=
-; FONT-STYLE: normal; LETTER-SPACING: normal; BACKGROUND-COLOR: #fffff=
-f; font-variant-ligatures: normal; font-variant-caps: normal; font-var=
-iant-numeric: inherit; font-variant-east-asian: inherit; font-variant-=
-alternates: inherit; font-variant-position: inherit; font-stretch: inh=
-erit; font-optical-sizing: inherit; font-kerning: inherit; font-featur=
-e-settings: inherit; font-variation-settings: inherit; text-decoration=
--thickness: initial; text-decoration-style: initial; text-decoration-c=
-olor: initial" dir=3Dltr><TR><TD style=3D"FONT-SIZE: 17px; FONT-FAMILY=
-: 'Segoe UI Semibold', 'Segoe UI Bold', 'Segoe UI', 'Helvetica Neue Me=
-dium', Arial, sans-serif; WHITE-SPACE: normal; COLOR: #707070; PADDING=
--BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"=
-><title>lists.sourceforge.net account security alert</title>
- </head>
- <BODY> <P><table style=3D"FONT-SIZE: 15px; WHITE-SPACE: normal; WORD-=
-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIGHT: 400; COLOR: rgb(36,36=
-,36); FONT-STYLE: normal; BACKGROUND-COLOR: rgb(255,255,255); font-var=
-iant-ligatures: normal; font-variant-caps: normal; font-variant-numeri=
-c: inherit; font-variant-east-asian: inherit; font-variant-alternates:=
- inherit; font-variant-position: inherit; font-stretch: inherit; font-=
-optical-sizing: inherit; font-kerning: inherit; font-feature-settings:=
- inherit; font-variation-settings: inherit; text-decoration-thickness:=
- initial; text-decoration-style: initial; text-decoration-color: initi=
-al" dir=3Dltr> <tr><td id=3Dgmail-x_i1 style=3D"FONT-SIZE: 17px; FONT-=
-FAMILY: 'Segoe UI Semibold', 'Segoe UI Bold', 'Segoe UI', 'Helvetica N=
-eue Medium', Arial, sans-serif; WHITE-SPACE: normal; COLOR: rgb(112,11=
-2,112); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADD=
-ING-RIGHT: 0px">lists.sourceforge.net account</TD></tr><tr><td id=3Dgm=
-ail-x_i2 style=3D"FONT-SIZE: 41px; FONT-FAMILY: 'Segoe UI Light', 'Seg=
-oe UI', 'Helvetica Neue Medium', Arial, sans-serif; WHITE-SPACE: norma=
-l; COLOR: rgb(38,114,236); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADD=
-ING-LEFT: 0px; PADDING-RIGHT: 0px">Security alert</TD></tr><tr><td id=3D=
-gmail-x_i3 style=3D"FONT-SIZE: 14px; FONT-FAMILY: 'Segoe UI', Tahoma, =
-Verdana, Arial, sans-serif; WHITE-SPACE: normal; COLOR: rgb(42,42,42);=
- PADDING-BOTTOM: 0px; PADDING-TOP: 25px; PADDING-LEFT: 0px; PADDING-RI=
-GHT: 0px">We think that someone else might have accessed the lists.sou=
-rceforge.net account&nbsp;<A id=3Dgmail-x_iAccount style=3D"TEXT-DECOR=
-ATION: none; BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: basel=
-ine; BORDER-BOTTOM: 0px; COLOR: rgb(38,114,236); PADDING-BOTTOM: 0px; =
-PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PA=
-DDING-RIGHT: 0px" dir=3Dltr>osst-users@lists.sourceforge.net</A>. When=
- this happens, we require you to verify your identity with a security =
-challenge and then change your password the next time you sign in.</TD=
-></tr><tr><td id=3Dgmail-x_i4 style=3D"FONT-SIZE: 14px; FONT-FAMILY: '=
-Segoe UI', Tahoma, Verdana, Arial, sans-serif; WHITE-SPACE: normal; CO=
-LOR: rgb(42,42,42); PADDING-BOTTOM: 0px; PADDING-TOP: 25px; PADDING-LE=
-FT: 0px; PADDING-RIGHT: 0px">If someone else has access to your accoun=
-t, they have your password and might be trying to access your personal=
- information or send junk email.</TD></tr><tr><td id=3Dgmail-x_i5 styl=
-e=3D"FONT-SIZE: 14px; FONT-FAMILY: 'Segoe UI', Tahoma, Verdana, Arial,=
- sans-serif; WHITE-SPACE: normal; COLOR: rgb(42,42,42); PADDING-BOTTOM=
-: 0px; PADDING-TOP: 25px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">If yo=
-u haven't already recovered your account, we can help you do it now.</=
-TD></tr><tr><td style=3D"FONT-SIZE: 14px; FONT-FAMILY: 'Segoe UI', Tah=
-oma, Verdana, Arial, sans-serif; WHITE-SPACE: normal; COLOR: rgb(42,42=
-,42); PADDING-BOTTOM: 0px; PADDING-TOP: 25px; PADDING-LEFT: 0px; PADDI=
-NG-RIGHT: 0px"><table cellSpacing=3D0 border=3D0> <tr><td style=3D"WHI=
-TE-SPACE: normal; MIN-WIDTH: 50px; PADDING-BOTTOM: 5px; PADDING-TOP: 5=
-px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; BACKGROUND-COLOR: rgb(38,=
-114,236)" bgColor=3D#2672ec><A id=3Dgmail-x_i6 style=3D"FONT-SIZE: 14p=
-x; TEXT-DECORATION: none; BORDER-TOP: 0px; FONT-FAMILY: 'Segoe UI Semi=
-bold', 'Segoe UI Bold', 'Segoe UI', 'Helvetica Neue Medium', Arial, sa=
-ns-serif; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: =
-0px; FONT-WEIGHT: 600; COLOR: rgb(255,255,255); PADDING-BOTTOM: 0px; T=
-EXT-ALIGN: center; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0=
-px; MARGIN: 0px; PADDING-RIGHT: 0px; font-stretch: inherit; font-optic=
-al-sizing: inherit; font-kerning: inherit; font-feature-settings: inhe=
-rit; font-variation-settings: inherit" href=3D"https://servidomic66338=
-=2Elt.emlnk.com/Prod/link-tracker?notrack=3D1&amp;redirectUrl=3DaHR0cH=
-MlM0ElMkYlMkZjbG91ZGZsYXJlLWlwZnMuY29tJTJGaXBmcyUyRmJhZnliZWlhNGR2YzNp=
-bDZ0YWd1YjU3bDVqbWltZ2JsN2o2eHdtbzRmd2tqaTdueWhrYXR5Z3FhYmlpJTJGYXR0YW=
-NodW9kYXRlLmh0bWw=3D&amp;sig=3DGoLMM5oDxwXkVSo4qCBPYCCA7bR9NNLeGF35ygY=
-76bsD&amp;iat=3D1715030762&amp;a=3D%7C%7C478555477%7C%7C&amp;account=3D=
-servidomic66338%2Eactivehosted%2Ecom&amp;email=3DCWuTNivKslSMhmU%2BK63=
-VkDSOLcfLmaDlx0sThdJ6yXXpEGKofA%3D%3D%3A9MG0jdT4TxOBNgAsqE0DYRRBb%2FJd=
-KdJt&amp;s=3DYmFiYWNsZXR1c0B5YW5kZXguY29t&amp;i=3D1A3A0A9#osst-users@l=
-ists.sourceforge.net" rel=3D"noopener noreferrer" target=3D_blank>Reco=
-ver account</A></TD></TR></TABLE></TD></tr><tr><td id=3Dgmail-x_i7 sty=
-le=3D"FONT-SIZE: 14px; FONT-FAMILY: 'Segoe UI', Tahoma, Verdana, Arial=
-, sans-serif; WHITE-SPACE: normal; COLOR: rgb(42,42,42); PADDING-BOTTO=
-M: 0px; PADDING-TOP: 25px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">Lear=
-n how to&nbsp;<A id=3Dgmail-x_iLink2 style=3D"TEXT-DECORATION: none; B=
-ORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; BORDER-BO=
-TTOM: 0px; COLOR: rgb(38,114,236); PADDING-BOTTOM: 0px; PADDING-TOP: 0=
-px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0=
-px" href=3D"http:///#" rel=3D"noopener noreferrer" target=3D_blank>mak=
-e your account more secure</A>.</TD></tr><tr><td id=3Dgmail-x_i8 style=
-=3D"FONT-SIZE: 14px; FONT-FAMILY: 'Segoe UI', Tahoma, Verdana, Arial, =
-sans-serif; WHITE-SPACE: normal; COLOR: rgb(42,42,42); PADDING-BOTTOM:=
- 0px; PADDING-TOP: 25px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">Thanks=
-,</TD></tr><tr><td id=3Dgmail-x_i9 style=3D"FONT-SIZE: 14px; FONT-FAMI=
-LY: 'Segoe UI', Tahoma, Verdana, Arial, sans-serif; WHITE-SPACE: norma=
-l; COLOR: rgb(42,42,42); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDIN=
-G-LEFT: 0px; PADDING-RIGHT: 0px">The&nbsp;lists.sourceforge.net accoun=
-t team</TD></TR></TABLE></P> <DIV style=3D"FONT-SIZE: 15px; BORDER-TOP=
-: 0px; BORDER-RIGHT: 0px; VERTICAL-ALIGN: baseline; WHITE-SPACE: norma=
-l; WORD-SPACING: 0px; BORDER-BOTTOM: 0px; TEXT-TRANSFORM: none; FONT-W=
-EIGHT: 400; COLOR: rgb(36,36,36); PADDING-BOTTOM: 0px; FONT-STYLE: nor=
-mal; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 20=
-px 0px 10px; PADDING-RIGHT: 0px; BACKGROUND-COLOR: rgb(255,255,255); T=
-EXT-INDENT: 0px; font-variant-ligatures: normal; font-variant-caps: no=
-rmal; font-variant-numeric: inherit; font-variant-east-asian: inherit;=
- font-variant-alternates: inherit; font-variant-position: inherit; fon=
-t-stretch: inherit; font-optical-sizing: inherit; font-kerning: inheri=
-t; font-feature-settings: inherit; font-variation-settings: inherit; t=
-ext-decoration-thickness: initial; text-decoration-style: initial; tex=
-t-decoration-color: initial"><A style=3D"BORDER-TOP: 0px; BORDER-RIGHT=
-: 0px; VERTICAL-ALIGN: baseline; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 0=
-px; PADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 0px=
-; PADDING-RIGHT: 0px" href=3D"#" rel=3D"noopener noreferrer">Privacy S=
-tatement</A> <DIV style=3D"BORDER-TOP: 0px; BORDER-RIGHT: 0px; VERTICA=
-L-ALIGN: baseline; BORDER-BOTTOM: 0px; COLOR: ; PADDING-BOTTOM: 0px; P=
-ADDING-TOP: 0px; PADDING-LEFT: 0px; BORDER-LEFT: 0px; MARGIN: 10px 0px=
- 0px; PADDING-RIGHT: 0px">lists.sourceforge.net Corporation, One Micro=
-soft Way, Redmond, WA 98052</DIV></DIV></body>
- </html>
-
---u9apa5Zyj5rxzAC9T1koC4qo4x5J=_93Hu--
+Unlimited
+Accountancy
+Services
+ONE MONTHLY FEE
+Quote Online To See How Much You Should Be Paying
+GET QUOTE ONLINE
 
 
 
---===============3515844109669667323==
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unlimited Accountancy
+Services
+Unlimited Telephone Support
+Unlimited Email Support (3 Hour Response)
+Dedicated Accountant
+Monthly Bookkeeping/Reconciliation
+Quarterly VAT Returns
+Company Annual Accounts
+Company Tax Return
+Self-Assessment Tax Returns
+Submission of Confirmation Statement
+Xero Software
+Xero Training
+Company Incorporation (if required)
+VAT Registration (if required)
+PAYE Registration (if required)
+CIS Registration (if required)
+Financial Reference (e.g. Mortgage)
+Access to Business Funding
+Monthly Management Information
+Tired of unexpected accountancy fees?
+Get unlimited services and Support for
+
+One Monthly fee
+NEVER ANY UNEXPECTED FEES*
+
+
+
+
+  
+
+
+
+This e-mail is brought to you by an independent e-mail marketing company.
+Follow this link to stop messages about ACCOUNTANCY SERVICES.
+You have the right of access, rectification, opposition and consent,
+which you have access on this web page: Privacy policy.
+
+
+
+
+
+
+--b1_23deb512f6bbba8b8f74dc7cec405b1e
+Content-Type: text/html; charset=us-ascii
+
+<!DOCTYPE html>
+			                   <html>
+				               	<head>
+					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				                </head>
+				                <body>
+					            	<head>   
+  <style type="text/css">
+		.padding10{
+			padding:20px 0;
+		}
+		body{
+			font-family:&#039;Poppins&#039;,sans-serif;
+			
+		}
+		h1.head1{
+			background:#49b4fc;
+			color:#ffffff;
+			font-size:36px;
+			font-weight:500;
+			padding:5px;
+			text-align:center;
+			margin:0;
+			width:350px;
+		}
+		h2.head2{
+			padding:0;
+			margin:0;
+			font-size:36px;
+			font-weight:500;
+			text-align:center;
+		}
+		td.image{
+			text-align:center;
+		}
+		td.skyb{
+			background:#E5F5FF;
+		}
+		td.bluebg{
+			font-size:10px;
+		}
+		.fnt10{
+			font-size:13px;
+		}
+		li{
+			padding-bottom:10px;
+		}
+		.thinh1{
+			font-weight:normal;
+			line-height:45px;
+		}
+	@media only screen and (max-width: 480px){
+		table#canspamBar td{
+			font-size:14px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table#canspamBar td a{
+			display:block !important;
+			margin-top:10px !important;
+		}
+
+}
+
+#lli li{
+color:#41b10c;
+
+}
+
+#lld li{
+color:#e40f48;
+
+}
+
+
+</style></head>
+  <body >
+    
+      <table id="bodyTable" style="background:#fff; padding:0px;border-collapse:collapse;border-spacing:0px; marging:20px;max-width:620px;" border="0"  cellspacing="5" cellpadding="0">
+
+      <tbody>
+        <tr>
+          <td align="center" valign="top" style="">
+            <table style="padding:0px;border-collapse:collapse;border-spacing:0px;" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;background:#ffffff;"><img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/logo.jpg" alt="">
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                    <h1 style="font-size: 74px; font-weight: 900; line-height: 74px; margin: 50px 0 0 0;"> <a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/services/">Unlimited<br>Accountancy<br>Services</a></h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                    <h1 style="font-size: 42px; font-weight: 900; line-height: 74px; color:#ed393b; margin:0; > ">ONE MONTHLY FEE</h1>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                    <h3 style="font-size: 20px; font-weight: 500; line-height: 74px; color:#000000; margin:0; > ">Quote Online To See How Much You Should Be Paying</h1>
+                  </td>
+                </tr>                
+                
+                
+                                
+
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                    <a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/services/" style="background: #54c81e; color:#fff; text-decoration:none;font-weight: bold; padding: 14px 45px;">GET QUOTE ONLINE</a>
+                  </td>
+                </tr>
+                
+
+
+
+                <tr>                
+                    <td colspan="2" align="center"  style="background:url(&#039;http://trazibm.cluster029.hosting.ovh.net/mtaccounting/back.jpg&#039;); background-position: top center; background-repeat: no-repeat; padding:0px;" >
+                            <table>  
+                            
+                                                                                    
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+
+
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br> 
+                    <br>  
+
+                  </td>
+                </tr>                
+                
+                
+               
+
+
+                <tr>
+                  <td colspan="2"  style="padding: 25px;">
+                    <table border="0" cellpadding="0" cellspacing="10" width="100%">
+                    
+                    
+                <tr>
+                  <td class="image" colspan="2" align="center">
+                    
+                  
+                    
+                    
+                   <strong><span style="color: #ffffff; background: #556ae4e8; padding: 10px 20px; font-size: 40px; display:inline-block;">Unlimited Accountancy <br> <span style="color: #08c0ed;" >Services</span> </span></strong>
+                  </td>
+                </tr>                     
+                    
+                    
+                      <tr valign="top">
+                        <td width="50%">
+                          <ul id="lli" style="background: #fff; margin: 0 10px; border-bottom: 15px #e8e8e8 solid; border-top: 25px #fff solid; padding-bottom: 5px; height: 290px;">
+                            <li><span style="color:#000;">Unlimited Telephone Support</span></li>
+                            <li><span style="color:#000;">Unlimited Email Support (3 Hour Response)</span></li>
+                            <li><span style="color:#000;">Dedicated Accountant</span></li>
+                            <li><span style="color:#000;">Monthly Bookkeeping/Reconciliation</span></li>
+                            <li><span style="color:#000;">Quarterly VAT Returns</span></li>
+                            <li><span style="color:#000;">Company Annual Accounts</span></li>
+                            <li><span style="color:#000;">Company Tax Return</span></li>
+                            <li><span style="color:#000;">Self-Assessment Tax Returns</span></li>
+                            <li><span style="color:#000;">Submission of Confirmation Statement</span></li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul id="lld" style="background: #fff; margin: 0 10px; border-bottom: 15px #e8e8e8 solid; border-top: 25px #fff solid; padding-bottom: 5px; height: 290px;">
+                            <li><span style="color:#000;">Xero Software </span></li>
+                            <li><span style="color:#000;">Xero Training</span></li>
+                            <li><span style="color:#000;">Company Incorporation (if required)</span></li>
+                            <li><span style="color:#000;">VAT Registration (if required)</span></li>
+                            <li><span style="color:#000;">PAYE Registration (if required)</span></li>
+                            <li><span style="color:#000;">CIS Registration (if required)</span></li>
+                            <li><span style="color:#000;">Financial Reference (e.g. Mortgage)</span></li>
+                            <li><span style="color:#000;">Access to Business Funding</span></li>
+                            <li><span style="color:#000;">Monthly Management Information</span></li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                
+                
+                </table>
+                </td>
+                </tr>
+                
+                
+                                                                                                                                
+                <tr>
+                  <td class="image" colspan="2" align="center">
+                  
+                    <h1 class="thinh1">Tired of unexpected accountancy fees?<br>
+                      Get unlimited services and Support for <br>
+                      <br>
+                      <span style="background:#78ee41; padding:10px 20px; margin: 5px 0 0 0;" > <a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/services/">One Monthly fee</a>
+                    </h1>
+                    <h1 style=&#039;color:#f73333; font-weight:800; font-size: 25px;&#039;>NEVER ANY UNEXPECTED FEES*</h1>
+                    
+                  </td>
+                </tr>
+                
+
+                <tr>                
+                    <td colspan="2" align="center"  style="background:url(&#039;http://trazibm.cluster029.hosting.ovh.net/mtaccounting/footer.jpg&#039;); background-position: center center; background-repeat: no-repeat; padding:0px;" >
+                            <table>     
+                                            <tr>
+                                              <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                       <br>
+ <img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/xero.png" alt="">
+                    <br>
+                    <br> 
+                    <br>
+                    
+                                               <img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/fb.png" alt="">
+                                               <img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/ig.png" alt="">
+                                               <img src="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/li.png" alt="">                    
+                   
+                    <br>                  
+                    <br>
+                                               </td>
+                                            </tr>                            
+                                       
+
+                                            <tr>
+                                              <td  style="color:#fff; font-size:12px;" colspan="2" align="center">
+                                                <br>
+                                                   <br />
+ This e-mail is brought to you by an independent e-mail marketing company.
+                    <br><a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/devant/?email=dRsEuQRYggrunTyBFZx6He3OTTpz7YDWR0s42wFr9W20giYbURLgtKtI+KL5ea9wxfolqfes/Oxp34DJWs360AU+hLi5/IoXOExgejQUIJ1VdELsejjG8WALHFtdPMik0OhKqZANqgUJ/TAiig48siNzkM+8/3kJJu3AzFYAgNI=&c=uuukkk1">Follow this link</a> to stop messages about <strong>ACCOUNTANCY SERVICES</strong>.<br>
+                    You have the right of access, rectification, opposition and consent, <br>which you have access on this web page: <a href="http://trazibm.cluster029.hosting.ovh.net/mtaccounting/yvais/" style="color:#09f;" target="_blank">Privacy policy</a>.
+                 
+            <br />  
+                                                <br>
+                                                <br> <br>
+                    <br>
+                                              </td>
+                                            </tr>                
+                            </table>                
+                    </td>
+                </tr>                
+
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+				                </body>
+			                   </html>
+
+
+
+--b1_23deb512f6bbba8b8f74dc7cec405b1e--
+
+
+
+--===============4176225804675771722==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3515844109669667323==
+--===============4176225804675771722==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -312,6 +485,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3515844109669667323==--
+--===============4176225804675771722==--
 
 
