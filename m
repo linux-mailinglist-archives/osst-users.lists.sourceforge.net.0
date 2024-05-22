@@ -2,52 +2,52 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 5775C8CC3FA
-	for <lists+osst-users@lfdr.de>; Wed, 22 May 2024 17:18:58 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 867158CC4B8
+	for <lists+osst-users@lfdr.de>; Wed, 22 May 2024 18:12:49 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1s9njz-00010A-Vg
+	id 1s9oa8-0004NE-1v
 	for lists+osst-users@lfdr.de;
-	Wed, 22 May 2024 15:18:57 +0000
+	Wed, 22 May 2024 16:12:48 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <www-data@mx1.mercadopagocow.club>)
- id 1s9njy-000101-Ss for Osst-users@lists.sourceforge.net;
- Wed, 22 May 2024 15:18:56 +0000
+ (envelope-from <www-data@v150-95-83-146.a017.g.bkk1.static.cnode.io>)
+ id 1s9oa5-0004My-V2 for Osst-users@lists.sourceforge.net;
+ Wed, 22 May 2024 16:12:46 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
  Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=3va4Q7SVcGpsabKwqCJXigE5IiBqwcQ3kh27lZ3VBPo=; b=hHYEE7zXX4b/8nLxK28OzAXJTB
- dCzkI4g+4Se8Gp6PnNJQzAbvNX/DZlNAEbQhasWfGqC+wQjWXSJO7cF7eWlW+zUtJd+HUbSC/ChmL
- De9XQm7FnVndbTCy9Y2xZps1m6oZSierVtn3OkbAKiO81FYn250c5eRxGkC5oivi+Rgw=;
+ bh=XCJYCoBPncVGkKuJtup+ThT7IRbn6bG+LPh3U+y3rEU=; b=FlOWqfAUhpTR2kpo7MlrytIneb
+ MzqhNf43W9PQQcyUqadXQhchuwF6Qxk585K4fSPaM24eEKyI6SGS+mUo0tBPV997VC/7E7zROXhLN
+ +Juem9xCdThBrm25id3ETjtUeRAiNyMXey2HxmwSdLo9z9eSWkz8CDnN2MHk5nFLZzXk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=3va4Q7SVcGpsabKwqCJXigE5IiBqwcQ3kh27lZ3VBPo=; b=T
- U1z6Pl7iG2E9oXO32L/6SK4Z1EvU2835MDFWY9nQXNVApI5Oz/HN4Y3S9lLRzAmqSZb6qDHeeSWGL
- sd2anLWNG3GLOum05Eu5kcoGEabsOeQMSErx2ULzNGRdJS3++BkS9FCtwHBCujpjNF6/q2q/9we90
- IsrXZrTDsoWzCCPo=;
-Received: from [150.95.26.246] (helo=mx1.mercadopagocow.club)
+ List-Owner:List-Archive; bh=XCJYCoBPncVGkKuJtup+ThT7IRbn6bG+LPh3U+y3rEU=; b=F
+ tx6tHMP09463ABX7BjL0DqpHLdJvnn7ly8p0qE4M6yr6wbEJtRoVxXdIoomRsG7dtkPlT+URnu/kc
+ fmwKn509EXF8GmQlDKWfSp0pMiwlpB/7/XYEKS0EM5sbnCU4pfs6JU2K0AuhluagV6VsqrHzHfoxU
+ 6b9240Q0go3VCIs4=;
+Received: from v150-95-83-146.a017.g.bkk1.static.cnode.io ([150.95.83.146])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1s9njz-0008LY-6L for Osst-users@lists.sourceforge.net;
- Wed, 22 May 2024 15:18:56 +0000
-Received: by mx1.mercadopagocow.club (Postfix, from userid 33)
- id 35C73A17A4; Wed, 22 May 2024 21:53:20 +0700 (+07)
+ id 1s9oa5-0004JU-Qn for Osst-users@lists.sourceforge.net;
+ Wed, 22 May 2024 16:12:46 +0000
+Received: by v150-95-83-146.a017.g.bkk1.static.cnode.io (Postfix,
+ from userid 33) id E8775A79F6; Wed, 22 May 2024 22:27:51 +0700 (+07)
 To: Osst-users@lists.sourceforge.net
 MIME-Version: 1.0
-From: Magalu <ofertas.magalu-7@magalu-magazine-luiza.com>
-Message-Id: <20240522145320.35C73A17A4@mx1.mercadopagocow.club>
-Date: Wed, 22 May 2024 21:53:20 +0700 (+07)
-X-Spam-Score: 4.8 (++++)
+From: Ofertas Magalu <ofertas.magalu-86@magazine-luiza.com>
+Message-Id: <20240522152751.E8775A79F6@v150-95-83-146.a017.g.bkk1.static.cnode.io>
+Date: Wed, 22 May 2024 22:27:51 +0700 (+07)
+X-Spam-Score: 1.3 (+)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
@@ -58,7 +58,7 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
     descadastre-se Smart TV 65” UHD 4K LED Samsung 65CU7700 - Wi-Fi Bluetooth
     Alexa 3 HDMI 
  
- Content analysis details:   (4.8 points, 6.0 required)
+ Content analysis details:   (1.3 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
@@ -66,29 +66,29 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
                              blocked.  See
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
-                             [URIs: mlcdn.com.br]
-  1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
-                             https://senderscore.org/blocklistlookup/
-                             [150.95.26.246 listed in bl.score.senderscore.com]
+                             [URIs: magazineluiza.com.br]
+  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+                             [URIs: redirs-magal.com]
+  0.0 RCVD_IN_DNSWL_BLOCKED  RBL: ADMINISTRATOR NOTICE: The query to
+                             DNSWL was blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [150.95.83.146 listed in list.dnswl.org]
+  0.2 CK_HELO_GENERIC        Relay used name indicative of a Dynamic Pool or
+                             Generic rPTR
   0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
                              mail domains are different
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
   0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
-                             DNS
   0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
   0.0 HTML_MESSAGE           BODY: HTML included in message
   0.0 HTML_IMAGE_RATIO_08    BODY: HTML has a low ratio of text to image
                              area
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: redirs-magal.com]
-  0.4 NO_DNS_FOR_FROM        DNS: Envelope sender has no MX or A DNS records
   0.0 LOTS_OF_MONEY          Huge... sums of money
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
   0.7 CONTENT_AFTER_HTML_WEAK More content after HTML close tag
-X-Headers-End: 1s9njz-0008LY-6L
+X-Headers-End: 1s9oa5-0004JU-Qn
 Subject: [Osst-users] Queima de Estoque Magalu: Televisores 4k a partir de:
- R$ 698, 99 - APROVEITE  - [ 974474519480  ]
+ R$ 698, 99 - APROVEITE  - [ 897852130096  ]
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -100,10 +100,10 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============6547433735207076569=="
+Content-Type: multipart/mixed; boundary="===============0697691184472662467=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============6547433735207076569==
+--===============0697691184472662467==
 Content-type: text/html; charset=utf-8
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -396,17 +396,17 @@ Content-type: text/html; charset=utf-8
     </table>
 </body>
 
-</html>22/05/2024 09:53:20
+</html>22/05/2024 10:27:51
 
 
---===============6547433735207076569==
+--===============0697691184472662467==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6547433735207076569==
+--===============0697691184472662467==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -417,4 +417,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6547433735207076569==--
+--===============0697691184472662467==--
