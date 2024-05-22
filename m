@@ -2,54 +2,54 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 8D1F48CB161
-	for <lists+osst-users@lfdr.de>; Tue, 21 May 2024 17:31:25 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 5775C8CC3FA
+	for <lists+osst-users@lfdr.de>; Wed, 22 May 2024 17:18:58 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1s9RSV-0004C7-Ub
+	id 1s9njz-00010A-Vg
 	for lists+osst-users@lfdr.de;
-	Tue, 21 May 2024 15:31:24 +0000
+	Wed, 22 May 2024 15:18:57 +0000
 Received: from [172.30.20.202] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <www-data@mx1.mercadopagosendable.xyz>)
- id 1s9RSU-0004C1-7c for osst-users@lists.sourceforge.net;
- Tue, 21 May 2024 15:31:22 +0000
+ (envelope-from <www-data@mx1.mercadopagocow.club>)
+ id 1s9njy-000101-Ss for Osst-users@lists.sourceforge.net;
+ Wed, 22 May 2024 15:18:56 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Date:Message-Id:From:Content-type:
- MIME-Version:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
+ Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=czyrVxK9tYONFGEVEgXOQT0NUUiYu4DWnoF7Lr2W3uw=; b=BCJYbxEGmZu5zzhqjiF+dCfNqw
- DimjBoky/ZyjakP5SiqBN6pmNY8PUwIRgswDI6vndkdlfOYn35G98pu8JrMJt49TZsGBq3gcbnC9u
- ONB8tFxp2acmm/ag6cwwZ30apMkLIS60EA6UKKoBprhbZl4YtcSmQTLa7xzAmlTR2UBs=;
+ bh=3va4Q7SVcGpsabKwqCJXigE5IiBqwcQ3kh27lZ3VBPo=; b=hHYEE7zXX4b/8nLxK28OzAXJTB
+ dCzkI4g+4Se8Gp6PnNJQzAbvNX/DZlNAEbQhasWfGqC+wQjWXSJO7cF7eWlW+zUtJd+HUbSC/ChmL
+ De9XQm7FnVndbTCy9Y2xZps1m6oZSierVtn3OkbAKiO81FYn250c5eRxGkC5oivi+Rgw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Date:Message-Id:From:Content-type:MIME-Version:To:Sender:Reply-To
+ h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=czyrVxK9tYONFGEVEgXOQT0NUUiYu4DWnoF7Lr2W3uw=; b=J
- NN5KeReOaWPjIs3akqEQhTq6w04RCbPxup5mrhGMjBEkPM2BpcHa7CkcYJ5UGKIFoVnHMIoyj1ZDG
- CuUs4PnlmSyMSmsiwXhdM2Jj4Ts9DXyBOvZBaGCkMLGFAjlXuBTZuSozsDKS52Y0j4v2g3OL0IzWj
- rajvkZZc9bs1YGx4=;
-Received: from [163.44.197.160] (helo=mx1.mercadopagosendable.xyz)
+ List-Owner:List-Archive; bh=3va4Q7SVcGpsabKwqCJXigE5IiBqwcQ3kh27lZ3VBPo=; b=T
+ U1z6Pl7iG2E9oXO32L/6SK4Z1EvU2835MDFWY9nQXNVApI5Oz/HN4Y3S9lLRzAmqSZb6qDHeeSWGL
+ sd2anLWNG3GLOum05Eu5kcoGEabsOeQMSErx2ULzNGRdJS3++BkS9FCtwHBCujpjNF6/q2q/9we90
+ IsrXZrTDsoWzCCPo=;
+Received: from [150.95.26.246] (helo=mx1.mercadopagocow.club)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1s9RSU-0004Mj-7u for osst-users@lists.sourceforge.net;
- Tue, 21 May 2024 15:31:22 +0000
-Received: by mx1.mercadopagosendable.xyz (Postfix, from userid 33)
- id 73B5AA2948; Tue, 21 May 2024 22:15:01 +0700 (+07)
-To: osst-users@lists.sourceforge.net
+ id 1s9njz-0008LY-6L for Osst-users@lists.sourceforge.net;
+ Wed, 22 May 2024 15:18:56 +0000
+Received: by mx1.mercadopagocow.club (Postfix, from userid 33)
+ id 35C73A17A4; Wed, 22 May 2024 21:53:20 +0700 (+07)
+To: Osst-users@lists.sourceforge.net
 MIME-Version: 1.0
-From: Magalu Recomenda <personalizado@ofertasmagazine-luiza.com>
-Message-Id: <20240521151501.73B5AA2948@mx1.mercadopagosendable.xyz>
-Date: Tue, 21 May 2024 22:15:01 +0700 (+07)
-X-Spam-Score: 8.2 (++++++++)
+From: Magalu <ofertas.magalu-7@magalu-magazine-luiza.com>
+Message-Id: <20240522145320.35C73A17A4@mx1.mercadopagocow.club>
+Date: Wed, 22 May 2024 21:53:20 +0700 (+07)
+X-Spam-Score: 4.8 (++++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
@@ -58,7 +58,7 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
     descadastre-se Smart TV 65” UHD 4K LED Samsung 65CU7700 - Wi-Fi Bluetooth
     Alexa 3 HDMI 
  
- Content analysis details:   (8.2 points, 6.0 required)
+ Content analysis details:   (4.8 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
@@ -67,35 +67,28 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
                              [URIs: mlcdn.com.br]
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
-                             blocklist
-                             [URIs: redirmaga.com]
-  0.4 NO_DNS_FOR_FROM        DNS: Envelope sender has no MX or A DNS records
- -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
-                             high trust
-                             [163.44.197.160 listed in list.dnswl.org]
-  5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [163.44.197.160 listed in dnsbl-1.uceprotect.net]
-  2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
-                             [163.44.197.160 listed in psbl.surriel.com]
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+                             https://senderscore.org/blocklistlookup/
+                             [150.95.26.246 listed in bl.score.senderscore.com]
   0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
                              mail domains are different
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
   0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
                              DNS
-  0.0 HTML_MESSAGE           BODY: HTML included in message
   0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
   0.0 HTML_IMAGE_RATIO_08    BODY: HTML has a low ratio of text to image
                              area
+  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+                             [URIs: redirs-magal.com]
+  0.4 NO_DNS_FOR_FROM        DNS: Envelope sender has no MX or A DNS records
   0.0 LOTS_OF_MONEY          Huge... sums of money
   1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
   0.7 CONTENT_AFTER_HTML_WEAK More content after HTML close tag
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1s9RSU-0004Mj-7u
-Subject: [Osst-users] [SPAM] Queima de Estoque Magalu: Televisores 4k a
- partir de: R$ 698, 99 - APROVEITE  - [ 553391468552  ]
+X-Headers-End: 1s9njz-0008LY-6L
+Subject: [Osst-users] Queima de Estoque Magalu: Televisores 4k a partir de:
+ R$ 698, 99 - APROVEITE  - [ 974474519480  ]
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -107,10 +100,10 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============4492392194051052678=="
+Content-Type: multipart/mixed; boundary="===============6547433735207076569=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============4492392194051052678==
+--===============6547433735207076569==
 Content-type: text/html; charset=utf-8
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -216,15 +209,15 @@ Content-type: text/html; charset=utf-8
                                         <tbody>
                                             <tr>
                                                 <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="https://magazine.redirmaga.com/redirecionamento/tv65nv.php"><img src=https://i.imgur.com/zQ9520y.png width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
+                                                    <a href="https://magalu.redirs-magal.com/redirecionamento/tv65nv.php"><img src=https://i.imgur.com/zQ9520y.png width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magazine.redirmaga.com/redirecionamento/tv65nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 65&rdquo; UHD 4K LED Samsung 65CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;3.034,05</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.979,15 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
+                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magalu.redirs-magal.com/redirecionamento/tv65nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 65&rdquo; UHD 4K LED Samsung 65CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;3.034,05</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.979,15 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
                                             </tr>
                                             <tr>
                                                 <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <br><center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magazine.redirmaga.com/redirecionamento/tv65nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                        <br><center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magalu.redirs-magal.com/redirecionamento/tv65nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
                                                 </td>
                                                 </td>
                                             </tr>
@@ -237,15 +230,15 @@ Content-type: text/html; charset=utf-8
                                             <tr>
                                                 <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
 <br>
-                                                    <p><a href="https://magazine.redirmaga.com/redirecionamento/tv55nv.php"><img src=https://i.imgur.com/o8E3XSI.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
+                                                    <p><a href="https://magalu.redirs-magal.com/redirecionamento/tv55nv.php"><img src=https://i.imgur.com/o8E3XSI.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magazine.redirmaga.com/redirecionamento/tv55nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 55&rdquo; UHD 4K LED Samsung 55CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 2.479,05</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.418,10 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
+                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magalu.redirs-magal.com/redirecionamento/tv55nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 55&rdquo; UHD 4K LED Samsung 55CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 2.479,05</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.418,10 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
                                             </tr>
                                             <tr>
                                                 <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magazine.redirmaga.com/redirecionamento/tv55nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magalu.redirs-magal.com/redirecionamento/tv55nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
                                                 </td>
                                                 </td>
                                             </tr>
@@ -288,15 +281,15 @@ Content-type: text/html; charset=utf-8
                                         <tbody>
                                             <tr>
                                                 <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <br><a href="https://magazine.redirmaga.com/redirecionamento/tv43nv.php"><img src=https://i.imgur.com/rOiCGCn.png width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
+                                                    <br><a href="https://magalu.redirs-magal.com/redirecionamento/tv43nv.php"><img src=https://i.imgur.com/rOiCGCn.png width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magazine.redirmaga.com/redirecionamento/tv43nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 43&rdquo; UHD 4K LED Samsung 43CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;1.899,99</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.099,05 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
+                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magalu.redirs-magal.com/redirecionamento/tv43nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 43&rdquo; UHD 4K LED Samsung 43CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;1.899,99</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.099,05 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
                                             </tr>
                                             <tr>
                                                 <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <br><center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magazine.redirmaga.com/redirecionamento/tv43nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                        <br><center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magalu.redirs-magal.com/redirecionamento/tv43nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
                                                 </td>
                                                 </td>
                                             </tr>
@@ -309,15 +302,15 @@ Content-type: text/html; charset=utf-8
                                             <tr>
                                                 <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
 <br>
-                                                    <p><a href="https://magazine.redirmaga.com/redirecionamento/tv32nv.php"><img src=https://i.imgur.com/0lZdEoD.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
+                                                    <p><a href="https://magalu.redirs-magal.com/redirecionamento/tv32nv.php"><img src=https://i.imgur.com/0lZdEoD.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magazine.redirmaga.com/redirecionamento/tv32nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV UHD 4k LED 32&rdquo; Samsung T4300 - Wi-Fi - HDR - 2 HDMI - 1 USB</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 1.186,55</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 698,99 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
+                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magalu.redirs-magal.com/redirecionamento/tv32nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV UHD 4k LED 32&rdquo; Samsung T4300 - Wi-Fi - HDR - 2 HDMI - 1 USB</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 1.186,55</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 698,99 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
                                             </tr>
                                             <tr>
                                                 <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magazine.redirmaga.com/redirecionamento/tv32nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magalu.redirs-magal.com/redirecionamento/tv32nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
                                                 </td>
                                                 </td>
                                             </tr>
@@ -403,17 +396,17 @@ Content-type: text/html; charset=utf-8
     </table>
 </body>
 
-</html>21/05/2024 10:15:01
+</html>22/05/2024 09:53:20
 
 
---===============4492392194051052678==
+--===============6547433735207076569==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============4492392194051052678==
+--===============6547433735207076569==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -424,4 +417,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============4492392194051052678==--
+--===============6547433735207076569==--
