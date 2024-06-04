@@ -2,101 +2,112 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 12C438D81E6
-	for <lists+osst-users@lfdr.de>; Mon,  3 Jun 2024 14:08:40 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 271148FBB05
+	for <lists+osst-users@lfdr.de>; Tue,  4 Jun 2024 19:55:52 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
 	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sE6UR-0001KH-F5
+	id 1sEYNy-00062V-7P
 	for lists+osst-users@lfdr.de;
-	Mon, 03 Jun 2024 12:08:38 +0000
+	Tue, 04 Jun 2024 17:55:49 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
  by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <www-data@v163-44-197-40.a002.g.bkk1.static.cnode.io>)
- id 1sE6UQ-0001KA-1W for osst-users@lists.sourceforge.net;
- Mon, 03 Jun 2024 12:08:37 +0000
+ (envelope-from <infos@lacomentreprise.fr>) id 1sEYNx-00062O-12
+ for osst-users@lists.sourceforge.net; Tue, 04 Jun 2024 17:55:48 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=WjXqeKVzwOwOWVdHcyBT5a1FG9/HgrCbxP4TgmkxaWM=; b=R7RQNq7vdtRo80xMToyFEzP5GK
- JzM1M/jL0w/XLPbcSiR6v4vYNz/MtpZW+sZzepHSHi8jvO45QF+lFI0bL0i9E6+63IImvlsYnu2Cz
- 4st014DrDBr6kKlYmZiR+dR2teVmHAjd4H92DoGPxfitRSH8zeXP43I9TcoqNWG5IPec=;
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:Mime-Version
+ :List-Unsubscribe:Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=PWvw2OdDG0/Y3+M74X2+QntxoXi3ThCdhKaG2QephZo=; b=jaMvkyzUfro45dBUDGXXxiaXZE
+ 5N6y1arAdxYtXEDXWmjzJTxGZgQ1tq4l/QcQzEM3URmskeNv1eXCxn0Y3FCXZHhRf69qVWznuK4dk
+ ZWxTjOS4iF6inZn9xY1pOt/4YolWGlvasFuKHuV+ZV4VOmOg/S/MF3syxRJLXLTujhtc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=WjXqeKVzwOwOWVdHcyBT5a1FG9/HgrCbxP4TgmkxaWM=; b=K
- szRzqxo4ZbzLz7lJWmvqdO/bNX1+Us08ZU2bCvorWMVHyjvYlsQU6R2/lSEwBTXtQ8bG5k/ll8jW6
- J74P/uMed6lY63U4J64HTbzdavZCelp1AYJlqsiwhGGe06d8KL/d9oNlQHvIvKDZWrK6cVKIXuLOE
- Ppql8O2i+c2O2xyQ=;
-Received: from v163-44-197-40.a002.g.bkk1.static.cnode.io ([163.44.197.40])
+ h=Content-Transfer-Encoding:Content-Type:Mime-Version:List-Unsubscribe:
+ Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=PWvw2OdDG0/Y3+M74X2+QntxoXi3ThCdhKaG2QephZo=; b=gImIeJ/pYeDPLOZ8mUhgy+Ermo
+ 3WHtB595ny/yNqDbIzDmikFZfgV4ZHqumSLGe2iVI6GEft1iJ29z1Q72ZUDBRmGu42Jv60x6rhiAx
+ TfIU0KcNQfge2ZpHtBMFrEFceKNhK6ZcyjGXLXxvZg0SV76hRK7LYPVdWYAvtBMrtogw=;
+Received: from smtp.lacomentreprise.fr ([162.248.225.110])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sE6UO-0001xA-Ec for osst-users@lists.sourceforge.net;
- Mon, 03 Jun 2024 12:08:36 +0000
-Received: by v163-44-197-40.a002.g.bkk1.static.cnode.io (Postfix,
- from userid 33) id 2753CA8BB1; Mon,  3 Jun 2024 19:05:52 +0700 (+07)
+ id 1sEYNw-0004D7-38 for osst-users@lists.sourceforge.net;
+ Tue, 04 Jun 2024 17:55:48 +0000
+Date: Tue, 4 Jun 2024 19:55:36 +0200
+Authentication-Results: smtp.lacomentreprise.fr; dkim=pass (2048-bit key;
+ unprotected) header.d=lacomentreprise.fr header.i=infos@lacomentreprise.fr
+ header.b="oMddbk/y"; dkim-atps=neutral
 To: osst-users@lists.sourceforge.net
-MIME-Version: 1.0
-From: Oferta Magalu <emailcenter62@emailcenter-magazine-luiza.com>
-Message-Id: <20240603120552.2753CA8BB1@v163-44-197-40.a002.g.bkk1.static.cnode.io>
-Date: Mon,  3 Jun 2024 19:05:52 +0700 (+07)
-X-Spam-Score: 2.9 (++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
- has NOT identified this incoming email as spam.  The original
+Message-ID: <1717523736.6c790c0451aebada7a0655ec3a6a80db@lacomentreprise.fr>
+X-Priority: 3
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Mime-Version: 1.0
+DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=12841; s=mail;
+ t=1717523736; c=relaxed/simple; h=From:To:Subject;
+ d=lacomentreprise.fr; i=infos@lacomentreprise.fr;
+ z=From:=20The=20Complete=20Accountant=20<infos@lacomentreprise.fr>
+ |To:=20osst-users@lists.sourceforge.net
+ |Subject:=20Unlimited=20Accountancy=20Services=20for=20One=20Monthly=20Fee;
+ bh=mCIb2IdVLZbwENQhRyrtbELrsXI=;
+ b=oMddbk/y7HLrZxg6HMypyvQ55bX+HPG74Do3Z63xB/AViZa5xDxYrkfdbK+dIOlduAcuqaC+64lpXbXgNuGTnaESc8qH1bkctAa6BixW/+HF+kuuGL0f6mkQFzkDc8dbN/TZ2RkeawRcGW8DqXaCUF9i9aYYQ5tJ/U5KH2UesaWswJ0oduvDPT0C4G4PL9ycXXl+PIX7idpACj+/tKWV7F01Ny+ViM+yMosH7qKoltkYZmCfo+mZx4rV+FZ2AO4n+n+OpC9rEpHT09hS+DaohpgEOk/E0qByb6RCRDoMsiFlGRr+LYws9TCBAsKhJil4+OyqI1qOiYfUjiCrOEWESw==
+X-Spam-Score: 6.8 (++++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Preços exclusivos no e-mail :) política de privacidade |
-    descadastre-se Smart TV 65” UHD 4K LED Samsung 65CU7700 - Wi-Fi Bluetooth
-    Alexa 3 HDMI 
- 
- Content analysis details:   (2.9 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview: Unlimited Accountancy Services ONE MONTHLY FEE Quote Online
+ To See How Much You Should Be Paying GET QUOTE ONLINE Unlimited Accountancy
+ Services Unlimited Telephone Support Unlimited Email Support (3 Hour Response)
+ Dedicated Accountant Monthly Bookkeeping/Reconciliation Quarterly VAT Returns
+ Company Annual Accoun [...] 
+ Content analysis details:   (6.8 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
-                             blocked.  See
-                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
-                              for more information.
-                             [URIs: mlcdn.com.br]
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: redirs-magal.com]
-  0.2 CK_HELO_GENERIC        Relay used name indicative of a Dynamic Pool or
-                             Generic rPTR
-  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                             [163.44.197.40 listed in bl.score.senderscore.com]
-  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
-                             The query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                          [163.44.197.40 listed in sa-trusted.bondedsender.org]
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
-  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
-                             DNS
-  0.0 HTML_IMAGE_RATIO_08    BODY: HTML has a low ratio of text to image
-                             area
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 LOTS_OF_MONEY          Huge... sums of money
+ 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: hosting.ovh.net]
+ 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [162.248.225.110 listed in dnsbl-1.uceprotect.net]
+ -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
+ high trust [162.248.225.110 listed in list.dnswl.org]
+ 5.0 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
+ bl.spamcop.net
+ [Blocked - see <https://www.spamcop.net/bl.shtml?162.248.225.110>]
+ 0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+ The query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [162.248.225.110 listed in sa-accredit.habeas.com]
+ 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [162.248.225.110 listed in bl.score.senderscore.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+ identical to background
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain 2.0 PYZOR_CHECK            Listed in Pyzor
+ (https://pyzor.readthedocs.io/en/latest/)
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-  1.5 CONTENT_AFTER_HTML_WEAK More content after HTML close tag
-X-Headers-End: 1sE6UO-0001xA-Ec
-Subject: [Osst-users] Queima de Estoque Magalu: Televisores 4k a partir de:
- R$ 698, 99 - APROVEITE  - [ 115451529390  ]
+X-Headers-End: 1sEYNw-0004D7-38
+Subject: [Osst-users] Unlimited Accountancy Services for One Monthly Fee
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -108,313 +119,370 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============0055406308618081198=="
+From: The Complete Accountant via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: infos@lacomentreprise.fr
+Content-Type: multipart/mixed; boundary="===============7880457159801051545=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0055406308618081198==
-Content-type: text/html; charset=utf-8
+--===============7880457159801051545==
+Content-Type: multipart/alternative;
+	boundary="b1_19171d89dcb1009f5385dfbede6ba1eb"
+Content-Transfer-Encoding: 8bit
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns=http://www.w3.org/1999/xhtml>
-
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
-    <meta name=x-apple-disable-message-reformatting>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style type=text/css>
-        body {
-            font-size: 0;
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-        }
-        /* bugfix iOS: remove o background da imagem depois que carregou, pra evitar bugs de renderizacao */
-        
-        img[src^="http"] {
-            background: transparent;
-        }
-        
-        a,
-        p,
-        span,
-        div {
-            text-decoration: none;
-            font-family: 'Trebuchet MS', 'Arial', sans-serif !important;
-        }
-    </style>
-</head>
-
-<body align=center bgcolor=#0086ff cellspacing=0 cellpadding=0 topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 data-pinterest-extension-installed=cr1.3.4 style="text-decoration: none; -ms-text-size-adjust: 100%; font-size: 100%; -webkit-text-size-adjust: 100%; background-color: #fff; font-size: 100%; font-family: 'arial'!important; text-align: center; margin:0; padding:0; width:100%; -webkit-font-smoothing: antialiased; width: 100%!;">
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom">
-                                    <br><font color=#0087ff size=3><b>Pre&ccedil;os exclusivos no e-mail :)</b></font>
-                                    <br>
-                                    <div style="height: 6px;"></div><font color=#847870 size=2><a rilt="política de privacidade" href=https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/ target=_blank style="color: #939393"><b>pol&iacute;tica de privacidade</b></a> | <a rilt=descadastre-se href="https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/" target=_blank style="color: #939393"><b>descadastre-se</b></a></font>
-                                    <br>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.imgur.com/DJZddlv.png  border=0 alt="top banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
+--b1_19171d89dcb1009f5385dfbede6ba1eb
+Content-Type: text/plain; charset=us-ascii
 
 
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://s.mlcdn.com.br/banner/campanhas/LFGeral1x1.png border=0 alt style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-	<br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="https://magalu.redirs-magal.com/redirecionamento/tv65nv.php"><img src=https://i.imgur.com/zQ9520y.png width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magalu.redirs-magal.com/redirecionamento/tv65nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 65&rdquo; UHD 4K LED Samsung 65CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;3.034,05</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.979,15 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <br><center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magalu.redirs-magal.com/redirecionamento/tv65nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-<br>
-                                                    <p><a href="https://magalu.redirs-magal.com/redirecionamento/tv55nv.php"><img src=https://i.imgur.com/o8E3XSI.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magalu.redirs-magal.com/redirecionamento/tv55nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 55&rdquo; UHD 4K LED Samsung 55CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 2.479,05</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.418,10 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magalu.redirs-magal.com/redirecionamento/tv55nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <br><a href="https://magalu.redirs-magal.com/redirecionamento/tv43nv.php"><img src=https://i.imgur.com/rOiCGCn.png width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magalu.redirs-magal.com/redirecionamento/tv43nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 43&rdquo; UHD 4K LED Samsung 43CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;1.899,99</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.099,05 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <br><center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magalu.redirs-magal.com/redirecionamento/tv43nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-<br>
-                                                    <p><a href="https://magalu.redirs-magal.com/redirecionamento/tv32nv.php"><img src=https://i.imgur.com/0lZdEoD.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://magalu.redirs-magal.com/redirecionamento/tv32nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV UHD 4k LED 32&rdquo; Samsung T4300 - Wi-Fi - HDR - 2 HDMI - 1 USB</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 1.186,55</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 698,99 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://magalu.redirs-magal.com/redirecionamento/tv32nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src= border=0 alt="">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://s.mlcdn.com.br/banner/campanhas/EsquentaLFMediumAPP.png border=0 alt="bottom banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:20px;padding-left:20px;padding-top:0;padding-bottom:0;text-align:center;><font color=#5a5a5a size=2> As ofertas valem apenas para o dia de recebimento deste e-mail nas compras feitas online ou por Televendas. Os pre&ccedil;os podem sofrer altera&ccedil;&otilde;es ao longo do dia e enquanto durarem os estoques. <br><br><b>*</b>Confira nosso regulamento de Desconto e Frete. <br><br> Contato Televendas: Regi&atilde;o Metropolitana de S&atilde;o Paulo | (11) 0800-773-3838 <br> Outras regi&otilde;es: procure a cidade mais pr&oacute;xima de voc&ecirc;.<br> Hor&aacute;rio de atendimento: de segunda a sexta, das 8h30 &agrave;s 22h / aos s&aacute;bados e domingos, das 9h &agrave;s 22h (exceto feriados) <br><br> Ficou com d&uacute;vidas? Acesse nossa <a rilt="central de atendimento" >Central de Atendimento</a> :) <br><br> Ah! E cadastre o e-mail na sua lista de contatos pra receber as nossas melhores ofertas! <br><br><b>pol&iacute;tica de
-  privacidade</b></a> | <b>descadastre-se</b></a><br><br></font></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-
-</html>03/06/2024 07:05:52
+Unlimited
+Accountancy
+Services
+ONE MONTHLY FEE
+Quote Online To See How Much You Should Be Paying
+GET QUOTE ONLINE
 
 
---===============0055406308618081198==
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unlimited Accountancy
+Services
+Unlimited Telephone Support
+Unlimited Email Support (3 Hour Response)
+Dedicated Accountant
+Monthly Bookkeeping/Reconciliation
+Quarterly VAT Returns
+Company Annual Accounts
+Company Tax Return
+Self-Assessment Tax Returns
+Submission of Confirmation Statement
+Xero Software
+Xero Training
+Company Incorporation (if required)
+VAT Registration (if required)
+PAYE Registration (if required)
+CIS Registration (if required)
+Financial Reference (e.g. Mortgage)
+Access to Business Funding
+Monthly Management Information
+Tired of unexpected accountancy fees?
+Get unlimited services and Support for
+
+One Monthly fee
+NEVER ANY UNEXPECTED FEES*
+
+
+
+
+  
+
+
+
+This e-mail is brought to you by an independent e-mail marketing company.
+Follow this link to stop messages about ACCOUNTANCY SERVICES.
+You have the right of access, rectification, opposition and consent,
+which you have access on this web page: Privacy policy.
+
+
+
+
+
+
+--b1_19171d89dcb1009f5385dfbede6ba1eb
+Content-Type: text/html; charset=us-ascii
+
+<!DOCTYPE html>
+			                   <html>
+				               	<head>
+					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				                </head>
+				                <body>
+					            	<head>   
+  <style type="text/css">
+		.padding10{
+			padding:20px 0;
+		}
+		body{
+			font-family:&#039;Poppins&#039;,sans-serif;
+			
+		}
+		h1.head1{
+			background:#49b4fc;
+			color:#ffffff;
+			font-size:36px;
+			font-weight:500;
+			padding:5px;
+			text-align:center;
+			margin:0;
+			width:350px;
+		}
+		h2.head2{
+			padding:0;
+			margin:0;
+			font-size:36px;
+			font-weight:500;
+			text-align:center;
+		}
+		td.image{
+			text-align:center;
+		}
+		td.skyb{
+			background:#E5F5FF;
+		}
+		td.bluebg{
+			font-size:10px;
+		}
+		.fnt10{
+			font-size:13px;
+		}
+		li{
+			padding-bottom:10px;
+		}
+		.thinh1{
+			font-weight:normal;
+			line-height:45px;
+		}
+	@media only screen and (max-width: 480px){
+		table#canspamBar td{
+			font-size:14px !important;
+		}
+
+}	@media only screen and (max-width: 480px){
+		table#canspamBar td a{
+			display:block !important;
+			margin-top:10px !important;
+		}
+
+}
+
+#lli li{
+color:#41b10c;
+
+}
+
+#lld li{
+color:#e40f48;
+
+}
+
+
+</style></head>
+  <body >
+    
+      <table id="bodyTable" style="background:#fff; padding:0px;border-collapse:collapse;border-spacing:0px; marging:20px;max-width:620px;" border="0"  cellspacing="5" cellpadding="0">
+
+      <tbody>
+        <tr>
+          <td align="center" valign="top" style="">
+            <table style="padding:0px;border-collapse:collapse;border-spacing:0px;" border="0" cellspacing="0" cellpadding="0">
+              <tbody>
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;background:#ffffff;"><img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/logo.jpg" alt="">
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                    <h1 style="font-size: 74px; font-weight: 900; line-height: 74px; margin: 50px 0 0 0;"> <a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/services/">Unlimited<br>Accountancy<br>Services</a></h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                    <h1 style="font-size: 42px; font-weight: 900; line-height: 74px; color:#ed393b; margin:0; > ">ONE MONTHLY FEE</h1>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                    <h3 style="font-size: 20px; font-weight: 500; line-height: 74px; color:#000000; margin:0; > ">Quote Online To See How Much You Should Be Paying</h1>
+                  </td>
+                </tr>                
+                
+                
+                                
+
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                    <a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/services/" style="background: #54c81e; color:#fff; text-decoration:none;font-weight: bold; padding: 14px 45px;">GET QUOTE ONLINE</a>
+                  </td>
+                </tr>
+                
+
+
+
+                <tr>                
+                    <td colspan="2" align="center"  style="background:url(&#039;http://trafige.cluster029.hosting.ovh.net/mtaccounting/back.jpg&#039;); background-position: top center; background-repeat: no-repeat; padding:0px;" >
+                            <table>  
+                            
+                                                                                    
+                <tr>
+                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
+
+
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br> 
+                    <br>  
+
+                  </td>
+                </tr>                
+                
+                
+               
+
+
+                <tr>
+                  <td colspan="2"  style="padding: 25px;">
+                    <table border="0" cellpadding="0" cellspacing="10" width="100%">
+                    
+                    
+                <tr>
+                  <td class="image" colspan="2" align="center">
+                    
+                  
+                    
+                    
+                   <strong><span style="color: #ffffff; background: #556ae4e8; padding: 10px 20px; font-size: 40px; display:inline-block;">Unlimited Accountancy <br> <span style="color: #08c0ed;" >Services</span> </span></strong>
+                  </td>
+                </tr>                     
+                    
+                    
+                      <tr valign="top">
+                        <td width="50%">
+                          <ul id="lli" style="background: #fff; margin: 0 10px; border-bottom: 15px #e8e8e8 solid; border-top: 25px #fff solid; padding-bottom: 5px; height: 290px;">
+                            <li><span style="color:#000;">Unlimited Telephone Support</span></li>
+                            <li><span style="color:#000;">Unlimited Email Support (3 Hour Response)</span></li>
+                            <li><span style="color:#000;">Dedicated Accountant</span></li>
+                            <li><span style="color:#000;">Monthly Bookkeeping/Reconciliation</span></li>
+                            <li><span style="color:#000;">Quarterly VAT Returns</span></li>
+                            <li><span style="color:#000;">Company Annual Accounts</span></li>
+                            <li><span style="color:#000;">Company Tax Return</span></li>
+                            <li><span style="color:#000;">Self-Assessment Tax Returns</span></li>
+                            <li><span style="color:#000;">Submission of Confirmation Statement</span></li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul id="lld" style="background: #fff; margin: 0 10px; border-bottom: 15px #e8e8e8 solid; border-top: 25px #fff solid; padding-bottom: 5px; height: 290px;">
+                            <li><span style="color:#000;">Xero Software </span></li>
+                            <li><span style="color:#000;">Xero Training</span></li>
+                            <li><span style="color:#000;">Company Incorporation (if required)</span></li>
+                            <li><span style="color:#000;">VAT Registration (if required)</span></li>
+                            <li><span style="color:#000;">PAYE Registration (if required)</span></li>
+                            <li><span style="color:#000;">CIS Registration (if required)</span></li>
+                            <li><span style="color:#000;">Financial Reference (e.g. Mortgage)</span></li>
+                            <li><span style="color:#000;">Access to Business Funding</span></li>
+                            <li><span style="color:#000;">Monthly Management Information</span></li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                
+                
+                </table>
+                </td>
+                </tr>
+                
+                
+                                                                                                                                
+                <tr>
+                  <td class="image" colspan="2" align="center">
+                  
+                    <h1 class="thinh1">Tired of unexpected accountancy fees?<br>
+                      Get unlimited services and Support for <br>
+                      <br>
+                      <span style="background:#78ee41; padding:10px 20px; margin: 5px 0 0 0;" > <a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/services/">One Monthly fee</a>
+                    </h1>
+                    <h1 style=&#039;color:#f73333; font-weight:800; font-size: 25px;&#039;>NEVER ANY UNEXPECTED FEES*</h1>
+                    
+                  </td>
+                </tr>
+                
+
+                <tr>                
+                    <td colspan="2" align="center"  style="background:url(&#039;http://trafige.cluster029.hosting.ovh.net/mtaccounting/footer.jpg&#039;); background-position: center center; background-repeat: no-repeat; padding:0px;" >
+                            <table>     
+                                            <tr>
+                                              <td colspan="2" align="center" style="padding:0px;margin:0px;">
+                       <br>
+ <img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/xero.png" alt="">
+                    <br>
+                    <br> 
+                    <br>
+                    
+                                               <img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/fb.png" alt="">
+                                               <img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/ig.png" alt="">
+                                               <img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/li.png" alt="">                    
+                   
+                    <br>                  
+                    <br>
+                                               </td>
+                                            </tr>                            
+                                       
+
+                                            <tr>
+                                              <td  style="color:#fff; font-size:12px;" colspan="2" align="center">
+                                                <br>
+                                                   <br />
+ This e-mail is brought to you by an independent e-mail marketing company.
+                    <br><a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/devant/?email=TJME+V1Dp+jB9y8EYOIqE6T17oiVV8eTTPh1YqK2tQVaAz0o4VL393DGY9KEWUjWDyJzYoGeETR7ERoOfe/Xw8MubJJHKS4K9Otq8+W01nGt/7DMCFl1KdQB/SvkAQFXz2SpzupANmIRXLY1hsEAxass03eVuSI0DaVxDChiB6U=&c=uuukkk1">Follow this link</a> to stop messages about <strong>ACCOUNTANCY SERVICES</strong>.<br>
+                    You have the right of access, rectification, opposition and consent, <br>which you have access on this web page: <a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/yvais/" style="color:#09f;" target="_blank">Privacy policy</a>.
+                 
+            <br />  
+                                                <br>
+                                                <br> <br>
+                    <br>
+                                              </td>
+                                            </tr>                
+                            </table>                
+                    </td>
+                </tr>                
+
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+				                </body>
+			                   </html>
+
+
+
+--b1_19171d89dcb1009f5385dfbede6ba1eb--
+
+
+
+--===============7880457159801051545==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0055406308618081198==
+--===============7880457159801051545==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -425,4 +493,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0055406308618081198==--
+--===============7880457159801051545==--
+
+
