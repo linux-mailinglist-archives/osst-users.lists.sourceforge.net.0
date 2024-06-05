@@ -2,112 +2,111 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 271148FBB05
-	for <lists+osst-users@lfdr.de>; Tue,  4 Jun 2024 19:55:52 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id CF40C8FC1F2
+	for <lists+osst-users@lfdr.de>; Wed,  5 Jun 2024 04:43:08 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sEYNy-00062V-7P
+	id 1sEgcF-0003Dq-8C
 	for lists+osst-users@lfdr.de;
-	Tue, 04 Jun 2024 17:55:49 +0000
+	Wed, 05 Jun 2024 02:43:07 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <infos@lacomentreprise.fr>) id 1sEYNx-00062O-12
- for osst-users@lists.sourceforge.net; Tue, 04 Jun 2024 17:55:48 +0000
+ (envelope-from <smbc-update@ecolebi.com>) id 1sEgc1-0003DJ-LF
+ for osst-users@lists.sourceforge.net; Wed, 05 Jun 2024 02:42:54 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:Mime-Version
- :List-Unsubscribe:Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=PWvw2OdDG0/Y3+M74X2+QntxoXi3ThCdhKaG2QephZo=; b=jaMvkyzUfro45dBUDGXXxiaXZE
- 5N6y1arAdxYtXEDXWmjzJTxGZgQ1tq4l/QcQzEM3URmskeNv1eXCxn0Y3FCXZHhRf69qVWznuK4dk
- ZWxTjOS4iF6inZn9xY1pOt/4YolWGlvasFuKHuV+ZV4VOmOg/S/MF3syxRJLXLTujhtc=;
+ d=sourceforge.net; s=x; h=Content-Type:Message-ID:Mime-Version:Subject:To:
+ From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=/NvN00o0g4rlhLq/hzT+/0YwINuH66GvoP7iP3o1Knw=; b=Vp5jIuZ+1KM5xGm3spxb6N9aq3
+ 16UYWzBHobvASGZ5tezaDYnjHX2+Vet3oz9lTTp8EQoize2A4xvsijfLI4xD+ZkP9aJzMLOO/lQ7v
+ KiB4ITpkzNqcEnnmpaWpc00SjBnaWBgGVmiY0IOB/BfKHQ23VzwAgWZXr+WM8JX3I13o=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:Mime-Version:List-Unsubscribe:
- Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=PWvw2OdDG0/Y3+M74X2+QntxoXi3ThCdhKaG2QephZo=; b=gImIeJ/pYeDPLOZ8mUhgy+Ermo
- 3WHtB595ny/yNqDbIzDmikFZfgV4ZHqumSLGe2iVI6GEft1iJ29z1Q72ZUDBRmGu42Jv60x6rhiAx
- TfIU0KcNQfge2ZpHtBMFrEFceKNhK6ZcyjGXLXxvZg0SV76hRK7LYPVdWYAvtBMrtogw=;
-Received: from smtp.lacomentreprise.fr ([162.248.225.110])
+ h=Content-Type:Message-ID:Mime-Version:Subject:To:From:Date:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=/NvN00o0g4rlhLq/hzT+/0YwINuH66GvoP7iP3o1Knw=; b=J
+ Ni8B8fgTTIUtTw03AN2iKF5VxNSY8v2a5LyiB0Lh4D/tgTsVJf/3ibv+chnWdT9GQgsXOizOYrhro
+ PjRrWz1PZ5JzAzjxJDaKlU8oMilz5HFc5HL7rXwPz7o3WsA2m1ddTNehWJ1hA2Sm1YeCdHKlUAM96
+ COYSanvCoi6GWvHA=;
+Received: from [103.99.210.54] (helo=mail5.ecolebi.com)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sEYNw-0004D7-38 for osst-users@lists.sourceforge.net;
- Tue, 04 Jun 2024 17:55:48 +0000
-Date: Tue, 4 Jun 2024 19:55:36 +0200
-Authentication-Results: smtp.lacomentreprise.fr; dkim=pass (2048-bit key;
- unprotected) header.d=lacomentreprise.fr header.i=infos@lacomentreprise.fr
- header.b="oMddbk/y"; dkim-atps=neutral
-To: osst-users@lists.sourceforge.net
-Message-ID: <1717523736.6c790c0451aebada7a0655ec3a6a80db@lacomentreprise.fr>
-X-Priority: 3
-List-Unsubscribe-Post: List-Unsubscribe=One-Click
+ id 1sEgby-00033R-9L for osst-users@lists.sourceforge.net;
+ Wed, 05 Jun 2024 02:42:51 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=ecolebi.com;
+ h=Date:From:To:Subject:Mime-Version:Message-ID:Content-Type;
+ i=smbc-update@ecolebi.com;
+ bh=/NvN00o0g4rlhLq/hzT+/0YwINuH66GvoP7iP3o1Knw=;
+ b=P1zBXIGEh0ixXIJ61CPXDILgKOy8SokYINJhNv7rA7ZsLEh456uY8jtg6l72aGUnOCBpjVp74jd/
+ 2CuweKiOstxqb446rTZIrEZL7ydsx76H+WE6HilqKdWnjZo/JoM8vNJO1fst4BcuLS+KoQMWOPEk
+ XE2gq/AyhXDoInFFat8=
+Date: Wed, 5 Jun 2024 11:22:20 +0900
+To: osst-users <osst-users@lists.sourceforge.net>
+X-Has-Attach: no
 Mime-Version: 1.0
-DKIM-Signature: v=1; a=rsa-sha1; q=dns/txt; l=12841; s=mail;
- t=1717523736; c=relaxed/simple; h=From:To:Subject;
- d=lacomentreprise.fr; i=infos@lacomentreprise.fr;
- z=From:=20The=20Complete=20Accountant=20<infos@lacomentreprise.fr>
- |To:=20osst-users@lists.sourceforge.net
- |Subject:=20Unlimited=20Accountancy=20Services=20for=20One=20Monthly=20Fee;
- bh=mCIb2IdVLZbwENQhRyrtbELrsXI=;
- b=oMddbk/y7HLrZxg6HMypyvQ55bX+HPG74Do3Z63xB/AViZa5xDxYrkfdbK+dIOlduAcuqaC+64lpXbXgNuGTnaESc8qH1bkctAa6BixW/+HF+kuuGL0f6mkQFzkDc8dbN/TZ2RkeawRcGW8DqXaCUF9i9aYYQ5tJ/U5KH2UesaWswJ0oduvDPT0C4G4PL9ycXXl+PIX7idpACj+/tKWV7F01Ny+ViM+yMosH7qKoltkYZmCfo+mZx4rV+FZ2AO4n+n+OpC9rEpHT09hS+DaohpgEOk/E0qByb6RCRDoMsiFlGRr+LYws9TCBAsKhJil4+OyqI1qOiYfUjiCrOEWESw==
-X-Spam-Score: 6.8 (++++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+Message-ID: <202406051122346410538@ecolebi.com>
+X-Spam-Score: 3.2 (+++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: Unlimited Accountancy Services ONE MONTHLY FEE Quote Online
- To See How Much You Should Be Paying GET QUOTE ONLINE Unlimited Accountancy
- Services Unlimited Telephone Support Unlimited Email Support (3 Hour Response)
- Dedicated Accountant Monthly Bookkeeping/Reconciliation Quarterly VAT Returns
- Company Annual Accoun [...] 
- Content analysis details:   (6.8 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  平素より三井住友カードをご利用いただきありがとうございます。
+    こちらは三井住友カードのカスタマーサポートセンターです。これまでのご支持と信頼に感謝申し上げます。
+    残念ながら、最近のシステムチェック� [...] 
+ 
+ Content analysis details:   (3.2 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
- blocked.  See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: hosting.ovh.net]
- 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [162.248.225.110 listed in dnsbl-1.uceprotect.net]
- -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
- high trust [162.248.225.110 listed in list.dnswl.org]
- 5.0 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
- bl.spamcop.net
- [Blocked - see <https://www.spamcop.net/bl.shtml?162.248.225.110>]
- 0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
- The query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [162.248.225.110 listed in sa-accredit.habeas.com]
- 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
- query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [162.248.225.110 listed in bl.score.senderscore.com]
+  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+                             [URIs: radyomato.com]
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: ecolebi.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+                             The query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [103.99.210.54 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [103.99.210.54 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_DNSWL_BLOCKED  RBL: ADMINISTRATOR NOTICE: The query to
+                             DNSWL was blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [103.99.210.54 listed in list.dnswl.org]
  -0.0 SPF_PASS               SPF: sender matches SPF record
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
- identical to background
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
+                             envelope-from domain
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-X-Headers-End: 1sEYNw-0004D7-38
-Subject: [Osst-users] Unlimited Accountancy Services for One Monthly Fee
+  1.5 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
+  0.6 NORDNS_LOW_CONTRAST    No rDNS + hidden text
+X-Headers-End: 1sEgby-00033R-9L
+Subject: [Osst-users] =?utf-8?b?5LiJ5LqV5L2P5Y+L44Kr44O844OJ44Gu55Ww5bi4?=
+ =?utf-8?b?6YCa55+l?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -119,370 +118,143 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: The Complete Accountant via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: infos@lacomentreprise.fr
-Content-Type: multipart/mixed; boundary="===============7880457159801051545=="
+From: =?UTF-8?B?5LiJ5LqV5L2P5Y+L44Kr44O844OJ?= via Osst-users
+ <osst-users@lists.sourceforge.net>
+Reply-To: =?UTF-8?B?5LiJ5LqV5L2P5Y+L44Kr44O844OJ?= <smbc-update@ecolebi.com>
+Content-Type: multipart/mixed; boundary="===============3805797566951211345=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============7880457159801051545==
+This is a multi-part message in MIME format.
+
+--===============3805797566951211345==
 Content-Type: multipart/alternative;
-	boundary="b1_19171d89dcb1009f5385dfbede6ba1eb"
-Content-Transfer-Encoding: 8bit
-
---b1_19171d89dcb1009f5385dfbede6ba1eb
-Content-Type: text/plain; charset=us-ascii
-
-
-Unlimited
-Accountancy
-Services
-ONE MONTHLY FEE
-Quote Online To See How Much You Should Be Paying
-GET QUOTE ONLINE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Unlimited Accountancy
-Services
-Unlimited Telephone Support
-Unlimited Email Support (3 Hour Response)
-Dedicated Accountant
-Monthly Bookkeeping/Reconciliation
-Quarterly VAT Returns
-Company Annual Accounts
-Company Tax Return
-Self-Assessment Tax Returns
-Submission of Confirmation Statement
-Xero Software
-Xero Training
-Company Incorporation (if required)
-VAT Registration (if required)
-PAYE Registration (if required)
-CIS Registration (if required)
-Financial Reference (e.g. Mortgage)
-Access to Business Funding
-Monthly Management Information
-Tired of unexpected accountancy fees?
-Get unlimited services and Support for
-
-One Monthly fee
-NEVER ANY UNEXPECTED FEES*
-
-
-
-
-  
-
-
-
-This e-mail is brought to you by an independent e-mail marketing company.
-Follow this link to stop messages about ACCOUNTANCY SERVICES.
-You have the right of access, rectification, opposition and consent,
-which you have access on this web page: Privacy policy.
-
-
-
-
-
-
---b1_19171d89dcb1009f5385dfbede6ba1eb
-Content-Type: text/html; charset=us-ascii
-
-<!DOCTYPE html>
-			                   <html>
-				               	<head>
-					            	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-				                </head>
-				                <body>
-					            	<head>   
-  <style type="text/css">
-		.padding10{
-			padding:20px 0;
-		}
-		body{
-			font-family:&#039;Poppins&#039;,sans-serif;
-			
-		}
-		h1.head1{
-			background:#49b4fc;
-			color:#ffffff;
-			font-size:36px;
-			font-weight:500;
-			padding:5px;
-			text-align:center;
-			margin:0;
-			width:350px;
-		}
-		h2.head2{
-			padding:0;
-			margin:0;
-			font-size:36px;
-			font-weight:500;
-			text-align:center;
-		}
-		td.image{
-			text-align:center;
-		}
-		td.skyb{
-			background:#E5F5FF;
-		}
-		td.bluebg{
-			font-size:10px;
-		}
-		.fnt10{
-			font-size:13px;
-		}
-		li{
-			padding-bottom:10px;
-		}
-		.thinh1{
-			font-weight:normal;
-			line-height:45px;
-		}
-	@media only screen and (max-width: 480px){
-		table#canspamBar td{
-			font-size:14px !important;
-		}
-
-}	@media only screen and (max-width: 480px){
-		table#canspamBar td a{
-			display:block !important;
-			margin-top:10px !important;
-		}
-
-}
-
-#lli li{
-color:#41b10c;
-
-}
-
-#lld li{
-color:#e40f48;
-
-}
-
-
-</style></head>
-  <body >
-    
-      <table id="bodyTable" style="background:#fff; padding:0px;border-collapse:collapse;border-spacing:0px; marging:20px;max-width:620px;" border="0"  cellspacing="5" cellpadding="0">
-
-      <tbody>
-        <tr>
-          <td align="center" valign="top" style="">
-            <table style="padding:0px;border-collapse:collapse;border-spacing:0px;" border="0" cellspacing="0" cellpadding="0">
-              <tbody>
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;background:#ffffff;"><img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/logo.jpg" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                    <h1 style="font-size: 74px; font-weight: 900; line-height: 74px; margin: 50px 0 0 0;"> <a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/services/">Unlimited<br>Accountancy<br>Services</a></h1>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                    <h1 style="font-size: 42px; font-weight: 900; line-height: 74px; color:#ed393b; margin:0; > ">ONE MONTHLY FEE</h1>
-                  </td>
-                </tr>
-                
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                    <h3 style="font-size: 20px; font-weight: 500; line-height: 74px; color:#000000; margin:0; > ">Quote Online To See How Much You Should Be Paying</h1>
-                  </td>
-                </tr>                
-                
-                
-                                
-
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                    <a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/services/" style="background: #54c81e; color:#fff; text-decoration:none;font-weight: bold; padding: 14px 45px;">GET QUOTE ONLINE</a>
-                  </td>
-                </tr>
-                
-
-
-
-                <tr>                
-                    <td colspan="2" align="center"  style="background:url(&#039;http://trafige.cluster029.hosting.ovh.net/mtaccounting/back.jpg&#039;); background-position: top center; background-repeat: no-repeat; padding:0px;" >
-                            <table>  
-                            
-                                                                                    
-                <tr>
-                  <td colspan="2" align="center" style="padding:0px;margin:0px;">
-
-
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <br> 
-                    <br>  
-
-                  </td>
-                </tr>                
-                
-                
-               
-
-
-                <tr>
-                  <td colspan="2"  style="padding: 25px;">
-                    <table border="0" cellpadding="0" cellspacing="10" width="100%">
-                    
-                    
-                <tr>
-                  <td class="image" colspan="2" align="center">
-                    
-                  
-                    
-                    
-                   <strong><span style="color: #ffffff; background: #556ae4e8; padding: 10px 20px; font-size: 40px; display:inline-block;">Unlimited Accountancy <br> <span style="color: #08c0ed;" >Services</span> </span></strong>
-                  </td>
-                </tr>                     
-                    
-                    
-                      <tr valign="top">
-                        <td width="50%">
-                          <ul id="lli" style="background: #fff; margin: 0 10px; border-bottom: 15px #e8e8e8 solid; border-top: 25px #fff solid; padding-bottom: 5px; height: 290px;">
-                            <li><span style="color:#000;">Unlimited Telephone Support</span></li>
-                            <li><span style="color:#000;">Unlimited Email Support (3 Hour Response)</span></li>
-                            <li><span style="color:#000;">Dedicated Accountant</span></li>
-                            <li><span style="color:#000;">Monthly Bookkeeping/Reconciliation</span></li>
-                            <li><span style="color:#000;">Quarterly VAT Returns</span></li>
-                            <li><span style="color:#000;">Company Annual Accounts</span></li>
-                            <li><span style="color:#000;">Company Tax Return</span></li>
-                            <li><span style="color:#000;">Self-Assessment Tax Returns</span></li>
-                            <li><span style="color:#000;">Submission of Confirmation Statement</span></li>
-                          </ul>
-                        </td>
-                        <td>
-                          <ul id="lld" style="background: #fff; margin: 0 10px; border-bottom: 15px #e8e8e8 solid; border-top: 25px #fff solid; padding-bottom: 5px; height: 290px;">
-                            <li><span style="color:#000;">Xero Software </span></li>
-                            <li><span style="color:#000;">Xero Training</span></li>
-                            <li><span style="color:#000;">Company Incorporation (if required)</span></li>
-                            <li><span style="color:#000;">VAT Registration (if required)</span></li>
-                            <li><span style="color:#000;">PAYE Registration (if required)</span></li>
-                            <li><span style="color:#000;">CIS Registration (if required)</span></li>
-                            <li><span style="color:#000;">Financial Reference (e.g. Mortgage)</span></li>
-                            <li><span style="color:#000;">Access to Business Funding</span></li>
-                            <li><span style="color:#000;">Monthly Management Information</span></li>
-                          </ul>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                
-                
-                </table>
-                </td>
-                </tr>
-                
-                
-                                                                                                                                
-                <tr>
-                  <td class="image" colspan="2" align="center">
-                  
-                    <h1 class="thinh1">Tired of unexpected accountancy fees?<br>
-                      Get unlimited services and Support for <br>
-                      <br>
-                      <span style="background:#78ee41; padding:10px 20px; margin: 5px 0 0 0;" > <a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/services/">One Monthly fee</a>
-                    </h1>
-                    <h1 style=&#039;color:#f73333; font-weight:800; font-size: 25px;&#039;>NEVER ANY UNEXPECTED FEES*</h1>
-                    
-                  </td>
-                </tr>
-                
-
-                <tr>                
-                    <td colspan="2" align="center"  style="background:url(&#039;http://trafige.cluster029.hosting.ovh.net/mtaccounting/footer.jpg&#039;); background-position: center center; background-repeat: no-repeat; padding:0px;" >
-                            <table>     
-                                            <tr>
-                                              <td colspan="2" align="center" style="padding:0px;margin:0px;">
-                       <br>
- <img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/xero.png" alt="">
-                    <br>
-                    <br> 
-                    <br>
-                    
-                                               <img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/fb.png" alt="">
-                                               <img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/ig.png" alt="">
-                                               <img src="http://trafige.cluster029.hosting.ovh.net/mtaccounting/li.png" alt="">                    
-                   
-                    <br>                  
-                    <br>
-                                               </td>
-                                            </tr>                            
-                                       
-
-                                            <tr>
-                                              <td  style="color:#fff; font-size:12px;" colspan="2" align="center">
-                                                <br>
-                                                   <br />
- This e-mail is brought to you by an independent e-mail marketing company.
-                    <br><a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/devant/?email=TJME+V1Dp+jB9y8EYOIqE6T17oiVV8eTTPh1YqK2tQVaAz0o4VL393DGY9KEWUjWDyJzYoGeETR7ERoOfe/Xw8MubJJHKS4K9Otq8+W01nGt/7DMCFl1KdQB/SvkAQFXz2SpzupANmIRXLY1hsEAxass03eVuSI0DaVxDChiB6U=&c=uuukkk1">Follow this link</a> to stop messages about <strong>ACCOUNTANCY SERVICES</strong>.<br>
-                    You have the right of access, rectification, opposition and consent, <br>which you have access on this web page: <a href="http://trafige.cluster029.hosting.ovh.net/mtaccounting/yvais/" style="color:#09f;" target="_blank">Privacy policy</a>.
-                 
-            <br />  
-                                                <br>
-                                                <br> <br>
-                    <br>
-                                              </td>
-                                            </tr>                
-                            </table>                
-                    </td>
-                </tr>                
-
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-				                </body>
-			                   </html>
-
-
-
---b1_19171d89dcb1009f5385dfbede6ba1eb--
-
-
-
---===============7880457159801051545==
+	boundary="=====001_Dragon883526472348_====="
+
+This is a multi-part message in MIME format.
+
+--=====001_Dragon883526472348_=====
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+DQrlubPntKDjgojjgorkuInkupXkvY/lj4vjgqvjg7zjg4njgpLjgZTliKnnlKjjgYTjgZ/jgaDj
+gY3jgYLjgorjgYzjgajjgYbjgZTjgZbjgYTjgb7jgZnjgIINCg0K44GT44Gh44KJ44Gv5LiJ5LqV
+5L2P5Y+L44Kr44O844OJ44Gu44Kr44K544K/44Oe44O844K144Od44O844OI44K744Oz44K/44O8
+44Gn44GZ44CC44GT44KM44G+44Gn44Gu44GU5pSv5oyB44Go5L+h6aC844Gr5oSf6Kyd55Sz44GX
+5LiK44GS44G+44GZ44CCDQrmrovlv7XjgarjgYzjgonjgIHmnIDov5Hjga7jgrfjgrnjg4bjg6Dj
+g4Hjgqfjg4Pjgq/jgafjgYrlrqLmp5jjga7jgqvjg7zjg4nlj6PluqfjgavjgYTjgY/jgaTjgYvj
+ga7nlbDluLjjgYzopovjgaTjgYvjgorjgb7jgZfjgZ/jgILjgYrlrqLmp5jjga7os4fph5Hjga7l
+ronlhajjgpLnorrkv53jgZnjgovjgZ/jgoHjgIHjgZPjga7llY/poYzjgpLop6PmsbrjgZnjgovj
+gZ/jgoHjga7jg6Hjg7zjg6vjgpLpgIHkv6Hoh7TjgZfjgb7jgZfjgZ/jgIINCg0K5b2T56S+44Gv
+44CB5Lya5ZOh55m76Yyy44Gu55Sz6L6844G/44Gv44GZ44G544Gm5Lya5ZOh44GU5pys5Lq644GL
+44KJ44Gu55Sz6L6844G/44Go44G/44Gq44GX44G+44GZ44CCDQoNCuWVj+mhjOOBruips+e0sO+8
+mg0K55+t5pyf6ZaT44Gn5aSa44GP44Gu5bCP6aGN5Y+W5byV44GM55m655Sf44GX44Gm44GE44KL
+44GT44Go44CCIOWPo+W6p+OBruizh+mHkeOBjOmgu+e5geOBq+WkieWLleOBl+OAgemHkemhjeOB
+ruWkieWLleOBjOWkp+OBjeOBhOOBk+OBqOOAgiDlj6Pluqfjgbjjga7jg63jgrDjgqTjg7PloLTm
+iYDjgYznlbDluLjjgafjgIHpgJrluLjjga7jg63jgrDjgqTjg7PloLTmiYDjgajlpKfjgY3jgY/n
+lbDjgarjgovjgZPjgajjgIINCuino+axuuetlu+8mg0K44GK5a6i5qeY44Gr44Gv44CB5LuK44GZ
+44GQ5LiJ5LqV5L2P5Y+L6YqA6KGM44Gr44Ot44Kw44Kk44Oz44GX44Gm44GE44Gf44Gg44GP44KI
+44GG44GK6aGY44GE44GE44Gf44GX44G+44GZ44CCDQoNCkh2ICBTTUJDIENBUkTjgqrjg7Pjg6nj
+gqTjg7PmnKzkurroqo3oqLzjgrXjg7zjg5PjgrkgIA0KDQrjgqTjg7Pjgr/jg7zjg43jg4Pjg4jj
+g5Djg7Pjgq3jg7PjgrDjgoTjg6Ljg5DjgqTjg6vjg5Djg7Pjgq3jg7PjgrDjga7jg5Hjgrnjg6/j
+g7zjg4njgpLlrprmnJ/nmoTjgavlpInmm7TjgZfjgabjgIHjgqLjgqvjgqbjg7Pjg4jjga7lronl
+hajmgKfjgpLlkJHkuIrjgZXjgZvjgovjgZPjgajjgpLjgYrli6fjgoHjgZfjgb7jgZnjgIINCumf
+s+izquOBr+OAgeODquODg+ODgeOBp+a3seOBv+OBruOBguOCi+mfs+OBqOS9jumfs+OBrui/q+WK
+m+aEn+OCkumrmOOBj+ipleS+oeOBl+OBvuOBl+OBn+OAgg0KDQrigLvmnKzjg6Hjg7zjg6vjga/p
+h43opoHjgarjgYrnn6XjgonjgZvjga7jgZ/jgoHjgIHjg6Hjg7zjg6vphY3kv6HjgpLjgIzlkKbj
+gI3jgavjgZXjgozjgabjgYTjgovmlrnjgavjgoLpgIHkv6HjgZfjgabjgYrjgorjgb7jgZnjgIIN
+CuKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
+geKUgeKUgQ0K55m66KGM6ICFDQoNCuS4ieS6leS9j+WPi+OCq+ODvOODieagquW8j+S8muekvg0K
+DQrjgJIxMzUtMDA2MSDmnbHkuqzpg73msZ/mnbHljLrosYrmtLIy5LiB55uuMueVqjMx5Y+3IFNN
+QkPosYrmtLLjg5Pjg6sNCuKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
+geKUgeKUgeKUgeKUgeKUgeKUgeKUgQ0KQ29weXJpZ2h0IChDKSBTdW1pdG9tbyBNaXRzdWkgQ2Fy
+ZCBDby4sIEx0ZC4NCg0K55S76LOq44Gv44CB55S76Z2i5YWo5L2T44Gu5piO44KL44GV44OQ44Op
+44Oz44K544KS6auY44GP6KmV5L6h44CC55m66Imy44Gu6a6u44KE44GL44GV44O76aGU44Gu56uL
+5L2T5oSf44O75Lq66IKM44Gu6Ieq54S244Gq6LOq5oSf44Gq44Gp44KC5oSf44GY44KJ44KM44KL
+5oCn6IO944Gn44GX44Gf44CC44GX44GL44GX44CB5Zyw44OH44K46KaW6IG05pmC44Gr44KE44KE
+44OO44Kk44K644GM6KaL44GI44Gm44GX44G+44GE44CB5YuV44GN44KS5Ly044GG44Go5q6L5YOP
+5oSf44KC44GC44Gj44Gf44Gu44GM5oOc44GX44GE44Od44Kk44Oz44OI44CC44G+44Gf44CB5LiK
+5LiL44Gu6KaW6YeO6KeS44Gr6Iul5bmy5byx44GE54K544KC6KmV5L6h44GM5Ly444Gz5oKp44KA
+6KaB5Zug44Go44Gq44KK44G+44GX44Gf44CCDQo=
+
+--=====001_Dragon883526472348_=====
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
+Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
+bnQ9Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWT4NCjxQPuW5s+e0oOOC
+iOOCiuS4ieS6leS9j+WPi+OCq+ODvOODieOCkuOBlOWIqeeUqOOBhOOBn+OBoOOBjeOBguOCiuOB
+jOOBqOOBhuOBlOOBluOBhOOBvuOBmeOAgjwvUD4NCjxQPuOBk+OBoeOCieOBr+S4ieS6leS9j+WP
+i+OCq+ODvOODieOBruOCq+OCueOCv+ODnuODvOOCteODneODvOODiOOCu+ODs+OCv+ODvOOBp+OB
+meOAguOBk+OCjOOBvuOBp+OBruOBlOaUr+aMgeOBqOS/oemgvOOBq+aEn+isneeUs+OBl+S4iuOB
+kuOBvuOBmeOAgjxCUj7mrovlv7XjgarjgYzjgonjgIHmnIDov5Hjga7jgrfjgrnjg4bjg6Djg4Hj
+gqfjg4Pjgq/jgafjgYrlrqLmp5jjga7jgqvjg7zjg4nlj6PluqfjgavjgYTjgY/jgaTjgYvjga7n
+lbDluLjjgYzopovjgaTjgYvjgorjgb7jgZfjgZ/jgILjgYrlrqLmp5jjga7os4fph5Hjga7lronl
+hajjgpLnorrkv53jgZnjgovjgZ/jgoHjgIHjgZPjga7llY/poYzjgpLop6PmsbrjgZnjgovjgZ/j
+goHjga7jg6Hjg7zjg6vjgpLpgIHkv6Hoh7TjgZfjgb7jgZfjgZ/jgII8L1A+DQo8RElWIHN0eWxl
+PSJvcGFjaXR5OiAwIj4NCjxQIA0Kc3R5bGU9IkZPTlQtU0laRTogMXB4OyBDT0xPUjogI2ZmZmZm
+ZjsgLXdlYmtpdC10b3VjaC1jYWxsb3V0OiBub25lOyAtd2Via2l0LXVzZXItc2VsZWN0OiBub25l
+OyAta2h0bWwtdXNlci1zZWxlY3Q6IG5vbmU7IC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7IC1tcy11
+c2VyLXNlbGVjdDogbm9uZTsgdXNlci1zZWxlY3Q6IG5vbmUiPuW9k+ekvuOBr+OAgeS8muWToeeZ
+u+mMsuOBrueUs+i+vOOBv+OBr+OBmeOBueOBpuS8muWToeOBlOacrOS6uuOBi+OCieOBrueUs+i+
+vOOBv+OBqOOBv+OBquOBl+OBvuOBmeOAgjwvUD48L0RJVj4NCjxQPuWVj+mhjOOBruips+e0sO+8
+mjwvUD4NCjxVTD4NCiAgPExJPuefreacn+mWk+OBp+WkmuOBj+OBruWwj+mhjeWPluW8leOBjOeZ
+uueUn+OBl+OBpuOBhOOCi+OBk+OBqOOAgiANCiAgPExJPuWPo+W6p+OBruizh+mHkeOBjOmgu+e5
+geOBq+WkieWLleOBl+OAgemHkemhjeOBruWkieWLleOBjOWkp+OBjeOBhOOBk+OBqOOAgiANCiAg
+PExJPuWPo+W6p+OBuOOBruODreOCsOOCpOODs+WgtOaJgOOBjOeVsOW4uOOBp+OAgemAmuW4uOOB
+ruODreOCsOOCpOODs+WgtOaJgOOBqOWkp+OBjeOBj+eVsOOBquOCi+OBk+OBqOOAgjwvTEk+PC9V
+TD4NCjxQPuino+axuuetlu+8mjwvUD4NCjxVTD4NCiAgPExJPuOBiuWuouanmOOBq+OBr+OAgeS7
+iuOBmeOBkOS4ieS6leS9j+WPi+mKgOihjOOBq+ODreOCsOOCpOODs+OBl+OBpuOBhOOBn+OBoOOB
+j+OCiOOBhuOBiumhmOOBhOOBhOOBn+OBl+OBvuOBmeOAgjxCUj48QlI+PEZPTlQgDQogIGNvbG9y
+PXdoaXRlPkh2PC9GT05UPiZuYnNwOyZuYnNwOzxBIA0KICBzdHlsZT0iVEVYVC1ERUNPUkFUSU9O
+OiBub25lIiBocmVmPSJodHRwczovL3d3dy5yYWR5b21hdG8uY29tL3NteXdiYzY0MXlyMWRhOWM4
+OCIgDQogIHRhcmdldD1fYmxhbms+PFNUUk9ORz5TTUJDIENBUkTjgqrjg7Pjg6njgqTjg7PmnKzk
+urroqo3oqLzjgrXjg7zjg5Pjgrk8L1NUUk9ORz48L0E+Jm5ic3A7Jm5ic3A7PEJSPjxCUj4NCiAg
+PExJPuOCpOODs+OCv+ODvOODjeODg+ODiOODkOODs+OCreODs+OCsOOChOODouODkOOCpOODq+OD
+kOODs+OCreODs+OCsOOBruODkeOCueODr+ODvOODieOCkuWumuacn+eahOOBq+WkieabtOOBl+OB
+puOAgeOCouOCq+OCpuODs+ODiOOBruWuieWFqOaAp+OCkuWQkeS4iuOBleOBm+OCi+OBk+OBqOOC
+kuOBiuWLp+OCgeOBl+OBvuOBmeOAgjwvTEk+PC9VTD4NCjxESVYgc3R5bGU9Im9wYWNpdHk6IDAi
+Pg0KPFAgDQpzdHlsZT0iRk9OVC1TSVpFOiAxcHg7IENPTE9SOiAjZmZmZmZmOyAtd2Via2l0LXRv
+dWNoLWNhbGxvdXQ6IG5vbmU7IC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7IC1raHRtbC11c2Vy
+LXNlbGVjdDogbm9uZTsgLW1vei11c2VyLXNlbGVjdDogbm9uZTsgLW1zLXVzZXItc2VsZWN0OiBu
+b25lOyB1c2VyLXNlbGVjdDogbm9uZSI+6Z+z6LOq44Gv44CB44Oq44OD44OB44Gn5rex44G/44Gu
+44GC44KL6Z+z44Go5L2O6Z+z44Gu6L+r5Yqb5oSf44KS6auY44GP6KmV5L6h44GX44G+44GX44Gf
+44CCPC9QPjwvRElWPg0KPFA+4oC75pys44Oh44O844Or44Gv6YeN6KaB44Gq44GK55+l44KJ44Gb
+44Gu44Gf44KB44CB44Oh44O844Or6YWN5L+h44KS44CM5ZCm44CN44Gr44GV44KM44Gm44GE44KL
+5pa544Gr44KC6YCB5L+h44GX44Gm44GK44KK44G+44GZ44CCPEJSPuKUgeKUgeKUgeKUgeKUgeKU
+geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgTxCUj7nmbrooYzo
+gIU8QlI+PEJSPuS4ieS6leS9j+WPi+OCq+ODvOODieagquW8j+S8muekvjxCUj48QlI+44CSMTM1
+LTAwNjEgDQrmnbHkuqzpg73msZ/mnbHljLrosYrmtLIy5LiB55uuMueVqjMx5Y+3IFNNQkPosYrm
+tLLjg5Pjg6s8QlI+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB
+4pSB4pSB4pSB4pSB4pSB4pSBPEJSPkNvcHlyaWdodCAoQykgU3VtaXRvbW8gDQpNaXRzdWkgQ2Fy
+ZCBDby4sIEx0ZC48L1A+DQo8RElWIHN0eWxlPSJvcGFjaXR5OiAwIj4NCjxQIA0Kc3R5bGU9IkZP
+TlQtU0laRTogMXB4OyBDT0xPUjogI2ZmZmZmZjsgLXdlYmtpdC10b3VjaC1jYWxsb3V0OiBub25l
+OyAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOyAta2h0bWwtdXNlci1zZWxlY3Q6IG5vbmU7IC1t
+b3otdXNlci1zZWxlY3Q6IG5vbmU7IC1tcy11c2VyLXNlbGVjdDogbm9uZTsgdXNlci1zZWxlY3Q6
+IG5vbmUiPueUu+izquOBr+OAgeeUu+mdouWFqOS9k+OBruaYjuOCi+OBleODkOODqeODs+OCueOC
+kumrmOOBj+ipleS+oeOAgueZuuiJsuOBrumuruOChOOBi+OBleODu+mhlOOBrueri+S9k+aEn+OD
+u+S6uuiCjOOBruiHqueEtuOBquizquaEn+OBquOBqeOCguaEn+OBmOOCieOCjOOCi+aAp+iDveOB
+p+OBl+OBn+OAguOBl+OBi+OBl+OAgeWcsOODh+OCuOimluiBtOaZguOBq+OChOOChOODjuOCpOOC
+uuOBjOimi+OBiOOBpuOBl+OBvuOBhOOAgeWLleOBjeOCkuS8tOOBhuOBqOaui+WDj+aEn+OCguOB
+guOBo+OBn+OBruOBjOaDnOOBl+OBhOODneOCpOODs+ODiOOAguOBvuOBn+OAgeS4iuS4i+OBruim
+lumHjuinkuOBq+iLpeW5suW8seOBhOeCueOCguipleS+oeOBjOS8uOOBs+aCqeOCgOimgeWboOOB
+qOOBquOCiuOBvuOBl+OBn+OAgjwvUD48L0RJVj48L0JPRFk+PC9IVE1MPg0K
+
+--=====001_Dragon883526472348_=====--
+
+
+
+--===============3805797566951211345==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7880457159801051545==
+--===============3805797566951211345==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -493,6 +265,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7880457159801051545==--
+--===============3805797566951211345==--
 
 
