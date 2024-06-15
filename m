@@ -2,56 +2,56 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id C77CA9097A7
-	for <lists+osst-users@lfdr.de>; Sat, 15 Jun 2024 12:32:00 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id E2D159097CD
+	for <lists+osst-users@lfdr.de>; Sat, 15 Jun 2024 12:57:00 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sIQhS-000239-Dv
+	id 1sIR5f-0003Ig-E8
 	for lists+osst-users@lfdr.de;
-	Sat, 15 Jun 2024 10:31:59 +0000
+	Sat, 15 Jun 2024 10:56:59 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <no-reply.email.aeon@emaihui.cn>) id 1sIQhQ-000232-Fq
- for osst-users@lists.sourceforge.net; Sat, 15 Jun 2024 10:31:58 +0000
+ (envelope-from <no-reply.email.aeon@thiqyam.cn>) id 1sIR5c-0003IO-Vn
+ for osst-users@lists.sourceforge.net; Sat, 15 Jun 2024 10:56:57 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:From:
  Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=xygVnApN1rrOV7capcial2QlkY02Pt5i9NO+Q7iF5ks=; b=DH5Os/DkOaWzPboRNbclt3+/Sm
- ytRPVPrNk7oRqHPk9jVPF6ZS+ljuTy+ZFv602ShZmQAQv99xupLhQiw05AQhmyzVguf6HZiwETO3D
- JiCXpV0qYdKD2L3T+KAdaac/Tp2QDzGRrNDB74qle+KPnLAtUwNl0KKKmdckagmUloAA=;
+ bh=l9705Q/PTelsp8TpVw9OPY/EkINqSw5kbUdwcKqEI1k=; b=gxVE/zgEJzD1P/B8CYWwR+2LiN
+ hB+1CD9y9Tb8be7T3aL/EAIXnHag13mv++rX8dByWlq/+Kt+bA8/+6ZlLF2AdSH8QfedqX8fOtPaL
+ ItgMzArPocCdvSyezj8sWNJVYx+IzdPC+kZIbVdY7W0ak+PVC4oTazlGxB+iJ0nvRjZA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:MIME-Version:Date:Subject:To:From:Message-ID:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=xygVnApN1rrOV7capcial2QlkY02Pt5i9NO+Q7iF5ks=; b=E
- INU4enCmNt+7n3RX3HFWxlYobokUXMwr2qqmxEKA1TdvxoRwh88gqyhudYBGIgZgmc+PX80/Q/5DA
- nGngqwJufrWm+Kx9dDwXqssKVC9PC9rHbdbfrAjKl1Hmf04L1In5EWzHx0Bx0B1Te645CDgDBg+af
- qOVSbD5qiNRMHvo4=;
-Received: from [165.154.163.54] (helo=mail.emaihui.cn)
+ List-Owner:List-Archive; bh=l9705Q/PTelsp8TpVw9OPY/EkINqSw5kbUdwcKqEI1k=; b=F
+ AaCGUvgDHAZJAznylbbYE6PoCml8q2SManOtlCwTH+r64NT/YXYYwj5JB/b6syQvcKTR4LJ49FoqT
+ Brip2avofdNmnJluaR7ufZAFs6xl8gAQQxI+uDHSbIkSDJbHBAeYARFypeXpL071aUAJlZyYE6DqZ
+ pODyzBu7IbnAUG2U=;
+Received: from [152.32.146.58] (helo=mail.thiqyam.cn)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sIQhQ-0002sb-Ar for osst-users@lists.sourceforge.net;
- Sat, 15 Jun 2024 10:31:57 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=emaihui.cn; 
+ id 1sIR5b-0005hk-UU for osst-users@lists.sourceforge.net;
+ Sat, 15 Jun 2024 10:56:57 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=thiqyam.cn; 
  h=Message-ID:From:To:Subject:Date:MIME-Version:Content-Type;
- i=no-reply.email.aeon@emaihui.cn;
- bh=xygVnApN1rrOV7capcial2QlkY02Pt5i9NO+Q7iF5ks=;
- b=RevSE+HhbaMY3kkpoJ60wSUcUDX53iQPpaiT4Y3zxE5rTnFpPgmRSD3cQ3LpemQ9BUDoODtrByfa
- DKfQD8wB1uaWrDZv55Y1oaXTBYy26k0bszcRCzDEOBoJX91x+ujcRIZzwvAdbEFh8XTmDW6q2p5Q
- Rxug5AQ1XlWsLVDjqdLA+0qrltqGuMJUsK3KTs7DeMrBTP0yi64NwI5WqKF1xdfbViXXPOBbAMzs
- Sa0ZVIUmM/nbsvj/AKTre4GsiMEQxXwUrfkg+HZXCnG0JeTGRrs6g2trEnqIww7VCfOKxT6h2ulA
- w2xMxBj1Kumau8LgBNEAOUE8iXR7OEXCf6S1gQ==
-Message-ID: <A949FE023A4ABA62B2497FEA079E2395@Ajf.xccjfri>
-From: =?utf-8?B?44Kk44Kq44Oz44Kr44O844OJ?= <no-reply.email.aeon@emaihui.cn>
+ i=no-reply.email.aeon@thiqyam.cn;
+ bh=l9705Q/PTelsp8TpVw9OPY/EkINqSw5kbUdwcKqEI1k=;
+ b=CiIhWsZf6kVeUkvg7gL/kBHjY89JKqoowP2KF/R7qe4wn4fBjz475nXedkrZIKMFP50LjMnDNY12
+ ZVn2bkAkHUzFUjEXXwzOiWt33KvnFQx+e0SmE61Qa5hpXr1hCIIgQH7jxzwZyK8UgOjiPjTN7qqP
+ OBnTcWQcPeVqBAPFFx6Cnm0w6xN4XavQVHMcPjGbfHc9TSp515JUawOvGYQcNPpCmghvbIBYamfx
+ R5OMrQqLKJMVRHU834QHpTzTgRvu3iB9Ah0cVxmyetlu99x+TCBXLYRhfcqr4APRN8OSOoGD5nGf
+ e7o+imIee3au0ojxSWJasjWJq9YrOWVankAjtA==
+Message-ID: <4CC7697BED17DB63B864CB8505C405B5@MvY.gckv>
+From: =?utf-8?B?44Kk44Kq44Oz44Kr44O844OJ?= <no-reply.email.aeon@thiqyam.cn>
 To: <osst-users@lists.sourceforge.net>
-Date: Sat, 15 Jun 2024 19:11:26 +0900
+Date: Sat, 15 Jun 2024 19:56:35 +0900
 MIME-Version: 1.0
 X-MSMail-Priority: High
 X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5512
@@ -74,22 +74,22 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.
                              blocked.  See
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
-                             [URIs: aeonfinancial.co.jp]
+                             [URIs: aeon.co.jp]
   1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
                              blocklist
-                             [URIs: emaihui.cn]
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: emaihui.cn]
-  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                            [165.154.163.54 listed in bl.score.senderscore.com]
+                             [URIs: thiqyam.cn]
   0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
                              The query to Validity was blocked.  See
                              https://knowledge.validity.com/hc/en-us/articles/20961730681243
                               for more information.
-                             [165.154.163.54 listed in sa-accredit.habeas.com]
+                             [152.32.146.58 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [152.32.146.58 listed in bl.score.senderscore.com]
+  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+                             [URIs: joqyzeg.net]
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  -0.0 SPF_PASS               SPF: sender matches SPF record
   0.1 HTTPS_HTTP_MISMATCH    BODY: No description available.
@@ -106,7 +106,7 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.
   0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
   1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-X-Headers-End: 1sIQhQ-0002sb-Ar
+X-Headers-End: 1sIR5b-0005hk-UU
 Subject: [Osst-users] =?utf-8?b?NeaciOOBlOiri+axgumhjeOBruOBiuefpeOCiQ==?=
  =?utf-8?b?44Gb?=
 X-BeenThere: osst-users@lists.sourceforge.net
@@ -120,18 +120,18 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============7572493165002541883=="
+Content-Type: multipart/mixed; boundary="===============0083273282192788684=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
 
---===============7572493165002541883==
+--===============0083273282192788684==
 Content-Type: multipart/alternative;
-	boundary="----=_NextPart_000_0BA7_0118B7CF.1E7D0210"
+	boundary="----=_NextPart_000_03E0_015B7C80.10E1C0A0"
 
 This is a multi-part message in MIME format.
 
-------=_NextPart_000_0BA7_0118B7CF.1E7D0210
+------=_NextPart_000_03E0_015B7C80.10E1C0A0
 Content-Type: text/plain;
 	charset="utf-8"
 Content-Transfer-Encoding: base64
@@ -218,7 +218,7 @@ YWwuY28uanAvDQoNCuOBk+OBruODoeODvOODq+OBq+aOsui8ieOBleOCjOOBn+WGheWuueOCkuio
 seWPr+OBquOBj+i7oui8ieOBmeOCi+OBk+OBqOOCkuemgeOBmOOBvuOBmeOAgg0K4pSB4pSB4pSB
 4pSB4pSB4pSB4pSB4pSB4pSB
 
-------=_NextPart_000_0BA7_0118B7CF.1E7D0210
+------=_NextPart_000_03E0_015B7C80.10E1C0A0
 Content-Type: text/html;
 	charset="utf-8"
 Content-Transfer-Encoding: base64
@@ -321,18 +321,18 @@ bmFuY2lhbC5jby5qcC88QlI+PEJSPuOBk+OBruODoeODvOODq+OBq+aOsui8ieOBleOCjOOBn+WG
 heWuueOCkuioseWPr+OBquOBj+i7oui8ieOBmeOCi+OBk+OBqOOCkuemgeOBmOOBvuOBmeOAgjxC
 Uj7ilIHilIHilIHilIHilIHilIHilIHilIHilIE8QlI+PC9CT0RZPjwvSFRNTD4NCg==
 
-------=_NextPart_000_0BA7_0118B7CF.1E7D0210--
+------=_NextPart_000_03E0_015B7C80.10E1C0A0--
 
 
 
---===============7572493165002541883==
+--===============0083273282192788684==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7572493165002541883==
+--===============0083273282192788684==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -343,6 +343,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7572493165002541883==--
+--===============0083273282192788684==--
 
 
