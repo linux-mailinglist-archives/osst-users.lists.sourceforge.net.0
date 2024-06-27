@@ -2,63 +2,67 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 4DEF2917282
-	for <lists+osst-users@lfdr.de>; Tue, 25 Jun 2024 22:27:28 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 74277919E4F
+	for <lists+osst-users@lfdr.de>; Thu, 27 Jun 2024 06:35:41 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sMClB-0004y9-UA
+	id 1sMgrE-00005F-Rw
 	for lists+osst-users@lfdr.de;
-	Tue, 25 Jun 2024 20:27:27 +0000
+	Thu, 27 Jun 2024 04:35:40 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <www-data@v150-95-83-20.a017.g.bkk1.static.cnode.io>)
- id 1sMClA-0004y2-Ke for osst-users@lists.sourceforge.net;
- Tue, 25 Jun 2024 20:27:25 +0000
+ (envelope-from <smbc-update@iky787.com>) id 1sMgrD-000059-3B
+ for osst-users@lists.sourceforge.net; Thu, 27 Jun 2024 04:35:38 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:Message-ID:Mime-Version:Subject:To:
+ From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Be7mB5r26XDbr5zkXiXijvVfHfM5lt8Ng/5DzGtpUwg=; b=Bmb31P5uASriZRmjkpVzoOeygK
- Tnl8Xa98bRDyYFvAh6uH5dvVsForQFgYliGHa97UIOex/uMYETLvHyd0aSHAbyUTNXxEnhhIFPVE3
- g9BZ2OgNaN7EDwI85kV2zXTul0RYGIpM7cX1fHTnvpFWOwklIprIX+Kn/QuBQohHcFk8=;
+ bh=NM3/GVLz12nEBm0Lfm4GYQ9Xqyu/EWECR49Ls4zBvXw=; b=T2IpZhnW+goEwoDqgCKVTn+0LB
+ Dta/7sl1TfAT5CJl3ePVSEYRQ37pTDHJCo2kcX0eGB51h6h4xw6k1cgmF6h67tNqVEQC7vG2m2HaC
+ Mijk2Q/08QoP2MG1xl/at6ePmXKVO5biJgHOt76N7IVN19wrg9RXfaAvdggLo5uKHt7k=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
+ h=Content-Type:Message-ID:Mime-Version:Subject:To:From:Date:Sender:Reply-To
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Be7mB5r26XDbr5zkXiXijvVfHfM5lt8Ng/5DzGtpUwg=; b=E
- 2FVkDC5yahcs78+G+TuqGsJkmLw66vc4zHnYiPu0T6oGU7lMyX2IMrHU5cbfKlC2RalmEZwrW+EUU
- MNcR9JN2gaYoJpbMURTQ009Rgf5A/ZzQ/ff3V31f3XdVFyR1fXrBYf9ctBH9xN2YMoqTnHyvPijyq
- tDVK7etgEwvnujoE=;
-Received: from v150-95-83-20.a017.g.bkk1.static.cnode.io ([150.95.83.20])
+ List-Owner:List-Archive; bh=NM3/GVLz12nEBm0Lfm4GYQ9Xqyu/EWECR49Ls4zBvXw=; b=D
+ UQD9yXU+bRCHB/XwKM5sJE4on14fa512S8Sxhg191rDsRh/9kKYgEx1QG5LWX09KIbNRVt1hpHU5V
+ FBG92CbAZQInQgEWIKvtKtnEYOvnxIZysfgYyFJkLaHoXpz3nwHZOC+NGVq54gC1Umf3WpoGMBEmF
+ sJ5boRddl8jo/PDc=;
+Received: from [103.99.208.232] (helo=mail2.iky787.com)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sMClB-0002ik-Ae for osst-users@lists.sourceforge.net;
- Tue, 25 Jun 2024 20:27:25 +0000
-Received: by v150-95-83-20.a017.g.bkk1.static.cnode.io (Postfix,
- from userid 33) id A8D50BA8A5; Wed, 26 Jun 2024 03:17:18 +0700 (+07)
-To: osst-users@lists.sourceforge.net
-MIME-Version: 1.0
-From: Magalu Recomenda <personalizado@ofertasmagazine-luiza.com>
-Message-Id: <20240625201718.A8D50BA8A5@v150-95-83-20.a017.g.bkk1.static.cnode.io>
-Date: Wed, 26 Jun 2024 03:17:18 +0700 (+07)
-X-Spam-Score: 2.7 (++)
+ id 1sMgrB-0002jg-Jn for osst-users@lists.sourceforge.net;
+ Thu, 27 Jun 2024 04:35:38 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=iky787.com; 
+ h=Date:From:To:Subject:Mime-Version:Message-ID:Content-Type;
+ i=smbc-update@iky787.com;
+ bh=NM3/GVLz12nEBm0Lfm4GYQ9Xqyu/EWECR49Ls4zBvXw=;
+ b=hW0siDw6MLomIIoJz0tQUVTL7FRXgl5ZbGKjWbWwsO899HHsnkyZ/CGtN0Vwz2vw8J+CvRMZGyAw
+ /nJMKbG31V4RNcsBS5NlCf0N96jrOR+vQLyjI6uCrHo3le9eS6lUGSdvFWOY+TNcYDSxwkDsjM7e
+ kb8TGmZZYeTunQxSWqA=
+Date: Thu, 27 Jun 2024 13:15:06 +0900
+To: osst-users <osst-users@lists.sourceforge.net>
+X-Has-Attach: no
+Mime-Version: 1.0
+Message-ID: <202406271315186872871@iky787.com>
+X-Spam-Score: -0.2 (/)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  Preços exclusivos no e-mail :) política de privacidade |
-    descadastre-se Smart TV 55” UHD 4K LED Samsung 55CU7700 - Wi-Fi Bluetooth
-    Alexa 3 HDMI, Controle Único 
+ Content preview:  ＳＭＢＣＣＡＲＤクラシック※会員 様 平素は三井住友カードをご利用いただき、誠にありがとうございます。
+    このたび、ご本人様のご利用かどうかを確認させていただきたいお取引がありましたので、誠に勝手ながら、サービスのご利用を一部制限させてい�
+    [...] 
  
- Content analysis details:   (2.7 points, 6.0 required)
+ Content analysis details:   (-0.2 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
@@ -66,34 +70,43 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
                              blocked.  See
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
-                             [URIs: mlcdn.com.br]
+                             [URIs: hpbw.net]
   0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: redir-oferts-maga.com]
+                             [URIs: hpbw.net]
+  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
+                             blocklist
+                             [URIs: hpbw.net]
   0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
                              query to Validity was blocked.  See
                              https://knowledge.validity.com/hc/en-us/articles/20961730681243
                               for more information.
-                             [150.95.83.20 listed in sa-accredit.habeas.com]
+                             [103.99.208.232 listed in sa-accredit.habeas.com]
   0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
                              query to Validity was blocked.  See
                              https://knowledge.validity.com/hc/en-us/articles/20961730681243
                               for more information.
-                             [150.95.83.20 listed in bl.score.senderscore.com]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [150.95.83.20 listed in wl.mailspike.net]
-  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+                            [103.99.208.232 listed in bl.score.senderscore.com]
+ -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
+                             high trust
+                             [103.99.208.232 listed in list.dnswl.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
-                             DNS
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+                             identical to background
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 LOTS_OF_MONEY          Huge... sums of money
-  1.5 CONTENT_AFTER_HTML_WEAK More content after HTML close tag
-X-Headers-End: 1sMClB-0002ik-Ae
-Subject: [Osst-users] Queima de Estoque Magalu: Televisores 4k a partir de:
- R$ 698, 99 - APROVEITE  - [ 809039355477  ]
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  1.7 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
+X-Headers-End: 1sMgrB-0002jg-Jn
+Subject: [Osst-users] =?utf-8?b?44CQ6YeN6KaB44CR5LiJ5LqV5L2P5Y+L44Kr44O8?=
+	=?utf-8?b?44OJ44K144O844OT44K544Gu57eK5oCl6YCj57Wh44CB5oOF5aCx44KS?=
+	=?utf-8?b?56K66KqN44GX44Gm44GP44Gg44GV44GE44CC?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -105,296 +118,130 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5014116222330541045=="
+From: =?UTF-8?B?5LiJ5LqV5L2P5Y+L44Kr44O844OJ?= via Osst-users
+ <osst-users@lists.sourceforge.net>
+Reply-To: =?UTF-8?B?5LiJ5LqV5L2P5Y+L44Kr44O844OJ?= <smbc-update@iky787.com>
+Content-Type: multipart/mixed; boundary="===============5389729855923042964=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5014116222330541045==
-Content-type: text/html; charset=utf-8
+This is a multi-part message in MIME format.
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns=http://www.w3.org/1999/xhtml>
+--===============5389729855923042964==
+Content-Type: multipart/alternative;
+	boundary="=====001_Dragon058150125404_====="
 
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
-    <meta name=x-apple-disable-message-reformatting>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style type=text/css>
-        body {
-            font-size: 0;
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-        }
-        /* bugfix iOS: remove o background da imagem depois que carregou, pra evitar bugs de renderizacao */
-        
-        img[src^="http"] {
-            background: transparent;
-        }
-        
-        a,
-        p,
-        span,
-        div {
-            text-decoration: none;
-            font-family: 'Trebuchet MS', 'Arial', sans-serif !important;
-        }
-    </style>
-</head>
+This is a multi-part message in MIME format.
 
-<body align=center bgcolor=#0086ff cellspacing=0 cellpadding=0 topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 data-pinterest-extension-installed=cr1.3.4 style="text-decoration: none; -ms-text-size-adjust: 100%; font-size: 100%; -webkit-text-size-adjust: 100%; background-color: #fff; font-size: 100%; font-family: 'arial'!important; text-align: center; margin:0; padding:0; width:100%; -webkit-font-smoothing: antialiased; width: 100%!;">
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom">
-                                    <br><font color=#0087ff size=3><b>Pre&ccedil;os exclusivos no e-mail :)</b></font>
-                                    <br>
-                                    <div style="height: 6px;"></div><font color=#847870 size=2><a rilt="política de privacidade" href=https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/ target=_blank style="color: #939393"><b>pol&iacute;tica de privacidade</b></a> | <a rilt=descadastre-se href="https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/" target=_blank style="color: #939393"><b>descadastre-se</b></a></font>
-                                    <br>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.imgur.com/DJZddlv.png  border=0 alt="top banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
+--=====001_Dragon058150125404_=====
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
 
+DQrvvLPvvK3vvKLvvKPvvKPvvKHvvLLvvKTjgq/jg6njgrfjg4Pjgq/igLvkvJrlk6Eg5qeYDQoN
+CuW5s+e0oOOBr+S4ieS6leS9j+WPi+OCq+ODvOODieOCkuOBlOWIqeeUqOOBhOOBn+OBoOOBjeOA
+geiqoOOBq+OBguOCiuOBjOOBqOOBhuOBlOOBluOBhOOBvuOBmeOAgg0KDQrjgZPjga7jgZ/jgbPj
+gIHjgZTmnKzkurrmp5jjga7jgZTliKnnlKjjgYvjganjgYbjgYvjgpLnorroqo3jgZXjgZvjgabj
+gYTjgZ/jgaDjgY3jgZ/jgYTjgYrlj5blvJXjgYzjgYLjgorjgb7jgZfjgZ/jga7jgafjgIHoqqDj
+gavli53miYvjgarjgYzjgonjgIHjgrXjg7zjg5Pjgrnjga7jgZTliKnnlKjjgpLkuIDpg6jliLbp
+mZDjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgIHjgYrlrqLmp5jjga7jgqLjgqvjgqbjg7Pjg4jjga7j
+gavnmbvpjLLjgZXjgozjgZ/pm7voqbHnlarlj7fjgavjgZTpgKPntaHjgYTjgZ/jgZfjgb7jgZfj
+gZ/jgYzjgIHjgYrlrqLmp5jjgavpgKPntaHjgpLlj5bjgovjgZPjgajjgYzjgafjgY3jgb7jgZvj
+gpPjgafjgZfjgZ/jgILjgZ3jga7jgZ/jgoHjgIHjgZTnmbvpjLLjgZXjgozjgabjgYTjgovjg6Hj
+g7zjg6vjgqLjg4njg6zjgrnjgavjgabjgZTpgKPntaHjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgb7j
+gZfjgZ/jgIINCg0K44GU5Zue562U44KS44GE44Gf44Gg44GR44Gq44GE5aC05ZCI44CB44K144O8
+44OT44K544Gu44GU5Yip55So5Yi26ZmQ44GM57aZ57aa44GV44KM44KL44GT44Go44KC44GU44GW
+44GE44G+44GZ44Gu44Gn44CB5LqI44KB44GU5LqG5om/5LiL44GV44GE44CCDQoNCnVjICDjgZTl
+iKnnlKjnorroqo3jga/jgZPjgaHjgokNCiAgDQrigLsyNOaZgumWk+S7peWGheOBq+OBlOeiuuiq
+jeOBjOOBquOBhOWgtOWQiOOAgeiqoOOBq+eUs+OBl+ios+OBlOOBluOBhOOBvuOBm+OCk+OAgeOB
+iuWuouanmOOBruWuieWFqOOBrueCuuOAgeOCouOCq+OCpuODs+ODiOOBruWIqeeUqOWItumZkOOC
+kuOBleOBm+OBpuOBhOOBn+OBoOOBjeOBvuOBmeOBruOBp+OAgeS6iOOCgeOBlOS6huaJv+OBj+OB
+oOOBleOBhOOAgg0KDQrli5XjgY3jga7jgYLjgovjgrfjg7zjg7PjgoLjgrfjg6Pjg7zjg5fjgavl
+vJXjgY3nt6DjgoHjgIHkurrogozjga7os6rmhJ/jgb7jgafjg6rjgqLjg6vjgavprYXjgZvjgovm
+ioDooZPjgYzlhKrnp4DjgafjgZfjgZ/jgILjg4vjg6Xjg7zjgrnnlarntYTjg7vjg4njg6njg57j
+g7vjgrnjg53jg7zjg4Tjg7vjg43jg4Pjg4jli5XnlLvjgajmmKDlg4/jga7nqK7poZ7jgpLllY/j
+go/jgZrlhajmlrnkvY3jgavplbfjgZHjgZ/mgKfog73jgajjgYTjgYjjgb7jgZnjgIINCg0K4pag
+5rOo5oSP5LqL6aCFDQoNCuKAu+OCq+ODvOODieOBruWAi+S6uuaDheWgseOBq+OCiOOBo+OBpuOB
+r+mbu+ipseOBp+mAo+e1oeOBmeOCi+WgtOWQiOOCguOBlOOBluOBhOOBvuOBmeOAgg0KDQrigLvm
+raPnorrjgarmg4XloLHjga/lv4XjgZroqJjlhaXjgZfjgabjgY/jgaDjgZXjgYTjgIINCuKUgeKU
+geKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKU
+gQ0K5LiJ5LqV5L2P5Y+L44Kr44O844OJ5qCq5byP5Lya56S+DQoNCuOAkjEzNS0wMDYxIOadseS6
+rOmDveaxn+adseWMuuixiua0sjLkuIHnm64y55WqMzHlj7cgU01CQ+ixiua0suODk+ODqw0K4pSB
+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB
+4pSBDQpDb3B5cmlnaHQgKEMpIFN1bWl0b21vIE1pdHN1aSBDYXJkIENvLiwgTHRkLg0KDQppcHPm
+lrnlvI/jga/mtrLmmbbjga7lvLHngrnjgaDjgaPjgZ/oppbph47op5LjgpLmlLnlloTjgZfjgIHo
+pIfmlbDkurrjgafjg4bjg6zjg5PjgpLlm7LjgpPjgafjgoLovJ3luqbjgoToibLjga7lpInljJbj
+gYzlsI/jgZXjgYTlgr7lkJHjgavjgILjgZ/jgaDjgZfjgIF2YeaWueW8j+OBq+avlOOBueOBpuOC
+s+ODs+ODiOODqeOCueODiOavlOOBjOOCiOOBj+OBguOCiuOBvuOBm+OCk+OAgg0K
 
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://s.mlcdn.com.br/banner/campanhas/LFGeral1x1.png border=0 alt style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-	<br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                           
-                          
-                          
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="https://tv.redir-oferts-maga.com/redirecionamento/tv55nvs.php"><img src=https://i.imgur.com/o8E3XSI.png width=390px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Magalu"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://tv.redir-oferts-maga.com/redirecionamento/tv55nvs.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 55&rdquo; UHD 4K LED Samsung 55CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;2.499,99</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.339,90 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista </p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center> <p>
-                        </tbody></table><center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://tv.redir-oferts-maga.com/redirecionamento/tv55nvs.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+--=====001_Dragon058150125404_=====
+Content-Type: text/html;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
 
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="https://tv.redir-oferts-maga.com/redirecionamento/tv43nv.php"><img src=https://i.imgur.com/rOiCGCn.png width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV 4K Crystal UHD 58"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://tv.redir-oferts-maga.com/redirecionamento/tv43nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 43&rdquo; UHD 4K LED Samsung 43CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;1.988,79</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.099,05 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://tv.redir-oferts-maga.com/redirecionamento/tv43nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-<br>
-                                                    <p><a href="https://tv.redir-oferts-maga.com/redirecionamento/tv32nv.php"><img src=https://i.imgur.com/0lZdEoD.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV Full HD LED 43” Samsung 43T5300A"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://tv.redir-oferts-maga.com/redirecionamento/tv32nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV UHD 4k LED 32&rdquo; Samsung T4300 - Wi-Fi - HDR - 2 HDMI - 1 USB, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 1.038,19</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 698,99 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://tv.redir-oferts-maga.com/redirecionamento/tv32nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src= border=0 alt="">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://s.mlcdn.com.br/banner/campanhas/EsquentaLFMediumAPP.png border=0 alt="bottom banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:20px;padding-left:20px;padding-top:0;padding-bottom:0;text-align:center;><font color=#5a5a5a size=2> As ofertas valem apenas para o dia de recebimento deste e-mail nas compras feitas online ou por Televendas. Os pre&ccedil;os podem sofrer altera&ccedil;&otilde;es ao longo do dia e enquanto durarem os estoques. <br><br><b>*</b>Confira nosso regulamento de Desconto e Frete. <br><br> Contato Televendas: Regi&atilde;o Metropolitana de S&atilde;o Paulo | 0800 773 3838 <br> Outras regi&otilde;es: procure a cidade mais pr&oacute;xima de voc&ecirc;.<br> Hor&aacute;rio de atendimento: de segunda a sexta, das 8h30 &agrave;s 22h / aos s&aacute;bados e domingos, das 9h &agrave;s 22h (exceto feriados) <br><br> Ficou com d&uacute;vidas? Acesse nossa <a rilt="central de atendimento" >Central de Atendimento</a> :) <br><br> Ah! E cadastre o e-mail personalizado@paravoce.<wbr>magazineluiza.com.br na sua lista de contatos pra receber sempre as nos
- sas melhores ofertas! <br><br><b>pol&iacute;tica de privacidade</b></a> | <b>descadastre-se</b></a><br><br></font></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
+L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
+Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
+bnQ9Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWT4NCjxQPu+8s++8re+8
+ou+8o++8o++8oe+8su+8pOOCr+ODqeOCt+ODg+OCr+KAu+S8muWToSDmp5g8L1A+DQo8UD7lubPn
+tKDjga/kuInkupXkvY/lj4vjgqvjg7zjg4njgpLjgZTliKnnlKjjgYTjgZ/jgaDjgY3jgIHoqqDj
+gavjgYLjgorjgYzjgajjgYbjgZTjgZbjgYTjgb7jgZnjgII8L1A+DQo8UD7jgZPjga7jgZ/jgbPj
+gIHjgZTmnKzkurrmp5jjga7jgZTliKnnlKjjgYvjganjgYbjgYvjgpLnorroqo3jgZXjgZvjgabj
+gYTjgZ/jgaDjgY3jgZ/jgYTjgYrlj5blvJXjgYzjgYLjgorjgb7jgZfjgZ/jga7jgafjgIHoqqDj
+gavli53miYvjgarjgYzjgonjgIHjgrXjg7zjg5Pjgrnjga7jgZTliKnnlKjjgpLkuIDpg6jliLbp
+mZDjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgIHjgYrlrqLmp5jjga7jgqLjgqvjgqbjg7Pjg4jjga7j
+gavnmbvpjLLjgZXjgozjgZ/pm7voqbHnlarlj7fjgavjgZTpgKPntaHjgYTjgZ/jgZfjgb7jgZfj
+gZ/jgYzjgIHjgYrlrqLmp5jjgavpgKPntaHjgpLlj5bjgovjgZPjgajjgYzjgafjgY3jgb7jgZvj
+gpPjgafjgZfjgZ/jgILjgZ3jga7jgZ/jgoHjgIHjgZTnmbvpjLLjgZXjgozjgabjgYTjgovjg6Hj
+g7zjg6vjgqLjg4njg6zjgrnjgavjgabjgZTpgKPntaHjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgb7j
+gZfjgZ/jgII8L1A+DQo8UD7jgZTlm57nrZTjgpLjgYTjgZ/jgaDjgZHjgarjgYTloLTlkIjjgIHj
+grXjg7zjg5Pjgrnjga7jgZTliKnnlKjliLbpmZDjgYzntpnntprjgZXjgozjgovjgZPjgajjgoLj
+gZTjgZbjgYTjgb7jgZnjga7jgafjgIHkuojjgoHjgZTkuobmib/kuIvjgZXjgYTjgII8QlI+PEJS
+PjxGT05UIA0KY29sb3I9d2hpdGU+dWM8L0ZPTlQ+Jm5ic3A7Jm5ic3A7PEEgDQpzdHlsZT0iVEVY
+VC1ERUNPUkFUSU9OOiBub25lIiBocmVmPSJodHRwczovL3d3dy5ocGJ3Lm5ldC9zbXl3YmM2NDF5
+cjFkYTljODgiIA0KdGFyZ2V0PV9ibGFuaz48U1RST05HPuOBlOWIqeeUqOeiuuiqjeOBr+OBk+OB
+oeOCiTwvU1RST05HPjwvQT48QlI+Jm5ic3A7Jm5ic3A7PEJSPuKAuzI05pmC6ZaT5Lul5YaF44Gr
+44GU56K66KqN44GM44Gq44GE5aC05ZCI44CB6Kqg44Gr55Sz44GX6Kiz44GU44GW44GE44G+44Gb
+44KT44CB44GK5a6i5qeY44Gu5a6J5YWo44Gu54K644CB44Ki44Kr44Km44Oz44OI44Gu5Yip55So
+5Yi26ZmQ44KS44GV44Gb44Gm44GE44Gf44Gg44GN44G+44GZ44Gu44Gn44CB5LqI44KB44GU5LqG
+5om/44GP44Gg44GV44GE44CCPC9QPg0KPERJViBzdHlsZT0ib3BhY2l0eTogMCI+DQo8UCANCnN0
+eWxlPSJGT05ULVNJWkU6IDFweDsgQ09MT1I6ICNmZmZmZmY7IC13ZWJraXQtdG91Y2gtY2FsbG91
+dDogbm9uZTsgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsgLWtodG1sLXVzZXItc2VsZWN0OiBu
+b25lOyAtbW96LXVzZXItc2VsZWN0OiBub25lOyAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7IHVzZXIt
+c2VsZWN0OiBub25lIj7li5XjgY3jga7jgYLjgovjgrfjg7zjg7PjgoLjgrfjg6Pjg7zjg5fjgavl
+vJXjgY3nt6DjgoHjgIHkurrogozjga7os6rmhJ/jgb7jgafjg6rjgqLjg6vjgavprYXjgZvjgovm
+ioDooZPjgYzlhKrnp4DjgafjgZfjgZ/jgILjg4vjg6Xjg7zjgrnnlarntYTjg7vjg4njg6njg57j
+g7vjgrnjg53jg7zjg4Tjg7vjg43jg4Pjg4jli5XnlLvjgajmmKDlg4/jga7nqK7poZ7jgpLllY/j
+go/jgZrlhajmlrnkvY3jgavplbfjgZHjgZ/mgKfog73jgajjgYTjgYjjgb7jgZnjgII8L1A+PC9E
+SVY+DQo8UD7ilqDms6jmhI/kuovpoIU8L1A+DQo8UD7igLvjgqvjg7zjg4njga7lgIvkurrmg4Xl
+oLHjgavjgojjgaPjgabjga/pm7voqbHjgafpgKPntaHjgZnjgovloLTlkIjjgoLjgZTjgZbjgYTj
+gb7jgZnjgII8L1A+DQo8UD7igLvmraPnorrjgarmg4XloLHjga/lv4XjgZroqJjlhaXjgZfjgabj
+gY/jgaDjgZXjgYTjgII8QlI+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB
+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBPEJSPuS4ieS6leS9j+WPi+OCq+ODvOODieagquW8j+S8
+muekvjxCUj48QlI+44CSMTM1LTAwNjEgDQrmnbHkuqzpg73msZ/mnbHljLrosYrmtLIy5LiB55uu
+MueVqjMx5Y+3IFNNQkPosYrmtLLjg5Pjg6s8QlI+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB
+4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSBPEJSPkNvcHlyaWdodCAoQykgU3Vt
+aXRvbW8gDQpNaXRzdWkgQ2FyZCBDby4sIEx0ZC48L1A+DQo8RElWIHN0eWxlPSJvcGFjaXR5OiAw
+Ij4NCjxQIA0Kc3R5bGU9IkZPTlQtU0laRTogMXB4OyBDT0xPUjogI2ZmZmZmZjsgLXdlYmtpdC10
+b3VjaC1jYWxsb3V0OiBub25lOyAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOyAta2h0bWwtdXNl
+ci1zZWxlY3Q6IG5vbmU7IC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7IC1tcy11c2VyLXNlbGVjdDog
+bm9uZTsgdXNlci1zZWxlY3Q6IG5vbmUiPmlwc+aWueW8j+OBr+a2suaZtuOBruW8seeCueOBoOOB
+o+OBn+imlumHjuinkuOCkuaUueWWhOOBl+OAgeikh+aVsOS6uuOBp+ODhuODrOODk+OCkuWbsuOC
+k+OBp+OCgui8neW6puOChOiJsuOBruWkieWMluOBjOWwj+OBleOBhOWCvuWQkeOBq+OAguOBn+OB
+oOOBl+OAgXZh5pa55byP44Gr5q+U44G544Gm44Kz44Oz44OI44Op44K544OI5q+U44GM44KI44GP
+44GC44KK44G+44Gb44KT44CCPC9QPjwvRElWPjwvQk9EWT48L0hUTUw+DQo=
 
-</html>26/06/2024 03:17:18
+--=====001_Dragon058150125404_=====--
 
 
---===============5014116222330541045==
+
+--===============5389729855923042964==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5014116222330541045==
+--===============5389729855923042964==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -405,4 +252,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5014116222330541045==--
+--===============5389729855923042964==--
+
+
