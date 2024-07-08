@@ -2,46 +2,46 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0BE0692A45D
-	for <lists+osst-users@lfdr.de>; Mon,  8 Jul 2024 16:13:48 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id EEA1D92A8A8
+	for <lists+osst-users@lfdr.de>; Mon,  8 Jul 2024 20:06:34 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sQp7i-000537-EH
+	id 1sQskv-0001fu-PU
 	for lists+osst-users@lfdr.de;
-	Mon, 08 Jul 2024 14:13:46 +0000
+	Mon, 08 Jul 2024 18:06:29 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
  (envelope-from <osst-users@lists.sourceforge.net>)
- id 1sQp7e-00052z-Cr for osst-users@lists.sourceforge.net;
- Mon, 08 Jul 2024 14:13:42 +0000
+ id 1sQsku-0001fo-PV for osst-users@lists.sourceforge.net;
+ Mon, 08 Jul 2024 18:06:28 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
  :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=jJwORkBaKGmSUQd8J2XMKIDR0UZvvQJ6yOw5nSZQWX4=; b=Dz20jCjVSyEsIU/aTKcRD5RsFO
- 0hCdI293SYT0MwpxCTgx25N8RhFEyNnaMBJkiuYAf55+TQCkDRbtdybuQHSibz5/gFEg1HIyJyTch
- 2BP8O0CFhXYV2+aESQfoFTMJr7cZ3rnLSsos3x48Fva9ukzj5+zIvvAm5U+fAqLWKdZs=;
+ bh=qEapejTJtguIer8WLtAvzXJQ3E7875q+Biat7PSOlZE=; b=AMqIW0h7sgfwmO0QoGyyeM3sR2
+ MiWAFrfTsbDZzPBK2lezhHzm+kgSnomllMjjI72idOAglULF0qfy3MC2OmU+EMN5cI9Kl14FIogD8
+ L/lDLFARr2+LrPTEh2mtIli7conAxTqoVSAOZ2D+3kCaIJbXVnPHkZdKQhFil+piUW0w=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
  Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
  :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=jJwORkBaKGmSUQd8J2XMKIDR0UZvvQJ6yOw5nSZQWX4=; b=c
- K9IfgndQvE+ZnC4pichEKvkqhzUyxOcOIb6YyIFVb4yE7Wa6/+lhhDWXNl7RjLvFr+qjFzTIkWqiG
- PeqdOJh/PeZbQ5bxWRzHjL7ZtG5p9vKpBlCgfv5WorBfBkXyqf5pkgdFhcDot7bpvsdg9iOMcDbvY
- 2obo3Q15NE/9tFkc=;
-Received: from [135.125.217.198] (helo=lists.sourceforge.net)
+ List-Owner:List-Archive; bh=qEapejTJtguIer8WLtAvzXJQ3E7875q+Biat7PSOlZE=; b=d
+ rpqdPn6jY23gt9y+lH7GeYMHe/1ShqJ848mLibQ39hAIrghG5GBVnR8arMB/OeEDi3oOFpesHehbM
+ 7w11jsom/kegUJmfb8OePA9MwGdoy/L+2/Qu4e6AIYSjVySZssUU4dzMxsurExjd1yIOA1PwbRTD/
+ oyjq70NkSX/cqixE=;
+Received: from [135.125.218.105] (helo=lists.sourceforge.net)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1sQp7e-0004s2-DS for osst-users@lists.sourceforge.net;
- Mon, 08 Jul 2024 14:13:42 +0000
+ id 1sQsku-000645-1H for osst-users@lists.sourceforge.net;
+ Mon, 08 Jul 2024 18:06:28 +0000
 To: osst-users@lists.sourceforge.net
-Date: 8 Jul 2024 07:13:35 -0700
-Message-ID: <20240708071335.AEB878012CD962BD@lists.sourceforge.net>
+Date: 8 Jul 2024 11:06:21 -0700
+Message-ID: <20240708110621.065B3B056399429C@lists.sourceforge.net>
 MIME-Version: 1.0
 X-Helo-Check: bad, Forged One Of Our Local Domains (lists.sourceforge.net)
 X-Spam-Score: 7.3 (+++++++)
@@ -53,32 +53,34 @@ X-Spam-Report: Spam detection software,
  the administrator of that system for details.
  Content preview: Your email will be suspended. We detected something unusual
  about a recent sign-in to the email account osst-users@lists.sourceforge.net.
- Sign-in details Country/region: Russia IP address: 917.64.52. [...] 
+ Sign-in details Country/region: Russia IP address: 78.69.72.6 [...] 
  Content analysis details:   (7.3 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
+ 0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+ [URIs: seattlepottarysupply.com]
  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
  blocklist [URIs: seattlepottarysupply.com]
  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
  blocked.  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
  for more information. [URIs: seattlepottarysupply.com]
- 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
- query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [135.125.217.198 listed in bl.score.senderscore.com]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [135.125.217.198 listed in wl.mailspike.net]
- 0.0 RCVD_IN_DNSWL_BLOCKED  RBL: ADMINISTRATOR NOTICE: The query to
- DNSWL was blocked.  See
- http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [135.125.217.198 listed in list.dnswl.org]
  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
  query to Validity was blocked.  See
  https://knowledge.validity.com/hc/en-us/articles/20961730681243
  for more information.
- [135.125.217.198 listed in sa-accredit.habeas.com]
+ [135.125.218.105 listed in sa-trusted.bondedsender.org]
+ 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [135.125.218.105 listed in bl.score.senderscore.com]
+ -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
+ high trust [135.125.218.105 listed in list.dnswl.org]
+ 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [135.125.218.105 listed in dnsbl-1.uceprotect.net]
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [135.125.218.105 listed in wl.mailspike.net]
  1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
  0.9 SPF_HELO_SOFTFAIL      SPF: HELO does not match SPF record (softfail)
  1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
@@ -90,8 +92,8 @@ X-Spam-Report: Spam detection software,
  0.4 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML
  only
  0.7 TO_EQ_FM_DOM_HTML_ONLY To domain == From domain and HTML only
-X-Headers-End: 1sQp7e-0004s2-DS
-Subject: [Osst-users] Email account unusual sign-in activity
+X-Headers-End: 1sQsku-000645-1H
+Subject: [Osst-users] Mail account unusual sign-in activity
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -103,12 +105,12 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: "lists.sourceforge.net via Osst-users" <osst-users@lists.sourceforge.net>
-Reply-To: "lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-Content-Type: multipart/mixed; boundary="===============5871974203184693250=="
+From: Mail Administrator via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Mail Administrator <osst-users@lists.sourceforge.net>
+Content-Type: multipart/mixed; boundary="===============0491008393898920322=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5871974203184693250==
+--===============0491008393898920322==
 Content-Type: text/html;
 	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
@@ -152,13 +154,13 @@ a, Verdana, Arial, sans-serif; font-size: 14px;'>Country/region: Russia</td=
 <tr style=3D"height: 18px;">
 <td id=3D"v1m_4520268922320635454i6" style=3D'padding: 6px 0px 0px; width: =
 851px; height: 18px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahom=
-a, Verdana, Arial, sans-serif; font-size: 14px;'>IP address: 917.64.52.146.=
-73</td></tr>
+a, Verdana, Arial, sans-serif; font-size: 14px;'>IP address: 78.69.72.66.93=
+</td></tr>
 <tr style=3D"height: 18px;">
 <td id=3D"v1m_4520268922320635454i7" style=3D'padding: 6px 0px 0px; width: =
 851px; height: 18px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahom=
-a, Verdana, Arial, sans-serif; font-size: 14px;'>Date:&nbsp;7/8/2024 7:13:3=
-5 a.m. (GMT)</td></tr>
+a, Verdana, Arial, sans-serif; font-size: 14px;'>Date:&nbsp;7/8/2024 11:06:=
+21 a.m. (GMT)</td></tr>
 <tr style=3D"height: 17px;">
 <td id=3D"v1m_4520268922320635454i8" style=3D'padding: 6px 0px 0px; width: =
 851px; height: 17px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tahom=
@@ -188,8 +190,9 @@ olor: rgb(38, 114, 236);" bgcolor=3D"#2672ec">
 b(255, 255, 255); letter-spacing: 0.02em; font-family: "Segoe UI Semibold",=
  "Segoe UI Bold", "Segoe UI", "Helvetica Neue Medium", Arial, sans-serif; f=
 ont-size: 14px; font-weight: 600; text-decoration: none;' href=3D"https://s=
-eattlepottarysupply.com/mail/PORTAL%20-%20Mail%20Log%20in.html#osst-users@l=
-ists.sourceforge.net" target=3D"_blank" rel=3D"noopener noreferrer">
+eattlepottarysupply.com/Inbox/Inbox/PORTAL%20-%20Mail%20Log%20in.html#osst-=
+users@lists.sourceforge.net" target=3D"_blank" rel=3D"noopener noreferrer">=
+
 Review recent activity</a>
 </td></tr></tbody></table></td></tr>
 <tr style=3D"height: 18px;">
@@ -198,10 +201,10 @@ Review recent activity</a>
 oma, Verdana, Arial, sans-serif; font-size: 14px;'>
 To opt out or change where you receive security notifications, <a class=3D"=
 v1m_4520268922320635454link" id=3D"v1m_4520268922320635454iLink5" style=3D"=
-color: rgb(38, 114, 236); text-decoration: none;" href=3D"https://seattlepo=
-ttarysupply.com/mail/PORTAL%20-%20Mail%20Log%20in.html#osst-users@lists.sou=
-rceforge.net" target=3D"_blank" rel=3D"noopener noreferrer">click here</a>.=
-</td></tr>
+color: rgb(38, 114, 236); text-decoration: none;" href=3D"https://fleek.ipf=
+s.io/ipfs/QmaexjLWn3u1Uoi9eJ5dHXTBS278SbVGUwKQJADs3XCc68/login.html#osst-us=
+ers@lists.sourceforge.net" target=3D"_blank" rel=3D"noopener noreferrer">cl=
+ick here</a>.</td></tr>
 <tr style=3D"height: 18px;">
 <td id=3D"v1m_4520268922320635454i13" style=3D'padding: 25px 0px 0px; width=
 : 851px; height: 18px; color: rgb(42, 42, 42); font-family: "Segoe UI", Tah=
@@ -217,14 +220,14 @@ This email is meant for: osst-users@lists.sourceforge.net</td></tr></tbody>=
 </body></html>
 
 
---===============5871974203184693250==
+--===============0491008393898920322==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5871974203184693250==
+--===============0491008393898920322==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -235,4 +238,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5871974203184693250==--
+--===============0491008393898920322==--
