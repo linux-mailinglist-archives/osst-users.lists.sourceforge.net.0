@@ -2,107 +2,92 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0CABB93188C
-	for <lists+osst-users@lfdr.de>; Mon, 15 Jul 2024 18:36:56 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 4CE1093204B
+	for <lists+osst-users@lfdr.de>; Tue, 16 Jul 2024 08:08:02 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sTOh3-0001lG-PZ
+	id 1sTbM1-0008BM-ND
 	for lists+osst-users@lfdr.de;
-	Mon, 15 Jul 2024 16:36:54 +0000
+	Tue, 16 Jul 2024 06:08:01 +0000
 Received: from [172.30.29.67] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <www-data@v150-95-26-139.a00d.g.bkk1.static.cnode.io>)
- id 1sTOh2-0001k4-Du for osst-users@lists.sourceforge.net;
- Mon, 15 Jul 2024 16:36:53 +0000
+ (envelope-from <rub@o.nttpub.net>) id 1sTbM0-0008B9-4i
+ for osst-users@lists.sourceforge.net; Tue, 16 Jul 2024 06:07:59 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
+ MIME-Version:Date:To:From:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=beTIc0Sc1CWO7AxVvmm101BCW5gCTSDESsSplolUHlA=; b=h+Qdb28AYEZA3516mFfpF7FEFu
- FTXrUwIGV0gsgTgEQ/aXg4+vbKeH6/Yed1eNhrdVy4mtL2zApY9Juv+XG5P6iafg9OCfmcJXxxWQc
- DwadWZA8+B84cO4luV9kfKCGeAlKINPpa22SxrxI/1EZ+s0PSg22MnUgKjEAjUriswME=;
+ bh=iMThIMvfcz9iUFjbd7UeQFXRhQKP2vjIBJYG+vnY4ps=; b=KwdBzp5PO6fEX5w5Z/YAqa71XB
+ zgV40HpCmx7FbqMDcyAWe+nHEJ2kuGr9pFd3B4Y3BChv2FitzaUlMQAkWnyu660o4AcLmm9fJ0iVy
+ /Y6Bfs2uCxkVPJhJHJ2uXSZAZ4DX1scpZRs/Vf8gxukOro5gqJJroDYZTsOqxhDLX9MM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Date:To:From:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=beTIc0Sc1CWO7AxVvmm101BCW5gCTSDESsSplolUHlA=; b=P
- 6Dh4HKHwVmeVjQceabJteeX/Zrbbs6aPfZ3rVoMeDXOmZRViRTT+gZojG/jj7MHGjDC91pvzfH9SF
- xC1GYojyzXe9PzZUHwh9oczwnrnCmwaI2bt4hj/5jHmYFEb4JwyG75J7rgRG+ZwBiwiaMCBj+6qPE
- Jaz+qHKCZa01EL0k=;
-Received: from v150-95-26-139.a00d.g.bkk1.static.cnode.io ([150.95.26.139])
+ List-Owner:List-Archive; bh=iMThIMvfcz9iUFjbd7UeQFXRhQKP2vjIBJYG+vnY4ps=; b=m
+ ShDO4QLhreHBc9EoCTSb4YsnQAfT6SHCYf/kpaTq04uhccSi8iwn//x9cLXS54UNv6liQ+g8Ph8gx
+ QHayr2I85dHZ1Ekw/xInORcaBsH3yg1tz87bPdr8OWFe/yzYZtFhYETnDE59YW4E9Jofe2Xky8Z54
+ onVhBjg2+3+MC19U=;
+Received: from [185.127.16.243] (helo=o.nttpub.net)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sTOh2-0005O8-Qm for osst-users@lists.sourceforge.net;
- Mon, 15 Jul 2024 16:36:53 +0000
-Received: by v150-95-26-139.a00d.g.bkk1.static.cnode.io (Postfix,
- from userid 33) id 0FACCA8403; Mon, 15 Jul 2024 23:31:03 +0700 (+07)
-To: osst-users@lists.sourceforge.net
+ id 1sTbLz-0001nR-Jn for osst-users@lists.sourceforge.net;
+ Tue, 16 Jul 2024 06:07:59 +0000
+Message-ID: <dh0hbmnmf2pz6jklyo2cordlx5nuynx-LHZM1QZUG2RVJ.1486509519428173212071@j.7787134547440027296901>
+From: Rolex <rub@o.nttpub.net>
+To: osst-users <osst-users@lists.sourceforge.net>
+Date: Tue, 16 Jul 2024 08:07:44 +0100
 MIME-Version: 1.0
-From: Magalu Oferta <pravoce98@exclusiva-magazine-luiza.com>
-Message-Id: <20240715163103.0FACCA8403@v150-95-26-139.a00d.g.bkk1.static.cnode.io>
-Date: Mon, 15 Jul 2024 23:31:03 +0700 (+07)
-X-Spam-Score: 7.0 (+++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+X-Spam-Score: 8.9 (++++++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Preços exclusivos no e-mail :) política de privacidade |
-    descadastre-se Smart TV 50” UHD 4K LED Samsung 50CU7700 - Wi-Fi Bluetooth
-    Alexa 3 HDMI, Controle Único 
- 
- Content analysis details:   (7.0 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  If you can't read this email, please view it online If you'd
+ like to update your email preferences or unsubscribe, click here. 
+ Content analysis details:   (8.9 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
-                             blocked.  See
-                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
-                              for more information.
-                             [URIs: mlcdn.com.br]
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
-                             blocklist
-                             [URIs: ofert-maga-redir.com]
-  0.0 RCVD_IN_DNSWL_BLOCKED  RBL: ADMINISTRATOR NOTICE: The query to
-                             DNSWL was blocked.  See
-                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
-                              for more information.
-                             [150.95.26.139 listed in list.dnswl.org]
-  0.2 CK_HELO_GENERIC        Relay used name indicative of a Dynamic Pool or
-                             Generic rPTR
-  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                          [150.95.26.139 listed in sa-trusted.bondedsender.org]
-  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                             [150.95.26.139 listed in bl.score.senderscore.com]
-  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
-                             DNS
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 LOTS_OF_MONEY          Huge... sums of money
-  3.0 HOSTED_IMG_MULTI_PUB_01 Multiple hosted images at public site
-  0.9 CONTENT_AFTER_HTML_WEAK More content after HTML close tag
-X-Headers-End: 1sTOh2-0005O8-Qm
-Subject: [Osst-users] Liquida Estoque Magalu: Smart TV Samsung 4k 50'' -
- Apenas R$ 1.339, 90 - Smart TV Samsung 4K 43'' - Apenas: R$ 1.099,
- 05 - Smart TV Samsung 4k 32 - Apenas: R$ 698,
- 99 - APROVEITE  - [ 26686162866  ]
+ -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
+ high trust [185.127.16.243 listed in list.dnswl.org]
+ 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [185.127.16.243 listed in dnsbl-1.uceprotect.net]
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [185.127.16.243 listed in sa-trusted.bondedsender.org]
+ 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [185.127.16.243 listed in bl.score.senderscore.com]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 2.0 PYZOR_CHECK            Listed in Pyzor
+ (https://pyzor.readthedocs.io/en/latest/)
+ 0.5 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
+ [185.127.16.243 listed in bl.mailspike.net]
+ 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 5.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
+ 0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+ Colors in HTML
+ 0.0 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1sTbLz-0001nR-Jn
+Subject: [Osst-users] [SPAM] Luxury Watches for Just $200 - Limited Time
+ Only!
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -114,296 +99,125 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============9023999231011173512=="
+Content-Type: multipart/mixed; boundary="===============5986286533107825960=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============9023999231011173512==
-Content-type: text/html; charset=utf-8
+--===============5986286533107825960==
+Content-Type: text/html;
+	charset="iso-2022-jp"
+Content-Transfer-Encoding: 8bit
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns=http://www.w3.org/1999/xhtml>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v = "urn:schemas-microsoft-com:vml" xmlns:o = "urn:schemas-microsoft-com:office:office">
+<head><title></title>
+<meta content="text/html; charset=iso-2022-jp" http-equiv=Content-Type>
+<meta name=x-apple-disable-message-reformatting>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<style type=text/css>
+    body, .maintable { height:100% !important; width:100% !important; margin:0; padding:0;}
+    img, a img { border:0; outline:none; text-decoration:none;}
+    p {margin-top:0; margin-right:0; margin-left:0; padding:0;}
+    .ReadMsgBody {width:100%;}
+    .ExternalClass {width:100%;}
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+    img {-ms-interpolation-mode: bicubic;}
+    body, table, td, p, a, li, blockquote {-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
+</style>
 
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
-    <meta name=x-apple-disable-message-reformatting>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style type=text/css>
-        body {
-            font-size: 0;
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-        }
-        /* bugfix iOS: remove o background da imagem depois que carregou, pra evitar bugs de renderizacao */
-        
-        img[src^="http"] {
-            background: transparent;
-        }
-        
-        a,
-        p,
-        span,
-        div {
-            text-decoration: none;
-            font-family: 'Trebuchet MS', 'Arial', sans-serif !important;
-        }
-    </style>
+<style type=text/css>
+@media only screen and (max-width: 480px) {
+ .rtable {width: 100% !important;}
+ .rtable tr {height:auto !important; display: block;}
+ .contenttd {max-width: 100% !important; display: block; width: auto !important;}
+ .contenttd:after {content: ""; display: table; clear: both;}
+ .hiddentds {display: none;}
+ .imgtable, .imgtable table {max-width: 100% !important; height: auto; float: none; margin: 0 auto;}
+ .imgtable.btnset td {display: inline-block;}
+ .imgtable img {width: 100%; height: auto !important;display: block;}
+ table {float: none;}
+ .mobileHide {display: none !important; width: 0 !important; max-height: 0 !important; overflow: hidden !important;}
+ .desktopHide {display: block !important; width: 100% !important; max-height: unset !important; overflow: unset !important;}
+ .noresponsive p {display: table; table-layout: fixed; width: 100%; word-wrap: break-word;}
+}
+@media only screen and (min-width: 481px) {
+ .desktopHide {display: none !important; width: 0 !important; max-height: 0 !important; overflow: hidden !important;}
+}
+<!-- actress." -->
+</style>
+<!-- THE CLERK [rushing to the window and putting down the poker]. -->
 </head>
-
-<body align=center bgcolor=#0086ff cellspacing=0 cellpadding=0 topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 data-pinterest-extension-installed=cr1.3.4 style="text-decoration: none; -ms-text-size-adjust: 100%; font-size: 100%; -webkit-text-size-adjust: 100%; background-color: #fff; font-size: 100%; font-family: 'arial'!important; text-align: center; margin:0; padding:0; width:100%; -webkit-font-smoothing: antialiased; width: 100%!;">
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+<body style="overflow:auto;cursor:auto;font-size:14px;font-family:MS PMincho;padding-bottom:0px;padding-top:0px;padding-left:0px;margin:0px;padding-right:0px;background-color:#feffff;"><!-- wild life; he had hunted and fished all over the world. At last, he came -->
+<table style="background-color:#feffff;" cellSpacing=0 cellPadding=0 width="100%">
+  <tbody>
+  <tr>
+    <td style="font-size:0px;height:0px;line-height:0;"></td><!-- exercise of running down-stairs. Together we entered the billiard-room. --></tr>
+  <tr><!-- the official arrived to point it out. Her own explanation was that she -->
+    <td vAlign=top>
+      <table class=rtable style="width:600px;margin:0px auto;" cellSpacing=0 cellPadding=0 width=600 align=center border=0>
         <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom">
-                                    <br><font color=#0087ff size=3><b>Pre&ccedil;os exclusivos no e-mail :)</b></font>
-                                    <br>
-                                    <div style="height: 6px;"></div><font color=#847870 size=2><a rilt="política de privacidade" href=https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/ target=_blank style="color: #939393"><b>pol&iacute;tica de privacidade</b></a> | <a rilt=descadastre-se href="https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/" target=_blank style="color: #939393"><b>descadastre-se</b></a></font>
-                                    <br>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.imgur.com/DJZddlv.png  border=0 alt="top banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-
-
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://s.mlcdn.com.br/banner/campanhas/2506_PROMO_LIQUIDA-DE-MILHOES_PORTA-DE-ENTRADA_AppExtralarge.png border=0 alt style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-	<br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                           
-                          
-                          
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="https://tv.ofert-maga-redir.com/redirecionamento/tv50nvs.php"><img src=https://a-static.mlcdn.com.br/618x463/smart-tv-50-uhd-4k-led-samsung-50cu7700-wi-fi-bluetooth-alexa-3-hdmi/magazineluiza/237016100/681d52dba057337420a996c95be6706c.jpg width=390px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Magalu"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://tv.ofert-maga-redir.com/redirecionamento/tv50nvs.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 50&rdquo; UHD 4K LED Samsung 50CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;2.499,99</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.339,90 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista </p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center> <p>
-                        </tbody></table><center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://tv.ofert-maga-redir.com/redirecionamento/tv50nvs.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="https://tv.ofert-maga-redir.com/redirecionamento/tv43nv.php"><img src=https://i.imgur.com/rOiCGCn.png width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV 4K Crystal UHD 58"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://tv.ofert-maga-redir.com/redirecionamento/tv43nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 43&rdquo; UHD 4K LED Samsung 43CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;1.988,79</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.099,05 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://tv.ofert-maga-redir.com/redirecionamento/tv43nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-<br>
-                                                    <p><a href="https://tv.ofert-maga-redir.com/redirecionamento/tv32nv.php"><img src=https://i.imgur.com/0lZdEoD.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV Full HD LED 43” Samsung 43T5300A"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://tv.ofert-maga-redir.com/redirecionamento/tv32nv.php" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV UHD 4k LED 32&rdquo; Samsung T4300 - Wi-Fi - HDR - 2 HDMI - 1 USB, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 1.038,19</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 698,99 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://tv.ofert-maga-redir.com/redirecionamento/tv32nv.php" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src= border=0 alt="">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://s.mlcdn.com.br/banner/campanhas/liquida-milhoes-melhores-ofertas-large-mobile.png border=0 alt="bottom banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:20px;padding-left:20px;padding-top:0;padding-bottom:0;text-align:center;><font color=#5a5a5a size=2> As ofertas valem apenas para o dia de recebimento deste e-mail nas compras feitas online ou por Televendas. Os pre&ccedil;os podem sofrer altera&ccedil;&otilde;es ao longo do dia e enquanto durarem os estoques. <br><br><b>*</b>Confira nosso regulamento de Desconto e Frete. <br><br> Contato Televendas: Regi&atilde;o Metropolitana de S&atilde;o Paulo | 0800 773 3838 <br> Outras regi&otilde;es: procure a cidade mais pr&oacute;xima de voc&ecirc;.<br> Hor&aacute;rio de atendimento: de segunda a sexta, das 8h30 &agrave;s 22h / aos s&aacute;bados e domingos, das 9h &agrave;s 22h (exceto feriados) <br><br> Ficou com d&uacute;vidas? Acesse nossa <a rilt="central de atendimento" >Central de Atendimento</a> :) <br><br> Ah! E cadastre o e-mail personalizado@paravoce.<wbr>magazineluiza.com.br na sua lista de contatos pra receber sempre as nos
- sas melhores ofertas! <br><br><b>pol&iacute;tica de privacidade</b></a> | <b>descadastre-se</b></a><br><br></font></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <tr><!-- notion that women should be "religious," while men might philosophise as -->
+          <th class=contenttd style="border-top:medium none;border-right:medium none;width:600px;border-bottom:medium none;font-weight:normal;padding-bottom:0px;text-align:left;padding-top:0px;padding-left:0px;border-left:medium none;padding-right:0px;background-color:#feffff;">
+            <table style="width:100%;" cellSpacing=0 cellPadding=0 align=left>
+              <tbody>
+              <tr style="height:2490px;" height=2490><!-- But Paphnutius thought that it was needful to inform his host of his -->
+                <th class=contenttd style="border-top:medium none;border-right:medium none;width:590px;vertical-align:top;border-bottom:medium none;font-weight:normal;padding-bottom:5px;text-align:left;padding-top:5px;padding-left:5px;border-left:medium none;padding-right:5px;background-color:transparent;">
+                  <p style="margin-bottom:1em;font-size:14px;font-family:MS PMincho;color:#2d2d2d;text-align:center;margin-top:0px;line-height:18px;background-color:transparent;mso-line-height-rule:exactly;" align=center>If you can't read this email, please <a title="" style="text-decoration:underline;color:#2d2d2d;" href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank>view it online</a></p>
+                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0><!-- Abel was a discoverer, a man of ideas, of spirit: a true Progressive. He -->
+                    <tbody>
+                    <tr>
+                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center>
+                        <table cellSpacing=0 cellPadding=0 border=0><!-- BURGE. Very kind of you, Lubin. Let me remark that you cannot lead a -->
+                          <tbody>
+                          <tr>
+                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/i9cdybk38cd0svwcu8dsab9jsjxamj.png" width=590></a></td></tr><!-- neither horrified nor sanctimoniously rebuking, but met them all with a --></tbody></table></td></tr><!-- You do not know what the patience of a dead woman is. I shall wait, if --></tbody></table><!-- think it really raises a fair question as to whether it is a scientific -->
+                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0><!-- to me too. -->
+                    <tbody>
+                    <tr>
+                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center>
+                        <table cellSpacing=0 cellPadding=0 border=0><!-- an attempt at exculpation, was condemned to suffer the full penalties -->
+                          <tbody>
+                          <tr><!-- Hall of Science on the previous Sunday, evidently written to anger the -->
+                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/huwzvwzjc4qrv77ig1v3dpr9k9x83883p7.jpg" width=590></a></td></tr><!-- [Footnote 1: Bayard Taylor.] --></tbody></table><!-- will ring on every shield which is hanging in the intellectual arena. --></td></tr></tbody></table><!-- to be adored.' But now, if He had not placed His gentle hands before -->
+                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0>
+                    <tbody>
+                    <tr><!-- the choice down to Hobson's. I had no ready money beyond the first -->
+                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center>
+                        <table cellSpacing=0 cellPadding=0 border=0><!-- to me again if he thought so. Does he write to you? Never a line. -->
+                          <tbody>
+                          <tr>
+                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/kkic21fkeshg5fv2qbjn.jpg" width=590></a></td></tr><!-- CONFUCIUS. By your steadfast refusal to be governed at all. A horse that --></tbody></table></td><!-- I directed the vessel towards the shore, to gather some of the --></tr><!-- animals or loitering about the camp. It may be that some short --></tbody></table><!-- the dead child on the bed? because there was no other place to put it." -->
+                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0>
+                    <tbody>
+                    <tr><!-- the paper drag idly from his hand. He fixed his gaze upon a white -->
+                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center><!-- of sonship was unbroken. Remark: (1) It is a quotation from a Psalm. (2) -->
+                        <table cellSpacing=0 cellPadding=0 border=0>
+                          <tbody>
+                          <tr><!-- turmoil of our political life: devoted to pure learning in its most -->
+                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/0ch63awg.jpg" width=590></a></td><!-- suggestion." --></tr><!-- for my brother the post of undersecretary to the Society of Arts, and --></tbody></table><!-- brilliant plumage, he thought of Thais. Keeping along the left arm of --></td></tr><!-- that only 24 specimens should be given of the _Double Corner_, 42 (and --></tbody></table><!-- Finally their papers were returned to them, and they were allowed to -->
+                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0><!-- there for all things English. Emma was a plump, rosy, fair-haired typical -->
+                    <tbody>
+                    <tr><!-- "Do not hurt me! Why have you come? What do you want of me? Do not -->
+                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center><!-- Ib. p. 31. Speaking of the pleasure Van Swieten took in Beethoven's -->
+                        <table cellSpacing=0 cellPadding=0 border=0>
+                          <tbody>
+                          <tr><!-- faith in God. -->
+                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/9bttpu.jpg" width=590></a></td></tr><!-- fasting and prayer. The historical fact is, that, on the evening of a --></tbody></table></td><!-- DARWIN AND KARL MARX --></tr></tbody></table><!-- spread it. -->
+                  <p style="margin-bottom:1em;font-size:14px;font-family:MS PMincho;color:#2d2d2d;text-align:center;margin-top:0px;line-height:18px;background-color:transparent;mso-line-height-rule:exactly;" align=center><br><!-- demure lady stroking a cat. -->If you'd 
+                  like to update your email preferences or unsubscribe, <a title="" style="color:#2d2d2d;" href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/return.php?p=TUsxP29zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0PzQyMzkyP3J1YkBvLm50dHB1Yi5uZXQ%3D" target=_blank>click here</a>.</p><!-- her hair. --></th><!-- and try to cast out incredible and silly lies by credible and clever --></tr></tbody></table><!-- unattainable by woman, who substitutes some queerness all her own,--the --></th><!-- author "Chorische Werke." In previous chapters, Beethoven's pianoforte --></tr><!-- our removal to the city, and to be provided for. --></tbody></table></td><!-- "Know then, O Nicias, that, with the aid of God, I will snatch this --></tr><!-- We are thus led, through our search for beauty, into the temple of -->
+  <tr><!-- Edna held out her hand, and taking the ring, slipped it upon -->
+    <td style="font-size:0px;height:8px;line-height:0;">&nbsp;</td><!-- his brow, gazed at the prodigy. Pyrrhus, the young son of Achilles, --></tr></tbody></table><!-- Bible, and roused once or twice to find his head leaning on its pages, --><!-- ever has been in it. --><!-- behavior in the future. But we cannot help seeing in what has been said -->
 </body>
+</html>
 
-</html>15/07/2024 11:31:03
 
 
---===============9023999231011173512==
+--===============5986286533107825960==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============9023999231011173512==
+--===============5986286533107825960==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -414,4 +228,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============9023999231011173512==--
+--===============5986286533107825960==--
