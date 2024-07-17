@@ -2,92 +2,105 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 4CE1093204B
-	for <lists+osst-users@lfdr.de>; Tue, 16 Jul 2024 08:08:02 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 320E2934513
+	for <lists+osst-users@lfdr.de>; Thu, 18 Jul 2024 01:37:42 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
 	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sTbM1-0008BM-ND
+	id 1sUEDN-00019H-Ic
 	for lists+osst-users@lfdr.de;
-	Tue, 16 Jul 2024 06:08:01 +0000
+	Wed, 17 Jul 2024 23:37:40 +0000
 Received: from [172.30.29.67] (helo=mx.sourceforge.net)
  by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <rub@o.nttpub.net>) id 1sTbM0-0008B9-4i
- for osst-users@lists.sourceforge.net; Tue, 16 Jul 2024 06:07:59 +0000
+ (envelope-from <eki-update@xvufebjvnzoz.com>) id 1sUEDL-00019A-FH
+ for osst-users@lists.sourceforge.net; Wed, 17 Jul 2024 23:37:39 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Date:To:From:Message-ID:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:Message-ID:Mime-Version:Subject:To:
+ From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=iMThIMvfcz9iUFjbd7UeQFXRhQKP2vjIBJYG+vnY4ps=; b=KwdBzp5PO6fEX5w5Z/YAqa71XB
- zgV40HpCmx7FbqMDcyAWe+nHEJ2kuGr9pFd3B4Y3BChv2FitzaUlMQAkWnyu660o4AcLmm9fJ0iVy
- /Y6Bfs2uCxkVPJhJHJ2uXSZAZ4DX1scpZRs/Vf8gxukOro5gqJJroDYZTsOqxhDLX9MM=;
+ bh=NJAPfbdYzRJbq/YHw30ztOBygl6DIjCLclTRNVorThU=; b=Ecs8B9M9o1y+ANMth/LkB9yXDw
+ Em72xZNomGbCGWjh8uY2yUH4EkTsDu5pFjH5EjTxoYWgeD2JeikisgiUAii3oNrXBDMv0hBHHp0Gh
+ J0JJD7jmDrv6Wdf+JOvtz5WuqZhEYoP0M8+QJsO+7jVeGg9YlS/+9PIKNAf0FXMkSCzA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Date:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Type:Message-ID:Mime-Version:Subject:To:From:Date:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=iMThIMvfcz9iUFjbd7UeQFXRhQKP2vjIBJYG+vnY4ps=; b=m
- ShDO4QLhreHBc9EoCTSb4YsnQAfT6SHCYf/kpaTq04uhccSi8iwn//x9cLXS54UNv6liQ+g8Ph8gx
- QHayr2I85dHZ1Ekw/xInORcaBsH3yg1tz87bPdr8OWFe/yzYZtFhYETnDE59YW4E9Jofe2Xky8Z54
- onVhBjg2+3+MC19U=;
-Received: from [185.127.16.243] (helo=o.nttpub.net)
+ List-Owner:List-Archive; bh=NJAPfbdYzRJbq/YHw30ztOBygl6DIjCLclTRNVorThU=; b=S
+ hnzPR/xmDzuk94bgs2o0xzanN0glpGUb4kyMubC/iRoGpot8EoTS+ib5bdnK0TyojZN2rBd+aXoEo
+ QwqE4TdK+nPBzUlclWTth7M5eVI3kbjWrIqqqGy6tSTbSRgshickB4iczw/gJZbtoDCrHE+tTmhE+
+ wxISYaNYgMrvswL8=;
+Received: from mail3.xvufebjvnzoz.com ([198.23.208.115])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sTbLz-0001nR-Jn for osst-users@lists.sourceforge.net;
- Tue, 16 Jul 2024 06:07:59 +0000
-Message-ID: <dh0hbmnmf2pz6jklyo2cordlx5nuynx-LHZM1QZUG2RVJ.1486509519428173212071@j.7787134547440027296901>
-From: Rolex <rub@o.nttpub.net>
+ id 1sUEDJ-0004lK-AG for osst-users@lists.sourceforge.net;
+ Wed, 17 Jul 2024 23:37:38 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
+ d=xvufebjvnzoz.com; 
+ h=Date:From:To:Subject:Mime-Version:Message-ID:Content-Type;
+ i=eki-update@xvufebjvnzoz.com;
+ bh=NJAPfbdYzRJbq/YHw30ztOBygl6DIjCLclTRNVorThU=;
+ b=zYLeUxtBk7q4uP3gQYnRT+Pz9RVslgc+IWS9q/40rpySxIflEOTMMh7VkZut8N4lxOpBCNYspVYS
+ PKu9YcqRJ8dxan2M8FKO+JTYJEn/bLp1U8Ib6lFhINKDninT7jSFQPgKdRaigqqID/GoI2yoCYHl
+ hIJgZb0LgiG/oQKez0Y=
+Date: Thu, 18 Jul 2024 08:17:12 +0900
 To: osst-users <osst-users@lists.sourceforge.net>
-Date: Tue, 16 Jul 2024 08:07:44 +0100
-MIME-Version: 1.0
-X-Spam-Score: 8.9 (++++++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+X-Has-Attach: no
+Mime-Version: 1.0
+Message-ID: <202407180817193653533@xvufebjvnzoz.com>
+X-Spam-Score: 1.9 (+)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  If you can't read this email, please view it online If you'd
- like to update your email preferences or unsubscribe, click here. 
- Content analysis details:   (8.9 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  ━━━━━━━━━━━━━━━━━━━━━━━━
+    会員情報変更および退会に関するお知らせ ━━━━━━━━━━━━━━━━━━2024.7.18━
+    � [...] 
+ 
+ Content analysis details:   (1.9 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
- high trust [185.127.16.243 listed in list.dnswl.org]
- 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [185.127.16.243 listed in dnsbl-1.uceprotect.net]
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
- query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [185.127.16.243 listed in sa-trusted.bondedsender.org]
- 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
- query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [185.127.16.243 listed in bl.score.senderscore.com]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
- 0.5 RCVD_IN_MSPIKE_L5      RBL: Very bad reputation (-5)
- [185.127.16.243 listed in bl.mailspike.net]
- 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
- 5.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
- 0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
- Colors in HTML
- 0.0 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1sTbLz-0001nR-Jn
-Subject: [Osst-users] [SPAM] Luxury Watches for Just $200 - Limited Time
- Only!
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: timhaufe.com]
+  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
+                             blocklist
+                             [URIs: timhaufe.com]
+  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+                             [URIs: timhaufe.com]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+                             The query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [198.23.208.115 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                            [198.23.208.115 listed in bl.score.senderscore.com]
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.1 HTTPS_HTTP_MISMATCH    BODY: No description available.
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+X-Headers-End: 1sUEDJ-0004lK-AG
+Subject: [Osst-users] =?utf-8?b?5Lya5ZOh5oOF5aCx5aSJ5pu044GK44KI44Gz6YCA?=
+ =?utf-8?b?5Lya44Gr6Zai44GZ44KL44GK55+l44KJ44Gb?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -99,125 +112,116 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5986286533107825960=="
+From: =?UTF-8?B?44GI44GN44Gt44Gj44Go77yISlLmnbHml6XmnKzvvIk=?= via Osst-users
+ <osst-users@lists.sourceforge.net>
+Reply-To: =?UTF-8?B?44GI44GN44Gt44Gj44Go77yISlLmnbHml6XmnKzvvIk=?=
+ <eki-update@xvufebjvnzoz.com>
+Content-Type: multipart/mixed; boundary="===============3687144689880110480=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5986286533107825960==
+This is a multi-part message in MIME format.
+
+--===============3687144689880110480==
+Content-Type: multipart/alternative;
+	boundary="=====001_Dragon342071307330_====="
+
+This is a multi-part message in MIME format.
+
+--=====001_Dragon342071307330_=====
+Content-Type: text/plain;
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+DQrilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHi
+lIHilIHilIHilIHilIHilIENCuS8muWToeaDheWgseWkieabtOOBiuOCiOOBs+mAgOS8muOBq+mW
+ouOBmeOCi+OBiuefpeOCieOBmw0K4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB4pSB
+4pSB4pSB4pSB4pSB4pSB4pSBMjAyNC43LjE44pSBDQrml6XpoIPjgojjgorjgIzjgYjjgY3jga3j
+gaPjgajjgI3jgpLjgZTliKnnlKjjgYTjgZ/jgaDjgY3jgYLjgorjgYzjgajjgYbjgZTjgZbjgYTj
+gb7jgZnjgIINCg0KN+aciDE45pel44Gr44K744Kt44Ol44Oq44OG44Kj44K344K544OG44Og44KS
+5YWo6Z2i55qE44Gr44Oq44OL44Ol44O844Ki44Or44GX44G+44GX44Gf44Gf44KB44CBN+aXpeS7
+peS4iuOBq+ODreOCsOOCpOODs+OBl+OBpuOBhOOBquOBhOaWueOBr+OAgeS7iuW+jOOBruWIqeeU
+qOOBq+aUr+manOOBjOWHuuOBquOBhOOCiOOBhuOAgeOBk+OBruODoeODvOODq+OCkuWPl+S/oeW+
+jOOAgeaXqeaApeOBq+ODreOCsOOCpOODs+OCkuOBl+OBpuWAi+S6uuaDheWgseOCkuabtOaWsOOB
+l+OBpuOBj+OBoOOBleOAgg0KICAgDQrjgI7jg63jgrDjgqTjg7Pjga/jgZPjgaHjgonjgI8NCmh0
+dHBzOi8vd3d3LmVraS1uZXQuY29tLw0KICAgIA0KOOaciDHml6Xjgb7jgafjgavjgZToqJjlhaXj
+gY/jgaDjgZXjgYTjgILjgZToqJjlhaXjgYzjgarjgYTloLTlkIjjga/jgIHpgIDkvJrmiYvntprj
+gY3jgpLjgajjgonjgZvjgabjgYTjgZ/jgaDjgY3jgb7jgZnjgIIgDQrjgYrlrqLjgZXjgb7jgavj
+ga/jgZTkuI3kvr/jgpLjgYrjgYvjgZHjgYTjgZ/jgZfjgb7jgZnjgYzjgIHkvZXljZLjgZTnkIbo
+p6PjgpLos5zjgorjgb7jgZnjgojjgYbjgYrpoZjjgYTnlLPjgZfkuIrjgZLjgb7jgZnjgIINCiAg
+SGtkaWp4ICANCuKAu+OBk+OBruODoeODvOODq+OBr+OAjOOBiOOBjeOBreOBo+OBqOOAjeOCiOOC
+iuiHquWLlemFjeS/oeOBleOCjOOBpuOBhOOBvuOBmeOAgiAgICAgICANCui/lOS/oeOBhOOBn+OB
+oOOBjeOBvuOBl+OBpuOCguWvvuW/nOiHtOOBl+OBi+OBreOBvuOBmeOBruOBp+OAgeOBguOCieOB
+i+OBmOOCgeOBlOS6huaJv+OBj+OBoOOBleOBhOOAgg0K4oC75pys44Oh44O844Or44Gv44CB44CM
+44GI44GN44Gt44Gj44Go44CN6YeN6KaB44Gq44GK55+l44KJ44Gb44Go44GX44Gm44Oh44O844Or
+44Gu6YWN5L+h44KS5biM5pyb44GV44KM44Gm44GE44Gq44GE44GK5a6i5qeY44Gr44KC44GK6YCB
+44KK44GV44Gb44Gm44GE44Gf44Gg44GN44G+44GZ44CCDQotLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLQ0K44GI44GN44Gt44Gj44Go44K144Od44O844OI44K744Oz44K/44O8
+DQrlj5fku5jmmYLplpPjgIA45pmCMDDliIbvvZ4yMuaZgjAw5YiGDQrjgrXjgqTjg4jpgYvllrbj
+g7vnrqHnkIYNCkpS5p2x5pel5pys44ON44OD44OI44K544OG44O844K344On44OzDQotLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQ0KICAgDQrnmbrooYzvvJrmoKrlvI/kvJrn
+pL5KUuadseaXpeacrOODjeODg+ODiOOCueODhuODvOOCt+ODp+ODsw0K44CSMTUxLTAwNTEg5p2x
+5Lqs6YO95riL6LC35Yy65Y2D6aeE44O26LC3NS0yNy0xMSDjgqLjgrDjg6rjgrnjgq/jgqjjgqLm
+lrDlrr806ZqOICAgICANCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0N
+CiAgICANCkNvcHlyaWdodCAoYykgMjAyNCBKUiBFYXN0IE5ldCBTdGF0aW9uIENvLiwgTHRkLg0K
+6Kix5Y+v44Gq44GP6Lui6LyJ44GZ44KL44GT44Go44KS56aB44GY44G+44GZ44CCICAgICANCg0K
+
+--=====001_Dragon342071307330_=====
 Content-Type: text/html;
-	charset="iso-2022-jp"
-Content-Transfer-Encoding: 8bit
+	charset="UTF-8"
+Content-Transfer-Encoding: base64
 
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v = "urn:schemas-microsoft-com:vml" xmlns:o = "urn:schemas-microsoft-com:office:office">
-<head><title></title>
-<meta content="text/html; charset=iso-2022-jp" http-equiv=Content-Type>
-<meta name=x-apple-disable-message-reformatting>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<style type=text/css>
-    body, .maintable { height:100% !important; width:100% !important; margin:0; padding:0;}
-    img, a img { border:0; outline:none; text-decoration:none;}
-    p {margin-top:0; margin-right:0; margin-left:0; padding:0;}
-    .ReadMsgBody {width:100%;}
-    .ExternalClass {width:100%;}
-    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
-    img {-ms-interpolation-mode: bicubic;}
-    body, table, td, p, a, li, blockquote {-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;}
-</style>
+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxNXB4OyI+DQo8cD7ilIHilIHilIHilIHilIHilIHilIHi
+lIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIE8YnI+5Lya
+5ZOh5oOF5aCx5aSJ5pu044GK44KI44Gz6YCA5Lya44Gr6Zai44GZ44KL44GK55+l44KJ44GbPGJy
+PuKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgTIw
+MjQuNy4xOOKUgTxicj7ml6XpoIPjgojjgorjgIzjgYjjgY3jga3jgaPjgajjgI3jgpLjgZTliKnn
+lKjjgYTjgZ/jgaDjgY3jgYLjgorjgYzjgajjgYbjgZTjgZbjgYTjgb7jgZnjgII8L3A+DQo8cD43
+5pyIMTjml6Xjgavjgrvjgq3jg6Xjg6rjg4bjgqPjgrfjgrnjg4bjg6DjgpLlhajpnaLnmoTjgavj
+g6rjg4vjg6Xjg7zjgqLjg6vjgZfjgb7jgZfjgZ/jgZ/jgoHjgIE35pel5Lul5LiK44Gr44Ot44Kw
+44Kk44Oz44GX44Gm44GE44Gq44GE5pa544Gv44CB5LuK5b6M44Gu5Yip55So44Gr5pSv6Zqc44GM
+5Ye644Gq44GE44KI44GG44CB44GT44Gu44Oh44O844Or44KS5Y+X5L+h5b6M44CB5pep5oCl44Gr
+44Ot44Kw44Kk44Oz44KS44GX44Gm5YCL5Lq65oOF5aCx44KS5pu05paw44GX44Gm44GP44Gg44GV
+44CCPGJyPiZuYnNwOyZuYnNwOyANCjxicj7jgI7jg63jgrDjgqTjg7Pjga/jgZPjgaHjgonjgI88
+YnI+PGEgaHJlZj0iaHR0cHM6Ly93d3cudGltaGF1ZmUuY29tIj5odHRwczovL3d3dy5la2ktbmV0
+LmNvbS88L2E+PGJyPiZuYnNwOyAmbmJzcDsgDQo8YnI+OOaciDHml6Xjgb7jgafjgavjgZToqJjl
+haXjgY/jgaDjgZXjgYTjgILjgZToqJjlhaXjgYzjgarjgYTloLTlkIjjga/jgIHpgIDkvJrmiYvn
+tprjgY3jgpLjgajjgonjgZvjgabjgYTjgZ/jgaDjgY3jgb7jgZnjgIIgDQo8YnI+44GK5a6i44GV
+44G+44Gr44Gv44GU5LiN5L6/44KS44GK44GL44GR44GE44Gf44GX44G+44GZ44GM44CB5L2V5Y2S
+44GU55CG6Kej44KS6LOc44KK44G+44GZ44KI44GG44GK6aGY44GE55Sz44GX5LiK44GS44G+44GZ
+44CCPGJyPiZuYnNwOyZuYnNwOzxzcGFuIHN0eWxlPSJwb3NpdGlvbjogYWJzb2x1dGU7IHRvcDog
+LTg2NDJweDsgbGVmdDogLTQwNTFweDsiPkhrZGlqeDwvc3Bhbj4mbmJzcDsgDQo8YnI+4oC744GT
+44Gu44Oh44O844Or44Gv44CM44GI44GN44Gt44Gj44Go44CN44KI44KK6Ieq5YuV6YWN5L+h44GV
+44KM44Gm44GE44G+44GZ44CCJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IA0K
+PGJyPui/lOS/oeOBhOOBn+OBoOOBjeOBvuOBl+OBpuOCguWvvuW/nOiHtOOBl+OBi+OBreOBvuOB
+meOBruOBp+OAgeOBguOCieOBi+OBmOOCgeOBlOS6huaJv+OBj+OBoOOBleOBhOOAgjxicj7igLvm
+nKzjg6Hjg7zjg6vjga/jgIHjgIzjgYjjgY3jga3jgaPjgajjgI3ph43opoHjgarjgYrnn6Xjgonj
+gZvjgajjgZfjgabjg6Hjg7zjg6vjga7phY3kv6HjgpLluIzmnJvjgZXjgozjgabjgYTjgarjgYTj
+gYrlrqLmp5jjgavjgoLjgYrpgIHjgorjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgb7jgZnjgII8YnI+
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS08YnI+44GI44GN44Gt44Gj44Go
+44K144Od44O844OI44K744Oz44K/44O8PGJyPuWPl+S7mOaZgumWk+OAgDjmmYIwMOWIhu+9njIy
+5pmCMDDliIY8YnI+44K144Kk44OI6YGL5Za244O7566h55CGPGJyPkpS5p2x5pel5pys44ON44OD
+44OI44K544OG44O844K344On44OzPGJyPi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tPGJyPiZuYnNwOyANCiZuYnNwOzxicj7nmbrooYzvvJrmoKrlvI/kvJrnpL5KUuadseaX
+peacrOODjeODg+ODiOOCueODhuODvOOCt+ODp+ODszxicj7jgJIxNTEtMDA1MSDmnbHkuqzpg73m
+uIvosLfljLrljYPpp4Tjg7bosLc1LTI3LTExIA0K44Ki44Kw44Oq44K544Kv44Ko44Ki5paw5a6/
+NOmajiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyANCjxicj4tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tPGJyPiZuYnNwOyAmbmJzcDsgDQo8YnI+Q29weXJpZ2h0IChjKSAy
+MDI0IEpSIEVhc3QgTmV0IFN0YXRpb24gQ28uLCANCkx0ZC48YnI+6Kix5Y+v44Gq44GP6Lui6LyJ
+44GZ44KL44GT44Go44KS56aB44GY44G+44GZ44CCJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7IDxi
+cj48L3A+PC9zcGFuPg==
 
-<style type=text/css>
-@media only screen and (max-width: 480px) {
- .rtable {width: 100% !important;}
- .rtable tr {height:auto !important; display: block;}
- .contenttd {max-width: 100% !important; display: block; width: auto !important;}
- .contenttd:after {content: ""; display: table; clear: both;}
- .hiddentds {display: none;}
- .imgtable, .imgtable table {max-width: 100% !important; height: auto; float: none; margin: 0 auto;}
- .imgtable.btnset td {display: inline-block;}
- .imgtable img {width: 100%; height: auto !important;display: block;}
- table {float: none;}
- .mobileHide {display: none !important; width: 0 !important; max-height: 0 !important; overflow: hidden !important;}
- .desktopHide {display: block !important; width: 100% !important; max-height: unset !important; overflow: unset !important;}
- .noresponsive p {display: table; table-layout: fixed; width: 100%; word-wrap: break-word;}
-}
-@media only screen and (min-width: 481px) {
- .desktopHide {display: none !important; width: 0 !important; max-height: 0 !important; overflow: hidden !important;}
-}
-<!-- actress." -->
-</style>
-<!-- THE CLERK [rushing to the window and putting down the poker]. -->
-</head>
-<body style="overflow:auto;cursor:auto;font-size:14px;font-family:MS PMincho;padding-bottom:0px;padding-top:0px;padding-left:0px;margin:0px;padding-right:0px;background-color:#feffff;"><!-- wild life; he had hunted and fished all over the world. At last, he came -->
-<table style="background-color:#feffff;" cellSpacing=0 cellPadding=0 width="100%">
-  <tbody>
-  <tr>
-    <td style="font-size:0px;height:0px;line-height:0;"></td><!-- exercise of running down-stairs. Together we entered the billiard-room. --></tr>
-  <tr><!-- the official arrived to point it out. Her own explanation was that she -->
-    <td vAlign=top>
-      <table class=rtable style="width:600px;margin:0px auto;" cellSpacing=0 cellPadding=0 width=600 align=center border=0>
-        <tbody>
-        <tr><!-- notion that women should be "religious," while men might philosophise as -->
-          <th class=contenttd style="border-top:medium none;border-right:medium none;width:600px;border-bottom:medium none;font-weight:normal;padding-bottom:0px;text-align:left;padding-top:0px;padding-left:0px;border-left:medium none;padding-right:0px;background-color:#feffff;">
-            <table style="width:100%;" cellSpacing=0 cellPadding=0 align=left>
-              <tbody>
-              <tr style="height:2490px;" height=2490><!-- But Paphnutius thought that it was needful to inform his host of his -->
-                <th class=contenttd style="border-top:medium none;border-right:medium none;width:590px;vertical-align:top;border-bottom:medium none;font-weight:normal;padding-bottom:5px;text-align:left;padding-top:5px;padding-left:5px;border-left:medium none;padding-right:5px;background-color:transparent;">
-                  <p style="margin-bottom:1em;font-size:14px;font-family:MS PMincho;color:#2d2d2d;text-align:center;margin-top:0px;line-height:18px;background-color:transparent;mso-line-height-rule:exactly;" align=center>If you can't read this email, please <a title="" style="text-decoration:underline;color:#2d2d2d;" href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank>view it online</a></p>
-                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0><!-- Abel was a discoverer, a man of ideas, of spirit: a true Progressive. He -->
-                    <tbody>
-                    <tr>
-                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center>
-                        <table cellSpacing=0 cellPadding=0 border=0><!-- BURGE. Very kind of you, Lubin. Let me remark that you cannot lead a -->
-                          <tbody>
-                          <tr>
-                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/i9cdybk38cd0svwcu8dsab9jsjxamj.png" width=590></a></td></tr><!-- neither horrified nor sanctimoniously rebuking, but met them all with a --></tbody></table></td></tr><!-- You do not know what the patience of a dead woman is. I shall wait, if --></tbody></table><!-- think it really raises a fair question as to whether it is a scientific -->
-                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0><!-- to me too. -->
-                    <tbody>
-                    <tr>
-                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center>
-                        <table cellSpacing=0 cellPadding=0 border=0><!-- an attempt at exculpation, was condemned to suffer the full penalties -->
-                          <tbody>
-                          <tr><!-- Hall of Science on the previous Sunday, evidently written to anger the -->
-                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/huwzvwzjc4qrv77ig1v3dpr9k9x83883p7.jpg" width=590></a></td></tr><!-- [Footnote 1: Bayard Taylor.] --></tbody></table><!-- will ring on every shield which is hanging in the intellectual arena. --></td></tr></tbody></table><!-- to be adored.' But now, if He had not placed His gentle hands before -->
-                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0>
-                    <tbody>
-                    <tr><!-- the choice down to Hobson's. I had no ready money beyond the first -->
-                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center>
-                        <table cellSpacing=0 cellPadding=0 border=0><!-- to me again if he thought so. Does he write to you? Never a line. -->
-                          <tbody>
-                          <tr>
-                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/kkic21fkeshg5fv2qbjn.jpg" width=590></a></td></tr><!-- CONFUCIUS. By your steadfast refusal to be governed at all. A horse that --></tbody></table></td><!-- I directed the vessel towards the shore, to gather some of the --></tr><!-- animals or loitering about the camp. It may be that some short --></tbody></table><!-- the dead child on the bed? because there was no other place to put it." -->
-                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0>
-                    <tbody>
-                    <tr><!-- the paper drag idly from his hand. He fixed his gaze upon a white -->
-                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center><!-- of sonship was unbroken. Remark: (1) It is a quotation from a Psalm. (2) -->
-                        <table cellSpacing=0 cellPadding=0 border=0>
-                          <tbody>
-                          <tr><!-- turmoil of our political life: devoted to pure learning in its most -->
-                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/0ch63awg.jpg" width=590></a></td><!-- suggestion." --></tr><!-- for my brother the post of undersecretary to the Society of Arts, and --></tbody></table><!-- brilliant plumage, he thought of Thais. Keeping along the left arm of --></td></tr><!-- that only 24 specimens should be given of the _Double Corner_, 42 (and --></tbody></table><!-- Finally their papers were returned to them, and they were allowed to -->
-                  <table class=imgtable style="margin:0px auto;" cellSpacing=0 cellPadding=0 align=center border=0><!-- there for all things English. Emma was a plump, rosy, fair-haired typical -->
-                    <tbody>
-                    <tr><!-- "Do not hurt me! Why have you come? What do you want of me? Do not -->
-                      <td style="padding-bottom:0px;padding-top:0px;padding-left:0px;padding-right:0px;" align=center><!-- Ib. p. 31. Speaking of the pleasure Van Swieten took in Beethoven's -->
-                        <table cellSpacing=0 cellPadding=0 border=0>
-                          <tbody>
-                          <tr><!-- faith in God. -->
-                            <td style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;"><a href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/fg5h46ert1ey8/fgh546rtuy.html" target=_blank><img style="border-top:medium none;border-right:medium none;border-bottom:medium none;border-left:medium none;display:block;" hspace=0 alt="Incredible Savings Event: Luxury Watches at Unbeatable Prices - Don't Miss Out!" src="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/9bttpu.jpg" width=590></a></td></tr><!-- fasting and prayer. The historical fact is, that, on the evening of a --></tbody></table></td><!-- DARWIN AND KARL MARX --></tr></tbody></table><!-- spread it. -->
-                  <p style="margin-bottom:1em;font-size:14px;font-family:MS PMincho;color:#2d2d2d;text-align:center;margin-top:0px;line-height:18px;background-color:transparent;mso-line-height-rule:exactly;" align=center><br><!-- demure lady stroking a cat. -->If you'd 
-                  like to update your email preferences or unsubscribe, <a title="" style="color:#2d2d2d;" href="https:///uui.$B'Y'Q'i'V'^'S'c'd'Q'S'Q'd'n(B.$B'b'f(B:443/return.php?p=TUsxP29zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0PzQyMzkyP3J1YkBvLm50dHB1Yi5uZXQ%3D" target=_blank>click here</a>.</p><!-- her hair. --></th><!-- and try to cast out incredible and silly lies by credible and clever --></tr></tbody></table><!-- unattainable by woman, who substitutes some queerness all her own,--the --></th><!-- author "Chorische Werke." In previous chapters, Beethoven's pianoforte --></tr><!-- our removal to the city, and to be provided for. --></tbody></table></td><!-- "Know then, O Nicias, that, with the aid of God, I will snatch this --></tr><!-- We are thus led, through our search for beauty, into the temple of -->
-  <tr><!-- Edna held out her hand, and taking the ring, slipped it upon -->
-    <td style="font-size:0px;height:8px;line-height:0;">&nbsp;</td><!-- his brow, gazed at the prodigy. Pyrrhus, the young son of Achilles, --></tr></tbody></table><!-- Bible, and roused once or twice to find his head leaning on its pages, --><!-- ever has been in it. --><!-- behavior in the future. But we cannot help seeing in what has been said -->
-</body>
-</html>
+--=====001_Dragon342071307330_=====--
 
 
 
---===============5986286533107825960==
+--===============3687144689880110480==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5986286533107825960==
+--===============3687144689880110480==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -228,4 +232,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5986286533107825960==--
+--===============3687144689880110480==--
+
+
