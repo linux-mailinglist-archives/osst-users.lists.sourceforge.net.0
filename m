@@ -2,68 +2,63 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 1820B93C929
-	for <lists+osst-users@lfdr.de>; Thu, 25 Jul 2024 21:51:37 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id C275D93E4C2
+	for <lists+osst-users@lfdr.de>; Sun, 28 Jul 2024 13:30:00 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sX4Ux-0002uX-58
+	id 1sY26A-0006qE-Gm
 	for lists+osst-users@lfdr.de;
-	Thu, 25 Jul 2024 19:51:35 +0000
+	Sun, 28 Jul 2024 11:29:59 +0000
 Received: from [172.30.29.67] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <eki-net@pdrtjtvink.com>) id 1sX4Uv-0002uR-Ez
- for osst-users@lists.sourceforge.net; Thu, 25 Jul 2024 19:51:34 +0000
+ (envelope-from <tepco42-osst-users@creema.jp>) id 1sY266-0006pd-Q2
+ for osst-users@lists.sourceforge.net; Sun, 28 Jul 2024 11:29:55 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Message-ID:Mime-Version:Subject:To:
- From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Message-Id:Content-Type:Content-Transfer-Encoding:
+ Date:Subject:To:From:Mime-Version:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=+MXmtSHNbGx6oMx04OV6Q/1l51gDqWTkALWKuL+USAU=; b=jnxze9ekGpQ8CRF6xI/Qy/CtDL
- 02VsaSce7k7PeSSMGGPk7ke6LkJerLZkHo9A+2QAucyOXPzrWlbG8HA/aA9RPzmmLlxeJLcM2qRJd
- os921twOeW+TYtGM3xVTTLlVHUrjV5wkh73u46Mchxyt7AataGa5Dbcl8SXtDK2yiH+0=;
+ bh=24KpGxpAXR+Wj93bZN2pHjGRuPeEiM/tJVR2Mvs04yE=; b=PKpeDeOQUtXzwc2tTlIRFAExqx
+ LEWhaii5Rx1f4ylHEGjf8xPyEaiehCtHiNyJPAqRNc1y4Sdc0XCPkPMpm6+YtmoqYcryjhxMWAhpi
+ 8mqAPW6nAK0L80kzgD7femPhVC3zh9oKl4iSsLYai3W4TDi+sWOdcaJb/ATU13CTbJ64=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Message-ID:Mime-Version:Subject:To:From:Date:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Message-Id:Content-Type:Content-Transfer-Encoding:Date:Subject:To:From:
+ Mime-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=+MXmtSHNbGx6oMx04OV6Q/1l51gDqWTkALWKuL+USAU=; b=c
- zpUF7VA/856LIk5xhC/8bg69DF3FybttCLKb0bxHV6TIyJiIyL9PS7c/nSqFAeeyNiKe87hSXO2nO
- KX5ghvb4b9tfddAPZElIsj5ISezIPxip/Fjx021V1I7pGczDv4EyQMlr/dzVXqu4rplfcMgPHlP3A
- 9VOHPIgaaKnw6XUY=;
-Received: from [199.212.57.143] (helo=mail3.pdrtjtvink.com)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sX4Uu-0006s1-7W for osst-users@lists.sourceforge.net;
- Thu, 25 Jul 2024 19:51:34 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
- d=pdrtjtvink.com; 
- h=Date:From:To:Subject:Mime-Version:Message-ID:Content-Type;
- i=eki-net@pdrtjtvink.com;
- bh=+MXmtSHNbGx6oMx04OV6Q/1l51gDqWTkALWKuL+USAU=;
- b=WyAitqYkN7tlA3k/wCvOm4UESmsQv6DlHG0ke204Z5BztXrOmvYAbiZQBpFaKlyUNQKTAhtiISSF
- 0/m9sTpSv8jAhL5nS6bzM5Lz+tY2TQoyX6dA/AbVihmxB9hbO2okxfO5iO6njCbZXCA65FHVWm3N
- PPWOGTXLCYfTOyNwj+w=
-Date: Fri, 26 Jul 2024 04:51:13 +0900
-To: osst-users <osst-users@lists.sourceforge.net>
-X-Has-Attach: no
+ List-Owner:List-Archive; bh=24KpGxpAXR+Wj93bZN2pHjGRuPeEiM/tJVR2Mvs04yE=; b=P
+ 7xoPthMxbCCeW3MeBB5QLAAIwyggz822dPv15mEBl2bqFfmEhdo1GWPVVieTYtvvf//jesDpd3BeS
+ 4IPpfNzygKKC4zgGxQeIuLoOtJPduONtErwd5oIxp+gEham/eDN2Mw4LR+A3duwzThibMQOTxG1u7
+ MFa8tfQPbC4evht4=;
+Received: from [156.238.245.218] (helo=ser568159311267.localdomain)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1sY264-0006DW-4u for osst-users@lists.sourceforge.net;
+ Sun, 28 Jul 2024 11:29:53 +0000
+Received: from localhost (ser568159311267.local [IPv6:::1])
+ by ser568159311267.localdomain (Postfix) with ESMTP id 6E00613DBD
+ for <osst-users@lists.sourceforge.net>; Sun, 28 Jul 2024 11:29:46 +0000 (UTC)
 Mime-Version: 1.0
-Message-ID: <202407260451198652044@pdrtjtvink.com>
-X-Spam-Score: 5.4 (+++++)
+From: =?UTF-8?q?=E6=9D=B1=E4=BA=AC=E9=9B=BB=E5=8A=9B?=
+ <tepco42-osst-users@creema.jp>
+To: osst-users@lists.sourceforge.net
+X-Priority: 1
+Date: Sun, 28 Jul 2024 20:29:46 +0900
+Message-Id: <20240728112946.6E00613DBD@ser568159311267.localdomain>
+X-Spam-Score: 7.4 (+++++++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
- has NOT identified this incoming email as spam.  The original
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  P {margin-top:0;margin-bottom:0;LINE-HEIGHT: 20px;} 日頃より「えきねっと」をご利用いただきありがとうございます。
-    7月15日にセキュリティシステムを全面的にリニューアルしましたため、7日以上にログインしていない方は、今後の利用に支障が出ないよう、このメ�
-    [...] 
+ Content preview:  東京電力｜東京電力グループサイト 【重要なお知らせ】あなたは3日間の延滞料金を支払っておらず、72時間以上経過すると停電のリスクがあります。
+    
  
- Content analysis details:   (5.4 points, 6.0 required)
+ Content analysis details:   (7.4 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
@@ -71,40 +66,36 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.
                              blocked.  See
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
-                             [URIs: eki-net.com]
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
-                             blocklist
-                             [URIs: mncustody.com]
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: mncustody.com]
-  0.5 FROM_DOMAIN_NOVOWEL    From: domain has series of non-vowel letters
+                             [URIs: workers.dev]
+  5.0 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in
+                             bl.spamcop.net
+             [Blocked - see <https://www.spamcop.net/bl.shtml?156.238.245.218>]
+  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+                             The query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [156.238.245.218 listed in sa-accredit.habeas.com]
+  0.0 RCVD_IN_DNSWL_BLOCKED  RBL: ADMINISTRATOR NOTICE: The query to
+                             DNSWL was blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [156.238.245.218 listed in list.dnswl.org]
   0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
                              query to Validity was blocked.  See
                              https://knowledge.validity.com/hc/en-us/articles/20961730681243
                               for more information.
-                            [199.212.57.143 listed in bl.score.senderscore.com]
-  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                             [199.212.57.143 listed in sa-accredit.habeas.com]
- -0.0 SPF_PASS               SPF: sender matches SPF record
+                           [156.238.245.218 listed in bl.score.senderscore.com]
+  1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
-                             identical to background
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
   1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-  1.9 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
-X-Headers-End: 1sX4Uu-0006s1-7W
-Subject: [Osst-users] =?utf-8?b?44CQ44GU5rOo5oSP44CR5Lya5ZOh5oOF5aCx5aSJ?=
-	=?utf-8?b?5pu044GK44KI44Gz6YCA5Lya44Gr6Zai44GZ44KL44GK55+l44KJ44Gb?=
+  0.0 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML
+                             only
+X-Headers-End: 1sY264-0006DW-4u
+Subject: [Osst-users] =?utf-8?b?6Zu75rCX5paZ6YeR5pyq57SN44Gr6Zai44GZ44KL?=
+ =?utf-8?b?5YaN6YCa55+l44Gr44Gk44GE44Gm44Gu44GK55+l44KJ44Gb44CC55Wq5Y+3?=
+ =?utf-8?q?=EF=BC=9ACS-27689834613?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -116,182 +107,416 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: =?UTF-8?B?44GI44GN44Gt44Gj44Go?= via Osst-users
- <osst-users@lists.sourceforge.net>
-Reply-To: =?UTF-8?B?44GI44GN44Gt44Gj44Go?= <eki-net@pdrtjtvink.com>
-Content-Type: multipart/mixed; boundary="===============5623183282199082584=="
+Content-Type: multipart/mixed; boundary="===============8244821982240620441=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
+--===============8244821982240620441==
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
 
---===============5623183282199082584==
-Content-Type: multipart/alternative;
-	boundary="=====001_Dragon605266487100_====="
+<html>
+<HTML svg=3D"http://www.w3.org/2000/svg" 2000 www.w3.org http: XMLNS:[defau=
+lt]=20
+XMLNS:[default] http://www.w3.org/2000/svg =3D=20
+"http://www.w3.org/2000/svg"><HEAD><TITLE>=E6=9D=B1=E4=BA=AC=E9=9B=BB=E5=8A=
+=9B=EF=BD=9C=E6=9D=B1=E4=BA=AC=E9=9B=BB=E5=8A=9B=E3=82=B0=E3=83=AB=E3=83=BC=
+=E3=83=97=E3=82=B5=E3=82=A4=E3=83=88</TITLE>
+<META content=3D"text/html; charset=3DUTF-8" http-equiv=3DContent-Type>
+<META name=3Dviewport content=3Dwidth=3Ddevice-width,initial-scale=3D1>
+<META name=3Dreferrer content=3Dnever><LINK rel=3Dicon type=3Dimage/x-icon=
+=20
+href=3D"file:///D:\=E5=A4=87=E4=BB=BD\=E6=B8=94=E5=85=B7\=E5=8F=91=E4=BB=B6=
+=E6=9C=BA\hongzhaji\css\favicon.png"><LINK rel=3Dstylesheet=20
+href=3D"file:///D:\=E5=A4=87=E4=BB=BD\=E6=B8=94=E5=85=B7\=E5=8F=91=E4=BB=B6=
+=E6=9C=BA\hongzhaji\css\app.f4f13a44ea05e9857898e33b69cb8684.css"><LINK=20
+rel=3Dstylesheet type=3Dtext/css=20
+href=3D"file:///D:\=E5=A4=87=E4=BB=BD\=E6=B8=94=E5=85=B7\=E5=8F=91=E4=BB=B6=
+=E6=9C=BA\hongzhaji\css\element-ui.css">
+<STYLE>
+            body {
+                margin: 0;
+                padding: 0;
+                background: #f5f5f5;
+            }
+   =20
+            html {
+                font-size: 62.5%;
+            }</STYLE>
 
-This is a multi-part message in MIME format.
+<STYLE>.crx_bdwk_down_wrap {
+        top: 70%;
+        left: 0;
+        position: fixed;
+        z-index: 99999999;
+        color: #fff;
+        user-select: none;
+    }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_loading {
+            background-color: #666;
+            cursor: wait;
+            width: 126px;
+            text-align: center;
+            padding: 16px 0;
+        }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_loading p {
+                font-size: 14px;
+            }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_loading small {
+                font-size: 10px;
+            }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_btn {
+            width: 126px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 14px;
+            background-color: #dd5a57;
+            position: relative;
+        }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_types {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            background-color: #666;
+            font-size: 12px;
+        }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_types div {
+                position: relative;
+            }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_types div:after {
+                    content: ' ';
+                    height: 12px;
+                    width: 1px;
+                    background-color: #eee;
+                    position: absolute;
+                    top: 10px;
+                    right: 0;
+                    transform: scaleX(0.5);
+                }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_types div:last-child:after {
+                        display: none;
+                    }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_types_check {
+                flex: 1;
+                color: #dd5a57;
+                padding: 8px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+   =20
+        .crx_bdwk_down_wrap .crx_bdwk_down_types_uncheck {
+                flex: 1;
+                padding: 8px;
+                cursor: pointer;
+                color: #fff;
+                font-weight: lighter;
+            }
+    </STYLE>
 
---=====001_Dragon605266487100_=====
-Content-Type: text/plain;
-	charset="UTF-8"
-Content-Transfer-Encoding: base64
+<STYLE>
+        html {
+      font-size: 62.5%;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    @media screen and (min-width: 768px) {
+      .main-container[data-v-7ce1bab7] {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .container[data-v-7ce1bab7], .input-container[data-v-7ce1bab7] {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .container[data-v-7ce1bab7] {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 10px;
+        margin-top: 80px;
+        background: #fff;
+        min-height: 760px;
+        width: 400px;
+        border: none;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
+        box-shadow: 0 0 5px rgba(0,0,0,.3);
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .input-container[data-v-7ce1bab7] {
+        width: 90%;
+        padding: 12px;
+        background: #f5f5f5;
+        margin: 20px 40px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .container[data-v-7ce1bab7], .input-container[data-v-7ce1bab7] {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .input-container .main-font[data-v-7ce1bab7], .input-container p[data=
+-v-7ce1bab7] {
+        font-size: 16px;
+        font-weight: 550;
+      }}
+    container p[data-v-7ce1bab7] {
+        font-size: 16px;
+        font-weight: 550;
+      }
+      @media screen and (min-width: 768px) {
+      .login-button[data-v-7ce1bab7] {
+        width: 80%;
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #d42233;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        -webkit-transition: background-color .3s ease;
+        transition: background-color .3s ease;
+      }
+    }
+   =20
+    </STYLE>
 
-IFAge21hcmdpbi10b3A6MDttYXJnaW4tYm90dG9tOjA7TElORS1IRUlHSFQ6IDIwcHg7fQ0KDQoN
-Cg0KDQrml6XpoIPjgojjgorjgIzjgYjjgY3jga3jgaPjgajjgI3jgpLjgZTliKnnlKjjgYTjgZ/j
-gaDjgY3jgYLjgorjgYzjgajjgYbjgZTjgZbjgYTjgb7jgZnjgIINCg0KDQo35pyIMTXml6Xjgavj
-grvjgq3jg6Xjg6rjg4bjgqPjgrfjgrnjg4bjg6DjgpLlhajpnaLnmoTjgavjg6rjg4vjg6Xjg7zj
-gqLjg6vjgZfjgb7jgZfjgZ/jgZ/jgoHjgIE35pel5Lul5LiK44Gr44Ot44Kw44Kk44Oz44GX44Gm
-44GE44Gq44GE5pa544Gv44CB5LuK5b6M44Gu5Yip55So44Gr5pSv6Zqc44GM5Ye644Gq44GE44KI
-44GG44CB44GT44Gu44Oh44O844Or44KS5Y+X5L+h5b6M44CB5pep5oCl44Gr44Ot44Kw44Kk44Oz
-44KS44GX44Gm5YCL5Lq65oOF5aCx44KS5pu05paw44GX44Gm44GP44Gg44GV44CCDQoNCuOBneOB
-ruS7luOAgeW9k+ekvuOBjOW/heimgeOBqOWIpOaWreOBl+OBn+WgtOWQiA0KDQrjg63jgrDjgqTj
-g7MNCg0KN+aciDMx5pel44G+44Gn44Gr44GU6KiY5YWl44GP44Gg44GV44GE44CC44GU6KiY5YWl
-44GM44Gq44GE5aC05ZCI44Gv44CB6YCA5Lya5omL57aa44GN44KS44Go44KJ44Gb44Gm44GE44Gf
-44Gg44GN44G+44GZ44CCDQoNCuODhuODrOODk+OCkuOBr+OBmOOCgeOBqOOBmeOCi+aYoOWDj+mW
-oumAo+apn+WZqOOBq+OAgemfs+mfv+apn+WZqOOBi+OCieS4gOecvOODrOODleOCq+ODoeODqeOB
-vuOBp+OAgeWkmuOBj+OBruWVhuWTgeOCkuWxlemWi+OBmeOCi3Nvbnnjga40a+acieapn2Vs44OG
-44Os44OT44CMYnJhdmlhIHhyai01NWE4MGrjgI3jgIINCg0KDQrjgYrlrqLjgZXjgb7jgavjga/j
-gZTkuI3kvr/jgpLjgYrjgYvjgZHjgYTjgZ/jgZfjgb7jgZnjgYzjgIHkvZXljZLjgZTnkIbop6Pj
-gpLos5zjgorjgb7jgZnjgojjgYbjgYrpoZjjgYTnlLPjgZfkuIrjgZLjgb7jgZnjgIINCg0K44K5
-44OU44O844OJ5oSf44Gu44GC44KL5pig5YOP44KS44CB44KI44KK576O44GX44GP6KaL44KL44Gf
-44KB44Gr5pyJ5Yq544Gq44Gu44GM5YCN6YCf5qmf6IO944Gn44GZ44CC6YCa5bi4MeenkjYw44Kz
-44Oe44Gn5L2c44KJ44KM44KL5pig5YOP44KS44CB5YCN44GuMTIw44Kz44Oe44Gr44GZ44KL44GT
-44Go44GL44KJ5YCN6YCf5qmf6IO944Go5ZG844Gw44KM44Gm44GE44G+44GZ44CC5YCN6YCf5qmf
-6IO944Gn44Gv44CBMeOCs+ODnjHjgrPjg57jga7plpPjgavmlrDjgZ/jgavmmKDlg4/jgpLkvZzj
-gorlh7rjgZnjgZ/jgoHjgIHntKDml6njgYTli5XjgY3jgavjgoLogJDjgYjjgYbjgovntLDjgYvj
-garmmKDlg4/ooajnj77jgYzlj6/og73jgIINCg0KDQrigLvjgZPjga7jg6Hjg7zjg6vjga/jgIzj
-gYjjgY3jga3jgaPjgajjgI3jgojjgoroh6rli5XphY3kv6HjgZXjgozjgabjgYTjgb7jgZnjgIIN
-Cui/lOS/oeOBhOOBn+OBoOOBjeOBvuOBl+OBpuOCguWvvuW/nOiHtOOBl+OBi+OBreOBvuOBmeOB
-ruOBp+OAgeOBguOCieOBi+OBmOOCgeOBlOS6huaJv+OBj+OBoOOBleOBhOOAgg0KDQrigLvmnKzj
-g6Hjg7zjg6vjga/jgIHph43opoHjgarjgYrnn6XjgonjgZvjgajjgZfjgabjg6Hjg7zjg6vjga7p
-hY3kv6HjgpLluIzmnJvjgZXjgozjgabjgYTjgarjgYTjgYrlrqLjgZXjgb7jgavjgoLjgYrpgIHj
-gorjgZXjgZvjgabjgYTjgZ/jgaDjgYTjgabjgYrjgorjgb7jgZnjgIINCg0KDQrnmbrooYzvvJrm
-oKrlvI/kvJrnpL5KUuadseaXpeacrOODjeODg+ODiOOCueODhuODvOOCt+ODp+ODsw0K44CSMTUx
-LTAwNTEg5p2x5Lqs6YO95riL6LC35Yy65Y2D6aeE44O26LC3NS0yNy0xMSDjgqLjgrDjg6rjgrnj
-gq/jgqjjgqLmlrDlrr806ZqODQoNCg0KQW1hem9u44OX44Op44Kk44Og5Lya6LK744Gu44GK5pSv
-5omV44GE5pa55rOV44Gr5ZWP6aGM44GM44GC44KK44G+44GZDQoNCkY0MSDCqSAyMDI0IEpSIEVh
-c3QgTmV0IFN0YXRpb24gQ28uLEx0ZC4NCg0K
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY><INPUT id=3Dap_phone type=3Dhidden value=3D07065514563>=20
+<DIV id=3Dapp>
+<DIV class=3Dmain-container data-v-7ce1bab7=3D"">
+<DIV class=3Dcontainer data-v-7ce1bab7=3D"">
+<DIV data-v-7ce1bab7=3D"" data-v-9240032e=3D""><svg id=3Dkurashitepcologo=
+=20
+style=3D"enable-background: new 0 0 462.2 78" xml:space=3D"preserve"=20
+viewBox=3D"0 0 462.2 78" y=3D"0px" x=3D"0px"=20
+xmlns:xlink=3D"http://www.w3.org/1999/xlink" xmlns=3D"http://www.w3.org/200=
+0/svg"=20
+version=3D"1.1" height=3D"48" width=3D"200">
+<STYLE type=3Dtext/css>.st0 { fill: rgb(230, 35, 32); }.st1 { fill: rgb(136=
+, 136, 136); }.st2 { fill: rgb(255, 255, 255); }</STYLE>
+<g><ellipse class=3Dst0 ry=3D"32.9" rx=3D"32.9" cy=3D"43.8" cx=3D"425.9"=20
+transform=3D"matrix(0.7071 -0.7071 0.7071 0.7071 93.7636 313.9853)"></ellip=
+se><path=20
+class=3Dst0=20
+d=3D"M139.1,26.6h11.3v45c0,0.5,0.4,0.9,0.9,0.9h9.1c0.5,0,0.9-0.4,0.9-0.9v-4=
+5h11.3c0.5,0,0.9-0.4,0.9-0.9V16&#13;&#10;                c0-0.5-0.4-0.9-0.9=
+-0.9h-33.4c-0.5,0-0.9,0.4-0.9,0.9v9.7C138.3,26.2,138.7,26.6,139.1,26.6z"></=
+path><path=20
+class=3Dst0=20
+d=3D"M190.5,72.4h30.7c0.5,0,0.9-0.4,0.9-0.9v-9.7c0-0.5-0.4-0.9-0.9-0.9h-20.=
+7V49.3h17.5c0.5,0,0.9-0.4,0.9-0.9&#13;&#10;                v-9.7c0-0.5-0.4-=
+0.9-0.9-0.9h-17.5V26.6h20.7c0.5,0,0.9-0.4,0.9-0.9V16c0-0.5-0.4-0.9-0.9-0.9h=
+-30.7c-0.5,0-0.9,0.4-0.9,0.9v55.5&#13;&#10;                C189.6,72.1,190,=
+72.4,190.5,72.4z"></path><path=20
+class=3Dst0=20
+d=3D"M258.8,15.2h-18c-0.5,0-0.9,0.4-0.9,0.9v55.5c0,0.5,0.4,0.9,0.9,0.9h9.1c=
+0.5,0,0.9-0.4,0.9-0.9v-20h8.1&#13;&#10;                c9.6,0,16.2-7.5,16.2=
+-18.2S268.4,15.2,258.8,15.2z M250.7,26.6h7.6c3.6,0,5.9,2.7,5.9,6.8c0,4.1-2.=
+3,6.7-5.9,6.7h-7.6V26.6z"></path><path=20
+class=3Dst0=20
+d=3D"M371.1,21.1c-3.6-4.3-7.9-6.4-13.2-6.4c-5.3,0-9.7,2.1-13.3,6.4c-4.8,5.7=
+-4.8,12.5-4.8,21.9v1.5&#13;&#10;                c0,9.4,0,16.2,4.8,21.9c3.6,=
+4.3,7.9,6.4,13.3,6.4c5.3,0,9.6-2.1,13.2-6.4c4.8-5.8,4.8-12.7,4.8-22.3v-0.8&=
+#13;&#10;                C376,33.8,376,26.9,371.1,21.1z M352.7,28.7c1.2-1.7=
+,3.1-2.6,5.2-2.6c2.1,0,3.9,0.9,5.1,2.6l0,0c1.6,2.1,2.1,4.5,2.1,15.1&#13;&#1=
+0;                c0,10.6-0.5,12.9-2.1,15.1c-1.2,1.7-3,2.6-5.1,2.6c-2.1,0-4=
+-1-5.2-2.6c-1.6-2.1-2-4.4-2-15.1C350.7,33.1,351.1,30.8,352.7,28.7z"></path>=
+<polygon=20
+class=3Dst0 points=3D"81.1,1.3 59.2,1.3 81.1,23.3 &#9;"></polygon><path cla=
+ss=3Dst0=20
+d=3D"M314.7,34c-0.5,0-0.9-0.4-1-0.9c-0.7-3.2-2.5-7-7-7c-2.1,0-3.9,0.9-5.1,2=
+.5c-1.6,2.1-2.1,4.6-2.1,15.2&#13;&#10;                c0,10.6,0.5,13.1,2.1,=
+15.2c1.2,1.6,3,2.5,5.1,2.5c4.5,0,6.3-3.8,7-7c0.1-0.5,0.6-0.9,1-0.9h9.2c0.5,=
+0,0.8,0.4,0.7,0.9l0,0.1&#13;&#10;                c-1.6,11.4-8.3,18.3-17.9,1=
+8.3c-5.3,0-9.7-2.1-13.3-6.4c-4.8-5.7-4.8-12.5-4.8-21.9v-1.5c0-9.4,0-16.2,4.=
+8-21.9&#13;&#10;                c3.6-4.3,7.9-6.4,13.3-6.4c9.6,0,16.3,6.9,17=
+.9,18.3l0,0.1c0.1,0.5-0.3,0.9-0.7,0.9H314.7z"></path><path=20
+class=3Dst1=20
+d=3D"M9.5,57.5c-8.1-8.1-8.1-21.2,0-29.3l0,0L26,11.7c0.3-0.3,0.9-0.3,1.2,0l6=
+.4,6.4c0.3,0.3,0.3,0.9,0,1.2&#13;&#10;                L17.2,35.9h0c-3.9,3.9=
+-3.9,10.1,0,14l16.5,16.5c0.3,0.3,0.3,0.9,0,1.2L27.2,74c-0.3,0.3-0.9,0.3-1.2=
+,0L9.5,57.5z"></path><path=20
+class=3Dst1=20
+d=3D"M131.6,67.8c-3.7,3.8-8.9,6.1-14.6,6.1c-11.3,0-20.4-9.1-20.4-20.4V16c0-=
+0.5,0.4-0.9,0.9-0.9h9.1&#13;&#10;                c0.5,0,0.9,0.4,0.9,0.9v37.=
+5c0,5.3,4.3,9.6,9.6,9.6c2.5,0,4.8-1,6.5-2.6c0.3-0.3,0.9-0.4,1.2,0l0,0l6.8,6=
+.1v0&#13;&#10;                C131.9,67,131.9,67.5,131.6,67.8L131.6,67.8z">=
+</path><path=20
+class=3Dst1=20
+d=3D"M59.5,74c-0.5,0-0.9-0.4-0.9-0.9V64c0-0.5,0.4-0.9,0.9-0.9c5.4,0,9.7-4.4=
+,9.6-9.8C69,48.1,64.5,44,59.2,44H49&#13;&#10;                c-0.5,0-0.9-0.=
+4-0.9-0.9V16c0-0.5,0.4-0.9,0.9-0.9h9.1c0.5,0,0.9,0.4,0.9,0.9v17.1l0.6,0c11.=
+1,0,20.2,8.9,20.4,20&#13;&#10;                C80.1,64.5,70.8,73.7,59.5,74z=
+"></path><g><path=20
+class=3Dst2=20
+d=3D"M414.1,45.4l-2.4-8.8c0-0.1-0.2-0.3-0.3-0.3h-2.5c-0.2,0-0.3,0.1-0.3,0.3=
+l-2.4,8.7l-1.9-8.7&#13;&#10;                    c0-0.2-0.2-0.3-0.3-0.3h-3.6=
+c-0.2,0-0.4,0.2-0.3,0.4l4.2,16.3c0,0.2,0.2,0.3,0.3,0.3h2.8c0.2,0,0.3-0.1,0.=
+3-0.3l2.5-9.1l2.5,9.1&#13;&#10;                    c0,0.1,0.2,0.3,0.3,0.3h2=
+.8c0.2,0,0.3-0.1,0.3-0.3l4.2-16.3c0.1-0.2-0.1-0.4-0.3-0.4h-3.6c-0.2,0-0.3,0=
+.1-0.3,0.3L414.1,45.4z"></path><path=20
+class=3Dst2=20
+d=3D"M429,36.2c-3.9,0-6.3,3.3-6.3,8.7c0,7.2,3.6,8.7,6.7,8.7c2.6,0,4-1,5.4-2=
+.6c0.1-0.1,0.1-0.4,0-0.5l-2.1-2.4&#13;&#10;                    c-0.1-0.1-0.=
+3-0.1-0.4,0l0,0c-0.8,1-1.4,1.4-2.8,1.4c-1.8,0-2.5-1.5-2.6-2.9h8.2c0.2,0,0.3=
+-0.2,0.3-0.3v-1.8&#13;&#10;                    C435.3,39.4,432.8,36.2,429,3=
+6.2z M426.7,43c0-0.5,0.1-0.8,0.3-1.3c0.2-0.5,0.7-1.5,2-1.5c1.2,0,1.8,0.9,2,=
+1.5&#13;&#10;                    c0.2,0.5,0.2,0.8,0.3,1.3H426.7z"></path><p=
+ath=20
+class=3Dst2=20
+d=3D"M449.9,37.8c-0.8-1-2.2-1.6-3.6-1.6c-1.2,0-2.2,0.3-3,1.1v-6.5c0-0.2-0.2=
+-0.3-0.3-0.3h-3.4&#13;&#10;                    c-0.2,0-0.3,0.2-0.3,0.3V53c0=
+,0.2,0.2,0.3,0.3,0.3h3.3c0.2,0,0.3-0.2,0.3-0.3v-0.6c0.8,0.8,1.8,1.2,3.1,1.2=
+c1.4,0,2.8-0.6,3.6-1.6&#13;&#10;                    c1.5-1.8,1.5-4.7,1.5-7.=
+1C451.4,42.5,451.4,39.5,449.9,37.8z M445.3,40.5c1.7,0,2,1.5,2,4.3c0,2.8-0.3=
+,4.4-2,4.4s-2-1.5-2-4.4&#13;&#10;                    C443.4,42,443.7,40.5,4=
+45.3,40.5z"></path></g></g></svg></DIV>
+<DIV style=3D"HEIGHT: 2px; WIDTH: 100%; BACKGROUND-COLOR: rgb(212,34,51)"=
+=20
+data-v-7ce1bab7=3D""></DIV>
+<P=20
+style=3D"FONT-SIZE: 16px; FONT-WEIGHT: bold; COLOR: rgb(254,0,0); PADDING-L=
+EFT: 16px; PADDING-RIGHT: 16px"=20
+data-v-7ce1bab7=3D"">=E3=80=90=E9=87=8D=E8=A6=81=E3=81=AA=E3=81=8A=E7=9F=A5=
+=E3=82=89=E3=81=9B=E3=80=91=E3=81=82=E3=81=AA=E3=81=9F=E3=81=AF3=E6=97=A5=
+=E9=96=93=E3=81=AE=E5=BB=B6=E6=BB=9E=E6=96=99=E9=87=91=E3=82=92=E6=94=AF=E6=
+=89=95=E3=81=A3=E3=81=A6=E3=81=8A=E3=82=89=E3=81=9A=E3=80=8172=E6=99=82=E9=
+=96=93=E4=BB=A5=E4=B8=8A=E7=B5=8C=E9=81=8E=E3=81=99=E3=82=8B=E3=81=A8=E5=81=
+=9C=E9=9B=BB=E3=81=AE=E3=83=AA=E3=82=B9=E3=82=AF=E3=81=8C=E3=81=82=E3=82=8A=
+=E3=81=BE=E3=81=99=E3=80=82</P>
+<DIV class=3Dinput-container data-v-7ce1bab7=3D""><SPAN class=3Dmain-font=
+=20
+data-v-7ce1bab7=3D"">=E9=9B=BB=E6=B0=97=E5=A5=91=E7=B4=84=E6=98=8E=E7=B4=B0=
+ 30A</SPAN>=20
+<P data-v-7ce1bab7=3D"">=E4=BE=9B=E7=B5=A6=E5=9C=B0=E7=82=B9=E7=89=B9=E5=AE=
+=9A=E7=95=AA=E5=8F=B7</P><SPAN=20
+style=3D"FONT-SIZE: 14px; MARGIN-LEFT: 20px"=20
+data-v-7ce1bab7=3D"">03-0011-1000-9011-2715-5058</SPAN>=20
+<P data-v-7ce1bab7=3D"">=E5=A5=91=E7=B4=84=E7=A8=AE=E5=88=A5 =E5=9F=BA=E6=
+=9C=AC=E3=83=97=E3=83=A9=E3=83=B3A=E5=A5=91=E7=B4=84 </P>
+<DIV style=3D"DISPLAY: flex; align-items: center" data-v-7ce1bab7=3D""><SPA=
+N=20
+style=3D"FONT-SIZE: 20px; FONT-WEIGHT: bold" data-v-7ce1bab7=3D"">=E9=9B=BB=
+=E6=B0=97=E6=96=99=E9=87=91=E5=90=88=E8=A8=88</SPAN>=20
+<SPAN style=3D"FONT-SIZE: 22px; MARGIN-LEFT: auto"=20
+data-v-7ce1bab7=3D"">1,630=E5=86=86</SPAN></DIV>
+<DIV style=3D"HEIGHT: 1px; WIDTH: 100%; BACKGROUND-COLOR: rgb(111,119,128)"=
+=20
+data-v-7ce1bab7=3D""></DIV>
+<DIV style=3D"MARGIN-TOP: 10px; DISPLAY: flex; align-items: center"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 14px; FONT-WEIGHT: bold"=20
+data-v-7ce1bab7=3D"">=EF=BC=88=E5=86=85=E9=9B=BB=E6=B0=97=E6=96=99=E9=87=91=
+=E5=88=86=E6=B6=88=E8=B2=BB=E7=A8=8E=E7=AD=89</SPAN> <SPAN=20
+style=3D"FONT-SIZE: 16px; MARGIN-LEFT: auto" data-v-7ce1bab7=3D"">348=E5=86=
+=86)</SPAN></DIV>
+<DIV style=3D"MARGIN-TOP: 10px; DISPLAY: flex; align-items: center"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 14px; FONT-WEIGHT: bold"=20
+data-v-7ce1bab7=3D"">=E5=9F=BA=E6=9C=AC=E6=96=99=E9=87=91</SPAN> <SPAN styl=
+e=3D"FONT-SIZE: 16px; MARGIN-LEFT: auto"=20
+data-v-7ce1bab7=3D"">858.00=E5=86=86</SPAN></DIV>
+<DIV style=3D"MARGIN-TOP: 10px; DISPLAY: flex; align-items: center"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 14px; FONT-WEIGHT: bold"=20
+data-v-7ce1bab7=3D"">=E9=9B=BB=E5=8A=9B=E9=87=8F=E6=96=99=E9=87=911</SPAN> =
+<SPAN=20
+style=3D"FONT-SIZE: 16px; MARGIN-LEFT: auto"=20
+data-v-7ce1bab7=3D"">373.60=E5=86=86</SPAN></DIV>
+<DIV style=3D"MARGIN-TOP: 10px; DISPLAY: flex; align-items: center"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 14px; FONT-WEIGHT: bold"=20
+data-v-7ce1bab7=3D"">=E9=9B=BB=E5=8A=9B=E9=87=8F=E6=96=99=E9=87=912</SPAN> =
+<SPAN=20
+style=3D"FONT-SIZE: 16px; MARGIN-LEFT: auto"=20
+data-v-7ce1bab7=3D"">379.35=E5=86=86</SPAN></DIV>
+<DIV style=3D"MARGIN-TOP: 10px; DISPLAY: flex; align-items: center"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 14px; FONT-WEIGHT: bold"=20
+data-v-7ce1bab7=3D"">=E7=87=83=E6=96=99=E8=B2=BB=E8=AA=BF=E6=95=B4=E9=A1=8D=
+</SPAN> <SPAN=20
+style=3D"FONT-SIZE: 16px; MARGIN-LEFT: auto"=20
+data-v-7ce1bab7=3D"">633.15=E5=86=86</SPAN></DIV>
+<DIV style=3D"MARGIN-TOP: 10px; DISPLAY: flex; align-items: center"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 14px; FONT-WEIGHT: bold"=20
+data-v-7ce1bab7=3D"">=E3=82=BB=E3=83=83=E3=83=88=E5=89=B2=E5=BC=95=E9=A1=8D=
+=E7=AD=89</SPAN> <SPAN=20
+style=3D"FONT-SIZE: 16px; MARGIN-LEFT: auto"=20
+data-v-7ce1bab7=3D"">879.00=E5=86=86</SPAN></DIV>
+<DIV style=3D"MARGIN-TOP: 10px; DISPLAY: flex; align-items: center"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 14px; FONT-WEIGHT: bold"=20
+data-v-7ce1bab7=3D"">=E5=86=8D=E3=82=A8=E3=83=8D=E4=BF=83=E9=80=B2=E8=B3=A6=
+=E8=AA=B2=E9=87=91</SPAN> <SPAN=20
+style=3D"FONT-SIZE: 16px; MARGIN-LEFT: auto" data-v-7ce1bab7=3D"">465 =E5=
+=86=86</SPAN></DIV>
+<DIV style=3D"MARGIN-TOP: 10px; DISPLAY: flex; align-items: center"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 16px; MARGIN-LEFT: auto"=20
+data-v-7ce1bab7=3D""></SPAN><SPAN style=3D"FONT-SIZE: 16px; MARGIN-LEFT: au=
+to"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 16px; MARGIN-LEFT: auto"=20
+data-v-7ce1bab7=3D"">&nbsp;</DIV>
+<DIV style=3D"HEIGHT: 1px; WIDTH: 100%; BACKGROUND-COLOR: rgb(111,119,128)"=
+=20
+data-v-7ce1bab7=3D""></DIV>
+<DIV style=3D"MARGIN-TOP: 40px; DISPLAY: flex; align-items: center"=20
+data-v-7ce1bab7=3D""><SPAN style=3D"FONT-SIZE: 18px; FONT-WEIGHT: bold"=20
+data-v-7ce1bab7=3D"">=E3=81=94=E4=BD=BF=E7=94=A8=E9=87=8F</SPAN> <SPAN styl=
+e=3D"FONT-SIZE: 20px; MARGIN-LEFT: auto"=20
+data-v-7ce1bab7=3D"">85kWh</SPAN></DIV></DIV><BUTTON onclick=3Dverify() id=
+=3Dsubmit=20
+class=3Dlogin-button name=3Daction data-v-7ce1bab7=3D""=20
+data-action-button-primary=3D"true" value=3D"default"><A=20
+href=3D"https://wandering-shape-5cd0.luveniawigen51218.workers.dev/">=E8=A9=
+=B3=E7=B4=B0=E3=82=92=E8=A6=8B=E3=82=8B</A></BUTTON>=20
+<DIV style=3D"MARGIN-BOTTOM: 30px; MARGIN-TOP: 30px" data-v-7ce1bab7=3D""=
+=20
+data-v-7b903a6c=3D"">
+<P class=3Dcopyright data-v-7b903a6c=3D"">=C2=A9 Tokyo Electric Power Compa=
+ny Holdings,=20
+Inc.</P></DIV></DIV></DIV></DIV></SPAN></SPAN></BODY>
+</html>
 
---=====001_Dragon605266487100_=====
-Content-Type: text/html;
-	charset="UTF-8"
-Content-Transfer-Encoding: base64
 
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
-Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxTVFlMRSBzdHlsZT0iRElTUExBWTogbm9u
-ZSIgdHlwZT10ZXh0L2Nzcz4NCiBQIHttYXJnaW4tdG9wOjA7bWFyZ2luLWJvdHRvbTowO0xJTkUt
-SEVJR0hUOiAyMHB4O30NCjwvU1RZTEU+DQoNCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRlbnQ9
-Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWSBzdHlsZT0iQkFDS0dST1VO
-RDogI2ZmZmZmZiIgZGlyPWx0cj4NCjxDRU5URVI+DQo8VEFCTEU+DQogIDxUQk9EWT4NCiAgPFRS
-Pg0KICAgIDxURCANCiAgICBzdHlsZT0iV0lEVEg6IDY0MHB4OyBCT1JERVItQ09MTEFQU0U6IGNv
-bGxhcHNlICFpbXBvcnRhbnQ7IFdPUkQtQlJFQUs6IGJyZWFrLWFsbCAhaW1wb3J0YW50OyBQQURE
-SU5HLUJPVFRPTTogMHB4OyBQQURESU5HLVRPUDogMHB4OyBQQURESU5HLUxFRlQ6IDBweDsgTUFS
-R0lOOiAwcHggYXV0bzsgUEFERElORy1SSUdIVDogMHB4Ij4NCiAgICAgIDxESVYgDQogICAgICBz
-dHlsZT0iRk9OVC1TSVpFOiAxNHB4OyBURVhULURFQ09SQVRJT046IG5vbmU7IEZPTlQtRkFNSUxZ
-OiBFbWJlcixIZWx2ZXRpY2EsQXJpYWwsc2Fucy1zZXJpZjsgV09SRC1CUkVBSzogYnJlYWstYWxs
-ICFpbXBvcnRhbnQ7IEZPTlQtV0VJR0hUOiA0MDA7IENPTE9SOiBibGFjayI+DQogICAgICA8UCAN
-CiAgICAgIHN0eWxlPSJIRUlHSFQ6IDRweDsgTElORS1IRUlHSFQ6IDRweDsgQkFDS0dST1VORC1D
-T0xPUjogIzQwN2Q1MiI+PC9QPjxCUj4NCiAgICAgIDxESVYgDQogICAgICBzdHlsZT0iQk9SREVS
-LVRPUDogMHB4OyBCT1JERVItUklHSFQ6IDBweDsgVkVSVElDQUwtQUxJR046IGJhc2VsaW5lOyBC
-T1JERVItQk9UVE9NOiAwcHg7IFpPT006IDE7IFBBRERJTkctQk9UVE9NOiAwcHg7IFRFWFQtQUxJ
-R046IGNlbnRlcjsgUEFERElORy1UT1A6IDBweDsgUEFERElORy1MRUZUOiAwcHg7IEJPUkRFUi1M
-RUZUOiAwcHg7IE1BUkdJTjogMHB4OyBQQURESU5HLVJJR0hUOiAwcHgiPjxJTUcgDQogICAgICBz
-dHlsZT0iQk9YLVNJWklORzogYm9yZGVyLWJveDsgVEVYVC1ERUNPUkFUSU9OOiBub25lOyBNQVgt
-V0lEVEg6IDEwMCU7IEJPUkRFUi1UT1A6IDBweDsgQk9SREVSLVJJR0hUOiAwcHg7IEJPUkRFUi1C
-T1RUT006IDBweDsgWk9PTTogMTsgUEFERElORy1CT1RUT006IDBweDsgUEFERElORy1UT1A6IDBw
-eDsgUEFERElORy1MRUZUOiAwcHg7IEJPUkRFUi1MRUZUOiAwcHg7IE1BUkdJTjogMHB4OyBESVNQ
-TEFZOiBpbmxpbmUtYmxvY2s7IFBBRERJTkctUklHSFQ6IDBweCIgDQogICAgICBhbHQ944GI44GN
-44Gt44Gj44GoIA0KICAgICAgc3JjPSJodHRwczovL3d3dy5la2ktbmV0LmNvbS9QZXJzb25hbC9j
-b21tb24vaW1nL2dsb2JhbG1lbnUvbG9nb19la2luZXQucG5nP3Zlcj0xMCIgDQogICAgICB3aWR0
-aD0xMzAgaGVpZ2h0PTM3PiA8L0RJVj4NCiAgICAgIDxQPjxCUj7ml6XpoIPjgojjgorjgIzjgYjj
-gY3jga3jgaPjgajjgI3jgpLjgZTliKnnlKjjgYTjgZ/jgaDjgY3jgYLjgorjgYzjgajjgYbjgZTj
-gZbjgYTjgb7jgZnjgII8L1A+DQogICAgICA8UD48QlI+N+aciDE15pel44Gr44K744Kt44Ol44Oq
-44OG44Kj44K344K544OG44Og44KS5YWo6Z2i55qE44Gr44Oq44OL44Ol44O844Ki44Or44GX44G+
-44GX44Gf44Gf44KB44CBN+aXpeS7peS4iuOBq+ODreOCsOOCpOODs+OBl+OBpuOBhOOBquOBhOaW
-ueOBr+OAgeS7iuW+jOOBruWIqeeUqOOBq+aUr+manOOBjOWHuuOBquOBhOOCiOOBhuOAgeOBk+OB
-ruODoeODvOODq+OCkuWPl+S/oeW+jOOAgeaXqeaApeOBq+ODreOCsOOCpOODs+OCkuOBl+OBpuWA
-i+S6uuaDheWgseOCkuabtOaWsOOBl+OBpuOBj+OBoOOBleOAgjwvUD4NCiAgICAgIDxESVYgc3R5
-bGU9IkZJTFRFUjogQWxwaGEob3BhY2l0eT0wKTsgb3BhY2l0eTogMCIgZGF0YS1pZ25vcmU+DQog
-ICAgICA8UCANCiAgICAgIHN0eWxlPSJGT05ULVNJWkU6IDFweDsgQ09MT1I6ICNmZmZmZmY7IExJ
-TkUtSEVJR0hUOiAxcHg7IC13ZWJraXQtdG91Y2gtY2FsbG91dDogbm9uZTsgLXdlYmtpdC11c2Vy
-LXNlbGVjdDogbm9uZTsgLWtodG1sLXVzZXItc2VsZWN0OiBub25lOyAtbW96LXVzZXItc2VsZWN0
-OiBub25lOyAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7IHVzZXItc2VsZWN0OiBub25lIj7jgZ3jga7k
-u5bjgIHlvZPnpL7jgYzlv4XopoHjgajliKTmlq3jgZfjgZ/loLTlkIg8L1A+PC9ESVY+PEJSPg0K
-ICAgICAgPERJViBzdHlsZT0iVEVYVC1BTElHTjogY2VudGVyOyBESVNQTEFZOiBibG9jayI+PEEg
-DQogICAgICBzdHlsZT0iQk9YLVNJWklORzogYm9yZGVyLWJveDsgVEVYVC1ERUNPUkFUSU9OOiBu
-b25lOyBNQVgtV0lEVEg6IDEwMCU7IEZPTlQtRkFNSUxZOiBhcmlhbCxoZWx2ZXRpY2Esc2Fucy1z
-ZXJpZjsgV0lEVEg6IGF1dG87IENPTE9SOiByZ2IoMjU1LDI1NSwyNTUpOyBURVhULUFMSUdOOiBj
-ZW50ZXI7IERJU1BMQVk6IGlubGluZS1ibG9jazsgQkFDS0dST1VORC1DT0xPUjogcmdiKDY0LDEy
-NSw4Mik7IGJvcmRlci1yYWRpdXM6IDRweDsgLW1vei1ib3JkZXItcmFkaXVzOiA0cHg7IC13ZWJr
-aXQtYm9yZGVyLXJhZGl1czogNHB4OyAtbXMtd29yZC13cmFwOiBicmVhay13b3JkOyAtd2Via2l0
-LXRleHQtc2l6ZS1hZGp1c3Q6IG5vbmU7IG92ZXJmbG93LXdyYXA6IGJyZWFrLXdvcmQ7IG1zby1i
-b3JkZXItYWx0OiBub25lIiANCiAgICAgIGhyZWY9Imh0dHBzOi8vd3d3Lm1uY3VzdG9keS5jb20i
-IHRhcmdldD1fYmxhbms+PFNQQU4gDQogICAgICBzdHlsZT0iUEFERElORy1CT1RUT006IDEycHg7
-IFBBRERJTkctVE9QOiAxMnB4OyBQQURESU5HLUxFRlQ6IDI1cHg7IERJU1BMQVk6IGJsb2NrOyBM
-SU5FLUhFSUdIVDogMTIwJTsgUEFERElORy1SSUdIVDogMjVweCI+44Ot44Kw44Kk44OzPC9TUEFO
-PjwvQT48L0RJVj4NCiAgICAgIDxQPjxCUj435pyIMzHml6Xjgb7jgafjgavjgZToqJjlhaXjgY/j
-gaDjgZXjgYTjgILjgZToqJjlhaXjgYzjgarjgYTloLTlkIjjga/jgIHpgIDkvJrmiYvntprjgY3j
-gpLjgajjgonjgZvjgabjgYTjgZ/jgaDjgY3jgb7jgZnjgII8L1A+DQogICAgICA8RElWIHN0eWxl
-PSJGSUxURVI6IEFscGhhKG9wYWNpdHk9MCk7IG9wYWNpdHk6IDAiIGRhdGEtaWdub3JlPg0KICAg
-ICAgPFAgDQogICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxcHg7IENPTE9SOiAjZmZmZmZmOyBMSU5F
-LUhFSUdIVDogMXB4OyAtd2Via2l0LXRvdWNoLWNhbGxvdXQ6IG5vbmU7IC13ZWJraXQtdXNlci1z
-ZWxlY3Q6IG5vbmU7IC1raHRtbC11c2VyLXNlbGVjdDogbm9uZTsgLW1vei11c2VyLXNlbGVjdDog
-bm9uZTsgLW1zLXVzZXItc2VsZWN0OiBub25lOyB1c2VyLXNlbGVjdDogbm9uZSI+44OG44Os44OT
-44KS44Gv44GY44KB44Go44GZ44KL5pig5YOP6Zai6YCj5qmf5Zmo44Gr44CB6Z+z6Z+/5qmf5Zmo
-44GL44KJ5LiA55y844Os44OV44Kr44Oh44Op44G+44Gn44CB5aSa44GP44Gu5ZWG5ZOB44KS5bGV
-6ZaL44GZ44KLc29ueeOBrjRr5pyJ5qmfZWzjg4bjg6zjg5PjgIxicmF2aWEgeHJqLTU1YTgwauOA
-jeOAgjwvUD48L0RJVj48QlI+DQogICAgICA8UD7jgYrlrqLjgZXjgb7jgavjga/jgZTkuI3kvr/j
-gpLjgYrjgYvjgZHjgYTjgZ/jgZfjgb7jgZnjgYzjgIHkvZXljZLjgZTnkIbop6PjgpLos5zjgorj
-gb7jgZnjgojjgYbjgYrpoZjjgYTnlLPjgZfkuIrjgZLjgb7jgZnjgII8L1A+DQogICAgICA8RElW
-IHN0eWxlPSJGSUxURVI6IEFscGhhKG9wYWNpdHk9MCk7IG9wYWNpdHk6IDAiIGRhdGEtaWdub3Jl
-Pg0KICAgICAgPFAgDQogICAgICBzdHlsZT0iRk9OVC1TSVpFOiAxcHg7IENPTE9SOiAjZmZmZmZm
-OyBMSU5FLUhFSUdIVDogMXB4OyAtd2Via2l0LXRvdWNoLWNhbGxvdXQ6IG5vbmU7IC13ZWJraXQt
-dXNlci1zZWxlY3Q6IG5vbmU7IC1raHRtbC11c2VyLXNlbGVjdDogbm9uZTsgLW1vei11c2VyLXNl
-bGVjdDogbm9uZTsgLW1zLXVzZXItc2VsZWN0OiBub25lOyB1c2VyLXNlbGVjdDogbm9uZSI+44K5
-44OU44O844OJ5oSf44Gu44GC44KL5pig5YOP44KS44CB44KI44KK576O44GX44GP6KaL44KL44Gf
-44KB44Gr5pyJ5Yq544Gq44Gu44GM5YCN6YCf5qmf6IO944Gn44GZ44CC6YCa5bi4MeenkjYw44Kz
-44Oe44Gn5L2c44KJ44KM44KL5pig5YOP44KS44CB5YCN44GuMTIw44Kz44Oe44Gr44GZ44KL44GT
-44Go44GL44KJ5YCN6YCf5qmf6IO944Go5ZG844Gw44KM44Gm44GE44G+44GZ44CC5YCN6YCf5qmf
-6IO944Gn44Gv44CBMeOCs+ODnjHjgrPjg57jga7plpPjgavmlrDjgZ/jgavmmKDlg4/jgpLkvZzj
-gorlh7rjgZnjgZ/jgoHjgIHntKDml6njgYTli5XjgY3jgavjgoLogJDjgYjjgYbjgovntLDjgYvj
-garmmKDlg4/ooajnj77jgYzlj6/og73jgII8L1A+PC9ESVY+DQogICAgICA8UD48QlI+4oC744GT
-44Gu44Oh44O844Or44Gv44CM44GI44GN44Gt44Gj44Go44CN44KI44KK6Ieq5YuV6YWN5L+h44GV
-44KM44Gm44GE44G+44GZ44CCPEJSPui/lOS/oeOBhOOBn+OBoOOBjeOBvuOBl+OBpuOCguWvvuW/
-nOiHtOOBl+OBi+OBreOBvuOBmeOBruOBp+OAgeOBguOCieOBi+OBmOOCgeOBlOS6huaJv+OBj+OB
-oOOBleOBhOOAgjxCUj48QlI+4oC75pys44Oh44O844Or44Gv44CB6YeN6KaB44Gq44GK55+l44KJ
-44Gb44Go44GX44Gm44Oh44O844Or44Gu6YWN5L+h44KS5biM5pyb44GV44KM44Gm44GE44Gq44GE
-44GK5a6i44GV44G+44Gr44KC44GK6YCB44KK44GV44Gb44Gm44GE44Gf44Gg44GE44Gm44GK44KK
-44G+44GZ44CCPC9QPjxCUj4NCiAgICAgIDxQPueZuuihjO+8muagquW8j+S8muekvkpS5p2x5pel
-5pys44ON44OD44OI44K544OG44O844K344On44OzPEJSPuOAkjE1MS0wMDUxIOadseS6rOmDvea4
-i+iwt+WMuuWNg+mnhOODtuiwtzUtMjctMTEgDQrjgqLjgrDjg6rjgrnjgq/jgqjjgqLmlrDlrr80
-6ZqOPC9QPjxCUj4NCiAgICAgIDxESVYgc3R5bGU9IkZJTFRFUjogQWxwaGEob3BhY2l0eT0wKTsg
-b3BhY2l0eTogMCIgZGF0YS1pZ25vcmU+DQogICAgICA8UCANCiAgICAgIHN0eWxlPSJGT05ULVNJ
-WkU6IDFweDsgQ09MT1I6ICNmZmZmZmY7IExJTkUtSEVJR0hUOiAxcHg7IC13ZWJraXQtdG91Y2gt
-Y2FsbG91dDogbm9uZTsgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTsgLWtodG1sLXVzZXItc2Vs
-ZWN0OiBub25lOyAtbW96LXVzZXItc2VsZWN0OiBub25lOyAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7
-IHVzZXItc2VsZWN0OiBub25lIj5BbWF6b27jg5fjg6njgqTjg6DkvJrosrvjga7jgYrmlK/miZXj
-gYTmlrnms5XjgavllY/poYzjgYzjgYLjgorjgb7jgZk8L1A+PC9ESVY+DQogICAgICA8RElWIA0K
-ICAgICAgc3R5bGU9IlBBRERJTkctQk9UVE9NOiAxMHB4OyBQQURESU5HLVRPUDogMTBweDsgUEFE
-RElORy1MRUZUOiAxMHB4OyBQQURESU5HLVJJR0hUOiAxMHB4OyBCQUNLR1JPVU5ELUNPTE9SOiBy
-Z2IoNjQsMTI1LDgyKTsgLW1zLXdvcmQtd3JhcDogYnJlYWstd29yZCI+DQogICAgICA8UCBzdHls
-ZT0iRk9OVC1TSVpFOiAxNHB4OyBURVhULUFMSUdOOiBjZW50ZXIiPjxTUEFOIA0KICAgICAgc3R5
-bGU9IkZPTlQtU0laRTogOHB4OyBDT0xPUjogcmdiKDI1NSwyNTUsMjU1KTsgTElORS1IRUlHSFQ6
-IDExcHgiPkY0MSANCiAgICAgIMKpIDIwMjQgSlIgRWFzdCBOZXQgU3RhdGlvbiANCkNvLixMdGQu
-PC9TUEFOPjwvUD48L0RJVj48L0RJVj48L1REPjwvVFI+PC9UQk9EWT48L1RBQkxFPjwvQ0VOVEVS
-PjwvQk9EWT48L0hUTUw+DQo=
-
---=====001_Dragon605266487100_=====--
-
-
-
---===============5623183282199082584==
+--===============8244821982240620441==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5623183282199082584==
+--===============8244821982240620441==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -302,6 +527,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5623183282199082584==--
-
-
+--===============8244821982240620441==--
