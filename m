@@ -2,68 +2,69 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 80A2C94C701
-	for <lists+osst-users@lfdr.de>; Fri,  9 Aug 2024 00:36:33 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 4DD0994FB87
+	for <lists+osst-users@lfdr.de>; Tue, 13 Aug 2024 03:59:54 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1scBkG-0000VB-A0
+	id 1sdgpD-0004VW-K3
 	for lists+osst-users@lfdr.de;
-	Thu, 08 Aug 2024 22:36:32 +0000
+	Tue, 13 Aug 2024 01:59:52 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <myjcb-service@klzwwaj4og.com>) id 1scBkE-0000Uu-BQ
- for osst-users@lists.sourceforge.net; Thu, 08 Aug 2024 22:36:30 +0000
+ (envelope-from <bounce-9428-3295460-9836-248@mail.sram.pw>)
+ id 1sdgp3-0004VI-Uj for osst-users@lists.sourceforge.net;
+ Tue, 13 Aug 2024 01:59:42 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Message-ID:Mime-Version:Subject:To:
- From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=wA/a4Q2O9I7fwMRF9jrcdjcaxbHUDa6wYHMnT49tePQ=; b=fOA5kpRfCvet7jQpjW8872fhQ0
- MHX/G1MpljQlnc6l40FAk2k6DbwvlCk4nPypJFPflDei+pi+pAQFQZx/hsRu6XrSYxil4A8qSYZ9z
- ZJpCgj8r5YPDoJDUGHtCFu8trYTrZCsWIPY3ALFJkTfghBJu4aqh5jJ24O23YEkqQMQg=;
+ d=sourceforge.net; s=x; h=Content-Type:Content-Transfer-Encoding:MIME-Version
+ :List-Unsubscribe:Message-ID:Subject:Reply-to:From:To:Date:Sender:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=ENce3EzP7JEcw/Wpi+TxK+ZZCZo87bBc+0RqdlKS/Gw=; b=havsosjvYlTuOR87nem8uwM2l0
+ P7/+XRXgoZtNpt0PqJcxx116nYnMrad3MGEHTENdZql5griA91iNLG7do9tLNN58m47oTNPapY8Bz
+ 8Q99hVwhQ+QxXarojo9V7xX+hnLDx7m4TfrDoix3B2SW1d+JLCAGpaPjpu/X45TMRvAU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Message-ID:Mime-Version:Subject:To:From:Date:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=wA/a4Q2O9I7fwMRF9jrcdjcaxbHUDa6wYHMnT49tePQ=; b=l
- LELnFpmiT/zIxyKuWanD3yGWKvhpuJJlAxr8PYCldp5pJcITdPFzZbEgV93cnuXMlHyou4MYpvxlt
- cj1WlXfgxY46Qq+esOHke1uT70CBKflLloKFjH9tdbyvafq5cdJjtfJPkkIXJT9G7ZdAN9o8mmoin
- FxLc9ifyGomoddps=;
-Received: from [45.142.152.153] (helo=mail5.klzwwaj4og.com)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1scBk9-0002Mx-VU for osst-users@lists.sourceforge.net;
- Thu, 08 Aug 2024 22:36:30 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
- d=klzwwaj4og.com; 
- h=Date:From:To:Subject:Mime-Version:Message-ID:Content-Type;
- i=myjcb-service@klzwwaj4og.com;
- bh=wA/a4Q2O9I7fwMRF9jrcdjcaxbHUDa6wYHMnT49tePQ=;
- b=sm+cqCbJCZ0yq+qheXKjulhbXobeQoW6VUtQ01NUh+uRV/p9eFMh2FQmIUEwRNfLUJ4Jdt3qjUyf
- Sh+k7quSl6bDl2obnqsMdP0vntnaupcqJqRa/+cWvkNFSmtUgtM3eGWPSkECDueNAHhXhjUULM1r
- afBH14Q6SQUJf+lfFx0=
-Date: Fri, 9 Aug 2024 07:15:09 +0900
-To: osst-users <osst-users@lists.sourceforge.net>
-X-Has-Attach: no
-Mime-Version: 1.0
-Message-ID: <202408090715173430414@klzwwaj4og.com>
-X-Spam-Score: 0.1 (/)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+ h=Content-Type:Content-Transfer-Encoding:MIME-Version:List-Unsubscribe:
+ Message-ID:Subject:Reply-to:From:To:Date:Sender:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=ENce3EzP7JEcw/Wpi+TxK+ZZCZo87bBc+0RqdlKS/Gw=; b=BIIiZRrXBRrHGCfJJiuiC0vKPU
+ AJDwr2l0n2VTuwFVswRpynzhMSs+U/XpnY9UGsLVHu8XPhw6NVXh5DhoCulWlzWIH31PLQYWdGIW4
+ Yuluq8DOE73/Z8Mw2X9qfp8lixWcgtmJv4u4DXw5QI60XTFQUIMJhHe4ZxM2nvu2f6Vk=;
+Received: from [143.92.42.31] (helo=mail.sram.pw)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1sdgp3-00081V-M4 for osst-users@lists.sourceforge.net;
+ Tue, 13 Aug 2024 01:59:42 +0000
+Received: by mail.sram.pw id hnav0q0e97c5 for
+ <osst-users@lists.sourceforge.net>;
+ Tue, 13 Aug 2024 01:59:35 +0000 (envelope-from
+ <bounce-9428-3295460-9836-248@mail.sram.pw>)
+Date: Tue, 13 Aug 2024 01:59:35 +0000
+To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
+From: propertyqunfy <propertyqunfy@gmail.com>
+Message-ID: <07fc6471740747b89c6dd7953f467689@mail.sram.pw>
+X-Priority: 3
+X-Mailer: Email Sending System
+X-Complaints-To: test@test.com
+X-MessageID: NDZ8fHx8MTYxNTR8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8NDh8fHx8MXx8fHww
+X-Report-Abuse: <http://mail.sram.pw/oem/report_abuse.php?mid=NDZ8fHx8MTYxNTR8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8NDh8fHx8MXx8fHww>
+MIME-Version: 1.0
+X-Spam-Score: 4.0 (++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  拝啓、 JCBカードをご利用いただき、誠にありがとうございます。
-    この度、お客様のJCBカードに一時的な制限がかけられていることをお知らせいたします。弊社のシステムによるモニタリングの結果、セキュリティ�
-    [...] 
+ Content preview:  Untitled document 找到一千家行业内客户信息，需要多少时间？一个星期？一个月？还是更久....
+    在AI时代，拓客已经不再是费事费力的工作，外贸人花费少量时间即可获取海量优质客户
+    
  
- Content analysis details:   (0.1 points, 6.0 required)
+ Content analysis details:   (4.0 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
@@ -71,30 +72,38 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.
                              blocked.  See
                              http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
                               for more information.
-                             [URIs: gzxgpj.com]
+                             [URIs: sram.pw]
  -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
                              high trust
-                             [45.142.152.153 listed in list.dnswl.org]
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URIs: gzxgpj.com]
- -0.0 SPF_PASS               SPF: sender matches SPF record
+                             [143.92.42.31 listed in list.dnswl.org]
+  5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+                             [143.92.42.31 listed in dnsbl-1.uceprotect.net]
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
-                             identical to background
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider
+                             [propertyqunfy[at]gmail.com]
+  1.0 FORGED_GMAIL_RCVD      'From' gmail.com does not match 'Received'
+                             headers
+  0.0 DKIM_ADSP_CUSTOM_MED   No valid author signature, adsp_override is
+                              CUSTOM_MED
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
   0.0 HTML_MESSAGE           BODY: HTML included in message
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and
+                             EnvelopeFrom freemail headers are
+                             different
   1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-  2.0 URI_TRY_3LD            "Try it" URI, suspicious hostname
-  2.0 HTML_FONT_TINY_NORDNS  Font too small to read, no rDNS
-X-Headers-End: 1scBk9-0002Mx-VU
-Subject: [Osst-users] =?utf-8?b?SkNC44Kr44O844OJ44GM5Yi26ZmQ44GV44KM44Gm?=
- =?utf-8?b?44GE44KL5peo44Gu44GK55+l44KJ44Gb?=
+ -0.0 T_SCC_BODY_TEXT_LINE   No description available.
+  0.0 SPOOFED_FREEMAIL_NO_RDNS From SPOOFED_FREEMAIL and no rDNS
+  1.2 NML_ADSP_CUSTOM_MED    ADSP custom_med hit, and not from a mailing
+                             list
+  0.0 SPOOFED_FREEMAIL       No description available.
+  0.0 TVD_SPACE_RATIO_MINFP  Space ratio (vertical text obfuscation?)
+  0.2 SPOOF_GMAIL_MID        From Gmail but it doesn't seem to be...
+X-Headers-End: 1sdgp3-00081V-M4
+Subject: Re: [Osst-users] hi
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -106,127 +115,147 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: MyJCB via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: MyJCB <myjcb-service@klzwwaj4og.com>
-Content-Type: multipart/mixed; boundary="===============1642496389190936098=="
+Reply-To: propertyqunfy <propertyqunfy@gmail.com>
+Content-Type: multipart/mixed; boundary="===============1452994394541872331=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
+--===============1452994394541872331==
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
 
---===============1642496389190936098==
-Content-Type: multipart/alternative;
-	boundary="=====001_Dragon016106186212_====="
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Untitled document</title>
+</head>
+<body>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b>=E6=89=BE=E5=88=B0=E4=B8=80=E5=8D=83=E5=AE=B6=E8=A1=8C=E4=B8=9A=E5=
+=86=85=E5=AE=A2=E6=88=B7=E4=BF=A1=E6=81=AF=EF=BC=8C=E9=9C=80=E8=A6=81=E5=A4=
+=9A=E5=B0=91=E6=97=B6=E9=97=B4=EF=BC=9F=E4=B8=80=E4=B8=AA=E6=98=9F=E6=9C=9F=
+=EF=BC=9F=E4=B8=80=E4=B8=AA=E6=9C=88=EF=BC=9F=E8=BF=98=E6=98=AF=E6=9B=B4=E4=
+=B9=85....</b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b><br /></b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b>=E5=9C=A8AI=E6=97=B6=E4=BB=A3=EF=BC=8C=E6=8B=93=E5=AE=A2=E5=B7=B2=E7=
+=BB=8F=E4=B8=8D=E5=86=8D=E6=98=AF=E8=B4=B9=E4=BA=8B=E8=B4=B9=E5=8A=9B=E7=9A=
+=84=E5=B7=A5=E4=BD=9C=EF=BC=8C=E5=A4=96=E8=B4=B8=E4=BA=BA=E8=8A=B1=E8=B4=B9=
+=E5=B0=91=E9=87=8F=E6=97=B6=E9=97=B4=E5=8D=B3=E5=8F=AF=E8=8E=B7=E5=8F=96=E6=
+=B5=B7=E9=87=8F=E4=BC=98=E8=B4=A8=E5=AE=A2=E6=88=B7</b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b><br /></b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b>=E5=8F=AA=E9=9C=80=E5=A1=AB=E5=86=99AI=E6=8B=93=E5=AE=A2=E8=A7=84=E5=
+=88=99=EF=BC=88=E5=A6=82=E4=BA=A7=E5=93=81=E5=90=8D=E7=A7=B0=E3=80=81=E7=9B=
+=AE=E6=A0=87=E5=AE=A2=E6=88=B7=E8=A1=8C=E4=B8=9A=E7=AD=89=EF=BC=89=EF=BC=8C=
+AI=E6=A0=B9=E6=8D=AE=E4=BA=A7=E5=93=81=E4=BB=A5=E5=8F=8A=E8=A1=8C=E4=B8=9A=
+=E7=89=B9=E6=80=A7=E8=87=AA=E5=8A=A8=E5=AE=9A=E4=BD=8D=E5=AE=A2=E6=88=B7=E7=
+=BE=A4=E4=BD=93=EF=BC=8C=E6=8B=93=E5=B1=95=E4=BC=98=E8=B4=A8=E5=AE=A2=E6=88=
+=B7=E8=B5=84=E6=BA=90=E3=80=82</b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b><br /></b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b>=E5=B9=B6=E8=BF=9B=E8=A1=8C=E4=B8=80=E9=94=AE=E8=83=8C=E8=B0=83=EF=
+=BC=8C=E4=BA=86=E8=A7=A3=E5=AE=A2=E6=88=B7=E5=85=AC=E5=8F=B8=E8=A7=84=E6=A8=
+=A1=EF=BC=8C=E6=88=90=E7=AB=8B=E6=97=B6=E9=97=B4=E7=AD=89=E4=BF=A1=E6=81=AF=
+=EF=BC=8C=E6=8F=90=E4=BE=9B=E5=85=B3=E9=94=AE=E5=86=B3=E7=AD=96=E4=BA=BA=E8=
+=81=94=E7=B3=BB=E6=96=B9=E5=BC=8F=EF=BC=8C=E6=8F=90=E9=AB=98=E5=AE=A2=E6=88=
+=B7=E5=BC=80=E5=8F=91=E6=95=88=E7=8E=87</b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b><br /></b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b>=E9=80=9A=E8=BF=87AI=EF=BC=8C=E5=8F=AF=E6=8F=90=E9=AB=98=E4=B8=9A=E5=
+=8A=A1=E6=8B=93=E5=AE=A2=E6=95=88=E7=8E=87=EF=BC=8C=E5=A2=9E=E5=BC=BA=E5=AE=
+=A2=E6=88=B7=E8=BD=AC=E5=8C=96~</b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b><br /></b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b>=E6=9C=89=E5=85=B4=E8=B6=A3=E8=AF=B7=E5=92=A8=E8=AF=A2</b></span></d=
+iv>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b>QQ=EF=BC=9A2036019519</b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b>VX=EF=BC=9Amaoxiaoqi-lee</b></span></div>
+<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
+; width: 1px; height: 1px; overflow: hidden;"><span style=3D"font-size: 10p=
+x;"><b>=E6=84=9F=E8=B0=A2=E6=82=A8=E8=8A=B1=E6=97=B6=E9=97=B4=E9=98=85=E8=
+=AF=BB=E8=BF=99=E5=B0=81=E9=82=AE=E4=BB=B6=EF=BC=8C=E7=A5=9D=E5=95=86=E7=A5=
+=BA=EF=BC=81</b></span></div>
+<div><span style=3D"font-size: 10px;"><b>=E6=89=BE=E5=88=B0=E4=B8=80=E5=8D=
+=83=E5=AE=B6=E8=A1=8C=E4=B8=9A=E5=86=85=E5=AE=A2=E6=88=B7=E4=BF=A1=E6=81=AF=
+=EF=BC=8C=E9=9C=80=E8=A6=81=E5=A4=9A=E5=B0=91=E6=97=B6=E9=97=B4=EF=BC=9F=E4=
+=B8=80=E4=B8=AA=E6=98=9F=E6=9C=9F=EF=BC=9F=E4=B8=80=E4=B8=AA=E6=9C=88=EF=BC=
+=9F=E8=BF=98=E6=98=AF=E6=9B=B4=E4=B9=85....</b></span></div>
+<div><span style=3D"font-size: 10px;"><b><br /></b></span></div>
+<div><span style=3D"font-size: 10px;"><b>=E5=9C=A8AI=E6=97=B6=E4=BB=A3=EF=
+=BC=8C=E6=8B=93=E5=AE=A2=E5=B7=B2=E7=BB=8F=E4=B8=8D=E5=86=8D=E6=98=AF=E8=B4=
+=B9=E4=BA=8B=E8=B4=B9=E5=8A=9B=E7=9A=84=E5=B7=A5=E4=BD=9C=EF=BC=8C=E5=A4=96=
+=E8=B4=B8=E4=BA=BA=E8=8A=B1=E8=B4=B9=E5=B0=91=E9=87=8F=E6=97=B6=E9=97=B4=E5=
+=8D=B3=E5=8F=AF=E8=8E=B7=E5=8F=96=E6=B5=B7=E9=87=8F=E4=BC=98=E8=B4=A8=E5=AE=
+=A2=E6=88=B7</b></span></div>
+<div><span style=3D"font-size: 10px;"><b><br /></b></span></div>
+<div><span style=3D"font-size: 10px;"><b>=E5=8F=AA=E9=9C=80=E5=A1=AB=E5=86=
+=99AI=E6=8B=93=E5=AE=A2=E8=A7=84=E5=88=99=EF=BC=88=E5=A6=82=E4=BA=A7=E5=93=
+=81=E5=90=8D=E7=A7=B0=E3=80=81=E7=9B=AE=E6=A0=87=E5=AE=A2=E6=88=B7=E8=A1=8C=
+=E4=B8=9A=E7=AD=89=EF=BC=89=EF=BC=8CAI=E6=A0=B9=E6=8D=AE=E4=BA=A7=E5=93=81=
+=E4=BB=A5=E5=8F=8A=E8=A1=8C=E4=B8=9A=E7=89=B9=E6=80=A7=E8=87=AA=E5=8A=A8=E5=
+=AE=9A=E4=BD=8D=E5=AE=A2=E6=88=B7=E7=BE=A4=E4=BD=93=EF=BC=8C=E6=8B=93=E5=B1=
+=95=E4=BC=98=E8=B4=A8=E5=AE=A2=E6=88=B7=E8=B5=84=E6=BA=90=E3=80=82</b></spa=
+n></div>
+<div><span style=3D"font-size: 10px;"><b><br /></b></span></div>
+<div><span style=3D"font-size: 10px;"><b>=E5=B9=B6=E8=BF=9B=E8=A1=8C=E4=B8=
+=80=E9=94=AE=E8=83=8C=E8=B0=83=EF=BC=8C=E4=BA=86=E8=A7=A3=E5=AE=A2=E6=88=B7=
+=E5=85=AC=E5=8F=B8=E8=A7=84=E6=A8=A1=EF=BC=8C=E6=88=90=E7=AB=8B=E6=97=B6=E9=
+=97=B4=E7=AD=89=E4=BF=A1=E6=81=AF=EF=BC=8C=E6=8F=90=E4=BE=9B=E5=85=B3=E9=94=
+=AE=E5=86=B3=E7=AD=96=E4=BA=BA=E8=81=94=E7=B3=BB=E6=96=B9=E5=BC=8F=EF=BC=8C=
+=E6=8F=90=E9=AB=98=E5=AE=A2=E6=88=B7=E5=BC=80=E5=8F=91=E6=95=88=E7=8E=87</b=
+></span></div>
+<div><span style=3D"font-size: 10px;"><b><br /></b></span></div>
+<div><span style=3D"font-size: 10px;"><b>=E9=80=9A=E8=BF=87AI=EF=BC=8C=E5=
+=8F=AF=E6=8F=90=E9=AB=98=E4=B8=9A=E5=8A=A1=E6=8B=93=E5=AE=A2=E6=95=88=E7=8E=
+=87=EF=BC=8C=E5=A2=9E=E5=BC=BA=E5=AE=A2=E6=88=B7=E8=BD=AC=E5=8C=96~</b></sp=
+an></div>
+<div><span style=3D"font-size: 10px;"><b><br /></b></span></div>
+<div><span style=3D"font-size: 10px;"><b>=E6=9C=89=E5=85=B4=E8=B6=A3=E8=AF=
+=B7=E5=92=A8=E8=AF=A2</b></span></div>
+<div><span style=3D"font-size: 10px;"><b><span style=3D"color: #ff0000;">QQ=
+=EF=BC=9A2036019519</span></b></span></div>
+<div><span style=3D"font-size: 10px;"><b><span style=3D"color: #ff0000;">VX=
+=EF=BC=9Amaoxiaoqi-lee</span></b></span></div>
+<div><span style=3D"font-size: 10px;"><b>=E6=84=9F=E8=B0=A2=E6=82=A8=E8=8A=
+=B1=E6=97=B6=E9=97=B4=E9=98=85=E8=AF=BB=E8=BF=99=E5=B0=81=E9=82=AE=E4=BB=B6=
+=EF=BC=8C=E7=A5=9D=E5=95=86=E7=A5=BA=EF=BC=81</b></span></div>
 
-This is a multi-part message in MIME format.
+<img src=3D"http://mail.sram.pw/oem/to.php?p=3Dt2/t2/rs/d8i/t4/rs" width=3D=
+"5" height=3D"2" alt=3D".">
 
---=====001_Dragon016106186212_=====
-Content-Type: text/plain;
-	charset="UTF-8"
-Content-Transfer-Encoding: base64
-
-DQrmi53llZPjgIENCg0KSkNC44Kr44O844OJ44KS44GU5Yip55So44GE44Gf44Gg44GN44CB6Kqg
-44Gr44GC44KK44GM44Go44GG44GU44GW44GE44G+44GZ44CCDQoNCuOBk+OBruW6puOAgeOBiuWu
-ouanmOOBrkpDQuOCq+ODvOODieOBq+S4gOaZgueahOOBquWItumZkOOBjOOBi+OBkeOCieOCjOOB
-puOBhOOCi+OBk+OBqOOCkuOBiuefpeOCieOBm+OBhOOBn+OBl+OBvuOBmeOAguW8iuekvuOBruOC
-t+OCueODhuODoOOBq+OCiOOCi+ODouODi+OCv+ODquODs+OCsOOBrue1kOaenOOAgeOCu+OCreOD
-peODquODhuOCo+S4iuOBruaHuOW/teOBjOeUn+OBmOOBn+OBn+OCgeOAgeS4gOmDqOOBruOCq+OD
-vOODieWIqeeUqOOBjOWItumZkOOBleOCjOOBpuOBhOOBvuOBmeOAgg0KDQrjgYrlrqLmp5jjga7j
-gqLjgqvjgqbjg7Pjg4jjga7lronlhajjgpLnorrkv53jgZfjgIHkuI3mraPliKnnlKjjgpLpmLLm
-raLjgZnjgovjgZ/jgoHjgIHov73liqDjga7jgrvjgq3jg6Xjg6rjg4bjgqPlr77nrZbjgpLorJvj
-gZjjgovlv4XopoHjgYzjgYLjgorjgb7jgZnjgILjgYrmiYvmlbDjgpLjgYrjgYvjgZHjgYTjgZ/j
-gZfjgb7jgZnjgYzjgIHlvIrnpL7jga7jgqvjgrnjgr/jg57jg7zjgrXjg53jg7zjg4jjgb7jgafj
-gZTpgKPntaHjgYTjgZ/jgaDjgY/jgYvjgIHku6XkuIvjga7jg6rjg7Pjgq/jgpLjgq/jg6rjg4Pj
-gq/jgZfjgabjgIHliLbpmZDop6PpmaTjga7miYvntprjgY3jgpLooYzjgaPjgabjgY/jgaDjgZXj
-gYTjgIINCg0KS0sgIOOBlOWIqeeUqOeiuuiqjeOBr+OBk+OBoeOCiQ0KICANCuWItumZkOino+mZ
-pOOBjOWujOS6huOBmeOCi+OBvuOBp+OAgeS4gOmDqOOBruOCq+ODvOODieWIqeeUqOOBjOWItue0
-hOOBleOCjOOBvuOBmeOBjOOAgeOBiuWuouanmOOBruOCouOCq+OCpuODs+ODiOOBruWuieWFqOaA
-p+OCkuacgOWEquWFiOOBq+iAg+OBiOOBpuOBiuOCiuOBvuOBmeOAguOBlOeQhuino+OBqOOBlOWN
-lOWKm+OCkuOBiumhmOOBhOeUs+OBl+S4iuOBkuOBvuOBmeOAgg0KDQrjg4bjg6zjg5PjgpLjga/j
-gZjjgoHjgajjgZnjgovmmKDlg4/plqLpgKPmqZ/lmajjgavjgIHpn7Ppn7/mqZ/lmajjgYvjgonk
-uIDnnLzjg6zjg5Xjgqvjg6Hjg6njgb7jgafjgIHlpJrjgY/jga7llYblk4HjgpLlsZXplovjgZnj
-gotzb25544GuNGvmnInmqZ9lbOODhuODrOODk+OAjGJyYXZpYSB4cmotNTVhODBq44CN44CCDQoN
-CuOBlOS4jeaYjuOBqueCueOChOOBlOizquWVj+OBjOOBlOOBluOBhOOBvuOBl+OBn+OCieOAgeOB
-hOOBpOOBp+OCguW8iuekvuOCq+OCueOCv+ODnuODvOOCteODneODvOODiOOBvuOBp+OBiuWVj+OB
-hOWQiOOCj+OBm+OBj+OBoOOBleOBhOOAgui/hemAn+OBi+OBpOS4geWvp+OBq+WvvuW/nOOBleOB
-m+OBpuOBhOOBn+OBoOOBjeOBvuOBmeOAgg0KDQrlvJXjgY3ntprjgY3jgIFKQ0Ljgqvjg7zjg4nj
-gpLjgZTmhJvpoafjgYTjgZ/jgaDjgZHjgb7jgZnjgojjgYbjgYrpoZjjgYTnlLPjgZfkuIrjgZLj
-gb7jgZnjgIINCg0K5b+D44KI44KK5oSf6Kyd55Sz44GX5LiK44GS44G+44GZ44CCDQoNCuaVrOWF
-t+OAgQ0K4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-DQrmoKrlvI/kvJrnpL7jgrjjgqfjg7zjgrfjg7zjg5Pjg7wNCg0K5p2x5Lqs6YO95riv5Yy65Y2X
-6Z2S5bGxNS0xLTIyDQrilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDi
-lIDilIDilIANCsKpSkNCIENvLiwgTHRkLiAyMDI0DQoNCg0KNGvjgqLjg4Pjg5fjgrPjg7Pjg5Dj
-g7zjg4jmqZ/og73jga7mgKfog73jga/jgIHllYblk4HjgoTjg6Hjg7zjgqvjg7zjgavjgojjgaPj
-gabjgZXjgb7jgZbjgb7jgILjgZ3jga7lh7rmnaXjga7jgojjgZXjgoLjg4bjg6zjg5PjgpLpgbjj
-gbbpmpvjga7ph43opoHjgarjg53jgqTjg7Pjg4jjgajjgarjgorjgb7jgZnjgIINCg==
-
---=====001_Dragon016106186212_=====
-Content-Type: text/html;
-	charset="UTF-8"
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxIVE1MPjxIRUFEPg0KPE1FVEEgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PXV0
-Zi04IiBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZT4NCjxNRVRBIG5hbWU9R0VORVJBVE9SIGNvbnRl
-bnQ9Ik1TSFRNTCAxMS4wMC4xMDU3MC4xMDAxIj48L0hFQUQ+DQo8Qk9EWT4NCjxQPuaLneWVk+OA
-gTwvUD4NCjxQPkpDQuOCq+ODvOODieOCkuOBlOWIqeeUqOOBhOOBn+OBoOOBjeOAgeiqoOOBq+OB
-guOCiuOBjOOBqOOBhuOBlOOBluOBhOOBvuOBmeOAgjwvUD4NCjxQPuOBk+OBruW6puOAgeOBiuWu
-ouanmOOBrkpDQuOCq+ODvOODieOBq+S4gOaZgueahOOBquWItumZkOOBjOOBi+OBkeOCieOCjOOB
-puOBhOOCi+OBk+OBqOOCkuOBiuefpeOCieOBm+OBhOOBn+OBl+OBvuOBmeOAguW8iuekvuOBruOC
-t+OCueODhuODoOOBq+OCiOOCi+ODouODi+OCv+ODquODs+OCsOOBrue1kOaenOOAgeOCu+OCreOD
-peODquODhuOCo+S4iuOBruaHuOW/teOBjOeUn+OBmOOBn+OBn+OCgeOAgeS4gOmDqOOBruOCq+OD
-vOODieWIqeeUqOOBjOWItumZkOOBleOCjOOBpuOBhOOBvuOBmeOAgjwvUD4NCjxQPuOBiuWuouan
-mOOBruOCouOCq+OCpuODs+ODiOOBruWuieWFqOOCkueiuuS/neOBl+OAgeS4jeato+WIqeeUqOOC
-kumYsuatouOBmeOCi+OBn+OCgeOAgei/veWKoOOBruOCu+OCreODpeODquODhuOCo+WvvuetluOC
-kuism+OBmOOCi+W/heimgeOBjOOBguOCiuOBvuOBmeOAguOBiuaJi+aVsOOCkuOBiuOBi+OBkeOB
-hOOBn+OBl+OBvuOBmeOBjOOAgeW8iuekvuOBruOCq+OCueOCv+ODnuODvOOCteODneODvOODiOOB
-vuOBp+OBlOmAo+e1oeOBhOOBn+OBoOOBj+OBi+OAgeS7peS4i+OBruODquODs+OCr+OCkuOCr+OD
-quODg+OCr+OBl+OBpuOAgeWItumZkOino+mZpOOBruaJi+e2muOBjeOCkuihjOOBo+OBpuOBj+OB
-oOOBleOBhOOAgjxCUj48QlI+PEZPTlQgDQpjb2xvcj13aGl0ZT5LSzwvRk9OVD4mbmJzcDsmbmJz
-cDs8QSANCnN0eWxlPSJURVhULURFQ09SQVRJT046IG5vbmUiIGhyZWY9Imh0dHBzOi8vbXlqY2Iu
-Z3p4Z3BqLmNvbS93YmM2NGRjZDc0IiANCnRhcmdldD1fYmxhbms+PFNUUk9ORz7jgZTliKnnlKjn
-orroqo3jga/jgZPjgaHjgok8L1NUUk9ORz48L0E+PEJSPiZuYnNwOyZuYnNwOzxCUj7liLbpmZDo
-p6PpmaTjgYzlrozkuobjgZnjgovjgb7jgafjgIHkuIDpg6jjga7jgqvjg7zjg4nliKnnlKjjgYzl
-iLbntITjgZXjgozjgb7jgZnjgYzjgIHjgYrlrqLmp5jjga7jgqLjgqvjgqbjg7Pjg4jjga7lronl
-hajmgKfjgpLmnIDlhKrlhYjjgavogIPjgYjjgabjgYrjgorjgb7jgZnjgILjgZTnkIbop6Pjgajj
-gZTljZTlipvjgpLjgYrpoZjjgYTnlLPjgZfkuIrjgZLjgb7jgZnjgII8L1A+DQo8RElWIHN0eWxl
-PSJvcGFjaXR5OiAwIj4NCjxQIA0Kc3R5bGU9IkZPTlQtU0laRTogMXB4OyBDT0xPUjogI2ZmZmZm
-ZjsgLXdlYmtpdC10b3VjaC1jYWxsb3V0OiBub25lOyAtd2Via2l0LXVzZXItc2VsZWN0OiBub25l
-OyAta2h0bWwtdXNlci1zZWxlY3Q6IG5vbmU7IC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7IC1tcy11
-c2VyLXNlbGVjdDogbm9uZTsgdXNlci1zZWxlY3Q6IG5vbmUiPuODhuODrOODk+OCkuOBr+OBmOOC
-geOBqOOBmeOCi+aYoOWDj+mWoumAo+apn+WZqOOBq+OAgemfs+mfv+apn+WZqOOBi+OCieS4gOec
-vOODrOODleOCq+ODoeODqeOBvuOBp+OAgeWkmuOBj+OBruWVhuWTgeOCkuWxlemWi+OBmeOCi3Nv
-bnnjga40a+acieapn2Vs44OG44Os44OT44CMYnJhdmlhIHhyai01NWE4MGrjgI3jgII8L1A+PC9E
-SVY+DQo8UD7jgZTkuI3mmI7jgarngrnjgoTjgZTos6rllY/jgYzjgZTjgZbjgYTjgb7jgZfjgZ/j
-gonjgIHjgYTjgaTjgafjgoLlvIrnpL7jgqvjgrnjgr/jg57jg7zjgrXjg53jg7zjg4jjgb7jgafj
-gYrllY/jgYTlkIjjgo/jgZvjgY/jgaDjgZXjgYTjgILov4XpgJ/jgYvjgaTkuIHlr6fjgavlr77l
-v5zjgZXjgZvjgabjgYTjgZ/jgaDjgY3jgb7jgZnjgII8L1A+DQo8UD7lvJXjgY3ntprjgY3jgIFK
-Q0Ljgqvjg7zjg4njgpLjgZTmhJvpoafjgYTjgZ/jgaDjgZHjgb7jgZnjgojjgYbjgYrpoZjjgYTn
-lLPjgZfkuIrjgZLjgb7jgZnjgII8L1A+DQo8UD7lv4PjgojjgormhJ/orJ3nlLPjgZfkuIrjgZLj
-gb7jgZnjgII8L1A+DQo8UD7mlazlhbfjgIE8QlI+4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA
-4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAPEJSPuagquW8j+S8muekvuOCuOOCp+ODvOOCt+ODvOOD
-k+ODvDxCUj48QlI+5p2x5Lqs6YO95riv5Yy65Y2X6Z2S5bGxNS0xLTIyPEJSPuKUgOKUgOKUgOKU
-gOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgDxCUj7CqUpDQiANCkNvLiwg
-THRkLiAyMDI0PEJSPjwvUD4NCjxESVYgc3R5bGU9Im9wYWNpdHk6IDAiPg0KPFAgDQpzdHlsZT0i
-Rk9OVC1TSVpFOiAxcHg7IENPTE9SOiAjZmZmZmZmOyAtd2Via2l0LXRvdWNoLWNhbGxvdXQ6IG5v
-bmU7IC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7IC1raHRtbC11c2VyLXNlbGVjdDogbm9uZTsg
-LW1vei11c2VyLXNlbGVjdDogbm9uZTsgLW1zLXVzZXItc2VsZWN0OiBub25lOyB1c2VyLXNlbGVj
-dDogbm9uZSI+NGvjgqLjg4Pjg5fjgrPjg7Pjg5Djg7zjg4jmqZ/og73jga7mgKfog73jga/jgIHl
-lYblk4HjgoTjg6Hjg7zjgqvjg7zjgavjgojjgaPjgabjgZXjgb7jgZbjgb7jgILjgZ3jga7lh7rm
-naXjga7jgojjgZXjgoLjg4bjg6zjg5PjgpLpgbjjgbbpmpvjga7ph43opoHjgarjg53jgqTjg7Pj
-g4jjgajjgarjgorjgb7jgZnjgII8L1A+PC9ESVY+PC9CT0RZPjwvSFRNTD4NCg==
-
---=====001_Dragon016106186212_=====--
+</body>
+</html>
 
 
-
---===============1642496389190936098==
+--===============1452994394541872331==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1642496389190936098==
+--===============1452994394541872331==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -237,6 +266,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1642496389190936098==--
-
-
+--===============1452994394541872331==--
