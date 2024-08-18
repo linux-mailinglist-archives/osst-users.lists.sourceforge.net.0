@@ -2,99 +2,99 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id AA4F2955AA0
-	for <lists+osst-users@lfdr.de>; Sun, 18 Aug 2024 05:01:18 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 791D6955EC5
+	for <lists+osst-users@lfdr.de>; Sun, 18 Aug 2024 21:46:38 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sfWAP-0003eq-0C
+	id 1sflrI-0007ZP-Ly
 	for lists+osst-users@lfdr.de;
-	Sun, 18 Aug 2024 03:01:17 +0000
+	Sun, 18 Aug 2024 19:46:36 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <allboms5@plc7.top>) id 1sfWAM-0003eX-LX
- for osst-users@lists.sourceforge.net; Sun, 18 Aug 2024 03:01:14 +0000
+ (envelope-from <gwyn@vh.mfgfast.net>) id 1sflrH-0007ZJ-6a
+ for osst-users@lists.sourceforge.net; Sun, 18 Aug 2024 19:46:35 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Subject:Reply-To:To:From:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:To:Reply-To:From:Subject:
  Date:Message-ID:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=1XMcW1KiYJRz/VqBudk9v67X8D9RrnU7mm3AAArj0M8=; b=HN7B3axRboEE/jO89xOFgmn8dX
- khEJlcwVBRFvk/VGi2iJmwqMM/pUaDA0KH5TQ+ZEiJN5lBvg3Q6WlBSrKAv+EGKYi+V9gGzd+6CoJ
- GJ6CegMH2oBdRTJvYKpQPdVSxklKtbkj3vpVebwiD/dvtpwaZWCgukQKZRcCXVkthinw=;
+ bh=hPoKETcGx+pJ3bQzCD75Bjr0oliPJ+lui4lwCfvXa+A=; b=NFGWVEQovpouOoh1k/SvcfeyC9
+ LtzsunXSUpPIw1zYZDSXBqzXqqsW++gjSrNkGd5AX4N3dU47/+N3suv62TNh6It08AVzrtJNZGZ8S
+ GL0GFE3tM3+bg1zz7GLtlxWqGuEqMAvpTq5hpkszEUr3zNfLudEYo2jYi8OQp9g3b6pQ=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Subject:Reply-To:To:From:Date:Message-ID:Sender
+ h=Content-Type:MIME-Version:To:Reply-To:From:Subject:Date:Message-ID:Sender
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=1XMcW1KiYJRz/VqBudk9v67X8D9RrnU7mm3AAArj0M8=; b=j
- QuM/RsJG2PoSzJo8Af1AQPyTtltMrfHL9GYpne6ggyCiNVO1D4bu2cs+3XBgbcPjE/FZI/MJsspHM
- hhUZgqAVhFpbsfRlfxfHRFbHuoIZlyWvWK9hrhshC2iHL7ky7m+xUhs6w1Q3/d3Sgmui1Zze1uZPw
- AAbxZvdrD7EMcCgc=;
-Received: from out28-134.mail.aliyun.com ([115.124.28.134])
+ List-Owner:List-Archive; bh=hPoKETcGx+pJ3bQzCD75Bjr0oliPJ+lui4lwCfvXa+A=; b=Q
+ aco7JWKO8wdXEYv/SQDbnrsVNpWZz5fTBjNdpxseBOROXdloVeaf/hzHWcxbNLi69zHVqC6r8r334
+ SBmBLs1AAt6b4zMqzuFIBGd72Vv17jmjR4AsvTZKCWwNAO92/+DAmquRx4W+27OBDSnnFwInfuCdD
+ x7nQ2gBNR/M2YqeY=;
+Received: from vb.merrick.micromoldtech.com ([23.95.246.243])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sfWAK-0007kH-HJ for osst-users@lists.sourceforge.net;
- Sun, 18 Aug 2024 03:01:14 +0000
-Received: from desktop-gd3ppt0(mailfrom:allboms5@plc7.top
- fp:SMTPD_---.YvAdD9n_1723950055) by smtp.aliyun-inc.com;
- Sun, 18 Aug 2024 11:00:56 +0800
-Message-ID: <6483287e87fab5eedd6d9d04a70de6a0@desktop-gd3ppt0>
-Date: Sun, 18 Aug 2024 11:00:56 +0800
-From: <allboms5@plc7.top>
-To: <osst-users@lists.sourceforge.net>
-X-Mailer: AutoMate
-X-Priority: 3
-Sensitivity: private
+ id 1sflrG-0000bT-Ag for osst-users@lists.sourceforge.net;
+ Sun, 18 Aug 2024 19:46:35 +0000
+DKIM-Signature: v=1; a=rsa-sha256;
+ bh=hPoKETcGx+pJ3bQzCD75Bjr0oliPJ+lui4lwCfvXa+A=; d=auz.mfgfast.net;
+ h=Message-ID: Date: Subject: From: Reply-To: To: MIME-Version: Content-Type:
+ Feedback-ID; i=@auz.mfgfast.net; s=mailer; c=relaxed/relaxed; t=1724008575;
+ b=ZW1KelRMHdXEkZRv1xNZVuFBFGBC/hi+1SuFmKnhGQCUUYeqAexQoxOFE3FVyxo2xNE46/UcC
+ aekd2r88QawtDeoFTUrQWMamkYmm4mne66vwe2SXspZ9oyEuxUBdNtdlbBrOLdVy1X5s7PdKE
+ KD5a5sf8MzasdJlfKzlkd8YX88U6xWC/X/KDFGs8WMjMF4vS+sLJN3kpUPazd7avvz2V12QNw
+ YKPzoOarieWCLxwggdOZU7hgIr4tE9ok5Pr1UFY6WA1SaYstPYtDULn6Z0Jm1BJZjhfEg5G5r
+ t4nQ/XKltxxEZhRWskIvK5lNiYRhkbODcEAKzi5rEppY/UFGOQ==
+Message-ID: <cb5ab923a23e0027750bf2d164b9f5484e60e065@vh.mfgfast.net>
+Date: Sun, 18 Aug 2024 19:16:15 +0000
+From: Business Systems Manager <info@auz.mfgfast.net>
+To: Osst users <osst-users@lists.sourceforge.net>
 MIME-Version: 1.0
-X-Spam-Score: -0.9 (/)
+Feedback-ID: jx170z1mz8dc2:regular:df325t3ks4060:gy716z4nvxb27
+X-Spam-Score: -5.1 (-----)
 X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: Document Allboms Is A Professional Search Engine For
- Electronic
- And Industrial Parts ALLBOMS Is Considered One Of The Top Search Engines,
- Along With OCTOPART And DIGIPART 
- Content analysis details:   (-0.9 points, 6.0 required)
+ Content preview:  Good afternoon Osst users, I trust that you are having a
+ productive day. Our manufacturing expertise encompasses a broad spectrum of
+ technologies, from rapid prototyping and CNC machining to injection molding,
+ metal casting, sheet metal fabrication, and 3D printing. Our de [...] 
+ Content analysis details:   (-5.1 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
  blocked.  See
  http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
- for more information. [URIs: allboms.com]
+ for more information. [URIs: mfgfast.net]
+ -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
+ high trust [23.95.246.243 listed in list.dnswl.org]
  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
  query to Validity was blocked.  See
  https://knowledge.validity.com/hc/en-us/articles/20961730681243
  for more information.
- [115.124.28.134 listed in bl.score.senderscore.com]
+ [23.95.246.243 listed in bl.score.senderscore.com]
  0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
  The query to Validity was blocked.  See
  https://knowledge.validity.com/hc/en-us/articles/20961730681243
  for more information.
- [115.124.28.134 listed in sa-accredit.habeas.com]
- -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
- high trust [115.124.28.134 listed in list.dnswl.org]
+ [23.95.246.243 listed in sa-accredit.habeas.com]
  -0.0 SPF_PASS               SPF: sender matches SPF record
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
  0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
- 0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
- lines
- 0.0 MIME_HTML_ONLY_MULTI   Multipart message only has text/html MIME
- parts 2.0 FROM_SUSPICIOUS_NTLD_FP From abused NTLD
- 0.5 FROM_SUSPICIOUS_NTLD   From abused NTLD
- 0.8 FROM_FMBLA_NEWDOM28    From domain was registered in last 14-28
- days
-X-Headers-End: 1sfWAK-0007kH-HJ
-Subject: [Osst-users] IC Search Engine - Allboms
+X-Headers-End: 1sflrG-0000bT-Ag
+Subject: [Osst-users] Innovative CNC Machining for Superior Products
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -106,266 +106,121 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: service@allboms.com
-Content-Type: multipart/mixed; boundary="===============7367502544088273379=="
+Reply-To: Business Systems Manager <info@promoldcreations.com>
+Content-Type: multipart/mixed; boundary="===============4867050552955330236=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multipart MIME message.
 
---===============7367502544088273379==
+--===============4867050552955330236==
 Content-Type: multipart/alternative;
-	boundary="------_=_NextPart_001_BED9882C.E140B3E7"
+ boundary="_=_swift_1724008575_ca5ebc7fe02a68d6f3129d489b1709ed_=_"
 
-This is a multipart MIME message.
 
---------_=_NextPart_001_BED9882C.E140B3E7
-Content-Type: text/html;
-	charset="us-ascii"
+--_=_swift_1724008575_ca5ebc7fe02a68d6f3129d489b1709ed_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+ Good afternoon Osst users,
+I trust that you are having a productive day.=
+
+
+Our manufacturing expertise encompasses a broad spectrum of
+technol=
+ogies, from rapid prototyping and CNC machining to injection
+molding, met=
+al casting, sheet metal fabrication, and 3D printing. Our
+design and engi=
+neering services provide a comprehensive solution for
+your product develo=
+pment needs, from initial idea to final production.
+
+Our manufacturing =
+capabilities extend far beyond just producing parts.
+In addition to our s=
+tate-of-the-art equipment and expertise, we offer
+a comprehensive suite o=
+f services such as assembly, finishing, and
+packaging that can help you s=
+treamline your supply chain and reduce
+costs. Our commitment to quality a=
+nd customer satisfaction ensures
+that we exceed your expectations at ever=
+y turn.
+
+Don't hesitate to reach out to us today and discover how our t=
+eam can
+assist you in streamlining your manufacturing operations and
+tr=
+ansforming your product visions into reality!
+
+Please let me know if th=
+ere is anything else I can assist you with.
+
+Very truly yours,
+Lean M=
+anufacturing Department - Eric Liu, Lean Analyst=20
+
+--_=_swift_1724008575_ca5ebc7fe02a68d6f3129d489b1709ed_=_
+Content-Type: text/html; charset=utf-8
 Content-Transfer-Encoding: quoted-printable
 
 <!DOCTYPE html>
-<html lang=3D"en">
-
-<head>
-  <meta charset=3D"UTF-8">
-  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
-1.0">
-  <title>Document</title>
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-    }
-
-    a {
-      text-decoration: none;
-      color: unset;
-    }
-
-    .banner_box {
-      background-color: #fff;
-      padding: 16px 0;
-      color: #333;
-      max-width: 800px;
-      margin: 0 auto;
-      position: relative;
-    }
-
-    .top_box {
-      padding: 0 50px;
-      margin-bottom: 20px;
-
-      img {
-        width: 94px;
-      }
-    }
-
-    p {
-      font-size: 12px;
-      line-height: 14px;
-    }
-
-    .introduce {
-      background-color: #242B3D;
-      padding: 58px 0 46px;
-      text-align: center;
-      color: #fff;
-
-      p {
-        margin-bottom: 8px;
-      }
-
-      h2 {
-        width: 605px;
-        margin: 0 auto 12px;
-        line-height: 24px;
-      }
-    }
-
-    .search_box {
-      padding: 0 50px 83px 50px;
-    }
-
-    .hot_search {
-      text-align: center;
-      margin-top: 46px;
-      display: block;
-      h3,
-      p {
-        line-height: 25px;
-      }
-    }
-
-    .input_box {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 46px;
-      border: 1px solid #DEE2E7;
-      margin: 12px 0;
-      padding: 0 7px 0 18px;
-      cursor: pointer;
-
-      img {
-        width: 24px;
-        margin-right: 9px;
-      }
-    }
-
-    .search_btn {
-      padding: 6px 16px;
-      color: #fff;
-      font-size: 14px;
-      border-radius: 2px;
-      background-color: #0762CB;
-    }
-
-    input {
-      border: 0;
-      flex: 1;
-      height: 100%;
-      outline: none;
-      font-size: 14px;
-    }
-
-    .hot_txt {
-      text-align: left;
-      font-size: 14px;
-
-      span {
-        padding: 4px 14px;
-        background-color: rgba(7, 98, 203, 0.12);
-        color: #0762CB;
-        border-radius: 29px;
-        font-size: 12px;
-        margin-left: 12px;
-      }
-    }
-
-    .foot_contact {
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      text-align: center;
-      color: #8A96A4;
-      border-top: 1px solid #DEE2E7;
-      a{
-        text-decoration: underline;
-        color: #0762CB;
-        font-size: 12px;
-        cursor: pointer;
-      }
-      p {
-        line-height: 25px;
-      }
-    }
-  </style>
+<html>
+<head><meta charset=3D"utf-8"/>
+=09<title>Inno=
+vative CNC Machining for Superior Products</title>
 </head>
-
-<body>
-  <div class=3D"banner_box">
-    <div class=3D"top_box">
-      <img src=3D"https://www.allboms.com/images/logo.png" alt=3D"">
-      <p>Allboms Is A Professional Search Engine For Electronic And Industr=
-ial Parts</p>
-      <p>ALLBOMS Is Considered One Of The Top Search Engines, Along With OC=
-TOPART And DIGIPART</p>
-    </div>
-    <div class=3D"introduce">
-      <h2>Welcome To ALLBOMS, Where You Can Access The Latest RFQ Supply An=
-d Demand Information</h2>
-      <p>Allboms Provides The Most Precise Substitute Material Information =
-In The Industry</p>
-      <p>ALLBOMS Offers The Fastest And Most Accurate Vendor Quotations In =
-The Industry</p>
-    </div>
-    <div class=3D"search_box">
-      <a class=3D"hot_search" href=3D"https://www.allboms.com/searchTransfe=
-r?uni_code=3D4dc6ad597fd8266364b89d17e8fdb84e&type=3D1">
-        <h3>Component Search</h3>
-        <p>Get The Latest Inventory And Pricing Information, Simplifying Pr=
-ocurement Decisions</p>
-        <div class=3D"input_box" target=3D"_blank">
-          <img src=3D"https://www.allboms.com/page_icon/search-line.png" al=
-t=3D"">
-          <input type=3D"text" placeholder=3D"Search by part number and sen=
-d inquiries to all suppliers">
-          <div class=3D"search_btn">
-            Search
-          </div>
-        </div>
-        <div class=3D"hot_txt">
-          Hot Search Keyword:
-          <span>NCB5-18GM40-NO-5M</span>
-          <span>NDB1L-32C-20-120V</span>
-          <span>NGTB25N120FL2WG</span>
-        </div>
-      </a>
-      <a class=3D"hot_search" href=3D"https://www.allboms.com/searchTransfe=
-r?uni_code=3D4dc6ad597fd8266364b89d17e8fdb84e&type=3D2">
-        <h3>Substitute Components Search</h3>
-        <p>A Key Tool For Optimizing The Supply Chain And Controlling Costs=
- - Substitute Component Types: Pin-Pin,Direct
-          ,Similar</p>
-        <div class=3D"input_box" target=3D"_blank">
-          <img src=3D"https://www.allboms.com/page_icon/search-pin2pin.png"=
- alt=3D"">
-          <input type=3D"text" placeholder=3D"Search for substitute, optimi=
-ze supply chain, and cut procurement costs">
-          <div class=3D"search_btn">
-            Search
-          </div>
-        </div>
-        <div class=3D"hot_txt">
-          Search PIN-PIN:
-          <span>VS-MBRB1635PBF</span>
-          <span>DS1821</span>
-          <span>NDB1L-32C-20-120V</span>
-        </div>
-      </a>
-      <a class=3D"hot_search" href=3D"https://www.allboms.com/searchTransfe=
-r?uni_code=3D4dc6ad597fd8266364b89d17e8fdb84e&type=3D3">
-        <h3>PDF Search</h3>
-        <p>Download Pdf Files And Quickly View Detailed Technical Specifica=
-tions</p>
-        <div class=3D"input_box" target=3D"_blank">
-          <img src=3D"https://www.allboms.com/page_icon/search-pdf.png" alt=
-=3D"">
-          <input type=3D"text" placeholder=3D"Search PDFs, find components =
-datasheets and technical documents">
-          <div class=3D"search_btn">
-            Search
-          </div>
-        </div>
-        <div class=3D"hot_txt">
-          Search PDF:
-          <span>RJFTV6MG</span>
-          <span>EL3024</span>
-          <span>FZT853TA</span>
-        </div>
-      </a>
-    </div>
-    <div class=3D"foot_contact">
-      <p>Homepage : https://www.allboms.com</p>
-      <p>E-Mail : service@allboms.com</p>
-      <a href=3D"https://www.allboms.com/unsubscribeUser?uni_code=3D4dc6ad5=
-97fd8266364b89d17e8fdb84e" target=3D"_blank">Unsubscribe</a>
-    </div>
-  </div>
-</body>
-
+<body data-a=
+utofill-highlight=3D"false">Good afternoon Osst users,<br />
+I trust that=
+ you are having a productive day.<br />
+<br />
+Our manufacturing expert=
+ise encompasses a broad spectrum of technologies, from rapid prototyping an=
+d CNC machining to injection molding, metal casting, sheet metal fabricatio=
+n, and 3D printing. Our design and engineering services provide a comprehen=
+sive solution for your product development needs, from initial idea to fina=
+l production.<br />
+<br />
+Our manufacturing capabilities extend far be=
+yond just producing parts. In addition to our state-of-the-art equipment an=
+d expertise, we offer a comprehensive suite of services such as assembly, f=
+inishing, and packaging that can help you streamline your supply chain and =
+reduce costs. Our commitment to quality and customer satisfaction ensures t=
+hat we exceed your expectations at every turn.<br />
+<br />
+Don't hesit=
+ate to reach out to us today and discover how our team can assist you in st=
+reamlining your manufacturing operations and transforming your product visi=
+ons into reality!<br />
+<br />
+Please let me know if there is anything =
+else I can assist you with.<br />
+<br />
+Very truly yours,<br />
+Lean=
+ Manufacturing Department - Eric Liu, Lean Analyst<scroll-to-top-button-con=
+tainer data-position-horizontal=3D"right" data-position-vertical=3D"bottom"=
+ data-state-active=3D""> <noscript>
+<style type=3D"text/css">scroll-to-to=
+p-button-container { display: none !important; }
+</style>
+</noscript> <=
+/scroll-to-top-button-container></body>
 </html>
---------_=_NextPart_001_BED9882C.E140B3E7--
+
+--_=_swift_1724008575_ca5ebc7fe02a68d6f3129d489b1709ed_=_--
 
 
---===============7367502544088273379==
+
+--===============4867050552955330236==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7367502544088273379==
+--===============4867050552955330236==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -376,5 +231,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7367502544088273379==--
+--===============4867050552955330236==--
+
 
