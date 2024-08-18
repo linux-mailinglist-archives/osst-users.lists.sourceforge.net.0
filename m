@@ -2,131 +2,99 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9383895595D
-	for <lists+osst-users@lfdr.de>; Sat, 17 Aug 2024 21:13:06 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id AA4F2955AA0
+	for <lists+osst-users@lfdr.de>; Sun, 18 Aug 2024 05:01:18 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sfOrK-0007yi-0N
+	id 1sfWAP-0003eq-0C
 	for lists+osst-users@lfdr.de;
-	Sat, 17 Aug 2024 19:13:05 +0000
+	Sun, 18 Aug 2024 03:01:17 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <contato@swdmkt1.com.br>) id 1sfOrI-0007yb-86
- for osst-users@lists.sourceforge.net; Sat, 17 Aug 2024 19:13:03 +0000
+ (envelope-from <allboms5@plc7.top>) id 1sfWAM-0003eX-LX
+ for osst-users@lists.sourceforge.net; Sun, 18 Aug 2024 03:01:14 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Reply-To:From:Date:Subject:To:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Subject:Reply-To:To:From:
+ Date:Message-ID:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=OGT2oqaHuL0yY3bhM7X+cGQgbsU6GXDrRbjLpJiDWsc=; b=GD43b625vuMYSzUlZilmoCnSC9
- k8DSY/nYbCgj4vzsj4NB/DcW2RfFxcbPnKAX6DUnJyyPi+zRMnmC4w/yVD0g1JucQo3YW8P1ar/Zu
- bNJIAjjVFQmBQPSX+3vsnUqQSTadeHBgOSFgKpzaIP9+jl3QuQ83JK1Taf5cB+tweIRo=;
+ bh=1XMcW1KiYJRz/VqBudk9v67X8D9RrnU7mm3AAArj0M8=; b=HN7B3axRboEE/jO89xOFgmn8dX
+ khEJlcwVBRFvk/VGi2iJmwqMM/pUaDA0KH5TQ+ZEiJN5lBvg3Q6WlBSrKAv+EGKYi+V9gGzd+6CoJ
+ GJ6CegMH2oBdRTJvYKpQPdVSxklKtbkj3vpVebwiD/dvtpwaZWCgukQKZRcCXVkthinw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Reply-To:
- From:Date:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Type:MIME-Version:Subject:Reply-To:To:From:Date:Message-ID:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=OGT2oqaHuL0yY3bhM7X+cGQgbsU6GXDrRbjLpJiDWsc=; b=G
- SYOmkjETOcjgN6Walo6H/n0F4+R2GpZPrO8Xh1ayUCaYC1zVuaf/O0AfOSg26T7CfKfSgdMgSV1bG
- SQEDPRGlQp3kDnzn44EXVDYTegBQKIgq3sNDcftiqidWPIoLz35z0Twqx1c4HC2coyv9V1Z3Ospz8
- IAY8G9TRCrYAOuIM=;
-Received: from smtp.swdmkt1.com.br ([51.158.24.140])
+ List-Owner:List-Archive; bh=1XMcW1KiYJRz/VqBudk9v67X8D9RrnU7mm3AAArj0M8=; b=j
+ QuM/RsJG2PoSzJo8Af1AQPyTtltMrfHL9GYpne6ggyCiNVO1D4bu2cs+3XBgbcPjE/FZI/MJsspHM
+ hhUZgqAVhFpbsfRlfxfHRFbHuoIZlyWvWK9hrhshC2iHL7ky7m+xUhs6w1Q3/d3Sgmui1Zze1uZPw
+ AAbxZvdrD7EMcCgc=;
+Received: from out28-134.mail.aliyun.com ([115.124.28.134])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sfOrG-00043b-J0 for osst-users@lists.sourceforge.net;
- Sat, 17 Aug 2024 19:13:03 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=swdmkt1.com.br; s=default; h=Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Reply-To:From:Date:Subject:To:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=OGT2oqaHuL0yY3bhM7X+cGQgbsU6GXDrRbjLpJiDWsc=; b=RtNvkCI6DiDJ8OYFBwjsYIF9C7
- lgkSvEBZBuR6P8gst1h8x7CrmoTCI3evUwFmMt0+BYZgv7Vu7wna5cL8JvmdS0UXMttd3xjvwn1+u
- iz2XKAYOVubTDpxD7bnpgPIP+rbjkcI1AQG5N7bIzHHrVYqYCoGq+70XG93mywTIXF7NfB617Vzuq
- cjJVFnY4GNZ5qVf/wNRlP2VJjf7wdPs8Dn+DuX+zYg9//KuOOaj1HXvUyoriARYJsENa3qYEUJrAq
- ++mvmettNbZk8glvt+z0+yawmtyzK66gLQUQx7R41pY9uX8p+sqF6N7REeBw7JWN6Kh0AERZOGEH3
- 5eGWO+1g==;
-Received: from swdmktc1 by server.cinzavt.com.br with local (Exim 4.97.1)
- (envelope-from <contato@swdmkt1.com.br>) id 1sfOr4-000000074gD-4BCj
- for osst-users@lists.sourceforge.net; Sat, 17 Aug 2024 16:12:51 -0300
-To: osst-users@lists.sourceforge.net
-X-PHP-Originating-Script: 1187:PHPMailer.php
-Date: Sat, 17 Aug 2024 16:12:50 -0300
-From: =?UTF-8?Q?Andr=C3=A9_Neder?= <contato@swdmkt1.com.br>
-Message-ID: <M7b78VxvIYAN5guyphB2My3hxlD0ocMXQM20sfpgJM@server.cinzavt.com.br>
+ id 1sfWAK-0007kH-HJ for osst-users@lists.sourceforge.net;
+ Sun, 18 Aug 2024 03:01:14 +0000
+Received: from desktop-gd3ppt0(mailfrom:allboms5@plc7.top
+ fp:SMTPD_---.YvAdD9n_1723950055) by smtp.aliyun-inc.com;
+ Sun, 18 Aug 2024 11:00:56 +0800
+Message-ID: <6483287e87fab5eedd6d9d04a70de6a0@desktop-gd3ppt0>
+Date: Sun, 18 Aug 2024 11:00:56 +0800
+From: <allboms5@plc7.top>
+To: <osst-users@lists.sourceforge.net>
+X-Mailer: AutoMate
 X-Priority: 3
-X-Mailer: PHPMailer 6.8.1 (https://github.com/PHPMailer/PHPMailer)
+Sensitivity: private
 MIME-Version: 1.0
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - server.cinzavt.com.br
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [1187 974] / [47 12]
-X-AntiAbuse: Sender Address Domain - swdmkt1.com.br
-X-Get-Message-Sender-Via: server.cinzavt.com.br: authenticated_id:
- swdmktc1/from_h
-X-Authenticated-Sender: server.cinzavt.com.br: contato@swdmkt1.com.br
-X-Source: 
-X-Source-Args: /opt/cpanel/ea-php80/root/usr/bin/php-cgi
- /home/swdmktc1/public_html/artisan schedule:run 
-X-Source-Dir: swdmkt1.com.br:/public_html
-X-Spam-Score: 5.5 (+++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+X-Spam-Score: -0.9 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Seu cliente de email não pode ler esta mensagem. Para visualizá-la
-    online, por favor, acesse este link: http://swdmkt1.com.br/newsletters/web/show/21/1248051
-    Para parar de receber nossos conteúdo acesse o link: http://swdmkt1.com.br/contacts/unsubscribe/1248051/10/21
-    <img border="0" src="http://swdmkt1.com.br/tracker/open/1248051/21/te/image.png"
-    width="1 [...] 
- 
- Content analysis details:   (5.5 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview: Document Allboms Is A Professional Search Engine For
+ Electronic
+ And Industrial Parts ALLBOMS Is Considered One Of The Top Search Engines,
+ Along With OCTOPART And DIGIPART 
+ Content analysis details:   (-0.9 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
-                             blocked.  See
-                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
-                              for more information.
-                             [URIs: swdmkt1.com.br]
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
-                             blocklist
-                             [URIs: swdmkt1.com.br]
-  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                          [51.158.24.140 listed in sa-trusted.bondedsender.org]
-  2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
-                             [51.158.24.140 listed in psbl.surriel.com]
-  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                             [51.158.24.140 listed in bl.score.senderscore.com]
+ 0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+ blocked.  See
+ http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+ for more information. [URIs: allboms.com]
+ 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [115.124.28.134 listed in bl.score.senderscore.com]
+ 0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
+ The query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [115.124.28.134 listed in sa-accredit.habeas.com]
+ -5.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at https://www.dnswl.org/,
+ high trust [115.124.28.134 listed in list.dnswl.org]
  -0.0 SPF_PASS               SPF: sender matches SPF record
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  1.0 HTML_IMAGE_ONLY_16     BODY: HTML: images with 1200-1600 bytes of
-                             words
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
-                             author's domain
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
  -0.0 T_SCC_BODY_TEXT_LINE   No description available.
-X-Headers-End: 1sfOrG-00043b-J0
-Subject: Re: [Osst-users] =?utf-8?b?QXByZXNlbnRhw6fDo28=?=
+ 0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay
+ lines
+ 0.0 MIME_HTML_ONLY_MULTI   Multipart message only has text/html MIME
+ parts 2.0 FROM_SUSPICIOUS_NTLD_FP From abused NTLD
+ 0.5 FROM_SUSPICIOUS_NTLD   From abused NTLD
+ 0.8 FROM_FMBLA_NEWDOM28    From domain was registered in last 14-28
+ days
+X-Headers-End: 1sfWAK-0007kH-HJ
+Subject: [Osst-users] IC Search Engine - Allboms
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -138,57 +106,266 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: =?UTF-8?Q?Andr=C3=A9_Neder?= <contato@swdagencia.com.br>
-Content-Type: multipart/mixed; boundary="===============7860211860802733955=="
+Reply-To: service@allboms.com
+Content-Type: multipart/mixed; boundary="===============7367502544088273379=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============7860211860802733955==
+This is a multipart MIME message.
+
+--===============7367502544088273379==
 Content-Type: multipart/alternative;
- boundary="b1=_M7b78VxvIYAN5guyphB2My3hxlD0ocMXQM20sfpgJM"
-Content-Transfer-Encoding: 8bit
+	boundary="------_=_NextPart_001_BED9882C.E140B3E7"
 
---b1=_M7b78VxvIYAN5guyphB2My3hxlD0ocMXQM20sfpgJM
-Content-Type: text/plain; charset=UTF-8
-Content-Transfer-Encoding: 8bit
+This is a multipart MIME message.
 
-Seu cliente de email não pode ler esta mensagem.
-        
-Para visualizá-la online, por favor, acesse este link: http://swdmkt1.com.br/newsletters/web/show/21/1248051
-        
-Para parar de receber nossos conteúdo acesse o link: http://swdmkt1.com.br/contacts/unsubscribe/1248051/10/21
-<img border="0" src="http://swdmkt1.com.br/tracker/open/1248051/21/te/image.png" width="1" height="1" alt="Imagem" />
+--------_=_NextPart_001_BED9882C.E140B3E7
+Content-Type: text/html;
+	charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
 
---b1=_M7b78VxvIYAN5guyphB2My3hxlD0ocMXQM20sfpgJM
-Content-Type: text/html; charset=us-ascii
+<!DOCTYPE html>
+<html lang=3D"en">
 
-<p>Ol&aacute;, tudo bem?<br />
-<br />
-Meu nome &eacute; Andr&eacute; e o motivo do meu contato seria para apresentar a nossa empresa, hoje trabalhamos na &aacute;rea de desenvolvimentos de sites, sistemas web, aplicativos, lojas virtuais, impress&atilde;o gr&aacute;fica (Cart&otilde;es, Folders, Apresenta&ccedil;&otilde;es e muito mais) e agenciamento publicit&aacute;rio para crescimento e fortalecimento da marca, incluindo redes sociais, e-mail marketing e Google Ads.<br />
-<br />
-Caso tenha interesse retorne esse e-mail com seu telefone que entraremos em contato para esclarecer qualquer d&uacute;vida e desenvolver um or&ccedil;amento sem compromisso.<br />
-<br />
-Qualquer d&uacute;vida estamos &agrave; disposi&ccedil;&atilde;o.<br />
-&nbsp;<br />
-&nbsp;<br />
-Atenciosamente,</p>
+<head>
+  <meta charset=3D"UTF-8">
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
-<p></p>
+    a {
+      text-decoration: none;
+      color: unset;
+    }
 
-<p><img alt="" src="https://swdmkt1.com.br/storage/uploads/assinatura_1721069849_98196594.png" style="width: 831px; height: 256px;" /></p><br><center><a href="http://swdmkt1.com.br/contacts/unsubscribe/1248051/10/21" sb-type="unsubscribelink" style="font-family:Arial, Helvetica, sans-serif;color:#333333;font-size:11px;">Clique aqui para cancelar a assinatura</a></center><br><img border="0" src="http://swdmkt1.com.br/tracker/open/1248051/21/he/image.png" width="1" height="1" alt="Imagem" />
+    .banner_box {
+      background-color: #fff;
+      padding: 16px 0;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .top_box {
+      padding: 0 50px;
+      margin-bottom: 20px;
+
+      img {
+        width: 94px;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .introduce {
+      background-color: #242B3D;
+      padding: 58px 0 46px;
+      text-align: center;
+      color: #fff;
+
+      p {
+        margin-bottom: 8px;
+      }
+
+      h2 {
+        width: 605px;
+        margin: 0 auto 12px;
+        line-height: 24px;
+      }
+    }
+
+    .search_box {
+      padding: 0 50px 83px 50px;
+    }
+
+    .hot_search {
+      text-align: center;
+      margin-top: 46px;
+      display: block;
+      h3,
+      p {
+        line-height: 25px;
+      }
+    }
+
+    .input_box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 46px;
+      border: 1px solid #DEE2E7;
+      margin: 12px 0;
+      padding: 0 7px 0 18px;
+      cursor: pointer;
+
+      img {
+        width: 24px;
+        margin-right: 9px;
+      }
+    }
+
+    .search_btn {
+      padding: 6px 16px;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 2px;
+      background-color: #0762CB;
+    }
+
+    input {
+      border: 0;
+      flex: 1;
+      height: 100%;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .hot_txt {
+      text-align: left;
+      font-size: 14px;
+
+      span {
+        padding: 4px 14px;
+        background-color: rgba(7, 98, 203, 0.12);
+        color: #0762CB;
+        border-radius: 29px;
+        font-size: 12px;
+        margin-left: 12px;
+      }
+    }
+
+    .foot_contact {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      color: #8A96A4;
+      border-top: 1px solid #DEE2E7;
+      a{
+        text-decoration: underline;
+        color: #0762CB;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      p {
+        line-height: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class=3D"banner_box">
+    <div class=3D"top_box">
+      <img src=3D"https://www.allboms.com/images/logo.png" alt=3D"">
+      <p>Allboms Is A Professional Search Engine For Electronic And Industr=
+ial Parts</p>
+      <p>ALLBOMS Is Considered One Of The Top Search Engines, Along With OC=
+TOPART And DIGIPART</p>
+    </div>
+    <div class=3D"introduce">
+      <h2>Welcome To ALLBOMS, Where You Can Access The Latest RFQ Supply An=
+d Demand Information</h2>
+      <p>Allboms Provides The Most Precise Substitute Material Information =
+In The Industry</p>
+      <p>ALLBOMS Offers The Fastest And Most Accurate Vendor Quotations In =
+The Industry</p>
+    </div>
+    <div class=3D"search_box">
+      <a class=3D"hot_search" href=3D"https://www.allboms.com/searchTransfe=
+r?uni_code=3D4dc6ad597fd8266364b89d17e8fdb84e&type=3D1">
+        <h3>Component Search</h3>
+        <p>Get The Latest Inventory And Pricing Information, Simplifying Pr=
+ocurement Decisions</p>
+        <div class=3D"input_box" target=3D"_blank">
+          <img src=3D"https://www.allboms.com/page_icon/search-line.png" al=
+t=3D"">
+          <input type=3D"text" placeholder=3D"Search by part number and sen=
+d inquiries to all suppliers">
+          <div class=3D"search_btn">
+            Search
+          </div>
+        </div>
+        <div class=3D"hot_txt">
+          Hot Search Keyword:
+          <span>NCB5-18GM40-NO-5M</span>
+          <span>NDB1L-32C-20-120V</span>
+          <span>NGTB25N120FL2WG</span>
+        </div>
+      </a>
+      <a class=3D"hot_search" href=3D"https://www.allboms.com/searchTransfe=
+r?uni_code=3D4dc6ad597fd8266364b89d17e8fdb84e&type=3D2">
+        <h3>Substitute Components Search</h3>
+        <p>A Key Tool For Optimizing The Supply Chain And Controlling Costs=
+ - Substitute Component Types: Pin-Pin,Direct
+          ,Similar</p>
+        <div class=3D"input_box" target=3D"_blank">
+          <img src=3D"https://www.allboms.com/page_icon/search-pin2pin.png"=
+ alt=3D"">
+          <input type=3D"text" placeholder=3D"Search for substitute, optimi=
+ze supply chain, and cut procurement costs">
+          <div class=3D"search_btn">
+            Search
+          </div>
+        </div>
+        <div class=3D"hot_txt">
+          Search PIN-PIN:
+          <span>VS-MBRB1635PBF</span>
+          <span>DS1821</span>
+          <span>NDB1L-32C-20-120V</span>
+        </div>
+      </a>
+      <a class=3D"hot_search" href=3D"https://www.allboms.com/searchTransfe=
+r?uni_code=3D4dc6ad597fd8266364b89d17e8fdb84e&type=3D3">
+        <h3>PDF Search</h3>
+        <p>Download Pdf Files And Quickly View Detailed Technical Specifica=
+tions</p>
+        <div class=3D"input_box" target=3D"_blank">
+          <img src=3D"https://www.allboms.com/page_icon/search-pdf.png" alt=
+=3D"">
+          <input type=3D"text" placeholder=3D"Search PDFs, find components =
+datasheets and technical documents">
+          <div class=3D"search_btn">
+            Search
+          </div>
+        </div>
+        <div class=3D"hot_txt">
+          Search PDF:
+          <span>RJFTV6MG</span>
+          <span>EL3024</span>
+          <span>FZT853TA</span>
+        </div>
+      </a>
+    </div>
+    <div class=3D"foot_contact">
+      <p>Homepage : https://www.allboms.com</p>
+      <p>E-Mail : service@allboms.com</p>
+      <a href=3D"https://www.allboms.com/unsubscribeUser?uni_code=3D4dc6ad5=
+97fd8266364b89d17e8fdb84e" target=3D"_blank">Unsubscribe</a>
+    </div>
+  </div>
+</body>
+
+</html>
+--------_=_NextPart_001_BED9882C.E140B3E7--
 
 
---b1=_M7b78VxvIYAN5guyphB2My3hxlD0ocMXQM20sfpgJM--
-
-
-
---===============7860211860802733955==
+--===============7367502544088273379==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7860211860802733955==
+--===============7367502544088273379==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -199,6 +376,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7860211860802733955==--
-
+--===============7367502544088273379==--
 
