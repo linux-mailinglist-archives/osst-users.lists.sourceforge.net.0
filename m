@@ -2,78 +2,72 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id F414997BB8E
-	for <lists+osst-users@lfdr.de>; Wed, 18 Sep 2024 13:23:48 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 6A38A97DD52
+	for <lists+osst-users@lfdr.de>; Sat, 21 Sep 2024 15:10:01 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1sqsmh-0003Ez-Pz
+	id 1srzs7-0007Ya-F5
 	for lists+osst-users@lfdr.de;
-	Wed, 18 Sep 2024 11:23:47 +0000
+	Sat, 21 Sep 2024 13:10:00 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <www-data@v150-95-27-218.a00e.g.bkk1.static.cnode.io>)
- id 1sqsmf-0003Es-KJ for osst-users@lists.sourceforge.net;
- Wed, 18 Sep 2024 11:23:45 +0000
+ (envelope-from <www-data@mein.advanzia.com>) id 1srzs6-0007YT-Ft
+ for osst-users@lists.sourceforge.net; Sat, 21 Sep 2024 13:09:59 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
- Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=IRkFADwoE15FUXyBK8qoGHkOv/5BnFMZV94YdAZJCz0=; b=GtEHOJBB+M7AxMt8bqCfx95x5e
- 71sqSStw5uLkjgS6Abh3k9decWVBnYP6+ZfhbzgzHOmln/H6WfuTb/2lOcPWAbo2M7Tl3G/V1xF7R
- 4IPn8dctL7qQQ8hvziNyP8eUIKQOvps/4cqMLrEpNuFvYBwb07yPKY0udIC8x8XJUWYA=;
+ bh=7JEybOJOiDu28Nly+sZcZYNZaHX7A7677CmdZxHpJSk=; b=DjSxzlUHA37I7bzcNlMnF9w9z7
+ 2Rv25ubAFU0qx9pGF7c4ais4KfU1cS4of0ipjX6IzFIl5/FE6tVta6IVAWz+mUuAdHWZ39ovoPa2y
+ G5q48XSlJlaB8CPocaFUCGssdjyWKzOKr1E1WnZ0hbSx6NXVgwqHPwy9Aff8jYLxk13E=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
+ From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=IRkFADwoE15FUXyBK8qoGHkOv/5BnFMZV94YdAZJCz0=; b=O
- QgN7xZLVpmXKOjzIftUKq0ACTdxSF1pj7vk5blZuEHXH/uoo+Y3PELZ+KI3yOjmgpnfXTkRmQH2Kw
- UVP9dhqtPzCMRDiKzgMSUF5yio0y2kzpqbuIDU1yBL9orBs34ZumZXqQ8RS4uZfUKXDf4ozABRbCo
- psZgc0KrM9p9CopY=;
-Received: from v150-95-27-218.a00e.g.bkk1.static.cnode.io ([150.95.27.218])
+ List-Owner:List-Archive; bh=7JEybOJOiDu28Nly+sZcZYNZaHX7A7677CmdZxHpJSk=; b=d
+ pcyl4/oJcqEvsME/b4BSqzuyNH+n8LtfX3DhqlbMtwZzVSlNJZPb0YJ8S+8pyLzhEIjij5ZTVcu5r
+ MwqkZqn7xwIsjsclwmxgSy/uL92hdsDp+Zlobgc9nhfl8CO4hzmxqSF9EhWZxqSidv4tHE+lZFn08
+ v6JGy/1FTR1BObCU=;
+Received: from [194.54.164.62] (helo=mein.advanzia.com)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1sqsme-0000t5-8S for osst-users@lists.sourceforge.net;
- Wed, 18 Sep 2024 11:23:45 +0000
-Received: by v150-95-27-218.a00e.g.bkk1.static.cnode.io (Postfix,
- from userid 33) id D5006E5FA5; Wed, 18 Sep 2024 18:08:42 +0700 (+07)
+ id 1srzs6-0007O8-EU for osst-users@lists.sourceforge.net;
+ Sat, 21 Sep 2024 13:09:59 +0000
+Received: by mein.advanzia.com (Postfix, from userid 33)
+ id 544AF449F5; Sat, 21 Sep 2024 13:01:03 +0000 (UTC)
+Date: Sat, 21 Sep 2024 12:52:13 +0000
 To: osst-users@lists.sourceforge.net
+From: Miles&More Kreditkarte-App <info@binero.net>
+Message-ID: <cf3b71a14db7248146d10c3ae31f9b40@binero.net>
 MIME-Version: 1.0
-From: Magalu <pravoce11@v150-95-27-218.a00e.g.bkk1.static.cnode.io>
-Message-Id: <20240918110842.D5006E5FA5@v150-95-27-218.a00e.g.bkk1.static.cnode.io>
-Date: Wed, 18 Sep 2024 18:08:42 +0700 (+07)
-X-Spam-Score: 4.6 (++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+X-Spam-Score: 3.4 (+++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Preços exclusivos no e-mail :) política de privacidade |
-    descadastre-se Smart TV 50” UHD 4K LED Samsung 50DU7700 - Wi-Fi Bluetooth
-    Alexa 3 HDMI, Controle Único 
- 
- Content analysis details:   (4.6 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  body { font-family: 'Arial', sans-serif; background-color:
+ #f5f5f5; /* Helle graue Hintergrundfarbe */ color: #333; /* Dunkle Textfarbe
+ */ display: flex; justify-content: center; align-items: center; [...] 
+ Content analysis details:   (3.4 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 LOTS_OF_MONEY          Huge... sums of money
-  3.0 HOSTED_IMG_MULTI_PUB_01 Multiple hosted images at public site
-  1.5 CONTENT_AFTER_HTML_WEAK More content after HTML close tag
-X-Headers-End: 1sqsme-0000t5-8S
-Subject: [Osst-users] Feliz Niver Magalu: Smart TV 4K 50'' Samsung - Por
- Apenas: R$ 1.339, 90 - Smart TV 4K 43'' Samsung - Por Apenas: R$ 1.099,
- 05 - Smart TV 4K 32'' Samsung - Por Apenas: R$ 698,
- 99 - APROVEITE  - [ 260442337540  ]
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+ mail domains are different
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 1.9 SUBJ_LACKS_WORDS       Subject is not short yet lacks words
+X-Headers-End: 1srzs6-0007O8-EU
+Subject: [Osst-users] Benachrichtigung
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -85,296 +79,245 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5467178302708110054=="
+Content-Type: multipart/mixed; boundary="===============1653705959945587653=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5467178302708110054==
-Content-type: text/html; charset=utf-8
+This is a multi-part message in MIME format.
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns=http://www.w3.org/1999/xhtml>
+--===============1653705959945587653==
+Content-Type: multipart/alternative;
+	boundary="1108874af5627bab76f58162fefbacfc7"
+Content-Transfer-Encoding: 8bit
 
-<head>
-    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
-    <meta name=x-apple-disable-message-reformatting>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style type=text/css>
-        body {
-            font-size: 0;
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
+This is a multi-part message in MIME format.
+
+--1108874af5627bab76f58162fefbacfc7
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+
+
+
+	
+	
+	body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /* Helle graue Hintergrundfarbe */
+            color: #333; /* Dunkle Textfarbe */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-        /* bugfix iOS: remove o background da imagem depois que carregou, pra evitar bugs de renderizacao */
-        
-        img[src^="http"] {
-            background: transparent;
+
+        .letter-box {
+            border: 4px solid #00447c; /* Deutsche Bank Blaufarbe */
+            padding: 30px;
+            max-width: 500px;
+            text-align: center;
+            margin: auto;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            background: #fff; /* WeiÃŸer Hintergrund */
+            border-radius: 15px;
         }
-        
-        a,
-        p,
-        span,
-        div {
+
+        .logo {
+            width: 250px; /* Logo-GrÃ¶ÃŸe anpassen */
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #00447c; /* Deutsche Bank Blaufarbe fÃ¼r Ãœberschriften */
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #555;
+        }
+
+        .update-text {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #555; /* Etwas dunklere Textfarbe */
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #00447c; /* Deutsche Bank Blaufarbe fÃ¼r den Button */
+            color: #fff; /* WeiÃŸe Textfarbe fÃ¼r den Button */
             text-decoration: none;
-            font-family: 'Trebuchet MS', 'Arial', sans-serif !important;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out;
+            font-size: 18px;
         }
-    </style>
+
+        .button:hover {
+            background: #00274d; /* Dunkleres Blau beim Hover */
+        }
+	
+	Deutsche Bank Brief
+
+
+
+
+Sehr geehrter, geschätzter Kunde,
+
+Wir hoffen, dass es Ihnen gut geht!
+
+Wir möchten Sie über wichtige Aktualisierungen bezüglich Ihrer Kontoinformationen informieren. Um sicherzustellen, dass Ihre Angaben korrekt sind und um zukünftige Unannehmlichkeiten zu vermeiden, bitten wir Sie, auf den untenstehenden Button zu klicken und Ihre Informationen zu aktualisieren.
+
+Wichtige Hinweise:
+Datenschutz: Ihre Daten sind bei uns sicher. Wir verwenden die neuesten Sicherheitsmaßnahmen, um Ihre Informationen zu schützen.
+Fristen: Bitte aktualisieren Sie Ihre Angaben bis spätestens [01/10/2024], um einen reibungslosen Service zu gewährleisten.
+
+
+Jetzt Informationen aktualisieren 
+
+
+Vielen Dank für Ihre Aufmerksamkeit und Ihr Vertrauen in uns!
+
+Mit freundlichen Grüßen,
+
+
+ 
+
+
+
+
+--1108874af5627bab76f58162fefbacfc7
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<style type="text/css">body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /* Helle graue Hintergrundfarbe */
+            color: #333; /* Dunkle Textfarbe */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .letter-box {
+            border: 4px solid #00447c; /* Deutsche Bank Blaufarbe */
+            padding: 30px;
+            max-width: 500px;
+            text-align: center;
+            margin: auto;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            background: #fff; /* WeiÃŸer Hintergrund */
+            border-radius: 15px;
+        }
+
+        .logo {
+            width: 250px; /* Logo-GrÃ¶ÃŸe anpassen */
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #00447c; /* Deutsche Bank Blaufarbe fÃ¼r Ãœberschriften */
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #555;
+        }
+
+        .update-text {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #555; /* Etwas dunklere Textfarbe */
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #00447c; /* Deutsche Bank Blaufarbe fÃ¼r den Button */
+            color: #fff; /* WeiÃŸe Textfarbe fÃ¼r den Button */
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out;
+            font-size: 18px;
+        }
+
+        .button:hover {
+            background: #00274d; /* Dunkleres Blau beim Hover */
+        }
+	</style>
+	<title>Deutsche Bank Brief</title>
 </head>
+<body>
+<div class="letter-box"><img alt="" src="https://play-lh.googleusercontent.com/UgwvMV4RYkSQHAZnX5tMw_0JvUw_r-RMH9OdrJ4nT9BlLw8Hj-L_P4XUMwNT1DDAZL3L" style="width: 120px; height: 120px;" />
+<div class="update-text">
+<p><span style="font-size:14px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Sehr geehrter, geschätzter Kunde,</span></span></p>
 
-<body align=center bgcolor=#0086ff cellspacing=0 cellpadding=0 topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 data-pinterest-extension-installed=cr1.3.4 style="text-decoration: none; -ms-text-size-adjust: 100%; font-size: 100%; -webkit-text-size-adjust: 100%; background-color: #fff; font-size: 100%; font-family: 'arial'!important; text-align: center; margin:0; padding:0; width:100%; -webkit-font-smoothing: antialiased; width: 100%!;">
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom">
-                                    <br><font color=#0087ff size=3><b>Pre&ccedil;os exclusivos no e-mail :)</b></font>
-                                    <br>
-                                    <div style="height: 6px;"></div><font color=#847870 size=2><a rilt="política de privacidade" href=https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/ target=_blank style="color: #939393"><b>pol&iacute;tica de privacidade</b></a> | <a rilt=descadastre-se href="https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/" target=_blank style="color: #939393"><b>descadastre-se</b></a></font>
-                                    <br>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://i.imgur.com/DJZddlv.png  border=0 alt="top banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
+<p><span style="font-size:14px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Wir hoffen, dass es Ihnen gut geht!</span></span></p>
 
+<p><span style="font-size:14px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Wir möchten Sie über <strong>wichtige Aktualisierungen</strong> bezüglich Ihrer Kontoinformationen informieren. Um sicherzustellen, dass Ihre Angaben korrekt sind und um zukünftige Unannehmlichkeiten zu vermeiden, bitten wir Sie, auf den untenstehenden Button zu klicken und Ihre Informationen zu aktualisieren.</span></span></p>
 
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://s.mlcdn.com.br/banner/campanhas/Mobile_LargeMobile_1_Campanha_07-09-2024_aniversariomagalu.png border=0 alt style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-	<br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                           
-                          
-                          
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="https://abrir.link/jSoqc"><img src=https://a-static.mlcdn.com.br/618x463/smart-tv-50-4k-uhd-led-samsung-50du7700-wi-fi-bluetooth-alexa-3-hdmi/magazineluiza/238245000/4bef868e0fa1f8dd2fdb4e1dfcc47526.jpg width=390px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Magalu"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://abrir.link/jSoqc" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 50&rdquo; UHD 4K LED Samsung 50DU7700 - Wi-Fi Bluetooth Alexa 3 HDMI, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;2.499,99</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.339,90 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista </p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center> <p>
-                        </tbody></table><center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://abrir.link/jSoqc" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<p><span style="font-size:14px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;"><strong>Wichtige Hinweise</strong>:<br />
+<strong>Datenschutz</strong>: Ihre Daten sind bei uns sicher. Wir verwenden die neuesten Sicherheitsmaßnahmen, um Ihre Informationen zu schützen.<br />
+<strong>Fristen</strong>: Bitte aktualisieren Sie Ihre Angaben bis spätestens [<strong>01/10/2024</strong>], um einen reibungslosen Service zu gewährleisten.</span></span></p>
+</div>
 
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-                                                    <a href="https://abrir.link/yQfzl"><img src=https://a-static.mlcdn.com.br/618x463/smart-tv-43-uhd-4k-led-samsung-43du7700-wi-fi-bluetooth-alexa-3-hdmi/magazineluiza/238243700/196f04db766975acf84f1e9c03bae9d8.jpg width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV 4K Crystal UHD 58"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://abrir.link/yQfzl" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 43&rdquo; UHD 4K LED Samsung 43DU7700 - Wi-Fi Bluetooth Alexa 3 HDMI, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;1.988,79</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.099,05 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://abrir.link/yQfzl" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
-<br>
-                                                    <p><a href="https://abrir.link/AGeWP"><img src=https://i.imgur.com/0lZdEoD.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV Full HD LED 43” Samsung 43T5300A"></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://abrir.link/AGeWP" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV UHD 4k LED 32&rdquo; Samsung T4300 - Wi-Fi - HDR - 2 HDMI - 1 USB, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 1.038,19</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 698,99 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
-                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://abrir.link/AGeWP" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
-                                                </td>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                </td>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src= border=0 alt="">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
-                                    <img src=https://s.mlcdn.com.br/banner/campanhas/Mundo_Topofertas_campanha_liquidademilhoes_08-07-2024_topofertas.png border=0 alt="bottom banner" style="max-width: 640px;">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
-        <tbody>
-            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
-                <td valign=top>
-                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
-                        <tbody>
-                            <tr>
-                                <td style=padding-right:20px;padding-left:20px;padding-top:0;padding-bottom:0;text-align:center;><font color=#5a5a5a size=2> As ofertas valem apenas para o dia de recebimento deste e-mail nas compras feitas online ou por Televendas. Os pre&ccedil;os podem sofrer altera&ccedil;&otilde;es ao longo do dia e enquanto durarem os estoques. <br><br><b>*</b>Confira nosso regulamento de Desconto e Frete. <br><br> Contato Televendas: Regi&atilde;o Metropolitana de S&atilde;o Paulo | 0800 773 3838 <br> Outras regi&otilde;es: procure a cidade mais pr&oacute;xima de voc&ecirc;.<br> Hor&aacute;rio de atendimento: de segunda a sexta, das 8h30 &agrave;s 22h / aos s&aacute;bados e domingos, das 9h &agrave;s 22h (exceto feriados) <br><br> Ficou com d&uacute;vidas? Acesse nossa <a rilt="central de atendimento" >Central de Atendimento</a> :) <br><br> Ah! E cadastre o e-mail personalizado@paravoce.<wbr>magazineluiza.com.br na sua lista de contatos pra receber sempre as nos
- sas melhores ofertas! <br><br><b>pol&iacute;tica de privacidade</b></a> | <b>descadastre-se</b></a><br><br></font></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+<div class="button-container"><span style="font-size:12px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;"><a class="button" href="https://email.notify.thinkific.com/c/eJwUyk2OrCAQAODTwE4DxV-xYPE2fQ1TUnSatIhPmHj9yew_TpTfQCBL0j4GbWPUQX7Sbo3Coh16VC5osBwMRA1YnHqbSLIm7wCDYXbkKW7BOuW8t6gdmiisGpXLt_5fjv4s-57R5uh5gQe_19qoHvJInzmvIcw_AS8Br0btrExM4Nfcm7xTHX_w7GPeBMKq6-6zn2srcqZRZ9mecuTeynbdnX_yrP38DQAA__-M_EAM">Jetzt Informationen aktualisieren </a></span></span></div>
+
+<div class="update-text">
+<p><span style="font-size:14px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Vielen Dank für Ihre Aufmerksamkeit und Ihr Vertrauen in uns!</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">Mit freundlichen Grüßen,</span></span></p>
+</div>
+
+<footer> </footer>
+</div>
 </body>
+</html>
 
-</html>18/09/2024 06:08:42
 
 
---===============5467178302708110054==
+--1108874af5627bab76f58162fefbacfc7--
+
+
+--===============1653705959945587653==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5467178302708110054==
+--===============1653705959945587653==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -385,4 +328,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5467178302708110054==--
+--===============1653705959945587653==--
+
