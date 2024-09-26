@@ -2,100 +2,81 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id E8718986CF8
-	for <lists+osst-users@lfdr.de>; Thu, 26 Sep 2024 08:55:53 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 442EC9878DE
+	for <lists+osst-users@lfdr.de>; Thu, 26 Sep 2024 20:09:35 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1stiPo-00068N-4G
+	id 1stsvj-0002ZC-A6
 	for lists+osst-users@lfdr.de;
-	Thu, 26 Sep 2024 06:55:52 +0000
+	Thu, 26 Sep 2024 18:09:31 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <root@pkanjkqgx.jhpqccunbcjkeo.com.br>)
- id 1stiPm-000687-Ea for osst-users@lists.sourceforge.net;
- Thu, 26 Sep 2024 06:55:50 +0000
+ (envelope-from <www-data@v163-44-196-121.a001.g.bkk1.static.cnode.io>)
+ id 1stsvg-0002Yr-Tu for osst-users@lists.sourceforge.net;
+ Thu, 26 Sep 2024 18:09:28 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:
- Content-Transfer-Encoding:Content-type:MIME-Version:Sender:Reply-To:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=LownK2XflqwcFIH0ZkgY7fShhKi1l7mBXncuQJaLnho=; b=iXga+aIUkJJYJVPF4nyLK4UdRK
- 1hgNTTichrVwS2pHKoa+5AzwqEiPFRQI0ZxrY0ssy3fdCGDWd1/fW2zH3dfs8pButPwTwDPhDSXUy
- FOS+tJitJg/qXcr875zjzOIo/uc47TRyGLOXLK0A12yhChlNuZlVFhD9dJiIVwV2cICE=;
+ d=sourceforge.net; s=x; h=Date:Message-Id:From:Content-type:MIME-Version:
+ Subject:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=ibcuxnk1TQU04VvK3ikjnX0zQ3Cuo0uqmucGFSq02EU=; b=b0K5msoQtNh8pCsqfD/TKsg1oQ
+ GE+JOj3aNWOh7hh+fNL8i+mm1D57vY/we+PzFPLC0JP22yTaJFQ9u3g3ldXhLJVoFcehsWZoRNdXe
+ KeFC4X9QWQr3G2xHJ6hQmTosW/Wv1kC1bFnPfy2ZZh2E3XMDRMU0dJZr7mH4X4UwkW7s=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:To:From:Subject:Content-Transfer-Encoding:Content-type:
- MIME-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Date:Message-Id:From:Content-type:MIME-Version:Subject:To:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=LownK2XflqwcFIH0ZkgY7fShhKi1l7mBXncuQJaLnho=; b=h
- qfsTPpp7Ps4BtMXDYihhuoaQNbDlraYYi4JBiYDYMLvf3tiSbCAlMHKbVQtXltTDwqumd9VJAeBJZ
- 3FnfmVhMAQY6jSt96Pp1bKnL+31htSAp4s+yj//ENblFLnEeJHoYxvWUbzrgRai3B/C/6e8xpDLHv
- FgNSKXDuFvZzaScM=;
-Received: from vps-53683c2a.vps.ovh.net ([57.129.62.22]
- helo=pkanjkqgx.jhpqccunbcjkeo.com.br)
+ List-Owner:List-Archive; bh=ibcuxnk1TQU04VvK3ikjnX0zQ3Cuo0uqmucGFSq02EU=; b=S
+ VNleMvdvQe53M5YRtXs7CyFby+7ulQhmBbPHzD9m8zN8wR8kFD7/U3ZZcfZfeu+DhOlRS4YxSO/L0
+ qQxTPQoaZkXbaGnS+Ut3wbRohs5RB/c75PKXOdPJ91SfCByPBY3VLydk3epa4gCwMJy8rcVJeBg0p
+ 6hwTS6G43G0U0Pzo=;
+Received: from v163-44-196-121.a001.g.bkk1.static.cnode.io ([163.44.196.121])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1stiPk-0003ia-BQ for osst-users@lists.sourceforge.net;
- Thu, 26 Sep 2024 06:55:50 +0000
-Received: by pkanjkqgx.jhpqccunbcjkeo.com.br (Postfix, from userid 0)
- id 328B247F60; Thu, 26 Sep 2024 05:13:51 +0000 (UTC)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=bradesco.com.br;
- s=default; t=1727329970;
- bh=LownK2XflqwcFIH0ZkgY7fShhKi1l7mBXncuQJaLnho=;
- h=Subject:From:To:Date;
- b=jgnETrrjAigwbgjbYM492nkGPpWoGdCKWZuudB/pMUSf6w1YAcpnxgD2txT5B887J
- Xw1CrgQUNbFz31Cj/2CuvLNwcd867pVddVGQGwvtbWkptUSoixQJOsa1VbPa3J5LBC
- PJM9k2n1SvNw0Y32wVhZXCaPh+CbXx4CjhFCMVOl7o4XjSKynf3vY0r4CsiiXEg9Y4
- UYbIuiuzmNJYsn8xiqPdP40fowIEDS8ZAhs6c7itdGWKOe5zhdXhs0+eaAnPLCtDp6
- VUIr6yRflAdSePQFRPOVI2488YrDg3vq88N8oh1005cIQ9sNXddA4g3VQ/OuFnJysn
- IJ9RE4Io1pd2w==
-MIME-Version: 1.0
-From: prime@bradesco.com.br
+ id 1stsvf-000519-8g for osst-users@lists.sourceforge.net;
+ Thu, 26 Sep 2024 18:09:28 +0000
+Received: by v163-44-196-121.a001.g.bkk1.static.cnode.io (Postfix,
+ from userid 33) id 7D247AA06A; Fri, 27 Sep 2024 00:49:41 +0700 (+07)
 To: osst-users@lists.sourceforge.net
-Message-Id: <20240926055250.328B247F60@pkanjkqgx.jhpqccunbcjkeo.com.br>
-Date: Thu, 26 Sep 2024 05:13:51 +0000 (UTC)
-X-Spam-Score: 7.9 (+++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
+MIME-Version: 1.0
+From: Magalu <personalizado40@v163-44-196-121.a001.g.bkk1.static.cnode.io>
+Message-Id: <20240926174941.7D247AA06A@v163-44-196-121.a001.g.bkk1.static.cnode.io>
+Date: Fri, 27 Sep 2024 00:49:41 +0700 (+07)
+X-Spam-Score: 2.9 (++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  ﻿ Parabéns, você foi selecionado para se tornar um cliente
-    Bradesco Prime Digital! N° DE PROTOCOLO 5130489/2024 EMAIL CADASTRADO osst-users@lists.sourceforge.net
-    DATA DO CONVITE 26/09/2024 VALIDADE DO CONVITE 30 DIAS 
+ Content preview:  Preços exclusivos no e-mail :) política de privacidade |
+    descadastre-se Smart TV 50” UHD 4K LED Samsung 50DU7700 - Wi-Fi Bluetooth
+    Alexa 3 HDMI, Controle Único 
  
- Content analysis details:   (7.9 points, 6.0 required)
+ Content analysis details:   (2.9 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
-                             [URIs: direcprimviva.com]
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
-                             blocklist
-                             [URIs: direcprimviva.com]
-  2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
-                             blocklist
-                             [URIs: direcprimviva.com]
-  0.4 NO_DNS_FOR_FROM        DNS: Envelope sender has no MX or A DNS records
+  1.3 RCVD_IN_VALIDITY_RPBL  RBL: Relay in Validity RPBL,
+                             https://senderscore.org/blocklistlookup/
+                            [163.44.196.121 listed in bl.score.senderscore.com]
   0.0 SPF_NONE               SPF: sender does not publish an SPF Record
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
   0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 HTML_OBFUSCATE_05_10   BODY: Message is 5% to 10% HTML obfuscation
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
-                             valid
-  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML
-                             tag
-  0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
-  0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-Headers-End: 1stiPk-0003ia-BQ
-Subject: [Osst-users] Bem-vindo ao BRADESCO PRIME DIGITAL. Protocolo:
- 132847838
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+  0.0 HOSTED_IMG_MULTI_PUB_01 Multiple hosted images at public site
+  1.5 CONTENT_AFTER_HTML_WEAK More content after HTML close tag
+X-Headers-End: 1stsvf-000519-8g
+Subject: [Osst-users] Queima de Estoque Magalu: Smart TV 4K 50'' Samsung -
+ Por Apenas: R$ 1.339, 90 - Smart TV 4K 43'' Samsung - Por Apenas: R$ 1.099,
+ 05 - Smart TV 4K 32'' Samsung - Por Apenas: R$ 698,
+ 99 - APROVEITE  - [ 616555036124  ]
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -107,224 +88,296 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============6089401465547049972=="
+Content-Type: multipart/mixed; boundary="===============8096251843963152920=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============6089401465547049972==
-Content-type: text/html; charset=UTF-8
-Content-Transfer-Encoding: base64
+--===============8096251843963152920==
+Content-type: text/html; charset=utf-8
 
-77u/PGRpdiBzdHlsZT0icGFkZGluZzowcHg7IG1hcmdpbjowcHg7IHBhZGRpbmc6NXB4IDBweDsg
-Zm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjEzcHgiPg0KCiAg
-IDxkaXYgc3R5bGU9IndpZHRoOjcwMHB4OyBoZWlnaHQ6YXV0bzsgbWFyZ2luOjIwcHggYXV0byI+
-DQoKICAgICAgPGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZjdmNmYyIj4NCgogICAgICAg
-ICA8ZGl2IHN0eWxlPSJ3aWR0aDoxMDAlOyBoZWlnaHQ6YXV0bzsgYmFja2dyb3VuZC1jb2xvcjoj
-MTc1MTk1OyBvdmVyZmxvdzpoaWRkZW4iPg0KCiAgICAgICAgICAgIDxkaXYgc3R5bGU9ImhlaWdo
-dDo3MHB4OyB3aWR0aDoxMDAlIj4NCgogICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9hdDps
-ZWZ0OyBoZWlnaHQ6NzBweDsgd2lkdGg6NzBweCI+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBz
-dHlsZT0iZmxvYXQ6bGVmdDsgd2lkdGg6MzVweDsgaGVpZ2h0OjM1cHg7IGJhY2tncm91bmQtY29s
-b3I6IzE3NTE5NTsgbGVmdDozNXB4OyB0b3A6MHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICAg
-ICA8ZGl2IHN0eWxlPSJmbG9hdDpsZWZ0OyB3aWR0aDozNXB4OyBoZWlnaHQ6MzVweDsgYmFja2dy
-b3VuZC1jb2xvcjojM2U2ZmJhOyBsZWZ0OjM1cHg7IHRvcDowcHgiPjwvZGl2Pg0KCiAgICAgICAg
-ICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IHdpZHRoOjM1cHg7IGhlaWdodDozNXB4
-OyBiYWNrZ3JvdW5kLWNvbG9yOiNkMTAxMzM7IGxlZnQ6MHB4OyB0b3A6MzVweCI+PC9kaXY+DQoK
-ICAgICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAg
-PGRpdiBzdHlsZT0id2lkdGg6MTAwJSI+DQoKICAgICAgICAgICAgICAgPGgxIHN0eWxlPSJmb250
-LWZhbWlseTonT3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBmb250LXNpemU6MjNweDsgY29sb3I6I2Zm
-ZjsgbWFyZ2luOjBweDsgcGFkZGluZzowcHg7IHRleHQtYWxpZ246Y2VudGVyOyBmb250LXdlaWdo
-dDpsaWdodGVyOyBmb250LXdlaWdodDo1MDA7IG1hcmdpbi1ib3R0b206MzVweCI+UGFyYWImZWFj
-dXRlO25zLCB2b2MmZWNpcmM7IGZvaSBzZWxlY2lvbmFkbyBwYXJhIHNlIHRvcm5hcjxiciBhcmlh
-LWhpZGRlbj0idHJ1ZSI+dW0gY2xpZW50ZSBCcmFkZXNjbyBQcmltZSBEaWdpdGFsITwvaDE+DQoK
-ICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAgPGRpdiBzdHlsZT0iaGVpZ2h0OjM1cHg7
-IHdpZHRoOjEwMCUiPg0KCiAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IGhl
-aWdodDozNXB4OyB3aWR0aDozNXB4Ij4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJ3
-aWR0aDozNXB4OyBoZWlnaHQ6MzVweDsgYmFja2dyb3VuZC1jb2xvcjojODY4Njg2OyBsZWZ0OjBw
-eDsgYm90dG9tOjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAg
-ICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6cmlnaHQ7IGhlaWdodDozNXB4OyB3aWR0aDozNXB4Ij4N
-CgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJ3aWR0aDozNXB4OyBoZWlnaHQ6MzVweDsg
-YmFja2dyb3VuZC1jb2xvcjojMGMyMTcyOyByaWdodDowcHg7IGJvdHRvbTowcHgiPjwvZGl2Pg0K
-CiAgICAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgIDwv
-ZGl2Pg0KCiAgICAgICAgIDxkaXYgc3R5bGU9InBhZGRpbmc6MjBweCI+DQoKICAgICAgICAgICAg
-PGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZmZmOyBwYWRkaW5nOjE1cHg7IGJvcmRlci10
-b3A6NXB4IHNvbGlkICMxNzUxOTUiPg0KCiAgICAgICAgICAgICAgIDx0YWJsZSBzdHlsZT0id2lk
-dGg6MTAwJTsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjEz
-cHg7IG1hcmdpbi1ib3R0b206MjVweDsgYm9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlIj4NCgogICAg
-ICAgICAgICAgICAgICA8dGJvZHk+DQoKICAgICAgICAgICAgICAgICAgICAgPHRyPg0KCiAgICAg
-ICAgICAgICAgICAgICAgICAgIDx0ZCB3aWR0aD0iMjEwIiBzdHlsZT0iYm9yZGVyOjFweCBzb2xp
-ZCAjRkZGRjsgcGFkZGluZzo1cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZTsgYm9yZGVyLWxl
-ZnQ6MnB4IHNvbGlkICMxNzUxOTUiPjxzcGFuIHN0eWxlPSJmb250LXdlaWdodDo2MDAiPk4mIzE3
-NjsgREUgUFJPVE9DT0xPPC9zcGFuPjwvdGQ+DQoKICAgICAgICAgICAgICAgICAgICAgICAgPHRk
-IHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZGOyBwYWRkaW5nOjVweDsgYmFja2dyb3VuZC1j
-b2xvcjojZWVlZWVlIj41MTMwNDg5LzIwMjQ8L3RkPg0KCiAgICAgICAgICAgICAgICAgICAgIDwv
-dHI+DQoKICAgICAgICAgICAgICAgICAgICAgPHRyPg0KCiAgICAgICAgICAgICAgICAgICAgICAg
-IDx0ZCB3aWR0aD0iMjEwIiBzdHlsZT0iYm9yZGVyOjFweCBzb2xpZCAjRkZGRjsgcGFkZGluZzo1
-cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZTsgYm9yZGVyLWxlZnQ6MnB4IHNvbGlkICMxNzUx
-OTUiPjxzcGFuIHN0eWxlPSJmb250LXdlaWdodDo2MDAiPkVNQUlMIENBREFTVFJBRE88L3NwYW4+
-PC90ZD4NCgogICAgICAgICAgICAgICAgICAgICAgICA8dGQgc3R5bGU9ImJvcmRlcjoxcHggc29s
-aWQgI0ZGRkY7IHBhZGRpbmc6NXB4OyBiYWNrZ3JvdW5kLWNvbG9yOiNlZWVlZWUiPm9zc3QtdXNl
-cnNAbGlzdHMuc291cmNlZm9yZ2UubmV0DQo8L3RkPg0KCiAgICAgICAgICAgICAgICAgICAgIDwv
-dHI+DQoKICAgICAgICAgICAgICAgICAgICAgPHRyPg0KCiAgICAgICAgICAgICAgICAgICAgICAg
-IDx0ZCB3aWR0aD0iMjEwIiBzdHlsZT0iYm9yZGVyOjFweCBzb2xpZCAjRkZGRjsgcGFkZGluZzo1
-cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZTsgYm9yZGVyLWxlZnQ6MnB4IHNvbGlkICMxNzUx
-OTUiPjxzcGFuIHN0eWxlPSJmb250LXdlaWdodDo2MDAiPkRBVEEgRE8gQ09OVklURTwvc3Bhbj48
-L3RkPg0KCiAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBzdHlsZT0iYm9yZGVyOjFweCBzb2xp
-ZCAjRkZGRjsgcGFkZGluZzo1cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZSI+MjYvMDkvMjAy
-NDwvdGQ+DQoKICAgICAgICAgICAgICAgICAgICAgPC90cj4NCgogICAgICAgICAgICAgICAgICAg
-ICA8dHI+DQoKICAgICAgICAgICAgICAgICAgICAgICAgPHRkIHdpZHRoPSIyMTAiIHN0eWxlPSJi
-b3JkZXI6MXB4IHNvbGlkICNGRkZGOyBwYWRkaW5nOjVweDsgYmFja2dyb3VuZC1jb2xvcjojZWVl
-ZWVlOyBib3JkZXItbGVmdDoycHggc29saWQgIzE3NTE5NSI+PHNwYW4gc3R5bGU9ImZvbnQtd2Vp
-Z2h0OjYwMCI+VkFMSURBREUgRE8gQ09OVklURTwvc3Bhbj48L3RkPg0KCiAgICAgICAgICAgICAg
-ICAgICAgICAgIDx0ZCBzdHlsZT0iYm9yZGVyOjFweCBzb2xpZCAjRkZGRjsgcGFkZGluZzo1cHg7
-IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZSI+MzAgRElBUzwvdGQ+DQoKICAgICAgICAgICAgICAg
-ICAgICAgPC90cj4NCgogICAgICAgICAgICAgICAgICAgICA8dHI+DQoKICAgICAgICAgICAgICAg
-ICAgICAgICAgPHRkIHdpZHRoPSIyMTAiIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZGOyBw
-YWRkaW5nOjVweDsgYmFja2dyb3VuZC1jb2xvcjojZWVlZWVlOyBib3JkZXItbGVmdDoycHggc29s
-aWQgIzE3NTE5NSI+PHNwYW4gc3R5bGU9ImZvbnQtd2VpZ2h0OjYwMCI+PC9zcGFuPjwvdGQ+DQoK
-ICAgICAgICAgICAgICAgICAgICAgICAgPHRkIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZG
-OyBwYWRkaW5nOjVweDsgYmFja2dyb3VuZC1jb2xvcjojZWVlZWVlIj48L3RkPg0KCiAgICAgICAg
-ICAgICAgICAgICAgIDwvdHI+DQoKICAgICAgICAgICAgICAgICAgPC90Ym9keT4NCgogICAgICAg
-ICAgICAgICA8L3RhYmxlPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJmb250LWZhbWlseTon
-T3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBmb250LXNpemU6MTZweDsgY29sb3I6IzMwMzAzMDsgZm9u
-dC13ZWlnaHQ6NDAwOyBtYXJnaW46MHB4OyBwYWRkaW5nOjBweCI+UHJlemFkbyhhKSBvc3N0LXVz
-ZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldA0KLCBkZXZpZG8gYW8gc2V1IGJvbSByZWxhY2lvbmFt
-ZW50byBjb20gbyBiYW5jbyA8c3Ryb25nPkJyYWRlPHNwYW4gc3R5bGU9ImRpc3BsYXk6bm9uZSI+
-OTA0OTg5NzQ8L3NwYW4+c2NvPC9zdHJvbmc+LCBzdWEgY29udGEgZm9pIHNlbGVjaW9uYWRhIHBh
-cmEgZmF6ZXIgcGFydGUgZG8gc2VsZXRvIGdydXBvIGRlIGNsaWVudGVzIGRvIHNlZ21lbnRvIDxz
-dHJvbmc+UHJpbWUgRGlnaXRhbDwvc3Ryb25nPi48L3A+DQoKICAgICAgICAgICAgICAgPHAgc3R5
-bGU9ImZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNnB4OyBj
-b2xvcjojMTc1MTk1OyBmb250LXdlaWdodDo1MDA7IG1hcmdpbjowcHg7IHBhZGRpbmc6MHB4OyBt
-YXJnaW4tYm90dG9tOjIwcHg7IG1hcmdpbi10b3A6MjBweCI+Q29uZmlyYSBhbGd1bnMgZG9zIGJl
-bmVmJmlhY3V0ZTtjaW9zOjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0ibWFyZ2luOjBw
-eDsgcGFkZGluZzowcHg7IGZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQt
-c2l6ZToxNnB4OyBtYXJnaW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNv
-bG9yOiMxNzUxOTU7IGNvbG9yOiNmZmY7IHBhZGRpbmc6M3B4IDhweDsgbWFyZ2luLXJpZ2h0OjVw
-eDsgZm9udC1zaXplOjEzcHg7IGZvbnQtd2VpZ2h0OjQwMDsgbWFyZ2luLWxlZnQ6MzBweCI+MTwv
-c3Bhbj4gQWNlc3NvIGEgYWcmZWNpcmM7bmNpYXMgZXhjbHVzaXZhcyA8c3Ryb25nPkJyPHNwYW4g
-c3R5bGU9ImRpc3BsYXk6bm9uZSI+OTA0OTg5NzQ8L3NwYW4+YWRlc2NvIFByaW1lPC9zdHJvbmc+
-LjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0ibWFyZ2luOjBweDsgcGFkZGluZzowcHg7
-IGZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNnB4OyBtYXJn
-aW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiMxNzUxOTU7IGNv
-bG9yOiNmZmY7IHBhZGRpbmc6M3B4IDhweDsgbWFyZ2luLXJpZ2h0OjVweDsgZm9udC1zaXplOjEz
-cHg7IGZvbnQtd2VpZ2h0OjQwMDsgbWFyZ2luLWxlZnQ6MzBweCI+Mjwvc3Bhbj4gQWNlc3NvIGEg
-Y2FydCZhdGlsZGU7byBkZSBjciZlYWN1dGU7ZGl0b3MgQmxhY2sgZSBJbmZpbml0eSBzZW0gYW51
-aWRhZGVzLjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0ibWFyZ2luOjBweDsgcGFkZGlu
-ZzowcHg7IGZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNnB4
-OyBtYXJnaW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiMxNzUx
-OTU7IGNvbG9yOiNmZmY7IHBhZGRpbmc6M3B4IDhweDsgbWFyZ2luLXJpZ2h0OjVweDsgZm9udC1z
-aXplOjEzcHg7IGZvbnQtd2VpZ2h0OjQwMDsgbWFyZ2luLWxlZnQ6MzBweCI+Mzwvc3Bhbj4gQWN1
-bXVsZSAxIHBvbnRvIHBvciBjYWRhIHJlYWwgZ2FzdG8gbm8gcHJvZ3JhbWEgPHN0cm9uZz5MaXZl
-bG88L3N0cm9uZz4uPC9wPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJtYXJnaW46MHB4OyBw
-YWRkaW5nOjBweDsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXpl
-OjE2cHg7IG1hcmdpbi1ib3R0b206MTVweCI+PHNwYW4gc3R5bGU9ImJhY2tncm91bmQtY29sb3I6
-IzE3NTE5NTsgY29sb3I6I2ZmZjsgcGFkZGluZzozcHggOHB4OyBtYXJnaW4tcmlnaHQ6NXB4OyBm
-b250LXNpemU6MTNweDsgZm9udC13ZWlnaHQ6NDAwOyBtYXJnaW4tbGVmdDozMHB4Ij40PC9zcGFu
-PiBHZXJlbnRlIGRpc3BvbiZpYWN1dGU7dmVsIDI0IGhvcmFzIHBvciBkaWEgYXRyYXYmZWFjdXRl
-O3MgZG8gV2hhdHNhcHAuPC9wPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJtYXJnaW46MHB4
-OyBwYWRkaW5nOjBweDsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1z
-aXplOjE2cHg7IG1hcmdpbi1ib3R0b206MTVweCI+PHNwYW4gc3R5bGU9ImJhY2tncm91bmQtY29s
-b3I6IzE3NTE5NTsgY29sb3I6I2ZmZjsgcGFkZGluZzozcHggOHB4OyBtYXJnaW4tcmlnaHQ6NXB4
-OyBmb250LXNpemU6MTNweDsgZm9udC13ZWlnaHQ6NDAwOyBtYXJnaW4tbGVmdDozMHB4Ij41PC9z
-cGFuPiBBY2Vzc28gYSBjciZlYWN1dGU7ZGl0byBjb20gdGF4YXMgZXNwZWNpYWlzIGRlIDEuNSUg
-YW8gbSZlY2lyYztzLjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0ibWFyZ2luOjBweDsg
-cGFkZGluZzowcHg7IGZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6
-ZToxNnB4OyBtYXJnaW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9y
-OiMxNzUxOTU7IGNvbG9yOiNmZmY7IHBhZGRpbmc6M3B4IDhweDsgbWFyZ2luLXJpZ2h0OjVweDsg
-Zm9udC1zaXplOjEzcHg7IGZvbnQtd2VpZ2h0OjQwMDsgbWFyZ2luLWxlZnQ6MzBweCI+Njwvc3Bh
-bj4gQ2hlcXVlIGVzcGVjaWFsIGNvbSAxNSBkaWFzIHNlbSBqdXJvcy48L3A+DQoKICAgICAgICAg
-ICAgICAgPHAgc3R5bGU9ImZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQt
-c2l6ZToxNnB4OyBjb2xvcjojMTc1MTk1OyBmb250LXdlaWdodDo1MDA7IG1hcmdpbjowcHg7IHBh
-ZGRpbmc6MHB4OyBtYXJnaW4tYm90dG9tOjIwcHg7IG1hcmdpbi10b3A6NDBweDsgdGV4dC1hbGln
-bjpjZW50ZXI7IGxpbmUtaGVpZ2h0OjIzcHgiPlBhcmEgYWNlaXRhciBvIGNvbnZpdGUgw6kgbXVp
-dG8gc2ltcGxlcyE8YnIgYXJpYS1oaWRkZW49InRydWUiPkNsaXF1ZSBubyBsaW5rIGFiYWl4byBl
-IGNvbmZpcm1lIHNldXMgZGFkb3MuPC9wPg0KCiAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9InRl
-eHQtYWxpZ246Y2VudGVyOyBtYXJnaW46NTBweCAwcHgiPjxhIGhyZWY9Imh0dHA6Ly9kaXJlY3By
-aW12aXZhLmNvbS9hY2Vzc2FyLnBocCIgY2xhc3M9InhfY29udGVudC1ibG9jayIgdGFyZ2V0PSJf
-YmxhbmsiIHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciIgZGF0YS1hdXRoPSJOb3RBcHBsaWNhYmxl
-IiBzdHlsZT0idGV4dC1kZWNvcmF0aW9uOm5vbmU7IGJhY2tncm91bmQtY29sb3I6IzE3NTE5NTsg
-cGFkZGluZzoxMHB4IDMwcHg7IGNvbG9yOiNmZmY7IGZvbnQtd2VpZ2h0OjUwMDsgZm9udC1zaXpl
-OjE2cHgiPlF1ZXJvIG1lIHRvcm5hciB1bSBjbGllbnRlIFByaW1lIERpZ2l0YWwhPC9hPiA8L2Rp
-dj4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0iZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fu
-cy1zZXJpZjsgZm9udC1zaXplOjEycHg7IGNvbG9yOiM3OTc5Nzk7IGZvbnQtd2VpZ2h0OjUwMDsg
-bWFyZ2luOjBweDsgcGFkZGluZzowcHg7IG1hcmdpbi1ib3R0b206MjBweDsgbWFyZ2luLXRvcDo0
-MHB4OyB0ZXh0LWFsaWduOmNlbnRlcjsgbGluZS1oZWlnaHQ6MTZweCI+KiBDYXNvIGomYWFjdXRl
-Owkgc2VqYSB1bSBjbGllbnRlIFByaW1lIG1hcyBuJmF0aWxkZTtvIHBvc3N1YSB0b2RvcyBvcyBi
-ZW5lZiZpYWN1dGU7Y2lvczxiciBhcmlhLWhpZGRlbj0idHJ1ZSI+YWNpbWEsIHZvYyZlY2lyYzsg
-dGFtYiZlYWN1dGU7bSBwb2RlIGFkZXJpciBhIG9mZXJ0YS4gPC9wPg0KCiAgICAgICAgICAgIDwv
-ZGl2Pg0KCiAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgIDxkaXYgc3R5bGU9IndpZHRoOjEwMCU7
-IGhlaWdodDphdXRvOyBiYWNrZ3JvdW5kLWNvbG9yOiMxNzUxOTU7IG92ZXJmbG93OmhpZGRlbiI+
-DQoKICAgICAgICAgICAgPGRpdiBzdHlsZT0iaGVpZ2h0OjQwcHg7IHdpZHRoOjEwMCUiPg0KCiAg
-ICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IGhlaWdodDo0MHB4OyB3aWR0aDo0
-MHB4Ij4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9hdDpsZWZ0OyB3aWR0aDoy
-MHB4OyBoZWlnaHQ6MjBweDsgYmFja2dyb3VuZC1jb2xvcjojMTc1MTk1OyBsZWZ0OjIwcHg7IHRv
-cDowcHgiPjwvZGl2Pg0KCiAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7
-IHdpZHRoOjIwcHg7IGhlaWdodDoyMHB4OyBiYWNrZ3JvdW5kLWNvbG9yOiMzZTZmYmE7IGxlZnQ6
-MjBweDsgdG9wOjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZmxv
-YXQ6bGVmdDsgd2lkdGg6MjBweDsgaGVpZ2h0OjIwcHg7IGJhY2tncm91bmQtY29sb3I6I2QxMDEz
-MzsgbGVmdDowcHg7IHRvcDoyMHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICA8L2Rpdj4NCgog
-ICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9hdDpyaWdodDsgaGVpZ2h0OjQwcHg7IHdpZHRo
-OjQwcHgiPg0KCiAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IHdpZHRo
-OjIwcHg7IGhlaWdodDoyMHB4OyBiYWNrZ3JvdW5kLWNvbG9yOiMxNzUxOTU7IGxlZnQ6MjBweDsg
-dG9wOjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6bGVm
-dDsgd2lkdGg6MjBweDsgaGVpZ2h0OjIwcHg7IGJhY2tncm91bmQtY29sb3I6IzE5NjFhNzsgbGVm
-dDoyMHB4OyB0b3A6MHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJm
-bG9hdDpsZWZ0OyB3aWR0aDoyMHB4OyBoZWlnaHQ6MjBweDsgYmFja2dyb3VuZC1jb2xvcjojZDll
-NGU3OyBsZWZ0OjBweDsgdG9wOjIwcHgiPjwvZGl2Pg0KCiAgICAgICAgICAgICAgIDwvZGl2Pg0K
-CiAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgICAgIDxkaXYgc3R5bGU9IndpZHRoOjEwMCUi
-Pg0KCiAgICAgICAgICAgICAgIDxoMSBzdHlsZT0iZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fu
-cy1zZXJpZjsgZm9udC1zaXplOjE4cHg7IGNvbG9yOiNmZmY7IHRleHQtYWxpZ246Y2VudGVyOyBt
-YXJnaW46MHB4OyBwYWRkaW5nOjBweDsgZm9udC13ZWlnaHQ6bGlnaHRlcjsgZm9udC13ZWlnaHQ6
-MzAwOyBtYXJnaW4tYm90dG9tOjIwcHgiPiN2ZW1zZXJwcmltZWRpZ2l0YWw8L2gxPg0KCiAgICAg
-ICAgICAgIDwvZGl2Pg0KCiAgICAgICAgICAgIDxkaXYgc3R5bGU9ImhlaWdodDoyMHB4OyB3aWR0
-aDoxMDAlIj4NCgogICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9hdDpsZWZ0OyBoZWlnaHQ6
-MjBweDsgd2lkdGg6MjBweCI+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0id2lkdGg6
-MjBweDsgaGVpZ2h0OjIwcHg7IGJhY2tncm91bmQtY29sb3I6Izg2ODY4NjsgbGVmdDowcHg7IGJv
-dHRvbTowcHgiPjwvZGl2Pg0KCiAgICAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgICAgICAg
-IDxkaXYgc3R5bGU9ImZsb2F0OnJpZ2h0OyBoZWlnaHQ6MjBweDsgd2lkdGg6MjBweCI+DQoKICAg
-ICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0id2lkdGg6MjBweDsgaGVpZ2h0OjIwcHg7IGJhY2tn
-cm91bmQtY29sb3I6IzBjMjE3MjsgcmlnaHQ6MHB4OyBib3R0b206MHB4Ij48L2Rpdj4NCgogICAg
-ICAgICAgICAgICA8L2Rpdj4NCgogICAgICAgICAgICA8L2Rpdj4NCgogICAgICAgICA8L2Rpdj4N
-CgogICAgICA8L2Rpdj4NCgogICAgICA8cCBzdHlsZT0iZm9udC1mYW1pbHk6J09wZW4gU2Fucycs
-c2Fucy1zZXJpZjsgZm9udC1zaXplOjEycHg7IGNvbG9yOiM1YTVhNWE7IGZvbnQtd2VpZ2h0OjUw
-MDsgbWFyZ2luOjBweDsgcGFkZGluZzowcHg7IG1hcmdpbi1ib3R0b206NXB4OyBtYXJnaW4tdG9w
-OjI1cHg7IGxpbmUtaGVpZ2h0OjE2cHg7IHRleHQtYWxpZ246anVzdGlmeSI+IkVzc2EgbWVuc2Fn
-ZW0gZm9pIGdlcmFkYSBhdXRvbWF0aWNhbWVudGUgZSBuJmF0aWxkZTtvIHBvZGUgc2VyIHJlc3Bv
-bmRpZGEuIE1hbnRlbmhhIHNldXMgZGFkb3MgYXR1YWxpemFkb3MgZSBpbmNsdWEgbyBCcmFkZTxz
-cGFuIHN0eWxlPSJkaXNwbGF5Om5vbmUiPjMwOTwvc3Bhbj5zY28gbm9zIHNldXMgcmVtZXRlbnRl
-cyBjb25maSZhYWN1dGU7CXZlaXMuPC9wPg0KCiAgICAgIDxwIHN0eWxlPSJmb250LWZhbWlseTon
-T3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBmb250LXNpemU6MTJweDsgY29sb3I6IzVhNWE1YTsgZm9u
-dC13ZWlnaHQ6NTAwOyBtYXJnaW46MHB4OyBwYWRkaW5nOjBweDsgbWFyZ2luLWJvdHRvbTo1cHg7
-IG1hcmdpbi10b3A6NXB4OyBsaW5lLWhlaWdodDoxNnB4OyB0ZXh0LWFsaWduOmp1c3RpZnkiPk8g
-QnJhZGU8c3BhbiBzdHlsZT0iZGlzcGxheTpub25lIj4zMDk8L3NwYW4+c2NvIG4mYXRpbGRlO28g
-aW5zZXJlIGFuZXhvcyBleGVjdXQmYWFjdXRlOwl2ZWlzIG5lbSBzb2xpY2l0YSBxdWFscXVlciBh
-dHVhbGl6YSZjY2VkaWw7JmF0aWxkZTtvIGRlIGNhZGFzdHJvLCBkYWRvcyBiYW5jJmFhY3V0ZTsJ
-cmlvcyBvdSBwZXNzb2FpcyBub3MgZSBtYWlscyBlbnZpYWRvcyBhIHNldXMgY2xpZW50ZXMuPC9w
-Pg0KCiAgICAgIDxwIHN0eWxlPSJmb250LWZhbWlseTonT3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBm
-b250LXNpemU6MTJweDsgY29sb3I6IzVhNWE1YTsgZm9udC13ZWlnaHQ6NTAwOyBtYXJnaW46MHB4
-OyBwYWRkaW5nOjBweDsgbWFyZ2luLWJvdHRvbTo1cHg7IG1hcmdpbi10b3A6NXB4OyBsaW5lLWhl
-aWdodDoxNnB4OyB0ZXh0LWFsaWduOmp1c3RpZnkiPkVtIGNhc28gZGUgZCZ1YWN1dGU7dmlkYXMs
-IGFjZXNzZSBiYW5jby5icmFkPHNwYW4gc3R5bGU9ImRpc3BsYXk6bm9uZSI+OTA0OTg5NzQ8L3Nw
-YW4+ZXNjbyBlIGVudmllIHVtYSBtZW5zYWdlbSBwZWxvIEZhbGUgQ29ub3NjbyBvdSBjb250YXRl
-IG8gRm9uZSBGJmFhY3V0ZTtjaWw6IDQwMDIgMDAyMiwgY2FwaXRhaXMgZSByZWdpJm90aWxkZTtl
-cyBtZXRyb3BvbGl0YW5hcywgb3UgMDgwMCA1NzAgMDAyMiwgZGVtYWlzIHJlZ2kmb3RpbGRlO2Vz
-LiBBY2Vzc28gZG8gZXh0ZXJpb3I6IDU1IDExIDQwMDIgMDAyMiwgZGUgc2VndW5kYSBhIHNleHRh
-IGZlaXJhLCBkYXMgMDdoIGFzIDIyaCBlLCBhb3MgcyZhYWN1dGU7YmFkb3MsIGRhcyA5aCDDoHMg
-MTVoICwgaG9yJmFhY3V0ZTtyaW8gZGUgQnJhcyZpYWN1dGU7bGlhLiBBdGVuZGltZW50byBhb3Mg
-ZG9taW5nb3MgZSBmZXJpYWRvcyBhcGVuYXMgcGFyYSBzZXJ2aSZjY2VkaWw7b3MgZW1lcmdlbmNp
-YWlzLCBjb21vIGNhbmNlbGFtZW50byBlIGRlc2Jsb3F1ZWlvIGRlIGNhcnTDo28gZGUgY3ImZWFj
-dXRlO2RpdG8gZSBkJmVhY3V0ZTtiaXRvIGUgQ2hhdmUgZGUgU2VndXJhbiZjY2VkaWw7YS4iPC9w
-Pg0KCiAgIDwvZGl2Pg0KCjwvZGl2Pg0KCjwvZGl2PjwvZGl2PjwvZGl2PjwvZGl2Pg0K
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=http://www.w3.org/1999/xhtml>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <meta name=x-apple-disable-message-reformatting>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style type=text/css>
+        body {
+            font-size: 0;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+        }
+        /* bugfix iOS: remove o background da imagem depois que carregou, pra evitar bugs de renderizacao */
+        
+        img[src^="http"] {
+            background: transparent;
+        }
+        
+        a,
+        p,
+        span,
+        div {
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Arial', sans-serif !important;
+        }
+    </style>
+</head>
+
+<body align=center bgcolor=#0086ff cellspacing=0 cellpadding=0 topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 data-pinterest-extension-installed=cr1.3.4 style="text-decoration: none; -ms-text-size-adjust: 100%; font-size: 100%; -webkit-text-size-adjust: 100%; background-color: #fff; font-size: 100%; font-family: 'arial'!important; text-align: center; margin:0; padding:0; width:100%; -webkit-font-smoothing: antialiased; width: 100%!;">
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                            <tr>
+                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom">
+                                    <br><font color=#0087ff size=3><b>Pre&ccedil;os exclusivos no e-mail :)</b></font>
+                                    <br>
+                                    <div style="height: 6px;"></div><font color=#847870 size=2><a rilt="política de privacidade" href=https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/ target=_blank style="color: #939393"><b>pol&iacute;tica de privacidade</b></a> | <a rilt=descadastre-se href="https://www.magazineluiza.com.br/central-de-atendimento/duvidas-frequentes/termo-de-compra-e-venda/" target=_blank style="color: #939393"><b>descadastre-se</b></a></font>
+                                    <br>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                            <tr>
+                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
+                                    <img src=https://i.imgur.com/DJZddlv.png  border=0 alt="top banner" style="max-width: 640px;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                            <tr>
 
 
+                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
+                                    <img src=https://s.mlcdn.com.br/banner/campanhas/Large_LargeMobile_2_Campanha_16-09-2024_semanarelampago.png border=0 alt style="max-width: 640px;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	<br>
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                           
+                          
+                          
+                            <tr>
+                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
+                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
+                                                    <a href="https://sprl.in/U0OokQl"><img src=https://a-static.mlcdn.com.br/618x463/smart-tv-50-4k-uhd-led-samsung-50du7700-wi-fi-bluetooth-alexa-3-hdmi/magazineluiza/238245000/4bef868e0fa1f8dd2fdb4e1dfcc47526.jpg width=390px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Magalu"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://sprl.in/U0OokQl" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 50&rdquo; UHD 4K LED Samsung 50DU7700 - Wi-Fi Bluetooth Alexa 3 HDMI, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;2.499,99</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.339,90 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista </p></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center> <p>
+                        </tbody></table><center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://sprl.in/U0OokQl" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                            <tr>
+                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
+                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
+                                                    <a href="https://sprl.in/X7SOGFI"><img src=https://a-static.mlcdn.com.br/618x463/smart-tv-43-uhd-4k-led-samsung-43du7700-wi-fi-bluetooth-alexa-3-hdmi/magazineluiza/238243700/196f04db766975acf84f1e9c03bae9d8.jpg width=300px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV 4K Crystal UHD 58"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://sprl.in/X7SOGFI" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV 43&rdquo; UHD 4K LED Samsung 43DU7700 - Wi-Fi Bluetooth Alexa 3 HDMI, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$&nbsp;1.988,79</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 1.099,05 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
+                        <center><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://sprl.in/X7SOGFI" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                                                </td>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
+                                    <table align=center border=0 cellpadding=0 cellspacing=0 style="max-width:345px;height: 480px; border-collapse:collapse;" width=320px>
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;">
+<br>
+                                                    <p><a href="https://sprl.in/19jaL7n"><img src=https://i.imgur.com/0lZdEoD.png width=270px height=auto border=0 style="vertical-align: middle; max-height: 295px;" alt="Smart TV Full HD LED 43” Samsung 43T5300A"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-right:10px;padding-left:10px;padding-top:0;padding-bottom:0;text-align:center; vertical-align: middle;"><a href="https://sprl.in/19jaL7n" style="font-size: 16px; color: #0083ca; text-decoration: none;"><span style="font-size:18px; color:#3c3c3c;"><b>Smart TV UHD 4k LED 32&rdquo; Samsung T4300 - Wi-Fi - HDR - 2 HDMI - 1 USB, Controle &Uacute;nico</b></span><div style=height:12px;></div><p style="font-size:16px; margin:0; line-height: 1em"> de&nbsp;<s>R$ 1.038,19</s></p><p style="font-size:30px; margin:0; letter-spacing:-3px"><span style="font-size:16px; letter-spacing:-1px"> por&nbsp;R$&nbsp; </span> 698,99 </p><p style="font-size:16px; margin:0; line-height:0.9em">&Agrave; Vista</p></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center; vertical-align: bottom;" align=center>
+                        <center><br><a style="background-color: #1E90FF;border-radius: 38px;color: #fff !important;border: 3px solid transparent;height: 50px;font-weight: 600;font-size: 16px;text-decoration: none;padding: 4px 34px;" href="https://sprl.in/19jaL7n" target="_blank" rel="noopener noreferrer"><span style="color: #000000;">Comprar</span></a></center>
+                                                </td>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                            <tr>
+                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
+                                </td>
+                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
+                                    <img src= border=0 alt="">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                            <tr>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                            <tr>
+                                <td style=padding-right:0;padding-left:0;padding-top:0;padding-bottom:0;text-align:center;>
+                                    <img src=https://s.mlcdn.com.br/banner/campanhas/Mundo_Topofertas_campanha_liquidademilhoes_08-07-2024_topofertas.png border=0 alt="bottom banner" style="max-width: 640px;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align=center border=0 cellpadding=0 cellspacing=0 class=one-column style=border-spacing:0; width=100%>
+        <tbody>
+            <tr style=border-top-width:0;border-bottom-width:0;padding-top:0;padding-bottom:0; valign=top>
+                <td valign=top>
+                    <table align=center border=0 cellpadding=0 cellspacing=0 style=max-width:640px;border-collapse:collapse; width=100%>
+                        <tbody>
+                            <tr>
+                                <td style=padding-right:20px;padding-left:20px;padding-top:0;padding-bottom:0;text-align:center;><font color=#5a5a5a size=2> As ofertas valem apenas para o dia de recebimento deste e-mail nas compras feitas online ou por Televendas. Os pre&ccedil;os podem sofrer altera&ccedil;&otilde;es ao longo do dia e enquanto durarem os estoques. <br><br><b>*</b>Confira nosso regulamento de Desconto e Frete. <br><br> Contato Televendas: Regi&atilde;o Metropolitana de S&atilde;o Paulo | 0800 773 3838 <br> Outras regi&otilde;es: procure a cidade mais pr&oacute;xima de voc&ecirc;.<br> Hor&aacute;rio de atendimento: de segunda a sexta, das 8h30 &agrave;s 22h / aos s&aacute;bados e domingos, das 9h &agrave;s 22h (exceto feriados) <br><br> Ficou com d&uacute;vidas? Acesse nossa <a rilt="central de atendimento" >Central de Atendimento</a> :) <br><br> Ah! E cadastre o e-mail personalizado@paravoce.<wbr>magazineluiza.com.br na sua lista de contatos pra receber sempre as nos
+ sas melhores ofertas! <br><br><b>pol&iacute;tica de privacidade</b></a> | <b>descadastre-se</b></a><br><br></font></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>27/09/2024 12:49:41
 
 
---===============6089401465547049972==
+--===============8096251843963152920==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6089401465547049972==
+--===============8096251843963152920==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -335,4 +388,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6089401465547049972==--
+--===============8096251843963152920==--
