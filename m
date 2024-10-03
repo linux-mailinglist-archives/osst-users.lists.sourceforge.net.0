@@ -2,79 +2,82 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id CDC1F98E835
-	for <lists+osst-users@lfdr.de>; Thu,  3 Oct 2024 03:59:36 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id A6D0F98E9B2
+	for <lists+osst-users@lfdr.de>; Thu,  3 Oct 2024 08:20:49 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1swB7w-0005q2-6z
+	id 1swFCh-0004YP-Nh
 	for lists+osst-users@lfdr.de;
-	Thu, 03 Oct 2024 01:59:35 +0000
+	Thu, 03 Oct 2024 06:20:48 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <root@vps-84aae105.vps.ovh.net>) id 1swB7u-0005pw-VT
- for osst-users@lists.sourceforge.net; Thu, 03 Oct 2024 01:59:34 +0000
+ (envelope-from <root@vps-7dc38089.vps.ovh.net>) id 1swFCg-0004YI-1x
+ for osst-users@lists.sourceforge.net; Thu, 03 Oct 2024 06:20:46 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:
- Content-Transfer-Encoding:Content-type:MIME-Version:Sender:Reply-To:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=VN1k4zcXcVT+ol/eAogBJglD/V+orbzuATwOKmQ/IT4=; b=Mm0OEueSaXgXebVNJLnP+tWC6W
- Nu0lUDHMqvTPThA3ERrc5O+v+JW3bKLtwu1cKzXsfhNAwNn+UVZap9MgOoBerHbAQjzWTeCXBAM6m
- 9TkvJ4Itt74gm2Vq6xA2JM3bJ0H6VN2F0kO/hu4WxRYWpwBzO4F2BRR8JTRRx/6hUI2A=;
+ d=sourceforge.net; s=x; h=Subject:Date:Message-Id:Content-Transfer-Encoding:
+ Content-Type:MIME-Version:From:To:Sender:Reply-To:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=KKIaLxjJllrs9nkX5VrExgCUX52J/9Nu66WvdJSDdQA=; b=W/HScjwVmPqnGI3DYvu3/RaaOa
+ s+bPhIp9pomd6gHbhbNemZIikWFGBx/iDwZI+LSiRYRn0N+G2UtBsFBOsaSZz03/o41AYE5+gKFF8
+ vs9K2QImOFheRUAgLFVHrt/4eWHB0ZM71mwh0kKVPV5WyL00w0pzPAN8KORYJg/l4AAk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:To:From:Subject:Content-Transfer-Encoding:Content-type:
- MIME-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=VN1k4zcXcVT+ol/eAogBJglD/V+orbzuATwOKmQ/IT4=; b=k
- ux9Hjbe3KWdkK9FNi31SeSXbpTV5TcJPmDsl9i4TH1P/orWhfX6yz+WXPwIDrKr9gDws8HUVyG4Os
- lzf+LEemL+gkGenHz1SE8HLhznkt6GDLSbWlgkYpUfZCIcalr0cYlyeXYeQNY1Rux3iNStUBA6QXM
- XDkfEIYnGNRPHO3o=;
-Received: from vps-84aae105.vps.ovh.net ([57.129.0.211]
- helo=nyovmmkqd.dmjwscevlvqivb.com.br)
+ h=Subject:Date:Message-Id:Content-Transfer-Encoding:Content-Type:
+ MIME-Version:From:To:Sender:Reply-To:Cc:Content-ID:Content-Description:
+ Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=KKIaLxjJllrs9nkX5VrExgCUX52J/9Nu66WvdJSDdQA=; b=VfO86DA1UE63AyEl0Gv1OtezGA
+ oop+iO59l0fnhe99Muf5ypPJc/ySLZKYT8NxjHznxAWvq06bamRin1EAYxzyQwsQF59x0AbPwAW+A
+ X+YYtkRESa0DmJaqOuge3MqWhLTx1QUNDdfhE/SSXM65C1R3OWc5hejYEYf4iSFwyC2A=;
+Received: from vps-7dc38089.vps.ovh.net ([135.125.133.120])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1swB7t-0007jK-AC for osst-users@lists.sourceforge.net;
- Thu, 03 Oct 2024 01:59:34 +0000
-Received: by nyovmmkqd.dmjwscevlvqivb.com.br (Postfix, from userid 0)
- id DA0EF463DF; Thu,  3 Oct 2024 01:31:35 +0000 (UTC)
-MIME-Version: 1.0
-From: Bradesco <prime@bradesco.com.br>
+ id 1swFCf-0007kn-OB for osst-users@lists.sourceforge.net;
+ Thu, 03 Oct 2024 06:20:46 +0000
+Received: by vps-7dc38089.vps.ovh.net (Postfix, from userid 0)
+ id 9D12F8E760; Thu,  3 Oct 2024 05:22:02 +0000 (UTC)
 To: osst-users@lists.sourceforge.net
-Message-Id: <20241003015316.DA0EF463DF@nyovmmkqd.dmjwscevlvqivb.com.br>
-Date: Thu,  3 Oct 2024 01:31:35 +0000 (UTC)
-X-Spam-Score: 1.0 (+)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has NOT identified this incoming email as spam.  The original
+X-Mailer: Outlook/91.8.0
+From: Ana Paula Rodriguez <cobranzayfacturacion@vps-e0fc7fe3.vps.ovh.net>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="97b054d41bee3b346da5505f0206462b"
+Content-Transfer-Encoding: 7bit
+Message-Id: <20241003055747.9D12F8E760@vps-7dc38089.vps.ovh.net>
+Date: Thu,  3 Oct 2024 05:22:02 +0000 (UTC)
+X-Spam-Score: 8.9 (++++++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  ﻿ Parabéns, você foi selecionado para se tornar um cliente
-    Bradesco Prime Digital! N° DE PROTOCOLO 637865/2024 EMAIL CADASTRADO osst-users@lists.sourceforge.net
-    DATA DO CONVITE 02/10/2024 VALIDADE DO CONVITE 15 DIAS 
- 
- Content analysis details:   (1.0 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview: Estimado/a: osst-users@lists.sourceforge.net Hoy 03/10/2024
+ Por Este Medio Notifico La Presente Demanda AVISO URGENTE 
+ Content analysis details:   (8.9 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 HTML_OBFUSCATE_05_10   BODY: Message is 5% to 10% HTML obfuscation
-  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML
-                             tag
-  0.0 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-Headers-End: 1swB7t-0007jK-AC
-Subject: [Osst-users] O Bradesco lhe parabeniza por sua parceria Bradesco
- Prime. Protocolo: 8829784
+ 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [135.125.133.120 listed in dnsbl-1.uceprotect.net]
+ 0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
+ DNS
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or
+ identical to background
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+ Colors in HTML
+ 3.0 MANY_SUBDOM            Lots and lots of subdomain parts in a URI
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1swFCf-0007kn-OB
+Subject: [Osst-users] [SPAM] Documentacion y detalles adjuntos (85670924)
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -86,225 +89,1600 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============2049176002384965899=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============2049176002384965899==
-Content-type: text/html; charset=UTF-8
-Content-Transfer-Encoding: base64
+This is a MIME encoded message.
+X-Priority: 1
 
-77u/PGRpdiBzdHlsZT0icGFkZGluZzowcHg7IG1hcmdpbjowcHg7IHBhZGRpbmc6NXB4IDBweDsg
-Zm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjEzcHgiPg0KCiAg
-IDxkaXYgc3R5bGU9IndpZHRoOjcwMHB4OyBoZWlnaHQ6YXV0bzsgbWFyZ2luOjIwcHggYXV0byI+
-DQoKICAgICAgPGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZjdmNmYyIj4NCgogICAgICAg
-ICA8ZGl2IHN0eWxlPSJ3aWR0aDoxMDAlOyBoZWlnaHQ6YXV0bzsgYmFja2dyb3VuZC1jb2xvcjoj
-MTc1MTk1OyBvdmVyZmxvdzpoaWRkZW4iPg0KCiAgICAgICAgICAgIDxkaXYgc3R5bGU9ImhlaWdo
-dDo3MHB4OyB3aWR0aDoxMDAlIj4NCgogICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9hdDps
-ZWZ0OyBoZWlnaHQ6NzBweDsgd2lkdGg6NzBweCI+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBz
-dHlsZT0iZmxvYXQ6bGVmdDsgd2lkdGg6MzVweDsgaGVpZ2h0OjM1cHg7IGJhY2tncm91bmQtY29s
-b3I6IzE3NTE5NTsgbGVmdDozNXB4OyB0b3A6MHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICAg
-ICA8ZGl2IHN0eWxlPSJmbG9hdDpsZWZ0OyB3aWR0aDozNXB4OyBoZWlnaHQ6MzVweDsgYmFja2dy
-b3VuZC1jb2xvcjojM2U2ZmJhOyBsZWZ0OjM1cHg7IHRvcDowcHgiPjwvZGl2Pg0KCiAgICAgICAg
-ICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IHdpZHRoOjM1cHg7IGhlaWdodDozNXB4
-OyBiYWNrZ3JvdW5kLWNvbG9yOiNkMTAxMzM7IGxlZnQ6MHB4OyB0b3A6MzVweCI+PC9kaXY+DQoK
-ICAgICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAg
-PGRpdiBzdHlsZT0id2lkdGg6MTAwJSI+DQoKICAgICAgICAgICAgICAgPGgxIHN0eWxlPSJmb250
-LWZhbWlseTonT3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBmb250LXNpemU6MjNweDsgY29sb3I6I2Zm
-ZjsgbWFyZ2luOjBweDsgcGFkZGluZzowcHg7IHRleHQtYWxpZ246Y2VudGVyOyBmb250LXdlaWdo
-dDpsaWdodGVyOyBmb250LXdlaWdodDo1MDA7IG1hcmdpbi1ib3R0b206MzVweCI+UGFyYWImZWFj
-dXRlO25zLCB2b2MmZWNpcmM7IGZvaSBzZWxlY2lvbmFkbyBwYXJhIHNlIHRvcm5hcjxiciBhcmlh
-LWhpZGRlbj0idHJ1ZSI+dW0gY2xpZW50ZSBCcmFkZXNjbyBQcmltZSBEaWdpdGFsITwvaDE+DQoK
-ICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAgPGRpdiBzdHlsZT0iaGVpZ2h0OjM1cHg7
-IHdpZHRoOjEwMCUiPg0KCiAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IGhl
-aWdodDozNXB4OyB3aWR0aDozNXB4Ij4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJ3
-aWR0aDozNXB4OyBoZWlnaHQ6MzVweDsgYmFja2dyb3VuZC1jb2xvcjojODY4Njg2OyBsZWZ0OjBw
-eDsgYm90dG9tOjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAg
-ICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6cmlnaHQ7IGhlaWdodDozNXB4OyB3aWR0aDozNXB4Ij4N
-CgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJ3aWR0aDozNXB4OyBoZWlnaHQ6MzVweDsg
-YmFja2dyb3VuZC1jb2xvcjojMGMyMTcyOyByaWdodDowcHg7IGJvdHRvbTowcHgiPjwvZGl2Pg0K
-CiAgICAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgIDwv
-ZGl2Pg0KCiAgICAgICAgIDxkaXYgc3R5bGU9InBhZGRpbmc6MjBweCI+DQoKICAgICAgICAgICAg
-PGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZmZmOyBwYWRkaW5nOjE1cHg7IGJvcmRlci10
-b3A6NXB4IHNvbGlkICMxNzUxOTUiPg0KCiAgICAgICAgICAgICAgIDx0YWJsZSBzdHlsZT0id2lk
-dGg6MTAwJTsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjEz
-cHg7IG1hcmdpbi1ib3R0b206MjVweDsgYm9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlIj4NCgogICAg
-ICAgICAgICAgICAgICA8dGJvZHk+DQoKICAgICAgICAgICAgICAgICAgICAgPHRyPg0KCiAgICAg
-ICAgICAgICAgICAgICAgICAgIDx0ZCB3aWR0aD0iMjEwIiBzdHlsZT0iYm9yZGVyOjFweCBzb2xp
-ZCAjRkZGRjsgcGFkZGluZzo1cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZTsgYm9yZGVyLWxl
-ZnQ6MnB4IHNvbGlkICMxNzUxOTUiPjxzcGFuIHN0eWxlPSJmb250LXdlaWdodDo2MDAiPk4mIzE3
-NjsgREUgUFJPVE9DT0xPPC9zcGFuPjwvdGQ+DQoKICAgICAgICAgICAgICAgICAgICAgICAgPHRk
-IHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZGOyBwYWRkaW5nOjVweDsgYmFja2dyb3VuZC1j
-b2xvcjojZWVlZWVlIj42Mzc4NjUvMjAyNDwvdGQ+DQoKICAgICAgICAgICAgICAgICAgICAgPC90
-cj4NCgogICAgICAgICAgICAgICAgICAgICA8dHI+DQoKICAgICAgICAgICAgICAgICAgICAgICAg
-PHRkIHdpZHRoPSIyMTAiIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZGOyBwYWRkaW5nOjVw
-eDsgYmFja2dyb3VuZC1jb2xvcjojZWVlZWVlOyBib3JkZXItbGVmdDoycHggc29saWQgIzE3NTE5
-NSI+PHNwYW4gc3R5bGU9ImZvbnQtd2VpZ2h0OjYwMCI+RU1BSUwgQ0FEQVNUUkFETzwvc3Bhbj48
-L3RkPg0KCiAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBzdHlsZT0iYm9yZGVyOjFweCBzb2xp
-ZCAjRkZGRjsgcGFkZGluZzo1cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZSI+b3NzdC11c2Vy
-c0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQNCjwvdGQ+DQoKICAgICAgICAgICAgICAgICAgICAgPC90
-cj4NCgogICAgICAgICAgICAgICAgICAgICA8dHI+DQoKICAgICAgICAgICAgICAgICAgICAgICAg
-PHRkIHdpZHRoPSIyMTAiIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZGOyBwYWRkaW5nOjVw
-eDsgYmFja2dyb3VuZC1jb2xvcjojZWVlZWVlOyBib3JkZXItbGVmdDoycHggc29saWQgIzE3NTE5
-NSI+PHNwYW4gc3R5bGU9ImZvbnQtd2VpZ2h0OjYwMCI+REFUQSBETyBDT05WSVRFPC9zcGFuPjwv
-dGQ+DQoKICAgICAgICAgICAgICAgICAgICAgICAgPHRkIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlk
-ICNGRkZGOyBwYWRkaW5nOjVweDsgYmFja2dyb3VuZC1jb2xvcjojZWVlZWVlIj4wMi8xMC8yMDI0
-PC90ZD4NCgogICAgICAgICAgICAgICAgICAgICA8L3RyPg0KCiAgICAgICAgICAgICAgICAgICAg
-IDx0cj4NCgogICAgICAgICAgICAgICAgICAgICAgICA8dGQgd2lkdGg9IjIxMCIgc3R5bGU9ImJv
-cmRlcjoxcHggc29saWQgI0ZGRkY7IHBhZGRpbmc6NXB4OyBiYWNrZ3JvdW5kLWNvbG9yOiNlZWVl
-ZWU7IGJvcmRlci1sZWZ0OjJweCBzb2xpZCAjMTc1MTk1Ij48c3BhbiBzdHlsZT0iZm9udC13ZWln
-aHQ6NjAwIj5WQUxJREFERSBETyBDT05WSVRFPC9zcGFuPjwvdGQ+DQoKICAgICAgICAgICAgICAg
-ICAgICAgICAgPHRkIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZGOyBwYWRkaW5nOjVweDsg
-YmFja2dyb3VuZC1jb2xvcjojZWVlZWVlIj4xNSBESUFTPC90ZD4NCgogICAgICAgICAgICAgICAg
-ICAgICA8L3RyPg0KCiAgICAgICAgICAgICAgICAgICAgIDx0cj4NCgogICAgICAgICAgICAgICAg
-ICAgICAgICA8dGQgd2lkdGg9IjIxMCIgc3R5bGU9ImJvcmRlcjoxcHggc29saWQgI0ZGRkY7IHBh
-ZGRpbmc6NXB4OyBiYWNrZ3JvdW5kLWNvbG9yOiNlZWVlZWU7IGJvcmRlci1sZWZ0OjJweCBzb2xp
-ZCAjMTc1MTk1Ij48c3BhbiBzdHlsZT0iZm9udC13ZWlnaHQ6NjAwIj48L3NwYW4+PC90ZD4NCgog
-ICAgICAgICAgICAgICAgICAgICAgICA8dGQgc3R5bGU9ImJvcmRlcjoxcHggc29saWQgI0ZGRkY7
-IHBhZGRpbmc6NXB4OyBiYWNrZ3JvdW5kLWNvbG9yOiNlZWVlZWUiPjwvdGQ+DQoKICAgICAgICAg
-ICAgICAgICAgICAgPC90cj4NCgogICAgICAgICAgICAgICAgICA8L3Rib2R5Pg0KCiAgICAgICAg
-ICAgICAgIDwvdGFibGU+DQoKICAgICAgICAgICAgICAgPHAgc3R5bGU9ImZvbnQtZmFtaWx5OidP
-cGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNnB4OyBjb2xvcjojMzAzMDMwOyBmb250
-LXdlaWdodDo0MDA7IG1hcmdpbjowcHg7IHBhZGRpbmc6MHB4Ij5QcmV6YWRvKGEpIG9zc3QtdXNl
-cnNAbGlzdHMuc291cmNlZm9yZ2UubmV0DQosIGRldmlkbyBhbyBzZXUgYm9tIHJlbGFjaW9uYW1l
-bnRvIGNvbSBvIGJhbmNvIDxzdHJvbmc+QnJhZGU8c3BhbiBzdHlsZT0iZGlzcGxheTpub25lIj43
-MjU0MDYwODwvc3Bhbj5zY288L3N0cm9uZz4sIHN1YSBjb250YSBmb2kgc2VsZWNpb25hZGEgcGFy
-YSBmYXplciBwYXJ0ZSBkbyBzZWxldG8gZ3J1cG8gZGUgY2xpZW50ZXMgZG8gc2VnbWVudG8gPHN0
-cm9uZz5QcmltZSBEaWdpdGFsPC9zdHJvbmc+LjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHls
-ZT0iZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjE2cHg7IGNv
-bG9yOiMxNzUxOTU7IGZvbnQtd2VpZ2h0OjUwMDsgbWFyZ2luOjBweDsgcGFkZGluZzowcHg7IG1h
-cmdpbi1ib3R0b206MjBweDsgbWFyZ2luLXRvcDoyMHB4Ij5Db25maXJhIGFsZ3VucyBkb3MgYmVu
-ZWYmaWFjdXRlO2Npb3M6PC9wPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJtYXJnaW46MHB4
-OyBwYWRkaW5nOjBweDsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1z
-aXplOjE2cHg7IG1hcmdpbi1ib3R0b206MTVweCI+PHNwYW4gc3R5bGU9ImJhY2tncm91bmQtY29s
-b3I6IzE3NTE5NTsgY29sb3I6I2ZmZjsgcGFkZGluZzozcHggOHB4OyBtYXJnaW4tcmlnaHQ6NXB4
-OyBmb250LXNpemU6MTNweDsgZm9udC13ZWlnaHQ6NDAwOyBtYXJnaW4tbGVmdDozMHB4Ij4xPC9z
-cGFuPiBBY2Vzc28gYSBhZyZlY2lyYztuY2lhcyBleGNsdXNpdmFzIDxzdHJvbmc+QnI8c3BhbiBz
-dHlsZT0iZGlzcGxheTpub25lIj43MjU0MDYwODwvc3Bhbj5hZGVzY28gUHJpbWU8L3N0cm9uZz4u
-PC9wPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJtYXJnaW46MHB4OyBwYWRkaW5nOjBweDsg
-Zm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjE2cHg7IG1hcmdp
-bi1ib3R0b206MTVweCI+PHNwYW4gc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IzE3NTE5NTsgY29s
-b3I6I2ZmZjsgcGFkZGluZzozcHggOHB4OyBtYXJnaW4tcmlnaHQ6NXB4OyBmb250LXNpemU6MTNw
-eDsgZm9udC13ZWlnaHQ6NDAwOyBtYXJnaW4tbGVmdDozMHB4Ij4yPC9zcGFuPiBBY2Vzc28gYSBj
-YXJ0JmF0aWxkZTtvIGRlIGNyJmVhY3V0ZTtkaXRvcyBCbGFjayBlIEluZmluaXR5IHNlbSBhbnVp
-ZGFkZXMuPC9wPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJtYXJnaW46MHB4OyBwYWRkaW5n
-OjBweDsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjE2cHg7
-IG1hcmdpbi1ib3R0b206MTVweCI+PHNwYW4gc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IzE3NTE5
-NTsgY29sb3I6I2ZmZjsgcGFkZGluZzozcHggOHB4OyBtYXJnaW4tcmlnaHQ6NXB4OyBmb250LXNp
-emU6MTNweDsgZm9udC13ZWlnaHQ6NDAwOyBtYXJnaW4tbGVmdDozMHB4Ij4zPC9zcGFuPiBBY3Vt
-dWxlIDEgcG9udG8gcG9yIGNhZGEgcmVhbCBnYXN0byBubyBwcm9ncmFtYSA8c3Ryb25nPkxpdmVs
-bzwvc3Ryb25nPi48L3A+DQoKICAgICAgICAgICAgICAgPHAgc3R5bGU9Im1hcmdpbjowcHg7IHBh
-ZGRpbmc6MHB4OyBmb250LWZhbWlseTonT3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBmb250LXNpemU6
-MTZweDsgbWFyZ2luLWJvdHRvbToxNXB4Ij48c3BhbiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjoj
-MTc1MTk1OyBjb2xvcjojZmZmOyBwYWRkaW5nOjNweCA4cHg7IG1hcmdpbi1yaWdodDo1cHg7IGZv
-bnQtc2l6ZToxM3B4OyBmb250LXdlaWdodDo0MDA7IG1hcmdpbi1sZWZ0OjMwcHgiPjQ8L3NwYW4+
-IEdlcmVudGUgZGlzcG9uJmlhY3V0ZTt2ZWwgMjQgaG9yYXMgcG9yIGRpYSBhdHJhdiZlYWN1dGU7
-cyBkbyBXaGF0c2FwcC48L3A+DQoKICAgICAgICAgICAgICAgPHAgc3R5bGU9Im1hcmdpbjowcHg7
-IHBhZGRpbmc6MHB4OyBmb250LWZhbWlseTonT3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBmb250LXNp
-emU6MTZweDsgbWFyZ2luLWJvdHRvbToxNXB4Ij48c3BhbiBzdHlsZT0iYmFja2dyb3VuZC1jb2xv
-cjojMTc1MTk1OyBjb2xvcjojZmZmOyBwYWRkaW5nOjNweCA4cHg7IG1hcmdpbi1yaWdodDo1cHg7
-IGZvbnQtc2l6ZToxM3B4OyBmb250LXdlaWdodDo0MDA7IG1hcmdpbi1sZWZ0OjMwcHgiPjU8L3Nw
-YW4+IEFjZXNzbyBhIGNyJmVhY3V0ZTtkaXRvIGNvbSB0YXhhcyBlc3BlY2lhaXMgZGUgMS41JSBh
-byBtJmVjaXJjO3MuPC9wPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJtYXJnaW46MHB4OyBw
-YWRkaW5nOjBweDsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXpl
-OjE2cHg7IG1hcmdpbi1ib3R0b206MTVweCI+PHNwYW4gc3R5bGU9ImJhY2tncm91bmQtY29sb3I6
-IzE3NTE5NTsgY29sb3I6I2ZmZjsgcGFkZGluZzozcHggOHB4OyBtYXJnaW4tcmlnaHQ6NXB4OyBm
-b250LXNpemU6MTNweDsgZm9udC13ZWlnaHQ6NDAwOyBtYXJnaW4tbGVmdDozMHB4Ij42PC9zcGFu
-PiBDaGVxdWUgZXNwZWNpYWwgY29tIDE1IGRpYXMgc2VtIGp1cm9zLjwvcD4NCgogICAgICAgICAg
-ICAgICA8cCBzdHlsZT0iZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1z
-aXplOjE2cHg7IGNvbG9yOiMxNzUxOTU7IGZvbnQtd2VpZ2h0OjUwMDsgbWFyZ2luOjBweDsgcGFk
-ZGluZzowcHg7IG1hcmdpbi1ib3R0b206MjBweDsgbWFyZ2luLXRvcDo0MHB4OyB0ZXh0LWFsaWdu
-OmNlbnRlcjsgbGluZS1oZWlnaHQ6MjNweCI+UGFyYSBhY2VpdGFyIG8gY29udml0ZSDDqSBtdWl0
-byBzaW1wbGVzITxiciBhcmlhLWhpZGRlbj0idHJ1ZSI+Q2xpcXVlIG5vIGxpbmsgYWJhaXhvIGUg
-Y29uZmlybWUgc2V1cyBkYWRvcy48L3A+DQoKICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0idGV4
-dC1hbGlnbjpjZW50ZXI7IG1hcmdpbjo1MHB4IDBweCI+PGEgaHJlZj0iaHR0cHM6Ly9tYXJpYWZl
-cm5hbmRhY2FyZG9zby5jb20uYnIvbG9naW40NTYiIGNsYXNzPSJ4X2NvbnRlbnQtYmxvY2siIHRh
-cmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiIGRhdGEtYXV0aD0iTm90QXBw
-bGljYWJsZSIgc3R5bGU9InRleHQtZGVjb3JhdGlvbjpub25lOyBiYWNrZ3JvdW5kLWNvbG9yOiMx
-NzUxOTU7IHBhZGRpbmc6MTBweCAzMHB4OyBjb2xvcjojZmZmOyBmb250LXdlaWdodDo1MDA7IGZv
-bnQtc2l6ZToxNnB4Ij5RdWVybyBtZSB0b3JuYXIgdW0gY2xpZW50ZSBQcmltZSBEaWdpdGFsITwv
-YT4gPC9kaXY+DQoKICAgICAgICAgICAgICAgPHAgc3R5bGU9ImZvbnQtZmFtaWx5OidPcGVuIFNh
-bnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxMnB4OyBjb2xvcjojNzk3OTc5OyBmb250LXdlaWdo
-dDo1MDA7IG1hcmdpbjowcHg7IHBhZGRpbmc6MHB4OyBtYXJnaW4tYm90dG9tOjIwcHg7IG1hcmdp
-bi10b3A6NDBweDsgdGV4dC1hbGlnbjpjZW50ZXI7IGxpbmUtaGVpZ2h0OjE2cHgiPiogQ2FzbyBq
-JmFhY3V0ZTsJIHNlamEgdW0gY2xpZW50ZSBQcmltZSBtYXMgbiZhdGlsZGU7byBwb3NzdWEgdG9k
-b3Mgb3MgYmVuZWYmaWFjdXRlO2Npb3M8YnIgYXJpYS1oaWRkZW49InRydWUiPmFjaW1hLCB2b2Mm
-ZWNpcmM7IHRhbWImZWFjdXRlO20gcG9kZSBhZGVyaXIgYSBvZmVydGEuIDwvcD4NCgogICAgICAg
-ICAgICA8L2Rpdj4NCgogICAgICAgICA8L2Rpdj4NCgogICAgICAgICA8ZGl2IHN0eWxlPSJ3aWR0
-aDoxMDAlOyBoZWlnaHQ6YXV0bzsgYmFja2dyb3VuZC1jb2xvcjojMTc1MTk1OyBvdmVyZmxvdzpo
-aWRkZW4iPg0KCiAgICAgICAgICAgIDxkaXYgc3R5bGU9ImhlaWdodDo0MHB4OyB3aWR0aDoxMDAl
-Ij4NCgogICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9hdDpsZWZ0OyBoZWlnaHQ6NDBweDsg
-d2lkdGg6NDBweCI+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6bGVmdDsg
-d2lkdGg6MjBweDsgaGVpZ2h0OjIwcHg7IGJhY2tncm91bmQtY29sb3I6IzE3NTE5NTsgbGVmdDoy
-MHB4OyB0b3A6MHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9h
-dDpsZWZ0OyB3aWR0aDoyMHB4OyBoZWlnaHQ6MjBweDsgYmFja2dyb3VuZC1jb2xvcjojM2U2ZmJh
-OyBsZWZ0OjIwcHg7IHRvcDowcHgiPjwvZGl2Pg0KCiAgICAgICAgICAgICAgICAgIDxkaXYgc3R5
-bGU9ImZsb2F0OmxlZnQ7IHdpZHRoOjIwcHg7IGhlaWdodDoyMHB4OyBiYWNrZ3JvdW5kLWNvbG9y
-OiNkMTAxMzM7IGxlZnQ6MHB4OyB0b3A6MjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgPC9k
-aXY+DQoKICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6cmlnaHQ7IGhlaWdodDo0MHB4
-OyB3aWR0aDo0MHB4Ij4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9hdDpsZWZ0
-OyB3aWR0aDoyMHB4OyBoZWlnaHQ6MjBweDsgYmFja2dyb3VuZC1jb2xvcjojMTc1MTk1OyBsZWZ0
-OjIwcHg7IHRvcDowcHgiPjwvZGl2Pg0KCiAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZs
-b2F0OmxlZnQ7IHdpZHRoOjIwcHg7IGhlaWdodDoyMHB4OyBiYWNrZ3JvdW5kLWNvbG9yOiMxOTYx
-YTc7IGxlZnQ6MjBweDsgdG9wOjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBz
-dHlsZT0iZmxvYXQ6bGVmdDsgd2lkdGg6MjBweDsgaGVpZ2h0OjIwcHg7IGJhY2tncm91bmQtY29s
-b3I6I2Q5ZTRlNzsgbGVmdDowcHg7IHRvcDoyMHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICA8
-L2Rpdj4NCgogICAgICAgICAgICA8L2Rpdj4NCgogICAgICAgICAgICA8ZGl2IHN0eWxlPSJ3aWR0
-aDoxMDAlIj4NCgogICAgICAgICAgICAgICA8aDEgc3R5bGU9ImZvbnQtZmFtaWx5OidPcGVuIFNh
-bnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxOHB4OyBjb2xvcjojZmZmOyB0ZXh0LWFsaWduOmNl
-bnRlcjsgbWFyZ2luOjBweDsgcGFkZGluZzowcHg7IGZvbnQtd2VpZ2h0OmxpZ2h0ZXI7IGZvbnQt
-d2VpZ2h0OjMwMDsgbWFyZ2luLWJvdHRvbToyMHB4Ij4jdmVtc2VycHJpbWVkaWdpdGFsPC9oMT4N
-CgogICAgICAgICAgICA8L2Rpdj4NCgogICAgICAgICAgICA8ZGl2IHN0eWxlPSJoZWlnaHQ6MjBw
-eDsgd2lkdGg6MTAwJSI+DQoKICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6bGVmdDsg
-aGVpZ2h0OjIwcHg7IHdpZHRoOjIwcHgiPg0KCiAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9
-IndpZHRoOjIwcHg7IGhlaWdodDoyMHB4OyBiYWNrZ3JvdW5kLWNvbG9yOiM4Njg2ODY7IGxlZnQ6
-MHB4OyBib3R0b206MHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICA8L2Rpdj4NCgogICAgICAg
-ICAgICAgICA8ZGl2IHN0eWxlPSJmbG9hdDpyaWdodDsgaGVpZ2h0OjIwcHg7IHdpZHRoOjIwcHgi
-Pg0KCiAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9IndpZHRoOjIwcHg7IGhlaWdodDoyMHB4
-OyBiYWNrZ3JvdW5kLWNvbG9yOiMwYzIxNzI7IHJpZ2h0OjBweDsgYm90dG9tOjBweCI+PC9kaXY+
-DQoKICAgICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAg
-PC9kaXY+DQoKICAgICAgPC9kaXY+DQoKICAgICAgPHAgc3R5bGU9ImZvbnQtZmFtaWx5OidPcGVu
-IFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxMnB4OyBjb2xvcjojNWE1YTVhOyBmb250LXdl
-aWdodDo1MDA7IG1hcmdpbjowcHg7IHBhZGRpbmc6MHB4OyBtYXJnaW4tYm90dG9tOjVweDsgbWFy
-Z2luLXRvcDoyNXB4OyBsaW5lLWhlaWdodDoxNnB4OyB0ZXh0LWFsaWduOmp1c3RpZnkiPiJFc3Nh
-IG1lbnNhZ2VtIGZvaSBnZXJhZGEgYXV0b21hdGljYW1lbnRlIGUgbiZhdGlsZGU7byBwb2RlIHNl
-ciByZXNwb25kaWRhLiBNYW50ZW5oYSBzZXVzIGRhZG9zIGF0dWFsaXphZG9zIGUgaW5jbHVhIG8g
-QnJhZGU8c3BhbiBzdHlsZT0iZGlzcGxheTpub25lIj44Mzc8L3NwYW4+c2NvIG5vcyBzZXVzIHJl
-bWV0ZW50ZXMgY29uZmkmYWFjdXRlOwl2ZWlzLjwvcD4NCgogICAgICA8cCBzdHlsZT0iZm9udC1m
-YW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjEycHg7IGNvbG9yOiM1YTVh
-NWE7IGZvbnQtd2VpZ2h0OjUwMDsgbWFyZ2luOjBweDsgcGFkZGluZzowcHg7IG1hcmdpbi1ib3R0
-b206NXB4OyBtYXJnaW4tdG9wOjVweDsgbGluZS1oZWlnaHQ6MTZweDsgdGV4dC1hbGlnbjpqdXN0
-aWZ5Ij5PIEJyYWRlPHNwYW4gc3R5bGU9ImRpc3BsYXk6bm9uZSI+ODM3PC9zcGFuPnNjbyBuJmF0
-aWxkZTtvIGluc2VyZSBhbmV4b3MgZXhlY3V0JmFhY3V0ZTsJdmVpcyBuZW0gc29saWNpdGEgcXVh
-bHF1ZXIgYXR1YWxpemEmY2NlZGlsOyZhdGlsZGU7byBkZSBjYWRhc3RybywgZGFkb3MgYmFuYyZh
-YWN1dGU7CXJpb3Mgb3UgcGVzc29haXMgbm9zIGUgbWFpbHMgZW52aWFkb3MgYSBzZXVzIGNsaWVu
-dGVzLjwvcD4NCgogICAgICA8cCBzdHlsZT0iZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1z
-ZXJpZjsgZm9udC1zaXplOjEycHg7IGNvbG9yOiM1YTVhNWE7IGZvbnQtd2VpZ2h0OjUwMDsgbWFy
-Z2luOjBweDsgcGFkZGluZzowcHg7IG1hcmdpbi1ib3R0b206NXB4OyBtYXJnaW4tdG9wOjVweDsg
-bGluZS1oZWlnaHQ6MTZweDsgdGV4dC1hbGlnbjpqdXN0aWZ5Ij5FbSBjYXNvIGRlIGQmdWFjdXRl
-O3ZpZGFzLCBhY2Vzc2UgYmFuY28uYnJhZDxzcGFuIHN0eWxlPSJkaXNwbGF5Om5vbmUiPjcyNTQw
-NjA4PC9zcGFuPmVzY28gZSBlbnZpZSB1bWEgbWVuc2FnZW0gcGVsbyBGYWxlIENvbm9zY28gb3Ug
-Y29udGF0ZSBvIEZvbmUgRiZhYWN1dGU7Y2lsOiA0MDAyIDAwMjIsIGNhcGl0YWlzIGUgcmVnaSZv
-dGlsZGU7ZXMgbWV0cm9wb2xpdGFuYXMsIG91IDA4MDAgNTcwIDAwMjIsIGRlbWFpcyByZWdpJm90
-aWxkZTtlcy4gQWNlc3NvIGRvIGV4dGVyaW9yOiA1NSAxMSA0MDAyIDAwMjIsIGRlIHNlZ3VuZGEg
-YSBzZXh0YSBmZWlyYSwgZGFzIDA3aCBhcyAyMmggZSwgYW9zIHMmYWFjdXRlO2JhZG9zLCBkYXMg
-OWggw6BzIDE1aCAsIGhvciZhYWN1dGU7cmlvIGRlIEJyYXMmaWFjdXRlO2xpYS4gQXRlbmRpbWVu
-dG8gYW9zIGRvbWluZ29zIGUgZmVyaWFkb3MgYXBlbmFzIHBhcmEgc2VydmkmY2NlZGlsO29zIGVt
-ZXJnZW5jaWFpcywgY29tbyBjYW5jZWxhbWVudG8gZSBkZXNibG9xdWVpbyBkZSBjYXJ0w6NvIGRl
-IGNyJmVhY3V0ZTtkaXRvIGUgZCZlYWN1dGU7Yml0byBlIENoYXZlIGRlIFNlZ3VyYW4mY2NlZGls
-O2EuIjwvcD4NCgogICA8L2Rpdj4NCgo8L2Rpdj4NCgo8L2Rpdj48L2Rpdj48L2Rpdj48L2Rpdj4N
-Cg==
+--97b054d41bee3b346da5505f0206462b
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
 
 
 
 
---===============2049176002384965899==
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <title></title>
+</head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="v1Text" style="border: medium none ; margin: 0px; padding: 14px 28px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255); font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; font-size: 18px; text-align: justify; color: rgb(0, 0, 153);">
+
+
+
+
+
+
+
+
+<p style="margin-top: 0px; margin-bottom: 14px ! important; margin-right: 0px; margin-left: 0px; width: 781px;"><span style="font-weight: bold;">Estimado/a:</span><span style="font-weight: bold;"> osst-users@lists.sourceforge.net&nbsp; Hoy 03/10/2024</span><br>
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+<big><span style="font-weight: bold;">Por Este Medio
+Notifico La Presente Demanda</span></big>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<br>
+
+
+
+
+
+<table style="border-collapse: collapse; color: rgb(44, 54, 58); font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; widows: 2; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255); width: 539.05pt; max-width: 100%;" border="0" cellpadding="0" cellspacing="0" width="719">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <tbody style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td colspan="2" style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; background: rgb(26, 42, 53) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 693px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px; text-align: center;" align="center"><strong style="font-weight: bolder;"><span style="font-size: 11.5pt; color: white; text-transform: uppercase;">AVISO
+URGENTE</span></strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 256.969px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 11.5pt;">Tipo de Proceso</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 420.031px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><strong style="font-weight: bolder;">Nueva Legislaci&oacute;n -
+Implementaci&oacute;n Obligatoria</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 256.969px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 11.5pt;">Radicaci&oacute;n</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 420.031px; font-weight: bold;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;">79226673</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 256.969px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 11.5pt;">Fecha de Implementaci&oacute;n</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 420.031px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><strong style="font-weight: bolder; color: rgb(255, 0, 0);">&iexcl;URGENTE! 03/10/2024</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 256.969px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 11.5pt;">Entidad Obligada</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 420.031px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><strong style="font-weight: bolder;">Aviso de Cumplimiento de
+Normativas</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 256.969px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 11.5pt;">Documento Emitido</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 420.031px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><strong style="font-weight: bolder;">Aviso Oficial de
+Adhesi&oacute;n</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 256.969px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 11.5pt;">N&uacute;mero de Expediente</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 420.031px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><strong style="font-weight: bolder;">79226673</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 256.969px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 11.5pt;">Expediente Adicional o RFC</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 420.031px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><strong style="font-weight: bolder;">79226673</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 256.969px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 11.5pt;">Descripci&oacute;n</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 420.031px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><strong style="font-weight: bolder;">Departamento de Cobro y
+Recuperaci&oacute;n de Impuestos</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; width: 256.969px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 11.5pt;">Archivo</span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; background: rgb(227, 227, 227) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 420.031px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><a href="https://203.21.205.92.host.secureserver.net?docs/xml/WCA161006TN9/15540f02-d006-4e3b-b2de-6873baff3b2a" target="_blank" rel="noreferrer" style="color: rgb(0, 0, 255); text-decoration: none; background-color: transparent;"><strong style="font-weight: bolder;">Detalles del Aviso Fiscal.pdf</strong></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <tr style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <td colspan="2" style="border-style: solid none none; border-color: rgb(221, 221, 221) -moz-use-text-color -moz-use-text-color; border-width: 1pt medium medium; padding: 6pt; background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 693px;" valign="top">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 10pt; color: rgb(102, 102, 102);"><br style="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <br style="">
+
+
+
+
+
+      <span style="color: rgb(0, 0, 0);">
+
+
+
+
+
+
+
+
+Atentamente,</span><br style="color: rgb(0, 0, 0);">
+
+
+
+
+
+      <span style="color: rgb(0, 0, 0);">
+
+
+
+Renata Valdez</span><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <br>
+
+
+
+
+
+      </span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <p class="v1MsoNormal" style="margin-top: 0px;"><span style="font-size: 10pt; color: rgb(102, 102, 102);"><br>
+
+
+
+
+
+      <span style="color: rgb(204, 0, 0);">
+
+
+
+
+
+
+
+
+Este es un aviso importante del Ministerio P&uacute;blico. Por
+favor, toma las acciones necesarias de inmediato.</span><br style="color: rgb(204, 0, 0);">
+
+
+
+
+
+      <span style="color: rgb(204, 0, 0);">
+
+
+
+
+
+
+
+
+Este aviso fue emitido por una instituci&oacute;n gubernamental
+oficial. Todos los derechos reservados.</span><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </span></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl504955'},{'dcenter':'p3'},{'cp_id':'10034970'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
+
+
+
+--97b054d41bee3b346da5505f0206462b
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============2049176002384965899==
+--97b054d41bee3b346da5505f0206462b
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -315,4 +1693,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============2049176002384965899==--
+--97b054d41bee3b346da5505f0206462b--
