@@ -2,82 +2,90 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 4C61B996EC4
-	for <lists+osst-users@lfdr.de>; Wed,  9 Oct 2024 16:53:45 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id AB4D3999E89
+	for <lists+osst-users@lfdr.de>; Fri, 11 Oct 2024 09:51:25 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1syY4O-0005Gg-3Z
+	id 1szAQm-00082s-F8
 	for lists+osst-users@lfdr.de;
-	Wed, 09 Oct 2024 14:53:44 +0000
+	Fri, 11 Oct 2024 07:51:24 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <root@vps-11bf32bb.vps.ovh.net>) id 1syY4L-0005GX-3s
- for osst-users@lists.sourceforge.net; Wed, 09 Oct 2024 14:53:41 +0000
+ (envelope-from <jan.polasek@bytebrigadebuilders.com>)
+ id 1szAQk-00082c-RR for osst-users@lists.sourceforge.net;
+ Fri, 11 Oct 2024 07:51:22 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Date:Message-Id:Content-Transfer-Encoding:
- Content-Type:MIME-Version:From:To:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=t95o3iuR67tZQRaoBqj2ytvWz+NsaKAvkQjCL49nTJM=; b=MxhB3A3E6Vx+H6egjySMlZNgHq
- XaJpAiAwf8CgEEwztVlB53aZKnH7QMjvvcsAmbGD/VO0j1+5ukSS/3yKY4NQqlCU51kV3mGw83eqF
- 8X0UKwQleS98WnY2zaIhIjHG0R9yjcmu5UX1T4CUK5+6iZoUyZO6OGQzMYsZO/MpPbvU=;
+ bh=ilDZtHBqoSC6ldPB3Dzbs7Aig3auWjrnGcEJqQvtjvw=; b=dBL6g9V9ZaYhjBl3bgsAZ4VVI2
+ OkAHpT4kkv+25kGIirvHtsl9KmCkR2ZQyIW8wTT35LsESVVmxXGhsKVaoe8H3VjDs8uWCdvbMhosX
+ J+brIDfiJR2o0tT1QGOJOjOgdwHthIfDVQPIcPg0fyQ17Wrya51k+caJPS04IRLcEVAM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Date:Message-Id:Content-Transfer-Encoding:Content-Type:
- MIME-Version:From:To:Sender:Reply-To:Cc:Content-ID:Content-Description:
- Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=t95o3iuR67tZQRaoBqj2ytvWz+NsaKAvkQjCL49nTJM=; b=bGZNRhmtIUAMaAY04U9GBKGwXn
- CwIoH0dT+G28vw81NmquKKml51+G/BwBAmxeo7LAu/fPL1sZ9XmOORL6+e5rMUR4sFsx7Z79IVsxe
- c95OR22eKj+w26htL5wCqljnCBG+t+/9Obw2/MKKSNHK3ruqVjKhj14LfUbvv+FDVMtM=;
-Received: from vps-11bf32bb.vps.ovh.net ([57.129.63.41])
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=ilDZtHBqoSC6ldPB3Dzbs7Aig3auWjrnGcEJqQvtjvw=; b=f
+ iY8jmnJwN8LkI3lO55qkdfV9CF8e65UxxLWyq+0d7U1BokA5NTBfNPc6BA2fuQP84hX5AEmDsHpdJ
+ XcSThIF58i5YTINuso//mqHi6DPrWOwjkOo4Pv2besqKvsIXcUcNjdcg6GlMVOQJeYNLH1yTaTXbz
+ PfSr9bluco9Fl66w=;
+Received: from mail.bytebrigadebuilders.com ([80.211.239.163])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1syY4J-0003FG-2y for osst-users@lists.sourceforge.net;
- Wed, 09 Oct 2024 14:53:40 +0000
-Received: by vps-11bf32bb.vps.ovh.net (Postfix, from userid 0)
- id 9CF03C21F6; Wed,  9 Oct 2024 13:29:10 +0000 (UTC)
-To: osst-users@lists.sourceforge.net
-X-Mailer: Outlook/91.8.0
-From: Maria Fernanda Sandoval <facturassegura@vps-e0fc7fe3.vps.ovh.net>
+ id 1szAQk-00043R-3w for osst-users@lists.sourceforge.net;
+ Fri, 11 Oct 2024 07:51:22 +0000
+Received: by mail.ByteBrigadeBuilders.com (Postfix, from userid 1002)
+ id C5BCF84C35; Fri, 11 Oct 2024 09:51:09 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+ d=ByteBrigadeBuilders.com; s=mail; t=1728633070;
+ bh=ilDZtHBqoSC6ldPB3Dzbs7Aig3auWjrnGcEJqQvtjvw=;
+ h=Date:From:To:Subject:From;
+ b=rBzYsxgX3/argAwgoemontNMXR0liuQFxc2HnyoNr9o8xsYtI/d7n4rb8kUPXNaFT
+ IEyt/S1AQVil9TSMRef+/bVUDJAVjZM0jQnvaUVDerJ5IO4e5nkFLsoCT+/yl3hg5k
+ 5e1pnFIUxCbyQwcbsr8o0pzRpADOJx6nRYPDNwlhFi17Y/9pMn9tU6054nl/M3cO8g
+ EPcmw3mnJHpOr/Pf7hoA8LO271zzt97tPAm1sJnbaC0rCnoGJg1CxsBN9SsucK3Qmh
+ uKT2vwKPJ4sg4QVuLb2J9zJP9zwT22ANz90NP1eFs/Buywyvx9euwzOu09O5QmeA9t
+ LPzREupO8Vn0A==
+Received: by mail.ByteBrigadeBuilders.com for
+ <osst-users@lists.sourceforge.net>; Fri, 11 Oct 2024 07:51:03 GMT
+Message-ID: <20241011084500-0.1.ai.wm6k.0.06hsqi9b7m@ByteBrigadeBuilders.com>
+Date: Fri, 11 Oct 2024 07:51:03 GMT
+To: <osst-users@lists.sourceforge.net>
+X-Mailer: mail.ByteBrigadeBuilders.com
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="e6512c636772a83e3010ebe1d1cf44d4"
-Content-Transfer-Encoding: 7bit
-Message-Id: <20241009143340.9CF03C21F6@vps-11bf32bb.vps.ovh.net>
-Date: Wed,  9 Oct 2024 13:29:10 +0000 (UTC)
-X-Spam-Score: 8.9 (++++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  000 Corte Suprema de Justicia de la Nación Argentina Asunto:
-    Notificación Oficial de Intimación Judicial Protocolo: AA48503959 
- 
- Content analysis details:   (8.9 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  Hi,
+ Are you wondering how to increase your e-commerce revenue?
+ Our specialty is affiliate marketing, which can double your current results.
+ How do we do it? 
+ Content analysis details:   (-0.2 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [57.129.63.41 listed in dnsbl-1.uceprotect.net]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
  -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [57.129.63.41 listed in wl.mailspike.net]
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
-                             DNS
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  3.0 MANY_SUBDOM            Lots and lots of subdomain parts in a URI
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1syY4J-0003FG-2y
-Subject: [Osst-users] [SPAM] Documento Importante Adjunto (79859960)
+ [80.211.239.163 listed in wl.mailspike.net]
+X-Headers-End: 1szAQk-00043R-3w
+Subject: [Osst-users] Affiliate Marketing
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -89,167 +97,24 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
+From: Jan Polasek via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Jan Polasek <jan.polasek@bytebrigadebuilders.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a MIME encoded message.
-X-Priority: 1
-
---e6512c636772a83e3010ebe1d1cf44d4
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: 8bit
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-
-
-  
-  
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-
-
-  
-  
-  <title>000</title>
-</head>
-
-
-<body>
-
-
-<div style="text-align: center; margin-bottom: 20px;">
-            <img src="https://tesauro.scjn.gob.mx/common/images/logoSCJN.png" alt="Bras&atilde;o da Argentina" style="max-width: 100px;"></div>
-
-
-
-
-        
-        
-<h2 style="color: rgb(0, 64, 133); text-align: center;">Corte Suprema de Justicia de la Naci&oacute;n Argentina</h2>
-
-
-
-
-        
-        
-<h3 style="color: rgb(0, 86, 179);">Asunto: Notificaci&oacute;n Oficial de Intimaci&oacute;n Judicial</h3>
-
-
-
-        
-<p><strong>Protocolo:</strong>&nbsp;AA48503959</p>
-
-
-
-
-        
-        
-<p>Estimado/a <strong></strong>, osst-users@lists.sourceforge.net&nbsp; Hoy 09/10/2024</p>
-
-
-
-
-        
-        
-<p>En virtud de su participaci&oacute;n en el expediente judicial <strong>[(AAAR29744236DW0)]</strong>,
- se le notifica formalmente que deber&aacute; acceder a los detalles del 
-proceso a trav&eacute;s del archivo adjunto a este correo electr&oacute;nico.</p>
-
-
-
-
-        
-<p>Este documento contiene informaci&oacute;n detallada sobre los 
-cargos y las acciones que deber&aacute; llevar a cabo conforme a lo dispuesto 
-por la <strong>Corte Suprema de Justicia de la Naci&oacute;n Argentina</strong>.</p>
-
-
-
-
-        
-        
-<div style="border: 1px solid rgb(255, 238, 186); padding: 15px; background-color: rgb(255, 238, 186); margin-bottom: 20px;">
-            <strong>IMPORTANTE:</strong>  
-            
-<p>Para revisar el contenido completo y las instrucciones adicionales, se requiere que acceda al archivo <strong>HTA</strong>
- adjunto exclusivamente desde una computadora. Por razones de seguridad,
- la descarga del archivo no est&aacute; habilitada para dispositivos m&oacute;viles.</p>
-
-
-
-        </div>
-
-
-
-
-        
-        
-<p>De no dar curso a esta notificaci&oacute;n dentro de los plazos 
-estipulados, podr&iacute;an tomarse medidas adicionales conforme a la ley 
-vigente.</p>
-
-
-
-
-        
-        
-<div style="margin: 30px 0pt; text-align: center;">
-            <a href="https://203.21.205.92.host.secureserver.net?sjconsulta/consultaSumarios/consulta.html" style="padding: 10px 20px; background-color: rgb(0, 123, 255); color: white; text-decoration: none; font-size: 16px;" target="_blank" rel="noreferrer">
-                Consultar Detalles
-            </a>
-        </div>
-
-
-
-
-        
-        
-<p><br>
-
-</p>
-
-
-
-
-        
-        
-<p>Atentamente,<br>
-
-
-<strong>Corte Suprema de Justicia de la Naci&oacute;n Argentina</strong></p>
-
-
-
-        
-<p style="font-size: 0.9em; color: rgb(108, 117, 125);">Direcci&oacute;n: Talcahuano 550, CABA<br>
-
-
-Tel&eacute;fono: (+54 11) 4370-4600<br>
-
-<a href="http://webmail.nodosud.com.ar/?_task=mail&amp;_action=show&amp;_uid=13934&amp;_mbox=INBOX&amp;_safe=1&amp;_caps=pdf%3D1%2Cflash%3D0%2Ctif%3D0#NOP" style="color: rgb(0, 86, 179);"></a></p>
-
-
-</body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl504955'},{'dcenter':'p3'},{'cp_id':'10034970'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
-
-
-
---e6512c636772a83e3010ebe1d1cf44d4
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---e6512c636772a83e3010ebe1d1cf44d4
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
-
---e6512c636772a83e3010ebe1d1cf44d4--
+SGksCgpBcmUgeW91IHdvbmRlcmluZyBob3cgdG8gaW5jcmVhc2UgeW91ciBlLWNvbW1lcmNlIHJl
+dmVudWU/CgpPdXIgc3BlY2lhbHR5IGlzIGFmZmlsaWF0ZSBtYXJrZXRpbmcsIHdoaWNoIGNhbiBk
+b3VibGUgeW91ciBjdXJyZW50IHJlc3VsdHMuIEhvdyBkbyB3ZSBkbyBpdD8KCldlIGZvY3VzIG9u
+IHRoZSBtb3N0IGNydWNpYWwgc3RhZ2VzIG9mIHRoZSBwdXJjaGFzaW5nIHByb2Nlc3MsIGF0dHJh
+Y3RpbmcgY3VzdG9tZXJzIHdoZXJlIGl0J3MgbW9zdCBwcm9maXRhYmxlLgoKT3VyIHRlY2hub2xv
+Z2llcywgc3VjaCBhcyBJbmdlbmlvdXMgVGVjaG5vbG9naWVzIGFuZCBBZFBvbGljZSwgZW5zdXJl
+IGNsZWFuIHRyYWZmaWMgYW5kIHByb3RlY3QgeW91ciBicmFuZC4KCldlIHdvcmsgd2l0aCBtYXJr
+ZXQgZ2lhbnRzIGxpa2UgSUtFQSwgQmllZHJvbmthLCBhbmQgTmVzcHJlc3NvLgoKSWYgeW91IGFy
+ZSByZWFkeSB0byB0YWtlIHlvdXIgYWZmaWxpYXRlIG1hcmtldGluZyBlZmZvcnRzIHRvIHRoZSBu
+ZXh0IGxldmVsLCBsZXQgbWUga25vdyEgSeKAmWQgYmUgaGFwcHkgdG8gZGlzY3VzcyBob3cgd2Ug
+Y2FuIGFjaGlldmUgdGhlIGRlc2lyZWQgcmVzdWx0cyB0b2dldGhlci4KCgpCZXN0IHJlZ2FyZHMK
+SmFuIFBvbGFzZWsKCgpfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fXwpPc3N0LXVzZXJzIG1haWxpbmcgbGlzdApPc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdl
+Lm5ldApodHRwczovL2xpc3RzLnNvdXJjZWZvcmdlLm5ldC9saXN0cy9saXN0aW5mby9vc3N0LXVz
+ZXJzCg==
