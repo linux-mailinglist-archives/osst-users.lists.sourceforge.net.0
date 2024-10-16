@@ -2,81 +2,105 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 66F7199DD93
-	for <lists+osst-users@lfdr.de>; Tue, 15 Oct 2024 07:37:57 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id C99D39A035B
+	for <lists+osst-users@lfdr.de>; Wed, 16 Oct 2024 09:58:25 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1t0aFo-0008Uc-7N
+	id 1t0yvH-00028w-Ra
 	for lists+osst-users@lfdr.de;
-	Tue, 15 Oct 2024 05:37:56 +0000
+	Wed, 16 Oct 2024 07:58:23 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <root@vps-8e30621e.vps.ovh.net>) id 1t0aFn-0008UN-0C
- for osst-users@lists.sourceforge.net; Tue, 15 Oct 2024 05:37:55 +0000
+ (envelope-from <nf-e@srinformatica.com.br>) id 1t0yvD-00028m-8o
+ for osst-users@lists.sourceforge.net; Wed, 16 Oct 2024 07:58:19 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:Content-Transfer-Encoding:
- Content-Type:MIME-Version:From:Subject:To:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:To:From:MIME-Version:Content-Type:Sender:
+ Reply-To:Date:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=23T1LOfIi5ZMfD3C5SCLO8FObAFAzCbroC3KHdrFQw8=; b=mQP0wBWvh4miR+QSFQR2T0jE7D
- gg8KLFi4X22F2PsYZ7AlmuOxQEVs8k9GAjqTJMX9HtFOSKoSoZ0FFhNygzPNjkgkMbEiPO7Ptot9T
- V0EGPb6j0USKZc8N3wc6+O2XVPLaSzlb3AvpmAllJ8S6MMypY66bQZUQkTcEfjj16aus=;
+ bh=NjEEGlVkLS5Tq4uhrJJrj/h5O45D70Q1Y7rN4f9s5Gs=; b=HksLuQ4WSsbDv3KGGCE8rxVA0/
+ /DMvjJ+evy+kvcu+B7TSqHpuXxuDKVnPaFzI6X/BEY6lDUuIX9WMm8tSGdJDIXlPdcyplvdXuDvKJ
+ Wze8AfrzsCv0kH+65Cs+jK/0hZ5FPeDuymQoFJRLKDSyACeKMy1MUVgoR8dnMtOGU+o8=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:Content-Transfer-Encoding:Content-Type:MIME-Version:From:
- Subject:To:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Subject:To:From:MIME-Version:Content-Type:Sender:Reply-To:Date:Message-ID
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=23T1LOfIi5ZMfD3C5SCLO8FObAFAzCbroC3KHdrFQw8=; b=g
- vf8r1Fg76Hua/Rh8H2Qeddl4dcKa+nA8t52/X8AOqH0ND0cluomG1fnOkjNMMJVoJlE04Wog+nQqd
- Dcl2E/dS92o9rHtlKQJnCK52YY/5IJyydhQPlTPnBvrmppeWSGh+0oJDxJHYqWm8jC9PMYVM842iN
- IWo42Jte1Io3Nacc=;
-Received: from vps-8e30621e.vps.ovh.net ([162.19.152.96])
+ List-Owner:List-Archive; bh=NjEEGlVkLS5Tq4uhrJJrj/h5O45D70Q1Y7rN4f9s5Gs=; b=c
+ eqYRqTNGh3oGqC3ULeC9a7FrNxOrXvJ7wi9PH7BRQj9IK8qWX/XxwgSsJg/KJ2xti9j0aR5PMx8pr
+ Lczix/uVOkrvOsAXm2XZ9aPk0nQmk9flBYPdbE1WJQzfciDNVTwH+F1BfrjUta9jRRgEFaIfD38LU
+ /1auPQxuM/IhF14o=;
+Received: from smtp-sp221-233.uni5.net ([191.6.221.233])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1t0aFm-0003Nk-5b for osst-users@lists.sourceforge.net;
- Tue, 15 Oct 2024 05:37:54 +0000
-Received: by vps-8e30621e.vps.ovh.net (Postfix, from userid 0)
- id 68D218FC2B; Tue, 15 Oct 2024 04:49:05 +0000 (UTC)
-To: osst-users@lists.sourceforge.net
-X-Mailer: Outlook/91.8.0
-From: Jonathan Navarro <financeiro@vps-e0fc7fe3.vps.ovh.net>
+ id 1t0yvB-0002T8-Nl for osst-users@lists.sourceforge.net;
+ Wed, 16 Oct 2024 07:58:19 +0000
+Received: from smtp-sp221-114.uni5.net (smtp-sp221-114.uni5.net
+ [191.6.221.114])
+ (using TLSv1.2 with cipher ADH-AES256-GCM-SHA384 (256/256 bits))
+ (No client certificate requested)
+ by smtp-sp221-233.uni5.net (Postfix) with ESMTPS id C29C421BA9C7
+ for <osst-users@lists.sourceforge.net>; Wed, 16 Oct 2024 04:41:11 -0300 (-03)
+Received: from [192.168.100.153] (unknown
+ [IPv6:2804:1e68:c201:6e82:3188:105a:a514:9b69])
+ (using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+ key-exchange X25519 server-signature RSA-PSS (2048 bits) server-digest SHA256)
+ (No client certificate requested)
+ (Authenticated sender: nf-e@srinformatica.com.br)
+ by smtp-sp221-114.uni5.net (Postfix) with ESMTPSA id B2C1720208F5
+ for <osst-users@lists.sourceforge.net>; Wed, 16 Oct 2024 04:41:04 -0300 (-03)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=srinformatica.com.br;
+ s=mail; t=1729064464; bh=TVeo4yahaXcl/mfaOxpieXlg2W8=;
+ h=From:To:Subject:From;
+ b=uOb0/Gd4sgVRAH5H8uq//nhlQ0cCwvSLJMdJslesalseuJ4xKGNgSV+5yhXAWR+2W
+ l8CZ8e0F3i5QKf08THTm9+qAsoWLwhsgrWF5JgorNgRj1jxL5OUTyhJgCAoxZLS/3v
+ szBMiQ1xnwMBz+iglPs8RWZcVi1Uu5UT4pd8fqMg=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=dkim.uni5.net;
+ s=uni51; t=1729064464; bh=TVeo4yahaXcl/mfaOxpieXlg2W8=;
+ h=From:To:Subject:From;
+ b=xihM4AzdaOCXZdXPPsuLOGnYwJCyAz7Lm/q/FR+Ie3yDxgtY8O8Y1x4xFBdj0QMtE
+ cfS6gY+yxYvKPlqg4MyMGk+xH7puV/H9Lhvg7drAZDbi/V47tdtpZ9W+WfUpcge34p
+ pSr8u5HrRwyYNKhOV6WbSNGtfNOaJsI5EgoDd/0k=
+Content-Type: multipart/mixed; boundary="===============2352286417792896254=="
 MIME-Version: 1.0
-Content-Type: multipart/mixed; boundary="d3fa31ec3c9cf5ad4e410677950648a9"
-Content-Transfer-Encoding: 7bit
-Message-Id: <20241015051556.68D218FC2B@vps-8e30621e.vps.ovh.net>
-Date: Tue, 15 Oct 2024 04:49:05 +0000 (UTC)
-X-Spam-Score: 7.5 (+++++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
+From: nfe<nf-e@srinformatica.com.br>
+To: osst-users@lists.sourceforge.net
+X-SND-ID: 94qlC/3BkHTH3c88MHrfKJui1esQ8BM6DMz6Tedja5wQhwmnfxc+4t+/3fEL
+ O5vycwJQI8qkmmXrojdiyzV+SEcCCjcUmBKXNrXs/NagrvsrCavNuuoN1VHF
+ EK/ogWh/Du9FnfLIpGmdbYkq9bR9Fi65lndkdNFJzAwocJQGE7z4MJD4BYxY
+ CQRvbWt0Qp3F0KaaHqEAkfSIk4AO5p2n/zzV9KAXD2tWG1zImxREsjWMM6V3
+ LEdREjcWCToXMhFrI3+oDHqQzog4eCeOlfAdviBe6D2Qaduvnguwnn2yAjWy
+ /Bz5ArroXBchEEpTKXfUFBOlTV5OP7jsdMdtL/BSymWNFV8phGBFQUU1My54
+ RaLXMcncK7MfcaUcrZW7IQPoo0etgFPblPBXxMRCy6NV+GRLkCTaHlKWiRbe
+ dJbe1fEFRl09VE0rfNA/eCiE8D0OEW9OUw/D3YCuuxeyp0VJb2Z4zjxgRCGG
+ +gegu40bBNUt49EXY3DYCqD2gEhpFdbwdLzHFYvrJGceCLacmIqCpXGoReTB
+ 3vOdyVOZFGaFet0=
+X-Spam-Score: 1.6 (+)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  fac1 Notificación de Factura CUIT: 57933474 Correo electrónico:
-    osst-users@lists.sourceforge.net ¡Hola, 
- 
- Content analysis details:   (7.5 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  NF emitida 0547031 NF emitida Prezado cliente, 
+ Content analysis details:   (1.6 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [162.19.152.96 listed in zen.spamhaus.org]
-  0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
-                             DNS
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 LOTS_OF_MONEY          Huge... sums of money
-  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
-                             Colors in HTML
-  3.1 MANY_SUBDOM            Lots and lots of subdomain parts in a URI
-X-Headers-End: 1t0aFm-0003Nk-5b
-Subject: [Osst-users] Recordatorio de pago vencido  (2329812)
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid 0.1 MISSING_MID            Missing Message-Id: header
+ 0.0 LOTS_OF_MONEY          Huge... sums of money
+ 1.4 MISSING_DATE           Missing Date: header
+X-Headers-End: 1t0yvB-0002T8-Nl
+Subject: [Osst-users] NF emitida - 0547031
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -89,221 +113,50 @@ List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
 Errors-To: osst-users-bounces@lists.sourceforge.net
-
-This is a MIME encoded message.
-X-Priority: 1
-
---d3fa31ec3c9cf5ad4e410677950648a9
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: 8bit
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-
-  
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
-
-  
-  <title>fac1</title>
-</head>
-
-
-<body>
-
-<table style="border-collapse: collapse; color: rgb(51, 51, 51); font-family: Roboto,sans-serif; font-size: 14px; font-style: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-transform: none; widows: 2; word-spacing: 0px; white-space: normal; background-color: rgb(248, 248, 248); padding-top: 10pt; width: 900px; margin-left: auto; margin-right: auto;" align="center" bgcolor="#f8f8f8" border="0" cellpadding="0" cellspacing="0" width="900">
-
-  <tbody style="">
-
-    <tr style="">
-
-      <td style="color: rgb(51, 51, 51); padding-top: 10pt;" bgcolor="#ffffff">
-      <div style="text-align: center;">
-      </div>
-      <table style="border-bottom: 1px solid rgb(8, 84, 136); border-collapse: collapse; width: 900px; padding-bottom: 5pt;" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" width="900">
-
-        <tbody style="">
-
-          <tr style="" bgcolor="#ffffff">
-
-            <td style="color: rgb(51, 51, 51); text-align: left; padding-left: 10px;">
-            <div style="text-align: center;">
-            </div>
-            <h1 style="margin-top: 0px; font-weight: 500; line-height: 1.2; font-size: 14pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; text-align: left;">Notificaci&oacute;n de Factura</h1>
-
-            <span style="font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; display: block;">CUIT:<span>&nbsp;</span><strong style="font-weight: bolder;">57933474</strong></span><br style="">
-
-            <span style="font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; display: block;">Correo electr&oacute;nico:<span> </span><strong style="font-weight: bolder;">osst-users@lists.sourceforge.net</strong></span><span style="font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; display: block;"><br>
-
-            <strong style="font-weight: bolder;"></strong></span></td>
-
-          </tr>
-
-        
-        </tbody>
-      
-      </table>
-
-      </td>
-
-    </tr>
-
-    <tr style="">
-
-      <td style="margin: 50px; padding: 20px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);" bgcolor="#ffffff" valign="top">
-      
-      <table style="border-collapse: collapse; width: 860px;" align="center" border="0" cellpadding="3" cellspacing="3">
-
-        <tbody style="">
-
-          <tr style="">
-
-            <td style="color: rgb(51, 51, 51);" width="800">
-            
-            <p style="margin-top: 0px;"><span style="font-size: 12pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif;">&iexcl;Hola,<span>&nbsp;</span><strong style="font-weight: bolder;"></strong><br style="">
-
-            <br style="">
-
-Nos ponemos en contacto para informarte que ten&eacute;s un comprobante
-disponible. Para verlo pod&eacute;s ingresar al v&iacute;nculo "ver".</span></p>
-
-            </td>
-
-          </tr>
-
-          <tr style="">
-
-            <td style="color: rgb(51, 51, 51);" width="800"></td>
-
-          </tr>
-
-          <tr style="">
-
-            <td style="margin: 50px; padding: 20px; color: rgb(51, 51, 51);" valign="top">
-            
-            <table style="border-collapse: collapse; font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; text-align: center;" align="center" border="0" cellpadding="3" cellspacing="2" width="100%">
-
-              <tbody style="">
-
-                <tr style="">
-
-                  <td style="padding: 20px; color: rgb(51, 51, 51);" valign="top" width="800">
-                  
-                  <table style="border-collapse: collapse;" border="0" cellpadding="0" cellspacing="0">
-
-                    <thead style=""><tr color="#fff" style="font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; background-color: rgb(8, 84, 136); color: rgb(255, 255, 255); height: 24pt;" bgcolor="#085488">
-
-                      <th style="padding: 5px; text-align: left; color: rgb(255, 255, 255); font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; width: 250px;" valign="middle">Comprobante</th>
-
-                      <th style="padding: 5px; text-align: right; color: rgb(255, 255, 255); font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; width: 120px;" valign="middle">Vencimiento</th>
-
-                      <th style="padding: 5px; text-align: right; color: rgb(255, 255, 255); font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; width: 160px;" valign="middle">Importe</th>
-
-                      <th style="padding: 5px; color: rgb(51, 51, 51); width: 60px;" valign="middle">&nbsp;</th>
-
-                    </tr>
-
-                    </thead><tbody style="">
-
-                      <tr style="">
-
-                        <td style="padding: 5px; color: rgb(51, 51, 51); font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; width: 250px; text-align: left;" valign="middle">Factura de venta AA57933474</td>
-
-                        <td style="padding: 5px; color: rgb(51, 51, 51); font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; width: 120px; text-align: right;" valign="middle">15/10/2024</td>
-
-                        <td style="padding: 5px 10pt 5px 5px; color: rgb(51, 51, 51); font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; text-align: right;" valign="middle">$3.425,16</td>
-
-                        <td style="padding: 5px; color: rgb(51, 51, 51); text-align: center;" valign="middle"><span style=""><a href="https://213.159.66.148.host.secureserver.net?upn=u001.z-2FPQZLAH9NOm7yDeGcRGj0MZRgHJjxc4RuD3LzBV8rS2yh-2Bbln5CrDpVig1ldyM8aoMwxgcFQjNU6osRN9IyrkvRIwPCcrCFcJ9cX4Do07vRCIqrtjAO25-2FgcLrujV-2FOADzAVzL50JUrgtbSb4vvFPULmd-2FK9fXHItkuRGNSrstn-2FzwJRlshGeLW94VH1xGMWWCqnv9urj8UrNTM8DEHlA-3D-3D2WZa_-2FUUYQ43rod4IJTLf4mV8Ko-2BO-2F7eHrRj53n3xNh5Gj8gArzWTGzO7n0aphhHSnA-2BtT-2FaNcvYBEAGRINs5I9Cl3odrNTVZuOsTKZt06YdmJWC1QC67Zb-2BtnzY2fz4fVksI0xQoo5AbN-2Bnkod1pJADnXFY-2Bvcum1jfyrkRlFwGUyauw5VUhxiNe6ZuGToCoC69iaZAAmoPq7Dhap6cjwj2m-2F9-2Bb3fxg34kIEI9aEd3z7PUH8rJaCmCm8efGQsycbriImDugeP4DTTKb-2F46XVAmciZSBTdNq292-2FHWISP-2FhrU1z-2FpNLduRZxoUdOIoDDn2u2" target="_blank" rel="noreferrer" style="color: blue; text-decoration: none; background-color: transparent; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; font-size: 10pt;">Ver</a></span></td>
-
-                      </tr>
-
-                    
-                    </tbody><tfoot style=""></tfoot>
-                  
-                  </table>
-
-                  </td>
-
-                </tr>
-
-              
-              </tbody>
-            
-            </table>
-
-            </td>
-
-          </tr>
-
-          <tr style="">
-
-            <td style="padding: 10pt; color: rgb(51, 51, 51);" valign="top">
-            
-            <table style="border-collapse: collapse; font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; width: 833.344px;" align="center" border="0" cellpadding="3" cellspacing="2" width="100%">
-
-              <tbody style="">
-
-                <tr style="">
-
-                  <td style="color: rgb(51, 51, 51);">
-                  
-                  <div style="text-align: left; min-height: 1px;">Atte.<br>
-
-Equipo Facturama</div>
-
-                  
-                  <div style="text-align: left; min-height: 1px;"></div>
-
-                  </td>
-
-                </tr>
-
-              
-              </tbody>
-            
-            </table>
-
-            </td>
-
-          </tr>
-
-          <tr style="">
-
-            <td style="color: rgb(51, 51, 51);">
-            
-            <div class="v1Justify" style="font-size: 10pt; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; text-align: justify; min-height: 1px;">Para descargar los archivos de la Resoluci&oacute;n General 2485 - ANEXO V hac&eacute; click<a href="https://213.159.66.148.host.secureserver.net?upn=u001.z-2FPQZLAH9NOm7yDeGcRGj0MZRgHJjxc4RuD3LzBV8rS2yh-2Bbln5CrDpVig1ldyM8aoMwxgcFQjNU6osRN9IyrkvRIwPCcrCFcJ9cX4Do07vRCIqrtjAO25-2FgcLrujV-2FOADzAVzL50JUrgtbSb4vvFPULmd-2FK9fXHItkuRGNSrstn-2FzwJRlshGeLW94VH1xGMWWCqnv9urj8UrNTM8DEHlA-3D-3D2WZa_-2FUUYQ43rod4IJTLf4mV8Ko-2BO-2F7eHrRj53n3xNh5Gj8gArzWTGzO7n0aphhHSnA-2BtT-2FaNcvYBEAGRINs5I9Cl3odrNTVZuOsTKZt06YdmJWC1QC67Zb-2BtnzY2fz4fVksI0xQoo5AbN-2Bnkod1pJADnXFY-2Bvcum1jfyrkRlFwGUyauw5VUhxiNe6ZuGToCoC69iaZAAmoPq7Dhap6cjwj2m-2F9-2Bb3fxg34kIEI9aEd3z7PUH8rJaCmCm8efGQsycbriImDugeP4DTTKb-2F46XVAmciZSBTdNq292-2FHWISP-2FhrU1z-2FpNLduRZxoUdOIoDDn2u2" target="_blank" rel="noreferrer" style="color: blue; text-decoration: none; backg
- round-color: transparent; font-family: &quot;Segoe UI&quot;,Verdana,Tahoma,Helvetica,Arial,sans-serif; font-size: 10pt;"><span>&nbsp;</span>ac&aacute;</a></div>
-
-            </td>
-
-          </tr>
-
-        
-        </tbody>
-      
-      </table>
-
-      </td>
-
-    </tr>
-
-  
-  </tbody>
-</table>
-
-</body>
-<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl504955'},{'dcenter':'p3'},{'cp_id':'10034970'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script></html>
-
-
-
---d3fa31ec3c9cf5ad4e410677950648a9
+Message-Id: <E1t0yvH-00028w-Ra@sfs-ml-4.v29.lw.sourceforge.com>
+Date: Wed, 16 Oct 2024 07:58:23 +0000
+
+--===============2352286417792896254==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InB0LUJSIj4KPGhlYWQ+CiAgICA8bWV0YSBjaGFy
+c2V0PSJVVEYtOCI+CiAgICA8dGl0bGU+TkYgZW1pdGlkYSAwNTQ3MDMxPC90aXRsZT4KPC9oZWFk
+Pgo8Ym9keSBzdHlsZT0iZm9udC1mYW1pbHk6IEFyaWFsLCBzYW5zLXNlcmlmOyBiYWNrZ3JvdW5k
+LWNvbG9yOiAjZjlmOWY5OyBwYWRkaW5nOiAyMHB4OyI+CiAgICA8IS0tIENvbnRhaW5lciBQcmlu
+Y2lwYWwgLS0+CiAgICA8ZGl2IHN0eWxlPSJtYXgtd2lkdGg6IDYwMHB4OyBtYXJnaW46IDAgYXV0
+bzsgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjsgcGFkZGluZzogMjBweDsgYm9yZGVyOiAxcHgg
+c29saWQgI2RkZGRkZDsiPgogICAgICAgIDwhLS0gMDU0NzAzMSAtLT4KICAgICAgICA8aDEgc3R5
+bGU9InRleHQtYWxpZ246IGNlbnRlcjsgY29sb3I6ICMwMDczZTY7Ij5ORiBlbWl0aWRhPC9oMT4K
+CiAgICAgICAgPCEtLSAwNTQ3MDMxIC0tPgogICAgICAgIDxwPlByZXphZG8gY2xpZW50ZSw8L3A+
+CiAgICAgICAgPCEtLSAwNTQ3MDMxIC0tPgogICAgICAgIDxwPkluZm9ybWFtb3MgcXVlIHN1YSA8
+c3Ryb25nPk5vdGEgRmlzY2FsIEVsZXRyw7RuaWNhPC9zdHJvbmc+IGZvaSBlbWl0aWRhIGNvbSBz
+dWNlc3NvLiBDb25maXJhIG9zIGRldGFsaGVzIGFiYWl4bzo8L3A+CiAgICAgICAgPHA+PHN0cm9u
+Zz5EYXRhIGRlIEVtaXNzw6NvOjwvc3Ryb25nPiAxNi8xMC8yMDI0PC9wPgogICAgICAgIDxwPjxz
+dHJvbmc+VmFsb3I6PC9zdHJvbmc+IFIkIDEzNDEsMDA8L3A+CiAgICAgICAgPHA+PHN0cm9uZz5O
+w7ptZXJvIGRhIE5vdGEgRmlzY2FsOjwvc3Ryb25nPiAwNTQ3MDMxPC9wPgogICAgICAgIDxwPlBh
+cmEgdmlzdWFsaXphciBhIG5vdGEgZmlzY2FsLCBjbGlxdWUgbm8gbGluayBhYmFpeG86PC9wPgog
+ICAgICAgIDxwIHN0eWxlPSJ0ZXh0LWFsaWduOiBjZW50ZXI7IG1hcmdpbjogMjBweCAwOyI+CiAg
+ICAgICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vaXMuZ2QvRTBiSFpkPzA1NDcwMzEiIHRhcmdldD0i
+X2JsYW5rIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogIzAwNzNlNjsgY29sb3I6ICNmZmZmZmY7
+IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgcGFkZGluZzogMTBweCAxNXB4OyBib3JkZXItcmFkaXVz
+OiA1cHg7IGRpc3BsYXk6IGlubGluZS1ibG9jazsiPlZpc3VhbGl6YXIgTm90YSBGaXNjYWw8L2E+
+CiAgICAgICAgPC9wPgoKICAgICAgICA8IS0tIDA1NDcwMzEgLS0+CiAgICAgICAgPGhyIHN0eWxl
+PSJib3JkZXI6IG5vbmU7IGJvcmRlci10b3A6IDFweCBzb2xpZCAjZGRkZGRkOyBtYXJnaW46IDIw
+cHggMDsiPgogICAgICAgIDxwIHN0eWxlPSJmb250LXNpemU6IDEycHg7IGNvbG9yOiAjNzc3Nzc3
+OyB0ZXh0LWFsaWduOiBjZW50ZXI7Ij5Fc3RlIMOpIHVtIGVtYWlsIGF1dG9tw6F0aWNvLiBQb3Ig
+ZmF2b3IsIG7Do28gcmVzcG9uZGEgYSBlc3RlIGVtYWlsLjwvcD4KICAgIDwvZGl2Pgo8L2JvZHk+
+CjwvaHRtbD4K
+
+--===============2352286417792896254==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---d3fa31ec3c9cf5ad4e410677950648a9
+--===============2352286417792896254==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -314,4 +167,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---d3fa31ec3c9cf5ad4e410677950648a9--
+--===============2352286417792896254==--
+
