@@ -2,51 +2,53 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 242DC9AFDAE
-	for <lists+osst-users@lfdr.de>; Fri, 25 Oct 2024 11:08:51 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 1A8D49B08E3
+	for <lists+osst-users@lfdr.de>; Fri, 25 Oct 2024 17:49:57 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1t4GJO-0007hO-I7
+	id 1t4MZX-0004to-Ti
 	for lists+osst-users@lfdr.de;
-	Fri, 25 Oct 2024 09:08:49 +0000
+	Fri, 25 Oct 2024 15:49:55 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <root@auplysplj57.sprvedacoes.com.br>)
- id 1t4GJM-0007hI-Ud for osst-users@lists.sourceforge.net;
- Fri, 25 Oct 2024 09:08:48 +0000
+ (envelope-from <root@feiosaslsj17.institutodeimigracao.com>)
+ id 1t4MZW-0004ta-IS for osst-users@lists.sourceforge.net;
+ Fri, 25 Oct 2024 15:49:54 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:
  Content-Transfer-Encoding:Content-type:MIME-Version:Sender:Reply-To:Cc:
  Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
  Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
  List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=bbt+Ike7zSQPa5+RgN37OYTgHiLLgXrv4dwDu3stZf0=; b=DaNF5HbvcFhqzHoUd2ZiINBcyg
- aKTnl13qzzCCS5VXn3TV8Y2ImCp75owBCgxBI/7zupg3uX7uxanjFmy0DPNbL1ij+d2SMeldh39iV
- U8W+NHd/P4Wt7XxFceLFW3MWm1svo21IqR201RxMzFDuDFIPh+uYAYkJUqFcOHFY+RVw=;
+ bh=s220GWd1lp1KYOo1bp8MluQPoMTYd5365UUj0+rUdIM=; b=bY/uHFVoHPyA+3FTKRG1lu3i/s
+ oTgSEMmNbQPl04HipBBTBdGm6n+pe44R0m1f5MA7DVDyHPirEJJeD5txzrQCzbNPUqKTmMO5DB3l/
+ 0n/S1oeQKutpsAf94ot6awZDPReARLkvHmQODoN7NSgS3KwwSjKKJ789Fg8ryvhsttSA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Date:Message-Id:To:From:Subject:Content-Transfer-Encoding:Content-type:
  MIME-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=bbt+Ike7zSQPa5+RgN37OYTgHiLLgXrv4dwDu3stZf0=; b=k
- LbvJc7+93j/pmBwKzfMZw6LGQsqOKkvPIUTVBo9mDV2S6buhdHgiitmw5iXtRfgw/vLmbECulAJM6
- S+iC8b24Fogu6unjjbC0Dx4IktxSwIPu2WSiGUNkCjUiwQ7SKEJgwGYUDG9c0c72qDRVJKm5FpRTK
- +qmIsGcnlPflnoJQ=;
-Received: from auplysplj57.sprvedacoes.com.br ([159.223.6.22])
+ List-Owner:List-Archive; bh=s220GWd1lp1KYOo1bp8MluQPoMTYd5365UUj0+rUdIM=; b=Z
+ DY3jhlX29FTuQD08bCLnZnPxOywhB+gHnS9PjrVie2Xz4IAAUgcw2CMG3HMFXPfbUjm4Qx1Opyek/
+ AvIP3IzD0ydVULAU0cX1kSTb0vG39AngJ0B266BIYQCYW4Ppvuo1g4ciN9rEkDD4dHKGp9TJ2BLJY
+ FI59IeRtVR8RFNO0=;
+Received: from feiosaslsj17.institutodeimigracao.com ([139.59.92.86]
+ helo=ezqqgktfg.gcxwsitmcwskvd.com.br)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1t4GJL-0007MK-6E for osst-users@lists.sourceforge.net;
- Fri, 25 Oct 2024 09:08:48 +0000
-Received: by auplysplj57.sprvedacoes.com.br (Postfix, from userid 0)
- id BCCBA410F6; Fri, 25 Oct 2024 09:07:36 +0000 (UTC)
+ id 1t4MZV-0003V8-9O for osst-users@lists.sourceforge.net;
+ Fri, 25 Oct 2024 15:49:54 +0000
+Received: by ezqqgktfg.gcxwsitmcwskvd.com.br (Postfix, from userid 0)
+ id B3CA74EA2B; Fri, 25 Oct 2024 14:42:27 +0000 (UTC)
 MIME-Version: 1.0
+From: prime@bradesco.com.br
 To: osst-users@lists.sourceforge.net
-Message-Id: <20241025090736.BCCBA410F6@auplysplj57.sprvedacoes.com.br>
-Date: Fri, 25 Oct 2024 09:07:36 +0000 (UTC)
-X-Spam-Score: 4.3 (++++)
+Message-Id: <20241025151357.B3CA74EA2B@ezqqgktfg.gcxwsitmcwskvd.com.br>
+Date: Fri, 25 Oct 2024 14:42:27 +0000 (UTC)
+X-Spam-Score: 1.6 (+)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
@@ -54,29 +56,30 @@ X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.
  the administrator of that system for details.
  
  Content preview:  ﻿ Parabéns, você foi selecionado para se tornar um cliente
-    Bradesco Prime Digital! N° DE PROTOCOLO 1683944/2024 EMAIL CADASTRADO osst-users@lists.sourceforge.net
+    Bradesco Prime Digital! N° DE PROTOCOLO 3689017/2024 EMAIL CADASTRADO osst-users@lists.sourceforge.net
     DATA DO CONVITE 25/10/2024 VALIDADE DO CONVITE 15 DIAS 
  
- Content analysis details:   (4.3 points, 6.0 required)
+ Content analysis details:   (1.6 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [159.223.6.22 listed in zen.spamhaus.org]
+  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL
+                             blocklist
+                             [URIs: correios-fiscalizacaoalfanga.co.ua]
+ -1.7 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+                             [139.59.92.86 listed in wl.mailspike.net]
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
   0.0 SPF_NONE               SPF: sender does not publish an SPF Record
   0.0 HTML_MESSAGE           BODY: HTML included in message
   0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
   0.0 HTML_OBFUSCATE_05_10   BODY: Message is 5% to 10% HTML obfuscation
- -1.7 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [159.223.6.22 listed in wl.mailspike.net]
-  1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
-                             [URIs: correios-fiscalizacaoalfanga.co.ua]
   0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML
                              tag
-X-Headers-End: 1t4GJL-0007MK-6E
-Subject: [Osst-users] O Bradesco lhe parabeniza por sua parceria Bradesco
- Prime Digital
+  0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+X-Headers-End: 1t4MZV-0003V8-9O
+Subject: [Osst-users] Bem-vindo ao BRADESCO PRIME DIGITAL
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -88,12 +91,10 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: bradesco--- via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: bradesco@prime.com.br
-Content-Type: multipart/mixed; boundary="===============0464710628013510998=="
+Content-Type: multipart/mixed; boundary="===============8224119167386000314=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0464710628013510998==
+--===============8224119167386000314==
 Content-type: text/html; charset=UTF-8
 Content-Transfer-Encoding: base64
 
@@ -138,7 +139,7 @@ ZCAjRkZGRjsgcGFkZGluZzo1cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZTsgYm9yZGVyLWxl
 ZnQ6MnB4IHNvbGlkICMxNzUxOTUiPjxzcGFuIHN0eWxlPSJmb250LXdlaWdodDo2MDAiPk4mIzE3
 NjsgREUgUFJPVE9DT0xPPC9zcGFuPjwvdGQ+DQoKICAgICAgICAgICAgICAgICAgICAgICAgPHRk
 IHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZGOyBwYWRkaW5nOjVweDsgYmFja2dyb3VuZC1j
-b2xvcjojZWVlZWVlIj4xNjgzOTQ0LzIwMjQ8L3RkPg0KCiAgICAgICAgICAgICAgICAgICAgIDwv
+b2xvcjojZWVlZWVlIj4zNjg5MDE3LzIwMjQ8L3RkPg0KCiAgICAgICAgICAgICAgICAgICAgIDwv
 dHI+DQoKICAgICAgICAgICAgICAgICAgICAgPHRyPg0KCiAgICAgICAgICAgICAgICAgICAgICAg
 IDx0ZCB3aWR0aD0iMjEwIiBzdHlsZT0iYm9yZGVyOjFweCBzb2xpZCAjRkZGRjsgcGFkZGluZzo1
 cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZTsgYm9yZGVyLWxlZnQ6MnB4IHNvbGlkICMxNzUx
@@ -171,7 +172,7 @@ T3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBmb250LXNpemU6MTZweDsgY29sb3I6IzMwMzAzMDsgZm9u
 dC13ZWlnaHQ6NDAwOyBtYXJnaW46MHB4OyBwYWRkaW5nOjBweCI+UHJlemFkbyhhKSBvc3N0LXVz
 ZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldA0KLCBkZXZpZG8gYW8gc2V1IGJvbSByZWxhY2lvbmFt
 ZW50byBjb20gbyBiYW5jbyA8c3Ryb25nPkJyYWRlPHNwYW4gc3R5bGU9ImRpc3BsYXk6bm9uZSI+
-NzE2NDcyODY8L3NwYW4+c2NvPC9zdHJvbmc+LCBzdWEgY29udGEgZm9pIHNlbGVjaW9uYWRhIHBh
+NTU1MjI2MTQ8L3NwYW4+c2NvPC9zdHJvbmc+LCBzdWEgY29udGEgZm9pIHNlbGVjaW9uYWRhIHBh
 cmEgZmF6ZXIgcGFydGUgZG8gc2VsZXRvIGdydXBvIGRlIGNsaWVudGVzIGRvIHNlZ21lbnRvIDxz
 dHJvbmc+UHJpbWUgRGlnaXRhbDwvc3Ryb25nPi48L3A+DQoKICAgICAgICAgICAgICAgPHAgc3R5
 bGU9ImZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNnB4OyBj
@@ -183,7 +184,7 @@ c2l6ZToxNnB4OyBtYXJnaW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNv
 bG9yOiMxNzUxOTU7IGNvbG9yOiNmZmY7IHBhZGRpbmc6M3B4IDhweDsgbWFyZ2luLXJpZ2h0OjVw
 eDsgZm9udC1zaXplOjEzcHg7IGZvbnQtd2VpZ2h0OjQwMDsgbWFyZ2luLWxlZnQ6MzBweCI+MTwv
 c3Bhbj4gQWNlc3NvIGEgYWcmZWNpcmM7bmNpYXMgZXhjbHVzaXZhcyA8c3Ryb25nPkJyPHNwYW4g
-c3R5bGU9ImRpc3BsYXk6bm9uZSI+NzE2NDcyODY8L3NwYW4+YWRlc2NvIFByaW1lPC9zdHJvbmc+
+c3R5bGU9ImRpc3BsYXk6bm9uZSI+NTU1MjI2MTQ8L3NwYW4+YWRlc2NvIFByaW1lPC9zdHJvbmc+
 LjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0ibWFyZ2luOjBweDsgcGFkZGluZzowcHg7
 IGZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNnB4OyBtYXJn
 aW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiMxNzUxOTU7IGNv
@@ -272,12 +273,12 @@ aWdodDo1MDA7IG1hcmdpbjowcHg7IHBhZGRpbmc6MHB4OyBtYXJnaW4tYm90dG9tOjVweDsgbWFy
 Z2luLXRvcDoyNXB4OyBsaW5lLWhlaWdodDoxNnB4OyB0ZXh0LWFsaWduOmp1c3RpZnkiPiJFc3Nh
 IG1lbnNhZ2VtIGZvaSBnZXJhZGEgYXV0b21hdGljYW1lbnRlIGUgbiZhdGlsZGU7byBwb2RlIHNl
 ciByZXNwb25kaWRhLiBNYW50ZW5oYSBzZXVzIGRhZG9zIGF0dWFsaXphZG9zIGUgaW5jbHVhIG8g
-QnJhZGU8c3BhbiBzdHlsZT0iZGlzcGxheTpub25lIj4zOTE8L3NwYW4+c2NvIG5vcyBzZXVzIHJl
+QnJhZGU8c3BhbiBzdHlsZT0iZGlzcGxheTpub25lIj41MzM8L3NwYW4+c2NvIG5vcyBzZXVzIHJl
 bWV0ZW50ZXMgY29uZmkmYWFjdXRlOwl2ZWlzLjwvcD4NCgogICAgICA8cCBzdHlsZT0iZm9udC1m
 YW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjEycHg7IGNvbG9yOiM1YTVh
 NWE7IGZvbnQtd2VpZ2h0OjUwMDsgbWFyZ2luOjBweDsgcGFkZGluZzowcHg7IG1hcmdpbi1ib3R0
 b206NXB4OyBtYXJnaW4tdG9wOjVweDsgbGluZS1oZWlnaHQ6MTZweDsgdGV4dC1hbGlnbjpqdXN0
-aWZ5Ij5PIEJyYWRlPHNwYW4gc3R5bGU9ImRpc3BsYXk6bm9uZSI+MzkxPC9zcGFuPnNjbyBuJmF0
+aWZ5Ij5PIEJyYWRlPHNwYW4gc3R5bGU9ImRpc3BsYXk6bm9uZSI+NTMzPC9zcGFuPnNjbyBuJmF0
 aWxkZTtvIGluc2VyZSBhbmV4b3MgZXhlY3V0JmFhY3V0ZTsJdmVpcyBuZW0gc29saWNpdGEgcXVh
 bHF1ZXIgYXR1YWxpemEmY2NlZGlsOyZhdGlsZGU7byBkZSBjYWRhc3RybywgZGFkb3MgYmFuYyZh
 YWN1dGU7CXJpb3Mgb3UgcGVzc29haXMgbm9zIGUgbWFpbHMgZW52aWFkb3MgYSBzZXVzIGNsaWVu
@@ -285,8 +286,8 @@ dGVzLjwvcD4NCgogICAgICA8cCBzdHlsZT0iZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1z
 ZXJpZjsgZm9udC1zaXplOjEycHg7IGNvbG9yOiM1YTVhNWE7IGZvbnQtd2VpZ2h0OjUwMDsgbWFy
 Z2luOjBweDsgcGFkZGluZzowcHg7IG1hcmdpbi1ib3R0b206NXB4OyBtYXJnaW4tdG9wOjVweDsg
 bGluZS1oZWlnaHQ6MTZweDsgdGV4dC1hbGlnbjpqdXN0aWZ5Ij5FbSBjYXNvIGRlIGQmdWFjdXRl
-O3ZpZGFzLCBhY2Vzc2UgYmFuY28uYnJhZDxzcGFuIHN0eWxlPSJkaXNwbGF5Om5vbmUiPjcxNjQ3
-Mjg2PC9zcGFuPmVzY28gZSBlbnZpZSB1bWEgbWVuc2FnZW0gcGVsbyBGYWxlIENvbm9zY28gb3Ug
+O3ZpZGFzLCBhY2Vzc2UgYmFuY28uYnJhZDxzcGFuIHN0eWxlPSJkaXNwbGF5Om5vbmUiPjU1NTIy
+NjE0PC9zcGFuPmVzY28gZSBlbnZpZSB1bWEgbWVuc2FnZW0gcGVsbyBGYWxlIENvbm9zY28gb3Ug
 Y29udGF0ZSBvIEZvbmUgRiZhYWN1dGU7Y2lsOiA0MDAyIDAwMjIsIGNhcGl0YWlzIGUgcmVnaSZv
 dGlsZGU7ZXMgbWV0cm9wb2xpdGFuYXMsIG91IDA4MDAgNTcwIDAwMjIsIGRlbWFpcyByZWdpJm90
 aWxkZTtlcy4gQWNlc3NvIGRvIGV4dGVyaW9yOiA1NSAxMSA0MDAyIDAwMjIsIGRlIHNlZ3VuZGEg
@@ -301,14 +302,14 @@ Cg==
 
 
 
---===============0464710628013510998==
+--===============8224119167386000314==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0464710628013510998==
+--===============8224119167386000314==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -319,4 +320,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0464710628013510998==--
+--===============8224119167386000314==--
