@@ -2,80 +2,95 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 234529B4C93
-	for <lists+osst-users@lfdr.de>; Tue, 29 Oct 2024 15:50:59 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 670D69B6121
+	for <lists+osst-users@lfdr.de>; Wed, 30 Oct 2024 12:10:27 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1t5nYf-0007uY-Fq
+	id 1t66ao-0002b8-Qd
 	for lists+osst-users@lfdr.de;
-	Tue, 29 Oct 2024 14:50:57 +0000
+	Wed, 30 Oct 2024 11:10:26 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <root@picapau94.maxadvocacia.com>) id 1t5nYd-0007uM-Qa
- for osst-users@lists.sourceforge.net; Tue, 29 Oct 2024 14:50:55 +0000
+ (envelope-from <teknis@hilmymedikasarana.com>) id 1t66an-0002b1-JN
+ for osst-users@lists.sourceforge.net; Wed, 30 Oct 2024 11:10:25 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Date:Message-Id:To:From:Subject:
- Content-Transfer-Encoding:Content-type:MIME-Version:Sender:Reply-To:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=A69T3CAzr8FNYS7POo8czZHXHjl6SpTkD1zdliPK2mE=; b=M4OA3hNGTJD91SnlSTemX3WZQ5
- UupwPifY8a/Z5MsLkgumxrMZqkW/QzN5c63fSXvTOApwo8KOZzCus/Vsv1zTvo+3xogriRTG0z1d2
- zchVgS9aU9s9Bdt/0zfqrRMqGRmiJ/qF5impzOZanDv+1TBwdQhe+4uTVwUho2Nx2dv4=;
+ d=sourceforge.net; s=x; h=Message-Id:Date:MIME-Version:Content-Type:To:
+ Subject:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=3o3qRueqRbDlDijqqUiygkF38N/DpZCzyMZvE+MH66U=; b=ZCKqxRUTR/kpJNWdKjcwGsJjMe
+ 9N1c3k5VvVTeChz82LPidwqQemYwz3Vu2KnOQR5HIvdlzAUqYmdcoTCCjeCYVocOjNlRo6e3SllBV
+ FVh0FUu6eCeemq7mPwPtEDqHR5Qf0ollyXUMtZtfAnpsCR/e5U+GZrltgDuiF0rm4xLs=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Date:Message-Id:To:From:Subject:Content-Transfer-Encoding:Content-type:
- MIME-Version:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Message-Id:Date:MIME-Version:Content-Type:To:Subject:From:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=A69T3CAzr8FNYS7POo8czZHXHjl6SpTkD1zdliPK2mE=; b=G
- 7BWUz117mF4tbWiPkON7y6O7++6L8iszK9iYsWrP04tg1k0Ye/j404wPj3V1KrVAd4qeCf4ETN8/v
- mCAnwCXLwDLuBcGtmEi0XaIc6jicLweitkPHkBOrZEQ+jVLZcqmdV3E4F7YFm6CYpPqxQtXbmPdF6
- Dap6qGDQUEoPknx8=;
-Received: from picapau94.maxadvocacia.com ([128.199.18.142]
- helo=mbtrrxani.mhtzfcvvrsshvq.com.br)
+ List-Owner:List-Archive; bh=3o3qRueqRbDlDijqqUiygkF38N/DpZCzyMZvE+MH66U=; b=H
+ o2yKLUDYZkX5Fp154FC1bOT86/R9h318TdrY2mtoz9swgFWcDGNygavVj7maH6FgRgq6lc/Kql+k6
+ yXigwpZEzddwIVTV1w6nycsQPKQVvARJwCiIJ2dtDfm7NYQrP5z16wgf4aZp5hAv26R88Hz9+IOFW
+ WLZ+AKbqt9ti7444=;
+Received: from gw16230.fortimail.com ([66.35.16.230])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1t5nYc-0005Tl-Ka for osst-users@lists.sourceforge.net;
- Tue, 29 Oct 2024 14:50:55 +0000
-Received: by mbtrrxani.mhtzfcvvrsshvq.com.br (Postfix, from userid 0)
- id 3397548A2D; Tue, 29 Oct 2024 12:17:45 +0000 (UTC)
+ id 1t66am-0004m9-7q for osst-users@lists.sourceforge.net;
+ Wed, 30 Oct 2024 11:10:24 +0000
+Received: from mail.baldom.net (mail.baldom.net [190.166.89.137])
+ by gw16230.fortimail.com  with ESMTP id 49UBAHQH016285-49UBAHQJ016285
+ (version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO)
+ for <osst-users@lists.sourceforge.net>; Wed, 30 Oct 2024 07:10:18 -0400
+Received: from mail.baldom.net (localhost [127.0.0.1])
+ by mail.baldom.net (Postfix) with ESMTPS id 899C544C57FD
+ for <osst-users@lists.sourceforge.net>; Wed, 30 Oct 2024 07:10:17 -0400 (AST)
+Received: from localhost (localhost [127.0.0.1])
+ by mail.baldom.net (Postfix) with ESMTP id 7CB6444C57F5
+ for <osst-users@lists.sourceforge.net>; Wed, 30 Oct 2024 07:10:17 -0400 (AST)
+X-Virus-Scanned: amavisd-new at baldom.net
+Received: from mail.baldom.net ([127.0.0.1])
+ by localhost (mail.baldom.net [127.0.0.1]) (amavisd-new, port 10026)
+ with ESMTP id iycLwlgURyHQ for <osst-users@lists.sourceforge.net>;
+ Wed, 30 Oct 2024 07:10:17 -0400 (AST)
+Received: from WIN-BS656MOF35Q (unknown [185.238.231.104])
+ by mail.baldom.net (Postfix) with ESMTPSA id 957D344C57FD
+ for <osst-users@lists.sourceforge.net>; Wed, 30 Oct 2024 07:10:15 -0400 (AST)
+From: "Technical Support" <teknis@hilmymedikasarana.com>
+To: <osst-users@lists.sourceforge.net>
 MIME-Version: 1.0
-From: sac@bradesco.com.br
-To: osst-users@lists.sourceforge.net
-Message-Id: <20241029124210.3397548A2D@mbtrrxani.mhtzfcvvrsshvq.com.br>
-Date: Tue, 29 Oct 2024 12:17:45 +0000 (UTC)
-X-Spam-Score: 3.1 (+++)
+Date: Wed, 30 Oct 2024 04:10:16 -0700
+Message-Id: <20243010041014181C55B020-B04936766C@hilmymedikasarana.com>
+X-FEAS-Client-IP: 190.166.89.137
+X-FE-Last-Public-Client-IP: 190.166.89.137
+X-FE-Policy-ID: 1:3:3:SYSTEM
+X-Spam-Score: 5.9 (+++++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  ﻿ Parabéns, você foi selecionado para se tornar um cliente
-    Bradesco Prime Digital! N° DE PROTOCOLO 1568110/2024 EMAIL CADASTRADO osst-users@lists.sourceforge.net
-    DATA DO CONVITE 29/10/2024 VALIDADE DO CONVITE 15 DIAS 
+ Content preview:  Dear� osst-users@lists.sourceforge.net, You have 5 New pending
+    mails. Your mail version 2.0.1 is currently being discontinued from receiving
+    incoming mails, and will no longer work as of 10/30/2024. � 
  
- Content analysis details:   (3.1 points, 6.0 required)
+ Content analysis details:   (5.9 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  1.7 URIBL_BLACK            Contains an URL listed in the URIBL blacklist
-                             [URIs: entrega-fiscalizacaoalfanga.co.ua]
-  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
-                             mail domains are different
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  2.5 URIBL_DBL_PHISH        Contains a Phishing URL listed in the Spamhaus
+                             DBL blocklist
+                             [URIs: oortech.com]
+  2.5 URIBL_DBL_MALWARE      Contains a malware URL listed in the Spamhaus
+                             DBL blocklist
+                             [URIs: oortech.com]
+  1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 HTML_OBFUSCATE_05_10   BODY: Message is 5% to 10% HTML obfuscation
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML
-                             tag
-  0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-Headers-End: 1t5nYc-0005Tl-Ka
-Subject: [Osst-users] Bem-vindo ao BRADESCO PRIME DIGITAL
+X-Headers-End: 1t66am-0004m9-7q
+Subject: [Osst-users] Final Warning osst-users@lists.sourceforge.net
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -87,224 +102,304 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3070652101965833636=="
+Content-Type: multipart/mixed; boundary="===============4499600877512159783=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============3070652101965833636==
-Content-type: text/html; charset=UTF-8
-Content-Transfer-Encoding: base64
+This is a multi-part message in MIME format
 
-77u/PGRpdiBzdHlsZT0icGFkZGluZzowcHg7IG1hcmdpbjowcHg7IHBhZGRpbmc6NXB4IDBweDsg
-Zm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjEzcHgiPg0KCiAg
-IDxkaXYgc3R5bGU9IndpZHRoOjcwMHB4OyBoZWlnaHQ6YXV0bzsgbWFyZ2luOjIwcHggYXV0byI+
-DQoKICAgICAgPGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZjdmNmYyIj4NCgogICAgICAg
-ICA8ZGl2IHN0eWxlPSJ3aWR0aDoxMDAlOyBoZWlnaHQ6YXV0bzsgYmFja2dyb3VuZC1jb2xvcjoj
-MTc1MTk1OyBvdmVyZmxvdzpoaWRkZW4iPg0KCiAgICAgICAgICAgIDxkaXYgc3R5bGU9ImhlaWdo
-dDo3MHB4OyB3aWR0aDoxMDAlIj4NCgogICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9hdDps
-ZWZ0OyBoZWlnaHQ6NzBweDsgd2lkdGg6NzBweCI+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBz
-dHlsZT0iZmxvYXQ6bGVmdDsgd2lkdGg6MzVweDsgaGVpZ2h0OjM1cHg7IGJhY2tncm91bmQtY29s
-b3I6IzE3NTE5NTsgbGVmdDozNXB4OyB0b3A6MHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICAg
-ICA8ZGl2IHN0eWxlPSJmbG9hdDpsZWZ0OyB3aWR0aDozNXB4OyBoZWlnaHQ6MzVweDsgYmFja2dy
-b3VuZC1jb2xvcjojM2U2ZmJhOyBsZWZ0OjM1cHg7IHRvcDowcHgiPjwvZGl2Pg0KCiAgICAgICAg
-ICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IHdpZHRoOjM1cHg7IGhlaWdodDozNXB4
-OyBiYWNrZ3JvdW5kLWNvbG9yOiNkMTAxMzM7IGxlZnQ6MHB4OyB0b3A6MzVweCI+PC9kaXY+DQoK
-ICAgICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAg
-PGRpdiBzdHlsZT0id2lkdGg6MTAwJSI+DQoKICAgICAgICAgICAgICAgPGgxIHN0eWxlPSJmb250
-LWZhbWlseTonT3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBmb250LXNpemU6MjNweDsgY29sb3I6I2Zm
-ZjsgbWFyZ2luOjBweDsgcGFkZGluZzowcHg7IHRleHQtYWxpZ246Y2VudGVyOyBmb250LXdlaWdo
-dDpsaWdodGVyOyBmb250LXdlaWdodDo1MDA7IG1hcmdpbi1ib3R0b206MzVweCI+UGFyYWImZWFj
-dXRlO25zLCB2b2MmZWNpcmM7IGZvaSBzZWxlY2lvbmFkbyBwYXJhIHNlIHRvcm5hcjxiciBhcmlh
-LWhpZGRlbj0idHJ1ZSI+dW0gY2xpZW50ZSBCcmFkZXNjbyBQcmltZSBEaWdpdGFsITwvaDE+DQoK
-ICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAgPGRpdiBzdHlsZT0iaGVpZ2h0OjM1cHg7
-IHdpZHRoOjEwMCUiPg0KCiAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IGhl
-aWdodDozNXB4OyB3aWR0aDozNXB4Ij4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJ3
-aWR0aDozNXB4OyBoZWlnaHQ6MzVweDsgYmFja2dyb3VuZC1jb2xvcjojODY4Njg2OyBsZWZ0OjBw
-eDsgYm90dG9tOjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAg
-ICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6cmlnaHQ7IGhlaWdodDozNXB4OyB3aWR0aDozNXB4Ij4N
-CgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJ3aWR0aDozNXB4OyBoZWlnaHQ6MzVweDsg
-YmFja2dyb3VuZC1jb2xvcjojMGMyMTcyOyByaWdodDowcHg7IGJvdHRvbTowcHgiPjwvZGl2Pg0K
-CiAgICAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgIDwv
-ZGl2Pg0KCiAgICAgICAgIDxkaXYgc3R5bGU9InBhZGRpbmc6MjBweCI+DQoKICAgICAgICAgICAg
-PGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjojZmZmOyBwYWRkaW5nOjE1cHg7IGJvcmRlci10
-b3A6NXB4IHNvbGlkICMxNzUxOTUiPg0KCiAgICAgICAgICAgICAgIDx0YWJsZSBzdHlsZT0id2lk
-dGg6MTAwJTsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXplOjEz
-cHg7IG1hcmdpbi1ib3R0b206MjVweDsgYm9yZGVyLWNvbGxhcHNlOmNvbGxhcHNlIj4NCgogICAg
-ICAgICAgICAgICAgICA8dGJvZHk+DQoKICAgICAgICAgICAgICAgICAgICAgPHRyPg0KCiAgICAg
-ICAgICAgICAgICAgICAgICAgIDx0ZCB3aWR0aD0iMjEwIiBzdHlsZT0iYm9yZGVyOjFweCBzb2xp
-ZCAjRkZGRjsgcGFkZGluZzo1cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZTsgYm9yZGVyLWxl
-ZnQ6MnB4IHNvbGlkICMxNzUxOTUiPjxzcGFuIHN0eWxlPSJmb250LXdlaWdodDo2MDAiPk4mIzE3
-NjsgREUgUFJPVE9DT0xPPC9zcGFuPjwvdGQ+DQoKICAgICAgICAgICAgICAgICAgICAgICAgPHRk
-IHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZGOyBwYWRkaW5nOjVweDsgYmFja2dyb3VuZC1j
-b2xvcjojZWVlZWVlIj4xNTY4MTEwLzIwMjQ8L3RkPg0KCiAgICAgICAgICAgICAgICAgICAgIDwv
-dHI+DQoKICAgICAgICAgICAgICAgICAgICAgPHRyPg0KCiAgICAgICAgICAgICAgICAgICAgICAg
-IDx0ZCB3aWR0aD0iMjEwIiBzdHlsZT0iYm9yZGVyOjFweCBzb2xpZCAjRkZGRjsgcGFkZGluZzo1
-cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZTsgYm9yZGVyLWxlZnQ6MnB4IHNvbGlkICMxNzUx
-OTUiPjxzcGFuIHN0eWxlPSJmb250LXdlaWdodDo2MDAiPkVNQUlMIENBREFTVFJBRE88L3NwYW4+
-PC90ZD4NCgogICAgICAgICAgICAgICAgICAgICAgICA8dGQgc3R5bGU9ImJvcmRlcjoxcHggc29s
-aWQgI0ZGRkY7IHBhZGRpbmc6NXB4OyBiYWNrZ3JvdW5kLWNvbG9yOiNlZWVlZWUiPm9zc3QtdXNl
-cnNAbGlzdHMuc291cmNlZm9yZ2UubmV0DQo8L3RkPg0KCiAgICAgICAgICAgICAgICAgICAgIDwv
-dHI+DQoKICAgICAgICAgICAgICAgICAgICAgPHRyPg0KCiAgICAgICAgICAgICAgICAgICAgICAg
-IDx0ZCB3aWR0aD0iMjEwIiBzdHlsZT0iYm9yZGVyOjFweCBzb2xpZCAjRkZGRjsgcGFkZGluZzo1
-cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZTsgYm9yZGVyLWxlZnQ6MnB4IHNvbGlkICMxNzUx
-OTUiPjxzcGFuIHN0eWxlPSJmb250LXdlaWdodDo2MDAiPkRBVEEgRE8gQ09OVklURTwvc3Bhbj48
-L3RkPg0KCiAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBzdHlsZT0iYm9yZGVyOjFweCBzb2xp
-ZCAjRkZGRjsgcGFkZGluZzo1cHg7IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZSI+MjkvMTAvMjAy
-NDwvdGQ+DQoKICAgICAgICAgICAgICAgICAgICAgPC90cj4NCgogICAgICAgICAgICAgICAgICAg
-ICA8dHI+DQoKICAgICAgICAgICAgICAgICAgICAgICAgPHRkIHdpZHRoPSIyMTAiIHN0eWxlPSJi
-b3JkZXI6MXB4IHNvbGlkICNGRkZGOyBwYWRkaW5nOjVweDsgYmFja2dyb3VuZC1jb2xvcjojZWVl
-ZWVlOyBib3JkZXItbGVmdDoycHggc29saWQgIzE3NTE5NSI+PHNwYW4gc3R5bGU9ImZvbnQtd2Vp
-Z2h0OjYwMCI+VkFMSURBREUgRE8gQ09OVklURTwvc3Bhbj48L3RkPg0KCiAgICAgICAgICAgICAg
-ICAgICAgICAgIDx0ZCBzdHlsZT0iYm9yZGVyOjFweCBzb2xpZCAjRkZGRjsgcGFkZGluZzo1cHg7
-IGJhY2tncm91bmQtY29sb3I6I2VlZWVlZSI+MTUgRElBUzwvdGQ+DQoKICAgICAgICAgICAgICAg
-ICAgICAgPC90cj4NCgogICAgICAgICAgICAgICAgICAgICA8dHI+DQoKICAgICAgICAgICAgICAg
-ICAgICAgICAgPHRkIHdpZHRoPSIyMTAiIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZGOyBw
-YWRkaW5nOjVweDsgYmFja2dyb3VuZC1jb2xvcjojZWVlZWVlOyBib3JkZXItbGVmdDoycHggc29s
-aWQgIzE3NTE5NSI+PHNwYW4gc3R5bGU9ImZvbnQtd2VpZ2h0OjYwMCI+PC9zcGFuPjwvdGQ+DQoK
-ICAgICAgICAgICAgICAgICAgICAgICAgPHRkIHN0eWxlPSJib3JkZXI6MXB4IHNvbGlkICNGRkZG
-OyBwYWRkaW5nOjVweDsgYmFja2dyb3VuZC1jb2xvcjojZWVlZWVlIj48L3RkPg0KCiAgICAgICAg
-ICAgICAgICAgICAgIDwvdHI+DQoKICAgICAgICAgICAgICAgICAgPC90Ym9keT4NCgogICAgICAg
-ICAgICAgICA8L3RhYmxlPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJmb250LWZhbWlseTon
-T3BlbiBTYW5zJyxzYW5zLXNlcmlmOyBmb250LXNpemU6MTZweDsgY29sb3I6IzMwMzAzMDsgZm9u
-dC13ZWlnaHQ6NDAwOyBtYXJnaW46MHB4OyBwYWRkaW5nOjBweCI+UHJlemFkbyhhKSBvc3N0LXVz
-ZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldA0KLCBkZXZpZG8gYW8gc2V1IGJvbSByZWxhY2lvbmFt
-ZW50byBjb20gbyBiYW5jbyA8c3Ryb25nPkJyYWRlPHNwYW4gc3R5bGU9ImRpc3BsYXk6bm9uZSI+
-OTY1NDc3MjU8L3NwYW4+c2NvPC9zdHJvbmc+LCBzdWEgY29udGEgZm9pIHNlbGVjaW9uYWRhIHBh
-cmEgZmF6ZXIgcGFydGUgZG8gc2VsZXRvIGdydXBvIGRlIGNsaWVudGVzIGRvIHNlZ21lbnRvIDxz
-dHJvbmc+UHJpbWUgRGlnaXRhbDwvc3Ryb25nPi48L3A+DQoKICAgICAgICAgICAgICAgPHAgc3R5
-bGU9ImZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNnB4OyBj
-b2xvcjojMTc1MTk1OyBmb250LXdlaWdodDo1MDA7IG1hcmdpbjowcHg7IHBhZGRpbmc6MHB4OyBt
-YXJnaW4tYm90dG9tOjIwcHg7IG1hcmdpbi10b3A6MjBweCI+Q29uZmlyYSBhbGd1bnMgZG9zIGJl
-bmVmJmlhY3V0ZTtjaW9zOjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0ibWFyZ2luOjBw
-eDsgcGFkZGluZzowcHg7IGZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQt
-c2l6ZToxNnB4OyBtYXJnaW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNv
-bG9yOiMxNzUxOTU7IGNvbG9yOiNmZmY7IHBhZGRpbmc6M3B4IDhweDsgbWFyZ2luLXJpZ2h0OjVw
-eDsgZm9udC1zaXplOjEzcHg7IGZvbnQtd2VpZ2h0OjQwMDsgbWFyZ2luLWxlZnQ6MzBweCI+MTwv
-c3Bhbj4gQWNlc3NvIGEgYWcmZWNpcmM7bmNpYXMgZXhjbHVzaXZhcyA8c3Ryb25nPkJyPHNwYW4g
-c3R5bGU9ImRpc3BsYXk6bm9uZSI+OTY1NDc3MjU8L3NwYW4+YWRlc2NvIFByaW1lPC9zdHJvbmc+
-LjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0ibWFyZ2luOjBweDsgcGFkZGluZzowcHg7
-IGZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNnB4OyBtYXJn
-aW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiMxNzUxOTU7IGNv
-bG9yOiNmZmY7IHBhZGRpbmc6M3B4IDhweDsgbWFyZ2luLXJpZ2h0OjVweDsgZm9udC1zaXplOjEz
-cHg7IGZvbnQtd2VpZ2h0OjQwMDsgbWFyZ2luLWxlZnQ6MzBweCI+Mjwvc3Bhbj4gQWNlc3NvIGEg
-Y2FydCZhdGlsZGU7byBkZSBjciZlYWN1dGU7ZGl0b3MgQmxhY2sgZSBJbmZpbml0eSBzZW0gYW51
-aWRhZGVzLjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0ibWFyZ2luOjBweDsgcGFkZGlu
-ZzowcHg7IGZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxNnB4
-OyBtYXJnaW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiMxNzUx
-OTU7IGNvbG9yOiNmZmY7IHBhZGRpbmc6M3B4IDhweDsgbWFyZ2luLXJpZ2h0OjVweDsgZm9udC1z
-aXplOjEzcHg7IGZvbnQtd2VpZ2h0OjQwMDsgbWFyZ2luLWxlZnQ6MzBweCI+Mzwvc3Bhbj4gQWN1
-bXVsZSAxIHBvbnRvIHBvciBjYWRhIHJlYWwgZ2FzdG8gbm8gcHJvZ3JhbWEgPHN0cm9uZz5MaXZl
-bG88L3N0cm9uZz4uPC9wPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJtYXJnaW46MHB4OyBw
-YWRkaW5nOjBweDsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1zaXpl
-OjE2cHg7IG1hcmdpbi1ib3R0b206MTVweCI+PHNwYW4gc3R5bGU9ImJhY2tncm91bmQtY29sb3I6
-IzE3NTE5NTsgY29sb3I6I2ZmZjsgcGFkZGluZzozcHggOHB4OyBtYXJnaW4tcmlnaHQ6NXB4OyBm
-b250LXNpemU6MTNweDsgZm9udC13ZWlnaHQ6NDAwOyBtYXJnaW4tbGVmdDozMHB4Ij40PC9zcGFu
-PiBHZXJlbnRlIGRpc3BvbiZpYWN1dGU7dmVsIDI0IGhvcmFzIHBvciBkaWEgYXRyYXYmZWFjdXRl
-O3MgZG8gV2hhdHNhcHAuPC9wPg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJtYXJnaW46MHB4
-OyBwYWRkaW5nOjBweDsgZm9udC1mYW1pbHk6J09wZW4gU2Fucycsc2Fucy1zZXJpZjsgZm9udC1z
-aXplOjE2cHg7IG1hcmdpbi1ib3R0b206MTVweCI+PHNwYW4gc3R5bGU9ImJhY2tncm91bmQtY29s
-b3I6IzE3NTE5NTsgY29sb3I6I2ZmZjsgcGFkZGluZzozcHggOHB4OyBtYXJnaW4tcmlnaHQ6NXB4
-OyBmb250LXNpemU6MTNweDsgZm9udC13ZWlnaHQ6NDAwOyBtYXJnaW4tbGVmdDozMHB4Ij41PC9z
-cGFuPiBBY2Vzc28gYSBjciZlYWN1dGU7ZGl0byBjb20gdGF4YXMgZXNwZWNpYWlzIGRlIDEuNSUg
-YW8gbSZlY2lyYztzLjwvcD4NCgogICAgICAgICAgICAgICA8cCBzdHlsZT0ibWFyZ2luOjBweDsg
-cGFkZGluZzowcHg7IGZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6
-ZToxNnB4OyBtYXJnaW4tYm90dG9tOjE1cHgiPjxzcGFuIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9y
-OiMxNzUxOTU7IGNvbG9yOiNmZmY7IHBhZGRpbmc6M3B4IDhweDsgbWFyZ2luLXJpZ2h0OjVweDsg
-Zm9udC1zaXplOjEzcHg7IGZvbnQtd2VpZ2h0OjQwMDsgbWFyZ2luLWxlZnQ6MzBweCI+Njwvc3Bh
-bj4gQ2hlcXVlIGVzcGVjaWFsIGNvbSAxNSBkaWFzIHNlbSBqdXJvcy48L3A+DQoKICAgICAgICAg
-ICAgICAgPHAgc3R5bGU9ImZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQt
-c2l6ZToxNnB4OyBjb2xvcjojMTc1MTk1OyBmb250LXdlaWdodDo1MDA7IG1hcmdpbjowcHg7IHBh
-ZGRpbmc6MHB4OyBtYXJnaW4tYm90dG9tOjIwcHg7IG1hcmdpbi10b3A6NDBweDsgdGV4dC1hbGln
-bjpjZW50ZXI7IGxpbmUtaGVpZ2h0OjIzcHgiPlBhcmEgYWNlaXRhciBvIGNvbnZpdGUgw6kgbXVp
-dG8gc2ltcGxlcyE8YnIgYXJpYS1oaWRkZW49InRydWUiPkNsaXF1ZSBubyBsaW5rIGFiYWl4byBl
-IGNvbmZpcm1lIHNldXMgZGFkb3MuPC9wPg0KCiAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9InRl
-eHQtYWxpZ246Y2VudGVyOyBtYXJnaW46NTBweCAwcHgiPjxhIGhyZWY9Imh0dHBzOi8vZW50cmVn
-YS1maXNjYWxpemFjYW9hbGZhbmdhLmNvLnVhIiBjbGFzcz0ieF9jb250ZW50LWJsb2NrIiB0YXJn
-ZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciBub3JlZmVycmVyIiBkYXRhLWF1dGg9Ik5vdEFwcGxp
-Y2FibGUiIHN0eWxlPSJ0ZXh0LWRlY29yYXRpb246bm9uZTsgYmFja2dyb3VuZC1jb2xvcjojMTc1
-MTk1OyBwYWRkaW5nOjEwcHggMzBweDsgY29sb3I6I2ZmZjsgZm9udC13ZWlnaHQ6NTAwOyBmb250
-LXNpemU6MTZweCI+UXVlcm8gbWUgdG9ybmFyIHVtIGNsaWVudGUgUHJpbWUgRGlnaXRhbCE8L2E+
-IDwvZGl2Pg0KCiAgICAgICAgICAgICAgIDxwIHN0eWxlPSJmb250LWZhbWlseTonT3BlbiBTYW5z
-JyxzYW5zLXNlcmlmOyBmb250LXNpemU6MTJweDsgY29sb3I6Izc5Nzk3OTsgZm9udC13ZWlnaHQ6
-NTAwOyBtYXJnaW46MHB4OyBwYWRkaW5nOjBweDsgbWFyZ2luLWJvdHRvbToyMHB4OyBtYXJnaW4t
-dG9wOjQwcHg7IHRleHQtYWxpZ246Y2VudGVyOyBsaW5lLWhlaWdodDoxNnB4Ij4qIENhc28gaiZh
-YWN1dGU7CSBzZWphIHVtIGNsaWVudGUgUHJpbWUgbWFzIG4mYXRpbGRlO28gcG9zc3VhIHRvZG9z
-IG9zIGJlbmVmJmlhY3V0ZTtjaW9zPGJyIGFyaWEtaGlkZGVuPSJ0cnVlIj5hY2ltYSwgdm9jJmVj
-aXJjOyB0YW1iJmVhY3V0ZTttIHBvZGUgYWRlcmlyIGEgb2ZlcnRhLiA8L3A+DQoKICAgICAgICAg
-ICAgPC9kaXY+DQoKICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgPGRpdiBzdHlsZT0id2lkdGg6
-MTAwJTsgaGVpZ2h0OmF1dG87IGJhY2tncm91bmQtY29sb3I6IzE3NTE5NTsgb3ZlcmZsb3c6aGlk
-ZGVuIj4NCgogICAgICAgICAgICA8ZGl2IHN0eWxlPSJoZWlnaHQ6NDBweDsgd2lkdGg6MTAwJSI+
-DQoKICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6bGVmdDsgaGVpZ2h0OjQwcHg7IHdp
-ZHRoOjQwcHgiPg0KCiAgICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IHdp
-ZHRoOjIwcHg7IGhlaWdodDoyMHB4OyBiYWNrZ3JvdW5kLWNvbG9yOiMxNzUxOTU7IGxlZnQ6MjBw
-eDsgdG9wOjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6
-bGVmdDsgd2lkdGg6MjBweDsgaGVpZ2h0OjIwcHg7IGJhY2tncm91bmQtY29sb3I6IzNlNmZiYTsg
-bGVmdDoyMHB4OyB0b3A6MHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxl
-PSJmbG9hdDpsZWZ0OyB3aWR0aDoyMHB4OyBoZWlnaHQ6MjBweDsgYmFja2dyb3VuZC1jb2xvcjoj
-ZDEwMTMzOyBsZWZ0OjBweDsgdG9wOjIwcHgiPjwvZGl2Pg0KCiAgICAgICAgICAgICAgIDwvZGl2
-Pg0KCiAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OnJpZ2h0OyBoZWlnaHQ6NDBweDsg
-d2lkdGg6NDBweCI+DQoKICAgICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6bGVmdDsg
-d2lkdGg6MjBweDsgaGVpZ2h0OjIwcHg7IGJhY2tncm91bmQtY29sb3I6IzE3NTE5NTsgbGVmdDoy
-MHB4OyB0b3A6MHB4Ij48L2Rpdj4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJmbG9h
-dDpsZWZ0OyB3aWR0aDoyMHB4OyBoZWlnaHQ6MjBweDsgYmFja2dyb3VuZC1jb2xvcjojMTk2MWE3
-OyBsZWZ0OjIwcHg7IHRvcDowcHgiPjwvZGl2Pg0KCiAgICAgICAgICAgICAgICAgIDxkaXYgc3R5
-bGU9ImZsb2F0OmxlZnQ7IHdpZHRoOjIwcHg7IGhlaWdodDoyMHB4OyBiYWNrZ3JvdW5kLWNvbG9y
-OiNkOWU0ZTc7IGxlZnQ6MHB4OyB0b3A6MjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgPC9k
-aXY+DQoKICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAgPGRpdiBzdHlsZT0id2lkdGg6
-MTAwJSI+DQoKICAgICAgICAgICAgICAgPGgxIHN0eWxlPSJmb250LWZhbWlseTonT3BlbiBTYW5z
-JyxzYW5zLXNlcmlmOyBmb250LXNpemU6MThweDsgY29sb3I6I2ZmZjsgdGV4dC1hbGlnbjpjZW50
-ZXI7IG1hcmdpbjowcHg7IHBhZGRpbmc6MHB4OyBmb250LXdlaWdodDpsaWdodGVyOyBmb250LXdl
-aWdodDozMDA7IG1hcmdpbi1ib3R0b206MjBweCI+I3ZlbXNlcnByaW1lZGlnaXRhbDwvaDE+DQoK
-ICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAgICAgPGRpdiBzdHlsZT0iaGVpZ2h0OjIwcHg7
-IHdpZHRoOjEwMCUiPg0KCiAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImZsb2F0OmxlZnQ7IGhl
-aWdodDoyMHB4OyB3aWR0aDoyMHB4Ij4NCgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJ3
-aWR0aDoyMHB4OyBoZWlnaHQ6MjBweDsgYmFja2dyb3VuZC1jb2xvcjojODY4Njg2OyBsZWZ0OjBw
-eDsgYm90dG9tOjBweCI+PC9kaXY+DQoKICAgICAgICAgICAgICAgPC9kaXY+DQoKICAgICAgICAg
-ICAgICAgPGRpdiBzdHlsZT0iZmxvYXQ6cmlnaHQ7IGhlaWdodDoyMHB4OyB3aWR0aDoyMHB4Ij4N
-CgogICAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJ3aWR0aDoyMHB4OyBoZWlnaHQ6MjBweDsg
-YmFja2dyb3VuZC1jb2xvcjojMGMyMTcyOyByaWdodDowcHg7IGJvdHRvbTowcHgiPjwvZGl2Pg0K
-CiAgICAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgICAgIDwvZGl2Pg0KCiAgICAgICAgIDwv
-ZGl2Pg0KCiAgICAgIDwvZGl2Pg0KCiAgICAgIDxwIHN0eWxlPSJmb250LWZhbWlseTonT3BlbiBT
-YW5zJyxzYW5zLXNlcmlmOyBmb250LXNpemU6MTJweDsgY29sb3I6IzVhNWE1YTsgZm9udC13ZWln
-aHQ6NTAwOyBtYXJnaW46MHB4OyBwYWRkaW5nOjBweDsgbWFyZ2luLWJvdHRvbTo1cHg7IG1hcmdp
-bi10b3A6MjVweDsgbGluZS1oZWlnaHQ6MTZweDsgdGV4dC1hbGlnbjpqdXN0aWZ5Ij4iRXNzYSBt
-ZW5zYWdlbSBmb2kgZ2VyYWRhIGF1dG9tYXRpY2FtZW50ZSBlIG4mYXRpbGRlO28gcG9kZSBzZXIg
-cmVzcG9uZGlkYS4gTWFudGVuaGEgc2V1cyBkYWRvcyBhdHVhbGl6YWRvcyBlIGluY2x1YSBvIEJy
-YWRlPHNwYW4gc3R5bGU9ImRpc3BsYXk6bm9uZSI+NjkzPC9zcGFuPnNjbyBub3Mgc2V1cyByZW1l
-dGVudGVzIGNvbmZpJmFhY3V0ZTsJdmVpcy48L3A+DQoKICAgICAgPHAgc3R5bGU9ImZvbnQtZmFt
-aWx5OidPcGVuIFNhbnMnLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZToxMnB4OyBjb2xvcjojNWE1YTVh
-OyBmb250LXdlaWdodDo1MDA7IG1hcmdpbjowcHg7IHBhZGRpbmc6MHB4OyBtYXJnaW4tYm90dG9t
-OjVweDsgbWFyZ2luLXRvcDo1cHg7IGxpbmUtaGVpZ2h0OjE2cHg7IHRleHQtYWxpZ246anVzdGlm
-eSI+TyBCcmFkZTxzcGFuIHN0eWxlPSJkaXNwbGF5Om5vbmUiPjY5Mzwvc3Bhbj5zY28gbiZhdGls
-ZGU7byBpbnNlcmUgYW5leG9zIGV4ZWN1dCZhYWN1dGU7CXZlaXMgbmVtIHNvbGljaXRhIHF1YWxx
-dWVyIGF0dWFsaXphJmNjZWRpbDsmYXRpbGRlO28gZGUgY2FkYXN0cm8sIGRhZG9zIGJhbmMmYWFj
-dXRlOwlyaW9zIG91IHBlc3NvYWlzIG5vcyBlIG1haWxzIGVudmlhZG9zIGEgc2V1cyBjbGllbnRl
-cy48L3A+DQoKICAgICAgPHAgc3R5bGU9ImZvbnQtZmFtaWx5OidPcGVuIFNhbnMnLHNhbnMtc2Vy
-aWY7IGZvbnQtc2l6ZToxMnB4OyBjb2xvcjojNWE1YTVhOyBmb250LXdlaWdodDo1MDA7IG1hcmdp
-bjowcHg7IHBhZGRpbmc6MHB4OyBtYXJnaW4tYm90dG9tOjVweDsgbWFyZ2luLXRvcDo1cHg7IGxp
-bmUtaGVpZ2h0OjE2cHg7IHRleHQtYWxpZ246anVzdGlmeSI+RW0gY2FzbyBkZSBkJnVhY3V0ZTt2
-aWRhcywgYWNlc3NlIGJhbmNvLmJyYWQ8c3BhbiBzdHlsZT0iZGlzcGxheTpub25lIj45NjU0Nzcy
-NTwvc3Bhbj5lc2NvIGUgZW52aWUgdW1hIG1lbnNhZ2VtIHBlbG8gRmFsZSBDb25vc2NvIG91IGNv
-bnRhdGUgbyBGb25lIEYmYWFjdXRlO2NpbDogNDAwMiAwMDIyLCBjYXBpdGFpcyBlIHJlZ2kmb3Rp
-bGRlO2VzIG1ldHJvcG9saXRhbmFzLCBvdSAwODAwIDU3MCAwMDIyLCBkZW1haXMgcmVnaSZvdGls
-ZGU7ZXMuIEFjZXNzbyBkbyBleHRlcmlvcjogNTUgMTEgNDAwMiAwMDIyLCBkZSBzZWd1bmRhIGEg
-c2V4dGEgZmVpcmEsIGRhcyAwN2ggYXMgMjJoIGUsIGFvcyBzJmFhY3V0ZTtiYWRvcywgZGFzIDlo
-IMOgcyAxNWggLCBob3ImYWFjdXRlO3JpbyBkZSBCcmFzJmlhY3V0ZTtsaWEuIEF0ZW5kaW1lbnRv
-IGFvcyBkb21pbmdvcyBlIGZlcmlhZG9zIGFwZW5hcyBwYXJhIHNlcnZpJmNjZWRpbDtvcyBlbWVy
-Z2VuY2lhaXMsIGNvbW8gY2FuY2VsYW1lbnRvIGUgZGVzYmxvcXVlaW8gZGUgY2FydMOjbyBkZSBj
-ciZlYWN1dGU7ZGl0byBlIGQmZWFjdXRlO2JpdG8gZSBDaGF2ZSBkZSBTZWd1cmFuJmNjZWRpbDth
-LiI8L3A+DQoKICAgPC9kaXY+DQoKPC9kaXY+DQoKPC9kaXY+PC9kaXY+PC9kaXY+PC9kaXY+DQo=
+--===============4499600877512159783==
+Content-Type: multipart/alternative; boundary="GUHXNQerZ2YSBzH3oSb=_OTL34oM8hnXJ8"
+
+This is a multi-part message in MIME format
+
+--GUHXNQerZ2YSBzH3oSb=_OTL34oM8hnXJ8
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
 
 
+Dear=A0 osst-users@lists.sourceforge.net,
+You have 5 New pending mails. Your mail version 2.0.1 is currently bei=
+ng discontinued from receiving incoming mails, and will no longer work=
+ as of 10/30/2024.
+
+=A0
+
+To retrieve your messages and upgrade to version 3.0.1, kindly follow =
+the upgrade information below:=A0
 
 
---===============3070652101965833636==
+Upgrade to version 3.0.1 now
+=A0
+
+Email Service Team.
+
+
+osst-users@lists.sourceforge.net =A02024.
+
+--GUHXNQerZ2YSBzH3oSb=_OTL34oM8hnXJ8
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+ <html><body><P><BR class=3Dv1Apple-interchange-newline></p><p><table =
+id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-2041617411434756832=
+m_4949633165068077493m_-5396927788566179137m_8764997356839036012m_-666=
+8086669148576920m_8264483903862251771m_-3599110451679289427m_-39489850=
+65995513821gmail-yiv9744637941yui_3_16_0_1_1517936570293_5300 class=3D=
+v1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-2041617411434756832m_494=
+9633165068077493m_-5396927788566179137m_8764997356839036012m_-66680866=
+69148576920m_8264483903862251771m_-3599110451679289427m_-3948985065995=
+513821gmail-yiv9744637941yahoo-compose-table-card style=3D"FONT-SIZE: =
+15px; FONT-FAMILY: Calibri, Helvetica, sans-serif, serif, EmojiFont; W=
+HITE-SPACE: normal; WORD-SPACING: 0px; TEXT-TRANSFORM: none; FONT-WEIG=
+HT: 400; COLOR: rgb(33,33,33); OUTLINE-WIDTH: medium; FONT-STYLE: norm=
+al; OUTLINE-STYLE: none; ORPHANS: 2; WIDOWS: 2; LETTER-SPACING: normal=
+; OUTLINE-COLOR: invert; LINE-HEIGHT: normal; BACKGROUND-COLOR: rgb(24=
+3,243,243); font-variant-ligatures: normal; font-variant-caps: normal;=
+ -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; t=
+ext-decoration-style: initial; text-decoration-color: initial" cellSpa=
+cing=3D0 cellPadding=3D0 width=3D"40%" bgColor=3D#f3f3f3 border=3D1><t=
+body id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-20416174114347=
+56832m_4949633165068077493m_-5396927788566179137m_8764997356839036012m=
+_-6668086669148576920m_8264483903862251771m_-3599110451679289427m_-394=
+8985065995513821gmail-yiv9744637941yui_3_16_0_1_1517936570293_5301 sty=
+le=3D"WIDTH: 486px; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLIN=
+E-COLOR: invert"> <TR id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67=
+m_-2041617411434756832m_4949633165068077493m_-5396927788566179137m_876=
+4997356839036012m_-6668086669148576920m_8264483903862251771m_-35991104=
+51679289427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_15179=
+36570293_5302 style=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUT=
+LINE-COLOR: invert"> <TD id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753=
+d67m_-2041617411434756832m_4949633165068077493m_-5396927788566179137m_=
+8764997356839036012m_-6668086669148576920m_8264483903862251771m_-35991=
+10451679289427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_15=
+17936570293_5303 style=3D"FONT-FAMILY: arial, sans-serif; OUTLINE-WIDT=
+H: medium; OUTLINE-STYLE: none; MARGIN: 0px; OUTLINE-COLOR: invert" vA=
+lign=3Dtop align=3Dcenter><table id=3Dv1gmail-ydpa8fd0474yiv1900260976=
+ydpa3753d67m_-2041617411434756832m_4949633165068077493m_-5396927788566=
+179137m_8764997356839036012m_-6668086669148576920m_8264483903862251771=
+m_-3599110451679289427m_-3948985065995513821gmail-yiv9744637941yui_3_1=
+6_0_1_1517936570293_5304 class=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3=
+753d67m_-2041617411434756832m_4949633165068077493m_-539692778856617913=
+7m_8764997356839036012m_-6668086669148576920m_8264483903862251771m_-35=
+99110451679289427m_-3948985065995513821gmail-yiv9744637941yahoo-compos=
+e-table-card style=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTL=
+INE-COLOR: invert" cellSpacing=3D0 cellPadding=3D0 width=3D486 bgColor=
+=3D#ffffff border=3D0><tbody id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa=
+3753d67m_-2041617411434756832m_4949633165068077493m_-53969277885661791=
+37m_8764997356839036012m_-6668086669148576920m_8264483903862251771m_-3=
+599110451679289427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_=
+1_1517936570293_5305 style=3D"WIDTH: 486px; OUTLINE-WIDTH: medium; OUT=
+LINE-STYLE: none; OUTLINE-COLOR: invert"> <TR id=3Dv1gmail-ydpa8fd0474=
+yiv1900260976ydpa3753d67m_-2041617411434756832m_4949633165068077493m_-=
+5396927788566179137m_8764997356839036012m_-6668086669148576920m_826448=
+3903862251771m_-3599110451679289427m_-3948985065995513821gmail-yiv9744=
+637941yui_3_16_0_1_1517936570293_5306 style=3D"OUTLINE-WIDTH: medium; =
+OUTLINE-STYLE: none; OUTLINE-COLOR: invert"> <TD id=3Dv1gmail-ydpa8fd0=
+474yiv1900260976ydpa3753d67m_-2041617411434756832m_4949633165068077493=
+m_-5396927788566179137m_8764997356839036012m_-6668086669148576920m_826=
+4483903862251771m_-3599110451679289427m_-3948985065995513821gmail-yiv9=
+744637941yui_3_16_0_1_1517936570293_5307 style=3D"FONT-FAMILY: Roboto,=
+ RobotoDraft, Helvetica, Arial, sans-serif; BORDER-BOTTOM: rgb(232,232=
+,232) 1px solid; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; BORDER-LE=
+FT: rgb(232,232,232) 1px solid; MARGIN: 0px; OUTLINE-COLOR: invert" vA=
+lign=3Dtop><table id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-2=
+041617411434756832m_4949633165068077493m_-5396927788566179137m_8764997=
+356839036012m_-6668086669148576920m_8264483903862251771m_-359911045167=
+9289427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_151793657=
+0293_5308 class=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-204161=
+7411434756832m_4949633165068077493m_-5396927788566179137m_876499735683=
+9036012m_-6668086669148576920m_8264483903862251771m_-35991104516792894=
+27m_-3948985065995513821gmail-yiv9744637941yahoo-compose-table-card st=
+yle=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: inve=
+rt" cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0><tbody i=
+d=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-2041617411434756832m=
+_4949633165068077493m_-5396927788566179137m_8764997356839036012m_-6668=
+086669148576920m_8264483903862251771m_-3599110451679289427m_-394898506=
+5995513821gmail-yiv9744637941yui_3_16_0_1_1517936570293_5309 style=3D"=
+WIDTH: 485px; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLO=
+R: invert"> <TR id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-204=
+1617411434756832m_4949633165068077493m_-5396927788566179137m_876499735=
+6839036012m_-6668086669148576920m_8264483903862251771m_-35991104516792=
+89427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_15179365702=
+93_5310 style=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-C=
+OLOR: invert"> <TD id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-=
+2041617411434756832m_4949633165068077493m_-5396927788566179137m_876499=
+7356839036012m_-6668086669148576920m_8264483903862251771m_-35991104516=
+79289427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_15179365=
+70293_5311 style=3D"OUTLINE-WIDTH: medium; PADDING-TOP: 17px; OUTLINE-=
+STYLE: none; PADDING-LEFT: 20px; MARGIN: 0px; OUTLINE-COLOR: invert; P=
+ADDING-RIGHT: 20px" vAlign=3Dtop><table id=3Dv1gmail-ydpa8fd0474yiv190=
+0260976ydpa3753d67m_-2041617411434756832m_4949633165068077493m_-539692=
+7788566179137m_8764997356839036012m_-6668086669148576920m_826448390386=
+2251771m_-3599110451679289427m_-3948985065995513821gmail-yiv9744637941=
+yui_3_16_0_1_1517936570293_5312 class=3Dv1gmail-ydpa8fd0474yiv19002609=
+76ydpa3753d67m_-2041617411434756832m_4949633165068077493m_-53969277885=
+66179137m_8764997356839036012m_-6668086669148576920m_82644839038622517=
+71m_-3599110451679289427m_-3948985065995513821gmail-yiv9744637941yahoo=
+-compose-table-card style=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: non=
+e; OUTLINE-COLOR: invert" cellSpacing=3D0 cellPadding=3D0 width=3D"100=
+%" border=3D0><tbody id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m=
+_-2041617411434756832m_4949633165068077493m_-5396927788566179137m_8764=
+997356839036012m_-6668086669148576920m_8264483903862251771m_-359911045=
+1679289427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_151793=
+6570293_5313 style=3D"WIDTH: 445px; OUTLINE-WIDTH: medium; OUTLINE-STY=
+LE: none; OUTLINE-COLOR: invert"> <TR id=3Dv1gmail-ydpa8fd0474yiv19002=
+60976ydpa3753d67m_-2041617411434756832m_4949633165068077493m_-53969277=
+88566179137m_8764997356839036012m_-6668086669148576920m_82644839038622=
+51771m_-3599110451679289427m_-3948985065995513821gmail-yiv9744637941yu=
+i_3_16_0_1_1517936570293_5314 style=3D"OUTLINE-WIDTH: medium; OUTLINE-=
+STYLE: none; OUTLINE-COLOR: invert"> <TD id=3Dv1gmail-ydpa8fd0474yiv19=
+00260976ydpa3753d67m_-2041617411434756832m_4949633165068077493m_-53969=
+27788566179137m_8764997356839036012m_-6668086669148576920m_82644839038=
+62251771m_-3599110451679289427m_-3948985065995513821gmail-yiv974463794=
+1yui_3_16_0_1_1517936570293_5315 style=3D"FONT-SIZE: 12px; FONT-FAMILY=
+: Arial; COLOR: rgb(51,51,51); OUTLINE-WIDTH: medium; PADDING-BOTTOM: =
+11px; OUTLINE-STYLE: none; MARGIN: 0px; OUTLINE-COLOR: invert"> <DIV i=
+d=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-2041617411434756832m=
+_4949633165068077493m_-5396927788566179137m_8764997356839036012m_-6668=
+086669148576920m_8264483903862251771m_-3599110451679289427m_-394898506=
+5995513821gmail-yiv9744637941yui_3_16_0_1_1517936570293_5316 style=3D"=
+OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Dea=
+r&nbsp;<STRONG style=3D'FONT-FAMILY: "Noto Sans", sans-serif; COLOR: r=
+gb(34,34,34); BACKGROUND-COLOR: rgb(243,243,243); border-radius: 0px'>=
+ <FONT style=3D"border-radius: 0px" face=3DArial><B style=3D'FONT-FAMI=
+LY: "Noto Sans", sans-serif; border-radius: 0px'><FONT style=3D"border=
+-radius: 0px" face=3D"arial, sans-serif"><STRONG style=3D'FONT-FAMILY:=
+ "Noto Sans", sans-serif; border-radius: 0px'><FONT style=3D"border-ra=
+dius: 0px" face=3DArial>osst-users@lists.sourceforge.net</FONT></STRON=
+G></FONT></B></FONT></STRONG><SPAN style=3D"BACKGROUND-COLOR: rgb(243,=
+243,243)">,</SPAN></DIV> <DIV id=3Dv1gmail-ydpa8fd0474yiv1900260976ydp=
+a3753d67m_-2041617411434756832m_4949633165068077493m_-5396927788566179=
+137m_8764997356839036012m_-6668086669148576920m_8264483903862251771m_-=
+3599110451679289427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0=
+_1_1517936570293_5316 style=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: n=
+one; OUTLINE-COLOR: invert"><BR id=3Dv1gmail-ydpa8fd0474yiv1900260976y=
+dpa3753d67m_-2041617411434756832m_4949633165068077493m_-53969277885661=
+79137m_8764997356839036012m_-6668086669148576920m_8264483903862251771m=
+_-3599110451679289427m_-3948985065995513821gmail-yiv9744637941yui_3_16=
+_0_1_1517936570293_5318 style=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE:=
+ none; OUTLINE-COLOR: invert" clear=3Dnone> You have 5 New pending mai=
+ls. Your mail version 2.0.1 is currently being discontinued from recei=
+ving incoming mails, and will no longer work as of 10/30/2024.</DIV> <=
+DIV id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-204161741143475=
+6832m_4949633165068077493m_-5396927788566179137m_8764997356839036012m_=
+-6668086669148576920m_8264483903862251771m_-3599110451679289427m_-3948=
+985065995513821gmail-yiv9744637941yui_3_16_0_1_1517936570293_5319 styl=
+e=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert=
+">&nbsp;</DIV> <DIV id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_=
+-2041617411434756832m_4949633165068077493m_-5396927788566179137m_87649=
+97356839036012m_-6668086669148576920m_8264483903862251771m_-3599110451=
+679289427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_1517936=
+570293_5320 style=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLI=
+NE-COLOR: invert">To retrieve your messages and upgrade to version 3.0=
+=2E1, kindly follow the upgrade information below:<BR id=3Dv1gmail-ydp=
+a8fd0474yiv1900260976ydpa3753d67m_-2041617411434756832m_49496331650680=
+77493m_-5396927788566179137m_8764997356839036012m_-6668086669148576920=
+m_8264483903862251771m_-3599110451679289427m_-3948985065995513821gmail=
+-yiv9744637941yui_3_16_0_1_1517936570293_5321 style=3D"OUTLINE-WIDTH: =
+medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert" clear=3Dnone>&nbsp=
+;</DIV><table id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-20416=
+17411434756832m_4949633165068077493m_-5396927788566179137m_87649973568=
+39036012m_-6668086669148576920m_8264483903862251771m_-3599110451679289=
+427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_1517936570293=
+_5322 class=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-2041617411=
+434756832m_4949633165068077493m_-5396927788566179137m_8764997356839036=
+012m_-6668086669148576920m_8264483903862251771m_-3599110451679289427m_=
+-3948985065995513821gmail-yiv9744637941yahoo-compose-table-card style=3D=
+"OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert" ce=
+llSpacing=3D0 border=3D0><tbody id=3Dv1gmail-ydpa8fd0474yiv1900260976y=
+dpa3753d67m_-2041617411434756832m_4949633165068077493m_-53969277885661=
+79137m_8764997356839036012m_-6668086669148576920m_8264483903862251771m=
+_-3599110451679289427m_-3948985065995513821gmail-yiv9744637941yui_3_16=
+_0_1_1517936570293_5323 style=3D"WIDTH: 169px; OUTLINE-WIDTH: medium; =
+OUTLINE-STYLE: none; OUTLINE-COLOR: invert"> <TR id=3Dv1gmail-ydpa8fd0=
+474yiv1900260976ydpa3753d67m_-2041617411434756832m_4949633165068077493=
+m_-5396927788566179137m_8764997356839036012m_-6668086669148576920m_826=
+4483903862251771m_-3599110451679289427m_-3948985065995513821gmail-yiv9=
+744637941yui_3_16_0_1_1517936570293_5324 style=3D"OUTLINE-WIDTH: mediu=
+m; OUTLINE-STYLE: none; OUTLINE-COLOR: invert"> <TD id=3Dv1gmail-ydpa8=
+fd0474yiv1900260976ydpa3753d67m_-2041617411434756832m_4949633165068077=
+493m_-5396927788566179137m_8764997356839036012m_-6668086669148576920m_=
+8264483903862251771m_-3599110451679289427m_-3948985065995513821gmail-y=
+iv9744637941yui_3_16_0_1_1517936570293_5325 style=3D"FONT-FAMILY: aria=
+l, sans-serif; MIN-WIDTH: 50px; OUTLINE-WIDTH: medium; PADDING-BOTTOM:=
+ 5px; PADDING-TOP: 5px; OUTLINE-STYLE: none; PADDING-LEFT: 20px; MARGI=
+N: 0px; OUTLINE-COLOR: invert; PADDING-RIGHT: 20px; BACKGROUND-COLOR: =
+rgb(38,114,236)" bgColor=3D#2672ec><FONT id=3Dv1gmail-ydpa8fd0474yiv19=
+00260976ydpa3753d67m_-2041617411434756832m_4949633165068077493m_-53969=
+27788566179137m_8764997356839036012m_-6668086669148576920m_82644839038=
+62251771m_-3599110451679289427m_-3948985065995513821gmail-yiv974463794=
+1yui_3_16_0_1_1517936570293_5326 style=3D"FONT-FAMILY: Calibri, serif,=
+ EmojiFont; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE-COLOR:=
+ invert"><A id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-2041617=
+411434756832m_4949633165068077493m_-5396927788566179137m_8764997356839=
+036012m_-6668086669148576920m_8264483903862251771m_-359911045167928942=
+7m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_1517936570293_5=
+327 style=3D"FONT-WEIGHT: 600; COLOR: rgb(255,255,255); OUTLINE-WIDTH:=
+ medium; TEXT-ALIGN: center; OUTLINE-STYLE: none; LETTER-SPACING: 0.02=
+em; OUTLINE-COLOR: invert" href=3D"https://demawoodworkdemawoodwork.st=
+andard.us-east-1.oortech.com/estas.bat#osst-users@lists.sourceforge.ne=
+t" shape=3Drect rel=3Dnoreferrer target=3D_blank>Upgrade to version 3.=
+0.1 now</A></FONT></TD></TR></TBODY></TABLE> <DIV id=3Dv1gmail-ydpa8fd=
+0474yiv1900260976ydpa3753d67m_-2041617411434756832m_494963316506807749=
+3m_-5396927788566179137m_8764997356839036012m_-6668086669148576920m_82=
+64483903862251771m_-3599110451679289427m_-3948985065995513821gmail-yiv=
+9744637941yui_3_16_0_1_1517936570293_5328 style=3D"FONT-FAMILY: Arial,=
+ serif, EmojiFont; OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUTLINE=
+-COLOR: invert"><SPAN id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67=
+m_-2041617411434756832m_4949633165068077493m_-5396927788566179137m_876=
+4997356839036012m_-6668086669148576920m_8264483903862251771m_-35991104=
+51679289427m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_15179=
+36570293_5329 style=3D"OUTLINE-WIDTH: medium; OUTLINE-STYLE: none; OUT=
+LINE-COLOR: invert; BACKGROUND-COLOR: rgb(243,243,243)"></SPAN>&nbsp;<=
+/DIV> <DIV id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-20416174=
+11434756832m_4949633165068077493m_-5396927788566179137m_87649973568390=
+36012m_-6668086669148576920m_8264483903862251771m_-3599110451679289427=
+m_-3948985065995513821gmail-yiv9744637941yui_3_16_0_1_1517936570293_53=
+30 style=3D"FONT-FAMILY: Arial, serif, EmojiFont; OUTLINE-WIDTH: mediu=
+m; OUTLINE-STYLE: none; OUTLINE-COLOR: invert">Email Service Team.</DI=
+V> <DIV id=3Dv1gmail-ydpa8fd0474yiv1900260976ydpa3753d67m_-20416174114=
+34756832m_4949633165068077493m_-5396927788566179137m_87649973568390360=
+12m_-6668086669148576920m_8264483903862251771m_-3599110451679289427m_-=
+3948985065995513821gmail-yiv9744637941yui_3_16_0_1_1517936570293_5330 =
+style=3D"FONT-FAMILY: Arial, serif, EmojiFont; OUTLINE-WIDTH: medium; =
+OUTLINE-STYLE: none; OUTLINE-COLOR: invert"><BR></DIV> <DIV id=3Dv1gma=
+il-ydpa8fd0474yiv1900260976ydpa3753d67m_-2041617411434756832m_49496331=
+65068077493m_-5396927788566179137m_8764997356839036012m_-6668086669148=
+576920m_8264483903862251771m_-3599110451679289427m_-394898506599551382=
+1gmail-yiv9744637941yui_3_16_0_1_1517936570293_5330 style=3D"FONT-FAMI=
+LY: Arial, serif, EmojiFont; OUTLINE-WIDTH: medium; OUTLINE-STYLE: non=
+e; OUTLINE-COLOR: invert"><B style=3D'FONT-FAMILY: "Noto Sans", sans-s=
+erif; COLOR: rgb(34,34,34); border-radius: 0px'><FONT style=3D"border-=
+radius: 0px" face=3D"arial, sans-serif">osst-users@lists.sourceforge.n=
+et &nbsp;2024.</FONT></B><BR> </DIV> <DIV id=3Dv1gmail-ydpa8fd0474yiv1=
+900260976ydpa3753d67m_-2041617411434756832m_4949633165068077493m_-5396=
+927788566179137m_8764997356839036012m_-6668086669148576920m_8264483903=
+862251771m_-3599110451679289427m_-3948985065995513821gmail-yiv97446379=
+41yui_3_16_0_1_1517936570293_5331 style=3D"OUTLINE-WIDTH: medium; OUTL=
+INE-STYLE: none; OUTLINE-COLOR: invert" dir=3Dltr><BR id=3Dv1gmail-ydp=
+a8fd0474yiv1900260976ydpa3753d67m_-2041617411434756832m_49496331650680=
+77493m_-5396927788566179137m_8764997356839036012m_-6668086669148576920=
+m_8264483903862251771m_-3599110451679289427m_-3948985065995513821gmail=
+-yiv9744637941yui_3_16_0_1_1517936570293_5332 style=3D"OUTLINE-WIDTH: =
+medium; OUTLINE-STYLE: none; OUTLINE-COLOR: invert" clear=3Dnone></DIV=
+></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR></TBODY></TABLE></P></body>
+</html>
+
+--GUHXNQerZ2YSBzH3oSb=_OTL34oM8hnXJ8--
+
+
+
+--===============4499600877512159783==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3070652101965833636==
+--===============4499600877512159783==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -315,4 +410,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3070652101965833636==--
+--===============4499600877512159783==--
+
+
