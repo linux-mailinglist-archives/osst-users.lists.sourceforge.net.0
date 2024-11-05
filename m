@@ -2,105 +2,121 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6C6589B9D38
-	for <lists+osst-users@lfdr.de>; Sat,  2 Nov 2024 06:14:56 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 4B5A69BCDCA
+	for <lists+osst-users@lfdr.de>; Tue,  5 Nov 2024 14:29:54 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1t76TO-0000cf-Gd
+	id 1t8Jd1-0005TS-T3
 	for lists+osst-users@lfdr.de;
-	Sat, 02 Nov 2024 05:14:55 +0000
+	Tue, 05 Nov 2024 13:29:52 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <post@fsrc.net>) id 1t76TN-0000cY-Es
- for osst-users@lists.sourceforge.net; Sat, 02 Nov 2024 05:14:54 +0000
+ (envelope-from <zhrakngrany@gmail.com>) id 1t8Jd0-0005TM-JO
+ for osst-users@lists.sourceforge.net; Tue, 05 Nov 2024 13:29:51 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Date:To:From:Reply-To:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:Reply-To:
+ Message-ID:From:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=EF9PGugES1QmUCUpkeDHWf1I2Myr0gbfSaXqUjDJ078=; b=NNiHpGUUIwAtUb8EXXkLCo+M1e
- CFgNLaBAqhYk+cTi4tmkN0/oz+mhn/5QvIOhQN0qlYaecZ8Z729q9yRWEmCAvakWYfMC9umj8K0OQ
- pa1TLUq1qEipduxJxz0pXImpSdQ0mWMMVoxlxLwPdCDpIggbiDjF8xCo61dd1D561KAI=;
+ bh=BX28rAzmD4iiFzVyOHBt728GRE15tu8MjCYp4yUF6Zs=; b=Zov0cEVKLevy2c/SZoszPTCTwA
+ mCi7mGJKDjMkm4C40bJ1MEJCTSayimGZTf6xtEGgm9FGQLoodiX8Z6IlAz1VPtLHuLgcFRoITOlf1
+ bBR/DCVo4l4RajgKsUpTbFm/sw7jHkt5PtwQZbSiczhJQWhQR4PPLhyNia9Z0EfVSEIE=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
- Date:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Type:MIME-Version:Date:Subject:To:Reply-To:Message-ID:From:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=EF9PGugES1QmUCUpkeDHWf1I2Myr0gbfSaXqUjDJ078=; b=V
- zENUbOsJnjyt3kkUCJZZxaj2DE04xcnu0RV1eZjVm95vRFEPpLbRV9/PP1HHzPjDQkj1mva5nk9V8
- VyJpyqf+XCkZb0UZD+VqaaPqdwvsNyfGftXaVUGQzpdt88oyJZRsR5iowGzR0AT/eD0VKc3fnzDGt
- OKmS0lyhOyS9GYpY=;
-Received: from [91.218.67.11] (helo=kernelhost.info)
+ List-Owner:List-Archive; bh=BX28rAzmD4iiFzVyOHBt728GRE15tu8MjCYp4yUF6Zs=; b=X
+ boOLZChCr0o5B30jbKdPFwghfSKXhqX3eejUWSAbtYOcpYGBsaRX+ntHI53TxtgDYZjgMMxvM30Ag
+ wcbD5uQ40fVnn2lXKLK04pGU1qzUAuKogXXnTfXs+kzUsO1DrFL0mGarItfjtrWgU2m/CVmL6OKHW
+ DHyL7LC//a7vF89A=;
+Received: from mail-pf1-f194.google.com ([209.85.210.194])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1t76TM-0003KV-7l for osst-users@lists.sourceforge.net;
- Sat, 02 Nov 2024 05:14:54 +0000
-Received: from fsrc.net (dynamic-176-001-006-061.176.1.pool.telefonica.de
- [176.1.6.61]) by kernelhost.info (Postfix) with ESMTPA id ACF9115541B
- for <osst-users@lists.sourceforge.net>; Sat,  2 Nov 2024 02:46:06 +0100 (CET)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fsrc.net; s=default;
- t=1730511967; bh=EF9PGugES1QmUCUpkeDHWf1I2Myr0gbfSaXqUjDJ078=;
- h=From:To:Subject;
- b=rA2y0xSWI+Kt0HFFT7J+/rtpfpT4SkB5Xxxokz+r8SHQUV621UPFyYez+uNY9FyYk
- YLBs7pGIDrv4cb9Zj1lFSZ6fdEB/ZEDpVfbYzkqqSY1WqAewmJ72HCOSB+HoQ7uKJP
- /7uyZ+fUtC0scmVQ3S60t2dPJzVIaUm6ef/30us/efQkKHm5Xc/Ef3jS1BUQm04zZD
- IRQ0K4UJ1o9KHWY32fNDT20CH3DEZvFzg3KtBBKt8dRKvGYSt/okgAKSjtN9m9BRVx
- 0OWDd+NZ87/a1Cj9Deahn1QPPlKhyuqUb9m4NPq1zgfsnMxzkS+ri9wa+Cq8hlsm1E
- v1VL5KpQnijEw==
-Authentication-Results: kernelhost.info;
- spf=pass (sender IP is 176.1.6.61) smtp.mailfrom=post@fsrc.net
- smtp.helo=fsrc.net
-Received-SPF: pass (kernelhost.info: connection is authenticated)
-From: post@fsrc.net
+ (TLS1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.95)
+ id 1t8Jd0-0006d9-2N for osst-users@lists.sourceforge.net;
+ Tue, 05 Nov 2024 13:29:50 +0000
+Received: by mail-pf1-f194.google.com with SMTP id
+ d2e1a72fcca58-71e467c3996so4625454b3a.2
+ for <osst-users@lists.sourceforge.net>; Tue, 05 Nov 2024 05:29:50 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=gmail.com; s=20230601; t=1730813384; x=1731418184; darn=lists.sourceforge.net;
+ h=mime-version:date:subject:to:reply-to:message-id:from:from:to:cc
+ :subject:date:message-id:reply-to;
+ bh=BX28rAzmD4iiFzVyOHBt728GRE15tu8MjCYp4yUF6Zs=;
+ b=GLfh66jV2Ha5vpmUEuQ/x5H2FQnqBwYm/KRlhogG9i325tvy51lf28nTim9LaNXUMQ
+ 2r/YaeMsXKt84c9rMrUJyuQklm+lJ/02ieF8jSTuAhv9OX5yGfSQw3RUIYunoNkMd0bN
+ D4r4TBCurWmgIAhamXPP6oJUdzO4AIDl9z7fxllBoty4XKvePtGDRAH8a0/srLSw2221
+ 1I1Qpx++s8aoqMfiUXGAT+2wQBwEO4XIm/of+eVslPK0qDuf1lqiZVhCZNNvJTwsKGde
+ 7c7NB1oqR5zz7mthvqUSXOEt8WOWy+OV1bN6oFdTvTrMdcWYs4SRhzs4qwN6FAw22TgG
+ Ul/w==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=1e100.net; s=20230601; t=1730813384; x=1731418184;
+ h=mime-version:date:subject:to:reply-to:message-id:from
+ :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+ bh=BX28rAzmD4iiFzVyOHBt728GRE15tu8MjCYp4yUF6Zs=;
+ b=rmp/6h0JzmRAZwmn9rEx8pcBuRDjQeZgspCZf4f80v0Ec1pYp5BG/yj/B5ZXX/ATXN
+ pyTBTD2YFqNkQ9NcbpahDENPIPgryiX6fH6nullOuVyQ9/DbvqEW5GSPEGFbCO0qti2D
+ XZa9TU6iAKBgddjUHfMOldBI+R2uoRV1JinlDbVTh3fBO/F5bbvmlBojiseIziq6I+IL
+ Mj6RM61KWoct8gLu5tpnCD0RJumH0hGjWa8z8t3Zhm675t3H1vGx/fQknYRRZcsHmPmk
+ 1slKyiIZ7F/hxP0Q5mx5h6K5n+ujrr3UcyZQtwL8bMWogvvIHRJXlNZQxxfJ4jgsTXHv
+ iNPA==
+X-Gm-Message-State: AOJu0Yz5G4w4hZHl6vuEg/yrwAijmElUWDD1zT14y6xF2CwFnU/8b2Ew
+ a5qYOj3E2GW8+w7GYAvtHl8tA5Lfe8yMLY21es82MNH4SXXesic0WfdSEOpKfY0=
+X-Google-Smtp-Source: AGHT+IGO98Jb6cuX/UOUy5PHLF2owNaoX57GWxAYzdVqtowiYhGuA5imP3FcOxxTaZExTHWuoO+oPw==
+X-Received: by 2002:a05:6a00:84c:b0:71e:4e2a:38bf with SMTP id
+ d2e1a72fcca58-72063028f7bmr52425619b3a.18.1730813383938; 
+ Tue, 05 Nov 2024 05:29:43 -0800 (PST)
+Received: from [103.67.163.162] ([103.67.163.162])
+ by smtp.gmail.com with ESMTPSA id
+ d2e1a72fcca58-720bc1b91d3sm9504924b3a.38.2024.11.05.05.29.43
+ for <osst-users@lists.sourceforge.net>
+ (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+ Tue, 05 Nov 2024 05:29:43 -0800 (PST)
+From: Debbie Magoffin <zhrakngrany@gmail.com>
+X-Google-Original-From: Debbie Magoffin <dmagoffin@outlook.com>
+Message-ID: <063808aa2d5b1cc5bdd150c679ba78d63304252c17189f3e7e725d368806af43@mx.google.com>
 To: osst-users@lists.sourceforge.net
-Date: 02 Nov 2024 02:46:06 +0100
-Message-ID: <20241102024606.86B701C9B1178D4D@fsrc.net>
+Date: Tue, 05 Nov 2024 08:29:33 -0500
 MIME-Version: 1.0
-X-Antivirus: Avast (VPS 241101-4, 11/01/2024), Outbound message
-X-Antivirus-Status: Clean
-X-PPP-Message-ID: <173051196702.22916.14697292079447143277@kernelhost.info>
-X-PPP-Vhost: fsrc.net
-X-Spam-Score: 9.0 (+++++++++)
+X-Spam-Score: 2.8 (++)
 X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Trust Financial & securities Services 432 16th St NW, Atlanta,
- GA 30302-3965 Email: imf.org@mail2Director.com Payment CPC Code
- CON/FT0/990/651/
- UNPAID FUND 2023. Hello Beneficiary How are you doing today? I hope everything
- is well with you. This particular letter is strictly confidential and Urgent
- only for your perusal based on message we sent to you last week, Till now
- you ha [...] 
- Content analysis details:   (9.0 points, 6.0 required)
+ Content preview:  Hello, I am offering my late husband?s Yamaha piano to anyone
+ who would truly appreciate it. If you or someone you know would be interested
+ in receiving this instrument for free, please do not hesitate to co [...]
+ Content analysis details:   (2.8 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [91.218.67.11 listed in psbl.surriel.com]
- 1.1 DATE_IN_PAST_03_06     Date: is 3 to 6 hours before Received: date
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- 0.0 SPF_NONE               SPF: sender does not publish an SPF Record
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in
- digit [terryglenn398[at]gmail.com]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+ no trust [209.85.210.194 listed in list.dnswl.org]
+ 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+ provider [zhrakngrany[at]gmail.com]
  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [91.218.67.11 listed in wl.mailspike.net]
- 0.1 DKIM_INVALID           DKIM or DK signature exists, but is not valid
- 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 2.0 PYZOR_CHECK            Listed in Pyzor
+ (https://pyzor.readthedocs.io/en/latest/)
+ 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
+ [209.85.210.194 listed in wl.mailspike.net]
+ 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
  1.0 FREEMAIL_REPLYTO       Reply-To/From or Reply-To/body contain
  different freemails
- 0.0 ADVANCE_FEE_4_NEW      Appears to be advance fee fraud (Nigerian 419)
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1t76TM-0003KV-7l
-Subject: [Osst-users] [SPAM] Trust Financial & securities Services !!
+X-Headers-End: 1t8Jd0-0006d9-2N
+Subject: [Osst-users] Yamaha Piano !!
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -112,63 +128,17 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: terryglenn398@gmail.com
+Reply-To: dmagoffin@outlook.com
 Content-Type: text/plain; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-Trust Financial & securities Services
-432 16th St NW,
-Atlanta, GA 30302-3965
-Email: imf.org@mail2Director.com
-Payment CPC Code CON/FT0/990/651/ UNPAID FUND 2023.
+Hello,
 
-Hello Beneficiary
+I am offering my late husband?s Yamaha piano to anyone who would truly appreciate it. If you or someone you know would be interested in receiving this instrument for free, please do not hesitate to contact me.
 
-How are you doing today? I hope everything is well with you. This 
-particular letter is strictly confidential and Urgent only for 
-your perusal based on message we sent to you last week, Till now 
-you have not reply back regarding the notice. Well, our office is 
-contacting you based on an important issues about Contractual 
-/Inheritance payment which you suppose to receive since long time 
-ago.
-
-However, we are surprised to receive another application this 
-morning from your representative, Mr. Klaus Muller, stating that 
-you authorized him to transfer the funds to his bank account in
-Germany and that you were recently involved in an auto accident 
-and presently hospitalized.
-
-Could you please confirm immediately below bank details if you 
-are aware of this new development from Mr. Klaus Muller.
-
-Deutsche Bank, D-45138 Essen, GERMANY
-Kontonummer: 056097900
-Bankleitzahl: 59070070
-IBAN: DE75590700700056097900
-BIC: DEUTDEDB595
-
-Please if you are not aware of this this changes from Mr. Klaus 
-Muller, You are advice to contact below Office of Paymaster 
-immediately through his contact details below.
-
-Dr. Raymond Mcniel
-Email:  imf.org@mail2director.com
-
-In other to avoid mistake while transferring your overdue payment 
-to you, Confirm above account details our Officer finalize with 
-transfer payment to above account Mr. Klaus forward to our 
-office.
-
-Yours sincerely,
-Mr. Terry Glenn
-Financial Services Regulation Committee
-United Stated Of America
-
--- 
-This email has been checked for viruses by Avast antivirus software.
-https://www.avast.com/antivirus
-
+Warm regards,
+Debbie
 
 
 _______________________________________________
