@@ -2,97 +2,82 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 1140B9E8412
-	for <lists+osst-users@lfdr.de>; Sun,  8 Dec 2024 07:52:58 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 59BAF9E8447
+	for <lists+osst-users@lfdr.de>; Sun,  8 Dec 2024 09:46:19 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1tKBA0-0006el-1w
+	id 1tKCvh-0003Yl-DU
 	for lists+osst-users@lfdr.de;
-	Sun, 08 Dec 2024 06:52:56 +0000
+	Sun, 08 Dec 2024 08:46:18 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <ticket@ticket.com>) id 1tKB9z-0006eb-87
- for osst-users@lists.sourceforge.net; Sun, 08 Dec 2024 06:52:55 +0000
+ (envelope-from <ubuntu@bmi-tech.cn>) id 1tKCvb-0003YN-Fz
+ for osst-users@lists.sourceforge.net; Sun, 08 Dec 2024 08:46:12 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-ID:
+ :Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=yFbTtDp2M2GmaLYoxwi53twMRMKB+CtxTWG9m/zbX6w=; b=TKDcBIDYUspyYfBuLBjqrViECF
- edAUj5S1ESsiNjXVGKIuaDax47Hf3zfc3ZyCO4S2cYVP2mqE8RgPoJ0mLoLLgIJ7MI1UIfFN8x1EZ
- +UuChTIRZE4xr7hq8iixafrvGavoeuwnKImPI8vkEANZCVIiUzZbWkPG3WMP9nC4AG5k=;
+ bh=xpdqNvBW2iJujK9fBlE1satOfe/JYoJ+RWKSpnEpE14=; b=eq2Mqt53LQ1x0g/Wdb7oAN01Tx
+ puWJ04WhUCBxw/pvug89j6gUoTocgKGeD7jk5x3qLr1t4sV7sHQ6QwwcF+XdyriKgOO9qi5Qn70b4
+ unj+Rjkt0NXPSoy3rWuGTZFXUMkYGmS8t2Zz/WxD6r43cAELtOWuFVpLznPuIh2y5K5Y=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
- Reply-To:From:To:Date:Sender:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=yFbTtDp2M2GmaLYoxwi53twMRMKB+CtxTWG9m/zbX6w=; b=C
- I11zx5LsjOGyMOmPp/iyWnEufu2pWkNTXOK7kb28vd2az/Hs7z7r+ZqIAhs6xv/niQwh5wWsJozT5
- Hp5AZSquibm/RxdjstSJR2KYSexn3I2f0K145Beq4UGIKziDyaIG6zWvK3tkwybKAjoz4xXw4prYq
- uLw9mJKmKUVd7lus=;
-Received: from 19.220.34.8.bc.googleusercontent.com ([8.34.220.19]
- helo=cs-108649782669-default.europe-west1-b.c.t71947723978b23cc-tp.internal)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1tKB9y-0005am-Hl for osst-users@lists.sourceforge.net;
- Sun, 08 Dec 2024 06:52:55 +0000
-Received: from cs-108649782669-default (localhost [127.0.0.1])
- by cs-108649782669-default.europe-west1-b.c.t71947723978b23cc-tp.internal
- (Postfix) with ESMTP id 6C8FF3CB2C1
- for <osst-users@lists.sourceforge.net>; Sun,  8 Dec 2024 06:35:20 +0000 (UTC)
-Date: Sun, 8 Dec 2024 06:35:20 +0000
+ List-Owner:List-Archive; bh=xpdqNvBW2iJujK9fBlE1satOfe/JYoJ+RWKSpnEpE14=; b=N
+ aO2y7rrPZAacZmfAtBUK4JYVotlvLGm4SlQY1oZ6tK3bJvM2RiuEAsLg/zblT48Ixnj78FUbQagYF
+ XCL5OdTE/J4R2tbJYJHMvnpO7fB2s6Hmci/H/Dh5uMw1oUdNb2rLNBbzZW2sg+SBhC98FHj8mSpXI
+ 50CowVUvDyMbxxTw=;
+Received: from [39.156.195.158] (helo=mail.bmi-tech.cn)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1tKCvb-0006Vz-Ea for osst-users@lists.sourceforge.net;
+ Sun, 08 Dec 2024 08:46:12 +0000
+Received: from bmi-tech.cn (unknown [41.138.89.243])
+ by mail.bmi-tech.cn (Postfix) with ESMTPA id 8C75C82E97C8
+ for <osst-users@lists.sourceforge.net>; Sun,  8 Dec 2024 16:45:26 +0800 (CST)
+From: Marie PRESLES <ubuntu@bmi-tech.cn>
 To: osst-users@lists.sourceforge.net
-Message-ID: <LLmu9FVtuoK0oro2HxpoGDEbPuUgK5bybvYS9Jqo0k@cs-108649782669-default>
-X-Mailer: PHPMailer 6.9.3 (https://github.com/PHPMailer/PHPMailer)
+Date: 08 Dec 2024 09:45:22 +0100
+Message-ID: <20241208094521.1BC7DBF1E65B8930@bmi-tech.cn>
 MIME-Version: 1.0
-X-Spam-Score: 7.5 (+++++++)
+X-Spam-Score: 3.8 (+++)
 X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has identified this incoming email as possible spam.  The original
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  DHL-Benachrichtigung Sehr geehrter Kunde, Ihre Sendung mit
-    der Sendungsnummer #CS47958002 kann nicht zugestellt werden, da eine ausstehende
-    Zustellgebühr entrichtet werden muss. 
+ Content preview:  Bonjour, J'espère que vous allez bien! Je suis désolé de
+    vous contacter comme ça, ce n'est pas mon habitude. Ayant suivi mon cœur
+    je pense que vous êtes la personne dont j'ai besoin pour mon message que
+    [...] 
  
- Content analysis details:   (7.5 points, 6.0 required)
+ Content analysis details:   (3.8 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [8.34.220.19 listed in wl.mailspike.net]
-  5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [8.34.220.19 listed in dnsbl-1.uceprotect.net]
-  0.0 TVD_RCVD_IP            Message was received from an IP address
-  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                            [8.34.220.19 listed in sa-trusted.bondedsender.org]
-  0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
-                             [SPF failed: Rejected by SPF record]
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
   0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
                              query to Validity was blocked.  See
                              https://knowledge.validity.com/hc/en-us/articles/20961730681243
                               for more information.
-                             [8.34.220.19 listed in bl.score.senderscore.com]
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.7 HTML_IMAGE_ONLY_28     BODY: HTML: images with 2400-2800 bytes of
-                             words
-  0.4 RDNS_DYNAMIC           Delivered to internal network by host with
-                             dynamic-looking rDNS
-  0.0 PDS_RDNS_DYNAMIC_FP    RDNS_DYNAMIC with FP steps
-  0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-  0.0 T_REMOTE_IMAGE         Message contains an external image
-X-Headers-End: 1tKB9y-0005am-Hl
-Subject: [Osst-users] Paket kann nicht zugestellt werden
+                            [39.156.195.158 listed in bl.score.senderscore.com]
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                         [39.156.195.158 listed in sa-trusted.bondedsender.org]
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+X-Headers-End: 1tKCvb-0006Vz-Ea
+Subject: [Osst-users] Mme Marie PRESLES
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -104,75 +89,40 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: DHL EXPRESS via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: DE <ticket@shipping.com>
-Cc: DHL EXPRESS <ticket@ticket.com>
-Content-Type: multipart/mixed; boundary="===============8275651008680646354=="
+Reply-To: preslesmarie@yahoo.com
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============8275651008680646354==
-Content-Type: text/html; charset=iso-8859-1
-Content-Transfer-Encoding: 8bit
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DHL-Benachrichtigung</title>
-</head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f9f9f9; color: #333;">
-    <!-- Hauptcontainer -->
-    <div style="max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-        <!-- Kopfzeile -->
-        <div style="background-color: #ffcc00; padding: 20px; text-align: center;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/DHL_Express_logo.svg" alt="DHL Logo" style="max-width: 190px; margin-bottom: 15px;">
-        </div>
-
-        <!-- Hauptinhalt -->
-        <div style="padding: 30px; font-size: 18px; line-height: 1.8;">
-            <p style="margin-bottom: 20px;">Sehr geehrter Kunde,</p>
-            <p style="margin-bottom: 20px;">
-                Ihre Sendung mit der Sendungsnummer <strong>#CS47958002</strong> kann nicht zugestellt werden, da eine ausstehende Zustellgebühr entrichtet werden muss.
-            </p>
-            <p style="margin-bottom: 20px;">
-                Um Ihre Sendung zu erhalten, begleichen Sie bitte die ausstehende Gebühr. Klicken Sie auf den untenstehenden Link, um die Zahlung vorzunehmen:
-            </p>
-            <p style="text-align: center; margin: 30px 0;">
-                <a href="https://bit.ly/49zgZ4D" style="display: inline-block; background-color: #ffcc00; color: #000000; text-decoration: none; padding: 15px 25px; border-radius: 5px; font-size: 18px; font-weight: bold;">Gebühr bezahlen</a>
-            </p>
-            <p style="margin-bottom: 20px;">Bitte beachten Sie, dass Ihre Sendung innerhalb von <strong>48 Stunden</strong> zurückgesendet wird, wenn die Zahlung nicht rechtzeitig erfolgt.</p>
-            <p>Vielen Dank, dass Sie DHL Express gewählt haben.</p>
-            <p>Mit freundlichen Grüßen, <br> Ihr DHL-Kundenservice-Team</p>
-        </div>
-
-        <!-- Fußzeile -->
-        <div style="background-color: #f4f4f4; padding: 15px; text-align: center; font-size: 14px; color: #666;">
-            <p style="margin: 0;">Dies ist eine automatische Nachricht. Bitte antworten Sie nicht auf diese E-Mail.</p>
-            <p style="margin: 0;">&copy; 2024 DHL Express. Alle Rechte vorbehalten.</p>
-        </div>
-    </div>
-</body>
-</html>
-
-
-
---===============8275651008680646354==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---===============8275651008680646354==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
-
---===============8275651008680646354==--
+Qm9uam91ciwKCkonZXNww6hyZSBxdWUgdm91cyBhbGxleiBiaWVuISBKZSBzdWlzIGTDqXNvbMOp
+IGRlIHZvdXMgY29udGFjdGVyIApjb21tZSDDp2EsIGNlIG4nZXN0IHBhcyBtb24gaGFiaXR1ZGUu
+IEF5YW50IHN1aXZpIG1vbiBjxZN1ciBqZSAKcGVuc2UgcXVlIHZvdXMgw6p0ZXMgbGEgcGVyc29u
+bmUgZG9udCBqJ2FpIGJlc29pbiBwb3VyIG1vbiBtZXNzYWdlIApxdWUgamUgcG9ydGUgw6Agdm90
+cmUgY29ubmFpc3NhbmNlLiBKZSB2b3VzIGRlbWFuZGUgZGUgcG9ydGVyIHVuZSAKYXR0ZW50aW9u
+IHBhcnRpY3VsacOocmUgw6AgbW9uIG1lc3NhZ2UgYWZpbiBxdWUgdm91cyBwdWlzc2lleiAKcHJl
+bmRyZSBsYSBib25uZSBkw6ljaXNpb24uIEVuIGVmZmV0LCBqZSBtJ2FwcGVsbGUgTWFyaWUgUFJF
+U0xFUyAsIAp1biBib3Vyc2llciBzbG92YXF1ZSDDoCBsYSByZXRyYWl0ZSBvw7kgaidhaSBmYWl0
+IGZvcnR1bmUgZGFucyBkZXMgCmVudHJlcHJpc2VzIGVuIHBsZWluIGVzc29yIHRlbGxlcyBxdWUg
+bGVzIGJvdXJzZXMgZXQgYmllbiBwbHVzIAplbmNvcmUuIE1haXMgw6AgdW4gbW9tZW50IGhvcnMg
+ZHUgdGVtcHMgZGUgbm9zIHBhcmNvdXJzLCBsYSAKcsOpYWxpdMOpIG5vdXMgbW9udHJlIHF1ZSBy
+aWVuIG7igJllc3Qgw6l0ZXJuZWwuIEMnZXN0IGFpbnNpIHF1ZSBqJ2FpIApyw6lhbGlzw6kgcXVl
+IGxlIGTDqWJ1dCBkZSBjaGFxdWUgdmllIGEgdG91am91cnMgdW5lIGZpbiBldCBxdWUgamUgCm5l
+IHBldXggcGFzIHJlc3RlciBsb25ndGVtcHMuIEVuIGVmZmV0LCBqZSBzb3VmZnJlIAptYWxoZXVy
+ZXVzZW1lbnQgZCd1biBjYW5jZXIgZW4gcGhhc2UgdGVybWluYWxlLCBsZSBtw6lkZWNpbiAKdHJh
+aXRhbnQgbSdhIGRpdCBxdWUgbWVzIGpvdXJzIMOpdGFpZW50IGNvbXB0w6lzIGVuIHJhaXNvbiBk
+ZSBtYSAKc2FudMOpIGTDqWdyYWTDqWUgZXQgZGUgbW9uIMOiZ2UgYXZhbmPDqS4gw4l0YW50IHVu
+ZSBncmFuZGV1ciBkJ8OibWUgcXVpIApmYWl0IGRlIG1vaSB1biBwaGlsYW50aHJvcGUsIGonYWkg
+dG91am91cnMgdW4gY8WTdXIgcG91ciBtZXMgCnNlbWJsYWJsZXMsIHN1cnRvdXQgY2V1eCBxdWkg
+c291ZmZyZW50LCBjZXV4IHF1aSBsdXR0ZW50LCB0b3VzIApjZXMgZ2VucyBxdWkgbmUgc29udCBw
+YXMgZW50ZW5kdXMgZXQgY2VsYSBsb3JzIGRlIG1lcyB2b3lhZ2VzLiAKU2FjaGV6IHF1ZSBjZWxh
+IG5lIG1lIHNlcnQgw6AgcmllbiBkJ2F2b2lyIGRlcyBiaWVucyBldCBkZSBuZSBwYXMgCnBhcnRh
+Z2VyIHNhY2hhbnQgcXVlIGxhIG1vcnQgZXN0IMOgIG1lcyB0cm91c3Nlcy4gQydlc3QgcG91cnF1
+b2kgCmplIHNvdWhhaXRlIGJpZW4gdm91bG9pciB2b3VzIG9mZnJpciBtYSBwcm9wcmnDqXTDqSBk
+J3VuZSBzb21tZSBkZSAKMjUgNTgwIDAwMCDigqwsIGFmaW4gcXVlIHZvdXMgcHVpc3NpZXogcsOp
+YWxpc2VyIGxlcyBwcm9qZXRzIHF1aSAKdm91cyB0aWVubmVudCDDoCBjxZN1ci4gVmV1aWxsZXog
+cHJlbmRyZSBjb250YWN0IGF2ZWMgbW9uIG5vdGFpcmUgCnBvdXIgcsOpY2xhbWVyIHZvdHJlIGRv
+bmF0aW9uLCBhZmluIHF1ZSBsZXMgZG9jdW1lbnRzIHNvaWVudCAKw6l0YWJsaXMgcG91ciB2b3Vz
+IHBlcm1ldHRyZSBkZSBqdXN0aWZpZXIgbCdvcmlnaW5lIGRlIHZvcyBmb25kcy4KCkJpZW4gw6Ag
+dm91cwoKCl9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fCk9z
+c3QtdXNlcnMgbWFpbGluZyBsaXN0Ck9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0Cmh0
+dHBzOi8vbGlzdHMuc291cmNlZm9yZ2UubmV0L2xpc3RzL2xpc3RpbmZvL29zc3QtdXNlcnMK
