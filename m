@@ -2,113 +2,101 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 916999FA19D
-	for <lists+osst-users@lfdr.de>; Sat, 21 Dec 2024 17:32:54 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 82D9A9FBAB5
+	for <lists+osst-users@lfdr.de>; Tue, 24 Dec 2024 09:51:24 +0100 (CET)
 Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
 	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1tP2PM-00082c-I1
+	id 1tQ0dP-0005lZ-9F
 	for lists+osst-users@lfdr.de;
-	Sat, 21 Dec 2024 16:32:52 +0000
+	Tue, 24 Dec 2024 08:51:23 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
  by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <telee2-support@realpromotions.co.za>)
- id 1tP2PK-00082V-VH for osst-users@lists.sourceforge.net;
- Sat, 21 Dec 2024 16:32:50 +0000
+ (envelope-from <damian.bogusz@zyskon.pl>) id 1tQ0dO-0005lQ-3u
+ for osst-users@lists.sourceforge.net; Tue, 24 Dec 2024 08:51:22 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Subject:From:To:Date:Sender:Reply-To:Cc:Content-ID:
+ :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Egfu5UxFhagk/0j76PZsH+pLvV/el/F2RRVOEiHq3SI=; b=NdxOpFOf5YxqDqGvrC27nmAewO
- jllG1klj2g+EIYFtz1uss76DJ0A3GBdCCNU4IURKZ5ubBo8GtjmPBCkscoSG+luP7HmwDqh4fxFob
- O2n5tGch7sbmx8hSDdjHeK+arurJRKAcRBTlxbnmSR4dJ2EK9ABkoiHWMPoWzoeomcno=;
+ bh=Vyn9V36Do5I728ns9rloSx+y8IOjfYGN12NImszhyK0=; b=c9K55mSBkfoMs5je8uzxbI+Te+
+ RuO9DTbM4pnQT173z7Ygd3BhRWu8D9Gx/2zDL1c24VOgzcj1hcveMW/5ib4azaqJcwZ5DLm8zVKTr
+ 3BQVgIePbIjwvCJECQ8AdmFMs613JA9wbP4PfTF/+aR6qbHDazRdV4PhfKSOY3sgiVqk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Subject:
- From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Egfu5UxFhagk/0j76PZsH+pLvV/el/F2RRVOEiHq3SI=; b=l
- or3bkti9p1fVcySBrZ6B++YEVzF8QqLacGczykVZUoasA76aid+EnrSmmsvrNgGQvkqQrepY0xn+B
- ltfwkyYqL+ZubTIYoq7CKmuybojg3/qTx5cunlS7R6/xrDyyI5ps806N5xkXwNkOWfFdvqg03potz
- mGABcErrn4aWnQkw=;
-Received: from outgoing35.cpt4.host-h.net ([196.40.103.45])
+ List-Owner:List-Archive; bh=Vyn9V36Do5I728ns9rloSx+y8IOjfYGN12NImszhyK0=; b=a
+ EP2rvEDaN8y6U6FI0l+91K0P4UNH85ym5E8IzQslljlNfCeZf47FTY0HtNDycIaOfD+Py7iK/sj6K
+ cyx2KKO1w3camrTAHyijcSIYSxvqAgeqVLx+LPixh9g9Atvr0UPkMyiacbXI04VbRAl4Jk91KjOlP
+ Y4ix4TklT5ZYib6g=;
+Received: from mail.zyskon.pl ([54.37.225.205])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1tP2PK-0000el-0S for osst-users@lists.sourceforge.net;
- Sat, 21 Dec 2024 16:32:50 +0000
-Received: from www53.cpt2.host-h.net ([41.204.202.53])
- by antispam6-cpt4.host-h.net with esmtpsa (TLSv1.3:TLS_AES_256_GCM_SHA384:256)
- (Exim 4.92) (envelope-from <telee2-support@realpromotions.co.za>)
- id 1tP2P4-006Yyx-Mv
- for osst-users@lists.sourceforge.net; Sat, 21 Dec 2024 18:32:37 +0200
-Received: from realpspguu by www53.cpt2.host-h.net with local (Exim 4.96)
- (envelope-from <realpspguu@www53.cpt2.host-h.net>)
- id 1tP2P4-00EhJO-1J for osst-users@lists.sourceforge.net;
- Sat, 21 Dec 2024 18:32:34 +0200
-Date: Sat, 21 Dec 2024 18:32:29 +0200
-To: osst-users@lists.sourceforge.net
-From: =?UTF-8?B?VNC14oW80LUy?= <telee2-support@realpromotions.co.za>
-Message-ID: <6d2559b4cd6033ac9396595398339ef7@realpromotions.co.za>
+ id 1tQ0dN-0006Wt-Ct for osst-users@lists.sourceforge.net;
+ Tue, 24 Dec 2024 08:51:22 +0000
+Received: by mail.zyskon.pl (Postfix, from userid 1002)
+ id 24FB421108; Tue, 24 Dec 2024 09:50:46 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=zyskon.pl; s=mail;
+ t=1735030270; bh=Vyn9V36Do5I728ns9rloSx+y8IOjfYGN12NImszhyK0=;
+ h=Date:From:To:Subject:From;
+ b=MCcpXfS47gUWIoUDOuYnBRCeDaU1EyaQiFbgyN4PTGkAggE3xeJpPwox2VZWNbRtI
+ i59umTZDEQtu7RNAJUMrd4NZyVlzCC/fuY84sSe06xOTRDxxVMufpVaXSXrjDyA2e6
+ HBE6sU3pb4rpYoxho8FJ50TjkNR/3H8CVWYYh5GsEVnw9M0YNz6bBB3c9ksRL8qX04
+ uwPl2xqQaXaHLA7NDwgkz1g43mekEpfD27leCmPb0QWgvv6fpTkdGkcBm+b3StQXrV
+ YR0LlXgpEEu+a799JpkVbv5hdhxmoWvimOc4BOuYOZi/81ioIa94TH0iqT1nw8Xdaz
+ UjrcUga0w3o7w==
+Received: by mail.zyskon.pl for <osst-users@lists.sourceforge.net>;
+ Tue, 24 Dec 2024 08:50:29 GMT
+Message-ID: <20241224084500-0.1.7f.142k5.0.6f24iep1c7@zyskon.pl>
+Date: Tue, 24 Dec 2024 08:50:29 GMT
+To: <osst-users@lists.sourceforge.net>
+X-Mailer: mail.zyskon.pl
 MIME-Version: 1.0
-X-Hetz-Sender-Domain: realpromotions.co.za
-X-Originating-IP: 41.204.202.53
-X-SpamExperts-Domain: realpromotions.co.za
-X-SpamExperts-Username: 
-Authentication-Results: host-h.net;
- auth=pass (login) smtp.auth=@realpromotions.co.za
-X-SpamExperts-Outgoing-Class: unsure
-X-SpamExperts-Outgoing-Evidence: Combined (0.70)
-X-Recommended-Action: accept
-X-Filter-ID: Pt3MvcO5N4iKaDQ5O6lkdGlMVN6RH8bjRMzItlySaT8dooWdFaXgKPfZ6BJwZWHSPUtbdvnXkggZ
- 3YnVId/Y5jcf0yeVQAvfjHznO7+bT5zb1MSiCbZWKuhxy4BvEA79P0bQgD1tHBFy30mLGOtKfF4/
- lXN4Wsk7lYz+dh/bvk2fUAvPE8Cr2seBqMATcqbfJODXbtOodkPED+RkHjVGH2RAlAA3vmcnys98
- 7SM3raw/Rv7JKSz1GBUTW3bh3lshKvXPuBX/KVF5NAU6pW+ES4rU8NIAB7TXrDDqAI8ecrzt6JtT
- TglxNZAq/da6Ra+kr/V5IvJXbt22kmJvBCRrd8iITZeO7jxWvWBALmGWBqsHqYdJv+2X6LPgMbH6
- cRFYzdIkiQcGkUQqfcDh+Efrnmlco+ujNcs/OWWYaVK4U0WwElWJwYXSlJxpgXRxuwVJ9nSulLUh
- HcJ98hbX5M39oIxQyq5iAZ9zOnSoEith6oJXiZhIL9F+1eUgBQpeGKelUo2omxAKs81lgDgod7Yj
- NiMX7NqinNH4ReGDHdJcB8Dl8mOwxiJ7UogeK+io9X7IKWaQawtzwE6y9RmrWgLe1CcqBRyYyQBx
- WzeH3IdPr2CbnhdjPSVsD6jhkosqinrmi+FIlxudf8dCov9f2s0IkJzqIRIm8qbU1XyCSv5a7xJx
- UNeKc5XK4ikhND3PczcMzXRxVA4/aqBexwLz9O3zsAbpjvwhKPGZ007bZggIWFPCDtuM/KQLrax/
- YG/zwDHVdu5jb/M316+qYxhRsU5ezmejcUTOPQ7q7fTYxflLrBVPvhkSot3yX0Uz6/z7iRxNi209
- LeKad00CPuiKcAiX7F+j/n0Vsd40h2WNzT/bmICwyIvIWhRJyGFkk8NyopkfK2ByCeDIgBPm2vYu
- yJGSGDwJWw42swm4bO6gacpMpzLURb03SvuEXO99AJOp682vATy+G7Z6XEMk4oo/etXeapSavLwl
- nE3C3NIc3VvGvLBIS6qUmRgER7tz/2tN/B6OfauDeuGhNxMm3y5MqwyN6T+BeS0QK7bMcn972K8O
- dicbDW6jQ0+Cn/DXxtVx8KQIZEKhyNAv1N35kYWaEdgLug0B5+ObpeemlA6ZuOEujkY=
-X-Report-Abuse-To: spam@antispamquarantine.host-h.net
-X-Spam-Score: 0.9 (/)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+X-Spam-Score: 3.1 (+++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  TELE2 * { margin: 0; padding: 0; box-sizing: border-box;
- } body { font-family: Arial, sans-serif; background-color: #f4f4f9; color:
- #333; display: flex; align-items: center; justify-content: center; height
- [...] Content analysis details:   (0.9 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  Dzień dobry, Czy interesuje Państwa pozyskanie nowych klientów?
+    Zajmujemy się profesjonalnie wsparciem firm w tym zakresie. 
+ 
+ Content analysis details:   (3.1 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
- The query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [196.40.103.45 listed in sa-accredit.habeas.com]
- 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
- query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [196.40.103.45 listed in bl.score.senderscore.com]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.9 SPF_FAIL               SPF: sender does not match SPF record (fail)
- [SPF failed: Rejected by SPF record]
- 0.0 HTML_MESSAGE           BODY: HTML included in message
-X-Headers-End: 1tP2PK-0000el-0S
-Subject: [Osst-users] =?utf-8?b?1Y3RgNGA4oW+0LB00LVy0ZbVuNaBINCw4oW0INCw?=
- =?utf-8?b?1b100L7WgdGWctC+?=
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [54.37.225.205 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [54.37.225.205 listed in bl.score.senderscore.com]
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+                             [54.37.225.205 listed in wl.mailspike.net]
+  1.3 FSL_BULK_SIG           Bulk signature with no Unsubscribe
+X-Headers-End: 1tQ0dN-0006Wt-Ct
+Subject: [Osst-users] =?utf-8?b?V3Nww7PFgnByYWNh?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -120,284 +108,19 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============2950716549471556813=="
+From: Damian Bogusz via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Damian Bogusz <damian.bogusz@zyskon.pl>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
-
---===============2950716549471556813==
-Content-Type: multipart/alternative;
-	boundary="1652c9957df654c5267f533f9201defb7"
-Content-Transfer-Encoding: 8bit
-
-This is a multi-part message in MIME format.
-
---1652c9957df654c5267f533f9201defb7
-Content-Type: text/plain; charset=UTF-8
-Content-Transfer-Encoding: 8bit
-
-
-
-
-    
-    
-    TELE2
-    
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: #ffffff;
-            width: 80%;
-            max-width: 700px;
-            padding: 60px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            min-height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .logo {
-            text-align: center;
-            margin-bottom: 20px;
-            size: 450px;
-        }
-        .logo img {
-            width: 250px;
-        }
-        .title {
-            text-align: center;
-            font-size: 1.8em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .content {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 8px;
-        }
-        .content strong {
-            font-weight: bold;
-        }
-        .button-container {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .button {
-            background-color: #0c113c;
-            color: #ffffff;
-            padding: 12px 30px;
-            font-size: 1em;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-        }
-        .button:hover {
-            background-color: #0d123e;
-        }
-        .footer {
-            font-size: 0.9em;
-            color: #666;
-            text-align: center;
-            margin-top: auto;
-        }
-        .footer a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-    
-
-
-
-
-    
-        
-    
-    Uppdatering av autogiro
-    
-        Ert autogiro behöver uppdateras snarast.
-        Annars så riskera ni och bli av med ert telefonnummer för gott I enlighet med punkt 1.2 i filialens allmänna villkor meddelas härmed om ändringen nedan gällande de Allmänna villkoren för Autogiro:
-            Se de uppdaterade villkoren här          
-            Från och med 10.7.2022 kommer samtliga ändringar gällande belopp, förfallodag eller betalningssätt meddelas Betalaren via Mina Sidor.
-            Liksom tidigare meddelas Betalaren om eventuella ändringar senast 8 bankdagar före förfallodagen. 
-        Se de uppdaterade villkoren här 
-    
-    
-        Logga in på ditt konto Tele2
-    
-    
-        *Detta är ett automatiskt meddelande. Vänligen svara inte.*
-        Om du har frågor eller behöver mer hjälp, vänligen besök vår sida page.
-        TELE2 
-      
-        © 2024 All rights reserved.
-    
-
-
-
-
-
---1652c9957df654c5267f533f9201defb7
-Content-Type: text/html; charset=UTF-8
-Content-Transfer-Encoding: 8bit
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TELE2</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: #ffffff;
-            width: 80%;
-            max-width: 700px;
-            padding: 60px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            min-height: 90vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .logo {
-            text-align: center;
-            margin-bottom: 20px;
-            size: 450px;
-        }
-        .logo img {
-            width: 250px;
-        }
-        .title {
-            text-align: center;
-            font-size: 1.8em;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .content {
-            font-size: 1.1em;
-            line-height: 1.6;
-            margin-bottom: 8px;
-        }
-        .content strong {
-            font-weight: bold;
-        }
-        .button-container {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .button {
-            background-color: #0c113c;
-            color: #ffffff;
-            padding: 12px 30px;
-            font-size: 1em;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-        }
-        .button:hover {
-            background-color: #0d123e;
-        }
-        .footer {
-            font-size: 0.9em;
-            color: #666;
-            text-align: center;
-            margin-top: auto;
-        }
-        .footer a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="logo">
-        <img src="https://urlz.fr/tttY" alt="TELE2 Logo">
-    </div>
-    <div class="title">Uppdatering av autogiro</div>
-    <div class="content">
-        Ert autogiro behöver uppdateras snarast.
-        <p>Annars så riskera ni och bli av med ert telefonnummer för gott I enlighet med punkt 1.2 i filialens allmänna villkor meddelas härmed om ändringen nedan gällande de Allmänna villkoren för Autogiro:
-            Se de uppdaterade villkoren här          
-            Från och med <strong>10.7.2022</strong> kommer samtliga ändringar gällande belopp, förfallodag eller betalningssätt meddelas Betalaren via Mina Sidor.
-            Liksom tidigare meddelas Betalaren om eventuella ändringar senast 8 bankdagar före förfallodagen. </p>
-        <p>Se de uppdaterade villkoren här </p>
-    </div>
-    <div class="button-container">
-        <a href="https://urlz.fr/tdKA" class="button">Logga in på ditt konto Tele2</a>
-    </div>
-    <div class="footer">
-        *Detta är ett automatiskt meddelande. Vänligen svara inte.*
-        <p>Om du har frågor eller behöver mer hjälp, vänligen besök vår <a href="#">sida</a> page.</p>
-        <p><strong>TELE2 </strong><br>
-      
-        © 2024 All rights reserved.</p>
-    </div>
-</div>
-
-</body>
-</html>
-
-
-
---1652c9957df654c5267f533f9201defb7--
-
-
---===============2950716549471556813==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---===============2950716549471556813==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
-
---===============2950716549471556813==--
-
+RHppZcWEIGRvYnJ5LCAKCkN6eSBpbnRlcmVzdWplIFBhxYRzdHdhIHBvenlza2FuaWUgbm93eWNo
+IGtsaWVudMOzdz8KClpham11amVteSBzacSZIHByb2Zlc2pvbmFsbmllIHdzcGFyY2llbSBmaXJt
+IHcgdHltIHpha3Jlc2llLiAKCk5hc2kgcGFydG5lcnp5IHp5c2t1asSFIHN0YcWCeSBuYXDFgnl3
+IG5vd3ljaCB6bGVjZcWEIG9yYXogemFtw7N3aWXFhCwgYSB0eW0gc2FteW0gendpxJlrc3phasSF
+IHN3b2plIHd5bmlraSBzcHJ6ZWRhxbx5LgoKQ3p5IG1vxbxlbXkgcHJ6ZWRzdGF3acSHIHN6Y3pl
+Z8OzxYJ5IGRvdHljesSFY2UgemFzYWQgaSBtb8W8bGl3b8WbY2kgd3Nww7PFgnByYWN5PwoKClBv
+emRyYXdpYW0gc2VyZGVjem5pZQpEYW1pYW4gQm9ndXN6CgoKX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX18KT3NzdC11c2VycyBtYWlsaW5nIGxpc3QKT3NzdC11
+c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQKaHR0cHM6Ly9saXN0cy5zb3VyY2Vmb3JnZS5uZXQv
+bGlzdHMvbGlzdGluZm8vb3NzdC11c2Vycwo=
