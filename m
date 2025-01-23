@@ -2,102 +2,109 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 19FB9A18D3B
-	for <lists+osst-users@lfdr.de>; Wed, 22 Jan 2025 09:01:39 +0100 (CET)
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id C40BDA19FF1
+	for <lists+osst-users@lfdr.de>; Thu, 23 Jan 2025 09:30:51 +0100 (CET)
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1taVg9-0000Vo-4O
+	id 1tasbz-0004P4-5x
 	for lists+osst-users@lfdr.de;
-	Wed, 22 Jan 2025 08:01:37 +0000
+	Thu, 23 Jan 2025 08:30:50 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <debouncekp@jlmsx.net>) id 1taVg7-0000Vg-U5
- for osst-users@lists.sourceforge.net; Wed, 22 Jan 2025 08:01:36 +0000
+ (envelope-from <jasper.ware@donebizcomp.com>) id 1tasbx-0004Ow-Hk
+ for osst-users@lists.sourceforge.net; Thu, 23 Jan 2025 08:30:49 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Reply-To:From:Date:Message-ID:Subject:To:Sender:Cc:Content-ID:
+ :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=U9eXgDojy1IB352K4SSkg8Tnf+YXa4ado7v6NWvJKKA=; b=PqNHRFwL2bvj0UqvNa2bHZmqNp
- q3yAyoosFWoFLEvRlIFu+VNXHBQxXPV/TkmY0GCt+/1pCi4wxxtHCd2pXpEJCtN9o8zG/H7j0Wm8b
- 8LeNu9R6zsc79jPsQI9jFUnBDF8e+Xkc/0CTmpePqzsd7eneye8k8JRKK1yFgPG8j5Fw=;
+ bh=MmSXfWXtNqqmvU62qksnNiytd26BPijGgqx8eEFqxGo=; b=YM4rzgl+FlbbNV5KMS4k7p1ZDa
+ w7pZgEALsPTK15Z9PjZv5utCeb0z4TrSMaPvFormNAGKd3Vza18lcTtdjj/GKA3KJLQFqedfF1/sJ
+ DDc9rSEVKOr59yriKVsClhVd1UyZAmDeiN2dbPQ7UXy1jkLbJ6o47wi/yJfUU8yBu5Jk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Reply-To:From:Date:
- Message-ID:Subject:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=U9eXgDojy1IB352K4SSkg8Tnf+YXa4ado7v6NWvJKKA=; b=M
- qxbQ5LYvaMD8InuFtC7xDdrraTZTQYVC5FrDFhtE4ZmB1ndHMKqzd8xB4dPYfG0pckmcLAKD0ELXR
- 0lO6+K/wknPyleFcE1CTfwIda+H00bHHFlBDJf2pS0p4NnHKsatEapmP+Tv4IbF5fxPo91j1d6j00
- OJ2ZmWm6WsLcp6z4=;
-Received: from rtl-8.lee.few.panwen.net ([193.42.36.43])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1taVg7-0004Ae-Uj for osst-users@lists.sourceforge.net;
- Wed, 22 Jan 2025 08:01:36 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=jlmsx.net; 
- h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding;
- bh=U9eXgDojy1IB352K4SSkg8Tnf+YXa4ado7v6NWvJKKA=;
- b=PFG5HLlLmHJKQDIfigCJ5G2zMJiWBamNFbETTpm4HZ0YFdQCFuAHte7BIigEdRrvFf/z9FWHDkwU
- hlgIko0QNp9aKgCJNoCJ+haVDDriFNTED4UrnS/XbTi1mTY/AVtRwx41CC3JwTQmP36rzaQIFhTJ
- hULrtXGYx5+zuP96x7w=
-To: osst-users@lists.sourceforge.net
-Message-ID: <50c6a8c73ad058fc6afee816352b4620@belecke.de>
-Date: Wed, 22 Jan 2025 06:06:25 +0100
-From: "Alex" <electricno@jlmsx.net>
+ List-Owner:List-Archive; bh=MmSXfWXtNqqmvU62qksnNiytd26BPijGgqx8eEFqxGo=; b=k
+ ViPMk8fjbyyoi6H2IFzaPW5CEBZ+6v1KtoONnD5bLUhriPfTQHtf6WoBl6J0LVbSrOG77mq5tLyGi
+ tCaroU0DAkkRAYUakTxVj9vhy28coTmh9Rc1Ked8REhCD354B80NbFVV+kzmpMse8soFMk1iVzOlr
+ vo+Rf/yMPDxM7Uzw=;
+Received: from mail.donebizcomp.com ([217.61.97.6])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1tasbl-0004yN-NS for osst-users@lists.sourceforge.net;
+ Thu, 23 Jan 2025 08:30:48 +0000
+Received: by mail.donebizcomp.com (Postfix, from userid 1002)
+ id 2DFFC82C45; Thu, 23 Jan 2025 09:30:17 +0100 (CET)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=donebizcomp.com;
+ s=mail; t=1737621026;
+ bh=MmSXfWXtNqqmvU62qksnNiytd26BPijGgqx8eEFqxGo=;
+ h=Date:From:To:Subject:From;
+ b=wtz6tMuOekCzajVMbhhgyP/kOeUyUe6bOZMnSHilA5f+GYXkMZz+YBHxOWN3oS4d9
+ 9S3ecC3r+m/AbW0Xbux9Wt65aPRtQRit8UX+Ovb2XYiECaQEr6wGmC6oonXMS64PjC
+ etDP7HI+n8R8QPOgwyNQMmyRKhWgsbaE+/PDmm8E6+msrszz9/ipb2RIQpvTttTHSF
+ 9lK7l7ePvePWL810xerxDMmiuc2ksP08PoM+oqBYvtdToee+o9fcX60jzDr6y/deOE
+ SABoNIe/9/9T8Px2doh6EvQ8mqIzDq/z94RO++fB1/QWAV+kBM/OkMU4xheyCNH2Vq
+ 7Z645jaQo1dnw==
+Received: by mail.donebizcomp.com for <osst-users@lists.sourceforge.net>;
+ Thu, 23 Jan 2025 08:30:12 GMT
+Message-ID: <20250123084500-0.1.d.cty.0.x8eg344cnk@donebizcomp.com>
+Date: Thu, 23 Jan 2025 08:30:12 GMT
+To: <osst-users@lists.sourceforge.net>
+X-Mailer: mail.donebizcomp.com
 MIME-Version: 1.0
-X-Spam-Score: 5.4 (+++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-1.v13.lw.sourceforge.com",
+X-Spam-Score: 5.9 (+++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  Hi, I hope this message finds you well. We are excited to
-    introduce our latest breakthrough in the e-bike world – the City Explorer.
-    As a leader in the industry, we've designed this model to elevate you [...]
-    
+ Content preview:  Good morning, The upcoming holiday season is a perfect opportunity
+    to expand your offering with trends in personalized interior décor elements.
+    As a producer of wall decorations with 20 years of experience, we provide
+    a unique dropshipping model for online stores – no frozen capital, no storage
+    costs, and attractive margins. 
  
- Content analysis details:   (5.4 points, 6.0 required)
+ Content analysis details:   (5.9 points, 6.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
+  2.5 URIBL_DBL_SPAM         Contains a spam URL listed in the Spamhaus DBL
+                             blocklist
+                             [URIs: donebizcomp.com]
   3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [193.42.36.43 listed in zen.spamhaus.org]
- -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [193.42.36.43 listed in wl.mailspike.net]
+                             [217.61.97.6 listed in zen.spamhaus.org]
   0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
                              query to Validity was blocked.  See
                              https://knowledge.validity.com/hc/en-us/articles/20961730681243
                               for more information.
-                             [193.42.36.43 listed in bl.score.senderscore.com]
+                             [217.61.97.6 listed in bl.score.senderscore.com]
   0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
                              query to Validity was blocked.  See
                              https://knowledge.validity.com/hc/en-us/articles/20961730681243
                               for more information.
-                             [193.42.36.43 listed in sa-accredit.habeas.com]
+                             [217.61.97.6 listed in sa-accredit.habeas.com]
+  0.1 URIBL_CSS_A            Contains URL's A record listed in the Spamhaus CSS
+                             blocklist
+                             [URIs: donebizcomp.com]
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
  -0.0 SPF_PASS               SPF: sender matches SPF record
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image
-                             area
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
  -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
                              author's domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
   0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
                              valid
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
                              envelope-from domain
-  2.0 PYZOR_CHECK            Listed in Pyzor
-                             (https://pyzor.readthedocs.io/en/latest/)
-  0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
-  0.0 NEW_PRODUCTS           No description available.
-X-Headers-End: 1taVg7-0004Ae-Uj
-Subject: [Osst-users] how to upgrade your ebike for better performance
+  0.0 FROM_FMBLA_NEWDOM14    From domain was registered in last 7-14 days
+X-Headers-End: 1tasbl-0004yN-NS
+Subject: [Osst-users] Quick question about cooperation
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -109,96 +116,22 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: ebikepro@jlmsx.net
-Content-Type: multipart/mixed; boundary="===============4326794847238492849=="
+From: Jasper Ware via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Jasper Ware <jasper.ware@donebizcomp.com>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============4326794847238492849==
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: 8bit
-
-<html>
-<head>
-</head>
-<body>
-Hi,<br /> <br /> I hope this message finds you well. We are excited to
-introduce our latest breakthrough in the e-bike world &ndash; the City
-Explorer. As a leader in the industry, we've designed this model to elevate
-your cycling experience with cutting-edge features and a sleek, modern
-look.<br /> <br /> The City Explorer combines advanced technology, superior
-comfort, and an intuitive design, making it the perfect choice for riders
-who value performance, style, and versatility. Whether you're navigating
-city streets or venturing on off-road trails, this e-bike ensures a smooth,
-fast, and enjoyable ride.<br /> <br /> Shipped directly from our warehouse
-in Germany, we offer quick and reliable shipment to any EU destination
-within 3 to 7 days.<br /> <br /> Should you have any questions, need
-additional information, or are ready to purchase, please provide your
-address, and we will send you a precise quote.<br /><br /><img
-src="https://thebikestoreonline.com/cdn/shop/products/81_0e247be7-cf89-4a08-853f-41610bbda6e8_713x.jpg"
-width="713" height="713" /><br /><img
-src="https://thebikestoreonline.com/cdn/shop/products/82_713x.jpg"
-width="713" height="713" /><br /><img
-src="https://thebikestoreonline.com/cdn/shop/products/15_713x.jpg"
-width="713" height="713" /><br /><img
-src="https://thebikestoreonline.com/cdn/shop/products/8_1100x.jpg"
-width="800" height="800" /><br /><br /> <br /> Key Features of the City
-Explorer:<br /> Dual Suspension System for Maximum Comfort<br /> <br /> The
-City Explorer features an 80mm front air suspension for a smooth ride over
-uneven surfaces. The rear suspension effectively absorbs shocks, making it
-ideal for long-distance rides or adventurous off-road journeys. Whether on
-paved roads or rugged terrain, this e-bike guarantees steady handling and
-unparalleled comfort.<br /> <br /> Impressive 500W Motor<br /> Equipped
-with a powerful 500W motor, the City Explorer reaches speeds of up to 45
-km/h. Whether cruising through urban environments, tackling steep inclines,
-or riding in challenging conditions, this e-bike offers the power needed
-for a thrilling, efficient ride.<br /> <br /> Long-Lasting 48V 15AH
-Lithium-Ion Battery<br /> The 48V 15AH battery provides a range of
-65&ndash;85 km per charge, depending on riding conditions and selected
-power mode. This durable, removable battery is both dustproof and
-waterproof, offering lasting convenience. Recharge it easily at home, work,
-or on the go to stay ready for your next journey.<br /> <br /> Compact and
-Foldable Design<br /> Weighing just 28 kg and measuring 84 x 40 x 76 cm
-when folded, the City Explorer is perfect for those on the go. It's easy to
-carry and store, making it an ideal choice for commuters and travelers.<br
-/> <br /> Enhanced User Experience<br /> The LCD display keeps you informed
-with real-time data on speed, battery status, assistance level, and
-distance traveled. The mechanical disc brakes, front and rear, provide
-reliable stopping power in all conditions. Front and rear lights ensure
-excellent visibility for safe night rides.<br /> <br /> Choose from three
-assistance levels and a 7-speed gear system to tailor your ride for various
-terrains and personal preferences.<br /> <br /> Additional Features:<br />
-20-inch Fat Tires: Offering maximum stability and comfort on any surface,
-whether pavement, gravel, or snow.<br /> Lightweight Aluminum Frame: A
-perfect balance of strength and style for daily use.<br /> Sleek, Modern
-Design: The City Explorer stands out with its contemporary, attractive
-appearance.<br /> We're confident the City Explorer will enhance your daily
-commute and take your outdoor adventures to the next level. With fast
-shipment from Germany, your next adventure is just a few clicks away.<br />
-<br /> If you have any questions, need more information, or are ready to
-make a purchase, don't hesitate to contact us. Simply provide your address,
-and we'll provide a tailored quote.<br /> <br /> Warm regards,<br /> Alex
-M&uuml;ller<br /> City Explorer Factory<br />
-</body>
-</html>
-
-
-
---===============4326794847238492849==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---===============4326794847238492849==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
-
---===============4326794847238492849==--
+R29vZCBtb3JuaW5nLAoKVGhlIHVwY29taW5nIGhvbGlkYXkgc2Vhc29uIGlzIGEgcGVyZmVjdCBv
+cHBvcnR1bml0eSB0byBleHBhbmQgeW91ciBvZmZlcmluZyB3aXRoIHRyZW5kcyBpbiBwZXJzb25h
+bGl6ZWQgaW50ZXJpb3IgZMOpY29yIGVsZW1lbnRzLgoKQXMgYSBwcm9kdWNlciBvZiB3YWxsIGRl
+Y29yYXRpb25zIHdpdGggMjAgeWVhcnMgb2YgZXhwZXJpZW5jZSwgd2UgcHJvdmlkZSBhIHVuaXF1
+ZSBkcm9wc2hpcHBpbmcgbW9kZWwgZm9yIG9ubGluZSBzdG9yZXMg4oCTIG5vIGZyb3plbiBjYXBp
+dGFsLCBubyBzdG9yYWdlIGNvc3RzLCBhbmQgYXR0cmFjdGl2ZSBtYXJnaW5zLgoKSWYgeW91ciB3
+ZWJzaXRlIGdlbmVyYXRlcyBvdmVyIDIwLDAwMCBtb250aGx5IHZpZXdzLCB3ZSB3b3VsZCBiZSBk
+ZWxpZ2h0ZWQgdG8gZXN0YWJsaXNoIGEgbG9uZy10ZXJtIHBhcnRuZXJzaGlwIHVuZGVyIHByZWZl
+cmVudGlhbCB0ZXJtcy4KCkNvdWxkIHdlIGRpc2N1c3MgdGhlIGRldGFpbHMgb2YgdGhpcyBjb2xs
+YWJvcmF0aW9uIGR1cmluZyBhIGJyaWVmIG1lZXRpbmc/CgoKQmVzdCByZWdhcmRzCkphc3BlciBX
+YXJlCgoKX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18KT3Nz
+dC11c2VycyBtYWlsaW5nIGxpc3QKT3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQKaHR0
+cHM6Ly9saXN0cy5zb3VyY2Vmb3JnZS5uZXQvbGlzdHMvbGlzdGluZm8vb3NzdC11c2Vycwo=
