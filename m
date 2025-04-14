@@ -2,85 +2,111 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id B562EA7FA27
-	for <lists+osst-users@lfdr.de>; Tue,  8 Apr 2025 11:46:34 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 76F5EA8889C
+	for <lists+osst-users@lfdr.de>; Mon, 14 Apr 2025 18:29:42 +0200 (CEST)
 Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
 	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1u25XM-0001jb-VS
+	id 1u4Mgm-0003Bn-7M
 	for lists+osst-users@lfdr.de;
-	Tue, 08 Apr 2025 09:46:33 +0000
+	Mon, 14 Apr 2025 16:29:40 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
  by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <info@fritze-sh.de>) id 1u25XM-0001jC-Bj
- for osst-users@lists.sourceforge.net; Tue, 08 Apr 2025 09:46:32 +0000
+ (envelope-from <trena@jnn.abgev.com>) id 1u4Mgk-0003Bd-5i
+ for osst-users@lists.sourceforge.net; Mon, 14 Apr 2025 16:29:38 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:References:Content-Type:MIME-Version:To:
+ Reply-To:From:Date:Message-ID:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ :Resent-Message-ID:In-Reply-To:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=/Dx29PdTSZupqlrWFkfsaRFj28vH1DLIIYQi0LVNh4c=; b=QMwjffIFbIR7uAWBDlLCNvOFot
- Nl7ZOJQG9qnbrfe5I5sLVmEYbSfPNtYkxoQfelLPE7knAr6gKvu0Y9Duq4qHZIX1Kh9hc3apg1sfq
- O0XVRYkX2DMpAASzRLLIgmhs2Ze67aJrZcu+SbzmO67lJACdM7nY3we3KoyF7Gb7PW5c=;
+ bh=BCkNC0gCrOxfkYRrNFKAiDvKK/ilO+XWgPvwErx2r68=; b=Y9gyY5JyFw0hI2YMqtwWEt4iSm
+ IFt6lMyLlZdniE16eXUy996qO/e2Ljuam0dvsBTOlPHWgrCTTj0jl9KMrIwJk0zxrOg1PnEkn9lbJ
+ IXIGp0I5QZ6AKOuzhfkcqwjH6C4THrlAFLHvTWrrfrIfSKQNGvQapRYvVitCsdZepobM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=/Dx29PdTSZupqlrWFkfsaRFj28vH1DLIIYQi0LVNh4c=; b=W
- 4dQA+K7B1410/GQN6xA3KQOKWbDxXWyQAF+JqsphYWvEzf89rTJ3JcezAY2Ozs7FkgLp1hhBZ336C
- b1TW31o6A6CXzcI2xb6pmgOHUcEW++qnrYisG1ZrZXUY6IlwGKy6cGTJNItFp+XaFywjgJRY0QnFO
- Yh5N9vNJD5ofCfZo=;
-Received: from [194.36.90.194] (helo=fritze-sh.de)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1u25X6-0004Vc-R3 for osst-users@lists.sourceforge.net;
- Tue, 08 Apr 2025 09:46:32 +0000
-From: "Advanzia Bank" <info@fritze-sh.de>
-To: osst-users@lists.sourceforge.net
-Date: 8 Apr 2025 12:46:05 +0300
-Message-ID: <20250408124605.D79DAFA7ADEDC152@fritze-sh.de>
+ h=Subject:References:Content-Type:MIME-Version:To:Reply-To:From:Date:
+ Message-ID:Sender:Cc:Content-Transfer-Encoding:Content-ID:Content-Description
+ :Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=BCkNC0gCrOxfkYRrNFKAiDvKK/ilO+XWgPvwErx2r68=; b=Q
+ Ai8WBVSpZFsUb5yIJ0Rsg5B6XojwGwxUIYeaqYRGnX5G5XxEie4WTtaIPhH/JQTvlx+4/3F6ajOEF
+ G8AHE9ICHKggWBKOA0VAfvdyYqybRMuOl7DygrnQugYrpKAvpoXuq6U7dvT7q2SrirzgssoBA07Bd
+ UGamCy0XqBgtgXVk=;
+Received: from productivity.elitemoldfabrication.com ([107.172.32.248])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1u4MgU-0002QW-KO for osst-users@lists.sourceforge.net;
+ Mon, 14 Apr 2025 16:29:38 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=selector2;
+ d=no.chirbury.com; 
+ h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:
+ References; i=matilda@no.chirbury.com;
+ bh=BCkNC0gCrOxfkYRrNFKAiDvKK/ilO+XWgPvwErx2r68=;
+ b=Gp7d1DasrmSDppknhww4HjRyCWoZIKt2BwCzmDhhjmWBQlRjN6tHgAQm+q81wn711KbsiERPA6ka
+ m8nDO7jGUACc7KPJFFrj7MJErIJU8LjUi3a8MAMURIYVsVMMEIgh46ThCFZoKmogX3ycPP3sqcpB
+ YITErx1qMvG/suo8ox4=
+DKIM-Signature: v=1; a=rsa-sha256;
+ bh=BCkNC0gCrOxfkYRrNFKAiDvKK/ilO+XWgPvwErx2r68=; d=no.chirbury.com;
+ h=Message-ID: Date: Subject: From: Reply-To: To: MIME-Version: Content-Type:
+ References; i=@no.chirbury.com; s=mailer; c=relaxed/relaxed; t=1744648156;
+ b=C+xLDE6t09z1tcmcdqv+Bee/fJ5jc6H52Td+r54KckxbAt2U+Kka86VUBY/k6g2Qwc3TMSIuh
+ MVqM+S/VnY7oE/7WqlxdWAWghX8LkO/kR4kv8e3cRaDSS9YNbbQ4qbUrSo2ilSjarNk5VOtp7
+ lkJO242XiB2YlaDm18+P7pVNgYlTotp6TQvlfh6kI9mIs1QR6I9gS8Y96ZrEao1HcwfBr774u
+ 4JizJuRE2X7Vy9Pl/xd0GXuR+TaV2WlUIfJqTMaB0zgmop4BUi0u75HKRdTqh00j5tb7lWt0t
+ gKTzFo0hAIM0gHZNzIQYZMJPKkm3dVq5EsD9oZ5LHKJHrleNWg==
+Message-ID: <166b9f22a8098cd3b5b29961ee8dfbfbb9bf2c02@jnn.abgev.com>
+Date: Mon, 14 Apr 2025 16:29:16 +0000
+From: Tim Conzalez <matilda@no.chirbury.com>
+To: Osst users <osst-users@lists.sourceforge.net>
 MIME-Version: 1.0
-X-Spam-Score: 5.0 (+++++)
-X-Spam-Report: Spam detection software, running on the system "util-spamd-2.v13.lw.sourceforge.com",
- has NOT identified this incoming email as spam.  The original
+References: nc1835sgw7dce
+X-Spam-Score: 8.5 (++++++++)
+X-Spam-Report: Spam detection software,
+ running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+ has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Kreditkarten-Sicherheitsüberprüfung Kreditkarten-Sicherheitsüberprüfung
-    Sehr geehrter Kunde, 
- 
- Content analysis details:   (5.0 points, 6.0 required)
- 
-  pts rule name              description
+ Content preview:  Warm greetings Osst users, I hope you're having a wonderful
+ week. Our expertise covers a diverse set of manufacturing technologies,
+ including
+ rapid prototyping, CNC machining, injection molding, metal casting, sheet
+ metal fabrication, and 3D printing. We also offer [...] 
+ Content analysis details:   (8.5 points, 6.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
-                             [194.36.90.194 listed in zen.spamhaus.org]
-  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
-  0.0 SPF_NONE               SPF: sender does not publish an SPF Record
-  0.0 T_TVD_FUZZY_SECTOR     BODY: No description available.
-  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                          [194.36.90.194 listed in sa-trusted.bondedsender.org]
-  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
-                             query to Validity was blocked.  See
-                             https://knowledge.validity.com/hc/en-us/articles/20961730681243
-                              for more information.
-                             [194.36.90.194 listed in bl.score.senderscore.com]
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 T_KAM_HTML_FONT_INVALID Test for Invalidly Named or Formatted
-                             Colors in HTML
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-  0.0 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML
-                             only
-X-Headers-End: 1u25X6-0004Vc-R3
-Subject: [Osst-users] Ihre Kreditkarte wurde vorsorglich gesperrt
+ 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [107.172.32.248 listed in dnsbl-1.uceprotect.net]
+ 3.6 RCVD_IN_SBL_CSS        RBL: Received via a relay in Spamhaus SBL-CSS
+ [107.172.32.248 listed in zen.spamhaus.org]
+ 0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [107.172.32.248 listed in sa-trusted.bondedsender.org]
+ 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
+ query to Validity was blocked.  See
+ https://knowledge.validity.com/hc/en-us/articles/20961730681243
+ for more information.
+ [107.172.32.248 listed in bl.score.senderscore.com]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+ mail domains are different
+ -0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.0 T_STY_INVIS_DIRECT     HTML hidden text + direct-to-MX
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1u4MgU-0002QW-KO
+Subject: [Osst-users] [SPAM] The Importance of Mold Tryout and Validation in
+ Die-Casting
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -92,188 +118,136 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============1524172609918759130=="
+Reply-To: Tim Conzalez <info@en.fastchng.com>
+Content-Type: multipart/mixed; boundary="===============3625123144557845180=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============1524172609918759130==
-Content-Type: text/html;
-	charset="iso-8859-1"
+
+--===============3625123144557845180==
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1744648156_630f81f39bd2174deb49b56f244e1b14_=_"
+
+
+--_=_swift_1744648156_630f81f39bd2174deb49b56f244e1b14_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+ Warm greetings Osst users,
+I hope you're having a wonderful week.
+
+O=
+ur expertise covers a diverse set of manufacturing technologies,
+includin=
+g rapid prototyping, CNC machining, injection molding, metal
+casting, she=
+et metal fabrication, and 3D printing. We also offer
+design and engineeri=
+ng services that can guide your product from the
+earliest stages of devel=
+opment to final production.
+
+We understand that in today's competitive =
+market, it's not enough to
+simply produce parts. That's why we offer a ra=
+nge of additional
+services, including assembly, finishing, and packaging,=
+ to help you
+stay ahead of the competition. Our dedication to quality and=
+ customer
+satisfaction ensures that we deliver products that meet your ne=
+eds.
+
+With our manufacturing expertise, state-of-the-art technology, an=
+d
+commitment to quality, we can help you achieve success in your
+indust=
+ry. Contact us today to learn how.
+
+Please feel free to contact me if y=
+ou need any more information.
+
+My most kindest regards,
+Quality Assur=
+ance Department - Tina Wu, Quality Assurance Specialist=20
+nc1835sgw7dce=20
+
+--_=_swift_1744648156_630f81f39bd2174deb49b56f244e1b14_=_
+Content-Type: text/html; charset=utf-8
 Content-Transfer-Encoding: quoted-printable
 
 <!DOCTYPE html>
+<html>
+<head><meta charset=3D"utf-8"/>
+=09<title>The =
+Importance of Mold Tryout and Validation in Die-Casting</title>
+</head>=
 
-<html lang=3D"de"><head>
+<body data-autofill-highlight=3D"false">Warm greetings Osst users,<br />=
 
-  <title>Kreditkarten-Sicherheits&uuml;berpr&uuml;fung</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-    }
-    .container {
-      max-width: 520px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-    .header {
-      background-color: #05164d;
-      color: white;
-      padding: 20px;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      font-size: 22px;
-      font-weight: bold;
-      text-align: center;
-    }
-    .content {
-      color: #333;
-      font-size: 16px;
-      line-height: 1.6;
-      padding: 20px 0;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #05164d;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .footer {
-      font-size: 12px;
-      color: #777;
-      margin-top: 30px;
-      border-top: 1px solid #ddd;
-      padding-top: 15px;
-      text-align: center;
-    }
-  </style>
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-</head>
-<body style=3D"margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4">
-  <div style=3D"max-width: 520px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1)" class=3D"container">
-    <div style=3D"background-color: #05164d;
-      color: white;
-      padding: 20px;
-      border-top-left-radius: 12px;
-      border-top-right-radius: 12px;
-      font-size: 22px;
-      font-weight: bold;
-      text-align: center" class=3D"header">
-      Kreditkarten-Sicherheits&uuml;berpr&uuml;fung
-    </div>
-    <div style=3D"color: #333;
-      font-size: 16px;
-      line-height: 1.6;
-      padding: 20px 0" class=3D"content">
-      <p><strong>Sehr geehrter Kunde,</strong></p>
-      <p>Die Sicherheit Ihrer Kreditkartendaten liegt uns sehr am Herzen. D=
-aher setzen wir ein umfangreiches Pr&uuml;fsystem ein, um Sie vor m&ouml;gl=
-ichen Missbr&auml;uchen zu sch&uuml;tzen.</p>
-      <p>Leider haben wir bei einer Ihrer letzten Transaktionen verd&auml;c=
-htige Aktivit&auml;ten festgestellt. Zum Schutz vor weiteren Sch&auml;den w=
-urde Ihre Karte vorsorglich gesperrt.</p>
-      <p>Bitte helfen Sie uns, Ihre Karte zu reaktivieren, indem Sie auf de=
-n folgenden Button klicken:</p>
-      <a style=3D"display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: #05164d;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold" class=3D"button" href=3D"https://red1.gradinitazan=
-elor.ro/khara-berara.php">Jetzt verifizieren</a>
-    </div>
-    <div style=3D"font-size: 12px;
-      color: #777;
-      margin-top: 30px;
-      border-top: 1px solid #ddd;
-      padding-top: 15px;
-      text-align: center" class=3D"footer">
-      Bei Fragen steht Ihnen unser Kundenservice jederzeit zur Verf&uuml;gu=
-ng.<br><br>
-      Mit freundlichen Gr&uuml;&szlig;en,<br>
-      Eugen Sharkich<br>
-      Kundenservice
-    </div>
-  </div><p>
+I hope you're having a wonderful week.<br />
+<br />
+Our expertise co=
+vers a diverse set of manufacturing technologies, including rapid prototypi=
+ng, CNC machining, injection molding, metal casting, sheet metal fabricatio=
+n, and 3D printing. We also offer design and engineering services that can =
+guide your product from the earliest stages of development to final product=
+ion.<br />
+<br />
+We understand that in today's competitive market, it'=
+s not enough to simply produce parts. That's why we offer a range of additi=
+onal services, including assembly, finishing, and packaging, to help you st=
+ay ahead of the competition. Our dedication to quality and customer satisfa=
+ction ensures that we deliver products that meet your needs.<br />
+<br />=
+
+With our manufacturing expertise, state-of-the-art technology, and commi=
+tment to quality, we can help you achieve success in your industry. Contact=
+ us today to learn how.<br />
+<br />
+Please feel free to contact me if =
+you need any more information.<br />
+<br />
+My most kindest regards,<br=
+ />
+Quality Assurance Department - Tina Wu, Quality Assurance Specialist<=
+scroll-to-top-button-container data-position-horizontal=3D"right" data-posi=
+tion-vertical=3D"bottom" data-state-active=3D""> <noscript>
+<style type=
+=3D"text/css">scroll-to-top-button-container { display: none !important; }=
+
+</style>
+</noscript> </scroll-to-top-button-container><scroll-to-top-b=
+utton-container data-position-horizontal=3D"right" data-position-vertical=
+=3D"bottom" data-state-active=3D""> <noscript>
+<style type=3D"text/css">s=
+croll-to-top-button-container { display: none !important; }
+</style>
+</=
+noscript> </scroll-to-top-button-container><scroll-to-top-button-container =
+data-position-horizontal=3D"right" data-position-vertical=3D"bottom" data-s=
+tate-active=3D""> <noscript>
+<style type=3D"text/css">scroll-to-top-butto=
+n-container { display: none !important; }
+</style>
+</noscript> </scroll=
+-to-top-button-container><div style=3D"display:none;">nc1835sgw7dce</div>=
+
+
+</body>
+</html>
+
+--_=_swift_1744648156_630f81f39bd2174deb49b56f244e1b14_=_--
 
 
 
-
-
-<br></p><p><br></p>
-<h2 style=3D'margin: 0px 0px 1.87rem; padding: 0.87rem 4.25rem; text-align:=
- center !important; color: rgb(26, 44, 95); text-transform: none; line-heig=
-ht: 1.4; text-indent: 0px; letter-spacing: normal; font-family: "Open Sans"=
-, sans-serif; font-size: 2.18rem; font-style: normal; font-weight: 300; wor=
-d-spacing: 0px; white-space: normal; box-sizing: border-box; orphans: 2; wi=
-dows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: norm=
-al; font-variant-caps: normal;=20
--webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
-coration-style: initial; text-decoration-color: initial;'>Rechtliche Hinwei=
-se</h2>
-<h3 style=3D'margin: 0px 0px 1.87rem; padding: 0px; color: rgb(26, 44, 95);=
- text-transform: none; line-height: 1.4; text-indent: 0px; letter-spacing: =
-normal; font-family: "Open Sans", sans-serif; font-size: 1.46rem; font-styl=
-e: normal; font-weight: 300; word-spacing: 0px; white-space: normal; box-si=
-zing: border-box; orphans: 2; widows: 2; background-color: rgb(255, 255, 25=
-5); font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text=
--stroke-width: 0px; text-decoration-thickness:=20
-initial; text-decoration-style: initial; text-decoration-color: initial;'>A=
-dvanzia Bank S.A.</h3>
-<p style=3D'margin: 0px 0px 10px; color: rgb(0, 0, 0); text-transform: none=
-; line-height: 1.56rem; text-indent: 0px; letter-spacing: normal; font-fami=
-ly: "Open Sans", sans-serif; font-size: 16px; font-style: normal; font-weig=
-ht: 400; word-spacing: 0px; white-space: normal; box-sizing: border-box; or=
-phans: 2; widows: 2; background-color: rgb(255, 255, 255); font-variant-lig=
-atures: normal; font-variant-caps: normal; -webkit-text-stroke-width: 0px; =
-text-decoration-thickness: initial;=20
-text-decoration-style: initial; text-decoration-color: initial;'>14, Rue Ga=
-briel Lippmann<br style=3D"box-sizing: border-box;">L-5365 Munsbach<br styl=
-e=3D"box-sizing: border-box;">Luxemburg<br style=3D"box-sizing: border-box;=
-"><br style=3D"box-sizing: border-box;">E-Mail:<span>&nbsp;</span><a style=
-=3D"color: rgb(26, 44, 95); text-decoration: none; box-sizing: border-box; =
-background-color: transparent;">info@advanzia.com</a><br style=3D"box-sizin=
-g: border-box;"><br style=3D"box-sizing: border-box;">
-<a style=3D"color: rgb(26, 44, 95); text-decoration: none; box-sizing: bord=
-er-box; background-color: transparent;" href=3D"https://www.advanzia.com/" =
-target=3D"_blank">www.advanzia.com</a><br style=3D"box-sizing: border-box;"=
-><br style=3D"box-sizing: border-box;">Handelsregister R.C. Luxemburg B1094=
-76<br style=3D"box-sizing: border-box;">Umsatzsteuernummer: LU 20992462<br =
-style=3D"box-sizing: border-box;"><br style=3D"box-sizing: border-box;">
-Akzeptiert als Kreditinstitut durch das Finanzministerium der Luxemburgisch=
-en Regierung unter der Nummer 47/05, der Aufsichtskommission des Finanzsekt=
-ors (CSSF) unterliegend, 283&nbsp;route d'Arlon&#8203;&#8203;&#8203;,&nbsp;=
-L-1150 Luxembourg. (<a style=3D"color: rgb(26, 44, 95); text-decoration: no=
-ne; box-sizing: border-box; background-color: transparent;" href=3D"http://=
-www.cssf.lu/" target=3D"_blank">www.cssf.lu</a>)&#8203;<br style=3D"box-siz=
-ing: border-box;"></p><p>
-<br class=3D"Apple-interchange-newline"></p></body></html>
-
-
---===============1524172609918759130==
+--===============3625123144557845180==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1524172609918759130==
+--===============3625123144557845180==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -284,4 +258,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1524172609918759130==--
+--===============3625123144557845180==--
+
+
