@@ -2,142 +2,114 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id C26E4A99C1E
-	for <lists+osst-users@lfdr.de>; Thu, 24 Apr 2025 01:44:04 +0200 (CEST)
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	by mail.lfdr.de (Postfix) with ESMTPS id 924C0A9ACCD
+	for <lists+osst-users@lfdr.de>; Thu, 24 Apr 2025 14:04:55 +0200 (CEST)
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1u7jl5-0004VG-IS
+	id 1u7vK1-0002r1-KH
 	for lists+osst-users@lfdr.de;
-	Wed, 23 Apr 2025 23:44:03 +0000
+	Thu, 24 Apr 2025 12:04:54 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) id 1u7jl3-0004V1-Rf
- for osst-users@lists.sourceforge.net; Wed, 23 Apr 2025 23:44:01 +0000
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) (envelope-from
+ <17454339720193906-84635-1-lists.sourceforge.net@delivery.riya.travel>)
+ id 1u7vK0-0002ql-3F for osst-users@lists.sourceforge.net;
+ Thu, 24 Apr 2025 12:04:52 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Subject:Date:Message-ID:From:Sender:To
- :MIME-Version:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=1OGnDK6GixDKFrZGHOUBICp+zbhXg2Y3VDtvodRUUL0=; b=NBujPOHjQLstXp47mCx4QaKkBK
- tKXzmFZm6UAr+jfp93Yy667ONAcZUgHl99rK47ioJROObBgi1oOSmCix84+IrM7V21g/uriDRpYs4
- 40R1ZCkcxLjzUdvPw+Ld4kdp0ISOKHy6FRo32MNeZBOnPEx01bRr1wVOSCLucY1NkJyM=;
+ d=sourceforge.net; s=x; h=List-Unsubscribe:Content-Transfer-Encoding:
+ Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=k7BmHY11ft1ydF6scLy6xltv6llvOlP4IRiReOBAkVg=; b=LCoCSL6NqoAEcDDR/DPbAjrdos
+ BZFMQ7XUcuZbJ5BcDxL/s8Z48b2mr53CBQrimtg6rQ1qU/E2QXCQZcfkxkoX0+KQAcAJyzmw00XZK
+ 9mceCqOaKBt1fFB6+8DnkO/XnXrWmT1+Rp+YdOHj49+9VehyrP3zhk/935CxD/nCwR/w=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Subject:Date:Message-ID:From:Sender:To:MIME-Version:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=1OGnDK6GixDKFrZGHOUBICp+zbhXg2Y3VDtvodRUUL0=; b=I
- qMNI0H49NQGxWULpYR/GEP4hTCk4sa/WvjGrAg9zG2qVQG7heXxPvXRWNX81HgUfofAdDBP2nTJiR
- FO5OOXbYXp9WK8MEv3UWn2bzFmRxwFZ8ze48+VhdCKU+qdr9iSf8kNvSgTZ4GL6x6pRafa5GiPOxT
- I70uNm6QAEcf/N1s=;
-Received: from mail-japaneastazon11023123.outbound.protection.outlook.com
- ([52.101.127.123] helo=TYDPR03CU002.outbound.protection.outlook.com)
+ h=List-Unsubscribe:Content-Transfer-Encoding:Content-Type:MIME-Version:
+ Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=k7BmHY11ft1ydF6scLy6xltv6llvOlP4IRiReOBAkVg=; b=i/di/JpjmhMy3qBI8G836q9Tzt
+ NTmSZMtcpvrP23F/ZD1cDCkVajhWO3msLvfWjfyYbGy1rlLaljbXdNPO0w4NhDqaemV4Syz6xw4NQ
+ hVksdXlEpcgj0Elq8z9J1CS3UiusVXRKMSTKhMNvF5Tdj0SqdGstrsC1D/J6I5JBU5PQ=;
+Received: from newmta6-40.135.etransmail.com ([103.69.40.135])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1u7jko-0003VO-6q for osst-users@lists.sourceforge.net;
- Wed, 23 Apr 2025 23:44:01 +0000
-ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
- b=sWslSIMXr+Fiw4Obxg/Ybopgyq/PrQBwshJdqMF9wfkjKbCmYE1sgu4TyUk7lTfaa1/9nNdpj7sHvj5L4S6l5xhxR+cVGIHTS/DFuraW4FuIEblYTeyq2UR56Ruy1njvjGX3RUg7bpjGvDh69NQvx1dkL18q8ckzjJJS527PeEQ4z88IY1mwSOi1NQDeXVLPHMk0By04lJnxzZJK8tNyadaISHyWWC9MyirD5i3UiRpw2NsY79RNCm3BOlrF1xiB+obnBGq2ZnO8YB4IogLTVBFPDIUrr60MvVtDLv6goh42N/rbISMhks+Ivlt868RSnpIPhyJ7LVt50FV4d2EreQ==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; 
- s=arcselector10001;
- h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
- bh=1OGnDK6GixDKFrZGHOUBICp+zbhXg2Y3VDtvodRUUL0=;
- b=Kzr/oYhwqIHIdbvJSS9JlPPAI2uF8FPKFh+bUSz455wmD5NSBwxktwv52c05HW56GKjqluAjBIHkX20G0ypV2FraOjnMiyY4mw18cAhda3dWVhoDPEYLaF6/ctl6I70oq3pCT8r0vVkefiS4w2Ak4E6VcYv+yfRVDioPFhoKdo8PEIOVD07s7ZMf1xBbZxMIlujrz5qIzqv7mzPfiF6E70ujhsCfWGbofYUVGQAdOLDo4NC7NOKdRmSQ0VoqQK+XsLMzAJEvPhGuxlHZ7ROHxHp3q1b9DMe3YtqMVC1usaeNTYq+04stHUKFCyhQSIJKcD05MMIZyg3j3x0gO96/uw==
-ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=pass
- action=none header.from=meilai1.adminc.store; dkim=pass
- header.d=meilai1.adminc.store; arc=none
-Received: from SmtpServer.Submit by TY1PPFF472A77D2 with Microsoft SMTP Server
- id 15.20.8678.23; Wed, 23 Apr 2025 23:43:38 +0000
+ id 1u7vJk-0004zH-SV for osst-users@lists.sourceforge.net;
+ Thu, 24 Apr 2025 12:04:52 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=riya.travel; s=pepipost;
+ h=feedback-id:list-unsubscribe-post:list-unsubscribe:content-transfer-encoding:
+ content-type:mime-version:message-id:subject:to:from:from:to:subject;
+ bh=k7BmHY11ft1ydF6scLy6xltv6llvOlP4IRiReOBAkVg=;
+ b=iM/SgbUFmkyH94I+pHz1nrTaX+GwEQXljjZ7j7+xq17SQqpMkIGWWhyASiA68oEL0DsCmAQ0wTNbd
+ TIU0mI3GizQJyPveXkdgVwrf042EfJYc6NndR9aNZ5LkS9EFTB1j4xngueUUrgecYvGyRb1jFwcgs2
+ E7QPeuSikvM1h3jM=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=env.etransmail.com; s=fnc;
+ h=feedback-id:list-unsubscribe-post:list-unsubscribe:content-transfer-encoding:
+ content-type:mime-version:message-id:subject:to:from:from:to:subject;
+ bh=k7BmHY11ft1ydF6scLy6xltv6llvOlP4IRiReOBAkVg=;
+ b=KIlaU/3V8bgbJeI4cPxhB0Ova3pz8JdqkrEJuVF0YFzlHT++YXaokB/GRoTXW+BCCcYaDqsbL9pD0
+ p2n/vMOIrIMpecJ4VSNh3x6cBBHzIW/TcezfTQnYy1A+WG6tbnjK4tp8fepB6qwhpzOZMdwmCJ76Zm
+ Eu3X9sHsyv5VgXrY=
+To: osst-users@lists.sourceforge.net
+Date: Thu, 24 Apr 2025 17:34:26 +0530
+Message-ID: <20250424114457.8C0EA078168BD6E9@riya.travel>
 MIME-Version: 1.0
-To: <osst-users@lists.sourceforge.net>
-From: Microsoft Outlook <postmaster@meilai1.adminc.store>
-Message-ID: <ba936356-a2b8-471e-8d4c-8bf5ee5e1379@EtrNotification>
-Date: Wed, 23 Apr 2025 23:43:38 +0000
-X-MS-Exchange-Transport-Rules-Notification: 1
-X-MS-Exchange-Transport-Rules-Loop: 1
-X-MS-Exchange-Parent-Message-Id: <7684a19d0e68fe33cf586a2217f5bd2a@ufomdhkv.onmicrosoft.com>
-Auto-Submitted: auto-generated
-X-MS-Exchange-Generated-Message-Source: Transport Rule Agent
-X-MS-PublicTrafficType: Email
-X-MS-TrafficTypeDiagnostic: TY1PPFF472A77D2:EE_
-X-MS-Exchange-SenderADCheck: 1
-X-MS-Exchange-AntiSpam-Relay: 0
-X-Microsoft-Antispam: BCL:0;
- ARA:13230040|366016|61400799027|376014|8096899003|13112299009; 
-X-Microsoft-Antispam-Message-Info: =?big5?B?U0JNSi9Zb3NXNWgxLzQ2aXhyMGp5dWJWaml2ZjRKTDVPZ3lrYmY3YkIzSmVOOEo4?=
- =?big5?B?aTZtMk9KTG1sZmdCZGhsY0VhWEpvQVVBcGtMb3dJd0dTdXkwejJCdTNIamFlRjB2?=
- =?big5?B?RGRvNk9ESDBodEpSOE5ScENJcEtvZGZOZDloMkwrMld6S2VablJ0Z2VSK0Y4cGha?=
- =?big5?B?YVZ1Yk1rNFVNaCtzc2srYmxUK1drUnFzc3BvSzVlMnBQYVJqSlk4aFZlWEdZN213?=
- =?big5?B?VDFteC9ZR1JJSm9rajJoY0FiWjN6dGxoVzlucWUvY3NVN3RiMTZyUGVwaXJoelVI?=
- =?big5?B?ZGNxa1VEeUJabEt3WmFoT0dYR2RwSnExd2g5aUdQcFYzWEUrQ2VnN2dOL3c0Y1lD?=
- =?big5?B?bDV6ek5uMFR1clVoc21IbzRGaHBBZ004MFIyU25XY3ZjUTVTRFloQm40NFVZaDdX?=
- =?big5?B?eTF0eGpzQURsbHFyUU91aGpLbzV5NTY1VE0vVEY0S1Z3d284VWtQY2NoSHlaME5r?=
- =?big5?B?MU5YTllwRi9iT2IwQnZ4SWxCT0ZnOGR1RTFGVTRISEJNdzFqVUZLd3lOUlFmeENU?=
- =?big5?B?ZmhUU1RMcnNVK2Z0RkV6aXhINkgwRll3dHppazNJRGRJY0lVUDlXM0Qvc3FNeTd1?=
- =?big5?B?eUJXNDlHUm5BbkpwVW5QV0hZS0pkQ0UzUjdDVWtIZjZ6TkEyYkpxaWJ5UFVCU3dz?=
- =?big5?B?Z1Qwby8yUmdoMThIRUhVUnIvSzBjZDNiSVZMbFBlY3dFSmVIZTlBRTRoWWM4OEJC?=
- =?big5?B?VWhyalFtUUtHakN3MklyakJVR2lPcEMwYzYzdzYwVXlVZHN3V0FNOVViSzdGQUM4?=
- =?big5?B?NFpCdlJROXd1Nzl3aVlvcFdrUmRJR2JVSFlxV0Ezd0MrUzg4ZGJRTnF3VnlTZ2dW?=
- =?big5?B?V3JkcWY0aTZZS2pjdXBCczJud2RFWXJKRE1EQkhsYjBob3p3WUVwZUUyNjJxTHk0?=
- =?big5?B?QWJBZmRmZlFyTVBKekdrbzN2RzBvRnNpdmdIRGpOUU4rOUd1VjdlcEYwdWlsRnBY?=
- =?big5?B?SXRNSklHOGphQ2hCak9oU2lnRHRpM2tZNXppbXpKck13cDM0NURMYlZROUprUW5V?=
- =?big5?B?cExyNEMxL1hXM0RRbXFZeFlyeHp3aklEOCtjbTNtcmVPTTJtUlZ2dDJLcG9xc296?=
- =?big5?B?NXNEekl3SU1WQmdLb0dvWVdQSDVJQm92V3VZc1gyZ0h2ck9pTzZNd2MxQUVuUVRP?=
- =?big5?B?Q08vQXBicHNFR3pyUGUyWUxibTJ1SDBPTmRkaWFnK2dFb1c4TTdVK1pOWVE1YXAx?=
- =?big5?B?aS9VZDhxd0Y5MFY1QW9pTkJxVFZ5RURDSlpkaFJKd1pNa2Y5VUh4RVN1SkpwZlh2?=
- =?big5?B?UU1qaXhiQk5jUGtXNW55WTV6eFZpRjAwRERjVDArdTNIYWVtZVdPTTluUzhlWkhN?=
- =?big5?B?d2d6bUlTaDJxQXRyWFlwdGp5STIxclN0VVVyNjRyN0t6SE5qOWhmZ3R2UDZQUzZ3?=
- =?big5?B?WWJJaUNHTHVxUmdUd2hUMmhva1ZsWjY3VUliZnRDS01Yc2RLT3dHcU5oNWFjeTVO?=
- =?big5?B?cHI5TEtGRFloVGVLSGdLTUdPb3ZsVnJRenFFcWd4SE1DSjROUkVBZktsR1d5WFhF?=
- =?big5?B?KzNUR1g1dUJhbi91QnhCaDU4VnRYZ0tuV0JBTm12WDU0VjlNNXc9PQ==?=
-X-Forefront-Antispam-Report: CIP:255.255.255.255; CTRY:; LANG:en; SCL:1; SRV:;
- IPV:NLI; SFV:NSPM; H:; PTR:; CAT:NONE;
- SFS:(13230040)(366016)(61400799027)(376014)(8096899003)(13112299009); DIR:OUT;
- SFP:1102; 
-X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
-X-MS-Exchange-AntiSpam-MessageData-0: ytM6SnriXW3gVXdjNbjRkgwz3MMRMeCxWJ9ahBwynXChLqrZvmeDIOd/LA188fVDCcRUNoujdJ4NsOl+d+HG1lO4paH62LrwS66xudAit7jz1fHlBXOquuskU+h218UNG66Hzeya8i60LE4XtesP8dLP7asKLjsqEcaW3RD+wpUOPGK2x2+36JUx0nRCpIQR
-X-OriginatorOrg: meilai1.adminc.store
-X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Apr 2025 23:43:38.8868 (UTC)
-X-MS-Exchange-CrossTenant-Network-Message-Id: 90ef3c4d-c236-4bf2-0885-08dd82c0ac15
-X-MS-Exchange-CrossTenant-AuthSource: TY1PPFF472A77D2.apcprd04.prod.outlook.com
-X-MS-Exchange-CrossTenant-AuthAs: Internal
-X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
-X-MS-Exchange-Transport-CrossTenantHeadersStamped: TY1PPFF472A77D2
-X-Spam-Score: 3.2 (+++)
+X-InjTime: 1745495304
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: ODQ2MzU6MjAyNTA0MjRfMTc6:pepipostE
+X-FNCID: 84635-17454339720193906-0
+X-Traffic-Type: 84635-2
+X-Mailer: NetcoreCloud Mailer
+X-Spam-Score: 5.2 (+++++)
 X-Spam-Report: Spam detection software,
- running on the system "util-spamd-2.v13.lw.sourceforge.com", 
+ running on the system "util-spamd-1.v13.lw.sourceforge.com", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  1 1 
- Content analysis details:   (3.2 points, 6.0 required)
+ Content preview:  Beveiligingswaarschuwing Beste klant, We hebben verdachte
+ activiteit op uw account gedetecteerd. Om uw veiligheid te garanderen, is
+ er tijdelijk een beperking ingesteld. 
+ Content analysis details:   (5.2 points, 6.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
+ 5.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [103.69.40.135 listed in dnsbl-1.uceprotect.net]
  0.0 RCVD_IN_VALIDITY_SAFE_BLOCKED RBL: ADMINISTRATOR NOTICE: The
  query to Validity was blocked.  See
  https://knowledge.validity.com/hc/en-us/articles/20961730681243
  for more information.
- [52.101.127.123 listed in sa-accredit.habeas.com]
+ [103.69.40.135 listed in sa-accredit.habeas.com]
  0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
  query to Validity was blocked.  See
  https://knowledge.validity.com/hc/en-us/articles/20961730681243
  for more information.
- [52.101.127.123 listed in bl.score.senderscore.com]
+ [103.69.40.135 listed in bl.score.senderscore.com]
+ 0.3 FROM_LOCAL_HEX         From: localpart has long hexadecimal sequence
+ 0.0 FROM_LOCAL_DIGITS      From: localpart has long digit sequence
  0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.8 DKIM_ADSP_NXDOMAIN     No valid author signature and domain not in
- DNS 0.0 HTML_MESSAGE           BODY: HTML included in message
- 2.0 PYZOR_CHECK            Listed in Pyzor
- (https://pyzor.readthedocs.io/en/latest/)
- 0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [52.101.127.123 listed in wl.mailspike.net]
- 0.0 TVD_SPACE_RATIO        No description available.
- 0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-Headers-End: 1u7jko-0003VO-6q
-Subject: [Osst-users] =?big5?b?Tm90aWZpY2F0aW9uOiAxM9fPMTQ0NDZJueI1STk=?=
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image
+ area 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 AC_BR_BONANZA RAW: Too many newlines in a row... spammy template
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+ envelope-from domain
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+ author's domain
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+ valid
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.0 T_REMOTE_IMAGE         Message contains an external image
+X-Headers-End: 1u7vJk-0004zH-SV
+Subject: [Osst-users] =?utf-8?q?Uw_account_is_tijdelijk_beperkt_=E2=80=93_?=
+ =?utf-8?q?Verifieer_nu_uw_gegevens?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -149,40 +121,898 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============7278260607598136131=="
+From: =?UTF-8?B?QVJHRU5UQcKp?= via Osst-users
+ <osst-users@lists.sourceforge.net>
+Reply-To: =?UTF-8?B?QVJHRU5UQcKp?=
+ <Support546587678546568756854653654868763564789@riya.travel>
+Content-Type: multipart/mixed; boundary="===============3247406578093325785=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============7278260607598136131==
-Content-Type: multipart/alternative;
-	boundary="_5443cacc-90e6-4f67-86f5-1e701f87ff56_"
-
---_5443cacc-90e6-4f67-86f5-1e701f87ff56_
-Content-Type: text/plain; charset="big5"
+--===============3247406578093325785==
+Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-1
+<html><head>=0A=
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">=0A=
+<title></title>=0A=
+</head>=0A=
+<body>=0A=
+<p><!-- x-tinymce/html --></p>=0A=
+=0A=
+<p><img height=3D"54" class=3D"logo" style=3D"width: 157px; height: 86px; t=
+ext-align: center; font-family: Arial, sans-serif; margin-right: auto; marg=
+in-bottom: 20px; margin-left: auto; display: block;" alt=3D"Argenta Logo" s=
+rc=3D"https://www.argenta.be/etc.clientlibs/argenta/clientlibs/clientlib-si=
+te/resources/img/argenta-logo-facebook.png" width=3D"103"></p>=0A=
+=0A=
+<h2 style=3D"text-align: center; font-family: Arial, sans-serif;">Beveiligi=
+ngswaarschuwing</h2>=0A=
+=0A=
+<p style=3D"text-align: center; font-family: Arial, sans-serif;">Beste klan=
+t,</p>=0A=
+=0A=
+<p style=3D"text-align: center; font-family: Arial, sans-serif;">We hebben =
+verdachte activiteit op uw account gedetecteerd. Om uw veiligheid te garand=
+eren, is er tijdelijk een beperking ingesteld.</p>=0A=
+=0A=
+<p style=3D"text-align: center; font-family: Arial, sans-serif;">Om toegang=
+ te behouden, verzoeken wij u uw identiteit te bevestigen.</p>=0A=
+=0A=
+<p style=3D"text-align: center;">=0A=
+<a class=3D"button" style=3D"padding: 12px 20px; border-radius: 5px; color:=
+ rgb(255, 255, 255); font-family: Arial, sans-serif; font-weight: bold; mar=
+gin-top: 20px; display: inline-block; background-color: rgb(0, 140, 68);" h=
+ref=3D"http://delivery.riya.travel/FOTVIEQ?id=3D84635=3Dc0kBA1lWVAUCHgBQWQx=
+YDw9dUgUBU1QDUgUNDwNWAAMDVgFXBQdTAVVbUQQEXVYOWFBIXhFFQkxBR1BLQSFdD0NBQh0SDR=
+dEVAcHWRNeBBlXAUBNUwECVAAHBgAFUwFXCQYIA1ceCkJDElsZTl0EW1ASUUMbGEQITVUbTUAAR=
+wNcGnd8NTQrc2ZdCFIdT1I=3D&fl=3DWEFFQ1tNTVNaAwhaT1QAXlVKQEMDVV1QBgcbWl0MHgUf=
+UHtENBsIcEIaMncseC9zbRNyawlUeQJ8dlpgRxRgBUhqVgAQNlZ/dlcHTjcAUFFqF1NTOAZhE01=
+/TGZBIAkCV18AYSI3M3d+KAN7NFYIb3EednUkGwIIBHEAdkYiYCNobHJnMSUyTEYbFEBYawpkcl=
+N7fi5/TghzeQxcYgxLVXxHAVcYARJpBQlVAlQLG3MJBmxwGEN0UgdFU1VAUEsgeENpBSYlW1lRE=
+DcFTEoCck0QDWgvVEQAWlJSFEYNAjJ+ZAVHCQMkeVoXUmIAc0xxXyV1cCNpaUxhTGFWAQ=3D=3D=
+">Verifieer Nu</a>=0A=
+</p>=0A=
+=0A=
+<p style=3D"text-align: center; font-family: Arial, sans-serif;">Herken je =
+deze melding niet? Neem direct contact op met onze ondersteuning.</p>=0A=
+=0A=
+<p class=3D"footer" style=3D"text-align: center; color: rgb(102, 102, 102);=
+ font-family: Arial, sans-serif; font-size: 12px; margin-top: 20px;">Met vr=
+iendelijke groet,<br>=0A=
+Uw Beveiligingsteam<br>=0A=
+&copy; 2025 Uw Bank. Alle rechten voorbehouden.<br>=0A=
+Dit is een automatische melding, reageer hier niet op.</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;<br><br><br><br><br><br><br><br><br>=
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br=
+><br><br><br><br><br><br><br><br><br></p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;<br><br><br><br><br><br><br><br><br>=
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br=
+><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><b=
+r><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><=
+br><br><br><br><br><br><br><br><br><br><br><br><br></p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<p style=3D"text-align: center;">&nbsp;</p>=0A=
+=0A=
+<div>=0A=
+<table width=3D"100%" class=3D"nl-container" role=3D"presentation" style=3D=
+"margin-right: auto; margin-left: auto; background-color: rgb(255, 255, 255=
+);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+	<tbody>=0A=
+		<tr>=0A=
+			<td>=0A=
+			<table width=3D"100%" align=3D"center" class=3D"row row-3" role=3D"prese=
+ntation" style=3D"background-size: auto; background-color: rgb(230, 232, 22=
+9);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+				<tbody>=0A=
+					<tr>=0A=
+						<td>=0A=
+						<table width=3D"600" align=3D"center" class=3D"row-content stack" rol=
+e=3D"presentation" style=3D"margin: 0px auto; width: 600px; background-size=
+: auto; background-color: rgb(255, 255, 255);" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0">=0A=
+							<tbody>=0A=
+								<tr>=0A=
+									<td width=3D"100%" class=3D"column column-1" style=3D"padding-top:=
+ 5px; padding-bottom: 5px; vertical-align: top;">=0A=
+									<table width=3D"100%" class=3D"text_block block-1" role=3D"present=
+ation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"padding: 40px 10px 10px 30px;">=0A=
+												<div style=3D"font-family: Arial, sans-serif;">=0A=
+												<div style=3D'color: rgb(51, 51, 51); line-height: 1.2; font-fa=
+mily: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px;'>=0A=
+												<p style=3D"margin: 0px; text-align: center; line-height: inher=
+it;"><span style=3D"font-size: 20px;"><strong><span style=3D"font-size: 24p=
+x;">Effektives Lernen in nur 12 Minuten</span></strong></span><br>=0A=
+												&nbsp;</p>=0A=
+=0A=
+												<p style=3D"margin: 0px; text-align: center; line-height: inher=
+it; font-size: 16px;"><span style=3D"font-size: 20px;"><strong>Liebe Eltern=
+,</strong></span></p>=0A=
+												</div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+=0A=
+									<table width=3D"100%" class=3D"text_block block-2" role=3D"present=
+ation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"padding: 10px 30px;">=0A=
+												<div style=3D"font-family: Arial, sans-serif;">=0A=
+												<div style=3D'color: rgb(85, 85, 85); line-height: 1.5; font-fa=
+mily: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px;'>=0A=
+												<p style=3D"margin: 0px; text-align: center; line-height: inher=
+it; font-size: 16px;">bessere Noten ohne gro&szlig;en Aufwand? Mit der Onli=
+ne-Lernplattform sofatutor reichen <strong>12 Minuten</strong>, um ein neue=
+s <strong>Schulthema</strong> zu <strong>verstehen</strong>!</p>=0A=
+=0A=
+												<p style=3D"margin: 0px; text-align: center; line-height: inher=
+it; font-size: 16px;">&nbsp;</p>=0A=
+=0A=
+												<p style=3D"margin: 0px; text-align: center; line-height: inher=
+it; font-size: 16px;">Geben auch Sie Ihrem Kind die M&ouml;glichkeit, <stro=
+ng>effektiv</strong> zu <strong>lernen</strong>, ohne Zeit zu verschwenden.=
+</p>=0A=
+=0A=
+												<p style=3D"margin: 0px; text-align: center; line-height: inher=
+it; font-size: 16px;">&nbsp;</p>=0A=
+=0A=
+												<p style=3D"margin: 0px; text-align: center; line-height: inher=
+it; font-size: 16px;">Exklusives Angebot f&uuml;r Neukunden &#8211; NUR BIS=
+ ZUM 30.04.2025:</p>=0A=
+=0A=
+												<p style=3D"margin: 0px; text-align: center; line-height: inher=
+it; font-size: 16px;"><strong>30 Tage kostenlos</strong> testen &amp; im An=
+schluss <strong>80 % weniger </strong>zahlen!</p>=0A=
+												</div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+=0A=
+									<table width=3D"100%" class=3D"image_block block-3" role=3D"presen=
+tation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"padding: 15px 20px 25px 15px; width:=
+ 100%;">=0A=
+												<div align=3D"center" class=3D"alignment" style=3D"line-height:=
+ 10px;">=0A=
+												<div style=3D"max-width: 300px;"><a tabindex=3D"-1" href=3D"htt=
+p://delivery.riya.travel/FOTVIEQ?id=3D84635=3Dc0kBA1lWVAUCHlZTBQoHAQsGUgFWV=
+VdTDAUFAANQBAIBAAcLUlBSDwUGB1UHWAUHWlNIXhFFQkxBR1BLQSFdD0NBQh0SDRdEVAcHWRNe=
+BBlXAUBNUwECVAAHBgAFUwFXCQYIA1ceCkJDElsZTl0EW1ASUUMbGEQITVUbTUAARwNcGnd8NTQ=
+rc2ZdCFIdT1I=3D&fl=3DWEFFQxJYTRlZDk9bAF4ATVAKUUMLWBgFURtHXFZPQQ5A&ext=3Dcj0=
+xNzM3NTQwNzYwMTIwNzM2NSZhbXA7bGlkPTM0MDYwNjUmYW1wO2xuPTM=3D" target=3D"_bla=
+nk" rel=3D"noopener"><img width=3D"300" height=3D"auto" title=3D"" style=3D=
+"border-width: 0px; width: 100%; height: auto; display: block;" alt=3D"" sr=
+c=3D"https://media.promio-connect.com/13025/pics/2025_HJ1/XXX_Sofatutor_Mes=
+s_253003/Button.png"></a></div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+=0A=
+									<table width=3D"100%" class=3D"text_block block-4" role=3D"present=
+ation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"padding-top: 10px; padding-right: 30=
+px; padding-left: 30px;">=0A=
+												<div style=3D"font-family: Arial, sans-serif;">=0A=
+												<div style=3D'color: rgb(85, 85, 85); line-height: 1.5; font-fa=
+mily: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 12px;'>=0A=
+												<p style=3D"margin: 0px; text-align: center; line-height: inher=
+it;"><span style=3D"font-size: 16px;"><strong>Praktisch:</strong> Probemona=
+t jederzeit k&uuml;ndigen &#8211; ohne versteckte Kosten.</span></p>=0A=
+=0A=
+												<p style=3D"margin: 0px; line-height: inherit; font-size: 14px;=
+">&nbsp;</p>=0A=
+												</div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+									</td>=0A=
+								</tr>=0A=
+							</tbody>=0A=
+						</table>=0A=
+						</td>=0A=
+					</tr>=0A=
+				</tbody>=0A=
+			</table>=0A=
+=0A=
+			<table width=3D"100%" align=3D"center" class=3D"row row-4" role=3D"prese=
+ntation" style=3D"background-color: rgb(230, 232, 229);" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">=0A=
+				<tbody>=0A=
+					<tr>=0A=
+						<td>=0A=
+						<table width=3D"600" align=3D"center" class=3D"row-content stack" rol=
+e=3D"presentation" style=3D"margin: 0px auto; width: 600px; background-colo=
+r: rgb(255, 255, 255);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+=0A=
+							<tbody>=0A=
+								<tr>=0A=
+									<td width=3D"33.33%" class=3D"column column-1" style=3D"padding-to=
+p: 5px; padding-bottom: 5px; vertical-align: top;">=0A=
+									<table width=3D"100%" class=3D"image_block block-1" role=3D"presen=
+tation" border=3D"0" cellspacing=3D"0" cellpadding=3D"5">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad">=0A=
+												<div align=3D"center" class=3D"alignment" style=3D"line-height:=
+ 10px;">=0A=
+												<div class=3D"fullWidth" style=3D"max-width: 190px;"><a tabinde=
+x=3D"-1" href=3D"http://delivery.riya.travel/FOTVIEQ?id=3D84635=3Dc0kBA1lWV=
+AUCHgBVVltXVFpWDQdTD1UADQBQAFNWAgMABAMEVVEEBQ9RB1RQDVJSW1BIXhFFQkxBR1BLQSFd=
+D0NBQh0SDRdEVAcHWRNeBBlXAUBNUwECVAAHBgAFUwFXCQYIA1ceCkJDElsZTl0EW1ASUUMbGEQ=
+ITVUbTUAARwNcGnd8NTQrc2ZdCFIdT1I=3D&fl=3DWEFFQxJYTRlZDk9bAF4ATVAKUUMLWBgFUR=
+tHXFZPQQ5A&ext=3Dcj0xNzM3NTQwNzYwMTIwNzM2NSZhbXA7bGlkPTM0MDYwNjUmYW1wO2xuPT=
+Q=3D" target=3D"_blank" rel=3D"noopener"><img width=3D"190" height=3D"auto"=
+ title=3D"I'm an image" style=3D"border-width: 0px; width: 100%; height: au=
+to; display: block;" alt=3D"I'm an image" src=3D"https://media.promio-conne=
+ct.com/13025/pics/2025_HJ1/XXX_Sofatutor_Mess_253003/1.png"></a></div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+									</td>=0A=
+									<td width=3D"66.66%" class=3D"column column-2" style=3D"padding-to=
+p: 5px; padding-bottom: 5px; vertical-align: top;">=0A=
+									<table width=3D"100%" class=3D"text_block block-1" role=3D"present=
+ation" border=3D"0" cellspacing=3D"0" cellpadding=3D"10">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad">=0A=
+												<div style=3D"font-family: sans-serif;">=0A=
+												<div style=3D'color: rgb(51, 51, 51); line-height: 1.2; font-fa=
+mily: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 12px;'>=0A=
+												<p style=3D"margin: 0px; line-height: inherit; font-size: 16px;=
+"><strong>Schritt 1: VERSTEHEN (5 Minuten)</strong></p>=0A=
+												</div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+=0A=
+									<table width=3D"100%" class=3D"text_block block-2" role=3D"present=
+ation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"padding: 5px 10px 10px;">=0A=
+												<div style=3D"font-family: sans-serif;">=0A=
+												<div style=3D'color: rgb(85, 85, 85); line-height: 1.2; font-fa=
+mily: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 12px;'>=0A=
+												<p style=3D"margin: 0px; line-height: inherit;"><span style=3D"=
+font-size: 16px;">Auf sofatutor lernt Ihr Kind alle Schulthemen mit <strong=
+>Videos</strong>. Die sind nie l&auml;nger als f&uuml;nf Minuten und erkl&a=
+uml;ren selbst komplizierte Themen ganz <strong>anschaulich</strong> mithil=
+fe spannender Geschichten. </span></p>=0A=
+=0A=
+												<p style=3D"margin: 0px; line-height: inherit;"><span style=3D"=
+font-size: 16px;">So bleibt Ihr Kind <strong>motiviert</strong> und versteh=
+t Lerninhalte mit Leichtigkeit.</span></p>=0A=
+												</div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+									</td>=0A=
+								</tr>=0A=
+							</tbody>=0A=
+						</table>=0A=
+						</td>=0A=
+					</tr>=0A=
+				</tbody>=0A=
+			</table>=0A=
+=0A=
+			<table width=3D"100%" align=3D"center" class=3D"row row-5" role=3D"prese=
+ntation" style=3D"background-color: rgb(230, 232, 229);" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">=0A=
+				<tbody>=0A=
+					<tr>=0A=
+						<td>=0A=
+						<table width=3D"600" align=3D"center" class=3D"row-content stack" rol=
+e=3D"presentation" style=3D"margin: 0px auto; width: 600px; background-colo=
+r: rgb(255, 255, 255);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+=0A=
+							<tbody>=0A=
+								<tr>=0A=
+									<td width=3D"33.33%" class=3D"column column-1" style=3D"padding-to=
+p: 5px; padding-bottom: 5px; vertical-align: top;">=0A=
+									<table width=3D"100%" class=3D"image_block block-1" role=3D"presen=
+tation" border=3D"0" cellspacing=3D"0" cellpadding=3D"5">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad">=0A=
+												<div align=3D"center" class=3D"alignment" style=3D"line-height:=
+ 10px;">=0A=
+												<div class=3D"fullWidth" style=3D"max-width: 190px;"><a tabinde=
+x=3D"-1" href=3D"http://delivery.riya.travel/FOTVIEQ?id=3D84635=3Dc0kBA1lWV=
+AUCHgACBFxZUw1SAlRbBgMFUgEND1cHUldSUwBRB1QBAA5QUVJUDQIDXVJIXhFFQkxBR1BLQSFd=
+D0NBQh0SDRdEVAcHWRNeBBlXAUBNUwECVAAHBgAFUwFXCQYIA1ceCkJDElsZTl0EW1ASUUMbGEQ=
+ITVUbTUAARwNcGnd8NTQrc2ZdCFIdT1I=3D&fl=3DWEFFQxJYTRlZDk9bAF4ATVAKUUMLWBgFUR=
+tHXFZPQQ5A&ext=3Dcj0xNzM3NTQwNzYwMTIwNzM2NSZhbXA7bGlkPTM0MDYwNjUmYW1wO2xuPT=
+U=3D" target=3D"_blank" rel=3D"noopener"><img width=3D"190" height=3D"auto"=
+ title=3D"I'm an image" style=3D"border-width: 0px; width: 100%; height: au=
+to; display: block;" alt=3D"I'm an image" src=3D"https://media.promio-conne=
+ct.com/13025/pics/2025_HJ1/XXX_Sofatutor_Mess_253003/2.png"></a></div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+									</td>=0A=
+									<td width=3D"66.66%" class=3D"column column-2" style=3D"padding-to=
+p: 5px; padding-bottom: 5px; vertical-align: top;">=0A=
+									<table width=3D"100%" class=3D"text_block block-1" role=3D"present=
+ation" border=3D"0" cellspacing=3D"0" cellpadding=3D"10">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad">=0A=
+												<div style=3D"font-family: sans-serif;">=0A=
+												<div style=3D'color: rgb(51, 51, 51); line-height: 1.2; font-fa=
+mily: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 12px;'>=0A=
+												<p style=3D"margin: 0px; line-height: inherit; font-size: 16px;=
+"><strong>Schritt 2: &Uuml;BEN (5 Minuten)</strong></p>=0A=
+												</div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+=0A=
+									<table width=3D"100%" class=3D"text_block block-2" role=3D"present=
+ation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"padding: 5px 10px 10px;">=0A=
+												<div style=3D"font-family: sans-serif;">=0A=
+												<div style=3D'color: rgb(85, 85, 85); line-height: 1.2; font-fa=
+mily: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 12px;'>=0A=
+												<p style=3D"margin: 0px; line-height: inherit;"><span style=3D"=
+font-size: 16px;">Alles richtig verstanden? Mit den <strong>interaktiven &U=
+uml;bungen</strong>, <strong>Lernspielen</strong> und <strong>Arbeitsbl&aum=
+l;ttern </strong>reichen Ihrem Kind f&uuml;nf Minuten, um genau das herausz=
+ufinden. Zu allen Themen gibt es <strong>Lernmaterialien</strong>, die dire=
+kt mit den passenden Lernvideos verkn&uuml;pft sind.</span></p>=0A=
+												</div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+									</td>=0A=
+								</tr>=0A=
+							</tbody>=0A=
+						</table>=0A=
+						</td>=0A=
+					</tr>=0A=
+				</tbody>=0A=
+			</table>=0A=
+=0A=
+			<table width=3D"100%" align=3D"center" class=3D"row row-6" role=3D"prese=
+ntation" style=3D"background-color: rgb(230, 232, 229);" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">=0A=
+				<tbody>=0A=
+					<tr>=0A=
+						<td>=0A=
+						<table width=3D"600" align=3D"center" class=3D"row-content stack" rol=
+e=3D"presentation" style=3D"margin: 0px auto; width: 600px; background-colo=
+r: rgb(255, 255, 255);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+=0A=
+							<tbody>=0A=
+								<tr>=0A=
+									<td width=3D"33.33%" class=3D"column column-1" style=3D"padding-to=
+p: 5px; padding-bottom: 5px; vertical-align: top;">=0A=
+									<table width=3D"100%" class=3D"image_block block-1" role=3D"presen=
+tation" border=3D"0" cellspacing=3D"0" cellpadding=3D"10">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad">=0A=
+												<div align=3D"center" class=3D"alignment" style=3D"line-height:=
+ 10px;">=0A=
+												<div class=3D"fullWidth" style=3D"max-width: 180px;"><a tabinde=
+x=3D"-1" href=3D"http://delivery.riya.travel/FOTVIEQ?id=3D84635=3Dc0kBA1lWV=
+AUCHlIEUQgABFoHVQdUBwUCDQADXAUEBlNUUAgHWAdTAw9SBQRQCQIBXwJIXhFFQkxBR1BLQSFd=
+D0NBQh0SDRdEVAcHWRNeBBlXAUBNUwECVAAHBgAFUwFXCQYIA1ceCkJDElsZTl0EW1ASUUMbGEQ=
+ITVUbTUAARwNcGnd8NTQrc2ZdCFIdT1I=3D&fl=3DWEFFQxJYTRlZDk9bAF4ATVAKUUMLWBgFUR=
+tHXFZPQQ5A&ext=3Dcj0xNzM3NTQwNzYwMTIwNzM2NSZhbXA7bGlkPTM0MDYwNjUmYW1wO2xuPT=
+Y=3D" target=3D"_blank" rel=3D"noopener"><img width=3D"180" height=3D"auto"=
+ title=3D"I'm an image" style=3D"border-width: 0px; width: 100%; height: au=
+to; display: block;" alt=3D"I'm an image" src=3D"https://media.promio-conne=
+ct.com/13025/pics/2025_HJ1/XXX_Sofatutor_Mess_253003/3.png"></a></div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+									</td>=0A=
+									<td width=3D"66.66%" class=3D"column column-2" style=3D"padding-to=
+p: 5px; padding-bottom: 5px; vertical-align: top;">=0A=
+									<table width=3D"100%" class=3D"text_block block-1" role=3D"present=
+ation" border=3D"0" cellspacing=3D"0" cellpadding=3D"10">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad">=0A=
+												<div style=3D"font-family: sans-serif;">=0A=
+												<div style=3D'color: rgb(51, 51, 51); line-height: 1.2; font-fa=
+mily: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 12px;'>=0A=
+												<p style=3D"margin: 0px; line-height: inherit; font-size: 16px;=
+"><strong>Schritt 3: FRAGEN (2 Minuten)</strong></p>=0A=
+												</div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+=0A=
+									<table width=3D"100%" class=3D"text_block block-2" role=3D"present=
+ation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"padding: 5px 10px 10px;">=0A=
+												<div style=3D"font-family: sans-serif;">=0A=
+												<div style=3D'color: rgb(85, 85, 85); line-height: 1.2; font-fa=
+mily: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 12px;'>=0A=
+												<p style=3D"margin: 0px; line-height: inherit;"><span style=3D"=
+font-size: 16px;">Bleibt nur noch eins: <strong>Fragen stellen</strong>, da=
+mit auch wirklich alles richtig sitzt. Bei sofatutor geht das im Hausaufgab=
+en-Chat. Einfach Chat-Fenster &ouml;ffnen, Fragen stellen und <strong>indiv=
+iduelle Unterst&uuml;tzung</strong> von Lehrer*innen bekommen.</span></p>=
+=0A=
+												</div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+									</td>=0A=
+								</tr>=0A=
+							</tbody>=0A=
+						</table>=0A=
+						</td>=0A=
+					</tr>=0A=
+				</tbody>=0A=
+			</table>=0A=
+=0A=
+			<table width=3D"100%" align=3D"center" class=3D"row row-7" role=3D"prese=
+ntation" style=3D"background-color: rgb(230, 232, 229);" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0">=0A=
+				<tbody>=0A=
+					<tr>=0A=
+						<td>=0A=
+						<table width=3D"600" align=3D"center" class=3D"row-content stack" rol=
+e=3D"presentation" style=3D"margin: 0px auto; width: 600px; background-colo=
+r: rgb(255, 255, 255);" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=
+=0A=
+							<tbody>=0A=
+								<tr>=0A=
+									<td width=3D"100%" class=3D"column column-1" style=3D"padding-top:=
+ 5px; padding-bottom: 5px; vertical-align: top;">=0A=
+									<table width=3D"100%" class=3D"paragraph_block block-1" role=3D"pr=
+esentation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"padding: 25px 60px 60px;">=0A=
+												<div style=3D'color: rgb(102, 102, 102); line-height: 150%; fon=
+t-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; =
+direction: ltr;'>=0A=
+												<p style=3D"margin: 0px; line-height: inherit;">Viele Gr&uuml;&=
+szlig;e,<br>=0A=
+												<strong>Ihr sofatutor-Team</strong></p>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+=0A=
+									<table width=3D"100%" class=3D"image_block block-2" role=3D"presen=
+tation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"width: 100%; padding-top: 10px;">=0A=
+												<div align=3D"center" class=3D"alignment" style=3D"line-height:=
+ 10px;">=0A=
+												<div style=3D"max-width: 600px;"><a tabindex=3D"-1" href=3D"htt=
+p://delivery.riya.travel/FOTVIEQ?id=3D84635=3Dc0kBA1lWVAUCHgcHWQtWAwlSUFJQB=
+wVQUgACWwMEVQRUAwYBBwZSAQZWUlJXWAMGXVRIXhFFQkxBR1BLQSFdD0NBQh0SDRdEVAcHWRNe=
+BBlXAUBNUwECVAAHBgAFUwFXCQYIA1ceCkJDElsZTl0EW1ASUUMbGEQITVUbTUAARwNcGnd8NTQ=
+rc2ZdCFIdT1I=3D&fl=3DWEFFQxJYTRlZDk9bAF4ATVAKUUMLWBgFURtHXFZPQQ5A&ext=3Dcj0=
+xNzM3NTQwNzYwMTIwNzM2NSZhbXA7bGlkPTM0MDYwNjUmYW1wO2xuPTc=3D" target=3D"_bla=
+nk" rel=3D"noopener"><img width=3D"600" height=3D"auto" title=3D"Angebot" s=
+tyle=3D"border-width: 0px; width: 100%; height: auto; display: block;" alt=
+=3D"Angebot" src=3D"https://media.promio-connect.com/13025/pics/2025_HJ1/XX=
+X_Sofatutor_Mess_253003/Grafik-04.png"></a></div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+=0A=
+									<table width=3D"100%" class=3D"image_block block-3" role=3D"presen=
+tation" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+										<tbody>=0A=
+											<tr>=0A=
+												<td class=3D"pad" style=3D"width: 100%;">=0A=
+												<div align=3D"center" class=3D"alignment" style=3D"line-height:=
+ 10px;">=0A=
+												<div style=3D"max-width: 600px;"><a tabindex=3D"-1" href=3D"htt=
+p://delivery.riya.travel/FOTVIEQ?id=3D84635=3Dc0kBA1lWVAUCHgQGWQhUVVhRDVdSV=
+VdUVgIGWAoDVAIJBQkBAFJXAFMEAFRYDAVWAV1IXhFFQkxBR1BLQSFdD0NBQh0SDRdEVAcHWRNe=
+BBlXAUBNUwECVAAHBgAFUwFXCQYIA1ceCkJDElsZTl0EW1ASUUMbGEQITVUbTUAARwNcGnd8NTQ=
+rc2ZdCFIdT1I=3D&fl=3DWEFFQxJYTRlZDk9bAF4ATVAKUUMLWBgFURtHXFZPQQ5A&ext=3Dcj0=
+xNzM3NTQwNzYwMTIwNzM2NSZhbXA7bGlkPTM0MDYwNjUmYW1wO2xuPTg=3D" target=3D"_bla=
+nk" rel=3D"noopener"><img width=3D"600" height=3D"auto" title=3D"Footer" st=
+yle=3D"border-width: 0px; width: 100%; height: auto; display: block;" alt=
+=3D"Footer" src=3D"https://media.promio-connect.com/13025/pics/2025_HJ1/XXX=
+_Sofatutor_Mess_253003/Footer_1.png"></a></div>=0A=
+												</div>=0A=
+												</td>=0A=
+											</tr>=0A=
+										</tbody>=0A=
+									</table>=0A=
+									</td>=0A=
+								</tr>=0A=
+							</tbody>=0A=
+						</table>=0A=
+						</td>=0A=
+					</tr>=0A=
+				</tbody>=0A=
+			</table>=0A=
+			</td>=0A=
+		</tr>=0A=
+	</tbody>=0A=
+</table>=0A=
+=0A=
+<center>&nbsp;=0A=
+<hr></center>=0A=
+</div>=0A=
+=0A=
+=0A=
+<img id=3D'SBBBB' src=3D'http://delivery.riya.travel/FOTVIEQ?id=3D84635=3Df=
+0kBA1lWVAUCHkEWQRlBFxlEFBFCFhZBFBQVGRJBEUYQFRETQUJCFhdCQRZBGUEXGVRIXhFFQkxB=
+R1BLQSFdD0NBQh0SDRdEVAcHWRNeBBlXAUBNUwECVAAHBgAFUwFXCQYIA1ceCkJDElsZTl0EW1A=
+SUUMbGEQITVUbTUAARwNcGnd8NTQrc2ZdCFIdT1I=3D' /></body></html>=0A=
+=0A=
 
---_5443cacc-90e6-4f67-86f5-1e701f87ff56_
-Content-Type: text/html; charset="big5"
-Content-Transfer-Encoding: quoted-printable
-
-<html>
-<body>
-1
-</body>
-</html>
-
---_5443cacc-90e6-4f67-86f5-1e701f87ff56_--
 
 
---===============7278260607598136131==
+--===============3247406578093325785==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7278260607598136131==
+--===============3247406578093325785==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -193,5 +1023,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7278260607598136131==--
-
+--===============3247406578093325785==--
