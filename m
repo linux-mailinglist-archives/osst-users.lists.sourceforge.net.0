@@ -2,76 +2,63 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id BD2FFAC5AE5
-	for <lists+osst-users@lfdr.de>; Tue, 27 May 2025 21:41:03 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id A2F22AC5D95
+	for <lists+osst-users@lfdr.de>; Wed, 28 May 2025 01:03:09 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Message-ID:
-	Date:MIME-Version:To:From:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+	d=lists.sourceforge.net; s=beta; h=Content-Type:List-Subscribe:List-Help:
+	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:MIME-Version:Date:To:
+	From:Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
 	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
 	:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=rvLcR5WutZ4zgqONZxQUOhscLbE3aKKtWOk4JTWUb2w=; b=B7SKrMpAaWaLhs+qTLS9zZRlTU
-	vq9yxu0UB1vE3SE1FJRsK+QT9Q7GC4zWw+lOOTjn25AuFqXaIy/P8hUnJSgGsWa02N2nI7qMUn0tf
-	NkWITwItWrVZooaeroDtXnMS6V/FWHo3ArshJNGR8qc9urzL7WqjQ6NCTohgYKaguRCE=;
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=/3DeC2yx636pnN+q9XKK33FgYG73jbLx+XF1bkdK00U=; b=Qe7rj+H5p+PecIgpN3BwsXUkqC
+	OwrCvnzGHn2oeMx9xB/Aig7m4fDg7YPjqSMdoXxlL4lwyUj8EVQyx7p/Meutf+ZiNfWkJzcyx9oZn
+	3wnkloJLkFTKxQcnaPVYPjduVdcImm3R6zBOkCUkhsKFwyO7ZvOTA/mPn5W6V5DItHkw=;
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1uK0AY-0005qj-J8
+	id 1uK3K8-0008Hj-Ev
 	for lists+osst-users@lfdr.de;
-	Tue, 27 May 2025 19:41:02 +0000
+	Tue, 27 May 2025 23:03:08 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) (envelope-from
- <respostareclameaqui@documentos06f.gafanhotosnuvemgafanhotadaondapraga.sbs>)
- id 1uK0AX-0005qX-D4 for osst-users@lists.sourceforge.net;
- Tue, 27 May 2025 19:41:01 +0000
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
+ (envelope-from <aria@beam2b.com>) id 1uK3K7-0008Ha-DQ
+ for osst-users@lists.sourceforge.net; Tue, 27 May 2025 23:03:07 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=List-Unsubscribe:List-Id:Subject:Message-ID:Date:
- Reply-To:MIME-Version:Content-Type:To:From:Sender:Cc:
- Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=f0o7VEteKr4dWpqFHJkCU3oY+10rrz116udSHy01Oh0=; b=U1ziH1j1d7r4djEALhG5wmUbQR
- gJa6k0OaSAdXZ6FOzzl7uZXcEBpVqoR4r/aIcaWjgEl0cQdWa3K22jEu71JUNYYvsNBoMw/b4O8Aw
- BjburOl/sj0WDoRrSvNWEpHmwZtKgs3MkE0mWw6ubI9lqR5vk2EQ7wPQeSoQR6MCzy5M=;
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:From:
+ List-Unsubscribe:Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=wNJbBsBiI2bf5cKeDLF5VrezuKHy9nhe8ml7+ER4D2o=; b=ZFh1TzYxyaArLu6nHSRILjdCVY
+ Z6oFSja9SvbfSVZ++FAQhk2zo38neZUgnNGukwVfYYWGifNO6IHEdNToqGE5F+8GX79SeBb3zyGh2
+ x/OjKJLu5BAv+MO5VAQNRV1vr/zNvZaOEJfwXSMeqpX/6CZcM4Fb2T7Y+QYXtARk88Qk=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=List-Unsubscribe:List-Id:Subject:Message-ID:Date:Reply-To:MIME-Version:
- Content-Type:To:From:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ h=Content-Type:MIME-Version:Date:Subject:To:From:List-Unsubscribe:
+ Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Help:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=f0o7VEteKr4dWpqFHJkCU3oY+10rrz116udSHy01Oh0=; b=m
- uft8BJCY3NfrpMW6XEEd3wLlUqjrj+CasR4XGOAXkkjYm+MY/REqp93TVHPKLoLXyuUno4DG3m5Wn
- TPl3Mkn/oeMd/osjPCAlSbIRTrLaH20P3K160dNNNqRuzmiMZBQ3wYUVJFnkPZSUzWzRAc40hNGH1
- K3WyD3nb/uj5RuDo=;
-Received: from documentos06f.gafanhotosnuvemgafanhotadaondapraga.sbs
- ([87.228.90.109]) by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=wNJbBsBiI2bf5cKeDLF5VrezuKHy9nhe8ml7+ER4D2o=; b=e6i4VdggGhl7WLegpty/4pe/4L
+ fWZQMecbtqDqXNQOTeGxis+PLfA5Lbs4ijCs6V4vr/s79vSLkYGebXorxZt0khygJnHLLkspitdrf
+ ozLuWCImPlBEoraoKGreXh0ThClDcOnRXpSjQk3m4NUymYH5QMyLxt3If6fdds/Uvg4o=;
+Received: from [23.155.184.29] (helo=beam2b.com)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1uK0AX-0003pa-4j for osst-users@lists.sourceforge.net;
- Tue, 27 May 2025 19:41:01 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
- d=documentos06f.gafanhotosnuvemgafanhotadaondapraga.sbs; s=default;
- t=1748374806; bh=f0o7VEteKr4dWpqFHJkCU3oY+10rrz116udSHy01Oh0=;
- h=From:To:Reply-To:Date:Subject:List-Id:List-Unsubscribe:From;
- b=MpkCHYD1fD8mNuDvLrqj8nRKEzWhwaaH9oEj8SpSK2Bh1448wO+8P3Cyyl8NoRmwc
- LkACrzv7qwJwgg/Mda33yXX2nuTX0/LAX7Sm9Fz0koPd+HjaNB4rktIuTbcNMRQVY8
- 3T8jTd6Aofd1/IRmBhmHVH6g/mzRiIXwuyK+iygb+WVYZozjKnXuciR0syfAZswYGG
- bjNj0tOUGH4zPNBqn2kWWUE9YYunCRxD0t2Qd4I9f2spnN/EbcbZpRdsKdLIGrPVhi
- eeAs3TX9KYP+Ozj4M5Ue7NdpX8oOPk4xtgFChgSLqvQ2hCVHYgMdK4IRWnxKp21k97
- pIt/1I+5hn6Hg==
-From: "=?UTF-8?B?UHJvdG9jb2xvIFJlY2xhbWVBcXVp?="
- <respostareclameaqui@documentos06f.gafanhotosnuvemgafanhotadaondapraga.sbs>
-To: osst-users@lists.sourceforge.net
-MIME-Version: 1.0
-Date: Tue, 27 May 2025 16:40:06 -0300
-Message-ID: <20250527164006739@documentos06f.gafanhotosnuvemgafanhotadaondapraga.sbs>
+ id 1uK3K7-0005jt-2e for osst-users@lists.sourceforge.net;
+ Tue, 27 May 2025 23:03:07 +0000
+Message-ID: <uxmoyrxfqlrvwblruaesslhtnjhhgllf.ixwtazmbyzgmcaenplhijouthnwufvjwgejumfrs.ratwwvejfqaa.uuztduyqng@beam2b.com>
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
-X-Headers-End: 1uK0AX-0003pa-4j
-Subject: [Osst-users] =?utf-8?q?Reclama=C3=A7=C3=A3o_registrada_em_sua_con?=
- =?utf-8?q?ta_no_ReclameAqui?=
+Precedence: BULK
+From: LOUlS VUlTTON <aria@beam2b.com>
+To: osst-users <osst-users@lists.sourceforge.net>
+Date: Wed, 28 May 2025 05:32:39 +0630
+MIME-Version: 1.0
+X-Headers-End: 1uK3K7-0005jt-2e
+Subject: [Osst-users] Own the Icon - LOUlS VUlTTON Bags from Just $200!
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
-Precedence: list
 List-Id: <osst-users.lists.sourceforge.net>
 List-Unsubscribe: <https://lists.sourceforge.net/lists/options/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=unsubscribe>
@@ -80,93 +67,117 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: 8s846@documentos06f.gafanhotosnuvemgafanhotadaondapraga.sbs
-Content-Type: multipart/mixed; boundary="===============3570592848717348959=="
+Content-Type: multipart/mixed; boundary="===============0032250849002555777=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format
+This is a multi-part message in MIME format.
 
---===============3570592848717348959==
-Content-Type: multipart/alternative; boundary="Z4cNFkfNgKxZWnLM=_x6LA4WP75hJ52U3x"
+--===============0032250849002555777==
+Content-Type: multipart/alternative;
+	boundary="__==___cbyo1pfmgkoq4pb2ihmsinexx9jea1bultzjhrj47o7uit10axmujhbjojpc7b7gdlupxvhtev5gmfinpwfdgb7uvc9aqjgrqdinb____==__"
 
-This is a multi-part message in MIME format
+This is a multi-part message in MIME format.
 
---Z4cNFkfNgKxZWnLM=_x6LA4WP75hJ52U3x
-Content-Type: text/plain; charset="utf-8"
-Content-Transfer-Encoding: quoted-printable
-Content-Disposition: inline
+--__==___cbyo1pfmgkoq4pb2ihmsinexx9jea1bultzjhrj47o7uit10axmujhbjojpc7b7gdlupxvhtev5gmfinpwfdgb7uvc9aqjgrqdinb____==__
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: Quoted-Printable
 
-An HTML viewer is required to see this message
-
---Z4cNFkfNgKxZWnLM=_x6LA4WP75hJ52U3x
-Content-Type: text/html; charset="utf-8"
-Content-Transfer-Encoding: base64
-Content-Disposition: inline
-
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InB0LUJSIj4KPGhlYWQ+CiAgICA8bWV0YSBjaGFy
-c2V0PSJVVEYtOCI+CiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2
-aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCI+CiAgICA8dGl0bGU+UmVjbGFtZUFRVUkgLSBO
-b3RpZmljYSYjMjMxOyYjMjI3O288L3RpdGxlPgo8L2hlYWQ+Cjxib2R5IHN0eWxlPSJtYXJnaW46
-IDA7IHBhZGRpbmc6IDA7IGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjsgYmFja2dyb3Vu
-ZC1jb2xvcjogI2Y0ZjRmNDsgdGV4dC1hbGlnbjogY2VudGVyOyI+CgogICAgPCEtLSBDb250YWlu
-ZXIgUHJpbmNpcGFsIC0tPgogICAgPGRpdiBzdHlsZT0ibWF4LXdpZHRoOiA2MDBweDsgbWFyZ2lu
-OiAzMHB4IGF1dG87IGJhY2tncm91bmQ6ICNmZmZmZmY7IGJvcmRlci1yYWRpdXM6IDVweDsgYm94
-LXNoYWRvdzogMHB4IDBweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC4xKTsgcGFkZGluZzogMjBweDsg
-dGV4dC1hbGlnbjogbGVmdDsiPgoKICAgICAgICA8IS0tIENhYmUmIzIzMTthbGhvIC0tPgogICAg
-ICAgIDxkaXYgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICNmMmYyZjI7IHBhZGRpbmc6IDE1cHg7
-IHRleHQtYWxpZ246IGNlbnRlcjsiPgogICAgICAgICAgICA8c3BhbiBzdHlsZT0iZm9udC1zaXpl
-OiAyOHB4OyBmb250LXdlaWdodDogYm9sZDsgZm9udC1zdHlsZTogaXRhbGljOyBmb250LWZhbWls
-eTogJ0FyaWFsIEJsYWNrJywgc2Fucy1zZXJpZjsiPgogICAgICAgICAgICAgICAgPHN0cm9uZz48
-c3BhbiBzdHlsZT0iY29sb3I6ICNBM0M4MDA7Ij5SZWNsYW1lPC9zcGFuPjxzcGFuIHN0eWxlPSJj
-b2xvcjogIzAwN0EzRDsiPkFRVUk8L3NwYW4+PC9zdHJvbmc+CiAgICAgICAgICAgIDwvc3Bhbj4K
-ICAgICAgICA8L2Rpdj4KCiAgICAgICAgPCEtLSBDb250ZSYjMjUwO2RvIC0tPgogICAgICAgIDxk
-aXYgc3R5bGU9InBhZGRpbmc6IDIwcHg7IGNvbG9yOiAjMzMzOyI+CiAgICAgICAgICAgIDxwIHN0
-eWxlPSJtYXJnaW46IDA7IGZvbnQtc2l6ZTogMTZweDsiPlByZXphZG8oYSk6IDxzdHJvbmc+b3Nz
-dC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ8L3N0cm9uZz4sPC9wPgogICAgICAgICAgICA8
-cCBzdHlsZT0iZm9udC1zaXplOiAxNnB4OyI+SW5mb3JtYW1vcyBxdWUgcmVjZWJlbW9zIHVtYSBy
-ZWNsYW1hJiMyMzE7JiMyMjc7byByZWdpc3RyYWRhIHBvciB1bSBkZSBzZXVzIGNsaWVudGVzIGF0
-cmF2JiMyMzM7cyBkYSBwbGF0YWZvcm1hIDxzdHJvbmc+UmVjbGFtZSBBcXVpPC9zdHJvbmc+Ljwv
-cD4KICAgICAgICAgICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTZweDsiPlBlZGltb3MgcXVlIHZl
-cmlmaXF1ZSBvcyBkZXRhbGhlcyBkYSByZWNsYW1hJiMyMzE7JiMyMjc7byBvIHF1YW50byBhbnRl
-cyBwYXJhIHRvbWFyIGFzIHByb3ZpZCYjMjM0O25jaWFzIG5lY2VzcyYjMjI1O3JpYXMgZSBldml0
-YXIgbWFpb3JlcyBjb250cmF0ZW1wb3MuIENvbmZpcmEgb3MgZGV0YWxoZXMgYWJhaXhvOjwvcD4K
-CiAgICAgICAgICAgIDwhLS0gQm90JiMyMjc7byAtLT4KICAgICAgICAgICAgPHAgc3R5bGU9InRl
-eHQtYWxpZ246IGNlbnRlcjsgbWFyZ2luOiAyMHB4IDA7Ij4KICAgICAgICAgICAgICAgIDxhIGhy
-ZWY9ImhUVFBzOi8vMjM4Ljg3Ljc0Ljk3Lmhvc3Quc2VjdXJlc2VydmVyLm5ldC9EMjQxVlZ1aFFW
-RVpWL0hDVnVWTFYxUVouRXgxWk1FTDBFdTdCNy9PRlBWLzcwOTU1OTU2L3lSVlI5bURjNVNaeU42
-YyIgCiAgICAgICAgICAgICAgICAgICBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogIzAwN0EzRDsg
-Y29sb3I6ICNmZmZmZmY7IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgcGFkZGluZzogMTJweCAyNXB4
-OyBmb250LXNpemU6IDE2cHg7IGZvbnQtd2VpZ2h0OiBib2xkOyBkaXNwbGF5OiBpbmxpbmUtYmxv
-Y2s7IGJvcmRlci1yYWRpdXM6IDVweDsiPgogICAgICAgICAgICAgICAgICAgIEFDRVNTRSBBIFJF
-Q0xBTUEmIzE5OTsmIzE5NTtPCiAgICAgICAgICAgICAgICA8L2E+CiAgICAgICAgICAgIDwvcD4K
-CiAgICAgICAgICAgIDwhLS0gRGV0YWxoZXMgLS0+CiAgICAgICAgICAgIDx1bCBzdHlsZT0ibGlz
-dC1zdHlsZS10eXBlOiBub25lOyBwYWRkaW5nOiAwOyBmb250LXNpemU6IDE2cHg7Ij4KICAgICAg
-ICAgICAgICAgIDxsaT48c3Ryb25nPkRhdGE6PC9zdHJvbmc+IDI3LzA1LzIwMjU8L2xpPgogICAg
-ICAgICAgICAgICAgPGxpPjxzdHJvbmc+SG9yJiMyMjU7cmlvOjwvc3Ryb25nPiAxNjo0MDowNjwv
-bGk+CiAgICAgICAgICAgICAgICA8bGk+PHN0cm9uZz5Qcm90b2NvbG8gZGUgcmVnaXN0cm86PC9z
-dHJvbmc+IDQyNDAzMTc0Ni00NzkzMzcwLTIwMjU8L2xpPgogICAgICAgICAgICA8L3VsPgoKICAg
-ICAgICAgICAgPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTZweDsiPlNvbGljaXRhbW9zIGEgZXNwZWNp
-YWwgZ2VudGlsZXphIGRlIGFuYWxpc2FyIG8gdGVvciBkYSByZWNsYW1hJiMyMzE7JiMyMjc7byBl
-IGZhemVyIHN1YSByJiMyMzM7cGxpY2EgZW0gYXQmIzIzMzsgMjQgaG9yYXMuPC9wPgogICAgICAg
-IDwvZGl2PgoKICAgICAgICA8IS0tIFJvZGFwJiMyMzM7IC0tPgogICAgICAgIDxkaXYgc3R5bGU9
-ImJhY2tncm91bmQtY29sb3I6ICNmMmYyZjI7IHBhZGRpbmc6IDEwcHg7IHRleHQtYWxpZ246IGNl
-bnRlcjsgZm9udC1zaXplOiAxNHB4OyBjb2xvcjogIzY2NjsiPgogICAgICAgICAgICA8cCBzdHls
-ZT0ibWFyZ2luOiAwOyI+TWVuc2FnZW0gYXV0b20mIzIyNTt0aWNhLCBuJiMyMjc7byAmIzIzMzsg
-bmVjZXNzJiMyMjU7cmlvIHJlc3BvbmRlci48L3A+CiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4K
-CjwvYm9keT4KPC9odG1sPgo=
-
---Z4cNFkfNgKxZWnLM=_x6LA4WP75hJ52U3x--
+Own the Icon - LOUlS VUlTTON Bags from Just $200!
+Timeless Elegance Starts at Just $200=20
+Discover our exclusive LOUlS VUlTTON collection, curated for those who=
+ love luxury and value. Click below to explore styles that turn heads.=
+=20
+Explore Now=20
+Click here to unsubscribe=20
 
 
+--__==___cbyo1pfmgkoq4pb2ihmsinexx9jea1bultzjhrj47o7uit10axmujhbjojpc7b7gdlupxvhtev5gmfinpwfdgb7uvc9aqjgrqdinb____==__
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: Quoted-Printable
 
---===============3570592848717348959==
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML=20
+lang=3Den><HEAD><TITLE>Own the Icon - LOUlS VUlTTON Bags from Just $20=
+0!</TITLE>
+<META charset=3DUTF-8>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.17037"><meta conte=
+nt=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+</head>
+<BODY=20
+style=3D"FONT-FAMILY: Arial, sans-serif; PADDING-BOTTOM: 0px; PADDING-=
+TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BACKGROU=
+ND-COLOR: #f2f2f2">
+<TABLE style=3D"MAX-WIDTH: 600px; MARGIN: auto; BACKGROUND-COLOR: #fff=
+fff"=20
+cellSpacing=3D0 cellPadding=3D0 width=3D"100%">
+  <TBODY>
+  <TR>
+    <TD=20
+    style=3D"PADDING-BOTTOM: 0px; TEXT-ALIGN: center; PADDING-TOP: 0px=
+; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><A=20
+      href=3D"https://i.dfghkjlsrktnoijglertg.ru/ghsadqwr/lll.html"=20=
+
+      target=3D_blank><IMG=20
+      style=3D"BORDER-TOP: 0px; HEIGHT: auto; BORDER-RIGHT: 0px; WIDTH=
+: 100%; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; DISPLAY: block"=20
+      alt=3D"LOUlS VUlTTON Bags from $200 =E2=80=93 Shop Now"=20
+      src=3D"https://i.dfghkjlsrktnoijglertg.ru/55.jpg"> </A></TD></TR=
+>
+  <TR>
+    <TD=20
+    style=3D"PADDING-BOTTOM: 10px; TEXT-ALIGN: center; PADDING-TOP: 25=
+px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px"><A=20
+      style=3D"FONT-SIZE: 24px; TEXT-DECORATION: none; FONT-WEIGHT: bo=
+ld; COLOR: #111111"=20
+      href=3D"https://i.dfghkjlsrktnoijglertg.ru/ghsadqwr/lll.html">Ti=
+meless=20
+      Elegance Starts at Just $200 </A></TD></TR>
+  <TR>
+    <TD=20
+    style=3D"PADDING-BOTTOM: 20px; TEXT-ALIGN: center; PADDING-TOP: 0p=
+x; PADDING-LEFT: 20px; PADDING-RIGHT: 20px"><A=20
+      style=3D"FONT-SIZE: 16px; TEXT-DECORATION: none; COLOR: #444444;=
+ LINE-HEIGHT: 1.5"=20
+      href=3D"https://i.dfghkjlsrktnoijglertg.ru/ghsadqwr/lll.html">Di=
+scover our=20
+      exclusive LOUlS VUlTTON collection, curated for those who love l=
+uxury and=20
+      value. Click below to explore styles that turn heads. </A></TD><=
+/TR>
+  <TR>
+    <TD style=3D"PADDING-BOTTOM: 30px; TEXT-ALIGN: center"><A=20
+      style=3D"FONT-SIZE: 16px; TEXT-DECORATION: none; COLOR: #ffffff;=
+ PADDING-BOTTOM: 12px; PADDING-TOP: 12px; PADDING-LEFT: 28px; DISPLAY:=
+ inline-block; PADDING-RIGHT: 28px; BACKGROUND-COLOR: #222222; border-=
+radius: 5px"=20
+      href=3D"https://i.dfghkjlsrktnoijglertg.ru/ghsadqwr/lll.html">Ex=
+plore Now=20
+      </A></TD></TR>
+  <TR>
+    <TD=20
+    style=3D"FONT-SIZE: 12px; COLOR: #999999; PADDING-BOTTOM: 10px; TE=
+XT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 20px; PADDING-RIGHT=
+: 20px"><A=20
+      style=3D"TEXT-DECORATION: none; COLOR: #999999"=20
+      href=3D"https://i.dfghkjlsrktnoijglertg.ru/un.html">Click here t=
+o=20
+      unsubscribe </A></TD></TR></TBODY></TABLE></BODY></HTML>
+
+
+--__==___cbyo1pfmgkoq4pb2ihmsinexx9jea1bultzjhrj47o7uit10axmujhbjojpc7b7gdlupxvhtev5gmfinpwfdgb7uvc9aqjgrqdinb____==__--
+
+
+
+--===============0032250849002555777==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3570592848717348959==
+--===============0032250849002555777==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -177,6 +188,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3570592848717348959==--
+--===============0032250849002555777==--
 
 
