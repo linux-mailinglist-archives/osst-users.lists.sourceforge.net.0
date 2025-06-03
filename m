@@ -2,91 +2,73 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id A8906ACAE27
-	for <lists+osst-users@lfdr.de>; Mon,  2 Jun 2025 14:41:55 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 700B4ACC151
+	for <lists+osst-users@lfdr.de>; Tue,  3 Jun 2025 09:42:21 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
-	MIME-Version:Message-ID:Date:To:From:Sender:Cc:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=Content-Transfer-Encoding:Content-Type:
+	Reply-To:From:List-Subscribe:List-Help:List-Post:List-Archive:
+	List-Unsubscribe:List-Id:Subject:MIME-Version:To:Date:Message-ID:Sender:Cc:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=Uqv4C+SthEHAbfhIc5pvN0ZWktciABT+qKvr40SBX8o=; b=liIJMvq0/eq1SDBt90tEyybZMi
-	emZl5q5QWPH4Lhsz3bD/Kb9S1B9n6MpAPOBgSW3K34j+8+bc9wVYUqdpKAUv00WNolfF+9wsHFEEr
-	6fygmMGBw8xlk6YFO/MUstK+bpL3B00Eqc5s9yrUDKKEBXDDYtPmg9VFYZrQCJXBuP1w=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=x2erYFn/zNeQITOMCq/xS9Z1MbLRepCOHYFiR1yNSsg=; b=bm5fjToMWDS5B2v/xGOfRH1bvS
+	hnQZk3uNUkbpNK3xeq34R9/34kj6BiYbwPMOB3s3R1i2anEdq3bM4DNo1nPH4jVV33UjguVyA6n3M
+	EiFJaV8CXuY4eEf3JMviJdlsuNwiFN+UdkhO94R1rmFKBs4EHJJuk6tznV09+k8HHMRI=;
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1uM4UE-00006d-He
+	id 1uMMHs-0006mF-8G
 	for lists+osst-users@lfdr.de;
-	Mon, 02 Jun 2025 12:41:54 +0000
+	Tue, 03 Jun 2025 07:42:20 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <jchavez@lanrosh.com>) id 1uM4UC-00006X-CT
- for osst-users@lists.sourceforge.net; Mon, 02 Jun 2025 12:41:52 +0000
+ (envelope-from <robert.paczkowski@venturio24.pl>) id 1uMMHp-0006m6-SM
+ for osst-users@lists.sourceforge.net; Tue, 03 Jun 2025 07:42:18 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :Message-ID:Date:Subject:To:From:Reply-To:Sender:Cc:Content-ID:
+ :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=PAAVrwcTV9NDA4RDsZnNTuCLU/gJw3QWjWO0Tyqyj3E=; b=kuC5Q8ASJoOdXRwsMMKtfd3hsU
- Xu8Uvut2qbvOh1c65903rG3qEQWtFeYerIpK4lraYaq1QROiusl1SWxcUfi15iDSbqynaS3dMceUG
- EvUTChpwyhIaWhq3dd8FW4RW3oy1Q61ZzndEMAwsWMZTNp3F18OgbwLti79Kq/0+pnbg=;
+ bh=6TDZiAAFZJCkeBY8vRGZ8ogEhxB1fYD0p3QhXI5haxA=; b=J9wZrCRDuGD8wo4aKulzyKm5s2
+ ei74spZVmr3ERgPupmsjp8j/5w70h/FvYh0zXcV8FHnlp9FBaqWohG6k61pjfXPHB04oCGo0LtetV
+ 63y1xnWPvULCfKAjRzPDRorurmQ3OeTcTA40EzvgKhuPbXzhI4k9wDRrgRKcd0HkCqjY=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
- Subject:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date
- :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=PAAVrwcTV9NDA4RDsZnNTuCLU/gJw3QWjWO0Tyqyj3E=; b=E
- 2dXyQBYq4VNoXqZNYxS83cF3gqZcDWMMsz+CGQLcRQw+hUO01fA2C8H6ThQIP6ouxeFu79YnEhqts
- SLRcqaanCRh6qMJ3GyKpsFj8d/B90upH3mlKK+93TIMLs1tCEgEziVpL0c/i+kOQWIQiTX/9G4Fhw
- vr7WYEDq58K0pPoE=;
-Received: from mail.ecsintl.com ([76.255.193.45])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1uM4U5-0005rQ-UN for osst-users@lists.sourceforge.net;
- Mon, 02 Jun 2025 12:41:52 +0000
-Received: from [109.248.151.17] (UnknownHost [109.248.151.17]) by
- mail.ecsintl.com with SMTP; Mon, 2 Jun 2025 03:11:18 -0500
-From: Dr.Allen Cheng <jchavez@lanrosh.com>
-To: osst-users@lists.sourceforge.net
-Date: 2 Jun 2025 09:11:17 +0100
-Message-ID: <20250602091117.01B4FA9C27D556D0@lanrosh.com>
+ List-Owner:List-Archive; bh=6TDZiAAFZJCkeBY8vRGZ8ogEhxB1fYD0p3QhXI5haxA=; b=V
+ sw71zQQ2kR23dJxcNcuXpT5QcutymvqNX96OmTaVi2OogrSYtgL+3vZNzQk6ys/fOYvreCymu+Qlo
+ QpvwwZuEWRlbcCUOsTFSsKDCJITT5avXUxl3t0ejAR3eGQfrAXDzazgidZXpz9hkd1flM8/kt8/Lx
+ La3EZ+gsuVldJs/U=;
+Received: from mail.venturio24.pl ([135.125.236.197])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1uMMHo-0003vJ-98 for osst-users@lists.sourceforge.net;
+ Tue, 03 Jun 2025 07:42:17 +0000
+Received: by mail.venturio24.pl (Postfix, from userid 1002)
+ id 15A7024356; Tue,  3 Jun 2025 07:41:22 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=venturio24.pl;
+ s=mail; t=1748936530;
+ bh=6TDZiAAFZJCkeBY8vRGZ8ogEhxB1fYD0p3QhXI5haxA=;
+ h=Date:From:To:Subject:From;
+ b=huOUAS4Lb6zvGiVWqsrBhZb35bQ4N36VSrqwVALtPjSM+NssGlWT1PEv6fZFClu2o
+ t3/rXVVqbnEX9w3/bANFij38eVS1WZXc9feD+jVumeCPPlHsAfnAY9anraC6DhvyZA
+ 2M5gSzLoNIXP0NnyhEHhsLfwUbXzT1CfhqjGfJyvdXUj0d6ILg6EVZyMHZ8hzn7ChQ
+ ebG4FJTrX1IRVE+6/cN7RTsVQpLgSR7G9TL63iD9arktYFgXDQGFHnKqwRKVGumbwq
+ At0BqBfJvtz/LvMQa7y+w52VsUAyq6dBxaxu4ub3zCS4J8CEn9yQb0Jc+H6ejhDCbo
+ KXPRK1CEBIAbg==
+Received: by mail.venturio24.pl for <osst-users@lists.sourceforge.net>;
+ Tue,  3 Jun 2025 07:40:55 GMT
+Message-ID: <20250603064500-0.1.6t.r1ye.0.f5t28h2h9w@venturio24.pl>
+Date: Tue,  3 Jun 2025 07:40:55 GMT
+To: <osst-users@lists.sourceforge.net>
+X-Mailer: mail.venturio24.pl
 MIME-Version: 1.0
-X-Spam-Score: 3.8 (+++)
-X-Spam-Report: Spam detection software,
- running on the system "util-spamd-1.v13.lw.sourceforge.com", 
- has NOT identified this incoming email as spam.  The original
- message has been attached to this so you can view it or label
- similar future email.  If you have any questions, see
- the administrator of that system for details.
- Content preview:  Hello osst-users, I sent you a message a few hours ago but
- I haven't gotten a response yet, or you didn't get it? I would like to know
- if any concerns have prevented you from responding. Could you read my letter
- and re [...] 
- Content analysis details:   (3.8 points, 6.0 required)
- pts rule name              description
- ---- ---------------------- --------------------------------------------------
- 0.0 RCVD_IN_VALIDITY_RPBL_BLOCKED RBL: ADMINISTRATOR NOTICE: The
- query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [76.255.193.45 listed in bl.score.senderscore.com]
- 0.0 RCVD_IN_VALIDITY_CERTIFIED_BLOCKED RBL: ADMINISTRATOR NOTICE:
- The query to Validity was blocked.  See
- https://knowledge.validity.com/hc/en-us/articles/20961730681243
- for more information.
- [76.255.193.45 listed in sa-accredit.habeas.com]
- 1.0 SPF_SOFTFAIL           SPF: sender does not match SPF record (softfail)
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in
- digit [allencheng0157[at]gmail.com]
- 0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
-X-Headers-End: 1uM4U5-0005rQ-UN
-Subject: Re: [Osst-users] CORRESPONDENCE
+X-Headers-End: 1uMMHo-0003vJ-98
+Subject: [Osst-users] =?utf-8?b?V3Nww7PFgnByYWNh?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -98,48 +80,19 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: "Dr.Allen Cheng" <allencheng0157@gmail.com>
-Content-Type: multipart/mixed; boundary="===============7357066786733437196=="
+From: Robert Paczkowski via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Robert Paczkowski <robert.paczkowski@venturio24.pl>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============7357066786733437196==
-Content-Type: text/html
-Content-Transfer-Encoding: quoted-printable
-
-<!DOCTYPE HTML>
-
-<html><head><title></title>
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-</head>
-<body style=3D"margin: 0.4em;">
-<p>Hello osst-users,</p><p>I sent you a message a few hours ago but I haven=
-'t gotten a response yet, or you didn't get it? I would like to know if any=
- concerns have prevented you from responding. Could you read my letter and =
-reply? I want to make an inquiry</p><p>Thanks.</p><p>Dr.Allen Cheng</p><p>R=
-esearch Assistant &amp; Dermatologist<br>First Gapore Industries LTD</p><p>=
-</p><p></p>
-
-
-</body></html>
-
-
-
---===============7357066786733437196==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---===============7357066786733437196==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
-
---===============7357066786733437196==--
+RHppZcWEIGRvYnJ5LCAKCkN6eSBpbnRlcmVzdWplIFBhxYRzdHdhIHBvenlza2FuaWUgbm93eWNo
+IGtsaWVudMOzdz8KClpham11amVteSBzacSZIHByb2Zlc2pvbmFsbmllIHdzcGFyY2llbSBmaXJt
+IHcgdHltIHpha3Jlc2llLiAKCk5hc2kgcGFydG5lcnp5IHp5c2t1asSFIHN0YcWCeSBuYXDFgnl3
+IG5vd3ljaCB6bGVjZcWEIG9yYXogemFtw7N3aWXFhCwgYSB0eW0gc2FteW0gendpxJlrc3phasSF
+IHN3b2plIHd5bmlraSBzcHJ6ZWRhxbx5LgoKQ3p5IG1vxbxlbXkgcHJ6ZWRzdGF3acSHIHN6Y3pl
+Z8OzxYJ5IGRvdHljesSFY2UgemFzYWQgaSBtb8W8bGl3b8WbY2kgd3Nww7PFgnByYWN5PwoKClBv
+emRyYXdpYW0KUm9iZXJ0IFBhY3prb3dza2kKCgpfX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fXwpPc3N0LXVzZXJzIG1haWxpbmcgbGlzdApPc3N0LXVzZXJzQGxp
+c3RzLnNvdXJjZWZvcmdlLm5ldApodHRwczovL2xpc3RzLnNvdXJjZWZvcmdlLm5ldC9saXN0cy9s
+aXN0aW5mby9vc3N0LXVzZXJzCg==
