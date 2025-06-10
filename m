@@ -2,135 +2,104 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 1D3CDAD0777
-	for <lists+osst-users@lfdr.de>; Fri,  6 Jun 2025 19:27:13 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 1F197AD3F6B
+	for <lists+osst-users@lfdr.de>; Tue, 10 Jun 2025 18:47:44 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Transfer-Encoding:Content-Type:
-	Reply-To:List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:
-	List-Id:Subject:MIME-Version:Date:To:Message-ID:From:Sender:Cc:Content-ID:
-	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
-	:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=eFgOz6tRJ5AVjuxjVy887OGRhF3dCe6ZEOuQIhfWV1Y=; b=ll1ns92u0GdjEdn7dyi3mN7cMs
-	5VBgKTVXVr82D6dXzx6yi81iEkS+Ws1TGUlWSSB2G5iv2s76Q5ywTGZQVB5MwkE550Q3Sk+7JmkSg
-	ZKNiBN1Zzw98VSCpiWFWNOPig89KGGPp/Ze4aTtoHm35QFiczRjFgJd6jlJDo9+QZSZw=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
+	MIME-Version:Message-ID:Date:To:Sender:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=imgjA9s1RkjBeVV0nN87fDPhekKo7wok+tTdT9WyIkg=; b=haKIVxfnxFrMYQ96Jf0A2WhIRM
+	4x9q0S6+XZEsRCqKRVz4bLMVmXvJRSubsw0Ud5cGVWpCB5crDto/dWE2+nNZJNaqt4RHpIMpWvSCt
+	LJ1thxlUOa/iLzFDY4U1BX6nvQOaO44UkVf3810A6jpT0V2vHVv/ZPyEVGIaQKoWoT9o=;
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1uNaqV-0003zf-Sj
+	id 1uP28U-0006fy-Uj
 	for lists+osst-users@lfdr.de;
-	Fri, 06 Jun 2025 17:27:11 +0000
+	Tue, 10 Jun 2025 16:47:42 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <mdjasimuddin7517@gmail.com>) id 1uNaqU-0003zX-U0
- for osst-users@lists.sourceforge.net; Fri, 06 Jun 2025 17:27:10 +0000
+ (envelope-from <supply@neom-partners-registration.cfd>)
+ id 1uP28N-0006fo-LS for osst-users@lists.sourceforge.net;
+ Tue, 10 Jun 2025 16:47:35 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Subject:To:Reply-To:
- Message-ID:From:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Message-ID:Date:Subject:To:From:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=roul7bKIit+eMfWO06AQLeI15PRrod1dzMvSnJ8xMss=; b=IpboLR3Ey94o8wnSV0jopBvtMI
- OVlL7lgqeThUkcFQTJqqtlAwETemgyeYe/0z3p+a1SYA8Ux98ag82UkcJEIYfVPIaMdfOLq55tH0I
- TIhHEyE7Nn+hmJAWbQ2J1182DHrN9XXpBDrfN6odlAXKpK4BnmX+5uF+DJEXx6SkmJCg=;
+ bh=f947/MCOkoI2zCzK+HnIrOV7dRubT7f+3T8ZdQl02rk=; b=arOw1Ad0y05hYoQ/KV14RMGc3v
+ Z2UoFNUtAwqKICu1yAj7Ivj8najtWXAJ/oAuM+WkqlfOtHOWbOtb3/r3mP2TaCdslhmH59PZnxHaq
+ 4c5PjCTAzhg8lytaT0yiAw72GQeB+E5iDNWPQdAtX6blbfumPmRpIuWnxOVuDEwQchbc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Date:Subject:To:Reply-To:Message-ID:From:Sender
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:
+ Subject:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date
+ :Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=roul7bKIit+eMfWO06AQLeI15PRrod1dzMvSnJ8xMss=; b=B
- SULqZipiGZ1DgFfQGmtaH2cwYZYiRFynFCfgTAob76YE6n+NDDug6u7SeyKfKMZVyebUYPOjRcBmS
- FmmWUvrsk4i2SneoosiO/5DDzcw9ELkQLTcvhIbF7f7vzMyfX1qKI3XbwZwUrPFNk5PimWQeb3jdy
- GNQxGBDlIJN+Fb70=;
-Received: from mail-pj1-f65.google.com ([209.85.216.65])
+ List-Owner:List-Archive; bh=f947/MCOkoI2zCzK+HnIrOV7dRubT7f+3T8ZdQl02rk=; b=A
+ xVR4rTx3+t51pC1OFZI4YYXV8GpzPwG5Szqdz92MvGnLVyR/ZvMLX+lG3NpVaPa3+dFk0PPFrvSFH
+ +CfgTS+u7uucyVZwPuyGlOn9EQhoilJzNncGU6W3ucJyQ8Pc0M4Q3Jich1BKkRDTeAz/W8W2UR/ca
+ XToFMUfru2bvfwCk=;
+Received: from box.neom-partners-registration.cfd ([82.29.128.63])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.95)
- id 1uNaqU-000715-FQ for osst-users@lists.sourceforge.net;
- Fri, 06 Jun 2025 17:27:10 +0000
-Received: by mail-pj1-f65.google.com with SMTP id
- 98e67ed59e1d1-311da0bef4aso2389082a91.3
- for <osst-users@lists.sourceforge.net>; Fri, 06 Jun 2025 10:27:08 -0700 (PDT)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
- d=gmail.com; s=20230601; t=1749230822; x=1749835622; darn=lists.sourceforge.net;
- h=mime-version:date:subject:to:reply-to:message-id:from:from:to:cc
- :subject:date:message-id:reply-to;
- bh=roul7bKIit+eMfWO06AQLeI15PRrod1dzMvSnJ8xMss=;
- b=lDh+uhHZUcVM7AFjvJ2VCAkxQINih/BHDfRBGw5a9t+Bfcvjr+E7UL7PK/cKOXs/BV
- JyU3nUTXm5Cq5XGenY6RvPwizZhS5Vj0B77tm56S1/MNChLh/ziQh3hNFz/Gu+ckho0K
- MaIV4ALWxbrNy/qtdpitIvUNMWolU8VoAIbpS08082ZwrAfPY+Yxr2P057PacLFmM+zZ
- Xo6TJW8NWo6QEemgLvj8TG2pcF1ZopR1NwMd6QeW35Booz2AIt6jfxgz1M2DicPE6GUX
- did8pI0Aao748zDkyyZuzLkpp/eFvJPEtni+duH3JQYYsarIbpqLgITCX63rCdVdCf6u
- eiWQ==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
- d=1e100.net; s=20230601; t=1749230822; x=1749835622;
- h=mime-version:date:subject:to:reply-to:message-id:from
- :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
- bh=roul7bKIit+eMfWO06AQLeI15PRrod1dzMvSnJ8xMss=;
- b=CcL9Z2gZeEYPfje+MQf6KXfo4J3pwlK/BfdwYv5vwYXTHaUBCdGRsyk8hh/yAVpx+m
- daOKACIL8ye0WwXmIFY2oU3ncaitO/8CfbrFQXjbe/ApCdCnA997R0b4T/4D26Kg2Ugs
- zr9KQA4wnsRLsl9MK2b9hVOGhNj9/ZdrzfI07Ht8A8p/1vPB/M/C1TEScgMXZLz/jH24
- U5oGn9Gb+qtT430VbQX+s3uB8gDoqbpl7TuvYzqrtrwg5GNgmA13z2hYnenEJnnnfvHo
- 52sm6G+Zb7vPDHJWJMFzzHDz/Gw46mmH0F+vqyY5WysFDvQdAsOkSDILFtur3d5uWa8r
- f8RQ==
-X-Gm-Message-State: AOJu0YxtDueyqVmaJyIvZDe1LoUtGh70bfiFsVydPuKTGG8NkYmc5V9O
- OLlIhYYgI93ZeIbjdn5ljivVEiBjfQ6gMvA9j7BwmAeo//vM3QVdsEpzpi3ozWv8
-X-Gm-Gg: ASbGncs9oIU0vv+OoAykSQLAK+6fyntLTrmvoelJsXpVl6DKqX8Xftc+TOoiwZ6SMX2
- gwtwLuKZUoSaCfyWBlMQ5u2Ta3wpnv+zRt/9OE2fhSYS5l3nbXPSJDUjugYvvaw320PXExsiO+x
- pTm4ZMKL6jHTPwR1kdc7ZsNwMVr2CY9K0jtbnZwVbK/JkbHDO1fYcZjC6CvpH/1V7Px3r/1ibG5
- aTpNXSM5at1j3xVOb80+rdxe74zPycArYxaYQ/z1HZaZ5VydT+S437CkJhiH15JC8FiMrIdcdad
- vIXommpOqPjyVvPwO5ezTuQe041t1auFgDntbOiRvSJ+wBILaskYeVs/bDHoZAgIt2niTFMHFqR
- GyJSZu3WvFG6myHJs
-X-Google-Smtp-Source: AGHT+IGWRCiVApJTZv9bRi18/W74MMwdYMRq9EY3hc8yLHcm/7CVGiyFnREQX/KKfr7nAmcz9ogQAg==
-X-Received: by 2002:a17:90b:540c:b0:313:14b5:2525 with SMTP id
- 98e67ed59e1d1-31347798193mr6327133a91.35.1749230822400; 
- Fri, 06 Jun 2025 10:27:02 -0700 (PDT)
-Received: from [103.237.86.211] ([103.237.86.211])
- by smtp.gmail.com with ESMTPSA id
- 98e67ed59e1d1-3134b0903fcsm1630505a91.21.2025.06.06.10.27.01
- for <osst-users@lists.sourceforge.net>
- (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
- Fri, 06 Jun 2025 10:27:01 -0700 (PDT)
-From: Carol- USAID <mdjasimuddin7517@gmail.com>
-X-Google-Original-From: Carol- USAID <Carol.gil@usaid.net>
-Message-ID: <77e2856ad8e398d11f1694d0fa0662d14b57c952e9592929299a69d07e458623@mx.google.com>
+ id 1uP28N-00047t-22 for osst-users@lists.sourceforge.net;
+ Tue, 10 Jun 2025 16:47:35 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+ d=neom-partners-registration.cfd; s=mail; t=1749572968;
+ bh=f947/MCOkoI2zCzK+HnIrOV7dRubT7f+3T8ZdQl02rk=;
+ h=From:To:Subject:Date:From;
+ b=kp8DsETFZ0IQZcsAL3pCO4T+VGBecnn0N8t0COh9Xlke+aqmiMHQz3rb3sDwGnKIU
+ K+OeyHwQKKR8kifvtlTW4ELqUER60LYZCKMT9o2SxweV1TyXeiOZk3w5qHjZz+O54H
+ A58JgPaErCOLoZ12v3THG7af+liSX5cXDLG0zEpC+ZyW8EV8U85Vn8U7KmNE5fUPk+
+ Qe2YRn8zxUkAGR3Scgo+JxynJYWkAmGsjq+AALYka1g0DbTLeHIRTrvYigkEVrdm1d
+ emUx3+TpDlOUFTz0u7kKNGMeyuWCulr1lAOH7uu1K7iGcuUI86Bgw+HUypsAP5ucaJ
+ kWhh64q8w9DdQ==
+Received: from authenticated-user (box.neom-partners-registration.cfd
+ [82.29.128.63])
+ (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+ (No client certificate requested)
+ by box.neom-partners-registration.cfd (Postfix) with ESMTPSA id 6FD3086F2F
+ for <osst-users@lists.sourceforge.net>; Tue, 10 Jun 2025 11:29:28 -0500 (CDT)
 To: osst-users@lists.sourceforge.net
-Date: Fri, 06 Jun 2025 17:27:00 +0700
+Date: 10 Jun 2025 09:29:27 -0700
+Message-ID: <20250610092927.37E5323719CC4E6A@neom-partners-registration.cfd>
 MIME-Version: 1.0
-X-Spam-Score: 2.4 (++)
-X-Spam-Report: Spam detection software,
- running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
+X-Spam-Score: 1.9 (+)
+X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts.colo.sdot.me",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Hello, I'm giving out my late husband's Yamaha Baby Grand
- Piano to any passionate instrument lover, kindly let me know if you will be
- interested or have someone who will. Thanks, Carol. 
- Content analysis details:   (2.4 points, 5.0 required)
- pts rule name              description
+ 
+ Content preview:  I hope my email finds you well. We would like to invite you
+    to be part of the NEOM Giga projects—an exceptionally unique initiative
+    and game-changer in the future of urban living and sustainability. As we
+   forge ahead in building i [...] 
+ 
+ Content analysis details:   (1.9 points, 5.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+  0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+                             [82.29.128.63 listed in wl.mailspike.net]
+  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL blocklist
+                             [URI: neom-partners-registration.cfd]
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- 1.1 DATE_IN_PAST_06_12     Date: is 6 to 12 hours before Received: date
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
- [carolgilmore71(at)outlook.com]
- 0.2 FREEMAIL_ENVFROM_END_DIGIT Envelope-from freemail username ends in
- digit [mdjasimuddin7517(at)gmail.com]
- 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
- [mdjasimuddin7517(at)gmail.com]
- 0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
- [209.85.216.65 listed in wl.mailspike.net]
- 0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
- 1.0 FREEMAIL_REPLYTO       Reply-To/From or Reply-To/body contain different
- freemails
-X-Headers-End: 1uNaqU-000715-FQ
-Subject: [Osst-users] June 06 25
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+X-Headers-End: 1uP28N-00047t-22
+Subject: [Osst-users] NEOM: (Invite 726365): Your Invitation to an
+ Innovative Business Opportunity
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -142,29 +111,484 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: carolgilmore71@outlook.com
-Content-Type: text/plain; charset="us-ascii"
-Content-Transfer-Encoding: 7bit
+From: Abdul Wahhab - NEOM via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Abdul Wahhab - NEOM <supply@neom-partners-registration.cfd>
+Content-Type: multipart/mixed; boundary="===============0835688427170044410=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-Hello,
-I'm giving out my late husband's Yamaha Baby Grand Piano to any passionate instrument lover, kindly let me know if you will be interested or have someone who will.
+--===============0835688427170044410==
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
 
-Thanks,
+<!DOCTYPE HTML>
 
-Carol.
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"GENERATOR" content=3D"MSHTML 8.00.7601.17514"></head>
+<body style=3D"margin: 0.4em;"><p>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>I hope my email f=
+inds you well.</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>We would like to =
+invite you to be part of the NEOM Giga projects&#8212;an exceptionally uniq=
+ue initiative and game-changer in the future of urban living and sustainabi=
+lity.</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>As we forge ahead=
+ in building iconic projects such as The Line, Oxagon, Trojena, and Sindala=
+h, we welcome your involvement in one of the most ambitious endeavors globa=
+lly.</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>For the first tim=
+e, NEOM Group is extending an unprecedented invitation to vendors worldwide=
+=2E</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>This exclusive op=
+portunity allows companies to contribute to a project of remarkable scale a=
+nd vision.</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>Vendor registrati=
+on is now open to companies across diverse industries, including but not li=
+mited to Real Estate, Design &amp; Construction, Education, Energy, Enterta=
+inment &amp; Culture, Financial Services,</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>Food, Health &amp=
+; Wellbeing, Manufacturing, Media, Mobility, Sport, Technology &amp; Digita=
+l, Tourism, and Water. This process ensures that all interested parties rec=
+eive Invitations to Tender (ITT) or Requests for Quotations (RFQ),</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>facilitating a th=
+orough evaluation of their financial standing, capabilities, and suitabilit=
+y for NEOM&#8217;s visionary projects.</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>Participation is =
+open globally, and registration is entirely free. Simply request the offici=
+al NEOM Vendor Registration Questionnaire (VRQ) and Expression of Interest =
+(EOI) form to confirm your interest.</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>Don&#8217;t miss =
+this chance to be part of a transformative journey that is shaping history.=
+</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>We eagerly antici=
+pate your participation and the opportunity to build the future together.</=
+span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>&nbsp;&nbsp;</spa=
+n>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>Regards,</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'></p>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'><p>Abdul Wahhab</=
+p></span><p>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>Global&nbsp;Suppl=
+y Manager</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>NEOM Headquarters=
+</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>Tabuk Province,</=
+span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>Kingdom of Saudi =
+Arabia</span>
+<br style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px; l=
+etter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "Seg=
+oe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"=
+; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0px;=
+ white-space: normal; box-sizing: border-box; orphans: 2; widows: 2; backgr=
+ound-color: rgb(255, 255, 255); font-variant-ligatures: normal; font-varian=
+t-caps: normal; -webkit-text-stroke-width: 0px;=20
+text-decoration-thickness: initial; text-decoration-style: initial; text-de=
+coration-color: initial; scrollbar-color: rgb(159, 161, 167) rgba(0, 0, 0, =
+0); scrollbar-width: thin;'>
+<span style=3D'color: rgb(0, 0, 0); text-transform: none; text-indent: 0px;=
+ letter-spacing: 0.05px; font-family: -apple-system, BlinkMacSystemFont, "S=
+egoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoj=
+i"; font-size: 16px; font-style: normal; font-weight: 400; word-spacing: 0p=
+x; float: none; display: inline !important; white-space: normal; orphans: 2=
+; widows: 2; background-color: rgb(255, 255, 255); font-variant-ligatures: =
+normal; font-variant-caps: normal;=20
+-webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-de=
+coration-style: initial; text-decoration-color: initial;'>eMail: <a href=3D=
+"mailto:supply@neom-partners-registration.com">supply@neom-partners-registr=
+ation.com</a></span></p></body></html>
 
 
+--===============0835688427170044410==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
 
 
-
-
-
-
-
-
+--===============0835688427170044410==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
 
 _______________________________________________
 Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
+
+--===============0835688427170044410==--
