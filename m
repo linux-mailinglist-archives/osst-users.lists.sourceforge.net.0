@@ -2,98 +2,110 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 615C3AE956F
-	for <lists+osst-users@lfdr.de>; Thu, 26 Jun 2025 07:55:06 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id E02EFAEC443
+	for <lists+osst-users@lfdr.de>; Sat, 28 Jun 2025 04:41:43 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
-	MIME-Version:Message-ID:To:Date:Sender:Cc:Content-Transfer-Encoding:
-	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=ZGAoqOugrSOXXmQ5hvpBGV8rckvtA5HBotLiSZHRPY0=; b=iZIamvV3axY7S7q3CvT16cAleB
-	dLLy06zdwh2BFzLa61YaPazgVA6/c345aj1Az6qmiAz9arCfKKcewgbxRXV+bHIi5Mlun9vvSPQgO
-	VoL+G4uEcsP2GxH4mfNh6S9FxxxgUxto7iCwVBCtMhICtZvznMhr6HJ9FEP8ptl8aX+8=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Message-ID:
+	Date:To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=LkeGZhNAFRxfMFb69S45G+fmf6Ft7CdKwlD+Sfos/nc=; b=iy3MJIIkCOlTM3q5LvvvvptfK9
+	GSUIyz6vXdOQJ9VL/aFBb6dmTSqDURrnHXcw/JLU48p1ysHCUylNC1NJvI0WWKn+Xdu6CdBlstnZv
+	RhwMESBPvSyZMTqVSamNmAai+IRDaGPST4b03Do6a9ryIeka0MNcZN+XrlSowAUKEw+k=;
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1uUfZg-0005ud-QO
+	id 1uVLVe-0001jR-3M
 	for lists+osst-users@lfdr.de;
-	Thu, 26 Jun 2025 05:55:04 +0000
+	Sat, 28 Jun 2025 02:41:42 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <bounce-3716-6919112-3716-248@amxdzx.com>)
- id 1uUfZe-0005uX-UL for osst-users@lists.sourceforge.net;
- Thu, 26 Jun 2025 05:55:02 +0000
+ (envelope-from <mailing@ml.ufficiogadget.info>) id 1uVLVc-0001jL-9W
+ for osst-users@lists.sourceforge.net; Sat, 28 Jun 2025 02:41:40 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:Content-Transfer-Encoding:MIME-Version
- :List-Unsubscribe:Message-ID:Subject:Reply-to:From:To:Date:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=70aa5yMnbDUJEiCXw66p7ed9B5LAqMjpP1qr2Xcc5PI=; b=Q9o+cc6KBz9gCyeH0qAgCcP7Yr
- D/QiupjBjfoEC0OGeTAwUyHldkeFDjcXbWN3tr9jGo8bmqNkUWSOLkak0c2HPayc5lVm000BrkpJV
- +t5HYNpcLHWZhTGZ7sAQJyna5ObOTBfdw7FgGp/Obz+aYuwLrqPlVwLEaa24nx1P8bQ8=;
+ d=sourceforge.net; s=x; h=Message-ID:Date:Content-Type:Subject:To:Reply-To:
+ From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=bdBIy2bSWNKMidga1kU/RW/r93E2ALxoMj5sbESIa0Y=; b=LrZ99/0+shlGll9EzQh9kS9Xap
+ GALaXc0RUG05Vb8YUM0Fnef0b+oIsM1VhE+X53LP9wiSrblbeA10UoQuDpW/6mrGqAy4oQCFriom2
+ CQOyYNRUAu54O1aZGoredU5c129QNbp/qJKVfYaKxzbgR0HxHeXKpghvzlHwRIX0RSnM=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:Content-Transfer-Encoding:MIME-Version:List-Unsubscribe:
- Message-ID:Subject:Reply-to:From:To:Date:Sender:Cc:Content-ID:
+ h=Message-ID:Date:Content-Type:Subject:To:Reply-To:From:MIME-Version:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=bdBIy2bSWNKMidga1kU/RW/r93E2ALxoMj5sbESIa0Y=; b=i
+ 2eGn9LNStYxexyrx/V4vmT6fyanYt0XevGMmx88Rk0oqwbIX4Bwgj7VzzyFLiU79dDVdk1+npzDy6
+ HGYZzRT92UB0/LHiUpDDEh8/e7eASPMNS3DuXXitiL0rF72wy4JdIPGnwe8Rm0U+g+Q1ko4tSuijc
+ mg8Nn6g0pyDPRXFU=;
+Received: from ml013.dnshigh.com ([193.70.146.198])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1uVLVa-0001ho-Us for osst-users@lists.sourceforge.net;
+ Sat, 28 Jun 2025 02:41:40 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+ d=ml.ufficiogadget.info; s=default; h=Message-ID:Date:Content-Type:Subject:To
+ :Reply-To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=70aa5yMnbDUJEiCXw66p7ed9B5LAqMjpP1qr2Xcc5PI=; b=JKda98WDOHK5brrTvwZQWbcFM/
- z+8KFeP5ZVZEh2U0dSdOBREWko96cCmESLQyNr7gz/TtwGlNohc9L5MjbmqasAFLjl9Ac1YCBH51V
- HEQa0P+jNx46J4netuZhZPWaKSrgn/N2aKLdxe2R6Vb0y6l+owBwnyqiKOvHc3Pzbluw=;
-Received: from [103.119.3.31] (helo=a.amxdzx.com)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1uUfZe-0007qG-EU for osst-users@lists.sourceforge.net;
- Thu, 26 Jun 2025 05:55:02 +0000
-Received: by a.amxdzx.com id hbjgbc0e97ci for
- <osst-users@lists.sourceforge.net>;
- Thu, 26 Jun 2025 13:54:51 +0800 (envelope-from
- <bounce-3716-6919112-3716-248@amxdzx.com>)
-Date: Thu, 26 Jun 2025 05:54:50 +0000
-To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-Message-ID: <95f3b8547c76a66eff202ac4dddd24b7@103.119.3.31>
-X-Priority: 3
-X-Mailer: Email Sending System
-X-Complaints-To: test@test.com
-X-MessageID: MTh8fHx8MzM5MTd8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8MTh8fHx8MXx8fHww
-X-Report-Abuse: <http://103.119.3.31/oem/report_abuse.php?mid=MTh8fHx8MzM5MTd8fHx8b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXR8fHx8MTh8fHx8MXx8fHww>
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=bdBIy2bSWNKMidga1kU/RW/r93E2ALxoMj5sbESIa0Y=; b=DUN6NV8xvkjlJ+HetV3EP9mTMW
+ U4JXaQ8lzSxMANCrHqf55G7nhf9sCG2s62DIumaAlP0gp3URVeOMX5C9cA+jDpi8UMOuYdB5sJNNc
+ D7lKEU51f93TdkiImvLl9UL1nrVR7fI7sUwdyGZ/dGB/mZSWgthNj6t6kiHqxAol8UH5N4A8jq9nD
+ 5lbuKKKQtlBYlI+oDQKG2h+79b5pkhncA162856ztny3iVoBRYZf1cqNNGrrAnYHEcCXhyLJRt3Pf
+ XbvRKOfaghU1GdlKIzsILO7rUsOEBGkkcAZbhYce+9qfK2bmOa0ipYxHMk2EC5SFGTHl+ZCN68Tx1
+ qBayqJtQ==;
+Received: from host-87-15-90-20.retail.telecomitalia.it ([87.15.90.20]:60486)
+ by ml013.dnshigh.com with esmtpa (Exim 4.98.2)
+ (envelope-from <mailing@ml.ufficiogadget.info>)
+ id 1uVLVZ-0000000A9wv-2FdX for osst-users@lists.sourceforge.net;
+ Sat, 28 Jun 2025 04:41:37 +0200
 MIME-Version: 1.0
-X-Spam-Score: 7.8 (+++++++)
-X-Spam-Report: Spam detection software,
- running on the system "sfi-spamd-2.hosts.colo.sdot.me", 
- has identified this incoming email as possible spam.  The original
+From: "Toner Compatibili" <mailing@ml.ufficiogadget.info>
+To: osst-users@lists.sourceforge.net
+Date: Sat, 28 Jun 2025 04:41:27 +0200
+Message-ID: <216839770535222033638@DESKTOP-NINSNT7>
+X-AntiAbuse: This header was added to track abuse,
+ please include it with any abuse report
+X-AntiAbuse: Primary Hostname - ml013.dnshigh.com
+X-AntiAbuse: Original Domain - lists.sourceforge.net
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - ml.ufficiogadget.info
+X-Get-Message-Sender-Via: ml013.dnshigh.com: authenticated_id:
+ mailing@ml.ufficiogadget.info
+X-Authenticated-Sender: ml013.dnshigh.com: mailing@ml.ufficiogadget.info
+X-Spam-Score: 4.3 (++++)
+X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts.colo.sdot.me",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview: Untitled document To our valued clients in the foreign trade
- industry, please review the following information. 
- Content analysis details:   (7.8 points, 5.0 required)
- pts rule name              description
+ 
+ Content preview:  Hai una stampante da rifornire? Ci pensiamo noi! 💼 Toner
+    compatibili di alta qualita', con rapporto prezzo/qualita' imbattibile 
+ 
+ Content analysis details:   (4.3 points, 5.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [103.119.3.31 listed in dnsbl-1.uceprotect.net]
- 0.0 FREEMAIL_FROM Sender email is commonly abused enduser mail provider
- [2651061613(at)qq.com]
- 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
- [2651061613(at)qq.com]
- 0.0 NUMERIC_HTTP_ADDR      URI: Uses a numeric IP address in URL
- 0.0 NORMAL_HTTP_TO_IP      URI: URI host has a public dotted-decimal IPv4
- address
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 2.2 HTML_TITLE_SUBJ_DIFF   No description available.
- 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
- 0.0 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and EnvelopeFrom
- freemail headers are different
- 0.0 SPOOFED_FREEMAIL_NO_RDNS From SPOOFED_FREEMAIL and no rDNS
- 0.0 SPOOFED_FREEMAIL       No description available.
-X-Headers-End: 1uUfZe-0007qG-EU
-Subject: [Osst-users] hi
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  2.0 MIXED_HREF_CASE        Has href in mixed case
+  2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
+X-Headers-End: 1uVLVa-0001ho-Us
+Subject: [Osst-users] Hai finito il Toner? Ti offriamo Qualita' Top,
+ prezzi bassi e sconti, per i nostri Toner compatibili
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -105,221 +117,147 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: arlene via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: arlene <2651061613@qq.com>
-Content-Type: multipart/mixed; boundary="===============8591670648652769068=="
+Reply-To: toneritaliani@gmail.com
+Content-Type: multipart/mixed; boundary="===============6149196094907837991=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============8591670648652769068==
+
+--===============6149196094907837991==
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_001_0600_539B7FA5.7622374C"
+
+
+------=_NextPart_001_0600_539B7FA5.7622374C
+Content-Type: text/plain; charset="utf-8"
 Content-Transfer-Encoding: quoted-printable
+
+=20
+
+=20
+
+Hai una stampante da rifornire=3F Ci pensiamo noi!
+
+=F0=9F=92=BC Toner compatibili di alta qualita', con rapporto prezzo/qualit=
+a' imbattibile
+
+
+=E2=9C=85 100% compatibili e di qualita' paragonabile ai toner originali
+=E2=9C=85 Stampa nitida e duratura
+=E2=9C=85 Spedizione veloce e gratuita per ordini di almeno 50,00=E2=82=AC
+
+=F0=9F=8E=81 Offerte speciali
+
+Ti riserviamo uno sconto dal 10% al 20% per acquisti di almeno 3 o 4 toner =
+neri ( dipende dal modello ) mentre sono disponibili sconti anche per le st=
+ampanti con toner a colori, sempre fino al 20%
+
+=F0=9F=94=8D Hai bisogno di aiuto a trovare il toner giusto=3F Il nostro se=
+rvizio clienti =C3=A8 sempre a tua disposizione. Rispondi a questa email co=
+municando il modello della tua stampante e ti invieremo un preventivo senza=
+ impegno.
+
+=F0=9F=91=89 Puoi anche chiederci un preventivo inviando una email al nostr=
+o indirizzo: toneritaliani@gmail.com Ti invieremo anche i nostri contatti e=
+ recensioni.
+
+A presto.
+
+
+La tua stampante merita il meglio, e tu meriti di risparmiare.
+
+=20
+
+Se hai ricevuto questa email per errore, per favore comunicacelo, Nel caso =
+desideri essere cancellato rispondi a questa email con "cancellami" Oppure =
+premi qui ed invia per cancellarti
+
+=20
+
+
+------=_NextPart_001_0600_539B7FA5.7622374C
 Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
-w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head>
-<title>Untitled document</title>
-</head>
-<body>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>To our valued clients in t=
-he foreign trade industry, please review the following information.</b></di=
-v>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>=E6=88=91=E5=8F=B8=E6=8F=
-=90=E4=BE=9B=E7=9A=84=E6=98=AF=E4=B8=80=E6=AC=BE=E5=A4=96=E8=B4=B8AI=E4=B8=
-=BB=E5=8A=A8=E8=8E=B7=E5=AE=A2=E7=B3=BB=E7=BB=9F=EF=BC=8C14=E5=B9=B4=E6=9D=
-=A5=E4=B8=93=E6=B3=A8=E4=B8=BA=E5=A4=96=E8=B4=B8=E5=87=BA=E6=B5=B7=E4=BC=81=
-=E4=B8=9A=E6=8F=90=E4=BE=9B=E4=BD=8E=E6=88=90=E6=9C=AC=E4=B8=BB=E5=8A=A8=E8=
-=8E=B7=E5=AE=A2=E8=A7=A3=E5=86=B3=E6=96=B9=E6=A1=88=E3=80=82</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>=E6=A0=B8=E5=BF=83=E4=BA=
-=A7=E5=93=81=E5=8C=85=E6=8B=AC=E6=B5=B7=E5=A4=96=E9=87=87=E8=B4=AD=E5=95=86=
-=E6=95=B0=E6=8D=AE=E6=89=B9=E9=87=8F=E9=87=87=E9=9B=86=EF=BC=8C=E9=87=87=E8=
-=B4=AD=E5=95=86=E5=86=B3=E7=AD=96=E4=BA=BA=E8=81=94=E7=B3=BB=E6=96=B9=E5=BC=
-=8F=E8=A7=A3=E9=94=81=EF=BC=8C=E9=87=87=E8=B4=AD=E5=95=86=E6=B5=B7=E5=85=B3=
-=E8=B4=B8=E6=98=93=E6=95=B0=E6=8D=AE=E6=9F=A5=E8=AF=A2=E6=9C=8D=E5=8A=A1=EF=
-=BC=8C=E5=BA=94=E7=94=A8AI=E6=8A=80=E6=9C=AF=E4=B8=BA=E5=A4=96=E8=B4=B8=E4=
-=BC=81=E4=B8=9A=E6=8F=90=E4=BE=9B=E5=82=BB=E7=93=9C=E5=BC=8F=E8=87=AA=E5=8A=
-=A8=E5=BC=80=E5=8F=91=E5=AE=A2=E6=88=B7=E7=B3=BB=E7=BB=9F=EF=BC=8CWhatsapp=
-=E8=8E=B7=E5=AE=A2=E7=B3=BB=E7=BB=9F=EF=BC=8C=E7=A4=BE=E5=AA=92=E8=8E=B7=E5=
-=AE=A2=E7=B3=BB=E7=BB=9F=E7=AD=89=E3=80=82</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>=E5=92=8B=E4=BB=AC=E4=B8=
-=BB=E8=A6=81=E5=8C=85=E5=90=AB=E4=BB=A5=E4=B8=8B=E8=A7=A3=E5=86=B3=E6=96=B9=
-=E6=A1=88=EF=BC=9A</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>1=E3=80=81=E5=9B=BD=E5=A4=
-=96=E9=87=87=E8=B4=AD=E5=95=86=E5=86=B3=E7=AD=96=E4=BA=BA=E7=9A=84=E8=81=94=
-=E7=B3=BB=E6=96=B9=E5=BC=8F=E6=9F=A5=E8=AF=A2=EF=BC=9B</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>2=E3=80=81=E6=90=9C=E7=B4=
-=A2=E5=BC=95=E6=93=8E=E3=80=81=E6=B5=B7=E5=A4=96=E9=BB=84=E9=A1=B5=E3=80=81=
-=E5=B7=A5=E5=95=86=E6=95=B0=E6=8D=AE=E3=80=81=E7=A4=BE=E5=AA=92=E6=95=B0=E6=
-=8D=AE=E7=AD=89=E5=8D=81=E5=A4=A7=E9=87=87=E8=B4=AD=E5=95=86=E5=A4=A7=E6=95=
-=B0=E6=8D=AE=E8=B5=84=E6=BA=90=E6=89=B9=E9=87=8F=E9=87=87=E9=9B=86=EF=BC=9B=
-</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>3=E3=80=81=E6=B5=B7=E5=85=
-=B3=E8=B4=B8=E6=98=93=E6=95=B0=E6=8D=AE=EF=BC=8860=E4=B8=AA=E6=95=B0=E6=8D=
-=AE=E6=BA=90=E5=9B=BD=E5=AE=B6=EF=BC=89=EF=BC=8C=E9=87=87=E8=B4=AD=E5=95=86=
-=E7=9A=84=E8=B4=B8=E6=98=93=E8=AE=B0=E5=BD=95=E7=9B=91=E6=8E=A7=E3=80=81=E5=
-=90=8C=E8=A1=8C=E7=9A=84=E9=87=87=E8=B4=AD=E5=95=86=E6=9F=A5=E8=AF=A2=EF=BC=
-=9B</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>4=E3=80=81=E5=BA=94=E7=94=
-=A8AI=E6=8A=80=E6=9C=AF=EF=BC=8C=E5=82=BB=E7=93=9C=E5=BC=8F24=E5=B0=8F=E6=
-=97=B6=E8=87=AA=E5=8A=A8=E5=BC=80=E5=8F=91=E5=9B=BD=E5=A4=96=E5=AE=A2=E6=88=
-=B7=EF=BC=9B</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>5=E3=80=81Linkedin=E8=8E=
-=B7=E5=AE=A2=E8=90=A5=E9=94=80=E7=B3=BB=E7=BB=9F=EF=BC=8C=E7=AA=81=E7=A0=B4=
-=E5=B9=B3=E5=8F=B0=E7=9A=84=E4=B8=89=E5=BA=A6=E4=BA=BA=E8=84=89=E9=99=90=E5=
-=88=B6=E5=8F=AF=E7=9B=B4=E6=8E=A5=E5=BC=80=E5=8F=91=E7=9B=AE=E6=A0=87=E5=AE=
-=A2=E6=88=B7=EF=BC=8C=E4=BB=8ELinkedin8=E4=BA=BF=E7=94=A8=E6=88=B7=E9=87=8C=
-=E5=BC=80=E5=8F=91=E6=AC=A7=E7=BE=8E=E5=AE=A2=E6=88=B7=EF=BC=9B</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>6=E3=80=81Whatsapp=E8=8E=
-=B7=E5=AE=A2=E8=90=A5=E9=94=80=E7=B3=BB=E7=BB=9F=EF=BC=8C=E8=87=AA=E5=B8=A6=
-=E6=88=90=E5=93=81=E8=B4=A6=E5=8F=B7=E4=B8=8D=E6=83=A7=E8=A2=AB=E5=B0=81=EF=
-=BC=8C=E4=BB=8E=E6=B5=B7=E5=A4=96=E7=AC=AC=E4=B8=80=E5=A4=A7=E7=A4=BE=E4=BA=
-=A4=E8=BD=AF=E4=BB=B620=E4=BA=BFWa=E7=94=A8=E6=88=B7=E9=87=8C=E6=8E=98=E9=
-=87=91=EF=BC=9B</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>7=E3=80=81Facebook=E9=9C=
-=B8=E5=B1=8F=E5=BC=95=E6=B5=81=EF=BC=8C=E6=88=AA=E7=95=99=E5=90=8C=E8=A1=8C=
-=E7=9A=84=E8=AF=A2=E4=BB=B7=E7=94=A8=E6=88=B7=EF=BC=8C=E6=B5=B7=E9=87=8F=E6=
-=90=9C=E5=AE=A2=E5=8F=91=E7=A7=81=E4=BF=A1=EF=BC=8C=E4=BB=8EFB=E7=9A=8425=
-=E4=BA=BF=E7=94=A8=E6=88=B7=E9=87=8C=E9=9D=A2=E9=9C=B8=E5=B1=8F=E5=BC=95=E6=
-=B5=81=EF=BC=9B</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>=E5=A6=82=E6=9E=9C=E6=82=
-=A8=E5=AF=B9=E6=88=91=E4=BB=AC=E7=9A=84=E6=9C=8D=E5=8A=A1=E6=84=9F=E5=85=B4=
-=E8=B6=A3=EF=BC=8C=E8=AF=B7=E9=9A=8F=E6=97=B6=E8=81=94=E7=B3=BB=E6=88=91=E4=
-=BB=AC=EF=BC=9A</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>QQ=EF=BC=9A3150058554</b><=
-/div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>WeChat=EF=BC=9A18024025957=
-</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>=E6=84=9F=E8=B0=A2=E6=82=
-=A8=E8=8A=B1=E6=97=B6=E9=97=B4=E9=98=85=E8=AF=BB=E8=BF=99=E5=B0=81=E9=82=AE=
-=E4=BB=B6=EF=BC=8C=E7=A5=9D=E5=95=86=E7=A5=BA=EF=BC=81</b></div>
-<div id=3D"_mcePaste" style=3D"position: absolute; left: -10000px; top: 0px=
-; width: 1px; height: 1px; overflow: hidden;"><b>=E6=AD=A4=E8=87=B4=E6=95=
-=AC=E7=A4=BC</b></div>
-<div><b>To our valued clients in the foreign trade industry, please review =
-the following information.</b></div>
-<div><b><br /></b></div>
-<div><b><br /></b></div>
-<div><b><br /></b></div>
-<div><b><br /></b></div>
-<div><b><br /></b></div>
-<div><b>=E6=88=91=E5=8F=B8=E6=8F=90=E4=BE=9B=E7=9A=84=E6=98=AF=E4=B8=80=E6=
-=AC=BE=E5=A4=96=E8=B4=B8AI=E4=B8=BB=E5=8A=A8=E8=8E=B7=E5=AE=A2=E7=B3=BB=E7=
-=BB=9F=EF=BC=8C14=E5=B9=B4=E6=9D=A5=E4=B8=93=E6=B3=A8=E4=B8=BA=E5=A4=96=E8=
-=B4=B8=E5=87=BA=E6=B5=B7=E4=BC=81=E4=B8=9A=E6=8F=90=E4=BE=9B=E4=BD=8E=E6=88=
-=90=E6=9C=AC=E4=B8=BB=E5=8A=A8=E8=8E=B7=E5=AE=A2=E8=A7=A3=E5=86=B3=E6=96=B9=
-=E6=A1=88=E3=80=82</b></div>
-<div><b>=E6=A0=B8=E5=BF=83=E4=BA=A7=E5=93=81=E5=8C=85=E6=8B=AC=E6=B5=B7=E5=
-=A4=96=E9=87=87=E8=B4=AD=E5=95=86=E6=95=B0=E6=8D=AE=E6=89=B9=E9=87=8F=E9=87=
-=87=E9=9B=86=EF=BC=8C=E9=87=87=E8=B4=AD=E5=95=86=E5=86=B3=E7=AD=96=E4=BA=BA=
-=E8=81=94=E7=B3=BB=E6=96=B9=E5=BC=8F=E8=A7=A3=E9=94=81=EF=BC=8C=E9=87=87=E8=
-=B4=AD=E5=95=86=E6=B5=B7=E5=85=B3=E8=B4=B8=E6=98=93=E6=95=B0=E6=8D=AE=E6=9F=
-=A5=E8=AF=A2=E6=9C=8D=E5=8A=A1=EF=BC=8C=E5=BA=94=E7=94=A8AI=E6=8A=80=E6=9C=
-=AF=E4=B8=BA=E5=A4=96=E8=B4=B8=E4=BC=81=E4=B8=9A=E6=8F=90=E4=BE=9B=E5=82=BB=
-=E7=93=9C=E5=BC=8F=E8=87=AA=E5=8A=A8=E5=BC=80=E5=8F=91=E5=AE=A2=E6=88=B7=E7=
-=B3=BB=E7=BB=9F=EF=BC=8CWhatsapp=E8=8E=B7=E5=AE=A2=E7=B3=BB=E7=BB=9F=EF=BC=
-=8C=E7=A4=BE=E5=AA=92=E8=8E=B7=E5=AE=A2=E7=B3=BB=E7=BB=9F=E7=AD=89=E3=80=82=
-</b></div>
-<div><b><br /></b></div>
-<div><b>=E5=92=8B=E4=BB=AC=E4=B8=BB=E8=A6=81=E5=8C=85=E5=90=AB=E4=BB=A5=E4=
-=B8=8B=E8=A7=A3=E5=86=B3=E6=96=B9=E6=A1=88=EF=BC=9A</b></div>
-<div><b>1=E3=80=81=E5=9B=BD=E5=A4=96=E9=87=87=E8=B4=AD=E5=95=86=E5=86=B3=E7=
-=AD=96=E4=BA=BA=E7=9A=84=E8=81=94=E7=B3=BB=E6=96=B9=E5=BC=8F=E6=9F=A5=E8=AF=
-=A2=EF=BC=9B</b></div>
-<div><b>2=E3=80=81=E6=90=9C=E7=B4=A2=E5=BC=95=E6=93=8E=E3=80=81=E6=B5=B7=E5=
-=A4=96=E9=BB=84=E9=A1=B5=E3=80=81=E5=B7=A5=E5=95=86=E6=95=B0=E6=8D=AE=E3=80=
-=81=E7=A4=BE=E5=AA=92=E6=95=B0=E6=8D=AE=E7=AD=89=E5=8D=81=E5=A4=A7=E9=87=87=
-=E8=B4=AD=E5=95=86=E5=A4=A7=E6=95=B0=E6=8D=AE=E8=B5=84=E6=BA=90=E6=89=B9=E9=
-=87=8F=E9=87=87=E9=9B=86=EF=BC=9B</b></div>
-<div><b>3=E3=80=81=E6=B5=B7=E5=85=B3=E8=B4=B8=E6=98=93=E6=95=B0=E6=8D=AE=EF=
-=BC=8860=E4=B8=AA=E6=95=B0=E6=8D=AE=E6=BA=90=E5=9B=BD=E5=AE=B6=EF=BC=89=EF=
-=BC=8C=E9=87=87=E8=B4=AD=E5=95=86=E7=9A=84=E8=B4=B8=E6=98=93=E8=AE=B0=E5=BD=
-=95=E7=9B=91=E6=8E=A7=E3=80=81=E5=90=8C=E8=A1=8C=E7=9A=84=E9=87=87=E8=B4=AD=
-=E5=95=86=E6=9F=A5=E8=AF=A2=EF=BC=9B</b></div>
-<div><b>4=E3=80=81=E5=BA=94=E7=94=A8AI=E6=8A=80=E6=9C=AF=EF=BC=8C=E5=82=BB=
-=E7=93=9C=E5=BC=8F24=E5=B0=8F=E6=97=B6=E8=87=AA=E5=8A=A8=E5=BC=80=E5=8F=91=
-=E5=9B=BD=E5=A4=96=E5=AE=A2=E6=88=B7=EF=BC=9B</b></div>
-<div><b>5=E3=80=81Linkedin=E8=8E=B7=E5=AE=A2=E8=90=A5=E9=94=80=E7=B3=BB=E7=
-=BB=9F=EF=BC=8C=E7=AA=81=E7=A0=B4=E5=B9=B3=E5=8F=B0=E7=9A=84=E4=B8=89=E5=BA=
-=A6=E4=BA=BA=E8=84=89=E9=99=90=E5=88=B6=E5=8F=AF=E7=9B=B4=E6=8E=A5=E5=BC=80=
-=E5=8F=91=E7=9B=AE=E6=A0=87=E5=AE=A2=E6=88=B7=EF=BC=8C=E4=BB=8ELinkedin8=E4=
-=BA=BF=E7=94=A8=E6=88=B7=E9=87=8C=E5=BC=80=E5=8F=91=E6=AC=A7=E7=BE=8E=E5=AE=
-=A2=E6=88=B7=EF=BC=9B</b></div>
-<div><b>6=E3=80=81Whatsapp=E8=8E=B7=E5=AE=A2=E8=90=A5=E9=94=80=E7=B3=BB=E7=
-=BB=9F=EF=BC=8C=E8=87=AA=E5=B8=A6=E6=88=90=E5=93=81=E8=B4=A6=E5=8F=B7=E4=B8=
-=8D=E6=83=A7=E8=A2=AB=E5=B0=81=EF=BC=8C=E4=BB=8E=E6=B5=B7=E5=A4=96=E7=AC=AC=
-=E4=B8=80=E5=A4=A7=E7=A4=BE=E4=BA=A4=E8=BD=AF=E4=BB=B620=E4=BA=BFWa=E7=94=
-=A8=E6=88=B7=E9=87=8C=E6=8E=98=E9=87=91=EF=BC=9B</b></div>
-<div><b>7=E3=80=81Facebook=E9=9C=B8=E5=B1=8F=E5=BC=95=E6=B5=81=EF=BC=8C=E6=
-=88=AA=E7=95=99=E5=90=8C=E8=A1=8C=E7=9A=84=E8=AF=A2=E4=BB=B7=E7=94=A8=E6=88=
-=B7=EF=BC=8C=E6=B5=B7=E9=87=8F=E6=90=9C=E5=AE=A2=E5=8F=91=E7=A7=81=E4=BF=A1=
-=EF=BC=8C=E4=BB=8EFB=E7=9A=8425=E4=BA=BF=E7=94=A8=E6=88=B7=E9=87=8C=E9=9D=
-=A2=E9=9C=B8=E5=B1=8F=E5=BC=95=E6=B5=81=EF=BC=9B</b></div>
-<div><b><br /></b></div>
-<div><b>=E5=A6=82=E6=9E=9C=E6=82=A8=E5=AF=B9=E6=88=91=E4=BB=AC=E7=9A=84=E6=
-=9C=8D=E5=8A=A1=E6=84=9F=E5=85=B4=E8=B6=A3=EF=BC=8C=E8=AF=B7=E9=9A=8F=E6=97=
-=B6=E8=81=94=E7=B3=BB=E6=88=91=E4=BB=AC=EF=BC=9A</b></div>
-<div><b><br /></b></div>
-<div><b><span style=3D"color: #ff0000;">QQ=EF=BC=9A3150058554</span></b></d=
-iv>
-<div><b><span style=3D"color: #ff0000;">WeChat=EF=BC=9A18024025957</span></=
-b></div>
-<div><b><br /></b></div>
-<div><b><br /></b></div>
-<div><b>=E6=84=9F=E8=B0=A2=E6=82=A8=E8=8A=B1=E6=97=B6=E9=97=B4=E9=98=85=E8=
-=AF=BB=E8=BF=99=E5=B0=81=E9=82=AE=E4=BB=B6=EF=BC=8C=E7=A5=9D=E5=95=86=E7=A5=
-=BA=EF=BC=81</b></div>
-<div><b>=E6=AD=A4=E8=87=B4=E6=95=AC=E7=A4=BC</b></div>
-
-<img src=3D"http://103.119.3.31/oem/to.php?p=3Dsa/sa/rs/qxx/sa/rs" width=3D=
-"5" height=3D"2" alt=3D".">
-
-</body>
-</html>
+<HEAD><TITLE></TITLE>
+<META content=3D"text/html; charset=3Dutf-8" http-equiv=3DContent-Type>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+<TR>
+<TD style=3D"TEXT-ALIGN: center" width=3D"100%">
+<P>&nbsp;</P>
+<TABLE style=3D"BORDER-TOP: #808080 1px solid; FONT-FAMILY: 'Times New Roma=
+n', Times, serif; BORDER-RIGHT: #808080 1px solid; WIDTH: 600px; BORDER-BOT=
+TOM: #808080 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #808080 1px solid; M=
+ARGIN: 0px auto" cellSpacing=3D0 cellPadding=3D0 width=3D600 border=3D0>
+<TR>
+<TD style=3D"FONT-SIZE: 18px; FONT-FAMILY: 'Times New Roman', Times, serif;=
+ COLOR: #6e6d6d; PADDING-BOTTOM: 25px; PADDING-TOP: 25px; PADDING-LEFT: 25p=
+x; PADDING-RIGHT: 25px">
+<P align=3Dcenter><IMG border=3D0 hspace=3D0 src=3D"https://www.imageshack.=
+com/img923/1021/4Bjgiz.jpg" width=3D701 height=3D350></P>
+<P align=3Dcenter><STRONG></STRONG>&nbsp;</P>
+<P data-end=3D"394" data-start=3D"247"><STRONG>Hai una stampante da riforni=
+re=3F Ci pensiamo noi!</STRONG></P>
+<P data-end=3D"577" data-start=3D"396"><FONT color=3D#ff0000>=F0=9F=92=BC <=
+STRONG data-end=3D"453" data-start=3D"399">Toner compatibili di alta qualit=
+a',&nbsp;con rapporto&nbsp;prezzo/qualita' imbattibile</STRONG></FONT></P>
+<P data-end=3D"577" data-start=3D"396"><STRONG></STRONG><BR data-end=3D"456=
+" data-start=3D"453"><STRONG><FONT color=3D#ff0000>=E2=9C=85</FONT> <FONT c=
+olor=3D#000000>100% compatibili e di qualita' paragonabile&nbsp;ai toner or=
+iginali</FONT><BR data-end=3D"501" data-start=3D"498"><FONT color=3D#ff0000=
+>=E2=9C=85</FONT> <FONT color=3D#000000>Stampa nitida e duratura</FONT><BR =
+data-end=3D"530" data-start=3D"527"><FONT color=3D#ff0000>=E2=9C=85</FONT> =
+<FONT color=3D#000000>Spedizione veloce e gratuita per ordini di almeno 50,=
+00=E2=82=AC</FONT></STRONG></P>
+<P data-end=3D"796" data-start=3D"579"><FONT color=3D#ff0000>=F0=9F=8E=81 <=
+STRONG data-end=3D"614" data-start=3D"582">Offerte speciali</STRONG></FONT>=
+</P>
+<P data-end=3D"796" data-start=3D"579"><STRONG><FONT color=3D#000000>Ti ris=
+erviamo uno sconto dal 10% al&nbsp;20% per acquisti di almeno 3 o 4 toner n=
+eri ( dipende dal modello ) mentre sono disponibili sconti anche per le sta=
+mpanti con toner a colori, sempre fino al 20%</FONT></STRONG></P>
+<P data-end=3D"904" data-start=3D"798"><STRONG><FONT color=3D#ff0000><FONT =
+color=3D#000000><FONT color=3D#ff0000>=F0=9F=94=8D</FONT> <FONT size=3D4>Ha=
+i bisogno di aiuto a trovare il toner giusto=3F Il nostro servizio clienti =
+=C3=A8 sempre a tua disposizione.</FONT></FONT><FONT size=3D4> </FONT><A hr=
+ef=3D"mailto:toneritaliani@gmail.com=3Fsubject=3Dpreventivo" =3F><FONT colo=
+r=3D#ff0000 size=3D4>Rispondi a questa email comunicando il modello della t=
+ua stampante e ti invieremo un preventivo senza impegno.</FONT></A></FONT><=
+/STRONG></P>
+<P data-end=3D"961" data-start=3D"906"><FONT color=3D#000000><STRONG>=F0=9F=
+=91=89 </STRONG><SPAN style=3D"FONT-SIZE: 20px"><FONT style=3D"BACKGROUND-C=
+OLOR: #ffffff"><STRONG>Puoi anche chiederci un preventivo inviando una emai=
+l al nostro indirizzo: </STRONG></FONT><A href=3D"mailto:toneritaliani@gmai=
+l.com=3Fsubject=3Dpreventivo"><FONT style=3D"BACKGROUND-COLOR: #ffffff"><ST=
+RONG>toneritaliani@gmail.com</STRONG></FONT></A>&nbsp;<FONT color=3D#ff0000=
+>Ti invieremo anche i nostri contatti e recensioni.</FONT></SPAN></FONT></P>
+<P data-end=3D"1060" data-start=3D"963"><FONT color=3D#000000>A presto.</FO=
+NT></P>
+<P data-end=3D"1060" data-start=3D"963"><STRONG></STRONG><BR data-end=3D"99=
+6" data-start=3D"993"><EM data-end=3D"1060" data-start=3D"996"><STRONG><FON=
+T color=3D#000000>La tua stampante merita il meglio, e tu meriti di risparm=
+iare.</FONT></STRONG></EM></P>
+<P align=3Dcenter><IMG border=3D0 hspace=3D0 src=3D"https://www.imageshack.=
+com/img922/6996/nIZUMc.jpg" width=3D650 height=3D354></P>
+<P align=3Dcenter>&nbsp;</P><FONT size=3D2>Se hai ricevuto questa email per=
+ errore, per favore comunicacelo, Nel caso desideri essere cancellato rispo=
+ndi a questa email con "cancellami" </FONT><A href=3D"mailto:toneritaliani@=
+gmail.com=3Fsubject=3DCancellami"><FONT size=3D2>Oppure premi qui ed invia =
+per cancellarti</FONT></A></TD></TR>
+<TR></TR></TABLE></TD></TR></TABLE>
+<P>&nbsp;</P></BODY>
+------=_NextPart_001_0600_539B7FA5.7622374C--
 
 
---===============8591670648652769068==
+--===============6149196094907837991==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8591670648652769068==
+--===============6149196094907837991==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -330,4 +268,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8591670648652769068==--
+--===============6149196094907837991==--
+
