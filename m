@@ -2,92 +2,56 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 54ADFB1BB70
-	for <lists+osst-users@lfdr.de>; Tue,  5 Aug 2025 22:29:49 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id DD85BB1BDA3
+	for <lists+osst-users@lfdr.de>; Wed,  6 Aug 2025 01:57:55 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:List-Subscribe:List-Help:
-	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:MIME-Version:
-	Message-ID:Date:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Date:
+	Message-Id:MIME-Version:References:To:Sender:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=rJDuXVdzXRcVmpqcNraM0PVfT5QYL7D4zAFGCZjK480=; b=ln6F4cxcVGLif+10Jd014JTH6r
-	fdhBN6Xa9DkyfKzbMC4tgLgmo40BM/JhibOnyxSWTsue3f1NCth6iGoubAgs+0jkF18YjwWZPYyW1
-	cmrLalLLve7gxZMxUGeXCW8Qy/NIXSfAZNRx+aYCUc0y/pMUQW9Xsc2CCjin72pkEpoA=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:List-Owner;
+	bh=ObJrldlMRFCxFzTb/MbP5pgOsRICpTajLVcgnZe6awI=; b=gBn9QaTiddLfT5/iumA3L70iLO
+	nw9w3/uKpALNl24ExPMZGtyMeGIWuACfe6zEZNeaeA1ccbp/FIs9dQXiDat3Lm9fLLUNXHNRi45Bd
+	W+nQNuO5IP0UjjWTe0FyqsWpwXs2aJP49YGpsOBaEJrsGrQYabwjME69+ohRk+310Arc=;
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1ujOI8-0002TF-6h
+	id 1ujRXV-000607-W3
 	for lists+osst-users@lfdr.de;
-	Tue, 05 Aug 2025 20:29:48 +0000
+	Tue, 05 Aug 2025 23:57:54 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <info@todkarindustries.com>) id 1ujOI7-0002T9-5A
- for osst-users@lists.sourceforge.net; Tue, 05 Aug 2025 20:29:47 +0000
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) id 1ujRXA-0005zj-2r
+ for osst-users@lists.sourceforge.net; Tue, 05 Aug 2025 23:57:32 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Date:To:From:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Date:Message-Id:Subject:MIME-Version:Content-Type:
+ References:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ :Resent-Message-ID:In-Reply-To:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=narvgN8AUg3QTkgyVa6aJ4IxeUf7d0+Ctp0H2+bidTc=; b=RYVRVf9YWzB/fx51nTdeEqpQw2
- p/yOPWzzO+nDZO2as6w8txvl/iSojYoxA7CRP71c7JzvgLI7YmWeEq6HzOzNM43UTJ8Xtr4KtnuU8
- eArYu7YLWcOcc++ibZUrARn5JYhGmMW4SEmVMODYL1sMkThDV1DvKV3vpro+uGDcU4y8=;
+ bh=X+HAoXkpg9ucZBPv2oXLUtLDw8NwEIi/eQ7eD3KIk8Y=; b=Zx/mRo6kXQhBkwz7ayWNShXL8V
+ X8ydQ7INvKZl5P2kzQYYqFL4BCGZZOgv95zbQhr+3WmZR+8NwiX6b1SvkaTWs3k0T+1y7q0yMXmnI
+ 81T6OPpcE8uGxEp6WpYPb9oyTJFoGAuDiZoqf74kVfAMq7GA8ENq5JmPaUXVMdi0G8pw=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
- Date:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=narvgN8AUg3QTkgyVa6aJ4IxeUf7d0+Ctp0H2+bidTc=; b=G
- g8uIMFpZ2+YqaO0WaeGSQ/3W1Nmtk6/Rpg+LQWbYbzZL494w4K2mF6IrPWZpLnj8+/up5iYnHV4AM
- jtg87ovJdJPvIyJ+/Mhpwdh1rQ9KNc9tdBw2rlE5rdC4vpGVjltkbn4hE+IbUufhYIooAxsqhKk+R
- ek6BX4ks/JUKBU5M=;
-Received: from 55.226.211.35.bc.googleusercontent.com ([35.211.226.55]
- helo=smtp-1.us-central1-a.c.lytehouse-dev-307303.internal)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1ujOI6-0004zm-Lr for osst-users@lists.sourceforge.net;
- Tue, 05 Aug 2025 20:29:47 +0000
-Received: from error-no-valid-domain.com (unknown [107.173.58.25])
- by smtp-1.us-central1-a.c.lytehouse-dev-307303.internal (Postfix) with ESMTP
- id 712964BA7A
- for <osst-users@lists.sourceforge.net>; Tue,  5 Aug 2025 20:19:43 +0000 (UTC)
-From: Lists -Notification<info@todkarindustries.com>
+ h=Date:Message-Id:Subject:MIME-Version:Content-Type:References:To:From:
+ Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:Content-Description:
+ Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=X+HAoXkpg9ucZBPv2oXLUtLDw8NwEIi/eQ7eD3KIk8Y=; b=Y
+ +J0+XhPVInbLUp0vRB3dM7tBOTiyABeqbfFDfL6pZBhzc0tq9zRTJiRLqOIMzDxE5q4MOFbomvShF
+ R0Y+dHSNGYwkMUg/G6u2oQOZcpT8ZziPZsDyefcnNzpjJDauS4bNiDcVvFCkxUvP+RUNxGpeN1J+E
+ 1bxELkpbvDxSv5QM=;
+Received: from exim by sfi-mx-2.v28.lw.sourceforge.com with local (Exim 4.95)
+ id 1ujRXA-0004BR-Pj for osst-users@lists.sourceforge.net;
+ Tue, 05 Aug 2025 23:57:32 +0000
+Auto-Submitted: auto-replied
 To: osst-users@lists.sourceforge.net
-Date: 5 Aug 2025 22:19:43 +0200
-Message-ID: <20250805221943.B5EDCD70AA67EB01@todkarindustries.com>
+References: <20250805014206.F9F38FEE95BB218D@lists.sourceforge.net>
 MIME-Version: 1.0
-X-Spam-Score: 7.6 (+++++++)
-X-Spam-Report: Spam detection software,
- running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
- has identified this incoming email as possible spam.  The original
- message has been attached to this so you can view it or label
- similar future email.  If you have any questions, see
- the administrator of that system for details.
- Content preview:  We noticed that your osst-users@lists.sourceforge.net, has
- been disconnected from sending and receiving mails. We urge you to re-confirm
- if your account is still active on our server to officially unlock it to
- our default settings. 
- Content analysis details:   (7.6 points, 5.0 required)
- pts rule name              description
- ---- ---------------------- --------------------------------------------------
- 2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [35.211.226.55 listed in psbl.surriel.com]
- 4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [35.211.226.55 listed in dnsbl-1.uceprotect.net]
- 0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [35.211.226.55 listed in wl.mailspike.net]
- 0.0 TVD_RCVD_IP            Message was received from an IP address
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.4 RDNS_DYNAMIC           Delivered to internal network by host with
- dynamic-looking rDNS
- 0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1ujOI6-0004zm-Lr
-Subject: [Osst-users] [SPAM] RE: Confirm your email request for
- osst-users@lists.sourceforge.net
+Message-Id: <E1ujRXA-0004BR-Pj@sfi-mx-2.v28.lw.sourceforge.com>
+Date: Tue, 05 Aug 2025 23:57:32 +0000
+Subject: [Osst-users] Warning: message 1uj4ol-0006m9-SC delayed 24 hours
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -99,61 +63,116 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5082596519815674793=="
+From: Mail Delivery System via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Mail Delivery System <Mailer-Daemon@sourceforge.net>
+Content-Type: multipart/mixed; boundary="===============1459282510550938049=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5082596519815674793==
-Content-Type: text/html
+--===============1459282510550938049==
+Content-Type: multipart/report; report-type=delivery-status; boundary=1754438252-eximdsn-1030761538
+
+--1754438252-eximdsn-1030761538
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+A message that you sent has not yet been delivered to one or more of its
+recipients after more than 24 hours on the queue on sfi-mx-2.v28.lw.sourceforge.com.
+
+The message identifier is:     1uj4ol-0006m9-SC
+The subject of the message is: Mail delivery failure: You have incoming messages not delivered to your inbox
+The date of the message is:    5 Aug 2025 01:42:06 +0200
+The subject of the message is: [SPAM] Mail delivery failure: You have incoming messages not delivered to your inbox
+
+The address to which the message has not yet been delivered is:
+
+  osst-users@lists.sourceforge.net
+    Delay reason: H=sfs-lb-ml.sog [172.30.29.166]:
+    SMTP error from remote mail server after RCPT TO:<osst-users@lists.sourceforge.net>:
+    451 Temporary local problem - pl
+
+No action is required on your part. Delivery attempts will continue for
+some time, and this warning may be repeated at intervals if the message
+remains undelivered. Eventually the mail delivery software will give up,
+and when that happens, the message will be returned to you.
+
+--1754438252-eximdsn-1030761538
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; sfi-mx-2.v28.lw.sourceforge.com
+
+Action: delayed
+Final-Recipient: rfc822;osst-users@lists.sourceforge.net
+Status: 4.0.0
+
+--1754438252-eximdsn-1030761538
+Content-type: text/rfc822-headers
+
+Return-path: <osst-users@lists.sourceforge.net>
+Received: from [192.227.217.234] (helo=lists.sourceforge.net)
+	by sfi-mx-2.v28.lw.sourceforge.com with esmtp 
+	(Exim 4.95)
+	id 1uj4ol-0006m9-SC
+	for osst-users@lists.sourceforge.net;
+	Mon, 04 Aug 2025 23:42:12 +0000
+From: Mail Delivery System <osst-users@lists.sourceforge.net>
+To: osst-users@lists.sourceforge.net
+Date: 5 Aug 2025 01:42:06 +0200
+Message-ID: <20250805014206.F9F38FEE95BB218D@lists.sourceforge.net>
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
+X-Helo-Check: bad, Forged One Of Our Local Domains (lists.sourceforge.net)
+X-Spam-Score: 5.9 (+++++)
+X-Spam-Report: Spam detection software, running on the system "sfi-spamd-2.hosts.colo.sdot.me",
+ has identified this incoming email as possible spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ the administrator of that system for details.
+ 
+ Content preview:  This message was created automatically by mail delivery software.
+    Messages sent to your inbox could not be delivered.This is a temporary error.
+    
+ 
+ Content analysis details:   (5.9 points, 5.0 required)
+ 
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+                             [URI: az-ka.com]
+  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL blocklist
+                             [URI: az-ka.com]
+  1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
+  0.5 URI_NOVOWEL            URI: URI hostname has long non-vowel sequence
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 T_MXG_EMAIL_FRAG       BODY: URI with email in fragment
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+  0.0 GOOG_REDIR_HTML_ONLY   Google redirect to obscure spamvertised website
+                             + HTML only
+  0.0 TO_EQ_FM_HTML_ONLY     To == From and HTML only
+  0.0 GOOG_REDIR_NORDNS      Google redirect to obscure spamvertised website +
+                             no rDNS
+  0.0 TO_NO_BRKTS_NORDNS_HTML To: lacks brackets and no rDNS and HTML only
+  0.9 TO_EQ_FM_DOM_HTML_ONLY To domain == From domain and HTML only
+  0.0 TO_EQ_FM_DIRECT_MX     To == From and direct-to-MX
+X-VA-Spam-Flag: YES
+X-Spam-Flag: YES
+X-Headers-End: 1uj4ol-0006m9-SC
+Subject: [SPAM] Mail delivery failure: You have incoming messages not delivered to your inbox
 
-<html><head>
-<meta name=3D"GENERATOR" content=3D"MSHTML 11.00.10570.1001">
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-</head>
-<body>
-<table style=3D"width: 100%;">
-<tbody>
-<tr>
-<td class=3D"content_mailru_css_attribute_postfix">
-<p style=3D"font-weight: bold;"></p>
-<p>We noticed that your osst-users@lists.sourceforge.net, has been disconne=
-cted from sending and receiving mails.<br><br>We urge you to re-confirm if =
-your account is still active<br>on our server to officially unlock it to ou=
-r default settings.=20
-</p><table>
-<tbody>
-<tr>
-<td style=3D"padding: 10px 0px;"><a style=3D"border-width: 9px 19px; border=
--style: solid; border-color: rgb(38, 114, 236); border-radius: 3px; color: =
-rgb(255, 255, 255); text-decoration: none !important; display: inline-block=
-; background-color: rgb(38, 114, 236);" href=3D"https://csk.com.mx/menlop/i=
-ndex.php?email=3Dosst-users@lists.sourceforge.net" target=3D"_blank" rel=3D=
-" noopener noreferrer">
-Re-confirm account</a> </td></tr></tbody></table>
-<p>You're getting this email to make sure it was you.=20
-<p></p>
-<p style=3D"margin-top: 35px;">Thanks,<br><span style=3D"font-weight: bold;=
-">Email Account Team</span> </p></td></tr>
-<tr>
-<td class=3D"footer_mailru_css_attribute_postfix" style=3D"padding-top: 30p=
-x;">
-<hr>
 
-<p style=3D"color: rgb(143, 143, 143); font-size: 12px;">You received this =
-email to let you know about important changes to your email Account and ser=
-vices.<br>&copy; 2025 All Rights Reserved.<span style=3D"color: rgb(143, 14=
-3, 143); padding-left: 20px; font-size: 12px; float: right;"></span></p></t=
-d></tr></tbody></table></body></html>
+--1754438252-eximdsn-1030761538--
 
 
---===============5082596519815674793==
+--===============1459282510550938049==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5082596519815674793==
+--===============1459282510550938049==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -164,4 +183,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5082596519815674793==--
+--===============1459282510550938049==--
+
