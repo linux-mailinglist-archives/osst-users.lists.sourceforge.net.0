@@ -2,98 +2,89 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6EB21B1C6B8
-	for <lists+osst-users@lfdr.de>; Wed,  6 Aug 2025 15:21:21 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 3495FB1CBFE
+	for <lists+osst-users@lfdr.de>; Wed,  6 Aug 2025 20:35:48 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
-	MIME-Version:From:Date:Message-ID:To:Sender:Cc:Content-Transfer-Encoding:
-	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=8vMsb9Z/50uCYpdYnd4Lm5zJj7pOI4lVlE6XWmQMCJ4=; b=AIN67tVMOnkgYdGBXMxUWm8Hp3
-	9hd9qMP1v8AF+qOA/mBqIBqVNIUvy7YD/hLSg9EoO4pj5YXAgvSzHZw2G+14JLtD+plj4ct8MuHFX
-	R4AlNjCIlbmXjOt0SqJ8WetXuEn5nFxh5xvTRJsFIOS9Nuq/2uFeqzZyY538juQWEg0w=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	d=lists.sourceforge.net; s=beta; h=Date:Message-Id:Content-Type:Reply-To:
+	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
+	Subject:To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=0zdsJD0umvLzCdIn9KElpAgj8apWnFs1sLIF9c7cXGY=; b=Oqbf0x2z0qJnbdUFIiCa3GZF1N
+	l3HkO2InKQtF3f3soWOTzvpEgUXEc2QC8Kt6QekusFJ/7bQI8VTx2P3ExieLIK0STz3TwDibnEsac
+	NEnkWWfFRFHt7O0nnvNrOALuehID5iyROXPsCfV9PT4/OKGmR3omtpqGla2BzcV3r9/4=;
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1uje52-0006Xa-8t
+	id 1ujizL-0003Rg-1D
 	for lists+osst-users@lfdr.de;
-	Wed, 06 Aug 2025 13:21:20 +0000
+	Wed, 06 Aug 2025 18:35:47 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <bounce52841@buggs-fishing-lures.com>)
- id 1uje50-0006XU-1A for osst-users@lists.sourceforge.net;
- Wed, 06 Aug 2025 13:21:18 +0000
+ (envelope-from <info_56135@email-smtp.us-east-1.amazonaws.com>)
+ id 1ujizK-0003RV-4w for osst-users@lists.sourceforge.net;
+ Wed, 06 Aug 2025 18:35:46 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Reply-To:From:Date:Message-ID:To:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:reply-to:To:From:MIME-Version:Content-Type:
+ Sender:Date:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=HwVuDFN//hrGWNpkyg0Zf2Cl4vjpUCN8FGwP5eik30g=; b=dyeZZ1pQhVLA+qf8B2rFTDok0e
- V6p4ny+a5v9EPuoebW4iSDdxXwI/xa+mtYTVxcQCg5m6TfnCJvxCZg+CaH1keqQehlDpfsbk1henm
- FcJyFIdKhdLkXUw6R18B9g7w+IRQSS1iQoiqdoMchtrCsQrBKCnmi5YX+fd2owQ4brj8=;
+ bh=Xnh11OZ7fGUc7N7A+3aBk0q5wyJHoANNC/3uSlsHl4s=; b=jHW20EEF2iZLIUKt4OZWC+cwtj
+ 0WU32fM4VNW01ZqCksDLbNxj8TvKFf0ckSi6/xgjFiZNDmvnwOvMJpdJjLcmeneN7s3P1ulumdtpa
+ v+bu1uti3l6hL0ikczU6NlHrgR+GOHGUPlRBleiRcRoWu2GUQNOWgjwTYRVudVB3IQnI=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Reply-To:From
- :Date:Message-ID:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Subject:reply-to:To:From:MIME-Version:Content-Type:Sender:Date:Message-ID
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=HwVuDFN//hrGWNpkyg0Zf2Cl4vjpUCN8FGwP5eik30g=; b=d
- Z3g90K271NF8okQm1i6IRD3xxyHwPLIL0lfdrGm95l9huXkJrkAQTxG2/LGWJrJue7eEOq6Ird5+D
- p0Pb6JWZAyFg8cwJ5pxSq+jgXcwT4zm2Vs63XwLMAf9tEnRgRCkM9wvvLt0yGpb0BRXlfOdQZV0/w
- ChJOQs0CfroLoRzY=;
-Received: from obe.hbgzw.net ([192.154.230.147])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1uje4z-0007PT-JQ for osst-users@lists.sourceforge.net;
- Wed, 06 Aug 2025 13:21:17 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=yjit168.net;
- h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding;
- bh=HwVuDFN//hrGWNpkyg0Zf2Cl4vjpUCN8FGwP5eik30g=;
- b=OKdUaVhc5lmLWtJvI9kjsY9j0GzNfLf9u42N+udbfzf/Mn1cFUs9Wojr8tuPB5qeSCm8v+0tRQCt
- rWJ8T/3jEd3wTuojbXtGevGwMdaKUERnWndx/2EXIF+Kl/QwtKcXppVnBpMyBn2ORZWJQyRyXape
- OyT1Nym2yWjt+ZjmEHE=
-To: osst-users@lists.sourceforge.net
-Message-ID: <0dcf05eaa1042c8cf894b6da0a0f0110@umweltfreundlich>
-Date: Wed, 06 Aug 2025 14:02:02 +0200
-From: "Felix Hoffmann" <felix@yjit168.net>
+ List-Owner:List-Archive; bh=Xnh11OZ7fGUc7N7A+3aBk0q5wyJHoANNC/3uSlsHl4s=; b=H
+ TEEYX06ak8iyA73UqCuczt2tEfmVaLoy96DNlkb6/7Mx6kslvailHknkkNSKQBIWOubPJrMkpkzG2
+ 7GHtRLXvdjTRT5hho3ZLjgpmggI4Rp7UoCkUlI5NyQU1d1XWTZomrghEhYGKG+ENoIYYCHNBBE8lH
+ wMFmQvdgwi4PnoKw=;
+Received: from 27.249.82.34.bc.googleusercontent.com ([34.82.249.27]
+ helo=[10.88.0.4]) by sfi-mx-2.v28.lw.sourceforge.com with esmtp 
+ (Exim 4.95) id 1ujizJ-0002QU-Iq for osst-users@lists.sourceforge.net;
+ Wed, 06 Aug 2025 18:35:46 +0000
 MIME-Version: 1.0
-X-Spam-Score: 6.7 (++++++)
-X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts.colo.sdot.me",
+From: =?utf-8?b?REhM4oCUb25JxLFuZQ==?= <dcft@worker.co.kr>
+To: osst-users@lists.sourceforge.net
+X-Priority: 2
+X-Spam-Score: 6.6 (++++++)
+X-Spam-Report: Spam detection software,
+ running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Hallo, Wir sind ein führender E-Bike-Hersteller mit einer
-    Jahresproduktion von über 100.000 E-Bikes. Unsere Produkte werden weltweit
-    nach Europa, Nordamerika, Australien, Südafrika, dem Nahen Osten und we
-   [...] 
- 
- Content analysis details:   (6.7 points, 5.0 required)
- 
-  pts rule name              description
+ Content preview:  bbbb nn DHL Express 
+ Content analysis details:   (6.6 points, 5.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
-                             [192.154.230.147 listed in psbl.surriel.com]
-  4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [192.154.230.147 listed in dnsbl-1.uceprotect.net]
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
-                             domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
-  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
-                             domains are different
-  0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [192.154.230.147 listed in wl.mailspike.net]
-  0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.1 MISSING_MID            Missing Message-Id: header
+ 1.4 MISSING_DATE           Missing Date: header
+ 0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+ [34.82.249.27 listed in wl.mailspike.net]
+ 0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
+ [URI: dhl-redirect.vercel.app]
+ 0.0 TVD_RCVD_IP            Message was received from an IP address
+ 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.4 RDNS_DYNAMIC           Delivered to internal network by host with
+ dynamic-looking rDNS
+ 1.7 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+ 2.4 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+ [cf: 100]
+ 0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+ 0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1uje4z-0007PT-JQ
-Subject: [Osst-users] [SPAM] Unterwegs mit Stil und Power
+X-Headers-End: 1ujizJ-0002QU-Iq
+Subject: [Osst-users] [SPAM] Package Held
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -105,130 +96,78 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: pedelec@yjit168.net
-Content-Type: multipart/mixed; boundary="===============7150765628217381115=="
+Reply-To: replyemail@emxaple.com
+Content-Type: multipart/mixed; boundary="===============4498580082391079629=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1ujizL-0003Rg-1D@sfs-ml-1.v29.lw.sourceforge.com>
+Date: Wed, 06 Aug 2025 18:35:47 +0000
 
---===============7150765628217381115==
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: quoted-printable
+--===============4498580082391079629==
+Content-Type: multipart/related; boundary="===============6276026455117850123=="
 
-<html>
-<head>
-</head>
-<body>
-<p>Hallo,</p>
-<p>Wir sind ein f&uuml;hrender E-Bike-Hersteller mit einer
-Jahresproduktion=
- von &uuml;ber <b>100.000 E-Bikes</b>. Unsere Produkte werden weltweit
-nach=
- <b>Europa, Nordamerika, Australien, S&uuml;dafrika, dem Nahen Osten</b>
-un=
-d weiteren Regionen exportiert.</p>
-<p>In <b>Europa verf&uuml;gen wir &uuml;ber eigene Lager</b>, wodurch eine
-=
-<b>Lieferzeit von nur 3&ndash;7 Werktagen innerhalb der gesamten EU</b>
-gew=
-&auml;hrleistet ist. Zus&auml;tzlich betreiben wir Lager in
-<b>Gro&szlig;br=
-itannien und den USA</b>, auch dort betr&auml;gt die Lieferzeit <b>nur
-3&nd=
-ash;7 Tage</b>.</p>
-<p>Derzeit m&ouml;chten wir Ihnen ein besonders beliebtes Modell aus
-unsere=
-m <b>europ&auml;ischen Lager</b> vorstellen:</p>
-<div align=3D"center"><hr size=3D"1" width=3D"100%" noshade=3D"noshade"
-ali=
-gn=3D"center" /></div>
-<p><b>20" Fat Tire E-Bike &ndash; Leistungsstark und vielseitig
-einsetzbar<=
-/b></p>
-<ul>
-<li><b>Motor</b>: 750W (Spitze 1500W), Drehmoment bis 90 Nm &ndash;
-geeigne=
-t f&uuml;r Steigungen bis zu 35&deg;</li>
-<li><b>Akku</b>: 48V 15Ah, herausnehmbar, UL-zertifiziert, wasserdicht und
-=
-diebstahlsicher<br /> &rarr; Reichweite: bis zu 60 Meilen (PAS-Modus), ca.
-=
-40 Meilen im reinen Gasmodus<br /> &rarr; Ladezeit: ca. 6&ndash;7
-Stunden</=
-li>
-<li><b>Komfort</b>: Vorder- und Hinterradfederung, pannensichere 20"x4"
-Fat=
- Tires &ndash; ideal f&uuml;r Stadt, Berge und Schnee</li>
-<li><b>Sicherheit</b>: Helles LED-Frontlicht, R&uuml;cklicht mit
-Blinkerfun=
-ktion, mechanische Scheibenbremsen</li>
-<li><b>Fahrmodi</b>: 3 Unterst&uuml;tzungsmodi + 7-Gang-Schaltung, mit
-LCD-=
-Display zur Anzeige von Geschwindigkeit, Distanz und Akkustand</li>
-<li><b>Weitere Features</b>: Tempomat-Funktion, max. Belastung 200 kg,
-einf=
-ache Montage</li>
-</ul>
-<div align=3D"center"><hr size=3D"1" width=3D"100%" noshade=3D"noshade"
-ali=
-gn=3D"center" /></div>
-<p>Wenn Sie Interesse an einer Bestellung haben, <b>kontaktieren Sie uns
-bi=
-tte f&uuml;r ein individuelles Angebot</b>. Wir berechnen auf Basis Ihrer
-A=
-dresse den <b>bestm&ouml;glichen Preis inklusive Versand</b>.</p>
-<p>Au&szlig;erdem sind wir aktuell auf der Suche nach <b>lokalen
-Vertriebsp=
-artnern und autorisierten H&auml;ndlern</b> in Europa. Wenn Sie Interesse
-a=
-n einer Zusammenarbeit haben, freuen wir uns &uuml;ber Ihre
-R&uuml;ckmeldun=
-g.</p>
-<p>F&uuml;r weitere Informationen oder ein unverbindliches Angebot stehen
-w=
-ir Ihnen jederzeit gerne zur Verf&uuml;gung!<br /><br /></p>
-<p>Mit freundlichen Gr&uuml;&szlig;en,<br />Felix Hoffmann<br /><br /><img
-=
-src=3D"https://50rebels.com/cdn/shop/articles/336903115_195023189899582_313=
-8939827292304058_n.jpg?v=3D1680778239&amp;width=3D1600" width=3D"1000"
-heig=
-ht=3D"1000" /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><=
-br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-=
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><=
-br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-=
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><=
-br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-=
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><=
-br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-=
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><=
-br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-=
-/><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br
-/><=
-br /><br /><br /><br /><br />Bitte senden Sie Ihre Adresse zur Austragung
-a=
-us der Liste</p>
-<p><strong><br /></strong></p>
-</body>
-</html>
+--===============6276026455117850123==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgICA8bWV0YSBjaGFyc2V0
+PSJVVEYtOCI+CiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNl
+LXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCI+CiAgICA8dGl0bGU+YmJiYiBubjwvdGl0bGU+CiAg
+ICA8c3R5bGU+CiAgICAgICAgYm9keSB7IG1hcmdpbjogMDsgcGFkZGluZzogMDsgZm9udC1mYW1p
+bHk6IEFyaWFsLCBzYW5zLXNlcmlmOyBiYWNrZ3JvdW5kOiAjZjRmNGY0OyBjb2xvcjogIzMzMzMz
+MzsgfQogICAgICAgIC53cmFwcGVyIHsgbWF4LXdpZHRoOiA2MDBweDsgbWFyZ2luOiAwIGF1dG87
+IGJhY2tncm91bmQ6ICNmZmZmZmY7IGJvcmRlcjogMXB4IHNvbGlkICNlMGUwZTA7IH0KICAgICAg
+ICAuaGVhZGVyIHsgYmFja2dyb3VuZDogI2ZmY2MwMDsgcGFkZGluZzogMTBweDsgdGV4dC1hbGln
+bjogY2VudGVyOyBmb250LXNpemU6IDE2cHg7IGNvbG9yOiAjZDQwNTExOyBmb250LXdlaWdodDog
+Ym9sZDsgfQogICAgICAgIC5tYWluIHsgcGFkZGluZzogMTVweDsgZm9udC1zaXplOiAxNHB4OyBs
+aW5lLWhlaWdodDogMS41OyB9CiAgICAgICAgLmJ0biB7IGRpc3BsYXk6IGlubGluZS1ibG9jazsg
+cGFkZGluZzogMTBweCAyMHB4OyBiYWNrZ3JvdW5kOiAjZDQwNTExOyBjb2xvcjogI2ZmZmZmZjsg
+dGV4dC1kZWNvcmF0aW9uOiBub25lOyBmb250LXNpemU6IDE0cHg7IH0KICAgICAgICAuZm9vdGVy
+IHsgZm9udC1zaXplOiAxMnB4OyBjb2xvcjogIzY2NjY2NjsgdGV4dC1hbGlnbjogY2VudGVyOyBw
+YWRkaW5nOiAxMHB4OyBib3JkZXItdG9wOiAxcHggc29saWQgI2UwZTBlMDsgfQogICAgICAgIC5m
+b290ZXIgYSB7IGNvbG9yOiAjZDQwNTExOyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IH0KICAgICAg
+ICBAbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA2MDBweCkgewogICAgICAgICAgICAud3Jh
+cHBlciB7IHdpZHRoOiAxMDAlOyB9CiAgICAgICAgICAgIC5tYWluIHsgcGFkZGluZzogMTBweDsg
+fQogICAgICAgIH0KICAgIDwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CiAgICA8dGFibGUgd2lkdGg9
+IjEwMCUiIGNlbGxwYWRkaW5nPSIwIiBjZWxsc3BhY2luZz0iMCIgc3R5bGU9ImJhY2tncm91bmQ6
+I2Y0ZjRmNDtwYWRkaW5nOjEwcHggMDsiPgogICAgICAgIDx0cj4KICAgICAgICAgICAgPHRkIGFs
+aWduPSJjZW50ZXIiPgogICAgICAgICAgICAgICAgPHRhYmxlIGNsYXNzPSJ3cmFwcGVyIiBjZWxs
+cGFkZGluZz0iMCIgY2VsbHNwYWNpbmc9IjAiPgogICAgICAgICAgICAgICAgICAgIDx0cj4KICAg
+ICAgICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzPSJoZWFkZXIiPkRITCBFeHByZXNzPC90ZD4K
+ICAgICAgICAgICAgICAgICAgICA8L3RyPgogICAgICAgICAgICAgICAgICAgIDx0cj4KICAgICAg
+ICAgICAgICAgICAgICAgICAgPHRkIGNsYXNzPSJtYWluIj4KICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgIDxwPkhlbGxvIE9zc3QtdXNlcnMsPC9wPgogICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgPHA+UGxlYXNlIHZlcmlmeSB5b3VyIGFkZHJlc3MgdG8gZW5zdXJlIHlvdXIgcGFja2FnZSBh
+cnJpdmVzIG9uIHRpbWUuPC9wPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHA+QWN0aW9u
+IGlzIG5lZWRlZCB3aXRoaW4gNDggaG91cnMgdG8gYXZvaWQgZGVsYXlzIG9yIHJldHVybiBvZiB5
+b3VyIHNoaXBtZW50LjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwIHN0eWxlPSJ0
+ZXh0LWFsaWduOmNlbnRlcjttYXJnaW46MTVweCAwOyI+CiAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgPGEgaHJlZj0iaHR0cDovL20uc2hvcGluYW5jaG9yYWdlLmNvbS9yZWRpcmVjdC5h
+c3B4P3VybD1odHRwcyUzQSUyRiUyRmRobC1yZWRpcmVjdC52ZXJjZWwuYXBwP2V0YT1iM056ZEMx
+MWMyVnljMEJzYVhOMGN5NXpiM1Z5WTJWbWIzSm5aUzV1WlhRPSIgY2xhc3M9ImJ0biI+VmVyaWZ5
+IEFkZHJlc3M8L2E+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICA8cD5Gb3IgYXNzaXN0YW5jZSwgY29udGFjdCBESEwgc3VwcG9ydC48
+L3A+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvdGQ+CiAgICAgICAgICAgICAgICAgICAgPC90
+cj4KICAgICAgICAgICAgICAgICAgICA8dHI+CiAgICAgICAgICAgICAgICAgICAgICAgIDx0ZCBj
+bGFzcz0iZm9vdGVyIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwPkRITCBJbnRlcm5h
+dGlvbmFsIEdtYkgsIDUzMTcxIEJvbm4sIEdlcm1hbnk8L3A+CiAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICA8cD4mY29weTsgMjAyNSBESEwgSW50ZXJuYXRpb25hbCBHbWJIPC9wPgogICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgPHA+PGEgaHJlZj0iIyI+T3B0IE91dDwvYT4gfCA8YSBocmVm
+PSIjIj5Qcml2YWN5PC9hPjwvcD4KICAgICAgICAgICAgICAgICAgICAgICAgPC90ZD4KICAgICAg
+ICAgICAgICAgICAgICA8L3RyPgogICAgICAgICAgICAgICAgPC90YWJsZT4KICAgICAgICAgICAg
+PC90ZD4KICAgICAgICA8L3RyPgogICAgPC90YWJsZT4KPC9ib2R5Pgo8L2h0bWw+
+
+--===============6276026455117850123==--
 
 
-
---===============7150765628217381115==
+--===============4498580082391079629==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7150765628217381115==
+--===============4498580082391079629==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -239,4 +178,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7150765628217381115==--
+--===============4498580082391079629==--
+
