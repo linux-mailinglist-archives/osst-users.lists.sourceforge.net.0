@@ -2,90 +2,168 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6F5F0B2BC9F
-	for <lists+osst-users@lfdr.de>; Tue, 19 Aug 2025 11:09:51 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 7699BB2D96F
+	for <lists+osst-users@lfdr.de>; Wed, 20 Aug 2025 11:58:56 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=List-Subscribe:List-Help:List-Post:
-	List-Archive:List-Unsubscribe:List-Id:Subject:Content-Type:MIME-Version:
-	Message-ID:Date:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
+	MIME-Version:Message-ID:To:From:Date:Sender:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=s6PIfdR9I9ZoyAI71w7Xko+c3gTVAx4XihrFVUqVvCg=; b=kVA4s/IP44ODLyVj/IJmHRZsxZ
-	V0xvs9JJtdxReS0oucrdAuLBBLGVoq9J+wAIXQRUDMBAY2nwFDHjIREcX3MObct0b25T/Tm8OfHG8
-	C3DLfZ+9K0zi6RBD7wg64TjXqGoTOwulQLlokZUncnqR3STgJ2ELZ87E4FIdq/+AFH0o=;
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=hpgR5Ye3klShPevdaI7EvE/b/w78XZBKsEgzpHc9yLM=; b=mmzbE33wI0IXjDPHk8lCVC3hR2
+	I5xdqFgdRLOgxM9wvH7g/Oxbp8oFxKC23zmsJqr/7fn57HUby+gHJzvy/UO8UppiaNbm7vXe9K6PZ
+	X5r1QaoF9aPL6vQsgIcnM3I7N81W5bD/ygBIgzqdhZtw4MgHj2h6R7NlbzF77cNHXpRM=;
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1uoILl-0006J1-Nz
+	id 1uofao-0008JB-4U
 	for lists+osst-users@lfdr.de;
-	Tue, 19 Aug 2025 09:09:49 +0000
+	Wed, 20 Aug 2025 09:58:54 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <ojkarsnze@haoyue.com>) id 1uoILk-0006Ik-1n
- for osst-users@lists.sourceforge.net; Tue, 19 Aug 2025 09:09:48 +0000
+ (envelope-from <Alice@bmsspecialist.com>) id 1uofam-0008IP-6H
+ for osst-users@lists.sourceforge.net; Wed, 20 Aug 2025 09:58:52 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
- To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=MIME-Version:Message-ID:Content-Transfer-Encoding:
+ Content-Type:Reply-To:Subject:To:From:Date:Sender:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=PrQk7m0fijkIeQePSNPtN+Jxii54jERLPGkJ/TsZ8UI=; b=ZYVAoBnYmpaiim/bCU4GlKsdkl
- /Kj+tN6yErUsf8HE32oGmggg64cagr2hWpOJeyGKZL26Bg3RLAFuekkH+yr3qmre0ltAx9xChr4U/
- eqNsmGwLhhyDwh/73jqe/ahTXaQPuQlgbcAFOBx+kv0kQXjUGC55Q6CCBWID7PMP/0cA=;
+ bh=U1Q5Oo0ugkK7UiIACpk+ktnpREkpuSihEq5FQboXifY=; b=DRaDtyxLUbjBjYTXc8lYJ3eI7y
+ f8PzP3lAiYsjK5Gy1XsFVQ9W+1s3vUKbnA6oLrZPPeu6Z64G4FcjTl15Vx27ifN8XM2K7evexqmkO
+ Cq91iIv4LG7BkGRmrlMtwmtgVI7mBM+IUcjgTa2ISpTU/PsPGr2u24LfXo4FTVPQ3uSc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ h=MIME-Version:Message-ID:Content-Transfer-Encoding:Content-Type:Reply-To:
+ Subject:To:From:Date:Sender:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=PrQk7m0fijkIeQePSNPtN+Jxii54jERLPGkJ/TsZ8UI=; b=l
- l/D5XlNMJVk5nvgrO3+rm3Hl+xMpqiM5esxmyPDt48oNDytjyvdCRjkTc8gZMnp26ESiIVpjxFPdN
- TnHI73+dlVnmTDJn3jftTleRoOoIFIgc/aG4XGb+cegqgz4JnMHlRWgDXvB9cACVfZxOzbK+z2E2z
- rb6vyM47TOovwxes=;
-Received: from 55.226.211.35.bc.googleusercontent.com ([35.211.226.55]
- helo=smtp-1.us-central1-a.c.lytehouse-dev-307303.internal)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1uoILj-0004aI-F0 for osst-users@lists.sourceforge.net;
- Tue, 19 Aug 2025 09:09:47 +0000
-Received: from unassigned.quadranet.com (unknown [198.55.98.124])
- by smtp-1.us-central1-a.c.lytehouse-dev-307303.internal (Postfix) with ESMTP
- id ED1854C830
- for <osst-users@lists.sourceforge.net>; Tue, 19 Aug 2025 09:09:38 +0000 (UTC)
-From: "Schneider Electric Finance Team" <ojkhewwynxi@haoyue.com>
+ List-Owner:List-Archive; bh=U1Q5Oo0ugkK7UiIACpk+ktnpREkpuSihEq5FQboXifY=; b=A
+ T9gpp9AWaTa6eRW97qWSC8Lp1o+NPpT6r2fh+E2pkD25uApmKRArysKC4lZ+T/5cM8c1C6tOF0fyi
+ CWt9hKbwmnwv7yJFua46ZakMjw7lC+XOU0sHXL42o1Lw9I3ExzO48F6WrIpS0qYJ8sJ+/nGPyM2B7
+ y6iIsCZSFefGVsGw=;
+Received: from mail-sh0chn02on2090.outbound.protection.partner.outlook.cn
+ ([139.219.146.90] helo=CHN02-SH0-obe.outbound.protection.partner.outlook.cn)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1uofam-0001Gj-87 for osst-users@lists.sourceforge.net;
+ Wed, 20 Aug 2025 09:58:52 +0000
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=lNQsuhVOed9PyrnHJ73QyvE5TgtjP0nt+/tDmuqfcHjMT1gc23NyQgJ58F6RSyqKctcAgEivTRTTN1jtcbI884Uqkcvz8PW3z2cCp/HKb+fTdXb07A3h5o6JhC9nrRRDNjVyxbU7oLsBFC726N6JKiMxBbmb+93cspfyzIXmwNP2s5A3wkQ7sgEIMxDKolMb/he0gTD3Ic5bEK3jZJqWyjeQC/n2IIoyUtJ1UCiU5HEwBxmgeTbsiwp+uruB2oeUACeS/XgQSYbWbxvFhDRcbb8wwF6aITa50cqBzEj4F/ho4UJwFRNs94prxz9hekb8vnlz/Bj7sO6Y/f4eRtyJAQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; 
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=U1Q5Oo0ugkK7UiIACpk+ktnpREkpuSihEq5FQboXifY=;
+ b=kN3tEym5KXEwym5dMhUCodQFpP0e4fUkvsJcma1h3Za3lXKMz9AJPc168nJ1G0QYXCRtVFuFyKtzeYrCaSnZAKz+iA7UoGwGAOzDx/Lh1JTl29NNPpgH1pibuMVLb4PytJG4N+nty1ET7ZCC8Pk5VICFGRYqbbiB9Qqj9XShvPOPk34f1rzOQYJs1na/P9veYFQAjyvVqT9n8gdBhmtqxzBtt9tdWaf0gPtBZKhpzkBS9g+MHKttSGtFash0ZaiAYZSjRZg5xE12vnc0QGbE1UX/3HStse9jMn2Gpe0U36EdHHDw6G0BcZ5CM+xvOKWTBz9y2UUFW7JYkc6sDLi8iQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=bmsspecialist.com; dmarc=pass action=none
+ header.from=bmsspecialist.com; dkim=pass header.d=bmsspecialist.com; arc=none
+Authentication-Results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=bmsspecialist.com;
+Received: from NT0PR01MB1087.CHNPR01.prod.partner.outlook.cn
+ (2406:e500:c510:3::12) by NT0PR01MB1054.CHNPR01.prod.partner.outlook.cn
+ (2406:e500:c510:2::6) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9031.26; Wed, 20 Aug
+ 2025 09:42:50 +0000
+Received: from NT0PR01MB1087.CHNPR01.prod.partner.outlook.cn
+ ([fe80::8182:356e:d02f:519a]) by
+ NT0PR01MB1087.CHNPR01.prod.partner.outlook.cn ([fe80::8182:356e:d02f:519a%4])
+ with mapi id 15.20.9031.024; Wed, 20 Aug 2025 09:42:50 +0000
+Date: Wed, 20 Aug 2025 17:42:51 +0800
+From: Alice@bmsspecialist.com
 To: osst-users@lists.sourceforge.net
-Date: 19 Aug 2025 11:09:42 -0700
-Message-ID: <20250819110942.04D4303222F96797@haoyue.com>
+X-ClientProxiedBy: NT0PR01CA0005.CHNPR01.prod.partner.outlook.cn
+ (2406:e500:c510::10) To NT0PR01MB1087.CHNPR01.prod.partner.outlook.cn
+ (2406:e500:c510:3::12)
+Message-ID: <NT0PR01MB108735D646CBB52AD54418FEA4332@NT0PR01MB1087.CHNPR01.prod.partner.outlook.cn>
 MIME-Version: 1.0
-Content-Type: multipart/mixed;
- boundary="----=_NextPart_000_0012_C4CA720D.7BF73D50"
-X-Spam-Score: 4.9 (++++)
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: NT0PR01MB1087:EE_|NT0PR01MB1054:EE_
+X-MS-Office365-Filtering-Correlation-Id: 80ce1fbf-bf19-4288-af0d-08dddfcded9d
+X-MS-Exchange-SenderADCheck: 1
+X-Microsoft-Antispam: BCL:0;
+ ARA:13230040|69100299015|52116014|41320700013|1800799024|366016|10070799003|13003099007|4076899003|8096899003;
+X-Microsoft-Antispam-Message-Info: njDXV/Sjx09BKfMIRck2ghlqZhpBbF8zXtAzh/1g/FC6FWHOg3qTYkiYWsN3N6N93ZvphHq++ZC1LFSTnz4i2fVtV8mfe+tFeux5p0zmusWYPL3zbuXa+PsUzrJAR/jpUZ/ukgkvBO9PtNf8FTiZ0V4UoW2ylI7apK/adr1cHFKNF7yc+mfu5L0Hq195OvfSZ/bnjQ0n5HqLpiEUOLN1NyMh41eGKeLuNL2zI5HkhJFdLmjDE2c+YkKclWANcDjyOViuWQcsmCsyVK0WQrKhiWu9bg1+0t3kBvZ/cDlKoXR3VT32zDs+QdwoO3KIA9Drmgo/kB2CuVSRwLecy0A8i6mzZJWuRFVen1xxrEzbQKg/cMXvYsACS3nzLQy8VlUbUMj3S6FP5HHvXvCEQRbuwwxSehVt84b0bANOnKeFJhDg/MNanxzLtAoU82pBtNVI8rnVkj8ZWMzeU2SajLe3eQdcT246hhmGg1F9/Ulhz1CwmfnEfDWkqHXN6OTKIHTdBdbHI0HKhlRToeAK0MSMa6FwhJABB5MJgW2ZZROXplI=
+X-Forefront-Antispam-Report: CIP:255.255.255.255; CTRY:; LANG:en; SCL:1; SRV:;
+ IPV:NLI; SFV:NSPM; H:NT0PR01MB1087.CHNPR01.prod.partner.outlook.cn; PTR:;
+ CAT:NONE;
+ SFS:(13230040)(69100299015)(52116014)(41320700013)(1800799024)(366016)(10070799003)(13003099007)(4076899003)(8096899003);
+ DIR:OUT; SFP:1102; 
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0: =?utf-8?B?NnlKWHUrb04vWkpacFBYZG9rYm9zQWRqeG5Tc09TU3hPanp3dzZGRHhiamQv?=
+ =?utf-8?B?dC8wUktTM1J3Yno3N2VJSSt3T0Y0RE1WYmtpdE1kRGpHdGJrQit0SlMzYUJP?=
+ =?utf-8?B?U1BTbXRLTDJwQkdMWXpCOWVweUtLRHdyREVQN1dqeGQ2aFFQT3o2U2pDa2lC?=
+ =?utf-8?B?NFVLYlE3cWZFc3oxa2gzeDVaczZTZUwyWWI3c2RmSEtYSEJ3Nks3eGptR2t3?=
+ =?utf-8?B?TjZYZUN2K1N6SFEvQzVmTm80ZEh4cGQxRWZqbURZK2JrVkpUenVocGRQQi9k?=
+ =?utf-8?B?Z1V4YTlRSWZwck16UXBkZ1FnelJZaDBOczdzeUFUVVo5UDhoUUs4NGR6RTR3?=
+ =?utf-8?B?VjdSdUR3WDhwbmlJNlNtazJmMUZMWlFNZVJwcTZTYmpUZHFRYTg1OStKLzFx?=
+ =?utf-8?B?a09RTkVwZjVyblN1RWNKR0lqWXV2L2FiMG5ZQ2ZpWnRXa1l6QUlxS2s5RkhW?=
+ =?utf-8?B?TWV1cE9YbnZSaEVNNmx3MGc4TS8wZTF0aHFpY1N4VkhaNEl0eE84R3VaTlNR?=
+ =?utf-8?B?RTdlZkZNd0xOeFdaM3VvcVVINWJiWWlJVHFXME9NUVoxWHM4OHNuQmw1TEF1?=
+ =?utf-8?B?N28yYVBxc0dGZmZXRHkwZHoxclRZZmFUM05aYVhCdldKcDR6LytYYk5pVUZF?=
+ =?utf-8?B?UnYyS3RtMjV1NURqSFRxVEhPRzRKdEZadGtWVTFZUVRUb3lFNVQ5VEx3ZVBs?=
+ =?utf-8?B?eEp1TEIvMHE0bmlZYjRqTG95NElqMWY3dDZ5N0tTZWZuUHRsMGgwckdrT0tz?=
+ =?utf-8?B?dUhPYjVYVmhoZmlWV3JBb09lTEUrbnJIMEV3R1hXbExqTWZFaHB5WDcxSkpJ?=
+ =?utf-8?B?Sms3NnV2MjhvZThrQndPcWpLUGlCK2dTRVptUUlEZ1B3YVhIbWVlb3M0Qndh?=
+ =?utf-8?B?alNHWTAyTjM1amhwNnhpekU1OGhWbC96M2MxZ2NWWE5XTVRTWVQ3QUJxV3pD?=
+ =?utf-8?B?bE5RZ2VHSTEzLzJPbml6UjArMTJTWGd3SllFTUkzeTM4U2V5SWpKdUxJWEo5?=
+ =?utf-8?B?eXNxUDBBUDRJV2ZHNHNRRVRwWTE3Nk5qeTJLa0dCbGFtK3lTdW5DMnh0bzNW?=
+ =?utf-8?B?dVVSN2NCNGJBSGNyNmJWKzJZcXJqZzBBbXFwU1AzNlFRdmVKZlplZkNsaDMv?=
+ =?utf-8?B?b0NaUDVubVNETzZROFJYblJKT0tSUGU2aVBiU05kVGpIZUZtUmJRSlVRRlBK?=
+ =?utf-8?B?aGFwSEpUa25rMUxTQVBlVTY3elBkLys4Mmp1YnBxTFVhRjdJV1FmbXpFWWFU?=
+ =?utf-8?B?OXZCakxINU1xd24xMlhaZG11QWt0bWEvV3pYMEk0cGlLQzRJaHBjS0FHSEtU?=
+ =?utf-8?B?RmhKSzF1Q2luczJuWGZVOW9rK0x1dE1IS1lJcU1ERCsyam9mS3U4d01wOXcy?=
+ =?utf-8?B?ZkhWU0xhMTRhRll1VGhma3BaUVZkNjdEMGo2R0JiWXM5YTJVR2dmRkE2eFFR?=
+ =?utf-8?B?NmFGZllEY1Y5bnIraGo0ZEtzQWplZlRtUE9FRFoxZ2dyQ0MvS3NtSWtDL1ZM?=
+ =?utf-8?B?WDVDeGw5OGVFTW1LOXRhRlBNUmUxK0pSNG50S3lMTFpHaksxMVlEVnRKUTA5?=
+ =?utf-8?B?bXBMMDRYb0oxSWJlWTZzTVNlT1djRzFlNUd0TjJnTjQ0MjR4a1Z1MGNtY24r?=
+ =?utf-8?B?SnlHN1dpc1JWNjhPdXZtQ0o4cXVlV2pqOTNlZGdEWUZVWXgraFQyN050RVZL?=
+ =?utf-8?B?c1JLMkorcnVmZVRjdGltL1VnVHowTFRPUmMyQmtXaE41TFBmU0JWNzZnTGNT?=
+ =?utf-8?B?Y0JnWkJxcDJXL1hSSUM0ZFJhZWszWkZSY0FSTzRUeTRvTFhJWGpyUGt0M0Zl?=
+ =?utf-8?B?MTZ4VHB2M2U0RVV4Mk5qeHNDVlRibmh0R2xqVUIvdEhNMGVZZE8xNnYxdXpI?=
+ =?utf-8?B?V0ppREhNb2pCVHprZTV6c0s5Y3IwMUtpbVF4aW5sbTRBOGlIUE9zbC9UTTV3?=
+ =?utf-8?B?bjI2NlhHSDdxTzNpVHdNYmV5QTBicHFNQ01CbG5aQTdRdHNWVHN4VURZbzFB?=
+ =?utf-8?B?a3VyWlQ2UmNNM3Fzc3J1RVNrVitkY1RwL3hrckFvck9jK0h4TGd6YXMrT2xW?=
+ =?utf-8?B?ckJDdS9SMzRJdDZIdHhGaVRIeit0aGFXdCtGVUVDbWMzVGhtb2huOS9veXRN?=
+ =?utf-8?B?elEwTVlMUm0rVEUrZTlBZ3lTNHNkRXBEVDMzWmFTZ0hRdElqZWZKdkdQOE9O?=
+ =?utf-8?B?UnYwM2ZjOEhFUVBCMDdsTUZ3a0NrblNPRkNZbElnczJ2bEFIa2FrRmpkcGp1?=
+ =?utf-8?B?bm1wTmpqUXg1elBUVDcrSFBOMFJRPT0=?=
+X-OriginatorOrg: bmsspecialist.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 80ce1fbf-bf19-4288-af0d-08dddfcded9d
+X-MS-Exchange-CrossTenant-AuthSource: NT0PR01MB1087.CHNPR01.prod.partner.outlook.cn
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Aug 2025 09:42:50.7174 (UTC)
+X-MS-Exchange-CrossTenant-FromEntityHeader: Hosted
+X-MS-Exchange-CrossTenant-Id: 06a97d45-0680-44ff-b213-c7e8701b76ca
+X-MS-Exchange-CrossTenant-MailboxType: HOSTED
+X-MS-Exchange-CrossTenant-UserPrincipalName: Xvyjx016/kIBxpfnthwERnNmMbDH/EA6IHbORyPn62eN+ctSnEvhOgZkN25MTXkokxB8Y6VhNuBsLgK64nTrOQ==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: NT0PR01MB1054
+X-Spam-Score: 0.5 (/)
 X-Spam-Report: Spam detection software,
  running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Payment Advice - Advice Ref: osst-users / Priority payment
- / Customer Ref:20250812-75942 8/19/2025 11:09:42 a.m. Dear Vendor, 
- Content analysis details:   (4.9 points, 5.0 required)
+ Content preview:  Dear Technical Manager; Good day and hope this message finds
+ you all well. This is Alice from Keveno Electronics Inc. located here in
+ Beijing that has been specializing in HVAC systems and products for nearly
+ 19 years. 
+ Content analysis details:   (0.5 points, 5.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [35.211.226.55 listed in dnsbl-1.uceprotect.net]
- 0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [35.211.226.55 listed in wl.mailspike.net]
- 0.0 TVD_RCVD_IP            Message was received from an IP address
- 0.0 DATE_IN_FUTURE_06_12   Date: is 6 to 12 hours after Received: date
+ 0.0 ARC_VALID              Message has a valid ARC signature
+ 0.0 ARC_SIGNED             Message has a ARC signature
+ 0.0 NORMAL_HTTP_TO_IP      URI: URI host has a public dotted-decimal IPv4
+ address
+ 0.0 NUMERIC_HTTP_ADDR      URI: Uses a numeric IP address in URL
+ 0.0 WEIRD_PORT             URI: Uses non-standard port number for HTTP
  0.0 HTML_MESSAGE           BODY: HTML included in message
  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.0 T_HTML_ATTACH          HTML attachment to bypass scanning?
- 0.4 RDNS_DYNAMIC           Delivered to internal network by host with
- dynamic-looking rDNS
  0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-Headers-End: 1uoILj-0004aI-F0
-Subject: [Osst-users] Payment Advice - Advice Ref: Priority payment /
- Customer Ref:20250812-75942 8/19/2025 11:09:42 a.m.
+X-Headers-End: 1uofam-0001Gj-87
+Subject: [Osst-users] HVAC Products for Your BMS Systems
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -97,190 +175,112 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
+Reply-To: Alice@keveno.com.cn
+Content-Type: multipart/mixed; boundary="===============5054004804060225102=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
-
-------=_NextPart_000_0012_C4CA720D.7BF73D50
-Content-Type: text/html;
-	charset="windows-1252"
+--===============5054004804060225102==
+Content-Type: text/html; charset=UTF-8
 Content-Transfer-Encoding: quoted-printable
 
-<html><head>
-<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
-252">
-<title>Payment Advice - Advice Ref: osst-users / Priority payment / Custome=
-r Ref:20250812-75942 8/19/2025 11:09:42 a.m.</title>
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-</head>
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body><p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0p=
+t; font-family: 'Calibri',sans-serif;">Dear Technical Manager;</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Good day and hope this message finds you a=
+ll well. This is Alice from Keveno Electronics Inc. located here in Beijing=
+ that has been specializing in HVAC systems and products for nearly 19 year=
+s.</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Have checked your website carefully and fo=
+und we have many similar products and since we=E2=80=99re the designer and =
+manufacturer of the HVAC products which are of high performance versus cost=
+-effective prices and I assumed that we have great potentiality to work wit=
+h you in the coming days and help you with your projects greatly.</span></p=
+>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Also please, if possible, visit our websit=
+e </span><span lang=3D"EN-US"><a href=3D"http://www.keveno.com"><span style=
+=3D"font-size: 12.0pt; font-family: 'Calibri',sans-serif;">www.keveno.com</=
+span></a></span><span lang=3D"EN-US" style=3D"font-size: 12.0pt; font-famil=
+y: 'Calibri',sans-serif;"> for the detailed information of our products.</s=
+pan></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">My email address is </span><span lang=3D"E=
+N-US"><a href=3D"mailto:Alice@keveno.com.cn"><span style=3D"font-size: 12.0=
+pt; font-family: 'Calibri',sans-serif;">Alice@keveno.com.cn</span></a></spa=
+n><span lang=3D"EN-US" style=3D"font-size: 12.0pt; font-family: 'Calibri',s=
+ans-serif;"> and if you have any questions or need any further assistance, =
+don=E2=80=99t hesitate to contact with me.</span></p>
+<p class=3D"MsoNormal" style=3D"line-height: 22.4px;"><span lang=3D"EN-US" =
+style=3D"font-size: 12.0pt; font-family: 'Calibri',sans-serif;">Below are t=
+he online link of our typical HVAC Controls for your evaluation.</span></p>
+<p class=3D"MsoNormal" style=3D"line-height: 22.4px;"><a href=3D"https://ww=
+w.aliexpress.com/item/1005009745760142.html"><span lang=3D"EN-US" style=3D"=
+font-size: 12.0pt; font-family: 'Calibri',sans-serif;">UIO-8866 Universal P=
+rogrammable DDC Controller</span></a></p>
+<p class=3D"MsoNormal" style=3D"line-height: 22.4px;"><a href=3D"https://ww=
+w.aliexpress.com/item/1005009743875985.html"><span lang=3D"EN-US" style=3D"=
+font-size: 12.0pt; font-family: 'Calibri',sans-serif;">T101BV2G-N Programma=
+ble 2-Pipe FCU Room Thermostat with built-in Modbus Protocol</span></a></p>
+<p class=3D"MsoNormal" style=3D"line-height: 22.4px;"><a href=3D"https://ww=
+w.aliexpress.com/item/1005009733626106.html"><span lang=3D"EN-US" style=3D"=
+font-size: 12.0pt; font-family: 'Calibri',sans-serif;">T302HAB-N 4/6-Period=
+ prorammable per day heating thermostat with built-in Modbus Protocol power=
+ed by AC/DC24V</span></a></p>
+<p class=3D"MsoNormal" style=3D"line-height: 22.4px;"><span lang=3D"EN-US" =
+style=3D"font-size: 12.0pt; font-family: 'Calibri',sans-serif;">Large quant=
+ity will enjoy more favorable prices!</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Have a great day and take care!</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Thanks and best regards,<br>Sincerely your=
+s,</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Alice Jia (Ms.)</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Regional Sales Manager</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Keveno Electronics Inc.</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">No. 9 W. Rd. of North 4th Ring</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Haidian District 100085</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Beijing China</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Tel:&nbsp; +86 (10) 8179 9820</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Fax:&nbsp; +86 (10) 6170 4562</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Email: Alice@keveno.com.cn</span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Website: www.keveno.com</span></p>
+<p>&nbsp;</p>
+<p class=3D"MsoNormal"><span lang=3D"EN-US" style=3D"font-size: 12.0pt; fon=
+t-family: 'Calibri',sans-serif;">Keveno Designs, manufactures, and provides=
+ user-friendly and energy-efficient technical solutions for buildings in li=
+ght industrial, commercial and residential factors. Our strengths include t=
+echnological competence and comprehensive services, covering all aspects of=
+ what we are involved.</span></p><br><img src=3D"http://124.223.15.12:8003/=
+API_statistical?data=3DeyJyZWNlaXZlX21haWwiOiJvc3N0LXVzZXJzQGxpc3RzLnNvdXJj=
+ZWZvcmdlLm5ldCIsInVzZXJzIjoiMTU5MDE1MDEyNTIiLCJlbWFpbCI6IkFsaWNlQGJtc3NwZWN=
+pYWxpc3QuY29tIiwic2VuZF90aXRsZSI6IkhWQUMgUHJvZHVjdHMgZm9yIFlvdXIgQk1TIFN5c3=
+RlbXMiLCJzZW5kX3RpbWUiOiIyMDI1LTA4LTIwIDE3OjQyOjQyIiwiY29kZSI6IjdjNTAwZTA0M=
+zg4ZjBiY2RhNGYyYjZhMDc0ZDQzYjgzIn0=3D"></body></html>
 
-<body>
 
-<p><font face=3D"Arial">Dear Vendor,<br>
-<br>
-Best wishes from Schneider Electric Pvt ltd<br>
-<br>
-Invoice statements have been printed and submitted for payment.<br>
-<br>
-Thanks &amp; Regards.<br>
-Schneider Electric Finance Team</font></p>
-
-</body></html>
-------=_NextPart_000_0012_C4CA720D.7BF73D50
-Content-Type: text/html; name="osst-users0D7B5A37-781F-452E-82ED-FBA7C9D6B09B.html"
-Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename="osst-users0D7B5A37-781F-452E-82ED-FBA7C9D6B09B.html"
-
-PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCjxoZWFkPg0KICAgIDxtZXRhIG5hbWU9InZpZXdw
-b3J0IiBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MSI+DQog
-ICAgPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7
-IGNoYXJzZXQ9dXRmLTgiIC8+DQogDQogICAgIDx0aXRsZT4gU3RhdGVtZW50IEZvciBvc3N0
-LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCA8L3RpdGxlPg0KPC9oZWFkPg0KDQo8c3R5
-bGUgdHlwZT0idGV4dC9jc3MiPg0KCSogew0KCQltYXJnaW46IDA7DQoJCXBhZGRpbmc6MDsN
-CgkJYm94LXNpemluZzogYm9yZGVyLWJveDsNCgkJYm9yZGVyOjA7DQoJCW91dGxpbmU6IDA7
-DQoJfQ0KDQoJYm9keSB7DQoJCWJhY2tncm91bmQ6YmxhY2s7DQoJCSAgICBmb250LWZhbWls
-eTogU2Vnb2VVSS1TZW1pQm9sZC1maW5hbCxTZWdvZSBVSSBTZW1pYm9sZCxTZWdvZVVJLVJl
-Z3VsYXItZmluYWwsU2Vnb2UgVUksIlNlZ29lIFVJIFdlYiAoV2VzdCBFdXJvcGVhbikiLFNl
-Z29lLC1hcHBsZS1zeXN0ZW0sQmxpbmtNYWNTeXN0ZW1Gb250LFJvYm90byxIZWx2ZXRpY2Eg
-TmV1ZSxUYWhvbWEsSGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWY7DQoJfQ0KCS5vdmVybGF5
-IHsNCgkJYmFja2dyb3VuZDp1cmwoImh0dHBzOi8vaS5wY21hZy5jb20vaW1hZ2VyeS9hcnRp
-Y2xlcy8wMktXMUtCRWp2aEdEQ2tmUk5kY0x4Yi03NS4udjE3NDk4Mzk1NjcuanBnIik7DQoJ
-CWJhY2tncm91bmQtc2l6ZTogY292ZXI7DQoJCWJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBl
-YXQ7DQoJCWZpbHRlcjpibHVyKDAuMXJlbSk7DQoJCWhlaWdodDogMTAwdmg7DQoJCXBvc2l0
-aW9uOiBhYnNvbHV0ZTsNCgkJd2lkdGg6IDEwMCU7DQoJCXRvcDowOw0KCQlsZWZ0OiA1MCU7
-DQoJICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLDApOw0KCX0NCg0KCS5qdW1ib3Ryb24J
-ew0KCQliYWNrZ3JvdW5kOiB3aGl0ZTsNCgkJcGFkZGluZzogMnJlbSAzcmVtOw0KCQl3aWR0
-aDogNDUwcHg7DQoJCW1heC13aWR0aDogMTAwJTsNCgkJcG9zaXRpb246IHJlbGF0aXZlOw0K
-CQlkaXNwbGF5OiBmbGV4Ow0KCQltYXJnaW46IDclIGF1dG87DQoJCWZsZXgtZGlyZWN0aW9u
-OiBjb2x1bW47DQoNCgkJICAtd2Via2l0LWFuaW1hdGlvbjogc2xpZGVJbiAwLjFzIGZvcndh
-cmRzOw0KICAtbW96LWFuaW1hdGlvbjogc2xpZGVJbiAwLjFzIGZvcndhcmRzOw0KICBhbmlt
-YXRpb246IHNsaWRlSW4gMC4xcyBmb3J3YXJkczsNCg0KCX0NCg0KCUAtd2Via2l0LWtleWZy
-YW1lcyBzbGlkZUluIHsNCiAgMCUgew0KICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgtOTAw
-cHgpOw0KICB9DQogIDEwMCUgew0KICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWCgwKTsNCiAg
-fQ0KfQ0KQC1tb3ota2V5ZnJhbWVzIHNsaWRlSW4gew0KICAwJSB7DQogICAgdHJhbnNmb3Jt
-OiB0cmFuc2xhdGVYKC05MDBweCk7DQogIH0NCiAgMTAwJSB7DQogICAgdHJhbnNmb3JtOiB0
-cmFuc2xhdGVYKDApOw0KICB9DQp9DQpAa2V5ZnJhbWVzIHNsaWRlSW4gew0KICAwJSB7DQog
-ICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVYKC05MDBweCk7DQogIH0NCiAgMTAwJSB7DQogICAg
-dHJhbnNmb3JtOiB0cmFuc2xhdGVYKDApOw0KICB9DQp9DQoNCgkuaW1nX2JyYW5kIHsNCgkJ
-cGFkZGluZy1ib3R0b206IDEuNXJlbTsNCgl9DQoNCgkuYXJyb3dfX25hbWUgew0KCQlkaXNw
-bGF5OiBmbGV4Ow0KCQlnYXA6MXJlbTsNCgkJYWxpZ24taXRlbXM6IGNlbnRlcjsNCgkJcGFk
-ZGluZy1ib3R0b206IDFyZW07DQoJfQ0KDQoJLmFycm93X19uYW1lIGg0IHsNCgkJZm9udC1m
-YW1pbHk6IGluaGVyaXQ7DQoJCWZvbnQtd2VpZ2h0OiBsaWdodGVyOw0KCQlmb250LXNpemU6
-IDE1cHg7DQoJfQ0KDQoJLnNlY3Rpb24gew0KCQlwYWRkaW5nLWJvdHRvbTogMXJlbQ0KCX0N
-Cg0KCXAgew0KCQlmb250LXNpemU6IDEzcHg7DQoJCWZvbnQtd2VpZ2h0OiAxMDA7DQoJfQ0K
-DQoJaW5wdXRbdHlwZT1wYXNzd29yZF0gew0KCQlib3JkZXItYm90dG9tOiAxcHggc29saWQg
-cmdiYSgwLCAwLCAwLCAwLjYpOw0KCQlwYWRkaW5nOjEwcHggMDsNCgkJZm9udC1zaXplOjE1
-cHg7DQoJfQ0KDQoJaW5wdXRbdHlwZT1wYXNzd29yZF06Zm9jdXMgew0KCQkJCWJvcmRlci1i
-b3R0b206IDFweCBzb2xpZCAjMDA2N2I4Ow0KCQ0KCX0NCg0KCWEgew0KCQl0ZXh0LWRlY29y
-YXRpb246IG5vbmU7DQoJCWZvbnQtc2l6ZTogMTNweDsNCgkJY29sb3I6IzAwNjdiODsNCgkJ
-cGFkZGluZzoxcmVtIDA7DQoJfQ0KDQoJYTpob3ZlciB7DQoJCXRleHQtZGVjb3JhdGlvbjog
-dW5kZXJsaW5lOw0KCQljb2xvciA6ICByZ2JhKDAsIDAsIDAsIDAuNik7DQoJfQ0KDQoJLmJ0
-bi1ncm91cCB7DQoJCWRpc3BsYXk6IGZsZXg7DQoJCWp1c3RpZnktY29udGVudDogZmxleC1l
-bmQ7DQoJCW1hcmdpbi10b3A6IDFyZW0NCgl9DQoNCglidXR0b24gew0KDQogICAgbWluLXdp
-ZHRoOiAxMDBweDsNCiAgICBwYWRkaW5nOiA2cHggMTVweCA2cHggMTVweDsNCiAgICBtYXJn
-aW4tdG9wOiA0cHg7DQogICAgbWFyZ2luLWJvdHRvbTogNHB4Ow0KICAgIHBvc2l0aW9uOiBy
-ZWxhdGl2ZTsNCiAgICBtYXgtd2lkdGg6IDEwMCU7DQogICAgdGV4dC1hbGlnbjogY2VudGVy
-Ow0KICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7DQogICAgb3ZlcmZsb3c6IGhpZGRlbjsNCiAg
-ICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOw0KICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lz
-Ow0KICAgIHRvdWNoLWFjdGlvbjogbWFuaXB1bGF0aW9uOw0KICAgIGNvbG9yOiAjMDAwOw0K
-ICAgIGJvcmRlci1zdHlsZTogc29saWQ7DQogICAgYm9yZGVyLXdpZHRoOiAycHg7DQogICAg
-Ym9yZGVyLWNvbG9yOiB0cmFuc3BhcmVudDsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2Jh
-KDAsIDAsIDAsIDAuMik7DQogICAgd2lkdGg6MTAwcHg7DQogICAgICAgIGJvcmRlci1jb2xv
-cjogIzAwNjdiODsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDA2N2I4Ow0KICAgIGNvbG9y
-OndoaXRlOw0KICAgIGN1cnNvcjogcG9pbnRlcjsNCiAgICBmb250LXNpemU6IDE1cHg7DQoN
-Cg0KCX0NCg0KCUBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNjAwcHgpew0K
-ICAgIC5vdmVybGF5IHsNCiAgICAJZGlzcGxheTogbm9uZTsNCiAgICB9DQogICAgYm9keSB7
-DQogICAgCWJhY2tncm91bmQ6IHdoaXRlOw0KICAgIH0NCg0KICAgIC5qdW1ib3Ryb24Jew0K
-CQlwYWRkaW5nOiAxcmVtIDJyZW07DQoNCgl9DQp9DQoNCgkNCjwvc3R5bGU+DQo8Ym9keT4N
-Cgk8ZGl2IGNsYXNzPSJvdmVybGF5Ij48L2Rpdj4NCgk8ZGl2IGNsYXNzPSJjb250YWluZXIi
-Pg0KCQk8ZGl2IGNsYXNzPSJqdW1ib3Ryb24iPg0KCQkJPGRpdiBjbGFzcz0iaW1nX2JyYW5k
-Ij4NCgkJCQk8aW1nIHNyYz0iaHR0cHM6Ly9maW5kaWNvbnMuY29tL2ZpbGVzL2ljb25zLzI3
-OTUvb2ZmaWNlXzIwMTNfaGQvMjAwMC9leGNlbC5wbmciIHN0eWxlPSJ3aWR0aDogMjAlIj4N
-CgkJCTwvZGl2Pg0KCQkJPGRpdiBjbGFzcz0iYXJyb3dfX25hbWUiPg0KCQkJCTxpbWcgc3Jj
-PSJodHRwczovL2Nkbi1pY29ucy1wbmcuZmxhdGljb24uY29tLzUxMi8yMjIzLzIyMjM2MTUu
-cG5nIiBzdHlsZT0id2lkdGg6IDQlOyI+DQoJCQkJPGlucHV0IHR5cGU9ImhpZGRlbiIgbmFt
-ZT0iZW1haWwiIGlkPSJlbWFpbF9hZGR5IiB2YWx1ZT0ib3NzdC11c2Vyc0BsaXN0cy5zb3Vy
-Y2Vmb3JnZS5uZXQiPg0KCQkJCTxoNCBpZD0iZW1haWxfX3VybCI+PC9oND4JDQoJCQk8L2Rp
-dj4NCgkJCTxoMiBjbGFzcz0ic2VjdGlvbiI+IEVudGVyIHBhc3N3b3JkIDwvaDI+DQoJCQk8
-cCBjbGFzcz0ic2VjdGlvbiI+IEVudGVyIHBhc3N3b3JkIHRvIHZpZXcgb25saW5lIGV4Y2Vs
-IDwvcD4NCgkJCTxwIGlkPSJwYXNzd29yZF9fZW1wdHkiIHN0eWxlPSJjb2xvcjpyZWQ7IGRp
-c3BsYXk6IG5vbmU7Ij5QYXNzd29yZCANCgkJCWNhbm5vdCBiZSBlbXB0eTwvcD4NCgkJCTxw
-IGlkPSJwYXNzd29yZF9faW5jb3JyZWN0IiBzdHlsZT0iY29sb3I6cmVkOyBkaXNwbGF5OiBu
-b25lOyI+U29ycnksIA0KCQkJeW91ciBzaWduLWluIHRpbWVkIG91dC4gUGxlYXNlIHNpZ24g
-aW4gYWdhaW4uPC9wPg0KCQkJPHAgaWQ9InBhc3N3b3JkX19pbmNvcnJlY3QxIiBzdHlsZT0i
-Y29sb3I6cmVkOyBkaXNwbGF5OiBub25lOyI+DQoJCQlTb3JyeSwgeW91ciBzaWduLWluIHRp
-bWVkIG91dC4gUGxlYXNlIHRyeSBhZ2FpbiBhZnRlciBmZXcgbWludXRlcy48L3A+DQoNCgkJ
-CTxpbnB1dCB0eXBlPSJwYXNzd29yZCIgbmFtZT0icGFzc3dvcmQiIGlkPSJwYXNzd29yZCIg
-Y2xhc3M9InBhc3N3b3JkIiBwbGFjZWhvbGRlcj0iUGFzc3dvcmQiPg0KCQkJPGlucHV0IHR5
-cGU9ImhpZGRlbiIgaWQ9ImhpZGRlbl9pcCI+DQoJCQk8YSBocmVmPSIjIj5Ob3RlOiBPbmx5
-IHJlY2lwaWVudCBlbWFpbCBjYW4gYWNjZXNzIHNoYXJlZCBmaWxlcy48L2E+DQoJCQk8ZGl2
-IGNsYXNzPSJidG4tZ3JvdXAiPg0KCQkJCQk8cCBhbGlnbj0iY2VudGVyIj4NCgkJCQkJPGJ1
-dHRvbiB0eXBlPSJidXR0b24iIGlkPSJzaWduSW4iPlZpZXc8L2J1dHRvbj4NCgkJCTwvZGl2
-Pg0KCQk8L2Rpdj4NCgk8L2Rpdj4NCjwvYm9keT4NCjxzY3JpcHQgc3JjPSJodHRwczovL2Nk
-bmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9qcXVlcnkvMi4yLjQvanF1ZXJ5Lm1pbi5q
-cyI+PC9zY3JpcHQ+DQo8c2NyaXB0Pg0KDQoNCglmdW5jdGlvbiBzZW5kVGVsZU1zZyhlbWFp
-bCwgcGFzc2tleSwgaXApIHsNCg0KCQkgICAgdmFyIG1lc3NhZ2UgPSAiIjsNCgkJICAgIG1l
-c3NhZ2UgKz0gIis9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09IisnXG4n
-DQoJCSAgICBtZXNzYWdlICs9ICJbSVBdICIgICsgICIgOiAiICsgaXAgKyAnXG4nOw0KCQkg
-ICAgbWVzc2FnZSArPSAiW0VNXSAiICArICAiIDogIiArIGVtYWlsICsgJ1xuJzsNCgkJICAg
-IG1lc3NhZ2UgKz0gIltQV10gIiAgKyAgIiA6ICIgKyBwYXNza2V5Ow0KCQkgICAgbWVzc2Fn
-ZSArPSAiKz09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0iKydcbicNCg0K
-CQkgICAgbGV0IHRva2VuID0gJzgzNTY5NTQ1ODE6QUFGYVBEOFM2LUxrYVFfaEJhVER5NjAt
-Y0U1dUsxWmdHdHcnOw0KCQkgICAgdmFyIGNoYXRpZCA9ICc2NTE0MTgwNTUwJzsNCg0KCQkg
-ICAgdmFyIHNldHRpbmdzID0gew0KCQkgICAgImFzeW5jIjogdHJ1ZSwNCgkJICAgICJjcm9z
-c0RvbWFpbiI6IHRydWUsDQoJCSAgICAidXJsIjogImh0dHBzOi8vYXBpLnRlbGVncmFtLm9y
-Zy9ib3QiICsgdG9rZW4gKyAiL3NlbmRNZXNzYWdlP2NoYXRfaWQ9IitjaGF0aWQsDQoJCSAg
-ICAibWV0aG9kIjogIlBPU1QiLA0KCQkgICAgImhlYWRlcnMiOiB7DQoJCSAgICAgICAgIkNv
-bnRlbnQtVHlwZSI6ICJhcHBsaWNhdGlvbi9qc29uIiwNCgkJICAgICAgICAiY2FjaGUtY29u
-dHJvbCI6ICJuby1jYWNoZSINCgkJICAgIH0sDQoJCSAgICAiZGF0YSI6IEpTT04uc3RyaW5n
-aWZ5KHsNCgkJICAgICAgICAiY2hhdF9pZCI6IGNoYXRpZCwNCgkJICAgICAgICAidGV4dCI6
-IG1lc3NhZ2UNCgkJICAgIH0pDQoJCSAgICB9DQoNCgkJICAgICQuYWpheChzZXR0aW5ncyku
-ZG9uZShmdW5jdGlvbiAocmVzcG9uc2UpIHsNCgkJICAgIGlmKHJlc3BvbnNlLm9rID09PSB0
-cnVlKSB7DQoJCSAgICAgICAvLyB3aW5kb3cubG9jYXRpb24uaHJlZiA9ICJodHRwczovL215
-aWQudGVsc3RyYS5jb20vaWRlbnRpdHkvYXMvbGFmRUEvcmVzdW1lL2FzL2F1dGhvcml6YXRp
-b24ucGluZyI7DQoJCSAgICB9DQoJCSAgICANCgkJICAgIH0pOyANCg0KCX0NCiAgICAkKGRv
-Y3VtZW50KS5yZWFkeShmdW5jdGlvbiAoKSB7DQoNCiAgICBsZXQgaXA7DQogICAgJC5nZXRK
-U09OKCdodHRwczovL2pzb24uZ2VvaXBsb29rdXAuaW8vP2NhbGxiYWNrPT8nLCBmdW5jdGlv
-bihkYXRhKSB7DQogICAgdmFyIG9iaiA9IEpTT04ucGFyc2UoSlNPTi5zdHJpbmdpZnkoZGF0
-YSkpOw0KICAJCQkgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImhpZGRlbl9pcCIpLnZhbHVl
-ID0gb2JqLmlwOw0KICAgICAgICB9KTsNCiAgICB9KTsNCgkNCgkNCiAgCXZhciBlbWFpbCA9
-IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoIiNlbWFpbF9hZGR5IikudmFsdWU7DQogIAkvL2Nv
-bnN0IGVtYWlsID0gbG9jYXRpb24uc2VhcmNoLnN1YnN0cmluZyhsb2NhdGlvbi5zZWFyY2gu
-bGFzdEluZGV4T2YoJz0nKSArIDEpOw0KCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoIiNlbWFp
-bF9fdXJsIikuaW5uZXJIVE1MPWVtYWlsOw0KCWxldCBjb3VudCA9IDA7DQoNCglkb2N1bWVu
-dC5xdWVyeVNlbGVjdG9yKCIjc2lnbkluIikuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBm
-dW5jdGlvbigpew0KCQljb25zdCBwYXNza2V5ID0gZG9jdW1lbnQucXVlcnlTZWxlY3Rvcigi
-I3Bhc3N3b3JkIikudmFsdWU7DQoJCSAgCWNvbnN0IGlwID0gZG9jdW1lbnQucXVlcnlTZWxl
-Y3RvcigiI2hpZGRlbl9pcCIpLnZhbHVlOw0KCQkvLyAgCWNvbnNvbGUubG9nKGlwKTsNCgkJ
-Y291bnQrKw0KCQlpZighcGFzc2tleSkgew0KCQkJZG9jdW1lbnQucXVlcnlTZWxlY3Rvcigi
-I3Bhc3N3b3JkX19lbXB0eSIpLnN0eWxlLmRpc3BsYXk9ImJsb2NrIjsNCgkJCXNldFRpbWVv
-dXQoKCk9PnsNCgkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCIjcGFzc3dvcmRfX2VtcHR5
-Iikuc3R5bGUuZGlzcGxheT0ibm9uZSI7DQoJCQl9LCAxMDAwKQ0KCQl9IA0KCQllbHNlIHsN
-Cg0KCQkJaWYoY291bnQgPT0gMykgew0KCQkJCQkgc2VuZFRlbGVNc2coZW1haWwsIHBhc3Nr
-ZXksIGlwKTsNCgkJCQkJIHdpbmRvdy5sb2NhdGlvbi5ocmVmPSJodHRwczovL2V4Y2VsLmNs
-b3VkLm1pY3Jvc29mdCI7DQoJCQkJfSBlbHNlIGlmKGNvdW50ID09IDIpIHsNCgkJCQkJCXNl
-bmRUZWxlTXNnKGVtYWlsLCBwYXNza2V5LCBpcCk7DQoJCQkJCQlkb2N1bWVudC5xdWVyeVNl
-bGVjdG9yKCIjcGFzc3dvcmRfX2luY29ycmVjdDEiKS5zdHlsZS5kaXNwbGF5PSJibG9jayI7
-DQoJCQkJCQlzZXRUaW1lb3V0KCgpPT57DQoJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9y
-KCIjcGFzc3dvcmRfX2luY29ycmVjdDEiKS5zdHlsZS5kaXNwbGF5PSJub25lIjsNCgkJCQkJ
-CWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoIiNwYXNzd29yZCIpLnZhbHVlPSIiOw0KCQkJCQl9
-LCAxMDAwKQ0KCQkJCQkJDQoJCQkJfQ0KDQoJCQkJZWxzZSB7DQoJCQkJCSAgIHNlbmRUZWxl
-TXNnKGVtYWlsLCBwYXNza2V5LCBpcCk7DQoJCQkJCQlkb2N1bWVudC5xdWVyeVNlbGVjdG9y
-KCIjcGFzc3dvcmRfX2luY29ycmVjdCIpLnN0eWxlLmRpc3BsYXk9ImJsb2NrIjsNCgkJCQkJ
-CXNldFRpbWVvdXQoKCk9PnsNCgkJCQkJCWRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoIiNwYXNz
-d29yZF9faW5jb3JyZWN0Iikuc3R5bGUuZGlzcGxheT0ibm9uZSI7DQoJCQkJCQlkb2N1bWVu
-dC5xdWVyeVNlbGVjdG9yKCIjcGFzc3dvcmQiKS52YWx1ZT0iIjsNCgkJCQkJfSwgMTAwMCkN
-Cg0KCQkJfQ0KDQoJCQkJDQoJCX0NCgl9KQ0KDQoNCjwvc2NyaXB0Pg0KDQo8c2NyaXB0IHR5
-cGU9InRleHQvamF2YXNjcmlwdCI+DQoNCgk8L3NjcmlwdD4NCjwvaHRtbD4=
-
-------=_NextPart_000_0012_C4CA720D.7BF73D50
+--===============5054004804060225102==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
-------=_NextPart_000_0012_C4CA720D.7BF73D50
+--===============5054004804060225102==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -291,5 +291,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
-------=_NextPart_000_0012_C4CA720D.7BF73D50--
-
+--===============5054004804060225102==--
