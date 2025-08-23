@@ -2,103 +2,109 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0FCDDB3269C
-	for <lists+osst-users@lfdr.de>; Sat, 23 Aug 2025 05:20:53 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 5AFB4B32728
+	for <lists+osst-users@lfdr.de>; Sat, 23 Aug 2025 09:01:15 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:List-Subscribe:List-Help:
-	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Mime-Version:
-	Message-ID:To:From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:References:
+	MIME-Version:To:From:Date:Message-ID:Sender:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=D+EJfjGp7+FIhhC56YekUZB5og9NY2ZSWYnDcyk33I0=; b=QzFjBDmXrd3t/Ffav6zrv3PSlj
-	pk5u6s9++SjpsbXuIBgSaNQpOJQJPijMT+NIC4mlox0AdqOcImC/O6NhzrEXKKbwtNYGvsSthP3TM
-	6n+wSkZmclYi3Kgw/tPP9o7idXieHDsXlqD8c8+GLesPqNOjJQVM1EnoycevL39Ru8k4=;
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:List-Owner;
+	bh=ojsXuupz6Aa1Bv+8JWbrQvVdeC3b6qiBfjqitb82pDE=; b=VtAlYb+DZe4fCre5xdzeR2XBtd
+	Z25VWNgl2SsuOE89b1p6r9e+WGASq7ImrNt4T45kQXgYsIyAL0bSo6dPEk8+JH23+quqiCvUtc5Xf
+	IG6SNmDJn5UoLptXgnQL0MMS9U7qmJreCVUxtmoMKvWAqV8wvpilzY4KqgzHl8ki/LrY=;
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1upeoF-0007fp-Sr
+	id 1upiFV-0006jK-OX
 	for lists+osst-users@lfdr.de;
-	Sat, 23 Aug 2025 03:20:51 +0000
+	Sat, 23 Aug 2025 07:01:13 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <no-reply.rwbstyppibeoz@service.cejxuo.cn>)
- id 1upeoD-0007fh-Vk for osst-users@lists.sourceforge.net;
- Sat, 23 Aug 2025 03:20:49 +0000
+ (envelope-from <alton.feener@hongsenmould.com>) id 1upiFU-0006jD-2C
+ for osst-users@lists.sourceforge.net; Sat, 23 Aug 2025 07:01:12 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:Mime-Version:Message-ID:To:
- From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:References:Content-Type:MIME-Version:To:
+ Reply-To:From:Date:Message-ID:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ :Resent-Message-ID:In-Reply-To:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=2uNMfxUDKIAvoLQtFgYBES42+TAR1VXqmK3M/ub2O+w=; b=KKYY/qglvcQba5T6EvrO7LH2uJ
- RflY7FwVRGJ9T7zicrKuCTDcG7rmS047hDjAm2gaAonYBoVyBhg1a5WmhDzzAngxo+sqvOumz4Vu+
- PRKPaB/bWX7bSjPxSAujtuS+d6c72Awpwhjc8hZ01d/nbaYLkyHnOHMV5E1Oi7A6+hD4=;
+ bh=/jIk04crW+zSH8A38xt9Ai9pHWDXOkMCTl+fcr2LM14=; b=HJFj8rxM02ePD7eV4lpYyrCOQf
+ Afx8HWPBBaAG5oZ1P27V9iG6T1iHyfzgZuxzJL1d34VVdj9B7XabZ+W5xDAvFtDdE7dG7Ev08JY06
+ 4fykWan1Zeh9XNZ+jpfVn99CifF0Ht7Yh5IDztljKzqEkNfM9gi9AUX4gVU+KLdp+WvE=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:Mime-Version:Message-ID:To:From:Date:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=2uNMfxUDKIAvoLQtFgYBES42+TAR1VXqmK3M/ub2O+w=; b=D
- VUQSgVV0zxL8wusGWgKijscE3Q/6kuU1bBIAlonMcRUH8K+Q44irb81cwacFit75KIRRLb1kRd9PX
- XM3duqnxo/ayB103FonppQ6iX5ixn60GtcBpovsB68uDJBWnt+EBULmNkI8e6zU1U8GT8fXkSBsaW
- 10gPfarWWT+RUFOs=;
-Received: from [103.70.114.104] (helo=service.cejxuo.cn)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1upeoD-0004w3-Eq for osst-users@lists.sourceforge.net;
- Sat, 23 Aug 2025 03:20:49 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mykey;
- d=service.cejxuo.cn; 
- h=Date:From:To:Subject:Message-ID:Mime-Version:Content-Type;
- bh=WvFonaPbptGl+o7NscdkW/iTt98=;
- b=NURjyfUL2W3+LVIsU2Xut8UhHUINOx5Ff0V4nKQ/sgwsvnuZiBY1oyukH4d4D4zsrVUkK69r1GTU
- mply8qowRzNH9liUCgn/JYbO+RJfpFgWa1JaAP0e5DSYitvP+YxxjLrf3HFwLLcUlVbON13v4VkQ
- 8Tb7eAFgvokSFnfqsrY=
-Received: from google.com (43.160.194.103) by service.cejxuo.cn id
- hl4pp20001gj for <osst-users@lists.sourceforge.net>;
- Sat, 23 Aug 2025 10:20:24 +0700 (envelope-from
- <no-reply.rwbstyppibeoz@service.cejxuo.cn>)
-Date: Sat, 23 Aug 2025 11:20:17 +0800
-From: "ETC-MEISAI" <no-reply.rwbstyppibeoz@service.cejxuo.cn>
-To: <osst-users@lists.sourceforge.net>
-Message-ID: <20250823112025218840@service.cejxuo.cn>
-X-mailer: Foxmail 6, 13, 102, 15 [cn]
-Mime-Version: 1.0
-X-Spam-Score: 7.8 (+++++++)
-X-Spam-Report: Spam detection software, running on the system "sfi-spamd-2.hosts.colo.sdot.me",
+ h=Subject:References:Content-Type:MIME-Version:To:Reply-To:From:Date:
+ Message-ID:Sender:Cc:Content-Transfer-Encoding:Content-ID:Content-Description
+ :Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
+ In-Reply-To:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=/jIk04crW+zSH8A38xt9Ai9pHWDXOkMCTl+fcr2LM14=; b=M
+ sHYgn7nutlmZgGQ2P3ocpserYiRvyN3CEM+FVb7XBURAQkVLm5hpp1XLzXExsD8d+Qu17o656lTZ0
+ 2VeiODzrMUAoPMAcwAgcijqNV8iXLi2mka4h8TPq4jaMCjELuKUNA01fnP03eiDarbXYMHD7eouxm
+ iUcpErtV5cEyNAS4=;
+Received: from components.elitemoldfabrication.com ([107.175.183.180])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1upiFR-0002xa-Dg for osst-users@lists.sourceforge.net;
+ Sat, 23 Aug 2025 07:01:12 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=selector2;
+ d=sh.abgev.com; 
+ h=Message-ID:Date:Subject:From:Reply-To:To:MIME-Version:Content-Type:
+ References; i=echo@sh.abgev.com;
+ bh=/jIk04crW+zSH8A38xt9Ai9pHWDXOkMCTl+fcr2LM14=;
+ b=pdS7cGSNjNdAGWQMyXSZujENUVY/Z+SuVD4j+SUUH0doqLVwhu87fAEzQ4Bhjs2XHsuZIKMlQWYF
+ bfifo16ZUGKzlX6hdwge4cRHAC49JUC+/yAD/y5DQVHKRi+Wr+pW6iJLm+zEJ7JlN/UkKFvycMgr
+ l03TrTm7dskdllJ0o2I=
+DKIM-Signature: v=1; a=rsa-sha256;
+ bh=/jIk04crW+zSH8A38xt9Ai9pHWDXOkMCTl+fcr2LM14=; d=sh.abgev.com;
+ h=Message-ID: Date: Subject: From: Reply-To: To: MIME-Version: Content-Type:
+ References; i=@sh.abgev.com; s=mailer; c=relaxed/relaxed; t=1755932463;
+ b=X5Nhj4uPmbb97z01zgTuMiqRgYW8uqd41rzIMcXhA7X8WC8DrjYbwciy5JK6s2FTDc+3a/5ji
+ EolrAiNARwdsj/BUBWj+I9HWwqxgBhBBAzNSxuHjq7/pxf0Ci024VLJKvWmXpLJbgbkjlibWj
+ kWlau+ZJ9jX6adLZkgfkkFsghPGTk3KBIm3sFv4WF75P/ZioKZRd7dNhmDH0DkQjpeaewZjaY
+ QdvBSUc2C+O40xL/v/TezgeSW0R8opz78D7474NssvUdAeUQDM4cgUV9yFoM7kLcOXxtFzdpr
+ 1pgtJuni+Glgy0LLl8Ahr1SW+sARau9x7kKxgXSfxk3R3wwxzw==
+Message-ID: <cc3116945c174781596a86b4f6d03c5cf344a4c3@hongsenmould.com>
+Date: Sat, 23 Aug 2025 07:01:03 +0000
+From: Mariah Akram <echo@sh.abgev.com>
+To: Osst users <osst-users@lists.sourceforge.net>
+MIME-Version: 1.0
+References: cg373xmke5209
+X-Spam-Score: 8.3 (++++++++)
+X-Spam-Report: Spam detection software,
+ running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  ご利用カードの確認をお願いいたします ご登録カードにおいて、決済処理が正常に完了しておらず、対応が必要となっております。
-    下記より詳細を [...] 
- 
- Content analysis details:   (7.8 points, 5.0 required)
- 
-  pts rule name              description
+ Content preview:  Good morning Osst users, I trust you're in good health as
+ you open this message. I am pleased that I can introduce Cnm Precision Molding
+ Design Co., Ltd (CNM),
+ a respected company in the field of prototype development
+ as well as short-run production for global innovators since 200 [...] 
+ Content analysis details:   (8.3 points, 5.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL blocklist
-                             [URI: etc-alsoster.aqbrw.cn]
-                             [URI: service.cejxuo.cn]
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URI: etc-alsoster.aqbrw.cn]
-  4.0 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
-              [Blocked - see <https://www.spamcop.net/bl.shtml?103.70.114.104>]
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
-                             domain
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.8 UPPERCASE_50_75        message body is 50-75% uppercase
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
+ 4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
+ [107.175.183.180 listed in dnsbl-1.uceprotect.net]
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
+ 0.4 RCVD_IN_MSPIKE_L4      RBL: Bad reputation (-4)
+ [107.175.183.180 listed in bl.mailspike.net]
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ background 4.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1upeoD-0004w3-Eq
-Subject: [SPAM] 【ETC】決済方法の確認が必要です
+X-Headers-End: 1upiFR-0002xa-Dg
+Subject: [Osst-users] [SPAM] Delivering Expert Precision Through Advanced
+ CNC Services
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -110,75 +116,137 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============1960807803112909692=="
+Reply-To: Mariah Akram <jenny@en.limecostings.com>
+Content-Type: multipart/mixed; boundary="===============2826966116292530039=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
 
---===============1960807803112909692==
+--===============2826966116292530039==
 Content-Type: multipart/alternative;
-	boundary="=====003_Dragon807548812682_====="
-
-This is a multi-part message in MIME format.
-
---=====003_Dragon807548812682_=====
-Content-Type: text/plain;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-44GU5Yip55So44Kr44O844OJ44Gu56K66KqN44KS44GK6aGY44GE44GE44Gf44GX44G+44GZDQrj
-gZTnmbvpjLLjgqvjg7zjg4njgavjgYrjgYTjgabjgIHmsbrmuIjlh6bnkIbjgYzmraPluLjjgavl
-rozkuobjgZfjgabjgYrjgonjgZrjgIHlr77lv5zjgYzlv4XopoHjgajjgarjgaPjgabjgYrjgorj
-gb7jgZnjgIIgDQrkuIvoqJjjgojjgoroqbPntLDjgpLjgZTnorroqo3jgY/jgaDjgZXjgYTjgIIN
-CuaUr+aJleOBhOaDheWgseOCkueiuuiqjeOBmeOCiyANCkVUQ+OCt+OCueODhuODoOeZuuihjOOC
-s+ODvOODie+8mk5Fd3p1
-
---=====003_Dragon807548812682_=====
-Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxIVE1MPjxIRUFEPjxUSVRMRT7jgJBFVEPpgJrnn6XjgJHmsbrmuIjjgqvjg7zjg4nn
-orroqo3jga7jgYrpoZjjgYQ8L1RJVExFPg0KPE1FVEEgY2hhcnNldD1VVEYtOD4NCjxNRVRBIG5h
-bWU9dmlld3BvcnQgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEu
-MCI+DQo8TUVUQSBuYW1lPUdFTkVSQVRPUiBjb250ZW50PSJNU0hUTUwgMTEuMDAuOTYwMC4yMTYx
-NSI+PC9IRUFEPg0KPEJPRFkgDQpzdHlsZT0iRk9OVC1GQU1JTFk6ICdNZWlyeW8nLCBzYW5zLXNl
-cmlmOyBCQUNLR1JPVU5EOiAjZWVmMWY0OyBDT0xPUjogIzJjMmMyYzsgUEFERElORy1CT1RUT006
-IDBweDsgUEFERElORy1UT1A6IDBweDsgUEFERElORy1MRUZUOiAwcHg7IE1BUkdJTjogMHB4OyBQ
-QURESU5HLVJJR0hUOiAwcHgiPg0KPERJViANCnN0eWxlPSJNQVgtV0lEVEg6IDU4MHB4OyBCT1JE
-RVItVE9QOiAjY2NjIDFweCBzb2xpZDsgQk9SREVSLVJJR0hUOiAjY2NjIDFweCBzb2xpZDsgQkFD
-S0dST1VORDogI2ZmZjsgQk9SREVSLUJPVFRPTTogI2NjYyAxcHggc29saWQ7IFBBRERJTkctQk9U
-VE9NOiAzMHB4OyBQQURESU5HLVRPUDogMzBweDsgUEFERElORy1MRUZUOiAzMHB4OyBNQVJHSU46
-IDQwcHggYXV0bzsgQk9SREVSLUxFRlQ6ICNjY2MgMXB4IHNvbGlkOyBQQURESU5HLVJJR0hUOiAz
-MHB4OyBib3JkZXItcmFkaXVzOiA2cHgiPg0KPEgyIHN0eWxlPSJGT05ULVNJWkU6IDE2cHg7IE1B
-UkdJTi1UT1A6IDBweCI+44GU5Yip55So44Kr44O844OJ44Gu56K66KqN44KS44GK6aGY44GE44GE
-44Gf44GX44G+44GZPC9IMj4NCjxQIA0Kc3R5bGU9IkZPTlQtU0laRTogMTRweDsgTElORS1IRUlH
-SFQ6IDEuNyI+44GU55m76Yyy44Kr44O844OJ44Gr44GK44GE44Gm44CB5rG65riI5Yem55CG44GM
-5q2j5bi444Gr5a6M5LqG44GX44Gm44GK44KJ44Ga44CB5a++5b+c44GM5b+F6KaB44Go44Gq44Gj
-44Gm44GK44KK44G+44GZ44CCIA0KPC9QPg0KPFAgc3R5bGU9IkZPTlQtU0laRTogMTRweCI+5LiL
-6KiY44KI44KK6Kmz57Sw44KS44GU56K66KqN44GP44Gg44GV44GE44CCPC9QPg0KPERJViBzdHls
-ZT0iVEVYVC1BTElHTjogY2VudGVyOyBNQVJHSU46IDI0cHggMHB4Ij48QSANCnN0eWxlPSJURVhU
-LURFQ09SQVRJT046IG5vbmU7IENPTE9SOiAjZmZmOyBQQURESU5HLUJPVFRPTTogMTJweDsgUEFE
-RElORy1UT1A6IDEycHg7IFBBRERJTkctTEVGVDogMjRweDsgUEFERElORy1SSUdIVDogMjRweDsg
-QkFDS0dST1VORC1DT0xPUjogIzJhMmEyYTsgYm9yZGVyLXJhZGl1czogNHB4IiANCmhyZWY9Imh0
-dHBzOi8vZXRjLWFsc29zdGVyLmFxYnJ3LmNuL1JmdW5jYzEwMTMwMDBleHRmdW5jLyI+5pSv5omV
-44GE5oOF5aCx44KS56K66KqN44GZ44KLPC9BPiA8L0RJVj4NCjxQIA0Kc3R5bGU9IkZPTlQtU0la
-RTogMTJweDsgQ09MT1I6ICM4ODgiPkVUQ+OCt+OCueODhuODoOeZuuihjOOCs+ODvOODie+8mk5F
-d2Z5bHg8L1A+PC9ESVY+PEJSPjxCUj48L0JPRFk+PC9IVE1MPg0K
-
---=====003_Dragon807548812682_=====--
+ boundary="_=_swift_1755932463_f97af22232878f82dc87e177c422d807_=_"
 
 
+--_=_swift_1755932463_f97af22232878f82dc87e177c422d807_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
 
---===============1960807803112909692==
+ Good morning Osst users,
+I trust you're in good health as you open this =
+message.
+
+I am pleased that I can introduce Cnm Precision Molding Desig=
+n Co.,
+Ltd (CNM), a respected company in the field of prototype developme=
+nt
+as well as short-run production for global innovators since 2000.
+Lo=
+cated within Shenzhen=E2=80=99s high-tech corridor, we offer full-service=
+
+turnkey solutions from SLA/SLS rapid prototyping and vacuum casting
+th=
+rough to precision CNC machining with sheet-metal fabrication plus
+inject=
+ion molding along with complete surface finishing assembly all
+under one =
+roof.
+
+Our workshop features 20+ CNC machines vacuum casting systems UV=
+
+curing ovens and dedicated hardware processing capabilities to handle
+=
+production from single samples through short-run manufacturing while
+ensu=
+ring tight tolerances. We provide material expertise across
+plastics (ABS=
+/PC/Nylon/PMMA) metals including aluminum copper
+stainless steel for sect=
+ors such as automotive, medical devices
+consumer electronics & robotics.=
+
+
+As a company wi th more than 120 dedi cated employees focused on
+qu=
+ality in manufacturing solutions=E2=80=94CN M ensures that al l or ders
+a=
+re handled under rigorous ISO-compliant procedures which include
+detailed=
+ initial sample checks as wellas full trac e ability across
+the productio=
+n cycle.
+
+Our team is eager to engage in dialogue about your future obj=
+ectives
+and present tailored strategies that optimize resource allocation=
+
+while lowering operational costs. Kindly reach out at any time
+regardi=
+ng a discussion or visit
+
+With best wishes,
+Verne Stoutcg373xmke5209=20
+
+--_=_swift_1755932463_f97af22232878f82dc87e177c422d807_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head><meta charset=3D"utf-8"/>
+=09<title> Del=
+ivering Expert Precision Through Advanced CNC Services</title>
+</head>
+=
+<body>Good morning Osst users,<br />
+I trust you're in good health as you=
+ open this message.<br />
+<br />
+I am pleased that I can introduce Cnm =
+Precision Molding Design Co., Ltd (CNM), a respected company in the field o=
+f prototype development as well as short-run production for global innovato=
+rs since 2000. Located within Shenzhen=E2=80=99s high-tech corridor, we off=
+er full-service turnkey solutions from SLA/SLS rapid prototyping and vacuum=
+ casting through to precision CNC machining with sheet-metal fabrication pl=
+us injection molding along with complete surface finishing assembly all und=
+er one roof.<br />
+<br />
+Our workshop features 20+ CNC machines vacuum=
+ casting systems UV curing ovens and dedicated hardware processing capabili=
+ties to handle production from single samples through short-run manufacturi=
+ng while ensuring tight tolerances. We provide material expertise across pl=
+astics (ABS/PC/Nylon/PMMA) metals including aluminum copper stainless steel=
+ for sectors such as automotive, medical devices consumer electronics & rob=
+otics.<br />
+<br />
+As a company wi th more than 120 dedi cated employe=
+es focused on quality in manufacturing solutions=E2=80=94CN M ensures that =
+al l or ders are handled under rigorous ISO-compliant procedures which incl=
+ude detailed initial sample checks as wellas full trac e ability across the=
+ production cycle.<br />
+<br />
+Our team is eager to engage in dialogue=
+ about your future objectives and present tailored strategies that optimize=
+ resource allocation while lowering operational costs. Kindly reach out at =
+any time regarding a discussion or visit<br />
+<br />
+With best wishes,=
+<br />
+Verne Stout<span style=3D"color:#ffffff;"><span style=3D"font-size=
+:8px;">cg373xmke5209</span></span>
+</body>
+</html>
+
+--_=_swift_1755932463_f97af22232878f82dc87e177c422d807_=_--
+
+
+
+--===============2826966116292530039==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============1960807803112909692==
+--===============2826966116292530039==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -189,6 +257,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============1960807803112909692==--
+--===============2826966116292530039==--
 
 
