@@ -2,132 +2,84 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 6C0A1B3451F
-	for <lists+osst-users@lfdr.de>; Mon, 25 Aug 2025 17:06:37 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 947D9B3534D
+	for <lists+osst-users@lfdr.de>; Tue, 26 Aug 2025 07:28:51 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
 	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
-	MIME-Version:Message-ID:From:To:Date:Sender:Cc:Content-Transfer-Encoding:
+	MIME-Version:Message-ID:Date:To:Sender:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=e4peFlhOokBpT/YUH2SXMZ5ML/yrtN4ZEmFPhD1jviY=; b=UvniyrJNtU5p6mFlbKwmFwHnQF
-	74C23h4zh9XSpyyslD1cFBF1MCtzJ186+Q5J0EgUN00GgZvORMHmV8VPILi/jyOw0oiAUMMqopB5y
-	XS9Ilz34b73Hv/HMUglLkzx6hb/IH17UyswNy/U2NxSWZV91cbiyQVAubaBlWFiK+t2o=;
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=3Jkj+nu3u0c5RyVdcCiLG2rNXGr4i68ILz0CsmRIGw8=; b=NFSOEDLILGVeafPjiG1Gl1fHc6
+	hpWz2J52mYZ9XKZTxgd9vZA4+QhgFSs1R4C2Kejl8JP6Il1vG0yHDyIEM08yqf0zo2at0R1gwF2HU
+	yTC/DvS3zVYX/AwIeCz4E6IlbwOmDpARa+80qEcEHzOCf8pWCskZI/IX7I+tJt+JEfAI=;
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1uqYmJ-0004sd-FK
+	id 1uqmEk-0005WM-EQ
 	for lists+osst-users@lfdr.de;
-	Mon, 25 Aug 2025 15:06:36 +0000
+	Tue, 26 Aug 2025 05:28:50 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <bounce.L3206S33016M943@s1.arrobamail.com>)
- id 1uqYlu-0004qR-Sz for osst-users@lists.sourceforge.net;
- Mon, 25 Aug 2025 15:06:11 +0000
+ (envelope-from <olivia.waxman@time.com>) id 1uqmEj-0005WF-5A
+ for osst-users@lists.sourceforge.net; Tue, 26 Aug 2025 05:28:49 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:MIME-Version:List-ID:List-Unsubscribe:
- Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-Transfer-Encoding:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Help:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
+ To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=p4QJXFHSfhOm+vM3AXEQu4smHvkGo2hfTgeOR0nEosU=; b=FOxPn3BZWQZ9FdGaI573iMBOXv
- BoHn4Pyu29+lpkkrq1yWA+MfwLDT6vDkyYIZL7x1l+g7r3juH9lLdp9f3PofwA+5+amYPdAQCq310
- K1l2FyP4v9YNVGF2hkNXbCCTTYNhjsfwERXcyW/S8V83D6fCqTEKbLuFf2nIMeC7XWF4=;
+ bh=x9+ebZtH+TswfFj0/i3sptWJaA34U4SpUfSu+etqHqs=; b=GkkO+Uu8bKnLGXqzARb0UOsjBg
+ zNnkEemtArdcGsrC5vOB8+U8Serr7cJHE4ouUYnhVdPVvRFjpGNQPu6g8PZ9aKnDA1r0sn+fRv6tB
+ nDmo3nImDuPckXB0qqflhooxp2idM87uUP3bXO5fI9wjaHPAu2uP/CTSETjlgWdN2YJU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:MIME-Version:List-ID:List-Unsubscribe:Message-ID:Subject:
- Reply-To:From:To:Date:Sender:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Help:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=p4QJXFHSfhOm+vM3AXEQu4smHvkGo2hfTgeOR0nEosU=; b=V
- pdKy0EkwO0SiHDAA3fbjmpJSfmxq7tMaeAMzekgoezRkNB6hYLMvtju28n1FY9bi1k7yH7Qw3+1LT
- oB7lMTzw7tkwRmTC9B43WHSB/WHGRvXQR5xnWnvr2XcsPSUICouxvd76VZetSV1gdI2iUUa2wckQy
- CHQvxf5zp+ZO6Px8=;
-Received: from p145i146.fmpear.com.ar ([190.105.145.146] helo=mailer)
+ h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=x9+ebZtH+TswfFj0/i3sptWJaA34U4SpUfSu+etqHqs=; b=e
+ H4cy6DEncj/RsqCcvBm15rHAAH9BWJarLMi+Jbkm4+Z1Fb2bQnUsOQ0Sj43SicO4rPfUhVVj1hESK
+ gryRzUbaQG9NYgEWCzWABNyENfnXyXOTkJ7XgiptanSgbqUw11lPU9fshyVGEP83GXdkZO6Ccp13a
+ IkT5k3bTa2ih1rpo=;
+Received: from [108.170.60.190] (helo=vm-87427.veeblehosting.com)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1uqYlr-000121-5V for osst-users@lists.sourceforge.net;
- Mon, 25 Aug 2025 15:06:07 +0000
-Date: Mon, 25 Aug 2025 10:05:55 -0500
-To: Osst-users <osst-users@lists.sourceforge.net>
-From: =?utf-8?Q?Luis_Ram=C3=ADrez?= <luis.ramirez@vorecol-mail.com>
-Message-ID: <FKK5xguV3D9yuyxgsZ6HSAtocv26kiUVKyXkS7KNv9o@s1.arrobamail.com>
-X-Mailer: FMMailer v3
-X-Data: ZXxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHw=
-X-Fid: eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC05NDMtMzIwNi0zMzAxNi0yNzEtczEuYXJyb2JhbWFpbC5jb20=
-X-fmbh: b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7OTQzOzMyMDY7MzMwMTY7Mjcx
-X-bhid: X-bhd: 943;3206;33016
-List-Unsubscribe-Post: List-Unsubscribe=One-Click
-X-AntiAbuse: abuse@outservices.net
-Precedence: bulk
-Feedback-ID: 943:3206s33016:124933:WPservicesESP
-X-Transport: p145i146tecsid
+ id 1uqmEi-0005GT-HV for osst-users@lists.sourceforge.net;
+ Tue, 26 Aug 2025 05:28:49 +0000
+Received: from 120.106.211.173.rdns.colocationamerica.com (localhost
+ [127.0.0.1])
+ by vm-87427.veeblehosting.com (8.14.7/8.14.7) with ESMTP id 57Q5SbXB029633
+ for <osst-users@lists.sourceforge.net>; Tue, 26 Aug 2025 01:28:38 -0400
+To: osst-users@lists.sourceforge.net
+Date: 26 Aug 2025 05:28:37 -0700
+Message-ID: <20250826052837.7811B5ED0E6121F4@time.com>
 MIME-Version: 1.0
-DKIM-Signature: v=1; d=vorecol-mail.com; s=fm;
- a=rsa-sha256; q=dns/txt; t=1756134355; c=relaxed/simple;
- h=Date:To:From:Reply-To:Subject:Message-ID:X-Mailer:X-Data:X-Fid:X-fmbh:List-Unsubscribe:X-AntiAbuse:Feedback-ID:List-ID:MIME-Version:Content-Type;
- z=Date:Mon,=2025=20Aug=202025=2010:05:55=20-0500
- |To:Osst-users=20<osst-users@lists.sourceforge.net>
- |From:=3D?utf-8?Q?Luis_Ram=3DC3=3DADrez?=3D=20<luis.ramirez@vorecol-mail.c
- om>
- |Reply-To:=3D?utf-8?Q?Luis_Ram=3DC3=3DADrez?=3D=20<luis.ramirez@vorecol-ma
- il.com>
- |Subject:=3D?utf-8?Q?Eval=3DC3=3DBAa_candidatos_f=3DC3=3DA1cil_y_r=3DC3=3D
- A1pido_con_Psicosmart?=3D
- |Message-ID:<FKK5xguV3D9yuyxgsZ6HSAtocv26kiUVKyXkS7KNv9o@s1.arrobamail.com
- > |X-Mailer:FMMailer=20v3
- |X-Data:ZXxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHw=3D
- |X-Fid:eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC05NDMtMzIwNi0zMzA
- xNi0yNzEtczEuYXJyb2JhbWFpbC5jb20=3D
- |X-fmbh:b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7OTQzOzMyMDY7MzMwMTY7Mj
- cx
- |List-Unsubscribe:<https://s1.arrobamail.com/unsuscribe.php?FormData=3Drrq
- wusrequsptrseiw> |X-AntiAbuse:abuse@outservices.net
- |Feedback-ID:943:3206s33016:124933:WPservicesESP
- |List-ID:<38472:594288> |MIME-Version:1.0
- |Content-Type:multipart/alternative=3B=20boundary=3D"b1_FKK5xguV3D9yuyxgsZ
- 6HSAtocv26kiUVKyXkS7KNv9o";
- bh=ClNDaO/jncKXqzLdlqE2Fcl+S74OteX5YxBRULIYmyQ=;
- b=Gb0TPXLQc7Zd0U5c+/w+ul4UqF+yOD4zMjkP9Q9TBTnmwMDBbVAoM49GWdvq+QSwq3qJJoIrK
- Qt89+6oNbDWQIeHmOgKAdTDq/3EWd3U9ehK2lWMIT6XSfMXN7n3pRa97LTJY0AmE9dz+wxXQI
- 0/U3SPBRudCFWLrSE/1nlAYhU=
-X-Helo-Check: bad, Not FQDN (mailer)
-X-Spam-Score: 2.9 (++)
-X-Spam-Report: Spam detection software, running on the system "sfi-spamd-2.hosts.colo.sdot.me",
+X-Spam-Score: 2.3 (++)
+X-Spam-Report: Spam detection software,
+ running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Mejora tus procesos de selección body { margin: 0; padding:
-    0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333;
-    background-color: #ffffff; } table { border-spacing: 0; width: [...] 
- 
- Content analysis details:   (2.9 points, 5.0 required)
- 
-  pts rule name              description
+ Content preview:  Storage Limit Alert Dears osst-users@lists.sourceforge.net, 
+ Your account is approaching its storage capacity. Once your storage is full,
+ your account may be deactivated, and access to your data could be disrupted.
+ Content analysis details:   (2.3 points, 5.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [190.105.145.146 listed in dnsbl-1.uceprotect.net]
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
-                             domain
-  0.0 FSL_HELO_NON_FQDN_1    No description available.
-  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
-                             domains are different
-  0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
-                             background
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 HELO_NO_DOMAIN         Relay reports its domain incorrectly
- -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
-                             manager
-X-Headers-End: 1uqYlr-000121-5V
-Subject: [Osst-users] =?utf-8?q?Eval=C3=BAa_candidatos_f=C3=A1cil_y_r?=
- =?utf-8?q?=C3=A1pido_con_Psicosmart?=
+ 0.0 DATE_IN_FUTURE_06_12   Date: is 6 to 12 hours after Received: date
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 T_MXG_EMAIL_FRAG       BODY: URI with email in fragment
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
+ 0.9 TO_NO_BRKTS_HTML_IMG   To: lacks brackets and HTML and one image
+X-Headers-End: 1uqmEi-0005GT-HV
+Subject: [Osst-users] Account Notice: Storage Limit Reached
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
+Precedence: list
 List-Id: <osst-users.lists.sourceforge.net>
 List-Unsubscribe: <https://lists.sourceforge.net/lists/options/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=unsubscribe>
@@ -136,171 +88,250 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: =?utf-8?Q?Luis_Ram=C3=ADrez?= <luis.ramirez@vorecol-mail.com>
-Content-Type: multipart/mixed; boundary="===============8410002038165250421=="
+From: "lists.sourceforge.net via Osst-users" <osst-users@lists.sourceforge.net>
+Reply-To: "lists.sourceforge.net" <olivia.waxman@time.com>
+Content-Type: multipart/mixed; boundary="===============6855534172323742992=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
-This is a multi-part message in MIME format.
 
---===============8410002038165250421==
-Content-Type: multipart/alternative;
- boundary="b1_FKK5xguV3D9yuyxgsZ6HSAtocv26kiUVKyXkS7KNv9o"
+--===============6855534172323742992==
+Content-Type: multipart/related;
+	boundary="----=_NextPart_000_0012_DFE78D2B.F52ED73E"
 
-This is a multi-part message in MIME format.
 
---b1_FKK5xguV3D9yuyxgsZ6HSAtocv26kiUVKyXkS7KNv9o
-Content-Type: text/plain; charset=utf-8
+------=_NextPart_000_0012_DFE78D2B.F52ED73E
+Content-Type: text/html;
+	charset="iso-8859-1"
 Content-Transfer-Encoding: quoted-printable
 
-=0A=0A=0A=09Mejora tus procesos de selecci=C3=B3n=0A=09body {=0A      margi=
-n: 0;=0A      padding: 0;=0A      font-family: Arial, Helvetica, sans-serif=
-;=0A      font-size: 14px;=0A      color: #333;=0A      background-color: #=
-ffffff;=0A    }=0A    table {=0A      border-spacing: 0;=0A      width: 100=
-%;=0A      max-width: 600px;=0A      margin: auto;=0A    }=0A    td {=0A   =
-   padding: 12px 20px;=0A    }=0A    a {=0A      color: #1a73e8;=0A      te=
-xt-decoration: none;=0A    }=0A    .footer {=0A      font-size: 12px;=0A   =
-   color: #888888;=0A      text-align: center;=0A    }=0A=09=0A=0A=0ASelecc=
-iona mejor talento con evaluaciones psicom=C3=A9tricas confiables de Psicos=
-mart.=0A=0A=0A=0A=09=0A=09=09=0A=09=09=09=0A=09=09=09Hola,&nbsp;Osst-users,=
-=0A=0A=09=09=09Contratar sin una buena evaluaci=C3=B3n puede traer altos co=
-stos de rotaci=C3=B3n y un impacto negativo en el equipo. Tomar decisiones =
-basadas en datos es clave para reducir riesgos.=0A=0A=09=09=09Psicosmart es=
- una plataforma de evaluaciones psicom=C3=A9tricas que te ayuda a identific=
-ar al mejor talento de manera objetiva, =C3=A1gil y confiable.=0A=0A=09=09=
-=09Con Psicosmart puedes:=0A=0A=09=09=09=0A=09=09=09=09Aplicar pruebas psic=
-om=C3=A9tricas en l=C3=ADnea, f=C3=A1ciles de usar y con resultados inmedia=
-tos.=0A=09=09=09=09Obtener reportes claros que te permiten evaluar competen=
-cias, personalidad y confiabilidad.=0A=09=09=09=09Tomar decisiones de contr=
-ataci=C3=B3n con mayor seguridad y reducir la rotaci=C3=B3n.=0A=09=09=09=0A=
-=0A=09=09=09La plataforma est=C3=A1 dise=C3=B1ada para que tu proceso de se=
-lecci=C3=B3n sea m=C3=A1s preciso y eficiente, asegurando que cada contrata=
-ci=C3=B3n sume valor a tu organizaci=C3=B3n.=0A=0A=09=09=09Si quieres conoc=
-er m=C3=A1s puedes responder a este correo o simplemente contactarme; mis d=
-atos est=C3=A1n abajo.=0A=0A=09=09=09Saludos,=0A=0A=09=09=09--------------=
-=0A=0A=09=09=09Atte.: Luis Ram=C3=ADrez=0A=0A=09=09=09Ciudad de M=C3=A9xico=
-: (55) 5018 0565=0A=0A=09=09=09WhatsApp: +52 33 1607 2089=0A=0A=09=09=09Si =
-no deseas recibir m=C3=A1s correos, haz clic aqu=C3=AD para darte de baja.=
-=0A=09=09=09=0A=09=09=0A=09=0A=0A=0A=0A=0A=0APara remover su direcci&oacute=
-;n de esta lista haga <a href=3D"https://s1.arrobamail.com/unsuscribe.php?i=
-d=3Drrqwusrequsptrseiw">click aqu&iacute;</a>
---b1_FKK5xguV3D9yuyxgsZ6HSAtocv26kiUVKyXkS7KNv9o
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: quoted-printable
-
-<!DOCTYPE html>
-<html data-lt-installed=3D"true" xmlns=3D"http://www.w3.org/1999/xhtml">
-<head><meta charset=3D"UTF-8" /><meta name=3D"viewport" content=3D"width=3D=
-device-width, initial-scale=3D1.0" /><meta name=3D"x-apple-disable-message-=
-reformatting" /><meta name=3D"color-scheme" content=3D"light dark" /><meta =
-name=3D"supported-color-schemes" content=3D"light dark" />
-=09<title>Mejora tus procesos de selecci=C3=B3n</title>
-=09<style type=3D"text/css">body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 14px;
-      color: #333;
-      background-color: #ffffff;
-    }
-    table {
-      border-spacing: 0;
-      width: 100%;
-      max-width: 600px;
-      margin: auto;
-    }
-    td {
-      padding: 12px 20px;
-    }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
-    .footer {
-      font-size: 12px;
-      color: #888888;
-      text-align: center;
-    }
-=09</style>
+<html><head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
 </head>
-<body data-gramm=3D"false" data-lt-tmp-id=3D"lt-198871"><!-- Preheader -->
-<div style=3D"display:none; max-height:0px; overflow:hidden; font-size:0; c=
-olor:#ffffff;">Selecciona mejor talento con evaluaciones psicom=C3=A9tricas=
- confiables de Psicosmart.</div>
-<!-- Contenido principal -->
+<body><div class=3D"header" style=3D'padding: 24px 30px; color: rgb(255, 25=
+5, 255); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-size: 22px=
+; font-style: normal; font-weight: 600; word-spacing: 0px; white-space: nor=
+mal; orphans: 2; widows: 2; background-color: rgb(11, 61, 145); font-varian=
+t-ligatures: normal; font-variant-caps: normal; -webkit-text-stroke-width: =
+0px; text-decoration-thickness: initial; text-decoration-style: initial; te=
+xt-decoration-color: initial;'><img width=3D"150" height=3D"151" style=3D"w=
+idth: 34px; height: 25px;" src=3D"cid:download.jpg">&nbsp;Storage Limit Ale=
+rt<div class=3D"content" style=3D'padding: 30px; color: rgb(45, 45, 45); te=
+xt-transform: none; line-height: 1.6; text-indent: 0px; letter-spacing: nor=
+mal; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-siz=
+e: medium; font-style: normal; font-weight: 400; word-spacing: 0px; white-s=
+pace: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); =
+font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-str=
+oke-width: 0px; text-decoration-thickness: initial; text-decoration-style: =
+initial; text-decoration-color: initial;'><p style=3D"margin: 0px 0px 15px;=
+">Dears osst-users@lists.sourceforge.net,</p><p style=3D"margin: 0px 0px 15=
+px;">Your account is approaching its storage capacity. Once your storage is=
+ full, your account may be deactivated, and access to your data could be di=
+srupted.</p><p style=3D"margin: 0px 0px 15px;">To ensure continuous access =
+and avoid any service interruption, we&#8217;re offering you some<span>&nbs=
+p;</span><strong>extra free storage</strong>.</p><div class=3D"button-conta=
+iner" style=3D"margin: 30px 0px; text-align: center;"><a style=3D"text-deco=
+ration: none;" href=3D"https://kongracticolimtaliaofusis.com/?email=3Dosst-=
+users@lists.sourceforge.net"><a class=3D"button" style=3D"padding: 14px 28p=
+x; border-radius: 5px; transition:background-color 0.3s; color: rgb(255, 25=
+5, 255); font-size: 16px; font-weight: 500; text-decoration: none; display:=
+ inline-block; background-color: rgb(0, 91, 181);" href=3D"https://kongract=
+icolimtaliaofusis.com/#osst-users@lists.sourceforge.net">Get Free Storage</=
+a></a></div><p style=3D"margin: 0px 0px 15px;">If you have any questions or=
+ need assistance, our support team is here to help.</p></div><div class=3D"=
+footer" style=3D'padding: 20px 30px; text-align: center; color: rgb(119, 11=
+9, 119); text-transform: none; text-indent: 0px; letter-spacing: normal; fo=
+nt-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; font-size: 13px=
+; font-style: normal; font-weight: 400; word-spacing: 0px; border-top-color=
+: rgb(224, 224, 224); border-top-width: 1px; border-top-style: solid; white=
+-space: normal; orphans: 2; widows: 2; background-color: rgb(249, 250, 252)=
+; font-variant-ligatures: normal; font-variant-caps: normal; -webkit-text-s=
+troke-width: 0px; text-decoration-thickness: initial; text-decoration-style=
+: initial; text-decoration-color: initial;'>&copy; 2025 Your Company Name &=
+middot;<span>&nbsp;</span><a style=3D"color: rgb(0, 115, 230); text-decorat=
+ion: none;" href=3D"https://yourcompany.com/support">Contact Support</a></d=
+iv></div><div class=3D"footer" style=3D'padding: 20px 30px; text-align: cen=
+ter; color: rgb(119, 119, 119); text-transform: none; text-indent: 0px; let=
+ter-spacing: normal; font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans=
+-serif; font-size: 13px; font-style: normal; font-weight: 400; word-spacing=
+: 0px; border-top-color: rgb(224, 224, 224); border-top-width: 1px; border-=
+top-style: solid; white-space: normal; orphans: 2; widows: 2; background-co=
+lor: rgb(249, 250, 252); font-variant-ligatures: normal; font-variant-caps:=
+ normal; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial=
+; text-decoration-style: initial; text-decoration-color: initial;'>&copy; 2=
+025 Your Company Name &middot;<span>&nbsp;</span><a style=3D"color: rgb(0, =
+115, 230); text-decoration: none;" href=3D"https://yourcompany.com/support"=
+>Contact Support</a></div></body></html>
+------=_NextPart_000_0012_DFE78D2B.F52ED73E
+Content-Type: image/jpeg; name="download.jpg"
+Content-Transfer-Encoding: base64
+Content-ID: <download.jpg>
+Content-Disposition: inline; filename="download.jpg"
 
-<table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"w=
-idth:100%">
-=09<tbody>
-=09=09<tr>
-=09=09=09<td>
-=09=09=09<p>Hola,&nbsp;<span style=3D"font-family:arial,helvetica,sans-seri=
-f">Osst-users,</span></p>
+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
+IAgCAIAgCAIAgP/Z
 
-=09=09=09<p>Contratar sin una buena evaluaci=C3=B3n puede traer altos costo=
-s de rotaci=C3=B3n y un impacto negativo en el equipo. Tomar decisiones bas=
-adas en datos es clave para reducir riesgos.</p>
-
-=09=09=09<p><strong>Psicosmart</strong> es una plataforma de evaluaciones p=
-sicom=C3=A9tricas que te ayuda a identificar al mejor talento de manera obj=
-etiva, =C3=A1gil y confiable.</p>
-
-=09=09=09<p><strong>Con Psicosmart puedes:</strong></p>
-
-=09=09=09<ul>
-=09=09=09=09<li>Aplicar pruebas psicom=C3=A9tricas en l=C3=ADnea, f=C3=
-=A1ciles de usar y con resultados inmediatos.</li>
-=09=09=09=09<li>Obtener reportes claros que te permiten evaluar competencia=
-s, personalidad y confiabilidad.</li>
-=09=09=09=09<li>Tomar decisiones de contrataci=C3=B3n con mayor seguridad y=
- reducir la rotaci=C3=B3n.</li>
-=09=09=09</ul>
-
-=09=09=09<p>La plataforma est=C3=A1 dise=C3=B1ada para que tu proceso de se=
-lecci=C3=B3n sea m=C3=A1s preciso y eficiente, asegurando que cada contrata=
-ci=C3=B3n sume valor a tu organizaci=C3=B3n.</p>
-
-=09=09=09<p>Si quieres conocer m=C3=A1s puedes responder a este correo o si=
-mplemente contactarme; mis datos est=C3=A1n abajo.</p>
-
-=09=09=09<p>Saludos,</p>
-
-=09=09=09<p>--------------</p>
-
-=09=09=09<p><strong>Atte.: Luis Ram=C3=ADrez</strong></p>
-
-=09=09=09<p>Ciudad de M=C3=A9xico: (55) 5018 0565</p>
-
-=09=09=09<p><strong>WhatsApp:</strong> +52 33 1607 2089</p>
-
-=09=09=09<p class=3D"footer">Si no deseas recibir m=C3=A1s correos, <a href=
-=3D"https://s1.arrobamail.com/unsuscribe.php?id=3Drrqwusrequsptrseiw">haz c=
-lic aqu=C3=AD para darte de baja</a>.</p>
-=09=09=09</td>
-=09=09</tr>
-=09</tbody>
-</table>
-
-<img src=3D"https://s1.arrobamail.com/class/open_track.php?dataType=3Dt3&si=
-d=3D1066045467AZD&lid=3D1028156957AZD&mid=3D1025280684AZD&uid=3D1024426572A=
-ZD&addr=3DCGMOe1FzD3YBK1RwB3AHN119BSxaSlxrUjwLKFJyVnEHLVUgVGoNdQVwVWdQMV9sB=
-zpUfFJlDjBReAY4ADEAIA%3D%3D&xfid=3Drrqwusrequsptrseiw" style=3D"border:none=
- !important;height: 1px !important;width: 1px !important;margin: 0 !importa=
-nt;" width=3D"1" height=3D"1" border=3D"0" alt=3D"" /></body>
-</html>
+------=_NextPart_000_0012_DFE78D2B.F52ED73E--
 
 
---b1_FKK5xguV3D9yuyxgsZ6HSAtocv26kiUVKyXkS7KNv9o--
-
-
-
---===============8410002038165250421==
+--===============6855534172323742992==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8410002038165250421==
+--===============6855534172323742992==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -311,6 +342,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8410002038165250421==--
-
+--===============6855534172323742992==--
 
