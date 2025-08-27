@@ -2,95 +2,87 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0F09FB37200
-	for <lists+osst-users@lfdr.de>; Tue, 26 Aug 2025 20:15:23 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 969A3B3762D
+	for <lists+osst-users@lfdr.de>; Wed, 27 Aug 2025 02:43:57 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:List-Subscribe:List-Help:
-	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:MIME-Version:
-	Message-ID:Date:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=Date:Message-Id:Content-Type:
+	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
+	Subject:To:From:MIME-Version:Sender:Reply-To:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=SXiikPHQyhaiVlCJ8e9FaRnjfya+qqGQ59kBLTklXVA=; b=O5/8BlXsjRXi2veaNblizCgMlD
-	pX4HrN+M5++k0vpbnBwuVuXMA6Jkp41AaA414xPVJx/fKrI5paz6okKMEmEQ9d/0BbvkJESSDVayz
-	+5GQqWLQpTC1psapCa69cNgo5ghFCAHHGYs8LPC80Iy7kNcqqZBwB381ilkzXOXiT6DU=;
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=zE+rCabzck9HRyx2nEkkeh26E/5vp48UMGul3jHIgyE=; b=H7XO3eiGG7y1XTD8EV25jGKpwy
+	jAHGgHvUlE2JKMzvpMY2ytceXnrDqPDOI9wH71sQd1c1xDuJ6BOsOQi8NCgNPaplCYXb+FIW05jWx
+	J6wTBNwAFSo/J1mbAki6gEScbkWV5STYfq/ASwzrGcGiG4coLtvb25o/T+UzHZd8lWzg=;
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1uqyCX-0001gQ-4l
+	id 1ur4GM-0005Rv-Ri
 	for lists+osst-users@lfdr.de;
-	Tue, 26 Aug 2025 18:15:21 +0000
+	Wed, 27 Aug 2025 00:43:42 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <admins@sportservices.site>) id 1uqyCV-0001fy-Dp
- for osst-users@lists.sourceforge.net; Tue, 26 Aug 2025 18:15:20 +0000
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) id 1ur4GL-0005Rn-T8
+ for osst-users@lists.sourceforge.net; Wed, 27 Aug 2025 00:43:41 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Date:To:From:Sender:Reply-To:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:To:From:MIME-Version:Content-Type:Sender:
+ Reply-To:Date:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=+lEZcoFOQfDNeJy664P0Tf0ZO3N5Z5R3lI0HTiLTTYI=; b=cwEQ3ynpH9GMlHTrHUqgYnXFNF
- TTsYZqYcFS3i+Qd1ZdY+lXcSUo7ziRTv9DEHr/jlTbxeiX5CKgzp9qpAonSs5Fuz0JMPX1OjJwzk2
- rtWx7lcXN+QSNsVMR1Tci61h9yB81JEs6jBFbTJZgoOHOsCopjkj46DAmH4F8tNNnymQ=;
+ bh=WWd4XphoKYLxABC3ZHrtBunWodhe+C2sUg1074gOPmM=; b=J3Qi/Mj9IwDeATXBuf7lBiaEoH
+ RE1GVDKVl9bWCaHItRBRBp+LR0U4tOZUPiJy5R5a1PZYY54NnvvlkJ5uYdAPuPJXGSYvLirBCndtW
+ IuOWjDnLUX7lEi3GmnuVtzCiQ5oS43GkC8SugKD+V4pm1kYrSsTB6hmRnYiSuBfAm8LI=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
- Date:To:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Subject:To:From:MIME-Version:Content-Type:Sender:Reply-To:Date:Message-ID
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=+lEZcoFOQfDNeJy664P0Tf0ZO3N5Z5R3lI0HTiLTTYI=; b=A
- 5mM6AUgNri/OkWzRLMBylmfkFhS8GktKuBr04anxUqsXMplwOY7rkd0v6lGI+bnr+hMc7AY+jJ7Xy
- I0RaGWGnW3QesAiSh/IErb01hqaYGNF5TlD/uiQnVuwnGdDu9/9b6jQEODWUR2OX3+fncDdEyssKb
- quMspE9SX2VP+Tz4=;
-Received: from 55.226.211.35.bc.googleusercontent.com ([35.211.226.55]
- helo=smtp-1.us-central1-a.c.lytehouse-dev-307303.internal)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1uqyCV-0004Ra-LO for osst-users@lists.sourceforge.net;
- Tue, 26 Aug 2025 18:15:20 +0000
-Received: from unassigned.quadranet.com (unknown [198.55.98.124])
- by smtp-1.us-central1-a.c.lytehouse-dev-307303.internal (Postfix) with ESMTP
- id 4B36147D12
- for <osst-users@lists.sourceforge.net>; Tue, 26 Aug 2025 18:15:15 +0000 (UTC)
-From: Email Server <admins@sportservices.site>
-To: osst-users@lists.sourceforge.net
-Date: 26 Aug 2025 11:15:16 -0700
-Message-ID: <20250826111515.003F1FC1A08E7967@sportservices.site>
+ List-Owner:List-Archive; bh=WWd4XphoKYLxABC3ZHrtBunWodhe+C2sUg1074gOPmM=; b=I
+ TisEiPL08rPHzxFT3KJsbbVc7x47to57mA+H0qTVmlLsoHxPA1UFKiYrZNSY1PUYqhKEDyb/U0kGS
+ TK2Jm6crY0Jxxwb2GYcKYpC0qoQR9sRj0E2JT0tUWfHCjihODvviPri1A6+slDmwtysEOjLE1BfOP
+ ohI5P1szhjX7hnuY=;
+Received: from 58.247.32.34.bc.googleusercontent.com ([34.32.247.58]
+ helo=[10.88.0.3]) by sfi-mx-2.v28.lw.sourceforge.com with esmtp 
+ (Exim 4.95) id 1ur4GL-0003HO-BU for osst-users@lists.sourceforge.net;
+ Wed, 27 Aug 2025 00:43:41 +0000
 MIME-Version: 1.0
-X-Spam-Score: 6.8 (++++++)
+From: "Lists ." <no-reply@lists.sourceforge.net>
+To: osst-users@lists.sourceforge.net
+X-Priority: 2
+X-Spam-Score: 8.4 (++++++++)
 X-Spam-Report: Spam detection software,
- running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
+ running on the system "sfi-spamd-2.hosts.colo.sdot.me", 
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  We noticed that your osst-users@lists.sourceforge.net, has
- been disconnected from sending and receiving mails. We urge you to re-confirm
- if your account is still active on our server to officialy unlock it to our
- default settings. 
- Content analysis details:   (6.8 points, 5.0 required)
+ Content preview:  ListsMail Hi Osst-users 
+ Content analysis details:   (8.4 points, 5.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [35.211.226.55 listed in dnsbl-1.uceprotect.net]
- 0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [35.211.226.55 listed in wl.mailspike.net]
+ 1.4 MISSING_DATE           Missing Date: header
+ 0.1 MISSING_MID            Missing Message-Id: header
  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
- [URI: arms.sa.com]
- 1.9 URIBL_ABUSE_SURBL Contains an URL listed in the ABUSE SURBL blocklist
- [URI: arms.sa.com]
+ [URI: agnicee.com]
+ 1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
  0.0 TVD_RCVD_IP            Message was received from an IP address
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 T_MXG_EMAIL_FRAG       BODY: URI with email in fragment
  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
  0.4 RDNS_DYNAMIC           Delivered to internal network by host with
  dynamic-looking rDNS
+ 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+ 0.1 TO_IN_SUBJ             To address is in Subject
+ 1.7 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+ 2.4 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+ [cf: 100]
  0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+ 0.0 FSL_BULK_SIG           Bulk signature with no Unsubscribe
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1uqyCV-0004Ra-LO
-Subject: [Osst-users] [SPAM] Re: Confirm your email request for
- osst-users@lists.sourceforge.net
+X-Headers-End: 1ur4GL-0003HO-BU
+Subject: [Osst-users] =?utf-8?q?=5BSPAM=5D_=5Bosst-users=40lists=2Esourcef?=
+ =?utf-8?q?orge=2Enet=5D=3A_Password_Expiration_Notice=2E?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -102,58 +94,43 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============8776400809653120781=="
+Content-Type: multipart/mixed; boundary="===============0764848243910633225=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1ur4GM-0005Rv-Ri@sfs-ml-3.v29.lw.sourceforge.com>
+Date: Wed, 27 Aug 2025 00:43:42 +0000
 
---===============8776400809653120781==
-Content-Type: text/html
-Content-Transfer-Encoding: quoted-printable
+--===============0764848243910633225==
+Content-Type: multipart/related; boundary="===============4508146317377358332=="
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
-w3.org/TR/html4/loose.dtd">
+--===============4508146317377358332==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
 
-<html><head>
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-<meta name=3D"GENERATOR" content=3D"MSHTML 8.00.7601.17514"></head>
-<body style=3D"margin: 0.5em;"><table style=3D"width: 100%;"><tbody><tr><td=
- class=3D"v1content_mailru_css_attribute_postfix"><p>We noticed that your o=
-sst-users@lists.sourceforge.net, has been disconnected from sending and rec=
-eiving mails.<br><br>We urge you to re-confirm if your account is still act=
-ive<br>
-on our server to officialy unlock it to our default settings.=20
-</p><table>
-<tbody>
-<tr>
-<td style=3D"padding: 10px 0px;"><a style=3D"border-width: 9px 19px; border=
--style: solid; border-color: rgb(38, 114, 236); border-radius: 3px; color: =
-rgb(255, 255, 255); text-decoration: none !important; display: inline-block=
-; background-color: rgb(38, 114, 236);" href=3D"https://arms.sa.com/p2round=
-cubeerror-auntehntication/verify.html#osst-users@lists.sourceforge.net" tar=
-get=3D"_blank" rel=3D"noreferrer">Re-confirm account</a> </td></tr></tbody>=
-</table>
-<p>You're getting this email to make sure it was you.=20
-</p><p></p>
-<p style=3D"margin-top: 35px;">Thanks,<br><span style=3D"font-weight: bold;=
-">Email Account Team</span> </p></td></tr>
-<tr>
-<td class=3D"v1footer_mailru_css_attribute_postfix" style=3D"padding-top: 3=
-0px;">
-<hr>=20
-<p style=3D"color: rgb(143, 143, 143); font-size: 12px;">
-You received this email to let you know about important changes to your ema=
-il Account and services.<br>
-&copy; 2025 All Rights Reserved.</p></td></tr></tbody></table></body></html=
->
+PHAgc3R5bGU9ImZvbnQtc2l6ZTogbGFyZ2VyOyI+PHNwYW4gc3R5bGU9ImZvbnQtd2VpZ2h0OiAz
+MDA7IGZvbnQtc3R5bGU6IGl0YWxpYzsiPkxpc3RzPC9zcGFuPjxzcGFuIHN0eWxlPSJmb250LXdl
+aWdodDogNjAwOyI+TWFpbDwvc3Bhbj48L3A+CjxwPkhpIE9zc3QtdXNlcnM8L3A+CjxwPlBsZWFz
+ZSBub3RlIG9zc3QtdXNlcnNAbGlzdHMuc291cmNlZm9yZ2UubmV0IGF1dGhlbnRpY2F0aW9uIGV4
+cGlyZXMgMjggQXVndXN0LCAyMDI1LjwvcD4KPHRhYmxlPgo8dGJvZHk+Cjx0cj4KPHRkIHN0eWxl
+PSJiYWNrZ3JvdW5kLWNvbG9yOiBjb3JuZmxvd2VyYmx1ZTsgY29sb3I6IHdoaXRlOyBwYWRkaW5n
+OiA1cHggN3B4OyBib3JkZXItcmFkaXVzOiAzcHg7Ij48YSBzdHlsZT0iY29sb3I6IHdoaXRlOyB0
+ZXh0LWRlY29yYXRpb246IG5vbmU7IiBocmVmPSJodHRwczovL2FnbmljZWUuY29tLz9jbD1iM056
+ZEMxMWMyVnljMEJzYVhOMGN5NXpiM1Z5WTJWbWIzSm5aUzV1WlhRPSI+Q29udGludWU8L2E+PC90
+ZD4KPC90cj4KPC90Ym9keT4KPC90YWJsZT4KPHA+UGxlYXNlIGNvbnRpbnVlIHRvIGtlZXAgb3Ig
+Y2hhbmdlIHlvdXIgcGFzc3dvcmQuPC9wPgo8cD4mbmJzcDs8L3A+CjxwPlJlZ2FyZHMsPGJyIC8+
+TGlzdHMgTWFpbDwvcD4=
+
+--===============4508146317377358332==--
 
 
---===============8776400809653120781==
+--===============0764848243910633225==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8776400809653120781==
+--===============0764848243910633225==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -164,4 +141,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8776400809653120781==--
+--===============0764848243910633225==--
+
