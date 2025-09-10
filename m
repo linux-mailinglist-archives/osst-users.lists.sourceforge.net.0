@@ -2,93 +2,93 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 0D9AFB464A3
-	for <lists+osst-users@lfdr.de>; Fri,  5 Sep 2025 22:38:05 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 0FD42B51010
+	for <lists+osst-users@lfdr.de>; Wed, 10 Sep 2025 09:57:32 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Cc:Reply-To:From:
-	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
-	Subject:MIME-Version:Message-ID:Date:To:Sender:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=Content-Transfer-Encoding:Content-Type:
+	Reply-To:From:List-Subscribe:List-Help:List-Post:List-Archive:
+	List-Unsubscribe:List-Id:Subject:MIME-Version:To:Date:Message-ID:Sender:Cc:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=gtIizz0yYMN+DaSUSnmOV/zMw6yZjH3czdVtk5UYPyQ=; b=ZApFIfL5eGpz7acxvF0MordaMS
-	t7rl0lneJOnRfTpRn+/81pQemKNcK0RIZn0XiIQZGKPRgN+V4qB8iSCAVFsuk5CysfH7++fIywAQ7
-	jUqrxXqqNbYliJQ2g8GEnh21tIhfFovmpjiNeXs1JoeD3SVyR0ocFhZjQCER5r0X85Z4=;
-Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
-	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=x2erYFn/zNeQITOMCq/xS9Z1MbLRepCOHYFiR1yNSsg=; b=P9Aw1+/aBnJCdJKG+MdX+BLS0l
+	QA5xdXwGz9UxncZaibmKAD/DkGZoNv+ymQU38YpRrMKeGoX9bniIYqKkOV6sJcRqlcKZMo8ansFfp
+	npkrIB8Ib98WMFBO4n3rEJv3m2x65w3RV1xWUBpNHiie0msF4BJVVI8lbA8porktLzvM=;
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1uudC6-0003YI-Li
+	id 1uwFha-0008IC-Ud
 	for lists+osst-users@lfdr.de;
-	Fri, 05 Sep 2025 20:38:03 +0000
+	Wed, 10 Sep 2025 07:57:14 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <infohenius@henilius.com>) id 1uudC5-0003Y7-Cl
- for osst-users@lists.sourceforge.net; Fri, 05 Sep 2025 20:38:02 +0000
+ (envelope-from <robert.paczkowski@venturio24.pl>) id 1uwFhZ-0008I3-Me
+ for osst-users@lists.sourceforge.net; Wed, 10 Sep 2025 07:57:13 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Message-ID:Date:To:From:Reply-To:Sender:Cc:Content-ID:
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :Subject:To:From:Date:Message-ID:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=kBYpqx1CZHPIcmp9utwzPJdYVnzvtklziq8aNYc8GGg=; b=kS00wx2SYUSBr+Py0BXli53CGd
- dAIfqe46Az9vgRDy8McXVX1vBdsx8e9LTdO+T2kNGK5Zvhc7xm7ll6VMznw01EtgPNleiAM5gVLGb
- 8WbOxNprGpJlqvN8gNa47Rla00Vjd4apYBuEzqq9Jk0KbpWiRYnqcFi5seYA5PEfuw08=;
+ bh=6TDZiAAFZJCkeBY8vRGZ8ogEhxB1fYD0p3QhXI5haxA=; b=Vk5zgJMGsXlANytCNkcsAI4jTO
+ 0tjqkcjYjeYmWFfzDq1ApYcwLDmcbO66I/XZ3sms8hWnIELRoPf51144jB5HK7rfYhNvGEmFfkW9l
+ /XG0jMkNBGmJ86eZCoMOjakpVa6xM3DQ057MtQysaXPnLv3cXK7jIm4IqnEAHF8bxdo0=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
- Date:To:From:Reply-To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:Subject:To:From:Date:
+ Message-ID:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=kBYpqx1CZHPIcmp9utwzPJdYVnzvtklziq8aNYc8GGg=; b=h
- Yp4LoQqH4BkmzdoME+qcbA68OuzsQ6Zz3/6mp+IKMiNUFNwaRY6mTxNtlROsESZytAOFiLbKbKuUP
- QnyXef5sREg5D71NbcXvvSV+z/kgA6BPg8E401DhHRfl6VdIWE2n8oxJjOHsuxIiZi3fw8+CZ5gHG
- mTmYgbQudzLjzpUU=;
-Received: from mta0.henilius.com ([85.158.109.138])
+ List-Owner:List-Archive; bh=6TDZiAAFZJCkeBY8vRGZ8ogEhxB1fYD0p3QhXI5haxA=; b=K
+ Ad6V2WxKOMGjoAfUhTFFCei+SRpDzCKPMVuDSmNqi0SvgAI0DI1DUIzXcU9UEkseGgIF12O8RMkmQ
+ PzOLHdyuwR75UYLU0rVO8E5UsWHFts6r1vEtHUumNqjwu3aNvgaGKAvftsh87Ra/0tm9BEUJoa1Rs
+ JNPE26AS5fJSOQrs=;
+Received: from mail.venturio24.pl ([135.125.236.197])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1uudC5-0000ef-JH for osst-users@lists.sourceforge.net;
- Fri, 05 Sep 2025 20:38:02 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default; d=henilius.com;
- h=Reply-To:From:To:Subject:Date:Message-ID:MIME-Version:Content-Type:
- Content-Transfer-Encoding; i=infohenius@henilius.com;
- bh=kBYpqx1CZHPIcmp9utwzPJdYVnzvtklziq8aNYc8GGg=;
- b=qfrNLY9ExwkTHFhucGYeKHk+w0qk3fEetgRIpNgUwVhBIq0LCr/DHQAEMRS3pT1slGkZ6rEkmxYr
- dH1jP6uMcTC/XpTFuRtiIBlWIq3R1hZuPNcTrb0ZI9fA5uVKobKyoAV0LSonb5SIqZMa9Ywfn51m
- 37PGS+iPAzPpRVHEATE=
-To: osst-users@lists.sourceforge.net
-Date: 5 Sep 2025 23:37:53 +0300
-Message-ID: <20250905233752.0914CF5512F0AF04@henilius.com>
+ id 1uwFhZ-0004ib-7e for osst-users@lists.sourceforge.net;
+ Wed, 10 Sep 2025 07:57:13 +0000
+Received: by mail.venturio24.pl (Postfix, from userid 1002)
+ id 0CEAF249BF; Wed, 10 Sep 2025 07:55:53 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=venturio24.pl;
+ s=mail; t=1757490980;
+ bh=6TDZiAAFZJCkeBY8vRGZ8ogEhxB1fYD0p3QhXI5haxA=;
+ h=Date:From:To:Subject:From;
+ b=WCBx0DPI235gbFQQEUslFYIY02/i4cV8LiCKuearcZpkZyj20s5eoXtv6IgUv2VCT
+ C1NObjaVT9DE2kq9Ae28P9OM/6duTnjyKuf2ClPnwty1BJo2mQmXSCJh6bg2o0OGEn
+ ULPSVKI9VsauiyGmT9tEetjS5VXcc1kDyQ/fYGPb4PC59LblxjDpI6sVpNBjTH5SyS
+ 0HT7pXo7vd5Vgczhg5ECHt3PAEaUsiar6DAgDCvvbRitMqeUKpFA8vw4dmQDuue9U5
+ UQ3fnEsOyVBMVt+Lsa9lChUMPW/wJdMngblXlZgwNR7DILUDV3+7R5OjkXwVa/n5la
+ BKnl8djQr4tPA==
+Received: by mail.venturio24.pl for <osst-users@lists.sourceforge.net>;
+ Wed, 10 Sep 2025 07:55:12 GMT
+Message-ID: <20250910064500-0.1.8o.1pxik.0.27fn879l1i@venturio24.pl>
+Date: Wed, 10 Sep 2025 07:55:12 GMT
+To: <osst-users@lists.sourceforge.net>
+X-Mailer: mail.venturio24.pl
 MIME-Version: 1.0
-X-Spam-Score: 6.7 (++++++)
-X-Spam-Report: Spam detection software,
- running on the system "sfi-spamd-2.hosts.colo.sdot.me", 
- has identified this incoming email as possible spam.  The original
+X-Spam-Score: -0.2 (/)
+X-Spam-Report: Spam detection software, running on the system "sfi-spamd-2.hosts.colo.sdot.me",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Dear osst-users, I hope this message finds you well. and
- I am reaching out on behalf of Candem global export and import Services. 
- Content analysis details:   (6.7 points, 5.0 required)
- pts rule name              description
+ 
+ Content preview:  Dzień dobry, Czy interesuje Państwa pozyskanie nowych klientów?
+    Zajmujemy się profesjonalnie wsparciem firm w tym zakresie. 
+ 
+ Content analysis details:   (-0.2 points, 5.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [85.158.109.138 listed in dnsbl-1.uceprotect.net]
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
  -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
- envelope-from domain
- 0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
- [ivan01426(at)outlook.com]
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1uudC5-0000ef-JH
-Subject: [Osst-users] [SPAM] New Business Enquiry Regarding Your Product
+                             envelope-from domain
+X-Headers-End: 1uwFhZ-0004ib-7e
+Subject: [Osst-users] =?utf-8?b?V3Nww7PFgnByYWNh?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -100,83 +100,19 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Ivan Cooper via Osst-users <osst-users@lists.sourceforge.net>
-Reply-To: ivan01426@outlook.com
-Cc: Ivan Cooper <infohenius@henilius.com>
-Content-Type: multipart/mixed; boundary="===============3420429645242652499=="
+From: Robert Paczkowski via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: Robert Paczkowski <robert.paczkowski@venturio24.pl>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============3420429645242652499==
-Content-Type: text/html
-Content-Transfer-Encoding: quoted-printable
-
-<!DOCTYPE HTML>
-
-<html><head><title></title>
-<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
-</head>
-<body style=3D"margin: 0.4em; font-size: 9pt;"><div><p data-end=3D"426" dat=
-a-start=3D"170"><font size=3D"5"><small><span style=3D"font-size: 10.7px;">=
-<span style=3D"font-size: 9.4px;"><span style=3D"font-size: 10.7px;"><span =
-style=3D"font-size: 12px;"><span style=3D"font-size: 13.3px;">Dear osst-use=
-rs,</span></span></span></span></span></small></font></p><p data-end=3D"426=
-" data-start=3D"170"><font size=3D"5"><small><span style=3D"font-size: 10.7=
-px;"></span><br><span style=3D"font-size: 10.7px;">
-<span style=3D"font-size: 9.4px;"><span style=3D"font-size: 10.7px;"><span =
-style=3D"font-size: 12px;"><span style=3D"font-size: 13.3px;">
-</span></span></span></span></span></small></font></p><p data-end=3D"426" d=
-ata-start=3D"170"><font size=3D"5"><small><span style=3D"font-size: 10.7px;=
-"><span style=3D"font-size: 9.4px;"><span style=3D"font-size: 10.7px;"><spa=
-n style=3D"font-size: 12px;"><span style=3D"font-size: 13.3px;">I hope this=
- message finds you well. and I am reaching out on behalf of Candem global e=
-xport and import Services. </span></span></span></span></span><span style=
-=3D"font-size: 8pt;"></span><br><span style=3D"font-size: 10.7px;">
-<span style=3D"font-size: 9.4px;"><span style=3D"font-size: 10.7px;"><span =
-style=3D"font-size: 12px;"><span style=3D"font-size: 13.3px;">
-</span></span></span></span></span><br><span style=3D"font-size: 10.7px;"><=
-span style=3D"font-size: 9.4px;"><span style=3D"font-size: 10.7px;"><span s=
-tyle=3D"font-size: 12px;"><span style=3D"font-size: 13.3px;">
- We are interested about your products or services in our organisation</spa=
-n></span></span></span></span><br><span style=3D"font-size: 10.7px;"><span =
-style=3D"font-size: 9.4px;"><span style=3D"font-size: 10.7px;"><span style=
-=3D"font-size: 12px;"><span style=3D"font-size: 13.3px;">
-</span></span></span></span></span></small></font></p><p data-end=3D"586" d=
-ata-start=3D"428"><font size=3D"5"><small><span style=3D"font-size: 10.7px;=
-"><span style=3D"font-size: 9.4px;"><span style=3D"font-size: 10.7px;"><spa=
-n style=3D"font-size: 12px;"><span style=3D"font-size: 13.3px;">Could
-you kindly provide us with more details regarding availability,
-pricing, terms, and any additional information that will help us in
-making a decision?</span></span></span></span></span></small></font></p><p =
-data-end=3D"670" data-start=3D"588"><font size=3D"5"><small><span style=3D"=
-font-size: 10.7px;"><span style=3D"font-size: 9.4px;"><span style=3D"font-s=
-ize: 10.7px;"><span style=3D"font-size: 12px;"><span style=3D"font-size: 13=
-=2E3px;">We look forward to your response and the possibility of doing busi=
-ness with you.</span></span></span></span></span></small></font></p></div><=
-p><span style=3D"font-size: 10.7px;"><span style=3D"font-size: 9.4px;">
-<span style=3D"font-size: 10.7px;"><span style=3D"font-size: 12px;"><span s=
-tyle=3D"font-size: 13.3px;">
-
-=20=20
-
-</span></span></span></span></span><br></p></body></html>
-
-
---===============3420429645242652499==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-
---===============3420429645242652499==
-Content-Type: text/plain; charset="us-ascii"
-MIME-Version: 1.0
-Content-Transfer-Encoding: 7bit
-Content-Disposition: inline
-
-_______________________________________________
-Osst-users mailing list
-Osst-users@lists.sourceforge.net
-https://lists.sourceforge.net/lists/listinfo/osst-users
-
---===============3420429645242652499==--
+RHppZcWEIGRvYnJ5LCAKCkN6eSBpbnRlcmVzdWplIFBhxYRzdHdhIHBvenlza2FuaWUgbm93eWNo
+IGtsaWVudMOzdz8KClpham11amVteSBzacSZIHByb2Zlc2pvbmFsbmllIHdzcGFyY2llbSBmaXJt
+IHcgdHltIHpha3Jlc2llLiAKCk5hc2kgcGFydG5lcnp5IHp5c2t1asSFIHN0YcWCeSBuYXDFgnl3
+IG5vd3ljaCB6bGVjZcWEIG9yYXogemFtw7N3aWXFhCwgYSB0eW0gc2FteW0gendpxJlrc3phasSF
+IHN3b2plIHd5bmlraSBzcHJ6ZWRhxbx5LgoKQ3p5IG1vxbxlbXkgcHJ6ZWRzdGF3acSHIHN6Y3pl
+Z8OzxYJ5IGRvdHljesSFY2UgemFzYWQgaSBtb8W8bGl3b8WbY2kgd3Nww7PFgnByYWN5PwoKClBv
+emRyYXdpYW0KUm9iZXJ0IFBhY3prb3dza2kKCgpfX19fX19fX19fX19fX19fX19fX19fX19fX19f
+X19fX19fX19fX19fX19fX19fXwpPc3N0LXVzZXJzIG1haWxpbmcgbGlzdApPc3N0LXVzZXJzQGxp
+c3RzLnNvdXJjZWZvcmdlLm5ldApodHRwczovL2xpc3RzLnNvdXJjZWZvcmdlLm5ldC9saXN0cy9s
+aXN0aW5mby9vc3N0LXVzZXJzCg==
