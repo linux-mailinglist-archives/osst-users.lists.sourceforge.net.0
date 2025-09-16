@@ -2,137 +2,79 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 9AED7B5540E
-	for <lists+osst-users@lfdr.de>; Fri, 12 Sep 2025 17:48:29 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id D249AB59484
+	for <lists+osst-users@lfdr.de>; Tue, 16 Sep 2025 12:59:59 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
-	MIME-Version:Message-ID:From:To:Date:Sender:Cc:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=List-Subscribe:List-Help:List-Post:
+	List-Archive:List-Unsubscribe:List-Id:Subject:Content-Type:MIME-Version:
+	Message-ID:Date:To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=1uQPepdCISpsmliLMxmBs5lXYxAHyb2DYwquAYaMgZE=; b=ZAZEjHTAcRYIf43Hx7WwW2kPdo
-	ZuYNrI9D+d/TOmMLgpRkLjm0Q73B2z+sjM4AkzNRFpv5nUJz4z4OiLzzhy4wQTBytwmyofRyn3/je
-	HnqoJqzZxtEjHjqv7wXPEjsffGA+igPyUhyVOUdkv6iKJdpc0S2YeSJEF8pLkyDcK1jQ=;
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=vK1Qm9oYN8+d0th8M50w1b22XRfhQf1qyar98N1yiyI=; b=HP3esIE6qWi52/y2Lpdut/7qlg
+	rcyCM+c3FDo8Xz8Xt8bslHr0E5yqbAmiusENM5ZMR0rcucEgxg4MwVm4vKSfcru58awoMl+Brkil4
+	jh8LDobLmoLNnYVnUvX55IIE1t/H0PWXO9TJMiX9QRUETjkk4hr1ID+GMW244P/Fhmcg=;
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1ux60h-0006Ly-Vh
+	id 1uyTPi-0008Kp-Lp
 	for lists+osst-users@lfdr.de;
-	Fri, 12 Sep 2025 15:48:27 +0000
+	Tue, 16 Sep 2025 10:59:58 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <mail@buffsports.cc>) id 1ux60g-0006Lq-33
- for osst-users@lists.sourceforge.net; Fri, 12 Sep 2025 15:48:26 +0000
+ (envelope-from <info@factoryengines.com>) id 1uyTPh-0008KJ-FX
+ for osst-users@lists.sourceforge.net; Tue, 16 Sep 2025 10:59:57 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
- :List-Unsubscribe:Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=hZ96yiEbYDKnxMFZpAr53y1KOwt7J2l+4gLVpb8jIyU=; b=HzV2I6SyLdhZUwSe/9Jtx4T9eD
- EnpY0PILRc5hVQ3aT0mJF2N/TW9bpfqmPQwhKw6TY9+UToAsqX66x3ynfRLRfs2sKSAl1BFW2HPhe
- 4L0mKkJfqYHexkNioOQQIZtOkEV+lUt2EO6m3r+4dj4laYuef1hJjGwGiAJnJ2kY8hno=;
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Message-ID:Date:Subject:
+ To:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=N0t9dMVgRBVk5f3N2OeQ/6qz2t1IZVycqco4nsX3lLs=; b=iNzHA0tNaKsnwZ0fClOH4LRvOw
+ PukRdWtmppBeBR9Vo6dCCo0t3GjyPXt521OrldBjxyKCegiIzedY3vvMI0tQKj51FN82z0zWazkl0
+ qhWgN/xOXODYPYUjL3hytg4d7Xj7FskC84vwVdMK6v43cG9DuhzZm8OeY1oU4SrYldHU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Transfer-Encoding:Content-Type:MIME-Version:List-Unsubscribe:
- Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=hZ96yiEbYDKnxMFZpAr53y1KOwt7J2l+4gLVpb8jIyU=; b=mMjyU7PadYk6GApq7BaT56AGuo
- vWzNnSwk2/R+s4oQ/LOgONgiuPMAlcnFwYY4IFBDN3wZEs/GDn3ic+sWQI4ep5xq+a5IOSd5mY84Z
- znLO9l826YHXAab8x/FgWUSb4oelE/XMs6IOWfV+6PmFKAjPBlPVF+3+azaQgBHPo8WU=;
-Received: from mail-pj1-f102.google.com ([209.85.216.102])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES128-GCM-SHA256:128) (Exim 4.95)
- id 1ux60e-0000cM-JQ for osst-users@lists.sourceforge.net;
- Fri, 12 Sep 2025 15:48:25 +0000
-Received: by mail-pj1-f102.google.com with SMTP id
- 98e67ed59e1d1-32b8919e7c7so2485681a91.2
- for <osst-users@lists.sourceforge.net>; Fri, 12 Sep 2025 08:48:24 -0700 (PDT)
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
- d=buffsports-cc.20230601.gappssmtp.com; s=20230601; t=1757692094; x=1758296894;
- darn=lists.sourceforge.net; 
- h=content-transfer-encoding:mime-version:list-unsubscribe-post
- :list-unsubscribe:precedence:message-id:subject:reply-to:from:to
- :date:from:to:cc:subject:date:message-id:reply-to;
- bh=hZ96yiEbYDKnxMFZpAr53y1KOwt7J2l+4gLVpb8jIyU=;
- b=FdSvXFohgtqR14I6V9jHBW2LZPoEf6Y4cZwA0N7iqImV2LX6s7sQogUoOiEMYs7QX4
- nlN+roC291tIyXdOuBiYZ3E2iGcwRSuB3Fl4+oLKE1l/YFrY3VI9PJlwllzV4gZgfkL1
- 4Y7WPNuf8x9GFzA3jsnaHUpm0cmyqIkqZ6BF71A3RuN9CBb/l6GIwxj0G9symj3jMtCO
- BQg7qYyi+8WUHJjlgcqaKxO83q9wAikEMT7sUFzNeIWH8qkRi3vDcb2XVihVrkgHaSu8
- XSiuj56yncuKcVxP/svg3mT9/9609LghjM2zloj63FtJgXZDwqR9dkaGdmq8fgU7Tahv
- wyCg==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
- d=1e100.net; s=20230601; t=1757692094; x=1758296894;
- h=content-transfer-encoding:mime-version:list-unsubscribe-post
- :list-unsubscribe:precedence:message-id:subject:reply-to:from:to
- :date:x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
- bh=hZ96yiEbYDKnxMFZpAr53y1KOwt7J2l+4gLVpb8jIyU=;
- b=rshmnoFpbaHInO+E4BXWIxbn/GitliAge50aqd/Ta802RirU8yJ6P011Ysk2DPzY73
- jI++BxtyQzY/z/r6d+BS/e0xjKmvszJ6LRVofV7U7eRaSza30s++o0cmeWvXW/o2l7+Z
- LcaiFGP8c3j1wDZOi02K6817NOymHSGnTZw/LeeUobSirFCSL1MQ04TC4SNk5Jvl2YCz
- F1O3R/uPmvL8kDhC0WyZsOxQVmcf7tzpiowEOSq+ubkKvkjvMFQhHU7E8NJD79MTqjJb
- Phy+80XgdIGlbRYPHDD5ilK37sd20yovds2UTCJY6ww58p5aDycpLc3059s7lwszHzqx
- mTtA==
-X-Gm-Message-State: AOJu0Yy7yCCh0UF23yoVsF18NyoKL1DsT4qP5oGjOlCGdE8v7wnjDv3T
- XTzw1ORs4NlUtkZXOVC5Fgdo8YH8TE7IdbDrVKUHR/oq+NEp5gF5886x2ARXC+7MOwaVTdI6Egq
- glSt5cb9a0qvMyL0cMtuxAJIFGOVXx/R7y8Md3XlRyRLXDO8=
-X-Gm-Gg: ASbGnctfd00WZLhYyiet7odYpkqSYYb9k4rpaCgiZlfREjHSjz/qYVTiVl0UDr0qTDj
- D1BJqxHWUtyQorLCTvRcBXGQDZ1fUd5/Ski0Fei3jkVA4HgutvmnFqRjmeRe1XvhSNtPiqjU2XD
- vgn4fIFfdHaitvMR1tAbHTxhky2rnoo+W24Uoz55JOldL8p7RNHpijTnErecKg9YnhGsqEibfxy
- RIgEdmo9xAAXodVQiLEx2lp1E47ZdFnPpuIKbFV+/4T7MXf6OM6a3DRJ03gdJmt20EMTiY0Mu8u
- hAsIsmseoIt9WC+8rYbJ6uJR0xVoL6WqMBEPM/XshqX5rp3gfDoBLu7ni6Nr/9mbC6LCiGMSduw
- G
-X-Google-Smtp-Source: AGHT+IHeLqXCagA70We0WFKcGJuU86Ar4lHzP92Qna+PrncFIRDk6J/l++iznw4dlfiQNOV6y3nOb1LCQlMM
-X-Received: by 2002:a05:6122:a14:b0:544:9a46:7c85 with SMTP id
- 71dfb90a1353d-54a16b53d64mr1089990e0c.4.1757685784496; 
- Fri, 12 Sep 2025 07:03:04 -0700 (PDT)
-Received: from click.buffsports.cc (rssd9531.webaccountserver.com.
- [192.245.157.165]) by smtp-relay.gmail.com with ESMTPS id
- 71dfb90a1353d-54a0d1b95a0sm465686e0c.2.2025.09.12.07.03.04
- for <osst-users@lists.sourceforge.net>
- (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
- Fri, 12 Sep 2025 07:03:04 -0700 (PDT)
-X-Relaying-Domain: buffsports.cc
-Date: Fri, 12 Sep 2025 14:03:03 +0000
+ h=Content-Type:MIME-Version:Message-ID:Date:Subject:To:From:Sender:Reply-To
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=N0t9dMVgRBVk5f3N2OeQ/6qz2t1IZVycqco4nsX3lLs=; b=T
+ teGu0WYpkG8/+MJI/CnfyndV1ksFJ/2WC9hSLOcqaCG80vcIVhs7bAzKLOammZ0xjDEHJVhGBFTCf
+ c0DkFXN1HI32xpPgZyNo279MKIn0zNHQ9QtzZmOot1cq6+7DxFVjnsn9tlosmHZZh759aGAg2ezck
+ NSnYFibwoZy68CT4=;
+Received: from [216.250.252.33] by sfi-mx-2.v28.lw.sourceforge.com with esmtp 
+ (Exim 4.95) id 1uyTPg-0000V6-DC for osst-users@lists.sourceforge.net;
+ Tue, 16 Sep 2025 10:59:57 +0000
+From: Kamara Chimraa <info@factoryengines.com>
 To: osst-users@lists.sourceforge.net
-From: Buff Sports <mail@buffsports.cc>
-Message-ID: <TxzLabmyhlPdtledSXzSBw37VeCOyI1Qh26M50ER1E@click.buffsports.cc>
-X-Mailer: WPMailSMTP/Mailer/smtp 4.0.2
-Precedence: bulk
-X-Newsletter-Email-Id: 15
-X-Auto-Response-Suppress: OOF, AutoReply
-List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Date: 16 Sep 2025 03:59:45 -0700
+Message-ID: <20250916035945.79548ADDF4DF8C7D@factoryengines.com>
 MIME-Version: 1.0
-X-Spam-Score: 0.0 (/)
-X-Spam-Report: Spam detection software, running on the system "sfi-spamd-2.hosts.colo.sdot.me",
+Content-Type: multipart/mixed;
+ boundary="----=_NextPart_000_0012_6BAC7BF5.A28F7DC3"
+X-Spam-Score: 1.4 (+)
+X-Spam-Report: Spam detection software,
+ running on the system "sfi-spamd-2.hosts.colo.sdot.me", 
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  Hi there, 🎥 BuffSports gives you front-row access to the
-    world’s top sports — no cable, no hassle. Here’s why thousands of fans
-    choose us daily: 
- 
- Content analysis details:   (0.0 points, 5.0 required)
- 
-  pts rule name              description
+ Content preview:  Dear osst-users, We need a new offer for attached rfq, kindly
+ study carefully and give me an offer at your earliest. Line 14A must be of
+ european origin, else do not quote it. 
+ Content analysis details:   (1.4 points, 5.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  0.0 RCVD_IN_MSPIKE_H3      RBL: Good reputation (+3)
-                             [209.85.216.102 listed in wl.mailspike.net]
-  0.0 HTML_IMAGE_RATIO_06    BODY: HTML has a low ratio of text to image area
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.0 RCVD_IN_MSPIKE_WL      Mailspike good senders
-X-Headers-End: 1ux60e-0000cM-JQ
-Subject: [Osst-users] =?utf-8?b?8J+OryBCdWZmU3BvcnRzIOKAkyBZb3VyIEFsbC1B?=
- =?utf-8?q?ccess_Pass_to_Live_Sports_Streaming?=
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
+X-Headers-End: 1uyTPg-0000V6-DC
+Subject: [Osst-users] =?utf-8?q?Request_for_New_Quote_=E2=80=93_Attached_O?=
+ =?utf-8?q?rder?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
+Precedence: list
 List-Id: <osst-users.lists.sourceforge.net>
 List-Unsubscribe: <https://lists.sourceforge.net/lists/options/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=unsubscribe>
@@ -141,280 +83,289 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: mail@buffsports.cc
-Content-Type: multipart/mixed; boundary="===============8729654920152263468=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============8729654920152263468==
-Content-Type: multipart/alternative;
- boundary="b1=_TxzLabmyhlPdtledSXzSBw37VeCOyI1Qh26M50ER1E"
-Content-Transfer-Encoding: 8bit
+This is a multi-part message in MIME format.
 
---b1=_TxzLabmyhlPdtledSXzSBw37VeCOyI1Qh26M50ER1E
-Content-Type: text/plain; charset=UTF-8
-Content-Transfer-Encoding: 8bit
-
-Hi there, 
-
-🎥 BuffSports gives you front-row access to the world’s top sports — no cable, no hassle. 
-
-Here’s why thousands of fans choose us daily: 
-
-✅ Live streaming of football, UFC, basketball, and more 
-⚡ Fast & HD-quality viewing experience 
-📱 Works on all devices – mobile, tablet, TV 
-🔒 No contracts , no hidden fees 
-
-Skip the blackout zones and delayed broadcasts — enjoy live sports when and where you want. 
-
-👉 Ready to stream? Visit: buffsports.io  (https://buffsports.io) 
-
-Need help? Just reply — we're always happy to assist. 
-
-Warm regards, 
-The BuffSports Team 
-
-Unsubscribe  (https://click.buffsports.cc/?na=u&nk=470167-5c6a7d1540&nek=15-52fadf161d)    |    Manage your subscription  (https://click.buffsports.cc/?na=p&nk=470167-5c6a7d1540&nek=15-52fadf161d)    |    View online  (https://click.buffsports.cc/?na=v&nk=470167-5c6a7d1540&id=15) 
-
-
---b1=_TxzLabmyhlPdtledSXzSBw37VeCOyI1Qh26M50ER1E
-Content-Type: text/html; charset=UTF-8
+------=_NextPart_000_0012_6BAC7BF5.A28F7DC3
+Content-Type: text/html
 Content-Transfer-Encoding: quoted-printable
 
-<!DOCTYPE html>=0A<html xmlns=3D"https://www.w3.org/1999/xhtml" xmlns:o=3D"=
-urn:schemas-microsoft-com:office:office">=0A<head>=0A<title>=F0=9F=8E=AF Bu=
-ffSports =E2=80=93 Your All-Access Pass to Live Sports Streaming</title>=0A=
-<meta charset=3D"utf-8">=0A<meta name=3D"viewport" content=3D"width=3Ddevic=
-e-width, initial-scale=3D1">=0A<meta http-equiv=3D"X-UA-Compatible" content=
-=3D"IE=3Dedge">=0A<meta name=3D"format-detection" content=3D"address=3Dno">=
-=0A<meta name=3D"format-detection" content=3D"telephone=3Dno">=0A<meta name=
-=3D"format-detection" content=3D"email=3Dno">=0A<meta name=3D"x-apple-disab=
-le-message-reformatting">=0A<!--[if gte mso 9]><xml><o:OfficeDocumentSettin=
-gs><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSett=
-ings></xml><![endif]-->=0A<style type=3D"text/css">=0A#outlook a{padding:0;=
-}
-.ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
-.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font,=
- .ExternalClass td, .ExternalClass div {line-height: 100%;}
+<!DOCTYPE HTML>
 
-body { margin: 0; padding: 0; height: 100%!important; width: 100%!important=
-; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-heig=
-ht-rule: exactly;}
-table,td { border-collapse: collapse !important; mso-table-lspace: 0pt; mso=
--table-rspace: 0pt;}
-img { border: 0; height: auto; line-height: 100%; outline: none; text-decor=
-ation: none; max-width: 100%!important; -ms-interpolation-mode: bicubic;}
-img.aligncenter { display: block; margin: 0 auto;}
-/* TinyMCE of WP */
-.alignleft { float: left; margin: 7px 15px 7px 0px; }
-.alignright { float: right; margin: 7px 0px 7px 15px; }
-.aligncenter { display: block; margin-left: auto; margin-right: auto; }
-.screen-reader-text { display: none }
-@media screen and (max-width: 525px) {
- .pt-1, .padding-top-15 { padding-top: 15px!important; }
- .pb-1, .padding-bottom-15 { padding-bottom: 15px!important; }
- .responsive { width:100%!important; }
- table.responsive { width:100%!important; float: none; display: table; padd=
-ing-left: 0; padding-right: 0; }
- table[class=3D"responsive"] { width:100%!important; float: none; display: =
-table; padding-left: 0; padding-right: 0; }
- img { max-width: 100%!important }
- img[class=3D"responsive"] { max-width: 100%!important; }
- /* "width: auto" restores the natural dimensions forced with attributes fo=
-r Outlook */
- .fluid { max-width: 100%!important; width: auto; }
- img[class=3D"fluid"] { max-width: 100%!important; width: auto; }
-
- .block { display: block; }
-
- td[class=3D"responsive"]{width:100%!important; max-width: 100%!important; =
-display: block; padding-left: 0 !important; padding-right: 0!important; flo=
-at: none; }
- td.responsive { width:100%!important; max-width: 100%!important; display: =
-block; padding-left: 0 !important; padding-right: 0!important; float: none;=
- }
-
- td[class=3D"section-padding-bottom-image"]{
- padding: 50px 15px 0 15px !important;
- }
- /* For grids */
- .max-width-100 { max-width: 100%!important; }
-
- /* Obsolete */
- .tnp-grid-column {
- max-width: 100%!important;
- }
-
-}
-
-=0A=0A/* Text */=0A.text p {
- margin: 0 0 15px 0 !important;
-}
-.text a {
- color: #007bff;
-}=0A=0A/* Last posts */=0A@media (max-width: 525px) {
- .posts-1-column {
- width: 100%!important;
- }
- .posts-1-image {
- width: 100%!important;
- display: block;
- }
-}
-
-=0A=0A/* Html */=0A.html-td-global p {
- font-family: Helvetica, Arial, sans-serif;
- font-size: 16px;
-}
-=0A</style>=0A</head>=0A<body style=3D"margin: 0; padding: 0; line-height: =
-normal; word-spacing: normal;" dir=3D"ltr">=0A=0A<table cellpadding=3D'0' c=
-ellspacing=3D'0' border=3D'0' width=3D'100%'>=0A<tr>=0A<td bgcolor=3D'#ffff=
-ff' valign=3D'top'><!-- tnp -->=0A=0A <!-- Composer content -->=0A=0A <tabl=
-e border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" width=
-=3D"100%" style=3D"border-collapse: collapse; width: 100%;" class=3D"tnpc-r=
-ow tnpc-row-block ui-sortable-handle" data-id=3D"image">=0A<tbody><tr><td a=
-lign=3D"center" style=3D"padding: 0;" class=3D"edit-block"><!--[if mso | IE=
-]><table role=3D"presentation" border=3D"0" cellpadding=3D"0" align=3D"cent=
-er" cellspacing=3D"0" width=3D"600"><tr><td width=3D"600" style=3D"vertical=
--align:top;width:600px;"><![endif]--><table type=3D"options" class=3D"tnpc-=
-block-content" border=3D"0" cellpadding=3D"0" align=3D"center" cellspacing=
-=3D"0" width=3D"100%" style=3D"width: 100%!important; max-width: 600px!impo=
-rtant">=0A<tbody><tr><td align=3D"center" style=3D"text-align: center; line=
--height: normal !important; letter-spacing: normal; mso-line-height-rule: e=
-xactly; outline: none; padding: 15px 0px 15px 0px;background-color: #ffffff=
-;" bgcolor=3D"#ffffff"><table width=3D"100%" cellpadding=3D"0" cellspacing=
-=3D"0" border=3D"0"><tbody><tr><td align=3D"center"><a href=3D"https://clic=
-k.buffsports.cc/wp-json/wp-mail-smtp/v1/e/ZGF0YSU1QmVtYWlsX2xvZ19pZCU1RD0xN=
-zA3MjQmZGF0YSU1QmV2ZW50X3R5cGUlNUQ9Y2xpY2stbGluayZkYXRhJTVCb2JqZWN0X2lkJTVE=
-PTg1MjA2NyZkYXRhJTVCdXJsJTVEPWh0dHBzJTI1M0ElMjUyRiUyNTJGY2xpY2suYnVmZnNwb3J=
-0cy5jYyUyNTJGJTI1M0ZubHRyJTI1M0RNVFU3TkRjd01UWTNPMmgwZEhCek9pOHZZblZtWm5Od2=
-IzSjBjeTVwYnk4N096QmpNR1F5TURVM01qazBNVEU0WVRkaE5ETTRPVGc1T1RBd09UTTFZbVU1J=
-mhhc2g9NTYxY2YwNTZjYzk5OGM1NmNjNjE4YzY5ZDhhYjhjMGQ1YmQxODhkYmQ1MTYwNWRjNjc5=
-YjA0OThiYmM4MzhiMQ=3D=3D" target=3D"_blank" rel=3D"noopener nofollow" style=
-=3D"display: block; font-size: 0; text-decoration: none; line-height: norma=
-l!important"><img src=3D"https://click.buffsports.cc/wp-content/uploads/new=
-sletter/thumbnails/2025/08/buffsports-banner-1200x0.png" width=3D"600" heig=
-ht=3D"216" alt=3D"" border=3D"0" style=3D"display: block; height: auto; max=
--width: 600px !important; width: 100%; padding: 0; border: 0; font-size: 12=
-px"></a></td></tr></tbody></table></td></tr></tbody></table><!--[if mso | I=
-E]></td></tr></table><![endif]--></td></tr></tbody></table><table border=3D=
-"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"center" width=3D"100%" sty=
-le=3D"border-collapse: collapse; width: 100%;" class=3D"tnpc-row tnpc-row-b=
-lock ui-sortable-handle" data-id=3D"text">=0A<tbody><tr><td align=3D"center=
-" style=3D"padding: 0;" class=3D"edit-block"><!--[if mso | IE]><table role=
-=3D"presentation" border=3D"0" cellpadding=3D"0" align=3D"center" cellspaci=
-ng=3D"0" width=3D"600"><tr><td width=3D"600" style=3D"vertical-align:top;wi=
-dth:600px;"><![endif]--><table type=3D"options" class=3D"tnpc-block-content=
-" border=3D"0" cellpadding=3D"0" align=3D"center" cellspacing=3D"0" width=
-=3D"100%" style=3D"width: 100%!important; max-width: 600px!important">=0A<t=
-body><tr><td align=3D"center" style=3D"text-align: center; line-height: nor=
-mal !important; letter-spacing: normal; mso-line-height-rule: exactly; outl=
-ine: none; padding: 20px 15px 20px 15px;background-color: #ffffff;" bgcolor=
-=3D"#ffffff"><table width=3D"100%" style=3D"width: 100%!important" border=
-=3D"0" cellpadding=3D"0" cellspacing=3D"0">=0A <tbody><tr>=0A <td width=3D"=
-100%" valign=3D"top" align=3D"left" class=3D"text" style=3D"mso-line-height=
--rule: exactly; font-size: 16px;font-family: Verdana, Geneva, sans-serif;fo=
-nt-weight: normal;color: #222222; line-height: 1.5;">=0A <p data-start=3D"2=
-36" data-end=3D"245">Hi there,</p>=0A<p data-start=3D"247" data-end=3D"340"=
->=F0=9F=8E=A5 <strong data-start=3D"250" data-end=3D"264">BuffSports</stron=
-g> gives you front-row access to the world=E2=80=99s top sports =E2=80=
-=94 no cable, no hassle.</p>=0A<p data-start=3D"342" data-end=3D"387">Here=
-=E2=80=99s why thousands of fans choose us daily:</p>=0A<p data-start=3D"38=
-9" data-end=3D"582">=E2=9C=85 <strong data-start=3D"391" data-end=3D"409">L=
-ive streaming</strong> of football, UFC, basketball, and more<br data-start=
-=3D"448" data-end=3D"451">=E2=9A=A1 <strong data-start=3D"453" data-end=3D"=
-474">Fast &amp; HD-quality</strong> viewing experience<br data-start=3D"493=
-" data-end=3D"496">=F0=9F=93=B1 <strong data-start=3D"499" data-end=3D"523"=
->Works on all devices</strong> =E2=80=93 mobile, tablet, TV<br data-start=
-=3D"544" data-end=3D"547">=F0=9F=94=92 <strong data-start=3D"550" data-end=
-=3D"566">No contracts</strong>, no hidden fees</p>=0A<p data-start=3D"584" =
-data-end=3D"675">Skip the blackout zones and delayed broadcasts =E2=80=
-=94 enjoy live sports when and where you want.</p>=0A<p data-start=3D"677" =
-data-end=3D"742">=F0=9F=91=89 Ready to stream? Visit: <a class=3D"" href=3D=
-"https://click.buffsports.cc/wp-json/wp-mail-smtp/v1/e/ZGF0YSU1QmVtYWlsX2xv=
-Z19pZCU1RD0xNzA3MjQmZGF0YSU1QmV2ZW50X3R5cGUlNUQ9Y2xpY2stbGluayZkYXRhJTVCb2J=
-qZWN0X2lkJTVEPTg1MjA2OCZkYXRhJTVCdXJsJTVEPWh0dHBzJTI1M0ElMjUyRiUyNTJGY2xpY2=
-suYnVmZnNwb3J0cy5jYyUyNTJGJTI1M0ZubHRyJTI1M0RNVFU3TkRjd01UWTNPMmgwZEhCek9pO=
-HZZblZtWm5Od2IzSjBjeTVwYnpzN1pUUmxaVEpoTVRrellUZzFPV05rWXpZNFpqY3daR1kyWXpJ=
-d05qUTFaV1klMjUyNTNEJmhhc2g9Njk4M2Q2N2ZlYTUwMDNhMzdiMDE1ZjkyODE4ZWU1MmNlODR=
-hOGUwMmE1ODZkNzBjNjcxYmZkYTNhMzRkMzkwZQ=3D=3D" target=3D"_new" rel=3D"noope=
-ner" data-start=3D"704" data-end=3D"742">buffsports.io</a></p>=0A<p data-st=
-art=3D"744" data-end=3D"797">Need help? Just reply =E2=80=94 we're always h=
-appy to assist.</p>=0A<p data-start=3D"799" data-end=3D"838">Warm regards,<=
-br data-start=3D"812" data-end=3D"815"><strong data-start=3D"815" data-end=
-=3D"838">The BuffSports Team</strong></p> </td>=0A </tr>=0A</tbody></table>=
-</td></tr></tbody></table><!--[if mso | IE]></td></tr></table><![endif]--><=
-/td></tr></tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=
-=3D"0" align=3D"center" width=3D"100%" style=3D"border-collapse: collapse; =
-width: 100%;" class=3D"tnpc-row tnpc-row-block ui-sortable-handle" data-id=
-=3D"footer">=0A<tbody><tr><td align=3D"center" style=3D"padding: 0;" class=
-=3D"edit-block">=0A<!--[if mso | IE]><table role=3D"presentation" border=3D=
-"0" cellpadding=3D"0" align=3D"center" cellspacing=3D"0" width=3D"600"><tr>=
-<td width=3D"600" style=3D"vertical-align:top;width:600px;"><![endif]--><ta=
-ble type=3D"options" class=3D"tnpc-block-content" border=3D"0" cellpadding=
-=3D"0" align=3D"center" cellspacing=3D"0" width=3D"100%" style=3D"width: 10=
-0%!important; max-width: 600px!important">=0A<tbody><tr><td align=3D"center=
-" style=3D"text-align: center; line-height: normal !important; letter-spaci=
-ng: normal; mso-line-height-rule: exactly; outline: none; padding: 15px 15p=
-x 15px 15px;background-color: #ffffff;" bgcolor=3D"#ffffff"><div dir=3D"ltr=
-">=0A <a style=3D"font-size: 13px;font-family: Verdana, Geneva, sans-serif;=
-font-weight: normal;color: #222222; text-decoration: none; line-height: nor=
-mal;" href=3D"https://click.buffsports.cc/wp-json/wp-mail-smtp/v1/e/ZGF0YSU=
-1QmVtYWlsX2xvZ19pZCU1RD0xNzA3MjQmZGF0YSU1QmV2ZW50X3R5cGUlNUQ9Y2xpY2stbGluay=
-ZkYXRhJTVCb2JqZWN0X2lkJTVEPTg1MjA2OSZkYXRhJTVCdXJsJTVEPWh0dHBzJTI1M0ElMjUyR=
-iUyNTJGY2xpY2suYnVmZnNwb3J0cy5jYyUyNTJGJTI1M0ZubHRyJTI1M0RNVFU3TkRjd01UWTNP=
-MmgwZEhCek9pOHZZMnhwWTJzdVluVm1abk53YjNKMGN5NWpZeTglMjUyNTJGYm1FOWRTWnVhejA=
-wTnpBeE5qY3ROV00yWVRka01UVTBNQ1p1WldzOU1UVXROVEptWVdSbU1UWXhaRHM3TkdWbU5tSm=
-1PV1JoTldFeU9HWXpNbVkzT1RKak56aGhOREUyWkdSaU1qWSUyNTI1M0QmaGFzaD02ZWFlM2I5M=
-mNiMTMwYjFhMmM0ZjA1NzBmZTRkNmNkYjZmOTg5MzhhOTJkMjNiOWE4ODM5NWYxODNmMjcxZjVk=
-" target=3D"_blank">Unsubscribe</a><span style=3D"font-size: 13px;font-fami=
-ly: Verdana, Geneva, sans-serif;font-weight: normal;color: #222222; text-de=
-coration: none; line-height: normal;">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;=
-</span><a style=3D"font-size: 13px;font-family: Verdana, Geneva, sans-serif=
-;font-weight: normal;color: #222222; text-decoration: none; line-height: no=
-rmal;" href=3D"https://click.buffsports.cc/wp-json/wp-mail-smtp/v1/e/ZGF0YS=
-U1QmVtYWlsX2xvZ19pZCU1RD0xNzA3MjQmZGF0YSU1QmV2ZW50X3R5cGUlNUQ9Y2xpY2stbGlua=
-yZkYXRhJTVCb2JqZWN0X2lkJTVEPTg1MjA3MCZkYXRhJTVCdXJsJTVEPWh0dHBzJTI1M0ElMjUy=
-RiUyNTJGY2xpY2suYnVmZnNwb3J0cy5jYyUyNTJGJTI1M0ZubHRyJTI1M0RNVFU3TkRjd01UWTN=
-PMmgwZEhCek9pOHZZMnhwWTJzdVluVm1abk53YjNKMGN5NWpZeTglMjUyNTJGYm1FOWNDWnVhej=
-AwTnpBeE5qY3ROV00yWVRka01UVTBNQ1p1WldzOU1UVXROVEptWVdSbU1UWXhaRHM3TXpVNU1Ea=
-GtZVFF6T0RCaFpqQTBNR1ZoTW1FMk5qTmtaV1ZtWVdaak5HVSUyNTI1M0QmaGFzaD02MzcyOWZj=
-ZjRiNDhiNzk3NzY4NDAxZGRmNjc5ZGFiNjgxYzg4OGM2MDU4Y2YwNWVmMGVmYjc1MmViNmE5OTU=
-2" target=3D"_blank">Manage your subscription</a><span style=3D"font-size: =
-13px;font-family: Verdana, Geneva, sans-serif;font-weight: normal;color: #2=
-22222; text-decoration: none; line-height: normal;">&nbsp;&nbsp;&nbsp;|&nbs=
-p;&nbsp;&nbsp;</span><a style=3D"font-size: 13px;font-family: Verdana, Gene=
-va, sans-serif;font-weight: normal;color: #222222; text-decoration: none; l=
-ine-height: normal;" href=3D"https://click.buffsports.cc/wp-json/wp-mail-sm=
-tp/v1/e/ZGF0YSU1QmVtYWlsX2xvZ19pZCU1RD0xNzA3MjQmZGF0YSU1QmV2ZW50X3R5cGUlNUQ=
-9Y2xpY2stbGluayZkYXRhJTVCb2JqZWN0X2lkJTVEPTg1MjA3MSZkYXRhJTVCdXJsJTVEPWh0dH=
-BzJTI1M0ElMjUyRiUyNTJGY2xpY2suYnVmZnNwb3J0cy5jYyUyNTJGJTI1M0ZubHRyJTI1M0RNV=
-FU3TkRjd01UWTNPMmgwZEhCek9pOHZZMnhwWTJzdVluVm1abk53YjNKMGN5NWpZeTglMjUyNTJG=
-Ym1FOWRpWnVhejAwTnpBeE5qY3ROV00yWVRka01UVTBNQ1pwWkQweE5UczdaakU1WlRJMU1EWml=
-abVkzTldNME1EbGxOV1ZtTVRrek5HVXdObVJtT1RrJTI1MjUzRCZoYXNoPWY5NTNhYWU3YTg1M2=
-FiOTg4YTk5OWZhYWZhZmEzMDZlNjZiNDIxYTMyMzJjMDAxMWRjNzI0YjRmYmNmOWI4NjM=3D" t=
-arget=3D"_blank">View online</a></div></td></tr></tbody></table><!--[if mso=
- | IE]></td></tr></table><![endif]--></td></tr></tbody></table>=0A=0A=0A<!-=
-- /tnp -->=0A</td>=0A</tr>=0A</table>=0A=0A<img width=3D"1" height=3D"1" al=
-t=3D"" src=3D"https://click.buffsports.cc/?noti=3DMTU7NDcwMTY3Ozg4YTUyNTE3Z=
-DM2ZWE2MTQ5ZmNiODg2ODQ2NGJhMDA1"/>=0A<img src=3D"https://click.buffsports.c=
-c/wp-json/wp-mail-smtp/v1/e/ZGF0YSU1QmVtYWlsX2xvZ19pZCU1RD0xNzA3MjQmZGF0YSU=
-1QmV2ZW50X3R5cGUlNUQ9b3Blbi1lbWFpbCZoYXNoPWNiYTM3YWM3ZjM1Yzg5ZWQ3NjcwZDZiZW=
-M4N2UyYWM2MzZiZjAwZjAzMjllMDZhYTQ2NDU2YzliMGRkNjk4ZTU=3D" alt=3D""/>=0A</bo=
-dy>=0A</html>
-
---b1=_TxzLabmyhlPdtledSXzSBw37VeCOyI1Qh26M50ER1E--
+<html><head><title></title>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+</head>
+<body style=3D"margin: 0.4em; font-size: 14pt;">
+<div><p>Dear osst-users,<br><br>We need a new offer for attached rfq, kindl=
+y study carefully and give me an offer at your earliest.<br>Line 14A must b=
+e of european origin, else do not quote it.<br><br>Looking forward to your =
+reply soonest.<br><br>Best Regards<br>Kamara Chimraa<br>Purchase Team<br>WH=
+ATSAPP: +447442292496</p></div>
 
 
+</body></html>
+------=_NextPart_000_0012_6BAC7BF5.A28F7DC3
+Content-Type: application/octet-stream; name="INV064-FJTH1000356-RFQ2025.gz"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="INV064-FJTH1000356-RFQ2025.gz"
 
---===============8729654920152263468==
+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
+53KmOx34qa3W7BTX6/6VPpWFPsVU36qnIVUQlwflVwRT+6qkxJyym01skpvtx5inJ5NYutwf
+lw+GRn9Bvg370rptNslPq+qG29iOFP1VXQ/+lzWQQN/yy1s9YRvf0L9gHJY1ms4ajdvuin+l
+NLpVdh9C77obYX+TC+vZFN9+nmqVVVylwPm3PG4yxUVAfugwUIcule47nZqbTafbGbf/a55Q
+4U8tWFn2e6h/1v0CrWNzueOphsPu1KSl3ql86NXUajbC4/gQZVQf6JQj6vcLVXV1q4XY3MIW
+OBwIJmcyH/bNg28Zjd0ptdrwl6db+aD6ob/tSCm8/LyC+cUh/h+HHU1Op4Yvz4y/mKb/c5rR
+wp43j+OpcpSzhv6pJTc7LOFOUXzgtZWVZrawjqjzg/ch/86NkvirNNrHspKff715U4/D2oId
+ZWoxN/+1yh+/v2oZd9ZuVPPumRDf9hX7fUhG5+dNY5PDN263/223v+DwFB7P5TsrdflN3ec4
+p9cLr7/Pkh5/I/U5PCBb5XKrhzW14Ja3iuL8q4v0V5FXW8oMPbAb0OXpVO4uNAHvm82pvbzn
+Q3/XKemr5w5/H+jBTdeheVOF8Qp+L9nkqcbY+epyPr9AFPX+jBPn1KlVrvTV+T1Ffi9UB/wf
+4WNb7Cus1UI9z2lfb9xX2veCPq/fgz4Qr6r41p8inH9n5Qx9SKfXdt4inn9NAU+LnMopvzbe
++m6lTeIf//CVcbfrla4gc7jxFd3pld93UjXcHtZSu4uhsldyM5Za6qorPXVj+arq3qbarjrm
+HVw93WKC8q31mPO+OVhz0gr57A11W0w1dyWeMruPO5Ou4051ddxJx9Xfren9dvedTAfz2agk
+3TAbDfHnN1FdvJvOVyX/P4P0qY/gLZ/KPR4jr90jPLQ/cv5WFMCljD7cIPcT4g/PCQpQH3o4
+9tjwa+H/2nfSy+7tsXr0sQZY2Jo98AvRgVeJU5g9Cj3KIE6Qe4NpVs51dVxx1rxHuO6I+tSa
+PCInruNSxn5FAGCnUrQ/cw5exQm2LobON+B0Xp/I/7r6Hvv6Pde0cP3V9REGbtH1dMu39Ab2
+vF0eLx1aVxgyKz8AfIXXy5HprCZzsnyBtFwbZnDT8Kbp4NJpEJrZJudSKfGLTFpNToWqqOOk
+Ss8eP5AoBuojxcAM6UnVo0NTR2tT7wtzx8wy/dSmEXdeE0hn+ij3F/2ivOms5+HYGEu0mP4Y
+/HLrjJ2Wh+dAiwEUJ/QfpWLRskvLPlkuIhlj+NT3owWwA69+L8/OjRA3motyqS0Q6eJiB9Ct
+1EsjpP/HdvIIvbxRselMk5wXr1MdZz/v3p34s5YX5e9n929egXA76ajUIsjP6YvQC1HmwO7P
+5dKrAoXJ/kJhPB1fu3zpc/R0TLOw/e63Ye+guzJOkfUo/ekB5Y/HUE46FBUVLykfvB/xSxRa
+BOou3S9JZpYfl8eQ/rNGRgVJUCqzlPST9Q+zAoxUTlHQvqelqKWBUzgC6OfFBRzudaAIFTSU
+MAAFTkLAzzDGTIrhH4b1SPsubCU0fgXaQe/vhGH0F9pqaiA8j7FadeDvu17hgNTT5wDOEpIF
+L/1Se1htk1lYR/wtonmdDTp5vOGZ03+KFPnR9gnlx4f9UVbFvlgfA582Gg44ZMOxRMqJHyAs
+KKP+ARTh3M5Qo/4x4pIDyiBQiOoji+XuxSbFPV7sJ7HlFsEPzHjEtU6RL/zOMsj/6R8L/zhe
+D/5QkaipKQ4DBsoAAMoAAIAAAAJRTwcjiptFAJlnQcRuVkM8AgML2OYABIDYASA4WWrBgAMA
+HklOVjA2NC1GSlRIMTAwMDM1Ni1SRlEyMDI1LmV4ZQoDAjoSCNIYJ9wBHXdWUQMFBAA=
+
+------=_NextPart_000_0012_6BAC7BF5.A28F7DC3
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============8729654920152263468==
+------=_NextPart_000_0012_6BAC7BF5.A28F7DC3
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -425,6 +376,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============8729654920152263468==--
-
+------=_NextPart_000_0012_6BAC7BF5.A28F7DC3--
 
