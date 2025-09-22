@@ -2,95 +2,100 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 1E51FB8F324
-	for <lists+osst-users@lfdr.de>; Mon, 22 Sep 2025 08:51:31 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 32E65B9121E
+	for <lists+osst-users@lfdr.de>; Mon, 22 Sep 2025 14:31:48 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
-	MIME-Version:From:Date:Message-ID:To:Sender:Cc:Content-Transfer-Encoding:
-	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=GmQfgsuTLyXJAG3TJo3Oo6/xTgxHpMTOeq2Brdf9Fqs=; b=AXa/IvFxcDggMP+iH6Dvp+vjcG
-	cNLYjxzuuk6UqyvP/8Kt8Kqi2Zl/KMgPaHYsCjqaeZy4qyrSEB9zkPS7h88/DrdpTSrHPTKNUTiNB
-	AtxOp6eSSMNCaZjOKGhgrzbNWvsoqvzCq34/CQgEmkb9U4vWxtMLP35+ArPkoUK36YWw=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	d=lists.sourceforge.net; s=beta; h=Reply-To:List-Subscribe:List-Help:
+	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
+	Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:Date:To:From:
+	Sender:Cc:Content-ID:Content-Description:Resent-Date:Resent-From:
+	Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:
+	List-Owner; bh=ygao8x1kZZv2ocdvqmN++IjdFygkSaO/ogh7GbZXi6E=; b=GlejtIbpFa1LRH
+	+X/pOBr2hClHw+6vh2v2+6CYBrouxvlSkx38r8rQKCmxZc3RlYWZw85Opn+gcQNXmowS9Z0NQcpce
+	EJObrIN/G4IbbmuRG/zIPd5xYUNQ69eGXDg94iJMaMLaDByG20rynXt6CiNbgOdhdY9OxBuOHPBMa
+	ks8=;
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1v0aOX-00032t-Tc
+	id 1v0fhX-0007EV-Ne
 	for lists+osst-users@lfdr.de;
-	Mon, 22 Sep 2025 06:51:29 +0000
+	Mon, 22 Sep 2025 12:31:27 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <ark348@solvemix.com>) id 1v0aOR-00032Z-QT
- for osst-users@lists.sourceforge.net; Mon, 22 Sep 2025 06:51:23 +0000
+ (envelope-from <afipconsultas@static.75.128.98.91.clients.your-server.de>)
+ id 1v0fhU-0007EL-2p for osst-users@lists.sourceforge.net;
+ Mon, 22 Sep 2025 12:31:24 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
- MIME-Version:Reply-To:From:Date:Message-ID:To:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=dfdNMjcfrFHTZ7zXPF0D1Cki/tEQHX4nyai9+15gH0k=; b=WzuwM4ktGD+0OoCMyIADdhMN9C
- 4JX1dKWCPR+2tDulzLVOH3I10vbtNNueW2O1vtR3AAMptv46oJkja4F85ZHWFX7fNsOA6TYaAU9qk
- vqa7UcnAh07uOfdUkDseeW1A05Eq4lk1M51+bp9hxBzPkfgypOqllVua1zC7a4PDmub8=;
+ MIME-Version:List-Unsubscribe:Reply-To:Message-ID:Date:To:From:Sender:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=2n1GuPOyPBS2VnGhDzVGYVvoEX1agbVLDs1+XtAn0Tk=; b=Si3pLpHNmo0nuLPO3bksSDd9pp
+ wrHuHkdhaCeqwLKtfEkj/hD+cb1UHfip0DvuXwLn1dRpjgELKd7ejyOtqqfqqQgPEpyughY3WMcgK
+ 9UU7mO01jXszCpclFm7Y5+9+otj0iozt6wj1RaZEgdZh7hxz84wCYn2GynJQ/9s6LcdU=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Reply-To:From
- :Date:Message-ID:To:Sender:Cc:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=dfdNMjcfrFHTZ7zXPF0D1Cki/tEQHX4nyai9+15gH0k=; b=W
- WVw1xsazhqk3ybiVcBipbZt7j1TGjGNNERLUkPPfKzhUlQO8Jir6um+RFlE8J4GxIw2TdNkqOLDOV
- qozeuvghljvZhH8JpRohIFs3dQEL4mqorsTkYJWls3VfhxgizDw6hO6XTytGoIOF/ZOSf48ADDSwB
- LuB1De2x05YAsJvg=;
-Received: from deb.jeju-golf.com ([185.173.235.232])
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1v0aOR-0001l3-5M for osst-users@lists.sourceforge.net;
- Mon, 22 Sep 2025 06:51:23 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=default;
- d=bmori-silk.com; 
- h=To:Subject:Message-ID:Date:From:Reply-To:MIME-Version:Content-Type:Content-Transfer-Encoding;
- bh=dfdNMjcfrFHTZ7zXPF0D1Cki/tEQHX4nyai9+15gH0k=;
- b=lV6+e+0uwI5A0SQRBGDNB24DipnzrgdwdPDU0re+PsbonEZPuDc6fUA10R/2QhfRyq+NL/vJtB3u
- f80ytiXyJS2uwjgUrb1WpXR4S5Di1oh9WhI7ms4sSKT6/JUGoQLgCZJbx6ifXxYi9eB6RZG65s0l
- YW+jiq6g+4ml590lUU8=
-To: osst-users@lists.sourceforge.net
-Message-ID: <61ea754a5182254ff328645658367634@unknow333>
-Date: Mon, 22 Sep 2025 07:11:07 +0200
-From: "Alex J" <ark516@bmori-silk.com>
+ h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:
+ List-Unsubscribe:Reply-To:Message-ID:Date:To:From:Sender:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=2n1GuPOyPBS2VnGhDzVGYVvoEX1agbVLDs1+XtAn0Tk=; b=P+9weO95fvcoFp2+fDAx2ltui6
+ TKQqTolrAade+eWmPtWqKR87LuREB0LjFO0ISm/pgDb5yWk/8U5Mu7MmvLZe6gAwLsMgzTfUFnTtU
+ t8EoIFZrWjNONshsq0JJ+pX/HQPwtOxdqeSGVxmUfnCs9MBSwxUpG2AOQTHb0uetLAFo=;
+Received: from static.75.128.98.91.clients.your-server.de ([91.98.128.75])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1v0fhT-000323-GJ for osst-users@lists.sourceforge.net;
+ Mon, 22 Sep 2025 12:31:24 +0000
+Received: by static.75.128.98.91.clients.your-server.de (Postfix,
+ from userid 0) id 5FF7A3FA0A; Mon, 22 Sep 2025 12:18:53 +0000 (UTC)
+From: AFIP Revisiones Pendientes 969 <afipconsultas@afip.gob.ar>
+To: <osst-users@lists.sourceforge.net>
+Date: Mon, 22 Sep 2025 12:18:53 +0000
+Message-ID: <52gE9GBFuo6JtUiKhx72TqUd5FufQO2MsFIRWSTU@static.75.128.98.91.clients.your-server.de>
+X-Originating-Email: afipconsultas@static.75.128.98.91.clients.your-server.de
 MIME-Version: 1.0
-X-Spam-Score: 7.1 (+++++++)
-X-Spam-Report: Spam detection software,
- running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
+Content-Type: multipart/mixed; boundary="071aa1de5fc9b5d91b63af607a7da17e"
+Content-Transfer-Encoding: 7bit
+X-Mailer: Outlook/91.8.0
+X-Priority: 1 (Highest)
+Importance: High
+Priority: Urgent
+User-Agent: mail (GNU Mailutils 3.14)
+X-Spam-Score: 5.4 (+++++)
+X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts.colo.sdot.me",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Hello, I trust this message reaches you in high spirits.
- We are absolutely delighted to introduce to you the newest addition to our
- ever-growing collection of high-performance electric bicycles: the Mountain
- [...] Content analysis details:   (7.1 points, 5.0 required)
- pts rule name              description
+ 
+ Content preview:  ARCA | Notificaciones electrónico Oficial. Estimado/a Contribuyente:
+    osst-users@lists.sourceforge.net 
+ 
+ Content analysis details:   (5.4 points, 5.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 0.4 RCVD_IN_MSPIKE_L4      RBL: Bad reputation (-4)
- [185.173.235.232 listed in bl.mailspike.net]
- 2.7 RCVD_IN_PSBL           RBL: Received via a relay in PSBL
- [185.173.235.232 listed in psbl.surriel.com]
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- 4.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
- 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
- domains are different
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.0 HTML_IMAGE_RATIO_04    BODY: HTML has a low ratio of text to image area
+  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+                             domains are different
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was blocked.
+                             See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URI: contaboserver.net]
+  2.0 BASE64_LENGTH_79_INF   BODY: base64 encoded email part uses line length
+                              greater than 79 characters
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  3.2 HELO_DYNAMIC_IPADDR    Relay HELO'd using suspicious hostname (IP addr
+                             1)
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1v0aOR-0001l3-5M
-Subject: [Osst-users] [SPAM] mountainblazer: power and performance
+X-Headers-End: 1v0fhT-000323-GJ
+Subject: [Osst-users] [SPAM] Multa Registrada en su Documento 966198
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -102,87 +107,26 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: e-bicycle@bmori-silk.com
-Content-Type: multipart/mixed; boundary="===============0340361498570804222=="
+Reply-To: noreply969@afip.gob.ar
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0340361498570804222==
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: 8bit
+--071aa1de5fc9b5d91b63af607a7da17e
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: base64
 
-<html>
-<head>
-</head>
-<body>
-Hello,<br /> <br /> I trust this message reaches you in high spirits. We
-are absolutely delighted to introduce to you the newest addition to our
-ever-growing collection of high-performance electric bicycles: the
-MountainBlazer Fat Tire E-Bike. After several months of design and
-meticulous planning, this versatile model has been engineered to meet the
-needs of both city riders and outdoor enthusiasts. Combining innovative
-technology with exceptional functionality, the MountainBlazer offers a
-unmatched riding experience.<br /> <br /> We are excited to inform you that
-the MountainBlazer Fat Tire E-Bike is now prepared for shipment directly
-from our state-of-the-art warehouse in Germany, ensuring you receive your
-bike in the most efficient and most efficient manner possible.<br /> <br />
-Introducing the MountainBlazer: Key Features and Specifications<br /> <br
-/> Powerful Motor for Smooth Rides:<br /> <br /> The MountainBlazer is
-equipped with a powerful 500W motor, capable of delivering a peak output of
-1000W, enabling you to easily conquer a wide variety of terrains, from
-steep urban elevations to rugged off-road trails. Once the speed limiter is
-deactivated, you can experience a exciting top speed of up to 25 MPH,
-making every ride a thrilling experience.<br /><br /><img
-src="https://tuttiosport.com/cdn/shop/files/specialized-electric-mountain-bike_-40mph-ebike.png"
-width="1000" height="1000" /><br /> <br /> Long-Lasting and Durable
-Battery:<br /> <br /> Powered by a 48V 15AH lithium-ion battery, the
-MountainBlazer provides an impressive range of 55 to 60 miles on
-pedal-assist mode, perfect for both daily commuting and extended journeys.
-The waterproof, detachable, and lockable battery can be fully recharged in
-approximately 6.5 hours, offering unparalleled convenience regardless of
-your destination or the weather conditions. Whether you&rsquo;re navigating
-city streets or exploring scenic trails, you&rsquo;ll always have the power
-you need to press on.<br /> <br /> Rugged Build with Practical Features:<br
-/> <br /> Designed for durability and toughness, the MountainBlazer
-features a robust frame coupled with 26-inch fat tires, which deliver
-exceptional adhesion on all surfaces. The tires are specifically designed
-to absorb shocks, providing a stable ride even on rough or uneven paths.
-Additionally, the bike comes equipped with a heavy-duty rear rack, perfect
-for carrying extra gear, groceries, or even your daily essentials. The
-integrated front and rear fenders will help shield you clean, ensuring a
-comfortable ride no matter how muddy or wet the trails may be.<br /> <br />
-Customized Riding Experience:<br /> <br /> With five distinct riding modes
-and a 7-speed gear system, the MountainBlazer offers a highly flexible
-experience that adapts to your preferences. Whether you're commuting on
-busy city streets or enjoying a casual ride along the beach, you can adjust
-your ride to suit your exact needs, ensuring complete dominance and comfort
-every time you hit the road.<br /> <br /> Availability and Seamless
-Shipping<br /> <br /> We&rsquo;re excited to inform you that the
-MountainBlazer Fat Tire E-Bike is in stock and ready for fast dispatch from
-our German warehouse. Our seamless logistics system ensures that your
-e-bike will be shipped directly to your doorstep within 3 to 7 days across
-the European Union, providing a quick delivery experience.<br /> <br /> If
-you are interested in ordering the MountainBlazer or would like to receive
-a detailed quote, kindly provide us with your complete shipping address.
-This will enable us to offer you the most reliable pricing and delivery
-options that best suit your location and needs.<br /> <br /> We are eagerly
-awaiting your feedback and are here to assist with any questions or
-clarifications you may have regarding the product, shipping, or any other
-inquiries.<br /> <br /> Looking forward to hearing from you soon!<br /> <br
-/> Warm regards,<br /> <br /> Alex Johnson<br /> <br /> The E-Bike
-Manufacture Team
-</body>
-</html>
+PGh0bWw+CjxoZWFkPgogIDxtZXRhIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD1JU08tODg1OS0xIgogaHR0cC1lcXVpdj0iY29udGVudC10eXBlIj4KICA8dGl0bGU+PC90aXRsZT4KPC9oZWFkPgo8Ym9keT4KPGgyIHN0eWxlPSJjb2xvcjogcmdiKDEyLCA0NCwgMTAzKTsiPkFSQ0EgfApOb3RpZmljYWNpb25lcyBlbGVjdHImb2FjdXRlO25pY28gT2ZpY2lhbC48L2gyPgo8YnI+Cjxicj4KPHA+RXN0aW1hZG8vYSBDb250cmlidXllbnRlOiAmbmJzcDs8c3Bhbgogc3R5bGU9ImZvbnQtd2VpZ2h0OiBib2xkOyI+b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ8L3NwYW4+PGJyPgo8YnI+CkxlIGluZm9ybWFtb3MgZGUgcXVlIHNlIGhhIGRldGVjdGFkbyB1bmEgcGVuZGllbnRlIGVuIGVsIHBhZ28gZGVsCmltcHVlc3RvLiBQYXJhIGV2aXRhciBjYXJnb3MgYWRpY2lvbmFsZXMsIDxicj4KY29tbyBpbnRlcmVzZXMsIG11bHRhcyB1IG90cmFzIHNpdHVhY2lvbmVzLCBsZSBzb2xpY2l0YW1vcyBxdWUgc2UKcmVndWxhcmljZSBzdSBzaXR1YWNpJm9hY3V0ZTtuIGxvIGFudGVzIHBvc2libGUuPGJyPgo8YnI+ClRpZW5lcyBoYXN0YSBlbCAzMCBkZSBTZXB0aWVtYnJlIGRlIDIwMjUgcGFyYSByZWd1bGFyaXphY2kmb2FjdXRlOwpkZQpGYWN0dXJhY2kmb2FjdXRlO24gZWxlY3RyJm9hY3V0ZTtuaWNvcyA8c3Bhbgogc3R5bGU9ImZvbnQtd2VpZ2h0OiBib2xkOyI+QVJDQTwvc3Bhbj4uPGJyPgpDdW1wbGlyIG
+ NvbiBzdXMgb2JsaWdhY2lvbmVzIGZpc2NhbGVzIGdhcmFudGl6YSBlbCBjdW1wbGltaWVudG8gZGUgbGEKbm9ybWF0aXZhIHZpZ2VudGUgeSByZWZ1ZXJ6YSB1bmEgZ2VzdGkmb2FjdXRlO24gZmluYW5jaWVyYQpyZXNwb25zYWJsZTwvcD4KPGJyPgpEZXNjYXJnYXIgZWwgSW5mb3JtZTo8c3Bhbgogc3R5bGU9ImJvcmRlcjogMHB4IG5vbmUgOyBtYXJnaW46IDBweDsgcGFkZGluZzogMHB4OyBmb250LXN0cmV0Y2g6IGluaGVyaXQ7IGxpbmUtaGVpZ2h0OiBpbmhlcml0OyBmb250LWZhbWlseTogaW5oZXJpdDsgZm9udC1zaXplOiAxM3B4OyB2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7IGN1cnNvcjogcG9pbnRlcjsgd2hpdGUtc3BhY2U6IG5vd3JhcDsgY29sb3I6IHJnYigxNywgODUsIDIwNCk7IGZvbnQtc3R5bGU6IGluaGVyaXQ7IGZvbnQtdmFyaWFudDogaW5oZXJpdDsgZm9udC13ZWlnaHQ6IGJvbGQ7Ij48Zm9udAogZmFjZT0iVGFob21hIiBzaXplPSIyIj48YSBjbGFzcz0idjFlIgogaHJlZj0iaHR0cHM6Ly92bWkyODA5MDQwLmNvbnRhYm9zZXJ2ZXIubmV0Lz9fdGFzaz1tYWlsJl9hY3Rpb249Z2V0Jl9tYm94PUlOQk9YJl91aWQ9NTExNzcmX3Rva2VuPTI0ZGFkNGIyMTkzYWU0ZjQ4N2JmZTc1OTI1MWQzNTU1MzcxNGU4NzZkOGMxZTU3YzQyZGY0NTBlMTk1NmZiM2YmX3BhcnQ9MS40LjkmX2VtYmVkPTEmX21pbWVjbGFzcz1pbWFnZSIgaWQ9InYxOjVpIgogc3R5bGU9ImJvcmRlcjogMHB4IG5vbmUgOyBtYXJ
+ naW46IDBweDsgcGFkZGluZzogMHB4OyBmb250LXN0cmV0Y2g6IG5vcm1hbDsgbGluZS1oZWlnaHQ6IG5vcm1hbDsgZm9udC1mYW1pbHk6IGFyaWFsLHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogMTNweDsgY3Vyc29yOiBwb2ludGVyOyBjb2xvcjogcmdiKDE3LCA4NSwgMjA0KTsiCiB0aXRsZT0iSGFnYSBjbGljIHBhcmEgZGVzY2FyZ2FyIHN1cyBhcmNoaXZvcyBhZGp1bnRvcyIKIHRhcmdldD0iX2JsYW5rIiByZWw9Im5vcmVmZXJyZXIiPiBGQUNUVVJBCkVMRUNUUiZPYWN1dGU7TklDQS05NjYxOThCSlIzWU1GMFlHRTVKNURUPC9hPjwvZm9udD48L3NwYW4+CjxkaXY+PC9kaXY+Cjxicj4KKCBBUkNBICkgLSBBZ2VuY2lhIGRlIFJlY2F1ZGFjaSZvYWN1dGU7biB5IENvbnRyb2wgQWR1YW5lcm88YnI+Cjxicj4KQUZJUCB8IEFkbWluaXN0cmFjaSZvYWN1dGU7biBGZWRlcmFsIGRlIEluZ3Jlc29zIFAmdWFjdXRlO2JsaWNvczxicj4KU3VwZXJpbnRlbmRlbmNpYSBOYWNpb25hbCBkZSBBZG1pbmlzdHJhY2kmb2FjdXRlO24gVHJpYnV0YXJpYS48YnI+CiZuYnNwOzxicj4KPHNtYWxsPjxicj4KTGEgZGlyZWNjaSZvYWN1dGU7biBkZSBlbnYmaWFjdXRlO28gZGUgZXN0ZSBjb3JyZW8gbm8gc2UKZW5jdWVudHJhIGhhYmlsaXRhZGEgcGFyYSByZWNpYmlyIG1lbnNhamVzLiA8YnI+ClNpIFVkLiB0aWVuZSBhbGd1bmEgZHVkYSwgY29uc3VsdGEgbyByZWNsYW1vIHB1ZWRlCmhhYyZlYWN1dGU7cm5vc2xvCmxsZWdhciBwb3Ig
+ Y3VhbHF1aWVyYSBkZSBsb3MgbWVkaW9zIGRpc3BvbmlibGVzIGVuIENvbnRhY3Rvczwvc21hbGw+CjwvYm9keT4KPC9odG1sPg==
 
-
-
---===============0340361498570804222==
+--071aa1de5fc9b5d91b63af607a7da17e
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0340361498570804222==
+--071aa1de5fc9b5d91b63af607a7da17e
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -193,4 +137,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0340361498570804222==--
+--071aa1de5fc9b5d91b63af607a7da17e--
+
