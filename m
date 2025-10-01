@@ -2,104 +2,125 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 761FBBAF627
-	for <lists+osst-users@lfdr.de>; Wed, 01 Oct 2025 09:23:25 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 35660BB1E41
+	for <lists+osst-users@lfdr.de>; Wed, 01 Oct 2025 23:58:17 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:List-Subscribe:List-Help:
-	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Mime-Version:
-	Message-ID:To:From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
+	MIME-Version:Message-ID:From:To:Date:Sender:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=iXQ53IKGz1HTk4ufn/mAniLa3yM25H713Jgbqlq4gzE=; b=C3rLjb+grEYEMI9zV5ihoBSHny
-	Sy7quY8kLTG16SKrjs8kLEZEZ7t6qdRa7QnxWTYDD8Q+2yqU0UixA5I2U9YlBcRK4au/HND7dp64h
-	no1EVvxwhvGmD2TEzS7fteFNECrkrXYWReAnAmJOtK4FIEV0eQNFXKZXG8ACra4f7GGs=;
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=osFh1QgszioqG9KAdgqvSPvwtVh9Rv/qcFvzpeR4Ruk=; b=I9ukGGqmCqhVbxY14iGw5LVmR6
+	OCpNGSziufj0Jfa9p7owne46UppsvjZI5gslv/f+Ly1+1SLMIK8kRnHBgfZ+0UiIWUNo6ZB+AC/0D
+	Fl+M9H8b8Jpad6oPlP8HX6j9oOfkzwn/WxwGlfyc05pbzAyk6oRGOCINLP9K65nRoKRY=;
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1v3rBM-0001En-9K
+	id 1v44pz-0002QB-9U
 	for lists+osst-users@lfdr.de;
-	Wed, 01 Oct 2025 07:23:24 +0000
+	Wed, 01 Oct 2025 21:58:16 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <mail.jgekwear@service.hgbsw.cn>) id 1v3rBL-0001Eg-CB
- for osst-users@lists.sourceforge.net; Wed, 01 Oct 2025 07:23:23 +0000
+ (envelope-from <bounce.L3206S33016M976@s1.arrobamail.com>)
+ id 1v44py-0002Px-4Z for osst-users@lists.sourceforge.net;
+ Wed, 01 Oct 2025 21:58:14 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:Mime-Version:Message-ID:To:
- From:Date:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:List-ID:List-Unsubscribe:
+ Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-Transfer-Encoding:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Help:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=tQtSFYPwTVM6RY8/tvkRLHZIREAebKWgKiFjRpqqipI=; b=W8J+W3l2YwLsQLFedJ2FzvXfZG
- 0p2EDkQ9pzaqNuhzeGnHBiCLrPa2oIuJZ4pjITE+DzFXCKkz4V26JoKyU7jdXh2rPR2xoTXOoejgm
- 1dbRh/ao4UGNQpDMUQZQqFxgfS0Mpft8QMWcBEmW+5OO0hiI+cJ6mySaJ+TCuA56JToQ=;
+ bh=1neH2LmHITvLfvuey8j/Rk6rgwVf1C3Uaz3YKQn0jrU=; b=KY/ZYUcJFQPxk2ovQ4WnGaZVqB
+ eXuxM2Arv0XfmpMnofefe2B3WHRVM5CCHLonw9fFegHUJyPmeE4Ddnlf+NJBXEggI/cNyZkCIVkJN
+ cn0PbGvA+8MTteSPw8jtI9muq4KRA0Pr2z8OMVFWIqqqg70vPWdoM2licyFFuTz4AGws=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:Mime-Version:Message-ID:To:From:Date:Sender:Reply-To
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=tQtSFYPwTVM6RY8/tvkRLHZIREAebKWgKiFjRpqqipI=; b=J
- KcYgJqTLFGQ95kygkwf5pBU3M5TIAcGrmsOYOn0jh71swuPhflGRuR8oKQf0GmEKSZjswLpC3cPrt
- JoJHQa0fthjf/t2pddrlNhowzagTlRGjnh+P2peKGqU95qCRjenDIw7V9dN36wL8FPxIdrrCcTmTX
- YsPmb0V3WEwGm6Rk=;
-Received: from [172.245.228.181] (helo=service.hgbsw.cn)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1v3rBK-0001Fl-SW for osst-users@lists.sourceforge.net;
- Wed, 01 Oct 2025 07:23:23 +0000
-DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=mykey; d=service.hgbsw.cn;
- h=Date:From:To:Subject:Message-ID:Mime-Version:Content-Type;
- bh=E/qHvJ2UrhjrQu3JudpOFkoZRIA=;
- b=lw29AHx8/JI9IAT3L5cgDvpCnh2R4p5z+YpBGpReXO5lPStw7bEgF+YEKGy4h5qLBZaH/HvvWo8d
- 6MkjTsAsqjsA2rdYqHy/gm9RiAgocyzP0pfKCKFW/Z2EAA1YmuKT4rMnZNJWpKJYcnt/uqLLHPhd
- p6S9nfhx3AtxVqGuE2A=
-Received: from cbigroup.com (43.160.253.31) by service.hgbsw.cn id
- hrjbeo0001gl for <osst-users@lists.sourceforge.net>;
- Wed, 1 Oct 2025 03:23:13 -0400 (envelope-from
- <mail.jgekwear@service.hgbsw.cn>)
-Date: Wed, 1 Oct 2025 15:23:02 +0800
-From: =?utf-8?B?5p2x5Lqs44Ks44K544GL44KJ44Gu44GK55+l44KJ44Gb?=
- <mail.jgekwear@service.hgbsw.cn>
-To: <osst-users@lists.sourceforge.net>
-Message-ID: <20251001152311773566@service.hgbsw.cn>
-X-mailer: Foxmail 6, 13, 102, 15 [cn]
-Mime-Version: 1.0
-X-Spam-Score: 7.1 (+++++++)
-X-Spam-Report: Spam detection software, running on the system "sfi-spamd-2.hosts.colo.sdot.me",
- has identified this incoming email as possible spam.  The original
+ h=Content-Type:MIME-Version:List-ID:List-Unsubscribe:Message-ID:Subject:
+ Reply-To:From:To:Date:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Help:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=1neH2LmHITvLfvuey8j/Rk6rgwVf1C3Uaz3YKQn0jrU=; b=Y
+ IV22p9XHmQDB/ri5svIpks//Zo/dWLi+VExPT4ps0tePSss+15/+vRR19EZWwSMXMuVx/I+oogMBI
+ J4tuofsqWshPa/zRobeDgrUFj647GKBGp0VAxdQewdxf6kpMU1LwR+LPmkkoNdvgdMnxwcpkf2VUF
+ TMCEdnzZZb6BnT7o=;
+Received: from p145i146.fmpear.com.ar ([190.105.145.146] helo=mailer)
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1v44px-0004k1-Bv for osst-users@lists.sourceforge.net;
+ Wed, 01 Oct 2025 21:58:14 +0000
+Date: Wed, 1 Oct 2025 16:58:01 -0500
+To: Osst-users <osst-users@lists.sourceforge.net>
+From: Mariann Rivas <mariann.rivas@vorecol-mail.com>
+Message-ID: <rM5DozIcjI67MwWYgTskDdzYcD3bnSrvAkzi0dWig@s1.arrobamail.com>
+X-Mailer: FMMailer v3
+X-Data: ZXxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHw=
+X-Fid: eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC05NzYtMzIwNi0zMzAxNi0yNzEtczEuYXJyb2JhbWFpbC5jb20=
+X-fmbh: b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7OTc2OzMyMDY7MzMwMTY7Mjcx
+X-bhid: X-bhd: 976;3206;33016
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-AntiAbuse: abuse@outservices.net
+Precedence: bulk
+Feedback-ID: 976:3206s33016:124933:WPservicesESP
+X-Transport: p145i146tecsid
+MIME-Version: 1.0
+DKIM-Signature: v=1; d=vorecol-mail.com; s=fm;
+ a=rsa-sha256; q=dns/txt; t=1759355881; c=relaxed/simple;
+ h=Date:To:From:Reply-To:Subject:Message-ID:X-Mailer:X-Data:X-Fid:X-fmbh:List-Unsubscribe:X-AntiAbuse:Feedback-ID:List-ID:MIME-Version:Content-Type;
+ z=Date:Wed,=201=20Oct=202025=2016:58:01=20-0500
+ |To:Osst-users=20<osst-users@lists.sourceforge.net>
+ |From:Mariann=20Rivas=20<mariann.rivas@vorecol-mail.com>
+ |Reply-To:Mariann=20Rivas=20<mariann.rivas@vorecol-mail.com>
+ |Subject:Capacita=20a=20tu=20equipo=20desde=20una=20sola=20plataforma
+ |Message-ID:<rM5DozIcjI67MwWYgTskDdzYcD3bnSrvAkzi0dWig@s1.arrobamail.com>
+ |X-Mailer:FMMailer=20v3
+ |X-Data:ZXxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHw=3D
+ |X-Fid:eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC05NzYtMzIwNi0zMzA
+ xNi0yNzEtczEuYXJyb2JhbWFpbC5jb20=3D
+ |X-fmbh:b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7OTc2OzMyMDY7MzMwMTY7Mj
+ cx
+ |List-Unsubscribe:<https://s1.arrobamail.com/unsuscribe.php?FormData=3Drrq
+ wusrequspiuseiw> |X-AntiAbuse:abuse@outservices.net
+ |Feedback-ID:976:3206s33016:124933:WPservicesESP
+ |List-ID:<38472:594288> |MIME-Version:1.0
+ |Content-Type:multipart/alternative=3B=20boundary=3D"b1_rM5DozIcjI67MwWYgT
+ skDdzYcD3bnSrvAkzi0dWig";
+ bh=3j+UmSCR+OAjeI4DipuXlcY4viQqFS6mOGDXxU2LwI0=;
+ b=cNXiGxVeowV0IKY+Ng8kDW4wZYUILaB6ZGA/vRJu5j2hjieCN1BXcaLDHTFHPDONdDzelY5XZ
+ SlJf3UWqAYdsCzQ2dqo1pHse38lK3J/WTXruIGa9tLsgdVbJSEik9fOtAVAEcnTre9zX3BOqM
+ 2B91wInysb81gaQvS/TfdmaAg=
+X-Helo-Check: bad, Not FQDN (mailer)
+X-Spam-Score: -1.1 (-)
+X-Spam-Report: Spam detection software,
+ running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  画像が表示されない場合はこちら ご請求料金確定のお知らせ
-    日頃より東京ガスをご利用いただき、誠にありがとうございます。
-    今月のご請求金額が確定いたしました。 お客様の口�
-   [...] 
- 
- Content analysis details:   (7.1 points, 5.0 required)
- 
-  pts rule name              description
+ Content preview:  Mejora el clima organizacional body { margin: 0; padding:
+ 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333;
+ background-color: #ffffff; } table { border-spacing: 0; width: 10 [...] 
+ Content analysis details:   (-1.1 points, 5.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  4.0 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
-             [Blocked - see <https://www.spamcop.net/bl.shtml?172.245.228.181>]
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
-                             domain
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-  2.0 MIXED_HREF_CASE        Has href in mixed case
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1v3rBK-0001Fl-SW
-Subject: [SPAM] 【myTOKYOGAS】ご請求料金確定の
-	=?utf-8?B?44GK55+l44KJ44GbICDjgYrlrqLmp5jjga7jgYrmlK/miZXjgYTmlrnms5XjgYzmib/oqo3jgZU=?=
-	れません
+ -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
+ domain
+ -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
+ 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
+ not necessarily valid
+ 0.0 FSL_HELO_NON_FQDN_1    No description available.
+ 0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
+ domains are different
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to
+ background
+ 0.0 HELO_NO_DOMAIN         Relay reports its domain incorrectly
+ -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
+ manager
+X-Headers-End: 1v44px-0004k1-Bv
+Subject: [Osst-users] Capacita a tu equipo desde una sola plataforma
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
-Precedence: list
 List-Id: <osst-users.lists.sourceforge.net>
 List-Unsubscribe: <https://lists.sourceforge.net/lists/options/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=unsubscribe>
@@ -108,140 +129,173 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============3117900092509414119=="
+Reply-To: Mariann Rivas <mariann.rivas@vorecol-mail.com>
+Content-Type: multipart/mixed; boundary="===============8032981370872484956=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
 
---===============3117900092509414119==
+--===============8032981370872484956==
 Content-Type: multipart/alternative;
-	boundary="=====003_Dragon330233311467_====="
+ boundary="b1_rM5DozIcjI67MwWYgTskDdzYcD3bnSrvAkzi0dWig"
 
 This is a multi-part message in MIME format.
 
---=====003_Dragon330233311467_=====
-Content-Type: text/plain;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
+--b1_rM5DozIcjI67MwWYgTskDdzYcD3bnSrvAkzi0dWig
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
 
-55S75YOP44GM6KGo56S644GV44KM44Gq44GE5aC05ZCI44Gv44GT44Gh44KJIA0KIA0K44GU6KuL
-5rGC5paZ6YeR56K65a6a44Gu44GK55+l44KJ44GbDQrml6XpoIPjgojjgormnbHkuqzjgqzjgrnj
-gpLjgZTliKnnlKjjgYTjgZ/jgaDjgY3jgIHoqqDjgavjgYLjgorjgYzjgajjgYbjgZTjgZbjgYTj
-gb7jgZnjgIINCuS7iuaciOOBruOBlOiri+axgumHkemhjeOBjOeiuuWumuOBhOOBn+OBl+OBvuOB
-l+OBn+OAgg0K44GK5a6i5qeY44Gu5Y+j5bqn5q6L6auY44GM54++5Zyo44Gu44GU6KuL5rGC6YeR
-6aGN44Gr5a++44GX44Gm5LiN6Laz44GX44Gm44GE44KL44GT44Go44KS56K66KqN44GE44Gf44GX
-44G+44GX44Gf44CCDQrjgb7jgZ/jgIHjgYrmlK/miZXjgYTmlrnms5XjgYzmib/oqo3jgZXjgozj
-gabjgYrjgorjgb7jgZvjgpPjgILjgrXjg7zjg5Pjgrnjga7jgZTliKnnlKjjgpLntpnntprjgZfj
-gabjgYTjgZ/jgaDjgY/jgZ/jgoHjgavjgIHmlK/miZXjgYTmg4XloLHjga7mm7TmlrDjgpLjgYrp
-oZjjgYTnlLPjgZfkuIrjgZLjgb7jgZnjgIINCuOBiuaUr+aJleOBhOaWueazleOCkuabtOaWsOOB
-meOCi+OCiOOBj+OBguOCi+OBlOizquWVjw0KUS4g5L2/55So6YeP44GM5aSJ44KP44KJ44Gq44GE
-44Gu44Gr44CB44Ks44K544O76Zu75rCX5Luj44GM6auY44GE44Go5oSf44GY44KLDQpBLiDos4fm
-upDkvqHmoLzjga7pq5jpqLDjgoTngrrmm7/jga7lvbHpn7/jgavjgojjgorjgIHjgqzjgrnjg7vp
-m7vmsJfjga7mlpnph5HjgYzpq5jjgY/jgarjgovloLTlkIjjgYzjgZTjgZbjgYTjgb7jgZnjgILo
-qbPjgZfjgY/jga/jgZPjgaHjgonjgpLjgZTnorroqo3jgY/jgaDjgZXjgYTjgIINCuaWmemHkeei
-uuiqjeOBr+OCouODl+ODquOBjOS+v+WIqe+8gQ0K44GE44Gk44Gn44KC57Ch5Y2Y44Gr56K66KqN
-44Gn44GN44KL44Gg44GR44Gn44Gq44GP44CBDQrmnIDlpKcxMDDjg53jgqTjg7Pjg4jjgYzlvZPj
-gZ/jgovjg5Hjg4Pjg4Hjg6fjgrnjg63jg4Pjg4jjgavjgoLjgZTlj4LliqDjgYTjgZ/jgaDjgZHj
-gb7jgZnjgIINCg0K44CQ55m66KGM5YWD44CR5p2x5Lqs44Ks44K55qCq5byP5Lya56S+DQrjgJIx
-MDUtODUyN+KAg+adseS6rOmDvea4r+WMuua1t+WyuDEtNS0yMA0KQ29weXJpZ2h0KGMpIFRPS1lP
-IEdBUyBDTy4sIEx0ZC4gQWxsIHJpZ2h0cyByZXNlcnZlZC4=
+=0A=0A=0A=09Mejora el clima organizacional=0A=09body {=0A      margin: 0;=
+=0A      padding: 0;=0A      font-family: Arial, Helvetica, sans-serif;=0A =
+     font-size: 14px;=0A      color: #333;=0A      background-color: #fffff=
+f;=0A    }=0A    table {=0A      border-spacing: 0;=0A      width: 100%;=0A=
+      max-width: 600px;=0A      margin: auto;=0A    }=0A    td {=0A      pa=
+dding: 12px 20px;=0A    }=0A    a {=0A      color: #1a73e8;=0A      text-de=
+coration: none;=0A    }=0A    .footer {=0A      font-size: 12px;=0A      co=
+lor: #888888;=0A      text-align: center;=0A    }=0A=09=0A=0A=0AInvierte en=
+ capacitaci=C3=B3n que realmente desarrolla a tu equipo con Vorecol Learnin=
+g.=0A=0A=0A=0A=09=0A=09=09=0A=09=09=09=0A=09=09=09Hola,&nbsp;Osst-users,=0A=
+=0A=09=09=09Invertir en capacitaci=C3=B3n no siempre significa que tu equip=
+o est=C3=A9 creciendo. Sin un buen seguimiento, los cursos pueden no tener =
+el efecto esperado.=0A=0A=09=09=09Vorecol Learning es una plataforma que te=
+ ayuda a gestionar el aprendizaje de tu equipo de forma sencilla y efectiva=
+.=0A=0A=09=09=09Con Vorecol Learning puedes:=0A=0A=09=09=09=0A=09=09=09=09C=
+apacitar a tu personal, desde uno hasta cinco mil colaboradores, con cursos=
+ hechos a la medida de las necesidades de tu empresa.=0A=09=09=09=09Ver c=
+=C3=B3mo avanza cada persona y entregar certificados al terminar los cursos=
+, asegurando que aprendieron de verdad.=0A=09=09=09=09Permitir que tus cola=
+boradores estudien cuando quieran y desde cualquier dispositivo, con evalua=
+ciones que confirman lo aprendido.=0A=09=09=09=0A=0A=09=09=09Esta plataform=
+a est=C3=A1 dise=C3=B1ada para que la capacitaci=C3=B3n sea una herramienta=
+ real para el desarrollo de tu equipo, no solo una lista de tareas por cump=
+lir.=0A=0A=09=09=09Si quieres mejorar el aprendizaje en tu empresa, Vorecol=
+ Learning puede ayudarte. Responde a este correo o cont=C3=A1ctame; mis dat=
+os est=C3=A1n abajo.=0A=0A=09=09=09Saludos,=0A=0A=09=09=09--------------=0A=
+=0A=09=09=09Atte.: Mariann Rivas=0A=0A=09=09=09Ciudad de M=C3=A9xico: (55) =
+5018 0565=0A=0A=09=09=09WhatsApp: +52 33 1607 2089=0A=0A=09=09=09Si no dese=
+as recibir m=C3=A1s correos, haz clic aqu=C3=AD para darte de baja.=0A=09=
+=09=09=0A=09=09=0A=09=0A=0A=0A=0A=0A=0APara remover su direcci&oacute;n de =
+esta lista haga <a href=3D"https://s1.arrobamail.com/unsuscribe.php?id=3Drr=
+qwusrequspiuseiw">click aqu&iacute;</a>
+--b1_rM5DozIcjI67MwWYgTskDdzYcD3bnSrvAkzi0dWig
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
 
---=====003_Dragon330233311467_=====
-Content-Type: text/html;
-	charset="utf-8"
-Content-Transfer-Encoding: base64
+<!DOCTYPE html>
+<html data-lt-installed=3D"true" xmlns=3D"http://www.w3.org/1999/xhtml">
+<head><meta charset=3D"UTF-8" /><meta name=3D"viewport" content=3D"width=3D=
+device-width, initial-scale=3D1.0" /><meta name=3D"x-apple-disable-message-=
+reformatting" /><meta name=3D"color-scheme" content=3D"light dark" /><meta =
+name=3D"supported-color-schemes" content=3D"light dark" />
+=09<title>Mejora el clima organizacional</title>
+=09<style type=3D"text/css">body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: #333;
+      background-color: #ffffff;
+    }
+    table {
+      border-spacing: 0;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
+    td {
+      padding: 12px 20px;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .footer {
+      font-size: 12px;
+      color: #888888;
+      text-align: center;
+    }
+=09</style>
+</head>
+<body data-gramm=3D"false" data-lt-tmp-id=3D"lt-661686"><!-- Preheader -->
+<div style=3D"display:none; max-height:0px; overflow:hidden; font-size:0; c=
+olor:#ffffff;">Invierte en capacitaci=C3=B3n que realmente desarrolla a tu =
+equipo con Vorecol Learning.</div>
+<!-- Contenido principal -->
 
-PCFET0NUWVBFIEhUTUwgUFVCTElDICItLy9XM0MvL0RURCBIVE1MIDQuMCBUcmFuc2l0aW9uYWwv
-L0VOIj4NCjxIVE1MIGxhbmc9amE+PEhFQUQ+DQo8TUVUQSBjaGFyc2V0PVVURi04Pg0KPE1FVEEg
-bmFtZT12aWV3cG9ydCBjb250ZW50PSJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9
-MSI+DQo8TUVUQSBuYW1lPWRlc2NyaXB0aW9uIGNvbnRlbnQ95p2x5Lqs44Ks44K544GL44KJ44Gu
-6YeN6KaB44Gq44GK55+l44KJ44Gb77ya5LuK5pyI44Gu6KuL5rGC6YeR6aGN44GM56K65a6a44GX
-44G+44GX44Gf44CC5pSv5omV44GE5oOF5aCx44Gu5pu05paw44GM5b+F6KaB44Gn44GZ44CCPg0K
-PFNUWUxFPg0KICAgICAgICBib2R5LCBodG1sIHsNCiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiAi
-Tm90byBTYW5zIEpQIiwgIll1IEdvdGhpYyIsICJNZWlyeW8iLCBzYW5zLXNlcmlmOw0KICAgICAg
-ICAgICAgZm9udC1zaXplOiAxMHB0Ow0KICAgICAgICAgICAgY29sb3I6ICMwMDA7DQogICAgICAg
-ICAgICBtYXJnaW46IDA7DQogICAgICAgICAgICBwYWRkaW5nOiAwOw0KICAgICAgICAgICAgYmFj
-a2dyb3VuZC1jb2xvcjogI2ZmZmZmZjsNCiAgICAgICAgfQ0KICAgICAgICB0YWJsZSB7DQogICAg
-ICAgICAgICB3aWR0aDogMTAwJTsNCiAgICAgICAgICAgIGJvcmRlci1jb2xsYXBzZTogY29sbGFw
-c2U7DQogICAgICAgIH0NCiAgICAgICAgaW1nIHsNCiAgICAgICAgICAgIG1heC13aWR0aDogMTAw
-JTsNCiAgICAgICAgICAgIGhlaWdodDogYXV0bzsNCiAgICAgICAgICAgIGJvcmRlcjogMDsNCiAg
-ICAgICAgICAgIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7DQogICAgICAgIH0NCiAgICAgICAgYSB7
-DQogICAgICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7DQogICAgICAgICAgICBjb2xvcjog
-IzMzMzsNCiAgICAgICAgfQ0KICAgICAgICAvKiBCdXR0b25zICovDQogICAgICAgIC5idXR0b24g
-ew0KICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzBmMjE4YjsNCiAgICAgICAgICAgIGNv
-bG9yOiAjZmZmZmZmOw0KICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7DQogICAgICAgICAg
-ICBwYWRkaW5nOiAxMnB4Ow0KICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogOHB4Ow0KICAgICAg
-ICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrOw0KICAgICAgICB9DQogICAgICAgIC8qIFBhZGRp
-bmcgY2xhc3NlcyAqLw0KICAgICAgICAucC0yMCB7IHBhZGRpbmc6IDIwcHg7IH0NCiAgICAgICAg
-LnAtNDAgeyBwYWRkaW5nOiA0MHB4OyB9DQogICAgICAgIC5wLWJvdHRvbS00MCB7IHBhZGRpbmct
-Ym90dG9tOiA0MHB4OyB9DQogICAgICAgIC56ZXJvLXBhZGRpbmcgeyBwYWRkaW5nOiAwOyB9DQoN
-CiAgICAgICAgLyogTWVkaWEgUXVlcmllcyAqLw0KICAgICAgICBAbWVkaWEgc2NyZWVuIGFuZCAo
-bWF4LXdpZHRoOiA2MzBweCkgew0KICAgICAgICAgICAgLnNwX3cxMDAgeyB3aWR0aDogMTAwJSAh
-aW1wb3J0YW50OyB9DQogICAgICAgICAgICAuc3BfYmxvY2sgeyBkaXNwbGF5OiBibG9jayAhaW1w
-b3J0YW50OyB9DQogICAgICAgICAgICAuc3Bfbm9uZSB7IGRpc3BsYXk6IG5vbmUgIWltcG9ydGFu
-dDsgfQ0KICAgICAgICAgICAgLnNwX2FsaWdubGVmdCB7IHRleHQtYWxpZ246IGxlZnQgIWltcG9y
-dGFudDsgfQ0KICAgICAgICB9DQogICAgPC9TVFlMRT4NCg0KPE1FVEEgbmFtZT1HRU5FUkFUT1Ig
-Y29udGVudD0iTVNIVE1MIDExLjAwLjk2MDAuMjE2MTUiPjwvSEVBRD4NCjxCT0RZPjxIRUFERVI+
-DQo8RElWIGNsYXNzPXAtMjAgYWxpZ249cmlnaHQ+PEEgaHJlZj0iaHR0cHM6Ly9teWdhcy1kaWdp
-dC5ydW9nemliaGUuY24vbXRnYWxvZ2luLyI+55S75YOP44GM6KGo56S644GV44KM44Gq44GE5aC0
-5ZCI44Gv44GT44Gh44KJPC9BPiANCjwvRElWPg0KPERJViBjbGFzcz1wLWJvdHRvbS00MCBhbGln
-bj1jZW50ZXI+PElNRyBhbHQ9bXlUT0tZT0dBUyANCnNyYz0iaHR0cHM6Ly9pbWFnZS5tYWlsLnRv
-a3lvLWdhcy5jby5qcC9saWIvZmUzNTExNzM3MTY0MDQ3YzcyMTY3NC9tLzEvZDU3NTE5MDAtMjM2
-My00ZTZjLTg4OGEtMDdlZDRmNTI3ZjdmLnBuZyIgDQp3aWR0aD0xOTc+IDwvRElWPjwvSEVBREVS
-PjxNQUlOPjwhLS0gTWFpbiBDb250ZW50IC0tPjxTRUNUSU9OIGNsYXNzPXAtNDAgDQphbGlnbj0i
-Y2VudGVyIj4NCjxIMSBzdHlsZT0iRk9OVC1TSVpFOiAyNnB4OyBDT0xPUjogIzE4MWEyNCI+44GU
-6KuL5rGC5paZ6YeR56K65a6a44Gu44GK55+l44KJ44GbPC9IMT4NCjxQIGFsaWduPWxlZnQ+5pel
-6aCD44KI44KK5p2x5Lqs44Ks44K544KS44GU5Yip55So44GE44Gf44Gg44GN44CB6Kqg44Gr44GC
-44KK44GM44Go44GG44GU44GW44GE44G+44GZ44CCPC9QPg0KPFAgYWxpZ249bGVmdD7ku4rmnIjj
-ga7jgZToq4vmsYLph5HpoY3jgYznorrlrprjgYTjgZ/jgZfjgb7jgZfjgZ/jgII8L1A+DQo8UCBh
-bGlnbj1sZWZ0PuOBiuWuouanmOOBruWPo+W6p+aui+mrmOOBjOePvuWcqOOBruOBlOiri+axgumH
-kemhjeOBq+WvvuOBl+OBpuS4jei2s+OBl+OBpuOBhOOCi+OBk+OBqOOCkueiuuiqjeOBhOOBn+OB
-l+OBvuOBl+OBn+OAgjwvUD4NCjxQIA0KYWxpZ249bGVmdD7jgb7jgZ/jgIHjgYrmlK/miZXjgYTm
-lrnms5XjgYzmib/oqo3jgZXjgozjgabjgYrjgorjgb7jgZvjgpPjgILjgrXjg7zjg5Pjgrnjga7j
-gZTliKnnlKjjgpLntpnntprjgZfjgabjgYTjgZ/jgaDjgY/jgZ/jgoHjgavjgIHmlK/miZXjgYTm
-g4XloLHjga7mm7TmlrDjgpLjgYrpoZjjgYTnlLPjgZfkuIrjgZLjgb7jgZnjgII8L1A+PC9TRUNU
-SU9OPjwhLS0gQnV0dG9uIC0tPjxTRUNUSU9OIA0KY2xhc3M9cC1ib3R0b20tNDAgYWxpZ249ImNl
-bnRlciI+DQo8RElWIGFsaWduPWNlbnRlcj48QSBjbGFzcz1idXR0b24gaHJlZj0iaHR0cHM6Ly9t
-eWdhcy1kaWdpdC5ydW9nemliaGUuY24vbXRnYWxvZ2luLyI+DQo8RElWIA0KYWxpZ249bGVmdD7j
-gYrmlK/miZXjgYTmlrnms5XjgpLmm7TmlrDjgZnjgos8L0RJVj48L0E+PC9ESVY+PC9TRUNUSU9O
-PjwhLS0gRkFRIFNlY3Rpb24gLS0+PFNFQ1RJT04gDQpjbGFzcz1wLTIwPg0KPEgyIA0Kc3R5bGU9
-IkZPTlQtU0laRTogMThweDsgUEFERElORy1MRUZUOiA4cHg7IEJPUkRFUi1MRUZUOiAjMGYyMThi
-IDVweCBzb2xpZCI+44KI44GP44GC44KL44GU6LOq5ZWPPC9IMj4NCjxQPjxTVFJPTkc+US48L1NU
-Uk9ORz4g5L2/55So6YeP44GM5aSJ44KP44KJ44Gq44GE44Gu44Gr44CB44Ks44K544O76Zu75rCX
-5Luj44GM6auY44GE44Go5oSf44GY44KLPEJSPjxTVFJPTkc+QS48L1NUUk9ORz4gDQros4fmupDk
-vqHmoLzjga7pq5jpqLDjgoTngrrmm7/jga7lvbHpn7/jgavjgojjgorjgIHjgqzjgrnjg7vpm7vm
-sJfjga7mlpnph5HjgYzpq5jjgY/jgarjgovloLTlkIjjgYzjgZTjgZbjgYTjgb7jgZnjgILoqbPj
-gZfjgY/jga88QSBzdHlsZT0iQ09MT1I6ICMwZjIxOGIiIA0KaHJlZj0iaHR0cHM6Ly9teWdhcy1k
-aWdpdC5ydW9nemliaGUuY24vbXRnYWxvZ2luLyI+44GT44Gh44KJPC9BPuOCkuOBlOeiuuiqjeOB
-j+OBoOOBleOBhOOAgjwvUD48L1NFQ1RJT04+PCEtLSBBcHAgUHJvbW90aW9uIFNlY3Rpb24gLS0+
-PFNFQ1RJT04gDQpjbGFzcz1wLTIwIA0Kc3R5bGU9IkJPUkRFUi1UT1A6ICNiOWJhYmQgMXB4IHNv
-bGlkOyBCT1JERVItUklHSFQ6ICNiOWJhYmQgMXB4IHNvbGlkOyBCT1JERVItQk9UVE9NOiAjYjli
-YWJkIDFweCBzb2xpZDsgQk9SREVSLUxFRlQ6ICNiOWJhYmQgMXB4IHNvbGlkOyBib3JkZXItcmFk
-aXVzOiA4cHgiIA0KYWxpZ249ImNlbnRlciI+DQo8SDI+5paZ6YeR56K66KqN44Gv44Ki44OX44Oq
-44GM5L6/5Yip77yBPC9IMj4NCjxQPuOBhOOBpOOBp+OCguewoeWNmOOBq+eiuuiqjeOBp+OBjeOC
-i+OBoOOBkeOBp+OBquOBj+OAgTxCUj7mnIDlpKcxMDDjg53jgqTjg7Pjg4jjgYzlvZPjgZ/jgovj
-g5Hjg4Pjg4Hjg6fjgrnjg63jg4Pjg4jjgavjgoLjgZTlj4LliqDjgYTjgZ/jgaDjgZHjgb7jgZnj
-gII8L1A+DQo8UCBhbGlnbj1jZW50ZXI+PElNRyBhbHQ9bXlUT0tZT0dBUyANCnNyYz0iaHR0cHM6
-Ly9pbWFnZS5tYWlsLnRva3lvLWdhcy5jby5qcC9saWIvZmUzNTExNzM3MTY0MDQ3YzcyMTY3NC9t
-LzEvNjYxMDVlMzgtNTllNS00Yjk1LWJiN2QtYmEwYjc5ZWM0MWRkLnBuZyIgDQp3aWR0aD00MDA+
-PC9QPjwvU0VDVElPTj48Rk9PVEVSIGNsYXNzPXAtMjAgDQpzdHlsZT0iQ09MT1I6ICNmZmZmZmY7
-IEJBQ0tHUk9VTkQtQ09MT1I6ICMwZjIxOGIiIGFsaWduPSJsZWZ0Ij4NCjxQPuOAkOeZuuihjOWF
-g+OAkeadseS6rOOCrOOCueagquW8j+S8muekvjxCUj7jgJIxMDUtODUyN+KAg+adseS6rOmDvea4
-r+WMuua1t+WyuDEtNS0yMDwvUD4NCjxQPkNvcHlyaWdodChjKSBUT0tZTyBHQVMgQ08uLCBMdGQu
-IEFsbCByaWdodHMgDQpyZXNlcnZlZC48L1A+PC9GT09URVI+PC9CT0RZPjwvSFRNTD4NCg==
+<table cellpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"w=
+idth:100%">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td>
+=09=09=09<p>Hola,&nbsp;<span style=3D"font-family:arial,helvetica,sans-seri=
+f">Osst-users,</span></p>
 
---=====003_Dragon330233311467_=====--
+=09=09=09<p>Invertir en capacitaci=C3=B3n no siempre significa que tu equip=
+o est=C3=A9 creciendo. Sin un buen seguimiento, los cursos pueden no tener =
+el efecto esperado.</p>
+
+=09=09=09<p><strong>Vorecol Learning</strong> es una plataforma que te ayud=
+a a gestionar el aprendizaje de tu equipo de forma sencilla y efectiva.</p>
+
+=09=09=09<p><strong>Con Vorecol Learning puedes:</strong></p>
+
+=09=09=09<ul>
+=09=09=09=09<li>Capacitar a tu personal, desde uno hasta cinco mil colabora=
+dores, con cursos hechos a la medida de las necesidades de tu empresa.</li>
+=09=09=09=09<li>Ver c=C3=B3mo avanza cada persona y entregar certificados a=
+l terminar los cursos, asegurando que aprendieron de verdad.</li>
+=09=09=09=09<li>Permitir que tus colaboradores estudien cuando quieran y de=
+sde cualquier dispositivo, con evaluaciones que confirman lo aprendido.</li=
+>
+=09=09=09</ul>
+
+=09=09=09<p>Esta plataforma est=C3=A1 dise=C3=B1ada para que la capacitaci=
+=C3=B3n sea una herramienta real para el desarrollo de tu equipo, no solo u=
+na lista de tareas por cumplir.</p>
+
+=09=09=09<p>Si quieres mejorar el aprendizaje en tu empresa, Vorecol Learni=
+ng puede ayudarte. Responde a este correo o cont=C3=A1ctame; mis datos est=
+=C3=A1n abajo.</p>
+
+=09=09=09<p>Saludos,</p>
+
+=09=09=09<p>--------------</p>
+
+=09=09=09<p><strong>Atte.: Mariann Rivas</strong></p>
+
+=09=09=09<p>Ciudad de M=C3=A9xico: (55) 5018 0565</p>
+
+=09=09=09<p><strong>WhatsApp:</strong> +52 33 1607 2089</p>
+
+=09=09=09<p class=3D"footer">Si no deseas recibir m=C3=A1s correos, <a href=
+=3D"https://s1.arrobamail.com/unsuscribe.php?id=3Drrqwusrequspiuseiw">haz c=
+lic aqu=C3=AD para darte de baja</a>.</p>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+
+<img src=3D"https://s1.arrobamail.com/class/open_track.php?dataType=3Dt3&si=
+d=3D1066045467AZD&lid=3D1028156957AZD&mid=3D1025322627AZD&uid=3D1024426572A=
+ZD&addr=3DCGMCd1NxXCVWfAElXilSYlNzU3pQQAE2UT8CIVFxDikHLQ96BTsIcAdyVWdQMVFiB=
+ThXf1FmXmAGL1NtVGVTcw%3D%3D&xfid=3Drrqwusrequspiuseiw" style=3D"border:none=
+ !important;height: 1px !important;width: 1px !important;margin: 0 !importa=
+nt;" width=3D"1" height=3D"1" border=3D"0" alt=3D"" /></body>
+</html>
+
+
+--b1_rM5DozIcjI67MwWYgTskDdzYcD3bnSrvAkzi0dWig--
 
 
 
---===============3117900092509414119==
+--===============8032981370872484956==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============3117900092509414119==
+--===============8032981370872484956==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -252,6 +306,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============3117900092509414119==--
+--===============8032981370872484956==--
 
 
