@@ -2,95 +2,95 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id A72D9BC1FDA
-	for <lists+osst-users@lfdr.de>; Tue, 07 Oct 2025 17:51:39 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id BDD28BC62C8
+	for <lists+osst-users@lfdr.de>; Wed, 08 Oct 2025 19:44:10 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
 	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
 	MIME-Version:Message-ID:From:To:Date:Sender:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=iUhuXOYzU0SXienqm2+QURsl4K0yy8+OK4xrY2NEyVs=; b=bvpO5N8vWaeA4eVtt9XhoykYur
-	LZTMc/dNUXt3/D0xyXXlB8rFHnT6b5ug50s1GcM1jXWkaUXr3fcZzcnY7UnXHpDu3gxXn5/+/Jy3g
-	4BZSLzAEXWCUe2gx25laX5sFeGIyOhfFni7JW5uuVFmLS3mHZ/loa8NxhmcTB80b7CXU=;
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=OQblVu+1iwgiqz0Gb2pDvIrmyPYe5usCTLBrYRzuoeM=; b=ijuS2N9WmpIAVQRwM005ah6ghF
+	tuAYUEK4xoT5Q0hT8td11/tSKmWeiMHPbNfKxcwix8eLL4JdG+qdjIyDudFFbNJEx44k9YLyBAJjJ
+	3T/Fbya60B46i8JDsT3+v26JZ/HkGG5fOBupwB2gMBZ+I44iraFD0FNNB+Qt5QlmNMxc=;
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1v69yU-0004aU-G7
+	id 1v6YCu-0003Hr-Km
 	for lists+osst-users@lfdr.de;
-	Tue, 07 Oct 2025 15:51:38 +0000
+	Wed, 08 Oct 2025 17:44:08 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <bounce.L3206S33016M980@s1.arrobamail.com>)
- id 1v69yS-0004aO-WA for osst-users@lists.sourceforge.net;
- Tue, 07 Oct 2025 15:51:37 +0000
+ (envelope-from <bounce.L3206S33016M981@s1.arrobamail.com>)
+ id 1v6YCt-0003Hl-EF for osst-users@lists.sourceforge.net;
+ Wed, 08 Oct 2025 17:44:07 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Content-Type:MIME-Version:List-ID:List-Unsubscribe:
  Message-ID:Subject:Reply-To:From:To:Date:Sender:Cc:Content-Transfer-Encoding:
  Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
  Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Help:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=CHrD24eBBzqycs2b/7J3aKIvgBQTpPaByz8NS9LVYuI=; b=GE5ovlPW5N4z4+1wQBj6pc3w25
- 6S1Y6PXoBCXJkG7CVpiE/ZvB7WLBGNy8ZhBn0P685wQinqADGaIk58bA3WjZlmdHkoIJg6zkt6RWM
- vn0HgTj9RtNHbl4PPrAZ2twurfG8DyydYMVejE+zKuKeKo/hJJgMY//5MvBDBDmSkfro=;
+ bh=pV8rDCT8X27y06KC2ScNOlNB7UJvVMXbwyGQXjM94aU=; b=ORSWykAX3y/6GhQ+GWrCRlrsrR
+ DD3FpWN5XifM5I4sOQ6r3MenQA1l/q90zorSJEs3ayxJySdzrkYIA78nEKLgIeaHMTb6FJH20CozX
+ OKIPeh3T+8GDrvlK3PI0QvRFw0LrxqoBGLW/bv/afiBdhGQUn+hnOpTze+d0uP/fRz9o=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Content-Type:MIME-Version:List-ID:List-Unsubscribe:Message-ID:Subject:
  Reply-To:From:To:Date:Sender:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Help:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=CHrD24eBBzqycs2b/7J3aKIvgBQTpPaByz8NS9LVYuI=; b=F
- c/zyYQL4uL/fByehgJpSupBfsgm3W4yOvhZNapwWvjJwv/tagS+p5utg3Ky7q1dFfDZdZvKdBx/z+
- 44lrEUb3PCPs9oPTzpnnMoysCDnz9gXF6UseBhkNUR2Ks5e8h4AMlzfN+82FQwpgV24g9hi5NqyeB
- K7uwdMgi5/VnhtJE=;
+ List-Owner:List-Archive; bh=pV8rDCT8X27y06KC2ScNOlNB7UJvVMXbwyGQXjM94aU=; b=e
+ 4dctwQmBnJv3x6GRy8Ix5v9zB9Tf4HegygBbl4CgxdpjvXu1Vns9Vd5URz76p3Nv4cAr/yRcFD7i/
+ vlLeHX4w0MAQATpIsRy1rGLrk66dIIol7sUAA5bM5UekTPCNUtBYayeawrITRV93n5XdozYY7fzfh
+ TjXadqGwJLtrTk94=;
 Received: from p145i146.fmpear.com.ar ([190.105.145.146] helo=mailer)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1v69yS-00078R-3C for osst-users@lists.sourceforge.net;
- Tue, 07 Oct 2025 15:51:36 +0000
-Date: Tue, 7 Oct 2025 10:51:24 -0500
+ id 1v6YCs-0002IY-HR for osst-users@lists.sourceforge.net;
+ Wed, 08 Oct 2025 17:44:07 +0000
+Date: Wed, 8 Oct 2025 12:43:54 -0500
 To: Osst-users <osst-users@lists.sourceforge.net>
 From: =?utf-8?Q?Luis_Ram=C3=ADrez?= <luis.ramirez@vorecol-mail.com>
-Message-ID: <PmoKyVaJmjbaWtsHodMECYdnbzVt2TDP6OYguRs@s1.arrobamail.com>
+Message-ID: <hrncHQMA0JS2Zjn5iaKsozkgkiekFdGqWTfOftG0Is@s1.arrobamail.com>
 X-Mailer: FMMailer v3
 X-Data: ZXxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHw=
-X-Fid: eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC05ODAtMzIwNi0zMzAxNi0yNzEtczEuYXJyb2JhbWFpbC5jb20=
-X-fmbh: b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7OTgwOzMyMDY7MzMwMTY7Mjcx
-X-bhid: X-bhd: 980;3206;33016
+X-Fid: eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC05ODEtMzIwNi0zMzAxNi0yNzEtczEuYXJyb2JhbWFpbC5jb20=
+X-fmbh: b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7OTgxOzMyMDY7MzMwMTY7Mjcx
+X-bhid: X-bhd: 981;3206;33016
 List-Unsubscribe-Post: List-Unsubscribe=One-Click
 X-AntiAbuse: abuse@outservices.net
 Precedence: bulk
-Feedback-ID: 980:3206s33016:124933:WPservicesESP
+Feedback-ID: 981:3206s33016:124933:WPservicesESP
 X-Transport: p145i146tecsid
 MIME-Version: 1.0
 DKIM-Signature: v=1; d=vorecol-mail.com; s=fm;
- a=rsa-sha256; q=dns/txt; t=1759852284; c=relaxed/simple;
+ a=rsa-sha256; q=dns/txt; t=1759945434; c=relaxed/simple;
  h=Date:To:From:Reply-To:Subject:Message-ID:X-Mailer:X-Data:X-Fid:X-fmbh:List-Unsubscribe:X-AntiAbuse:Feedback-ID:List-ID:MIME-Version:Content-Type;
- z=Date:Tue,=207=20Oct=202025=2010:51:24=20-0500
+ z=Date:Wed,=208=20Oct=202025=2012:43:54=20-0500
  |To:Osst-users=20<osst-users@lists.sourceforge.net>
  |From:=3D?utf-8?Q?Luis_Ram=3DC3=3DADrez?=3D=20<luis.ramirez@vorecol-mail.c
  om>
  |Reply-To:=3D?utf-8?Q?Luis_Ram=3DC3=3DADrez?=3D=20<luis.ramirez@vorecol-ma
  il.com>
  |Subject:Cierra=202025=20con=20equipos=20de=20alto=20rendimiento
- |Message-ID:<PmoKyVaJmjbaWtsHodMECYdnbzVt2TDP6OYguRs@s1.arrobamail.com>
+ |Message-ID:<hrncHQMA0JS2Zjn5iaKsozkgkiekFdGqWTfOftG0Is@s1.arrobamail.com>
  |X-Mailer:FMMailer=20v3
  |X-Data:ZXxvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldHw=3D
- |X-Fid:eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC05ODAtMzIwNi0zMzA
+ |X-Fid:eGZpZC1vc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldC05ODEtMzIwNi0zMzA
  xNi0yNzEtczEuYXJyb2JhbWFpbC5jb20=3D
- |X-fmbh:b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7OTgwOzMyMDY7MzMwMTY7Mj
+ |X-fmbh:b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQ7OTgxOzMyMDY7MzMwMTY7Mj
  cx
  |List-Unsubscribe:<https://s1.arrobamail.com/unsuscribe.php?FormData=3Drrq
- wusrequspoqseiw> |X-AntiAbuse:abuse@outservices.net
- |Feedback-ID:980:3206s33016:124933:WPservicesESP
+ wusrequspowseiw> |X-AntiAbuse:abuse@outservices.net
+ |Feedback-ID:981:3206s33016:124933:WPservicesESP
  |List-ID:<38472:594288> |MIME-Version:1.0
- |Content-Type:multipart/alternative=3B=20boundary=3D"b1_PmoKyVaJmjbaWtsHod
- MECYdnbzVt2TDP6OYguRs";
- bh=Ju+FDp1rgkfAUlwb1eaYZ0+w/7Yc9O/WPt2uL1adcHg=;
- b=bkq5wwx2ByJPzxpXEDKryTwfF0nb/PHt1K6VvsxhlWsv0m2UFcCLBYofyOXCZ96xM6IcAJWso
- d4FFqMXd79rt0TbbAN2fNMj7nd4jBW9q6vewKQtgy+UTLe/+eWb5QidI3QJazQn/5h6hkwUWd
- 8kdDVaAQWN0Ej0OhWf4dqGO78=
+ |Content-Type:multipart/alternative=3B=20boundary=3D"b1_hrncHQMA0JS2Zjn5ia
+ KsozkgkiekFdGqWTfOftG0Is";
+ bh=L9NC4Vev/zUdrsf3aaaCKiSRmtaovgAq4l+paRT+aH4=;
+ b=W8fSozGTf+NCU0nuW/bx96QN9QqhuyNHCSIuC0onTP5aLf5sM/Jjie6rKNqTeep4WfCT+1/K4
+ Fzkp/oELNNeOX9AMtXW5QqiIDq/UQxXLi2seG2w2/b1qRGuT/Ax56DXOF9cCt1/nB31jhhK25
+ Ti6nZqMY9aM10hj0sKyf+Jqk0=
 X-Helo-Check: bad, Not FQDN (mailer)
 X-Spam-Score: 2.9 (++)
 X-Spam-Report: Spam detection software,
@@ -119,10 +119,10 @@ X-Spam-Report: Spam detection software,
  background
  0.0 HTML_IMAGE_ONLY_32     BODY: HTML: images with 2800-3200 bytes of words
  0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.0 HELO_NO_DOMAIN         Relay reports its domain incorrectly
  -1.0 MAILING_LIST_MULTI     Multiple indicators imply a widely-seen list
  manager
-X-Headers-End: 1v69yS-00078R-3C
+ 0.0 HELO_NO_DOMAIN         Relay reports its domain incorrectly
+X-Headers-End: 1v6YCs-0002IY-HR
 Subject: [Osst-users] Cierra 2025 con equipos de alto rendimiento
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
@@ -135,18 +135,18 @@ List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
 Reply-To: =?utf-8?Q?Luis_Ram=C3=ADrez?= <luis.ramirez@vorecol-mail.com>
-Content-Type: multipart/mixed; boundary="===============9171426132471358624=="
+Content-Type: multipart/mixed; boundary="===============1177476479968562177=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
 
---===============9171426132471358624==
+--===============1177476479968562177==
 Content-Type: multipart/alternative;
- boundary="b1_PmoKyVaJmjbaWtsHodMECYdnbzVt2TDP6OYguRs"
+ boundary="b1_hrncHQMA0JS2Zjn5iaKsozkgkiekFdGqWTfOftG0Is"
 
 This is a multi-part message in MIME format.
 
---b1_PmoKyVaJmjbaWtsHodMECYdnbzVt2TDP6OYguRs
+--b1_hrncHQMA0JS2Zjn5iaKsozkgkiekFdGqWTfOftG0Is
 Content-Type: text/plain; charset=utf-8
 Content-Transfer-Encoding: quoted-printable
 
@@ -176,9 +176,9 @@ o.=0A=0A=09=09=09Saludos,=0A=0A=09=09=09--------------=0A=0A=09=09=09Atte.:=
 =0A=09=09=09WhatsApp: +52 33 1607 2089=0A=0A=09=09=09Si no deseas recibir m=
 =C3=A1s correos, haz clic aqu=C3=AD para darte de baja.=0A=09=09=09=0A=09=
 =09=0A=09=0A=0A=0A=0A=0A=0APara remover su direcci&oacute;n de esta lista h=
-aga <a href=3D"https://s1.arrobamail.com/unsuscribe.php?id=3Drrqwusrequspoq=
+aga <a href=3D"https://s1.arrobamail.com/unsuscribe.php?id=3Drrqwusrequspow=
 seiw">click aqu&iacute;</a>
---b1_PmoKyVaJmjbaWtsHodMECYdnbzVt2TDP6OYguRs
+--b1_hrncHQMA0JS2Zjn5iaKsozkgkiekFdGqWTfOftG0Is
 Content-Type: text/html; charset=utf-8
 Content-Transfer-Encoding: quoted-printable
 
@@ -260,7 +260,7 @@ implemente cont=C3=A1ctame, mis datos est=C3=A1n abajo.</strong></p>
 =09=09=09<p><strong>WhatsApp:</strong> +52 33 1607 2089</p>
 
 =09=09=09<p class=3D"footer">Si no deseas recibir m=C3=A1s correos, <a href=
-=3D"https://s1.arrobamail.com/unsuscribe.php?id=3Drrqwusrequspoqseiw">haz c=
+=3D"https://s1.arrobamail.com/unsuscribe.php?id=3Drrqwusrequspowseiw">haz c=
 lic aqu=C3=AD para darte de baja</a>.</p>
 =09=09=09</td>
 =09=09</tr>
@@ -268,26 +268,26 @@ lic aqu=C3=AD para darte de baja</a>.</p>
 </table>
 
 <img src=3D"https://s1.arrobamail.com/class/open_track.php?dataType=3Dt3&si=
-d=3D1066045467AZD&lid=3D1028156957AZD&mid=3D1025327711AZD&uid=3D1024426572A=
-ZD&addr=3DVD8OewIgC3IELgcjB3BebgIiUXhQQFtsAmwEJwUlVnEFLwB1UW8JcQh9U2FQMQU2B=
-ThReQI1DTMCKwI8VGVScg%3D%3D&xfid=3Drrqwusrequspoqseiw" style=3D"border:none=
+d=3D1066045467AZD&lid=3D1028156957AZD&mid=3D1025328982AZD&uid=3D1024426572A=
+ZD&addr=3DAGsGc1d1DncHLV15B3BXZ119AClVRVxrAW8AI1NzUXZTeQdyWWcKclYjXW9VNFBjU=
+m9aclBnDjBReFdpDz4CIg%3D%3D&xfid=3Drrqwusrequspowseiw" style=3D"border:none=
  !important;height: 1px !important;width: 1px !important;margin: 0 !importa=
 nt;" width=3D"1" height=3D"1" border=3D"0" alt=3D"" /></body>
 </html>
 
 
---b1_PmoKyVaJmjbaWtsHodMECYdnbzVt2TDP6OYguRs--
+--b1_hrncHQMA0JS2Zjn5iaKsozkgkiekFdGqWTfOftG0Is--
 
 
 
---===============9171426132471358624==
+--===============1177476479968562177==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============9171426132471358624==
+--===============1177476479968562177==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -298,6 +298,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============9171426132471358624==--
+--===============1177476479968562177==--
 
 
