@@ -2,100 +2,102 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id CE971BCEE4C
-	for <lists+osst-users@lfdr.de>; Sat, 11 Oct 2025 03:53:27 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id BF1E3BD0BB1
+	for <lists+osst-users@lfdr.de>; Sun, 12 Oct 2025 21:30:51 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
-	MIME-Version:To:Message-Id:Date:From:Sender:Cc:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Cc:Reply-To:From:
+	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
+	Subject:MIME-Version:Date:Message-ID:To:Sender:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=oiw1Qg1DkFg8MepsPz8IOBzUndO2NPOo04XkC3Zp7Us=; b=aztQibkmE3JLF7IueGTkjme3Ob
-	eyiCm/R1DPC+0Jd60NI6y7Z7GaxgxIz2eyvePYvacJSCmgCPq7wfFF9S3iHZMqIkk5umoX/Baq36U
-	ZibhPq2J/rkv/LVwWu3Dd7lD85RrgQk6Z7CBXkpKhX4BqAY1duSWEOZcq6adWjDS9Ums=;
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=qLe+4qwXzRUoCMmvkQCeEgn1p839G415zCugGG7aWyo=; b=Z1uqeEtxj2YDhYmC4UVPg4tAOx
+	PpcRuy9eXnKLyMWx0aQiJe+AbVBEOLpLPNXCwMD5Fkcm+Jb+YSOtlU7LDi1wYOCjTRPxtQvWye9zf
+	x6dcj6N7NgUcq1P98eelf3vnASr8x8DbMSs29wi1ddUBrbwRjo93TUhoODp8r5fs2I4o=;
+Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
+	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1v7OnV-0007ng-QF
+	id 1v81mM-0006La-1V
 	for lists+osst-users@lfdr.de;
-	Sat, 11 Oct 2025 01:53:25 +0000
+	Sun, 12 Oct 2025 19:30:50 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <CDR_Peter=cdrc.cnmfgedm.com@bounces.cdrc.cnmfgedm.com>)
- id 1v7OnU-0007nX-3K for osst-users@lists.sourceforge.net;
- Sat, 11 Oct 2025 01:53:24 +0000
+ (envelope-from <info@speedemail24.com>) id 1v81mL-0006LU-Et
+ for osst-users@lists.sourceforge.net; Sun, 12 Oct 2025 19:30:49 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:MIME-Version:List-Unsubscribe:
- To:Sender:Reply-To:Message-Id:Date:From:Cc:Content-Transfer-Encoding:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Vy+QQlWEh50DshjSMZ+Z7q7JUTarLEo/nUO1qyp6lpw=; b=YNDnhUqKAOuriu3xgi7Q4VU2jt
- dSkkXQremWm+fpq2iYa2vcGs4Lvj+woRxy/qa75El2pLawfcfak1srqAZpzbGUpZEmYlp7dx28OM0
- W5wEkOR0Xqc0R4gGtHXGn5eTVAza8kS1Lq1xFNYZxUDzJXgrajr0tAxIkMZqzMgYqWU0=;
+ d=sourceforge.net; s=x; h=Content-Type:MIME-Version:Date:Message-ID:Subject:
+ To:From:Reply-To:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=iC55pS13yw+F7X3CK5rEJSkLrOcpXsm0YBm2S+EUeRE=; b=TO/sgFDsfTVU7Gb9YT4Isd9R7f
+ kJhZDLnWso7N/HLoWCDAsrVQzUangcZf5wCJpebFz/IiDKQVJ9lYfROP+e+jzs8DjvHXSf+wlM3gg
+ Y6Xn5tezdstiu/lXFl84ue6t2dkGzlUHXAUQZAJEJSIGCsrxosilmy7PDDtKBMc3pWvc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:MIME-Version:List-Unsubscribe:To:Sender:Reply-To:
- Message-Id:Date:From:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=Vy+QQlWEh50DshjSMZ+Z7q7JUTarLEo/nUO1qyp6lpw=; b=g39VlAsNSj93L4ViE6aVvRamKJ
- FXFXUVZQWQDU3tTf/H9M9Hs4lHvbiSeTAK47S8WrvALF3864/3h4+QIsW42titTPrVBVAIH9T+eqq
- fIz9mrobxVZrcwohO3euIOLmmJMjxinTQLH1IEgb3bzmAt9UMxiBi++zo9pVtp/i18Bc=;
-Received: from pn254.mxout.mta2.net ([216.169.99.254])
+ h=Content-Type:MIME-Version:Date:Message-ID:Subject:To:From:Reply-To:Sender
+ :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=iC55pS13yw+F7X3CK5rEJSkLrOcpXsm0YBm2S+EUeRE=; b=J
+ OAAWn4CRCNA+L5QCskqz1fpG1ojdQtd9mUeGpiT/pVWefW7OsqatmtE5gnLeTd262nSYKm6e0qidz
+ AwMhWGPtMUGD9VvwFiyoeuxEUKpysMcRzS+baQpoHSf8QX5tvR9scxRpXYK/+xa6gdOJEAoFoIr5r
+ s0sPCcEw8M0XZ0xQ=;
+Received: from mail.speedemail24.com ([51.254.100.36])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-SHA384:256) (Exim 4.95) id 1v7OnT-0002Y1-CY
- for osst-users@lists.sourceforge.net; Sat, 11 Oct 2025 01:53:24 +0000
-DKIM-Signature: v=1; a=rsa-sha256; d=cdrc.cnmfgedm.com; s=api;
- c=relaxed/simple; t=1760147592;
- h=from:date:subject:reply-to:to:list-unsubscribe:list-unsubscribe-post:
- mime-version; bh=Vy+QQlWEh50DshjSMZ+Z7q7JUTarLEo/nUO1qyp6lpw=;
- b=lW0fvLzEADHgEHwQqhsV/6u6Sewk4iOObLqJOf+XwO3Gmg9L+jagPzYAgPgU8lZnzMB0vQWgR2+
- 6VBiPqq3TMMVHuIzAHpdAHzu9Np9lkDRPK2n7CM1oZKtVcDOv9OsUSaVNvN1nIrSCnvNtTKjQuHHn
- l3emv6oysqbYx/Ig4RY=
-DKIM-Signature: v=1; a=rsa-sha256; d=elasticemail.com; s=api;
- c=relaxed/simple; t=1760147592;
- h=from:date:subject:reply-to:to:list-unsubscribe:list-unsubscribe-post;
- bh=Vy+QQlWEh50DshjSMZ+Z7q7JUTarLEo/nUO1qyp6lpw=;
- b=X8xHnXIuEGfiELPQwsOPZ6Q8i0Ang6F/Iby5AoPdhmNUlO9B39tpj9s4rYib3SQHxB7GTcFH33I
- FuE55Kob1qccex/2VFkBUF2rFTcELDivgtjO5tnrMzjUmU2K+adU+QEHNsFNUOho3CxEpFn8vJKNW
- N6gr6pYpT/Vhy19vP+Y=
-From: Peter Lee <CDR_Peter@cdrc.cnmfgedm.com>
-Date: Sat, 11 Oct 2025 01:53:12 +0000
-Message-Id: <4urfidgq1nzw.4PpWFJ4y5X2zmeSqtsAbww2@tracking.cdrc.cnmfgedm.com>
-To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
-List-Unsubscribe-Post: List-Unsubscribe=One-Click
-X-Msg-EID: 4PpWFJ4y5X2zmeSqtsAbww2
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1v81mK-0007Zs-Hl for osst-users@lists.sourceforge.net;
+ Sun, 12 Oct 2025 19:30:49 +0000
+Received: from DESKTOP-IL35PKJ (unknown [102.89.84.219])
+ by mail.speedemail24.com (Postfix) with ESMTPSA id 5E88D30A5B47
+ for <osst-users@lists.sourceforge.net>; Sun, 12 Oct 2025 18:52:42 +0000 (UTC)
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail.speedemail24.com 5E88D30A5B47
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=speedemail24.com;
+ s=202507; t=1760295162;
+ bh=iC55pS13yw+F7X3CK5rEJSkLrOcpXsm0YBm2S+EUeRE=;
+ h=Reply-To:From:To:Subject:Date:From;
+ b=aLC1VFYw5hPK3APApUOw8PFiHCnRb7atsU+T7oEnk7P3cu9Ut8PSjrySOPnXemTJT
+ 5/8DWeGhS7nKfyKG9/hbgHd7pCiCX52MSVFtOgJliSGy9LUENIEgroMhB0RmYQY0iw
+ Wq25dYdUfmrbblWa+x3OibTqcogHMf7zDr9GZ6HUhdBYbVLPwOdyM8SoeT2F5VCE90
+ t85IW/i/mR49RRwIWONl0W412x0ixTMrF3BdsyyWHKKf2yxRmS7APW4WioPqMp/MKk
+ 3DV4D/0IgYf242IvE+0HgeMXqJl2HD14/OwLp1/qoCxEIVT99N74QWvB+yhsmZ4edX
+ PaUuU5ca9u7HQ==
+To: "osst-users" <osst-users@lists.sourceforge.net> 
+Message-ID: <fe2018e8966a47449ed141b856e596a0@192.168.0.135>
+Date: Sun, 12 Oct 2025 13:52:14 -0500
 MIME-Version: 1.0
-X-Spam-Score: 5.8 (+++++)
-X-Spam-Report: Spam detection software,
- running on the system "sfi-spamd-2.hosts.colo.sdot.me", 
- has identified this incoming email as possible spam.  The original
+X-Priority: 3
+X-Greylist: Sender succeeded SMTP AUTH, not delayed by milter-greylist-4.6.4
+ (mail.speedemail24.com [0.0.0.0]); Sun, 12 Oct 2025 18:52:42 +0000 (UTC)
+X-Spam-Score: 3.9 (+++)
+X-Spam-Report: Spam detection software, running on the system "sfi-spamd-2.hosts.colo.sdot.me",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  Dear Purchaser: I'm PETER FROM CDR PRECISION MACHINING, a
- CNC precision machining factory in China with 16+ years of experience,
- including
- 10+ years working closely with European and U.S. clients. We [...] 
- Content analysis details:   (5.8 points, 5.0 required)
- pts rule name              description
+ 
+ Content preview:  Hello, Peace be upon you. My name is Huzama, from Gaza, State
+    of Palestine. I’m reaching out with a profitable and time-sensitive business
+    proposal. My late husband and I previously ran a successful [...] 
+ 
+ Content analysis details:   (3.9 points, 5.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
- [216.169.99.254 listed in dnsbl-1.uceprotect.net]
- 1.9 URIBL_CT_SURBL         Contains an URL listed in the CT SURBL blocklist
- [URI: cdrc.cnmfgedm.com]
- 0.1 DKIM_SIGNED            Message has a DKIM or DK signature,
- not necessarily valid
- -0.1 DKIM_VALID Message has at least one valid DKIM or DK signature
- -0.1 DKIM_VALID_AU Message has a valid DKIM or DK signature from author's
- domain 0.0 HTML_MESSAGE           BODY: HTML included in message
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1v7OnT-0002Y1-CY
-Subject: [Osst-users] [SPAM] Hi, Small Batch Precision CNC Parts Quotation
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  0.1 MIME_HTML_MOSTLY       BODY: Multipart message mostly text/html MIME
+  0.7 MPART_ALT_DIFF         BODY: HTML and text parts are different
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+  0.9 URG_BIZ                Contains urgent matter
+  2.3 ADVANCE_FEE_3_NEW_MONEY Advance Fee fraud and lots of money
+X-Headers-End: 1v81mK-0007Zs-Hl
+Subject: [Osst-users] Urgent & Profitable Business Opportunity
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -107,145 +109,87 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: Peter Lee <sales@cdrprecisioncnc.com>
-Content-Type: multipart/mixed; boundary="===============6881565538883302175=="
+From: SMSM via Osst-users <osst-users@lists.sourceforge.net>
+Reply-To: info@smsm-it.net
+Cc: SMSM <info@speedemail24.com>
+Content-Type: multipart/mixed; boundary="===============3073624423303839161=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============6881565538883302175==
+This is a multi-part message in MIME format.
+
+--===============3073624423303839161==
 Content-Type: multipart/alternative;
-	boundary="=-eZCfUFLFyQPmc97LUps1ZCzywxBx9Pwy23WKzQ=="
+	boundary="----=_NextPart_000_0001_A341B776.3817C746"
 
---=-eZCfUFLFyQPmc97LUps1ZCzywxBx9Pwy23WKzQ==
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: base64
+This is a multi-part message in MIME format.
 
-RGVhciBQdXJjaGFzZXI6CkknbSBQRVRFUiBGUk9NIENEUiBQUkVDSVNJT04gTUFDSElOSU5H
-LCBhIENOQyBwcmVjaXNpb24gbWFjaGluaW5nCmZhY3RvcnkgaW4gQ2hpbmEgd2l0aCAxNisg
-eWVhcnMgb2YgZXhwZXJpZW5jZSwgaW5jbHVkaW5nIDEwKyB5ZWFycwp3b3JraW5nIGNsb3Nl
-bHkgd2l0aCBFdXJvcGVhbiBhbmQgVS5TLiBjbGllbnRzLgpXZSBmb2N1cyBvbiBzdXBwb3J0
-aW5nIE1FQ0hBTklDQUwgRU5HSU5FRVJTIEFORCBDT01QQU5JRVMgVEhBVCBORUVEClBSRUNJ
-U0lPTiBQQVJUUywgZXNwZWNpYWxseSBmb3IgU01BTEwtQkFUQ0ggTUFDSElOSU5HIFBST0pF
-Q1RTLiBPdXIKZXhwZXJ0aXNlIGxpZXMgaW4gQ09NUExFWCBQQVJUUywgUFJPVE9UWVBFUywg
-QU5EIExPVy1WT0xVTUUKUFJPRFVDVElPTi4KT1VSIEFEVkFOVEFHRVM6CioKNS1BWElTICYg
-TVVMVEktQVhJUyBDTkMgTUFDSElOSU5HCioKUkFQSUQgUVVPVEFUSU9OUyAmIENPU1QtRUZG
-RUNUSVZFIFNPTFVUSU9OUwoqCk1BVEVSSUFMUyAmIFNVUkZBQ0UgVFJFQVRNRU5UUyBUTyBJ
-TlRFUk5BVElPTkFMIFNUQU5EQVJEUwoqClJFTElBQkxFIFFVQUxJVFkgQ09OVFJPTCBmb3Ig
-RVUgJiBVLlMuIHJlcXVpcmVtZW50cwoqCkZBU1QgREVMSVZFUlkgYW5kIGFkYXB0YWJsZSBw
-cm9kdWN0aW9uIHNjaGVkdWxlcwoqCkNPTVBFVElUSVZFIFBSSUNJTkcgV0lUSCBDT05TSVNU
-RU5UIFFVQUxJVFkKSWYgeW91J2QgbGlrZSwgSSBjYW4gUFJFUEFSRSBBIFFVT1RBVElPTiBi
-YXNlZCBvbiB5b3VyIGRyYXdpbmdzLCBvcgpzaGFyZSBtYWNoaW5pbmcgYWR2aWNlIG9uIFRP
-TEVSQU5DRVMsIE1BVEVSSUFMUywgT1IgQ09TVCBPUFRJTUlaQVRJT04uCllvdSdyZSB3ZWxj
-b21lIHRvIHZpc2l0IG91ciBmYWN0b3J5IGF0IGFueSB0aW1lLgpGb3IgbW9yZSBpbmZvcm1h
-dGlvbiBhYm91dCBvdXIgY2FwYWJpbGl0aWVzLCBwbGVhc2UgdmlzaXQgb3VyIHdlYnNpdGU6
-CkNEUlBSRUNJU0lPTi5DT00KVEhBTksgWU9VIC8gR1JBWklFIC8gREFOSyAvIE1FUkNJCkJl
-c3QgcmVnYXJkcywKUEVURVIgTEVFCnNhbGVzQGNkcnByZWNpc2lvbmNuYy5jb20KU2FsZXMg
-RGlyZWN0b3IgYXQgQ0RSIE1hY2hpbmluZwpDdXN0b21pemF0aW9uIHwgRGV2ZWxvcG1lbnQg
-fCBSZWxpYWJpbGl0eQpVbnN1YnNjcmliZQpbL2h0dHA6Ly90cmFja2luZy5jZHJjLmNubWZn
-ZWRtLmNvbS90cmFja2luZy91bnN1YnNjcmliZT9kPVFOdDVGZ3pmREdfdlZiNUNpTlpKQXQ0
-aHdHd0cxc1NncWdJSDVfRFRtTTc0bWlsT3FaSkIxY0FBaFRwQ3ZJSFM0SkVUMXk4MTNjM2Fq
-NG41azcxclFzYmtSZkZKNldUVUpZSnV3YXFfT2FYRGxuOGhldXYzaEpWV09RODdTVHpBNGR4
-dkF3SUhVUVZXckRzb2RpU3NEY2RIaHlPS01zR25PcDY4MUZkay1sYXhVdDBlY3k2OE9hWTF6
-MjhFaGJrcGJkemluTC1aVXJNbEhwcmxScmdkVHR6SzBGZThtTVh4a3BKaDU4b1A1TWk5WDZU
-YkdQMU5sa2hxV3l6cUI3QXJNOTZaWWVBSTI2emQ1OTl0V0dzaE1pc0dqak85aVR5RTRtUzhT
-MVFLaDM5Rm56UFhwd191Rng4dDJiUXo0Zml1Qk1EYkR6VG5LUHpGRWlXV3phY0RoYUlhak4x
-bllkdUNvUzdVcGlPeDN5MFQwNGktSmZwWnZGTnhXNDJlYlRnb0pjdmphSGd1QXFUQThwUm5M
-d0ZwZlNBOFFIN1JLOTZmNlNBWl9hU2QzLWVpajNnaWVRaTR2Z2hVdGZHTGxoYXB4SFN5SmhE
-SmIwMVk5dUI2V0w3eG40dENZcTcxOTZ1WVA5TktSU2x0OFBwM2hNWkd6YUszOG9kZmhZaFB2
-Sm05bVhoYjZPRE9uVmR6ZDNkdi14WFhyM1UxXQ==
-
---=-eZCfUFLFyQPmc97LUps1ZCzywxBx9Pwy23WKzQ==
-Content-Type: text/html; charset=utf-8
-Content-Transfer-Encoding: base64
-
-PCFET0NUWVBFIGh0bWw+DQo8aHRtbD4NCjxoZWFkPjxtZXRhIGNoYXJzZXQ9InV0Zi04Ii8+
-DQoJPHRpdGxlPkhpLCBTbWFsbCBCYXRjaCBQcmVjaXNpb24gQ05DIFBhcnRzIFF1b3RhdGlv
-bjwvdGl0bGU+DQo8L2hlYWQ+DQo8Ym9keSBhcmlhLWxhYmVsPSJUbyBlbnJpY2ggc2NyZWVu
-IHJlYWRlciBpbnRlcmFjdGlvbnMsIHBsZWFzZSBhY3RpdmF0ZSBBY2Nlc3NpYmlsaXR5IGlu
-IEdyYW1tYXJseSBleHRlbnNpb24gc2V0dGluZ3MiIGRhdGEtZ3ItZXh0LWluc3RhbGxlZD0i
-IiBkYXRhLW5ldy1nci1jLXMtY2hlY2stbG9hZGVkPSIxNC4xMjU2LjAiIGRhdGEtbmV3LWdy
-LWMtcy1sb2FkZWQ9IjE0LjEyNTYuMCI+RGVhciBQdXJjaGFzZXI6DQo8cCBkYXRhLWVuZD0i
-Mzc2IiBkYXRhLXN0YXJ0PSIxNzgiPkknbSA8c3Ryb25nIGRhdGEtZW5kPSIyMjAiIGRhdGEt
-c3RhcnQ9IjE4MiI+UGV0ZXIgZnJvbSBDRFIgUHJlY2lzaW9uIE1hY2hpbmluZzwvc3Ryb25n
-PiwgYSBDTkMgcHJlY2lzaW9uIG1hY2hpbmluZyBmYWN0b3J5IGluIENoaW5hIHdpdGggMTYr
-IHllYXJzIG9mIGV4cGVyaWVuY2UsIGluY2x1ZGluZyAxMCsgeWVhcnMgd29ya2luZyBjbG9z
-ZWx5IHdpdGggRXVyb3BlYW4gYW5kIFUuUy4gY2xpZW50cy48L3A+DQoNCjxwIGRhdGEtZW5k
-PSI1MzMiIGRhdGEtc3RhcnQ9IjM3OCI+V2UgZm9jdXMgb24gc3VwcG9ydGluZyA8c3Ryb25n
-IGRhdGEtZW5kPSI0MjAiIGRhdGEtc3RhcnQ9IjM1NiI+bWVjaGFuaWNhbCBlbmdpbmVlcnMg
-YW5kIGNvbXBhbmllcyB0aGF0IG5lZWQgcHJlY2lzaW9uIHBhcnRzPC9zdHJvbmc+LCBlc3Bl
-Y2lhbGx5IGZvciA8c3Ryb25nIGRhdGEtZW5kPSI0NzEiIGRhdGEtc3RhcnQ9IjQzNyI+c21h
-bGwtYmF0Y2ggbWFjaGluaW5nIHByb2plY3RzPC9zdHJvbmc+LiBPdXIgZXhwZXJ0aXNlIGxp
-ZXMgaW4gPHN0cm9uZyBkYXRhLWVuZD0iNTUxIiBkYXRhLXN0YXJ0PSI0OTUiPmNvbXBsZXgg
-cGFydHMsIHByb3RvdHlwZXMsIGFuZCBsb3ctdm9sdW1lIHByb2R1Y3Rpb248L3N0cm9uZz4u
-PC9wPg0KDQo8cCBkYXRhLWVuZD0iNTU2IiBkYXRhLXN0YXJ0PSI1MzUiPjxzdHJvbmcgZGF0
-YS1lbmQ9IjU1NCIgZGF0YS1zdGFydD0iNTM1Ij5PdXIgYWR2YW50YWdlczo8L3N0cm9uZz48
-L3A+DQoNCjxvbCBkYXRhLWVuZD0iMTAwNSIgZGF0YS1zdGFydD0iNTU3Ij4NCgk8bGkgZGF0
-YS1lbmQ9IjU5OSIgZGF0YS1zdGFydD0iNTU3Ij4NCgk8cCBkYXRhLWVuZD0iNTk5IiBkYXRh
-LXN0YXJ0PSI1NjAiPjxzdHJvbmcgZGF0YS1lbmQ9IjU5NyIgZGF0YS1zdGFydD0iNTYwIj41
-LWF4aXMgJiBtdWx0aS1heGlzIENOQyBtYWNoaW5pbmc8L3N0cm9uZz48L3A+DQoJPC9saT4N
-Cgk8bGkgZGF0YS1lbmQ9IjY1MiIgZGF0YS1zdGFydD0iNjAwIj4NCgk8cCBkYXRhLWVuZD0i
-NjUyIiBkYXRhLXN0YXJ0PSI2MDMiPjxzdHJvbmcgZGF0YS1lbmQ9IjY1MCIgZGF0YS1zdGFy
-dD0iNjAzIj5SYXBpZCBxdW90YXRpb25zICYgY29zdC1lZmZlY3RpdmUgc29sdXRpb25zPC9z
-dHJvbmc+PC9wPg0KCTwvbGk+DQoJPGxpIGRhdGEtZW5kPSI3MTkiIGRhdGEtc3RhcnQ9IjY1
-MyI+DQoJPHAgZGF0YS1lbmQ9IjcxOSIgZGF0YS1zdGFydD0iNjU2Ij48c3Ryb25nIGRhdGEt
-ZW5kPSI3MTciIGRhdGEtc3RhcnQ9IjY1NiI+TWF0ZXJpYWxzICYgc3VyZmFjZSB0cmVhdG1l
-bnRzIHRvIGludGVybmF0aW9uYWwgc3RhbmRhcmRzPC9zdHJvbmc+PC9wPg0KCTwvbGk+DQoJ
-PGxpIGRhdGEtZW5kPSI3ODAiIGRhdGEtc3RhcnQ9IjcyMCI+DQoJPHAgZGF0YS1lbmQ9Ijc4
-MCIgZGF0YS1zdGFydD0iNzIzIj48c3Ryb25nIGRhdGEtZW5kPSI3NTEiIGRhdGEtc3RhcnQ9
-IjcyMyI+UmVsaWFibGUgcXVhbGl0eSBjb250cm9sPC9zdHJvbmc+IGZvciBFVSAmIFUuUy4g
-cmVxdWlyZW1lbnRzPC9wPg0KCTwvbGk+DQoJPGxpIGRhdGEtZW5kPSI4OTUiIGRhdGEtc3Rh
-cnQ9IjgzOCI+DQoJPHAgZGF0YS1lbmQ9Ijg5NSIgZGF0YS1zdGFydD0iODQxIj48c3Ryb25n
-IGRhdGEtZW5kPSI4NTgiIGRhdGEtc3RhcnQ9Ijg0MSI+RmFzdCBkZWxpdmVyeTwvc3Ryb25n
-PiBhbmQgYWRhcHRhYmxlIHByb2R1Y3Rpb24gc2NoZWR1bGVzPC9wPg0KCTwvbGk+DQoJPGxp
-IGRhdGEtZW5kPSI5NDgiIGRhdGEtc3RhcnQ9Ijg5NiI+DQoJPHAgZGF0YS1lbmQ9Ijk0OCIg
-ZGF0YS1zdGFydD0iODk5Ij48c3Ryb25nIGRhdGEtZW5kPSI5NDYiIGRhdGEtc3RhcnQ9Ijg5
-OSI+Q29tcGV0aXRpdmUgcHJpY2luZyB3aXRoIGNvbnNpc3RlbnQgcXVhbGl0eTwvc3Ryb25n
-PjwvcD4NCgk8L2xpPg0KPC9vbD4NCg0KPHAgZGF0YS1lbmQ9IjExNTUiIGRhdGEtc3RhcnQ9
-IjEwMDciPklmIHlvdSdkIGxpa2UsIEkgY2FuIDxzdHJvbmcgZGF0YS1lbmQ9IjEwNTEiIGRh
-dGEtc3RhcnQ9IjEwMjgiPnByZXBhcmUgYSBxdW90YXRpb248L3N0cm9uZz4gYmFzZWQgb24g
-eW91ciBkcmF3aW5ncywgb3Igc2hhcmUgbWFjaGluaW5nIGFkdmljZSBvbiA8c3Ryb25nIGRh
-dGEtZW5kPSIxMTUyIiBkYXRhLXN0YXJ0PSIxMTA1Ij50b2xlcmFuY2VzLCBtYXRlcmlhbHMs
-IG9yIGNvc3Qgb3B0aW1pemF0aW9uPC9zdHJvbmc+LjwvcD4NCg0KPHAgZGF0YS1lbmQ9IjEy
-NjgiIGRhdGEtc3RhcnQ9IjExNTciPllvdSdyZSB3ZWxjb21lIHRvIHZpc2l0IG91ciBmYWN0
-b3J5IGF0IGFueSB0aW1lLjxiciAvPg0KRm9yIG1vcmUgaW5mb3JtYXRpb24gYWJvdXQgb3Vy
-IGNhcGFiaWxpdGllcywgcGxlYXNlIHZpc2l0IG91ciB3ZWJzaXRlOiA8c3Ryb25nIGRhdGEt
-ZW5kPSIxMjYyIiBkYXRhLXN0YXJ0PSIxMjQyIj5jZHJwcmVjaXNpb24uY29tPC9zdHJvbmc+
-PC9wPg0KDQo8cCBkYXRhLWVuZD0iMTMwOSIgZGF0YS1zdGFydD0iMTI3MCI+PHN0cm9uZyBk
-YXRhLWVuZD0iMTMwNyIgZGF0YS1zdGFydD0iMTI3MCI+VGhhbmsgeW91IC8gR3JhemllIC8g
-RGFuayAvIE1lcmNpPC9zdHJvbmc+PC9wPg0KQmVzdCByZWdhcmRzLDxiciBkYXRhLWVuZD0i
-MTMyNyIgZGF0YS1zdGFydD0iMTMyNCIgLz4NCjxzdHJvbmcgZGF0YS1lbmQ9IjEzNDAiIGRh
-dGEtc3RhcnQ9IjEzMjciPlBldGVyIExlZTwvc3Ryb25nPjxiciAvPg0Kc2FsZXNAY2RycHJl
-Y2lzaW9uY25jLmNvbTxiciAvPg0KU2FsZXMgRGlyZWN0b3IgYXQgQ0RSIE1hY2hpbmluZzxi
-ciAvPg0KQ3VzdG9taXphdGlvbiB8IERldmVsb3BtZW50IHwgUmVsaWFiaWxpdHk8YnIgLz4N
-CjxiciAvPg0KPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZToxMnB4OyI+PGEgaHJlZj0iaHR0cDov
-L3RyYWNraW5nLmNkcmMuY25tZmdlZG0uY29tL3RyYWNraW5nL3Vuc3Vic2NyaWJlP2Q9dXpM
-dnNVZFZzM2lmVGoxTUluczczY3VyTW5qWmNyRmxRUm1EMG5UZW1wcHhDM0pUNHRndE9xTUxR
-SGxnVnR6dFYxWmFmd2xhTjcyUDdDY2pDby1FRlRWNzZqY2ZTTkMxWmptTFV2ZjVuVWdsWmZ5
-LU1ISEE5REh0cWk5WDBCeVJ4WEJ5Tm1SVDM2UnJ2dlJmT1hCM3Y3dDhVWTlsUGdEbzU0dFJs
-QlRSSWpPR244eW5xSWMzc2RPQVVCaUxTalNOVlJSSXB5U1E1RUZ5enpFUGFfekgzT0pPc2Fx
-Y2ozUFAxVDNtbDEwSUJsNWZWV0hESEZtX05mSVByZnpuRFRiMDc4TWxSdEFiQ3dxOTkyYTJF
-ZGF0UUQ0MSI+VW5zdWJzY3JpYmU8L2E+PC9zcGFuPjxncmFtbWFybHktZGVza3RvcC1pbnRl
-Z3JhdGlvbiBkYXRhLWdyYW1tYXJseS1zaGFkb3ctcm9vdD0idHJ1ZSI+PC9ncmFtbWFybHkt
-ZGVza3RvcC1pbnRlZ3JhdGlvbj48aW1nIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIHNyYz0iaHR0
-cDovL3oueGN3bXMuY29tL2luZGV4LnBocC9jYW1wYWlnbnMvcG8zMjJodDE4NzBiOS90cmFj
-ay1vcGVuaW5nL3FqNDQ5ZTJqY3NlMjEiIGFsdD0iIiAvPgo8aW1nIHNyYz0iaHR0cDovL3Ry
-YWNraW5nLmNkcmMuY25tZmdlZG0uY29tL3RyYWNraW5nL29wZW4/bXNnaWQ9NFBwV0ZKNHk1
-WDJ6bWVTcXRzQWJ3dzImYz0xOTc2ODI4Mzk4MDQzMTI0NjY4IiBzdHlsZT0id2lkdGg6MXB4
-O2hlaWdodDoxcHgiIGFsdD0iIiAvPjxhIHN0eWxlPSAiZGlzcGxheSA6IG5vbmU7IiBocmVm
-PSJodHRwOi8vdHJhY2tpbmcuY2RyYy5jbm1mZ2VkbS5jb20vdHJhY2tpbmcvYm90Y2xpY2s/
-bXNnaWQ9NFBwV0ZKNHk1WDJ6bWVTcXRzQWJ3dzImYz0xOTc2ODI4Mzk4MDQzMTI0NjY4Ij48
-L2E+PC9ib2R5Pg0KPC9odG1sPg==
-
---=-eZCfUFLFyQPmc97LUps1ZCzywxBx9Pwy23WKzQ==--
+------=_NextPart_000_0001_A341B776.3817C746
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
 
 
---===============6881565538883302175==
+
+------=_NextPart_000_0001_A341B776.3817C746
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">=0D=0A<H=
+TML><HEAD>=0D=0A<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1=
+001"></HEAD>=0D=0A<BODY>=0D=0A<P data-end=3D"222" data-start=3D"195">H=
+ello,<BR data-end=3D"204" data-start=3D"201">Peace be upon you. =
+My name is <STRONG data-end=3D"245" data-start=3D"235">Huzama</STRONG>=
+, from <STRONG data-end=3D"280" data-start=3D"252">Gaza, State =
+of Palestine</STRONG>. I=E2=80=99m reaching out with a profitable =
+and time-sensitive business proposal. My late husband and I =
+previously ran a successful business supplying raw materials =
+to a UK-based company, <STRONG data-end=3D"475" data-start=3D"462">Van=
+ittech</STRONG>. However, due to the ongoing conflict in Gaza, =
+our operations have come to a halt. Despite this, Vanittech =
+has placed a new order that I=E2=80=99m now unable to fulfill.</P>=0D=0A=
+<P data-end=3D"835" data-start=3D"639">I=E2=80=99m seeking a =
+trustworthy partner to represent both our interests by sourcing =
+and supplying the materials. I=E2=80=99ve identified a reliable =
+manufacturer in Turkey offering significantly lower prices =E2=80=94</=
+P>=0D=0A<UL data-end=3D"1108" data-start=3D"836">=0D=0A<LI data-end=3D=
+"887" data-start=3D"836">=0D=0A<P data-end=3D"887" data-start=3D"838">=
+<STRONG data-end=3D"866" data-start=3D"838">UK company buying =
+price:</STRONG> $29,000 per gallon</P></LI>=0D=0A<LI data-end=3D"938" =
+data-start=3D"888">=0D=0A<P data-end=3D"938" data-start=3D"890"><STRON=
+G data-end=3D"917" data-start=3D"890">Turkish supplier price:</STRONG>=
+ $20,600 per gallon, which means, we buy at $20,600 per gallon =
+and supply at $29,000, leaving us with $8,400 profit per gallon =
+then&nbsp;multiply that to 100-gallon.</P></LI>=0D=0A<LI data-end=3D"1=
+024" data-start=3D"939">=0D=0A<P data-end=3D"1024" data-start=3D"941">=
+The UK company needs <STRONG data-end=3D"977" data-start=3D"962">100 =
+gallons</STRONG> (approx. <STRONG data-end=3D"1003" data-start=3D"987"=
+>$2.9 million</STRONG> total order value)</P></LI>=0D=0A<LI =
+data-end=3D"1108" data-start=3D"1025">=0D=0A<P data-end=3D"1108" =
+data-start=3D"1027">Smaller quantities like 500ml are also profitable =
+(buy at $2,800, sell at $6,000)</P></LI></UL>=0D=0A<P data-end=3D"1285=
+" data-start=3D"1110">This is a <STRONG data-end=3D"1162" data-start=3D=
+"1120">cash-based, immediate payment business</STRONG> with =
+strong profit margins. Even if this isn't your field, it=E2=80=99s =
+a rare opportunity you can manage remotely and profitably. </P>=0D=0A<=
+P data-end=3D"1285" data-start=3D"1110">I=E2=80=99ll share more =
+detailed information once I receive your response.</P>=0D=0A<P =
+data-end=3D"1389" data-start=3D"1355">Best regards,<BR data-end=3D"137=
+1" data-start=3D"1368"><STRONG data-end=3D"1389" data-start=3D"1371">H=
+uzama Habayeb</STRONG></P></BODY></HTML>
+
+------=_NextPart_000_0001_A341B776.3817C746--
+
+
+
+--===============3073624423303839161==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6881565538883302175==
+--===============3073624423303839161==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -256,5 +200,6 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6881565538883302175==--
+--===============3073624423303839161==--
+
 
