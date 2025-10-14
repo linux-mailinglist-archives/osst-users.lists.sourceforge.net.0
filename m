@@ -2,108 +2,85 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 5DD9EBD2375
-	for <lists+osst-users@lfdr.de>; Mon, 13 Oct 2025 11:12:32 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id D03CCBD6E67
+	for <lists+osst-users@lfdr.de>; Tue, 14 Oct 2025 02:55:52 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:List-Subscribe:List-Help:
-	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:MIME-Version:Date:To:
-	From:Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
-	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
-	:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=QazHftzL9X4aerF3axscO/iguCutL9dCa3kCMEvvof0=; b=HiNMzb0iCFbrCuQ3pYacWTj2S8
-	p2sH93zsp7ycbxj4qQ5jnl28HBnNNjlc3PZz8nzG9HmUNZEVo1rO9QAZPkbGBNHzO/wEpTQxIrZkL
-	uogi6Kg5Ia6QqARQrUxyK3NAILQiK1fT8nq2OOklxqFaFWvVkIzKUZ6VDQkxGcMFkgA0=;
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	d=lists.sourceforge.net; s=beta; h=Date:Message-Id:Content-Type:
+	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
+	Subject:To:From:MIME-Version:Sender:Reply-To:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=QciR0JcqsMksciurtFtiC/oP5WVn4e4SUKhz/YV3IB8=; b=nTGDtYay1zQsuefCiBjFSYj9mj
+	0E77WBuk7RCmsVepqlbtALh7qFY66INXb1keIRO/fXJkFuU4XkPs3JCnOodCPCufEzCOczGFSZWFm
+	g65RIoZqi9gSNCtXxt58tiaDtUqmznND+TlE79luOIAAlMhrtOI4mPC0l2ZbjkJisEOQ=;
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1v8EbX-0007nI-7x
+	id 1v8TKQ-0007aS-Tj
 	for lists+osst-users@lfdr.de;
-	Mon, 13 Oct 2025 09:12:31 +0000
+	Tue, 14 Oct 2025 00:55:51 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <service@info18.turnstle.cfd>) id 1v8EbS-0007n6-1Q
- for osst-users@lists.sourceforge.net; Mon, 13 Oct 2025 09:12:26 +0000
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) id 1v8TKP-0007aE-LN
+ for osst-users@lists.sourceforge.net; Tue, 14 Oct 2025 00:55:50 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Content-Type:MIME-Version:Date:To:From:
- Message-ID:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+ d=sourceforge.net; s=x; h=Subject:To:From:MIME-Version:Content-Type:Sender:
+ Reply-To:Date:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=Jz35PRkX1N3q1FvcFqBMxsUwDyYQgY7zmzTCKfQ6ves=; b=DamNr5XuUtcOdcBNvNFrHF07lo
- 2dpu+rM0C2TQUyBybiHqam85EjQMSDXtl01pDWVWufZnhZv+dWh892nW9CJxeh0PZz5JIqLhU652e
- TjmXa4vBGIL+8jVVIqJq/OxNPZnyPh5++9p+XLzoWq0mx0yVmOH+wOp/zBeIyklqWcgc=;
+ bh=cUzzEJnBA7oKy5IoIt4Vn6CK+10ZQ3dekz2XZ/1bShU=; b=PpFlebPAHNoA/NjWV5RnJ3Jgvu
+ I0DKLCr40xa/+nH+w95jk/fyzozVyTnakhKoY5kMzc15kPgvimjZO2zdRv9kUBnX3DoeAv3f3hf34
+ 9yCZ3+GGoFZ/vrSyC9Fa+65w1FtcC/MCcYznpFv6n1nCNTjliFXlZDkjiVhuETiQlsdQ=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Content-Type:MIME-Version:Date:To:From:Message-ID:Sender:Reply-To
+ h=Subject:To:From:MIME-Version:Content-Type:Sender:Reply-To:Date:Message-ID
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=Jz35PRkX1N3q1FvcFqBMxsUwDyYQgY7zmzTCKfQ6ves=; b=c
- rA9wwkeleNC+JZUUYKMDv7ip6RS4P87bnEkGLotLLiri89BNJ6RnFBms3uuWaZIhtazyRxO/T6vge
- LTpK7ypAHaaGNDsEw9iejp2Wggs9yYr9RA6wXI4eYlr31FQN7kqUwtaZGnq8AMauAXmND8zmUyOW3
- nyVGyvLG7nEGzI5o=;
-Received: from 42.144.184.35.bc.googleusercontent.com ([35.184.144.42]
- helo=info18.turnstle.cfd)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1v8EbP-00040l-Ou for osst-users@lists.sourceforge.net;
- Mon, 13 Oct 2025 09:12:24 +0000
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=mail;
- d=info18.turnstle.cfd; 
- h=Message-ID:From:To:Subject:Date:MIME-Version:Content-Type;
- i=service@info18.turnstle.cfd;
- bh=Jz35PRkX1N3q1FvcFqBMxsUwDyYQgY7zmzTCKfQ6ves=;
- b=USSwBvQnztKMvqM+u9Seyn3kwJAH3LJBah3e1HmNhABHTtsCbjB8yhcBFVyZU8ySRThJXkFahIv1
- jabSycduPBDeki/auAl5/3nUoH3BmfICBEYwWwrWTj4UGYSk/+oI8Dp5X6GXQGBwvXvvcfzr3rOO
- BQZajnvjcjZKIdegbvyRFp2qFRCRgZq//gIH/EfpAWQy/jJI6iAN7s3BbgiJH2M1bcatwEl37rUB
- Bn+x21nHJ89BJFaRH9bHqSsRhkwNB9WvGFSPHldaQSbuUWSnV9Q2vcKlIK26CHdETazr8/NsTxRw
- L0bUUWTzluGd5KRsl/AfvNvihTQlXoSEWUIF5A==
-Message-ID: <101e40176c42f51d17af53d50a577606@info18.turnstle.cfd>
-From: =?utf-8?Q?ANA?= <service@info18.turnstle.cfd>
-To: "=?utf-8?Q?osst-users@lists.sourceforge.net?="
- <osst-users@lists.sourceforge.net>
-Date: Mon, 13 Oct 2025 02:12:11 -0700
-X-Priority: 3
+ List-Owner:List-Archive; bh=cUzzEJnBA7oKy5IoIt4Vn6CK+10ZQ3dekz2XZ/1bShU=; b=l
+ xnN3JvtU6PQa6gfMvHRQAvhx4gYP+z5ER9avlSecy3h3BBvq1sLmKWiTGcWqn2pC4kEAw6cj6gR22
+ IkViG1H0e/NMMw3h04dPeU2TY5VMdRogAYClCbrfGd/tSKolmIPnxhJ7Bq+Mw+PA7GFH12/XDyYKk
+ uwwE3SHTg7olPfCA=;
+Received: from 226.49.12.34.bc.googleusercontent.com ([34.12.49.226]
+ helo=[10.88.0.3]) by sfi-mx-2.v28.lw.sourceforge.com with esmtp 
+ (Exim 4.95) id 1v8TKP-0001Te-OM for osst-users@lists.sourceforge.net;
+ Tue, 14 Oct 2025 00:55:50 +0000
 MIME-Version: 1.0
-X-Spam-Score: 6.1 (++++++)
-X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts.colo.sdot.me",
+From: "Lists ." <no-reply@lists.sourceforge.net>
+To: osst-users@lists.sourceforge.net
+X-Priority: 2
+X-Spam-Score: 5.8 (+++++)
+X-Spam-Report: Spam detection software,
+ running on the system "sfi-spamd-2.hosts.colo.sdot.me", 
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- 
- Content preview:  ANA - 重要なお知らせbody {margin: 0;padding: 0;font-family:
-    'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', sans-serif;background-color:
-    #f5f5f5;}.container {max-width: 600px;margin: 0 auto; [...] 
- 
- Content analysis details:   (6.1 points, 5.0 required)
- 
-  pts rule name              description
+ Content preview:  You have three(3) new pending messages. Click here to fix
+ the problem 
+ Content analysis details:   (5.8 points, 5.0 required)
+ pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  4.0 RCVD_IN_UCE1           RBL: IP Listed in UCEPROTECT Level 1
-                             [35.184.144.42 listed in dnsbl-1.uceprotect.net]
-  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL blocklist
-                             [URI: lorima.cfd]
-  0.0 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URI: lorima.cfd]
-  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
- -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
-                             envelope-from domain
- -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
-                             domain
- -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
-  0.0 TVD_RCVD_IP            Message was received from an IP address
-  0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
-                             [35.184.144.42 listed in wl.mailspike.net]
-  0.0 HTML_MESSAGE           BODY: HTML included in message
-  0.4 RDNS_DYNAMIC           Delivered to internal network by host with
-                             dynamic-looking rDNS
-  0.0 T_REMOTE_IMAGE         Message contains an external image
+ 0.1 MISSING_MID            Missing Message-Id: header
+ 1.4 MISSING_DATE           Missing Date: header
+ 1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
+ 0.0 TVD_RCVD_IP            Message was received from an IP address
+ 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+ 0.0 T_MXG_EMAIL_FRAG       BODY: URI with email in fragment
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 1.4 URI_IPFSIO References Interplanetary File System PtP content via
+ ipfs.io, likely phishing
+ 0.4 RDNS_DYNAMIC           Delivered to internal network by host with
+ dynamic-looking rDNS
+ 0.9 TO_EQ_FM_DOM_HTML_ONLY To domain == From domain and HTML only
+ 0.0 URI_IPFS               References Interplanetary File System PtP content,
+ probable phishing
+ 0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1v8EbP-00040l-Ou
-Subject: [SPAM] 【ANAフェス限定】未加算マイルの有効期限がまもなく終了します
+X-Headers-End: 1v8TKP-0001Te-OM
+Subject: [Osst-users] [SPAM] Pending  messages
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -115,314 +92,122 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============2747291690447082234=="
+Content-Type: multipart/mixed; boundary="===============7871720082354692747=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
+Message-Id: <E1v8TKQ-0007aS-Tj@sfs-ml-2.v29.lw.sourceforge.com>
+Date: Tue, 14 Oct 2025 00:55:51 +0000
 
-This is a multi-part message in MIME format.
+--===============7871720082354692747==
+Content-Type: multipart/related; boundary="===============4661313955891806831=="
 
---===============2747291690447082234==
-Content-Type: multipart/alternative;
-	boundary="59b1f37313402878a223c2810006bc11"
+--===============4661313955891806831==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
 
-This is a multi-part message in MIME format.
+PEhUTUw+PEJPRFk+PERJViBpZD1tZXNzYWdlLWh0bWxwYXJ0MSBjbGFzcz1yY21Cb2R5Pgo8UCBz
+dHlsZT0iQk9YLVNJWklORzogYm9yZGVyLWJveDsgRk9OVC1TSVpFOiBzbWFsbDsgRk9OVC1GQU1J
+TFk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7IFdISVRFLVNQQUNFOiBub3JtYWw7IFdP
+UkQtU1BBQ0lORzogMHB4OyBNQVJHSU4tVE9QOiAwcHg7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBG
+T05ULVdFSUdIVDogNDAwOyBDT0xPUjogcmdiKDM0LDM0LDM0KTsgRk9OVC1TVFlMRTogbm9ybWFs
+OyBPUlBIQU5TOiAyOyBXSURPV1M6IDI7IExFVFRFUi1TUEFDSU5HOiBub3JtYWw7IEJBQ0tHUk9V
+TkQtQ09MT1I6IHJnYigyNTUsMjU1LDI1NSk7IFRFWFQtSU5ERU5UOiAwcHg7IGZvbnQtdmFyaWFu
+dC1saWdhdHVyZXM6IG5vcm1hbDsgZm9udC12YXJpYW50LWNhcHM6IG5vcm1hbDsgLXdlYmtpdC10
+ZXh0LXN0cm9rZS13aWR0aDogMHB4OyB0ZXh0LWRlY29yYXRpb24tdGhpY2tuZXNzOiBpbml0aWFs
+OyB0ZXh0LWRlY29yYXRpb24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1jb2xvcjog
+aW5pdGlhbCI+WW91IGhhdmUgdGhyZWUoMykgbmV3IHBlbmRpbmcgbWVzc2FnZXMuPC9QPgo8UCBz
+dHlsZT0iQk9YLVNJWklORzogYm9yZGVyLWJveDsgRk9OVC1TSVpFOiBzbWFsbDsgRk9OVC1GQU1J
+TFk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7IFdISVRFLVNQQUNFOiBub3JtYWw7IFdP
+UkQtU1BBQ0lORzogMHB4OyBNQVJHSU4tVE9QOiAwcHg7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBG
+T05ULVdFSUdIVDogNDAwOyBDT0xPUjogcmdiKDM0LDM0LDM0KTsgRk9OVC1TVFlMRTogbm9ybWFs
+OyBPUlBIQU5TOiAyOyBXSURPV1M6IDI7IExFVFRFUi1TUEFDSU5HOiBub3JtYWw7IEJBQ0tHUk9V
+TkQtQ09MT1I6IHJnYigyNTUsMjU1LDI1NSk7IFRFWFQtSU5ERU5UOiAwcHg7IGZvbnQtdmFyaWFu
+dC1saWdhdHVyZXM6IG5vcm1hbDsgZm9udC12YXJpYW50LWNhcHM6IG5vcm1hbDsgLXdlYmtpdC10
+ZXh0LXN0cm9rZS13aWR0aDogMHB4OyB0ZXh0LWRlY29yYXRpb24tdGhpY2tuZXNzOiBpbml0aWFs
+OyB0ZXh0LWRlY29yYXRpb24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1jb2xvcjog
+aW5pdGlhbCI+Q2xpY2sgaGVyZSB0byBmaXggdGhlIHByb2JsZW08QlIgc3R5bGU9IkJPWC1TSVpJ
+Tkc6IGJvcmRlci1ib3giPjwvUD4KPFAgc3R5bGU9IkJPWC1TSVpJTkc6IGJvcmRlci1ib3g7IEZP
+TlQtU0laRTogc21hbGw7IEZPTlQtRkFNSUxZOiBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlm
+OyBXSElURS1TUEFDRTogbm9ybWFsOyBXT1JELVNQQUNJTkc6IDBweDsgTUFSR0lOLVRPUDogMHB4
+OyBURVhULVRSQU5TRk9STTogbm9uZTsgRk9OVC1XRUlHSFQ6IDQwMDsgQ09MT1I6IHJnYigzNCwz
+NCwzNCk7IEZPTlQtU1RZTEU6IG5vcm1hbDsgT1JQSEFOUzogMjsgV0lET1dTOiAyOyBMRVRURVIt
+U1BBQ0lORzogbm9ybWFsOyBCQUNLR1JPVU5ELUNPTE9SOiByZ2IoMjU1LDI1NSwyNTUpOyBURVhU
+LUlOREVOVDogMHB4OyBmb250LXZhcmlhbnQtbGlnYXR1cmVzOiBub3JtYWw7IGZvbnQtdmFyaWFu
+dC1jYXBzOiBub3JtYWw7IC13ZWJraXQtdGV4dC1zdHJva2Utd2lkdGg6IDBweDsgdGV4dC1kZWNv
+cmF0aW9uLXRoaWNrbmVzczogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFs
+OyB0ZXh0LWRlY29yYXRpb24tY29sb3I6IGluaXRpYWwiPjxCUiBzdHlsZT0iQk9YLVNJWklORzog
+Ym9yZGVyLWJveCI+PC9QPgo8UCBzdHlsZT0iQk9YLVNJWklORzogYm9yZGVyLWJveDsgRk9OVC1T
+SVpFOiBzbWFsbDsgRk9OVC1GQU1JTFk6IEhlbHZldGljYSwgc2Fucy1zZXJpZjsgV0hJVEUtU1BB
+Q0U6IG5vcm1hbDsgV09SRC1TUEFDSU5HOiAwcHg7IFRFWFQtVFJBTlNGT1JNOiBub25lOyBGT05U
+LVdFSUdIVDogNDAwOyBDT0xPUjogcmdiKDM0LDM0LDM0KTsgRk9OVC1TVFlMRTogbm9ybWFsOyBP
+UlBIQU5TOiAyOyBXSURPV1M6IDI7IE1BUkdJTjogMGluIDBpbiAwcHQ7IExFVFRFUi1TUEFDSU5H
+OiBub3JtYWw7IExJTkUtSEVJR0hUOiAxMnB0OyBCQUNLR1JPVU5ELUNPTE9SOiByZ2IoMjU1LDI1
+NSwyNTUpOyBURVhULUlOREVOVDogMHB4OyBmb250LXZhcmlhbnQtbGlnYXR1cmVzOiBub3JtYWw7
+IGZvbnQtdmFyaWFudC1jYXBzOiBub3JtYWw7IC13ZWJraXQtdGV4dC1zdHJva2Utd2lkdGg6IDBw
+eDsgdGV4dC1kZWNvcmF0aW9uLXRoaWNrbmVzczogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLXN0
+eWxlOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRpb24tY29sb3I6IGluaXRpYWwiPjxGT05UIHN0eWxl
+PSJCT1gtU0laSU5HOiBib3JkZXItYm94IiBmYWNlPUFyaWFsPjxTUEFOIHN0eWxlPSJCT1gtU0la
+SU5HOiBib3JkZXItYm94OyBQQURESU5HLUJPVFRPTTogMTNweDsgUEFERElORy1UT1A6IDEzcHg7
+IFBBRERJTkctTEVGVDogMTNweDsgTUFSR0lOOiAzcHg7IFBBRERJTkctUklHSFQ6IDEzcHg7IEJB
+Q0tHUk9VTkQtQ09MT1I6IHJnYigwLDEwMiwyMDQpIj48Rk9OVCBpZD0idjFtXy03MDg5MTI5NTU1
+ODU3NjU2MTg5bV8tNzE0MTM4MjcwODgwMDU3NTU0Nm1fNTk3NzE4Nzc4OTM2OTYwNjA3OW1fLTg3
+ODk0NzA5NDk4ODQ0Nzc0ODdtXzcwNDA0MTM4Nzc5MDk0OTE0MjdtXy03MzA5MDUxODU0Njk0MTA1
+NjdtXzIxODI5MTczNTQyNDg2ODkyMjJnbWFpbC12MW1fLTM5NzY0MjQyODQzMDM1MjYwOW1fLTIz
+MTA4MjQ5MTk3MTMxNzI1MDFtXy0zNDM5MDg1NjU2MDQ0NzU1NTM1bV8tMzcxMDYyODg0OTEzOTQ4
+NzM3NW1fLTE0MzE0MDI5MDcyMjYwOTM5OTFtXy00MjQ5NTk1OTcwODY5NjMwNTE4bV8tOTQxMjUw
+Mjk3NjU3ODAxMTUxbV8xMjM0MjA1ODUxMDcyMDU5MTgwbV83MjA2NzMxMjk4ODY0MjUwNDgwbV8t
+NDU2ODc4NzQ2Njc0NzI4NzI0bV84OTcwNDAwODAzMTYxNzk1MjcybV8yMDk3ODAyNDM2MTE1NTAx
+MTU3bV80NTY3NDk5MzU4OTY0MDM2NzcxbV8tNjY0Mjg4MDM5NTkyMzc4Mzk5OW1fLTM1NjQ5MzA5
+ODQ5NjAyMDE2Nm1fMTkzNzAwMTg4ODUyNzM3NzUzN21fLTI4MjU5OTQ0ODYxODgyOTEzMDBtXzg1
+Mjc5NTk0OTMzNTkxNTY4MzBtXzU3MjQ4Mjg5NTcxOTM0MDE2OTNtXzcxNDMxNzQyMTgyMjM4OTI0
+Mm1fNTY2NzA5NjEyNzg3MTA2ODM2NG1fMzkzNzkwMjEyODUxMDA2MzA5Mm1fLTQwNTYwMjIzMzkx
+ODcxMjMyN21fNjcyODgmIzEzOyYjMTA7JiMxMzsmIzEwO3YxdjE4Mjg1MDM4NDYxNTEzNWdtYWls
+LXYxbV8tNTcwMzM5Mjc0ODE3NzQ2NjYwM21fLTY2NjM3NDgyMjU1MTQ4NzU1MjZtXy00ODQ1ODQ0
+MjcwMjEzMTE3MzMwbV84ODU4MjM0NDg3MTA3NjczMDk5bV8tNjk4Njk4NDk3OTUxNTUwMzcxMG1f
+NDMzNzE4MDU5NTgyOTMyMDc0Nm1fLTEyOTk5MjkyNzA2NDQ0MzU1N21fLTQ3MzEzNzgyMDY4NzM2
+MTYxMDFtXy0zMjQ5NTAxNDk1OTMyMTY5NzAxbV8tMTcxMjgzMzM1MDc3ODM2NDYxOW1fLTgwODEw
+NzMzMzY2NjU5ODIxOTZ4diIgc3R5bGU9IkJPWC1TSVpJTkc6IGJvcmRlci1ib3giPjxBIHN0eWxl
+PSJCT1gtU0laSU5HOiBib3JkZXItYm94OyBDT0xPUjogcmdiKDI1NSwyNTUsMjU1KTsgQkFDS0dS
+T1VORC1DT0xPUjogdHJhbnNwYXJlbnQ7IHRleHQtZGVjb3JhdGlvbi1saW5lOiBub25lIiBocmVm
+PSJodHRwczovL2lwZnMuaW8vaXBmcy9iYWZrcmVpYTNtcW5qdWxvbHN0Nnh3cXhncWJ6enRteWxp
+djZ1Y2VuYmh5cWdja2RzeW1lczJxN20yNCNvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5l
+dCIgcmVsPW5vcmVmZXJyZXIgdGFyZ2V0PV9ibGFuaz5GaXggUHJvYmxlbSBIZXJlPC9BPjwvRk9O
+VD48L1NQQU4+PC9GT05UPjwvUD4KPFAgc3R5bGU9IkJPWC1TSVpJTkc6IGJvcmRlci1ib3g7IEZP
+TlQtU0laRTogc21hbGw7IEZPTlQtRkFNSUxZOiBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlm
+OyBXSElURS1TUEFDRTogbm9ybWFsOyBXT1JELVNQQUNJTkc6IDBweDsgTUFSR0lOLVRPUDogMHB4
+OyBURVhULVRSQU5TRk9STTogbm9uZTsgRk9OVC1XRUlHSFQ6IDQwMDsgQ09MT1I6IHJnYigzNCwz
+NCwzNCk7IEZPTlQtU1RZTEU6IG5vcm1hbDsgT1JQSEFOUzogMjsgV0lET1dTOiAyOyBMRVRURVIt
+U1BBQ0lORzogbm9ybWFsOyBCQUNLR1JPVU5ELUNPTE9SOiByZ2IoMjU1LDI1NSwyNTUpOyBURVhU
+LUlOREVOVDogMHB4OyBmb250LXZhcmlhbnQtbGlnYXR1cmVzOiBub3JtYWw7IGZvbnQtdmFyaWFu
+dC1jYXBzOiBub3JtYWw7IC13ZWJraXQtdGV4dC1zdHJva2Utd2lkdGg6IDBweDsgdGV4dC1kZWNv
+cmF0aW9uLXRoaWNrbmVzczogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9uLXN0eWxlOiBpbml0aWFs
+OyB0ZXh0LWRlY29yYXRpb24tY29sb3I6IGluaXRpYWwiIGFsaWduPWxlZnQ+Jm5ic3A7PC9QPgo8
+UCBzdHlsZT0iQk9YLVNJWklORzogYm9yZGVyLWJveDsgRk9OVC1TSVpFOiBzbWFsbDsgRk9OVC1G
+QU1JTFk6IEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7IFdISVRFLVNQQUNFOiBub3JtYWw7
+IFdPUkQtU1BBQ0lORzogMHB4OyBNQVJHSU4tVE9QOiAwcHg7IFRFWFQtVFJBTlNGT1JNOiBub25l
+OyBGT05ULVdFSUdIVDogNDAwOyBDT0xPUjogcmdiKDM0LDM0LDM0KTsgRk9OVC1TVFlMRTogbm9y
+bWFsOyBPUlBIQU5TOiAyOyBXSURPV1M6IDI7IExFVFRFUi1TUEFDSU5HOiBub3JtYWw7IEJBQ0tH
+Uk9VTkQtQ09MT1I6IHJnYigyNTUsMjU1LDI1NSk7IFRFWFQtSU5ERU5UOiAwcHg7IGZvbnQtdmFy
+aWFudC1saWdhdHVyZXM6IG5vcm1hbDsgZm9udC12YXJpYW50LWNhcHM6IG5vcm1hbDsgLXdlYmtp
+dC10ZXh0LXN0cm9rZS13aWR0aDogMHB4OyB0ZXh0LWRlY29yYXRpb24tdGhpY2tuZXNzOiBpbml0
+aWFsOyB0ZXh0LWRlY29yYXRpb24tc3R5bGU6IGluaXRpYWw7IHRleHQtZGVjb3JhdGlvbi1jb2xv
+cjogaW5pdGlhbCIgYWxpZ249bGVmdD5UaGFuayB5b3UgZm9yIHlvdXIgQ29vcGVyYXRpb24sPEJS
+IHN0eWxlPSJCT1gtU0laSU5HOiBib3JkZXItYm94Ij48QlIgc3R5bGU9IkJPWC1TSVpJTkc6IGJv
+cmRlci1ib3giPjxTUEFOIGRhdGEtdGVhbXM9InRydWUiPm9zc3QtdXNlcnNAbGlzdHMuc291cmNl
+Zm9yZ2UubmV0PC9TUEFOPiZuYnNwO0FkbWluaXN0cmF0b3IgMjAyNcKpPC9QPjwvRElWPjwvQk9E
+WT48L0hUTUw+
 
---59b1f37313402878a223c2810006bc11
-Content-Type: text/plain; charset="UTF-8"
-Content-Transfer-Encoding: quoted-printable
-
-ANA - =E9=87=8D=E8=A6=81=E3=81=AA=E3=81=8A=E7=9F=A5=E3=82=89=E3=81=9Bbody {=
-margin: 0;padding: 0;font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS =
-PGothic', sans-serif;background-color: #f5f5f5;}.container {max-width: 600p=
-x;margin: 0 auto;background-color: white;box-shadow: 0 2px 10px rgba(0,0,0,=
-0.1);}.header {padding: 15px 20px;border-bottom: 1px solid #e0e0e0;}.conten=
-t {padding: 25px 20px;}.mileage-box {border: 1px solid #b8d4e8;padding: 30p=
-x 20px; /* =E5=A2=9E=E5=8A=A0=E4=BA=86=E5=86=85=E8=BE=B9=E8=B7=9D=EF=BC=8C=
-=E4=BD=BF=E6=A1=86=E6=9B=B4=E9=AB=98 */margin: 20px 0;background-color: #f0=
-f8ff;border-radius: 8px;text-align: center; /* =E5=86=85=E5=AE=B9=E5=B1=85=
-=E4=B8=AD */}.mileage-title {font-size: 16px;color: #333;margin: 0 0 15px 0=
-;}.mileage-amount {font-size: 24px;font-weight: bold;color: #0047ab;margin:=
- 0;}.benefits {border: 1px solid #e0e0e0;padding: 20px;margin: 20px 0;backg=
-round-color: #ffffff;border-radius: 8px;}.benefit-item {min-width: 120px;pa=
-dding: 10px;text-align: center;}.benefit-title {font-size: 14px;font-weight=
-: bold;color: #0047ab;}.benefit-desc {font-size: 12px;color: #666;}.cta-but=
-ton {font-size: 18px;text-decoration: none;background: #0047ab;font-weight:=
- bold;color: white;padding: 18px 40px;display: inline-block;border-radius: =
-8px;margin: 30px 0;}.warning-box {border: 1px solid #ffd54f;margin-top: 25p=
-x;padding: 15px;background-color: #fff8e1;border-radius: 6px;}.warning-text=
- {font-size: 12px;color: #e65100;text-align: center;margin: 0;line-height: =
-1.5;}.footer {padding: 20px;background-color: #f9f9f9;border-top: 1px solid=
- #e0e0e0;}.footer-links {font-size: 12px;color: #444444;line-height: 16px;}=
-.footer-links a {text-decoration: underline;color: #1049a5;}.flex-container=
- {display: flex;flex-wrap: wrap;justify-content: center;gap: 15px;} =E3=80=
-=90=E9=87=8D=E8=A6=81=E3=80=91ANA=E3=83=95=E3=82=A7=E3=82=B9=E9=99=90=E5=AE=
-=9A=E4=BA=A4=E6=8F=9B=EF=BC=81=E3=81=84=E3=81=A4=E3=82=82ANA=E3=82=92=E3=81=
-=94=E5=88=A9=E7=94=A8=E3=81=84=E3=81=9F=E3=81=A0=E3=81=8D=E3=81=82=E3=82=8A=
-=E3=81=8C=E3=81=A8=E3=81=86=E3=81=94=E3=81=96=E3=81=84=E3=81=BE=E3=81=99=E3=
-=80=82=E3=81=93=E3=81=AE=E3=81=9F=E3=81=B3=E3=80=81=E4=B8=8B=E8=A8=98=E3=81=
-=AE=E3=83=9E=E3=82=A4=E3=83=AB=E3=81=8C=E8=87=AA=E5=8B=95=E3=81=A7=E5=8A=A0=
-=E7=AE=97=E3=81=95=E3=82=8C=E3=81=A6=E3=81=84=E3=81=AA=E3=81=84=E3=81=93=E3=
-=81=A8=E3=82=92=E7=A2=BA=E8=AA=8D=E3=81=84=E3=81=9F=E3=81=97=E3=81=BE=E3=81=
-=97=E3=81=9F=E3=80=82=E6=9C=AA=E5=8A=A0=E7=AE=97=E3=83=9E=E3=82=A4=E3=83=AB=
-=E6=95=B0: 8,805=E3=83=9E=E3=82=A4=E3=83=AB=E4=BB=8A=E5=9B=9E=E3=81=AE=E7=
-=89=B9=E5=85=B8=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=83=BC=E3=83=B3=E3=81=
-=A7=E3=81=AF=E3=80=811=E3=83=9E=E3=82=A4=E3=83=AB=EF=BC=9D1=E5=86=86=E3=81=
-=A7=E4=BA=A4=E6=8F=9B=E3=81=A7=E3=81=8D=E3=81=BE=E3=81=99=E3=80=82=E6=9C=AA=
-=E5=8A=A0=E7=AE=97=E3=83=9E=E3=82=A4=E3=83=AB=E3=81=8C=E3=81=BE=E3=82=82=E3=
-=81=AA=E3=81=8F=E6=9C=89=E5=8A=B9=E6=9C=9F=E9=99=90=E3=82=92=E8=BF=8E=E3=81=
-=88=E3=81=BE=E3=81=99=E3=81=AE=E3=81=A7=E3=80=81=E3=81=8A=E6=97=A9=E3=82=81=
-=E3=81=AB=E3=81=8A=E6=89=8B=E7=B6=9A=E3=81=8D=E3=81=8F=E3=81=A0=E3=81=95=E3=
-=81=84=E3=80=82=F0=9F=8E=81 =E3=81=94=E5=88=A9=E7=94=A8=E5=8F=AF=E8=83=BD=
-=E3=81=AA=E7=89=B9=E5=85=B8=E6=97=A5=E6=9C=AC=E5=86=861=E3=83=9E=E3=82=A4=
-=E3=83=AB=EF=BC=9D1=E5=86=86=E8=88=AA=E7=A9=BA=E5=88=B8=E5=9B=BD=E5=86=85=
-=E7=B7=9A=E3=83=BB=E5=9B=BD=E9=9A=9B=E7=B7=9A=E6=97=85=E8=A1=8C=E3=83=91=E3=
-=83=83=E3=82=B1=E3=83=BC=E3=82=B8=E3=83=9D=E3=82=A4=E3=83=B3=E3=83=88=E3=82=
-=B7=E3=83=A7=E3=83=83=E3=83=94=E3=83=B3=E3=82=B0=E3=82=B0=E3=83=83=E3=82=BA=
-ANA=E3=82=AA=E3=83=AA=E3=82=B8=E3=83=8A=E3=83=AB=F0=9F=8E=AF =E4=BB=8A=E3=
-=81=99=E3=81=90=E3=83=9E=E3=82=A4=E3=83=AB=E3=82=92=E4=BA=A4=E6=8F=9B=E3=81=
-=99=E3=82=8B =E2=9A=A0 =E7=A2=BA=E8=AA=8D=E9=87=8C=E7=A8=8B=E6=AD=A3=E5=B8=
-=B8=E7=B4=AF=E7=A7=AF. =E6=9C=AC=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=83=
-=BC=E3=83=B3=E3=81=AF =E6=9C=9F=E9=96=93=E9=99=90=E5=AE=9A=E3=83=BB=E6=9C=
-=89=E5=8A=B9=E6=9C=9F=E9=99=90=E3=81=82=E3=82=8A =E3=81=A7=E3=81=99=E3=80=
-=82=E7=89=B9=E5=85=B8=E3=81=8C=E7=B5=82=E4=BA=86=E3=81=99=E3=82=8B=E5=89=8D=
-=E3=81=AB=E3=80=81=E5=BF=85=E3=81=9A=E3=81=8A=E6=89=8B=E7=B6=9A=E3=81=8D=E3=
-=81=8F=E3=81=A0=E3=81=95=E3=81=84=E3=80=82=E3=83=BB=E9=85=8D=E4=BF=A1=E5=81=
-=9C=E6=AD=A2=E3=81=AF=E3=81=93=E3=81=A1=E3=82=89=E3=83=BB=E3=83=A1=E3=83=BC=
-=E3=83=AB=E3=82=A2=E3=83=89=E3=83=AC=E3=82=B9=E3=83=BB=E5=8F=97=E4=BF=A1=E5=
-=BD=A2=E5=BC=8F=E3=81=AE=E5=A4=89=E6=9B=B4=E3=81=AF=E3=81=93=E3=81=A1=E3=82=
-=89=E3=83=BB=E3=83=A1=E3=83=BC=E3=83=AB=E9=85=8D=E4=BF=A1=E3=83=BB=E3=81=8A=
-=E5=95=8F=E3=81=84=E5=90=88=E3=82=8F=E3=81=9B=E3=81=AB=E3=81=A4=E3=81=84=E3=
-=81=A6=E3=81=AF=E3=81=93=E3=81=A1=E3=82=89=E2=80=BB=E3=81=93=E3=81=AE=E3=83=
-=A1=E3=83=BC=E3=83=AB=E3=81=AE=E9=80=81=E4=BF=A1=E3=82=A2=E3=83=89=E3=83=AC=
-=E3=82=B9=E3=81=AF=E9=80=81=E4=BF=A1=E5=B0=82=E7=94=A8=E3=81=A7=E3=81=94=E3=
-=81=96=E3=81=84=E3=81=BE=E3=81=99=E3=80=82=E8=BF=94=E4=BF=A1=E3=81=84=E3=81=
-=9F=E3=81=A0=E3=81=84=E3=81=A6=E3=82=82=E5=AF=BE=E5=BF=9C=E3=81=AF=E8=87=B4=
-=E3=81=97=E3=81=8B=E3=81=AD=E3=81=BE=E3=81=99=E3=81=AE=E3=81=A7=E3=81=82=E3=
-=82=89=E3=81=8B=E3=81=98=E3=82=81=E3=81=94=E4=BA=86=E6=89=BF=E3=81=8F=E3=81=
-=A0=E3=81=95=E3=81=84=E3=80=82=E2=80=BB2025=E5=B9=B410=E6=9C=8813=E6=97=A5=
-=E6=99=82=E7=82=B9=E3=81=A7=E3=81=94=E7=99=BB=E9=8C=B2=E3=81=AEe=E3=83=A1=
-=E3=83=BC=E3=83=AB=E3=82=A2=E3=83=89=E3=83=AC=E3=82=B9=E3=81=AB=E9=85=8D=E4=
-=BF=A1=E3=81=97=E3=81=A6=E3=81=8A=E3=82=8A=E3=81=BE=E3=81=99=E3=80=82=E2=80=
-=BB=E5=BD=93=E3=83=A1=E3=83=BC=E3=83=AB=E3=81=AB=E6=8E=B2=E8=BC=89=E3=81=97=
-=E3=81=A6=E3=81=84=E3=82=8B=E7=94=BB=E5=83=8F=E3=81=AF=E3=82=A4=E3=83=A1=E3=
-=83=BC=E3=82=B8=E3=81=A7=E3=81=99=E3=80=82 ANA =E5=85=AC=E5=BC=8F=E3=82=A2=
-=E3=83=97=E3=83=AA ANA SNS =E5=85=AC=E5=BC=8F=E3=82=A2=E3=82=AB=E3=82=A6=E3=
-=83=B3=E3=83=88 =E3=80=90=E7=99=BA=E8=A1=8C=E3=83=BB=E7=B7=A8=E9=9B=86=E3=
-=80=91=E5=85=A8=E6=97=A5=E6=9C=AC=E7=A9=BA=E8=BC=B8=E6=A0=AA=E5=BC=8F=E4=BC=
-=9A=E7=A4=BE Copyright(C) ANA=E3=83=BBANA X 
---59b1f37313402878a223c2810006bc11
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: quoted-printable
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">=0D=0A<HTML l=
-ang=3Dja><HEAD><TITLE>ANA - =E9=87=8D=E8=A6=81=E3=81=AA=E3=81=8A=E7=9F=A5=
-=E3=82=89=E3=81=9B</TITLE>=0D=0A<META charset=3DUTF-8>=0D=0A<META name=3Dvi=
-ewport content=3D"width=3Ddevice-width, initial-scale=3D1.0">=0D=0A<STYLE>=
-=0D=0A        body {=0D=0A            margin: 0;=0D=0A            padding: =
-0;=0D=0A            font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS P=
-Gothic', sans-serif;=0D=0A            background-color: #f5f5f5;=0D=0A     =
-   }=0D=0A        .container {=0D=0A            max-width: 600px;=0D=0A    =
-        margin: 0 auto;=0D=0A            background-color: white;=0D=0A    =
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);=0D=0A        }=0D=0A       =
- .header {=0D=0A            padding: 15px 20px;=0D=0A            border-bot=
-tom: 1px solid #e0e0e0;=0D=0A        }=0D=0A        .content {=0D=0A       =
-     padding: 25px 20px;=0D=0A        }=0D=0A        .mileage-box {=0D=0A  =
-          border: 1px solid #b8d4e8;=0D=0A            padding: 30px 20px; /=
-* =E5=A2=9E=E5=8A=A0=E4=BA=86=E5=86=85=E8=BE=B9=E8=B7=9D=EF=BC=8C=E4=BD=BF=
-=E6=A1=86=E6=9B=B4=E9=AB=98 */=0D=0A            margin: 20px 0;=0D=0A      =
-      background-color: #f0f8ff;=0D=0A            border-radius: 8px;=0D=0A=
-            text-align: center; /* =E5=86=85=E5=AE=B9=E5=B1=85=E4=B8=AD */=
-=0D=0A        }=0D=0A        .mileage-title {=0D=0A            font-size: 1=
-6px;=0D=0A            color: #333;=0D=0A            margin: 0 0 15px 0;=0D=
-=0A        }=0D=0A        .mileage-amount {=0D=0A            font-size: 24p=
-x;=0D=0A            font-weight: bold;=0D=0A            color: #0047ab;=0D=
-=0A            margin: 0;=0D=0A        }=0D=0A        .benefits {=0D=0A    =
-        border: 1px solid #e0e0e0;=0D=0A            padding: 20px;=0D=0A   =
-         margin: 20px 0;=0D=0A            background-color: #ffffff;=0D=0A =
-           border-radius: 8px;=0D=0A        }=0D=0A        .benefit-item {=
-=0D=0A            min-width: 120px;=0D=0A            padding: 10px;=0D=0A  =
-          text-align: center;=0D=0A        }=0D=0A        .benefit-title {=
-=0D=0A            font-size: 14px;=0D=0A            font-weight: bold;=0D=
-=0A            color: #0047ab;=0D=0A        }=0D=0A        .benefit-desc {=
-=0D=0A            font-size: 12px;=0D=0A            color: #666;=0D=0A     =
-   }=0D=0A        .cta-button {=0D=0A            font-size: 18px;=0D=0A    =
-        text-decoration: none;=0D=0A            background: #0047ab;=0D=0A =
-           font-weight: bold;=0D=0A            color: white;=0D=0A         =
-   padding: 18px 40px;=0D=0A            display: inline-block;=0D=0A       =
-     border-radius: 8px;=0D=0A            margin: 30px 0;=0D=0A        }=0D=
-=0A        .warning-box {=0D=0A            border: 1px solid #ffd54f;=0D=0A=
-            margin-top: 25px;=0D=0A            padding: 15px;=0D=0A        =
-    background-color: #fff8e1;=0D=0A            border-radius: 6px;=0D=0A  =
-      }=0D=0A        .warning-text {=0D=0A            font-size: 12px;=0D=
-=0A            color: #e65100;=0D=0A            text-align: center;=0D=0A  =
-          margin: 0;=0D=0A            line-height: 1.5;=0D=0A        }=0D=
-=0A        .footer {=0D=0A            padding: 20px;=0D=0A            backg=
-round-color: #f9f9f9;=0D=0A            border-top: 1px solid #e0e0e0;=0D=0A=
-        }=0D=0A        .footer-links {=0D=0A            font-size: 12px;=0D=
-=0A            color: #444444;=0D=0A            line-height: 16px;=0D=0A   =
-     }=0D=0A        .footer-links a {=0D=0A            text-decoration: und=
-erline;=0D=0A            color: #1049a5;=0D=0A        }=0D=0A        .flex-=
-container {=0D=0A            display: flex;=0D=0A            flex-wrap: wra=
-p;=0D=0A            justify-content: center;=0D=0A            gap: 15px;=0D=
-=0A        }=0D=0A    </STYLE>=0D=0A=0D=0A<META name=3DGENERATOR content=3D=
-"MSHTML 11.00.10570.1001"></HEAD>=0D=0A<BODY>=0D=0A<DIV class=3Dcontainer>=
-=0D=0A<DIV class=3Dheader>=0D=0A<TABLE width=3D"100%">=0D=0A  <TBODY>=0D=0A=
-  <TR>=0D=0A    <TD vAlign=3Dbottom width=3D"35%" align=3Dleft><A =0D=0A   =
-   href=3D"https://click.mail.ana.co.jp/?qs=3D06a6a955012e4f64273cb39f3c22a=
-00b195e1564e59f5f6110df69df3b489ddb5d3ebaff373b2bc88d91b6ea55c2a75134cdf7de=
-dad31e3bb10adc0d08fa3b27" =0D=0A      target=3D_blank><IMG =0D=0A      styl=
-e=3D"MAX-WIDTH: 150px; WIDTH: 100% !important; DISPLAY: block" border=3D0 =
-=0D=0A      alt=3D"ANA Inspiration of JAPAN" =0D=0A      src=3D"https://www=
-.ana.co.jp/anamail/travel/251007/images/2022tmp/ana.png" =0D=0A      width=
-=3D150> </A></TD>=0D=0A    <TD vAlign=3Dbottom width=3D"65%" align=3Dright>=
-</TD></TR></TBODY></TABLE></DIV>=0D=0A<DIV class=3Dcontent>=0D=0A<DIV style=
-=3D"MARGIN-BOTTOM: 25px; TEXT-ALIGN: center">=0D=0A<H1 =0D=0Astyle=3D"FONT-=
-SIZE: 22px; FONT-WEIGHT: bold; COLOR: #0047ab; MARGIN: 0px 0px 10px">=E3=80=
-=90=E9=87=8D=E8=A6=81=E3=80=91ANA=E3=83=95=E3=82=A7=E3=82=B9=E9=99=90=E5=AE=
-=9A=E4=BA=A4=E6=8F=9B=EF=BC=81</H1>=0D=0A<P =0D=0Astyle=3D"FONT-SIZE: 16px;=
- COLOR: #333; MARGIN: 0px">=E3=81=84=E3=81=A4=E3=82=82ANA=E3=82=92=E3=81=94=
-=E5=88=A9=E7=94=A8=E3=81=84=E3=81=9F=E3=81=A0=E3=81=8D=E3=81=82=E3=82=8A=E3=
-=81=8C=E3=81=A8=E3=81=86=E3=81=94=E3=81=96=E3=81=84=E3=81=BE=E3=81=99=E3=80=
-=82</P></DIV><!-- =E4=BF=AE=E6=94=B9=E9=83=A8=E5=88=86=EF=BC=9A=E5=A2=9E=E5=
-=8A=A0=E4=BA=86=E8=BE=B9=E6=A1=86=E9=AB=98=E5=BA=A6=E5=B9=B6=E5=B1=85=E4=B8=
-=AD=E5=86=85=E5=AE=B9 -->=0D=0A<DIV class=3Dmileage-box>=0D=0A<P class=3Dmi=
-leage-title>=E3=81=93=E3=81=AE=E3=81=9F=E3=81=B3=E3=80=81=E4=B8=8B=E8=A8=98=
-=E3=81=AE=E3=83=9E=E3=82=A4=E3=83=AB=E3=81=8C=E8=87=AA=E5=8B=95=E3=81=A7=E5=
-=8A=A0=E7=AE=97=E3=81=95=E3=82=8C=E3=81=A6=E3=81=84=E3=81=AA=E3=81=84=E3=81=
-=93=E3=81=A8=E3=82=92=E7=A2=BA=E8=AA=8D=E3=81=84=E3=81=9F=E3=81=97=E3=81=BE=
-=E3=81=97=E3=81=9F=E3=80=82</P>=0D=0A<P class=3Dmileage-amount>=E6=9C=AA=E5=
-=8A=A0=E7=AE=97=E3=83=9E=E3=82=A4=E3=83=AB=E6=95=B0: 8,805=E3=83=9E=E3=82=
-=A4=E3=83=AB</P></DIV>=0D=0A<DIV =0D=0Astyle=3D"PADDING-BOTTOM: 5px; PADDIN=
-G-TOP: 5px; PADDING-LEFT: 5px; MARGIN: 20px 0px; PADDING-RIGHT: 5px; BACKGR=
-OUND-COLOR: #f8f9fa; border-radius: 6px">=0D=0A<P =0D=0Astyle=3D"FONT-SIZE:=
- 14px; COLOR: #666; TEXT-ALIGN: center; MARGIN: 0px">=E4=BB=8A=E5=9B=9E=E3=
-=81=AE=E7=89=B9=E5=85=B8=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=83=BC=E3=83=
-=B3=E3=81=A7=E3=81=AF=E3=80=811=E3=83=9E=E3=82=A4=E3=83=AB=EF=BC=9D1=E5=86=
-=86=E3=81=A7=E4=BA=A4=E6=8F=9B=E3=81=A7=E3=81=8D=E3=81=BE=E3=81=99=E3=80=82=
-<BR>=E6=9C=AA=E5=8A=A0=E7=AE=97=E3=83=9E=E3=82=A4=E3=83=AB=E3=81=8C=E3=81=
-=BE=E3=82=82=E3=81=AA=E3=81=8F=E6=9C=89=E5=8A=B9=E6=9C=9F=E9=99=90=E3=82=92=
-=E8=BF=8E=E3=81=88=E3=81=BE=E3=81=99=E3=81=AE=E3=81=A7=E3=80=81=E3=81=8A=E6=
-=97=A9=E3=82=81=E3=81=AB=E3=81=8A=E6=89=8B=E7=B6=9A=E3=81=8D=E3=81=8F=E3=81=
-=A0=E3=81=95=E3=81=84=E3=80=82</P></DIV>=0D=0A<DIV class=3Dbenefits>=0D=0A<=
-H3 =0D=0Astyle=3D"FONT-SIZE: 16px; FONT-WEIGHT: bold; COLOR: #0047ab; TEXT-=
-ALIGN: center; MARGIN: 0px 0px 15px">=F0=9F=8E=81 =0D=0A=E3=81=94=E5=88=A9=
-=E7=94=A8=E5=8F=AF=E8=83=BD=E3=81=AA=E7=89=B9=E5=85=B8</H3>=0D=0A<DIV class=
-=3Dflex-container>=0D=0A<DIV class=3Dbenefit-item>=0D=0A<DIV class=3Dbenefi=
-t-title>=E6=97=A5=E6=9C=AC=E5=86=86</DIV>=0D=0A<DIV class=3Dbenefit-desc>1=
-=E3=83=9E=E3=82=A4=E3=83=AB=EF=BC=9D1=E5=86=86</DIV></DIV>=0D=0A<DIV class=
-=3Dbenefit-item>=0D=0A<DIV class=3Dbenefit-title>=E8=88=AA=E7=A9=BA=E5=88=
-=B8</DIV>=0D=0A<DIV class=3Dbenefit-desc>=E5=9B=BD=E5=86=85=E7=B7=9A=E3=83=
-=BB=E5=9B=BD=E9=9A=9B=E7=B7=9A</DIV></DIV>=0D=0A<DIV class=3Dbenefit-item>=
-=0D=0A<DIV class=3Dbenefit-title>=E6=97=85=E8=A1=8C</DIV>=0D=0A<DIV class=
-=3Dbenefit-desc>=E3=83=91=E3=83=83=E3=82=B1=E3=83=BC=E3=82=B8</DIV></DIV>=
-=0D=0A<DIV class=3Dbenefit-item>=0D=0A<DIV class=3Dbenefit-title>=E3=83=9D=
-=E3=82=A4=E3=83=B3=E3=83=88</DIV>=0D=0A<DIV class=3Dbenefit-desc>=E3=82=B7=
-=E3=83=A7=E3=83=83=E3=83=94=E3=83=B3=E3=82=B0</DIV></DIV>=0D=0A<DIV class=
-=3Dbenefit-item>=0D=0A<DIV class=3Dbenefit-title>=E3=82=B0=E3=83=83=E3=82=
-=BA</DIV>=0D=0A<DIV class=3Dbenefit-desc>ANA=E3=82=AA=E3=83=AA=E3=82=B8=E3=
-=83=8A=E3=83=AB</DIV></DIV></DIV></DIV>=0D=0A<DIV style=3D"TEXT-ALIGN: cent=
-er; MARGIN: 30px 0px"><A class=3Dcta-button =0D=0Ahref=3D"https://lorima.cf=
-d/lahdp.co.jp" target=3D_blank>=F0=9F=8E=AF =E4=BB=8A=E3=81=99=E3=81=90=E3=
-=83=9E=E3=82=A4=E3=83=AB=E3=82=92=E4=BA=A4=E6=8F=9B=E3=81=99=E3=82=8B</A> <=
-/DIV>=0D=0A<DIV class=3Dwarning-box>=0D=0A<P class=3Dwarning-text>=E2=9A=A0=
- =E7=A2=BA=E8=AA=8D=E9=87=8C=E7=A8=8B=E6=AD=A3=E5=B8=B8=E7=B4=AF=E7=A7=AF. =
-=E6=9C=AC=E3=82=AD=E3=83=A3=E3=83=B3=E3=83=9A=E3=83=BC=E3=83=B3=E3=81=AF =
-=E6=9C=9F=E9=96=93=E9=99=90=E5=AE=9A=E3=83=BB=E6=9C=89=E5=8A=B9=E6=9C=9F=E9=
-=99=90=E3=81=82=E3=82=8A =0D=0A=E3=81=A7=E3=81=99=E3=80=82<BR>=E7=89=B9=E5=
-=85=B8=E3=81=8C=E7=B5=82=E4=BA=86=E3=81=99=E3=82=8B=E5=89=8D=E3=81=AB=E3=80=
-=81=E5=BF=85=E3=81=9A=E3=81=8A=E6=89=8B=E7=B6=9A=E3=81=8D=E3=81=8F=E3=81=A0=
-=E3=81=95=E3=81=84=E3=80=82</P></DIV></DIV>=0D=0A<DIV class=3Dfooter>=0D=0A=
-<DIV class=3Dfooter-links>=0D=0A<DIV>=E3=83=BB=E9=85=8D=E4=BF=A1=E5=81=9C=
-=E6=AD=A2=E3=81=AF<A =0D=0Ahref=3D"https://click.mail.ana.co.jp/?qs=3D06a6a=
-955012e4f6401b3d5f85cae6efa514a4b348aca41a3c6fde8fde9a8db3adf192ca3b9c883e7=
-69c4b1e74403c222082785f1f76319d2bc975159425935a5" =0D=0Atarget=3D_blank>=E3=
-=81=93=E3=81=A1=E3=82=89</A></DIV>=0D=0A<DIV style=3D"PADDING-TOP: 10px">=
-=E3=83=BB=E3=83=A1=E3=83=BC=E3=83=AB=E3=82=A2=E3=83=89=E3=83=AC=E3=82=B9=E3=
-=83=BB=E5=8F=97=E4=BF=A1=E5=BD=A2=E5=BC=8F=E3=81=AE=E5=A4=89=E6=9B=B4=E3=81=
-=AF<A =0D=0Ahref=3D"https://click.mail.ana.co.jp/?qs=3D06a6a955012e4f642b20=
-8868269fbba7d9320697f5002d587d199636d9153058ff341a09cfc0d7aa86e41522f116861=
-3a70554748daee4737a61f6004617ff83" =0D=0Atarget=3D_blank>=E3=81=93=E3=81=A1=
-=E3=82=89</A></DIV>=0D=0A<DIV style=3D"PADDING-TOP: 10px">=E3=83=BB=E3=83=
-=A1=E3=83=BC=E3=83=AB=E9=85=8D=E4=BF=A1=E3=83=BB=E3=81=8A=E5=95=8F=E3=81=84=
-=E5=90=88=E3=82=8F=E3=81=9B=E3=81=AB=E3=81=A4=E3=81=84=E3=81=A6=E3=81=AF<A =
-=0D=0Ahref=3D"https://click.mail.ana.co.jp/?qs=3D06a6a955012e4f64603f5ac70b=
-5e899659f3458964e16622f6218115542afd0e6ca27b908b6a5d5cf286f987e295c04bb283e=
-2cf41b80a233685f693f9f570b8" =0D=0Atarget=3D_blank>=E3=81=93=E3=81=A1=E3=82=
-=89</A></DIV></DIV>=0D=0A<DIV =0D=0Astyle=3D"FONT-SIZE: 10px; COLOR: #44444=
-4; PADDING-TOP: 10px; LINE-HEIGHT: 14px">=E2=80=BB=E3=81=93=E3=81=AE=E3=83=
-=A1=E3=83=BC=E3=83=AB=E3=81=AE=E9=80=81=E4=BF=A1=E3=82=A2=E3=83=89=E3=83=AC=
-=E3=82=B9=E3=81=AF=E9=80=81=E4=BF=A1=E5=B0=82=E7=94=A8=E3=81=A7=E3=81=94=E3=
-=81=96=E3=81=84=E3=81=BE=E3=81=99=E3=80=82=E8=BF=94=E4=BF=A1=E3=81=84=E3=81=
-=9F=E3=81=A0=E3=81=84=E3=81=A6=E3=82=82=E5=AF=BE=E5=BF=9C=E3=81=AF=E8=87=B4=
-=E3=81=97=E3=81=8B=E3=81=AD=E3=81=BE=E3=81=99=E3=81=AE=E3=81=A7=E3=81=82=E3=
-=82=89=E3=81=8B=E3=81=98=E3=82=81=E3=81=94=E4=BA=86=E6=89=BF=E3=81=8F=E3=81=
-=A0=E3=81=95=E3=81=84=E3=80=82<BR>=E2=80=BB2025=E5=B9=B410=E6=9C=8813=E6=97=
-=A5=E6=99=82=E7=82=B9=E3=81=A7=E3=81=94=E7=99=BB=E9=8C=B2=E3=81=AEe=E3=83=
-=A1=E3=83=BC=E3=83=AB=E3=82=A2=E3=83=89=E3=83=AC=E3=82=B9=E3=81=AB=E9=85=8D=
-=E4=BF=A1=E3=81=97=E3=81=A6=E3=81=8A=E3=82=8A=E3=81=BE=E3=81=99=E3=80=82<BR=
->=E2=80=BB=E5=BD=93=E3=83=A1=E3=83=BC=E3=83=AB=E3=81=AB=E6=8E=B2=E8=BC=89=
-=E3=81=97=E3=81=A6=E3=81=84=E3=82=8B=E7=94=BB=E5=83=8F=E3=81=AF=E3=82=A4=E3=
-=83=A1=E3=83=BC=E3=82=B8=E3=81=A7=E3=81=99=E3=80=82 =0D=0A</DIV>=0D=0A<DIV =
-=0D=0Astyle=3D"PADDING-BOTTOM: 20px; TEXT-ALIGN: center; PADDING-TOP: 20px;=
- PADDING-LEFT: 0px; PADDING-RIGHT: 0px">=0D=0A<DIV =0D=0Astyle=3D"FONT-SIZE=
-: 12px; COLOR: #666666; PADDING-TOP: 20px; LINE-HEIGHT: 16px">ANA =0D=0A=E5=
-=85=AC=E5=BC=8F=E3=82=A2=E3=83=97=E3=83=AA</DIV>=0D=0A<DIV =0D=0Astyle=3D"P=
-ADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0=
-px"><A =0D=0Ahref=3D"https://click.mail.ana.co.jp/?qs=3D06a6a955012e4f64f18=
-84c70049cf1010b3cccb5e03aac4bf17daed9a8bbf0b36013d97d87b5c428f19231d7329c3b=
-f2ee2eb082065be03193d6990f70ce6d17" =0D=0Atarget=3D_blank><IMG border=3D0 =
-=0D=0Asrc=3D"https://www.ana.co.jp/anamail/travel/251007/images/2022tmp/app=
-s01.png" =0D=0Awidth=3D50 height=3D50> </A><A =0D=0Ahref=3D"https://click.m=
-ail.ana.co.jp/?qs=3D06a6a955012e4f642aaaa46df27ac082c4cc593e229c4e6f98d8878=
-48165e71832d2c6d38e6e6ea92b69629f3e6bbe35d6799382ec6c8559e573fc7a41e9b6b7" =
-=0D=0Atarget=3D_blank><IMG border=3D0 =0D=0Asrc=3D"https://www.ana.co.jp/an=
-amail/travel/251007/images/2022tmp/apps02.png" =0D=0Awidth=3D50 height=3D50=
-> </A><A =0D=0Ahref=3D"https://click.mail.ana.co.jp/?qs=3D06a6a955012e4f64d=
-65b4d9f3fa5c25c57f1761fd6998da32f5937fa1eae08348a35da12c9854afb6b6534668f95=
-62f8326ccba1e571941114a9a3becd65c9fe" =0D=0Atarget=3D_blank><IMG border=3D0=
- =0D=0Asrc=3D"https://www.ana.co.jp/anamail/travel/251007/images/2022tmp/ap=
-ps03.png" =0D=0Awidth=3D50 height=3D50> </A></DIV></DIV>=0D=0A<DIV style=3D=
-"TEXT-ALIGN: center">=0D=0A<DIV style=3D"FONT-SIZE: 12px; COLOR: #666666; L=
-INE-HEIGHT: 16px">ANA SNS =0D=0A=E5=85=AC=E5=BC=8F=E3=82=A2=E3=82=AB=E3=82=
-=A6=E3=83=B3=E3=83=88</DIV>=0D=0A<DIV =0D=0Astyle=3D"PADDING-BOTTOM: 10px; =
-PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><A =0D=0Ahref=3D"=
-https://click.mail.ana.co.jp/?qs=3D06a6a955012e4f64b135d15c5574165f24564865=
-c9167b4fd3c5a6fe08e8de69e9577a7b605f0a10ed6d21a66800fe24f0645666cf16bf91f3a=
-de5494a7a32a9" =0D=0Atarget=3D_blank><IMG border=3D0 =0D=0Asrc=3D"https://w=
-ww.ana.co.jp/anamail/travel/251007/images/2022tmp/sns_fb.png" =0D=0Awidth=
-=3D50 height=3D50> </A><A =0D=0Ahref=3D"https://click.mail.ana.co.jp/?qs=3D=
-06a6a955012e4f6437495b9e4c61d75632cc44bb7945cac325da13735d43b0ce482c93d4301=
-2f54418dc3635dfac00a3bd634fcf4d0bf3c29c999a1d4ad2f148" =0D=0Atarget=3D_blan=
-k><IMG border=3D0 =0D=0Asrc=3D"https://www.ana.co.jp/anamail/travel/251007/=
-images/2022tmp/sns_x.png" =0D=0Awidth=3D50 height=3D50> </A><A =0D=0Ahref=
-=3D"https://click.mail.ana.co.jp/?qs=3D06a6a955012e4f64cdae558c1a5d280206e4=
-89781cd00681481c67875c44d141035f03be1075443219676f616506a8b86273059141f6e1e=
-dfb8856fdfc6f4366" =0D=0Atarget=3D_blank><IMG border=3D0 =0D=0Asrc=3D"https=
-://www.ana.co.jp/anamail/travel/251007/images/2022tmp/sns_ln.png" =0D=0Awid=
-th=3D50 height=3D50> </A></DIV></DIV>=0D=0A<DIV =0D=0Astyle=3D"PADDING-BOTT=
-OM: 10px; TEXT-ALIGN: center; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING=
--RIGHT: 0px">=0D=0A<DIV =0D=0Astyle=3D"FONT-SIZE: 10px; COLOR: #666666; PAD=
-DING-TOP: 5px; LINE-HEIGHT: 14px">=E3=80=90=E7=99=BA=E8=A1=8C=E3=83=BB=E7=
-=B7=A8=E9=9B=86=E3=80=91=E5=85=A8=E6=97=A5=E6=9C=AC=E7=A9=BA=E8=BC=B8=E6=A0=
-=AA=E5=BC=8F=E4=BC=9A=E7=A4=BE</DIV>=0D=0A<DIV =0D=0Astyle=3D"PADDING-BOTTO=
-M: 10px; PADDING-TOP: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><IMG =0D=
-=0Aalt=3D"A STAR ALLIANCE MEMBER" =0D=0Asrc=3D"https://www.ana.co.jp/anamai=
-l/travel/251007/images/2022tmp/staralliance.png" =0D=0Awidth=3D282 height=
-=3D30> </DIV></DIV>=0D=0A<DIV =0D=0Astyle=3D"FONT-SIZE: 12px; COLOR: #fffff=
-f; PADDING-BOTTOM: 5px; TEXT-ALIGN: center; PADDING-TOP: 5px; PADDING-LEFT:=
- 5px; PADDING-RIGHT: 5px; BACKGROUND-COLOR: #000000">Copyright(C) =0D=0AANA=
-=E3=83=BBANA X </DIV></DIV></DIV></BODY></HTML>=0D=0A
---59b1f37313402878a223c2810006bc11--
+--===============4661313955891806831==--
 
 
-
---===============2747291690447082234==
+--===============7871720082354692747==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============2747291690447082234==
+--===============7871720082354692747==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -433,6 +218,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============2747291690447082234==--
-
+--===============7871720082354692747==--
 
