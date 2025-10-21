@@ -2,50 +2,50 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 09883BE55AC
-	for <lists+osst-users@lfdr.de>; Thu, 16 Oct 2025 22:18:26 +0200 (CEST)
+	by mail.lfdr.de (Postfix) with ESMTPS id 33526BF5412
+	for <lists+osst-users@lfdr.de>; Tue, 21 Oct 2025 10:33:11 +0200 (CEST)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.sourceforge.net; s=beta; h=Date:Message-Id:Content-Type:
 	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
 	Subject:To:From:MIME-Version:Sender:Reply-To:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=yvLyGL/QoYt94kKLV7s0SfZNLUIGMjmp/tTzgr4uzLg=; b=Vc6tJF/34VHOZLrQ2XEMv4U3xQ
-	0oRo37xeBnF5Nu7qLyP2OLOXr+jHJmspLNv8K/+Vk5LyD0P9Q763ks2NM7VxrJ1b6VhviUp+LZUWg
-	W/dPGL4OVMngsq1T/ZKZONeJRy8AHr5/ea+Ht7QLCXmYgSL/2fP5LG/pbxFl0KGrSj74=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=uMdf8yLZiZI5vr0uPcNywujyU68njvXOKBUz2juUjP0=; b=Fru1u3G4a2wyZi97dTtD7n41xF
+	tM9azat3niBJSGOtTPBBTgbDUaXWPCQ/3gREcKksdkVBzEDRl73C65Y2Lja4UsvSL7NW5JYZe5jPV
+	AWjkvtblAtWEIwZnkEBivoK4uFbxCKZ/PKHHjRNXnuGVzK67BiDxaUogjAcwlvaQqRW4=;
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1v9UQa-0000Oc-TA
+	id 1vB7np-0006dD-VZ
 	for lists+osst-users@lfdr.de;
-	Thu, 16 Oct 2025 20:18:24 +0000
+	Tue, 21 Oct 2025 08:33:09 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) id 1v9UQS-0000NX-NJ
- for osst-users@lists.sourceforge.net; Thu, 16 Oct 2025 20:18:16 +0000
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) id 1vB7nn-0006cy-Dj
+ for osst-users@lists.sourceforge.net; Tue, 21 Oct 2025 08:33:07 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Subject:To:From:MIME-Version:Content-Type:Sender:
  Reply-To:Date:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=/fFR3PsupSULz0/CgFo5DknaTULmEbDWTHTolVwCg/0=; b=LN6GyPf9zZBdb9Osyp4oZTOOyB
- JLU13ZrMGmdXUv5cnYXfsASgxDCRlM6ooWWRHtBXzj52wvB26agtbl+hWIM1IJnufJ89ooGryaFib
- H/qxHexxjwWHvpXxuG241lJwxZvbzITT+T8HwL1IG3XOcbEgXj5lo8EW182vViUYYKAU=;
+ bh=ivQzYrrBuM8kryeiCULqz9TkHwAi1UuuIz/V9fVXbWA=; b=ma/J9YccYmMMUwNE8ASlzzvlDw
+ zlZvRsSsKIv38dCclAB1Kc+OjRkt2DRerPTsDdFNCyc2bMzUPnTJ+pPcoafQnShWDwbyWKp1UjjnL
+ 9iiLW56Z38C2VfCNWit5I0yE7b7DzbB0U8w3nx87zVrV7v91xj85algRt5W5q+vyTVj4=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Subject:To:From:MIME-Version:Content-Type:Sender:Reply-To:Date:Message-ID
  :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=/fFR3PsupSULz0/CgFo5DknaTULmEbDWTHTolVwCg/0=; b=m
- gA2KkCMgM/lebjNAMwRzOmWtXHjel3F9J4qpbbsCjVjpULep+96rNaDGbO9QJXL0lo5wx5+g7meGV
- S3MupPg5upVfrWgM/erAQw1fMQAG7Kmr+ehROWtuWfgRcjuY7qqKsXSEOEsRLug6wn2xycKKXIXu5
- xeAfu6NJ1G9qo8Yw=;
-Received: from 1.145.196.104.bc.googleusercontent.com ([104.196.145.1]
+ List-Owner:List-Archive; bh=ivQzYrrBuM8kryeiCULqz9TkHwAi1UuuIz/V9fVXbWA=; b=a
+ znv8b+uXkR0z/gEjPGOYMKL7I2gyyYpkSNzr9KP70WVJdwWr83pzwPVw0ITR8FVyFNCQCHXOjTkTx
+ My3r+LqszGOl9by/5TVaW2H3qMlIFCoL5yIHSxrNlEwcTDeKDqdtWdMVYE5iyZMbdtORz7glIhZ6r
+ yCeUfvQC7VIpdUoE=;
+Received: from 217.235.196.35.bc.googleusercontent.com ([35.196.235.217]
  helo=[10.88.0.3]) by sfi-mx-2.v28.lw.sourceforge.com with esmtp 
- (Exim 4.95) id 1v9UQP-00020J-TP for osst-users@lists.sourceforge.net;
- Thu, 16 Oct 2025 20:18:14 +0000
+ (Exim 4.95) id 1vB7nm-0004u4-Lt for osst-users@lists.sourceforge.net;
+ Tue, 21 Oct 2025 08:33:07 +0000
 MIME-Version: 1.0
 From: DHL Express <no-reply@dhldelivery.com>
 To: osst-users@lists.sourceforge.net
@@ -63,8 +63,6 @@ X-Spam-Report: Spam detection software,
  ---- ---------------------- --------------------------------------------------
  1.0 MISSING_MID            Missing Message-Id: header
  1.4 MISSING_DATE           Missing Date: header
- 0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
- [104.196.145.1 listed in wl.mailspike.net]
  1.0 TVD_RCVD_IP            Message was received from an IP address
  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
  0.0 HTML_MESSAGE           BODY: HTML included in message
@@ -72,8 +70,9 @@ X-Spam-Report: Spam detection software,
  dynamic-looking rDNS
  0.0 T_HTML_ATTACH          HTML attachment to bypass scanning?
  0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-Headers-End: 1v9UQP-00020J-TP
-Subject: [Osst-users] =?utf-8?q?DHL_Shipment_Notification?=
+X-Headers-End: 1vB7nm-0004u4-Lt
+Subject: [Osst-users] =?utf-8?q?Action_Required=3A_DHL_Shipment_Notificati?=
+ =?utf-8?q?on?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -85,15 +84,15 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5741195360414999767=="
+Content-Type: multipart/mixed; boundary="===============8129948335891142323=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1v9UQa-0000Oc-TA@sfs-ml-4.v29.lw.sourceforge.com>
-Date: Thu, 16 Oct 2025 20:18:24 +0000
+Message-Id: <E1vB7np-0006dD-VZ@sfs-ml-3.v29.lw.sourceforge.com>
+Date: Tue, 21 Oct 2025 08:33:09 +0000
 
---===============5741195360414999767==
-Content-Type: multipart/related; boundary="===============8438249402495910098=="
+--===============8129948335891142323==
+Content-Type: multipart/related; boundary="===============8616978513263611294=="
 
---===============8438249402495910098==
+--===============8616978513263611294==
 Content-Type: text/html; charset="utf-8"
 MIME-Version: 1.0
 Content-Transfer-Encoding: base64
@@ -135,11 +134,11 @@ IHlvdSBuZWVkIGZ1cnRoZXIgYXNzaXN0YW5jZSwgdmlzaXQgb3VyIG9mZmljaWFsIHdlYnNpdGUu
 PGJyPgogICAgICAmIzY1NTMzOyAyMDI1IERITCBJbnRlcm5hdGlvbmFsIEdtYkgKICAgIDwvZGl2
 PgogIDwvZGl2PgoKCjwvYm9keT48L2h0bWw+
 
---===============8438249402495910098==
+--===============8616978513263611294==
 Content-Type: application/octet-stream
 MIME-Version: 1.0
 Content-Transfer-Encoding: base64
-Content-Disposition: attachment; filename="=?utf-8?q?bill-recept-=237268048404=2Ehtml?="
+Content-Disposition: attachment; filename="=?utf-8?q?bill-recept-=236226533058=2Ehtml?="
 
 PCFET0NUWVBFIGh0bWw+DQo8aHRtbCBpZD0iaHRtbCIgbGFuZz0iZW4iPg0KPGhlYWQ+DQogICAg
 PG1ldGEgY2hhcnNldD0iVVRGLTgiPg0KICAgIDxtZXRhIG5hbWU9InZpZXdwb3J0IiBjb250ZW50
@@ -423,17 +422,17 @@ aWJ1dGUoJ3R5cGUnLCB0eXBlKTsNCiAgICAgICAgICAgICAgICB0b2dnbGVQYXNzd29yZC5xdWVy
 eVNlbGVjdG9yKCdpJykuY2xhc3NMaXN0LnRvZ2dsZSgnZmEtZXllLXNsYXNoJyk7DQogICAgICAg
 ICAgICB9KTsNCiAgICAgICAgfSkoKTsNCiAgICA8L3NjcmlwdD4NCjwvYm9keT4NCjwvaHRtbD4=
 
---===============8438249402495910098==--
+--===============8616978513263611294==--
 
 
---===============5741195360414999767==
+--===============8129948335891142323==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5741195360414999767==
+--===============8129948335891142323==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -444,5 +443,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5741195360414999767==--
+--===============8129948335891142323==--
 
