@@ -2,61 +2,61 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id F2350C27EBF
-	for <lists+osst-users@lfdr.de>; Sat, 01 Nov 2025 13:57:45 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 6B91AC28096
+	for <lists+osst-users@lfdr.de>; Sat, 01 Nov 2025 15:17:06 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.sourceforge.net; s=beta; h=Content-Type:List-Subscribe:List-Help:
 	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Date:Message-Id:To:
 	From:MIME-Version:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
 	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
 	:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=g7LOVkA5H/2FZHQfy3of5oeyTjIdGby4jkwCwo4wJk8=; b=P4Dciz+pO6CvdsCBYDi3sSUfmh
-	0Be/k0rTe/4aVUhTdzFSNi0mM5unTHiwi1mKaCq+nVAIxkzA0L5O3dwEwBN/wFtXPX1ZFJPmmxyi0
-	VY5yX0Q90gf+YfzdW29KYfLZw/UkHN7aav87ZUlemnbHPDKJC8hzPM53X1ovY+GyzrgA=;
+	bh=iNoIKuFJO69UdPjXU5thcvXrXqtPxEz9Xwqqxoa9cx0=; b=Ejc8ccZfJ+n7pQmSpUdxrysDW0
+	ul0ZImr8rejvX5zWkYFX+F6VFiywu1wJ6JAHWdKkBQJsk3VcRGGtj+7SqSullB9lz2wHIhwUm4ivT
+	Apkj5n/HUJSTrDU+WHVxCNOeBdo5OSoXrL+kEzWBpOQ62igAdDgWw9MBYV3z7bSbP93o=;
 Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
 	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1vFBAt-0002c1-S8
+	id 1vFCPg-00007F-85
 	for lists+osst-users@lfdr.de;
-	Sat, 01 Nov 2025 12:57:44 +0000
+	Sat, 01 Nov 2025 14:17:05 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
  by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <0myuwdbylq@netvigator.com>) id 1vFBAs-0002bi-6Y
- for osst-users@lists.sourceforge.net; Sat, 01 Nov 2025 12:57:42 +0000
+ (envelope-from <5p5jij2gxy@netvigator.com>) id 1vFCPf-000074-56
+ for osst-users@lists.sourceforge.net; Sat, 01 Nov 2025 14:17:03 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Date:Message-Id:Subject:To:From:
  Content-Transfer-Encoding:MIME-Version:Content-Type:Sender:Reply-To:Cc:
  Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
  Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
  List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=zfC80g8ytVpXb4xUvCODEBNKX2mf1nhLgfIuEQBv7jk=; b=WLc78pMJoSodpK7us7F8+yB6yn
- BeAxGCKDGR4EKVoNdr0QcCVsw4Gy5uurPsvQhob9QJqYgCH5a2nyxoYSbQiLdQHpgJucLCk1FO9gJ
- Bzl+jnvo7xqI5WSf9dnPFQz3oYJFFSWu8j/pI/HA75a+JbT2Bduuwvhuj2DCb6QhZblc=;
+ bh=zfC80g8ytVpXb4xUvCODEBNKX2mf1nhLgfIuEQBv7jk=; b=hiJ3bqbaWd8SkVlNgWu9EJvZZp
+ Kp0XnEtXVxAWeTOOPY9Ef11zM8HoTFr1KcYNPmtPK2JN70y83lOA7W2YiR36heWoD7TBcgHFYXuI0
+ I1Jc17RUKiY7UjZocD0IBKfNo6QN7VpjA5ywnMqwJk8oin4JHixpzHPg/1Q0KGcIbFIc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Date:Message-Id:Subject:To:From:Content-Transfer-Encoding:MIME-Version:
  Content-Type:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=zfC80g8ytVpXb4xUvCODEBNKX2mf1nhLgfIuEQBv7jk=; b=d
- yzLxI1iT2qp7Vds0h8gRqXT/C7yD3WGEDvuLTUeH+JhJfCYPJckcmuQwOtXcvfeFumUr+NgRubKNA
- d99Rp+2n13MzOfF51j4xCU2QG81Mxw90F5h2DHLlGgjzU00v5plNGUpPyPUyFE0xBTiSANdZk62G5
- hK5cOJAnh5JSFnjg=;
+ List-Owner:List-Archive; bh=zfC80g8ytVpXb4xUvCODEBNKX2mf1nhLgfIuEQBv7jk=; b=K
+ c1tboYGKFUF/eoMndvRsNd8ZAH7zaxoW5jqyoXPjzwSAVZ8lCNhft8rsrGq5bkxkl9+m/5+GALYEn
+ B85GPQ47CWsTod5c0hdNL1iEXq4KO+A07po9lMnbPoJ6sGVNexfv3TFN4d6gSV2qeaVygwurQz9D/
+ Pus0iAwu3WTJvTCE=;
 Received: from mail.onlinewebpeonavon.com ([109.73.172.194])
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1vFBAs-0008Ri-99 for osst-users@lists.sourceforge.net;
- Sat, 01 Nov 2025 12:57:42 +0000
+ id 1vFCPf-00038B-9P for osst-users@lists.sourceforge.net;
+ Sat, 01 Nov 2025 14:17:03 +0000
 Received: from [127.0.0.1] (localhost [127.0.0.1])
- by mail.onlinewebpeonavon.com (Postfix) with ESMTP id AD31EFA6A8E
- for <osst-users@lists.sourceforge.net>; Sat,  1 Nov 2025 07:40:00 -0400 (EDT)
+ by mail.onlinewebpeonavon.com (Postfix) with ESMTP id 91A64FA8CAA
+ for <osst-users@lists.sourceforge.net>; Sat,  1 Nov 2025 09:59:36 -0400 (EDT)
 MIME-Version: 1.0
-From: TARGOBANK <0myuwdbylq@netvigator.com>
+From: TARGOBANK <5p5jij2gxy@netvigator.com>
 To: osst-users@lists.sourceforge.net
-Message-Id: <20251101114000.AD31EFA6A8E@mail.onlinewebpeonavon.com>
-Date: Sat,  1 Nov 2025 07:40:00 -0400 (EDT)
-X-Spam-Score: 0.7 (/)
+Message-Id: <20251101135936.91A64FA8CAA@mail.onlinewebpeonavon.com>
+Date: Sat,  1 Nov 2025 09:59:36 -0400 (EDT)
+X-Spam-Score: 4.7 (++++)
 X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts.colo.sdot.me",
  has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
@@ -65,14 +65,16 @@ X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts
  
  Content preview:  TARGO BANK Ihre Bank für Privatkunden und Unternehmen 
  
- Content analysis details:   (0.7 points, 5.0 required)
+ Content analysis details:   (4.7 points, 5.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
+  4.0 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+              [Blocked - see <https://www.spamcop.net/bl.shtml?109.73.172.194>]
   0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
   0.0 HTML_MESSAGE           BODY: HTML included in message
   0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
-X-Headers-End: 1vFBAs-0008Ri-99
+X-Headers-End: 1vFCPf-00038B-9P
 Subject: [Osst-users] =?utf-8?q?Dringend=3A_Ihre_Kundendaten_ben=C3=B6tige?=
  =?utf-8?q?n_eine_Aktualisierung?=
 X-BeenThere: osst-users@lists.sourceforge.net
@@ -86,10 +88,10 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============5840242408080957551=="
+Content-Type: multipart/mixed; boundary="===============7748277202623793223=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============5840242408080957551==
+--===============7748277202623793223==
 Content-Type: text/html; charset="us-ascii"
 Content-Transfer-Encoding: 7bit
 
@@ -130,14 +132,14 @@ Content-Transfer-Encoding: 7bit
 </div>
 
 
---===============5840242408080957551==
+--===============7748277202623793223==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============5840242408080957551==
+--===============7748277202623793223==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -148,4 +150,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============5840242408080957551==--
+--===============7748277202623793223==--
