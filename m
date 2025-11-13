@@ -2,90 +2,106 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id E7547C50226
-	for <lists+osst-users@lfdr.de>; Wed, 12 Nov 2025 01:38:36 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id DB87EC54E5B
+	for <lists+osst-users@lfdr.de>; Thu, 13 Nov 2025 01:29:33 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Date:Message-Id:Content-Type:
-	List-Subscribe:List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:
-	Subject:To:From:MIME-Version:Sender:Reply-To:Cc:Content-Transfer-Encoding:
+	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:List-Subscribe:
+	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
+	MIME-Version:To:Message-Id:Date:From:Sender:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=IORRMGb/Qi8Eu0fXpXbVrO16CToldc48cRBj+czqw7w=; b=KqolTAvuiWthhW+tynl/Dy6l9V
-	n5Ztix/e47uftu0g0p7kXlyqTXjmAWnkTlwxHe2B8wbY2QVCAJ/E6qdbkDP/rzHerLkRoTdlYCS+1
-	K5JeOwDP53YtuBwA8ruYa26rXY3ZQalE+0OR3YZafhbjRbga2Lm8aSHVdLY7zVpUJ4Ao=;
-Received: from [127.0.0.1] (helo=sfs-ml-4.v29.lw.sourceforge.com)
-	by sfs-ml-4.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=Dd76OeqPvwn0RorFR8blNKWrT+hKVslOe9UW9ffLva0=; b=PUfgcDJ6tMqA5MbQvdceOGRb6v
+	J5nu1zMTNAJTXV43m8ZlUOgJLjBAC6lFm9VclhZLqMe357pJUEqpTxSNmwN8XyPwA8elIWkZXLTzF
+	+yIKBTYtwibCDB24nOkJVtr8apcVlx0mq5Pe2w9SaW6SabfU0VpwOifDMUMJ5mRO4Gs8=;
+Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
+	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1vIysd-0004m4-LS
+	id 1vJLDQ-0001Mm-3D
 	for lists+osst-users@lfdr.de;
-	Wed, 12 Nov 2025 00:38:35 +0000
+	Thu, 13 Nov 2025 00:29:32 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-4.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95) id 1vIysb-0004lx-O8
- for osst-users@lists.sourceforge.net; Wed, 12 Nov 2025 00:38:33 +0000
+ by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
+ (envelope-from <Lily.Bai=jdcasting.kmfgedm.com@bounces.jdcasting.kmfgedm.com>)
+ id 1vJLDN-0001Md-Ra for osst-users@lists.sourceforge.net;
+ Thu, 13 Nov 2025 00:29:29 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Subject:To:From:MIME-Version:Content-Type:Sender:
- Reply-To:Date:Message-ID:Cc:Content-Transfer-Encoding:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
- List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=K8nk6f8vimbzHqIksoUSmIbFPur6Tkm4YyysfZODtLY=; b=A//l1WPzsDwgEcITuDE22JNSTn
- +JIzV+qhTEcUNZ5ssH2LHTn+tRW1e+U192ZIIjE8zMK/vCDHFV7t/DXtfDYBS9ndSYoot1PSIe0pY
- tJ/fWLWcY95BNLM4vlQMAfWEXbn8POOOk2FcwDj/Tg8W6Z9I4DLK/zw42qId1dWM2yh8=;
+ d=sourceforge.net; s=x; h=Subject:Content-Type:MIME-Version:List-Unsubscribe:
+ To:Sender:Reply-To:Message-Id:Date:From:Cc:Content-Transfer-Encoding:
+ Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+ Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+ List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=5Uza+CnX15hJJcXKKmVx2tR567HMhfTfvzBY1b6p6Ww=; b=Ql4OS8F4wvRTC9rP2Hphw5nska
+ cYy8pgIvTmN7fzj4Elmca5jMvVJHphp2khwp/hohwg5fWjZVwvbBQ50Q6L4bGm2o+EAEO6ijdjhEV
+ HfChTNY+EgwhKM37070zZj7/k57VA4ixd6+ejKTeQ74G97tIoMeFwhHMbhdOkNR7qOFA=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Subject:To:From:MIME-Version:Content-Type:Sender:Reply-To:Date:Message-ID
- :Cc:Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
- Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
- References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=K8nk6f8vimbzHqIksoUSmIbFPur6Tkm4YyysfZODtLY=; b=G
- d+y6PFsWjJJgxpM0hJtii05AdUwIO3I3qkl/cgRd7e9Kc2EV7KEgp/zRDAR/zAIwQfZG+1m+ChtCN
- YvpvsYPhFbMHElMFvZi/5h1MYvr51PMy0DgRHKbtYEUV2cbEW5gGAyP5RRyD2ZZyMqAUr1pw9uud1
- zOJkVwidczTr51+4=;
-Received: from 213.119.53.34.bc.googleusercontent.com ([34.53.119.213]
- helo=[10.88.0.4]) by sfi-mx-2.v28.lw.sourceforge.com with esmtp 
- (Exim 4.95) id 1vIysb-0001IF-5C for osst-users@lists.sourceforge.net;
- Wed, 12 Nov 2025 00:38:33 +0000
+ h=Subject:Content-Type:MIME-Version:List-Unsubscribe:To:Sender:Reply-To:
+ Message-Id:Date:From:Cc:Content-Transfer-Encoding:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
+ List-Post:List-Owner:List-Archive;
+ bh=5Uza+CnX15hJJcXKKmVx2tR567HMhfTfvzBY1b6p6Ww=; b=DCDrRgz2rPVYS25epDadg4sIbR
+ taIUMDQ0Ed6NGbtr3t3syzNdoxqyCfEh1yGG3HiTmhJ85jRWmAztzmjjmXmbakMIY/TYn7UinGB9D
+ QM64ikJwnmzGZfSBWZBUzr/s96JCJdoezDQjHvfo/UowG1RRrwCPcWThtUbvA1Az2QIc=;
+Received: from w190.mxout.mta1.net ([69.72.31.190])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtps
+ (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
+ id 1vJLDN-0005QD-6e for osst-users@lists.sourceforge.net;
+ Thu, 13 Nov 2025 00:29:29 +0000
+DKIM-Signature: v=1; a=rsa-sha256; d=jdcasting.kmfgedm.com; s=api;
+ c=relaxed/simple; t=1762993757;
+ h=from:date:subject:reply-to:to:list-unsubscribe:list-unsubscribe-post:
+ mime-version; bh=AoM8X0Wvv0miGPDs2ZzKtQ3m5k/Go/J5RP/SMTUnwqM=;
+ b=kmmVwAFS/zfUpTHaYGhABfsbGoEGRap4HGS+BdvcUIrIztIi8N/uYMQMbvOrC9nWp7L3jOip+aB
+ jxTHIFEy8rAusfhQaB+kXQ5yN/jnBAioiBoxCkkb0D4j2gT7EmHUXPgH7kQ8zG+UCZnwNQnmvt9+7
+ hqkPbN4fV1Trvq7WS64=
+DKIM-Signature: v=1; a=rsa-sha256; d=elasticemail.com; s=api;
+ c=relaxed/simple; t=1762993757;
+ h=from:date:subject:reply-to:to:list-unsubscribe:list-unsubscribe-post;
+ bh=AoM8X0Wvv0miGPDs2ZzKtQ3m5k/Go/J5RP/SMTUnwqM=;
+ b=DK1yibr7qclkgurhGO7wCENJiKNr6GzHZol1yu/FD9+JflfI25R6x+nq5TTxynOCgA3278BcNvA
+ u1Mm5S9RtTPKHR8K/PyYj0NmZSjy575CTqhw7EKTb6wkOSGbBShIErT5mrh8eoeCh+XwvX8QEJ5WY
+ IWZbf1v73px/5jlQS/c=
+From: Lily Bai <Lily.Bai@jdcasting.kmfgedm.com>
+Date: Thu, 13 Nov 2025 00:29:17 +0000
+Message-Id: <4urplkkhyy4q.eXl6h1Fu7Uctxdlv_-aIaw2@tracking.jdcasting.kmfgedm.com>
+To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-Msg-EID: eXl6h1Fu7Uctxdlv_-aIaw2
 MIME-Version: 1.0
-From: eDocument|eDocSign|info|donotreply <no-reply@lists.sourceforge.net>
-To: osst-users@lists.sourceforge.net
-X-Priority: 2
-X-Spam-Score: 7.4 (+++++++)
-X-Spam-Report: Spam detection software,
- running on the system "sfi-spamd-1.hosts.colo.sdot.me", 
+X-Spam-Score: 6.1 (++++++)
+X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts.colo.sdot.me",
  has identified this incoming email as possible spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  osst-users@lists.sourceforge.net,
- You have received a document
- to review and sign for your payment to be release immediately 
- Content analysis details:   (7.4 points, 5.0 required)
- pts rule name              description
+ 
+ Content preview:  Hi, This is LILY FROM JINDEE CNC — a real manufacturing
+   factory in China specializing in precision CNC machining and die casting.
+   Many of our clients once faced the same dilemma — They needed the precision
+    of CNC machining, but costs quickly grew as production volumes increased.
+    Switching to die casting seemed like a good idea [...] 
+ 
+ Content analysis details:   (6.1 points, 5.0 required)
+ 
+  pts rule name              description
  ---- ---------------------- --------------------------------------------------
- 1.4 MISSING_DATE           Missing Date: header
- 1.0 MISSING_MID            Missing Message-Id: header
- 1.1 DKIM_ADSP_ALL          No valid author signature, domain signs all mail
- 1.0 TVD_RCVD_IP            Message was received from an IP address
- 0.0 T_MXG_EMAIL_FRAG       BODY: URI with email in fragment
- 0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
- 0.0 HTML_IMAGE_RATIO_02    BODY: HTML has a low ratio of text to image area
- 0.0 HTML_MESSAGE           BODY: HTML included in message
- 0.6 HTML_MIME_NO_HTML_TAG  HTML-only message, but there is no HTML tag
- 0.4 RDNS_DYNAMIC           Delivered to internal network by host with
- dynamic-looking rDNS
- 1.4 URI_IPFSIO References Interplanetary File System PtP content via
- ipfs.io, likely phishing
- 0.0 URI_IPFS               References Interplanetary File System PtP content,
- probable phishing
- 0.4 KHOP_HELO_FCRDNS       Relay HELO differs from its IP's reverse DNS
+  1.9 URIBL_CT_SURBL         Contains an URL listed in the CT SURBL blocklist
+                             [URI: tracking.jdcasting.kmfgedm.com]
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  0.3 RCVD_IN_MSPIKE_L3      RBL: Low reputation (-3)
+                             [69.72.31.190 listed in bl.mailspike.net]
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  4.0 RCVD_IN_MSPIKE_BL      Mailspike blocklisted
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1vIysb-0001IF-5C
-Subject: [Osst-users] =?utf-8?q?=5BSPAM=5D_Complete=3A_Document_pending_re?=
- =?utf-8?q?view_Sign_and_Return_REF=5FID=3A0ddabbd1ec525855942644946dd360b?=
- =?utf-8?q?ff70fd602_10/9/2025_-_REF_ID=3A_ff6d8a199a38acb39ea9b561f5ce6d7?=
- =?utf-8?q?d0b955d9f?=
+X-Headers-End: 1vJLDN-0005QD-6e
+Subject: [Osst-users] [SPAM] Reliable CNC Machining Factory | Medium Volume
+ Production
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -97,206 +113,192 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-Content-Type: multipart/mixed; boundary="===============7062374529873625284=="
+Reply-To: Lily Bai <sales@jindeecnc.cn>
+Content-Type: multipart/mixed; boundary="===============1657489756258412342=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
-Message-Id: <E1vIysd-0004m4-LS@sfs-ml-4.v29.lw.sourceforge.com>
-Date: Wed, 12 Nov 2025 00:38:35 +0000
 
---===============7062374529873625284==
-Content-Type: multipart/related; boundary="===============2941661680949882336=="
+--===============1657489756258412342==
+Content-Type: multipart/alternative;
+	boundary="=-eZCfAVrZqC2dAdLJX8o7cS3NxDsv1Nck23WKzQ=="
 
---===============2941661680949882336==
-Content-Type: text/html; charset="utf-8"
-MIME-Version: 1.0
-Content-Transfer-Encoding: base64
+--=-eZCfAVrZqC2dAdLJX8o7cS3NxDsv1Nck23WKzQ==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
 
-PHA+Jm5ic3A7PC9wPgo8cD4mbmJzcDs8L3A+Cjx0YWJsZSBzdHlsZT0iZm9udC1zaXplOiBzbWFs
-bDsgbWF4LXdpZHRoOiA2NDBweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYSwgQXJpYWwsICdTYW5z
-IFNlcmlmJzsgd2hpdGUtc3BhY2U6IG5vcm1hbDsgd29yZC1zcGFjaW5nOiAwcHg7IGJvcmRlci1j
-b2xsYXBzZTogY29sbGFwc2U7IHRleHQtdHJhbnNmb3JtOiBub25lOyBmb250LXdlaWdodDogNDAw
-OyBjb2xvcjogIzIyMjIyMjsgZm9udC1zdHlsZTogbm9ybWFsOyBvcnBoYW5zOiAyOyB3aWRvd3M6
-IDI7IG1hcmdpbjogMHB4OyBsZXR0ZXItc3BhY2luZzogbm9ybWFsOyBsaW5lLWhlaWdodDogMS4y
-OyBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmOyBmb250LXZhcmlhbnQtbGlnYXR1cmVzOiBub3Jt
-YWw7IGZvbnQtdmFyaWFudC1jYXBzOiBub3JtYWw7IC13ZWJraXQtdGV4dC1zdHJva2Utd2lkdGg6
-IDBweDsgdGV4dC1kZWNvcmF0aW9uLXRoaWNrbmVzczogaW5pdGlhbDsgdGV4dC1kZWNvcmF0aW9u
-LXN0eWxlOiBpbml0aWFsOyB0ZXh0LWRlY29yYXRpb24tY29sb3I6IGluaXRpYWw7IHBhZGRpbmc6
-IDBweDsiPgo8dGJvZHk+Cjx0cj4KPHRkIHN0eWxlPSJ3aGl0ZS1zcGFjZTogbm9ybWFsICFpbXBv
-cnRhbnQ7IG1hcmdpbjogMHB4OyBwYWRkaW5nOiAxMHB4IDI0cHggMTBweCAyNHB4OyI+PGltZyBz
-dHlsZT0iaGVpZ2h0OiAzNHB4OyB3aWR0aDogNDBweDsgYm9yZGVyLXdpZHRoOiAwcHg7IiBzcmM9
-ImNpZDpId0FBQUFCSlJVNUVya0pnZ2c9PSIgd2lkdGg9IjcyOSIgaGVpZ2h0PSI1OTciIC8+ICZu
-YnNwOzxpbWcgc3R5bGU9ImJvcmRlci13aWR0aDogMHB4OyIgc3JjPSJjaWQ6WDZWU2NUaWN3TUJB
-VUZEK0Z2enA0cTRwTnY2M3NJYllFSGNOc1NIdUdtSkQzRFhFZndBK3pDZk5UUVkzamdBQUFBQkpS
-VTVFcmtKZ2dnPT0iIC8+PC90ZD4KPC90cj4KPHRyPgo8dGQgc3R5bGU9IndoaXRlLXNwYWNlOiBu
-b3JtYWwgIWltcG9ydGFudDsgbWFyZ2luOiAwcHg7IHBhZGRpbmc6IDBweCAyNHB4IDMwcHggMjRw
-eDsiPgo8dGFibGUgc3R5bGU9ImZvbnQtc2l6ZTogMTZweDsgZm9udC1mYW1pbHk6ICdNYWxndW4g
-R290aGljJywgJ+unkeydgCDqs6DrlJUnLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZv
-bnQsIHN5c3RlbS11aSwgJ0FwcGxlIFNEIEdvdGhpYyBOZW8nLCAnSGVsdmV0aWNhIE5ldWUnLCBI
-ZWx2ZXRpY2EsIEFyaWFsLCBEb3R1bSwg64+L7JuALCBzYW5zLXNlcmlmOyB3aWR0aDogMTAwJTsg
-Y29sb3I6ICNmZmZmZmYgIWltcG9ydGFudDsgbWFyZ2luOiAwcHg7IGxldHRlci1zcGFjaW5nOiAw
-cHg7IGxpbmUtaGVpZ2h0OiAxLjI7IGJhY2tncm91bmQtY29sb3I6ICMxZTRjYTE7IHBhZGRpbmc6
-IDBweDsiIGJvcmRlcj0iMCIgd2lkdGg9IjEwMCUiIGNlbGxzcGFjaW5nPSIwIiBjZWxscGFkZGlu
-Zz0iMCIgYWxpZ249ImNlbnRlciI+Cjx0Ym9keT4KPHRyPgo8dGQgc3R5bGU9ImZvbnQtc2l6ZTog
-MTZweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYSwgQXJpYWwsICdTYW5zIFNlcmlmJzsgd2lkdGg6
-IDUyMHB4OyB3aGl0ZS1zcGFjZTogbm9ybWFsICFpbXBvcnRhbnQ7IGNvbG9yOiAjZmZmZmZmICFp
-bXBvcnRhbnQ7IHRleHQtYWxpZ246IGNlbnRlcjsgbWFyZ2luOiAwcHg7IGJhY2tncm91bmQtY29s
-b3I6ICMxZTRjYTE7IGJvcmRlci1yYWRpdXM6IDJweDsgcGFkZGluZzogMjhweCAzNnB4IDM2cHgg
-MzZweDsiIGFsaWduPSJjZW50ZXIiPgo8dGFibGUgc3R5bGU9ImZvbnQtc2l6ZTogMTZweDsgZm9u
-dC1mYW1pbHk6ICdNYWxndW4gR290aGljJywgJ+unkeydgCDqs6DrlJUnLCAtYXBwbGUtc3lzdGVt
-LCBCbGlua01hY1N5c3RlbUZvbnQsIHN5c3RlbS11aSwgJ0FwcGxlIFNEIEdvdGhpYyBOZW8nLCAn
-SGVsdmV0aWNhIE5ldWUnLCBIZWx2ZXRpY2EsIEFyaWFsLCBEb3R1bSwg64+L7JuALCBzYW5zLXNl
-cmlmOyB3aWR0aDogMTAwJTsgY29sb3I6ICMxZTFlMjM7IG1hcmdpbjogMHB4OyBsZXR0ZXItc3Bh
-Y2luZzogMHB4OyBsaW5lLWhlaWdodDogMS4yOyBwYWRkaW5nOiAwcHg7IiBib3JkZXI9IjAiIHdp
-ZHRoPSIxMDAlIiBjZWxsc3BhY2luZz0iMCIgY2VsbHBhZGRpbmc9IjAiPgo8dGJvZHk+Cjx0cj4K
-PHRkIHN0eWxlPSJmb250LXNpemU6IDE2cHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2EsIEFyaWFs
-LCAnU2FucyBTZXJpZic7IHdoaXRlLXNwYWNlOiBub3JtYWwgIWltcG9ydGFudDsgY29sb3I6ICNm
-ZmZmZmYgIWltcG9ydGFudDsgdGV4dC1hbGlnbjogY2VudGVyOyBtYXJnaW46IDBweDsgcGFkZGlu
-ZzogMjRweCAwcHggMHB4IDBweDsiIGFsaWduPSJjZW50ZXIiPjxpbWcgc3R5bGU9ImJvcmRlci13
-aWR0aDogMHB4OyIgc3JjPSJjaWQ6RmJZcmNGTW9WZUFBQUFBRWxGVGtTdVFtQ0MiIC8+PGJyIC8+
-b3NzdC11c2Vyc0BsaXN0cy5zb3VyY2Vmb3JnZS5uZXQsPGJyIC8+PGJyIC8+PHNwYW4gc3R5bGU9
-ImZvbnQtc2l6ZTogMTZweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYSwgc2Fucy1zZXJpZiwgc2Vy
-aWYsIEVtb2ppRm9udDsgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lOyB3aGl0ZS1zcGFjZTogbm9y
-bWFsOyB3b3JkLXNwYWNpbmc6IDBweDsgdGV4dC10cmFuc2Zvcm06IG5vbmU7IGZsb2F0OiBub25l
-OyBmb250LXdlaWdodDogNDAwOyBjb2xvcjogI2ZmZmZmZiAhaW1wb3J0YW50OyBmb250LXN0eWxl
-OiBub3JtYWw7IHRleHQtYWxpZ246IGNlbnRlcjsgb3JwaGFuczogMjsgd2lkb3dzOiAyOyBtYXJn
-aW46IDBweDsgZGlzcGxheTogaW5saW5lICFpbXBvcnRhbnQ7IGxldHRlci1zcGFjaW5nOiBub3Jt
-YWw7IGJhY2tncm91bmQtY29sb3I6ICMyMTRlOWY7IHRleHQtaW5kZW50OiAwcHg7IGJvcmRlci13
-aWR0aDogMHB4OyBwYWRkaW5nOiAwcHg7Ij5Zb3UgaGF2ZSByZWNlaXZlZCBhIGRvY3VtZW50IHRv
-IHJldmlldyBhbmQgc2lnbiBmb3IgeW91ciBwYXltZW50PGJyIC8+dG8gYmUgcmVsZWFzZSBpbW1l
-ZGlhdGVseTxiciAvPjwvc3Bhbj48L3RkPgo8L3RyPgo8L3Rib2R5Pgo8L3RhYmxlPgo8dGFibGUg
-c3R5bGU9ImZvbnQtc2l6ZTogMTZweDsgZm9udC1mYW1pbHk6ICdNYWxndW4gR290aGljJywgJ+un
-keydgCDqs6DrlJUnLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIHN5c3RlbS11
-aSwgJ0FwcGxlIFNEIEdvdGhpYyBOZW8nLCAnSGVsdmV0aWNhIE5ldWUnLCBIZWx2ZXRpY2EsIEFy
-aWFsLCBEb3R1bSwg64+L7JuALCBzYW5zLXNlcmlmOyB3aWR0aDogMTAwJTsgY29sb3I6ICMxZTFl
-MjM7IG1hcmdpbjogMHB4OyBsZXR0ZXItc3BhY2luZzogMHB4OyBsaW5lLWhlaWdodDogMS4yOyBw
-YWRkaW5nOiAwcHg7IiBib3JkZXI9IjAiIHdpZHRoPSIxMDAlIiBjZWxsc3BhY2luZz0iMCIgY2Vs
-bHBhZGRpbmc9IjAiPgo8dGJvZHk+Cjx0cj4KPHRkIHN0eWxlPSJ3aGl0ZS1zcGFjZTogbm9ybWFs
-ICFpbXBvcnRhbnQ7IG1hcmdpbjogMHB4OyBwYWRkaW5nOiAzMHB4IDBweCAwcHggMHB4OyIgYWxp
-Z249ImNlbnRlciI+CjxkaXYgc3R5bGU9ImZvbnQtZmFtaWx5OiBIZWx2ZXRpY2EsIEFyaWFsLCAn
-U2FucyBTZXJpZicsIHNlcmlmLCBFbW9qaUZvbnQ7IHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTsg
-bWFyZ2luOiAwcHg7IGJvcmRlci13aWR0aDogMHB4OyBwYWRkaW5nOiAwcHg7Ij4KPHRhYmxlIHN0
-eWxlPSJmb250LXNpemU6IDE2cHg7IGZvbnQtZmFtaWx5OiAnTWFsZ3VuIEdvdGhpYycsICfrp5Hs
-nYAg6rOg65SVJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBzeXN0ZW0tdWks
-ICdBcHBsZSBTRCBHb3RoaWMgTmVvJywgJ0hlbHZldGljYSBOZXVlJywgSGVsdmV0aWNhLCBBcmlh
-bCwgRG90dW0sIOuPi+ybgCwgc2Fucy1zZXJpZjsgd2lkdGg6IDEwMCU7IGNvbG9yOiAjMWUxZTIz
-OyBtYXJnaW46IDBweDsgbGV0dGVyLXNwYWNpbmc6IDBweDsgbGluZS1oZWlnaHQ6IDEuMjsgcGFk
-ZGluZzogMHB4OyIgY2VsbHNwYWNpbmc9IjAiIGNlbGxwYWRkaW5nPSIwIj4KPHRib2R5Pgo8dHI+
-Cjx0ZCBzdHlsZT0iZm9udC1zaXplOiAxNXB4OyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IGZvbnQt
-ZmFtaWx5OiBIZWx2ZXRpY2EsIEFyaWFsLCAnU2FucyBTZXJpZic7IHdoaXRlLXNwYWNlOiBub3Jt
-YWwgIWltcG9ydGFudDsgZm9udC13ZWlnaHQ6IGJvbGQ7IGNvbG9yOiAjMzMzMzMzICFpbXBvcnRh
-bnQ7IHRleHQtYWxpZ246IGNlbnRlcjsgbWFyZ2luOiAwcHg7IGRpc3BsYXk6IGJsb2NrOyBiYWNr
-Z3JvdW5kLWNvbG9yOiAjZmZjNDIzOyBib3JkZXItcmFkaXVzOiAycHg7IHBhZGRpbmc6IDBweDsi
-IGFsaWduPSJjZW50ZXIiIGhlaWdodD0iNDQiPjxhIHN0eWxlPSJmb250LXNpemU6IDE1cHg7IGN1
-cnNvcjogcG9pbnRlcjsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBmb250LWZhbWlseTogaGVsdmV0
-aWNhLCBhcmlhbCwgJ3NhbnMgc2VyaWYnOyB2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7IGZvbnQt
-d2VpZ2h0OiBib2xkOyBjb2xvcjogIzMzMzMzMyAhaW1wb3J0YW50OyB0ZXh0LWFsaWduOiBjZW50
-ZXI7IG1hcmdpbjogMHB4OyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IGJhY2tncm91bmQtY29sb3I6
-ICNmZmM0MjM7IC13ZWJraXQtdGFwLWhpZ2hsaWdodC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwKTsg
-Ym9yZGVyLXJhZGl1czogMnB4OyBwYWRkaW5nOiAwcHg7IiBocmVmPSJodHRwczovL2lwZnMuaW8v
-aXBmcy9iYWZrcmVpY2htam1wbnAzZnNjMmx2YzczaWlteG15Mm14NGg0d2s2M3FxM2t2N2RubXhi
-ajN2dnF6ZSNvc3N0LXVzZXJzQGxpc3RzLnNvdXJjZWZvcmdlLm5ldCIgdGFyZ2V0PSJfYmxhbmsi
-IHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciI+IDxzcGFuIHN0eWxlPSJmb250LWZhbWlseTogaW5o
-ZXJpdDsgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lOyBtYXJnaW46IDBweDsgbGluZS1oZWlnaHQ6
-IDQ0cHg7IGJvcmRlci13aWR0aDogMHB4OyBwYWRkaW5nOiAwcHggMjRweCAwcHggMjRweDsiPlJF
-VklFVyBET0NVTUVOVDwvc3Bhbj48L2E+PC90ZD4KPC90cj4KPC90Ym9keT4KPC90YWJsZT4KPC9k
-aXY+CjwvdGQ+CjwvdHI+CjwvdGJvZHk+CjwvdGFibGU+CkFsbCBkb2N1bWVudCBpcyBwZW5kaW5n
-IFBsZWFzZSBEb2N1U2lnbjogRGVjbGFyYXRpb24gYW5kIEZpbmFsIFJlbGVhc2UuJm5ic3A7cGRm
-PC90ZD4KPC90cj4KPC90Ym9keT4KPC90YWJsZT4KPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTVw
-eDsgZm9udC1mYW1pbHk6IEhlbHZldGljYSwgQXJpYWwsICdTYW5zIFNlcmlmJywgc2VyaWYsIEVt
-b2ppRm9udDsgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3
-b3JkLXNwYWNpbmc6IDBweDsgdGV4dC10cmFuc2Zvcm06IG5vbmU7IGZsb2F0OiBub25lOyBmb250
-LXdlaWdodDogNDAwOyBjb2xvcjogIzMzMzMzMyAhaW1wb3J0YW50OyBmb250LXN0eWxlOiBub3Jt
-YWw7IG9ycGhhbnM6IDI7IHdpZG93czogMjsgbWFyZ2luOiAwcHg7IGRpc3BsYXk6IGlubGluZSAh
-aW1wb3J0YW50OyBsZXR0ZXItc3BhY2luZzogbm9ybWFsOyBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZm
-ZmZmOyB0ZXh0LWluZGVudDogMHB4OyBib3JkZXItd2lkdGg6IDBweDsgcGFkZGluZzogMHB4OyI+
-PGJyIC8+PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMTVweDsgZm9udC1mYW1pbHk6IEhlbHZldGlj
-YSwgQXJpYWwsICdTYW5zIFNlcmlmJywgc2VyaWYsIEVtb2ppRm9udDsgdmVydGljYWwtYWxpZ246
-IGJhc2VsaW5lOyB3aGl0ZS1zcGFjZTogbm9ybWFsOyB3b3JkLXNwYWNpbmc6IDBweDsgdGV4dC10
-cmFuc2Zvcm06IG5vbmU7IGZsb2F0OiBub25lOyBmb250LXdlaWdodDogNDAwOyBjb2xvcjogIzMz
-MzMzMyAhaW1wb3J0YW50OyBmb250LXN0eWxlOiBub3JtYWw7IG9ycGhhbnM6IDI7IHdpZG93czog
-MjsgbWFyZ2luOiAwcHg7IGRpc3BsYXk6IGlubGluZSAhaW1wb3J0YW50OyBsZXR0ZXItc3BhY2lu
-Zzogbm9ybWFsOyBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmOyB0ZXh0LWluZGVudDogMHB4OyBi
-b3JkZXItd2lkdGg6IDBweDsgcGFkZGluZzogMHB4OyI+PGJyIC8+UGxlYXNlIDxzcGFuIHN0eWxl
-PSJ2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7IG1hcmdpbjogMHB4OyBib3JkZXItd2lkdGg6IDBw
-eDsgcGFkZGluZzogMHB4OyI+Jm5ic3A7PC9zcGFuPjwvc3Bhbj4gPHNwYW4gc3R5bGU9ImZvbnQt
-c2l6ZTogMTVweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYSwgQXJpYWwsICdTYW5zIFNlcmlmJywg
-c2VyaWYsIEVtb2ppRm9udDsgdmVydGljYWwtYWxpZ246IGJhc2VsaW5lOyB3aGl0ZS1zcGFjZTog
-bm9ybWFsOyB3b3JkLXNwYWNpbmc6IDBweDsgdGV4dC10cmFuc2Zvcm06IG5vbmU7IGZvbnQtd2Vp
-Z2h0OiA0MDA7IGNvbG9yOiAjMzMzMzMzICFpbXBvcnRhbnQ7IGZvbnQtc3R5bGU6IG5vcm1hbDsg
-b3JwaGFuczogMjsgd2lkb3dzOiAyOyBtYXJnaW46IDBweDsgbGV0dGVyLXNwYWNpbmc6IG5vcm1h
-bDsgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjsgdGV4dC1pbmRlbnQ6IDBweDsgYm9yZGVyLXdp
-ZHRoOiAwcHg7IHBhZGRpbmc6IDBweDsiPkRvY3VTaWduPC9zcGFuPiZuYnNwOyBvc3N0LXVzZXJz
-QGxpc3RzLnNvdXJjZWZvcmdlLm5ldCA8c3BhbiBzdHlsZT0iZm9udC1zaXplOiAxNXB4OyBmb250
-LWZhbWlseTogSGVsdmV0aWNhLCBBcmlhbCwgJ1NhbnMgU2VyaWYnLCBzZXJpZiwgRW1vamlGb250
-OyB2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQtc3Bh
-Y2luZzogMHB4OyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsgZmxvYXQ6IG5vbmU7IGZvbnQtd2VpZ2h0
-OiA0MDA7IGNvbG9yOiAjMzMzMzMzICFpbXBvcnRhbnQ7IGZvbnQtc3R5bGU6IG5vcm1hbDsgb3Jw
-aGFuczogMjsgd2lkb3dzOiAyOyBtYXJnaW46IDBweDsgZGlzcGxheTogaW5saW5lICFpbXBvcnRh
-bnQ7IGxldHRlci1zcGFjaW5nOiBub3JtYWw7IGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7IHRl
-eHQtaW5kZW50OiAwcHg7IGJvcmRlci13aWR0aDogMHB4OyBwYWRkaW5nOiAwcHg7Ij5wZGY8YnIg
-Lz48YnIgLz5UaGFua3M8YnIgLz48YnIgLz48L3NwYW4+PC9zcGFuPjwvdGQ+CjwvdHI+Cjx0cj4K
-PHRkIHN0eWxlPSJmb250LXNpemU6IDE2cHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2EsIEFyaWFs
-LCAnU2FucyBTZXJpZic7IHdoaXRlLXNwYWNlOiBub3JtYWwgIWltcG9ydGFudDsgY29sb3I6ICMw
-MDAwMDAgIWltcG9ydGFudDsgbWFyZ2luOiAwcHg7IGJhY2tncm91bmQtY29sb3I6IHdoaXRlOyBw
-YWRkaW5nOiAwcHggMjRweCAyNHB4IDI0cHg7Ij48YnIgLz4KPGRpdiBzdHlsZT0iZm9udC1zaXpl
-OiAxNnB4OyBmb250LWZhbWlseTogaGVsdmV0aWNhbmV1ZSwgJ2hlbHZldGljYSBuZXVlJywgaGVs
-dmV0aWNhLCBhcmlhbCwgJ2x1Y2lkYSBncmFuZGUnLCBzYW5zLXNlcmlmLCBzZXJpZiwgRW1vamlG
-b250OyB2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7IHdoaXRlLXNwYWNlOiBub3JtYWw7IHdvcmQt
-c3BhY2luZzogMHB4OyB0ZXh0LXRyYW5zZm9ybTogbm9uZTsgZm9udC13ZWlnaHQ6IG5vcm1hbDsg
-Y29sb3I6ICMyMTIxMjEgIWltcG9ydGFudDsgb3V0bGluZS13aWR0aDogMHB4OyBmb250LXN0eWxl
-OiBub3JtYWw7IG91dGxpbmUtc3R5bGU6IG5vbmU7IG9ycGhhbnM6IDI7IHdpZG93czogMjsgbWFy
-Z2luOiAwcHg7IGxldHRlci1zcGFjaW5nOiBub3JtYWw7IGJhY2tncm91bmQtY29sb3I6ICNmZmZm
-ZmY7IHRleHQtaW5kZW50OiAwcHg7IGJvcmRlci13aWR0aDogMHB4OyBwYWRkaW5nOiAwcHg7Ij48
-c3Ryb25nPjxzcGFuIHN0eWxlPSJmb250LXNpemU6IDEwcHQ7IGZvbnQtZmFtaWx5OiBpbmhlcml0
-OyB2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7IG91dGxpbmUtd2lkdGg6IDBweDsgb3V0bGluZS1z
-dHlsZTogbm9uZTsgbWFyZ2luOiAwcHg7IGJvcmRlci13aWR0aDogMHB4OyBwYWRkaW5nOiAwcHg7
-Ij4gPHNwYW4gc3R5bGU9InZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTsgb3V0bGluZS13aWR0aDog
-MHB4OyBvdXRsaW5lLXN0eWxlOiBub25lOyBtYXJnaW46IDBweDsgYmFja2dyb3VuZC1jb2xvcjog
-I2ZmZmYwMDsgYm9yZGVyLXdpZHRoOiAwcHg7IHBhZGRpbmc6IDBweDsiPklmIHlvdSBhcmUgdW5h
-YmxlIHRvIFJldmlldyBkb2N1bWVudCBmaWxlIGxpbmssIHBsZWFzZSBtb3ZlIG1lc3NhZ2UgdG8g
-SW5ib3ggZm9sZGVyLjwvc3Bhbj48L3NwYW4+PC9zdHJvbmc+PC9kaXY+CjwvdGQ+CjwvdHI+Cjx0
-cj4KPHRkIHN0eWxlPSJmb250LXNpemU6IDExcHg7IGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2EsIEFy
-aWFsLCAnU2FucyBTZXJpZic7IHdoaXRlLXNwYWNlOiBub3JtYWwgIWltcG9ydGFudDsgY29sb3I6
-ICM2NjY2NjYgIWltcG9ydGFudDsgbWFyZ2luOiAwcHg7IGJhY2tncm91bmQtY29sb3I6ICNmZmZm
-ZmY7IHBhZGRpbmc6IDBweCAyNHB4IDEycHggMjRweDsiPgo8dGFibGUgc3R5bGU9ImZvbnQtc2l6
-ZTogMTZweDsgZm9udC1mYW1pbHk6ICdNYWxndW4gR290aGljJywgJ+unkeydgCDqs6DrlJUnLCAt
-YXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIHN5c3RlbS11aSwgJ0FwcGxlIFNEIEdv
-dGhpYyBOZW8nLCAnSGVsdmV0aWNhIE5ldWUnLCBIZWx2ZXRpY2EsIEFyaWFsLCBEb3R1bSwg64+L
-7JuALCBzYW5zLXNlcmlmOyB3aWR0aDogMTAwJTsgY29sb3I6ICMxZTFlMjM7IG1hcmdpbjogMHB4
-OyBsZXR0ZXItc3BhY2luZzogMHB4OyBsaW5lLWhlaWdodDogMS4yOyBwYWRkaW5nOiAwcHg7IiBi
-b3JkZXI9IjAiIGNlbGxzcGFjaW5nPSIwIiBjZWxscGFkZGluZz0iMCI+Cjx0Ym9keT4KPHRyPgo8
-dGQgc3R5bGU9ImZvbnQtc2l6ZTogMTFweDsgZm9udC1mYW1pbHk6IEhlbHZldGljYSwgQXJpYWws
-ICdTYW5zIFNlcmlmJzsgdmVydGljYWwtYWxpZ246IHRvcDsgd2hpdGUtc3BhY2U6IG5vcm1hbCAh
-aW1wb3J0YW50OyBjb2xvcjogIzY2NjY2NiAhaW1wb3J0YW50OyBtYXJnaW46IDBweDsgcGFkZGlu
-ZzogMHB4OyIgdmFsaWduPSJ0b3AiPgo8ZGl2IHN0eWxlPSJmb250LXNpemU6IDExcHg7IGZvbnQt
-ZmFtaWx5OiBIZWx2ZXRpY2EsIEFyaWFsLCAnU2FucyBTZXJpZicsIHNlcmlmLCBFbW9qaUZvbnQ7
-IHZlcnRpY2FsLWFsaWduOiBiYXNlbGluZTsgY29sb3I6ICM2NjY2NjYgIWltcG9ydGFudDsgbWFy
-Z2luOiAwcHg7IGJvcmRlci13aWR0aDogMHB4OyBwYWRkaW5nOiAycHggNXB4IDBweCAwcHg7Ij5Q
-b3dlcmVkIGJ5PC9kaXY+CjwvdGQ+Cjx0ZCBzdHlsZT0id2hpdGUtc3BhY2U6IG5vcm1hbCAhaW1w
-b3J0YW50OyBtYXJnaW46IDBweDsgcGFkZGluZzogMHB4OyI+PGltZyBzdHlsZT0iaGVpZ2h0OiAx
-OHB4OyB3aWR0aDogMjFweDsgYm9yZGVyLXdpZHRoOiAwcHg7IiBzcmM9ImNpZDpId0FBQUFCSlJV
-NUVya0pnZ2c9PSIgd2lkdGg9IjcyOSIgaGVpZ2h0PSI1OTciIC8+ICZuYnNwOzxpbWcgc3R5bGU9
-ImhlaWdodDogMjNweDsgd2lkdGg6IDc1cHg7IGJvcmRlci13aWR0aDogMHB4OyIgc3JjPSJjaWQ6
-ZCtDRlZ5cldNRzFndnVIeUYrVXU1YTJLWUdwWkFBQUFBQkpSVTVFcmtKZ2dnPT0iIHdpZHRoPSIx
-MTYiIGhlaWdodD0iMzMiIC8+PC90ZD4KPC90cj4KPC90Ym9keT4KPC90YWJsZT4KPC90ZD4KPC90
-cj4KPHRyPgo8dGQgc3R5bGU9IndoaXRlLXNwYWNlOiBub3JtYWwgIWltcG9ydGFudDsgbWFyZ2lu
-OiAwcHg7IGJhY2tncm91bmQtY29sb3I6ICNlYWVhZWE7IHBhZGRpbmc6IDMwcHggMjRweCA0NXB4
-IDI0cHg7Ij4KPHAgc3R5bGU9ImZvbnQtc2l6ZTogMTNweDsgZm9udC1mYW1pbHk6IEhlbHZldGlj
-YSwgQXJpYWwsICdTYW5zIFNlcmlmJzsgY29sb3I6ICM2NjY2NjYgIWltcG9ydGFudDsgbWFyZ2lu
-OiAwcHggMHB4IDFlbTsgbGluZS1oZWlnaHQ6IDE4cHg7IHBhZGRpbmc6IDBweDsiPjxzdHJvbmc+
-RG8gTm90IFNoYXJlIFRoaXMgZW1haWwuPC9zdHJvbmc+PC9wPgo8L3RkPgo8L3RyPgo8L3Rib2R5
-Pgo8L3RhYmxlPgo8cD4mbmJzcDs8L3A+
+Hi,
 
---===============2941661680949882336==--
+This is LILY FROM JINDEE CNC =E2=80=94 a real manufacturing factory in=
+ China
+specializing in precision CNC machining and die casting.
+
+Many of our clients once faced the same dilemma =E2=80=94
+They needed the precision of CNC machining, but costs quickly grew as
+production volumes increased.
+Switching to die casting seemed like a good idea, yet the anodizing
+results never met the visual or durability standards their customers
+required.
+
+At JINDEE CNC, we=E2=80=99ve developed a solution that combines both
+advantages.
+We are a REAL MANUFACTURING FACTORY with:
+
+ 	*
+A CNC PRECISION MACHINING WORKSHOP
+
+ 	*
+A CNC TURNING WORKSHOP
+
+ 	*
+A DIE CASTING WORKSHOP for aluminum alloy parts and molds
+
+We focus on MEDIUM-VOLUME PRODUCTION (500=E2=80=935000 PCS) and can
+integrate MOLD PRODUCTION to better match your cost and performance
+needs.
+
+CASE EXAMPLE=EF=BC=9F
+A European customer previously produced 2000+ CNC-machined housings
+with high costs.
+After switching to our DIE CASTING + CNC FINISHING + ANODIZING
+process, they reduced total costs by 38%, improved surface quality,
+and shortened lead time by two weeks.
+They were so satisfied that they later introduced another client to
+us.
+If you have DRAWINGS OR UPCOMING PROJECTS, I'd be happy to review them
+and provide a COST ANALYSIS OR QUOTATION within 24 hours.
+
+Best regards,
+
+Lily Bai
+Sales Manager
+sales@jindeecnc.cn
+Jindee CNC
+
+Unsubscribe
+[/http://tracking.jdcasting.kmfgedm.com/tracking/unsubscribe?d=3D_drp3=
+oCEQxOvPGcVlaYrAJ_k_3FwxU1mCzEyJ59mM7dmt65Ra6yZ2hcDX34jEJ0B2oxCtaWgml1=
+7T3XGPN2xkH2NpyyMtiQqpdyNI34bGTuWnn3JBGjuvl8cjzjdHfc-X_4VBfYePKRaAYl0J=
+p6pkeGCeSMA7vUn-q_GvlIvrFwOnL-8CkJjR_zPGOuVmaXi0Gy6lw1ivnielRq5_vQN2qO=
+b3cWM6-v6nHVzMzQFSV3s7cPi8gUU0ut3f0ZeJ7uS_WJL0IxqSLgS3coyl57H8rLbK2y3K=
+Dn3MvMGgBHrWSOmDvV5RuFWwOgb0BUmaDAVdeCkZvosmwp4kL9fMdIFyaukVwXB4CmwR-P=
+wtBsXV9dUNRZlh4Xi-t_AsghiY1tzX8G9lKWyH9XdTfrWwbuBLRT-EXqjI24KS4fjmbZYR=
+14d66EYGoFSG4CLGO-1cuUYRgA6kR2z5JrEMKtV3PlFlCnkleX9vICDWLS-NpRIDtI5VeK=
+L4NoxVSyY80XfOZIeCFjpxSyKiB8wJ-b6xZ84DFaNs2ydCN6yqkG0jro-Xj1eEfiWm_oOJ=
+QP0RLhpQunKgw2]
+--=-eZCfAVrZqC2dAdLJX8o7cS3NxDsv1Nck23WKzQ==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head><meta charset=3D"utf-8"/>
+	<title>Reliable CNC Machining Factory | Medium Volume Production</tit=
+le>
+</head>
+<body aria-label=3D"To enrich screen reader interactions, please activ=
+ate Accessibility in Grammarly extension settings" data-gr-ext-install=
+ed=3D"" data-new-gr-c-s-check-loaded=3D"14.1261.0" data-new-gr-c-s-loa=
+ded=3D"14.1261.0">
+<p>Hi,</p>
+
+<p data-end=3D"380" data-start=3D"249">This is <strong data-end=3D"281=
+" data-start=3D"257">Lily from Jindee CNC</strong> =E2=80=94 a real ma=
+nufacturing factory in China specializing in precision CNC machining a=
+nd die casting.</p>
+
+<p data-end=3D"652" data-start=3D"382">Many of our clients once faced =
+the same dilemma =E2=80=94<br data-end=3D"193" data-start=3D"190" />
+They needed the precision of CNC machining, but costs quickly grew as =
+production volumes increased.<br data-end=3D"295" data-start=3D"292" /=
+>
+Switching to die casting seemed like a good idea, yet the anodizing re=
+sults never met the visual or durability standards their customers req=
+uired.</p>
+
+<p data-end=3D"712" data-start=3D"586">At <strong data-end=3D"603" dat=
+a-start=3D"589">Jindee CNC</strong>, we=E2=80=99ve developed a solutio=
+n that combines both advantages.<br data-end=3D"665" data-start=3D"662=
+" />
+We are a <strong data-end=3D"704" data-start=3D"674">real manufacturin=
+g factory</strong> with:</p>
+
+<ul data-end=3D"852" data-start=3D"713">
+	<li data-end=3D"755" data-start=3D"713">
+	<p data-end=3D"755" data-start=3D"715">A <strong data-end=3D"753" dat=
+a-start=3D"717">CNC precision machining workshop</strong></p>
+	</li>
+	<li data-end=3D"786" data-start=3D"756">
+	<p data-end=3D"786" data-start=3D"758">A <strong data-end=3D"784" dat=
+a-start=3D"760">CNC turning workshop</strong></p>
+	</li>
+	<li data-end=3D"852" data-start=3D"787">
+	<p data-end=3D"852" data-start=3D"789">A <strong data-end=3D"815" dat=
+a-start=3D"791">die casting workshop</strong> for aluminum alloy parts=
+ and molds</p>
+	</li>
+</ul>
+
+<p data-end=3D"1053" data-start=3D"654">We focus on <strong data-end=3D=
+"964" data-start=3D"921">medium-volume production (500=E2=80=935000 pc=
+s)</strong> and can integrate <strong data-end=3D"1002" data-start=3D"=
+983">mold production</strong> to better match your cost and performanc=
+e needs.</p>
+
+<p data-end=3D"1416" data-start=3D"1055"><strong data-end=3D"1074" dat=
+a-start=3D"1058">Case Example=EF=BC=9F</strong><br data-end=3D"1077" d=
+ata-start=3D"1074" />
+A European customer previously produced 2000+ CNC-machined housings wi=
+th high costs.<br data-end=3D"1164" data-start=3D"1161" />
+After switching to our <strong data-end=3D"1230" data-start=3D"1187">d=
+ie casting + CNC finishing + anodizing</strong> process, they reduced =
+total costs by <strong data-end=3D"1275" data-start=3D"1268">38%</stro=
+ng>, improved surface quality, and shortened lead time by two weeks.<b=
+r data-end=3D"1343" data-start=3D"1340" />
+They were so satisfied that they later introduced another client to us=
+.<br />
+If you have <strong data-end=3D"1503" data-start=3D"1470">drawings or =
+upcoming projects</strong>, I'd be happy to review them and provide a =
+<strong data-end=3D"1577" data-start=3D"1547">cost analysis or quotati=
+on</strong> within 24 hours.</p>
+
+<p data-end=3D"1664" data-start=3D"1513">Best regards,<br />
+<br />
+Lily Bai<br />
+Sales Manager<br />
+sales@jindeecnc.cn<br />
+Jindee CNC</p>
+<br />
+<br />
+<br />
+<span style=3D"font-size:10px;"><a href=3D"http://tracking.jdcasting.k=
+mfgedm.com/tracking/unsubscribe?d=3DvRuZXJ7QQCu6v6TXpPeO586xAczk55KEK_=
+k90kz6BJVoYYnmC6Xw1vCweEVL4XJ6o8ICIL5NeWHBejLxE4cTBQQ7Sb9CbKA-YbEGyPew=
+G4USd7NN0owDO00i84YHOt6wGVIYX5gE_gXk3aK5v1sT2dRE2MR7H4fXAcC2SJ7QfyDiTU=
+T9k_2B4y4HHJCPai5DSFoVnHdom3mhS-p20B2rNLp_br9rbXgcshXanduhNhRrIgbHy3Vn=
+FssW2HtIsFZgtpzo_yscSeI1oCuyRhFXrQ01">Unsubscribe</a></span><grammarly=
+-desktop-integration data-grammarly-shadow-root=3D"true"></grammarly-d=
+esktop-integration><grammarly-extension-vbars class=3D"dnXmp" data-gra=
+mmarly-shadow-root=3D"true"></grammarly-extension-vbars><grammarly-ext=
+ension-vbars-feedback-form class=3D"dnXmp" data-grammarly-shadow-root=3D=
+"true"></grammarly-extension-vbars-feedback-form><img width=3D"1" heig=
+ht=3D"1" src=3D"https://edm.xcwms.com/index.php/campaigns/og443bz56gb9=
+c/track-opening/em290m9xg5875" alt=3D"" />
+<img src=3D"http://tracking.jdcasting.kmfgedm.com/tracking/open?msgid=3D=
+eXl6h1Fu7Uctxdlv_-aIaw2&c=3D1988766081313116275" style=3D"width:1px;he=
+ight:1px" alt=3D"" /><a style=3D "display : none;" href=3D"http://trac=
+king.jdcasting.kmfgedm.com/tracking/botclick?msgid=3DeXl6h1Fu7Uctxdlv_=
+-aIaw2&c=3D1988766081313116275"></a></body>
+</html>
+--=-eZCfAVrZqC2dAdLJX8o7cS3NxDsv1Nck23WKzQ==--
 
 
---===============7062374529873625284==
+--===============1657489756258412342==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============7062374529873625284==
+--===============1657489756258412342==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -307,5 +309,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============7062374529873625284==--
+--===============1657489756258412342==--
 
