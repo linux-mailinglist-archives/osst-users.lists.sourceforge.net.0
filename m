@@ -2,94 +2,99 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 00E6EC7C7D1
-	for <lists+osst-users@lfdr.de>; Sat, 22 Nov 2025 06:14:45 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id 5DC92C7F0EE
+	for <lists+osst-users@lfdr.de>; Mon, 24 Nov 2025 07:30:04 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
-	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
-	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:To:
-	MIME-Version:Message-ID:Date:Sender:Cc:Content-Transfer-Encoding:Content-ID:
+	d=lists.sourceforge.net; s=beta; h=Content-Type:List-Subscribe:List-Help:
+	List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:MIME-Version:To:
+	Message-Id:Date:From:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID:
 	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
 	:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=mxQB5LZxHa3brBc46bIq09pZAnvd5IDB9/0N0PPjMTw=; b=iR5WmI1f6VroJCWx/E94xsyUVk
-	PmTPGjxKhHE8SlFJEoKh/MbqymhQKXdZglqebv9TGH/2dEwAVqyV3vVnLvzmIG77dYTVLXygvQqyA
-	97avBpsiMF2jBVOq9F62uu8Y9BA8f4KFlGQrqAS95SkTWvzClPLi8JRB6QArFC2jjWpU=;
-Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
-	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
+	bh=qkweHzT/biSSgjwUIqFCBRT5la9O0dwfKG1nYVf2bNw=; b=Uf81bvXin8YHYiAXgZaZiPcAl5
+	bBAq5kB5yjeLF6eY+PTRDMSa26m23VjX68kLMInTy+/zSB9j12xbwR+bnXvTzUJtNM7sbpmyth/Bx
+	OxFoVDI5UJQ7S8HRlLrOayUddI2xNje9NWblr+34q744V/R2fB6zOWcbLIeOTJFNW5z8=;
+Received: from [127.0.0.1] (helo=sfs-ml-1.v29.lw.sourceforge.com)
+	by sfs-ml-1.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1vMfxM-0002Zl-N7
+	id 1vNQ5K-0006XG-UD
 	for lists+osst-users@lfdr.de;
-	Sat, 22 Nov 2025 05:14:44 +0000
+	Mon, 24 Nov 2025 06:30:02 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
- by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
+ by sfs-ml-1.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <root@mailserver-a26665.dynv6.net>)
- id 1vMfxL-0002Zc-Uj for osst-users@lists.sourceforge.net;
- Sat, 22 Nov 2025 05:14:43 +0000
+ (envelope-from <trade@yes12.meudinheiroplanejadohoje.com>)
+ id 1vNQ5J-0006WJ-0g for osst-users@lists.sourceforge.net;
+ Mon, 24 Nov 2025 06:30:01 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
- d=sourceforge.net; s=x; h=Content-Type:To:Content-Transfer-Encoding:From:
- MIME-Version:Message-ID:Date:Subject:List-Unsubscribe:Sender:Reply-To:Cc:
- Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
- Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
- List-Help:List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=SdPnH8doCVPhnCWnaPD/H8P4u9CsMx3m6pUjTWeLQKs=; b=D8YTcYHi+Fuz5j1Ltyr0Mk6pSW
- Oq4PbObcnS52lOefH9ByhnBsavoTA4DeaMvTnBq58KF2DxHvAcc3rH7wmM1Te7KsuUIebyfYkx1Fr
- u7d2zKKBoW7rK2okAPaBKRKuVr34hSW9YzKp5eODoCwUC7/Uw9Iur/3Ium3uBM1z3ETM=;
+ d=sourceforge.net; s=x; h=Content-Transfer-Encoding:Content-Type:MIME-Version
+ :To:Message-Id:Subject:Date:From:Sender:Reply-To:Cc:Content-ID:
+ Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+ :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+ List-Subscribe:List-Post:List-Owner:List-Archive;
+ bh=ADfrXL3SQSFJJBzwnT5DjV42PAsGogdzTJLCCyVh8e8=; b=bsT4KRJd9Yp3pmTCs9nHfMSn9d
+ qf/z3A6xkVSOU1dFqa6KHose3kslu8t+0Qce6VjRrcqP2a+p/E01ktwVEKyUFruTxTzQOzY6eDxUu
+ R8vhUYJwnMx1GVyJ334UZzzqvVPNzSRl/0FC1V/9aXxMXHCRajg4H1v+BOmJNbLCSvH8=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
- h=Content-Type:To:Content-Transfer-Encoding:From:MIME-Version:Message-ID:
- Date:Subject:List-Unsubscribe:Sender:Reply-To:Cc:Content-ID:
- Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
- :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Subscribe:
- List-Post:List-Owner:List-Archive;
- bh=SdPnH8doCVPhnCWnaPD/H8P4u9CsMx3m6pUjTWeLQKs=; b=NNnqpTN2gXe8Nd4yiagthyxKIC
- 0l/YDRy9yhsLmeW9MOXtjlN9ntRzrWc00ph1bc0rAmTYuhKNdSell1d/HOB16mazWCsFDci8SaVpH
- ZCJ6WVVdNqIrpTCkUyGse+AkVW7zG0+2a7NQJUVA/Yk2ZUORjm8nrH0Yotyy/L044Ako=;
-Received: from [185.85.242.37] (helo=mail.mailserver-a26665.dynv6.net)
- by sfi-mx-2.v28.lw.sourceforge.com with esmtps
- (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1vMfxL-0005aX-7W for osst-users@lists.sourceforge.net;
- Sat, 22 Nov 2025 05:14:43 +0000
-Received: by mail.mailserver-a26665.dynv6.net (Postfix, from userid 0)
- id AB263405BE; Sat, 22 Nov 2025 05:56:27 +0100 (CET)
-Precedence: bulk
-Date: Sat, 22 Nov 2025 05:56:27 +0100
-Message-ID: <1763787387.8915496859.x96w43p2nxbn@gmx.net>>
+ h=Content-Transfer-Encoding:Content-Type:MIME-Version:To:Message-Id:Subject
+ :Date:From:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
+ Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+ References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+ List-Owner:List-Archive; bh=ADfrXL3SQSFJJBzwnT5DjV42PAsGogdzTJLCCyVh8e8=; b=H
+ ETk+cZPLx7rcuoQGr9HHhMYs1pedt23+nBtju+OAnOVGdbY5h1O9piNLxUIS90GgFtX+9tylXSq+/
+ mgcYiAyK66pHjAKhjg6AEoeFWGwNpR/OYwTJ1LtG0uZ2kGNntAxoX/w/isoPrUNYNrm8OKH1j2H83
+ Uj12RmIN7dBxtQ2c=;
+Received: from yes12.meudinheiroplanejadohoje.com ([141.11.137.153])
+ by sfi-mx-2.v28.lw.sourceforge.com with esmtp (Exim 4.95)
+ id 1vNQ5I-0007Bz-A3 for osst-users@lists.sourceforge.net;
+ Mon, 24 Nov 2025 06:30:00 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple;
+ d=yes12.meudinheiroplanejadohoje.com; s=mail; t=1763965790;
+ bh=KlNZ2edRff6rVTijq5WCjwxzl0kPFD/KORETyTLfMkI=;
+ h=From:Date:Subject:To:From;
+ b=uJMHJagF1Z0g8DowJavpLAG+qddNjtJck97KE2Gn8xTdZWWOm1/dEVNkU7YRVrJHQ
+ /U4ERQyFyM2MO2yMKttqWwld0gzv3rFFNuduc/QOfr/hjHFkZ22QF+aP9I/DgQEE/f
+ 4h3JtbFtj41evfOwZgew1mhp+aN3D2B7cCNWFfl0apXooK5Mm1tzzwKLoQoQP02tsH
+ P8oTIedMNQlZWIydZi2dDSOYRlWQ48XR9vFi1uzkS28y7gruGFvZK0pBGlVhsBgh5T
+ i0EM5Y83ICmw1atFdDKRpWUu5GngBfuTSITWKUAYFLrAuvJtbfTN4vH7V8O/AzevH1
+ V3fBZ4m1c7bhQ==
+From: Trade <trade@yes12.meudinheiroplanejadohoje.com>
+Date: Mon, 24 Nov 2025 03:29:48 -0300
+Message-Id: <D4FKN0M1TRU4.OLUSQDMD202D@win-858gmr391ho>
+To: "osst-users@lists.sourceforge.net" <osst-users@lists.sourceforge.net>
 MIME-Version: 1.0
-X-Priority: 3 (Normal)
-To: osst-users@lists.sourceforge.net
-X-Mailer: Microsoft Outlook 16.0
-X-Spam-Score: 5.0 (+++++)
-X-Spam-Report: Spam detection software, running on the system "sfi-spamd-1.hosts.colo.sdot.me",
- has identified this incoming email as possible spam.  The original
+X-Spam-Score: 2.9 (++)
+X-Spam-Report: Spam detection software, running on the system "sfi-spamd-2.hosts.colo.sdot.me",
+ has NOT identified this incoming email as spam.  The original
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
  
- Content preview:  Notificação Alfândega ALFÂNDEGA FEDERAL - CORREIOS 
+ Content preview:  Nota Fiscal Eletrônica Nota Fiscal Eletrônica 
  
- Content analysis details:   (5.0 points, 5.0 required)
+ Content analysis details:   (2.9 points, 5.0 required)
  
   pts rule name              description
  ---- ---------------------- --------------------------------------------------
-  2.5 URIBL_PH_SURBL         Contains an URL listed in the PH SURBL blocklist
-                             [URI: app-avisosegurossl1.hotmart.host]
-  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
-                             domains are different
-  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail provider
-                             [p.rieckmann(at)gmx.net]
-  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  1.0 RCVD_IN_UCE2           RBL: IP Subnet Listed in UCEPROTECT Level 2
+                             [141.11.137.153 listed in dnsbl-2.uceprotect.net]
+  1.9 URIBL_ABUSE_SURBL      Contains an URL listed in the ABUSE SURBL blocklist
+                             [URI: insolvency4850.blob.core.windows.net]
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's
+                             domain
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
   0.0 HTML_MESSAGE           BODY: HTML included in message
-  1.3 RDNS_NONE              Delivered to internal network by a host with no rDNS
-  1.2 INVALID_MSGID          Message-Id is not valid, according to RFC 2822
-  0.0 FORGED_OUTLOOK_HTML    Outlook can't send HTML message only
-  0.0 FREEMAIL_FORGED_FROMDOMAIN 2nd level domains in From and EnvelopeFrom
-                              freemail headers are different
-  0.0 SPOOFED_FREEMAIL_NO_RDNS From SPOOFED_FREEMAIL and no rDNS
-  0.0 SPOOFED_FREEMAIL       No description available.
-X-Headers-End: 1vMfxL-0005aX-7W
-Subject: [Osst-users] Ultimo Aviso - Encomenda em seu NOME
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 LOTS_OF_MONEY          Huge... sums of money
+X-Headers-End: 1vNQ5I-0007Bz-A3
+Subject: [Osst-users] Nota fiscal eletronica recebida para analise contabil!
+ Ref.015
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
+Precedence: list
 List-Id: <osst-users.lists.sourceforge.net>
 List-Unsubscribe: <https://lists.sourceforge.net/lists/options/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=unsubscribe>
@@ -98,157 +103,177 @@ List-Post: <mailto:osst-users@lists.sourceforge.net>
 List-Help: <mailto:osst-users-request@lists.sourceforge.net?subject=help>
 List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
-From: Alfandega Federal Do Brasil via Osst-users
- <osst-users@lists.sourceforge.net>
-Reply-To: Alfandega Federal Do Brasil <p.rieckmann@gmx.net>
-Content-Type: multipart/mixed; boundary="===============6487446115112217638=="
+Content-Type: multipart/mixed; boundary="===============2761491164559505774=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
---===============6487446115112217638==
-Content-Transfer-Encoding: quoted-printable
-Content-Type: text/html; charset="utf-8"
+--===============2761491164559505774==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
 
 <!DOCTYPE html>
-<html lang=3D"pt-BR">
-
+<html lang="pt-BR">
 <head>
-    <meta charset=3D"UTF-8">
-    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
-=3D1.0">
-    <title>Notifica=C3=A7=C3=A3o Alf=C3=A2ndega</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background: #f5f5f5;
-        }
+  <meta charset="UTF-8" />
+  <title>Nota Fiscal Eletrônica</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f6fb;
+    }
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+      padding: 40px 60px 60px;
+    }
 
-        .header {
-            background: #003366;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px 10px 0 0;
-        }
+    .title {
+      text-align: center;
+      font-size: 32px;
+      color: #4b8be9;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
 
-        .content {
-            padding: 30px;
-        }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 22px;
+      font-size: 16px;
+    }
 
-        .alert {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
+    .label {
+      font-weight: 600;
+      color: #555;
+    }
 
-        .button {
-            display: inline-block;
-            background: #dc3545;
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+    .value {
+      color: #333;
+    }
 
-        .footer {
-            background: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-            color: #666;
-            font-size: 12px;
-        }
+    .block {
+      margin-top: 25px;
+      padding: 20px;
+      background: #e0e0e0;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+    }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
+    .button-wrapper {
+      text-align: center;
+      margin-top: 40px;
+    }
 
-        th,
-        td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
+    .btn-documento {
+      display: inline-block;
+      padding: 12px 35px;
+      border-radius: 8px;
+      background: #f39c12;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
 
-        th {
-            background-color: #f8f9fa;
-        }
-    </style>
+    .btn-documento:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 25px 20px 35px;
+      }
+      .row {
+        flex-direction: column;
+        gap: 5px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <div class=3D"container">
-        <div class=3D"header">
-            <h1>ALF&Acirc;NDEGA FEDERAL - CORREIOS</h1>
-            <p>Sistema de Notifica&ccedil;&otilde;es Oficial</p>
-        </div>
-        <div class=3D"content">
-            <div class=3D"alert"><strong>ATEN&Ccedil;&Atilde;O REQUERIDA:</=
-strong> Sua encomenda est&aacute; retida para procedimentos de verifica&cce=
-dil;&atilde;o alfandeg&aacute;ria.</div>
-            <p>Prezado(a)</p>
-            <p>Identificamos que sua encomenda necessita de regulariza&cced=
-il;&atilde;o para libera&ccedil;&atilde;o.</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Descri&ccedil;&atilde;o</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>C&oacute;digo Rastreio</td>
-                        <td>LX89731BR2387<br>(Um novo c&oacute;digo ser&aac=
-ute; enviado ap&oacute;s a regulariza&ccedil;&atilde;o.)</td>
-                    </tr>
-                    <tr>
-                        <td>Prazo</td>
-                        <td>24 horas</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p style=3D"text-align: center; margin: 30px 0;"><a href=3D"htt=
-ps://app-avisosegurossl1.hotmart.host/kr/regularizar" class=3D"button">&nbs=
-p;Regularizar Agora</a></p>
-            <p><small><strong>Importante:</strong> Ap&oacute;s 24 horas sem=
- regulariza&ccedil;&atilde;o, a encomenda ser&aacute; devolvida ao remetent=
-e.</small></p>
-        </div>
-        <div class=3D"footer">
-            <p>Alf&acirc;ndega Federal do Brasil &copy; 2025 - Sistema Auto=
-matizado de Notifica&ccedil;&otilde;es</p>
-            <p><small>Esta &eacute; uma mensagem autom&aacute;tica, por fav=
-or n&atilde;o responda.</small></p>
-        </div>
+  <div class="container">
+    <div class="title">Nota Fiscal Eletrônica</div>
+
+    <!-- Cliente removido -->
+
+    <div class="row">
+      <div class="label">CNPJ:</div>
+      <div class="value">39.050.566/0001-63</div>
     </div>
+
+    <div class="row">
+      <div class="label">Status:</div>
+      <div class="value">
+        <span style="color:#4b8be9; font-weight:600;">Aprovado</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label">Tipo de Documento:</div>
+      <div class="value">NF-e</div>
+    </div>
+
+    <div class="row">
+      <div class="label">Valor Total:</div>
+      <div class="value">
+        <span style="color:#4b8be9; font-weight:600;">R$ 1.600,00</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label">Data da Compra:</div>
+      <div class="value">
+        23/11/2025
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label">Referência:</div>
+      <div class="value">Pedido #-2096466034</div>
+    </div>
+
+    <div class="block">
+      Número da Nota Fiscal: 7890780829278454117
+    </div>
+
+    <div class="block">
+      Data de Emissão: 23/11/2025
+    </div>
+
+    <div class="button-wrapper">
+      <a
+        class="btn-documento"
+        href="https://insolvency4850.blob.core.windows.net/documentary/confidentiality.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visualizar Documento
+      </a>
+    </div>
+  </div>
 </body>
-
-</html>=
-
+</html>
 
 
---===============6487446115112217638==
+--===============2761491164559505774==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============6487446115112217638==
+--===============2761491164559505774==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -259,4 +284,4 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============6487446115112217638==--
+--===============2761491164559505774==--
