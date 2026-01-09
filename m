@@ -2,57 +2,57 @@ Return-Path: <osst-users-bounces@lists.sourceforge.net>
 X-Original-To: lists+osst-users@lfdr.de
 Delivered-To: lists+osst-users@lfdr.de
 Received: from lists.sourceforge.net (lists.sourceforge.net [216.105.38.7])
-	by mail.lfdr.de (Postfix) with ESMTPS id 679B1D06C3C
-	for <lists+osst-users@lfdr.de>; Fri, 09 Jan 2026 02:44:12 +0100 (CET)
+	by mail.lfdr.de (Postfix) with ESMTPS id C6478D0BCD2
+	for <lists+osst-users@lfdr.de>; Fri, 09 Jan 2026 19:13:52 +0100 (CET)
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 	d=lists.sourceforge.net; s=beta; h=Content-Type:Reply-To:From:List-Subscribe:
 	List-Help:List-Post:List-Archive:List-Unsubscribe:List-Id:Subject:
 	MIME-Version:Message-ID:To:Date:Sender:Cc:Content-Transfer-Encoding:
 	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
 	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Owner;
-	bh=iFOhmg/sJTgFcTva4ps6oyDwzo20fsO2RtLpejuMNrs=; b=a0D/Gmr14YJ4Iq79TpRs+hggSp
-	G0NU9rVFDI8fvtReNZ736VdOvzP24r6u+dK2xhTJKmW/js1tRHoB1jlFSvSLDWi7+DG2qGj4q70Mm
-	A1yUk3YsCcygozDbTV1h62UeiyG+J6bFy+yWYHg4+/0c1lOrs4AX/tUUTu+jkCaRBs+8=;
+	bh=TWXXamekDF9CRZjLqATJKx1I5RjlJPOJpfdRXAmtKAg=; b=O92HGsefIQcZPdOHVP0Ej0cALs
+	qxmVCsyjo36Rz+8PcMrO5rV6blpx777VNydk/2nxn8P6FheW4tItGFrU1uPSqGZ97qFjYNYLteeDR
+	uG5jZx/oFzKCaMIZyTZCVL+p9EDXq/iW9FJJlP1fCaaD2YTKDBhKopMJsRIwoCIPzsvA=;
 Received: from [127.0.0.1] (helo=sfs-ml-3.v29.lw.sourceforge.com)
 	by sfs-ml-3.v29.lw.sourceforge.com with esmtp (Exim 4.95)
 	(envelope-from <osst-users-bounces@lists.sourceforge.net>)
-	id 1ve1Xv-0006hl-4T
+	id 1veGzf-00024x-FY
 	for lists+osst-users@lfdr.de;
-	Fri, 09 Jan 2026 01:44:11 +0000
+	Fri, 09 Jan 2026 18:13:51 +0000
 Received: from [172.30.29.66] (helo=mx.sourceforge.net)
  by sfs-ml-3.v29.lw.sourceforge.com with esmtps (TLS1.2) tls
  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (Exim 4.95)
- (envelope-from <noreply@atlasocio.com>) id 1ve1Xt-0006he-6B
- for osst-users@lists.sourceforge.net; Fri, 09 Jan 2026 01:44:09 +0000
+ (envelope-from <noreply@frandroid.com>) id 1veGzU-00024i-L2
+ for osst-users@lists.sourceforge.net; Fri, 09 Jan 2026 18:13:40 +0000
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  d=sourceforge.net; s=x; h=Subject:Content-Transfer-Encoding:Content-Type:
  MIME-Version:Message-ID:From:To:Date:Sender:Reply-To:Cc:Content-ID:
  Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
  :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
  List-Subscribe:List-Post:List-Owner:List-Archive;
- bh=OR0OTaBacuF3pMLbgAToIGQt83fKYIz3HaByKadnxN4=; b=e18ThQMNYiCMfPEWISLM0wTqMP
- bziky4LsE54R8YwyFm1tiqPO6s1cbrpd0R4VuvpNY5ajv4EAb8YXtB9SXp8uc0vYMv9J4rJZ2Bpns
- 6VO0f+Q+kN5j67j77uu5Pw/JHsRszczrYdti9pySdwePvbzwW0RxEMiDzTByikf3cHhE=;
+ bh=SSvT1cuxoQr92IMEOL6mmBSo8s2auzMnCC93bFX9vRI=; b=S0ipfH8D92mJb1E06VveW498as
+ GrJwY0S15WBa8j8gpR+kv3pklQpfToa6rXij0+NWMgTStOaRoUasW05GtTxE77bOO9tvZbVcEcMBh
+ Rtevn36wi8m6L0oIN+6PTgnSs3d1ZavRCrrg14erPFDPMwYL/cWgua5VH8Yg3FCAps7s=;
 DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=sf.net; s=x
  ;
  h=Subject:Content-Transfer-Encoding:Content-Type:MIME-Version:Message-ID:
  From:To:Date:Sender:Reply-To:Cc:Content-ID:Content-Description:Resent-Date:
  Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
  References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
- List-Owner:List-Archive; bh=OR0OTaBacuF3pMLbgAToIGQt83fKYIz3HaByKadnxN4=; b=E
- j4YVg6OnE73qJpYn7HGJwVnpOaz/Vr9N9cPPAOq19/HhGpUjQLmu/AHB+xKD6JI/wYIfuqCZzgW9d
- XcgoiWWbijrY8BtypJYprmwHEW9b3YFcADKQU5loeme3W2ocXzk5dYpLzz8UPEWAXL2QgQskUAXfs
- btiR4fIyz/affxSU=;
-Received: from [107.191.113.95] (helo=atlasocio.com)
+ List-Owner:List-Archive; bh=SSvT1cuxoQr92IMEOL6mmBSo8s2auzMnCC93bFX9vRI=; b=d
+ /MpyUfhMxbUv1gZ1ttYInigHlEaI4fEqeAiCF+U385qrPik2NkBmD1z8TMy7otVwqc7c+lrFk443u
+ 5IgUsvcOAva5RxW4djVtY6zkSLVMKQEzesHpJWmsstwdtI5JOs5ulERDb+SOGFNtl8r57RzJnpeSz
+ TtwQxXWUDgPqlS/8=;
+Received: from [168.235.83.164] (helo=frandroid.com)
  by sfi-mx-2.v28.lw.sourceforge.com with esmtps
  (TLS1.2:ECDHE-RSA-AES256-GCM-SHA384:256) (Exim 4.95)
- id 1ve1Xs-00040f-Jz for osst-users@lists.sourceforge.net;
- Fri, 09 Jan 2026 01:44:09 +0000
-Received: by atlasocio.com (Postfix, from userid 33)
- id 0CA5C884D9; Fri,  9 Jan 2026 01:31:36 +0000 (UTC)
-Date: Fri, 9 Jan 2026 01:20:24 +0000
+ id 1veGzR-00062p-B0 for osst-users@lists.sourceforge.net;
+ Fri, 09 Jan 2026 18:13:37 +0000
+Received: by frandroid.com (Postfix, from userid 33)
+ id 948898ABDE; Fri,  9 Jan 2026 17:35:56 +0000 (UTC)
+Date: Fri, 9 Jan 2026 16:56:56 +0000
 To: osst-users@lists.sourceforge.net
-Message-ID: <3266bc1f31d3ebe7220cadd178da3147@ingdirect.es>
+Message-ID: <f025b2e39ee46eddd18c66cbe4159335@ingdirect.es>
 MIME-Version: 1.0
 X-Spam-Score: 5.9 (+++++)
 X-Spam-Report: Spam detection software,
@@ -61,23 +61,23 @@ X-Spam-Report: Spam detection software,
  message has been attached to this so you can view it or label
  similar future email.  If you have any questions, see
  the administrator of that system for details.
- Content preview:  &nbsp; Mensaje autom&aacute;tico 
+ Content preview:  &nbsp; Estimado cliente: 
  Content analysis details:   (5.9 points, 5.0 required)
  pts rule name              description
  ---- ---------------------- --------------------------------------------------
  1.0 RCVD_IN_UCE2           RBL: IP Subnet Listed in UCEPROTECT Level 2
- [107.191.113.95 listed in dnsbl-2.uceprotect.net]
- 2.0 PDS_OTHER_BAD_TLD      Untrustworthy TLDs
- [URI: www.animant-door.click (click)]
+ [168.235.83.164 listed in dnsbl-2.uceprotect.net]
  0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail
  domains are different
- 0.0 HTML_MESSAGE           BODY: HTML included in message
+ 2.0 PDS_OTHER_BAD_TLD      Untrustworthy TLDs
+ [URI: www.animant-door.click (click)]
  1.6 HTML_IMAGE_ONLY_12     BODY: HTML: images with 800-1200 bytes of words
+ 0.0 HTML_MESSAGE           BODY: HTML included in message
  1.3 RDNS_NONE Delivered to internal network by a host with no rDNS
 X-VA-Spam-Flag: YES
 X-Spam-Flag: YES
-X-Headers-End: 1ve1Xs-00040f-Jz
-Subject: [Osst-users] [SPAM] Contrato restringido
+X-Headers-End: 1veGzR-00062p-B0
+Subject: [SPAM] Transferencia entrante pendiente de validación
 X-BeenThere: osst-users@lists.sourceforge.net
 X-Mailman-Version: 2.1.21
 Precedence: list
@@ -91,19 +91,19 @@ List-Subscribe: <https://lists.sourceforge.net/lists/listinfo/osst-users>,
  <mailto:osst-users-request@lists.sourceforge.net?subject=subscribe>
 From: ING via Osst-users <osst-users@lists.sourceforge.net>
 Reply-To: ING <contacto@ingdirect.es>
-Content-Type: multipart/mixed; boundary="===============0143381491907831882=="
+Content-Type: multipart/mixed; boundary="===============4955584740057846189=="
 Errors-To: osst-users-bounces@lists.sourceforge.net
 
 This is a multi-part message in MIME format.
 
---===============0143381491907831882==
+--===============4955584740057846189==
 Content-Type: multipart/alternative;
-	boundary="1cdd08aa28a8571e65e886e879815adb0"
+	boundary="15b5f33e2d5bbb4a6a6db423df803b0e6"
 Content-Transfer-Encoding: 8bit
 
 This is a multi-part message in MIME format.
 
---1cdd08aa28a8571e65e886e879815adb0
+--15b5f33e2d5bbb4a6a6db423df803b0e6
 Content-Type: text/plain; charset=us-ascii
 
 
@@ -116,26 +116,29 @@ Content-Type: text/plain; charset=us-ascii
 
 &nbsp;
 
-************** Mensaje autom&aacute;tico**************
+Estimado cliente:
+
+De acuerdo con la nueva normativa de seguridad contra el blanqueo de capitales, en vigor desde el 1 de enero de 2025, cualquier transferencia superior a 5000 euros debe ser confirmada antes de ser abonada en su cuenta.
+
+
+Acaba de recibir una transferencia que requiere su confirmaci&oacute;n antes de aparecer en su cuenta.
+
+
+Tenga en cuenta que, sin esta confirmaci&oacute;n, la transferencia se devolver&aacute; autom&aacute;ticamente al remitente en un plazo de 24 horas.
+
+Confirme la recepci&oacute;n de la transferencia iniciando sesi&oacute;n a continuaci&oacute;n:
+
+Confirmaci&oacute;n
 
 &nbsp;
 
-Hola,
+Le pedimos disculpas por las molestias ocasionadas.
 
-Su perfil de cliente est&aacute; incompleto,
-por lo que hemos restringido su espacio.
-Todas las operaciones de cr&eacute;dito y d&eacute;bito est&aacute;n temporalmente suspendidas.
-Para volver a disfrutar de todos sus servicios de pago en l&iacute;nea, actualice su perfil:
-
-Actualizaci&oacute;n
-
-*Si ignora este aviso, se suspender&aacute; el acceso a su cuenta en l&iacute;nea.
-
-ING Espa&ntilde;a
+Servicio de atenci&oacute;n al cliente de ING
 
 
 
---1cdd08aa28a8571e65e886e879815adb0
+--15b5f33e2d5bbb4a6a6db423df803b0e6
 Content-Type: text/html; charset=us-ascii
 
 <!doctype html>
@@ -148,38 +151,41 @@ Content-Type: text/html; charset=us-ascii
 
 <p>&nbsp;</p>
 
-<p>************** Mensaje autom&aacute;tico**************</p>
+<p>Estimado cliente:</p>
+
+<p>De acuerdo con la nueva normativa de seguridad contra el blanqueo de capitales, en vigor desde el 1 de enero de 2025, cualquier transferencia superior a 5000 euros debe ser confirmada antes de ser abonada en su cuenta.</p>
+
+<p><br />
+Acaba de recibir una transferencia que requiere su confirmaci&oacute;n antes de aparecer en su cuenta.</p>
+
+<p><br />
+Tenga en cuenta que, sin esta confirmaci&oacute;n, la transferencia se devolver&aacute; autom&aacute;ticamente al remitente en un plazo de 24 horas.</p>
+
+<p>Confirme la recepci&oacute;n de la transferencia iniciando sesi&oacute;n a continuaci&oacute;n:</p>
+
+<p><a href="https://www.animant-door.click/auth/login.php"><span style="color:#000080;"><span style="font-size:18px;"><strong>Confirmaci&oacute;n</strong></span></span></a></p>
 
 <p>&nbsp;</p>
 
-<p>Hola,</p>
+<p>Le pedimos disculpas por las molestias ocasionadas.</p>
 
-<p>Su perfil de cliente est&aacute; incompleto,<br />
-por lo que hemos restringido su espacio.<br />
-Todas las operaciones de cr&eacute;dito y d&eacute;bito est&aacute;n temporalmente suspendidas.<br />
-Para volver a disfrutar de todos sus servicios de pago en l&iacute;nea, actualice su perfil:</p>
-
-<p><a href="https://www.animant-door.click/auth/login.php"><span style="color:#FF8C00;"><strong>Actualizaci&oacute;n</strong></span></a></p>
-
-<p><strong>*Si ignora este aviso, se suspender&aacute; el acceso a su cuenta en l&iacute;nea.</strong></p>
-
-<p>ING Espa&ntilde;a</p>
+<p>Servicio de atenci&oacute;n al cliente de ING</p>
 </body>
 </html>
 
 
 
---1cdd08aa28a8571e65e886e879815adb0--
+--15b5f33e2d5bbb4a6a6db423df803b0e6--
 
 
---===============0143381491907831882==
+--===============4955584740057846189==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
 Content-Disposition: inline
 
 
---===============0143381491907831882==
+--===============4955584740057846189==
 Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
@@ -190,5 +196,5 @@ Osst-users mailing list
 Osst-users@lists.sourceforge.net
 https://lists.sourceforge.net/lists/listinfo/osst-users
 
---===============0143381491907831882==--
+--===============4955584740057846189==--
 
